@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-raiders-401873021",
+      "metroId": "las-vegas",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "raiders",
+      "home": {
+        "name": "Raiders",
+        "score": 21
+      },
+      "away": {
+        "name": "Rams",
+        "score": 35
+      },
+      "attendance": 62550,
+      "capturedAt": "2026-10-26T15:13:18.456Z",
+      "duration": {
+        "minutes": 189,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

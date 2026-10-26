@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-wave-401854094",
+      "metroId": "san-diego",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "wave",
+      "home": {
+        "name": "Wave",
+        "score": 2
+      },
+      "away": {
+        "name": "Legacy FC",
+        "score": 2
+      },
+      "attendance": 15701,
+      "capturedAt": "2026-10-26T15:13:10.670Z"
+    }
+  ]
+}

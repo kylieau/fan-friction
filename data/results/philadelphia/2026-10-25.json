@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-sixers-401909866",
+      "metroId": "philadelphia",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 93
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 106
+      },
+      "attendance": 21117,
+      "capturedAt": "2026-10-26T15:13:14.727Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

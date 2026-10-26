@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-blackhawks-401892578",
+      "metroId": "chicago",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 3
+      },
+      "attendance": 18117,
+      "capturedAt": "2026-10-26T15:13:12.809Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "15:16"
+    }
+  ]
+}

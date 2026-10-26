@@ -1,0 +1,2537 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "metroName": "New Orleans",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-26",
+  "capturedAt": "2026-10-26T15:12:10.787Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-26",
+    "through": "2026-11-09"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 12
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 59
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 11
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-26-tm-G5viZ_aSqAaya",
+      "metroId": "new-orleans",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Prof",
+      "place": {
+        "type": "venue",
+        "venueId": "joy-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Prof",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_aSqAaya",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-sa-tulanegreenwave-com-23574",
+      "metroId": "new-orleans",
+      "date": "2026-10-27",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Tulane vs. Loyola (Exhibition)",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "tulane-wbb",
+        "away": "Loyola (Exhibition)",
+        "awayOpponent": "loyola-exhibition-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7-Pr9",
+      "metroId": "new-orleans",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Pr9",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-10-27-tm-G5viZ_6Sij9ty",
+      "metroId": "new-orleans",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Johnny Blue Skies",
+      "officialTitle": "Johnny Blue Skies & the Dark Clouds - Mutiny for the Masses 2026 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lakefront-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Johnny Blue Skies",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178Eof"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_6Sij9ty",
+      "expectedDraw": {
+        "count": 5007,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-sa-tulanegreenwave-com-23587",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Tulane vs. Spring Hill College (Ala.)",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "tulane-mbb",
+        "away": "Spring Hill College (Ala.)",
+        "awayOpponent": "spring-hill-college-ala-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-espn-pelicans-401909889",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16686,
+        "low": 16214,
+        "high": 17516,
+        "fromCrowds": true,
+        "games": 67,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 67 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_1hN1hYU",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Cameron Whitcomb",
+      "officialTitle": "Cameron Whitcomb - Kingdom of Fear Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Cameron Whitcomb",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1hN1hYU",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7-Prb",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Prb",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_23MOnNG",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Atlanta Rhythm Section",
+      "place": {
+        "type": "venue",
+        "venueId": "joy-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Atlanta Rhythm Section",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_23MOnNG",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_75N35wv",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Daniel Sloss: BITTER  (Brand New Tour!)",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_75N35wv"
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_2KJP2Nd",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Locker Room - Jon Pardi",
+      "place": {
+        "type": "venue",
+        "venueId": "mississippi-coast-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Locker Room",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2KJP2Nd"
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_CTeXXWa",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Jon Pardi",
+      "officialTitle": "Jon Pardi: Gamblin' Man Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "mississippi-coast-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Jon Pardi",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ugvf",
+        "K8vZ917_rk0",
+        "K8vZ917hfM0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_CTeXXWa",
+      "expectedDraw": {
+        "count": 15000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-espn-pelicans-401909894",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Sac Kings",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "sacramento-kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16406,
+        "low": 15942,
+        "high": 17221,
+        "fromCrowds": true,
+        "games": 67,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 67 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_KgUufxX",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Congress the Band",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Congress the Band",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_KgUufxX",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7-Pr_",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Pr_",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_83gwHHt",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "special",
+      "title": "New Orleans Ballet Theatre: Dracula",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theater-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "New Orleans Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_83gwHHt",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZbz5u5Xbv",
+      "metroId": "new-orleans",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Osees",
+      "officialTitle": "Osees ft. Brigid Dawson with Traps PS",
+      "place": {
+        "type": "venue",
+        "venueId": "civic-theatre-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Osees",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbz5u5Xbv",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_aGdhPah",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Saosin",
+      "officialTitle": "Saosin: 20 Years of Self-Titled",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Saosin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_aGdhPah",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_194HFw-",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "MercyMe",
+      "officialTitle": "MercyMe, Jeremy Camp, Tim Timmons, Sam Wesley",
+      "place": {
+        "type": "venue",
+        "venueId": "raising-cane-s-river-center-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MercyMe",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175_R0",
+        "K8vZ9175gsf",
+        "K8vZ9173KT0",
+        "K8vZ917qpXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_194HFw-",
+      "expectedDraw": {
+        "count": 10400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7-POZ",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POZ",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_83gVGHc",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "special",
+      "title": "New Orleans Ballet Theatre: Dracula",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theater-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "New Orleans Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_83gVGHc",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_8yl-NbB",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Widespread Panic",
+      "officialTitle": "WIDESPREAD PANIC FRIDAY",
+      "place": {
+        "type": "venue",
+        "venueId": "lakefront-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Widespread Panic",
+      "act": true,
+      "performerIds": [
+        "K8vZ91713Gf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_8yl-NbB",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 5007,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_KMCHMjG",
+      "metroId": "new-orleans",
+      "date": "2026-10-30",
+      "start": "23:55",
+      "kind": "show",
+      "title": "Kevin Scott",
+      "officialTitle": "Kevin Scott's ZAMBI-Ween (10/30 LATE NIGHT)",
+      "place": {
+        "type": "venue",
+        "venueId": "joy-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Kevin Scott",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_KMCHMjG",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_83ggGHS",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "New Orleans Ballet Theatre: Dracula",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theater-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "New Orleans Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_83ggGHS",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7-POv",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POv",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_3n3BFCI",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Samford Vs LSU",
+      "place": {
+        "type": "venue",
+        "venueId": "keesler-federal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "performer": "Samford Vs LSU",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_3n3BFCI",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-espn-pelicans-401909898",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Pelicans vs. Hawks",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "hawks",
+        "awayOpponent": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16987,
+        "low": 16430,
+        "high": 17829,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_8ytSK8_",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Widespread Panic",
+      "officialTitle": "WIDESPREAD PANIC SATURDAY",
+      "place": {
+        "type": "venue",
+        "venueId": "lakefront-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Widespread Panic",
+      "act": true,
+      "performerIds": [
+        "K8vZ91713Gf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_8ytSK8_",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 5007,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_43VXRk-",
+      "metroId": "new-orleans",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "special",
+      "title": "Endless Night Vampire Ball",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Endless Night Vampire Ball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_43VXRk-"
+    },
+    {
+      "id": "2026-11-01-tm-G5viZ_3nKKIK6",
+      "metroId": "new-orleans",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Samford Vs LSU",
+      "place": {
+        "type": "venue",
+        "venueId": "keesler-federal-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball"
+      },
+      "performer": "Samford Vs LSU",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_3nKKIK6",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7-POe",
+      "metroId": "new-orleans",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POe",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7-POd",
+      "metroId": "new-orleans",
+      "date": "2026-11-01",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POd",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5viZ_oJgmjEz",
+      "metroId": "new-orleans",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Skilla Baby",
+      "officialTitle": "Skilla Baby: The Price of Fame Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Skilla Baby",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_oJgmjEz",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-tulane-wbb-401916057",
+      "metroId": "new-orleans",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Tulane vs. Texas Southern Tigers",
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tulane-wbb",
+        "away": "texas-southern",
+        "awayOpponent": "texas-southern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 879,
+        "low": 866,
+        "high": 2250,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-tulane-mbb-401919001",
+      "metroId": "new-orleans",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tulane vs. UT Martin",
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tulane-mbb",
+        "away": "ut-martin",
+        "awayOpponent": "ut-martin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1467,
+        "low": 1321,
+        "high": 1578,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-sa-unoprivateers-com-12823",
+      "metroId": "new-orleans",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "LSU vs. New Orleans",
+      "place": {
+        "type": "venue",
+        "venueId": "pete-maravich-assembly-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7-PO7",
+      "metroId": "new-orleans",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-PO7",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-04-espn-pelicans-401909928",
+      "metroId": "new-orleans",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Jazz",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "utah-jazz",
+        "awayOpponent": "jazz"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15737,
+        "low": 15521,
+        "high": 16305,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5viZ_2TtH0vi",
+      "metroId": "new-orleans",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - The Multiplayer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2TtH0vi",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7-POA",
+      "metroId": "new-orleans",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POA",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-05-espn-tulane-mbb-401919002",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Tulane vs. Jackson St",
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tulane-mbb",
+        "away": "jackson-st",
+        "awayOpponent": "jackson-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1202,
+        "low": 1185,
+        "high": 1215,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-unoprivateers-com-12801",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "New Orleans vs. Southeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "human-performance-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_CJ9EMT1",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Thundercat",
+      "officialTitle": "Thundercat: Distracted AF Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Thundercat",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_CJ9EMT1",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_GKS5Gr_",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Anthony Jeselnik: Wrath of Man",
+      "place": {
+        "type": "venue",
+        "venueId": "mahalia-jackson-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Anthony Jeselnik",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GKS5Gr_"
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7-PO6",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-PO6",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-11-06-sa-tulanegreenwave-com-23498",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Tulane vs. Memphis",
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-espn-pelicans-401909293",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pelicans vs. Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "smoothie-king-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pelicans",
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15507,
+        "low": 14983,
+        "high": 16130,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_CJEs1Fa",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Brantley Gilbert",
+      "officialTitle": "BRANTLEY GILBERT REAL AMERICAN TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "mississippi-coast-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Brantley Gilbert",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Gt57",
+        "K8vZ917_cRV",
+        "K8vZ917L1b7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_CJEs1Fa",
+      "expectedDraw": {
+        "count": 15000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_CU02pn6",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Locker Room - Brantley Gilbert",
+      "place": {
+        "type": "venue",
+        "venueId": "mississippi-coast-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Locker Room",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_CU02pn6"
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_aS-OncZ",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "ZOLTAN KASZAS: WORLDWIDE(ish) TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "joy-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Zoltan Kaszas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_aS-OncZ"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7-POF",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POF",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_CEaSuRx",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jon B.",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jon B.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_CEaSuRx",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_unXCNqS",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pretty Lights",
+      "officialTitle": "Pretty Lights - Soundship Space Bus Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Pretty Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_unXCNqS",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_8myeBoz",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "show",
+      "title": "The Tipping Point",
+      "officialTitle": "The Tipping Point: The Decade of Impact",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theater-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Tipping Point",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_8myeBoz"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-POa",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POa",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_ubKSTmm",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Don Lemon & DL Hughley: DL + DL 'Anything Goes'",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theater-new-orleans"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "D.L. Hughley",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_ubKSTmm"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-PO8",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-PO8",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_unX2SqX",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pretty Lights",
+      "officialTitle": "Pretty Lights - Soundship Space Bus Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Pretty Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_unX2SqX",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-lsuno-mbb-401925047",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "LSU N Orleans vs. Loyola NO",
+      "place": {
+        "type": "venue",
+        "venueId": "lakefront-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lsuno-mbb",
+        "away": "loyola-no",
+        "awayOpponent": "loyola-no"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1207,
+        "low": 1118,
+        "high": 1474,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-tulane-football-401862822",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Tulane vs. Tulsa",
+      "place": {
+        "type": "venue",
+        "venueId": "yulman-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tulane-football",
+        "away": "tulsa",
+        "awayOpponent": "tulsa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22394,
+        "low": 19909,
+        "high": 26850,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_4hQvLCP",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "special",
+      "title": "Lafayette Nutcracker Market 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "cajundome"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Lafayette Nutcracker Market 2026",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_4hQvLCP"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-SZ4",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Louisiana Lafayette Ragin Cajuns Football vs. South Alabama Jaguars Football",
+      "place": {
+        "type": "venue",
+        "venueId": "our-lady-of-lourdes-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Louisiana Ragin' Cajuns Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-SZ4"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-YQf",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Southeastern Louisiana Lions Mens Football vs. Incarnate Word Cardinals Football",
+      "place": {
+        "type": "venue",
+        "venueId": "strawberry-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Southeastern Louisiana Lions Mens Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-YQf",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-08-espn-saints-401873039",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Saints vs. Browns",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "caesars-superdome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "saints",
+        "away": "browns",
+        "awayOpponent": "browns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 70006,
+        "low": 70005,
+        "high": 70006,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-tulane-wbb-401912991",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Tulane vs. Alabama",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "devlin-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tulane-wbb",
+        "away": "alabama",
+        "awayOpponent": "alabama"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 670,
+        "low": 648,
+        "high": 685,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7-POo",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POo",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5viZ_kRl01rU",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hawthorne Heights",
+      "officialTitle": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hawthorne Heights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kRl01rU",
+      "expectedDraw": {
+        "count": 1010,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7-POK",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Lion King (Touring) - Recommended for ages 6 and up. All guests entering the theater, regardless of age, must have a ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "saenger-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney Presents The Lion King (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-POK",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5viZ_unX8Srd",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pretty Lights",
+      "officialTitle": "Pretty Lights - Soundship Space Bus Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-new-orleans"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Pretty Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_unX8Srd",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-26-tm-G5viZ_aSqAaya",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-27-sa-tulanegreenwave-com-23574",
+      "date": "2026-10-27",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7-Pr9",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-G5viZ_6Sij9ty",
+      "date": "2026-10-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5007
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-tulanegreenwave-com-23587",
+      "date": "2026-10-28",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-pelicans-401909889",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16686,
+        "low": 16214,
+        "high": 17516
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_1hN1hYU",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7-Prb",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_23MOnNG",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_75N35wv",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_2KJP2Nd",
+      "date": "2026-10-29",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_CTeXXWa",
+      "date": "2026-10-29",
+      "start": "18:30",
+      "draw": {
+        "count": 15000
+      }
+    },
+    {
+      "eventId": "2026-10-29-espn-pelicans-401909894",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16406,
+        "low": 15942,
+        "high": 17221
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_KgUufxX",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7-Pr_",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_83gwHHt",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZbz5u5Xbv",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_aGdhPah",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_194HFw-",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "draw": {
+        "count": 10400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7-POZ",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_83gVGHc",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_8yl-NbB",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5007
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_KMCHMjG",
+      "date": "2026-10-30",
+      "start": "23:55",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_83ggGHS",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7-POv",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_3n3BFCI",
+      "date": "2026-10-31",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-10-31-espn-pelicans-401909898",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Widespread Panic Saturday 5.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16987,
+        "low": 16430,
+        "high": 17829
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_8ytSK8_",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Hawks at Pelicans 5.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5007
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_43VXRk-",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5viZ_3nKKIK6",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7-POe",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7-POd",
+      "date": "2026-11-01",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-01-tm-G5viZ_oJgmjEz",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-tulane-wbb-401916057",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "draw": {
+        "count": 879,
+        "low": 866,
+        "high": 2250
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-tulane-mbb-401919001",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "draw": {
+        "count": 1467,
+        "low": 1321,
+        "high": 1578
+      }
+    },
+    {
+      "eventId": "2026-11-03-sa-unoprivateers-com-12823",
+      "date": "2026-11-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7-PO7",
+      "date": "2026-11-03",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-04-espn-pelicans-401909928",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15737,
+        "low": 15521,
+        "high": 16305
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5viZ_2TtH0vi",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7-POA",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-tulane-mbb-401919002",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "draw": {
+        "count": 1202,
+        "low": 1185,
+        "high": 1215
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-unoprivateers-com-12801",
+      "date": "2026-11-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_CJ9EMT1",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_GKS5Gr_",
+      "date": "2026-11-05",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7-PO6",
+      "date": "2026-11-05",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-06-sa-tulanegreenwave-com-23498",
+      "date": "2026-11-06",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-pelicans-401909293",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15507,
+        "low": 14983,
+        "high": 16130
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_CJEs1Fa",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "draw": {
+        "count": 15000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_CU02pn6",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_aS-OncZ",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7-POF",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_CEaSuRx",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_unXCNqS",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_8myeBoz",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-POa",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_ubKSTmm",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-PO8",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_unX2SqX",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-lsuno-mbb-401925047",
+      "date": "2026-11-07",
+      "start": null,
+      "read": {
+        "rating": 6.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1207,
+        "low": 1118,
+        "high": 1474
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-tulane-football-401862822",
+      "date": "2026-11-07",
+      "start": null,
+      "read": {
+        "rating": 6.7,
+        "friction": "Heavy",
+        "why": "98° feels-like, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22394,
+        "low": 19909,
+        "high": 26850
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_4hQvLCP",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-SZ4",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-YQf",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-08-espn-saints-401873039",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "88° feels-like at a 12:00 pm start, no roof.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 70006,
+        "low": 70005,
+        "high": 70006
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-tulane-wbb-401912991",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 670,
+        "low": 648,
+        "high": 685
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7-POo",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5viZ_kRl01rU",
+      "date": "2026-11-08",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1010
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7-POK",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5viZ_unX8Srd",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    }
+  ]
+}

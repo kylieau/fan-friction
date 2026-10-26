@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-arizona-cardinals-401873019",
+      "metroId": "phoenix",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-stadium",
+      "homeTeamId": "arizona-cardinals",
+      "home": {
+        "name": "Cardinals",
+        "score": 16
+      },
+      "away": {
+        "name": "Broncos",
+        "score": 30
+      },
+      "attendance": 64871,
+      "capturedAt": "2026-10-26T15:13:17.367Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-lafc-761904",
+      "metroId": "la",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-stadium",
+      "homeTeamId": "lafc",
+      "home": {
+        "name": "LAFC",
+        "score": 2
+      },
+      "away": {
+        "name": "Galaxy",
+        "score": 2
+      },
+      "capturedAt": "2026-10-26T15:13:10.156Z"
+    }
+  ]
+}

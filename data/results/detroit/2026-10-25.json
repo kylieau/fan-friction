@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-lions-401873020",
+      "metroId": "detroit",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ford-field",
+      "homeTeamId": "lions",
+      "home": {
+        "name": "Lions",
+        "score": 20
+      },
+      "away": {
+        "name": "Packers",
+        "score": 17
+      },
+      "attendance": 64008,
+      "capturedAt": "2026-10-26T15:13:13.634Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

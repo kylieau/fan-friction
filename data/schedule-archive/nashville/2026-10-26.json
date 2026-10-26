@@ -1,0 +1,4028 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "metroName": "Nashville",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-26",
+  "capturedAt": "2026-10-26T15:10:42.829Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-26",
+    "through": "2026-11-09"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 26
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 78
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 20
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-26-tm-G5viZ_1MfI-bC",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MICO",
+      "officialTitle": "MICO - Running From A Feeling Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "MICO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1MfI-bC",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAeox9",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Sarah Jakes Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Sarah Jakes Roberts",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeox9"
+    },
+    {
+      "id": "2026-10-26-tm-Z7r9jZ1AAZUa-",
+      "metroId": "nashville",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Woman Evolve w/ Sarah Jakes Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Woman Evolve",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUa-"
+    },
+    {
+      "id": "2026-10-27-espn-predators-401892589",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Islanders",
+      "broadcast": "MSG2",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "islanders",
+        "awayOpponent": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1A7Ofx8",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ofx8",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-27-tm-Z7r9jZ1AAZUuM",
+      "metroId": "nashville",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Sho-Bud Showcase Live",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Sho-Bud Showcase",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUuM"
+    },
+    {
+      "id": "2026-10-28-espn-mtsu-football-401871058",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "MTSU vs. Kennesaw St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "floyd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "mtsu-football",
+        "away": "ksu-football",
+        "awayOpponent": "kennesaw-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 10812,
+        "low": 10394,
+        "high": 10812,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-sa-lipscombsports-com-13723",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lipscomb vs. Bryan College",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "allen-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "lipscomb-mbb",
+        "away": "Bryan College",
+        "awayOpponent": "bryan-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_FJa3nQ8",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917Qs-V",
+        "K8vZ917bKv7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_FJa3nQ8",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1A7Ofxb",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ofxb",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-espn-nashville-sc-761914",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Nashville SC vs. Union",
+      "place": {
+        "type": "venue",
+        "venueId": "geodis-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nashville-sc",
+        "away": "philadelphia-union",
+        "awayOpponent": "philadelphia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 27165,
+        "low": 26954,
+        "high": 27745,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-Z7r9jZ1AAZFa6",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Shenandoah",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Shenandoah",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFa6",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-G5viZ_1Kk88nN",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "glaive",
+      "officialTitle": "GLAIVE - GOD SAVE THE THREE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "glaive",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1Kk88nN",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-vv17fZ_KGkwzy6H7",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "University of Evansville Aces Mens Basketball vs. Wabash College Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-center-evansville"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Evansville Aces Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_KGkwzy6H7",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-espn-predators-401892605",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Capitals",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "capitals",
+        "awayOpponent": "capitals"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_263jPMd",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Demon Hunter",
+      "officialTitle": "Demon Hunter - Storm the Gates of Hell 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Demon Hunter",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_263jPMd",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_kURICyP",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "HARDY",
+      "officialTitle": "HARDY Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "HARDY",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kURICyP",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7Of0Z",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0Z",
+      "occasionFacts": {
+        "run": 7
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5viZ_5QlIiaH",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Marc Scibilia",
+      "officialTitle": "Marc Scibilia - One Night Only",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Marc Scibilia",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5QlIiaH",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-belmontbruins-com-7316",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Belmont vs. Drake",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-lipscombsports-com-13544",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Lipscomb vs. West Florida",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-1AeZZbUGknvy7Ou",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-orion-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AeZZbUGknvy7Ou",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_GxLR9gO",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Neko Case",
+      "officialTitle": "Neko Case & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Neko Case",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GxLR9gO",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_kURtCyM",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "HARDY",
+      "officialTitle": "HARDY Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "HARDY",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kURtCyM",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv17fZ_8Gkw2WSEl",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Evansville Thunderbolts vs. Huntsville Havoc",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-center-evansville"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Evansville Thunderbolts",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8Gkw2WSEl"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7Of0v",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0v",
+      "occasionFacts": {
+        "run": 8
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_oKkqrTu",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "show",
+      "title": "NIGHTLY",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "NIGHTLY",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_oKkqrTu",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5viZ_G6SZNnJ",
+      "metroId": "nashville",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zach Top",
+      "officialTitle": "Zach Top: Cold Beer & Country Music Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Zach Top",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hLWV",
+        "K8vZ9174bB7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G6SZNnJ",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-predators-401892616",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Predators vs. Lightning",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "lightning",
+        "awayOpponent": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17313,
+        "low": 17313,
+        "high": 17361,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-belmontbruins-com-7317",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Belmont vs. UIC",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-lipscombsports-com-13545",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Lipscomb vs. Queens",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-lipscombsports-com-13603",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lipscomb vs. North Florida",
+      "place": {
+        "type": "venue",
+        "venueId": "lipscomb-soccer-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-1AOZkf_Gke-we5K",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Huntsville Havoc Vs. Macon Mayhem",
+      "place": {
+        "type": "venue",
+        "venueId": "propst-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Huntsville Havoc",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AOZkf_Gke-we5K",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7Of0d",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0d",
+      "occasionFacts": {
+        "run": 9
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_kSpxNLj",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Beck",
+      "officialTitle": "BECK: RIDE LONESOME TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Beck",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kSpxNLj",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7J3_Y",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Thundercat",
+      "place": {
+        "type": "venue",
+        "venueId": "marathon-music-works"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Thundercat",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J3_Y",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5viZ_KNTIekc",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "show",
+      "title": "QDP",
+      "officialTitle": "Boo!DP: A QDP Halloween",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "QDP",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_KNTIekc",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-nashville-sc-761920",
+      "metroId": "nashville",
+      "date": "2026-11-01",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Nashville SC vs. Red Bull NY",
+      "place": {
+        "type": "venue",
+        "venueId": "geodis-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nashville-sc",
+        "away": "red-bulls",
+        "awayOpponent": "red-bull-ny"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 25413,
+        "low": 24080,
+        "high": 26143,
+        "fromCrowds": true,
+        "games": 32,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 32 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5viZbU4HQfyA",
+      "metroId": "nashville",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZbU4HQfyA",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5viZ_G9KpgZc",
+      "metroId": "nashville",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Longest Johns",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "The Longest Johns",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G9KpgZc",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5viZ_kwfj179",
+      "metroId": "nashville",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - The Multiplayer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kwfj179",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-mtsu-mbb-401928619",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "10:30",
+      "kind": "game",
+      "title": "MTSU vs. Fisk",
+      "place": {
+        "type": "venue",
+        "venueId": "murphy-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mtsu-mbb",
+        "away": "fisk",
+        "awayOpponent": "fisk"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 7501,
+        "low": 5503,
+        "high": 7657,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-vanderbilt-wbb-401916067",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Vanderbilt vs. Lipscomb",
+      "place": {
+        "type": "venue",
+        "venueId": "vanderbilt-memorial-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "vanderbilt-wbb",
+        "away": "lipscomb-wbb",
+        "awayOpponent": "lipscomb"
+      },
+      "rank": {
+        "home": 8
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-tsu-wbb-401929300",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Tennessee St vs. Toccoa Falls",
+      "place": {
+        "type": "venue",
+        "venueId": "gentry-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tsu-wbb",
+        "away": "toccoa-falls",
+        "awayOpponent": "toccoa-falls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 267,
+        "low": 251,
+        "high": 435,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-vanderbilt-mbb-401921104",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Vanderbilt vs. Bellarmine",
+      "place": {
+        "type": "venue",
+        "venueId": "vanderbilt-memorial-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "vanderbilt-mbb",
+        "away": "bellarmine",
+        "awayOpponent": "bellarmine"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 5506,
+        "low": 5259,
+        "high": 6042,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-belmont-mbb-401920758",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Belmont vs. S Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "belmont-mbb",
+        "away": "s-indiana",
+        "awayOpponent": "s-indiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1716,
+        "low": 1716,
+        "high": 1960,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-mtsu-wbb-401921232",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "MTSU vs. Saint Louis",
+      "place": {
+        "type": "venue",
+        "venueId": "murphy-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mtsu-wbb",
+        "away": "slu-wbb",
+        "awayOpponent": "saint-louis"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 3434,
+        "low": 3072,
+        "high": 3627,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5viZ_5SnPTa0",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "VOILÀ",
+      "officialTitle": "VOILÀ Presents: Moonbloom",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "VOILÀ",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5SnPTa0",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5viZ_fh1FSbF",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Austin Peay Men's Basketball v Lane",
+      "place": {
+        "type": "venue",
+        "venueId": "fandm-bank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Austin Peay Governors Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_fh1FSbF"
+    },
+    {
+      "id": "2026-11-02-tm-vv17fZ_KGkwzB9Wk",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "University of Evansville Aces Mens Basketball vs. IU KOKOMO MEN'S BASKETBALL",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-center-evansville"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Evansville Aces Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_KGkwzB9Wk",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5viZ_2XpZbXL",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "nashville-municipal-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174s67"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2XpZbXL",
+      "expectedDraw": {
+        "count": 5529,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5viZ_ue4Kpb4",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Wednesday",
+      "officialTitle": "Bitch Cabal feat. Wednesday & Mannequin Pussy",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Wednesday",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_ue4Kpb4",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-predators-401892642",
+      "metroId": "nashville",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Predators vs. Hurricanes",
+      "broadcast": "CARNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "hurricanes",
+        "awayOpponent": "hurricanes"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17210,
+        "low": 17210,
+        "high": 17217,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5viZ_8Qff4Y-",
+      "metroId": "nashville",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sugarland",
+      "place": {
+        "type": "venue",
+        "venueId": "fandm-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sugarland",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175cBV",
+        "K8vZ917jJr7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_8Qff4Y-",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5viZ_aLZuaCL",
+      "metroId": "nashville",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Saosin",
+      "officialTitle": "Saosin: 20 Years of Self-Titled",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Saosin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_aLZuaCL",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7Of07",
+      "metroId": "nashville",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of07",
+      "occasionFacts": {
+        "run": 11
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-vanderbilt-wbb-401913884",
+      "metroId": "nashville",
+      "date": "2026-11-04",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Vanderbilt vs. Queens",
+      "place": {
+        "type": "venue",
+        "venueId": "vanderbilt-memorial-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "vanderbilt-wbb",
+        "away": "queens",
+        "awayOpponent": "queens"
+      },
+      "rank": {
+        "home": 8
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5viZ_19bPahf",
+      "metroId": "nashville",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Madeon",
+      "officialTitle": "Madeon presents Victory Live",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Madeon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_19bPahf",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5viZ_kmjzGZH",
+      "metroId": "nashville",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "GloRilla",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "GloRilla",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kmjzGZH",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7PI-3",
+      "metroId": "nashville",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dwight Yoakam",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dwight Yoakam",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PI-3",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-vanderbilt-mbb-401909726",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Vanderbilt vs. Wake Forest",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "vanderbilt-memorial-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "vanderbilt-mbb",
+        "away": "wake-forest",
+        "awayOpponent": "wake-forest"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5667,
+        "low": 5516,
+        "high": 5673,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_G5UK6TF",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Elmo's Got the Moves",
+      "place": {
+        "type": "venue",
+        "venueId": "fandm-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Sesame Street Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_G5UK6TF"
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_GNrdC8Q",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Elmo's Got The Moves - Photo Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "fandm-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Elmo's Got The Moves - Photo Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_GNrdC8Q"
+    },
+    {
+      "id": "2026-11-05-espn-belmont-mbb-401920759",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Belmont vs. Centre",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "belmont-mbb",
+        "away": "centre",
+        "awayOpponent": "centre"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1537,
+        "low": 1405,
+        "high": 2835,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-tsu-mbb-401920765",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tennessee St vs. East West",
+      "place": {
+        "type": "venue",
+        "venueId": "gentry-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tsu-mbb",
+        "away": "east-west",
+        "awayOpponent": "east-west"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 917,
+        "low": 540,
+        "high": 1185,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_oS71hut",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bailey Zimmerman",
+      "place": {
+        "type": "venue",
+        "venueId": "murphy-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Bailey Zimmerman",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Q0Zf",
+        "K8vZ917GnEV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_oS71hut",
+      "expectedDraw": {
+        "count": 6727,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7Of0k",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0k",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_8VKsnaH",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917hhq0",
+        "K8vZ917Cz1V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_8VKsnaH",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_kwXBL10",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Daniel Sloss: BITTER  (Brand New Tour!)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kwXBL10"
+    },
+    {
+      "id": "2026-11-05-tm-G5viZ_oKr1eBy",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_oKr1eBy",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7PI-o",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dwight Yoakam",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dwight Yoakam",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PI-o",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-sa-tsutigers-com-6323",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Tennessee State vs. Southern Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "kean-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_fh11dbK",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Austin Peay Women's Basketball v Southeastern Baptist",
+      "place": {
+        "type": "venue",
+        "venueId": "fandm-bank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Austin Peay Governors Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_fh11dbK"
+    },
+    {
+      "id": "2026-11-06-tm-1AOZkf_Gke-S35b",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Huntsville Havoc Vs. Macon Mayhem",
+      "place": {
+        "type": "venue",
+        "venueId": "propst-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Huntsville Havoc",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AOZkf_Gke-S35b",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1fZ_1IPfLre",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "TOBYMAC",
+      "officialTitle": "TOBYMAC, THIRD DAY, CHRIS TOMLIN",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-center-evansville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "TOBYMAC",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Av7",
+        "K8vZ9171O9f",
+        "K8vZ9175WR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1IPfLre",
+      "expectedDraw": {
+        "count": 11000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Of06",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of06",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-belmont-wbb-401913863",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Belmont vs. South Florida",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "belmont-wbb",
+        "away": "usf-wbb",
+        "awayOpponent": "south-florida"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 883,
+        "low": 818,
+        "high": 933,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_2ZnWmQM",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dave Matthews Band",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dave Matthews Band",
+      "act": true,
+      "performerIds": [
+        "K8vZ91713NV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2ZnWmQM",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_kl4gkj_",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jo Dee Messina",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Jo Dee Messina",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_kl4gkj_",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5viZ_2MfZoGK",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Punchis Banda Rave",
+      "officialTitle": "Punchis! Punchis! Banda Rave",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Punchis Banda Rave",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_2MfZoGK",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-predators-401892663",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Predators vs. Blues",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "predators",
+        "away": "blues",
+        "awayOpponent": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17159,
+        "low": 17159,
+        "high": 17303,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-tsutigers-com-6324",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Tennessee State vs. Southern Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "kean-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-vvG1bZ_2X39yoA",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Murray State Racers College Football vs. Youngstown State Penguin Football",
+      "place": {
+        "type": "venue",
+        "venueId": "roy-stewart-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Murray State Racers College Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2X39yoA"
+    },
+    {
+      "id": "2026-11-07-espn-lipscomb-wbb-401916069",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "13:30",
+      "kind": "game",
+      "title": "Lipscomb vs. Carolina U",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lipscomb-wbb",
+        "away": "carolina-u",
+        "awayOpponent": "carolina-u"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 327,
+        "low": 280,
+        "high": 457,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-mtsu-football-401871076",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "14:30",
+      "kind": "game",
+      "title": "MTSU vs. Western KY",
+      "place": {
+        "type": "venue",
+        "venueId": "floyd-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "mtsu-football",
+        "away": "western-ky",
+        "awayOpponent": "western-ky"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11254,
+        "low": 9934,
+        "high": 12665,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-tsu-football-401868200",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Tennessee St vs. SE Missouri",
+      "place": {
+        "type": "venue",
+        "venueId": "nissan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tsu-football",
+        "away": "se-missouri",
+        "awayOpponent": "se-missouri"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1296,
+        "low": 1136,
+        "high": 1587,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_1hQmnh8",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Austin Peay Governors vs. Eastern Kentucky Colonels",
+      "place": {
+        "type": "venue",
+        "venueId": "fortera-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Austin Peay Governors Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1hQmnh8",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-espn-lipscomb-mbb-401920703",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Lipscomb vs. SIUE",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "lipscomb-mbb",
+        "away": "siue-mbb",
+        "awayOpponent": "siue"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2179,
+        "low": 2099,
+        "high": 2247,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_5nO0BWC",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Motionless In White",
+      "officialTitle": "Motionless In White: The Sweat and Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Motionless In White",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5nO0BWC",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_uxxBzXZ",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UE Mens Basketball v. USI Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-center-evansville"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Evansville Aces Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_uxxBzXZ",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7Of0F",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Of0F",
+      "occasionFacts": {
+        "run": 10
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZvJa",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Knox",
+      "place": {
+        "type": "venue",
+        "venueId": "marathon-music-works"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Knox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZvJa"
+    },
+    {
+      "id": "2026-11-07-tm-G5viZ_5SxzchM",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Julia Jacklin",
+      "officialTitle": "Julia Jacklin - North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Julia Jacklin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_5SxzchM",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-6eA",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Craig Morgan",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Craig Morgan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-6eA",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-belmont-wbb-401919323",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Belmont vs. Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "curb-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "belmont-wbb",
+        "away": "columbia",
+        "awayOpponent": "columbia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1009,
+        "low": 863,
+        "high": 1170,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5viZ_ahbIA-M",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "GWAR",
+      "place": {
+        "type": "venue",
+        "venueId": "brooklyn-bowl-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "GWAR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_ahbIA-M",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7r4QF",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Grand Ole Opry",
+      "officialTitle": "Grand Ole Opry: OPRY 100",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Grand Ole Opry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7r4QF",
+      "occasionFacts": {
+        "run": 9
+      },
+      "expectedDraw": {
+        "count": 4000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5viZ_a9evCAo",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Milk Carton Kids",
+      "officialTitle": "The Milk Carton Kids Fall Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ryman-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Milk Carton Kids",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_a9evCAo",
+      "expectedDraw": {
+        "count": 2362,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5viZ_1m1E6Yu",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fetty Wap",
+      "officialTitle": "Fetty Wap: Nostalgia Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-truth-nashville"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Fetty Wap",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5viZ_1m1E6Yu",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-espn-vanderbilt-wbb-401918828",
+      "metroId": "nashville",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Vanderbilt vs. Morehead St",
+      "place": {
+        "type": "venue",
+        "venueId": "vanderbilt-memorial-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "vanderbilt-wbb",
+        "away": "morehead-st",
+        "awayOpponent": "morehead-st"
+      },
+      "rank": {
+        "home": 8
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-09-espn-tsu-mbb-401920766",
+      "metroId": "nashville",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tennessee St vs. Fisk",
+      "place": {
+        "type": "venue",
+        "venueId": "gentry-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tsu-mbb",
+        "away": "fisk",
+        "awayOpponent": "fisk"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 917,
+        "low": 540,
+        "high": 1185,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-Z7r9jZ1AAveJ7",
+      "metroId": "nashville",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Don't Look Ethel! A Salute to the Musical Genius of Ray Stevens",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-ole-opry-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Don't Look Ethel!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAveJ7"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-26-tm-G5viZ_1MfI-bC",
+      "date": "2026-10-26",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAeox9",
+      "date": "2026-10-26",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-26-tm-Z7r9jZ1AAZUa-",
+      "date": "2026-10-26",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-10-27-espn-predators-401892589",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1A7Ofx8",
+      "date": "2026-10-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-27-tm-Z7r9jZ1AAZUuM",
+      "date": "2026-10-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-mtsu-football-401871058",
+      "date": "2026-10-28",
+      "start": "18:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Union at Nashville SC 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10812,
+        "low": 10394,
+        "high": 10812
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-lipscombsports-com-13723",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_FJa3nQ8",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Union at Nashville SC 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1A7Ofxb",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-28-espn-nashville-sc-761914",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour and Kennesaw St at MTSU (FB) 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 27165,
+        "low": 26954,
+        "high": 27745
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-Z7r9jZ1AAZFa6",
+      "date": "2026-10-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-G5viZ_1Kk88nN",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vv17fZ_KGkwzy6H7",
+      "date": "2026-10-29",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-29-espn-predators-401892605",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17142,
+        "low": 17142,
+        "high": 17142
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_263jPMd",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_kURICyP",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7Of0Z",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5viZ_5QlIiaH",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-belmontbruins-com-7316",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-lipscombsports-com-13544",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1AeZZbUGknvy7Ou",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_GxLR9gO",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_kURtCyM",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv17fZ_8Gkw2WSEl",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7Of0v",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_oKkqrTu",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5viZ_G6SZNnJ",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-predators-401892616",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17313,
+        "low": 17313,
+        "high": 17361
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-belmontbruins-com-7317",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-lipscombsports-com-13545",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-lipscombsports-com-13603",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AOZkf_Gke-we5K",
+      "date": "2026-10-31",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7Of0d",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_kSpxNLj",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7J3_Y",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5viZ_KNTIekc",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-nashville-sc-761920",
+      "date": "2026-11-01",
+      "start": "15:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Three Days Grace 2.1 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 25413,
+        "low": 24080,
+        "high": 26143
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5viZbU4HQfyA",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Red Bull NY at Nashville SC 2.1 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5viZ_G9KpgZc",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5viZ_kwfj179",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-mtsu-mbb-401928619",
+      "date": "2026-11-02",
+      "start": "10:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7501,
+        "low": 5503,
+        "high": 7657
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-vanderbilt-wbb-401916067",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-tsu-wbb-401929300",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 267,
+        "low": 251,
+        "high": 435
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-vanderbilt-mbb-401921104",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Austin Peay Men's Basketball v… 41 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5506,
+        "low": 5259,
+        "high": 6042
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-belmont-mbb-401920758",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1716,
+        "low": 1716,
+        "high": 1960
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-mtsu-wbb-401921232",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3434,
+        "low": 3072,
+        "high": 3627
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5viZ_5SnPTa0",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5viZ_fh1FSbF",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Bellarmine at Vanderbilt (MBB · Home Opener) 41 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vv17fZ_KGkwzB9Wk",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-G5viZ_2XpZbXL",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "Austin Peay Men's Basketball v… and Bellarmine at Vanderbilt (MBB · Home Opener) 41 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5529
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5viZ_ue4Kpb4",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-predators-401892642",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Sugarland 41 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17210,
+        "low": 17210,
+        "high": 17217
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5viZ_8Qff4Y-",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Hurricanes at Predators 41 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5viZ_aLZuaCL",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7Of07",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-vanderbilt-wbb-401913884",
+      "date": "2026-11-04",
+      "start": "18:30",
+      "draw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5viZ_19bPahf",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5viZ_kmjzGZH",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7PI-3",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-vanderbilt-mbb-401909726",
+      "date": "2026-11-05",
+      "start": "17:00",
+      "read": {
+        "rating": 9.7,
+        "friction": "Moderate",
+        "why": "Jonas Brothers 1.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5667,
+        "low": 5516,
+        "high": 5673
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_G5UK6TF",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 9.7,
+        "friction": "Moderate",
+        "why": "Jonas Brothers 41 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_GNrdC8Q",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 9.7,
+        "friction": "Moderate",
+        "why": "Jonas Brothers 41 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-belmont-mbb-401920759",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1537,
+        "low": 1405,
+        "high": 2835
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-tsu-mbb-401920765",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 917,
+        "low": 540,
+        "high": 1185
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_oS71hut",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 9.7,
+        "friction": "Moderate",
+        "why": "Jonas Brothers 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6727
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7Of0k",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_8VKsnaH",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 9.7,
+        "friction": "Moderate",
+        "why": "Bailey Zimmerman and Elmo's Got the Moves 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_kwXBL10",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5viZ_oKr1eBy",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7PI-o",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 9.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-tsutigers-com-6323",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_fh11dbK",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Dave Matthews Band 41 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1AOZkf_Gke-S35b",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1fZ_1IPfLre",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "draw": {
+        "count": 11000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Of06",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-belmont-wbb-401913863",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 883,
+        "low": 818,
+        "high": 933
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_2ZnWmQM",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Austin Peay Women's Basketball… 41 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_kl4gkj_",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5viZ_2MfZoGK",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-predators-401892663",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Western KY at MTSU (FB) 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17159,
+        "low": 17159,
+        "high": 17303
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-tsutigers-com-6324",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1bZ_2X39yoA",
+      "date": "2026-11-07",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-07-espn-lipscomb-wbb-401916069",
+      "date": "2026-11-07",
+      "start": "13:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 327,
+        "low": 280,
+        "high": 457
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-mtsu-football-401871076",
+      "date": "2026-11-07",
+      "start": "14:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Eastern Kentucky Colonels at Austin Peay Governors 72 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11254,
+        "low": 9934,
+        "high": 12665
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-tsu-football-401868200",
+      "date": "2026-11-07",
+      "start": "14:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1296,
+        "low": 1136,
+        "high": 1587
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_1hQmnh8",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Western KY at MTSU (FB) 72 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-lipscomb-mbb-401920703",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2179,
+        "low": 2099,
+        "high": 2247
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_5nO0BWC",
+      "date": "2026-11-07",
+      "start": "18:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_uxxBzXZ",
+      "date": "2026-11-07",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7Of0F",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZvJa",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5viZ_5SxzchM",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-6eA",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-belmont-wbb-401919323",
+      "date": "2026-11-08",
+      "start": "14:30",
+      "draw": {
+        "count": 1009,
+        "low": 863,
+        "high": 1170
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5viZ_ahbIA-M",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7r4QF",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "draw": {
+        "count": 4000
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5viZ_a9evCAo",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "draw": {
+        "count": 2362
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5viZ_1m1E6Yu",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-vanderbilt-wbb-401918828",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "draw": {
+        "count": 3241,
+        "low": 2661,
+        "high": 3577
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-tsu-mbb-401920766",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "draw": {
+        "count": 917,
+        "low": 540,
+        "high": 1185
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-Z7r9jZ1AAveJ7",
+      "date": "2026-11-09",
+      "start": "19:00"
+    }
+  ]
+}

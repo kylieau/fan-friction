@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-kc-current-401854032",
+      "metroId": "kansas-city",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cpkc-stadium",
+      "homeTeamId": "kc-current",
+      "home": {
+        "name": "Current",
+        "score": 2
+      },
+      "away": {
+        "name": "Spirit",
+        "score": 1
+      },
+      "attendance": 18000,
+      "capturedAt": "2026-10-26T15:13:18.710Z"
+    }
+  ]
+}

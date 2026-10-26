@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-vancouver-canucks-401892581",
+      "metroId": "vancouver",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 4
+      },
+      "attendance": 17560,
+      "capturedAt": "2026-10-26T15:13:17.615Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-seahawks-401873022",
+      "metroId": "seattle",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "seahawks",
+      "home": {
+        "name": "Seahawks",
+        "score": 20
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 3
+      },
+      "attendance": 68740,
+      "capturedAt": "2026-10-26T15:13:11.114Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "20:22"
+    }
+  ]
+}

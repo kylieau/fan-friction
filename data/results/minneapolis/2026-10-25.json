@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-timberwolves-401909864",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 117
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 94
+      },
+      "attendance": 18978,
+      "capturedAt": "2026-10-26T15:13:19.955Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:14"
+    },
+    {
+      "eventId": "2026-10-25-espn-vikings-401873014",
+      "metroId": "minneapolis",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "us-bank-stadium",
+      "homeTeamId": "vikings",
+      "home": {
+        "name": "Vikings",
+        "score": 16
+      },
+      "away": {
+        "name": "Colts",
+        "score": 10
+      },
+      "attendance": 66934,
+      "capturedAt": "2026-10-26T15:13:19.955Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-falcons-401873017",
+      "metroId": "atlanta",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "falcons",
+      "home": {
+        "name": "Falcons",
+        "score": 29
+      },
+      "away": {
+        "name": "49ers",
+        "score": 20
+      },
+      "attendance": 72165,
+      "capturedAt": "2026-10-26T15:13:12.218Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

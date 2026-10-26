@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-texans-401873016",
+      "metroId": "houston",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reliant-stadium",
+      "homeTeamId": "texans",
+      "home": {
+        "name": "Texans",
+        "score": 21
+      },
+      "away": {
+        "name": "Giants",
+        "score": 27
+      },
+      "attendance": 71052,
+      "note": "OT",
+      "capturedAt": "2026-10-26T15:13:19.215Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

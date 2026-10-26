@@ -1,0 +1,1299 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "metroName": "Kansas City",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-10-26",
+  "capturedAt": "2026-10-26T15:11:25.915Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-26",
+    "through": "2026-11-09"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 33
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 4
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-28-tm-vvG1bZ_26eCKED",
+      "metroId": "kansas-city",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ryan Bingham",
+      "officialTitle": "Ryan Bingham and The Texas Gentlemen - Still Gettin' Away With It Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ryan Bingham",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_26eCKED",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-28-tm-vvG1bZ_ueFy4JI",
+      "metroId": "kansas-city",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brand New",
+      "act": true,
+      "performerIds": [
+        "K8vZ91751C0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_ueFy4JI",
+      "expectedDraw": {
+        "count": 3306,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7x9ZY",
+      "metroId": "kansas-city",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kansas Jayhawks Womens Volleyball vs. Kansas State Wildcats Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Kansas Jayhawks Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9ZY"
+    },
+    {
+      "id": "2026-10-30-tm-vvG1bZ_uLNqs8t",
+      "metroId": "kansas-city",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Zack Fox",
+      "officialTitle": "Zack Fox (DJ Set)",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Zack Fox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_uLNqs8t",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-sporting-kc-761928",
+      "metroId": "kansas-city",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Sporting KC vs. FC Dallas",
+      "place": {
+        "type": "venue",
+        "venueId": "sporting-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "sporting-kc",
+        "away": "fc-dallas",
+        "awayOpponent": "dallas"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16373,
+        "low": 15866,
+        "high": 17343,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 23 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1kbZ_FJFG7WETj",
+      "metroId": "kansas-city",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917Qs-V",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kbZ_FJFG7WETj",
+      "expectedDraw": {
+        "count": 10974,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AkZkGAGkeRQ3Bi",
+      "metroId": "kansas-city",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Neko Case",
+      "officialTitle": "Neko Case - Neon Grey Midnight Green Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Neko Case",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkGAGkeRQ3Bi",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7071v",
+      "metroId": "kansas-city",
+      "date": "2026-11-01",
+      "start": null,
+      "kind": "game",
+      "title": "Missouri Tigers Womens Volleyball vs. Tennessee Vols Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hearnes-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Missouri Tigers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7071v",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-02-sa-kcroos-com-8940",
+      "metroId": "kansas-city",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Kansas City vs. Baker",
+      "place": {
+        "type": "venue",
+        "venueId": "swinney-recreation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "kc-roos-wbb",
+        "away": "Baker",
+        "awayOpponent": "baker"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AA7eb_",
+      "metroId": "kansas-city",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Kansas State Wildcats Womens Basketball vs. Wichita State Shockers Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "bramlage-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas State Wildcats Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7eb_",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7P7G3",
+      "metroId": "kansas-city",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Kansas Jayhawks Mens Basketball vs. Fordham Rams Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Kansas Jayhawks Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P7G3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1A7Je-d",
+      "metroId": "kansas-city",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Kansas Jayhawks Womens Basketball vs. Nebraska Omaha Mavericks Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas Jayhawks Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Je-d",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv1kbZ_4v_G7meZB",
+      "metroId": "kansas-city",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "2026-27 Mizzou Men's Basketball v Cleveland St.",
+      "place": {
+        "type": "venue",
+        "venueId": "mizzou-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Mizzou Tigers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kbZ_4v_G7meZB",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv17bZ_8GkBfFbsf",
+      "metroId": "kansas-city",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917hhq0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17bZ_8GkBfFbsf",
+      "expectedDraw": {
+        "count": 10974,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vvG1bZ_GSFTUwT",
+      "metroId": "kansas-city",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daughtry",
+      "officialTitle": "Daughtry - 20 Years Unplugged Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Daughtry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_GSFTUwT",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1AAZUA3",
+      "metroId": "kansas-city",
+      "date": "2026-11-03",
+      "start": null,
+      "kind": "game",
+      "title": "Kansas State Wildcats Mens Basketball vs. South Dakota State Jackrabbits Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "bramlage-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas State Wildcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUA3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG1bZ_G65DlkG",
+      "metroId": "kansas-city",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "WAGE WAR - EMERGENCY BROADCAST TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Wage War",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_G65DlkG",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AA7ebO",
+      "metroId": "kansas-city",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Kansas State Wildcats Womens Basketball vs. Southern Indiana Screaming Eagles Women Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "bramlage-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas State Wildcats Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7ebO",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-05-sa-kcroos-com-8838",
+      "metroId": "kansas-city",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kansas City vs. South Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "swinney-recreation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-vvG1bZ_1xTh3VU",
+      "metroId": "kansas-city",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "TOBYMAC",
+      "officialTitle": "TOBYMAC, THIRD DAY, CHRIS TOMLIN",
+      "place": {
+        "type": "venue",
+        "venueId": "mizzou-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "TOBYMAC",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Av7",
+        "K8vZ9171O9f",
+        "K8vZ9175WR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_1xTh3VU",
+      "expectedDraw": {
+        "count": 8585,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1bZ_GAsExYv",
+      "metroId": "kansas-city",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daniel Donato",
+      "officialTitle": "Daniel Donato's Cosmic Country",
+      "place": {
+        "type": "venue",
+        "venueId": "uptown-theater-kc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Daniel Donato",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_GAsExYv",
+      "expectedDraw": {
+        "count": 2400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7Je-k",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Kansas Jayhawks Womens Basketball vs. Drake Bulldogs Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas Jayhawks Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Je-k",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-sa-kcroos-com-8941",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Kansas City vs. Wichita State",
+      "place": {
+        "type": "venue",
+        "venueId": "municipal-auditorium-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "kc-roos-wbb",
+        "away": "Wichita State",
+        "awayOpponent": "wichita-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-vvG1bZ_2Th59y8",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Kansas City Mavericks vs Tahoe Knight Monsters",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kansas City Mavericks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2Th59y8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7x_Zb",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Missouri Tigers Womens Volleyball vs. Texas Longhorns Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hearnes-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Missouri Tigers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x_Zb",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZUAK",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Kansas State Wildcats Mens Basketball vs. CSUN Matadors Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "bramlage-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas State Wildcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZUAK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZV_7",
+      "metroId": "kansas-city",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Kansas Jayhawks Mens Basketball vs. Middle Tennessee State Blue Raiders Mens Basketbal",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Kansas Jayhawks Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZV_7",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1bZ_GxhdkcW",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "start": "09:00",
+      "kind": "special",
+      "title": "2026 KC Pet Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "hale-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "2026 KC Pet Fest",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_GxhdkcW"
+    },
+    {
+      "id": "2026-11-07-sa-kcroos-com-8839",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Kansas City vs. South Dakota State",
+      "place": {
+        "type": "venue",
+        "venueId": "swinney-recreation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZIe3",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Pittsburg State Gorillas Football vs. University of Central Missouri Mules Football",
+      "place": {
+        "type": "venue",
+        "venueId": "carnie-smith-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Pittsburg State Gorillas Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZIe3"
+    },
+    {
+      "id": "2026-11-07-tm-vvG1bZ_2TLtzUu",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Kansas City Mavericks vs Tahoe Knight Monsters",
+      "place": {
+        "type": "venue",
+        "venueId": "cable-dahmer-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kansas City Mavericks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2TLtzUu",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1bZ_1EqFSL0",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "2026 Mizzou Football v Texas",
+      "place": {
+        "type": "venue",
+        "venueId": "faurot-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Mizzou Tigers Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_1EqFSL0"
+    },
+    {
+      "id": "2026-11-08-espn-chiefs-401873045",
+      "metroId": "kansas-city",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Chiefs vs. Jets",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "arrowhead-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "chiefs",
+        "away": "ny-jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 73497,
+        "low": 73481,
+        "high": 73537,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 11 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AA7eb-",
+      "metroId": "kansas-city",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Kansas State Wildcats Womens Basketball vs. Texas Rio Grande Valley Vaqueros Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "bramlage-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Kansas State Wildcats Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7eb-",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7071e",
+      "metroId": "kansas-city",
+      "date": "2026-11-08",
+      "start": null,
+      "kind": "game",
+      "title": "Missouri Tigers Womens Volleyball vs. Texas A&M Aggies Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hearnes-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Missouri Tigers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7071e",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-09-tm-vv1AkZkuJGkeirWAr",
+      "metroId": "kansas-city",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkuJGkeirWAr",
+      "expectedDraw": {
+        "count": 10974,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-vv1kbZ_4v_G7ReZW",
+      "metroId": "kansas-city",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "2026-27 Mizzou Men's Basketball v SIUE",
+      "place": {
+        "type": "venue",
+        "venueId": "mizzou-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Mizzou Tigers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kbZ_4v_G7ReZW",
+      "occasionFacts": {
+        "run": 2
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-28-tm-vvG1bZ_26eCKED",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-vvG1bZ_ueFy4JI",
+      "date": "2026-10-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 3306
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7x9ZY",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1bZ_uLNqs8t",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-sporting-kc-761928",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Sombr · You Are The Reason Tour 13 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16373,
+        "low": 15866,
+        "high": 17343
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1kbZ_FJFG7WETj",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "FC Dallas at Sporting KC 13 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10974
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AkZkGAGkeRQ3Bi",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7071v",
+      "date": "2026-11-01",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-02-sa-kcroos-com-8940",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AA7eb_",
+      "date": "2026-11-02",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7P7G3",
+      "date": "2026-11-02",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1A7Je-d",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Jonas Brothers 37 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vv1kbZ_4v_G7meZB",
+      "date": "2026-11-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-03-tm-vv17bZ_8GkBfFbsf",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Nebraska Omaha Mavericks Womens Basketball at Kansas Jayhawks Womens Basketball 37 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10974
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG1bZ_GSFTUwT",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1AAZUA3",
+      "date": "2026-11-03",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG1bZ_G65DlkG",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AA7ebO",
+      "date": "2026-11-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-05-sa-kcroos-com-8838",
+      "date": "2026-11-05",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1bZ_1xTh3VU",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "draw": {
+        "count": 8585
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1bZ_GAsExYv",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "draw": {
+        "count": 2400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7Je-k",
+      "date": "2026-11-06",
+      "start": "11:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-kcroos-com-8941",
+      "date": "2026-11-06",
+      "start": "17:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Moderate",
+        "why": "Middle Tennessee State Blue Raiders Mens Basketbal at Kansas Jayhawks Mens Basketball 37 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1bZ_2Th59y8",
+      "date": "2026-11-06",
+      "start": "19:05",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7x_Zb",
+      "date": "2026-11-06",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZUAK",
+      "date": "2026-11-06",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZV_7",
+      "date": "2026-11-06",
+      "start": null,
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Wichita State at Kansas City (WBB) 37 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1bZ_GxhdkcW",
+      "date": "2026-11-07",
+      "start": "09:00"
+    },
+    {
+      "eventId": "2026-11-07-sa-kcroos-com-8839",
+      "date": "2026-11-07",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZIe3",
+      "date": "2026-11-07",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1bZ_2TLtzUu",
+      "date": "2026-11-07",
+      "start": "18:05"
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1bZ_1EqFSL0",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-08-espn-chiefs-401873045",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 73497,
+        "low": 73481,
+        "high": 73537
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AA7eb-",
+      "date": "2026-11-08",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7071e",
+      "date": "2026-11-08",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-09-tm-vv1AkZkuJGkeirWAr",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10974
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-vv1kbZ_4v_G7ReZW",
+      "date": "2026-11-09",
+      "start": "19:00"
+    }
+  ]
+}

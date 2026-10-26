@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-dallas-stars-401892579",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 6
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-10-26T15:13:13.224Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
+    }
+  ]
+}

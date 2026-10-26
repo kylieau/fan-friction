@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-sacramento-kings-401909867",
+      "metroId": "sacramento",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 112
+      },
+      "away": {
+        "name": "Memphis Grizzlies",
+        "score": 123
+      },
+      "attendance": 13076,
+      "capturedAt": "2026-10-26T15:13:17.945Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

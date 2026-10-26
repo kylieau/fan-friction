@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-predators-401892580",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 6
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 2
+      },
+      "attendance": 17191,
+      "capturedAt": "2026-10-26T15:13:16.682Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-10-25-espn-titans-401873013",
+      "metroId": "nashville",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "titans",
+      "home": {
+        "name": "Titans",
+        "score": 24
+      },
+      "away": {
+        "name": "Browns",
+        "score": 27
+      },
+      "attendance": 63710,
+      "capturedAt": "2026-10-26T15:13:16.682Z",
+      "duration": {
+        "minutes": 184,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

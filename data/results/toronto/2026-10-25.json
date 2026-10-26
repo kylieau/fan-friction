@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-ht-marlies-1029204",
+      "metroId": "toronto",
+      "date": "2026-10-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "coca-cola-coliseum",
+      "homeTeamId": "marlies",
+      "home": {
+        "name": "Marlies",
+        "score": 0
+      },
+      "away": {
+        "name": "IceHogs",
+        "score": 3
+      },
+      "attendance": 4315,
+      "capturedAt": "2026-10-26T15:13:19.694Z"
+    }
+  ]
+}

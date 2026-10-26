@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-knicks-401909863",
+      "metroId": "new-york",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 102
+      },
+      "away": {
+        "name": "Magic",
+        "score": 111
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-10-26T15:13:11.700Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    },
+    {
+      "eventId": "2026-10-25-espn-nets-401909862",
+      "metroId": "new-york",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "barclays-center",
+      "homeTeamId": "nets",
+      "home": {
+        "name": "Nets",
+        "score": 109
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 136
+      },
+      "attendance": 17548,
+      "capturedAt": "2026-10-26T15:13:11.700Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "18:10"
+    },
+    {
+      "eventId": "2026-10-25-espn-ny-jets-401873015",
+      "metroId": "new-york",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-jets",
+      "home": {
+        "name": "Jets",
+        "score": 25
+      },
+      "away": {
+        "name": "Dolphins",
+        "score": 28
+      },
+      "attendance": 72456,
+      "capturedAt": "2026-10-26T15:13:11.700Z",
+      "duration": {
+        "minutes": 175,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

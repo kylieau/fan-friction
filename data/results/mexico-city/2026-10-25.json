@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-espn-club-america-401876922",
+      "metroId": "mexico-city",
+      "date": "2026-10-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "club-america",
+      "home": {
+        "name": "América",
+        "score": 1
+      },
+      "away": {
+        "name": "Pachuca",
+        "score": 2
+      },
+      "capturedAt": "2026-10-26T15:13:18.236Z"
+    }
+  ]
+}
