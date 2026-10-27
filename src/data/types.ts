@@ -282,7 +282,8 @@ export interface CrowdEvent {
     games?: number;
     seasons?: string;
     /** Whose crowds: this team's here, this team's and the league's, the league's, or just the building (C031). */
-    basis?: 'team' | 'blend' | 'league' | 'building' | 'popup';
+    /** 'published': a show's figure from a published fill or run average (specialDraw, Oct 26, 2026); its note is the source sentence. */
+    basis?: 'team' | 'blend' | 'league' | 'building' | 'popup' | 'published';
     /** A pop-up's sizing (build 5, item 1): the share of stated capacity used, the capacity, and why. */
     popup?: { share: number; capacity: number; soldOut: boolean };
   };

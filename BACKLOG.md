@@ -20,7 +20,9 @@ Built Oct 26, 2026 (Kylie: "let's aim for B"): the 39 Broadway houses not on fil
 - **Broadway rename dates.** The Cort (James Earl Jones), Brooks Atkinson (Lena Horne), Helen Hayes (Hayes) and American Airlines (Todd Haimes) names are aliases only; add dated names once a source gives the days.
 - **Official seat counts.** The League's theatre pages would make the counts official; Kylie can paste them if wanted.
 - **"Up to N" for every other show, and the unknown-size switch rename (M35c):** wait for the college attendance answer, then one mock.
-- **Ticketmaster paging:** a by-id query over 1,000 results now splits its window in two (New York's Broadway houses reach about 870 a window); watch the New York page count in the nightly log.
+- **Racing and rodeo rooms get no Ticketmaster sports listings (question for Kylie; Codex review, Oct 26, 2026).** A Sports listing is kept only at a room on the hand list `SPORTS_FROM_TICKETMASTER` or when it is named like a match, so race days and rodeo performances at the Further out rooms from every delivery (and the new inside ones: Portland International Raceway, the St. Paul rodeo, Tri-City Speedway, PPMS) never list. A computed rule (a room whose setup is racing or rodeo takes every Sports listing) would newly cover 85 rooms in 32 cities, 33 of them inside a city, so new events would start counting toward verdicts. Builder's lean: the computed rule. Waits on her answer.
+- **Arenas that read full for a concert:** the review (Oct 26) tagged seven delivery 10 arenas with their resident's sport so concerts there take the 57% arena rule; Bank of Springfield Center, Cabarrus Arena and the Salem Pavilion name no resident sport in the research and stay untagged (a concert there reads the full room) until one is sourced.
+- **Ticketmaster paging:** a by-id query over 1,000 results now splits its window in two (New York's Broadway houses reach about 870 a window); one day alone over 1,000 still loses the rest and logs a warning. Watch the New York page count in the nightly log.
 
 ## Room former names, left after the Oct 23 fold
 

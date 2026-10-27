@@ -121,9 +121,9 @@ export function specialDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   const room = venue ? capacityOn(venue, event.date) : undefined;
   if (!venue || !room) return undefined;
   const run = SPECIAL_RUNS.find((r) => r.venueId === venue.id && r.title.test(event.title));
-  if (run) return { count: Math.min(run.perShow, room), note: `This production's average per show: ${run.basis}. An estimate.` };
+  if (run) return { count: Math.min(run.perShow, room), basis: 'published', note: `This production's average per show: ${run.basis}. An estimate.` };
   const own = SPECIAL_ROOM_FILL[venue.id];
-  if (own) return { count: Math.round(room * own.share), note: `${Math.round(own.share * 1000) / 10}% of the house: ${own.basis}. An estimate.` };
+  if (own) return { count: Math.round(room * own.share), basis: 'published', note: `${Math.round(own.share * 1000) / 10}% of the house: ${own.basis}. An estimate.` };
   // An indoor room built for shows (every figure its concert or usual one): Québec's survey is of halls, so festival
   // grounds, amphitheatres, racetracks and arenas take none (an open-air ground over 6,000 would also count toward friction).
   const showRoom = venue.roof === 'indoor' && venue.capacity.every((c) => c.setup === 'concert' || !c.setup);
@@ -131,6 +131,7 @@ export function specialDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
     const band = QUEBEC_FILL_BANDS.find((b) => room <= b.upTo)!;
     return {
       count: Math.round(room * band.share),
+      basis: 'published',
       note: `${Math.round(band.share * 1000) / 10}% of the room: the fill of Québec rooms this size across every paid show in 2024 (Institut de la statistique du Québec). An estimate.`,
     };
   }

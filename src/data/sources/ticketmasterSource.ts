@@ -289,9 +289,13 @@ export async function loadTicketmasterEvents(metroId: string, apiKey: string, no
     const json = (await r.json()) as { _embedded?: { events?: TmEvent[] }; page?: { totalPages?: number } };
     pages++;
     // More than Ticketmaster will page through (1,000 results): a by-id window splits in two and each half is asked
-    // on its own, so a busy set of rooms (a dozen Broadway houses over two months, Oct 26, 2026) loses nothing.
+    // on its own, so a busy set of rooms (a dozen Broadway houses over two months, Oct 26, 2026) loses nothing unless
+    // one day alone tops 1,000; then the rest of that day is lost, and the log says so.
     const from = query.startDateTime?.slice(0, 10);
     const to = query.endDateTime?.slice(0, 10);
+    if (page === 0 && (json.page?.totalPages ?? 1) > MAX_PAGES && query.venueId && from && to && from === to) {
+      console.warn(`${metroId}: Ticketmaster lists ${json.page?.totalPages} pages for ${from} at venues ${query.venueId}; only the first ${MAX_PAGES} are read.`);
+    }
     if (page === 0 && (json.page?.totalPages ?? 1) > MAX_PAGES && query.venueId && from && to && from < to) {
       const half = Math.floor((Date.parse(to) - Date.parse(from)) / 86_400_000 / 2);
       const mid = addDays(from, half);

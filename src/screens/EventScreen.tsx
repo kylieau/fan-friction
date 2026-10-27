@@ -679,6 +679,8 @@ function HowButton({ onOpen }: { onOpen: () => void }) {
  */
 function aboutThisEstimate(event: CrowdEvent, seats: number | undefined): string | null {
   const d = event.expectedDraw;
+  // A show's published fill or run average (Oct 26, 2026): its note already names the figure and the source.
+  if (d?.basis === 'published') return d.note;
   if (!d?.fromCrowds) return null;
   const where = event.place.type === 'venue' ? venueNameOn(VENUES[event.place.venueId], event.date) : event.place.name;
   const span = seasonSpan(d.seasons);

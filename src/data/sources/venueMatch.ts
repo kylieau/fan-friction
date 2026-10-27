@@ -2,7 +2,7 @@
 // Ticketmaster and the sources added in build 5, item 1 (so there is one rule, not one per seller).
 
 import type { LocalDate, Venue } from '../types';
-import { VENUES } from '../venues';
+import { VENUES, venueNameOn } from '../venues';
 import { METROS } from '../../config/metros';
 
 function metersBetween([lng1, lat1]: readonly [number, number] | number[], [lng2, lat2]: readonly [number, number] | number[]): number {
@@ -50,6 +50,15 @@ export function venueByNameOrPlace(metroId: string, name: string, lat?: number, 
   // latest name already in use by that date, else the first on file.
   const named = (k: string) => {
     const hits = ours.flatMap((venue) => venue.names.filter((n) => plain(n.name) === plain(k)).map((n) => ({ venue, from: n.from ?? '' })));
+    // Two rooms that both go by this name on the date (two "Truist Stadium"s in one city, Oct 26, 2026): the nearer one
+    // to the listing's own point, when it has one; an equal distance or no point falls to the rule below.
+    if (date && lat != null && lng != null && Number.isFinite(lat) && Number.isFinite(lng)) {
+      const current = [...new Set(hits.map((h) => h.venue))].filter((v) => plain(venueNameOn(v, date)) === plain(k));
+      if (current.length > 1) {
+        const by = current.map((v) => ({ v, m: metersBetween(v.location, [lng, lat]) })).sort((x, y) => x.m - y.m);
+        if (by[0].m < by[1].m) return by[0].v;
+      }
+    }
     const inUse = date ? hits.filter((h) => h.from <= date).sort((x, y) => y.from.localeCompare(x.from)) : [];
     const byName = (inUse[0] ?? hits[0])?.venue;
     if (byName) return byName;

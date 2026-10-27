@@ -25011,7 +25011,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-79.825700, 36.059600],
     ticketmasterIds: ['KovZ917ARXn'],
-    capacity: [{ seats: 22000, note: 'Official, the research\'s recommended figure. The main arena\'s maximum; setups run 4,500–22,000. docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 22000, setup: 'basketball', note: 'Official, the research\'s recommended figure. The main arena\'s maximum; setups run 4,500–22,000. The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 71, how: 'routed', town: 'Greensboro' },
   },
@@ -25045,7 +25045,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-80.839154, 35.225098],
     ticketmasterIds: ['KovZpZA6AEIA'],
-    capacity: [{ seats: 19444, note: 'Reported, the research\'s recommended figure. After the 2025 renovation; Ticketmaster\'s guide still says 19,077 for basketball. Post-renovation total differs from Ticketmaster guide (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 19444, setup: 'basketball', note: 'Reported, the research\'s recommended figure. After the 2025 renovation; Ticketmaster\'s guide still says 19,077 for basketball. Post-renovation total differs from Ticketmaster guide (CAPACITY HOLD). The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 167, how: 'routed', town: 'Charlotte' },
   },
@@ -25055,7 +25055,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Bowman Gray Stadium' }],
     // The research's map point; not an entrance.
     location: [-80.222069, 36.082647],
-    capacity: [{ seats: 17000, note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 17000, setup: 'racing', note: 'Reported, the research\'s recommended figure. The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'open',
     furtherOut: { driveMinutes: 100, how: 'routed', town: 'Winston-Salem' },
   },
@@ -25101,7 +25101,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-78.891869, 35.014657],
     ticketmasterIds: ['KovZ917AIq0'],
-    capacity: [{ seats: 10880, note: 'Official, the research\'s recommended figure. Actual current concert/hockey manifests; DATA HOLD: complex point (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 10880, setup: 'hockey', note: 'Official, the research\'s recommended figure. Actual current concert/hockey manifests; DATA HOLD: complex point (CAPACITY HOLD). The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 82, how: 'routed', town: 'Fayetteville' },
   },
@@ -25135,7 +25135,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-80.795171, 35.205018],
     ticketmasterIds: ['KovZpZAFAl7A'],
-    capacity: [{ seats: 8600, note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 8600, setup: 'hockey', note: 'Official, the research\'s recommended figure. The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 168, how: 'routed', town: 'Charlotte' },
   },
@@ -25210,7 +25210,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['VSU Multi-Purpose Center'],
     // The research's map point; not an entrance.
     location: [-77.425120, 37.239976],
-    capacity: [{ seats: 6000, note: 'Reported, the research\'s recommended figure. Current configuration sheet unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 6000, setup: 'basketball', note: 'Reported, the research\'s recommended figure. Current configuration sheet unconfirmed (CAPACITY HOLD). The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 145, how: 'routed', town: 'Ettrick' },
   },
@@ -25416,7 +25416,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-89.527100, 37.320000],
     ticketmasterIds: ['KovZpZAJdFaA'],
-    capacity: [{ seats: 7600, note: 'Official, the research\'s recommended figure. Setups run 2,500–7,600; promoter layouts 6,250–7,189. Reconcile owner maximum versus promoter setup limits (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 7600, setup: 'basketball', note: 'Official, the research\'s recommended figure. Setups run 2,500–7,600; promoter layouts 6,250–7,189. Reconcile owner maximum versus promoter setup limits (CAPACITY HOLD). The arena\'s maximum; the setup is its resident\'s sport (review, Oct 26, 2026), not that setup\'s own count. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 135, how: 'routed', town: 'Cape Girardeau' },
   },
@@ -25623,7 +25623,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-80.724623, 40.064783],
     ticketmasterIds: ['KovZpZAJ7evA'],
-    capacity: [{ seats: 5600, setup: 'concert', note: 'Reported, the research\'s recommended figure. The concert figure is reported; the resident team gives 4,700 for hockey. Current qualifying concert maximum requires owner manifest (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 5600, setup: 'concert', note: 'Reported, the research\'s recommended figure. The concert figure is reported; the resident team gives 4,700 for hockey. Current qualifying concert maximum requires owner manifest (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }, { seats: 4700, setup: 'hockey', note: 'Official, the resident Wheeling Nailers\' 2026 playoff preview. docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'indoor',
     furtherOut: { driveMinutes: 78, how: 'routed', town: 'Wheeling' },
   },
