@@ -23,11 +23,11 @@ Done Oct 26–27 (details in BACKLOG and product-decisions.md):
 - **Working notes:** headless checks import `node_modules/vite/dist/node/index.js` and `ssrLoadModule` a source file; the date page is `/date/<date>?metro=<id>`; mocks are injected into the live app in the headless phone; port 3001 belongs to another session (this one used 3003, stopped); macOS has no `timeout`. Never `npm i --no-save` or `prettier --write`.
 
 ## Kylie's manual steps
-0. **From Dec 1, 2026: the UCLA schedule recheck** (BACKLOG, "UCLA schedule recheck"): remind her, then read the spring schedules once.
-1. 🚩 **SeatGeek:** still no free client id (Oct 26). **Remind her every session** until it lands; then the `SEATGEEK_CLIENT_ID` Actions secret and SeatGeek's logo attribution.
-2. **Review the "Up to N" mocks** and paste back the Cursor/Grokbot review with her form.
-3. **Phone checks signed in** (the 7.1 report's list), the row icons, the weather beside the venue name, **New York on the Map** (39 muted pins in Midtown) and a Broadway show's event page.
-4. **The M15 seed, when she wants test account A filled:** `docs/reference/test-account-seed.md` (dry run first; agents never run its write path or open her export).
+1. **From Dec 1, 2026: the UCLA schedule recheck** (BACKLOG, "UCLA schedule recheck"): remind her, then read the spring schedules once.
+2. 🚩 **SeatGeek:** still no free client id (Oct 26). **Remind her every session** until it lands; then the `SEATGEEK_CLIENT_ID` Actions secret and SeatGeek's logo attribution.
+3. **Review the "Up to N" mocks** and paste back the Cursor/Grokbot review with her form.
+4. **Phone checks signed in** (the 7.1 report's list), the row icons, the weather beside the venue name, **New York on the Map** (39 muted pins in Midtown) and a Broadway show's event page.
+5. **The M15 seed, when she wants test account A filled:** `docs/reference/test-account-seed.md` (dry run first; agents never run its write path or open her export).
 
 ## Next
 1. Take Kylie's review form and the Cursor/Grokbot mock review; reconcile with the advisor and Codex; build "Up to N" and the switch rename as she decides.

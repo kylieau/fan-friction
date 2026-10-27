@@ -2122,7 +2122,8 @@ export const VENUES: Record<string, Venue> = {
     roof: 'open',
   },
   // UCLA's other home rooms (Oct 27, 2026, with the one-time copy of UCLA's schedules). Points are OpenStreetMap's for
-  // each building. Jackie Robinson Stadium shares its name with a Baldwin Hills field that is not on file.
+  // each building. Jackie Robinson Stadium shares its name with a Baldwin Hills field, and Cal's Berkeley pool is the
+  // Spieker Aquatics Complex; neither is on file, and the Complex must never become an alias here.
   'wallis-annenberg-stadium': {
     id: 'wallis-annenberg-stadium',
     metroId: 'la',
@@ -2135,7 +2136,7 @@ export const VENUES: Record<string, Venue> = {
   'spieker-aquatics-center': {
     id: 'spieker-aquatics-center',
     metroId: 'la',
-    names: [{ name: 'Spieker Aquatics Center' }, { name: 'Spieker Aquatics Complex' }],
+    names: [{ name: 'Spieker Aquatics Center' }],
     // OpenStreetMap way 44664336.
     location: [-118.4507119, 34.0748647],
     capacity: [{ seats: 800, note: 'Reported. UCLA water polo and swimming. 800 permanent seats; temporary stands add 1,700 for championships (2,500), not counted. Source: https://collegiatewaterpolo.org/information-on-2023-womens-national-collegiate-club-championship-host-facilities-sunset-canyon-park-pool-spieker-aquatics-center/' }],
