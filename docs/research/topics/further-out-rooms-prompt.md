@@ -764,3 +764,46 @@ Los Angeles. Only rooms not on file; festival grounds especially (the brief's or
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 11 (Oct 26, 2026): clearing the holds on rooms inside a city
+
+Status: delivery 11 (Milwaukee, then the Los Angeles extras) is saved as `further-out-rooms-answer-11.md` and folded; the city-by-city brief is finished. These 29 rooms are inside a covered city, so their events count toward its verdict, and each still carries a hold from its delivery. Save the answer as `further-out-rooms-answer-12.md`.
+
+```
+This is a follow-up to Deliveries 1–11 of the Further out research, not a new city. Deliver it as Delivery 12. Every room below is already on file, inside a covered city by the drive rule, so its events count toward that city's verdict; each still carries the hold its delivery gave it. For each room, resolve the hold if you can: the current capacity for the setup it is actually sold in (one recommended number with its label, official / reported / estimated, and its setup), the qualifying paid program (several public ticketed dates a year, with a current source), and a point for the room itself or its spectator gate where the delivery only had a broader grounds point (latitude first, with its source). If a hold cannot be cleared, keep it and say what is missing. Say plainly where the room should not count at all (no current paid program, below 5,000 in its real setup, closed) or where a delivery's figure was wrong. Keep the same labels and rules as Delivery 11: one recommended capacity per room, sources linked with dates, festival rows separating a published daily or simultaneous limit from attendance, never adding separate rooms or stages together, no cached or archived pages, free public sources only.
+
+Output one table, by city, with: room; the hold you started from; cleared or still held; recommended capacity, label and setup; the paid program and its source; the point and its source if changed; and a one-line reason. Then a short list of rooms that should come off the inside list or out of the verdict, with the reason.
+
+The rooms (city; name; the figure on file; the point on file; the hold and why; the delivery it came from):
+- Los Angeles: Brookside at the Rose Bowl; on file 50,000; point 34.167257, -118.170149; CAPACITY / DATA HOLD: Historical festival limit; broader golf-course point and current footprint unresolved (further-out-rooms-answer-11.md)
+- Los Angeles: Los Angeles State Historic Park; on file 15,000; point 34.068477, -118.231544; CAPACITY / DATA HOLD: Current event-specific licensed maximum and event gate unresolved (further-out-rooms-answer-11.md)
+- Los Angeles: Marina Green Park; on file 14,000; point 33.762744, -118.185804; CAPACITY / DATA HOLD: Incompatible inventory scopes; exact festival footprint and permit unconfirmed (further-out-rooms-answer-11.md)
+- Los Angeles: Falcon Stadium; on file 12,000; point 33.885700, -118.094600; CAPACITY / DATA HOLD: Current owner seats and individual stadium point unresolved; route uses college point; DATA HOLD: broader grounds/complex point (further-out-rooms-answer-11.md)
+- Los Angeles: F&M Bank Amphitheater of Long Beach; on file 11,000; point 33.751944, -118.192389; DATA HOLD: Official planning project point; exact operating spectator gate unconfirmed; DATA HOLD: broader grounds/complex point; DATA HOLD: event parking is downtown with shuttles; hall-to-grounds drive excludes that transfer (further-out-rooms-answer-11.md)
+- Los Angeles: Hilmer Lodge Stadium; on file 10,739; point 34.045599, -117.836417; CAPACITY HOLD: Contractor / owner fixed-seat discrepancy; expansion not imported (further-out-rooms-answer-11.md)
+- Los Angeles: The BackYard at SilverLakes; on file 10,000; point 33.952461, -117.554805; INNER-BOUNDARY / DATA HOLD: Model just beyond the hour; point covers broader complex (further-out-rooms-answer-11.md)
+- Los Angeles: Redondo Beach Waterfront; on file 10,000; point 33.844429, -118.394464; CAPACITY / DATA HOLD: Festival permit and footprint gate unresolved; point marks lagoon locality (further-out-rooms-answer-11.md)
+- Los Angeles: Citrus Stadium; on file 10,000; point 34.130800, -117.884000; CAPACITY HOLD: Current owner manifest unconfirmed (further-out-rooms-answer-11.md)
+- Los Angeles: Harry R. LeBard Stadium; on file 7,600; point 33.672787, -117.910570; CAPACITY HOLD: Current owner manifest unconfirmed (further-out-rooms-answer-11.md)
+- Los Angeles: Cougar Stadium; on file 7,500; point 34.407047, -118.571245; CAPACITY HOLD: Current aggregate seating manifest unconfirmed (further-out-rooms-answer-11.md)
+- Los Angeles: Corsair Field; on file 6,600; point 34.015465, -118.471541; CAPACITY / DATA HOLD: Post-repair paid return and current seating manifest unconfirmed (further-out-rooms-answer-11.md)
+- Los Angeles: ONT Field; on file 6,000; point 34.018463, -117.603318; CAPACITY / INNER-BOUNDARY HOLD: Completed-project and city/review figures conflict; model near inside edge (further-out-rooms-answer-11.md)
+- Los Angeles: Monarch Stadium; on file 6,000; point 34.174836, -118.415977; CAPACITY HOLD: Current owner manifest unconfirmed (further-out-rooms-answer-11.md)
+- Milwaukee: Miller Lite Oasis; on file 11,400; point 43.032116, -87.899617; CAPACITY HOLD: Present licensed stage-area limit unconfirmed (further-out-rooms-answer-11.md)
+- Milwaukee: Generac Power Stage; on file 11,000; point 43.031100, -87.899434; CAPACITY HOLD: Current licensed stage-area limit unconfirmed (further-out-rooms-answer-11.md)
+- Milwaukee: T-Mobile Stage; on file 9,000; point 43.034462, -87.897945; CAPACITY HOLD: Rebuilt benchmark; current operating limit unconfirmed (further-out-rooms-answer-11.md)
+- Milwaukee: Briggs & Stratton Big Backyard; on file 8,000; point 43.029787, -87.899452; CAPACITY HOLD: Inconsistent published stage-area counts (further-out-rooms-answer-11.md)
+- Milwaukee: Racine County Fairgrounds Grandstand; on file 6,000; point 42.677916, -88.058574; DATA HOLD: Point covers broader fairgrounds, not the individual grandstand entrance (further-out-rooms-answer-11.md)
+- Milwaukee: Uline Warehouse; on file 6,000; point 43.035328, -87.898342; CAPACITY HOLD: Current covered / standing split and maximum unresolved (further-out-rooms-answer-11.md)
+- Pittsburgh: Pittsburgh's Pennsylvania Motor Speedway; on file 10,000; point 40.422019, -80.261279; CAPACITY HOLD: Current spectator manifest unconfirmed (further-out-rooms-answer-10.md)
+- Pittsburgh: Offutt Field; on file 5,000; point 40.302412, -79.539631; CAPACITY HOLD: Historical benchmark/current layout (further-out-rooms-answer-10.md)
+- Portland: Portland International Raceway; on file 30,000; point 45.596551, -122.696572; CAPACITY HOLD: Current owner-certified spectator setup not recovered (further-out-rooms-answer-10.md)
+- Portland: St. Paul Rodeo Arena; on file 10,500; point 45.207270, -122.976783; CAPACITY HOLD: Current aggregate seating manifest unconfirmed (further-out-rooms-answer-10.md)
+- Portland: Clark County Event Center Grandstand; on file 7,425; point 45.747431, -122.665607; DATA HOLD: Broader Event Center point; individual grandstand gate unconfirmed; DATA HOLD: broader grounds/complex point (further-out-rooms-answer-10.md)
+- Portland: Roto-Rooter Park; on file 6,000; point 45.015000, -122.994000; CAPACITY HOLD: Inclusive berm figure requires current manifest (further-out-rooms-answer-10.md)
+- Portland: The Pavilion at the Oregon State Fair & Expo Center; on file 5,000; point 44.958835, -123.006289; INNER-BOUNDARY / DATA HOLD: Paid recurrence and event-door check remain (further-out-rooms-answer-10.md)
+- San Antonio: Edgewood Veterans Stadium; on file 8,500; point 29.394062, -98.555908; CAPACITY / DATA HOLD: A dated 2017 figure; the current paid calendar needs confirming (further-out-rooms-answer-9.md)
+- St. Louis: I-55 Federated Auto Parts Raceway Park; on file 6,000; point 38.268963, -90.399944; CAPACITY HOLD: Event inventory versus broader group marketing (further-out-rooms-answer-10.md)
+
+Stop at a clean break and say where you stopped.
+```

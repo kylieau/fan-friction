@@ -1264,3 +1264,67 @@ ed-fry-arena	pittsburgh	5000	0	13	5	1800	26	0	Ed Fry Arena
 harding-stadium	pittsburgh	10000	0	31	10	1550	30	0	Harding Stadium
 pittsburghs-pennsylvania-motor-speedway	pittsburgh	10000	0	1	0	850	43	1	Pittsburgh's Pennsylvania Motor Speedway
 offutt-field	pittsburgh	5000	0	53	19	1500	30	0	Offutt Field
+road-america	milwaukee	150000	0	2	0	>1500	48	1	Road America
+lambeau-field	milwaukee	81441	0	27	5	1550	13	0	Lambeau Field
+camp-randall-stadium	milwaukee	76030	0	40	9	>1500	39	0	Camp Randall Stadium
+oshkosh-festival-park	milwaukee	40000	0	0	0	600	12	0	Oshkosh Festival Park
+kohl-center	milwaukee	16838	0	28	8	>1500	11	0	Kohl Center
+perkins-stadium	milwaukee	13500	0	6	2	>1500	13	0	Perkins Stadium
+fond-du-lac-county-fairgrounds-grandstand	milwaukee	12800	0	18	5	2300	8	0	Fond du Lac County Fairgrounds Grandstand
+resch-center	milwaukee	10515	0	17	6	2100	10	0	Resch Center
+veterans-memorial-coliseum-madison	milwaukee	10231	0	12	2	600	8	0	Veterans Memorial Coliseum
+madison-international-speedway	milwaukee	10000	0	4	0	>1500	25	0	Madison International Speedway
+titan-stadium-oshkosh	milwaukee	9800	0	13	4	1500	8	0	J.J. Keller Field at Titan Stadium
+breese-stevens-field	milwaukee	9333	0	21	8	>1500	9	0	Breese Stevens Field
+leach-amphitheater	milwaukee	7500	0	29	9	>1500	9	0	Leach Amphitheater
+uw-field-house	milwaukee	7229	0	43	11	3700	26	0	UW Field House
+capital-credit-union-park	milwaukee	7000	0	11	2	1000	6	0	Capital Credit Union Park
+the-duck-pond-at-warner-park	milwaukee	6750	0	12	1	3550	26	0	The Duck Pond at Warner Park
+beaver-dam-raceway	milwaukee	6000	0	2	1	450	20	0	Beaver Dam Raceway
+neuroscience-group-field-at-fox-cities-stadium	milwaukee	5900	0	4	0	200	8	0	Neuroscience Group Field at Fox Cities Stadium
+miller-lite-oasis	milwaukee	11400	0	13	3	50	9	0	Miller Lite Oasis
+generac-power-stage	milwaukee	11000	0	11	3	50	10	0	Generac Power Stage
+t-mobile-stage-summerfest	milwaukee	9000	0	11	3	150	15	0	T-Mobile Stage
+briggs-and-stratton-big-backyard	milwaukee	8000	0	9	3	100	8	0	Briggs & Stratton Big Backyard
+racine-county-fairgrounds-grandstand	milwaukee	6000	0	4	1	400	14	0	Racine County Fairgrounds Grandstand
+uline-warehouse	milwaukee	6000	0	13	5	100	17	0	Uline Warehouse
+glen-helen-amphitheater	la	65000	0	0	0	950	65	1	Glen Helen Amphitheater
+nos-event-center-grounds	la	65000	0	7	3	800	14	0	National Orange Show Event Center
+buena-vista-aquatic-recreation-area	la	25000	0	0	0	>1500	4	0	Buena Vista Aquatic Recreation Area
+memorial-stadium-bakersfield	la	19468	0	20	3	600	25	0	Memorial Stadium
+harder-stadium	la	17000	0	7	2	1500	15	0	Harder Stadium
+doheny-state-beach	la	15000	0	17	7	600	49	0	Doheny State Beach
+ventura-county-fairgrounds-grandstand	la	12000	0	14	5	200	10	0	Ventura County Fairgrounds Grandstand
+palmdale-amphitheater	la	10000	0	23	5	2450	14	0	Palmdale Amphitheater
+the-backyard-at-silverlakes	la	10000	0	7	0	350	13	0	The BackYard at SilverLakes
+dignity-health-arena-bakersfield	la	10000	0	19	7	750	6	0	Dignity Health Arena
+la-playa-stadium	la	10000	0	8	2	850	35	0	La Playa Stadium
+perris-auto-speedway	la	8000	0	11	0	>1500	43	1	Perris Auto Speedway
+saddleback-college-stadium	la	8000	0	15	3	600	51	1	Saddleback College Stadium
+glen-helen-raceway	la	8000	0	2	1	1950	71	1	Glen Helen Raceway
+moreno-beach-at-lake-perris	la	7500	0	1	0	>1500	29	0	Moreno Beach at Lake Perris
+orange-show-speedway	la	7500	0	6	1	750	7	0	Orange Show Speedway
+ted-runner-stadium	la	6750	0	18	3	1150	19	0	Ted Runner Stadium
+antelope-valley-fair-and-event-center-grandstand	la	6000	0	3	0	400	17	0	Antelope Valley Fair & Event Center Grandstand
+kevin-harvicks-kern-raceway	la	6000	0	1	0	250	3	0	Kevin Harvick's Kern Raceway
+larrabee-stadium	la	5866	0	31	11	1350	103	0	Larrabee Stadium
+griffith-field-bakersfield	la	5500	0	22	7	1300	6	0	Griffith Field
+palm-springs-stadium	la	5185	0	31	4	>1500	9	0	Palm Springs Stadium
+james-and-aerianthi-coussoulis-arena	la	5000	0	4	1	2200	88	1	James and Aerianthi Coussoulis Arena
+uc-santa-barbara-events-center	la	5000	0	15	4	1100	8	0	UC Santa Barbara Events Center
+ramona-bowl-amphitheatre	la	5000	0	5	1	>1500	170	1	Ramona Bowl Amphitheatre
+brookside-at-the-rose-bowl	la	50000	0	16	0	1050	38	0	Brookside at the Rose Bowl
+los-angeles-state-historic-park	la	15000	0	29	9	300	54	0	Los Angeles State Historic Park
+marina-green-park	la	14000	0	10	1	1050	16	0	Marina Green Park
+falcon-stadium-cerritos	la	12000	0	19	6	750	5	0	Falcon Stadium
+fandm-bank-amphitheater-of-long-beach	la	11000	0	7	3	300	6	0	F&M Bank Amphitheater of Long Beach
+hilmer-lodge-stadium	la	10739	0	5	3	2250	58	1	Hilmer Lodge Stadium
+redondo-beach-waterfront	la	10000	0	9	3	>1500	23	0	Redondo Beach Waterfront
+citrus-stadium	la	10000	0	19	2	1050	15	0	Citrus Stadium
+santa-ana-stadium	la	9000	0	20	7	1650	9	0	Santa Ana Stadium
+featherstone-field-at-murdock-stadium	la	8000	0	11	0	1400	5	0	Featherstone Field at Murdock Stadium
+harry-r-lebard-stadium	la	7600	0	12	1	1550	6	0	Harry R. LeBard Stadium
+cougar-stadium-canyons	la	7500	0	19	5	350	27	0	Cougar Stadium
+corsair-field	la	6600	0	15	6	800	8	0	Corsair Field
+ont-field	la	6000	0	9	2	1350	11	0	ONT Field
+monarch-stadium	la	6000	0	18	5	1700	6	0	Monarch Stadium

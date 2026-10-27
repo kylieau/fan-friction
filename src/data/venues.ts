@@ -25667,6 +25667,693 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s recommended figure. A 2005 visiting-university figure kept as a historical benchmark. Historical benchmark/current layout (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'open',
   },
+  // ---- Further out delivery 11 (docs/research/topics/further-out-rooms-answer-11.md: Milwaukee, then Los Angeles
+  // rooms not on file), folded Oct 26, 2026 the same way as deliveries 1–10; the last of the brief. Every row of the
+  // research's two tables, each on the side the drive-time rule puts it; holds ride in the capacity note. Arenas carry
+  // their sourced sports figures beside the general one, so a concert there takes the 57% arena rule (the Oct 26
+  // review). Summerfest's stages are separate rooms and never add up to the park. Not imported: the outer-boundary
+  // records (La Crosse's two rooms, Cal Poly's Spanos Stadium), Bank Five Nine Main Stage (the Milwaukee Mile's own
+  // grandstand) and every lead outside the tables (Pierce College's stadium is on a 2026 hiatus). SilverLakes (62 min) is inside Los Angeles under the
+  // app's rule. Ticketmaster ids: 18 within 1.5 km, 5 exact names 1.5–7 km added by hand. ----
+  'road-america': {
+    id: 'road-america',
+    metroId: 'milwaukee',
+    names: [{ name: 'Road America' }],
+    // The research's map point; not an entrance.
+    location: [-87.992318, 43.799168],
+    ticketmasterIds: ['ZFr9jZeAAv'],
+    capacity: [{ seats: 150000, setup: 'racing', note: 'Reported, the research\'s recommended figure. A published grounds benchmark for an unassigned general-admission site, not a daily ticket limit. Current licensed simultaneous limit unconfirmed; review benchmark only (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 79, how: 'routed', town: 'Elkhart Lake' },
+  },
+  'lambeau-field': {
+    id: 'lambeau-field',
+    metroId: 'milwaukee',
+    names: [{ name: 'Lambeau Field' }],
+    // The research's map point; not an entrance.
+    location: [-88.061968, 44.500971],
+    ticketmasterIds: ['KovZpa3awe'],
+    capacity: [{ seats: 81441, setup: 'football', note: 'Official, the research\'s recommended figure. Ticketmaster\'s current figure; the NFL\'s 2024 fact book says 81,041. Current ticketing / earlier league count conflict (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 136, how: 'routed', town: 'Green Bay' },
+  },
+  'camp-randall-stadium': {
+    id: 'camp-randall-stadium',
+    metroId: 'milwaukee',
+    names: [{ name: 'Camp Randall Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-89.412650, 43.070053],
+    ticketmasterIds: ['KovZpZA17lEA'],
+    capacity: [{ seats: 76030, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 101, how: 'routed', town: 'Madison' },
+  },
+  'oshkosh-festival-park': {
+    id: 'oshkosh-festival-park',
+    metroId: 'milwaukee',
+    names: [{ name: 'Oshkosh Festival Park' }],
+    aliases: ['Ford Festival Park', 'XRoads41'],
+    // The research's map point; not an entrance.
+    location: [-88.590939, 43.960734],
+    capacity: [{ seats: 40000, setup: 'concert', note: 'Reported, the research\'s recommended figure. The former Ford Festival Park inventory figure, a historical venue benchmark. Former-name benchmark; current festival limit and legal venue name unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 101, how: 'routed', town: 'Oshkosh' },
+  },
+  'kohl-center': {
+    id: 'kohl-center',
+    metroId: 'milwaukee',
+    names: [{ name: 'Kohl Center' }],
+    // The research's map point; not an entrance.
+    location: [-89.396878, 43.069421],
+    ticketmasterIds: ['KovZpZAaJIFA'],
+    capacity: [{ seats: 16838, setup: 'basketball', note: 'Official, the research\'s recommended figure. Owner women’s / concert variants need current manifests; men’s and hockey counts supported (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 15511, setup: 'hockey', note: 'Official, the university\'s current hockey figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 98, how: 'routed', town: 'Madison' },
+  },
+  'perkins-stadium': {
+    id: 'perkins-stadium',
+    metroId: 'milwaukee',
+    names: [{ name: 'Perkins Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-88.744982, 42.846994],
+    capacity: [{ seats: 13500, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'Whitewater' },
+  },
+  'fond-du-lac-county-fairgrounds-grandstand': {
+    id: 'fond-du-lac-county-fairgrounds-grandstand',
+    metroId: 'milwaukee',
+    names: [{ name: 'Fond du Lac County Fairgrounds Grandstand' }],
+    aliases: ['Fond du Lac County Fairgrounds', 'Fond du Lac County Fair'],
+    // The research's map point; not an entrance.
+    location: [-88.429118, 43.764800],
+    capacity: [{ seats: 12800, note: 'Official, the research\'s recommended figure. Over 2,800 grandstand seats plus an open area for 10,000, from a dated county plan. Dated inclusive capacity and broader fairgrounds point; current gate manifest required (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 82, how: 'routed', town: 'Fond du Lac' },
+  },
+  'resch-center': {
+    id: 'resch-center',
+    metroId: 'milwaukee',
+    names: [{ name: 'Resch Center' }],
+    // The research's map point; not an entrance.
+    location: [-88.055042, 44.499491],
+    ticketmasterIds: ['KovZpZAal6lA'],
+    capacity: [{ seats: 10515, setup: 'concert', note: 'Official, the research\'s recommended figure. In the round; end stage 7,697, theatre 5,675. Sport-specific counts and differing promoter theatre variants unresolved (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 8709, setup: 'hockey', note: 'Reported, a live inventory\'s hockey figure (the Green Bay Gamblers). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 134, how: 'routed', town: 'Ashwaubenon' },
+  },
+  'veterans-memorial-coliseum-madison': {
+    id: 'veterans-memorial-coliseum-madison',
+    metroId: 'milwaukee',
+    names: [{ name: 'Veterans Memorial Coliseum' }],
+    aliases: ['Alliant Energy Center Coliseum', 'Veterans Memorial Coliseum at Alliant Energy Center'],
+    // The research's map point; not an entrance.
+    location: [-89.378944, 43.047074],
+    ticketmasterIds: ['KovZpZAF6nvA'],
+    capacity: [{ seats: 10231, note: 'Official, the research\'s recommended figure. The owner\'s general maximum. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 9455, setup: 'basketball', note: 'Official, the owner\'s performance guide. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 7890, setup: 'hockey', note: 'Official, the owner\'s performance guide. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 96, how: 'routed', town: 'Madison' },
+  },
+  'madison-international-speedway': {
+    id: 'madison-international-speedway',
+    metroId: 'milwaukee',
+    names: [{ name: 'Madison International Speedway' }],
+    // The research's map point; not an entrance.
+    location: [-89.326629, 42.906693],
+    capacity: [{ seats: 10000, setup: 'racing', note: 'Reported, the research\'s recommended figure. Over 10,000 seats, the stated lower bound. Current seating manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 112, how: 'routed', town: 'Rutland' },
+  },
+  'titan-stadium-oshkosh': {
+    id: 'titan-stadium-oshkosh',
+    metroId: 'milwaukee',
+    names: [{ name: 'J.J. Keller Field at Titan Stadium' }],
+    aliases: ['Titan Stadium'],
+    // The research's map point; not an entrance.
+    location: [-88.563187, 44.023652],
+    capacity: [{ seats: 9800, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 104, how: 'routed', town: 'Oshkosh' },
+  },
+  'breese-stevens-field': {
+    id: 'breese-stevens-field',
+    metroId: 'milwaukee',
+    names: [{ name: 'Breese Stevens Field' }],
+    // The research's map point; not an entrance.
+    location: [-89.373138, 43.083353],
+    ticketmasterIds: ['KovZpZAEd1vA'],
+    capacity: [{ seats: 9333, setup: 'concert', note: 'Official, the research\'s recommended figure. 3,740 grandstand and 5,593 on the field, the city\'s concert layout. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 5000, setup: 'soccer', note: 'Reported, about 5,000 for sports (Forward Madison FC). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 93, how: 'routed', town: 'Madison' },
+  },
+  'leach-amphitheater': {
+    id: 'leach-amphitheater',
+    metroId: 'milwaukee',
+    names: [{ name: 'Leach Amphitheater' }],
+    aliases: ['Leach Amphitheatre'],
+    // The research's map point; not an entrance.
+    location: [-88.534586, 44.013669],
+    ticketmasterIds: ['KovZ917AJIU'],
+    capacity: [{ seats: 7500, setup: 'concert', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 103, how: 'routed', town: 'Oshkosh' },
+  },
+  'uw-field-house': {
+    id: 'uw-field-house',
+    metroId: 'milwaukee',
+    names: [{ name: 'UW Field House' }],
+    aliases: ['Wisconsin Field House'],
+    // The research's map point; not an entrance.
+    location: [-89.412688, 43.068640],
+    capacity: [{ seats: 7229, note: 'Official, the research\'s recommended figure. The university\'s current figure for volleyball and indoor competition. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 101, how: 'routed', town: 'Madison' },
+  },
+  'capital-credit-union-park': {
+    id: 'capital-credit-union-park',
+    metroId: 'milwaukee',
+    names: [{ name: 'Capital Credit Union Park' }],
+    // The research's map point; not an entrance.
+    location: [-88.057877, 44.489593],
+    ticketmasterIds: ['KovZ917AxYQ'],
+    capacity: [{ seats: 7000, setup: 'concert', note: 'Reported, the research\'s recommended figure. 7,000-plus for concerts, the lower bound. Published concert capability; actually deployed larger paid layout and recurrence require confirmation (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 3359, setup: 'baseball', note: 'Reported, the same profile\'s baseball and soccer figure (the Green Bay Rockers). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 133, how: 'routed', town: 'Ashwaubenon' },
+  },
+  'the-duck-pond-at-warner-park': {
+    id: 'the-duck-pond-at-warner-park',
+    metroId: 'milwaukee',
+    names: [{ name: 'The Duck Pond at Warner Park' }],
+    aliases: ['Duck Pond', 'Warner Park'],
+    // The research's map point; not an entrance.
+    location: [-89.367158, 43.130876],
+    capacity: [{ seats: 6750, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 93, how: 'routed', town: 'Madison' },
+  },
+  'beaver-dam-raceway': {
+    id: 'beaver-dam-raceway',
+    metroId: 'milwaukee',
+    names: [{ name: 'Beaver Dam Raceway' }],
+    // The research's map point; not an entrance.
+    location: [-88.812623, 43.448262],
+    ticketmasterIds: ['Z7r9jZaATf'],
+    capacity: [{ seats: 6000, setup: 'racing', note: 'Official, the research\'s recommended figure. The racing series\' figure; a live inventory says about 7,000. Series count / general inventory discrepancy (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 88, how: 'routed', town: 'Beaver Dam' },
+  },
+  'neuroscience-group-field-at-fox-cities-stadium': {
+    id: 'neuroscience-group-field-at-fox-cities-stadium',
+    metroId: 'milwaukee',
+    names: [{ name: 'Neuroscience Group Field at Fox Cities Stadium' }],
+    aliases: ['Fox Cities Stadium'],
+    // The research's map point; not an entrance.
+    location: [-88.468742, 44.283524],
+    ticketmasterIds: ['ZFr9jZdav7'],
+    capacity: [{ seats: 5900, setup: 'baseball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 125, how: 'routed', town: 'Grand Chute' },
+  },
+  'miller-lite-oasis': {
+    id: 'miller-lite-oasis',
+    metroId: 'milwaukee',
+    names: [{ name: 'Miller Lite Oasis' }],
+    // The research's map point; not an entrance.
+    location: [-87.899617, 43.032116],
+    capacity: [{ seats: 11400, setup: 'concert', note: 'Reported, the research\'s recommended figure. Present licensed stage-area limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'generac-power-stage': {
+    id: 'generac-power-stage',
+    metroId: 'milwaukee',
+    names: [{ name: 'Harley-Davidson Roadhouse' }, { name: 'Generac Power Stage', from: '2021-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-87.899434, 43.031100],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Current licensed stage-area limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  't-mobile-stage-summerfest': {
+    id: 't-mobile-stage-summerfest',
+    metroId: 'milwaukee',
+    names: [{ name: 'UScellular Connection Stage' }, { name: 'T-Mobile Stage', from: '2026-01-28' }],
+    // The research's map point; not an entrance.
+    location: [-87.897945, 43.034462],
+    capacity: [{ seats: 9000, setup: 'concert', note: 'Reported, the research\'s recommended figure. After the 2018 rebuild; 5,700 before. Rebuilt benchmark; current operating limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'briggs-and-stratton-big-backyard': {
+    id: 'briggs-and-stratton-big-backyard',
+    metroId: 'milwaukee',
+    names: [{ name: 'Briggs & Stratton Big Backyard' }],
+    // The research's map point; not an entrance.
+    location: [-87.899452, 43.029787],
+    capacity: [{ seats: 8000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Inconsistent published stage-area counts (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'racine-county-fairgrounds-grandstand': {
+    id: 'racine-county-fairgrounds-grandstand',
+    metroId: 'milwaukee',
+    names: [{ name: 'Racine County Fairgrounds Grandstand' }],
+    aliases: ['Racine County Fair'],
+    // The research's map point; not an entrance.
+    location: [-88.058574, 42.677916],
+    capacity: [{ seats: 6000, note: 'Official, the research\'s recommended figure. The grandstand alone, from the fair\'s operator (Nov 2022). Point covers broader fairgrounds, not the individual grandstand entrance (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'uline-warehouse': {
+    id: 'uline-warehouse',
+    metroId: 'milwaukee',
+    names: [{ name: 'Uline Warehouse' }],
+    aliases: ['Uline Warehouse at Summerfest'],
+    // The research's map point; not an entrance.
+    location: [-87.898342, 43.035328],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Current covered / standing split and maximum unresolved (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'covered',
+  },
+  'glen-helen-amphitheater': {
+    id: 'glen-helen-amphitheater',
+    metroId: 'la',
+    names: [{ name: 'San Manuel Amphitheater' }, { name: 'Glen Helen Amphitheater', from: '2017-01-01' }],
+    // The research's map point; not an entrance.
+    location: [-117.402377, 34.204464],
+    ticketmasterIds: ['KovZpZAEA6eA'],
+    capacity: [{ seats: 65000, setup: 'concert', note: 'Official, the research\'s recommended figure. Inclusive: about 10,900 reserved and 54,100 lawn. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'Devore' },
+  },
+  'nos-event-center-grounds': {
+    id: 'nos-event-center-grounds',
+    metroId: 'la',
+    names: [{ name: 'National Orange Show Event Center' }],
+    aliases: ['NOS Events Center', 'NOS Event Center', 'National Orange Show Events Center'],
+    // The research's map point; not an entrance.
+    location: [-117.291731, 34.086553],
+    capacity: [{ seats: 65000, setup: 'concert', note: 'Official, the research\'s recommended figure. More than 65,000 on the whole outdoor grounds, the published lower bound; not a festival day\'s permit. Grounds ceiling, current festival-specific daily manifest and gate unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'San Bernardino' },
+  },
+  'buena-vista-aquatic-recreation-area': {
+    id: 'buena-vista-aquatic-recreation-area',
+    metroId: 'la',
+    names: [{ name: 'Buena Vista Aquatic Recreation Area' }],
+    aliases: ['Lightning in a Bottle grounds'],
+    // The research's map point; not an entrance.
+    location: [-119.266667, 35.225000],
+    capacity: [{ seats: 25000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A 2021 permit: 25,000 ticketholders plus 5,000 staff. Dated permit benchmark; current permit and festival gate require confirmation (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 138, how: 'routed', town: 'Taft' },
+  },
+  'memorial-stadium-bakersfield': {
+    id: 'memorial-stadium-bakersfield',
+    metroId: 'la',
+    names: [{ name: 'Memorial Stadium' }],
+    aliases: ['Bakersfield College Memorial Stadium'],
+    // The research's map point; not an entrance.
+    location: [-118.969371, 35.407170],
+    capacity: [{ seats: 19468, setup: 'football', note: 'Reported, the research\'s recommended figure. Seated; about 4,000 more standing. Current owner-certified seated / SRO manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 138, how: 'routed', town: 'Bakersfield' },
+  },
+  'harder-stadium': {
+    id: 'harder-stadium',
+    metroId: 'la',
+    names: [{ name: 'Harder Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-119.854399, 34.420521],
+    ticketmasterIds: ['KovZpZAAtFvA'],
+    capacity: [{ seats: 17000, setup: 'soccer', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 129, how: 'routed', town: 'Santa Barbara' },
+  },
+  'doheny-state-beach': {
+    id: 'doheny-state-beach',
+    metroId: 'la',
+    names: [{ name: 'Doheny State Beach' }],
+    aliases: ['Ohana Festival grounds'],
+    // The research's map point; not an entrance.
+    location: [-117.676820, 33.460155],
+    ticketmasterIds: ['KovZpZAaJnkA'],
+    capacity: [{ seats: 15000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A 2025 report; 20,000 in 2023. Current daily permit and precise temporary footprint unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 75, how: 'routed', town: 'Dana Point' },
+  },
+  'ventura-county-fairgrounds-grandstand': {
+    id: 'ventura-county-fairgrounds-grandstand',
+    metroId: 'la',
+    names: [{ name: 'Ventura County Fairgrounds Grandstand' }],
+    aliases: ['Toyota Grandstand Arena', 'Ventura County Fairgrounds', 'Ventura County Fair'],
+    // The research's map point; not an entrance.
+    location: [-119.302250, 34.275617],
+    capacity: [{ seats: 12000, note: 'Reported, the research\'s recommended figure. A historical grandstand figure (1998). Historical seating benchmark, current usable stand/floor manifest and gate unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 85, how: 'routed', town: 'Ventura' },
+  },
+  'palmdale-amphitheater': {
+    id: 'palmdale-amphitheater',
+    metroId: 'la',
+    names: [{ name: 'Palmdale Amphitheater' }],
+    // The research's map point; not an entrance.
+    location: [-118.178192, 34.603267],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the research\'s recommended figure. The top of the city\'s 3,001–10,000 event class. Booking ceiling versus currently deployed concert manifest (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 81, how: 'routed', town: 'Palmdale' },
+  },
+  'the-backyard-at-silverlakes': {
+    id: 'the-backyard-at-silverlakes',
+    metroId: 'la',
+    names: [{ name: 'The BackYard at SilverLakes' }],
+    aliases: ['SilverLakes', 'SilverLakes Equestrian & Sports Park'],
+    // The research's map point; not an entrance.
+    location: [-117.554805, 33.952461],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the research\'s recommended figure. The concert grounds; the separate 5,000-seat soccer stadium is not added. Model just beyond the hour; point covers broader complex (INNER-BOUNDARY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'dignity-health-arena-bakersfield': {
+    id: 'dignity-health-arena-bakersfield',
+    metroId: 'la',
+    names: [{ name: 'Rabobank Arena' }, { name: 'Mechanics Bank Arena', from: '2019-09-01' }, { name: 'Dignity Health Arena', from: '2025-03-01' }],
+    // The research's map point; not an entrance.
+    location: [-119.013723, 35.372080],
+    ticketmasterIds: ['KovZpZA6AJtA', 'KovZ917AxsV'],
+    capacity: [{ seats: 10000, note: 'Official, the research\'s recommended figure. The operator\'s general and concert figure. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 8751, setup: 'hockey', note: 'Reported, a live inventory\'s hockey figure (the Bakersfield Condors). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 132, how: 'routed', town: 'Bakersfield' },
+  },
+  'la-playa-stadium': {
+    id: 'la-playa-stadium',
+    metroId: 'la',
+    names: [{ name: 'La Playa Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-119.696273, 34.404791],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner seating manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 118, how: 'routed', town: 'Santa Barbara' },
+  },
+  'perris-auto-speedway': {
+    id: 'perris-auto-speedway',
+    metroId: 'la',
+    names: [{ name: 'Perris Auto Speedway' }],
+    aliases: ['The PAS'],
+    // The research's map point; not an entrance.
+    location: [-117.201067, 33.849456],
+    ticketmasterIds: ['Z7r9jZaATh'],
+    capacity: [{ seats: 8000, setup: 'racing', note: 'Reported, the research\'s recommended figure. Over 8,000, the lower bound. Current operator aggregate not recovered (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 91, how: 'routed', town: 'Perris' },
+  },
+  'saddleback-college-stadium': {
+    id: 'saddleback-college-stadium',
+    metroId: 'la',
+    names: [{ name: 'Saddleback College Stadium' }],
+    aliases: ['Saddleback Stadium'],
+    // The research's map point; not an entrance.
+    location: [-117.665769, 33.549009],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 65, how: 'routed', town: 'Mission Viejo' },
+  },
+  'glen-helen-raceway': {
+    id: 'glen-helen-raceway',
+    metroId: 'la',
+    names: [{ name: 'Glen Helen Raceway' }],
+    aliases: ['Glen Helen Raceway Park'],
+    // The research's map point; not an entrance.
+    location: [-117.388000, 34.187400],
+    ticketmasterIds: ['KovZpa2HUe'],
+    capacity: [{ seats: 8000, setup: 'racing', note: 'Official, the research\'s recommended figure. The top of the county plan\'s 3,000–8,000 range. Current upper-range spectator deployment and access gate need confirmation (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 80, how: 'routed', town: 'Devore' },
+  },
+  'moreno-beach-at-lake-perris': {
+    id: 'moreno-beach-at-lake-perris',
+    metroId: 'la',
+    names: [{ name: 'Moreno Beach at Lake Perris' }],
+    aliases: ['Same Same But Different grounds'],
+    // The research's map point; not an entrance.
+    location: [-117.171944, 33.869408],
+    capacity: [{ seats: 7500, setup: 'concert', note: 'Official, the research\'s recommended figure. The festival\'s own ticket cap. Beach-outline representative point; promoter requires West Entrance for GA, not a direct beach approach; DATA HOLD: broader grounds/complex point (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 90, how: 'routed', town: 'Perris' },
+  },
+  'orange-show-speedway': {
+    id: 'orange-show-speedway',
+    metroId: 'la',
+    names: [{ name: 'Orange Show Speedway' }],
+    aliases: ['Orange Show Stadium'],
+    // The research's map point; not an entrance.
+    location: [-117.292566, 34.086783],
+    capacity: [{ seats: 7500, setup: 'racing', note: 'Reported, the research\'s recommended figure. A 2024–25 booking directory; a live inventory says 8,500. Current owner seating manifest unconfirmed; model near the hour (CAPACITY / INNER-BOUNDARY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 70, how: 'routed', town: 'San Bernardino' },
+  },
+  'ted-runner-stadium': {
+    id: 'ted-runner-stadium',
+    metroId: 'la',
+    names: [{ name: 'Ted Runner Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-117.165005, 34.067617],
+    capacity: [{ seats: 6750, setup: 'football', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 77, how: 'routed', town: 'Redlands' },
+  },
+  'antelope-valley-fair-and-event-center-grandstand': {
+    id: 'antelope-valley-fair-and-event-center-grandstand',
+    metroId: 'la',
+    names: [{ name: 'Antelope Valley Fair & Event Center Grandstand' }],
+    aliases: ['Antelope Valley Fair & Event Center', 'AV Fair & Event Center'],
+    // The research's map point; not an entrance.
+    location: [-118.174632, 34.722175],
+    capacity: [{ seats: 6000, note: 'Reported, the research\'s recommended figure. An inventory figure tied to grandstand concerts; the owner\'s outdoor count unconfirmed. Outdoor manifest and stand-specific point unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 88, how: 'routed', town: 'Lancaster' },
+  },
+  'kevin-harvicks-kern-raceway': {
+    id: 'kevin-harvicks-kern-raceway',
+    metroId: 'la',
+    names: [{ name: 'Kern County Raceway Park' }, { name: 'Kevin Harvick\'s Kern Raceway', from: '2023-11-29' }],
+    aliases: ['Kern Raceway'],
+    // The research's map point; not an entrance.
+    location: [-119.256389, 35.292778],
+    ticketmasterIds: ['KovZ917AO_1'],
+    capacity: [{ seats: 6000, setup: 'racing', note: 'Reported, the research\'s recommended figure. 6,000 fixed seats on the paved oval; 17,000 with temporary seating. Fixed-seat benchmark; exact present manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 132, how: 'routed', town: 'Bakersfield' },
+  },
+  'larrabee-stadium': {
+    id: 'larrabee-stadium',
+    metroId: 'la',
+    names: [{ name: 'Larrabee Stadium' }],
+    aliases: ['Turner Field at Larrabee Stadium'],
+    // The research's map point; not an entrance.
+    location: [-119.264025, 34.279887],
+    capacity: [{ seats: 5866, setup: 'football', note: 'Official, the research\'s recommended figure. 5,000 home and 866 away. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 83, how: 'routed', town: 'Ventura' },
+  },
+  'griffith-field-bakersfield': {
+    id: 'griffith-field-bakersfield',
+    metroId: 'la',
+    names: [{ name: 'Griffith Field' }],
+    aliases: ['Bakersfield High School Griffith Field'],
+    // The research's map point; not an entrance.
+    location: [-119.026037, 35.369755],
+    capacity: [{ seats: 5500, setup: 'football', note: 'Reported, the research\'s recommended figure. Dated seating figure; broader school point, not the stadium door; DATA HOLD: broader grounds/complex point (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 131, how: 'routed', town: 'Bakersfield' },
+  },
+  'palm-springs-stadium': {
+    id: 'palm-springs-stadium',
+    metroId: 'la',
+    names: [{ name: 'Palm Springs Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-116.526427, 33.818332],
+    capacity: [{ seats: 5185, setup: 'baseball', note: 'Official, the research\'s recommended figure. Another city document says 5,300. Two city counts differ (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 128, how: 'routed', town: 'Palm Springs' },
+  },
+  'james-and-aerianthi-coussoulis-arena': {
+    id: 'james-and-aerianthi-coussoulis-arena',
+    metroId: 'la',
+    names: [{ name: 'James and Aerianthi Coussoulis Arena' }],
+    aliases: ['Coussoulis Arena'],
+    // The research's map point; not an entrance.
+    location: [-117.319593, 34.182771],
+    capacity: [{ seats: 5000, setup: 'basketball', note: 'Official, the research\'s recommended figure. Current owner clears threshold, historical seat accounting unresolved (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 78, how: 'routed', town: 'San Bernardino' },
+  },
+  'uc-santa-barbara-events-center': {
+    id: 'uc-santa-barbara-events-center',
+    metroId: 'la',
+    names: [{ name: 'UC Santa Barbara Events Center' }],
+    aliases: ['The Thunderdome', 'Thunderdome', 'UCSB Events Center'],
+    // The research's map point; not an entrance.
+    location: [-119.851306, 34.413788],
+    capacity: [{ seats: 5000, setup: 'basketball', note: 'Official, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'indoor',
+    furtherOut: { driveMinutes: 130, how: 'routed', town: 'Santa Barbara' },
+  },
+  'ramona-bowl-amphitheatre': {
+    id: 'ramona-bowl-amphitheatre',
+    metroId: 'la',
+    names: [{ name: 'Ramona Bowl Amphitheatre' }],
+    aliases: ['Ramona Bowl'],
+    // The research's map point; not an entrance.
+    location: [-116.950301, 33.719744],
+    capacity: [{ seats: 5000, setup: 'concert', note: 'Official, the research\'s recommended figure. About 5,000, down from a peak of 6,662. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+    furtherOut: { driveMinutes: 115, how: 'routed', town: 'Hemet' },
+  },
+  'brookside-at-the-rose-bowl': {
+    id: 'brookside-at-the-rose-bowl',
+    metroId: 'la',
+    names: [{ name: 'Brookside at the Rose Bowl' }],
+    // The research's map point; not an entrance.
+    location: [-118.170149, 34.167257],
+    ticketmasterIds: ['Z7r9jZadjY'],
+    capacity: [{ seats: 50000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A 2022 festival cap (Cruel World); not the Rose Bowl stadium\'s seats. Historical festival limit; broader golf-course point and current footprint unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'los-angeles-state-historic-park': {
+    id: 'los-angeles-state-historic-park',
+    metroId: 'la',
+    names: [{ name: 'Los Angeles State Historic Park' }],
+    aliases: ['LA State Historic Park'],
+    // The research's map point; not an entrance.
+    location: [-118.231544, 34.068477],
+    ticketmasterIds: ['KovZpZAFlklA', 'rZ7HnEZ17ASqf'],
+    capacity: [{ seats: 15000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A current concert inventory; 25,000 after the 2017 reopening. Current event-specific licensed maximum and event gate unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'marina-green-park': {
+    id: 'marina-green-park',
+    metroId: 'la',
+    names: [{ name: 'Marina Green Park' }],
+    aliases: ['Marina Green'],
+    // The research's map point; not an entrance.
+    location: [-118.185804, 33.762744],
+    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Inventories disagree (2,000 to 14,000). Incompatible inventory scopes; exact festival footprint and permit unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'falcon-stadium-cerritos': {
+    id: 'falcon-stadium-cerritos',
+    metroId: 'la',
+    names: [{ name: 'Falcon Stadium' }],
+    aliases: ['Cerritos College Falcon Stadium'],
+    // The research's map point; not an entrance.
+    location: [-118.094600, 33.885700],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner seats and individual stadium point unresolved; route uses college point; DATA HOLD: broader grounds/complex point (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'fandm-bank-amphitheater-of-long-beach': {
+    id: 'fandm-bank-amphitheater-of-long-beach',
+    metroId: 'la',
+    names: [{ name: 'Long Beach Amphitheater' }, { name: 'F&M Bank Amphitheater of Long Beach', from: '2026-05-29' }],
+    aliases: ['F&M Bank Amphitheater'],
+    // The research's map point; not an entrance.
+    location: [-118.192389, 33.751944],
+    ticketmasterIds: ['KovZ917AVZZ'],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Official, the research\'s recommended figure. Official planning project point; exact operating spectator gate unconfirmed; DATA HOLD: broader grounds/complex point; DATA HOLD: event parking is downtown with shuttles; hall-to-grounds drive excludes that transfer (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'hilmer-lodge-stadium': {
+    id: 'hilmer-lodge-stadium',
+    metroId: 'la',
+    names: [{ name: 'Hilmer Lodge Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-117.836417, 34.045599],
+    capacity: [{ seats: 10739, setup: 'track', note: 'Official, the research\'s recommended figure. Fixed seats; expandable to about 20,000. Contractor / owner fixed-seat discrepancy; expansion not imported (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'redondo-beach-waterfront': {
+    id: 'redondo-beach-waterfront',
+    metroId: 'la',
+    names: [{ name: 'Redondo Beach Waterfront' }],
+    aliases: ['Seaside Lagoon', 'BeachLife Festival grounds'],
+    // The research's map point; not an entrance.
+    location: [-118.394464, 33.844429],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Reported, the research\'s recommended figure. BeachLife\'s 2026 size; 11,000 in 2023. Festival permit and footprint gate unresolved; point marks lagoon locality (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'citrus-stadium': {
+    id: 'citrus-stadium',
+    metroId: 'la',
+    names: [{ name: 'Citrus Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-117.884000, 34.130800],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'santa-ana-stadium': {
+    id: 'santa-ana-stadium',
+    metroId: 'la',
+    names: [{ name: 'Santa Ana Stadium' }],
+    aliases: ['Eddie West Field', 'Santa Ana Bowl'],
+    // The research's map point; not an entrance.
+    location: [-117.877470, 33.750647],
+    ticketmasterIds: ['KovZ917AVuJ'],
+    capacity: [{ seats: 9000, setup: 'football', note: 'Reported, the research\'s recommended figure. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'featherstone-field-at-murdock-stadium': {
+    id: 'featherstone-field-at-murdock-stadium',
+    metroId: 'la',
+    names: [{ name: 'Featherstone Field at Murdock Stadium' }],
+    aliases: ['Murdock Stadium'],
+    // The research's map point; not an entrance.
+    location: [-118.332222, 33.884444],
+    capacity: [{ seats: 8000, setup: 'football', note: 'Official, the research\'s recommended figure. After the 2016 rebuild. docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'harry-r-lebard-stadium': {
+    id: 'harry-r-lebard-stadium',
+    metroId: 'la',
+    names: [{ name: 'Harry R. LeBard Stadium' }],
+    aliases: ['LeBard Stadium'],
+    // The research's map point; not an entrance.
+    location: [-117.910570, 33.672787],
+    capacity: [{ seats: 7600, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'cougar-stadium-canyons': {
+    id: 'cougar-stadium-canyons',
+    metroId: 'la',
+    names: [{ name: 'Cougar Stadium' }],
+    aliases: ['College of the Canyons Cougar Stadium'],
+    // The research's map point; not an entrance.
+    location: [-118.571245, 34.407047],
+    capacity: [{ seats: 7500, setup: 'football', note: 'Reported, the research\'s recommended figure. Current aggregate seating manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'corsair-field': {
+    id: 'corsair-field',
+    metroId: 'la',
+    names: [{ name: 'Corsair Field' }],
+    aliases: ['Corsair Stadium'],
+    // The research's map point; not an entrance.
+    location: [-118.471541, 34.015465],
+    capacity: [{ seats: 6600, setup: 'football', note: 'Reported, the research\'s recommended figure. 5,000 west and 1,600 east; a football directory says 4,000. Post-repair paid return and current seating manifest unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'ont-field': {
+    id: 'ont-field',
+    metroId: 'la',
+    names: [{ name: 'ONT Field' }],
+    // The research's map point; not an entrance.
+    location: [-117.603318, 34.018463],
+    ticketmasterIds: ['KovZ917AVdg'],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, the research\'s recommended figure. 4,500 fixed seats; the city proposed 6,500. Completed-project and city/review figures conflict; model near inside edge (CAPACITY / INNER-BOUNDARY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
+  'monarch-stadium': {
+    id: 'monarch-stadium',
+    metroId: 'la',
+    names: [{ name: 'Monarch Stadium' }],
+    // The research's map point; not an entrance.
+    location: [-118.415977, 34.174836],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, the research\'s recommended figure. 3,500 north and 2,500 south. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    roof: 'open',
+  },
   // ---- Broadway houses (Kylie, Oct 26, 2026: "let's aim for B"): the 39 of the 41 Broadway theatres not yet on file
   // (the St. James and the Palace were), so their shows carry the Broadway League's published fill as an estimate.
   // Seats from Wikipedia's table (reported); points from OpenStreetMap by street address. Former names are aliases
