@@ -1,6 +1,6 @@
 # College program attendance sources — research answer (Codex)
 
-Status: saved Oct 27, 2026 (Kylie: "here is other answer"), in full as delivered (its companion JSON fixture was not supplied). Not folded: it becomes a proposal. Junior-college football stays as it is until a proposal from this answer (Kylie, Oct 27: "agree with your leans").
+Status: saved Oct 27, 2026 (Kylie: "here is other answer"), in full as delivered, with its companion fixture file `ncaa-attendance-fixtures-codex.json` (the same game rows as JSON, from the same Codex output folder). Not folded: it becomes a proposal. Junior-college football stays as it is until a proposal from this answer (Kylie, Oct 27: "agree with your leans").
 
 **Research read dates: October 26–27, 2026 (America/Los_Angeles). Expanded research completed within accessible sources; remaining gaps are explicit.** Prepared for Fan/Friction build 7.1, M35. This is research for a proposal, not a build authorization; no app changes were made.
 
