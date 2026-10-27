@@ -124,8 +124,9 @@ export function specialDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   if (run) return { count: Math.min(run.perShow, room), note: `This production's average per show: ${run.basis}. An estimate.` };
   const own = SPECIAL_ROOM_FILL[venue.id];
   if (own) return { count: Math.round(room * own.share), note: `${Math.round(own.share * 1000) / 10}% of the house: ${own.basis}. An estimate.` };
-  // Built for shows: every figure on file is the room's concert or usual one, and a bare figure only indoors (a racetrack or a fairground has none).
-  const showRoom = venue.capacity.every((c) => c.setup === 'concert' || (!c.setup && venue.roof === 'indoor'));
+  // An indoor room built for shows (every figure its concert or usual one): Québec's survey is of halls, so festival
+  // grounds, amphitheatres, racetracks and arenas take none (an open-air ground over 6,000 would also count toward friction).
+  const showRoom = venue.roof === 'indoor' && venue.capacity.every((c) => c.setup === 'concert' || !c.setup);
   if (showRoom && (QUEBEC_METROS.has(venue.metroId) || QUEBEC_ROOMS_ELSEWHERE.has(venue.id))) {
     const band = QUEBEC_FILL_BANDS.find((b) => room <= b.upTo)!;
     return {
