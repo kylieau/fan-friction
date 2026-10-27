@@ -689,3 +689,78 @@ Pittsburgh. Rooms on file; largest setup on file:
 
 Stop at a clean break and say where you stopped.
 ```
+
+### Continuation 10 (Oct 26, 2026): Milwaukee, then the Los Angeles extras
+
+Status: delivery 10 (Portland, Raleigh–Durham, St. Louis, Pittsburgh) is saved as `further-out-rooms-answer-10.md` and folded. Next: Milwaukee, then the Los Angeles extras, the last of the brief. Save the answer as `further-out-rooms-answer-11.md`.
+
+```
+Continue the Further out research with Milwaukee, then Los Angeles (the brief's last two). Deliver this as Delivery 11, a new file with only these two city sections, its own delivery status and the continuation point (or say the brief is finished); do not repeat earlier deliveries. Keep everything Delivery 10 did: the city-hall drive rule (inside is a normal, non-event drive of 60 minutes or less from city hall; Further out is beyond that up to about 3 hours), the same table and labels (official / reported / estimated), one recommended capacity per row with its label, a decimal coordinate pair for every room, a reproducible hall-to-room route for every row, the hold markers you used (INNER-BOUNDARY, OUTER-BOUNDARY, CAPACITY, DATA, PROVISIONAL INSIDE), the alias check against the on-file list before calling a room new, the separate "complete outer-boundary records" table for rooms past the three-hour screen, the "Inside under the drive rule, not on file", "near the line", "shared with another covered city" and "could not confirm" sections per city, and region and state names as location only. A room within another covered city's hour belongs to that city, not to these two.
+
+City halls (use these points, latitude first): Milwaukee, City Hall, 200 East Wells Street (43.0417, -87.9098); Los Angeles, City Hall, 200 North Spring Street (34.0537, -118.2429).
+
+The app already has these rooms. Do not list them again; any other room is yours to check by its own hall drive.
+
+Milwaukee. Rooms on file; largest setup on file:
+- American Family Field; 41,900
+- Alpine Valley Music Theatre; 35,300
+- Milwaukee Mile; 34,855
+- American Family Insurance Amphitheater; 23,000
+- Fiserv Forum; 18,000
+- UW-Milwaukee Panther Arena; 10,705
+- Slinger Super Speedway; 10,000
+- BMO Pavilion; 10,000
+- Historic Horlick Athletic Field; 5,000
+- Already Further out: Country Thunder Wisconsin grounds at Shadow Hill Ranch (Twin Lakes)
+- Hart Park Stadium, Landmark Credit Union Live, Miller High Life Theatre, Eagles Ballroom, Franklin Field, Al McGuire Center, DockHounds Ballpark, Klotsche Center, Kapco Park, Southeast Sales Powersports Stadium, Time of Grace Center, Riverside Theater, Uihlein Hall, Wilson Ice Arena, Schneider Stadium, Engelmann Stadium, Pettit National Ice Center, R. John Buuck Field House, The Rave, Cooley Auditorium, Valley Fields, Bradley Symphony Center, Van Male Field House, Raabe Stadium, Ozaukee Ice Center, Pabst Theater, Shattuck Auditorium, Varsity Theatre, Jerry Huennekens Gymnasium, Whitnall High School Main Gym, Catholic Memorial Main Gym, Oak Creek Performing Arts & Education Center, The Rave II, Turner Hall Ballroom; all under 5,000
+(Chicago is a covered city. Its own rooms belong to Chicago; already Further out for it: Rockford's BMO Center, the McHenry County Fairgrounds grandstand (Woodstock), the DeKalb rooms (Huskie Stadium, NIU Convocation Center), Chicagoland Speedway, Grundy County Speedway and the northwest Indiana and South Bend rooms. Madison, Green Bay, Appleton, Oshkosh, Fond du Lac, Sheboygan, Elkhart Lake, Janesville, Beloit, Kenosha, Racine's outskirts and Wisconsin Dells are yours to check by their drives.)
+
+Los Angeles. Only rooms not on file; festival grounds especially (the brief's original note). Rooms on file; largest setup on file:
+- LA Memorial Coliseum; 93,607
+- Rose Bowl; 89,702
+- SoFi Stadium; 70,240
+- Dodger Stadium; 56,000
+- Angel Stadium; 45,517
+- In-N-Out Burger Pomona Dragstrip; 40,000
+- Dignity Health Sports Park; 30,510
+- Santa Anita Park; 26,000
+- BMO Stadium; 24,000
+- Weingart Stadium; 22,355
+- Crypto.com Arena; 18,910
+- Honda Center; 18,900
+- Intuit Dome; 18,000
+- Kia Forum; 17,505
+- Hollywood Bowl; 17,500
+- Irvine Meadows Amphitheatre; 16,085 (closed)
+- Fairplex; 15,000
+- Long Beach Arena; 14,500
+- Pauley Pavilion; 13,800
+- FivePoint Amphitheatre; 12,000
+- Drake Stadium; 11,700
+- Veterans Memorial Stadium; 11,600
+- Toyota Arena; 11,089
+- Galen Center; 10,258
+- Titan Stadium; 10,000
+- Great Park Live; 10,000
+- Dignity Health Sports Park Tennis Stadium; 8,000
+- Pacific Amphitheatre; 7,800
+- Anaheim Convention Center; 7,500
+- Peacock Theater; 7,100
+- Irwindale Speedway; 6,500
+- Shrine Auditorium; 6,300
+- Gibson Amphitheatre; 6,251 (closed)
+- Los Alamitos Race Course; 6,000
+- YouTube Theater; 6,000
+- Morongo Field; 6,000
+- Greek Theatre; 5,900
+- Los Angeles Tennis Center; 5,800
+- Championship Soccer Stadium; 5,500
+- Bren Events Center; 5,430
+- Shrine Expo Hall; 5,000
+- LBS Financial Credit Union Pyramid; 5,000
+- Already Further out: The Hangar (Lancaster); Stadium 1 and Stadium 2, Indian Wells Tennis Garden (Indian Wells); Acrisure Arena and McCallum Theatre (Palm Desert); San Manuel Stadium (San Bernardino); Dale E. and Sarah Ann Fowler Events Center (Riverside); Fantasy Springs Resort Casino (Indio); Empire Polo Club (Indio); The Show (Rancho Mirage); Oxnard Performing Arts Center (Oxnard); Libbey Bowl (Ojai); Majestic Ventura Theater (Ventura)
+- Hollywood Palladium, The Bellwether, House of Blues Anaheim, The Belasco, The Wiltern, Zipper Concert Hall, Kellogg Arena, Starlight Bowl, Gersten Pavilion, Titan Gym, Felix Event Center, University Gym, Goodwin Field, Cicerone Field at Anteater Ballpark, Dolby Theatre, Dorothy Chandler Pavilion, Firestone Fieldhouse, Terrace Theater, Pasadena Civic Auditorium, Segerstrom Hall, Torodome, Pantages Theatre, Mabel Shaw Bridges Music Auditorium, The Novo by Microsoft, Premier America Credit Union Arena, Walt Disney Concert Hall, Segerstrom Concert Hall, Eddy D. Field Stadium, Tari Frahm Rokus Field, Fox Theater Pomona, Orpheum Theatre, Cerritos Center for the Performing Arts, Saban Theatre, OC Fair Action Sports Arena, Royce Hall, Fred Kavli Theatre, The Soraya, The Grove of Anaheim, The United Theater on Broadway, Warner Grand Theatre, Gilbert Arena, Mayan Theatre, Redondo Beach Performing Arts Center, Haugh Performing Arts Center, Alex Theatre, San Gabriel Mission Playhouse, Wilshire Ebell Theatre, La Mirada Theatre for the Performing Arts, Ambassador Auditorium, Fonda Theatre, The Vermont, The Ford, Exchange LA, OC Fair Hangar, Avalon, Regent Theater, Palace Theatre, Carpenter Performing Arts Center, Musco Center for the Arts, Soka Performing Arts Center, George C. Page Stadium, Kellogg Stadium, The Observatory Orange County, Yost Theatre, The Mountain at Mullin Park, William Rolland Stadium, Anteater Stadium, Sullivan Field, George Allen Field; all under 5,000
+(San Diego and Las Vegas are covered cities. San Diego's own rooms (Del Mar Fairgrounds, Frontwave Arena in Oceanside among them) belong to San Diego; Las Vegas's Further out rooms are Laughlin Event Center and St. George's Greater Zion Stadium. Festival and fair grounds (the Coachella Valley beyond Empire Polo Club, Glen Helen, the Inland Empire fairgrounds, Lake Perris, Antelope Valley, Ventura County Fairgrounds, Santa Barbara and Bakersfield), racetracks, college and school stadiums and arenas, and rooms in Temecula, Riverside, San Bernardino, Ontario, Lancaster–Palmdale, Santa Clarita, Ventura, Santa Barbara and Bakersfield are yours to check by their drives. Toyota Arena, San Manuel Stadium, Morongo Field and the Fowler Events Center are on file already.)
+
+Stop at a clean break and say where you stopped.
+```
