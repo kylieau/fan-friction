@@ -18,7 +18,7 @@ Done earlier on Oct 26:
 - **M16 verified:** Oct 21 Los Angeles reads its saved 5.3 Spicy with no "Estimated" line.
 - **Build 7.1 questions 3–7 answered** (Kylie, Oct 26): the leans stand, no weather summary line, the pill on both cards; nothing changed in code.
 - **Research saved:** `arts-fill-rates-answer-codex.md` (in full; folded in part as the show estimates above).
-- **Reviews:** Codex's five findings on today's work, reconciled with the advisor: fixed, the same-name room routing, seven arenas tagged with their resident's sport (WesBanco gains 4,700 hockey) so concerts take the 57% rule, the (i) card's source line; a warning for a one-day Ticketmaster overflow; **parked as Kylie's question**, racing and rodeo rooms getting no Ticketmaster sports listings (BACKLOG). Bank of Springfield Center, Cabarrus Arena and the Salem Pavilion stay untagged (no sourced resident sport).
+- **Reviews:** Codex's five findings on today's work, reconciled with the advisor: fixed, the same-name room routing, seven arenas tagged with their resident's sport (WesBanco gains 4,700 hockey) so concerts take the 57% rule, the (i) card's source line; a warning for a one-day Ticketmaster overflow; racing and rodeo rooms getting no Ticketmaster sports listings went to Kylie and is now built (above). Bank of Springfield Center, Cabarrus Arena and the Salem Pavilion stay untagged (no sourced resident sport).
 - The Oct 26 nightly's weather step failed for Tampa, Kansas City and San Antonio (fetch failed; yesterday's rows kept). Check tonight's run.
 - The working tree is clean apart from two untracked `.agents/skills/source-command-*` folders that aren't ours (likely Codex's); leave them unstaged.
 
@@ -30,7 +30,7 @@ Done earlier on Oct 26:
 
 ## Kylie's manual steps
 1. 🚩 **SeatGeek:** still no free client id (Oct 26). **Remind her every session** until it lands; then the `SEATGEEK_CLIENT_ID` Actions secret and SeatGeek's logo attribution.
-2. **Answer the racing and rodeo question** (BACKLOG, "Show estimates and the Broadway houses"): a computed rule would add 85 rooms' sports listings in 32 cities, 33 inside a city.
+2. **Answer two questions** (BACKLOG, "Show estimates and the Broadway houses"): a festival admission listed at several Summerfest stages; junior-college football at 6,000+ rooms reading the room's size.
 3. **Phone checks signed in** (the 7.1 report's list), the row icons, the weather beside the venue name, and **New York on the Map** (39 new muted pins in Midtown) and a Broadway show's event page.
 4. **Research to run:** Further out Continuation 11 (the holds); the college attendance prompt (`docs/research/topics/ncaa-attendance-sources-prompt.md`).
 5. **The M15 seed, when she wants test account A filled:** `docs/reference/test-account-seed.md` (dry run first; agents never run its write path or open her export).
