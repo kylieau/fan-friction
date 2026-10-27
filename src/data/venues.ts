@@ -24723,7 +24723,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Edgewood Veterans Stadium' }],
     // The research's map point; not an entrance.
     location: [-98.555908, 29.394062],
-    capacity: [{ seats: 8500, setup: 'football', note: 'Reported, the research\'s recommended figure. A dated 2017 figure; the current paid calendar needs confirming (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-9.md.' }],
+    capacity: [{ seats: 8500, setup: 'football', note: 'Reported, a 2017 inventory; a 2021 listing says 9,000 (CAPACITY HOLD). A paid district game confirmed in 2026; the full paid calendar not (DATA HOLD). docs/research/topics/further-out-rooms-answer-9.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'matador-stadium': {
@@ -24839,7 +24839,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Oregon State Fair & Expo Center Pavilion'],
     // The research's map point; not an entrance.
     location: [-123.006289, 44.958835],
-    capacity: [{ seats: 5000, note: 'Official, the research\'s recommended figure. 5,000 fixed seats plus 2,000 temporary; the larger layout\'s paid use unconfirmed. Paid recurrence and event-door check remain (INNER-BOUNDARY / DATA HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 5000, note: 'Official, 5,000 fixed seats plus 2,000 temporary, not added. Cleared (Delivery 12): ticketed NPRA Finals and concerts. The point is the building named Pavilion. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'indoor',
   },
   'the-cuthbert-amphitheater': {
@@ -24862,7 +24862,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-122.696572, 45.596551],
     ticketmasterIds: ['KovZpZA1vnlA'],
-    capacity: [{ seats: 30000, setup: 'racing', note: 'Reported, the research\'s recommended figure. A spectator inventory figure; the current grandstand and grounds split is unconfirmed. Current owner-certified spectator setup not recovered (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 30000, setup: 'racing', note: 'Reported, a spectator inventory figure; the promoter sells grandstands and general admission without a total (CAPACITY HOLD). Paid IndyCar and All British Field Meet weekends in 2026. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'st-paul-rodeo-arena': {
@@ -24873,7 +24873,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-122.976783, 45.207270],
     ticketmasterIds: ['KovZpap5je'],
-    capacity: [{ seats: 10500, setup: 'rodeo', note: 'Reported, the research\'s recommended figure. Current aggregate seating manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 10500, setup: 'rodeo', note: 'Reported (Statesman Journal, 2026); 10,000 in 1956, with sections rebuilt since and no current total (CAPACITY HOLD). Paid performances June 30–July 4. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'molalla-buckeroo-arena': {
@@ -24892,8 +24892,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Clark County Event Center Grandstand' }],
     aliases: ['Clark County Event Center'],
     // The research's map point; not an entrance.
-    location: [-122.665607, 45.747431],
-    capacity: [{ seats: 7425, note: 'Official, the research\'s recommended figure. 7,425 bleacher seats. Broader Event Center point; individual grandstand gate unconfirmed; DATA HOLD: broader grounds/complex point (DATA HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    location: [-122.667186, 45.745794],
+    capacity: [{ seats: 7425, note: 'Official, 7,425 bleacher seats; 1,200 floor and 150 ADA are listed separately and not added. Cleared (Delivery 12): grandstand concerts, rodeo and motorsport with paid fair admission. The point is the mapped grandstand building. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'roto-rooter-park': {
@@ -24903,7 +24903,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-122.994000, 45.015000],
     ticketmasterIds: ['ZFr9jZea7d'],
-    capacity: [{ seats: 6000, setup: 'baseball', note: 'Reported, the research\'s recommended figure. 4,254 seats, 6,000 with the berms. Inclusive berm figure requires current manifest (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 4254, setup: 'baseball', note: 'Official, the league\'s own seated figure (Delivery 12); the 6,000 with berms is withdrawn as unverified, so the park sits under the 5,000 floor until an operator gives a berm-inclusive limit (CAPACITY HOLD). Paid Mavericks League baseball. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'charlotte-motor-speedway': {
@@ -25484,7 +25484,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-90.399944, 38.268963],
     ticketmasterIds: ['Z7r9jZaATZ'],
-    capacity: [{ seats: 6000, setup: 'racing', note: 'Official, the research\'s recommended figure. The series\' event figure; the track group\'s marketing says over 10,000. Event inventory versus broader group marketing (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 6000, setup: 'racing', note: 'Official, the World of Outlaws event\'s seating; the track group\'s \'over 10,000\' is not used. Cleared (Delivery 12): paid race weekends in August and September 2026. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'tri-city-speedway': {
@@ -25656,7 +25656,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['PPMS', 'Pennsylvania Motor Speedway'],
     // The research's map point; not an entrance.
     location: [-80.261279, 40.422019],
-    capacity: [{ seats: 10000, setup: 'racing', note: 'Reported, the research\'s recommended figure. Current spectator manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 10000, setup: 'racing', note: 'Reported, a track inventory figure; no owner seat count (CAPACITY HOLD). Paid Saturday racing in 2026. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'offutt-field': {
@@ -25665,7 +25665,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Offutt Field' }],
     // The research's map point; not an entrance.
     location: [-79.539631, 40.302412],
-    capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s recommended figure. A 2005 visiting-university figure kept as a historical benchmark. Historical benchmark/current layout (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
+    capacity: [{ seats: 5000, setup: 'football', note: 'Official, Seton Hill\'s current figure for the field (cleared, Delivery 12), replacing a 2005 visiting-team guide. Paid home games, five in 2026. docs/research/topics/further-out-rooms-answer-10.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   // ---- Further out delivery 11 (docs/research/topics/further-out-rooms-answer-11.md: Milwaukee, then Los Angeles
@@ -25881,7 +25881,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Miller Lite Oasis' }],
     // The research's map point; not an entrance.
     location: [-87.899617, 43.032116],
-    capacity: [{ seats: 11400, setup: 'concert', note: 'Reported, the research\'s recommended figure. Present licensed stage-area limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 11400, setup: 'concert', note: 'Reported, the stage area\'s benchmark; a 2017 renovation report says 12,000. No current licensed limit for the area (CAPACITY HOLD). Paid Summerfest admission, three weekends in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'generac-power-stage': {
@@ -25890,7 +25890,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Harley-Davidson Roadhouse' }, { name: 'Generac Power Stage', from: '2021-01-01' }],
     // The research's map point; not an entrance.
     location: [-87.899434, 43.031100],
-    capacity: [{ seats: 11000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Current licensed stage-area limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Reported, the stage area\'s benchmark; no current licensed limit (CAPACITY HOLD). Paid Summerfest admission, three weekends in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   't-mobile-stage-summerfest': {
@@ -25899,7 +25899,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'UScellular Connection Stage' }, { name: 'T-Mobile Stage', from: '2026-01-28' }],
     // The research's map point; not an entrance.
     location: [-87.897945, 43.034462],
-    capacity: [{ seats: 5700, setup: 'concert', note: 'Reported, an older inventory, before the 2018 rebuild. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 9000, setup: 'concert', fromYear: 2018, note: 'Reported, the research\'s recommended figure. After the 2018 rebuild; 5,700 before. Rebuilt benchmark; current operating limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 5700, setup: 'concert', note: 'Reported, an older inventory, before the 2018 rebuild. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 9000, setup: 'concert', fromYear: 2018, note: 'Reported, the research\'s recommended figure. After the 2018 rebuild, a 2016 pre-opening projection (Delivery 12); 5,700 before. Rebuilt benchmark; current operating limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'briggs-and-stratton-big-backyard': {
@@ -25908,7 +25908,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Briggs & Stratton Big Backyard' }],
     // The research's map point; not an entrance.
     location: [-87.899452, 43.029787],
-    capacity: [{ seats: 8000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Inconsistent published stage-area counts (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 8000, setup: 'concert', note: 'Reported, the stage area\'s benchmark; others say 8,600 and 6,000–8,000 (CAPACITY HOLD). Paid Summerfest admission, three weekends in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'racine-county-fairgrounds-grandstand': {
@@ -25917,8 +25917,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Racine County Fairgrounds Grandstand' }],
     aliases: ['Racine County Fair'],
     // The research's map point; not an entrance.
-    location: [-88.058574, 42.677916],
-    capacity: [{ seats: 6000, note: 'Official, the research\'s recommended figure. The grandstand alone, from the fair\'s operator (Nov 2022). Point covers broader fairgrounds, not the individual grandstand entrance (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    location: [-88.062882, 42.676693],
+    capacity: [{ seats: 6000, note: 'Official, the grandstand\'s own limit in the fair operator\'s 2026 vendor letter. Cleared (Delivery 12): paid-admission pulls, derbies and rodeo events. The point is the mapped grandstand building. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'uline-warehouse': {
@@ -25928,7 +25928,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Uline Warehouse at Summerfest'],
     // The research's map point; not an entrance.
     location: [-87.898342, 43.035328],
-    capacity: [{ seats: 6000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Current covered / standing split and maximum unresolved (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 6000, setup: 'concert', note: 'Reported, the mapped area\'s figure; a festival inventory says 7,300; no covered or standing split (CAPACITY HOLD). Paid Summerfest admission, three weekends in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'covered',
   },
   'glen-helen-amphitheater': {
@@ -26026,7 +26026,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['SilverLakes', 'SilverLakes Equestrian & Sports Park'],
     // The research's map point; not an entrance.
     location: [-117.554805, 33.952461],
-    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the research\'s recommended figure. The concert grounds; the separate 5,000-seat soccer stadium is not added. Model just beyond the hour; point covers broader complex (INNER-BOUNDARY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Official, the owner\'s figure for The BackYard alone; the separate 15,000 Fields area is not added. Paid Boots in the Park confirmed; the owner lists four 2026 concerts, but the BackYard\'s own dates and point are not (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'dignity-health-arena-bakersfield': {
@@ -26212,7 +26212,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-118.170149, 34.167257],
     ticketmasterIds: ['Z7r9jZadjY'],
-    capacity: [{ seats: 50000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A 2022 festival cap (Cruel World); not the Rose Bowl stadium\'s seats. Historical festival limit; broader golf-course point and current footprint unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 35000, setup: 'concert', note: 'Reported, about 35,000 for the 2026 Zipangu festival setup (Billboard Japan, May 20, 2026), replacing the 2022 Cruel World cap of 50,000; the city\'s 2022 proposal allowed up to 50,000 a day through 2026, a ceiling rather than a sold setup. Festival perimeter and gate unresolved (DATA HOLD). Three paid festivals in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'los-angeles-state-historic-park': {
@@ -26223,7 +26223,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-118.231544, 34.068477],
     ticketmasterIds: ['KovZpZAFlklA', 'rZ7HnEZ17ASqf'],
-    capacity: [{ seats: 15000, setup: 'concert', note: 'Reported, the research\'s recommended figure. A current concert inventory; 25,000 after the 2017 reopening. Current event-specific licensed maximum and event gate unresolved (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 15000, setup: 'concert', note: 'Reported, a concert-ground benchmark (JamBase); 25,000 after the 2017 reopening and 35,000 before it were older footprints. No current licensed event maximum or gate (CAPACITY / DATA HOLD). Several paid concert dates in 2026 (Lost In Dreams, Chris Lake). docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'marina-green-park': {
@@ -26233,7 +26233,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Marina Green'],
     // The research's map point; not an entrance.
     location: [-118.185804, 33.762744],
-    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported, the research\'s recommended figure. Inventories disagree (2,000 to 14,000). Incompatible inventory scopes; exact festival footprint and permit unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported, a festival-ground inventory figure (Songkick); others say 5,000 and 2,000 for different footprints. No current licensed limit (CAPACITY / DATA HOLD). Cali Vibes 2026 was postponed; one paid music day (Holo Holo, Oct 17, 2026) confirmed, several current paid dates not. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'falcon-stadium-cerritos': {
@@ -26242,8 +26242,8 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Falcon Stadium' }],
     aliases: ['Cerritos College Falcon Stadium'],
     // The research's map point; not an entrance.
-    location: [-118.094600, 33.885700],
-    capacity: [{ seats: 12000, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner seats and individual stadium point unresolved; route uses college point; DATA HOLD: broader grounds/complex point (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    location: [-118.090315, 33.885805],
+    capacity: [{ seats: 12000, setup: 'football', note: 'Reported, football bleachers (College Football Commission); a directory says 12,500 and a meet organizer over 14,000. No owner count (CAPACITY HOLD). Paid Falcons home games in 2026. The point is now the mapped football field (Delivery 12), not the college\'s locality. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'fandm-bank-amphitheater-of-long-beach': {
@@ -26252,9 +26252,9 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Long Beach Amphitheater' }, { name: 'F&M Bank Amphitheater of Long Beach', from: '2026-05-29' }],
     aliases: ['F&M Bank Amphitheater'],
     // The research's map point; not an entrance.
-    location: [-118.192389, 33.751944],
+    location: [-118.193163, 33.752402],
     ticketmasterIds: ['KovZ917AVZZ'],
-    capacity: [{ seats: 11000, setup: 'concert', note: 'Official, the research\'s recommended figure. Official planning project point; exact operating spectator gate unconfirmed; DATA HOLD: broader grounds/complex point; DATA HOLD: event parking is downtown with shuttles; hall-to-grounds drive excludes that transfer (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 11000, setup: 'concert', note: 'Official, the operator\'s figure; the planning approval\'s 12,000 with standing is not used. Cleared (Delivery 12): a paid concert season on Ticketmaster and AXS. General parking is downtown with shuttles, so the drive is not the whole trip. The point is the mapped amphitheater. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'hilmer-lodge-stadium': {
@@ -26263,7 +26263,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Hilmer Lodge Stadium' }],
     // The research's map point; not an entrance.
     location: [-117.836417, 34.045599],
-    capacity: [{ seats: 10739, setup: 'track', note: 'Official, the research\'s recommended figure. Fixed seats; expandable to about 20,000. Contractor / owner fixed-seat discrepancy; expansion not imported (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 10739, setup: 'track', note: 'Official, the college\'s fixed-seat count, corroborated in 2026; contractors\' 11,000 and 11,500 and the expandable 20,000 are not used. Cleared (Delivery 12): paid Mt. SAC Relays sessions and football. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'redondo-beach-waterfront': {
@@ -26273,7 +26273,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Seaside Lagoon', 'BeachLife Festival grounds'],
     // The research's map point; not an entrance.
     location: [-118.394464, 33.844429],
-    capacity: [{ seats: 10000, setup: 'concert', note: 'Reported, the research\'s recommended figure. BeachLife\'s 2026 size; 11,000 in 2023. Festival permit and footprint gate unresolved; point marks lagoon locality (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 10000, setup: 'concert', note: 'Reported, about 10,000 a day for BeachLife (Pollstar, May 1, 2026); 35,000 was the 2025 three-day total. The point is the lagoon, not the festival gate (DATA HOLD). Three paid festival days a year. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'citrus-stadium': {
@@ -26282,7 +26282,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Citrus Stadium' }],
     // The research's map point; not an entrance.
     location: [-117.884000, 34.130800],
-    capacity: [{ seats: 10000, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 10000, setup: 'football', note: 'Official, the college\'s football bleacher figure (capacity cleared, Delivery 12). Paid games confirmed (Azusa Pacific\'s home games here), but several paid dates not fully (DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'santa-ana-stadium': {
@@ -26313,7 +26313,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['LeBard Stadium'],
     // The research's map point; not an entrance.
     location: [-117.910570, 33.672787],
-    capacity: [{ seats: 7600, setup: 'football', note: 'Reported, the research\'s recommended figure. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 7600, setup: 'football', note: 'Reported, football seating (OC Sports Commission); no owner count (CAPACITY HOLD). Orange Lutheran\'s ticketed home season plays here (Orange Coast\'s college team is on hiatus in 2026). docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'cougar-stadium-canyons': {
@@ -26323,7 +26323,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['College of the Canyons Cougar Stadium'],
     // The research's map point; not an entrance.
     location: [-118.571245, 34.407047],
-    capacity: [{ seats: 7500, setup: 'football', note: 'Reported, the research\'s recommended figure. Current aggregate seating manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 7500, setup: 'football', note: 'Reported, the city\'s inventory; the college history\'s 6,000 is the original count (CAPACITY HOLD). Paid admission to every Cougars football game, plus a paid DCI show. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'corsair-field': {
@@ -26333,7 +26333,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Corsair Stadium'],
     // The research's map point; not an entrance.
     location: [-118.471541, 34.015465],
-    capacity: [{ seats: 6600, setup: 'football', note: 'Reported, the research\'s recommended figure. 5,000 west and 1,600 east; a football directory says 4,000. Post-repair paid return and current seating manifest unconfirmed (CAPACITY / DATA HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 6600, setup: 'football', note: 'Reported, 5,000 west and 1,600 east before the repairs; a football directory says 4,000. No post-repair count (CAPACITY / DATA HOLD). Paid football returned Oct 24, 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'ont-field': {
@@ -26343,7 +26343,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-117.603318, 34.018463],
     ticketmasterIds: ['KovZ917AVdg'],
-    capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, the research\'s recommended figure. 4,500 fixed seats; the city proposed 6,500. Completed-project and city/review figures conflict; model near inside edge (CAPACITY / INNER-BOUNDARY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 6000, setup: 'baseball', note: 'Official, inclusive baseball seating (4,500 fixed), MiLB\'s guide and the architect agree; the city\'s 6,500 and a review\'s 7,000 are not used. Cleared (Delivery 12): the Tower Buzzers\' paid season. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'monarch-stadium': {
@@ -26352,7 +26352,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'Monarch Stadium' }],
     // The research's map point; not an entrance.
     location: [-118.415977, 34.174836],
-    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, the research\'s recommended figure. 3,500 north and 2,500 south. Current owner manifest unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 6000, setup: 'football', note: 'Reported, 3,500 north and 2,500 south (LA Sports Council); no owner count (CAPACITY HOLD). LA Valley College lists free admission for its 2026 home games (Delivery 12); no paid program found. Kept as it is under Kylie\'s Oct 27 junior-college football answer. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   // ---- Broadway houses (Kylie, Oct 26, 2026: "let's aim for B"): the 39 of the 41 Broadway theatres not yet on file
