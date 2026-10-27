@@ -154,8 +154,9 @@ async function openMeteoElevations(locs) {
 
 const relief = await reliefFor(venues);
 const lines = ['venueId\tmetro\tcapacity\tflagToday\troads500\troads250\tfreewayM\treliefM\truleSays\tname'];
-// A scoped run preserves every other city's measurements in both outputs.
-if (metroFilter !== undefined) {
+// A scoped run (one city, or --new) preserves every other room's measurements in both outputs (--new alone dropped
+// them until Oct 26, 2026).
+if (metroFilter !== undefined || onlyNew) {
   const measuredIds = new Set(venues.map(([id]) => id));
   let saved = '';
   try { saved = readFileSync(path.join(root, 'data', 'venue-access.tsv'), 'utf8'); }
@@ -187,7 +188,7 @@ console.log(`Saved ${path.relative(root, out)}.`);
 // The index the app reads (venues.ts turns it into the strained flag by the rule).
 const rows = lines.slice(1).map((l) => l.split('\t'));
 // A scoped run also keeps index rows the table lacks (some city builds wrote the index only), so it never drops a city.
-if (metroFilter !== undefined) {
+if (metroFilter !== undefined || onlyNew) {
   const inTable = new Set(rows.map(([vid]) => vid));
   let saved = '';
   try { saved = readFileSync(path.join(root, 'src', 'data', 'venueAccessIndex.ts'), 'utf8'); }

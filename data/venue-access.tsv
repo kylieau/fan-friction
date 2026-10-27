@@ -514,3 +514,753 @@ shoretown-ballpark	new-york	6588	0	11	3	1800	10	0	ShoreTown Ballpark
 td-bank-ballpark	new-york	6100	0	10	3	250	14	0	TD Bank Ballpark
 sprague-field	new-york	6000	0	19	6	1500	48	0	Sprague Field
 msu-soccer-park	new-york	5000	0	20	5	1250	30	0	MSU Soccer Park
+american-family-field	milwaukee	41900	0	9	3	150	23	0	American Family Field
+milwaukee-mile	milwaukee	34855	0	11	2	700	7	0	Milwaukee Mile
+american-family-insurance-amphitheater	milwaukee	23000	0	5	0	150	6	0	American Family Insurance Amphitheater
+fiserv-forum	milwaukee	18000	0	26	9	350	26	0	Fiserv Forum
+uwm-panther-arena	milwaukee	10705	0	22	7	150	27	0	UW-Milwaukee Panther Arena
+slinger-speedway	milwaukee	10000	0	7	2	250	22	0	Slinger Super Speedway
+bmo-pavilion	milwaukee	10000	0	4	0	250	5	0	BMO Pavilion
+gillette-stadium	boston	64628	0	3	0	>1500	27	0	Boston Stadium
+alumni-stadium	boston	44500	0	20	10	1300	37	0	Alumni Stadium
+fenway-park	boston	37755	0	30	11	150	18	0	Fenway Park
+harvard-stadium	boston	25000	0	16	3	250	9	0	Harvard Stadium
+xfinity-center	boston	19900	0	0	0	1000	6	0	Xfinity Center
+td-garden	boston	19156	0	53	16	100	30	0	TD Garden
+nickerson-field	boston	9871	0	26	8	150	19	0	Nickerson Field
+conte-forum	boston	8606	0	28	7	1350	39	0	Conte Forum
+agganis-arena	boston	7200	0	23	9	150	21	0	Agganis Arena
+tsongas-center	boston	7800	0	44	10	1700	12	0	Tsongas Arena
+mgm-music-hall-fenway	boston	5009	0	29	7	150	14	0	MGM Music Hall at Fenway
+leader-bank-pavilion	boston	5000	0	21	8	150	9	0	Leader Bank Pavilion
+track-new-balance	boston	5000	0	50	15	200	17	0	The TRACK at New Balance
+homestead-miami-speedway	miami	46000	0	3	0	3900	7	0	Homestead-Miami Speedway
+pitbull-stadium	miami	20000	0	6	3	750	3	0	Pitbull Stadium
+fpl-solar-amphitheater	miami	10000	0	16	6	600	23	0	FPL Solar Amphitheater at Bayfront Park
+toyota-arena-ontario	la	11089	0	10	6	600	19	0	Toyota Arena
+san-manuel-stadium	la	8000	0	15	6	500	12	0	San Manuel Stadium
+morongo-field	la	6000	0	8	4	550	17	0	Morongo Field
+fowler-events-center	la	5050	0	11	0	400	13	0	Dale E. and Sarah Ann Fowler Events Center
+lincoln-financial-field	philadelphia	69879	0	5	2	200	9	0	Lincoln Financial Field
+citizens-bank-park	philadelphia	42901	0	7	4	550	10	0	Citizens Bank Park
+xfinity-mobile-arena	philadelphia	21000	0	9	3	200	12	0	Xfinity Mobile Arena
+penn-franklin-field	philadelphia	52958	0	14	6	350	28	0	Franklin Field
+subaru-park	philadelphia	26000	0	16	6	100	9	0	Subaru Park
+freedom-mortgage-pavilion	philadelphia	25488	0	16	4	1050	8	0	Freedom Mortgage Pavilion
+mann-td-pavilion	philadelphia	13000	0	22	8	700	30	0	TD Pavilion at Highmark Mann
+mann-skyline-stage	philadelphia	6500	0	22	8	700	30	0	Highmark Skyline Stage
+villanova-stadium	philadelphia	12500	0	18	8	150	14	0	Villanova Stadium
+liacouras-center	philadelphia	10206	0	24	6	2150	8	0	Liacouras Center
+the-palestra	philadelphia	8725	0	20	4	400	27	0	The Palestra
+finneran-pavilion	philadelphia	6501	0	15	4	200	16	0	Finneran Pavilion
+dell-music-center	philadelphia	5884	0	28	14	600	35	0	Dell Music Center
+delaware-stadium	philadelphia	18500	0	12	1	1250	5	0	Delaware Stadium
+frawley-stadium	philadelphia	6404	0	26	8	100	16	0	Frawley Stadium
+bob-carpenter-center	philadelphia	5000	0	15	4	1100	9	0	Acierno Arena
+arizona-veterans-memorial-coliseum	phoenix	14691	0	14	2	850	8	0	Arizona Veterans Memorial Coliseum
+estadio-banorte	mexico-city	87000	0	33	4	650	11	0	Estadio Banorte
+estadio-gnp-seguros	mexico-city	65000	0	17	2	200	5	0	Estadio GNP Seguros
+estadio-olimpico-universitario	mexico-city	58445	0	10	1	1400	25	0	Estadio Olímpico Universitario
+plaza-de-toros-mexico	mexico-city	50000	0	56	21	150	9	0	Plaza de Toros México
+estadio-ciudad-de-los-deportes	mexico-city	34253	0	50	14	250	10	0	Estadio Ciudad de los Deportes
+arena-cdmx	mexico-city	22300	0	22	4	1600	7	0	Arena Ciudad de México
+palacio-de-los-deportes	mexico-city	21000	0	16	4	200	4	0	Palacio de los Deportes
+estadio-alfredo-harp-helu	mexico-city	20576	0	20	1	700	6	0	Estadio Alfredo Harp Helú
+arena-mexico	mexico-city	16500	0	45	15	1050	3	0	Arena México
+estadio-wilfrido-massieu	mexico-city	13000	0	4	2	1750	11	0	Estadio Wilfrido Massieu
+auditorio-nacional	mexico-city	9366	0	21	3	350	21	0	Auditorio Nacional
+pepsi-center-wtc	mexico-city	8000	0	52	18	400	10	0	Pepsi Center WTC
+gimnasio-juan-de-la-barrera	mexico-city	5242	0	37	11	200	7	0	Gimnasio Olímpico Juan de la Barrera
+t-mobile-arena	las-vegas	18000	0	14	5	150	13	0	T-Mobile Arena
+allegiant-stadium	las-vegas	65000	0	11	3	200	17	0	Allegiant Stadium
+michelob-ultra-arena	las-vegas	12000	0	8	3	150	18	0	Michelob ULTRA Arena
+mgm-grand-garden	las-vegas	16800	0	12	2	900	15	0	MGM Grand Garden Arena
+ph-live	las-vegas	7000	0	10	4	900	20	0	PH Live
+sphere	las-vegas	17600	0	8	5	1350	20	0	Sphere
+resorts-world-theatre	las-vegas	5000	0	12	4	800	6	0	Resorts World Theatre
+thomas-mack-center	las-vegas	18000	0	11	2	1450	10	0	Thomas & Mack Center
+orleans-arena	las-vegas	9500	0	6	2	1900	16	0	Orleans Arena
+downtown-las-vegas-events-center	las-vegas	11000	0	23	8	500	9	0	Downtown Las Vegas Events Center
+cashman-field	las-vegas	10000	0	25	4	900	36	0	Cashman Field
+las-vegas-ballpark	las-vegas	10000	0	12	6	650	23	0	Las Vegas Ballpark
+lees-family-forum	las-vegas	5567	0	29	5	500	34	0	Lee's Family Forum
+las-vegas-motor-speedway	las-vegas	80000	0	2	0	1750	18	0	Las Vegas Motor Speedway
+lvms-dirt-track	las-vegas	8200	0	2	0	1750	18	0	LVMS Dirt Track
+lvms-bullring	las-vegas	5400	0	2	0	1750	18	0	LVMS Bullring
+smart-financial-centre	houston	6400	0	9	3	600	3	0	Smart Financial Centre at Sugar Land
+ww-thorne-stadium	houston	10000	0	10	3	600	5	0	W.W. Thorne Stadium
+northwest-stadium	washington-dc	64000	0	8	5	1150	25	0	Northwest Stadium
+dc-armory	washington-dc	10000	0	20	10	1100	22	0	DC Armory
+greene-stadium	washington-dc	7086	0	18	9	150	22	0	William H. Greene Stadium
+arena-at-td-place	ottawa-gatineau	8585	0	37	9	1300	9	0	The Arena at TD Place
+hollywood-casino-amphitheatre-stl	st-louis	20000	0	4	1	200	14	0	Hollywood Casino Amphitheatre
+cascades-amphitheater	portland	7810	0	4	0	600	29	0	Cascades Amphitheater
+mcmenamins-edgefield	portland	7000	0	28	5	800	75	0	McMenamins Historic Edgefield Manor
+saint-marys-stadium	bay-area	5500	0	6	3	>1500	67	1	Saint Mary's Stadium
+stevens-stadium	bay-area	6800	0	13	4	1150	11	0	Stevens Stadium
+edwards-stadium	bay-area	22000	0	23	9	2900	37	0	Edwards Stadium
+gcu-stadium	phoenix	6000	0	17	2	1550	4	0	GCU Stadium
+hpe-arena	houston	8100	0	16	6	1500	5	0	H&PE Arena
+alexander-durley-stadium	houston	5500	0	14	3	1300	2	0	Alexander Durley Stadium
+oshaughnessy-stadium	minneapolis	5025	0	18	6	1200	37	0	O'Shaughnessy Stadium
+ludwig-field	washington-dc	7000	0	14	6	>1500	8	0	Ludwig Field
+george-mason-stadium	washington-dc	5000	0	16	2	3650	22	0	George Mason Stadium
+shark-stadium	new-york	6000	0	7	1	>1500	11	0	Shark Stadium
+yurcak-field	new-york	5000	0	11	5	550	15	0	Yurcak Field
+dooley-field-at-sanford-stadium	atlanta	93033	0	16	6	1300	42	0	Dooley Field at Sanford Stadium
+talladega-superspeedway	atlanta	80000	0	7	0	2050	10	0	Talladega Superspeedway
+finley-stadium	atlanta	20668	0	16	6	300	9	0	Finley Stadium
+mckenzie-arena	atlanta	11557	0	18	9	1100	28	0	McKenzie Arena
+stegeman-coliseum	atlanta	10523	0	20	5	1250	36	0	Stegeman Coliseum
+five-star-stadium	atlanta	10000	0	22	4	100	11	0	Five Star Stadium
+atrium-health-amphitheater	atlanta	10000	0	9	1	3250	24	0	Atrium Health Amphitheater
+columbus-civic-center	atlanta	10000	0	7	1	300	10	0	Columbus Civic Center
+a-j-mcclung-memorial-stadium	atlanta	10000	0	8	2	100	9	0	A.J. McClung Memorial Stadium
+macon-coliseum	atlanta	9000	0	17	4	150	23	0	Macon Coliseum
+akins-ford-arena	atlanta	8500	0	32	5	1400	40	0	Akins Ford Arena
+reaves-arena	atlanta	8250	0	0	0	600	9	0	Reaves Arena
+erlanger-park	atlanta	8032	0	11	3	250	9	0	Erlanger Park
+historic-barron-stadium	atlanta	6500	0	21	5	2400	19	0	Historic Barron Stadium
+bobby-gruhn-field-at-city-park-stadium	atlanta	6000	0	19	6	1650	32	0	Bobby Gruhn Field at City Park Stadium
+chi-memorial-stadium	atlanta	5500	0	10	0	100	12	0	CHI Memorial Stadium
+adventhealth-stadium	atlanta	5105	0	7	4	250	10	0	AdventHealth Stadium
+pinnacle-park	atlanta	5000	0	10	5	100	12	0	Pinnacle Park
+sonoma-raceway	bay-area	44000	0	2	2	1150	136	1	Sonoma Raceway
+napa-valley-expo	bay-area	40000	0	31	6	2450	26	0	Napa Valley Expo
+salinas-sports-complex	bay-area	16500	0	17	6	500	10	0	Salinas Sports Complex
+marin-center-fairgrounds-lagoon-park-and-island	bay-area	12000	0	19	7	0	26	0	Marin Center Fairgrounds, Lagoon Park and Island
+monterey-county-fair-event-center	bay-area	10000	0	25	5	300	30	0	Monterey County Fair & Event Center
+napa-memorial-stadium	bay-area	6400	0	24	8	600	8	0	Napa Memorial Stadium
+cardinale-stadium	bay-area	6000	0	9	3	700	30	0	Cardinale Stadium
+weill-hall-lawn-green-music-center	bay-area	5000	0	16	3	>1500	14	0	Weill Hall + Lawn, Green Music Center
+chris-beck-arena-sonoma-county-fair-event-center	bay-area	5000	0	15	1	350	12	0	Chris Beck Arena, Sonoma County Fair & Event Center
+new-hampshire-motor-speedway	boston	44000	0	3	0	>1500	37	0	New Hampshire Motor Speedway
+pratt-whitney-stadium-at-rentschler-field	boston	40352	0	6	0	750	8	0	Pratt & Whitney Stadium at Rentschler Field
+the-meadows-music-theatre	boston	24100	0	13	1	250	21	0	The Meadows Music Theatre
+fitton-field	boston	23500	0	29	9	100	63	0	Fitton Field
+richard-gouse-field-at-brown-stadium	boston	20000	0	59	16	1250	29	0	Richard Gouse Field at Brown Stadium
+mcguirk-alumni-stadium	boston	17000	0	6	3	1100	19	0	McGuirk Alumni Stadium
+peoplesbank-arena	boston	16000	0	32	9	150	26	0	PeoplesBank Arena
+seekonk-speedway	boston	15000	0	3	1	350	5	0	Seekonk Speedway
+dcu-center	boston	14500	0	48	13	350	26	0	DCU Center
+amica-mutual-pavilion	boston	14000	0	58	18	100	18	0	Amica Mutual Pavilion
+thompson-speedway-motorsports-park	boston	13000	0	2	0	>1500	25	0	Thompson Speedway Motorsports Park
+snhu-arena	boston	11770	0	31	13	700	24	0	SNHU Arena
+centreville-bank-stadium	boston	10500	0	45	11	500	23	0	Centreville Bank Stadium
+mullins-center	boston	10000	0	5	2	2100	35	0	Mullins Center
+mohegan-sun-arena	boston	10000	0	3	1	1100	69	1	Mohegan Sun Arena
+fort-adams-state-park	boston	10000	0	7	3	2550	18	0	Fort Adams State Park
+m-t-bank-center-at-harry-a-gampel-pavilion	boston	9882	0	15	4	>1500	28	0	M&T Bank Center at Harry A. Gampel Pavilion
+polar-park	boston	9508	0	54	16	350	31	0	Polar Park
+cross-insurance-arena	boston	9500	0	55	23	950	35	0	Cross Insurance Arena
+banknh-pavilion	boston	9000	0	3	0	800	48	1	BankNH Pavilion
+veterans-memorial-stadium-new-britain	boston	8500	0	12	4	150	20	0	Veterans Memorial Stadium
+the-thomas-m-ryan-center	boston	8000	0	14	6	>1500	21	0	The Thomas M. Ryan Center
+massmutual-center	boston	7743	0	40	14	400	27	0	MassMutual Center
+new-londonwaterford-speedbowl	boston	7500	0	3	0	350	33	0	New London–Waterford Speedbowl
+stafford-motor-speedway	boston	7000	0	8	3	>1500	27	0	Stafford Motor Speedway
+delta-dental-park-at-hadlock-field	boston	6868	0	35	13	100	38	0	Delta Dental Park at Hadlock Field
+thompson-s-point	boston	6500	0	3	1	200	10	0	Thompson's Point
+delta-dental-stadium	boston	6500	0	26	3	250	25	0	Delta Dental Stadium
+the-big-e-arena	boston	6300	0	17	4	1750	15	0	The Big E Arena
+senator-thomas-j-dodd-memorial-stadium	boston	6270	0	7	0	1250	36	0	Senator Thomas J. Dodd Memorial Stadium
+dunkin-park	boston	6121	0	23	8	100	25	0	Dunkin' Park
+arute-field	boston	5500	0	16	2	300	21	0	Arute Field
+trinity-health-stadium	boston	5500	0	13	8	150	7	0	Trinity Health Stadium
+joseph-j-morrone-stadium-at-rizza-performance-center	boston	5300	0	12	3	>1500	19	0	Joseph J. Morrone Stadium at Rizza Performance Center
+notre-dame-stadium	chicago	77622	0	10	3	1900	4	0	Notre Dame Stadium
+four-winds-field	chicago	10500	0	19	7	>1500	4	0	Four Winds Field
+la-porte-county-fairgrounds-grandstand	chicago	10000	0	5	1	>1500	10	0	La Porte County Fairgrounds Grandstand
+bmo-center	chicago	6500	0	25	12	>1500	10	0	BMO Center
+compton-family-ice-arena	chicago	5022	0	21	7	2450	6	0	Compton Family Ice Arena
+mclane-stadium	dallas-fort-worth	45140	0	11	3	200	10	0	McLane Stadium
+memorial-stadium	dallas-fort-worth	24000	0	21	5	850	12	0	Memorial Stadium
+ferrell-center	dallas-fort-worth	12000	0	11	5	200	7	0	Ferrell Center
+waco-isd-stadium	dallas-fort-worth	11500	0	5	1	1150	23	0	Waco ISD Stadium
+christus-trinity-mother-frances-rose-stadium	dallas-fort-worth	10566	0	24	8	1500	19	0	CHRISTUS Trinity Mother Frances Rose Stadium
+community-national-bank-trust-stadium	dallas-fort-worth	10001	0	8	4	>1500	7	0	Community National Bank & Trust Stadium
+extraco-coliseum	dallas-fort-worth	9000	0	17	5	2400	12	0	Extraco Coliseum
+tommy-hudspeth-athletic-complex-stadium	dallas-fort-worth	8000	0	19	3	1150	14	0	Tommy Hudspeth Athletic Complex stadium
+foster-pavilion	dallas-fort-worth	7000	0	15	8	150	10	0	Foster Pavilion
+lucas-oil-live	dallas-fort-worth	6500	0	5	2	650	11	0	Lucas Oil Live
+munson-stadium	dallas-fort-worth	5000	0	22	8	200	11	0	Munson Stadium
+magnolia-field-at-baylor-ballpark	dallas-fort-worth	5000	0	9	3	400	7	0	Magnolia Field at Baylor Ballpark
+kyle-field	houston	102733	0	15	4	2200	9	0	Kyle Field
+provost-umphrey-stadium	houston	16000	0	8	4	100	9	0	Provost Umphrey Stadium
+elliott-t-bowers-stadium	houston	14000	0	10	4	1400	29	0	Elliott T. Bowers Stadium
+reed-arena	houston	12989	0	7	2	1600	9	0	Reed Arena
+merrill-green-stadium	houston	9800	0	14	6	850	9	0	Merrill Green Stadium
+doggett-ford-arena	houston	8500	0	4	0	350	6	0	Doggett Ford Arena
+huntsville-isd-stadium	houston	6675	0	1	1	200	19	0	Huntsville ISD Stadium
+cub-stadium	houston	6300	0	14	2	1850	12	0	Cub Stadium
+bernard-g-johnson-coliseum	houston	6110	0	12	4	1650	19	0	Bernard G. Johnson Coliseum
+olsen-field-at-blue-bell-park	houston	6100	0	17	6	1850	8	0	Olsen Field at Blue Bell Park
+tiger-stadium	houston	5238	0	12	4	250	5	0	Tiger Stadium
+estadio-cuauhtemoc	mexico-city	46817	0	19	2	200	21	0	Estadio Cuauhtémoc
+estadio-nemesio-diez	mexico-city	27273	0	55	19	1100	9	0	Estadio Nemesio Diez
+estadio-hidalgo	mexico-city	25922	0	46	8	600	9	0	Estadio Hidalgo
+mega-domo-de-las-estrellas	mexico-city	25000	0	54	16	200	10	0	Mega Domo de las Estrellas
+estadio-agustin-coruco-diaz	mexico-city	24000	0	65	20	>1500	7	0	Estadio Agustín “Coruco” Díaz
+estadio-centenario	mexico-city	14800	0	90	24	650	86	0	Estadio Centenario
+estadio-tlahuicole	mexico-city	12000	0	45	12	1100	98	0	Estadio Tlahuicole
+las-estacas	mexico-city	11000	0	0	0	>1500	59	1	Las Estacas
+auditorio-gnp-seguros-puebla	mexico-city	10500	0	48	20	3400	13	0	Auditorio GNP Seguros, Puebla
+plaza-de-toros-vicente-segura	mexico-city	10000	0	61	12	100	9	0	Plaza de Toros Vicente Segura
+estadio-hermanos-serdan	mexico-city	9200	0	47	10	400	18	0	Estadio Hermanos Serdán
+flagler-credit-union-stadium	miami	30000	0	10	4	1050	6	0	Flagler Credit Union Stadium
+ithink-financial-amphitheatre	miami	17200	0	2	1	600	5	0	iTHINK Financial Amphitheatre
+delray-beach-tennis-center	miami	8200	0	29	9	1000	4	0	Delray Beach Tennis Center
+cacti-park-of-the-palm-beaches	miami	8000	0	4	0	2000	6	0	CACTI Park of the Palm Beaches
+clover-park	miami	7160	0	5	1	850	4	0	Clover Park
+roger-dean-chevrolet-stadium	miami	6871	0	16	5	1250	7	0	Roger Dean Chevrolet Stadium
+sunset-cove-amphitheater	miami	6000	0	1	1	>1500	7	0	Sunset Cove Amphitheater
+mizner-park-amphitheater	miami	5000	0	44	15	3500	6	0	Mizner Park Amphitheater
+alpine-valley-music-theatre	milwaukee	35300	0	0	0	1350	58	1	Alpine Valley Music Theatre
+country-thunder-wisconsin-grounds-at-shadow-hill-ranch	milwaukee	30000	0	2	2	1800	8	0	Country Thunder Wisconsin grounds at Shadow Hill Ranch
+historic-horlick-athletic-field	milwaukee	5000	0	21	6	>1500	7	0	Historic Horlick Athletic Field
+yale-bowl-class-of-1954-field	new-york	61446	0	8	2	300	17	0	Yale Bowl, Class of 1954 Field
+michie-stadium-preserved-by-usaa	new-york	36000	0	8	5	1700	115	0	Michie Stadium Preserved by USAA
+fisher-stadium	new-york	13132	0	25	12	350	51	0	Fisher Stadium
+total-mortgage-arena	new-york	10000	0	22	6	100	10	0	Total Mortgage Arena
+orange-county-fair-speedway	new-york	8000	0	11	3	1550	32	0	Orange County Fair Speedway
+gregory-douds-field-at-eiler-martin-stadium	new-york	6000	0	19	2	200	33	0	Gregory-Douds Field at Eiler-Martin Stadium
+heritage-financial-park	new-york	5400	0	12	4	350	34	0	Heritage Financial Park
+pocono-raceway	philadelphia	76800	0	4	3	1600	9	0	Pocono Raceway
+dover-motor-speedway	philadelphia	54000	0	1	0	450	4	0	Dover Motor Speedway
+hersheypark-stadium-presented-by-penn-state-health	philadelphia	30000	0	10	1	750	16	0	Hersheypark Stadium presented by Penn State Health
+powers-field-at-princeton-stadium	philadelphia	27800	0	11	4	1250	40	1	Powers Field at Princeton Stadium
+murray-h-goodman-stadium	philadelphia	16000	0	5	0	650	16	0	Murray H. Goodman Stadium
+jim-whelan-boardwalk-hall	philadelphia	14770	0	24	7	300	18	0	Jim Whelan Boardwalk Hall
+allentown-fairgrounds-grandstand	philadelphia	14000	0	17	9	1800	21	0	Allentown Fairgrounds Grandstand
+giant-center	philadelphia	12500	0	5	2	800	14	0	GIANT Center
+coca-cola-park	philadelphia	10000	0	13	7	1050	31	0	Coca-Cola Park
+firstenergy-stadium	philadelphia	10000	0	10	5	250	10	0	FirstEnergy Stadium
+mohegan-arena-at-casey-plaza	philadelphia	10000	0	2	1	400	41	1	Mohegan Arena at Casey Plaza
+santander-arena	philadelphia	8800	0	40	11	1250	20	0	Santander Arena
+ppl-center	philadelphia	8500	0	31	9	2650	31	0	PPL Center
+cure-insurance-arena	philadelphia	8500	0	33	10	100	18	0	CURE Insurance Arena
+new-holland-arena	philadelphia	7318	0	9	2	200	22	0	New Holland Arena
+alumni-stadium-dover	philadelphia	7193	0	3	2	150	3	0	Alumni Stadium
+hard-rock-live-at-etess-arena	philadelphia	7000	0	12	2	650	10	0	Hard Rock Live at Etess Arena
+wind-creek-steel-stage-at-pnc-plaza	philadelphia	6500	0	21	3	300	31	0	Wind Creek Steel Stage at PNC Plaza
+chryst-field-at-biemesderfer-stadium	philadelphia	6500	0	32	10	>1500	22	0	Chryst Field at Biemesderfer Stadium
+trenton-thunder-ballpark	philadelphia	6440	0	14	3	100	12	0	Trenton Thunder Ballpark
+penn-medicine-park	philadelphia	6250	0	24	9	150	15	0	Penn Medicine Park
+stabler-arena	philadelphia	6200	0	1	1	950	15	0	Stabler Arena
+fnb-field	philadelphia	6187	0	2	0	1100	4	0	FNB Field
+university-field-at-andre-reed-stadium	philadelphia	5600	0	18	10	1200	20	0	University Field at Andre Reed Stadium
+ovation-hall	philadelphia	5500	0	14	3	700	15	0	Ovation Hall
+grandview-speedway	philadelphia	5000	0	7	3	350	45	1	Grandview Speedway
+casino-del-sol-stadium	phoenix	50800	0	20	9	3000	14	0	Casino Del Sol Stadium
+mckale-center-at-alkeme-arena	phoenix	14688	0	20	8	3300	11	0	McKale Center at ALKEME Arena
+kino-veterans-memorial-stadium	phoenix	11000	0	7	5	600	10	0	Kino Veterans Memorial Stadium
+tucson-rodeo-grounds	phoenix	11000	0	23	4	1650	8	0	Tucson Rodeo Grounds
+tucson-arena	phoenix	8962	0	45	11	500	17	0	Tucson Arena
+pima-county-fairgrounds	phoenix	7500	0	1	0	1900	13	0	Pima County Fairgrounds
+tucson-speedway	phoenix	6500	0	2	1	2900	11	0	Tucson Speedway
+findlay-toyota-center	phoenix	6200	0	7	4	>1500	11	0	Findlay Toyota Center
+ava-amphitheater	phoenix	5000	0	6	1	>1500	11	0	AVA Amphitheater
+adventist-health-arena	sacramento	11300	0	22	7	700	6	0	Adventist Health Arena
+alex-g-spanos-center	sacramento	6150	0	21	6	2050	5	0	Alex G. Spanos Center
+stockton-99-speedway	sacramento	6000	0	2	1	850	4	0	Stockton 99 Speedway
+ellensburg-rodeo-arena-kittitas-valley-event-center	seattle	9000	0	23	9	2850	13	0	Ellensburg Rodeo Arena, Kittitas Valley Event Center
+skagit-speedway	seattle	7500	0	4	2	950	29	0	Skagit Speedway
+grays-harbor-raceway	seattle	6500	0	8	1	350	47	1	Grays Harbor Raceway
+thunderbird-arena-stadium-kitsap-county-fairgrounds-events-center	seattle	5500	0	15	1	>1500	32	0	Thunderbird Arena & Stadium, Kitsap County Fairgrounds & Events Center
+highmark-stadium	toronto	60000	0	8	2	1750	10	0	Highmark Stadium
+burl-s-creek-event-grounds	toronto	50000	0	1	0	550	12	0	Burl's Creek Event Grounds
+hamilton-stadium	toronto	23218	0	39	11	1750	9	0	Hamilton Stadium
+keybank-center	toronto	19070	0	24	8	150	10	0	KeyBank Center
+td-coliseum	toronto	18000	0	34	10	1500	24	0	TD Coliseum
+sahlen-field	toronto	16600	0	33	8	150	19	0	Sahlen Field
+artpark-outdoor-amphitheater	toronto	9999	0	6	1	950	104	1	Artpark Outdoor Amphitheater
+alumni-stadium-university-of-guelph	toronto	8500	0	12	7	2550	23	0	Alumni Stadium, University of Guelph
+ohsweken-speedway	toronto	8000	0	2	0	>1500	5	0	Ohsweken Speedway
+the-aud	toronto	7777	0	25	3	300	10	0	The Aud
+ron-joyce-stadium	toronto	6000	0	6	1	1150	32	0	Ron Joyce Stadium
+meridian-centre	toronto	6000	0	37	15	50	23	0	Meridian Centre
+peterborough-memorial-centre	toronto	5501	0	28	10	1550	5	0	Peterborough Memorial Centre
+university-stadium	toronto	5000	0	14	6	2250	18	0	University Stadium
+sleeman-centre	toronto	5000	0	44	11	2400	31	0	Sleeman Centre
+casino-rama-resort-entertainment-centre	toronto	5000	0	8	4	>1500	7	0	Casino Rama Resort Entertainment Centre
+olg-stage-at-fallsview-casino	toronto	5000	0	10	6	1400	90	0	OLG Stage at Fallsview Casino
+m-t-bank-stadium	washington-dc	70257	0	21	5	200	15	0	M&T Bank Stadium
+richmond-raceway	washington-dc	50000	0	3	0	2700	7	0	Richmond Raceway
+oriole-park-at-camden-yards	washington-dc	42455	0	28	12	200	20	0	Oriole Park at Camden Yards
+navymarine-corps-memorial-stadium	washington-dc	34000	0	26	6	950	5	0	Navy–Marine Corps Memorial Stadium
+cfg-bank-arena	washington-dc	14000	0	39	14	500	27	0	CFG Bank Arena
+johnny-unitas-stadium	washington-dc	11111	0	16	3	2600	25	0	Johnny Unitas Stadium
+maryland-international-raceway	washington-dc	11000	0	0	0	>1500	27	0	Maryland International Raceway
+earl-c-banks-field-at-hughes-stadium	washington-dc	10000	0	18	2	>1500	20	0	Earl C. Banks Field at Hughes Stadium
+carmax-park	washington-dc	9585	0	16	3	550	8	0	CarMax Park
+e-claiborne-robins-stadium	washington-dc	8700	0	23	8	2900	46	0	E. Claiborne Robins Stadium
+hagerstown-speedway	washington-dc	8500	0	7	1	1200	23	0	Hagerstown Speedway
+innsbrook-pavilion	washington-dc	8500	0	17	3	1000	20	0	Innsbrook Pavilion
+homewood-field	washington-dc	8500	0	28	7	1250	19	0	Homewood Field
+stuart-c-siegel-center	washington-dc	7637	0	28	10	550	21	0	Stuart C. Siegel Center
+wellspan-park	washington-dc	7500	0	40	12	1400	13	0	WellSpan Park
+allianz-amphitheater-at-riverfront	washington-dc	7000	0	19	9	400	44	0	Allianz Amphitheater at Riverfront
+ridley-athletic-complex	washington-dc	6000	0	18	0	450	63	1	Ridley Athletic Complex
+city-stadium	washington-dc	6000	0	18	9	150	12	0	City Stadium
+virginia-credit-union-live-at-richmond-raceway	washington-dc	6000	0	2	0	2350	5	0	Virginia Credit Union LIVE! at Richmond Raceway
+alumni-hall	washington-dc	5710	0	28	15	2250	12	0	Alumni Hall
+summit-motorsports-park	cleveland	40000	0	0	0	1050	11	0	Summit Motorsports Park
+spartan-stadium	detroit	74866	0	10	1	1500	6	0	Spartan Stadium
+michigan-international-speedway	detroit	56000	0	0	0	900	8	0	Michigan International Speedway
+kelly-shorts-stadium	detroit	30255	0	6	2	>1500	6	0	Kelly/Shorts Stadium
+stafford-smith-field-at-waldo-stadium	detroit	30200	0	28	9	2800	31	0	Stafford-Smith Field at Waldo Stadium
+glass-bowl	detroit	26038	0	15	4	3050	5	0	Glass Bowl
+doyt-l-perry-stadium	detroit	24000	0	4	1	500	3	0	Doyt L. Perry Stadium
+breslin-center	detroit	14759	0	15	3	1100	7	0	Breslin Center
+soaring-eagle-outdoor-concert-venue	detroit	12500	0	4	0	400	4	0	Soaring Eagle Outdoor Concert Venue
+van-andel-arena	detroit	12000	0	32	13	250	23	0	Van Andel Arena
+jackson-field	detroit	11000	0	28	8	800	13	0	Jackson Field
+atwood-stadium-at-kettering-university	detroit	11000	0	28	11	1400	24	0	Atwood Stadium at Kettering University
+fifth-third-field	detroit	10300	0	35	16	700	13	0	Fifth Third Field
+huntington-center	detroit	8000	0	29	11	850	13	0	Huntington Center
+toledo-speedway	detroit	8000	0	5	2	750	5	0	Toledo Speedway
+savage-arena	detroit	7014	0	24	7	2600	9	0	Savage Arena
+ron-mason-rink-at-munn-ice-arena	detroit	6114	0	11	3	1250	8	0	Ron Mason Rink at Munn Ice Arena
+frank-muddy-waters-stadium	detroit	6500	0	11	3	>1500	20	0	Frank “Muddy” Waters Stadium
+dort-financial-center	detroit	6469	0	15	4	250	5	0	Dort Financial Center
+wings-event-center	detroit	6323	0	7	1	150	12	0	Wings Event Center
+kellogg-arena-battle-creek	detroit	6200	0	20	6	50	10	0	Kellogg Arena
+dow-event-center	detroit	5527	0	28	10	100	7	0	Dow Event Center
+dow-diamond	detroit	5500	0	18	6	200	11	0	Dow Diamond
+mcguirk-arena	detroit	5300	0	7	1	>1500	6	0	McGuirk Arena
+jenison-field-house	detroit	5017	0	17	5	1450	8	0	Jenison Field House
+brainerd-international-raceway	minneapolis	20000	0	2	0	1100	12	0	Brainerd International Raceway
+treasure-island-amphitheater	minneapolis	16000	0	6	0	>1500	6	0	Treasure Island Amphitheater
+grand-casino-hinckley-amphitheater	minneapolis	7100	0	3	0	>1500	5	0	Grand Casino Hinckley Amphitheater
+bayfront-festival-park	minneapolis	9000	0	9	1	250	29	0	Bayfront Festival Park
+clemens-stadium	minneapolis	7482	0	7	3	1750	38	0	Clemens Stadium
+mayo-civic-center	minneapolis	7200	0	34	10	2350	34	0	Mayo Civic Center
+blakeslee-stadium	minneapolis	7000	0	11	3	2650	10	0	Blakeslee Stadium
+amsoil-arena	minneapolis	6756	0	19	4	200	32	0	AMSOIL Arena
+cedar-lake-speedway	minneapolis	6500	0	2	1	>1500	22	0	Cedar Lake Speedway
+carson-park	minneapolis	6500	0	11	4	2750	31	0	Carson Park
+halenbeck-hall	minneapolis	6400	0	20	7	1100	21	0	Halenbeck Hall
+herb-brooks-national-hockey-center	minneapolis	6000	0	18	8	1300	24	0	Herb Brooks National Hockey Center
+the-ledge-amphitheater	minneapolis	5500	0	4	2	250	14	0	The Ledge Amphitheater
+mayo-clinic-health-system-event-center	minneapolis	5000	0	30	8	300	14	0	Mayo Clinic Health System Event Center
+the-sonnentag	minneapolis	5000	0	11	3	2150	31	0	The Sonnentag
+hollingsworth-field	minneapolis	5000	0	9	4	1200	13	0	Hollingsworth Field
+somerset-amphitheater	minneapolis	30000	0	5	1	2100	26	0	Somerset Amphitheater
+festivoix-parc-portuaire	montreal	18000	0	29	10	1050	17	0	FestiVoix, Parc portuaire
+amphitheatre-cogeco	montreal	9000	0	12	3	1350	17	0	Amphithéâtre Cogeco
+grandes-estrades-festival-western-de-saint-tite	montreal	7500	0	7	1	>1500	9	0	Grandes Estrades, Festival western de Saint-Tite
+amphitheatre-fernand-lindsay	montreal	7000	0	9	3	800	18	0	Amphithéâtre Fernand-Lindsay
+autodrome-drummond	montreal	5000	0	4	1	1900	4	0	Autodrome Drummond
+autodrome-granby	montreal	5000	0	4	1	1500	11	0	Autodrome Granby
+expo-agricole-de-saint-hyacinthe-grandstand	montreal	5000	0	35	6	900	3	0	Expo agricole de Saint-Hyacinthe grandstand
+cornwall-civic-complex	ottawa-gatineau	5700	0	13	3	>1500	14	0	Cornwall Civic Complex
+rogers-forum	vancouver	6800	0	15	5	350	20	0	Rogers Forum
+chilliwack-coliseum	vancouver	6000	0	21	8	3350	8	0	Chilliwack Coliseum
+pavilion-at-wolf-lake-memorial-park	chicago	15000	0	6	2	900	9	0	Pavilion at Wolf Lake Memorial Park
+festival-hall-at-navy-pier	chicago	12500	0	23	10	50	22	0	Festival Hall at Navy Pier
+northwestern-medicine-field	chicago	10923	0	5	1	>1500	29	0	Northwestern Medicine Field
+riveredge-park	chicago	7500	0	15	2	>1500	19	0	RiverEdge Park
+steel-yard	chicago	6139	0	18	6	150	5	0	Steel Yard
+duly-health-and-care-field	chicago	6016	0	36	15	1350	6	0	Duly Health and Care Field
+benedetti-wehrli-stadium	chicago	5500	0	28	3	>1500	12	0	Benedetti-Wehrli Stadium
+athletics-recreation-center	chicago	5000	0	22	9	550	16	0	Athletics-Recreation Center
+brown-field	chicago	5000	0	23	8	700	8	0	Brown Field
+farrington-field	dallas-fort-worth	18500	0	11	5	1100	20	0	Farrington Field
+eagle-stadium	dallas-fort-worth	18000	0	9	2	1150	11	0	Eagle Stadium
+homer-b-johnson-stadium	dallas-fort-worth	15000	0	23	7	4550	16	0	Homer B. Johnson Stadium
+john-clark-stadium	dallas-fort-worth	14224	0	11	2	950	8	0	John Clark Stadium
+c-h-collins-athletic-complex	dallas-fort-worth	12000	0	29	7	350	12	0	C.H. Collins Athletic Complex
+childrens-health-stadium-at-prosper-isd	dallas-fort-worth	12000	0	15	3	>1500	8	0	Children’s Health Stadium at Prosper ISD
+coach-kenny-deel-stadium	dallas-fort-worth	10000	0	18	2	750	7	0	Coach Kenny Deel Stadium
+tom-kimbrough-stadium	dallas-fort-worth	9603	0	13	0	>1500	9	0	Tom Kimbrough Stadium
+ron-poe-stadium	dallas-fort-worth	7000	0	24	9	400	11	0	Ron Poe Stadium
+fair-park-band-shell	dallas-fort-worth	5909	0	23	6	900	9	0	Fair Park Band Shell
+claude-cunningham-performance-hall-dr-jim-vaszauskas-center-for-the-performing-arts	dallas-fort-worth	5500	0	7	0	900	9	0	Claude Cunningham Performance Hall, Dr. Jim Vaszauskas Center for the Performing Arts
+gomez-western-wear-arena	dallas-fort-worth	5500	0	33	12	500	18	0	Gomez Western Wear Arena
+cowart-stadium	houston	12000	0	2	0	>1500	7	0	Cowart Stadium
+delmar-stadium	houston	12000	0	10	3	300	3	0	Delmar Stadium
+ken-pridgeon-stadium	houston	11000	0	16	2	1900	3	0	Ken Pridgeon Stadium
+jack-rhodes-memorial-stadium	houston	9768	0	19	7	1200	2	0	Jack Rhodes Memorial Stadium
+health-physical-education-arena	houston	8100	0	17	6	900	3	0	Health & Physical Education Arena
+barnett-stadium	houston	8000	0	16	3	450	6	0	Barnett Stadium
+butler-stadium	houston	8000	0	8	0	200	5	0	Butler Stadium
+humble-civic-center	houston	7000	0	10	3	1650	9	0	Humble Civic Center
+dyer-stadium	houston	6000	0	9	3	150	4	0	Dyer Stadium
+leonard-e-merrell-center	houston	6000	0	8	3	300	7	0	Leonard E. Merrell Center
+john-a-farrell-stadium	philadelphia	7500	0	7	4	950	41	1	John A. Farrell Stadium
+abessinio-stadium	philadelphia	5000	0	17	5	150	54	0	Abessinio Stadium
+regency-furniture-stadium	washington-dc	6200	0	14	6	3500	9	0	Regency Furniture Stadium
+the-show-place-arena	washington-dc	5700	0	3	1	150	37	0	The Show Place Arena
+marvin-f-wilson-stadium	washington-dc	5500	0	10	0	1200	38	0	Marvin F. Wilson Stadium
+nymeo-field-at-harry-grove-stadium	washington-dc	5400	0	12	2	350	11	0	Nymeo Field at Harry Grove Stadium
+virginia-credit-union-stadium	washington-dc	5000	0	7	5	350	8	0	Virginia Credit Union Stadium
+james-r-hallford-stadium	atlanta	15600	0	9	0	1350	20	0	James R. Hallford Stadium
+university-stadium-carrollton	atlanta	10000	0	5	3	>1500	17	0	University Stadium
+lakewood-stadium	atlanta	10000	0	15	9	700	38	0	Lakewood Stadium
+eddie-s-henderson-stadium	atlanta	8000	0	19	9	750	27	0	Eddie S. Henderson Stadium
+the-coliseum	atlanta	6500	0	4	3	2800	30	0	The Coliseum
+adams-stadium	atlanta	6500	0	11	5	850	37	0	Adams Stadium
+napoleon-b-cobb-stadium	atlanta	6500	0	19	5	2950	29	0	Napoleon B. Cobb Stadium
+north-dekalb-stadium	atlanta	6500	0	26	8	400	25	0	North DeKalb Stadium
+atlanta-silverbacks-park	atlanta	5000	0	14	3	150	31	0	Atlanta Silverbacks Park
+atlanta-coliseum	atlanta	5000	0	9	4	350	24	0	Atlanta Coliseum
+broward-county-stadium	miami	15000	0	10	1	1700	3	0	Broward County Stadium
+tropical-park-stadium	miami	7000	0	10	0	400	5	0	Tropical Park Stadium
+ansin-sports-complex	miami	5000	0	15	6	850	6	0	Ansin Sports Complex
+alex-rodriguez-park-at-mark-light-field	miami	5000	0	36	9	150	4	0	Alex Rodriguez Park at Mark Light Field
+mesa-amphitheatre	phoenix	5000	0	24	10	3600	4	0	Mesa Amphitheatre
+sigmund-stern-grove	bay-area	10000	0	25	8	300	55	0	Sigmund Stern Grove
+cox-stadium	bay-area	5500	0	17	3	300	33	0	Cox Stadium
+pioneer-stadium	bay-area	5000	0	14	3	2850	123	1	Pioneer Stadium
+hynes-convention-center	boston	6000	0	29	16	50	16	0	Hynes Convention Center
+tom-benson-hall-of-fame-stadium	cleveland	23000	0	20	5	150	34	0	Tom Benson Hall of Fame Stadium
+paul-brown-tiger-stadium	cleveland	16884	0	15	4	1750	35	0	Paul Brown Tiger Stadium
+jack-miller-stadium	cleveland	5217	0	22	6	3100	20	0	Jack Miller Stadium
+canton-memorial-civic-center	cleveland	5200	0	31	10	1700	13	0	Canton Memorial Civic Center
+paycor-stadium	columbus	65515	0	23	7	200	40	0	Paycor Stadium
+great-american-ball-park	columbus	45814	0	27	7	150	54	0	Great American Ball Park
+carson-field-at-nippert-stadium	columbus	38193	0	22	0	1400	33	0	Carson Field at Nippert Stadium
+joan-c-edwards-stadium	columbus	30475	0	20	8	3500	10	0	Joan C. Edwards Stadium
+frank-solich-field-at-peden-stadium	columbus	24000	0	18	5	300	35	0	Frank Solich Field at Peden Stadium
+eldora-speedway	columbus	22886	0	0	0	>1500	7	0	Eldora Speedway
+riverbend-music-center	columbus	20500	0	4	1	650	25	0	Riverbend Music Center
+heritage-bank-center	columbus	17556	0	19	8	100	50	0	Heritage Bank Center
+university-of-dayton-arena	columbus	13407	0	9	2	400	14	0	University of Dayton Arena
+ohio-university-convocation-center	columbus	13080	0	19	4	450	27	0	Ohio University Convocation Center
+fifth-third-arena	columbus	12012	0	26	2	1350	34	0	Fifth Third Arena
+lindner-family-tennis-center	columbus	12000	0	4	0	150	13	0	Lindner Family Tennis Center
+wright-state-university-nutter-center	columbus	11200	0	6	1	250	21	0	Wright State University Nutter Center
+welcome-stadium	columbus	11000	0	8	3	550	5	0	Welcome Stadium
+cintas-center	columbus	10224	0	20	4	750	37	0	Cintas Center
+truist-arena	columbus	9000	0	13	3	550	19	0	Truist Arena
+donnell-stadium	columbus	7500	0	23	7	900	7	0	Donnell Stadium
+megacorp-pavilion	columbus	7000	0	26	10	850	14	0	MegaCorp Pavilion
+day-air-ballpark	columbus	6677	0	23	9	700	14	0	Day Air Ballpark
+hobart-arena	columbus	5332	0	8	3	2250	5	0	Hobart Arena
+folsom-field	denver	50183	0	17	3	600	39	0	Folsom Field
+falcon-stadium	denver	39441	0	2	0	2150	70	1	Falcon Stadium
+sonny-lubick-field-at-canvas-stadium	denver	36500	0	12	5	950	8	0	Sonny Lubick Field at Canvas Stadium
+jonah-field-at-war-memorial-stadium	denver	25500	0	20	4	2250	11	0	Jonah Field at War Memorial Stadium
+cheyenne-frontier-days-arena	denver	19000	0	16	3	350	6	0	Cheyenne Frontier Days Arena
+weidner-field	denver	15000	0	19	9	400	20	0	Weidner Field
+arena-auditorium	denver	11612	0	18	2	2350	8	0	Arena-Auditorium
+cu-events-center	denver	11064	0	18	5	200	29	0	CU Events Center
+the-broadmoor-world-arena	denver	9250	0	14	5	150	37	0	The Broadmoor World Arena
+greeley-stampede	denver	9000	0	11	4	1350	3	0	Greeley Stampede
+nottingham-field	denver	8533	0	16	4	1250	19	0	Nottingham Field
+uchealth-park	denver	8500	0	15	0	700	29	0	UCHealth Park
+moby-arena	denver	8083	0	19	2	1350	9	0	Moby Arena
+ford-amphitheater-colorado-springs	denver	8000	0	3	1	250	34	0	Ford Amphitheater
+southwest-motors-events-center	denver	7785	0	25	9	2650	7	0	Southwest Motors Events Center
+blue-arena	denver	6800	0	4	1	350	8	0	Blue Arena
+csu-pueblo-thunderbowl	denver	6500	0	3	1	1050	35	0	CSU Pueblo ThunderBowl
+clune-arena	denver	5858	0	1	1	>1500	52	1	Clune Arena
+rendezvous-event-center-at-hideaway-park	denver	5000	0	27	11	>1500	66	0	Rendezvous Event Center at Hideaway Park
+tql-stadium	indianapolis	26000	0	40	15	750	11	0	TQL Stadium
+fred-c-yager-stadium	indianapolis	24286	0	8	3	1000	20	0	Fred C. Yager Stadium
+millett-hall	indianapolis	6400	0	14	6	750	35	0	Millett Hall
+el-nido-de-los-aguilas	san-diego	18500	0	31	9	3400	3	0	El Nido de los Águilas
+plaza-de-toros-calafia	san-diego	11000	0	17	5	800	6	0	Plaza de Toros Calafia
+daytona-international-speedway	tampa	101500	0	0	0	1400	11	0	Daytona International Speedway
+steve-spurrierflorida-field-at-ben-hill-griffin-stadium	tampa	88548	0	18	4	2150	16	0	Steve Spurrier–Florida Field at Ben Hill Griffin Stadium
+camping-world-stadium	tampa	60219	0	21	3	300	12	0	Camping World Stadium
+acrisure-bounce-house	tampa	45906	0	9	2	>1500	9	0	Acrisure Bounce House
+inter-co-stadium	tampa	24453	0	34	10	650	6	0	Inter.co Stadium
+kia-center	tampa	18478	0	28	10	100	14	0	Kia Center
+tinker-field	tampa	12000	0	18	7	100	6	0	Tinker Field
+jetblue-park-at-fenway-south	tampa	11000	0	7	2	2900	3	0	jetBlue Park at Fenway South
+stephen-c-o-connell-center	tampa	10500	0	18	2	1950	22	0	Stephen C. O'Connell Center
+silver-spurs-arena-at-osceola-heritage-park	tampa	10000	0	5	4	250	12	0	Silver Spurs Arena at Osceola Heritage Park
+orlando-amphitheater	tampa	10000	0	15	1	900	5	0	Orlando Amphitheater
+publix-field-at-joker-marchant-stadium	tampa	9598	0	16	2	2050	15	0	Publix Field at Joker Marchant Stadium
+addition-financial-arena	tampa	9400	0	7	5	>1500	6	0	Addition Financial Arena
+lecom-park	tampa	9000	0	23	7	1250	4	0	LECOM Park
+hammond-stadium-at-lee-health-sports-complex	tampa	8730	0	9	5	>1500	14	0	Hammond Stadium at Lee Health Sports Complex
+hertz-arena	tampa	8500	0	11	1	200	8	0	Hertz Arena
+ed-smith-stadium	tampa	8500	0	17	4	>1500	5	0	Ed Smith Stadium
+george-jenkins-arena-at-rp-funding-center	tampa	8178	0	17	7	4000	12	0	George Jenkins Arena at RP Funding Center
+ocean-center	tampa	7701	0	27	8	>1500	9	0	Ocean Center
+charlotte-sports-park	tampa	7500	0	8	2	>1500	8	0	Charlotte Sports Park
+cooltoday-park	tampa	7473	0	3	2	>1500	2	0	CoolToday Park
+condron-family-ballpark	tampa	7000	0	8	4	1850	10	0	Condron Family Ballpark
+spec-martin-memorial-stadium	tampa	6000	0	27	4	2300	11	0	Spec Martin Memorial Stadium
+brigham-field-at-huskie-stadium	chicago	23595	0	15	4	3000	6	0	Brigham Field at Huskie Stadium
+niu-convocation-center	chicago	10000	0	8	2	>1500	4	0	NIU Convocation Center
+birdville-fine-arts-athletics-complex	dallas-fort-worth	12000	0	8	1	2150	14	0	Birdville Fine Arts / Athletics Complex
+mckinney-isd-stadium	dallas-fort-worth	12000	0	9	3	500	10	0	McKinney ISD Stadium
+arlington-backyard-at-texas-live	dallas-fort-worth	5000	0	9	2	1200	13	0	Arlington Backyard at Texas Live!
+lone-star-expo-center	houston	5000	0	3	3	300	13	0	Lone Star Expo Center
+delmar-fieldhouse	houston	5000	0	8	3	400	2	0	Delmar Fieldhouse
+dunham-field-at-husky-stadium	houston	5000	0	18	8	1000	3	0	Dunham Field at Husky Stadium
+richard-wackar-stadium	philadelphia	5000	0	15	7	550	10	0	Richard Wackar Stadium
+legacy-arena	atlanta	6000	0	7	3	1100	17	0	Legacy Arena
+buck-godfrey-stadium	atlanta	8500	0	6	3	800	24	0	Buck Godfrey Stadium
+the-arena-at-southlake	atlanta	8000	0	17	3	450	17	0	The Arena at Southlake
+ted-hendricks-stadium	miami	5221	0	27	8	2750	1	0	Ted Hendricks Stadium
+miramar-regional-park-amphitheater	miami	5000	0	2	0	1850	10	0	Miramar Regional Park Amphitheater
+mana-wynwood-event-hall	miami	5000	0	31	11	250	4	0	Mana Wynwood Event Hall
+miami-open-grandstand-court	miami	5000	0	13	2	650	5	0	Miami Open Grandstand Court
+sun-angel-stadium	phoenix	5000	0	10	4	1000	22	0	Sun Angel Stadium
+laney-college-football-stadium	bay-area	5500	0	20	7	400	9	0	Laney College Football Stadium
+east-texas-aandm-memorial-stadium	dallas-fort-worth	10000	0	20	9	150	12	0	East Texas A&M Memorial Stadium
+lawrence-veterans-memorial-stadium	boston	9000	0	29	12	250	19	0	Lawrence Veterans Memorial Stadium
+quincy-veterans-memorial-stadium	boston	5000	0	33	8	2500	9	0	Quincy Veterans Memorial Stadium
+dix-stadium	cleveland	25319	0	2	2	>1500	7	0	Dix Stadium
+stambaugh-stadium	pittsburgh	20630	0	22	12	100	34	0	Stambaugh Stadium
+arlin-field	columbus	12000	0	12	7	1000	18	0	Arlin Field
+erie-veterans-memorial-stadium	cleveland	10000	0	27	11	2150	25	0	Erie Veterans Memorial Stadium
+erie-insurance-arena	cleveland	9000	0	24	9	950	12	0	Erie Insurance Arena
+covelli-centre	pittsburgh	7000	0	24	6	400	29	0	Covelli Centre
+m-a-c-center	cleveland	6327	0	17	5	>1500	17	0	M.A.C. Center
+upmc-park	cleveland	6300	0	24	6	1050	12	0	UPMC Park
+canfield-fair-grandstand	pittsburgh	6200	0	0	0	1000	28	0	Canfield Fair Grandstand
+717-credit-union-field-at-eastwood	cleveland	6000	0	4	2	1550	7	0	717 Credit Union Field at Eastwood
+sox-harrison-stadium	cleveland	6000	0	8	3	>1500	33	0	Sox Harrison Stadium
+kehres-stadium	cleveland	5600	0	20	4	400	17	0	Kehres Stadium
+al-jacks-field-at-memorial-stadium	pittsburgh	5000	0	13	3	3850	77	1	Al Jacks Field at Memorial Stadium
+infocision-stadium	cleveland	27881	0	24	9	350	18	0	InfoCision Stadium
+byers-field	cleveland	12750	0	11	3	>1500	15	0	Byers Field
+george-finnie-stadium	cleveland	7800	0	25	5	2150	3	0	George Finnie Stadium
+canal-park	cleveland	7630	0	29	11	450	19	0	Canal Park
+james-a-rhodes-arena	cleveland	5500	0	20	6	350	9	0	James A. Rhodes Arena
+don-shula-stadium	cleveland	5416	0	19	7	>1500	15	0	Don Shula Stadium
+vensurehr-field-house	cleveland	5000	0	2	0	500	9	0	VensureHR Field House
+the-celebration-arena	nashville	30000	0	22	7	1150	10	0	The Celebration Arena
+houchens-industries-l-t-smith-stadium	nashville	22113	0	19	4	>1500	24	0	Houchens Industries–L.T. Smith Stadium
+louis-crews-stadium	nashville	21000	0	15	5	200	23	0	Louis Crews Stadium
+roy-stewart-stadium	nashville	16800	0	14	4	200	14	0	Roy Stewart Stadium
+ford-center-evansville	nashville	11000	0	29	12	550	5	0	Ford Center
+bank-independent-stadium	nashville	10000	0	20	7	1600	24	0	Bank Independent Stadium
+hooper-eblen-center	nashville	9852	0	20	6	>1500	12	0	Hooper Eblen Center
+propst-arena	nashville	9000	0	19	4	450	12	0	Propst Arena
+the-orion-amphitheater	nashville	8000	0	10	5	100	15	0	The Orion Amphitheater
+e-a-diddle-arena	nashville	7523	0	26	7	>1500	36	0	E.A. Diddle Arena
+toyota-field-madison	nashville	7500	0	9	4	150	29	0	Toyota Field
+the-caverns-amphitheater	nashville	6000	0	1	1	>1500	115	1	The Caverns Amphitheater
+joe-davis-stadium	nashville	6000	0	11	2	250	6	0	Joe Davis Stadium
+the-ballpark-at-jackson	nashville	6000	0	2	2	500	18	0	The Ballpark at Jackson
+bosse-field	nashville	5181	0	27	13	1750	4	0	Bosse Field
+owensboro-sportscenter	nashville	5000	0	30	7	2750	14	0	Owensboro Sportscenter
+fortera-stadium	nashville	7000	0	23	7	500	14	0	Fortera Stadium
+fandm-bank-arena	nashville	6000	0	31	13	350	40	0	F&M Bank Arena
+wildcat-stadium-temple	austin	11500	0	28	6	300	19	0	Wildcat Stadium
+bulldawg-stadium	austin	9059	0	29	9	1400	25	0	Bulldawg Stadium
+crusader-stadium	austin	7671	0	19	7	1850	17	0	Crusader Stadium
+leo-buckley-stadium	austin	7600	0	21	7	3150	12	0	Leo Buckley Stadium
+cadence-bank-center	austin	7500	0	4	1	550	12	0	Cadence Bank Center
+mustang-stadium-marble-falls	austin	5224	0	5	0	2050	16	0	Mustang Stadium
+circuit-of-the-americas	austin	120000	0	1	0	2600	33	0	Circuit of The Americas
+zilker-park	austin	75000	0	5	3	150	32	0	Zilker Park
+auditorium-shores	austin	15000	0	15	1	1350	22	0	Auditorium Shores
+burger-stadium	austin	15000	0	12	3	250	6	0	Burger Stadium
+birkelbach-field	austin	12442	0	10	2	700	12	0	Birkelbach Field
+kelly-reeves-athletic-complex	austin	11000	0	12	5	1950	9	0	Kelly Reeves Athletic Complex
+a-c-bible-jr-stadium	austin	10200	0	20	7	3500	15	0	A.C. Bible Jr. Stadium
+john-gupton-stadium	austin	10200	0	10	1	1950	15	0	John Gupton Stadium
+the-pfield	austin	10000	0	16	5	3050	18	0	The Pfield
+chaparral-stadium	austin	10000	0	10	2	500	32	0	Chaparral Stadium
+dragon-stadium	austin	8800	0	18	7	900	7	0	Dragon Stadium
+bob-shelton-stadium	austin	8600	0	24	7	>1500	20	0	Bob Shelton Stadium
+nelson-field	austin	8200	0	19	4	300	23	0	Nelson Field
+burger-activity-center-arena	austin	5500	0	12	3	250	6	0	Burger Activity Center Arena
+tiger-stadium-smithville	austin	5000	0	7	0	2700	3	0	Tiger Stadium
+taylor-stadium	austin	5000	0	2	1	600	9	0	Taylor Stadium
+mackay-stadium	sacramento	27000	0	18	4	1300	29	0	Mackay Stadium
+lawlor-events-center	sacramento	11200	0	24	6	1150	35	0	Lawlor Events Center
+greater-nevada-field	sacramento	9534	0	31	9	750	16	0	Greater Nevada Field
+reno-rodeo-arena	sacramento	9491	0	26	6	600	15	0	Reno Rodeo Arena
+frank-moore-arena	sacramento	9000	0	12	2	450	2	0	Frank Moore Arena
+nugget-event-center	sacramento	8500	0	19	8	150	11	0	Nugget Event Center
+reno-events-center	sacramento	7000	0	28	10	450	16	0	Reno Events Center
+lake-tahoe-amphitheatre-at-caesars-republic	sacramento	7000	0	11	5	300	41	0	Lake Tahoe Amphitheatre at Caesars Republic
+silver-dollar-speedway	sacramento	7000	0	15	4	500	5	0	Silver Dollar Speedway
+tahoe-blue-event-center	sacramento	5200	0	1	1	100	50	1	Tahoe Blue Event Center
+laughlin-event-center	las-vegas	11500	0	7	1	1000	24	0	Laughlin Event Center
+greater-zion-stadium	las-vegas	10500	0	18	6	350	27	0	Greater Zion Stadium
+faurot-field	kansas-city	63609	0	17	5	>1500	30	0	Faurot Field
+bill-snyder-family-stadium	kansas-city	50000	0	10	1	1950	10	0	Bill Snyder Family Stadium
+mizzou-arena	kansas-city	15061	0	10	2	>1500	42	1	Mizzou Arena
+hearnes-center	kansas-city	13611	0	10	4	>1500	25	0	Hearnes Center
+bramlage-coliseum	kansas-city	11010	0	14	2	2050	9	0	Bramlage Coliseum
+landon-arena	kansas-city	10000	0	16	5	1550	8	0	Landon Arena
+jerry-m-hughes-athletics-center	kansas-city	10000	0	20	8	2050	24	0	Jerry M. Hughes Athletics Center
+spratt-memorial-stadium	kansas-city	10000	0	1	0	450	25	0	Spratt Memorial Stadium
+missouri-state-fair-grandstand	kansas-city	8800	0	12	4	450	9	0	Missouri State Fair Grandstand
+carnie-smith-stadium	kansas-city	8344	0	20	4	1000	8	0	Carnie Smith Stadium
+yager-stadium-at-moore-bowl	kansas-city	7200	0	16	6	2750	21	0	Yager Stadium at Moore Bowl
+fred-g-hughes-stadium	kansas-city	7000	0	9	4	2650	17	0	Fred G. Hughes Stadium
+bearcat-stadium	kansas-city	6500	0	16	5	3300	13	0	Bearcat Stadium
+weaver-erwin-stadium	kansas-city	6000	0	20	1	800	17	0	Weaver–Erwin Stadium
+audrey-j-walton-stadium	kansas-city	5800	0	25	6	1850	16	0	Audrey J. Walton Stadium
+mathewson-exhibition-center	kansas-city	5300	0	9	3	950	9	0	Mathewson Exhibition Center
+william-lindsay-white-auditorium	kansas-city	5000	0	18	6	1350	8	0	William Lindsay White Auditorium
+david-booth-kansas-memorial-stadium	kansas-city	32000	0	23	7	1100	39	0	David Booth Kansas Memorial Stadium
+allen-fieldhouse	kansas-city	15300	0	11	5	650	46	0	Allen Fieldhouse
+churchill-downs	indianapolis	170000	0	15	0	1300	4	0	Churchill Downs
+ross-ade-stadium	indianapolis	61441	0	27	7	2100	25	0	Ross–Ade Stadium
+l-and-n-federal-credit-union-stadium	indianapolis	60800	0	14	3	600	6	0	L&N Federal Credit Union Stadium
+iu-memorial-stadium	indianapolis	52929	0	15	6	600	26	0	Indiana University Memorial Stadium
+kfc-yum-center	indianapolis	23000	0	23	12	100	21	0	KFC Yum! Center
+scheumann-stadium	indianapolis	22500	0	18	2	>1500	6	0	Scheumann Stadium
+freedom-hall	indianapolis	18255	0	5	2	450	8	0	Freedom Hall
+simon-skjodt-assembly-hall	indianapolis	17222	0	9	4	600	27	0	Simon Skjodt Assembly Hall
+lynn-family-stadium	indianapolis	15304	0	15	2	150	10	0	Lynn Family Stadium
+mackey-arena	indianapolis	14222	0	31	10	2200	20	0	Mackey Arena
+louisville-slugger-field	indianapolis	13131	0	18	8	100	13	0	Louisville Slugger Field
+allen-county-war-memorial-coliseum	indianapolis	13000	0	7	2	150	10	0	Allen County War Memorial Coliseum
+indiana-state-memorial-stadium	indianapolis	12764	0	24	7	>1500	4	0	Indiana State Memorial Stadium
+worthen-arena	indianapolis	11500	0	21	6	>1500	5	0	Worthen Arena
+hulman-center	indianapolis	9000	0	21	10	750	6	0	Hulman Center
+lloyd-e-scott-gymnasium	indianapolis	8200	0	20	6	>1500	3	0	Lloyd E. Scott Gymnasium
+parkview-field	indianapolis	8100	0	30	10	500	8	0	Parkview Field
+broadbent-arena	indianapolis	6580	0	8	3	600	6	0	Broadbent Arena
+salem-speedway	indianapolis	6000	0	2	0	>1500	16	0	Salem Speedway
+tiernan-center	indianapolis	5655	0	21	6	900	16	0	Tiernan Center
+kokomo-memorial-gymnasium	indianapolis	5200	0	26	9	3500	9	0	Kokomo Memorial Gymnasium
+new-castle-fieldhouse	indianapolis	8424	0	18	4	>1500	15	0	New Castle Fieldhouse
+southport-fieldhouse	indianapolis	7124	0	21	7	>1500	11	0	Southport Fieldhouse
+tiger-stadium-lsu	new-orleans	102321	0	14	6	2200	10	0	Tiger Stadium
+ladd-peebles-stadium	new-orleans	40000	0	34	11	2050	5	0	Ladd–Peebles Stadium
+renasant-stadium	new-orleans	36000	0	27	8	1800	11	0	Renasant Stadium
+our-lady-of-lourdes-stadium	new-orleans	30392	0	8	3	3150	4	0	Our Lady of Lourdes Stadium
+a-w-mumford-stadium	new-orleans	28500	0	6	4	1400	10	0	A. W. Mumford Stadium
+hancock-whitney-stadium	new-orleans	25450	0	13	5	>1500	19	0	Hancock Whitney Stadium
+brec-memorial-stadium	new-orleans	21500	0	16	6	150	7	0	BREC Memorial Stadium
+mississippi-coast-coliseum	new-orleans	15000	0	10	2	>1500	12	0	Mississippi Coast Coliseum
+cajundome	new-orleans	13500	0	16	4	2800	5	0	Cajundome
+pete-maravich-assembly-center	new-orleans	13215	0	13	5	2000	12	0	Pete Maravich Assembly Center
+alex-box-stadium	new-orleans	10718	0	4	3	2850	4	0	Alex Box Stadium
+john-l-guidry-stadium	new-orleans	10500	0	14	4	>1500	4	0	John L. Guidry Stadium
+raising-cane-s-river-center-arena	new-orleans	10400	0	24	8	400	19	0	Raising Cane's River Center Arena
+mitchell-center	new-orleans	10042	0	11	4	>1500	16	0	Mitchell Center
+reed-green-coliseum	new-orleans	8095	0	22	4	1300	7	0	Reed Green Coliseum
+southeastern-university-center	new-orleans	7761	0	13	6	2800	8	0	Southeastern University Center
+f-g-clark-activity-center	new-orleans	7500	0	17	2	1400	8	0	F. G. Clark Activity Center
+strawberry-stadium	new-orleans	7408	0	21	7	3200	7	0	Strawberry Stadium
+parish-tractor-arena	new-orleans	6600	0	1	0	1800	8	0	Parish Tractor Arena
+keesler-federal-park	new-orleans	6098	0	29	11	100	11	0	Keesler Federal Park
+m-l-tigue-moore-field-at-russo-park	new-orleans	6015	0	18	6	3250	4	0	M. L. Tigue Moore Field at Russo Park
+maverik-stadium	salt-lake-city	25513	0	11	5	2700	56	0	Merlin Olsen Field at Maverik Stadium
+ute-stampede-arena	salt-lake-city	12000	0	8	3	1850	13	0	Ute Stampede Arena
+dee-glen-smith-spectrum	salt-lake-city	10270	0	13	3	2350	43	1	Dee Glen Smith Spectrum
+iccu-dome	salt-lake-city	10000	0	25	3	450	62	1	ICCU Dome
+fiesta-days-rodeo-arena	salt-lake-city	8400	0	21	2	1900	20	0	Fiesta Days Rodeo Arena
+cache-county-fairgrounds-outdoor-arena	salt-lake-city	5000	0	22	3	900	7	0	Cache County Fairgrounds Outdoor Arena
+lavell-edwards-stadium	salt-lake-city	62073	0	25	4	350	40	1	LaVell Edwards Stadium
+marriott-center	salt-lake-city	17978	0	18	10	800	38	0	Marriott Center
+stewart-stadium	salt-lake-city	13441	0	16	2	>1500	125	1	Elizabeth Dee Shaw Stewart Stadium
+dee-events-center	salt-lake-city	11592	0	19	1	>1500	60	1	Dee Events Center
+uccu-center	salt-lake-city	7000	0	13	2	300	35	0	UCCU Center
+lindquist-field	salt-lake-city	6700	0	14	4	2400	16	0	Lindquist Field
+golden-spike-arena	salt-lake-city	6500	0	4	2	2350	4	0	Golden Spike Arena
+lehi-round-up-rodeo-grounds	salt-lake-city	6500	0	24	10	1300	9	0	Lehi Round-Up Rodeo Grounds
+smith-fieldhouse	salt-lake-city	5000	0	16	2	400	29	0	George Albert Smith Fieldhouse
+richardson-stadium	ottawa-gatineau	8000	0	21	5	>1500	18	0	Richardson Stadium
+slush-puppie-place	ottawa-gatineau	6700	0	19	10	>1500	24	0	Slush Puppie Place
+ponoka-stampede-grounds	edmonton	8000	0	10	2	>1500	12	0	Ponoka Stampede Grandstands
+marchant-crane-centrium	edmonton	7819	0	9	3	550	4	0	Marchant Crane Centrium
+javelina-stadium	san-antonio	15000	0	17	6	>1500	4	0	Javelina Stadium
+buccaneer-stadium	san-antonio	11000	0	22	6	550	6	0	Buccaneer Stadium
+victoria-memorial-stadium	san-antonio	10729	0	14	1	2250	3	0	Memorial Stadium
+hilliard-center-arena	san-antonio	10323	0	13	7	700	8	0	Hilliard Center Arena
+sames-auto-arena	san-antonio	9622	0	11	5	450	16	0	Sames Auto Arena
+bill-johnson-sac-stadium	san-antonio	8500	0	15	2	800	17	0	Bill Johnson Student Activity Complex
+shirley-field	san-antonio	8000	0	21	10	900	6	0	Shirley Field
+cabaniss-stadium	san-antonio	8000	0	5	3	1600	3	0	Cabaniss Athletic Complex
+whataburger-field	san-antonio	7679	0	10	4	300	8	0	Whataburger Field
+uni-trade-stadium	san-antonio	6000	0	6	2	350	14	0	Uni-Trade Stadium
+antler-stadium	san-antonio	6000	0	28	8	1800	42	0	Antler Stadium
+honey-bowl-stadium	san-antonio	6000	0	26	10	100	7	0	Honey Bowl Stadium
+alamo-stadium	san-antonio	18500	0	8	3	150	42	1	Alamo Stadium
+comalander-stadium	san-antonio	11000	0	9	0	300	24	0	Jerry Comalander Stadium
+heroes-stadium	san-antonio	11000	0	5	2	200	11	0	Heroes Stadium
+dub-farris-stadium	san-antonio	10568	0	17	4	200	12	0	Dub Farris Stadium
+unicorn-stadium	san-antonio	10200	0	15	2	>1500	15	0	Unicorn Stadium
+gustafson-stadium	san-antonio	9800	0	4	0	350	10	0	Gustafson Stadium
+edgewood-veterans-stadium	san-antonio	8500	0	23	1	800	7	0	Edgewood Veterans Stadium
+matador-stadium	san-antonio	8210	0	12	3	2350	7	0	Matador Stadium
+barry-field	san-antonio	5880	0	20	7	650	6	0	Barry Field
+eagle-stadium-pleasanton	san-antonio	5500	0	27	6	>1500	7	0	Eagle Stadium
+autzen-stadium	portland	54000	0	4	2	500	6	0	Autzen Stadium
+reser-stadium	portland	35548	0	10	4	450	11	0	Reser Stadium
+hayward-field	portland	12650	0	16	4	1400	19	0	Hayward Field
+matthew-knight-arena	portland	12364	0	14	7	1050	26	0	Matthew Knight Arena
+gill-coliseum	portland	9301	0	13	2	600	16	0	Gill Coliseum
+l-b-day-amphitheater	portland	8900	0	11	4	1500	6	0	L.B. Day Amphitheater
+oregon-state-fair-pavilion	portland	5000	0	13	0	1250	8	0	The Pavilion at the Oregon State Fair & Expo Center
+the-cuthbert-amphitheater	portland	5000	0	4	1	700	6	0	The Cuthbert Amphitheater
+portland-international-raceway	portland	30000	0	0	0	750	6	0	Portland International Raceway
+st-paul-rodeo-arena	portland	10500	0	16	10	>1500	6	0	St. Paul Rodeo Arena
+molalla-buckeroo-arena	portland	8800	0	15	3	>1500	16	0	Molalla Buckeroo Arena
+clark-county-event-center-grandstand	portland	7425	0	8	3	250	9	0	Clark County Event Center Grandstand
+roto-rooter-park	portland	6000	0	5	3	250	10	0	Roto-Rooter Park
+charlotte-motor-speedway	raleigh-durham	79000	0	3	0	3700	18	0	Charlotte Motor Speedway
+bank-of-america-stadium	raleigh-durham	74867	0	25	7	200	28	0	Bank of America Stadium
+bagwell-field-at-dowdy-ficklen-stadium	raleigh-durham	51000	0	25	4	650	15	0	Bagwell Field at Dowdy-Ficklen Stadium
+martinsville-speedway	raleigh-durham	44000	0	3	1	500	36	0	Martinsville Speedway
+rockingham-speedway	raleigh-durham	32000	0	1	0	300	11	0	Rockingham Speedway
+allegacy-financial-stadium	raleigh-durham	31500	0	5	1	1450	12	0	Allegacy Financial Stadium
+zmax-dragway	raleigh-durham	30000	0	0	0	2450	23	0	zMAX Dragway
+north-wilkesboro-speedway	raleigh-durham	25000	0	8	2	250	19	0	North Wilkesboro Speedway
+virginia-motorsports-park	raleigh-durham	23000	0	0	0	2150	8	0	Virginia Motorsports Park
+first-horizon-coliseum	raleigh-durham	22000	0	23	8	1650	8	0	First Horizon Coliseum
+truist-stadium-greensboro	raleigh-durham	21500	0	19	5	250	14	0	Truist Stadium
+truliant-amphitheater	raleigh-durham	19500	0	11	2	550	30	0	Truliant Amphitheater
+spectrum-center	raleigh-durham	19444	0	26	8	650	48	0	Spectrum Center
+bowman-gray-stadium	raleigh-durham	17000	0	16	9	500	22	0	Bowman Gray Stadium
+jerry-richardson-stadium	raleigh-durham	15314	0	11	3	1500	23	0	Jerry Richardson Stadium
+lawrence-joel-veterans-memorial-coliseum	raleigh-durham	14665	0	16	1	1850	11	0	Lawrence Joel Veterans Memorial Coliseum
+the-dirt-track-at-charlotte	raleigh-durham	14000	0	1	1	2800	19	0	The Dirt Track at Charlotte
+crown-coliseum	raleigh-durham	10880	0	7	2	450	15	0	Crown Coliseum
+truist-field-charlotte	raleigh-durham	10200	0	25	7	600	54	0	Truist Field
+dale-f-halton-arena	raleigh-durham	9105	0	9	5	2100	37	0	Dale F. Halton Arena
+bojangles-coliseum	raleigh-durham	8600	0	16	6	100	23	0	Bojangles Coliseum
+williams-arena-at-minges-coliseum	raleigh-durham	8000	0	21	2	800	11	0	Williams Arena at Minges Coliseum
+rogers-stadium-virginia-state	raleigh-durham	7909	0	22	9	2350	7	0	Rogers Stadium
+south-boston-speedway	raleigh-durham	7600	0	0	0	700	19	0	South Boston Speedway
+first-national-bank-field	raleigh-durham	7499	0	25	6	1300	26	0	First National Bank Field
+live-oak-bank-pavilion	raleigh-durham	7200	0	17	4	300	15	0	Live Oak Bank Pavilion
+legion-stadium-wilmington	raleigh-durham	6000	0	17	5	200	5	0	Legion Stadium
+virginia-state-university-multi-purpose-center	raleigh-durham	6000	0	28	12	2650	8	0	Virginia State University Multi-Purpose Center
+truist-stadium-winston-salem	raleigh-durham	5500	0	35	8	100	41	0	Truist Stadium
+luther-nick-jeralds-stadium	raleigh-durham	5500	0	22	9	1350	15	0	Luther "Nick" Jeralds Stadium
+cabarrus-arena-and-events-center	raleigh-durham	5500	0	2	1	350	25	0	Cabarrus Arena & Events Center
+trask-coliseum	raleigh-durham	5200	0	16	3	200	6	0	Trask Coliseum
+ellis-f-corbett-sports-center	raleigh-durham	5000	0	20	6	250	18	0	Ellis F. Corbett Sports Center
+truist-point	raleigh-durham	5000	0	31	8	3150	19	0	Truist Point
+lewis-field-at-clark-leclair-stadium	raleigh-durham	5000	0	20	7	350	9	0	Lewis Field at Clark-LeClair Stadium
+skyla-credit-union-amphitheatre	raleigh-durham	5000	0	20	7	150	24	0	Skyla Credit Union Amphitheatre
+rhodes-stadium	raleigh-durham	14000	0	8	3	2250	19	0	Rhodes Stadium
+barker-lane-stadium	raleigh-durham	5500	0	18	8	100	17	0	Barker-Lane Stadium
+schar-center	raleigh-durham	5100	0	16	3	2600	11	0	Schar Center
+saluki-stadium	st-louis	15000	0	8	1	150	14	0	Saluki Stadium
+illinois-state-fair-grandstand	st-louis	13000	0	21	9	700	7	0	Illinois State Fair Grandstand
+obrien-field-charleston	st-louis	10000	0	17	7	>1500	9	0	O'Brien Field
+banterra-center	st-louis	8284	0	6	3	350	13	0	Banterra Center
+houck-field	st-louis	8000	0	25	10	1550	27	0	Houck Field
+allgood-bailey-stadium	st-louis	8000	0	18	5	550	22	0	Allgood-Bailey Stadium
+bank-of-springfield-center	st-louis	7700	0	25	9	3750	8	0	Bank of Springfield Center
+show-me-center	st-louis	7600	0	20	5	>1500	38	0	Show Me Center
+mtn-dew-park	st-louis	7000	0	9	4	400	17	0	Mtn Dew Park
+du-quoin-state-fair-grandstand	st-louis	6500	0	6	1	>1500	10	0	Du Quoin State Fair Grandstand
+dwight-t-reed-stadium	st-louis	5500	0	17	7	950	26	0	Dwight T. Reed Stadium
+groniger-arena	st-louis	5400	0	14	6	>1500	8	0	Groniger Arena
+robin-roberts-stadium	st-louis	5200	0	20	11	2850	7	0	Robin Roberts Stadium
+i-55-federated-auto-parts-raceway-park	st-louis	6000	0	1	0	300	29	0	I-55 Federated Auto Parts Raceway Park
+tri-city-speedway	st-louis	5000	0	7	2	650	9	0	Tri-City Speedway
+mountaineer-field-at-milan-puskar-stadium	pittsburgh	60000	0	32	5	>1500	27	0	Mountaineer Field at Milan Puskar Stadium
+hope-coliseum	pittsburgh	14000	0	15	2	1950	72	1	Hope Coliseum
+mansion-park-stadium	pittsburgh	10400	0	31	4	1700	20	0	Mansion Park Stadium
+wheeling-island-stadium	pittsburgh	10000	0	15	7	650	11	0	Wheeling Island Stadium
+sargents-stadium-at-the-point	pittsburgh	8000	0	23	9	100	166	0	Sargent's Stadium at the Point
+jennerstown-speedway-complex	pittsburgh	7500	0	11	4	450	29	0	Jennerstown Speedway Complex
+sharon-speedway	pittsburgh	7500	0	1	1	>1500	19	0	Sharon Speedway
+peoples-natural-gas-field	pittsburgh	7210	0	24	5	200	53	0	Peoples Natural Gas Field
+taggart-stadium	pittsburgh	7200	0	49	13	2400	52	0	Taggart Stadium
+greater-latrobe-memorial-stadium	pittsburgh	6926	0	27	7	2550	12	0	Greater Latrobe Memorial Stadium
+frank-cignetti-field-at-george-p-miller-stadium	pittsburgh	6000	0	18	5	2050	17	0	Frank Cignetti Field at George P. Miller Stadium
+wesbanco-arena	pittsburgh	5600	0	23	7	400	32	0	WesBanco Arena
+ed-fry-arena	pittsburgh	5000	0	13	5	1800	26	0	Ed Fry Arena
+harding-stadium	pittsburgh	10000	0	31	10	1550	30	0	Harding Stadium
+pittsburghs-pennsylvania-motor-speedway	pittsburgh	10000	0	1	0	850	43	1	Pittsburgh's Pennsylvania Motor Speedway
+offutt-field	pittsburgh	5000	0	53	19	1500	30	0	Offutt Field
