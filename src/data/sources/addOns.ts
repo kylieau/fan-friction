@@ -138,7 +138,10 @@ const RISKY = /\b(?:suites?|restaurant|tailgate|tunnel|pre-?\s?game|post-?\s?gam
 
 /** The add-on shapes, on any kind: a premium prefix, a club or premium package, a pass. */
 function isPremiumAddOn(name: string): boolean {
-  return /^\s*(?:premium|club|vip|platinum)\s*[:–-]|\b(?:premium|club|platinum)(?:\s+level)? (?:seat(?:s|ing)?|package|experience|access|ticket)s?\b|\b(?:parking|lot|fast|early entry|pre-?show|pre-?game|tailgate|benchwarmers?) pass(?:es)?\b/i.test(
+  // A leading "Suites -" is the seller's suite product beside an untitled-shape event ("Suites - Toyota Big 5 Classic",
+  // kept as a possible copy in Philadelphia's Oct 25–26, 2026 nightlies); a dash, not a colon, so a
+  // show named "Suite: …" stays.
+  return /^\s*(?:premium|club|vip|platinum)\s*[:–-]|^\s*suites?\s+[–-]\s|\b(?:premium|club|platinum)(?:\s+level)? (?:seat(?:s|ing)?|package|experience|access|ticket)s?\b|\b(?:parking|lot|fast|early entry|pre-?show|pre-?game|tailgate|benchwarmers?) pass(?:es)?\b/i.test(
     name,
   );
 }
