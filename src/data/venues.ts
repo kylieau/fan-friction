@@ -1805,7 +1805,8 @@ export const VENUES: Record<string, Venue> = {
     strained: true,
     names: [{ name: 'Rose Bowl' }],
     location: [-118.1676, 34.1613],
-    ticketmasterIds: ['KovZpZAEA66A', 'Z7r9jZadjY', 'KovZpZAal1tA', 'rZ7HnEZ17qk_f', 'Z7r9jZadz8'],
+    // Z7r9jZadjY is Ticketmaster's "Brookside at the Rose Bowl" (the festival grounds' own room since Oct 26, 2026).
+    ticketmasterIds: ['KovZpZAEA66A', 'KovZpZAal1tA', 'rZ7HnEZ17qk_f', 'Z7r9jZadz8'],
     capacity: [
       { seats: 89702, note: 'The stadium\'s all-seated figure. UCLA reports 91,136; aggregators say 92,542.' },
       { seats: 60000, setup: 'concert', note: 'Estimated: the City of Pasadena\'s expected crowd per Live Nation concert (Jan 18, 2023 agenda), docs/research/topics/concert-venue-figures-answer.md.' },
@@ -25898,7 +25899,7 @@ export const VENUES: Record<string, Venue> = {
     names: [{ name: 'UScellular Connection Stage' }, { name: 'T-Mobile Stage', from: '2026-01-28' }],
     // The research's map point; not an entrance.
     location: [-87.897945, 43.034462],
-    capacity: [{ seats: 9000, setup: 'concert', note: 'Reported, the research\'s recommended figure. After the 2018 rebuild; 5,700 before. Rebuilt benchmark; current operating limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
+    capacity: [{ seats: 5700, setup: 'concert', note: 'Reported, an older inventory, before the 2018 rebuild. docs/research/topics/further-out-rooms-answer-11.md.' }, { seats: 9000, setup: 'concert', fromYear: 2018, note: 'Reported, the research\'s recommended figure. After the 2018 rebuild; 5,700 before. Rebuilt benchmark; current operating limit unconfirmed (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-11.md.' }],
     roof: 'open',
   },
   'briggs-and-stratton-big-backyard': {
