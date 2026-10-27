@@ -533,3 +533,63 @@ export const VENUE_SHOW_AVERAGE: Record<string, { perShow: number; shows: number
   'prudential-center': { perShow: 9083, shows: 108, basis: 'Billboard, 981K over 108 shows, Oct 2024 – Sep 2025' },
   'intuit-dome': { perShow: 10308, shows: 39, basis: 'Billboard, 402K over 39 shows, Oct 2024 – Sep 2025' },
 };
+
+/**
+ * Shows that are not concerts (theatre, opera, comedy, dance, family shows: kind 'special') carry an estimate only where
+ * a published figure covers that room or that production (Kylie, Oct 26, 2026: "apply the numbers we actually do know
+ * as estimates"; docs/research/topics/arts-fill-rates-answer-codex.md found no fill share that holds for a whole
+ * category or room size). Display and pull only: whether a show counts toward friction still goes by its room.
+ */
+export interface SpecialFill {
+  /** Share of the room's usual capacity. */
+  share: number;
+  /** What the figure is and where it comes from, for the event page's note. */
+  basis: string;
+}
+
+const BROADWAY_FILL: SpecialFill = {
+  share: 0.912,
+  basis: "Broadway's fill over the 2024–25 season (Broadway League; total attendance, so free and standing tickets count)",
+};
+
+/** Rooms with a published fill of their own. Broadway: every Broadway house on file (the 41, Oct 26, 2026). */
+export const SPECIAL_ROOM_FILL: Record<string, SpecialFill> = {
+  ...Object.fromEntries(
+    [
+      'al-hirschfeld-theatre', 'ambassador-theatre', 'august-wilson-theatre', 'belasco-theatre', 'bernard-b-jacobs-theatre',
+      'booth-theatre', 'broadhurst-theatre', 'broadway-theatre', 'circle-in-the-square-theatre', 'ethel-barrymore-theatre',
+      'eugene-oneill-theatre', 'gerald-schoenfeld-theatre', 'gershwin-theatre', 'hayes-theater', 'hudson-theatre',
+      'imperial-theatre', 'james-earl-jones-theatre', 'john-golden-theatre', 'lena-horne-theatre', 'longacre-theatre',
+      'lunt-fontanne-theatre', 'lyceum-theatre', 'lyric-theatre', 'majestic-theatre-broadway', 'marquis-theatre',
+      'minskoff-theatre', 'music-box-theatre', 'nederlander-theatre', 'neil-simon-theatre', 'new-amsterdam-theatre',
+      'palace-theatre-nyc', 'richard-rodgers-theatre', 'samuel-j-friedman-theatre', 'shubert-theatre', 'st-james-theatre',
+      'stephen-sondheim-theatre', 'studio-54', 'todd-haimes-theatre', 'vivian-beaumont-theater', 'walter-kerr-theatre',
+      'winter-garden-theatre-broadway',
+    ].map((id) => [id, BROADWAY_FILL]),
+  ),
+  'metropolitan-opera-house': { share: 0.75, basis: "the Met's average paid attendance (the Met, Sept 24, 2026)" },
+};
+
+/** One production's own run average, at its room (title matched). Per show, not a share. */
+export const SPECIAL_RUNS: { venueId: string; title: RegExp; perShow: number; basis: string }[] = [
+  {
+    venueId: 'radio-city-music-hall',
+    title: /christmas spectacular/i,
+    perShow: 5556,
+    basis: 'more than 1.2 million tickets over 216 shows in the 2025 run (Madison Square Garden Entertainment)',
+  },
+];
+
+/**
+ * Québec's paid shows by room size, every professional performance in 2024 (Institut de la statistique du Québec,
+ * Feb 11, 2026: total attendance over tickets offered). For rooms built for shows only: a ratio of tickets offered, so
+ * never applied to an arena's full size. Montreal's rooms are all in Québec; on the Ottawa–Gatineau side, the Québec
+ * rooms are named here by hand (no province is stored on a room).
+ */
+export const QUEBEC_FILL_BANDS: { upTo: number; share: number }[] = [
+  { upTo: 400, share: 0.705 },
+  { upTo: 700, share: 0.733 },
+  { upTo: Infinity, share: 0.747 },
+];
+export const QUEBEC_METROS = new Set(['montreal']);
+export const QUEBEC_ROOMS_ELSEWHERE = new Set(['theatre-casino-lac-leamy', 'centre-slush-puppie']);

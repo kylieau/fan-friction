@@ -25667,6 +25667,412 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 5000, setup: 'football', note: 'Official, the research\'s recommended figure. A 2005 visiting-university figure kept as a historical benchmark. Historical benchmark/current layout (CAPACITY HOLD). docs/research/topics/further-out-rooms-answer-10.md.' }],
     roof: 'open',
   },
+  // ---- Broadway houses (Kylie, Oct 26, 2026: "let's aim for B"): the 39 of the 41 Broadway theatres not yet on file
+  // (the St. James and the Palace were), so their shows carry the Broadway League's published fill as an estimate.
+  // Seats from Wikipedia's table (reported); points from OpenStreetMap by street address. Former names are aliases
+  // only (the rename dates are not sourced here). ----
+  'al-hirschfeld-theatre': {
+    id: 'al-hirschfeld-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Al Hirschfeld Theatre' }],
+    // OpenStreetMap's point for the theater (302 West 45th Street); not an entrance.
+    location: [-73.989211, 40.759253],
+    ticketmasterIds: ['KovZpZAEktAA'],
+    capacity: [{ seats: 1424, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'ambassador-theatre': {
+    id: 'ambassador-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Ambassador Theatre' }],
+    // OpenStreetMap's point for the theater (219 West 49th Street); not an entrance.
+    location: [-73.984990, 40.761235],
+    ticketmasterIds: ['KovZ917Amte'],
+    capacity: [{ seats: 1125, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'august-wilson-theatre': {
+    id: 'august-wilson-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'August Wilson Theatre' }],
+    // OpenStreetMap's point for the theater (245 West 52nd Street); not an entrance.
+    location: [-73.984193, 40.763373],
+    ticketmasterIds: ['KovZpZAE66eA'],
+    capacity: [{ seats: 1228, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'belasco-theatre': {
+    id: 'belasco-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Belasco Theatre' }],
+    // OpenStreetMap's point for the theater (111 West 44th Street); not an entrance.
+    location: [-73.983801, 40.756644],
+    ticketmasterIds: ['KovZ917AmtX'],
+    capacity: [{ seats: 1018, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'bernard-b-jacobs-theatre': {
+    id: 'bernard-b-jacobs-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Bernard B. Jacobs Theatre' }],
+    aliases: ['Jacobs Theatre'],
+    // OpenStreetMap's point for the theater (242 West 45th Street); not an entrance.
+    location: [-73.987741, 40.758608],
+    ticketmasterIds: ['KovZ917AmnY'],
+    capacity: [{ seats: 1078, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'booth-theatre': {
+    id: 'booth-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Booth Theatre' }],
+    // OpenStreetMap's point for the theater (222 West 45th Street); not an entrance.
+    location: [-73.987090, 40.758373],
+    ticketmasterIds: ['KovZ917A2h0'],
+    capacity: [{ seats: 766, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'broadhurst-theatre': {
+    id: 'broadhurst-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Broadhurst Theatre' }],
+    // OpenStreetMap's point for the theater (235 West 44th Street); not an entrance.
+    location: [-73.987617, 40.758269],
+    ticketmasterIds: ['KovZ917AmtV'],
+    capacity: [{ seats: 1186, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'broadway-theatre': {
+    id: 'broadway-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Broadway Theatre' }],
+    // OpenStreetMap's point for the theater (1681 Broadway); not an entrance.
+    location: [-73.983355, 40.763398],
+    ticketmasterIds: ['KovZpZA17EkA'],
+    capacity: [{ seats: 1761, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'circle-in-the-square-theatre': {
+    id: 'circle-in-the-square-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Circle in the Square Theatre' }],
+    aliases: ['Circle in the Square'],
+    // OpenStreetMap's point for the street address (235 West 50th Street); not an entrance.
+    location: [-73.984678, 40.761783],
+    ticketmasterIds: ['KovZpaAPze'],
+    capacity: [{ seats: 840, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'ethel-barrymore-theatre': {
+    id: 'ethel-barrymore-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Ethel Barrymore Theatre' }],
+    aliases: ['Barrymore Theatre'],
+    // OpenStreetMap's point for the theater (243 West 47th Street); not an entrance.
+    location: [-73.986135, 40.760122],
+    ticketmasterIds: ['KovZ917AmnF'],
+    capacity: [{ seats: 1096, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'eugene-oneill-theatre': {
+    id: 'eugene-oneill-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Eugene O\'Neill Theatre' }],
+    // OpenStreetMap's point for the theater (230 West 49th Street); not an entrance.
+    location: [-73.985740, 40.761105],
+    ticketmasterIds: ['KovZpZAE6klA'],
+    capacity: [{ seats: 1066, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'gerald-schoenfeld-theatre': {
+    id: 'gerald-schoenfeld-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Gerald Schoenfeld Theatre' }],
+    aliases: ['Schoenfeld Theatre'],
+    // OpenStreetMap's point for the theater (236 West 45th Street); not an entrance.
+    location: [-73.987438, 40.758486],
+    ticketmasterIds: ['KovZ917Amlx'],
+    capacity: [{ seats: 1079, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'gershwin-theatre': {
+    id: 'gershwin-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Gershwin Theatre' }],
+    // OpenStreetMap's point for the theater (222 West 51st Street); not an entrance.
+    location: [-73.985204, 40.762362],
+    ticketmasterIds: ['KovZpa2Uje'],
+    capacity: [{ seats: 1933, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'hayes-theater': {
+    id: 'hayes-theater',
+    metroId: 'new-york',
+    names: [{ name: 'Hayes Theater' }],
+    aliases: ['Helen Hayes Theatre', 'Helen Hayes Theater'],
+    // OpenStreetMap's point for the theater (240 West 44th Street); not an entrance.
+    location: [-73.987842, 40.757851],
+    ticketmasterIds: ['KovZ917Amtn'],
+    capacity: [{ seats: 597, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'hudson-theatre': {
+    id: 'hudson-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Hudson Theatre' }],
+    // OpenStreetMap's point for the theater (141 West 44th Street); not an entrance.
+    location: [-73.984424, 40.757108],
+    ticketmasterIds: ['KovZpZA1JekA'],
+    capacity: [{ seats: 970, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'imperial-theatre': {
+    id: 'imperial-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Imperial Theatre' }],
+    // OpenStreetMap's point for the theater (249 West 45th Street); not an entrance.
+    location: [-73.987122, 40.759123],
+    ticketmasterIds: ['KovZ917Amn3'],
+    capacity: [{ seats: 1443, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'james-earl-jones-theatre': {
+    id: 'james-earl-jones-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'James Earl Jones Theatre' }],
+    aliases: ['Cort Theatre'],
+    // OpenStreetMap's point for the theater (138 West 48th Street); not an entrance.
+    location: [-73.983090, 40.759104],
+    ticketmasterIds: ['KovZ917AmnJ'],
+    capacity: [{ seats: 1084, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'john-golden-theatre': {
+    id: 'john-golden-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'John Golden Theatre' }],
+    // OpenStreetMap's point for the theater (252 West 45th Street); not an entrance.
+    location: [-73.987985, 40.758705],
+    ticketmasterIds: ['KovZ917ACI7'],
+    capacity: [{ seats: 805, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'lena-horne-theatre': {
+    id: 'lena-horne-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Lena Horne Theatre' }],
+    aliases: ['Brooks Atkinson Theatre'],
+    // OpenStreetMap's point for the theater (256 West 47th Street); not an entrance.
+    location: [-73.986966, 40.759975],
+    ticketmasterIds: ['KovZpZA6AanA'],
+    capacity: [{ seats: 1094, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'longacre-theatre': {
+    id: 'longacre-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Longacre Theatre' }],
+    // OpenStreetMap's point for the theater (220 West 48th Street); not an entrance.
+    location: [-73.985969, 40.760318],
+    ticketmasterIds: ['KovZ917A2s7'],
+    capacity: [{ seats: 1091, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'lunt-fontanne-theatre': {
+    id: 'lunt-fontanne-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Lunt-Fontanne Theatre' }],
+    // OpenStreetMap's point for the theater (205 West 46th Street); not an entrance.
+    location: [-73.985901, 40.759166],
+    ticketmasterIds: ['KovZpa2U3e'],
+    capacity: [{ seats: 1519, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'lyceum-theatre': {
+    id: 'lyceum-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Lyceum Theatre' }],
+    // OpenStreetMap's point for the theater (149 West 45th Street); not an entrance.
+    location: [-73.984501, 40.757869],
+    ticketmasterIds: ['KovZ917Amnj'],
+    capacity: [{ seats: 922, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'lyric-theatre': {
+    id: 'lyric-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Lyric Theatre' }],
+    // OpenStreetMap's point for the street address (214 West 43rd Street); not an entrance.
+    location: [-73.987299, 40.756953],
+    ticketmasterIds: ['KovZpZAJ6aIA'],
+    capacity: [{ seats: 1622, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'majestic-theatre-broadway': {
+    id: 'majestic-theatre-broadway',
+    metroId: 'new-york',
+    names: [{ name: 'Majestic Theatre' }],
+    // OpenStreetMap's point for the theater (245 West 44th Street); not an entrance.
+    location: [-73.988016, 40.758418],
+    ticketmasterIds: ['KovZpZAknn6A'],
+    capacity: [{ seats: 1645, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'marquis-theatre': {
+    id: 'marquis-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Marquis Theatre' }],
+    // OpenStreetMap's point for the theater (210 West 46th Street); not an entrance.
+    location: [-73.986185, 40.758904],
+    ticketmasterIds: ['KovZpZAJEv7A'],
+    capacity: [{ seats: 1612, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'minskoff-theatre': {
+    id: 'minskoff-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Minskoff Theatre' }],
+    // OpenStreetMap's point for the street address (200 West 45th Street); not an entrance.
+    location: [-73.985861, 40.757984],
+    ticketmasterIds: ['KovZpZAdaAnA'],
+    capacity: [{ seats: 1710, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'music-box-theatre': {
+    id: 'music-box-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Music Box Theatre' }],
+    // OpenStreetMap's point for the theater (239 West 45th Street); not an entrance.
+    location: [-73.987151, 40.758872],
+    ticketmasterIds: ['KovZ917Amlb'],
+    capacity: [{ seats: 1009, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'nederlander-theatre': {
+    id: 'nederlander-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Nederlander Theatre' }],
+    // OpenStreetMap's point for the theater (208 West 41st Street); not an entrance.
+    location: [-73.988302, 40.755484],
+    ticketmasterIds: ['KovZpa2yze'],
+    capacity: [{ seats: 1235, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'neil-simon-theatre': {
+    id: 'neil-simon-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Neil Simon Theatre' }],
+    aliases: ['Neil Simon Theater'],
+    // OpenStreetMap's point for the theater (250 West 52nd Street); not an entrance.
+    location: [-73.984520, 40.763026],
+    ticketmasterIds: ['KovZpa2Bee'],
+    capacity: [{ seats: 1467, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'new-amsterdam-theatre': {
+    id: 'new-amsterdam-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'New Amsterdam Theatre' }],
+    // OpenStreetMap's point for the theater (214 West 42nd Street); not an entrance.
+    location: [-73.988063, 40.756000],
+    ticketmasterIds: ['KovZpZAdaAlA'],
+    capacity: [{ seats: 1747, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'richard-rodgers-theatre': {
+    id: 'richard-rodgers-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Richard Rodgers Theatre' }],
+    // OpenStreetMap's point for the theater (226 West 46th Street); not an entrance.
+    location: [-73.986748, 40.759031],
+    ticketmasterIds: ['KovZpZAdaAtA'],
+    capacity: [{ seats: 1400, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'samuel-j-friedman-theatre': {
+    id: 'samuel-j-friedman-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Samuel J. Friedman Theatre' }],
+    aliases: ['Friedman Theatre'],
+    // OpenStreetMap's point for the theater (261 West 47th Street); not an entrance.
+    location: [-73.986728, 40.760381],
+    ticketmasterIds: ['KovZ917AmtO'],
+    capacity: [{ seats: 650, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'shubert-theatre': {
+    id: 'shubert-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Shubert Theatre' }],
+    // OpenStreetMap's point for the theater (225 West 44th Street); not an entrance.
+    location: [-73.987256, 40.758145],
+    ticketmasterIds: ['KovZ917AmiZ'],
+    capacity: [{ seats: 1460, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'stephen-sondheim-theatre': {
+    id: 'stephen-sondheim-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Stephen Sondheim Theatre' }],
+    aliases: ['Sondheim Theatre'],
+    // OpenStreetMap's point for the theater (124 West 43rd Street); not an entrance.
+    location: [-73.984933, 40.755896],
+    ticketmasterIds: ['KovZ917AmlU'],
+    capacity: [{ seats: 1055, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'studio-54': {
+    id: 'studio-54',
+    metroId: 'new-york',
+    names: [{ name: 'Studio 54' }],
+    // OpenStreetMap's point for the theater (254 West 54th Street); not an entrance.
+    location: [-73.983779, 40.764346],
+    ticketmasterIds: ['KovZpZAkJElA'],
+    capacity: [{ seats: 1006, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'todd-haimes-theatre': {
+    id: 'todd-haimes-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Todd Haimes Theatre' }],
+    aliases: ['American Airlines Theatre'],
+    // OpenStreetMap's point for the theater (227 West 42nd Street); not an entrance.
+    location: [-73.988119, 40.757156],
+    ticketmasterIds: ['KovZ917AmtG'],
+    capacity: [{ seats: 740, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'vivian-beaumont-theater': {
+    id: 'vivian-beaumont-theater',
+    metroId: 'new-york',
+    names: [{ name: 'Vivian Beaumont Theater' }],
+    aliases: ['Lincoln Center - Vivian Beaumont Theater', 'Vivian Beaumont Theatre'],
+    // OpenStreetMap's point for the theater (150 West 65th Street); not an entrance.
+    location: [-73.984802, 40.773677],
+    ticketmasterIds: ['KovZ917AmlC'],
+    capacity: [{ seats: 1080, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'walter-kerr-theatre': {
+    id: 'walter-kerr-theatre',
+    metroId: 'new-york',
+    names: [{ name: 'Walter Kerr Theatre' }],
+    // OpenStreetMap's point for the theater (219 West 48th Street); not an entrance.
+    location: [-73.985585, 40.760681],
+    ticketmasterIds: ['KovZpZAEktkA'],
+    capacity: [{ seats: 945, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
+  'winter-garden-theatre-broadway': {
+    id: 'winter-garden-theatre-broadway',
+    metroId: 'new-york',
+    names: [{ name: 'Winter Garden Theatre' }],
+    // OpenStreetMap's point for the theater (1634 Broadway); not an entrance.
+    location: [-73.983504, 40.761686],
+    ticketmasterIds: ['KovZ917Aml7'],
+    capacity: [{ seats: 1526, note: 'Reported, from Wikipedia\'s table of Broadway theatres (read Oct 26, 2026; the Broadway League\'s own theatre pages refused the request). The house varies a little with the production.' }],
+    roof: 'indoor',
+  },
 };
 /**
  * A merged duplicate's old id → the room kept, so catalog rows the nightly wrote under the old id before the merge

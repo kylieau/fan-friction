@@ -1,6 +1,6 @@
 # Arts, theatre, comedy, dance, classical and family-show fill rates
 
-Status: saved Oct 26, 2026 (Kylie: "here is one answer"), in full as delivered. Not folded: its recommendation (no fill share for any category or room size; show "Up to N" where no count or sellout exists) goes to Kylie as a proposal, and the "Up to N" display still needs her approval and a mock.
+Status: saved Oct 26, 2026 (Kylie: "here is one answer"), in full as delivered. Folded in part the same day (Kylie: "apply the numbers we actually do know"; option B): the room- and production-specific figures it found (Broadway, the Met, the Christmas Spectacular, Québec by room size) are estimates in `src/data/expectedDrawBuild.ts` (`SPECIAL_ROOM_FILL`, `SPECIAL_RUNS`, `QUEBEC_FILL_BANDS`); its blank category × size table stands. The "Up to N" display for every other show still needs her approval and a mock.
 
 **Research answer — Codex — 26 October 2026.** All cited sources were read on **2026-10-26, America/Los_Angeles**. This read date applies to every linked observation and source-directory entry below. Publication dates and covered periods are given separately. Research only; no code, eligibility rules or build changes.
 

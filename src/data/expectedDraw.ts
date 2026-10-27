@@ -5,7 +5,7 @@
 
 import { EXPECTED_DRAWS, OPPONENT_RATIOS, POSTSEASON_DRAWS, SEASON_LEVELS } from './expectedDrawIndex';
 import { TEAMS } from './teams';
-import { CONCERT_FILL, VENUE_SHOW_AVERAGE, isHoliday, opponentKeyForVisitor, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
+import { CONCERT_FILL, QUEBEC_FILL_BANDS, QUEBEC_METROS, QUEBEC_ROOMS_ELSEWHERE, SPECIAL_ROOM_FILL, SPECIAL_RUNS, VENUE_SHOW_AVERAGE, isHoliday, opponentKeyForVisitor, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
 import { VENUES, capacityOn } from './venues';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
@@ -109,11 +109,38 @@ export function showDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   return { count: Math.round(cap * CONCERT_FILL), note: `${Math.round(CONCERT_FILL * 100)}% of ${of}, the typical fill of arenas that publish their numbers. An estimate.` };
 }
 
+/**
+ * A show that is not a concert (kind 'special'), where a published figure covers its production or its room (Oct 26,
+ * 2026): the production's own run average, else the room's own fill, else Québec's fill by room size for a room built
+ * for shows. Anything else has no estimate. Never above the room; a listed count or sellout wins.
+ */
+export function specialDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
+  if (event.kind !== 'special' || event.place.type !== 'venue') return undefined;
+  if (event.crowd.some((c) => c.count !== undefined || c.soldOut)) return undefined;
+  const venue = VENUES[event.place.venueId];
+  const room = venue ? capacityOn(venue, event.date) : undefined;
+  if (!venue || !room) return undefined;
+  const run = SPECIAL_RUNS.find((r) => r.venueId === venue.id && r.title.test(event.title));
+  if (run) return { count: Math.min(run.perShow, room), note: `This production's average per show: ${run.basis}. An estimate.` };
+  const own = SPECIAL_ROOM_FILL[venue.id];
+  if (own) return { count: Math.round(room * own.share), note: `${Math.round(own.share * 1000) / 10}% of the house: ${own.basis}. An estimate.` };
+  // Built for shows: every figure on file is the room's concert or usual one, and a bare figure only indoors (a racetrack or a fairground has none).
+  const showRoom = venue.capacity.every((c) => c.setup === 'concert' || (!c.setup && venue.roof === 'indoor'));
+  if (showRoom && (QUEBEC_METROS.has(venue.metroId) || QUEBEC_ROOMS_ELSEWHERE.has(venue.id))) {
+    const band = QUEBEC_FILL_BANDS.find((b) => room <= b.upTo)!;
+    return {
+      count: Math.round(room * band.share),
+      note: `${Math.round(band.share * 1000) / 10}% of the room: the fill of Québec rooms this size across every paid show in 2024 (Institut de la statistique du Québec). An estimate.`,
+    };
+  }
+  return undefined;
+}
+
 /** Each event with an expected draw: its own when seeded, else the calibrated one. Playoff games keep the building. */
 export function withExpectedDraws(events: CrowdEvent[]): CrowdEvent[] {
   return events.map((event) => {
     if (event.expectedDraw) return event;
-    const draw = calibratedDraw(event) ?? postseasonDraw(event) ?? showDraw(event);
+    const draw = calibratedDraw(event) ?? postseasonDraw(event) ?? showDraw(event) ?? specialDraw(event);
     return draw ? { ...event, expectedDraw: draw } : event;
   });
 }
