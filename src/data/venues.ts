@@ -26212,7 +26212,7 @@ export const VENUES: Record<string, Venue> = {
     // The research's map point; not an entrance.
     location: [-118.170149, 34.167257],
     ticketmasterIds: ['Z7r9jZadjY'],
-    capacity: [{ seats: 35000, setup: 'concert', note: 'Reported, about 35,000 for the 2026 Zipangu festival setup (Billboard Japan, May 20, 2026), replacing the 2022 Cruel World cap of 50,000; the city\'s 2022 proposal allowed up to 50,000 a day through 2026, a ceiling rather than a sold setup. Festival perimeter and gate unresolved (DATA HOLD). Three paid festivals in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
+    capacity: [{ seats: 35000, setup: 'concert', note: 'Reported, about 35,000 for the 2026 Zipangu festival setup (Billboard Japan, May 20, 2026), replacing the 2022 Cruel World cap of 50,000; a 2022 proposal to the city sought a ceiling of 50,000 a day through 2026, not a sold setup. Festival perimeter and gate unresolved (DATA HOLD). Three paid festivals in 2026. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'los-angeles-state-historic-park': {
@@ -26233,7 +26233,7 @@ export const VENUES: Record<string, Venue> = {
     aliases: ['Marina Green'],
     // The research's map point; not an entrance.
     location: [-118.185804, 33.762744],
-    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported, a festival-ground inventory figure (Songkick); others say 5,000 and 2,000 for different footprints. No current licensed limit (CAPACITY / DATA HOLD). Cali Vibes 2026 was postponed; one paid music day (Holo Holo, Oct 17, 2026) confirmed, several current paid dates not. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
+    capacity: [{ seats: 14000, setup: 'concert', note: 'Reported, a festival-ground inventory figure (Songkick); others list 5,000 and 2,000 without identifying comparable footprints. No current licensed limit (CAPACITY / DATA HOLD). Cali Vibes 2026 was postponed; one paid music day (Holo Holo, Oct 17, 2026) confirmed, several current paid dates not. docs/research/topics/further-out-rooms-answer-11.md docs/research/topics/further-out-rooms-answer-12.md.' }],
     roof: 'open',
   },
   'falcon-stadium-cerritos': {
