@@ -138,6 +138,11 @@ function gameShaped(name: string): boolean {
   return /\S\s+(?:vs\.?|v\.?|@)\s+\S/i.test(name) && !/\bTBD\b/.test(name);
 }
 
+/** A room whose figures on file include a racing or a rodeo setup. */
+function raceOrRodeoRoom(venueId: string): boolean {
+  return VENUES[venueId]?.capacity.some((c) => c.setup === 'racing' || c.setup === 'rodeo') ?? false;
+}
+
 /** Exported for the copies check. */
 export function kindOf(segment: string | undefined, venueId: string, name: string): CrowdEvent['kind'] | null {
   switch (segment) {
@@ -152,8 +157,11 @@ export function kindOf(segment: string | undefined, venueId: string, name: strin
       // Oct 21, 2026 (Kylie: UCLA's exhibitions were in neither feed), a listing named like a match is kept too; a
       // league feed's game at the same building and date still wins (dropTicketmasterGamesCoveredByFeeds), so what
       // survives is an exhibition, a sport the feeds lack (college volleyball) or a one-off showcase. The match shape
-      // keeps out what the feeds never had a reason to list: stadium tours, racing days, daily general admission.
-      return SPORTS_FROM_TICKETMASTER.has(venueId) || gameShaped(name) ? 'game' : null;
+      // keeps out what the feeds never had a reason to list: stadium tours, daily general admission.
+      // A racetrack or rodeo ground (a racing or rodeo setup on file) has no league feed and its listings are never named
+      // like a match, so it takes every Sports listing too (Kylie, Oct 26, 2026: "good with your lean"; 86 rooms in 32
+      // cities then). Its camping, VIP and weekend-pass products drop as add-ons.
+      return SPORTS_FROM_TICKETMASTER.has(venueId) || raceOrRodeoRoom(venueId) || gameShaped(name) ? 'game' : null;
     default:
       // A listing with no segment ("Undefined") that is named like a match and names a sport is a game (Oct 22, 2026:
       // college games listed this way, "Rice Owls Womens Volleyball vs. Tulsa Golden Hurricane Womens Volleyball", sat

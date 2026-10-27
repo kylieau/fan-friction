@@ -134,7 +134,9 @@ function isVenueTourWide(name: string): boolean {
 const GAME_SHAPE = /\b(?:vs?\.?|versus|at|@)\s/i;
 
 /** Words that are also in real show titles; they count only on a game-shaped name or a game. */
-const RISKY = /\b(?:suites?|restaurant|tailgate|tunnel|pre-?\s?game|post-?\s?game|warm-?\s?ups?)\b/i;
+// Oct 26, 2026 (race and rodeo rooms take every Sports listing): a race weekend's camping, VIP and weekend-admission
+// products ("NASCAR Cup Series Weekend Tent Space", "… VIP Access", "Championship Weekend Grandstand Admission").
+const RISKY = /\b(?:suites?|restaurant|tailgate|tunnel|pre-?\s?game|post-?\s?game|warm-?\s?ups?|(?:rv|tent|camping)\s+(?:space|spot|site|pass)(?:es|s)?|vip\s+access|weekend\s+(?:grandstand\s+)?(?:admission|pass))\b/i;
 
 /** The add-on shapes, on any kind: a premium prefix, a club or premium package, a pass. */
 function isPremiumAddOn(name: string): boolean {
