@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-ny-rangers-401892582",
+      "metroId": "new-york",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 3
+      },
+      "away": {
+        "name": "Kings",
+        "score": 6
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-10-27T14:22:09.031Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

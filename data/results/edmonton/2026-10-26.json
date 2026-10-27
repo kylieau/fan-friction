@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-oilers-401892584",
+      "metroId": "edmonton",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 3
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 4
+      },
+      "attendance": 17043,
+      "note": "SO",
+      "capturedAt": "2026-10-27T14:22:20.755Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "21:38"
+    }
+  ]
+}

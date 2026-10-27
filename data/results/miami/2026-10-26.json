@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-heat-401909871",
+      "metroId": "miami",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 109
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 113
+      },
+      "attendance": 19611,
+      "capturedAt": "2026-10-27T14:22:13.414Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

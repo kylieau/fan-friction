@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-eagles-401873009",
+      "metroId": "philadelphia",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "eagles",
+      "home": {
+        "name": "Eagles",
+        "score": 21
+      },
+      "away": {
+        "name": "Cowboys",
+        "score": 38
+      },
+      "attendance": 69879,
+      "capturedAt": "2026-10-27T14:22:12.280Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "20:16"
+    }
+  ]
+}

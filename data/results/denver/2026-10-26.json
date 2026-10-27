@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-nuggets-401909876",
+      "metroId": "denver",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 114
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 134
+      },
+      "attendance": 19520,
+      "capturedAt": "2026-10-27T14:22:24.293Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

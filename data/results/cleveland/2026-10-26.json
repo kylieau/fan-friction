@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-cavaliers-401909869",
+      "metroId": "cleveland",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 127
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 125
+      },
+      "attendance": 19432,
+      "note": "OT",
+      "capturedAt": "2026-10-27T14:22:13.904Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

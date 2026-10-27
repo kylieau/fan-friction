@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-26",
+  "results": [
+    {
+      "eventId": "2026-10-26-espn-valkyries-401918309",
+      "metroId": "bay-area",
+      "date": "2026-10-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 64
+      },
+      "away": {
+        "name": "Dream",
+        "score": 55
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-10-27T14:22:10.110Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "17:11"
+    }
+  ]
+}

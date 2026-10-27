@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-25",
+  "results": [
+    {
+      "eventId": "2026-10-25-ht-oil-kings-1023219",
+      "metroId": "edmonton",
+      "date": "2026-10-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oil-kings",
+      "home": {
+        "name": "Oil Kings",
+        "score": 1
+      },
+      "away": {
+        "name": "Vees",
+        "score": 4
+      },
+      "attendance": 4910,
+      "capturedAt": "2026-10-27T14:22:20.755Z"
+    }
+  ]
+}
