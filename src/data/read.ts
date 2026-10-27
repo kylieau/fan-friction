@@ -20,6 +20,7 @@ import type {
 import { cachedCaptureDays, cachedSnapshots, cachedSnapshotsOn } from './catalogCache';
 import type { ArchiveForecastRow } from './startForecastIndex';
 import { SCHEDULE_SNAPSHOTS, type ScheduleSnapshotSpan } from './scheduleArchiveIndex';
+import { isCollegeTeam, TEAMS } from './teams';
 import { capacityOn, VENUES } from './venues';
 
 /**
@@ -47,6 +48,9 @@ export const SMALL_DRAW_SPORTS = new Set(['volleyball', 'water polo', 'track', '
  * game, with its expected draw, still wins the one-game rule.
  */
 export const SCHOOL_FEED_ARENA_SPORTS = new Set(['football', 'basketball', 'hockey', 'baseball']);
+
+/** A school's own word on its games: the Sidearm calendar feeds, and the one-time copies of a school site (`school-site`). */
+export const SCHOOL_SOURCES: ReadonlySet<string> = new Set(['sidearm', 'school-site']);
 
 /** The stamp locks this many hours after the last scheduled start that night. */
 export const STAMP_LOCK_HOURS = 24;
@@ -110,14 +114,19 @@ export function knownSize(event: CrowdEvent): number | undefined {
   // The same for a game no league feed carries and no past crowd sizes (a seller's listing, a school's own
   // calendar: the "college match the feeds don't carry" of that rule), since Oct 21, 2026, when the school feeds and
   // the wider sports rule began listing such games at every room.
+  // A college program's small-draw sport is the same game from a league feed (ESPN's UCLA volleyball, Oct 27, 2026):
+  // the room says nothing about its crowd either. Pro clubs in those sports (NLL lacrosse) keep their room.
   const draw = event.expectedDraw;
-  const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || event.sourceId === 'sidearm' || event.sourceId === 'seatgeek' || event.sourceId === 'fan');
+  const home = event.teams?.home ? TEAMS[event.teams.home] : undefined;
+  const collegeSmallDraw = event.audience.domain === 'sports' && SMALL_DRAW_SPORTS.has(event.audience.sport) && home != null && isCollegeTeam(home);
+  const schoolSource = SCHOOL_SOURCES.has(event.sourceId ?? '');
+  const unsized = event.kind === 'game' && !draw && (event.sourceId === 'ticketmaster' || schoolSource || event.sourceId === 'seatgeek' || event.sourceId === 'fan' || collegeSmallDraw);
   if ((event.kind === 'special' && event.sourceId === 'ticketmaster' || unsized) && !event.crowd.some((c) => c.soldOut)) {
     const cap = listedCapacity(event);
     const smallDraw =
       unsized &&
       event.audience.domain === 'sports' &&
-      (SMALL_DRAW_SPORTS.has(event.audience.sport) || (event.sourceId === 'sidearm' && !SCHOOL_FEED_ARENA_SPORTS.has(event.audience.sport)));
+      (SMALL_DRAW_SPORTS.has(event.audience.sport) || (schoolSource && !SCHOOL_FEED_ARENA_SPORTS.has(event.audience.sport)));
     if (cap != null && (cap < SMALL_SPECIAL_ROOM || smallDraw)) return Math.min(cap, FRICTION_ATTENDEES - 1);
   }
   // A show's estimate sizes its pull, not the gate: the room decides until venue

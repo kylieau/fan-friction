@@ -44,7 +44,7 @@ export function liveItems(events: readonly CrowdEvent[]): VerdictItem[] {
 }
 
 /** The feed an event id names ("2026-10-21-espn-lakers-4019…" → espn), in the catalog's own source names. */
-const ID_TAGS: Record<string, string> = { espn: 'espn', tm: 'ticketmaster', mlb: 'mlb', sa: 'sidearm', ht: 'hockeytech', jb: 'jambase', sg: 'seatgeek' };
+const ID_TAGS: Record<string, string> = { espn: 'espn', tm: 'ticketmaster', mlb: 'mlb', sa: 'sidearm', school: 'school-site', ht: 'hockeytech', jb: 'jambase', sg: 'seatgeek' };
 
 /**
  * A saved night's rows as verdict items. The saved facts stay frozen (a row saved with no start or no draw keeps

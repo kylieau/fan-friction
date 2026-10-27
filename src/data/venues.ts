@@ -2121,6 +2121,44 @@ export const VENUES: Record<string, Venue> = {
     capacity: [{ seats: 5800, setup: 'tennis', note: 'UCLA' }],
     roof: 'open',
   },
+  // UCLA's other home rooms (Oct 27, 2026, with the one-time copy of UCLA's schedules). Points are OpenStreetMap's for
+  // each building. Jackie Robinson Stadium shares its name with a Baldwin Hills field that is not on file.
+  'wallis-annenberg-stadium': {
+    id: 'wallis-annenberg-stadium',
+    metroId: 'la',
+    names: [{ name: 'Wallis Annenberg Stadium' }],
+    // OpenStreetMap way 1350369662.
+    location: [-118.4454777, 34.0726679],
+    capacity: [{ seats: 2145, setup: 'soccer', note: 'Official. UCLA soccer. Source: https://uclabruins.com/facilities/wallis-annenberg-stadium' }],
+    roof: 'open',
+  },
+  'spieker-aquatics-center': {
+    id: 'spieker-aquatics-center',
+    metroId: 'la',
+    names: [{ name: 'Spieker Aquatics Center' }, { name: 'Spieker Aquatics Complex' }],
+    // OpenStreetMap way 44664336.
+    location: [-118.4507119, 34.0748647],
+    capacity: [{ seats: 800, note: 'Reported. UCLA water polo and swimming. 800 permanent seats; temporary stands add 1,700 for championships (2,500), not counted. Source: https://collegiatewaterpolo.org/information-on-2023-womens-national-collegiate-club-championship-host-facilities-sunset-canyon-park-pool-spieker-aquatics-center/' }],
+    roof: 'open',
+  },
+  'jackie-robinson-stadium': {
+    id: 'jackie-robinson-stadium',
+    metroId: 'la',
+    names: [{ name: 'Jackie Robinson Stadium' }],
+    // OpenStreetMap way 232920641 (the West LA VA campus field UCLA plays at).
+    location: [-118.4592399, 34.0592515],
+    capacity: [{ seats: 1838, setup: 'baseball', note: 'Official. UCLA baseball. Source: https://uclabruins.com/facilities/jackie-robinson-stadium' }],
+    roof: 'open',
+  },
+  'easton-stadium': {
+    id: 'easton-stadium',
+    metroId: 'la',
+    names: [{ name: 'Easton Stadium' }, { name: 'Easton Softball Stadium' }],
+    // OpenStreetMap way 44631351.
+    location: [-118.4533736, 34.0762522],
+    capacity: [{ seats: 1328, note: 'Official. UCLA softball. Source: https://uclabruins.com/news/2013/04/17/facilities-easton-stadium' }],
+    roof: 'open',
+  },
   'championship-soccer-stadium': {
     id: 'championship-soccer-stadium',
     metroId: 'la',

@@ -7,7 +7,7 @@ import { TEAMS } from '../teams';
 import type { CrowdEvent, DateRating, LocalDate } from '../types';
 
 /** Who to believe about a game, lowest first: a league or the school itself, then a seller. */
-const GAME_RANK: Record<string, number> = { seed: 0, mlb: 0, espn: 0, hockeytech: 0, sidearm: 1, ticketmaster: 2, seatgeek: 2, jambase: 2, fan: 3 };
+const GAME_RANK: Record<string, number> = { seed: 0, mlb: 0, espn: 0, hockeytech: 0, sidearm: 1, 'school-site': 1, ticketmaster: 2, seatgeek: 2, jambase: 2, fan: 3 };
 
 type GameLike = {
   sourceId: string;
@@ -91,7 +91,7 @@ export function dropGamesCoveredByFeeds<T extends GameLike>(input: T[]): T[] {
  * ESPN" still holds for everything else).
  */
 function schoolRoomsWin<T extends GameLike>(events: T[]): T[] {
-  const school = events.filter((e) => e.sourceId === 'sidearm' && e.kind === 'game' && e.place.type === 'venue' && e.teams?.home);
+  const school = events.filter((e) => (e.sourceId === 'sidearm' || e.sourceId === 'school-site') && e.kind === 'game' && e.place.type === 'venue' && e.teams?.home);
   if (school.length === 0) return events;
   return events.map((e) => {
     if (e.kind !== 'game' || e.place.type !== 'venue' || !e.teams?.home || (GAME_RANK[e.sourceId] ?? 4) >= GAME_RANK.sidearm) return e;

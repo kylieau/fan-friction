@@ -254,7 +254,12 @@ try {
     const kept = ['seed', ...GAME_FEEDS, ...failedFeeds];
     const rest = await stale(db.from('events').delete({ count: 'exact' }).not('source_id', 'in', `(${kept.map((id) => `"${id}"`).join(',')})`), todayLocal);
     if (rest.error) throw new Error(`events (stale): ${rest.error.message}`);
-    counts.events_removed = (games.count ?? 0) + (rest.count ?? 0);
+    // A hand copy of a school's site (src/data/seed/uclaSchedule2026.ts) is the whole schedule every night, past
+    // games included, so a row it no longer lists leaves at any date (Codex review, Oct 27, 2026: a December recheck
+    // that drops a cancelled November game).
+    const copied = await db.from('events').delete({ count: 'exact' }).eq('metro_id', metroId).eq('source_id', 'school-site').lt('captured_at', now);
+    if (copied.error) throw new Error(`events (stale school copies): ${copied.error.message}`);
+    counts.events_removed = (games.count ?? 0) + (rest.count ?? 0) + (copied.count ?? 0);
   }
 
   // 2. Results.

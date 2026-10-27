@@ -6,10 +6,11 @@ import { LA_20261004_EVENTS, LA_20261004_RATING, METRO_FEELS as OCT4_FEELS } fro
 import { LISTINGS_2026_EVENTS } from '../seed/listings2026';
 import { PAST_2026_EVENTS } from '../seed/past2026';
 import { SEED_EVENTS, SEED_RATINGS } from '../seed/testNights';
+import { UCLA_SCHEDULE_2026_EVENTS } from '../seed/uclaSchedule2026';
 import type { CrowdEvent, DateRating } from '../types';
 import type { EventSource, RatingSource } from './types';
 
-const EVENTS = [...SEED_EVENTS, ...LA_20261003_EVENTS, ...LA_20261004_EVENTS, ...PAST_2026_EVENTS, ...LISTINGS_2026_EVENTS];
+const EVENTS = [...SEED_EVENTS, ...LA_20261003_EVENTS, ...LA_20261004_EVENTS, ...PAST_2026_EVENTS, ...LISTINGS_2026_EVENTS, ...UCLA_SCHEDULE_2026_EVENTS];
 const RATINGS = [...SEED_RATINGS, LA_20261003_RATING, LA_20261004_RATING];
 const METRO_FEELS = [...OCT3_FEELS, ...OCT4_FEELS];
 

@@ -85,7 +85,7 @@ const PLAIN_NICKNAME_SHORTCUTS: Record<string, string> = {
 const BRAND_SHORT_NAME = /^[A-Z0-9]{3,}$|(?:^|\s)(?:LA|NY|SF|SD|SJ|KC|LV|STL|TB)(?:\s|$)/;
 
 /** A trailing sport code a stored college short name may already carry ("Marquette MBB", "Columbia FB", "Bears FB"). */
-const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB|WVB|MH|WH|HK|HKY|MHKY|WHKY|MIH|WIH|SOC|MSOC|WSOC|football|basketball|baseball|softball|volleyball|hockey|soccer)$/i;
+const TRAILING_CODE = /\s+(?:(?:men's|women's)\s+)?(FB|CFB|MBB|WBB|BSB|SB|VB|MVB|WVB|MH|WH|HK|HKY|MHKY|WHKY|MIH|WIH|SOC|MSOC|WSOC|WP|MWP|WWP|football|basketball|baseball|softball|volleyball|hockey|soccer)$/i;
 
 /**
  * The school word a college program is written with, where the stored short name is not it (Kylie, Oct 19, 2026,
@@ -172,6 +172,8 @@ export function sportWords(team: Team): string {
       return sided('Ice Hockey');
     case 'soccer':
       return sided('Soccer');
+    case 'water polo':
+      return sided('Water Polo');
     default:
       return team.sport.charAt(0).toUpperCase() + team.sport.slice(1);
   }
@@ -633,6 +635,10 @@ const LIST: Team[] = [
   program('ucla', 'UCLA Bruins', 'baseball', 'baseball', 'College baseball', 'baseball', []),
   program('ucla', 'UCLA Bruins', 'mvb', 'volleyball', "College men's volleyball", "men's volleyball", []),
   program('ucla', 'UCLA Bruins', 'wvb', 'volleyball', "College women's volleyball", "women's volleyball", []),
+  // The programs UCLA's own schedule pages list (Kylie, Oct 27, 2026: the one-time copy, src/data/seed/uclaSchedule2026.ts).
+  program('ucla', 'UCLA Bruins', 'msoc', 'soccer', "College men's soccer", "men's soccer", []),
+  program('ucla', 'UCLA Bruins', 'wsoc', 'soccer', "College women's soccer", "women's soccer", []),
+  program('ucla', 'UCLA Bruins', 'mwp', 'water polo', "College men's water polo", "men's water polo", []),
   program('usc', 'USC Trojans', 'mbb', 'basketball', "College men's basketball", "men's basketball", ['USC Men\'s Basketball']),
   program('usc', 'USC Trojans', 'wbb', 'basketball', "College women's basketball", "women's basketball", ['USC Women\'s Basketball']),
   program('usc', 'USC Trojans', 'baseball', 'baseball', 'College baseball', 'baseball', []),

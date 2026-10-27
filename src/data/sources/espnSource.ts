@@ -217,6 +217,10 @@ const ESPN_TEAMS: { path: string; espnId: string; metroId: string; teamId: strin
   { path: 'basketball/mens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-mbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '30', metroId: 'la', teamId: 'usc-wbb', sport: 'basketball' },
   { path: 'basketball/womens-college-basketball', espnId: '26', metroId: 'la', teamId: 'ucla-wbb', sport: 'basketball' },
+  // UCLA's other sports where ESPN carries them (Kylie, Oct 27, 2026: "use ESPN for the sports that are available").
+  // Men's volleyball fills once ESPN posts the 2027 season.
+  { path: 'volleyball/womens-college-volleyball', espnId: '26', metroId: 'la', teamId: 'ucla-wvb', sport: 'volleyball' },
+  { path: 'volleyball/mens-college-volleyball', espnId: '26', metroId: 'la', teamId: 'ucla-mvb', sport: 'volleyball' },
   { path: 'soccer/usa.1', espnId: '22529', metroId: 'san-diego', teamId: 'san-diego-fc', sport: 'soccer' },
   { path: 'soccer/usa.nwsl', espnId: '21423', metroId: 'san-diego', teamId: 'wave', sport: 'soccer' },
   { path: 'football/college-football', espnId: '21', metroId: 'san-diego', teamId: 'sdsu-football', sport: 'football' },

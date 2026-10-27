@@ -3,7 +3,8 @@
 // against Cal Baptist, which was in neither feed; docs/research/topics/event-capture-alternatives-answer.md). The
 // feed carries every scheduled game, exhibitions included, with the room in LOCATION. One row per school; a new city
 // lists its schools here (docs/reference/new-city-checklist.md, section 2). A school on another provider (UCLA runs on
-// WMT Digital, whose terms bar apps) is not listed: its home games arrive through the opponents' feeds.
+// WMT Digital, whose terms bar apps) is not listed: its home games arrive through the opponents' feeds, ESPN, and for
+// UCLA a one-time hand copy of its schedule pages (src/data/seed/uclaSchedule2026.ts; Kylie, Oct 27, 2026).
 //
 // `school` is the name the feed writes before the sport ("USC Trojans Men's Basketball vs North Carolina"), used to
 // read the sport and the opponent; `short` is what a title shows ("USC"). `sides` names the side a prefix carries when
