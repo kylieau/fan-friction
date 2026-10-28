@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-27",
+  "results": [
+    {
+      "eventId": "2026-10-27-espn-celtics-401909877",
+      "metroId": "boston",
+      "date": "2026-10-27",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 125
+      },
+      "away": {
+        "name": "Nets",
+        "score": 124
+      },
+      "attendance": 19156,
+      "note": "OT",
+      "capturedAt": "2026-10-28T15:14:38.536Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

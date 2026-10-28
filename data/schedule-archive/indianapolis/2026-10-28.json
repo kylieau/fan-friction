@@ -1,0 +1,3355 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "metroName": "Indianapolis",
+  "timeZone": "America/Indiana/Indianapolis",
+  "capturedOn": "2026-10-28",
+  "capturedAt": "2026-10-28T15:13:03.018Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-28",
+    "through": "2026-11-11"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 11
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 85
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 25
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-28-tm-17AOv0G655vdnFO",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs September Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vdnFO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-28-tm-17AOv0G65C0Laxb",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65C0Laxb",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-28-espn-pacers-401909884",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. 76ers",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "sixers",
+        "awayOpponent": "76ers"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-10-28-sa-butlersports-com-15749",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Franklin",
+      "preseason": true,
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "butler-wbb",
+        "away": "Franklin",
+        "awayOpponent": "franklin"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-28-tm-1ApZkfYGkdkOzNc",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Men's Basketball vs. Mercyhurst Lakers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkfYGkdkOzNc",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-tm-17AOv0G655v7BFt",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs September Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655v7BFt",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-tm-17AOv0G65C0O_xE",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65C0O_xE",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-29-sa-iuindyjags-com-17430",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "IU Indy vs. Northern Kentucky",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-vv1AAZkfzGkdQ_sck",
+      "metroId": "indianapolis",
+      "date": "2026-10-29",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Noche Latina",
+      "officialTitle": "¡NOCHE LATINA! (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Noche Latina",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkdQ_sck",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-iuindyjags-com-17374",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "14:00",
+      "kind": "game",
+      "title": "IU Indy vs. Northern Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "carroll-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-butlersports-com-15698",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. St. John's",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-vv1AAZkf7GkdtDEx8",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Fort Wayne Komets vs. Wheeling Nailers",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-county-war-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fort Wayne Komets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkf7GkdtDEx8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AAZkoyGkdqWcAR",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "William Shatner Live On-stage with Star Trek II: The Wrath of Khan",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "William Shatner",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkoyGkdqWcAR"
+    },
+    {
+      "id": "2026-10-30-tm-vvG1fZ_1BNRb1N",
+      "metroId": "indianapolis",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shakey Graves",
+      "officialTitle": "Shakey Graves - Fondness, Etc. Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Shakey Graves",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1BNRb1N",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-athletics-uindy-edu-14794",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "UIndy vs. Quincy",
+      "place": {
+        "type": "venue",
+        "venueId": "kiesel-field-key-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "uindy-football",
+        "away": "Quincy",
+        "awayOpponent": "quincy"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7ro78",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "FC Cincinnati vs. Philadelphia Union",
+      "place": {
+        "type": "venue",
+        "venueId": "tql-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "FC Cincinnati",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7ro78",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZkf7GkdtW6xg",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Fort Wayne Komets vs. Toledo Walleye",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-county-war-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fort Wayne Komets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkf7GkdtW6xg",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-17AOv0G65wGEgPP",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "15:15",
+      "kind": "game",
+      "title": "Louisville Cardinals Football vs. Stanford Cardinal Football",
+      "place": {
+        "type": "venue",
+        "venueId": "l-and-n-federal-credit-union-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Louisville Cardinals Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65wGEgPP"
+    },
+    {
+      "id": "2026-10-31-sa-butlersports-com-15659",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. DePaul",
+      "place": {
+        "type": "venue",
+        "venueId": "sellick-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-butlersports-com-15699",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Seton Hall",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A70w34",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "19:35",
+      "kind": "game",
+      "title": "Fort Wayne Komets vs. Toledo Walleye",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-county-war-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fort Wayne Komets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70w34",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZko9Gkdr_jSx",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - The Multiplayer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZko9Gkdr_jSx",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AAZkfxGkdBefvq",
+      "metroId": "indianapolis",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "It's A 2000's Party",
+      "officialTitle": "It's A 2000's (Halloween) Party: Indianapolis",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "It's A 2000's Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfxGkdBefvq",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-17AOv0G6CBE0p-o",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Women's Volleyball vs. Georgia Tech Yellow Jackets Women's Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Louisville Cardinals Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6CBE0p-o"
+    },
+    {
+      "id": "2026-11-01-tm-17AOv0G655vABFi",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vABFi",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vv17fZ_aGkS1zCd-",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Elmo's Got the Moves",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Sesame Street Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_aGkS1zCd-"
+    },
+    {
+      "id": "2026-11-01-sa-athletics-uindy-edu-14879",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "14:30",
+      "kind": "game",
+      "title": "UIndy vs. Quincy",
+      "place": {
+        "type": "venue",
+        "venueId": "kiesel-field-key-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-vv17fZ_8GkloD2P3",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Indy Fuel vs Fort Wayne Komets",
+      "place": {
+        "type": "venue",
+        "venueId": "fishers-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Indy Fuel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GkloD2P3",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-01-espn-pacers-401909904",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Pacers vs. Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "nets",
+        "awayOpponent": "nets"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-01-tm-vv1AAZk3vGkeysDCl",
+      "metroId": "indianapolis",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Phil Collins Story",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Phil Collins Story",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk3vGkeysDCl",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-butler-wbb-401920251",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Butler vs. Tennessee Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-wbb",
+        "away": "tennessee-tech",
+        "awayOpponent": "tennessee-tech"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-sa-iuindyjags-com-17458",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "IU Indy vs. Miami University (Middletown)",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "iu-indy-mbb",
+        "away": "Miami University (Middletown)",
+        "awayOpponent": "miami-university-middletown-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-tm-1ApZk46Gkd4T5pO",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Womens Basketball vs. Bellarmine University Knights Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46Gkd4T5pO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-espn-butler-mbb-401902275",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Lafayette",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-mbb",
+        "away": "lafayette",
+        "awayOpponent": "lafayette"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true
+    },
+    {
+      "id": "2026-11-02-tm-vv1kv8vPo9GA2j39X",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indiana State University Sycamores Mens Basketball vs. UNC Charlotte 49ers Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hulman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana State University Sycamores Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kv8vPo9GA2j39X"
+    },
+    {
+      "id": "2026-11-02-espn-pacers-401909909",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Pacers vs. Hawks",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "hawks",
+        "awayOpponent": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-02-tm-1ApZkfYGkdk-zNs",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Men's Basketball vs. Chattanooga Mocs Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkfYGkdk-zNs",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAvt0J",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Indiana Hoosiers Mens Basketball vs. Eastern Illinois Panthers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "simon-skjodt-assembly-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana Hoosiers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt0J",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv17fZ_8Gkl3GTIt",
+      "metroId": "indianapolis",
+      "date": "2026-11-03",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Indy Fuel Vs Cincinnati Cyclones",
+      "place": {
+        "type": "venue",
+        "venueId": "fishers-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Indy Fuel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8Gkl3GTIt",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-03-sa-iuindyjags-com-17393",
+      "metroId": "indianapolis",
+      "date": "2026-11-03",
+      "start": "14:00",
+      "kind": "game",
+      "title": "IU Indy vs. Detroit Mercy",
+      "place": {
+        "type": "venue",
+        "venueId": "carroll-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-03-sa-iuindyjags-com-17432",
+      "metroId": "indianapolis",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "IU Indy vs. Purdue Fort Wayne",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-03-tm-Z7r9jZ1AAvFoI",
+      "metroId": "indianapolis",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indiana Hoosiers Womens Basketball vs. Florida Gulf Coast Eagles Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "simon-skjodt-assembly-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana University Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvFoI",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv1AAZkoPGkdlcxRs",
+      "metroId": "indianapolis",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Earl Sweatshirt",
+      "officialTitle": "Earl Sweatshirt & MIKE - Home on the Range Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Earl Sweatshirt",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkoPGkdlcxRs",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-17AOv0G655v61Fw",
+      "metroId": "indianapolis",
+      "date": "2026-11-04",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Senior Day",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655v61Fw"
+    },
+    {
+      "id": "2026-11-04-espn-butler-mbb-401902276",
+      "metroId": "indianapolis",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. FDU",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-mbb",
+        "away": "fdu",
+        "awayOpponent": "fdu"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-04-tm-vv11v8vN_aF0Q_vG",
+      "metroId": "indianapolis",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11v8vN_aF0Q_vG",
+      "expectedDraw": {
+        "count": 10416,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-1ApZk46GkdpZ5pt",
+      "metroId": "indianapolis",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Womens Basketball vs. Stetson Hatters Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdpZ5pt",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vv1AAZkfUGkdfzIfL",
+      "metroId": "indianapolis",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Hunxho",
+      "officialTitle": "Hunxho's \"2night Only\" Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Hunxho",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfUGkdfzIfL",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-17AOv0G655vF1FU",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vF1FU",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-05-espn-butler-wbb-401916068",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Butler vs. Lipscomb",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "butler-wbb",
+        "away": "lipscomb-wbb",
+        "awayOpponent": "lipscomb"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-05-sa-iuindyjags-com-17611",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "IU Indy vs. SIUE",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "iu-indy-wbb",
+        "away": "SIUE",
+        "awayOpponent": "siue"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-vvG1fZ_G9u8KD4",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Nekrogoblikon",
+      "officialTitle": "20 Years of Nekrogoblikon with Special Guests Aborted",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Nekrogoblikon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_G9u8KD4",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1fZ_urltiIF",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Zack Fox",
+      "officialTitle": "Zack Fox (DJ set) - ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Zack Fox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_urltiIF",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAvt0E",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "start": null,
+      "kind": "game",
+      "title": "Indiana Hoosiers Mens Basketball vs. Bellarmine Knights Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "simon-skjodt-assembly-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana Hoosiers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt0E",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-17AOv0G655vaQFD",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vaQFD",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-06-sa-iuindyjags-com-17433",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "IU Indy vs. Northern Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-butlersports-com-15660",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Xavier",
+      "place": {
+        "type": "venue",
+        "venueId": "sellick-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-vv1aAZk3aPba_Ze8u",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917KV20",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1aAZk3aPba_Ze8u",
+      "expectedDraw": {
+        "count": 10416,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7P30-",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indiana Hoosiers Womens Basketball vs. Southern Illinois Salukis Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "simon-skjodt-assembly-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana University Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P30-",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vv1AAZkf7GkdtX6Nu",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Fort Wayne Komets vs. Bloomington Bison",
+      "place": {
+        "type": "venue",
+        "venueId": "allen-county-war-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fort Wayne Komets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkf7GkdtX6Nu",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1fZ_19K0pi_",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Maine",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_19K0pi_",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1fZ_2dFXHOo",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Indianapolis Ballet presents Cinderella",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Indianapolis Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2dFXHOo",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-LvZ18QEttD4G-734Yk6qT",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "R&B ONLY",
+      "officialTitle": "R&B ONLY LIVE",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "R&B ONLY",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QEttD4G-734Yk6qT",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7J7jU",
+      "metroId": "indianapolis",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Purdue Boilermakers Mens Basketball vs. Valparaiso Beacons Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "mackey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Purdue University Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J7jU",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_uDesbSd",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "09:30",
+      "kind": "show",
+      "title": "ISSMA Marching Band Finals",
+      "officialTitle": "2026 ISSMA Marching Band State Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "lucas-oil-stadium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "ISSMA Marching Band Finals",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KxAV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_uDesbSd",
+      "expectedDraw": {
+        "count": 38190,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1ApZkfYGkd62zJ0",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Men's Basketball vs. Morehead State Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkfYGkd62zJ0",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-espn-butler-football-401868216",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Butler vs. St Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "sellick-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "butler-football",
+        "away": "st-thomas",
+        "awayOpponent": "st-thomas"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-07-tm-17AOv0G655v51a2",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655v51a2",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-07-sa-athletics-uindy-edu-14795",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "UIndy vs. Southwest Baptist",
+      "place": {
+        "type": "venue",
+        "venueId": "kiesel-field-key-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "uindy-football",
+        "away": "Southwest Baptist",
+        "awayOpponent": "southwest-baptist"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_2dFTiO9",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Indianapolis Ballet presents Cinderella",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Indianapolis Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2dFTiO9",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-espn-pacers-401909938",
+      "metroId": "mexico-city",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Pacers vs. Nuggets",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-cdmx"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "neutralSite": true,
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7ro73",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "FC Cincinnati vs. Nashville SC",
+      "place": {
+        "type": "venue",
+        "venueId": "tql-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "FC Cincinnati",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7ro73",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-sa-iuindyjags-com-17459",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "kind": "game",
+      "title": "IU Indy vs. UT Martin",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "iu-indy-mbb",
+        "away": "UT Martin",
+        "awayOpponent": "ut-martin"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-butlersports-com-15681",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Butler vs. Xavier",
+      "place": {
+        "type": "venue",
+        "venueId": "sellick-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-vv17fZ_8Gkl3hRi9",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indy Fuel vs Kalamazoo Wings",
+      "place": {
+        "type": "venue",
+        "venueId": "fishers-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Indy Fuel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8Gkl3hRi9",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_GR_f-bJ",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "State Champs",
+      "officialTitle": "State Champs Performing 'Around The World And Back'",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "State Champs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_GR_f-bJ",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1fZ_G1xhQ-H",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Level Up",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Level Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_G1xhQ-H",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7OzFV",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Purdue Boilermakers Football vs. Maryland Terrapins Football",
+      "place": {
+        "type": "venue",
+        "venueId": "ross-ade-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Purdue Boilermakers Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OzFV"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AA74aK",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Miami of Ohio Redhawks Mens Basketball vs. Bellarmine Knights Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "millett-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Miami of Ohio Redhawks Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA74aK"
+    },
+    {
+      "id": "2026-11-08-espn-colts-401873040",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Colts vs. Cowboys",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "lucas-oil-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "colts",
+        "away": "cowboys",
+        "awayOpponent": "cowboys"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-08-sa-butlersports-com-15701",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Butler vs. Creighton",
+      "place": {
+        "type": "venue",
+        "venueId": "hinkle-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-17AOv0G655vG1aR",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Military Appreciation",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vG1aR",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG1fZ_2daZjOr",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Indianapolis Ballet presents Cinderella",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Indianapolis Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2daZjOr",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv17fZ_8GklKiZUI",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Indy Fuel vs Cincinnati Cyclones",
+      "place": {
+        "type": "venue",
+        "venueId": "fishers-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Indy Fuel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GklKiZUI",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv17fZbgGkMG81_5",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Matt Rife: Stay Golden World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matt Rife",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZbgGkMG81_5"
+    },
+    {
+      "id": "2026-11-08-tm-vvG1fZ_2rFZPKI",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jodeci",
+      "officialTitle": "WTLC Presents Jodeci - 35th Anniversary Tour of Forever My Lady",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2rFZPKI",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv1AAZkfsGkd_IvZu",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Trippie Redd",
+      "officialTitle": "Trippie Redd - The Non-disclosure Agreement Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Trippie Redd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfsGkd_IvZu",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-vv17fZ_kGkltlcDn",
+      "metroId": "indianapolis",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "kind": "game",
+      "title": "The Bad Boy Mowers Series - Indianapolis - Indiana vs. Syracuse",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana Hoosiers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_kGkltlcDn"
+    },
+    {
+      "id": "2026-11-09-tm-Z7r9jZ1A7P3OJ",
+      "metroId": "indianapolis",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indiana Hoosiers Womens Basketball vs. Bradley Braves Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "simon-skjodt-assembly-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana University Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P3OJ",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-09-tm-Z7r9jZ1A7J7jM",
+      "metroId": "indianapolis",
+      "date": "2026-11-09",
+      "start": null,
+      "kind": "game",
+      "title": "Purdue Boilermakers Mens Basketball vs. ISU Redbirds Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "mackey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Purdue University Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J7jM",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-vvG1fZ_G5nBwDE",
+      "metroId": "indianapolis",
+      "date": "2026-11-10",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "WAGE WAR - EMERGENCY BROADCAST TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Wage War",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_G5nBwDE",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-sa-athletics-uindy-edu-15054",
+      "metroId": "indianapolis",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UIndy vs. Goshen",
+      "place": {
+        "type": "venue",
+        "venueId": "nicoson-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uindy-mbb",
+        "away": "Goshen",
+        "awayOpponent": "goshen"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-10-tm-1ApZk46GkdpZDpS",
+      "metroId": "indianapolis",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Louisville Cardinals Womens Basketball vs. Lindenwood University Lions Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kfc-yum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Louisville Cardinals Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdpZDpS",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-10-tm-vv1AAZkfwGkdYGzB2",
+      "metroId": "indianapolis",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Noblesville Boom vs. Iowa Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "riverview-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Noblesville Boom",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfwGkdYGzB2",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-vv1AAZk4AGkdfPQZa",
+      "metroId": "indianapolis",
+      "date": "2026-11-10",
+      "start": null,
+      "kind": "game",
+      "title": "Indiana State Sycamores Womens Basketball vs. IU Indianapolis Jaguars Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hulman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana State Sycamores Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk4AGkdfPQZa",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17AOv0G655vuQaX",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - General Admission",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Fall Racing",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G655vuQaX",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17AOv0G65C0ntNc",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Day At The Races - Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "churchill-downs"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Churchill Downs Military Appreciation",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65C0ntNc",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-11-sa-iuindyjags-com-17460",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "kind": "game",
+      "title": "IU Indy vs. Southern Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "james-t-morris-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "iu-indy-mbb",
+        "away": "Southern Indiana",
+        "awayOpponent": "southern-indiana"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-espn-pacers-401909966",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pacers vs. Wizards",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "gainbridge-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pacers",
+        "away": "wizards",
+        "awayOpponent": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-11-tm-vv1AAZkfwGkdYCFBl",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Noblesville Boom vs. Iowa Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "riverview-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Noblesville Boom",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfwGkdYCFBl",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vv1AAZkodGkdrPQlE",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Daniel Sloss: BITTER  (Brand New Tour!)",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkodGkdrPQlE"
+    },
+    {
+      "id": "2026-11-11-tm-vv1kv8vPo9GA2qxbC",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Indiana State University Sycamores Mens Basketball vs. Milwaukee Panthers Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hulman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Indiana State University Sycamores Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kv8vPo9GA2qxbC",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vv17fZ_FGkTeum61",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Little Feat",
+      "officialTitle": "Little Feat: The Last Farewell Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "murat-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Little Feat",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_FGkTeum61",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG1fZ_u6782F3",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Béla Fleck",
+      "officialTitle": "Béla Fleck: My Bluegrass Heart",
+      "place": {
+        "type": "venue",
+        "venueId": "clowes-memorial-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Béla Fleck",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_u6782F3",
+      "expectedDraw": {
+        "count": 2148,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-28-tm-17AOv0G655vdnFO",
+      "date": "2026-10-28",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-28-tm-17AOv0G65C0Laxb",
+      "date": "2026-10-28",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-28-espn-pacers-401909884",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Franklin at Butler (WBB · Preseason) 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-sa-butlersports-com-15749",
+      "date": "2026-10-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "76ers at Pacers 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-28-tm-1ApZkfYGkdkOzNc",
+      "date": "2026-10-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-17AOv0G655v7BFt",
+      "date": "2026-10-29",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-17AOv0G65C0O_xE",
+      "date": "2026-10-29",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-29-sa-iuindyjags-com-17430",
+      "date": "2026-10-29",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-vv1AAZkfzGkdQ_sck",
+      "date": "2026-10-29",
+      "start": "21:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-iuindyjags-com-17374",
+      "date": "2026-10-30",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-10-30-sa-butlersports-com-15698",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AAZkf7GkdtDEx8",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AAZkoyGkdqWcAR",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1fZ_1BNRb1N",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-athletics-uindy-edu-14794",
+      "date": "2026-10-31",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7ro78",
+      "date": "2026-10-31",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZkf7GkdtW6xg",
+      "date": "2026-10-31",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-17AOv0G65wGEgPP",
+      "date": "2026-10-31",
+      "start": "15:15"
+    },
+    {
+      "eventId": "2026-10-31-sa-butlersports-com-15659",
+      "date": "2026-10-31",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-31-sa-butlersports-com-15699",
+      "date": "2026-10-31",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A70w34",
+      "date": "2026-10-31",
+      "start": "19:35"
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZko9Gkdr_jSx",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AAZkfxGkdBefvq",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-17AOv0G6CBE0p-o",
+      "date": "2026-11-01",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-17AOv0G655vABFi",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-vv17fZ_aGkS1zCd-",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-athletics-uindy-edu-14879",
+      "date": "2026-11-01",
+      "start": "14:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv17fZ_8GkloD2P3",
+      "date": "2026-11-01",
+      "start": "16:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Nets at Pacers 15 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-pacers-401909904",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Fort Wayne Komets at Indy Fuel 15 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv1AAZk3vGkeysDCl",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-butler-wbb-401920251",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-iuindyjags-com-17458",
+      "date": "2026-11-02",
+      "start": "11:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-1ApZk46Gkd4T5pO",
+      "date": "2026-11-02",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-butler-mbb-401902275",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Hawks at Pacers 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vv1kv8vPo9GA2j39X",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-pacers-401909909",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Lafayette at Butler (MBB · Home Opener) 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-1ApZkfYGkdk-zNs",
+      "date": "2026-11-02",
+      "start": "21:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAvt0J",
+      "date": "2026-11-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-03-tm-vv17fZ_8Gkl3GTIt",
+      "date": "2026-11-03",
+      "start": "10:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-sa-iuindyjags-com-17393",
+      "date": "2026-11-03",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-sa-iuindyjags-com-17432",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-Z7r9jZ1AAvFoI",
+      "date": "2026-11-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-03-tm-vv1AAZkoPGkdlcxRs",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-17AOv0G655v61Fw",
+      "date": "2026-11-04",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-04-espn-butler-mbb-401902276",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Three Days Grace 5.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vv11v8vN_aF0Q_vG",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "FDU at Butler (MBB) 5.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10416
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-1ApZk46GkdpZ5pt",
+      "date": "2026-11-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-04-tm-vv1AAZkfUGkdfzIfL",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-17AOv0G655vF1FU",
+      "date": "2026-11-05",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-05-espn-butler-wbb-401916068",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-iuindyjags-com-17611",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1fZ_G9u8KD4",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1fZ_urltiIF",
+      "date": "2026-11-05",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAvt0E",
+      "date": "2026-11-05",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-06-tm-17AOv0G655vaQFD",
+      "date": "2026-11-06",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-iuindyjags-com-17433",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-butlersports-com-15660",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1aAZk3aPba_Ze8u",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10416
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7P30-",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1AAZkf7GkdtX6Nu",
+      "date": "2026-11-06",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1fZ_19K0pi_",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1fZ_2dFXHOo",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-LvZ18QEttD4G-734Yk6qT",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7J7jU",
+      "date": "2026-11-06",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_uDesbSd",
+      "date": "2026-11-07",
+      "start": "09:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 38190
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1ApZkfYGkd62zJ0",
+      "date": "2026-11-07",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-07-espn-butler-football-401868216",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Moderate",
+        "why": "2026 ISSMA Marching Band State… 5.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17AOv0G655v51a2",
+      "date": "2026-11-07",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-07-sa-athletics-uindy-edu-14795",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_2dFTiO9",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-pacers-401909938",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7ro73",
+      "date": "2026-11-07",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-07-sa-iuindyjags-com-17459",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-butlersports-com-15681",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv17fZ_8Gkl3hRi9",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "St Thomas at Butler (FB) 11 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_GR_f-bJ",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1fZ_G1xhQ-H",
+      "date": "2026-11-07",
+      "start": "21:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7OzFV",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AA74aK",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-08-espn-colts-401873040",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-butlersports-com-15701",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17AOv0G655vG1aR",
+      "date": "2026-11-08",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1fZ_2daZjOr",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv17fZ_8GklKiZUI",
+      "date": "2026-11-08",
+      "start": "16:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Cowboys at Colts 15 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv17fZbgGkMG81_5",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Cowboys at Colts 0.5 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1fZ_2rFZPKI",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1AAZkfsGkd_IvZu",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-vv17fZ_kGkltlcDn",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-Z7r9jZ1A7P3OJ",
+      "date": "2026-11-09",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-09-tm-Z7r9jZ1A7J7jM",
+      "date": "2026-11-09",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-10-tm-vvG1fZ_G5nBwDE",
+      "date": "2026-11-10",
+      "start": "18:30",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-10-sa-athletics-uindy-edu-15054",
+      "date": "2026-11-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-10-tm-1ApZk46GkdpZDpS",
+      "date": "2026-11-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-10-tm-vv1AAZkfwGkdYGzB2",
+      "date": "2026-11-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-10-tm-vv1AAZk4AGkdfPQZa",
+      "date": "2026-11-10",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-11-tm-17AOv0G655vuQaX",
+      "date": "2026-11-11",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-17AOv0G65C0ntNc",
+      "date": "2026-11-11",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-11-sa-iuindyjags-com-17460",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-pacers-401909966",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vv1AAZkfwGkdYCFBl",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vv1AAZkodGkdrPQlE",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vv1kv8vPo9GA2qxbC",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-vv17fZ_FGkTeum61",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG1fZ_u6782F3",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2148
+      }
+    }
+  ]
+}

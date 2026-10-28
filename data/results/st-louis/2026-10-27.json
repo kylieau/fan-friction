@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-10-27",
+  "results": [
+    {
+      "eventId": "2026-10-27-espn-blues-401892588",
+      "metroId": "st-louis",
+      "date": "2026-10-27",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 0
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 2
+      },
+      "attendance": 16234,
+      "capturedAt": "2026-10-28T15:14:46.403Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

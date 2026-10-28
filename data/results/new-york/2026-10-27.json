@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-27",
+  "results": [
+    {
+      "eventId": "2026-10-27-espn-knicks-401909878",
+      "metroId": "new-york",
+      "date": "2026-10-27",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 111
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 97
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-10-28T15:14:35.829Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    }
+  ]
+}

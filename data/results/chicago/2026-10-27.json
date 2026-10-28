@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-27",
+  "results": [
+    {
+      "eventId": "2026-10-27-espn-blackhawks-401892587",
+      "metroId": "chicago",
+      "date": "2026-10-27",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Kings",
+        "score": 1
+      },
+      "attendance": 16437,
+      "capturedAt": "2026-10-28T15:14:37.002Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-10-27-ht-chicago-wolves-1029205",
+      "metroId": "chicago",
+      "date": "2026-10-27",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "allstate-arena",
+      "homeTeamId": "chicago-wolves",
+      "home": {
+        "name": "Wolves",
+        "score": 6
+      },
+      "away": {
+        "name": "Moose",
+        "score": 3
+      },
+      "attendance": 16403,
+      "capturedAt": "2026-10-28T15:14:37.003Z"
+    }
+  ]
+}

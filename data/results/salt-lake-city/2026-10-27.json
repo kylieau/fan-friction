@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-27",
+  "results": [
+    {
+      "eventId": "2026-10-27-espn-utah-mammoth-401892592",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-27",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 1
+      },
+      "away": {
+        "name": "Wild",
+        "score": 3
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-10-28T15:14:44.412Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}
