@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-13",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "vancouver",
+      "venueId": "city",
+      "date": "2026-11-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-29T15:06:33.501Z",
+      "feelsLikeHighF": 44.5,
+      "feelsLikeLowF": 38.6,
+      "code": 63,
+      "precipProbability": 58,
+      "precipMm": 20.7
+    }
+  ]
+}

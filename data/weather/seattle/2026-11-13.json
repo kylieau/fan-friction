@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-13",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-11-13",
+      "basis": "forecast",
+      "capturedAt": "2026-10-29T14:57:12.381Z",
+      "feelsLikeHighF": 42,
+      "feelsLikeLowF": 38.7,
+      "code": 53,
+      "precipProbability": 52,
+      "precipMm": 4.5
+    }
+  ]
+}

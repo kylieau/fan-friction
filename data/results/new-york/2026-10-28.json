@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-nycfc-761905",
+      "metroId": "new-york",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "citi-field",
+      "homeTeamId": "nycfc",
+      "home": {
+        "name": "NYCFC",
+        "score": 2
+      },
+      "away": {
+        "name": "Atlanta United",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:51.977Z"
+    }
+  ]
+}

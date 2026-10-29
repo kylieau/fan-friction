@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-club-america-401876986",
+      "metroId": "mexico-city",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "club-america",
+      "home": {
+        "name": "América",
+        "score": 1
+      },
+      "away": {
+        "name": "Tijuana",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:57.968Z"
+    }
+  ]
+}

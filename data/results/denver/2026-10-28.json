@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-avalanche-401892598",
+      "metroId": "denver",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 5
+      },
+      "away": {
+        "name": "Devils",
+        "score": 2
+      },
+      "attendance": 18101,
+      "capturedAt": "2026-10-29T15:21:01.760Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}

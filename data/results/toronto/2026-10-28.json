@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-raptors-401909885",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 129
+      },
+      "away": {
+        "name": "Magic",
+        "score": 99
+      },
+      "attendance": 19107,
+      "capturedAt": "2026-10-29T15:20:59.045Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    },
+    {
+      "eventId": "2026-10-28-espn-toronto-fc-761906",
+      "metroId": "toronto",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-field",
+      "homeTeamId": "toronto-fc",
+      "home": {
+        "name": "Toronto FC",
+        "score": 2
+      },
+      "away": {
+        "name": "D.C. United",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:59.045Z"
+    }
+  ]
+}

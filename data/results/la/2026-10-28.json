@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-clippers-401909892",
+      "metroId": "la",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 87
+      },
+      "away": {
+        "name": "Lakers",
+        "score": 103
+      },
+      "attendance": 17927,
+      "capturedAt": "2026-10-29T15:20:50.887Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "22:40"
+    }
+  ]
+}

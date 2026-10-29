@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-bulls-401909886",
+      "metroId": "chicago",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 127
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 133
+      },
+      "attendance": 20596,
+      "capturedAt": "2026-10-29T15:20:53.288Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-10-28-espn-chicago-fire-761911",
+      "metroId": "chicago",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 2
+      },
+      "away": {
+        "name": "Orlando",
+        "score": 2
+      },
+      "capturedAt": "2026-10-29T15:20:53.288Z"
+    }
+  ]
+}

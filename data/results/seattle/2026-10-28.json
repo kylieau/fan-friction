@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-kraken-401892599",
+      "metroId": "seattle",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 5
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 4
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-10-29T15:20:51.703Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-10-28-espn-sounders-761916",
+      "metroId": "seattle",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "sounders",
+      "home": {
+        "name": "Sounders",
+        "score": 0
+      },
+      "away": {
+        "name": "Dynamo",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:51.703Z"
+    }
+  ]
+}

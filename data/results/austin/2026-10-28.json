@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-austin-fc-761910",
+      "metroId": "austin",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "q2-stadium",
+      "homeTeamId": "austin-fc",
+      "home": {
+        "name": "Austin FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Real Salt Lake",
+        "score": 2
+      },
+      "capturedAt": "2026-10-29T15:20:56.990Z"
+    }
+  ]
+}

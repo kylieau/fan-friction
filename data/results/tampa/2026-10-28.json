@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-mlb-849799",
+      "metroId": "tampa",
+      "date": "2026-10-28",
+      "sourceId": "mlb",
+      "status": "final",
+      "venueId": "tropicana-field",
+      "homeTeamId": "rays",
+      "home": {
+        "name": "Rays",
+        "score": 1
+      },
+      "away": {
+        "name": "Brewers",
+        "score": 4
+      },
+      "capturedAt": "2026-10-29T15:20:55.240Z",
+      "attendance": 40489,
+      "duration": {
+        "minutes": 185,
+        "kind": "official"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

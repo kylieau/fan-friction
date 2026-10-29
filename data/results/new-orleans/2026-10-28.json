@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-pelicans-401909889",
+      "metroId": "new-orleans",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "smoothie-king-center",
+      "homeTeamId": "pelicans",
+      "home": {
+        "name": "Pelicans",
+        "score": 91
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 104
+      },
+      "attendance": 16334,
+      "capturedAt": "2026-10-29T15:20:59.434Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

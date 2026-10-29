@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-hawks-401909881",
+      "metroId": "atlanta",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 117
+      },
+      "away": {
+        "name": "Heat",
+        "score": 129
+      },
+      "attendance": 15028,
+      "capturedAt": "2026-10-29T15:20:52.760Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

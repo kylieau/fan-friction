@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-vancouver-whitecaps-761918",
+      "metroId": "vancouver",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bc-place",
+      "homeTeamId": "vancouver-whitecaps",
+      "home": {
+        "name": "Vancouver",
+        "score": 4
+      },
+      "away": {
+        "name": "San Diego FC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:57.438Z"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-bucks-401909887",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "bucks",
+      "home": {
+        "name": "Bucks",
+        "score": 100
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 132
+      },
+      "attendance": 12232,
+      "capturedAt": "2026-10-29T15:20:54.264Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-10-28-ht-milwaukee-admirals-1029210",
+      "metroId": "milwaukee",
+      "date": "2026-10-28",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "uwm-panther-arena",
+      "homeTeamId": "milwaukee-admirals",
+      "home": {
+        "name": "Admirals",
+        "score": 3
+      },
+      "away": {
+        "name": "Moose",
+        "score": 0
+      },
+      "attendance": 2428,
+      "capturedAt": "2026-10-29T15:20:54.264Z"
+    }
+  ]
+}

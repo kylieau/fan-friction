@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-capitals-401892596",
+      "metroId": "washington-dc",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 5
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "attendance": 17391,
+      "capturedAt": "2026-10-29T15:21:00.263Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

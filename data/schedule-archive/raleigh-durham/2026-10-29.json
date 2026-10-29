@@ -1,0 +1,3504 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "metroName": "Raleigh–Durham",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-29",
+  "capturedAt": "2026-10-29T15:20:25.683Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-29",
+    "through": "2026-11-12"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 25
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 71
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 34
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-29-espn-hurricanes-401892603",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Blue Jackets",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "blue-jackets",
+        "awayOpponent": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18625,
+        "low": 18226,
+        "high": 18625,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in October: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-sa-goheels-com-27010",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. SMU",
+      "place": {
+        "type": "venue",
+        "venueId": "dorrance-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-G5eVZ_Crt4lLb",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Knoxville Ice Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_Crt4lLb",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-tm-G5eVZ_kJjQ1qK",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gavin Adcock",
+      "officialTitle": "Gavin Adcock: The Day I Hang It Up Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Gavin Adcock",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jQA7",
+        "K8vZ917QTV0",
+        "K8vZ917rM7f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_kJjQ1qK",
+      "expectedDraw": {
+        "count": 4902,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-nccueaglepride-com-8448",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "11:00",
+      "kind": "game",
+      "title": "North Carolina Central vs. MEAC Championships",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "cross country",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-vv1k7Z_Ak4G7taxP",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "NASCAR Craftsman Truck Series Chase Race",
+      "place": {
+        "type": "venue",
+        "venueId": "martinsville-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Martinsville Speedway",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k7Z_Ak4G7taxP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-sa-goduke-com-24931",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Duke vs. Boston College",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-G5eVZ_ome1gJ9",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "kind": "special",
+      "title": "NCA&T Homecoming Step Show",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "NCA&T Homecoming Step Show",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_ome1gJ9"
+    },
+    {
+      "id": "2026-10-30-sa-goheels-com-27030",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. NC State",
+      "place": {
+        "type": "venue",
+        "venueId": "dorrance-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-gopack-com-24628",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. SMU",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7O_jJ",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UNC Charlotte 49ers Football vs. Tulane Green Wave Football",
+      "place": {
+        "type": "venue",
+        "venueId": "jerry-richardson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Charlotte 49ers Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7O_jJ"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZab_",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina Tar Heels Womens Volleyball vs. Syracuse University Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "North Carolina Tar Heels Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZab_",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5eVZ_CEN8HCu",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CEN8HCu",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-espn-duke-football-401858279",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Duke vs. Boston College",
+      "broadcast": "CW",
+      "place": {
+        "type": "venue",
+        "venueId": "wallace-wade-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "duke-football",
+        "away": "bc-football",
+        "awayOpponent": "boston-college"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 26038,
+        "low": 25007,
+        "high": 26723,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-nc-state-football-401858277",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "NC State vs. California",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "carter-finley-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "nc-state-football",
+        "away": "cal-football",
+        "awayOpponent": "california"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 56919,
+        "low": 56919,
+        "high": 56919,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5eVZbMN4JD1Y",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Charlotte FC vs. Orlando City SC",
+      "place": {
+        "type": "venue",
+        "venueId": "bank-of-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Charlotte FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZbMN4JD1Y"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7OaPy",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "North Carolina A & T Aggies Football vs. Elon University Phoenix Football",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-stadium-greensboro"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "North Carolina A&T Aggies Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OaPy"
+    },
+    {
+      "id": "2026-10-31-espn-nccu-football-401867963",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "NC Central vs. Howard",
+      "place": {
+        "type": "venue",
+        "venueId": "o-kelly-riddick-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "nccu-football",
+        "away": "howard-football",
+        "awayOpponent": "howard"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5500,
+        "low": 3818,
+        "high": 8618,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5eVZ_CENKGCy",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CENKGCy",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1A8v0f9GA5M72j",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "15:30",
+      "kind": "game",
+      "title": "NASCAR O'Reilly Auto Parts Series Chase Race",
+      "place": {
+        "type": "venue",
+        "venueId": "martinsville-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Martinsville Speedway",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8v0f9GA5M72j",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5eVZ_2pXtvpu",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Philadelphia 76ers",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXtvpu",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-espn-unc-football-401858282",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "game",
+      "title": "North Carolina vs. Miami",
+      "broadcast": "ABC",
+      "place": {
+        "type": "venue",
+        "venueId": "kenan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "unc-football",
+        "away": "miami-hurricanes-football",
+        "awayOpponent": "miami"
+      },
+      "rank": {
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 50500,
+        "low": 48267,
+        "high": 50500,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5eVZ_83geWu-",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "show",
+      "title": "NCA&T Homecoming Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "NCA&T Homecoming Concert",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oxq7",
+        "K8vZ917psY7",
+        "K8vZ9174nXf",
+        "K8vZ917jQGV",
+        "K8vZ917qLl7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_83geWu-",
+      "expectedDraw": {
+        "count": 12540,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5eVZ_CENoHCO",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CENoHCO",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-espn-hurricanes-401892624",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Winnipeg Jets",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18673,
+        "low": 18526,
+        "high": 18721,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-sa-goduke-com-24932",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Duke vs. Syracuse",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-sa-gopack-com-24629",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "NC State vs. Pitt",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-G5eVZ_CENfG2F",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CENfG2F",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vv1AvZkuSGkdbkfWc",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "NASCAR Cup Series Chase Race Xfinity 500",
+      "place": {
+        "type": "venue",
+        "venueId": "martinsville-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Martinsville Speedway",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkuSGkdbkfWc",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1AAZab9",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "game",
+      "title": "North Carolina Tar Heels Womens Volleyball vs. Boston College Eagles Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "North Carolina Tar Heels Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZab9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5eVZ_o5queyb",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Norfolk Admirals - Sunday Funday",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5queyb",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-01-espn-nc-courage-401854096",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Courage vs. Summit FC",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "nc-courage",
+        "away": "denver-summit-fc",
+        "awayOpponent": "denver"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7130,
+        "low": 7021,
+        "high": 8569,
+        "fromCrowds": true,
+        "games": 22,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 22 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5eVZ_CEN4G2G",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CEN4G2G",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5eVZ_FFFmQ2n",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Young Miko",
+      "officialTitle": "Young Miko - Late Checkout Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Young Miko",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hET7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_FFFmQ2n",
+      "expectedDraw": {
+        "count": 11083,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-nc-state-wbb-401913735",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "game",
+      "title": "NC State vs. Wofford",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "wofford",
+        "awayOpponent": "wofford"
+      },
+      "rank": {
+        "home": 25
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-duke-mbb-401909562",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Duke vs. Army",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-mbb",
+        "away": "army",
+        "awayOpponent": "army"
+      },
+      "rank": {
+        "home": 2
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-unc-mbb-401913099",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. W Carolina",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "w-carolina",
+        "awayOpponent": "w-carolina"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 17242,
+        "low": 16661,
+        "high": 17287,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-nc-state-mbb-401918955",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "NC State vs. Campbell",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "campbell",
+        "awayOpponent": "campbell"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 12949,
+        "low": 12719,
+        "high": 16034,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-G5eVZ_2pXnop4",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Detroit Pistons",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXnop4",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AA7a4g",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Wake Forest Demon Deacons Mens Basketball vs. Maryland Eastern Shore Hawks Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "lawrence-joel-veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wake Forest Demon Deacons Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7a4g"
+    },
+    {
+      "id": "2026-11-03-tm-G5eVZ_5mdu9qp",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Motionless In White",
+      "officialTitle": "Motionless In White: The Sweat and Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Motionless In White",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u750",
+        "K8vZ917Kvqf",
+        "K8vZ917GciV",
+        "K8vZ917hay7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_5mdu9qp",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-duke-wbb-401915906",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duke vs. Green Bay",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-wbb",
+        "away": "green-bay",
+        "awayOpponent": "green-bay"
+      },
+      "rank": {
+        "home": 4
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 2140,
+        "low": 2058,
+        "high": 2144,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5eVZ_8wBRWyb",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rob49",
+      "officialTitle": "The Livest Homecoming Concert 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "lawrence-joel-veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rob49",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Q5r7",
+        "K8vZ917_WfV",
+        "K8vZ917rnb7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_8wBRWyb",
+      "expectedDraw": {
+        "count": 8359,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-G5eVZ_uk3_hwQ",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rod Wave",
+      "officialTitle": "Rod Wave: Don't Look Down Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Rod Wave",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b8z7",
+        "K8vZ917hyqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_uk3_hwQ",
+      "expectedDraw": {
+        "count": 11083,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-G5eVZ_CJX5Km1",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-04",
+      "start": "16:00",
+      "kind": "game",
+      "title": "World Of Outlaws World Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "charlotte-motor-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "World of Outlaws World Finals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CJX5Km1",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-04-espn-nc-state-wbb-401913736",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "NC State vs. Campbell",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "campbell",
+        "awayOpponent": "campbell"
+      },
+      "rank": {
+        "home": 25
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-nccu-wbb-401925620",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "NC Central vs. Johnson C Smth",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-wbb",
+        "away": "johnson-c-smth",
+        "awayOpponent": "johnson-c-smth"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 378,
+        "low": 145,
+        "high": 685,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5eVZ_Crtp5Lq",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "10:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Roanoke Rail Yard Dawgs",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_Crtp5Lq",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5eVZ_o5qC3yy",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Maine Mariners - School Day",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5qC3yy",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5eVZ_CJXGdmp",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "World Of Outlaws World Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "charlotte-motor-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "World of Outlaws World Finals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CJXGdmp",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-05-sa-goduke-com-24960",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duke vs. Virginia",
+      "place": {
+        "type": "venue",
+        "venueId": "koskinen-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-G5eVZ_okIH1r5",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Waiting to Exhale in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Waiting to Exhale in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_okIH1r5"
+    },
+    {
+      "id": "2026-11-05-espn-duke-mbb-401909563",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Duke vs. Coastal",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-mbb",
+        "away": "coastal",
+        "awayOpponent": "coastal"
+      },
+      "rank": {
+        "home": 2
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 18 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5eVZ_3NKdbnI",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Victoria Monét",
+      "officialTitle": "Victoria Monét-MOVED TO OVENS AUDITORIUM",
+      "place": {
+        "type": "venue",
+        "venueId": "skyla-credit-union-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Victoria Monét",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fYD7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_3NKdbnI",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_CJXGSmJ",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "16:00",
+      "kind": "game",
+      "title": "World of Outlaws World Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "charlotte-motor-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "World of Outlaws World Finals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CJXGSmJ",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-sa-goheels-com-27099",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "North Carolina vs. Blue and White Showcase",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-nccueaglepride-com-8436",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "North Carolina Central vs. Howard",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-espn-nc-state-mbb-401918956",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. ETSU",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "etsu",
+        "awayOpponent": "etsu"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12887,
+        "low": 12498,
+        "high": 13894,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-unc-mbb-401913100",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. Wofford",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "wofford",
+        "awayOpponent": "wofford"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18891,
+        "low": 18050,
+        "high": 20104,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_2pXl-98",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Boston Celtics(Emirates NBA Cup Group Game)",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXl-98",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_o5q2xB4",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Maine Mariners - Wizard Weekend",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5q2xB4",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_oC3nb61",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Wilkes Barre Scranton Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3nb61",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_GplFpyl",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Little Big Town",
+      "officialTitle": "Little Big Town - For The Art Of It Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Little Big Town",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GplFpyl",
+      "expectedDraw": {
+        "count": 2712,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5eVZ_2iCTSrO",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Justin Moore",
+      "place": {
+        "type": "venue",
+        "venueId": "lawrence-joel-veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Justin Moore",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G_If",
+        "K8vZ917_940"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2iCTSrO",
+      "expectedDraw": {
+        "count": 8359,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-nc-state-football-401858286",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "kind": "game",
+      "title": "NC State vs. Duke",
+      "broadcast": "CW",
+      "place": {
+        "type": "venue",
+        "venueId": "carter-finley-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "nc-state-football",
+        "away": "duke-football",
+        "awayOpponent": "duke"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 56919,
+        "low": 56919,
+        "high": 56919,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv177Z_KGkSmQBUh",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Virginia State Football vs VUU - VSU Student Ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-stadium-virginia-state"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Virginia State Trojans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_KGkSmQBUh"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-KCv",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Campbell Fighting Camels Football vs. Stony Brook Seawolves Football",
+      "place": {
+        "type": "venue",
+        "venueId": "barker-lane-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Campbell Fighting Camels Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-KCv"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-3rd",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Elon University Phoenix Football vs. Hampton Pirates Football",
+      "place": {
+        "type": "venue",
+        "venueId": "rhodes-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Elon University Phoenix Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-3rd",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5eVZ_CJXuNmX",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "World of Outlaws World Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "charlotte-motor-speedway"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "World of Outlaws World Finals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CJXuNmX",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5eVZ_CrtplLt",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Huntsville Havoc",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CrtplLt",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5eVZ_oC3lI6E",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Wilkes Barre Scranton Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3lI6E",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5eVZ_o5q8wBH",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Maine Mariners - Wizard Weekend",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5q8wBH",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-07-espn-hurricanes-401892668",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18408,
+        "low": 18208,
+        "high": 18633,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-sa-nccueaglepride-com-8437",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "North Carolina Central vs. Norfolk State",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-G5eVZ_kmMVmRx",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Carolina Panthers v Denver Broncos",
+      "place": {
+        "type": "venue",
+        "venueId": "bank-of-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Carolina Panthers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_kmMVmRx"
+    },
+    {
+      "id": "2026-11-08-sa-gopack-com-24744",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "15:00",
+      "kind": "game",
+      "title": "NC State vs. Kentucky",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "Kentucky",
+        "awayOpponent": "kentucky"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-sa-goheels-com-27109",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "17:30",
+      "kind": "game",
+      "title": "North Carolina vs. South Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "South Carolina",
+        "awayOpponent": "south-carolina"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-G5eVZ_1NaYk4t",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "TOBYMAC",
+      "officialTitle": "TOBYMAC, THIRD DAY, CHRIS TOMLIN",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "TOBYMAC",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Av7",
+        "K8vZ9171O9f",
+        "K8vZ9175WR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_1NaYk4t",
+      "expectedDraw": {
+        "count": 12540,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5eVZ_Gx6hFHV",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Master P",
+      "officialTitle": "Cash Money & No Limit Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Master P",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171be7",
+        "K8vZ9171at0",
+        "K8vZ9171jTf",
+        "K8vZ917CCY0",
+        "K8vZ917oYA0",
+        "K8vZ917pkB0",
+        "K8vZ9171UiV",
+        "K8vZ91741of",
+        "K8vZ9171nV7",
+        "K8vZ917hKBf",
+        "K8vZ917Laef",
+        "K8vZ917QRZV",
+        "K8vZ917-bu7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_Gx6hFHV",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-espn-nccu-wbb-401925622",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-09",
+      "start": "18:00",
+      "kind": "game",
+      "title": "NC Central vs. Fay'ville St",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-wbb",
+        "away": "fay-ville-st",
+        "awayOpponent": "fay-ville-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 378,
+        "low": 145,
+        "high": 685,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-G5eVZ_2pXis9b",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Cleveland Cavaliers",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXis9b",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-09-tm-G5eVZ_oTKOUae",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-09",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Stars & Guitars",
+      "officialTitle": "95.7 WKML Stars & Guitars 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Stars & Guitars",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hdZ0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oTKOUae",
+      "expectedDraw": {
+        "count": 6202,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-duke-mbb-401909564",
+      "metroId": "chicago",
+      "date": "2026-11-10",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duke vs. Michigan St",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-mbb",
+        "away": "michigan-st",
+        "awayOpponent": "michigan-st"
+      },
+      "neutralSite": true,
+      "rank": {
+        "home": 2,
+        "away": 6
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-10-espn-nc-state-mbb-401918957",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. Presbyterian",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "presbyterian",
+        "awayOpponent": "presbyterian"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13471,
+        "low": 12242,
+        "high": 14588,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-unc-mbb-401913101",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. Wyoming",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "wyoming",
+        "awayOpponent": "wyoming"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16869,
+        "low": 16741,
+        "high": 18813,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-G5eVZ_oC3iz6W",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Providence Bruins",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3iz6W",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1AA7a4U",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wake Forest Demon Deacons Mens Basketball vs. Charleston Southern Buccaneers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "lawrence-joel-veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wake Forest Demon Deacons Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7a4U",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-G5eVZ_2FojbYY",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Death Becomes Her (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Death Becomes Her (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2FojbYY",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-11-espn-nc-state-wbb-401912506",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. Liberty Flames",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "liberty",
+        "awayOpponent": "liberty"
+      },
+      "rank": {
+        "home": 25
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-unc-wbb-401906090",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. NC Central",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "nccu-wbb",
+        "awayOpponent": "nc-central"
+      },
+      "rank": {
+        "home": 12
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3284,
+        "low": 3029,
+        "high": 3815,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-G5eVZ_oC3mFFt",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Providence Bruins",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3mFFt",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-11-tm-G5eVZ_2Foqbs0",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Death Becomes Her (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Death Becomes Her (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2Foqbs0",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-sa-gopack-com-24907",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": "17:30",
+      "kind": "game",
+      "title": "NC State vs. Navy",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-sa-nccueaglepride-com-8438",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "North Carolina Central vs. Elon",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-sa-goduke-com-24935",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Duke vs. North Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-G5eVZ_o5q3eDJ",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Worcester Railers - I Love Greensboro Night",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5q3eDJ",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-tm-G5eVZ_2ForIw9",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Death Becomes Her (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Death Becomes Her (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2ForIw9",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-sa-goduke-com-25751",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-12",
+      "start": null,
+      "kind": "game",
+      "title": "Duke vs. ACC Semifinal",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-29-espn-hurricanes-401892603",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18625,
+        "low": 18226,
+        "high": 18625
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-goheels-com-27010",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-G5eVZ_Crt4lLb",
+      "date": "2026-10-29",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-29-tm-G5eVZ_kJjQ1qK",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "draw": {
+        "count": 4902
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-nccueaglepride-com-8448",
+      "date": "2026-10-30",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1k7Z_Ak4G7taxP",
+      "date": "2026-10-30",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-30-sa-goduke-com-24931",
+      "date": "2026-10-30",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-10-30-tm-G5eVZ_ome1gJ9",
+      "date": "2026-10-30",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-10-30-sa-goheels-com-27030",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-sa-gopack-com-24628",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7O_jJ",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZab_",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-G5eVZ_CEN8HCu",
+      "date": "2026-10-30",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-10-31-espn-duke-football-401858279",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "California at NC State (FB) 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 26038,
+        "low": 25007,
+        "high": 26723
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-nc-state-football-401858277",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "Boston College at Duke (FB) 18 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 56919,
+        "low": 56919,
+        "high": 56919
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5eVZbMN4JD1Y",
+      "date": "2026-10-31",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7OaPy",
+      "date": "2026-10-31",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-31-espn-nccu-football-401867963",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 4.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5500,
+        "low": 3818,
+        "high": 8618
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5eVZ_CENKGCy",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 4.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1A8v0f9GA5M72j",
+      "date": "2026-10-31",
+      "start": "15:30"
+    },
+    {
+      "eventId": "2026-10-31-tm-G5eVZ_2pXtvpu",
+      "date": "2026-10-31",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-31-espn-unc-football-401858282",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "California at NC State (FB) 20 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 50500,
+        "low": 48267,
+        "high": 50500
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5eVZ_83geWu-",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "draw": {
+        "count": 12540
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5eVZ_CENoHCO",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "read": {
+        "rating": 4.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-hurricanes-401892624",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Summit FC at Courage 2.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18673,
+        "low": 18526,
+        "high": 18721
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-goduke-com-24932",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-gopack-com-24629",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5eVZ_CENfG2F",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv1AvZkuSGkdbkfWc",
+      "date": "2026-11-01",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1AAZab9",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5eVZ_o5queyb",
+      "date": "2026-11-01",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-01-espn-nc-courage-401854096",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Winnipeg Jets at Hurricanes 2.3 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7130,
+        "low": 7021,
+        "high": 8569
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5eVZ_CEN4G2G",
+      "date": "2026-11-01",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5eVZ_FFFmQ2n",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "draw": {
+        "count": 11083
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-nc-state-wbb-401913735",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-duke-mbb-401909562",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Heavy",
+        "why": "W Carolina at North Carolina (MBB · Home Opener) and Campbell at NC State (MBB · Home Opener) 8.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-unc-mbb-401913099",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Campbell at NC State (MBB · Home Opener) and Army at Duke (MBB · Home Opener) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17242,
+        "low": 16661,
+        "high": 17287
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-nc-state-mbb-401918955",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "W Carolina at North Carolina (MBB · Home Opener) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12949,
+        "low": 12719,
+        "high": 16034
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-G5eVZ_2pXnop4",
+      "date": "2026-11-02",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AA7a4g",
+      "date": "2026-11-02",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-03-tm-G5eVZ_5mdu9qp",
+      "date": "2026-11-03",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-duke-wbb-401915906",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2140,
+        "low": 2058,
+        "high": 2144
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5eVZ_8wBRWyb",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "draw": {
+        "count": 8359
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-G5eVZ_uk3_hwQ",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "draw": {
+        "count": 11083
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-G5eVZ_CJX5Km1",
+      "date": "2026-11-04",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-04-espn-nc-state-wbb-401913736",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "draw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-nccu-wbb-401925620",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "draw": {
+        "count": 378,
+        "low": 145,
+        "high": 685
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5eVZ_Crtp5Lq",
+      "date": "2026-11-05",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-11-05-tm-G5eVZ_o5qC3yy",
+      "date": "2026-11-05",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-11-05-tm-G5eVZ_CJXGdmp",
+      "date": "2026-11-05",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-05-sa-goduke-com-24960",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5eVZ_okIH1r5",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-duke-mbb-401909563",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5eVZ_3NKdbnI",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_CJXGSmJ",
+      "date": "2026-11-06",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-goheels-com-27099",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-nccueaglepride-com-8436",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-nc-state-mbb-401918956",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Wofford at North Carolina (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12887,
+        "low": 12498,
+        "high": 13894
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-unc-mbb-401913100",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "ETSU at NC State (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18891,
+        "low": 18050,
+        "high": 20104
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_2pXl-98",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_o5q2xB4",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_oC3nb61",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_GplFpyl",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2712
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5eVZ_2iCTSrO",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "draw": {
+        "count": 8359
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-nc-state-football-401858286",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Hampton Pirates Football at Elon University Phoenix Football 49 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 56919,
+        "low": 56919,
+        "high": 56919
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv177Z_KGkSmQBUh",
+      "date": "2026-11-07",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-KCv",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-3rd",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Duke at NC State (FB) 49 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5eVZ_CJXuNmX",
+      "date": "2026-11-07",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-G5eVZ_CrtplLt",
+      "date": "2026-11-07",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-G5eVZ_oC3lI6E",
+      "date": "2026-11-07",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-G5eVZ_o5q8wBH",
+      "date": "2026-11-07",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-07-espn-hurricanes-401892668",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Hampton Pirates Football at Elon University Phoenix Football 49 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18408,
+        "low": 18208,
+        "high": 18633
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-nccueaglepride-com-8437",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5eVZ_kmMVmRx",
+      "date": "2026-11-08",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-08-sa-gopack-com-24744",
+      "date": "2026-11-08",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-08-sa-goheels-com-27109",
+      "date": "2026-11-08",
+      "start": "17:30"
+    },
+    {
+      "eventId": "2026-11-08-tm-G5eVZ_1NaYk4t",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "draw": {
+        "count": 12540
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5eVZ_Gx6hFHV",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-nccu-wbb-401925622",
+      "date": "2026-11-09",
+      "start": "18:00",
+      "draw": {
+        "count": 378,
+        "low": 145,
+        "high": 685
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-G5eVZ_2pXis9b",
+      "date": "2026-11-09",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-09-tm-G5eVZ_oTKOUae",
+      "date": "2026-11-09",
+      "start": "19:30",
+      "draw": {
+        "count": 6202
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-duke-mbb-401909564",
+      "date": "2026-11-10",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-nc-state-mbb-401918957",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Wyoming at North Carolina (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13471,
+        "low": 12242,
+        "high": 14588
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-unc-mbb-401913101",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Presbyterian at NC State (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16869,
+        "low": 16741,
+        "high": 18813
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-G5eVZ_oC3iz6W",
+      "date": "2026-11-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1AA7a4U",
+      "date": "2026-11-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-10-tm-G5eVZ_2FojbYY",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-nc-state-wbb-401912506",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "draw": {
+        "count": 4368,
+        "low": 4287,
+        "high": 4441
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-unc-wbb-401906090",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "draw": {
+        "count": 3284,
+        "low": 3029,
+        "high": 3815
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-G5eVZ_oC3mFFt",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-G5eVZ_2Foqbs0",
+      "date": "2026-11-11",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-12-sa-gopack-com-24907",
+      "date": "2026-11-12",
+      "start": "17:30"
+    },
+    {
+      "eventId": "2026-11-12-sa-nccueaglepride-com-8438",
+      "date": "2026-11-12",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-12-sa-goduke-com-24935",
+      "date": "2026-11-12",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-12-tm-G5eVZ_o5q3eDJ",
+      "date": "2026-11-12",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-G5eVZ_2ForIw9",
+      "date": "2026-11-12",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-12-sa-goduke-com-25751",
+      "date": "2026-11-12",
+      "start": null
+    }
+  ]
+}

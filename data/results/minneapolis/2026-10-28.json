@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-minnesota-united-761913",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allianz-field",
+      "homeTeamId": "minnesota-united",
+      "home": {
+        "name": "MNUFC",
+        "score": 3
+      },
+      "away": {
+        "name": "Sporting KC",
+        "score": 1
+      },
+      "capturedAt": "2026-10-29T15:20:59.236Z"
+    },
+    {
+      "eventId": "2026-10-28-espn-timberwolves-401909888",
+      "metroId": "minneapolis",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 114
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 119
+      },
+      "attendance": 16588,
+      "capturedAt": "2026-10-29T15:20:59.236Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

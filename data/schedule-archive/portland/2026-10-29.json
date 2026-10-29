@@ -1,0 +1,2304 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "metroName": "Portland",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-10-29",
+  "capturedAt": "2026-10-29T15:20:20.863Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-29",
+    "through": "2026-11-12"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 49
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 17
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-29-sa-goviks-com-5874",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Portland State vs. Idaho",
+      "place": {
+        "type": "venue",
+        "venueId": "hillsboro-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-sa-portlandpilots-com-13313",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Portland vs. Loyola Marymount",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PPx4",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Oregon State Beavers Womens Volleyball vs. Gonzaga Bulldogs Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "gill-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon State Beavers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPx4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-29-espn-blazers-401909895",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blazers vs. Memphis Grizzlies",
+      "broadcast": "KUNP 16",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "blazers",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16767,
+        "low": 16202,
+        "high": 17388,
+        "fromCrowds": true,
+        "games": 37,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 37 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-29-sa-goviks-com-5851",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland State vs. Eastern Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "viking-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-29-tm-vvG1HZ_5pO9BdO",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bryson Tiller",
+      "officialTitle": "Bryson Tiller Presents: The Neo Trapsoul Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Bryson Tiller",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KBFf",
+        "K8vZ917fb2V",
+        "K8vZ917ozIV",
+        "K8vZ917fofV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_5pO9BdO",
+      "expectedDraw": {
+        "count": 4902,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1AAZvx4",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Michael Lewis",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Michael Lewis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZvx4"
+    },
+    {
+      "id": "2026-10-29-tm-Z7r9jZ1A7PV4E",
+      "metroId": "portland",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Medium Build",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Medium Build",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PV4E",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1HZ_CBDClra",
+      "metroId": "portland",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Oregon Ducks Volleyball vs. University of Maryland Terrapins Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon Ducks Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_CBDClra",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG1HZ_AnwQDFp",
+      "metroId": "portland",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gorillaz",
+      "officialTitle": "Gorillaz - The Mountain Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gorillaz",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171zxV",
+        "K8vZ9173ysf",
+        "K8vZ9171nXf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_AnwQDFp",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vvG1HZ_FTnvTrT",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Oregon Ducks Football vs. Northwestern Wildcats Football",
+      "place": {
+        "type": "venue",
+        "venueId": "autzen-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Oregon Ducks Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_FTnvTrT"
+    },
+    {
+      "id": "2026-10-31-espn-psu-football-401868098",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Portland St vs. Idaho",
+      "place": {
+        "type": "venue",
+        "venueId": "hillsboro-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "psu-football",
+        "away": "idaho",
+        "awayOpponent": "idaho"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1965,
+        "low": 1486,
+        "high": 2328,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-portlandpilots-com-13342",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Portland vs. Pepperdine",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7PPxa",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Oregon State Beavers Womens Volleyball vs. Colorado State University Rams Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "gill-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon State Beavers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPxa",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-10-31-ht-portland-winterhawks-1023239",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Winterhawks vs. Rockets",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "portland-winterhawks",
+        "away": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3643,
+        "low": 3610,
+        "high": 3735,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 4 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-goviks-com-5852",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland State vs. Idaho",
+      "place": {
+        "type": "venue",
+        "venueId": "viking-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7JAvz",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Oregon Symphony",
+      "officialTitle": "Oregon Symphony presents Stravinsky & Beethoven",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Oregon Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JAvz",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2776,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-sa-goviks-com-5875",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Portland State vs. Eastern Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "hillsboro-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-sa-portlandpilots-com-13285",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Portland vs. Loyola Marymount",
+      "place": {
+        "type": "venue",
+        "venueId": "merlo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-vvG1HZ_CBD2lrK",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Oregon Ducks Volleyball vs. University of Iowa Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon Ducks Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_CBD2lrK",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7JAvy",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "kind": "show",
+      "title": "Oregon Symphony",
+      "officialTitle": "Oregon Symphony presents Stravinsky & Beethoven",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Oregon Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JAvy",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2776,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-timbers-761933",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "18:45",
+      "kind": "game",
+      "title": "Timbers vs. Dynamo",
+      "broadcast": "FS1",
+      "place": {
+        "type": "venue",
+        "venueId": "providence-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "timbers",
+        "away": "dynamo",
+        "awayOpponent": "houston"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20951,
+        "low": 20193,
+        "high": 22040,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vvG1HZ_1MEeSxH",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171FDV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_1MEeSxH",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PsfI",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rival Sons",
+      "officialTitle": "Rival Sons w/ The Blue Stones",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Rival Sons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PsfI",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-vvG1HZ_fkrp6RG",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Oregon Women's Basketball vs. University of Hawaii Warriors Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_fkrp6RG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-espn-up-pilots-mbb-401917510",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Portland vs. Willamette",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "up-pilots-mbb",
+        "away": "willamette",
+        "awayOpponent": "willamette"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1016,
+        "low": 1015,
+        "high": 1049,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-psu-wbb-401923187",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland St vs. Pepperdine",
+      "place": {
+        "type": "venue",
+        "venueId": "viking-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "psu-wbb",
+        "away": "pepperdine",
+        "awayOpponent": "pepperdine"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 344,
+        "low": 310,
+        "high": 472,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-vvG1HZ_KBZ1fvS",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oregon Ducks Men's Basketball vs. University of Montana Grizzlies Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon Ducks Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_KBZ1fvS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-02-sa-portlandpilots-com-13448",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Portland vs. Willamette",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "up-pilots-wbb",
+        "away": "Willamette",
+        "awayOpponent": "willamette"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAeF-d",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Oregon State Beavers Mens Basketball vs. Weber State Wildcats Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "gill-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon State Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeF-d",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-03-espn-psu-mbb-401925914",
+      "metroId": "portland",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland St vs. Lewis & Clark",
+      "place": {
+        "type": "venue",
+        "venueId": "viking-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "psu-mbb",
+        "away": "lewis-clark",
+        "awayOpponent": "lewis-clark"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 617,
+        "low": 523,
+        "high": 659,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-ht-portland-winterhawks-1023251",
+      "metroId": "portland",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Winterhawks vs. Tigers",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "portland-winterhawks",
+        "away": "tigers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2520,
+        "low": 2283,
+        "high": 3007,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A708Gz",
+      "metroId": "portland",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Philip Glass Ensemble",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Philip Glass Ensemble",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A708Gz"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A70Sq4",
+      "metroId": "portland",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pinhead Gunpowder",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Pinhead Gunpowder",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Sq4",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A70gab",
+      "metroId": "portland",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Periphery",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70gab",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG1HZ_e5hCbK9",
+      "metroId": "portland",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Gabriel Iglesias: The 1976 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Gabriel Iglesias",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_e5hCbK9"
+    },
+    {
+      "id": "2026-11-06-ht-portland-winterhawks-1023257",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Winterhawks vs. Chiefs",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "portland-winterhawks",
+        "away": "chiefs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3897,
+        "low": 3841,
+        "high": 4326,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1HZ_fkr9ER4",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oregon Women's Basketball vs. Washington State Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_fkr9ER4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG1HZ_KBZ50vD",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oregon Ducks Men's Basketball vs. Eastern Washington Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon Ducks Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_KBZ50vD",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvzo3",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "La Traviata",
+      "place": {
+        "type": "venue",
+        "venueId": "keller-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "La Traviata",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvzo3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAeF-7",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "start": null,
+      "kind": "game",
+      "title": "Oregon State Beavers Mens Basketball vs. California Baptist Lancers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "gill-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon State Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeF-7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-ht-portland-winterhawks-1023264",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Winterhawks vs. Chiefs",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "portland-winterhawks",
+        "away": "chiefs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4593,
+        "low": 4554,
+        "high": 4666,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-blazers-401909944",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blazers vs. Spurs",
+      "broadcast": "KUNP 16",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "blazers",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17890,
+        "low": 17628,
+        "high": 19334,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG1HZ_CBD7ljX",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oregon Ducks Volleyball vs. Nebraska Cornhuskers Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon Ducks Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_CBD7ljX",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-K3Z",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Oregon State Beavers Football vs. Texas State San Marcos Bobcats Football",
+      "place": {
+        "type": "venue",
+        "venueId": "reser-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Oregon State Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-K3Z"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7JA0Y",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Oregon Symphony",
+      "officialTitle": "Dessa with the Oregon Symphony",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Oregon Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JA0Y",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2776,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAvzoK",
+      "metroId": "portland",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "special",
+      "title": "La Traviata",
+      "place": {
+        "type": "venue",
+        "venueId": "keller-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "La Traviata",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvzoK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG1HZ_CBDAhqa",
+      "metroId": "portland",
+      "date": "2026-11-08",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Oregon Ducks Volleyball vs. Northwestern Wildcats Women's Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Oregon Ducks Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_CBDAhqa",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG1HZ_FBoDkR9",
+      "metroId": "portland",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims: The UGLY Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0",
+        "K8vZ917GsJ7",
+        "K8vZ917OJSf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_FBoDkR9",
+      "expectedDraw": {
+        "count": 11685,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAv-_y",
+      "metroId": "portland",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Derek Hough Dance for the Holidays",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Derek Hough",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv-_y"
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAvseo",
+      "metroId": "portland",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Syd",
+      "officialTitle": "Syd: Beard Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Syd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvseo",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-Z7r9jZ1AAeF-A",
+      "metroId": "portland",
+      "date": "2026-11-09",
+      "start": null,
+      "kind": "game",
+      "title": "Oregon State Beavers Mens Basketball vs. Eastern Washington Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "gill-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon State Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeF-A",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-10-espn-blazers-401909965",
+      "metroId": "portland",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Blazers vs. Thunder",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "blazers",
+        "away": "thunder",
+        "awayOpponent": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17049,
+        "low": 16932,
+        "high": 17539,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A70bqv",
+      "metroId": "portland",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Band of Horses",
+      "place": {
+        "type": "venue",
+        "venueId": "roseland-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Band of Horses",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70bqv",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A7xfFk",
+      "metroId": "portland",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Beck",
+      "place": {
+        "type": "venue",
+        "venueId": "keller-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Beck",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xfFk",
+      "expectedDraw": {
+        "count": 2992,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-portlandpilots-com-13512",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Portland vs. WCC Championships -- Semifinals",
+      "place": {
+        "type": "venue",
+        "venueId": "merlo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-sa-portlandpilots-com-13445",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Portland vs. Warner Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "up-pilots-wbb",
+        "away": "Warner Pacific",
+        "awayOpponent": "warner-pacific"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-espn-blazers-401909975",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blazers vs. Thunder",
+      "broadcast": "KUNP 16",
+      "place": {
+        "type": "venue",
+        "venueId": "moda-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "blazers",
+        "away": "thunder",
+        "awayOpponent": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17049,
+        "low": 16932,
+        "high": 17539,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-portlandpilots-com-13513",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland vs. WCC Championships -- Semifinals",
+      "place": {
+        "type": "venue",
+        "venueId": "merlo-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-vvG1HZ_KBZG0e7",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oregon Ducks Men's Basketball vs. Mississippi Valley State Delta Devils Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "matthew-knight-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Oregon Ducks Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1HZ_KBZG0e7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A7JAqA",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Oregon Symphony",
+      "officialTitle": "Oregon Symphony presents Portugal the Man",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Oregon Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JAqA",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2776,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-portlandpilots-com-13401",
+      "metroId": "portland",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Portland vs. Saint Mary's",
+      "place": {
+        "type": "venue",
+        "venueId": "chiles-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-sa-goviks-com-5855",
+      "metroId": "portland",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Portland State vs. Idaho State",
+      "place": {
+        "type": "venue",
+        "venueId": "viking-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7JAqk",
+      "metroId": "portland",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Oregon Symphony",
+      "officialTitle": "Oregon Symphony presents Portugal the Man",
+      "place": {
+        "type": "venue",
+        "venueId": "arlene-schnitzer-concert-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Oregon Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JAqk",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2776,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A706r_",
+      "metroId": "portland",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Penn And Teller",
+      "place": {
+        "type": "venue",
+        "venueId": "keller-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Penn & Teller",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A706r_"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-29-sa-goviks-com-5874",
+      "date": "2026-10-29",
+      "start": "13:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-portlandpilots-com-13313",
+      "date": "2026-10-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PPx4",
+      "date": "2026-10-29",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-29-espn-blazers-401909895",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Bryson Tiller Presents: The Neo… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16767,
+        "low": 16202,
+        "high": 17388
+      }
+    },
+    {
+      "eventId": "2026-10-29-sa-goviks-com-5851",
+      "date": "2026-10-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-vvG1HZ_5pO9BdO",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Memphis Grizzlies at Blazers next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 4902
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1AAZvx4",
+      "date": "2026-10-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-29-tm-Z7r9jZ1A7PV4E",
+      "date": "2026-10-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1HZ_CBDClra",
+      "date": "2026-10-30",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG1HZ_AnwQDFp",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11685
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG1HZ_FTnvTrT",
+      "date": "2026-10-31",
+      "start": "12:30"
+    },
+    {
+      "eventId": "2026-10-31-espn-psu-football-401868098",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "draw": {
+        "count": 1965,
+        "low": 1486,
+        "high": 2328
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-portlandpilots-com-13342",
+      "date": "2026-10-31",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7PPxa",
+      "date": "2026-10-31",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-10-31-ht-portland-winterhawks-1023239",
+      "date": "2026-10-31",
+      "start": "15:00",
+      "draw": {
+        "count": 3643,
+        "low": 3610,
+        "high": 3735
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-goviks-com-5852",
+      "date": "2026-10-31",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7JAvz",
+      "date": "2026-10-31",
+      "start": "19:30",
+      "draw": {
+        "count": 2776
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-goviks-com-5875",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-sa-portlandpilots-com-13285",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG1HZ_CBD2lrK",
+      "date": "2026-11-01",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7JAvy",
+      "date": "2026-11-01",
+      "start": "14:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2776
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-timbers-761933",
+      "date": "2026-11-01",
+      "start": "18:45",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Smashing Pumpkins 1.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20951,
+        "low": 20193,
+        "high": 22040
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG1HZ_1MEeSxH",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Dynamo at Timbers 1.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11685
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PsfI",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vvG1HZ_fkrp6RG",
+      "date": "2026-11-02",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-up-pilots-mbb-401917510",
+      "date": "2026-11-02",
+      "start": "17:00",
+      "draw": {
+        "count": 1016,
+        "low": 1015,
+        "high": 1049
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-psu-wbb-401923187",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "draw": {
+        "count": 344,
+        "low": 310,
+        "high": 472
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vvG1HZ_KBZ1fvS",
+      "date": "2026-11-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-sa-portlandpilots-com-13448",
+      "date": "2026-11-02",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAeF-d",
+      "date": "2026-11-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-03-espn-psu-mbb-401925914",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "draw": {
+        "count": 617,
+        "low": 523,
+        "high": 659
+      }
+    },
+    {
+      "eventId": "2026-11-04-ht-portland-winterhawks-1023251",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "draw": {
+        "count": 2520,
+        "low": 2283,
+        "high": 3007
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A708Gz",
+      "date": "2026-11-04",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A70Sq4",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A70gab",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG1HZ_e5hCbK9",
+      "date": "2026-11-05",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-06-ht-portland-winterhawks-1023257",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "draw": {
+        "count": 3897,
+        "low": 3841,
+        "high": 4326
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1HZ_fkr9ER4",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG1HZ_KBZ50vD",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvzo3",
+      "date": "2026-11-06",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAeF-7",
+      "date": "2026-11-06",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-07-ht-portland-winterhawks-1023264",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4593,
+        "low": 4554,
+        "high": 4666
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-blazers-401909944",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17890,
+        "low": 17628,
+        "high": 19334
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG1HZ_CBD7ljX",
+      "date": "2026-11-07",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-K3Z",
+      "date": "2026-11-07",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7JA0Y",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2776
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAvzoK",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1HZ_CBDAhqa",
+      "date": "2026-11-08",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG1HZ_FBoDkR9",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11685
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAv-_y",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAvseo",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-Z7r9jZ1AAeF-A",
+      "date": "2026-11-09",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-10-espn-blazers-401909965",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17049,
+        "low": 16932,
+        "high": 17539
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A70bqv",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A7xfFk",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2992
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-portlandpilots-com-13512",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-portlandpilots-com-13445",
+      "date": "2026-11-11",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-blazers-401909975",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17049,
+        "low": 16932,
+        "high": 17539
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-portlandpilots-com-13513",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG1HZ_KBZG0e7",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A7JAqA",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2776
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-portlandpilots-com-13401",
+      "date": "2026-11-12",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-12-sa-goviks-com-5855",
+      "date": "2026-11-12",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7JAqk",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "draw": {
+        "count": 2776
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A706r_",
+      "date": "2026-11-12",
+      "start": "20:00"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-revolution-761909",
+      "metroId": "boston",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "revolution",
+      "home": {
+        "name": "Revolution",
+        "score": 3
+      },
+      "away": {
+        "name": "Red Bull NY",
+        "score": 2
+      },
+      "capturedAt": "2026-10-29T15:20:54.406Z"
+    }
+  ]
+}

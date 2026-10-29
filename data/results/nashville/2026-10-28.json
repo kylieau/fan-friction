@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-mtsu-football-401871058",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "floyd-stadium",
+      "homeTeamId": "mtsu-football",
+      "home": {
+        "name": "MTSU",
+        "score": 28
+      },
+      "away": {
+        "name": "Kennesaw St",
+        "score": 44
+      },
+      "attendance": 10005,
+      "capturedAt": "2026-10-29T15:20:55.951Z",
+      "duration": {
+        "minutes": 224,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-10-28-espn-nashville-sc-761914",
+      "metroId": "nashville",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "geodis-park",
+      "homeTeamId": "nashville-sc",
+      "home": {
+        "name": "Nashville SC",
+        "score": 0
+      },
+      "away": {
+        "name": "Union",
+        "score": 0
+      },
+      "capturedAt": "2026-10-29T15:20:55.951Z"
+    }
+  ]
+}

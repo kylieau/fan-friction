@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-ht-henderson-silver-knights-1029209",
+      "metroId": "las-vegas",
+      "date": "2026-10-28",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 4
+      },
+      "away": {
+        "name": "Reign",
+        "score": 1
+      },
+      "attendance": 1775,
+      "capturedAt": "2026-10-29T15:20:58.257Z"
+    }
+  ]
+}

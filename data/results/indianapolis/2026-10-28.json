@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-pacers-401909884",
+      "metroId": "indianapolis",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 109
+      },
+      "away": {
+        "name": "76ers",
+        "score": 114
+      },
+      "attendance": 17274,
+      "capturedAt": "2026-10-29T15:20:58.884Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-inter-miami-cf-761908",
+      "metroId": "miami",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nu-stadium",
+      "homeTeamId": "inter-miami-cf",
+      "home": {
+        "name": "Inter Miami",
+        "score": 2
+      },
+      "away": {
+        "name": "Cincinnati",
+        "score": 2
+      },
+      "capturedAt": "2026-10-29T15:20:55.282Z"
+    }
+  ]
+}

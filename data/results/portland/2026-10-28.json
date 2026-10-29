@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-ht-portland-winterhawks-1023224",
+      "metroId": "portland",
+      "date": "2026-10-28",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "veterans-memorial-coliseum",
+      "homeTeamId": "portland-winterhawks",
+      "home": {
+        "name": "Winterhawks",
+        "score": 3
+      },
+      "away": {
+        "name": "Giants",
+        "score": 1
+      },
+      "attendance": 2710,
+      "capturedAt": "2026-10-29T15:21:00.834Z"
+    }
+  ]
+}

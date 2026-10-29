@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-cavaliers-401909882",
+      "metroId": "cleveland",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 121
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 111
+      },
+      "attendance": 19432,
+      "capturedAt": "2026-10-29T15:20:55.688Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

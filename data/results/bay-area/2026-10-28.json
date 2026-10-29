@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-earthquakes-761917",
+      "metroId": "bay-area",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "paypal-park",
+      "homeTeamId": "earthquakes",
+      "home": {
+        "name": "Earthquakes",
+        "score": 2
+      },
+      "away": {
+        "name": "Rapids",
+        "score": 2
+      },
+      "capturedAt": "2026-10-29T15:20:53.008Z"
+    }
+  ]
+}

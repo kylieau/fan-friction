@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-28",
+  "results": [
+    {
+      "eventId": "2026-10-28-espn-oilers-401892597",
+      "metroId": "edmonton",
+      "date": "2026-10-28",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "away": {
+        "name": "Flames",
+        "score": 0
+      },
+      "attendance": 17032,
+      "capturedAt": "2026-10-29T15:21:00.144Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "20:45"
+    }
+  ]
+}
