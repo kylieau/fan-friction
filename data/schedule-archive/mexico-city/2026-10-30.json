@@ -1,0 +1,1418 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "metroName": "Mexico City",
+  "timeZone": "America/Mexico_City",
+  "capturedOn": "2026-10-30",
+  "capturedAt": "2026-10-30T15:11:06.781Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-30",
+    "through": "2026-11-13"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 7
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 28
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 0
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-30-tm-G5dVZ_fr7ivTb",
+      "metroId": "mexico-city",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pumas CU UNAM v. Leones Anáhuac Cancún",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Pumas Unam Futbol Americano",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_fr7ivTb"
+    },
+    {
+      "id": "2026-10-30-tm-1afZk3FxkjwZe2C",
+      "metroId": "mexico-city",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "show",
+      "title": "LNG/SHT",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "LNG/SHT",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KWm0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1afZk3FxkjwZe2C",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-1Av8Z_FGkTJZ43i",
+      "metroId": "mexico-city",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Día de muertos en la Arena México, lucha libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJZ43i",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-10-31-tm-G5dVZ_urdsZgy",
+      "metroId": "mexico-city",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jose Maria Napoleon",
+      "officialTitle": "José María Napoleón & Mocedades",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Jose Maria Napoleon",
+      "act": true,
+      "performerIds": [
+        "K8vZ917CAS0",
+        "K8vZ9172em0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_urdsZgy",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-espn-club-america-401876913",
+      "metroId": "mexico-city",
+      "date": "2026-10-31",
+      "start": "21:10",
+      "kind": "game",
+      "title": "América vs. Toluca",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "club-america",
+        "away": "toluca",
+        "awayOpponent": "toluca"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 44771,
+        "low": 39197,
+        "high": 57563,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 14 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-1Av8Z_FGkTs8asu",
+      "metroId": "mexico-city",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs8asu",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5dVZ_ak-WA2o",
+      "metroId": "mexico-city",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lila Downs",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Lila Downs",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171sw0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_ak-WA2o",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-cruz-azul-401876911",
+      "metroId": "mexico-city",
+      "date": "2026-11-01",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Cruz Azul vs. León",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "cruz-azul",
+        "away": "le-n",
+        "awayOpponent": "le-n"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21291,
+        "low": 18244,
+        "high": 23178,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1Av8Z_FGkTP_fTc",
+      "metroId": "mexico-city",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Martes Populares de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP_fTc",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1Av8Z_oGkwlK1b4",
+      "metroId": "mexico-city",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Omar Courtz",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Omar Courtz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hq_0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_oGkwlK1b4",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5dVZ_2nq7Sp8",
+      "metroId": "mexico-city",
+      "date": "2026-11-05",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Aitana",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Aitana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bZ-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_2nq7Sp8",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-pumas-femenil-401924362",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Pumas vs. Atl. San Luis",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "pumas-femenil",
+        "away": "atl-san-luis",
+        "awayOpponent": "atl-san-luis"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2627,
+        "low": 2339,
+        "high": 7739,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1AfZk3eGkeBi9id",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeBi9id",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1Av8Z_FGkTJZPKo",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Viernes Espectacular de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJZPKo",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-06-tm-G5dVZ_6kLyAIB",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Aitana",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Aitana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bZ-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_6kLyAIB",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-espn-atlante-401876908",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Atlante vs. Santos",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "atlante",
+        "away": "santos",
+        "awayOpponent": "santos"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-07-tm-1AfZk3eGkeDJEUx",
+      "metroId": "mexico-city",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDJEUx",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-G5dVZ_6k-2AV4",
+      "metroId": "mexico-city",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Aitana",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Aitana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bZ-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_6k-2AV4",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-pumas-unam-401876904",
+      "metroId": "mexico-city",
+      "date": "2026-11-07",
+      "start": "21:00",
+      "kind": "game",
+      "title": "Pumas vs. América",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "pumas-unam",
+        "away": "club-america",
+        "awayOpponent": "am-rica"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 40081,
+        "low": 35228,
+        "high": 42938,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5dVZ_3XgMdRV",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "start": "16:30",
+      "kind": "special",
+      "title": "Mentiras All Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mentiras All Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_3XgMdRV"
+    },
+    {
+      "id": "2026-11-08-tm-1Av8Z_FGkTs8_sh",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs8_sh",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-08-espn-capitanes-401914518",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Mexico City Capitanes vs. Legends",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-cdmx"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "capitanes",
+        "away": "texas-legends",
+        "awayOpponent": "legends"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7209,
+        "low": 4412,
+        "high": 8236,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-1AfZk3eGkeDJMU0",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDJMU0",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-G5dVZ_3XU0Ss6",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mentiras, All Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mentiras All Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_3XU0Ss6"
+    },
+    {
+      "id": "2026-11-10-tm-1Av8Z_FGkTP_fTY",
+      "metroId": "mexico-city",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Martes Populares de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP_fTY",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-10-espn-capitanes-401914526",
+      "metroId": "mexico-city",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Mexico City Capitanes vs. Legends",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-cdmx"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "capitanes",
+        "away": "texas-legends",
+        "awayOpponent": "legends"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4549,
+        "low": 3582,
+        "high": 6367,
+        "fromCrowds": true,
+        "games": 25,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 25 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-G5dVZ_6p7b3c_",
+      "metroId": "mexico-city",
+      "date": "2026-11-11",
+      "start": "21:00",
+      "kind": "show",
+      "title": "ZZ Top",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "ZZ Top",
+      "act": true,
+      "performerIds": [
+        "K8vZ91718N0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_6p7b3c_",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-G5dVZ_dQ5rx44",
+      "metroId": "mexico-city",
+      "date": "2026-11-12",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Elefante",
+      "officialTitle": "Elefante: 30 Aniversario",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Elefante",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174_ef"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_dQ5rx44",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AfZk3eGkeDtEUW",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDtEUW",
+      "occasionFacts": {
+        "run": 7
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17AZv0G6CXnQJmA",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Andrés Calamaro",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Andrés Calamaro",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G6f7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6CXnQJmA",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av8Z_FGkTJZgK9",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Viernes Espectacular de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJZgK9",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5dVZ_A1YCxRq",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Majo Aguilar",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Majo Aguilar",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hdIf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_A1YCxRq",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av8Z_kGknv53IF",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Karol G",
+      "officialTitle": "Karol G, Viajando por el mundo, Tropitour",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-gnp-seguros"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Karol G",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p3-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_kGknv53IF",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 65000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-30-tm-G5dVZ_fr7ivTb",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Día de muertos en la Arena Méxi… 6.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1afZk3FxkjwZe2C",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Pumas CU UNAM v. Leones Anáhuac… 4.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-1Av8Z_FGkTJZ43i",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Pumas CU UNAM v. Leones Anáhuac… 6.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-G5dVZ_urdsZgy",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Toluca at América (MSOC) 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-10-31-espn-club-america-401876913",
+      "date": "2026-10-31",
+      "start": "21:10",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 44771,
+        "low": 39197,
+        "high": 57563
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-1Av8Z_FGkTs8asu",
+      "date": "2026-11-01",
+      "start": "17:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "León at Cruz Azul (MSOC) 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5dVZ_ak-WA2o",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "León at Cruz Azul (MSOC) and Domingo Familiar de Lucha Libre… 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-cruz-azul-401876911",
+      "date": "2026-11-01",
+      "start": "19:10",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "Domingo Familiar de Lucha Libre… 8.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21291,
+        "low": 18244,
+        "high": 23178
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-1Av8Z_FGkTP_fTc",
+      "date": "2026-11-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Omar Courtz 3.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-1Av8Z_oGkwlK1b4",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Martes Populares de Lucha Libre… 3.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5dVZ_2nq7Sp8",
+      "date": "2026-11-05",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-pumas-femenil-401924362",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "read": {
+        "rating": 5.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2627,
+        "low": 2339,
+        "high": 7739
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1AfZk3eGkeBi9id",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Santos at Atlante and Aitana 7.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1Av8Z_FGkTJZPKo",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Santos at Atlante 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-G5dVZ_6kLyAIB",
+      "date": "2026-11-06",
+      "start": "20:30",
+      "read": {
+        "rating": 5.1,
+        "friction": "Heavy",
+        "why": "Morat 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-atlante-401876908",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Low",
+        "why": "Morat 7.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AfZk3eGkeDJEUx",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Moderate",
+        "why": "Aitana and América at Pumas (MSOC) 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-G5dVZ_6k-2AV4",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Heavy",
+        "why": "Morat 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-pumas-unam-401876904",
+      "date": "2026-11-07",
+      "start": "21:00",
+      "read": {
+        "rating": 3.6,
+        "friction": "Low",
+        "why": "Morat 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 40081,
+        "low": 35228,
+        "high": 42938
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5dVZ_3XgMdRV",
+      "date": "2026-11-08",
+      "start": "16:30",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Morat and Domingo Familiar de Lucha Libre… 6.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-1Av8Z_FGkTs8_sh",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Morat 3.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-capitanes-401914518",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "read": {
+        "rating": 3.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 7209,
+        "low": 4412,
+        "high": 8236
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-1AfZk3eGkeDJMU0",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Low",
+        "why": "Domingo Familiar de Lucha Libre… 3.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-G5dVZ_3XU0Ss6",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 3.4,
+        "friction": "Moderate",
+        "why": "Morat and Domingo Familiar de Lucha Libre… 6.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1Av8Z_FGkTP_fTY",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-capitanes-401914526",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4549,
+        "low": 3582,
+        "high": 6367
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-G5dVZ_6p7b3c_",
+      "date": "2026-11-11",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-G5dVZ_dQ5rx44",
+      "date": "2026-11-12",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AfZk3eGkeDtEUW",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 6.4,
+        "friction": "Moderate",
+        "why": "Karol G, Viajando por el mundo,… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17AZv0G6CXnQJmA",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av8Z_FGkTJZgK9",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Moderate",
+        "why": "Karol G, Viajando por el mundo,… 3.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5dVZ_A1YCxRq",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av8Z_kGknv53IF",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "read": {
+        "rating": 6.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65000
+      }
+    }
+  ]
+}

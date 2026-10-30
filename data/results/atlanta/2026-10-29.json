@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-dream-401918310",
+      "metroId": "atlanta",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "dream",
+      "home": {
+        "name": "Dream",
+        "score": 80
+      },
+      "away": {
+        "name": "Valkyries",
+        "score": 69
+      },
+      "attendance": 17099,
+      "capturedAt": "2026-10-30T15:13:07.697Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "09:41"
+    },
+    {
+      "eventId": "2026-10-29-espn-hawks-401909893",
+      "metroId": "atlanta",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 114
+      },
+      "away": {
+        "name": "Cavaliers",
+        "score": 111
+      },
+      "attendance": 15025,
+      "capturedAt": "2026-10-30T15:13:07.697Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

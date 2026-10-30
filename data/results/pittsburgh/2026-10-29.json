@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-penguins-401892602",
+      "metroId": "pittsburgh",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 4
+      },
+      "attendance": 15383,
+      "note": "OT",
+      "capturedAt": "2026-10-30T15:13:11.184Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

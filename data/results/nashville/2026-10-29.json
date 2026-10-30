@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-predators-401892605",
+      "metroId": "nashville",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 3
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 4
+      },
+      "attendance": 17159,
+      "capturedAt": "2026-10-30T15:13:12.794Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "20:21"
+    }
+  ]
+}

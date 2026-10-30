@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-lightning-401892601",
+      "metroId": "tampa",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 6
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 4
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-10-30T15:13:11.495Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

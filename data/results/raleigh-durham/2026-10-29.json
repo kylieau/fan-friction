@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-hurricanes-401892603",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 3
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 2
+      },
+      "attendance": 18800,
+      "capturedAt": "2026-10-30T15:13:18.657Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

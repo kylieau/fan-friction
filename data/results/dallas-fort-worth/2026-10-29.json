@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-dallas-stars-401892606",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 5
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-10-30T15:13:08.981Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-10-29-espn-unt-football-401862812",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "datcu-stadium",
+      "homeTeamId": "unt-football",
+      "home": {
+        "name": "North Texas",
+        "score": 48
+      },
+      "away": {
+        "name": "FAU",
+        "score": 41
+      },
+      "attendance": 22092,
+      "capturedAt": "2026-10-30T15:13:08.981Z",
+      "duration": {
+        "minutes": 236,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    }
+  ]
+}

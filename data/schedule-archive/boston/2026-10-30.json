@@ -1,0 +1,6483 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "metroName": "Boston",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-10-30",
+  "capturedAt": "2026-10-30T15:09:25.192Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-10-30",
+    "through": "2026-11-13"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 155
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 40
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-30-sa-bceagles-com-27135",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Boston College vs. University of Vermont",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bc-whockey",
+        "away": "University of Vermont",
+        "awayOpponent": "university-of-vermont"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-vv1AvZkfAGkd4bzC0",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "17:00",
+      "kind": "special",
+      "title": "New England Motorsports Classic",
+      "place": {
+        "type": "venue",
+        "venueId": "cross-insurance-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "New England Motorsports Classic",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkd4bzC0",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-sa-goterriers-com-33149",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "walter-brown-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-whockey",
+        "away": "Northeastern",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-vvG17Z_5lGVAPP",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Motionless In White",
+      "officialTitle": "Motionless In White - The Sweat And Blood Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Motionless In White",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u750",
+        "K8vZ917Kvqf",
+        "K8vZ917GciV",
+        "K8vZ917hay7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_5lGVAPP",
+      "expectedDraw": {
+        "count": 14500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-sa-bceagles-com-27015",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bc-mhockey",
+        "away": "Northeastern",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-goterriers-com-33109",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston University vs. Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "agganis-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bu-mhockey",
+        "away": "Maine",
+        "awayOpponent": "maine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-sa-goterriers-com-33219",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston University vs. Lafayette",
+      "place": {
+        "type": "venue",
+        "venueId": "nickerson-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1A7PE_9",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UMass Minutemen Hockey vs. Harvard Crimson Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "mullins-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "UMass Amherst Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE_9"
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AA7AAe",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Merrimack Warriors Hockey vs. UConn Huskies Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "lawler-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Merrimack College Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AAe",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-tm-Z7r9jZ1AAZOOP",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Springfield Thunderbirds vs. Providence Bruins",
+      "place": {
+        "type": "venue",
+        "venueId": "massmutual-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Springfield Thunderbirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZOOP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-30-espn-celtics-401909278",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-G5vVZbVTePsip",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "mohegan-sun-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vVZbVTePsip",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AvZkf_GkeX63Xx",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Turtleboy Live: The Relapse",
+      "place": {
+        "type": "venue",
+        "venueId": "boch-center-shubert-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Turtleboy Live: The Relapse",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkf_GkeX63Xx"
+    },
+    {
+      "id": "2026-10-30-tm-vv177Z_oGkYvQfab",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Punchis Punchis",
+      "officialTitle": "Punchis Punchis: Banda Rave Experience (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Punchis Punchis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkYvQfab",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG17Z_26ormTo",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Paul Anka",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Paul Anka",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_26ormTo",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vvG17Z_ClEs-f5",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "moe.",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "moe.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_ClEs-f5",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1093,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv177Z_kGkmUlwQK",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p5tf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_kGkmUlwQK",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-30-tm-vv1AvZkf_GkdZNKhb",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "kind": "show",
+      "title": "Yo Quiero Bailar Fest",
+      "officialTitle": "Y.Q.B presents: Perreoween Eve ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Yo Quiero Bailar Fest",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkf_GkdZNKhb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv1AvZkfAGkd4_bCz",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "09:00",
+      "kind": "special",
+      "title": "New England Motorsports Classic",
+      "place": {
+        "type": "venue",
+        "venueId": "cross-insurance-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "New England Motorsports Classic",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkd4_bCz",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7-3QA",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Rhode Island Rams Football vs. Maine Black Bears Football",
+      "place": {
+        "type": "venue",
+        "venueId": "centreville-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Uri Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-3QA"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A70KrZ",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Merrimack Warriors Football vs. Wagner Seahawks Football",
+      "place": {
+        "type": "venue",
+        "venueId": "duane-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Merrimack Warriors Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70KrZ"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A7x8--",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Central Connecticut St Blue Devils Football vs. Robert Morris Colonial Football",
+      "place": {
+        "type": "venue",
+        "venueId": "arute-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Central Connecticut Blue Devils",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x8--"
+    },
+    {
+      "id": "2026-10-31-espn-bruins-401892614",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Bruins vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in October: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-10-31-sa-goterriers-com-33211",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Boston University vs. Lehigh",
+      "place": {
+        "type": "venue",
+        "venueId": "nickerson-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-bceagles-com-27136",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Boston College vs. University of Vermont",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bc-whockey",
+        "away": "University of Vermont",
+        "awayOpponent": "university-of-vermont"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-goterriers-com-33150",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Boston University vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "walter-brown-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-whockey",
+        "away": "Northeastern",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-sa-goterriers-com-33110",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "agganis-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bu-mhockey",
+        "away": "Maine",
+        "awayOpponent": "maine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AA7AAd",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Merrimack Warriors Hockey vs. UConn Huskies Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "lawler-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Merrimack College Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AAd",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1AAvtCb",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Bentley Falcons Hockey vs. Holy Cross Crusaders Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "bentley-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Bentley Falcons Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtCb",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-10-31-sa-bceagles-com-27016",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bc-mhockey",
+        "away": "Northeastern",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-10-31-tm-vv1AvZkfAGkdi83p_",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lil Peep",
+      "officialTitle": "LIL PEEP 30TH BIRTHDAY CELEBRATION",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Peep",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkdi83p_",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A70K-e",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Blade Runner Live",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Blade Runner Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70K-e"
+    },
+    {
+      "id": "2026-10-31-tm-vvG17Z_ClEw-fE",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "kind": "show",
+      "title": "moe.",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "moe.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_ClEw-fE",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1093,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-1AtZkfEGkdt5vj9",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Trixie's Halloween Dance Party",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Trixie Mattel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfEGkdt5vj9"
+    },
+    {
+      "id": "2026-10-31-tm-LvZ18Qnxhqv1gd8Kv2xCg",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "kind": "show",
+      "title": "iBlack USA",
+      "officialTitle": "Halloween Favela Encantada Boston (18+) | Oct 31 @ Studio B Big Night Live",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "iBlack USA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18Qnxhqv1gd8Kv2xCg",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-vv177Z_oGkcnhVo_",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "show",
+      "title": "DJ Pauly D",
+      "officialTitle": "DJ Pauly D ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Pauly D",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGkcnhVo_",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-10-31-tm-Z7r9jZ1A709qy",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "kind": "special",
+      "title": "horsegiirL (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "horsegiirL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A709qy"
+    },
+    {
+      "id": "2026-11-01-tm-vv1AvZkfAGkd4_z2a",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "10:00",
+      "kind": "special",
+      "title": "New England Motorsports Classic",
+      "place": {
+        "type": "venue",
+        "venueId": "cross-insurance-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "New England Motorsports Classic",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkd4_z2a",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-01-sa-nuhuskies-com-14078",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Northeastern vs. Monmouth",
+      "place": {
+        "type": "venue",
+        "venueId": "parsons-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7JFaS",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "15:05",
+      "kind": "game",
+      "title": "Springfield Thunderbirds vs. Hartford Wolfpack",
+      "place": {
+        "type": "venue",
+        "venueId": "massmutual-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Springfield Thunderbirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JFaS",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-01-tm-LvZ18QErSVuzU4JvpXhQV",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Ana Castela",
+      "officialTitle": "Ana Castela Boston | ALL AGES | November 1st @ Big Night Live",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Ana Castela",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QErSVuzU4JvpXhQV",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-espn-revolution-761932",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Revolution vs. Inter Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "revolution",
+        "away": "inter-miami-cf",
+        "awayOpponent": "miami"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 26849,
+        "low": 21897,
+        "high": 31810,
+        "fromCrowds": true,
+        "games": 32,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 32 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-G5vVZbg90XSef",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "mohegan-sun-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vVZbg90XSef",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-vvG17Z_uQ-r1Vs",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Patrick Droney",
+      "place": {
+        "type": "venue",
+        "venueId": "boch-center-shubert-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Patrick Droney",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_uQ-r1Vs",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-Z7r9jZ1A7PE8w",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Vince Staples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE8w",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-01-tm-LvZ18Qm7pQOJBclLPsSwC",
+      "metroId": "boston",
+      "date": "2026-11-01",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Bye Bye Halloween (18+) | November 1st @ Studio B Boston",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Bye Bye Halloween (18+) | November 1st @ Studio B Boston",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18Qm7pQOJBclLPsSwC"
+    },
+    {
+      "id": "2026-11-02-tm-vvG17Z_2kimN-q",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "10:05",
+      "kind": "game",
+      "title": "Worcester Railers vs. Adirondack Thunder - School Day Game",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Worcester Railers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2kimN-q",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-02-sa-goriverhawks-com-9870",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UMass Lowell vs. Saint Anselm",
+      "place": {
+        "type": "venue",
+        "venueId": "kennedy-family-athletic-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uml-wbb",
+        "away": "Saint Anselm",
+        "awayOpponent": "saint-anselm"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-espn-bc-wbb-401906031",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston College vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-wbb",
+        "away": "holy-cross",
+        "awayOpponent": "holy-cross"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 647,
+        "low": 611,
+        "high": 917,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-vv177Z_fGkwNh6_I",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Riley Green",
+      "officialTitle": "Boots & Ballots featuring Riley Green",
+      "place": {
+        "type": "venue",
+        "venueId": "snhu-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Riley Green",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173IbV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_fGkwNh6_I",
+      "expectedDraw": {
+        "count": 11770,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-espn-bruins-401892629",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Golden Knights",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-02-sa-goriverhawks-com-9838",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UMass Lowell vs. Rivier",
+      "place": {
+        "type": "venue",
+        "venueId": "kennedy-family-athletic-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uml-mbb",
+        "away": "Rivier",
+        "awayOpponent": "rivier"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-sa-goterriers-com-33294",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston University vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "case-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bu-mbb",
+        "away": "northeastern-mbb",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-sa-nuhuskies-com-14310",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northeastern vs. UAlbany",
+      "place": {
+        "type": "venue",
+        "venueId": "cabot-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "northeastern-wbb",
+        "away": "UAlbany",
+        "awayOpponent": "ualbany"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAZy-P",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Harvard Crimson Mens Basketball vs. MIT Engineers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "lavietes-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Harvard University Crimson Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZy-P"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAZz86",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Aaron Tveit",
+      "officialTitle": "Aaron Tveit (All audience members regardless of age must have a ticket. Children under the age of 15 must be accompanied by an adult)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Aaron Tveit",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZz86",
+      "expectedDraw": {
+        "count": 1634,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-vv177Z_8GkUc_RGC",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Music of Hey Arnold",
+      "officialTitle": "The Music of Hey Arnold! Live! Feat. Jim Lang and The PS 118 AllStars",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "The Music of Hey Arnold",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_8GkUc_RGC",
+      "expectedDraw": {
+        "count": 1093,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAvsfF",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": "21:00",
+      "kind": "game",
+      "title": "UConn Huskies Mens Basketball vs. Gardner Webb Bulldogs Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "peoplesbank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UConn Huskies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvsfF"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1A7x4C6",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "Providence College Friars Mens Basketball vs. Maine Black Bears Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Providence College Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x4C6"
+    },
+    {
+      "id": "2026-11-02-tm-Z7r9jZ1AAvM7M",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "start": null,
+      "kind": "game",
+      "title": "UConn Huskies Womens Basketball vs. Cornell Big Red Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "peoplesbank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UConn Huskies Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvM7M"
+    },
+    {
+      "id": "2026-11-03-tm-vvG17Z_GmBZ9_J",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sleeping With Sirens",
+      "officialTitle": "Sleeping With Sirens: An Ending In Itself Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sleeping With Sirens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_GmBZ9_J",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-espn-bc-mbb-401909551",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Wagner",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-mbb",
+        "away": "wagner",
+        "awayOpponent": "wagner"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 4529,
+        "low": 3534,
+        "high": 4633,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-1AtZkfsGkdbyvA0",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Aj McLean - the Better Man Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Aj McLean - the Better Man Tour",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfsGkdbyvA0",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vv1A8v0_OGACNl8G",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8v0_OGACNl8G",
+      "expectedDraw": {
+        "count": 10919,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-03-tm-vvG17Z_udxI5uk",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Black Violin",
+      "officialTitle": "Black Violin: The Be Free Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Black Violin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_udxI5uk",
+      "expectedDraw": {
+        "count": 1093,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG17Z_CrLI5xx",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "kind": "show",
+      "title": "The Amity Affliction",
+      "officialTitle": "The Amity Affliction: HOUSE OF CARDS 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "The Amity Affliction",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_CrLI5xx",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7-Mod",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Mod"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7PIOf",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rocky In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Rocky In Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PIOf",
+      "expectedDraw": {
+        "count": 1634,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-04-espn-celtics-401909924",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Celtics vs. Bucks",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "celtics",
+        "away": "bucks",
+        "awayOpponent": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-04-tm-vvG17Z_5UXIRkx",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Best Friends with Nicole Byer & Sasheer Zamata",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Best Friends Podcast",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_5UXIRkx"
+    },
+    {
+      "id": "2026-11-04-tm-Z7r9jZ1A7J4Zs",
+      "metroId": "boston",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Michelle Branch",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Michelle Branch",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J4Zs",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-sa-bceagles-com-27137",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Boston College vs. University of Connecticut",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bc-whockey",
+        "away": "University of Connecticut",
+        "awayOpponent": "university-of-connecticut"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-sa-bceagles-com-26949",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston College vs. Stanford",
+      "place": {
+        "type": "venue",
+        "venueId": "newton-campus-soccer-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-sa-bceagles-com-27017",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Vermont",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bc-mhockey",
+        "away": "Vermont",
+        "awayOpponent": "vermont"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-sa-goriverhawks-com-9839",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Merrimack vs. UMass Lowell",
+      "place": {
+        "type": "venue",
+        "venueId": "hammel-court"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-sa-goriverhawks-com-9871",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UMass Lowell vs. Niagara",
+      "place": {
+        "type": "venue",
+        "venueId": "kennedy-family-athletic-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uml-wbb",
+        "away": "Niagara",
+        "awayOpponent": "niagara"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-tm-vv177Z_3GknArbzq",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Knocks",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Knocks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_3GknArbzq",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vv177Z_FGkTOAXE8",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace - USA & Canada Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Palace",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_FGkTOAXE8",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AA7bOI",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Merrimack Warriors Men's Basketball vs. UMass Lowell River Hawks Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "lawler-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Merrimack Warriors Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7bOI"
+    },
+    {
+      "id": "2026-11-05-tm-vv177Z_8GkUrfG8x",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Tim Dillon",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Tim Dillon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_8GkUrfG8x",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vvG17Z_uBM4oWs",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Chief Keef",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Chief Keef",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172yfV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_uBM4oWs",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-G5vVZ_2TqNGau",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "officialTitle": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
+      "place": {
+        "type": "venue",
+        "venueId": "mohegan-sun-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oaof"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vVZ_2TqNGau",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vv177Z_6Gkl3s3mj",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Air Supply",
+      "officialTitle": "Air Supply - A Matter of Time Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Air Supply",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_6Gkl3s3mj",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAZgG-",
+      "metroId": "boston",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Clara La San",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Clara La San",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZgG-",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vv1AvZkuzGkemblNO",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Rhode Island Comic Con",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Rhode Island Comic Con",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkuzGkemblNO",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-espn-bc-mbb-401909552",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Boston College vs. UMass",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-mbb",
+        "away": "umass",
+        "awayOpponent": "umass"
+      },
+      "neutralSite": true,
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-06-sa-goterriers-com-33151",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "walter-brown-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-whockey",
+        "away": "Maine",
+        "awayOpponent": "maine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-goterriers-com-33347",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. Northeastern",
+      "place": {
+        "type": "venue",
+        "venueId": "case-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-wbb",
+        "away": "northeastern-wbb",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-bceagles-com-27018",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. Vermont",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bc-mhockey",
+        "away": "Vermont",
+        "awayOpponent": "vermont"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-vv177Z_aGkwHeNYA",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amble",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Amble",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_aGkwHeNYA",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vv177Z_kGkmR1OOO",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Gavin Adcock",
+      "officialTitle": "Gavin Adcock: The Day I Hang It Up Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Gavin Adcock",
+      "act": true,
+      "performerIds": [
+        "K8vZ917jQA7",
+        "K8vZ917QTV0",
+        "K8vZ917rM7f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_kGkmR1OOO",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7-Mo7",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "peoplesbank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Mo7"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AA7AA7",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Merrimack Warriors Hockey vs. Holy Cross Crusaders Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "lawler-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Merrimack College Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AA7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvtC_",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bentley Falcons Hockey vs. Rochester Institute of Technology Mens Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "bentley-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Bentley Falcons Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtC_",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvx_U",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Harvard Crimson Hockey vs. Brown University Bears Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "bright-landry-hockey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Harvard University Crimson Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvx_U",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7JFas",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Springfield Thunderbirds vs. Hershey Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "massmutual-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Springfield Thunderbirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JFas",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-06-sa-goriverhawks-com-9748",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:14",
+      "kind": "game",
+      "title": "UMass Lowell vs. New Hampshire",
+      "place": {
+        "type": "venue",
+        "venueId": "tsongas-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uml-mhockey",
+        "away": "New Hampshire",
+        "awayOpponent": "new-hampshire"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-vv1AvZk3vGkd6ihpp",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Marc Maron: Yammering into the Void Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Marc Maron",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZk3vGkd6ihpp"
+    },
+    {
+      "id": "2026-11-06-tm-vv1AvZkfAGkd5CNWg",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Tim Dillon",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Tim Dillon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfAGkd5CNWg",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vv1A8v0jtGAG4quq",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Dante Gebel - World Tour Despedida 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "boch-center-shubert-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Dante Gebel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8v0jtGAG4quq"
+    },
+    {
+      "id": "2026-11-06-tm-vv1A8vPGbGAuMyrW",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "A Boogie Wit Da Hoodie",
+      "officialTitle": "A BOOGIE WIT DA HOODIE: 10 YEARS OF ARTIST",
+      "place": {
+        "type": "venue",
+        "venueId": "agganis-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "A Boogie Wit Da Hoodie",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174hA7",
+        "K8vZ9179BhV",
+        "K8vZ917jjX7",
+        "K8vZ917bEPV",
+        "K8vZ917rar7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8vPGbGAuMyrW",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4104,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-vvG17Z_2Bxn386",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "officialTitle": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2Bxn386",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7P-C4",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Nimino (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Nimino",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-C4"
+    },
+    {
+      "id": "2026-11-06-tm-vv1k7Z_8GUG7XCxY",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Svdden Death",
+      "officialTitle": "Svdden Death ( 18+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Svdden Death",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k7Z_8GUG7XCxY",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1AtZkfsGkdbzsAO",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "start": "22:00",
+      "kind": "show",
+      "title": "CamelPhat",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "CamelPhat",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfsGkdbzsAO",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv1AvZkuzGkeDejQk",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Rhode Island Comic Con",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Rhode Island Comic Con",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkuzGkeDejQk",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-espn-bc-football-401858289",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Boston College vs. Florida St",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "alumni-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "bc-football",
+        "away": "florida-st",
+        "awayOpponent": "florida-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 32197,
+        "low": 30373,
+        "high": 35210,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-harvard-football-401867824",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Harvard vs. Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "harvard-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "harvard-football",
+        "away": "columbia-football",
+        "awayOpponent": "columbia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9783,
+        "low": 8333,
+        "high": 13431,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-goterriers-com-33152",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Boston University vs. Maine",
+      "place": {
+        "type": "venue",
+        "venueId": "walter-brown-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-whockey",
+        "away": "Maine",
+        "awayOpponent": "maine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-vv1AvZk48GkdJmEWd",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "show",
+      "title": "TopOppGen",
+      "officialTitle": "SoTalented presents TopOppGen, Chuckyy & B-Lovee",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "TopOppGen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZk48GkdJmEWd",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAvt8Z",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Bentley Falcons Hockey vs. Rochester Institute of Technology Mens Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "bentley-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Bentley Falcons Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt8Z",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG17Z_2kiRN-n",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Worcester Railers vs. Wheeling Nailers - Railers Fight Cancer",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Worcester Railers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2kiRN-n",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZOOJ",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Springfield Thunderbirds vs. Hershey Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "massmutual-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Springfield Thunderbirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZOOJ",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv177Z_aGkzkA6zp",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Drew Dunn",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Drew Dunn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_aGkzkA6zp"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7J3-y",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Hudson Westbrook",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Hudson Westbrook",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J3-y",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAvx_M",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Harvard Crimson Hockey vs. Yale Bulldogs Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "bright-landry-hockey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Harvard University Crimson Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvx_M",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv1A8vPGbGAuU_ra",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "A Boogie Wit Da Hoodie",
+      "officialTitle": "A BOOGIE WIT DA HOODIE: 10 YEARS OF ARTIST",
+      "place": {
+        "type": "venue",
+        "venueId": "agganis-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "A Boogie Wit Da Hoodie",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174hA7",
+        "K8vZ9179BhV",
+        "K8vZ917jjX7",
+        "K8vZ917bEPV",
+        "K8vZ917rar7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8vPGbGAuU_ra",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4104,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv1k7Z_dr3G7thXs",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hu8V",
+        "K8vZ9179oNV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k7Z_dr3G7thXs",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vvG17Z_ue0VWGA",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Comics Come Home",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Comics Come Home",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_ue0VWGA"
+    },
+    {
+      "id": "2026-11-07-tm-vv177Z_3GkB_IahD",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "21:45",
+      "kind": "special",
+      "title": "Tim Dillon",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Tim Dillon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_3GkB_IahD",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1AtZkfsGkdQd-ko",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "kind": "show",
+      "title": "MPH",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "MPH",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AtZkfsGkdQd-ko",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-vv16vZk4KuAZACa6F1",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "kind": "show",
+      "title": "A Boogie Wit Da Hoodie",
+      "officialTitle": "A BOOGIE WIT DA HOODIE & DABABY - OFFICIAL AFTER PARTY ( 21+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "A Boogie Wit Da Hoodie",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv16vZk4KuAZACa6F1",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv1AvZkuzGkdkQqa1",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Rhode Island Comic Con",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Rhode Island Comic Con",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkuzGkdkQqa1",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-espn-bruins-401892674",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Bruins vs. Panthers",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-sa-goriverhawks-com-9840",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UMass Lowell vs. Marist",
+      "place": {
+        "type": "venue",
+        "venueId": "kennedy-family-athletic-complex"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uml-mbb",
+        "away": "Marist",
+        "awayOpponent": "marist"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-vvG17Z_2kiYNx6",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "15:05",
+      "kind": "game",
+      "title": "Worcester Railers vs. Wheeling Nailers - Autism Awareness Day",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Worcester Railers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2kiYNx6",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv1AvZkoYGkdIsA4N",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "15:30",
+      "kind": "special",
+      "title": "Ben Schwartz & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ben Schwartz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoYGkdIsA4N"
+    },
+    {
+      "id": "2026-11-08-espn-patriots-401873049",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "16:25",
+      "kind": "game",
+      "title": "Patriots vs. Packers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "gillette-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "patriots",
+        "away": "packers",
+        "awayOpponent": "packers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 64628,
+        "low": 64628,
+        "high": 64628,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vv1AvZko6GkePdnCI",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Ben Schwartz & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ben Schwartz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZko6GkePdnCI"
+    },
+    {
+      "id": "2026-11-08-tm-vv1k7Z_oC6G7R96l",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "TEN",
+      "officialTitle": "TEN - US Showcase Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "TEN",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k7Z_oC6G7R96l",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG17Z_5hjJleu",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Wheeler Walker Jr.",
+      "officialTitle": "Wheeler Walker Jr. - Pullin' Out: The Farewell Tour w/ Channing Wilson",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Wheeler Walker Jr.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_5hjJleu",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-vvG17Z_5UG1WWT",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "special",
+      "title": "DeRay Davis",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "DeRay Davis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_5UG1WWT"
+    },
+    {
+      "id": "2026-11-09-tm-vvG17Z_2pIw04C",
+      "metroId": "boston",
+      "date": "2026-11-09",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dave Matthews Band",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dave Matthews Band",
+      "act": true,
+      "performerIds": [
+        "K8vZ91713NV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2pIw04C",
+      "expectedDraw": {
+        "count": 14000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1AAZOOE",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "10:35",
+      "kind": "game",
+      "title": "Springfield Thunderbirds vs. Hartford Wolfpack",
+      "place": {
+        "type": "venue",
+        "venueId": "massmutual-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Springfield Thunderbirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZOOE",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-sa-goterriers-com-33348",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. UMass Boston",
+      "place": {
+        "type": "venue",
+        "venueId": "case-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bu-wbb",
+        "away": "UMass Boston",
+        "awayOpponent": "umass-boston"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-10-tm-vv1AvZkf-Gkdpha78",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Maine Mariners vs Wheeling Nailers",
+      "place": {
+        "type": "venue",
+        "venueId": "cross-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Maine Mariners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkf-Gkdpha78"
+    },
+    {
+      "id": "2026-11-10-espn-bc-mbb-401909553",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston College vs. MD Eastern",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-mbb",
+        "away": "md-eastern",
+        "awayOpponent": "md-eastern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3774,
+        "low": 3751,
+        "high": 3886,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-sa-goterriers-com-33113",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Boston University vs. Harvard",
+      "place": {
+        "type": "venue",
+        "venueId": "agganis-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bu-mhockey",
+        "away": "Harvard",
+        "awayOpponent": "harvard"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-10-sa-nuhuskies-com-14304",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northeastern vs. Harvard",
+      "place": {
+        "type": "venue",
+        "venueId": "cabot-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "northeastern-mbb",
+        "away": "Harvard",
+        "awayOpponent": "harvard"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-10-tm-vvG17Z_2DL1Ise",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Ax and the Hatchetmen",
+      "officialTitle": "Ax and the Hatchetmen: The Late Checkout Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ax and the Hatchetmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2DL1Ise",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-vvG17Z_19IPaDt",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_19IPaDt",
+      "expectedDraw": {
+        "count": 10919,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A70oqU",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hadestown (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Hadestown (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oqU",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A70eG0",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Geese",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70eG0",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1AAZVA3",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "start": null,
+      "kind": "game",
+      "title": "Providence College Friars Mens Basketball vs. Bryant Bulldogs Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Providence College Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZVA3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70oqM",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Hadestown (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Hadestown (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oqM",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-11-espn-bc-wbb-401906033",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston College vs. UMass Lowell",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bc-wbb",
+        "away": "uml-wbb",
+        "awayOpponent": "umass-lowell"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 647,
+        "low": 611,
+        "high": 917,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG17Z_1NJIeZR",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Beartooth",
+      "officialTitle": "Beartooth: Pure Ecstasy World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Beartooth",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178zM0",
+        "K8vZ9178Nb0",
+        "K8vZfZ7aEak",
+        "K8vZ917hOD0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_1NJIeZR",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-goriverhawks-com-9841",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Massachusetts vs. UMass Lowell",
+      "place": {
+        "type": "venue",
+        "venueId": "mullins-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70oqz",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hadestown (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Hadestown (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oqz",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vv177Z_3GkmFEtdk",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Rachel Maddow - Department of Fate",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-boston"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Rachel Maddow",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_3GkmFEtdk"
+    },
+    {
+      "id": "2026-11-11-tm-vv1AvZkoEGkei-jSm",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Rock Orchestra By Candlelight",
+      "officialTitle": "The Rock Orchestra: Arena of Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Rock Orchestra By Candlelight",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hdF7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoEGkei-jSm",
+      "expectedDraw": {
+        "count": 14500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG17Z_Gp4v2Om",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Longest Johns",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "The Longest Johns",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_Gp4v2Om",
+      "expectedDraw": {
+        "count": 1093,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70kff",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Geese",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70kff",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-goterriers-com-33298",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston University vs. Johnson & Wales",
+      "place": {
+        "type": "venue",
+        "venueId": "case-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "bu-mbb",
+        "away": "Johnson & Wales",
+        "awayOpponent": "johnson-wales"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-espn-bruins-401892696",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bruins vs. Canadiens",
+      "broadcast": "NESN",
+      "place": {
+        "type": "venue",
+        "venueId": "td-garden"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "bruins",
+        "away": "canadiens",
+        "awayOpponent": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-G5vVZ_86xbQ3s",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sugarland",
+      "officialTitle": "Sugarland: Ride or Die Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mohegan-sun-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sugarland",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175cBV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vVZ_86xbQ3s",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vv177Z_aGkDJUR5q",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Giant Rooks",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Giant Rooks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_aGkDJUR5q",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vv177Z_KGkzNjON0",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:15",
+      "kind": "show",
+      "title": "John Legend",
+      "officialTitle": "The 'Quin:  5th Anniversary 'House Celebration (21+)",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "John Legend",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Ei7",
+        "K8vZ9179We7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_KGkzNjON0",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vv1AvZkfxGkderxDO",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Alex O'Connor: Pre-show Q&A Ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Alex O'Connor: Pre-show Q&A Ticket",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfxGkderxDO"
+    },
+    {
+      "id": "2026-11-12-tm-vvG17Z_2MJsU58",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "An Evening with Alex O'Connor",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Alex O'Connor",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_2MJsU58"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A70oqy",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Hadestown (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Hadestown (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oqy",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7PPb-",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sleep",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sleep",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPb-",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv1A8vP3_GA2enTt",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "12:00",
+      "kind": "special",
+      "title": "The Harvest Cup - Friday Only 12PM-6PM",
+      "place": {
+        "type": "venue",
+        "venueId": "dcu-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "The Harvest Cup",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8vP3_GA2enTt",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-sa-bceagles-com-27139",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Boston College vs. Boston University",
+      "place": {
+        "type": "venue",
+        "venueId": "conte-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "bc-whockey",
+        "away": "bu-whockey",
+        "awayOpponent": "boston-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70EvJ",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Basement",
+      "officialTitle": "Basement w/ Fiddlehead",
+      "place": {
+        "type": "venue",
+        "venueId": "roadrunner"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Basement",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70EvJ",
+      "expectedDraw": {
+        "count": 3500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-nuhuskies-com-14305",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northeastern vs. Yale",
+      "place": {
+        "type": "venue",
+        "venueId": "cabot-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "northeastern-mbb",
+        "away": "Yale",
+        "awayOpponent": "yale"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-G5vVZ_5R5G1f5",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Goose",
+      "officialTitle": "An Evening With Goose",
+      "place": {
+        "type": "venue",
+        "venueId": "mohegan-sun-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Goose",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Di0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vVZ_5R5G1f5",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv177Z_kGkw31n77",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Blue October",
+      "officialTitle": "Blue October: Foiled 20th Anniversary World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blue October",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_kGkw31n77",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG17Z_CBBb9CH",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Providence Bruins vs. Springfield Thunderbirds",
+      "place": {
+        "type": "venue",
+        "venueId": "amica-mutual-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Providence Bruins",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_CBBb9CH",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-sa-goriverhawks-com-9750",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:14",
+      "kind": "game",
+      "title": "UMass Lowell vs. Union",
+      "place": {
+        "type": "venue",
+        "venueId": "tsongas-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uml-mhockey",
+        "away": "Union",
+        "awayOpponent": "union"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-vv177Z_oGklaASBr",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Lucy Darling: The More the Merrier",
+      "place": {
+        "type": "venue",
+        "venueId": "wang-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Lucy Darling",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_oGklaASBr"
+    },
+    {
+      "id": "2026-11-13-tm-vv1AvZkoYGkdhRK8C",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Phoebe Robinson: Feral & Fired Up!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-wilbur"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Phoebe Robinson",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkoYGkdhRK8C"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAvk47",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "UConn Huskies Mens Basketball vs. Ohio State Buckeyes Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "peoplesbank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "UConn Huskies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvk47"
+    },
+    {
+      "id": "2026-11-13-tm-vv177Z_aGkDcDokY",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Punch Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "boch-center-shubert-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Punch Brothers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv177Z_aGkDcDokY",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv1AvZkfPGkdyBXE-",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Victoria Monét",
+      "officialTitle": "Victoria Monét: Frequency Of Love Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-music-hall-fenway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Victoria Monét",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fYD7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AvZkfPGkdyBXE-",
+      "expectedDraw": {
+        "count": 5009,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG17Z_5wbduXe",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "officialTitle": "Dweezil Zappa DZ20: Like Father, Like Son",
+      "place": {
+        "type": "venue",
+        "venueId": "chevalier-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dweezil Zappa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_5wbduXe",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70orZ",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Hadestown (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "emerson-colonial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Hadestown (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70orZ",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG17Z_1pyxEjx",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Madeon",
+      "officialTitle": "Madeon presents Victory Live ( 18+ )",
+      "place": {
+        "type": "venue",
+        "venueId": "big-night-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Madeon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG17Z_1pyxEjx",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1718v0G6GTwt-8I",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Indo Warehouse",
+      "place": {
+        "type": "venue",
+        "venueId": "royale-boston"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Indo Warehouse",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1718v0G6GTwt-8I",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7PE_p",
+      "metroId": "boston",
+      "date": "2026-11-13",
+      "start": null,
+      "kind": "game",
+      "title": "UMass Minutemen Hockey vs. Boston College Eagles Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "mullins-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "UMass Amherst Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE_p",
+      "occasionFacts": {
+        "run": 2
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-10-30-sa-bceagles-com-27135",
+      "date": "2026-10-30",
+      "start": "14:00",
+      "read": {
+        "rating": 5.2,
+        "friction": "Heavy",
+        "why": "Northeastern at Boston College (MHKY) next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AvZkfAGkd4bzC0",
+      "date": "2026-10-30",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-10-30-sa-goterriers-com-33149",
+      "date": "2026-10-30",
+      "start": "18:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG17Z_5lGVAPP",
+      "date": "2026-10-30",
+      "start": "18:30",
+      "read": {
+        "rating": 5.2,
+        "friction": "Moderate",
+        "why": "Bulls at Celtics 38 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14500
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-bceagles-com-27015",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "friction": "Extreme",
+        "why": "Bulls at Celtics and University of Vermont at Boston College (WHKY) 5.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-goterriers-com-33109",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "friction": "Extreme",
+        "why": "Bulls at Celtics 3.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-30-sa-goterriers-com-33219",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1A7PE_9",
+      "date": "2026-10-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AA7AAe",
+      "date": "2026-10-30",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-Z7r9jZ1AAZOOP",
+      "date": "2026-10-30",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-10-30-espn-celtics-401909278",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 5.2,
+        "friction": "Moderate",
+        "why": "Northeastern at Boston College (MHKY) and Maine at Boston University (MHKY) 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-G5vVZbVTePsip",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AvZkf_GkeX63Xx",
+      "date": "2026-10-30",
+      "start": "19:30",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv177Z_oGkYvQfab",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG17Z_26ormTo",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vvG17Z_ClEs-f5",
+      "date": "2026-10-30",
+      "start": "20:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1093
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv177Z_kGkmUlwQK",
+      "date": "2026-10-30",
+      "start": "20:30",
+      "read": {
+        "rating": 5.2,
+        "friction": "Heavy",
+        "why": "Bulls at Celtics and Motionless In White 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-10-30-tm-vv1AvZkf_GkdZNKhb",
+      "date": "2026-10-30",
+      "start": "21:30",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AvZkfAGkd4_bCz",
+      "date": "2026-10-31",
+      "start": "09:00"
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7-3QA",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "Blackhawks at Bruins 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A70KrZ",
+      "date": "2026-10-31",
+      "start": "12:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A7x8--",
+      "date": "2026-10-31",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-10-31-espn-bruins-401892614",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Moderate",
+        "why": "University of Vermont at Boston College (WHKY) 5.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-goterriers-com-33211",
+      "date": "2026-10-31",
+      "start": "13:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-bceagles-com-27136",
+      "date": "2026-10-31",
+      "start": "14:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Extreme",
+        "why": "Blackhawks at Bruins and Northeastern at Boston College (MHKY) 5.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-goterriers-com-33150",
+      "date": "2026-10-31",
+      "start": "16:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-goterriers-com-33110",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "Northeastern at Boston College (MHKY) and University of Vermont at Boston College (WHKY) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AA7AAd",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1AAvtCb",
+      "date": "2026-10-31",
+      "start": "18:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-sa-bceagles-com-27016",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 4.5,
+        "friction": "Heavy",
+        "why": "University of Vermont at Boston College (WHKY) next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv1AvZkfAGkdi83p_",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A70K-e",
+      "date": "2026-10-31",
+      "start": "19:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vvG17Z_ClEw-fE",
+      "date": "2026-10-31",
+      "start": "20:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1093
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-1AtZkfEGkdt5vj9",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-LvZ18Qnxhqv1gd8Kv2xCg",
+      "date": "2026-10-31",
+      "start": "21:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-vv177Z_oGkcnhVo_",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-10-31-tm-Z7r9jZ1A709qy",
+      "date": "2026-10-31",
+      "start": "22:00",
+      "read": {
+        "rating": 4.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vv1AvZkfAGkd4_z2a",
+      "date": "2026-11-01",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-11-01-sa-nuhuskies-com-14078",
+      "date": "2026-11-01",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7JFaS",
+      "date": "2026-11-01",
+      "start": "15:05"
+    },
+    {
+      "eventId": "2026-11-01-tm-LvZ18QErSVuzU4JvpXhQV",
+      "date": "2026-11-01",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-01-espn-revolution-761932",
+      "date": "2026-11-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 26849,
+        "low": 21897,
+        "high": 31810
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-G5vVZbg90XSef",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-vvG17Z_uQ-r1Vs",
+      "date": "2026-11-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-Z7r9jZ1A7PE8w",
+      "date": "2026-11-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-01-tm-LvZ18Qm7pQOJBclLPsSwC",
+      "date": "2026-11-01",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vvG17Z_2kimN-q",
+      "date": "2026-11-02",
+      "start": "10:05",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-goriverhawks-com-9870",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-bc-wbb-401906031",
+      "date": "2026-11-02",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 647,
+        "low": 611,
+        "high": 917
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vv177Z_fGkwNh6_I",
+      "date": "2026-11-02",
+      "start": "18:30",
+      "draw": {
+        "count": 11770
+      }
+    },
+    {
+      "eventId": "2026-11-02-espn-bruins-401892629",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-goriverhawks-com-9838",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-goterriers-com-33294",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-sa-nuhuskies-com-14310",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAZy-P",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAZz86",
+      "date": "2026-11-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1634
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-vv177Z_8GkUc_RGC",
+      "date": "2026-11-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1093
+      }
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAvsfF",
+      "date": "2026-11-02",
+      "start": "21:00"
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1A7x4C6",
+      "date": "2026-11-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-02-tm-Z7r9jZ1AAvM7M",
+      "date": "2026-11-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG17Z_GmBZ9_J",
+      "date": "2026-11-03",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-03-espn-bc-mbb-401909551",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4529,
+        "low": 3534,
+        "high": 4633
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-1AtZkfsGkdbyvA0",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vv1A8v0_OGACNl8G",
+      "date": "2026-11-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10919
+      }
+    },
+    {
+      "eventId": "2026-11-03-tm-vvG17Z_udxI5uk",
+      "date": "2026-11-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1093
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG17Z_CrLI5xx",
+      "date": "2026-11-04",
+      "start": "18:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7-Mod",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Bucks at Celtics 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7PIOf",
+      "date": "2026-11-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1634
+      }
+    },
+    {
+      "eventId": "2026-11-04-espn-celtics-401909924",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Disney Worlds Collide Concert T… 38 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19156,
+        "low": 19156,
+        "high": 19156
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-vvG17Z_5UXIRkx",
+      "date": "2026-11-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-04-tm-Z7r9jZ1A7J4Zs",
+      "date": "2026-11-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-bceagles-com-27137",
+      "date": "2026-11-05",
+      "start": "14:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Vermont at Boston College (MHKY) next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-bceagles-com-26949",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-bceagles-com-27017",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "University of Connecticut at Boston College (WHKY) next door, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-goriverhawks-com-9839",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-sa-goriverhawks-com-9871",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vv177Z_3GknArbzq",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vv177Z_FGkTOAXE8",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AA7bOI",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vv177Z_8GkUrfG8x",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vvG17Z_uBM4oWs",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Vermont at Boston College (MHKY) 3.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-G5vVZ_2TqNGau",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vv177Z_6Gkl3s3mj",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAZgG-",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1AvZkuzGkemblNO",
+      "date": "2026-11-06",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-06-espn-bc-mbb-401909552",
+      "date": "2026-11-06",
+      "start": "16:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Vermont at Boston College (MHKY) 5.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-goterriers-com-33151",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-goterriers-com-33347",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-bceagles-com-27018",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Extreme",
+        "why": "Boston College · Neutral site (MBB) 5.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv177Z_aGkwHeNYA",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv177Z_kGkmR1OOO",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Boston College · Neutral site (MBB) 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7-Mo7",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AA7AA7",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvtC_",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvx_U",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7JFas",
+      "date": "2026-11-06",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-06-sa-goriverhawks-com-9748",
+      "date": "2026-11-06",
+      "start": "19:14",
+      "read": {
+        "rating": 4.4,
+        "friction": "Heavy",
+        "why": "Vermont at Boston College (MHKY) 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1AvZk3vGkd6ihpp",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1AvZkfAGkd5CNWg",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1A8v0jtGAG4quq",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1A8vPGbGAuMyrW",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Heavy",
+        "why": "Boston College · Neutral site (MBB) and Vermont at Boston College (MHKY) 3.0 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 4104
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vvG17Z_2Bxn386",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7P-C4",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-vv1k7Z_8GUG7XCxY",
+      "date": "2026-11-06",
+      "start": "21:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1AtZkfsGkdbzsAO",
+      "date": "2026-11-06",
+      "start": "22:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv1AvZkuzGkeDejQk",
+      "date": "2026-11-07",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-11-07-espn-bc-football-401858289",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Low",
+        "why": "Columbia at Harvard (FB) 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 32197,
+        "low": 30373,
+        "high": 35210
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-harvard-football-401867824",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Heavy",
+        "why": "Florida St at Boston College (FB) 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9783,
+        "low": 8333,
+        "high": 13431
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-goterriers-com-33152",
+      "date": "2026-11-07",
+      "start": "16:30",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv1AvZk48GkdJmEWd",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAvt8Z",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG17Z_2kiRN-n",
+      "date": "2026-11-07",
+      "start": "18:05",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Comics Come Home 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZOOJ",
+      "date": "2026-11-07",
+      "start": "18:05"
+    },
+    {
+      "eventId": "2026-11-07-tm-vv177Z_aGkzkA6zp",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7J3-y",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAvx_M",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv1A8vPGbGAuU_ra",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Comics Come Home and Wheeling Nailers - Railers Fight Cancer at Worcester Railers 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 4104
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv1k7Z_dr3G7thXs",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Comics Come Home and Wheeling Nailers - Railers Fight Cancer at Worcester Railers 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vvG17Z_ue0VWGA",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Low",
+        "why": "Wheeling Nailers - Railers Fight Cancer at Worcester Railers 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv177Z_3GkB_IahD",
+      "date": "2026-11-07",
+      "start": "21:45",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AtZkfsGkdQd-ko",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-vv16vZk4KuAZACa6F1",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1AvZkuzGkdkQqa1",
+      "date": "2026-11-08",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-11-08-espn-bruins-401892674",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 5.2,
+        "friction": "Heavy",
+        "why": "Packers at Patriots 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-goriverhawks-com-9840",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG17Z_2kiYNx6",
+      "date": "2026-11-08",
+      "start": "15:05",
+      "read": {
+        "rating": 5.2,
+        "friction": "Heavy",
+        "why": "Packers at Patriots 30 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1AvZkoYGkdIsA4N",
+      "date": "2026-11-08",
+      "start": "15:30",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-patriots-401873049",
+      "date": "2026-11-08",
+      "start": "16:25",
+      "read": {
+        "rating": 5.2,
+        "friction": "Low",
+        "why": "Panthers at Bruins and Wheeling Nailers - Autism Awareness Day at Worcester Railers 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 64628,
+        "low": 64628,
+        "high": 64628
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1AvZko6GkePdnCI",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vv1k7Z_oC6G7R96l",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG17Z_5hjJleu",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-vvG17Z_5UG1WWT",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 5.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-vvG17Z_2pIw04C",
+      "date": "2026-11-09",
+      "start": "19:30",
+      "draw": {
+        "count": 14000
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1AAZOOE",
+      "date": "2026-11-10",
+      "start": "10:35"
+    },
+    {
+      "eventId": "2026-11-10-sa-goterriers-com-33348",
+      "date": "2026-11-10",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-vv1AvZkf-Gkdpha78",
+      "date": "2026-11-10",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-10-espn-bc-mbb-401909553",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3774,
+        "low": 3751,
+        "high": 3886
+      }
+    },
+    {
+      "eventId": "2026-11-10-sa-goterriers-com-33113",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Journey 3.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-sa-nuhuskies-com-14304",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-vvG17Z_2DL1Ise",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-vvG17Z_19IPaDt",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Harvard at Boston University (MHKY) 3.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10919
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A70oqU",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A70eG0",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1AAZVA3",
+      "date": "2026-11-10",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70oqM",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-bc-wbb-401906033",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 647,
+        "low": 611,
+        "high": 917
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG17Z_1NJIeZR",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The Rock Orchestra: Arena of Fi… 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-goriverhawks-com-9841",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70oqz",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vv177Z_3GkmFEtdk",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vv1AvZkoEGkei-jSm",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Beartooth 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14500
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG17Z_Gp4v2Om",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1093
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70kff",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-goterriers-com-33298",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-bruins-401892696",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The 'Quin: 5th Anniversary 'Hou… 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17850,
+        "low": 17850,
+        "high": 17850
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-G5vVZ_86xbQ3s",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vv177Z_aGkDJUR5q",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vv177Z_KGkzNjON0",
+      "date": "2026-11-12",
+      "start": "19:15",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Canadiens at Bruins 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vv1AvZkfxGkderxDO",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG17Z_2MJsU58",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A70oqy",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7PPb-",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1A8vP3_GA2enTt",
+      "date": "2026-11-13",
+      "start": "12:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-bceagles-com-27139",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Union at UMass Lowell (MHKY) 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70EvJ",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3500
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-nuhuskies-com-14305",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5vVZ_5R5G1f5",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv177Z_kGkw31n77",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG17Z_CBBb9CH",
+      "date": "2026-11-13",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-13-sa-goriverhawks-com-9750",
+      "date": "2026-11-13",
+      "start": "19:14",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Boston University at Boston College (WHKY) 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv177Z_oGklaASBr",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1AvZkoYGkdhRK8C",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAvk47",
+      "date": "2026-11-13",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-13-tm-vv177Z_aGkDcDokY",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1AvZkfPGkdyBXE-",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "friction": "Moderate",
+        "why": "Boston University at Boston College (WHKY) and Union at UMass Lowell (MHKY) 3.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5009
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG17Z_5wbduXe",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70orZ",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG17Z_1pyxEjx",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1718v0G6GTwt-8I",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "read": {
+        "rating": 2.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7PE_p",
+      "date": "2026-11-13",
+      "start": null
+    }
+  ]
+}

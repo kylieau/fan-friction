@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-sharks-401892610",
+      "metroId": "bay-area",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "attendance": 15442,
+      "capturedAt": "2026-10-30T15:13:08.149Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

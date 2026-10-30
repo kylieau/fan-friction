@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-14",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "mexico-city",
+      "venueId": "city",
+      "date": "2026-11-14",
+      "basis": "forecast",
+      "capturedAt": "2026-10-30T14:59:47.798Z",
+      "feelsLikeHighF": 70.3,
+      "feelsLikeLowF": 56.5,
+      "code": 3,
+      "precipProbability": 35,
+      "precipMm": 0
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-ducks-401892608",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 6
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 7
+      },
+      "attendance": 15575,
+      "capturedAt": "2026-10-30T15:13:05.611Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-10-29-espn-kings-401892609",
+      "metroId": "la",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 6
+      },
+      "away": {
+        "name": "Senators",
+        "score": 5
+      },
+      "attendance": 15856,
+      "note": "OT",
+      "capturedAt": "2026-10-30T15:13:05.611Z",
+      "duration": {
+        "minutes": 167,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

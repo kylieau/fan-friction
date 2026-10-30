@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-29",
+  "results": [
+    {
+      "eventId": "2026-10-29-espn-wild-401892607",
+      "metroId": "minneapolis",
+      "date": "2026-10-29",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 3
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 4
+      },
+      "attendance": 18155,
+      "note": "OT",
+      "capturedAt": "2026-10-30T15:13:16.126Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}
