@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-raptors-401909281",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 114
+      },
+      "away": {
+        "name": "Magic",
+        "score": 121
+      },
+      "attendance": 19364,
+      "capturedAt": "2026-10-31T14:43:22.852Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    },
+    {
+      "eventId": "2026-10-30-ht-marlies-1029225",
+      "metroId": "toronto",
+      "date": "2026-10-30",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "coca-cola-coliseum",
+      "homeTeamId": "marlies",
+      "home": {
+        "name": "Marlies",
+        "score": 5
+      },
+      "away": {
+        "name": "Bears",
+        "score": 3
+      },
+      "attendance": 4137,
+      "capturedAt": "2026-10-31T14:43:22.852Z"
+    }
+  ]
+}

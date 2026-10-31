@@ -1259,6 +1259,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "22:08"
   },
   {
+    "eventId": "2026-10-30-espn-warriors-401909285",
+    "metroId": "bay-area",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "chase-center",
+    "homeTeamId": "warriors",
+    "home": {
+      "name": "Warriors",
+      "score": 112
+    },
+    "away": {
+      "name": "Lakers",
+      "score": 95
+    },
+    "attendance": 18064,
+    "capturedAt": "2026-10-31T14:43:13.856Z",
+    "duration": {
+      "minutes": 158,
+      "kind": "estimated"
+    },
+    "startedAt": "22:12"
+  },
+  {
     "eventId": "2026-10-10-espn-bruins-401892469",
     "metroId": "boston",
     "date": "2026-10-10",
@@ -1642,6 +1666,30 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 2
     },
     "capturedAt": "2026-10-29T15:20:54.406Z"
+  },
+  {
+    "eventId": "2026-10-30-espn-celtics-401909278",
+    "metroId": "boston",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "td-garden",
+    "homeTeamId": "celtics",
+    "home": {
+      "name": "Celtics",
+      "score": 125
+    },
+    "away": {
+      "name": "Bulls",
+      "score": 111
+    },
+    "attendance": 19156,
+    "capturedAt": "2026-10-31T14:43:17.054Z",
+    "duration": {
+      "minutes": 147,
+      "kind": "estimated"
+    },
+    "startedAt": "19:41"
   },
   {
     "eventId": "2026-10-04-espn-bears-401872972",
@@ -2580,6 +2628,25 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:11"
   },
   {
+    "eventId": "2026-10-30-ht-cleveland-monsters-1029217",
+    "metroId": "cleveland",
+    "date": "2026-10-30",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "rocket-arena",
+    "homeTeamId": "cleveland-monsters",
+    "home": {
+      "name": "Monsters",
+      "score": 5
+    },
+    "away": {
+      "name": "Admirals",
+      "score": 2
+    },
+    "attendance": 10120,
+    "capturedAt": "2026-10-31T14:43:19.599Z"
+  },
+  {
     "eventId": "2026-10-09-espn-blue-jackets-401892467",
     "metroId": "columbus",
     "date": "2026-10-09",
@@ -3265,6 +3332,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:33"
   },
   {
+    "eventId": "2026-10-30-espn-mavericks-401909283",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "american-airlines-center",
+    "homeTeamId": "mavericks",
+    "home": {
+      "name": "Mavericks",
+      "score": 116
+    },
+    "away": {
+      "name": "Rockets",
+      "score": 111
+    },
+    "attendance": 18832,
+    "capturedAt": "2026-10-31T14:43:15.290Z",
+    "duration": {
+      "minutes": 154,
+      "kind": "estimated"
+    },
+    "startedAt": "20:11"
+  },
+  {
     "eventId": "2026-10-10-espn-avalanche-401892478",
     "metroId": "denver",
     "date": "2026-10-10",
@@ -3648,6 +3739,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "21:08"
   },
   {
+    "eventId": "2026-10-30-espn-du-mhockey-401904866",
+    "metroId": "denver",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "magness-arena",
+    "homeTeamId": "du-mhockey",
+    "home": {
+      "name": "Denver",
+      "score": 2
+    },
+    "away": {
+      "name": "Omaha",
+      "score": 1
+    },
+    "capturedAt": "2026-10-31T14:43:26.659Z"
+  },
+  {
     "eventId": "2026-10-10-espn-detroit-city-fc-401842285",
     "metroId": "detroit",
     "date": "2026-10-10",
@@ -3943,6 +4052,25 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:38"
+  },
+  {
+    "eventId": "2026-10-30-espn-detroit-city-fc-401931659",
+    "metroId": "detroit",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "keyworth-stadium",
+    "homeTeamId": "detroit-city-fc",
+    "home": {
+      "name": "DCFC",
+      "score": 1
+    },
+    "away": {
+      "name": "Hartford",
+      "score": 2
+    },
+    "attendance": 7027,
+    "capturedAt": "2026-10-31T14:43:16.164Z"
   },
   {
     "eventId": "2026-10-15-espn-oilers-401892515",
@@ -5514,6 +5642,24 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "22:08"
   },
   {
+    "eventId": "2026-10-30-espn-ucla-wvb-401885629",
+    "metroId": "la",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pauley-pavilion",
+    "homeTeamId": "ucla-wvb",
+    "home": {
+      "name": "UCLA",
+      "score": 2
+    },
+    "away": {
+      "name": "Minnesota",
+      "score": 3
+    },
+    "capturedAt": "2026-10-31T14:43:11.898Z"
+  },
+  {
     "eventId": "2026-10-09-espn-aces-401918300",
     "metroId": "las-vegas",
     "date": "2026-10-09",
@@ -5825,6 +5971,30 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 1775,
     "capturedAt": "2026-10-29T15:20:58.257Z"
+  },
+  {
+    "eventId": "2026-10-30-espn-golden-knights-401892611",
+    "metroId": "las-vegas",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "t-mobile-arena",
+    "homeTeamId": "golden-knights",
+    "home": {
+      "name": "Golden Knights",
+      "score": 2
+    },
+    "away": {
+      "name": "Devils",
+      "score": 5
+    },
+    "attendance": 17615,
+    "capturedAt": "2026-10-31T14:43:21.552Z",
+    "duration": {
+      "minutes": 148,
+      "kind": "estimated"
+    },
+    "startedAt": "18:08"
   },
   {
     "eventId": "2026-10-10-espn-club-america-401876950",
@@ -6423,6 +6593,54 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 2
     },
     "capturedAt": "2026-10-29T15:20:55.282Z"
+  },
+  {
+    "eventId": "2026-10-30-espn-heat-401909282",
+    "metroId": "miami",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "kaseya-center",
+    "homeTeamId": "heat",
+    "home": {
+      "name": "Heat",
+      "score": 145
+    },
+    "away": {
+      "name": "Pacers",
+      "score": 125
+    },
+    "attendance": 19653,
+    "capturedAt": "2026-10-31T14:43:19.231Z",
+    "duration": {
+      "minutes": 147,
+      "kind": "estimated"
+    },
+    "startedAt": "20:11"
+  },
+  {
+    "eventId": "2026-10-30-espn-panthers-401892612",
+    "metroId": "miami",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "amerant-bank-arena",
+    "homeTeamId": "panthers",
+    "home": {
+      "name": "Panthers",
+      "score": 5
+    },
+    "away": {
+      "name": "Winnipeg Jets",
+      "score": 2
+    },
+    "attendance": 19656,
+    "capturedAt": "2026-10-31T14:43:19.231Z",
+    "duration": {
+      "minutes": 155,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
   },
   {
     "eventId": "2026-10-10-ht-milwaukee-admirals-1029116",
@@ -7074,6 +7292,49 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:08"
+  },
+  {
+    "eventId": "2026-10-30-espn-gophers-hockey-401923143",
+    "metroId": "minneapolis",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mariucci-arena",
+    "homeTeamId": "gophers-hockey",
+    "home": {
+      "name": "Minnesota",
+      "score": 1
+    },
+    "away": {
+      "name": "Penn State",
+      "score": 1
+    },
+    "note": "OT",
+    "capturedAt": "2026-10-31T14:43:23.047Z"
+  },
+  {
+    "eventId": "2026-10-30-espn-timberwolves-401909284",
+    "metroId": "minneapolis",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "target-center",
+    "homeTeamId": "timberwolves",
+    "home": {
+      "name": "Timberwolves",
+      "score": 127
+    },
+    "away": {
+      "name": "Clippers",
+      "score": 101
+    },
+    "attendance": 17593,
+    "capturedAt": "2026-10-31T14:43:23.047Z",
+    "duration": {
+      "minutes": 131,
+      "kind": "estimated"
+    },
+    "startedAt": "20:10"
   },
   {
     "eventId": "2026-10-06-espn-canadiens-401891815",
@@ -8952,6 +9213,30 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-29T15:20:51.977Z"
   },
   {
+    "eventId": "2026-10-30-espn-nets-401909279",
+    "metroId": "new-york",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "barclays-center",
+    "homeTeamId": "nets",
+    "home": {
+      "name": "Nets",
+      "score": 94
+    },
+    "away": {
+      "name": "Pistons",
+      "score": 110
+    },
+    "attendance": 17548,
+    "capturedAt": "2026-10-31T14:43:13.205Z",
+    "duration": {
+      "minutes": 136,
+      "kind": "estimated"
+    },
+    "startedAt": "19:41"
+  },
+  {
     "eventId": "2026-10-10-espn-ottawa-senators-401892474",
     "metroId": "ottawa-gatineau",
     "date": "2026-10-10",
@@ -9589,6 +9874,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:08"
   },
   {
+    "eventId": "2026-10-30-espn-sixers-401909280",
+    "metroId": "philadelphia",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "xfinity-mobile-arena",
+    "homeTeamId": "sixers",
+    "home": {
+      "name": "76ers",
+      "score": 98
+    },
+    "away": {
+      "name": "Knicks",
+      "score": 93
+    },
+    "attendance": 21196,
+    "capturedAt": "2026-10-31T14:43:18.094Z",
+    "duration": {
+      "minutes": 143,
+      "kind": "estimated"
+    },
+    "startedAt": "19:42"
+  },
+  {
     "eventId": "2026-10-09-espn-asu-hockey-401904433",
     "metroId": "phoenix",
     "date": "2026-10-09",
@@ -9828,6 +10137,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "16:05"
+  },
+  {
+    "eventId": "2026-10-30-espn-suns-401909286",
+    "metroId": "phoenix",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mortgage-matchup-center",
+    "homeTeamId": "suns",
+    "home": {
+      "name": "Suns",
+      "score": 120
+    },
+    "away": {
+      "name": "Nuggets",
+      "score": 127
+    },
+    "attendance": 17071,
+    "capturedAt": "2026-10-31T14:43:20.132Z",
+    "duration": {
+      "minutes": 142,
+      "kind": "estimated"
+    },
+    "startedAt": "22:10"
   },
   {
     "eventId": "2026-10-10-espn-duquesne-football-401867911",
@@ -10625,6 +10958,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "21:10"
+  },
+  {
+    "eventId": "2026-10-30-espn-sac-state-football-401866451",
+    "metroId": "sacramento",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hornet-stadium",
+    "homeTeamId": "sac-state-football",
+    "home": {
+      "name": "Sacramento St",
+      "score": 31
+    },
+    "away": {
+      "name": "Kent State",
+      "score": 10
+    },
+    "attendance": 9931,
+    "capturedAt": "2026-10-31T14:43:20.516Z",
+    "duration": {
+      "minutes": 217,
+      "kind": "estimated"
+    },
+    "startedAt": "22:38"
   },
   {
     "eventId": "2026-10-10-espn-utah-utes-football-401856827",
@@ -12373,6 +12730,25 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:09"
   },
   {
+    "eventId": "2026-10-30-espn-rowdies-401931661",
+    "metroId": "tampa",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "al-lang-stadium",
+    "homeTeamId": "rowdies",
+    "home": {
+      "name": "Rowdies",
+      "score": 1
+    },
+    "away": {
+      "name": "Miami FC",
+      "score": 1
+    },
+    "attendance": 5448,
+    "capturedAt": "2026-10-31T14:43:19.009Z"
+  },
+  {
     "eventId": "2026-10-10-espn-raptors-401902645",
     "metroId": "toronto",
     "date": "2026-10-10",
@@ -12698,6 +13074,49 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-10-29T15:20:59.045Z"
   },
   {
+    "eventId": "2026-10-30-espn-raptors-401909281",
+    "metroId": "toronto",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "scotiabank-arena",
+    "homeTeamId": "raptors",
+    "home": {
+      "name": "Raptors",
+      "score": 114
+    },
+    "away": {
+      "name": "Magic",
+      "score": 121
+    },
+    "attendance": 19364,
+    "capturedAt": "2026-10-31T14:43:22.852Z",
+    "duration": {
+      "minutes": 146,
+      "kind": "estimated"
+    },
+    "startedAt": "19:42"
+  },
+  {
+    "eventId": "2026-10-30-ht-marlies-1029225",
+    "metroId": "toronto",
+    "date": "2026-10-30",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "coca-cola-coliseum",
+    "homeTeamId": "marlies",
+    "home": {
+      "name": "Marlies",
+      "score": 5
+    },
+    "away": {
+      "name": "Bears",
+      "score": 3
+    },
+    "attendance": 4137,
+    "capturedAt": "2026-10-31T14:43:22.852Z"
+  },
+  {
     "eventId": "2026-10-10-ht-vancouver-giants-1023159",
     "metroId": "vancouver",
     "date": "2026-10-10",
@@ -12805,6 +13224,25 @@ export const GAME_RESULTS: GameResult[] = [
       "score": 1
     },
     "capturedAt": "2026-10-29T15:20:57.438Z"
+  },
+  {
+    "eventId": "2026-10-30-ht-vancouver-giants-1023235",
+    "metroId": "vancouver",
+    "date": "2026-10-30",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "langley-events-centre",
+    "homeTeamId": "vancouver-giants",
+    "home": {
+      "name": "Giants",
+      "score": 6
+    },
+    "away": {
+      "name": "Royals",
+      "score": 1
+    },
+    "attendance": 4034,
+    "capturedAt": "2026-10-31T14:43:20.324Z"
   },
   {
     "eventId": "2026-10-10-espn-wizards-401906510",
@@ -13171,5 +13609,29 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:38"
+  },
+  {
+    "eventId": "2026-10-30-espn-wizards-401909277",
+    "metroId": "washington-dc",
+    "date": "2026-10-30",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "capital-one-arena",
+    "homeTeamId": "wizards",
+    "home": {
+      "name": "Wizards",
+      "score": 95
+    },
+    "away": {
+      "name": "Hornets",
+      "score": 79
+    },
+    "attendance": 17566,
+    "capturedAt": "2026-10-31T14:43:24.406Z",
+    "duration": {
+      "minutes": 142,
+      "kind": "estimated"
+    },
+    "startedAt": "19:11"
   }
 ];

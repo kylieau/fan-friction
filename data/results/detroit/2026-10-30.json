@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-detroit-city-fc-401931659",
+      "metroId": "detroit",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "keyworth-stadium",
+      "homeTeamId": "detroit-city-fc",
+      "home": {
+        "name": "DCFC",
+        "score": 1
+      },
+      "away": {
+        "name": "Hartford",
+        "score": 2
+      },
+      "attendance": 7027,
+      "capturedAt": "2026-10-31T14:43:16.164Z"
+    }
+  ]
+}

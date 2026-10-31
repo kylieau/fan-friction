@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-mavericks-401909283",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 116
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 111
+      },
+      "attendance": 18832,
+      "capturedAt": "2026-10-31T14:43:15.290Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    }
+  ]
+}

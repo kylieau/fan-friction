@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-gophers-hockey-401923143",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 1
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 1
+      },
+      "note": "OT",
+      "capturedAt": "2026-10-31T14:43:23.047Z"
+    },
+    {
+      "eventId": "2026-10-30-espn-timberwolves-401909284",
+      "metroId": "minneapolis",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 127
+      },
+      "away": {
+        "name": "Clippers",
+        "score": 101
+      },
+      "attendance": 17593,
+      "capturedAt": "2026-10-31T14:43:23.047Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

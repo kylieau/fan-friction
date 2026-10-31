@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-11-15",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-11-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-31T14:32:49.235Z",
+      "feelsLikeHighF": 32,
+      "feelsLikeLowF": 21.5,
+      "code": 3,
+      "precipProbability": 11,
+      "precipMm": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-rowdies-401931661",
+      "metroId": "tampa",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-lang-stadium",
+      "homeTeamId": "rowdies",
+      "home": {
+        "name": "Rowdies",
+        "score": 1
+      },
+      "away": {
+        "name": "Miami FC",
+        "score": 1
+      },
+      "attendance": 5448,
+      "capturedAt": "2026-10-31T14:43:19.009Z"
+    }
+  ]
+}

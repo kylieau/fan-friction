@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-heat-401909282",
+      "metroId": "miami",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 145
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 125
+      },
+      "attendance": 19653,
+      "capturedAt": "2026-10-31T14:43:19.231Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-10-30-espn-panthers-401892612",
+      "metroId": "miami",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 5
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 2
+      },
+      "attendance": 19656,
+      "capturedAt": "2026-10-31T14:43:19.231Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

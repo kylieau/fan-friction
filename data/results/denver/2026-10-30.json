@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-du-mhockey-401904866",
+      "metroId": "denver",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 2
+      },
+      "away": {
+        "name": "Omaha",
+        "score": 1
+      },
+      "capturedAt": "2026-10-31T14:43:26.659Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-nets-401909279",
+      "metroId": "new-york",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "barclays-center",
+      "homeTeamId": "nets",
+      "home": {
+        "name": "Nets",
+        "score": 94
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 110
+      },
+      "attendance": 17548,
+      "capturedAt": "2026-10-31T14:43:13.205Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

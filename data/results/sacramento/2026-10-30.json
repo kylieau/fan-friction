@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-sac-state-football-401866451",
+      "metroId": "sacramento",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-stadium",
+      "homeTeamId": "sac-state-football",
+      "home": {
+        "name": "Sacramento St",
+        "score": 31
+      },
+      "away": {
+        "name": "Kent State",
+        "score": 10
+      },
+      "attendance": 9931,
+      "capturedAt": "2026-10-31T14:43:20.516Z",
+      "duration": {
+        "minutes": 217,
+        "kind": "estimated"
+      },
+      "startedAt": "22:38"
+    }
+  ]
+}

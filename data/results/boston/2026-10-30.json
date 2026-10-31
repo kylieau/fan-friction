@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-celtics-401909278",
+      "metroId": "boston",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 125
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 111
+      },
+      "attendance": 19156,
+      "capturedAt": "2026-10-31T14:43:17.054Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

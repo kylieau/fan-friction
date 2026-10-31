@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-15",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "bay-area",
+      "venueId": "city",
+      "date": "2026-11-15",
+      "basis": "forecast",
+      "capturedAt": "2026-10-31T14:20:08.725Z",
+      "feelsLikeHighF": 73.8,
+      "feelsLikeLowF": 59.8,
+      "code": 3,
+      "precipProbability": 35,
+      "precipMm": 0
+    }
+  ]
+}

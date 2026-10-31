@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-ucla-wvb-401885629",
+      "metroId": "la",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wvb",
+      "home": {
+        "name": "UCLA",
+        "score": 2
+      },
+      "away": {
+        "name": "Minnesota",
+        "score": 3
+      },
+      "capturedAt": "2026-10-31T14:43:11.898Z"
+    }
+  ]
+}

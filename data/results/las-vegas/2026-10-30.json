@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-30",
+  "results": [
+    {
+      "eventId": "2026-10-30-espn-golden-knights-401892611",
+      "metroId": "las-vegas",
+      "date": "2026-10-30",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "away": {
+        "name": "Devils",
+        "score": 5
+      },
+      "attendance": 17615,
+      "capturedAt": "2026-10-31T14:43:21.552Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
+    }
+  ]
+}
