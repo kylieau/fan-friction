@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-duke-football-401858279",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wallace-wade-stadium",
+      "homeTeamId": "duke-football",
+      "home": {
+        "name": "Duke",
+        "score": 47
+      },
+      "away": {
+        "name": "Boston College",
+        "score": 2
+      },
+      "attendance": 15653,
+      "capturedAt": "2026-11-01T15:09:13.008Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    },
+    {
+      "eventId": "2026-10-31-espn-nc-state-football-401858277",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carter-finley-stadium",
+      "homeTeamId": "nc-state-football",
+      "home": {
+        "name": "NC State",
+        "score": 31
+      },
+      "away": {
+        "name": "California",
+        "score": 10
+      },
+      "attendance": 52933,
+      "capturedAt": "2026-11-01T15:09:13.008Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    },
+    {
+      "eventId": "2026-10-31-espn-nccu-football-401867963",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "o-kelly-riddick-stadium",
+      "homeTeamId": "nccu-football",
+      "home": {
+        "name": "NC Central",
+        "score": 34
+      },
+      "away": {
+        "name": "Howard",
+        "score": 0
+      },
+      "attendance": 5932,
+      "capturedAt": "2026-11-01T15:09:13.008Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "14:03"
+    },
+    {
+      "eventId": "2026-10-31-espn-unc-football-401858282",
+      "metroId": "raleigh-durham",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kenan-stadium",
+      "homeTeamId": "unc-football",
+      "home": {
+        "name": "North Carolina",
+        "score": 35
+      },
+      "away": {
+        "name": "Miami",
+        "score": 38
+      },
+      "attendance": 44257,
+      "capturedAt": "2026-11-01T15:09:13.008Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "19:45"
+    }
+  ]
+}

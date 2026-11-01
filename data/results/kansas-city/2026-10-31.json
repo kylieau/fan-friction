@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-sporting-kc-761928",
+      "metroId": "kansas-city",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sporting-park",
+      "homeTeamId": "sporting-kc",
+      "home": {
+        "name": "Sporting KC",
+        "score": 1
+      },
+      "away": {
+        "name": "FC Dallas",
+        "score": 1
+      },
+      "capturedAt": "2026-11-01T15:09:09.556Z"
+    }
+  ]
+}

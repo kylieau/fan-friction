@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-gophers-hockey-401923145",
+      "metroId": "minneapolis",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 4
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 3
+      },
+      "note": "OT",
+      "capturedAt": "2026-11-01T15:09:11.098Z"
+    }
+  ]
+}

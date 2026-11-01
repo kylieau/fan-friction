@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-bruins-401892614",
+      "metroId": "boston",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 5
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 4
+      },
+      "attendance": 17850,
+      "note": "OT",
+      "capturedAt": "2026-11-01T15:09:04.729Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    }
+  ]
+}

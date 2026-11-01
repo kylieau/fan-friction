@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-club-america-401876913",
+      "metroId": "mexico-city",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "club-america",
+      "home": {
+        "name": "América",
+        "score": 2
+      },
+      "away": {
+        "name": "Toluca",
+        "score": 2
+      },
+      "capturedAt": "2026-11-01T15:09:08.988Z"
+    }
+  ]
+}

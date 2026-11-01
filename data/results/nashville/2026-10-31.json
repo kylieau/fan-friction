@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-predators-401892616",
+      "metroId": "nashville",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 5
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "attendance": 17180,
+      "note": "SO",
+      "capturedAt": "2026-11-01T15:09:07.703Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "14:09"
+    }
+  ]
+}

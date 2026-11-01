@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-earthquakes-761929",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "paypal-park",
+      "homeTeamId": "earthquakes",
+      "home": {
+        "name": "Earthquakes",
+        "score": 2
+      },
+      "away": {
+        "name": "Real Salt Lake",
+        "score": 1
+      },
+      "capturedAt": "2026-11-01T15:09:00.259Z"
+    },
+    {
+      "eventId": "2026-10-31-espn-sharks-401892619",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 1
+      },
+      "away": {
+        "name": "Senators",
+        "score": 5
+      },
+      "attendance": 16138,
+      "capturedAt": "2026-11-01T15:09:00.259Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "16:08"
+    },
+    {
+      "eventId": "2026-10-31-espn-sjsu-football-401864529",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cefcu-stadium",
+      "homeTeamId": "sjsu-football",
+      "home": {
+        "name": "San José St",
+        "score": 16
+      },
+      "away": {
+        "name": "New Mexico",
+        "score": 21
+      },
+      "attendance": 9291,
+      "capturedAt": "2026-11-01T15:09:00.259Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    },
+    {
+      "eventId": "2026-10-31-espn-valkyries-401918311",
+      "metroId": "bay-area",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "valkyries",
+      "home": {
+        "name": "Valkyries",
+        "score": 68
+      },
+      "away": {
+        "name": "Dream",
+        "score": 63
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-01T15:09:00.259Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "17:12"
+    }
+  ]
+}

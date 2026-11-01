@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-canadiens-401892620",
+      "metroId": "montreal",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 5
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 4
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-11-01T15:09:04.371Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

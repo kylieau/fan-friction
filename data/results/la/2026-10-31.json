@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-galaxy-761925",
+      "metroId": "la",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dignity-health-sports-park",
+      "homeTeamId": "galaxy",
+      "home": {
+        "name": "Galaxy",
+        "score": 4
+      },
+      "away": {
+        "name": "Austin FC",
+        "score": 1
+      },
+      "capturedAt": "2026-11-01T15:08:56.906Z"
+    },
+    {
+      "eventId": "2026-10-31-espn-kings-401892618",
+      "metroId": "la",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 2
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 3
+      },
+      "attendance": 16161,
+      "capturedAt": "2026-11-01T15:08:56.906Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "16:08"
+    },
+    {
+      "eventId": "2026-10-31-espn-ucla-football-401858508",
+      "metroId": "la",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rose-bowl",
+      "homeTeamId": "ucla-football",
+      "home": {
+        "name": "UCLA",
+        "score": 27
+      },
+      "away": {
+        "name": "Nevada",
+        "score": 0
+      },
+      "attendance": 24611,
+      "capturedAt": "2026-11-01T15:08:56.906Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "16:15"
+    },
+    {
+      "eventId": "2026-10-31-espn-usc-football-401858509",
+      "metroId": "la",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coliseum",
+      "homeTeamId": "usc-football",
+      "home": {
+        "name": "USC",
+        "score": 30
+      },
+      "away": {
+        "name": "Ohio State Buckeyes",
+        "score": 18
+      },
+      "attendance": 70810,
+      "capturedAt": "2026-11-01T15:08:56.906Z",
+      "duration": {
+        "minutes": 218,
+        "kind": "estimated"
+      },
+      "startedAt": "19:30"
+    }
+  ]
+}

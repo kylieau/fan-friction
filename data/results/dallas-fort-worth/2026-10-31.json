@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-dallas-stars-401892622",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 3
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 1
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-11-01T15:09:02.177Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-10-31-espn-tcu-football-401856845",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amon-g-carter-stadium",
+      "homeTeamId": "tcu-football",
+      "home": {
+        "name": "TCU",
+        "score": 22
+      },
+      "away": {
+        "name": "Kansas",
+        "score": 16
+      },
+      "attendance": 32549,
+      "capturedAt": "2026-11-01T15:09:02.177Z",
+      "duration": {
+        "minutes": 216,
+        "kind": "estimated"
+      },
+      "startedAt": "15:35"
+    }
+  ]
+}

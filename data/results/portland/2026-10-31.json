@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-psu-football-401868098",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hillsboro-stadium",
+      "homeTeamId": "psu-football",
+      "home": {
+        "name": "Portland St",
+        "score": 14
+      },
+      "away": {
+        "name": "Idaho",
+        "score": 38
+      },
+      "attendance": 1910,
+      "capturedAt": "2026-11-01T15:09:12.811Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    },
+    {
+      "eventId": "2026-10-31-ht-portland-winterhawks-1023239",
+      "metroId": "portland",
+      "date": "2026-10-31",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "veterans-memorial-coliseum",
+      "homeTeamId": "portland-winterhawks",
+      "home": {
+        "name": "Winterhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 4
+      },
+      "attendance": 3061,
+      "capturedAt": "2026-11-01T15:09:12.812Z"
+    }
+  ]
+}

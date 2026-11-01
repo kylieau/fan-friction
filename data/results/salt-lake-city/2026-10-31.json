@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-utah-jazz-401909896",
+      "metroId": "salt-lake-city",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 90
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 112
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-01T15:09:11.693Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "15:11"
+    }
+  ]
+}

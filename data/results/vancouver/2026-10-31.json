@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-vancouver-canucks-401892621",
+      "metroId": "vancouver",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 4
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-01T15:09:08.640Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

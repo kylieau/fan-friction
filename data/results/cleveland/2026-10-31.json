@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-ht-cleveland-monsters-1029229",
+      "metroId": "cleveland",
+      "date": "2026-10-31",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cleveland-monsters",
+      "home": {
+        "name": "Monsters",
+        "score": 1
+      },
+      "away": {
+        "name": "Admirals",
+        "score": 4
+      },
+      "attendance": 7170,
+      "capturedAt": "2026-11-01T15:09:07.540Z"
+    }
+  ]
+}

@@ -15,6 +15,18 @@
       "code": 71,
       "precipProbability": 29,
       "precipMm": 0.3
+    },
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-11-15",
+      "basis": "forecast",
+      "capturedAt": "2026-11-01T14:48:51.520Z",
+      "feelsLikeHighF": 40.4,
+      "feelsLikeLowF": 35.5,
+      "code": 53,
+      "precipProbability": 24,
+      "precipMm": 11.1
     }
   ]
 }

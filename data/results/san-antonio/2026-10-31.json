@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-spurs-401909901",
+      "metroId": "san-antonio",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 121
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 111
+      },
+      "attendance": 18354,
+      "capturedAt": "2026-11-01T15:09:12.606Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-10-31-espn-uiw-football-401869134",
+      "metroId": "san-antonio",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benson-stadium",
+      "homeTeamId": "uiw-football",
+      "home": {
+        "name": "Incarnate Word",
+        "score": 66
+      },
+      "away": {
+        "name": "N'Western St",
+        "score": 14
+      },
+      "attendance": 2057,
+      "capturedAt": "2026-11-01T15:09:12.606Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "13:58"
+    }
+  ]
+}

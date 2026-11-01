@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-unlv-football-401864530",
+      "metroId": "las-vegas",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "unlv-football",
+      "home": {
+        "name": "UNLV",
+        "score": 31
+      },
+      "away": {
+        "name": "N Illinois",
+        "score": 24
+      },
+      "attendance": 22382,
+      "capturedAt": "2026-11-01T15:09:09.371Z",
+      "duration": {
+        "minutes": 263,
+        "kind": "estimated"
+      },
+      "startedAt": "22:30"
+    }
+  ]
+}

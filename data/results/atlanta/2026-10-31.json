@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-gsu-football-401869944",
+      "metroId": "atlanta",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "center-parc-stadium",
+      "homeTeamId": "gsu-football",
+      "home": {
+        "name": "Georgia St",
+        "score": 20
+      },
+      "away": {
+        "name": "Coastal",
+        "score": 31
+      },
+      "attendance": 13681,
+      "capturedAt": "2026-11-01T15:08:59.955Z",
+      "duration": {
+        "minutes": 216,
+        "kind": "estimated"
+      },
+      "startedAt": "14:00"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-columbia-football-401867823",
+      "metroId": "new-york",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wien-stadium",
+      "homeTeamId": "columbia-football",
+      "home": {
+        "name": "Columbia",
+        "score": 8
+      },
+      "away": {
+        "name": "Yale",
+        "score": 26
+      },
+      "attendance": 3024,
+      "capturedAt": "2026-11-01T15:08:59.465Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    },
+    {
+      "eventId": "2026-10-31-espn-islanders-401892617",
+      "metroId": "new-york",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 0
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "attendance": 16587,
+      "capturedAt": "2026-11-01T15:08:59.465Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "14:04"
+    },
+    {
+      "eventId": "2026-10-31-espn-nycfc-761930",
+      "metroId": "new-york",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "citi-field",
+      "homeTeamId": "nycfc",
+      "home": {
+        "name": "NYCFC",
+        "score": 1
+      },
+      "away": {
+        "name": "CF Montréal",
+        "score": 1
+      },
+      "attendance": 17522,
+      "capturedAt": "2026-11-01T15:08:59.465Z"
+    },
+    {
+      "eventId": "2026-10-31-espn-rutgers-401858507",
+      "metroId": "new-york",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shi-stadium",
+      "homeTeamId": "rutgers",
+      "home": {
+        "name": "Rutgers",
+        "score": 21
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 28
+      },
+      "attendance": 39540,
+      "capturedAt": "2026-11-01T15:08:59.465Z",
+      "duration": {
+        "minutes": 192,
+        "kind": "estimated"
+      },
+      "startedAt": "12:32"
+    },
+    {
+      "eventId": "2026-10-31-espn-stony-brook-football-401866677",
+      "metroId": "new-york",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lavalle-stadium",
+      "homeTeamId": "stony-brook-football",
+      "home": {
+        "name": "Stony Brook",
+        "score": 31
+      },
+      "away": {
+        "name": "Sacred Heart",
+        "score": 32
+      },
+      "attendance": 1667,
+      "capturedAt": "2026-11-01T15:08:59.465Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    }
+  ]
+}

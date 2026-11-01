@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-sdsu-football-401860909",
+      "metroId": "san-diego",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "sdsu-football",
+      "home": {
+        "name": "San Diego St",
+        "score": 26
+      },
+      "away": {
+        "name": "Washington St",
+        "score": 20
+      },
+      "attendance": 19184,
+      "capturedAt": "2026-11-01T15:08:57.792Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-10-31-ht-san-diego-gulls-1029231",
+      "metroId": "san-diego",
+      "date": "2026-10-31",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 2
+      },
+      "away": {
+        "name": "Silver Knights",
+        "score": 3
+      },
+      "attendance": 5319,
+      "note": "OT",
+      "capturedAt": "2026-11-01T15:08:57.794Z"
+    }
+  ]
+}

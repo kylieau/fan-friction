@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-texas-football-401856737",
+      "metroId": "austin",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dkr-texas-memorial-stadium",
+      "homeTeamId": "texas-football",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 31
+      },
+      "away": {
+        "name": "Mississippi St",
+        "score": 3
+      },
+      "attendance": 103586,
+      "capturedAt": "2026-11-01T15:09:08.139Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "19:35"
+    }
+  ]
+}

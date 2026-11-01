@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-usf-football-401862816",
+      "metroId": "tampa",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "raymond-james-stadium",
+      "homeTeamId": "usf-football",
+      "home": {
+        "name": "South Florida",
+        "score": 30
+      },
+      "away": {
+        "name": "UAB",
+        "score": 10
+      },
+      "attendance": 22829,
+      "capturedAt": "2026-11-01T15:09:06.762Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "12:07"
+    }
+  ]
+}

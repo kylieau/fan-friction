@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-ht-oil-kings-1023237",
+      "metroId": "edmonton",
+      "date": "2026-10-31",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oil-kings",
+      "home": {
+        "name": "Oil Kings",
+        "score": 1
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 4
+      },
+      "attendance": 5101,
+      "capturedAt": "2026-11-01T15:09:12.031Z"
+    }
+  ]
+}

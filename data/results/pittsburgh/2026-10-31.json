@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-pitt-football-401858281",
+      "metroId": "pittsburgh",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "acrisure-stadium",
+      "homeTeamId": "pitt-football",
+      "home": {
+        "name": "Pitt",
+        "score": 34
+      },
+      "away": {
+        "name": "Georgia Tech",
+        "score": 11
+      },
+      "attendance": 42904,
+      "capturedAt": "2026-11-01T15:09:06.476Z",
+      "duration": {
+        "minutes": 236,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    }
+  ]
+}

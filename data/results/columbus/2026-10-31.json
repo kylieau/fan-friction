@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-columbus-crew-761924",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scottsmiracle-gro-field",
+      "homeTeamId": "columbus-crew",
+      "home": {
+        "name": "Crew",
+        "score": 3
+      },
+      "away": {
+        "name": "D.C. United",
+        "score": 0
+      },
+      "attendance": 20024,
+      "capturedAt": "2026-11-01T15:09:07.304Z"
+    },
+    {
+      "eventId": "2026-10-31-espn-osu-mhockey-401923146",
+      "metroId": "columbus",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mhockey",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 5
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 2
+      },
+      "capturedAt": "2026-11-01T15:09:07.304Z"
+    }
+  ]
+}

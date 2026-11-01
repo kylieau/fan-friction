@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-10-31",
+  "results": [
+    {
+      "eventId": "2026-10-31-espn-maryland-football-401858503",
+      "metroId": "washington-dc",
+      "date": "2026-10-31",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "secu-stadium",
+      "homeTeamId": "maryland-football",
+      "home": {
+        "name": "Maryland",
+        "score": 17
+      },
+      "away": {
+        "name": "Illinois",
+        "score": 20
+      },
+      "attendance": 27207,
+      "capturedAt": "2026-11-01T15:09:12.181Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    }
+  ]
+}
