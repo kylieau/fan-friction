@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-vancouver-whitecaps-761927",
+      "metroId": "vancouver",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bc-place",
+      "homeTeamId": "vancouver-whitecaps",
+      "home": {
+        "name": "Vancouver",
+        "score": 5
+      },
+      "away": {
+        "name": "Sounders",
+        "score": 1
+      },
+      "attendance": 32111,
+      "capturedAt": "2026-11-02T18:08:24.856Z"
+    },
+    {
+      "eventId": "2026-11-01-ht-vancouver-giants-1023246",
+      "metroId": "vancouver",
+      "date": "2026-11-01",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "langley-events-centre",
+      "homeTeamId": "vancouver-giants",
+      "home": {
+        "name": "Giants",
+        "score": 4
+      },
+      "away": {
+        "name": "Cougars",
+        "score": 5
+      },
+      "attendance": 3312,
+      "capturedAt": "2026-11-02T18:08:24.857Z"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-cruz-azul-401876911",
+      "metroId": "mexico-city",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "cruz-azul",
+      "home": {
+        "name": "Cruz Azul",
+        "score": 2
+      },
+      "away": {
+        "name": "León",
+        "score": 1
+      },
+      "capturedAt": "2026-11-02T18:08:25.816Z"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-reign-401854037",
+      "metroId": "seattle",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "reign",
+      "home": {
+        "name": "Reign",
+        "score": 1
+      },
+      "away": {
+        "name": "Orlando",
+        "score": 0
+      },
+      "attendance": 16095,
+      "capturedAt": "2026-11-02T18:08:15.920Z"
+    }
+  ]
+}

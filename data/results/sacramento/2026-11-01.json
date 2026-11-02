@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-sacramento-republic-401931675",
+      "metroId": "sacramento",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "heart-health-park",
+      "homeTeamId": "sacramento-republic",
+      "home": {
+        "name": "Republic FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Tulsa",
+        "score": 0
+      },
+      "capturedAt": "2026-11-02T18:08:25.481Z"
+    }
+  ]
+}

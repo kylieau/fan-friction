@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-angel-city-401854095",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dignity-health-sports-park",
+      "homeTeamId": "angel-city",
+      "home": {
+        "name": "Angel City",
+        "score": 4
+      },
+      "away": {
+        "name": "Legacy FC",
+        "score": 1
+      },
+      "attendance": 17860,
+      "capturedAt": "2026-11-02T18:08:14.054Z"
+    },
+    {
+      "eventId": "2026-11-01-espn-ducks-401892628",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 6
+      },
+      "away": {
+        "name": "Senators",
+        "score": 3
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-11-02T18:08:14.054Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-01-espn-lafc-761921",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bmo-stadium",
+      "homeTeamId": "lafc",
+      "home": {
+        "name": "LAFC",
+        "score": 1
+      },
+      "away": {
+        "name": "MNUFC",
+        "score": 3
+      },
+      "capturedAt": "2026-11-02T18:08:14.054Z"
+    },
+    {
+      "eventId": "2026-11-01-espn-lakers-401909906",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 131
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 125
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-11-02T18:08:14.054Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
+    },
+    {
+      "eventId": "2026-11-01-espn-rams-401873032",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "rams",
+      "home": {
+        "name": "Rams",
+        "score": 24
+      },
+      "away": {
+        "name": "Chargers",
+        "score": 9
+      },
+      "attendance": 73621,
+      "capturedAt": "2026-11-02T18:08:14.054Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    },
+    {
+      "eventId": "2026-11-01-espn-ucla-wvb-401884159",
+      "metroId": "la",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wvb",
+      "home": {
+        "name": "UCLA",
+        "score": 0
+      },
+      "away": {
+        "name": "Wisconsin",
+        "score": 3
+      },
+      "capturedAt": "2026-11-02T18:08:14.054Z"
+    }
+  ]
+}

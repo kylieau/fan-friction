@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-timbers-761933",
+      "metroId": "portland",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "providence-park",
+      "homeTeamId": "timbers",
+      "home": {
+        "name": "Timbers",
+        "score": 3
+      },
+      "away": {
+        "name": "Dynamo",
+        "score": 1
+      },
+      "capturedAt": "2026-11-02T18:08:30.660Z"
+    }
+  ]
+}

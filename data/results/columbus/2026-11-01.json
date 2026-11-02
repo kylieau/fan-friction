@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-osu-mhockey-401923148",
+      "metroId": "columbus",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mhockey",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 4
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 5
+      },
+      "note": "OT",
+      "capturedAt": "2026-11-02T18:08:22.589Z"
+    }
+  ]
+}

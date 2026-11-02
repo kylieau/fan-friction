@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-gt-wbb-401913714",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-wbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 80
+      },
+      "away": {
+        "name": "Hofstra",
+        "score": 65
+      },
+      "capturedAt": "2026-11-02T18:08:16.995Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "10:34"
+    },
+    {
+      "eventId": "2026-11-02-espn-ksu-wbb-401927994",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-wbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 72
+      },
+      "away": {
+        "name": "Shorter",
+        "score": 42
+      },
+      "capturedAt": "2026-11-02T18:08:16.995Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "11:04"
+    }
+  ]
+}

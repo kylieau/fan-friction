@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-dash-401854038",
+      "metroId": "houston",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "dash",
+      "home": {
+        "name": "Dash",
+        "score": 0
+      },
+      "away": {
+        "name": "Thorns",
+        "score": 2
+      },
+      "attendance": 8375,
+      "capturedAt": "2026-11-02T18:08:27.046Z"
+    }
+  ]
+}

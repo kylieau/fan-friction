@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-atlanta-united-761931",
+      "metroId": "atlanta",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "atlanta-united",
+      "home": {
+        "name": "Atlanta United",
+        "score": 3
+      },
+      "away": {
+        "name": "Toronto FC",
+        "score": 1
+      },
+      "attendance": 41197,
+      "capturedAt": "2026-11-02T18:08:16.995Z"
+    }
+  ]
+}

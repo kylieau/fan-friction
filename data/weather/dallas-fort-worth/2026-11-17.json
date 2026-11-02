@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-17",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "dallas-fort-worth",
+      "venueId": "city",
+      "date": "2026-11-17",
+      "basis": "forecast",
+      "capturedAt": "2026-11-02T17:52:58.284Z",
+      "feelsLikeHighF": 61.4,
+      "feelsLikeLowF": 46.3,
+      "code": 0,
+      "precipProbability": 16,
+      "precipMm": 0
+    }
+  ]
+}

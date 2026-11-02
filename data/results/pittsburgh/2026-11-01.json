@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-steelers-401873027",
+      "metroId": "pittsburgh",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "acrisure-stadium",
+      "homeTeamId": "steelers",
+      "home": {
+        "name": "Steelers",
+        "score": 27
+      },
+      "away": {
+        "name": "Browns",
+        "score": 6
+      },
+      "attendance": 66986,
+      "capturedAt": "2026-11-02T18:08:21.257Z",
+      "duration": {
+        "minutes": 184,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

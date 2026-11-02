@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-17",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "las-vegas",
+      "venueId": "city",
+      "date": "2026-11-17",
+      "basis": "forecast",
+      "capturedAt": "2026-11-02T18:00:36.060Z",
+      "feelsLikeHighF": 53.8,
+      "feelsLikeLowF": 47.2,
+      "code": 3,
+      "precipProbability": 16,
+      "precipMm": 0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-nashville-sc-761920",
+      "metroId": "nashville",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "geodis-park",
+      "homeTeamId": "nashville-sc",
+      "home": {
+        "name": "Nashville SC",
+        "score": 3
+      },
+      "away": {
+        "name": "Red Bull NY",
+        "score": 2
+      },
+      "attendance": 30109,
+      "capturedAt": "2026-11-02T18:08:23.422Z"
+    }
+  ]
+}

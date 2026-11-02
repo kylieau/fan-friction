@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-bay-fc-401854033",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "paypal-park",
+      "homeTeamId": "bay-fc",
+      "home": {
+        "name": "Bay FC",
+        "score": 0
+      },
+      "away": {
+        "name": "Wave",
+        "score": 1
+      },
+      "attendance": 15927,
+      "capturedAt": "2026-11-02T18:08:17.468Z"
+    },
+    {
+      "eventId": "2026-11-01-espn-warriors-401909905",
+      "metroId": "bay-area",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 124
+      },
+      "away": {
+        "name": "Clippers",
+        "score": 112
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-02T18:08:17.468Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "20:41"
+    }
+  ]
+}

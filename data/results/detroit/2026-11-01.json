@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-lions-401873030",
+      "metroId": "detroit",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ford-field",
+      "homeTeamId": "lions",
+      "home": {
+        "name": "Lions",
+        "score": 19
+      },
+      "away": {
+        "name": "Vikings",
+        "score": 15
+      },
+      "attendance": 64008,
+      "capturedAt": "2026-11-02T18:08:19.061Z",
+      "duration": {
+        "minutes": 184,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-dolphins-401873034",
+      "metroId": "miami",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "dolphins",
+      "home": {
+        "name": "Dolphins",
+        "score": 19
+      },
+      "away": {
+        "name": "Patriots",
+        "score": 24
+      },
+      "attendance": 59023,
+      "capturedAt": "2026-11-02T18:08:22.232Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

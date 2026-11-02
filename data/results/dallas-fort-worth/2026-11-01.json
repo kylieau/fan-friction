@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-cowboys-401873024",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "att-stadium",
+      "homeTeamId": "cowboys",
+      "home": {
+        "name": "Cowboys",
+        "score": 30
+      },
+      "away": {
+        "name": "Cardinals",
+        "score": 33
+      },
+      "attendance": 90763,
+      "note": "OT",
+      "capturedAt": "2026-11-02T18:08:18.382Z",
+      "duration": {
+        "minutes": 216,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-01-espn-dallas-trinity-401878615",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cotton-bowl",
+      "homeTeamId": "dallas-trinity",
+      "home": {
+        "name": "Trinity FC",
+        "score": 3
+      },
+      "away": {
+        "name": "Fort Lauderdale Utd",
+        "score": 0
+      },
+      "attendance": 2116,
+      "capturedAt": "2026-11-02T18:08:18.382Z"
+    }
+  ]
+}

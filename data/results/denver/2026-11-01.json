@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-broncos-401873033",
+      "metroId": "denver",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "empower-field",
+      "homeTeamId": "broncos",
+      "home": {
+        "name": "Broncos",
+        "score": 28
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 24
+      },
+      "attendance": 76831,
+      "capturedAt": "2026-11-02T18:08:32.040Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

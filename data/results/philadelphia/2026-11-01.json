@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-flyers-401892626",
+      "metroId": "philadelphia",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 6
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 3
+      },
+      "attendance": 18378,
+      "capturedAt": "2026-11-02T18:08:20.854Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "16:08"
+    }
+  ]
+}

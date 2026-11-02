@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-ht-san-diego-gulls-1029238",
+      "metroId": "san-diego",
+      "date": "2026-11-01",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 3
+      },
+      "away": {
+        "name": "Eagles",
+        "score": 2
+      },
+      "attendance": 9123,
+      "note": "SO",
+      "capturedAt": "2026-11-02T18:08:15.387Z"
+    }
+  ]
+}

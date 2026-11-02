@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-01",
+  "results": [
+    {
+      "eventId": "2026-11-01-espn-hurricanes-401892624",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 7
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 0
+      },
+      "attendance": 18818,
+      "capturedAt": "2026-11-02T18:08:31.037Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "13:09"
+    },
+    {
+      "eventId": "2026-11-01-espn-nc-courage-401854096",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-01",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "first-horizon-stadium",
+      "homeTeamId": "nc-courage",
+      "home": {
+        "name": "Courage",
+        "score": 1
+      },
+      "away": {
+        "name": "Summit FC",
+        "score": 0
+      },
+      "attendance": 10803,
+      "capturedAt": "2026-11-02T18:08:31.037Z"
+    }
+  ]
+}
