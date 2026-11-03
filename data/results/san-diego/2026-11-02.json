@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-sdsu-wbb-401921519",
+      "metroId": "san-diego",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "sdsu-wbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 77
+      },
+      "away": {
+        "name": "Fullerton",
+        "score": 51
+      },
+      "capturedAt": "2026-11-03T16:09:38.296Z",
+      "duration": {
+        "minutes": 98,
+        "kind": "estimated"
+      },
+      "startedAt": "21:06"
+    }
+  ]
+}

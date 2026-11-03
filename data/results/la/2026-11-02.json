@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-clippers-401909920",
+      "metroId": "la",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 118
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 125
+      },
+      "attendance": 16044,
+      "capturedAt": "2026-11-03T16:09:37.221Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    },
+    {
+      "eventId": "2026-11-02-espn-lakers-401909921",
+      "metroId": "la",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 138
+      },
+      "away": {
+        "name": "Heat",
+        "score": 117
+      },
+      "attendance": 18752,
+      "capturedAt": "2026-11-03T16:09:37.221Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    },
+    {
+      "eventId": "2026-11-02-espn-ucla-mbb-401909738",
+      "metroId": "la",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 84
+      },
+      "away": {
+        "name": "Arizona",
+        "score": 75
+      },
+      "attendance": 10777,
+      "capturedAt": "2026-11-03T16:09:37.221Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-02-espn-ucla-wbb-401918896",
+      "metroId": "la",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wbb",
+      "home": {
+        "name": "UCLA",
+        "score": 73
+      },
+      "away": {
+        "name": "Lehigh",
+        "score": 53
+      },
+      "attendance": 4697,
+      "capturedAt": "2026-11-03T16:09:37.221Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "14:33"
+    },
+    {
+      "eventId": "2026-11-02-espn-usc-mbb-401926771",
+      "metroId": "la",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-mbb",
+      "home": {
+        "name": "USC",
+        "score": 95
+      },
+      "away": {
+        "name": "Milwaukee",
+        "score": 63
+      },
+      "attendance": 4559,
+      "capturedAt": "2026-11-03T16:09:37.221Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "22:31"
+    }
+  ]
+}

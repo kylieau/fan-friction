@@ -20,7 +20,7 @@
         "score": 1
       },
       "attendance": 15927,
-      "capturedAt": "2026-11-02T18:08:17.468Z"
+      "capturedAt": "2026-11-03T16:09:40.836Z"
     },
     {
       "eventId": "2026-11-01-espn-warriors-401909905",
@@ -39,12 +39,7 @@
         "score": 112
       },
       "attendance": 18064,
-      "capturedAt": "2026-11-02T18:08:17.468Z",
-      "duration": {
-        "minutes": 135,
-        "kind": "estimated"
-      },
-      "startedAt": "20:41"
+      "capturedAt": "2026-11-03T16:09:40.836Z"
     }
   ]
 }

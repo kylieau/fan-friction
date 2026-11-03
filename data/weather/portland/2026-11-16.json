@@ -20,6 +20,24 @@
       "shortwave": 0,
       "cloudCover": 9,
       "code": 0
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-11-16",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-11-03T16:06:48.090Z",
+      "feelsLikeF": 42.3,
+      "tempF": 47.3,
+      "humidity": 82,
+      "windMph": 7.2,
+      "uvIndex": 0,
+      "precipProbability": 55,
+      "precipMm": 0.3,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 51
     }
   ],
   "days": [
@@ -34,6 +52,18 @@
       "code": 55,
       "precipProbability": 61,
       "precipMm": 8
+    },
+    {
+      "metroId": "portland",
+      "venueId": "city",
+      "date": "2026-11-16",
+      "basis": "forecast",
+      "capturedAt": "2026-11-03T16:06:48.090Z",
+      "feelsLikeHighF": 46.8,
+      "feelsLikeLowF": 40,
+      "code": 55,
+      "precipProbability": 56,
+      "precipMm": 12.7
     }
   ]
 }

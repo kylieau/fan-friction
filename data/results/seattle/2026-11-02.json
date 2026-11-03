@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-seahawks-401873036",
+      "metroId": "seattle",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "seahawks",
+      "home": {
+        "name": "Seahawks",
+        "score": 17
+      },
+      "away": {
+        "name": "Bears",
+        "score": 34
+      },
+      "attendance": 68739,
+      "capturedAt": "2026-11-03T16:09:38.886Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "20:16"
+    },
+    {
+      "eventId": "2026-11-02-espn-uw-mbb-401920769",
+      "metroId": "seattle",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-mbb",
+      "home": {
+        "name": "Washington",
+        "score": 90
+      },
+      "away": {
+        "name": "Colgate",
+        "score": 76
+      },
+      "capturedAt": "2026-11-03T16:09:38.886Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "22:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-uw-wbb-401927836",
+      "metroId": "seattle",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-wbb",
+      "home": {
+        "name": "Washington",
+        "score": 79
+      },
+      "away": {
+        "name": "UC San Diego",
+        "score": 63
+      },
+      "attendance": 1372,
+      "capturedAt": "2026-11-03T16:09:38.886Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    }
+  ]
+}

@@ -19,7 +19,7 @@
         "name": "Real Salt Lake",
         "score": 1
       },
-      "capturedAt": "2026-11-01T15:09:00.259Z"
+      "capturedAt": "2026-11-03T16:09:40.836Z"
     },
     {
       "eventId": "2026-10-31-espn-sharks-401892619",
@@ -38,12 +38,7 @@
         "score": 5
       },
       "attendance": 16138,
-      "capturedAt": "2026-11-01T15:09:00.259Z",
-      "duration": {
-        "minutes": 149,
-        "kind": "estimated"
-      },
-      "startedAt": "16:08"
+      "capturedAt": "2026-11-03T16:09:40.836Z"
     },
     {
       "eventId": "2026-10-31-espn-sjsu-football-401864529",
@@ -62,7 +57,7 @@
         "score": 21
       },
       "attendance": 9291,
-      "capturedAt": "2026-11-01T15:09:00.259Z",
+      "capturedAt": "2026-11-03T16:09:40.836Z",
       "duration": {
         "minutes": 166,
         "kind": "estimated"
@@ -86,12 +81,7 @@
         "score": 63
       },
       "attendance": 18064,
-      "capturedAt": "2026-11-01T15:09:00.259Z",
-      "duration": {
-        "minutes": 130,
-        "kind": "estimated"
-      },
-      "startedAt": "17:12"
+      "capturedAt": "2026-11-03T16:09:40.836Z"
     }
   ]
 }

@@ -4,6 +4,30 @@
   "date": "2026-11-02",
   "results": [
     {
+      "eventId": "2026-11-02-espn-gsu-mbb-401910994",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-mbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 73
+      },
+      "away": {
+        "name": "Bowling Green",
+        "score": 76
+      },
+      "attendance": 1647,
+      "capturedAt": "2026-11-03T16:09:40.248Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
       "eventId": "2026-11-02-espn-gt-wbb-401913714",
       "metroId": "atlanta",
       "date": "2026-11-02",
@@ -19,12 +43,37 @@
         "name": "Hofstra",
         "score": 65
       },
-      "capturedAt": "2026-11-02T18:08:16.995Z",
+      "attendance": 6326,
+      "capturedAt": "2026-11-03T16:09:40.248Z",
       "duration": {
         "minutes": 113,
         "kind": "estimated"
       },
       "startedAt": "10:34"
+    },
+    {
+      "eventId": "2026-11-02-espn-ksu-mbb-401926787",
+      "metroId": "atlanta",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-mbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 116
+      },
+      "away": {
+        "name": "Midway",
+        "score": 57
+      },
+      "attendance": 1225,
+      "capturedAt": "2026-11-03T16:09:40.248Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
     },
     {
       "eventId": "2026-11-02-espn-ksu-wbb-401927994",
@@ -42,7 +91,8 @@
         "name": "Shorter",
         "score": 42
       },
-      "capturedAt": "2026-11-02T18:08:16.995Z",
+      "attendance": 776,
+      "capturedAt": "2026-11-03T16:09:40.248Z",
       "duration": {
         "minutes": 114,
         "kind": "estimated"

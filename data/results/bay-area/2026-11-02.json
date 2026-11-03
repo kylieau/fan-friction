@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-cal-mbb-401918051",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 115
+      },
+      "away": {
+        "name": "Adams St",
+        "score": 86
+      },
+      "attendance": 3860,
+      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-cal-wbb-401903553",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-wbb",
+      "home": {
+        "name": "California",
+        "score": 80
+      },
+      "away": {
+        "name": "Washington St",
+        "score": 58
+      },
+      "attendance": 2501,
+      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "22:37"
+    },
+    {
+      "eventId": "2026-11-02-espn-sharks-401892632",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 1
+      },
+      "away": {
+        "name": "Flames",
+        "score": 2
+      },
+      "attendance": 13098,
+      "capturedAt": "2026-11-03T16:09:40.836Z"
+    },
+    {
+      "eventId": "2026-11-02-espn-sjsu-mbb-401911469",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-mbb",
+      "home": {
+        "name": "San José St",
+        "score": 95
+      },
+      "away": {
+        "name": "UTSA",
+        "score": 74
+      },
+      "attendance": 2128,
+      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "15:07"
+    },
+    {
+      "eventId": "2026-11-02-espn-stanford-mbb-401920716",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-mbb",
+      "home": {
+        "name": "Stanford",
+        "score": 74
+      },
+      "away": {
+        "name": "E Washington",
+        "score": 65
+      },
+      "attendance": 2103,
+      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-stanford-wbb-401913054",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "stanford-wbb",
+      "home": {
+        "name": "Stanford",
+        "score": 69
+      },
+      "away": {
+        "name": "Arizona",
+        "score": 84
+      },
+      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "13:36"
+    },
+    {
+      "eventId": "2026-11-02-espn-warriors-401909919",
+      "metroId": "bay-area",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 116
+      },
+      "away": {
+        "name": "Suns",
+        "score": 113
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-03T16:09:40.836Z"
+    }
+  ]
+}

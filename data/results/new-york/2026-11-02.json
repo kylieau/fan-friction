@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-knicks-401909910",
+      "metroId": "new-york",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 103
+      },
+      "away": {
+        "name": "Nets",
+        "score": 90
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-03T16:09:39.598Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-11-02-espn-rutgers-wbb-401913003",
+      "metroId": "new-york",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 83
+      },
+      "away": {
+        "name": "Long Island",
+        "score": 52
+      },
+      "attendance": 1445,
+      "capturedAt": "2026-11-03T16:09:39.598Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-seton-hall-mbb-401920886",
+      "metroId": "new-york",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "seton-hall-mbb",
+      "home": {
+        "name": "Seton Hall",
+        "score": 66
+      },
+      "away": {
+        "name": "Saint Peter's",
+        "score": 42
+      },
+      "attendance": 6447,
+      "capturedAt": "2026-11-03T16:09:39.598Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-02-espn-stjohns-mbb-401920679",
+      "metroId": "new-york",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carnesecca-arena",
+      "homeTeamId": "stjohns-mbb",
+      "home": {
+        "name": "St John's",
+        "score": 78
+      },
+      "away": {
+        "name": "Monmouth",
+        "score": 63
+      },
+      "attendance": 5260,
+      "capturedAt": "2026-11-03T16:09:39.598Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "18:34"
+    }
+  ]
+}
