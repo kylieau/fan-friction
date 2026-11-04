@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-slu-mbb-401911248",
+      "metroId": "st-louis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-mbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 92
+      },
+      "away": {
+        "name": "Lehigh",
+        "score": 67
+      },
+      "attendance": 5167,
+      "capturedAt": "2026-11-04T16:15:50.375Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "20:07"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-utah-wbb-401918931",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-wbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 76
+      },
+      "away": {
+        "name": "E Washington",
+        "score": 67
+      },
+      "attendance": 1754,
+      "capturedAt": "2026-11-04T16:15:48.967Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

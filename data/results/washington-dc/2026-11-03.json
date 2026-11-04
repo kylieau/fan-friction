@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-capitals-401892640",
+      "metroId": "washington-dc",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 5
+      },
+      "away": {
+        "name": "Stars",
+        "score": 6
+      },
+      "attendance": 16956,
+      "capturedAt": "2026-11-04T16:15:49.428Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

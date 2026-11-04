@@ -99,6 +99,18 @@
       "code": 3,
       "precipProbability": 45,
       "precipMm": 0
+    },
+    {
+      "metroId": "seattle",
+      "venueId": "city",
+      "date": "2026-11-11",
+      "basis": "forecast",
+      "capturedAt": "2026-11-04T15:58:01.195Z",
+      "feelsLikeHighF": 52.7,
+      "feelsLikeLowF": 39.3,
+      "code": 3,
+      "precipProbability": 52,
+      "precipMm": 0
     }
   ]
 }

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-marquette-mbb-401909522",
+      "metroId": "milwaukee",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "marquette-mbb",
+      "home": {
+        "name": "Marquette",
+        "score": 78
+      },
+      "away": {
+        "name": "Mercyhurst",
+        "score": 43
+      },
+      "attendance": 12063,
+      "capturedAt": "2026-11-04T16:15:43.675Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-pitt-mbb-401909705",
+      "metroId": "pittsburgh",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-mbb",
+      "home": {
+        "name": "Pitt",
+        "score": 95
+      },
+      "away": {
+        "name": "Rider",
+        "score": 57
+      },
+      "attendance": 3875,
+      "capturedAt": "2026-11-04T16:15:44.382Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

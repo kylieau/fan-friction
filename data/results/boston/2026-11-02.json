@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-bc-wbb-401906031",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-wbb",
+      "home": {
+        "name": "Boston College",
+        "score": 54
+      },
+      "away": {
+        "name": "Holy Cross",
+        "score": 64
+      },
+      "attendance": 536,
+      "capturedAt": "2026-11-04T16:15:43.849Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-bruins-401892629",
+      "metroId": "boston",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 3
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "attendance": 17850,
+      "note": "SO",
+      "capturedAt": "2026-11-04T16:15:43.849Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

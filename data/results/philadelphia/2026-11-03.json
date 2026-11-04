@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-flyers-401892638",
+      "metroId": "philadelphia",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 4
+      },
+      "attendance": 17889,
+      "capturedAt": "2026-11-04T16:15:44.110Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-03-espn-penn-wbb-401931546",
+      "metroId": "philadelphia",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-wbb",
+      "home": {
+        "name": "Penn",
+        "score": 110
+      },
+      "away": {
+        "name": "Swarthmore",
+        "score": 27
+      },
+      "attendance": 123,
+      "capturedAt": "2026-11-04T16:15:44.110Z",
+      "duration": {
+        "minutes": 109,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

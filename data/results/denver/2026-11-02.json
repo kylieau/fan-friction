@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-nuggets-401909918",
+      "metroId": "denver",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 110
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 118
+      },
+      "attendance": 19520,
+      "capturedAt": "2026-11-04T16:15:50.826Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

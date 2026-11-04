@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-asu-mbb-401921731",
+      "metroId": "phoenix",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-mbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 75
+      },
+      "away": {
+        "name": "ETSU",
+        "score": 65
+      },
+      "attendance": 5353,
+      "capturedAt": "2026-11-04T16:15:46.308Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-asu-wbb-401916080",
+      "metroId": "phoenix",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-wbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 84
+      },
+      "away": {
+        "name": "Jackson St",
+        "score": 41
+      },
+      "attendance": 2015,
+      "capturedAt": "2026-11-04T16:15:46.308Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-02-espn-gcu-mbb-401911389",
+      "metroId": "phoenix",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "global-credit-union-arena",
+      "homeTeamId": "gcu-mbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 103
+      },
+      "away": {
+        "name": "Texas Southern Tigers",
+        "score": 79
+      },
+      "attendance": 6782,
+      "capturedAt": "2026-11-04T16:15:46.308Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "21:04"
+    }
+  ]
+}

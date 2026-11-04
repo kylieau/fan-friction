@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-blackhawks-401892631",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 5
+      },
+      "attendance": 17838,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-11-02-espn-depaul-mbb-401909500",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-mbb",
+      "home": {
+        "name": "DePaul",
+        "score": 75
+      },
+      "away": {
+        "name": "West Georgia",
+        "score": 58
+      },
+      "attendance": 2487,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    },
+    {
+      "eventId": "2026-11-02-espn-northwestern-mbb-401920732",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-mbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 86
+      },
+      "away": {
+        "name": "Binghamton",
+        "score": 60
+      },
+      "attendance": 3684,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "20:00"
+    },
+    {
+      "eventId": "2026-11-02-espn-uic-mbb-401928858",
+      "metroId": "chicago",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "credit-union-1-arena",
+      "homeTeamId": "uic-mbb",
+      "home": {
+        "name": "UIC",
+        "score": 96
+      },
+      "away": {
+        "name": "St Francis IL",
+        "score": 47
+      },
+      "attendance": 608,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-vancouver-canucks-401892643",
+      "metroId": "vancouver",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 4
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 5
+      },
+      "attendance": 17100,
+      "capturedAt": "2026-11-04T16:15:46.545Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-gophers-mbb-401916303",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-mbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 85
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 50
+      },
+      "attendance": 7222,
+      "capturedAt": "2026-11-04T16:15:48.285Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-gophers-wbb-401913855",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-wbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 82
+      },
+      "away": {
+        "name": "Harvard",
+        "score": 62
+      },
+      "attendance": 7185,
+      "capturedAt": "2026-11-04T16:15:48.285Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "18:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-timberwolves-401909915",
+      "metroId": "minneapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 112
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 100
+      },
+      "attendance": 16893,
+      "capturedAt": "2026-11-04T16:15:48.285Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

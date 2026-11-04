@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-mavericks-401909913",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 100
+      },
+      "away": {
+        "name": "Sac Kings",
+        "score": 115
+      },
+      "attendance": 18967,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-02-espn-smu-mbb-401918967",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-mbb",
+      "home": {
+        "name": "SMU",
+        "score": 85
+      },
+      "away": {
+        "name": "Southern",
+        "score": 72
+      },
+      "attendance": 4236,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-tcu-mbb-401919047",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 98
+      },
+      "away": {
+        "name": "Lindenwood",
+        "score": 59
+      },
+      "attendance": 4647,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-unt-mbb-401925826",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "unt-coliseum",
+      "homeTeamId": "unt-mbb",
+      "home": {
+        "name": "North Texas",
+        "score": 122
+      },
+      "away": {
+        "name": "SW Christian U",
+        "score": 50
+      },
+      "attendance": 2673,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "21:15"
+    },
+    {
+      "eventId": "2026-11-02-espn-uta-mbb-401929355",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "college-park-center",
+      "homeTeamId": "uta-mbb",
+      "home": {
+        "name": "UT Arlington",
+        "score": 89
+      },
+      "away": {
+        "name": "UNT Dallas",
+        "score": 56
+      },
+      "attendance": 828,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

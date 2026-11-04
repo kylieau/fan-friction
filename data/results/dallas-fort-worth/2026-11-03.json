@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-smu-wbb-401915960",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-wbb",
+      "home": {
+        "name": "SMU",
+        "score": 72
+      },
+      "away": {
+        "name": "Le Moyne",
+        "score": 36
+      },
+      "attendance": 943,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 109,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-03-espn-tcu-wbb-401917938",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 99
+      },
+      "away": {
+        "name": "Oral Roberts",
+        "score": 43
+      },
+      "attendance": 2403,
+      "capturedAt": "2026-11-04T16:15:42.935Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

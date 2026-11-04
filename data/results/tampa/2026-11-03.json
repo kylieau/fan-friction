@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-lightning-401892635",
+      "metroId": "tampa",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 2
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-04T16:15:44.833Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

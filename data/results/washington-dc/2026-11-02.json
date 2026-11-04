@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-georgetown-mbb-401921264",
+      "metroId": "washington-dc",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "georgetown-mbb",
+      "home": {
+        "name": "Georgetown",
+        "score": 80
+      },
+      "away": {
+        "name": "Loyola MD",
+        "score": 58
+      },
+      "attendance": 3034,
+      "capturedAt": "2026-11-04T16:15:49.428Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "18:33"
+    },
+    {
+      "eventId": "2026-11-02-espn-gmu-mbb-401920071",
+      "metroId": "washington-dc",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "eaglebank-arena",
+      "homeTeamId": "gmu-mbb",
+      "home": {
+        "name": "George Mason",
+        "score": 82
+      },
+      "away": {
+        "name": "UMBC",
+        "score": 54
+      },
+      "attendance": 3290,
+      "capturedAt": "2026-11-04T16:15:49.428Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-gw-mbb-401911208",
+      "metroId": "washington-dc",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "charles-e-smith-center",
+      "homeTeamId": "gw-mbb",
+      "home": {
+        "name": "G Washington",
+        "score": 91
+      },
+      "away": {
+        "name": "Navy",
+        "score": 39
+      },
+      "attendance": 2475,
+      "capturedAt": "2026-11-04T16:15:49.428Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-11-02-espn-maryland-mbb-401916296",
+      "metroId": "washington-dc",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-mbb",
+      "home": {
+        "name": "Maryland",
+        "score": 96
+      },
+      "away": {
+        "name": "Bucknell",
+        "score": 67
+      },
+      "attendance": 12023,
+      "capturedAt": "2026-11-04T16:15:49.428Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

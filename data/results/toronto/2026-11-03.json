@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-maple-leafs-401892633",
+      "metroId": "toronto",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 2
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 3
+      },
+      "attendance": 18889,
+      "capturedAt": "2026-11-04T16:15:48.102Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

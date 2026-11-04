@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-tulane-mbb-401919001",
+      "metroId": "new-orleans",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-mbb",
+      "home": {
+        "name": "Tulane",
+        "score": 100
+      },
+      "away": {
+        "name": "UT Martin",
+        "score": 98
+      },
+      "attendance": 1288,
+      "note": "2OT",
+      "capturedAt": "2026-11-04T16:15:48.513Z",
+      "duration": {
+        "minutes": 188,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    },
+    {
+      "eventId": "2026-11-02-espn-tulane-wbb-401916057",
+      "metroId": "new-orleans",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-wbb",
+      "home": {
+        "name": "Tulane",
+        "score": 92
+      },
+      "away": {
+        "name": "Texas Southern Tigers",
+        "score": 38
+      },
+      "attendance": 902,
+      "capturedAt": "2026-11-04T16:15:48.513Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

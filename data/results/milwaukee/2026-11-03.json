@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-marquette-wbb-401919074",
+      "metroId": "milwaukee",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-mcguire-center",
+      "homeTeamId": "marquette-wbb",
+      "home": {
+        "name": "Marquette",
+        "score": 80
+      },
+      "away": {
+        "name": "Miss Valley St",
+        "score": 42
+      },
+      "attendance": 827,
+      "capturedAt": "2026-11-04T16:15:43.675Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

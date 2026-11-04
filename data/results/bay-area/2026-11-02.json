@@ -20,7 +20,7 @@
         "score": 86
       },
       "attendance": 3860,
-      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "capturedAt": "2026-11-04T16:15:41.500Z",
       "duration": {
         "minutes": 123,
         "kind": "estimated"
@@ -44,7 +44,7 @@
         "score": 58
       },
       "attendance": 2501,
-      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "capturedAt": "2026-11-04T16:15:41.500Z",
       "duration": {
         "minutes": 113,
         "kind": "estimated"
@@ -68,7 +68,12 @@
         "score": 2
       },
       "attendance": 13098,
-      "capturedAt": "2026-11-03T16:09:40.836Z"
+      "capturedAt": "2026-11-04T16:15:41.500Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
     },
     {
       "eventId": "2026-11-02-espn-sjsu-mbb-401911469",
@@ -87,7 +92,7 @@
         "score": 74
       },
       "attendance": 2128,
-      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "capturedAt": "2026-11-04T16:15:41.500Z",
       "duration": {
         "minutes": 117,
         "kind": "estimated"
@@ -111,7 +116,7 @@
         "score": 65
       },
       "attendance": 2103,
-      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "capturedAt": "2026-11-04T16:15:41.500Z",
       "duration": {
         "minutes": 129,
         "kind": "estimated"
@@ -134,7 +139,7 @@
         "name": "Arizona",
         "score": 84
       },
-      "capturedAt": "2026-11-03T16:09:40.836Z",
+      "capturedAt": "2026-11-04T16:15:41.500Z",
       "duration": {
         "minutes": 130,
         "kind": "estimated"
@@ -158,7 +163,12 @@
         "score": 113
       },
       "attendance": 18064,
-      "capturedAt": "2026-11-03T16:09:40.836Z"
+      "capturedAt": "2026-11-04T16:15:41.500Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
     }
   ]
 }

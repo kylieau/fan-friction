@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-duke-wbb-401915906",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-wbb",
+      "home": {
+        "name": "Duke",
+        "score": 76
+      },
+      "away": {
+        "name": "Green Bay",
+        "score": 60
+      },
+      "attendance": 2838,
+      "capturedAt": "2026-11-04T16:15:50.089Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

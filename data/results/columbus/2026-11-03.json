@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-blue-jackets-401892641",
+      "metroId": "columbus",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 7
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 2
+      },
+      "attendance": 14959,
+      "capturedAt": "2026-11-04T16:15:45.284Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

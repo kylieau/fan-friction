@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-unlv-wbb-401920491",
+      "metroId": "las-vegas",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "unlv-wbb",
+      "home": {
+        "name": "UNLV WBB",
+        "score": 68
+      },
+      "away": {
+        "name": "USC",
+        "score": 100
+      },
+      "attendance": 2031,
+      "capturedAt": "2026-11-04T16:15:47.155Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "16:13"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-usf-mbb-401911374",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-mbb",
+      "home": {
+        "name": "South Florida",
+        "score": 98
+      },
+      "away": {
+        "name": "Charleston So",
+        "score": 71
+      },
+      "attendance": 4692,
+      "capturedAt": "2026-11-04T16:15:44.833Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:50"
+    },
+    {
+      "eventId": "2026-11-02-espn-usf-wbb-401913842",
+      "metroId": "tampa",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-wbb",
+      "home": {
+        "name": "South Florida",
+        "score": 80
+      },
+      "away": {
+        "name": "Furman",
+        "score": 54
+      },
+      "attendance": 2191,
+      "capturedAt": "2026-11-04T16:15:44.833Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

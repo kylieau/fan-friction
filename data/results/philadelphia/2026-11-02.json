@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-delaware-mbb-401920902",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-mbb",
+      "home": {
+        "name": "Delaware",
+        "score": 105
+      },
+      "away": {
+        "name": "Notre Dame MD",
+        "score": 44
+      },
+      "attendance": 1501,
+      "capturedAt": "2026-11-04T16:15:44.110Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-sixers-401909912",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 126
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 107
+      },
+      "attendance": 21309,
+      "capturedAt": "2026-11-04T16:15:44.110Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    },
+    {
+      "eventId": "2026-11-02-espn-temple-mbb-401925857",
+      "metroId": "philadelphia",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "liacouras-center",
+      "homeTeamId": "temple-mbb",
+      "home": {
+        "name": "Temple",
+        "score": 68
+      },
+      "away": {
+        "name": "C Connecticut",
+        "score": 56
+      },
+      "attendance": 2661,
+      "capturedAt": "2026-11-04T16:15:44.110Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    }
+  ]
+}

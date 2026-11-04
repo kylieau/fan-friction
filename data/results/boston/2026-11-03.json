@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-bc-mbb-401909551",
+      "metroId": "boston",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-mbb",
+      "home": {
+        "name": "Boston College",
+        "score": 76
+      },
+      "away": {
+        "name": "Wagner",
+        "score": 50
+      },
+      "attendance": 3752,
+      "capturedAt": "2026-11-04T16:15:43.849Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

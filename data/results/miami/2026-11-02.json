@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-fiu-mbb-401928357",
+      "metroId": "miami",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ocean-bank-convocation-center",
+      "homeTeamId": "fiu-mbb",
+      "home": {
+        "name": "FIU",
+        "score": 101
+      },
+      "away": {
+        "name": "New College",
+        "score": 58
+      },
+      "capturedAt": "2026-11-04T16:15:45.041Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-panthers-401892630",
+      "metroId": "miami",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 3
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 5
+      },
+      "attendance": 18862,
+      "capturedAt": "2026-11-04T16:15:45.041Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

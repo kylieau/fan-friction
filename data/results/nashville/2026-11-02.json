@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-belmont-mbb-401920758",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-mbb",
+      "home": {
+        "name": "Belmont",
+        "score": 72
+      },
+      "away": {
+        "name": "S Indiana",
+        "score": 54
+      },
+      "attendance": 1413,
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-02-espn-mtsu-mbb-401928619",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "murphy-center",
+      "homeTeamId": "mtsu-mbb",
+      "home": {
+        "name": "MTSU",
+        "score": 117
+      },
+      "away": {
+        "name": "Fisk",
+        "score": 73
+      },
+      "attendance": 7611,
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "11:32"
+    },
+    {
+      "eventId": "2026-11-02-espn-mtsu-wbb-401921232",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "murphy-center",
+      "homeTeamId": "mtsu-wbb",
+      "home": {
+        "name": "MTSU",
+        "score": 91
+      },
+      "away": {
+        "name": "Saint Louis",
+        "score": 84
+      },
+      "attendance": 2657,
+      "note": "OT",
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 218,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-02-espn-tsu-wbb-401929300",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gentry-center",
+      "homeTeamId": "tsu-wbb",
+      "home": {
+        "name": "Tennessee St",
+        "score": 95
+      },
+      "away": {
+        "name": "Toccoa Falls",
+        "score": 46
+      },
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:05"
+    },
+    {
+      "eventId": "2026-11-02-espn-vanderbilt-mbb-401921104",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-mbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 93
+      },
+      "away": {
+        "name": "Bellarmine",
+        "score": 47
+      },
+      "attendance": 6319,
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-02-espn-vanderbilt-wbb-401916067",
+      "metroId": "nashville",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-wbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 112
+      },
+      "away": {
+        "name": "Lipscomb",
+        "score": 53
+      },
+      "attendance": 7023,
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    }
+  ]
+}

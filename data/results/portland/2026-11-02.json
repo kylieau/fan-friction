@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-psu-wbb-401923187",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viking-pavilion",
+      "homeTeamId": "psu-wbb",
+      "home": {
+        "name": "Portland St",
+        "score": 43
+      },
+      "away": {
+        "name": "Pepperdine",
+        "score": 59
+      },
+      "attendance": 375,
+      "capturedAt": "2026-11-04T16:15:49.864Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-up-pilots-mbb-401917510",
+      "metroId": "portland",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chiles-center",
+      "homeTeamId": "up-pilots-mbb",
+      "home": {
+        "name": "Portland",
+        "score": 133
+      },
+      "away": {
+        "name": "Willamette",
+        "score": 89
+      },
+      "attendance": 814,
+      "capturedAt": "2026-11-04T16:15:49.864Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

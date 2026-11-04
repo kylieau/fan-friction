@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-spurs-401909917",
+      "metroId": "san-antonio",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 119
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 97
+      },
+      "attendance": 18464,
+      "capturedAt": "2026-11-04T16:15:49.741Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:40"
+    }
+  ]
+}

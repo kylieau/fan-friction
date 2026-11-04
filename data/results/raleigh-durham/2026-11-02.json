@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-duke-mbb-401909562",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-mbb",
+      "home": {
+        "name": "Duke",
+        "score": 84
+      },
+      "away": {
+        "name": "Army",
+        "score": 50
+      },
+      "attendance": 9314,
+      "capturedAt": "2026-11-04T16:15:50.089Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    },
+    {
+      "eventId": "2026-11-02-espn-nc-state-mbb-401918955",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "nc-state-mbb",
+      "home": {
+        "name": "NC State",
+        "score": 83
+      },
+      "away": {
+        "name": "Campbell",
+        "score": 64
+      },
+      "attendance": 17488,
+      "capturedAt": "2026-11-04T16:15:50.089Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-02-espn-nc-state-wbb-401913735",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reynolds-coliseum",
+      "homeTeamId": "nc-state-wbb",
+      "home": {
+        "name": "NC State",
+        "score": 80
+      },
+      "away": {
+        "name": "Wofford",
+        "score": 50
+      },
+      "attendance": 4743,
+      "capturedAt": "2026-11-04T16:15:50.089Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-unc-mbb-401913099",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dean-smith-center",
+      "homeTeamId": "unc-mbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 80
+      },
+      "away": {
+        "name": "W Carolina",
+        "score": 72
+      },
+      "attendance": 15735,
+      "capturedAt": "2026-11-04T16:15:50.089Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

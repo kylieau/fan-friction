@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-canadiens-401892634",
+      "metroId": "montreal",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 4
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 5
+      },
+      "attendance": 20962,
+      "note": "OT",
+      "capturedAt": "2026-11-04T16:15:43.491Z",
+      "duration": {
+        "minutes": 176,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

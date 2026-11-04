@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-depaul-wbb-401913044",
+      "metroId": "chicago",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 90
+      },
+      "away": {
+        "name": "Evansville",
+        "score": 65
+      },
+      "attendance": 948,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-03-espn-northwestern-wbb-401921442",
+      "metroId": "chicago",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-wbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 64
+      },
+      "away": {
+        "name": "Milwaukee",
+        "score": 60
+      },
+      "attendance": 786,
+      "capturedAt": "2026-11-04T16:15:42.597Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

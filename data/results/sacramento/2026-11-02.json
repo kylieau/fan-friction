@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-sac-state-mbb-401920348",
+      "metroId": "sacramento",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-pavilion",
+      "homeTeamId": "sac-state-mbb",
+      "home": {
+        "name": "Sacramento St",
+        "score": 90
+      },
+      "away": {
+        "name": "Jessup",
+        "score": 74
+      },
+      "attendance": 2324,
+      "capturedAt": "2026-11-04T16:15:46.753Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-uc-davis-mbb-401911517",
+      "metroId": "sacramento",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-mbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 75
+      },
+      "away": {
+        "name": "North Alabama",
+        "score": 79
+      },
+      "attendance": 1872,
+      "capturedAt": "2026-11-04T16:15:46.753Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "22:05"
+    },
+    {
+      "eventId": "2026-11-02-espn-uc-davis-wbb-401920402",
+      "metroId": "sacramento",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-wbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 82
+      },
+      "away": {
+        "name": "Jessup",
+        "score": 42
+      },
+      "attendance": 430,
+      "capturedAt": "2026-11-04T16:15:46.753Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:07"
+    }
+  ]
+}

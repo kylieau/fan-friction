@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-butler-mbb-401902275",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-mbb",
+      "home": {
+        "name": "Butler",
+        "score": 96
+      },
+      "away": {
+        "name": "Lafayette",
+        "score": 60
+      },
+      "attendance": 6555,
+      "capturedAt": "2026-11-04T16:15:47.904Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-butler-wbb-401920251",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-wbb",
+      "home": {
+        "name": "Butler",
+        "score": 108
+      },
+      "away": {
+        "name": "Tennessee Tech",
+        "score": 71
+      },
+      "attendance": 4313,
+      "capturedAt": "2026-11-04T16:15:47.904Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "11:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-pacers-401909909",
+      "metroId": "indianapolis",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 104
+      },
+      "away": {
+        "name": "Hawks",
+        "score": 108
+      },
+      "attendance": 16058,
+      "capturedAt": "2026-11-04T16:15:47.904Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

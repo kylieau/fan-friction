@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-gt-mbb-401920304",
+      "metroId": "atlanta",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-mbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 75
+      },
+      "away": {
+        "name": "Hampton",
+        "score": 55
+      },
+      "attendance": 6749,
+      "capturedAt": "2026-11-04T16:15:40.952Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

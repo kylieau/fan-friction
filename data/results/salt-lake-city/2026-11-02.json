@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-utah-mbb-401921697",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-mbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 66
+      },
+      "away": {
+        "name": "Long Beach St",
+        "score": 63
+      },
+      "attendance": 6312,
+      "capturedAt": "2026-11-04T16:15:48.967Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

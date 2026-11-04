@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-02",
+  "results": [
+    {
+      "eventId": "2026-11-02-espn-texas-mbb-401906863",
+      "metroId": "austin",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-mbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 109
+      },
+      "away": {
+        "name": "Chicago St",
+        "score": 59
+      },
+      "attendance": 10892,
+      "capturedAt": "2026-11-04T16:15:46.130Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    },
+    {
+      "eventId": "2026-11-02-espn-texas-state-mbb-401925096",
+      "metroId": "austin",
+      "date": "2026-11-02",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-mbb",
+      "home": {
+        "name": "Texas St",
+        "score": 67
+      },
+      "away": {
+        "name": "Texas A&M-CC",
+        "score": 55
+      },
+      "attendance": 1553,
+      "capturedAt": "2026-11-04T16:15:46.130Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

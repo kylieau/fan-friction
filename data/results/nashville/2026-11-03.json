@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-predators-401892642",
+      "metroId": "nashville",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 4
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 1
+      },
+      "attendance": 17159,
+      "capturedAt": "2026-11-04T16:15:45.630Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    }
+  ]
+}

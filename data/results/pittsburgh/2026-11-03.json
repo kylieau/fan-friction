@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-03",
+  "results": [
+    {
+      "eventId": "2026-11-03-espn-duquesne-mbb-401925779",
+      "metroId": "pittsburgh",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-mbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 78
+      },
+      "away": {
+        "name": "Purdue FW",
+        "score": 71
+      },
+      "attendance": 2758,
+      "capturedAt": "2026-11-04T16:15:44.382Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-03-espn-penguins-401892639",
+      "metroId": "pittsburgh",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 3
+      },
+      "attendance": 15740,
+      "capturedAt": "2026-11-04T16:15:44.382Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-03-espn-pitt-wbb-401913744",
+      "metroId": "pittsburgh",
+      "date": "2026-11-03",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 81
+      },
+      "away": {
+        "name": "Saint Peter's",
+        "score": 52
+      },
+      "attendance": 615,
+      "capturedAt": "2026-11-04T16:15:44.382Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}
