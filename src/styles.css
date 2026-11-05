@@ -13035,3 +13035,199 @@ a.follow-lead::after {
   font-size: 13px;
   font-weight: 800;
 }
+
+/* ===== Activity rows (build 7.2, R1a; Kylie, Nov 4: the fact list behind a 13pt chevron) =====
+   A date tile, a header line per status (icon, the word in action blue, a dot, names in ink), the title with its type
+   icon, the sport line, and at the right edge the chevron, a 44 × 44 target around a 13pt glyph. Open, the row tints
+   and the facts list sits under a hairline: a 72px label column, values in ink. Collapsed rows are about 73pt. */
+.activity-row {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--line);
+}
+
+.log-list li:last-child .activity-row {
+  border-bottom: none;
+}
+
+.activity-row.is-open {
+  background: #f7fafd;
+}
+
+.activity-row-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.activity-row > .stub-date {
+  align-self: flex-start;
+  margin: 12px 0 0 12px;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.activity-main {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 30px 9px 12px;
+}
+
+.activity-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  font-size: 12.5px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.activity-head > svg {
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  color: var(--dodger);
+}
+
+.activity-head-word {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.activity-head-dot {
+  flex-shrink: 0;
+  color: var(--ink2);
+}
+
+.activity-head-names {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.activity-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.activity-title > svg {
+  flex-shrink: 0;
+}
+
+.activity-title-text {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-sport {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--ink2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.activity-code {
+  flex-shrink: 0;
+  padding: 0 4px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--ink2);
+}
+
+.activity-chevron {
+  position: absolute;
+  /* The whole 44 × 44 target sits inside the card, its glyph centred 22px from the right edge, on the title line (the
+     header line plus the row's top padding put the title's centre about 26px down). */
+  right: 0;
+  top: 14px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--dodger);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.activity-chevron svg {
+  width: 13px;
+  height: 13px;
+  stroke-width: 2.4;
+  transition: transform 120ms ease;
+}
+
+.activity-row.is-open .activity-chevron svg {
+  transform: rotate(180deg);
+}
+
+/* Two header lines (a mixed row) push the title down one line; the chevron follows it. */
+.activity-row.two-heads .activity-chevron {
+  top: 32px;
+}
+
+.activity-facts {
+  pointer-events: auto;
+  margin: 8px 0 2px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.activity-facts .fact-list {
+  margin: 0;
+  gap: 4px;
+}
+
+.activity-facts .fact-line {
+  font-size: 13.5px;
+  line-height: 1.3;
+  align-items: flex-start;
+}
+
+.activity-facts .fact-line dt {
+  width: 72px;
+  flex: 0 0 72px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+
+.activity-facts .fact-line dd {
+  min-width: 0;
+  font-weight: 600;
+}
+
+.activity-facts-none {
+  margin: 8px 0 2px;
+  font-size: 12.5px;
+  color: var(--muted);
+}

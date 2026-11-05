@@ -6,9 +6,28 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Group | State | Commit | Notes |
 |---|---|---|---|
 | 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done, pushed | `fb8d1771` | measured on three Los Angeles dates and one event page |
+| 1. Activity rows (R1a; R1b to R1i decided) | done | _(this commit)_ | measured with a pasted dev feed; Codex review follows |
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
+
+## Group 1: Activity rows (R1a)
+
+### What shipped
+- **A new row** (`ActivityRow.tsx`), used only by the Activity tab; Upcoming's shared `FollowRow` is untouched until R5a adopts the shape. A date tile; one header line per status in Your Stubs form (ticket or TV icon, "Attended" or "Watched" in action blue, a dot, the names in ink; H2); the title with its type icon; a sport line in full words ("Football · NFL", "Women's Volleyball", "Concert"; H10) with the title's own label joined to it ("Baseball · Wild Card · Game 2"); and the 13pt chevron at the right edge, a 44 × 44 invisible target, "Show details" / "Hide details", flipping when open. The words open the event page; the chevron is the row's second target (H3's exception, accepted Nov 4).
+- **Names rule** (round 2): You first; "Sam R."; "Sam R. and Jo L."; "A, B, and C"; "Sam R., Priya K., and 2 more". A mixed row carries two header lines, Attended then Watched. The old sentence form ("You, Sam R. +2 attending") is gone from this tab.
+- **Behind the chevron**, up to three facts in the D1 list shape: Where, Your Seat, Notes, then Review (R1f); a watched-only row shows Length in Where's place. Notes are the event's sellout plus your own notable and promo lines; the review is the first in the row's order, quoted, with the name after it. A row with nothing to show says "Nothing more on this one yet."
+- **No verdict tile and no crowd count** (R1e, H6). The tiles' per-night reads became the rows' event reads (R1d): the sport line, type icon, sellout and Length come from the catalog's event, loaded one night at a time after the rows draw from the feed's own words.
+- **Attended by default** (H7, R1i): the tab opens on "Attended ×" with Clear; a choice made in the session holds until the app is next opened.
+- **H8's city code** sits at the end of the sport line as a small outlined code; the frames had no away row.
+- Builder Decides R1b to R1i are recorded in the notes.
+
+### Measured (headless, 390 × 844)
+Own rows and friends' rows came from a pasted feed through a dev-only hook (`activity-example-feed` in the phone's storage, read only in a dev build, never in production); no account was touched. Collapsed rows 72 to 74pt (the frames: about 73). Open rows 113 (one fact), 133 (two), 152 to 156pt (two to three facts; the frames: 145 to 165). The chevron glyph 13pt, centred on the title line within 1px, 22pt from the card's edge; its target 44 × 44, inside the card, hit at every corner and centre, nothing 3px beyond on any side. Shots: `.playwright-mcp/7-2-r1a-collapsed.png`, `7-2-r1a-open.png`, `7-2-r1a-mixed.png`.
+
+### Not exactly as drawn
+- The frames' "Football · Big Ten" competition line shows where the feed names one (pro leagues: "NFL", "MLS", "NBA"); a college game from ESPN has no competition on file, so it reads "Women's Volleyball" alone.
+- Watched rows show Length only when the catalog has a result; the frames assumed one.
 
 ## Group 0: Section I, crowd ceilings
 

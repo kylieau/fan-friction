@@ -528,46 +528,47 @@ Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide i
 - Options: (1) Allow "Sold Out" as a note, still no numbers. (2) Leave "Sold Out" off rows too.
 - Lean: (1). H6 was about numbers cluttering rows. "Sold Out" is a short fact, like Rain Delay.
 - Kylie said: H6, "No, keep rows free of crowd counts."
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), "Sold Out" as a note, never a number**, because H6 was about numbers; it is the first word of the Notes fact when the catalog's event carries a sellout, and only behind the chevron.
 
 #### R1c. Score On Rows
 - Question: should rows (option A) show the Outcome (score) as a fact, like the D1 facts list?
 - Options: (1) Stay result-free. (2) Show Outcome as a fact, like D1.
 - Lean: (1). Fact lines cap at 3, and the score is one tap away on the event page.
 - Kylie said: H7, she likes "how the information is listed on the D1 mockup" and asked for "the actual relevant information."
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), result-free**, because three fact lines are few and the score is one tap away; a watched-only row shows the game's Length (a D1 fact) in Where's place, since it has no Where.
 
 #### R1d. Where The Facts Come From
 - Question: seats, per-event notes, and per-event recaps may not exist in the data. How does the build handle missing facts?
 - Options: (1) Show only facts that exist, and leave a missing fact line out. (2) Hold the row redesign until the facts have a source. (3) Builder reports what exists first, then Kylie picks.
 - Lean: (1). Rows already vary in height, and the header and names fixes can ship now. (Under her new instruction, option 3 means the builder reports and decides, not a round trip.)
 - Kylie said: H7, aim for the D1 facts layout. D1 note: X (Twitter) may be the best story source.
-- Builder decides: confirm whether stubs store a seat today, then record the pick and the reason here.
+- **Decided (Nov 4): (1), only facts that exist show**, and the row now loads the catalog's event behind it (one read per night, the read the verdict tiles used to make), because the FINAL frames' sport line, type icon, sellout and Length all live on the event, not on a friend's stub card (which carries title, kind, venue, review and the watched flag only). Stubs do store a seat today (`Entry.seats`, shown through `seatsLine`), plus a review, a notable line and a promo line; those feed Your Seat, Review and Notes. A row with nothing behind the chevron says "Nothing more on this one yet." so the tap never opens on nothing.
 
 #### R1e. The Verdict In The List (Follows R1a)
 - Question: does the verdict belong anywhere in the Activity list?
 - Options: (1) No verdict in the list (as in A). (2) A 40pt tile on every row (as in B and C). (3) Once per day, in a day header (as in D).
 - Lean: (1), matching the R1a lean. Pick (3) only if R1a is D.
 - Kylie said: H7, "I actually wonder if attended even needs the verdict. other information might be more appropriate to include?" H9 keeps the tile 40pt wherever it shows.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), no verdict in the list**, because R1a is A; the verdict lives on the event and date pages the row opens. H9's 40pt tile now applies to Your Stubs only. H8's city code, which sat over the tile, moved to the end of the sport line as a small outlined code ("NYC"); the frames have no away row, so this is the builder's placement.
 
 #### R1f. Fact Order In Option A (Follows R1a)
 - Question: with 3 fact lines max, is Where, Your Seat, Notes, then Review the right priority?
 - Options: (1) Where, Your Seat, Notes, then Review. (2) Where, Notes, Review, then Your Seat. (3) Where, Review, Your Seat, then Notes.
 - Lean: (1). Where and the seat are what people scan for, like a stub. The review stays one tap away. Watched rows show Length instead of Where.
 - Kylie said: H7, wants "the actual relevant information," like D1.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), Where, Your Seat, Notes, then Review**, capped at three, because Where and the seat are what a stub is scanned for; a row nobody attended drops Where and shows Length when a result is on file. The review is the first one in the row's order (You first), quoted with the person's name after it, as the frames draw it.
 
 #### R1g. Friends' Seats
 - Question: should a friend's seat ever show on rows?
 - Options: (1) Only your own seat, for now. (2) Show a friend's seat when they choose to share it (needs a new sharing setting).
 - Lean: (1). Sharing settings belong in the G1 accounts plan.
 - Kylie said: nothing specific. G1: plan real accounts and shared data now.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), only your own seat**, because a friend's card does not carry a seat and sharing one is a G1 accounts question.
 
 #### R1h. Day Cards: Cap At 3 (Only If R1a Is D)
 - Question: if Day Cards ship, does a day card cap at 3 events with "See all"?
 - Options: (1) Cap at 3 with "See all", like H11d. (2) No cap on the Activity tab.
+- **Decided (Nov 4): moot**, because R1a is A, not D.
 - Lean: (1). One cap rule across the app.
 - Kylie said: H11d, cap at 3 with a "See all" row.
 - Builder decides: record the pick and the reason here (moot unless R1a is D).
@@ -577,7 +578,7 @@ Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide i
 - Options: (1) Show the "Attended ×" chip, as drawn. (2) Quiet default, no chip.
 - Lean: (1). Without the chip, a logged watch seems to vanish.
 - Kylie said: H7, "default should be to only include "attended" events."
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), the "Attended ×" chip shows**, because without it a logged watch seems to vanish. The default applies until the person touches the Activity chips in that session (Clear or a chip); from then on their choice holds, including All, until the app is next opened.
 
 ### R2. Activity Card
 
@@ -891,6 +892,7 @@ Exported answers: slim form storage key `ff-review-nov4-open10` (parent form `ff
   - Option set that led here: `mockups/activity-rows/round2/` (A Fact List was the lean).
 - **Builder also decides** the R1b to R1i items under Builder Decides (Sold Out, score, missing facts, verdict in list, fact order, friends' seats, attended default), now that R1a is A. R1e lean is (1), no verdict in the list, and R1h (day-card cap) is moot without D.
 - **Conflicts flagged:** second tap target vs H3 one-target rule (she accepted the exception). Em dash in her note text above is hers. Do not copy em dashes into new app copy.
+- **Built Nov 4, 2026 (late evening):** a new row piece (`src/components/ActivityRow.tsx`), standalone so Upcoming's shared row is untouched until R5a. Measured headless with a pasted feed (a dev-only hook, never in a build): collapsed rows 72 to 74pt, open rows 113 to 156pt, the chevron glyph 13pt centred on the title line and 22pt from the card's edge, its 44 × 44 target inside the card (hits at every corner, nothing 3px beyond), "Attended ×" with Clear on first open, two header lines on a mixed row, the names rule in all four shapes. Report: `gap-report-7-2.md`, Group 1.
 
 ### R2a. Event Page Activity Card: A, Your Stub Is The Hero (Locked)
 

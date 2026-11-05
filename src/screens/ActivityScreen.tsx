@@ -3,31 +3,30 @@ import { Link, useLocation } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
 import { AccountBlock } from '../components/AccountBlock';
-import { PeopleIcon } from '../components/Icons';
 import { ListBand } from '../components/ListBand';
-import { FollowRow, readPath } from '../components/FollowRow';
+import { ActivityRow, awayCode, YOU_ID } from '../components/ActivityRow';
 import { friendStubState } from '../components/FeedRow';
 import { CheckRow, FilterButton, FilterChips, FilterSheet, SheetHeading, prunePicked, readPicked, toggleIn, writePicked, type Picked } from '../components/FilterSheet';
 import {
   canSignIn,
+  EXAMPLE_FEED,
   followingFeedWithStatus,
   getAccount,
+  getCityDate,
   getPersonalLog,
-  isFurtherOutRoom,
   isManualEntry,
   nightKey,
   peopleList,
-  ratingForEntry,
-  scoresForNights,
   subscribeAccount,
   subscribePersonalLog,
   yourEntries,
+  type CrowdEvent,
   type Entry,
   type FeedItem,
   type PersonRow,
   type Profile,
 } from '../data';
-import { ACTIVITY_WORDS, feedKind, feedSentence, type ActivityKind } from '../lib/activity';
+import { ACTIVITY_WORDS, feedKind, type ActivityKind } from '../lib/activity';
 import { addDays, timelineGroup } from '../lib/dates';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { getPref, setPref } from '../lib/prefs';
@@ -38,14 +37,32 @@ import { useEdgeFade } from '../lib/useEdgeFade';
 const SPAN_DAYS = 60;
 
 /** Your own rows carry this profile; nothing about it is ever saved or sent. */
-const YOU: Profile = { id: 'you', handle: null, displayName: 'You', avatarUrl: null, homeMetroId: null };
+const YOU: Profile = { id: YOU_ID, handle: null, displayName: 'You', avatarUrl: null, homeMetroId: null };
 
 /** The filter's chips: Activity looks backward only since build 7.1 (M24), so the plan words are gone. */
 const KINDS: ActivityKind[] = ['attended', 'watched'];
-/** The people line's order, the ladder's: plans first, then what happened. */
-const KIND_ORDER: ActivityKind[] = ['attending', 'watching', 'interested', 'attended', 'watched'];
 const PEOPLE_KEY = 'fan-friction:following-friends-filter';
 const KINDS_KEY = 'fan-friction:activity-kinds-filter';
+/** Written once the person has touched the Activity chips this session; until then the tab opens on Attended (R1i). */
+const KINDS_SET_KEY = 'fan-friction:activity-kinds-set';
+
+/** The tab opens on Attended (Kylie, Oct 30, H7: "default should be to only include attended events"), as a chip (R1i). */
+function initialKinds(): Picked {
+  try {
+    if (sessionStorage.getItem(KINDS_SET_KEY)) return prunePicked(readPicked(KINDS_KEY), KINDS);
+  } catch {
+    /* storage blocked: the default below */
+  }
+  return new Set(['attended']);
+}
+
+/** Dev only: a feed pasted into the phone's storage (`activity-example-feed`, a JSON list of feed lines) stands in for friends, so friends' rows can be measured headless without an account. */
+function devFeed(): FeedItem[] | null {
+  if (!import.meta.env.DEV) return null;
+  const pasted = getPref<FeedItem[] | null>('activity-example-feed', null);
+  if (pasted === null) return null;
+  return Array.isArray(pasted) && pasted.length > 0 ? pasted : EXAMPLE_FEED;
+}
 
 /**
  * Activity (build 7, §3.4; Kylie, Oct 22, 2026: the Friends side renamed, "it should include the user's own
@@ -77,10 +94,15 @@ export function ActivityScreen() {
     writePicked(PEOPLE_KEY, next);
   };
   // A pick saved before build 7.1 may name a plan kind Activity no longer shows: only the kinds still here count (Codex, stage 3).
-  const [kindsPicked, setKindsPickedState] = useState<Picked>(() => prunePicked(readPicked(KINDS_KEY), KINDS));
+  const [kindsPicked, setKindsPickedState] = useState<Picked>(initialKinds);
   const setKindsPicked = (next: Picked) => {
     setKindsPickedState(next);
     writePicked(KINDS_KEY, next);
+    try {
+      sessionStorage.setItem(KINDS_SET_KEY, '1');
+    } catch {
+      /* storage blocked */
+    }
   };
 
   // The people you follow: the People checklist's names (approved only; the filter is all they do here).
@@ -106,6 +128,11 @@ export function ActivityScreen() {
   useEffect(() => {
     let current = true;
     setFeedNote(null);
+    const pasted = devFeed();
+    if (pasted) {
+      setFeed(pasted);
+      return;
+    }
     if (!account) {
       setFeed([]);
       return;
@@ -130,10 +157,13 @@ export function ActivityScreen() {
     [mine, feed, peopleFilter, kindsPicked],
   );
   const items = useMemo(() => mergeFeed(lines, today), [lines, today]);
-  const [ratings, setRatings] = useState<Map<string, number>>(new Map());
+  // The catalog's event behind each row (R1d: the sport line, the type icon, a sellout, a watched game's length), one
+  // read per night, the way the verdict tiles were read before R1e took them off these rows. Rows draw at once from
+  // the feed's own words and fill in when the events arrive.
+  const [events, setEvents] = useState<Map<string, CrowdEvent>>(new Map());
   useEffect(() => {
     let current = true;
-    scoresForNights(items.flatMap((item) => (item.metroId ? [{ metroId: item.metroId, date: item.date }] : []))).then((map) => current && setRatings(map));
+    eventsForRows(items).then((map) => current && setEvents(map));
     return () => {
       current = false;
     };
@@ -195,7 +225,7 @@ export function ActivityScreen() {
               <ul className="log-list">
                 {rows.map((item) => (
                   <li key={item.key}>
-                    <ActivityRow item={item} rating={ratingFor(item, ratings)} back={back} home={home.id} />
+                    <ActivityRowFor item={item} event={item.eventId ? events.get(item.eventId) : undefined} back={back} home={home.id} />
                   </li>
                 ))}
               </ul>
@@ -339,63 +369,28 @@ function mergeFeed(lines: readonly FeedItem[], today: string): FollowItem[] {
   return [...out.values()].sort((a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title));
 }
 
-/** No verdict pill when nobody on the row attended (build 7.1, M23: Watched never counts). */
-function nobodyAttended(item: FollowItem): boolean {
-  return item.people.every((p) => feedKind(p) === 'watched');
+/** The events behind the rows, by id: one catalog read per night that has a row with an event (R1d). */
+async function eventsForRows(items: readonly FollowItem[]): Promise<Map<string, CrowdEvent>> {
+  const nights = new Map<string, { metroId: string; date: string }>();
+  for (const item of items) if (item.eventId && item.metroId) nights.set(nightKey(item.metroId, item.date), { metroId: item.metroId, date: item.date });
+  const days = await Promise.all([...nights.values()].map((n) => getCityDate(n.metroId, n.date).catch(() => null)));
+  const map = new Map<string, CrowdEvent>();
+  for (const day of days) if (day) for (const e of [...day.events, ...(day.furtherOut ?? [])]) map.set(e.id, e);
+  return map;
 }
 
-function ratingFor(item: FollowItem, ratings: ReadonlyMap<string, number>): number | null {
-  // An attended stub reads through its own entry; a watched one carries no verdict (M23), so a mixed row where someone
-  // else attended falls through to the date's verdict.
-  if (item.entry && !item.entry.watched) return ratingForEntry(item.entry, ratings);
-  if (isFurtherOutRoom(item.metroId, item.venue)) return null;
-  return item.metroId ? (ratings.get(nightKey(item.metroId, item.date)) ?? null) : null;
-}
-
-/** "You, Sam R. +2 attending · Priya watching"; one person reads as a sentence: "You attended", "Jo is interested". */
-function peopleLine(items: readonly FeedItem[]): string {
-  if (items.length === 1) {
-    const only = items[0];
-    if (only.friend.id === YOU.id) {
-      const kind = feedKind(only);
-      return kind === 'attended' ? 'You attended' : kind === 'watched' ? 'You watched' : kind === 'interested' ? "You're interested" : `You're ${kind}`;
-    }
-    return feedSentence(only).lead.replace(/ in$/, '');
-  }
-  // Grouped by kind in the ladder's order; you are known by id, never by a display name (a friend can be called "You").
-  const byKind = new Map<ActivityKind, FeedItem[]>();
-  for (const item of items) byKind.set(feedKind(item), [...(byKind.get(feedKind(item)) ?? []), item]);
-  return KIND_ORDER.filter((kind) => byKind.has(kind))
-    .map((kind) => {
-      const people = byKind.get(kind)!;
-      const word = ACTIVITY_WORDS[kind].toLowerCase();
-      const you = people.some((p) => p.friend.id === YOU.id);
-      const others = people.filter((p) => p.friend.id !== YOU.id).map((p) => p.friend.displayName ?? p.friend.handle ?? 'Someone');
-      const names = you ? (others.length > 0 ? `You, ${others[0]}` : 'You') : others[0];
-      const rest = others.length - 1;
-      return `${names}${rest > 0 ? ` +${rest}` : ''} ${word}`;
-    })
-    .join(' · ');
-}
-
-function ActivityRow({ item, rating, back, home }: { item: FollowItem; rating: number | null; back: { to: string; label: string }; home: string }) {
+function ActivityRowFor({ item, event, back, home }: { item: FollowItem; event?: CrowdEvent; back: { to: string; label: string }; home: string }) {
   // Your own hand-added row opens its page; a stub logged "elsewhere" has no city, so nowhere to open.
   const to = item.ownId ? entryPath(item.ownId) : item.eventId && item.metroId ? eventPath(item.eventId, item.metroId) : item.metroId ? datePath(item.date, item.metroId) : undefined;
-  const line = peopleLine(item.people);
+  const own = item.people.find((p) => p.friend.id === YOU_ID)?.entry;
   return (
-    <FollowRow
-      date={item.date}
-      lead={{ icon: <PeopleIcon size={13} />, text: line }}
-      title={item.title}
-      // A feed line carries no start time, so the row says the venue alone.
-      facts={item.venue ?? ''}
+    <ActivityRow
+      item={item}
+      event={event}
+      ownEntry={own}
       to={to}
       state={{ back, ...friendStubState(item.eventId, { title: item.title, date: item.date, venue: item.venue, metroId: item.metroId, entry: item.entry }) }}
-      rating={rating}
-      readTo={isFurtherOutRoom(item.metroId, item.venue) ? null : readPath(item.date, item.metroId, item.eventId)}
-      cityCode={item.metroId && item.metroId !== home ? METROS[item.metroId]?.code : null}
-      noTile={nobodyAttended(item)}
-      spoken={`${item.title}, ${line}`}
+      cityCode={awayCode(item.metroId, home)}
     />
   );
 }
