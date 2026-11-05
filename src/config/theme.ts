@@ -37,6 +37,11 @@ export const THEME = {
   crowdMark: '#FFD100',
   /** The crowd icon beside a figure in text. */
   crowdIcon: '#B98500',
+  /**
+   * A crowd ceiling ("14k cap", "Up to 10,258"; build 7.2, R3a and R3b): grey so a room size never reads as a count.
+   * 5.4:1 on white; `muted` (3.65:1) fails the 4.5:1 check (I2).
+   */
+  ceiling: '#5F6B7D',
   /** Crowd bars. */
   crowdBar: '#E3A600',
   /** The crowd number and date on the dark share card. */

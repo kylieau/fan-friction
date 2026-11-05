@@ -122,19 +122,23 @@ export function CrowdSizeSettings() {
           three biggest; a favorite's page and the Local Competition timeline are never filtered (Kylie, Oct 14). */}
       <div className="settings">
         <div className="settings-heading">Applies</div>
+        {/* Switch rows are labels, so Title Case (build 7.2, I4; AGENTS.md's joining words stay lowercase). */}
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.mapOff} onClick={() => toggle({ mapOff: !saved.mapOff })}>
-          <span>Apply on the map</span>
+          <span>Apply on the Map</span>
           <span className="settings-value">{saved.mapOff ? 'Off' : 'On'}</span>
         </button>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.listsOff} onClick={() => toggle({ listsOff: !saved.listsOff })}>
-          <span>Apply on date pages and lists</span>
+          <span>Apply on Date Pages and Lists</span>
           <span className="settings-value">{saved.listsOff ? 'Off' : 'On'}</span>
         </button>
         <p className="you-fine">Home always shows today's three biggest events, and a favorite's page shows all of its events.</p>
         <p className="you-fine">Events you've stubbed or friends are attending always show.</p>
       </div>
+      {/* "No Estimate" (build 7.2, I4 and I5; was "Unknown Size"): the one switch for events with no count, sellout or
+          estimate. An event with only a room size ("14k cap") is one of them; it is never compared to Min and Max. The
+          saved key keeps its old name (`showUnknown`), so nothing migrates. */}
       <div className="settings">
-        <div className="settings-heading">Unknown Size</div>
+        <div className="settings-heading">No Estimate</div>
         <button
           type="button"
           className="settings-row settings-link"
@@ -145,7 +149,7 @@ export function CrowdSizeSettings() {
             toggle(next ? { showUnknown: undefined } : { showUnknown: false });
           }}
         >
-          <span>Show events with unknown size</span>
+          <span>Show Events With No Estimate</span>
           <span className="settings-value">{showUnknown ? 'On' : 'Off'}</span>
         </button>
       </div>
@@ -158,11 +162,11 @@ export function CrowdSizeSettings() {
           Further Out <FurtherOutInfo />
         </div>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherMapOff} onClick={() => toggle({ furtherMapOff: !saved.furtherMapOff })}>
-          <span>Show on the map</span>
+          <span>Show on the Map</span>
           <span className="settings-value">{saved.furtherMapOff ? 'Off' : 'On'}</span>
         </button>
         <button type="button" className="settings-row settings-link" role="switch" aria-checked={!saved.furtherListsOff} onClick={() => toggle({ furtherListsOff: !saved.furtherListsOff })}>
-          <span>Show on date pages and lists</span>
+          <span>Show on Date Pages and Lists</span>
           <span className="settings-value">{saved.furtherListsOff ? 'Off' : 'On'}</span>
         </button>
       </div>

@@ -22,7 +22,7 @@ Research is still cited by the code as a source, so it stays in `research/` for 
 |---|---|
 | `build-7/` | Build 7 notes and mockups |
 | `build-7-1/` | Build 7.1 notes, gap report, mockups, research prompts |
-| `build-7-2/` | **Current.** Build 7.2 notes (`build-notes-7-2.md`) and mockups. Start at the "Start Here" prompt at the top of the notes. |
+| `build-7-2/` | **Current.** Build 7.2 notes (`build-notes-7-2.md`), the gap report written as the build goes (`gap-report-7-2.md`), the Event Types research folder and mockups. Start at the "Start Here" prompt at the top of the notes. |
 
 Older build folders (`build-4/` to `build-6/`) keep their notes the same way.
 

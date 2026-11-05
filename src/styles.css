@@ -12985,3 +12985,41 @@ a.follow-lead::after {
 .day-row-line2 > .day-row-you + .event-tags {
   margin-left: 0;
 }
+
+/* ===== Crowd ceilings (build 7.2, Section I; Kylie, Nov 4: option C with the word "cap") =====
+   A room size shown where no count, sellout or estimate exists. Grey (5.4:1 on white), never the figure's ink, so a
+   ceiling never reads as a crowd; the mark keeps its gold at half strength. Number 13px/800, the word 11px/700, 3px apart
+   (the row's own gap). The event page says it in words, "Up to 13,800", in the same grey. */
+.crowd-figure.crowd-ceiling {
+  color: var(--ceiling);
+}
+
+.crowd-figure.crowd-ceiling .crowd-mark {
+  opacity: 0.55;
+}
+
+.crowd-cap-word {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.crowd-number.small.crowd-up-to {
+  color: var(--ceiling);
+}
+
+.crowd-up-to-note {
+  color: var(--ink2);
+}
+
+/* The About card's close button (About This Verdict, Further Out, the Why card) is 36px with no tap extension; the
+   other 36px round buttons already carry one. A symmetric 4px extension makes it 44 × 44 (build 7.2, Mosaic's note). */
+.about-read-close {
+  position: relative;
+}
+
+.about-read-close::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+}

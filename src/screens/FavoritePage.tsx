@@ -298,7 +298,7 @@ export function FavoritePage() {
                     </span>
                     <span className="fav-next-tags">
                       {/* The figure, then the ring after it, as on every list row (build 6, item 1, Q14 lean). */}
-                      <CrowdFigure event={nextHomeEvent} />
+                      <CrowdFigure event={nextHomeEvent} ceiling />
                       <FrictionMark event={nextHomeEvent} />
                     </span>
                   </span>
@@ -378,7 +378,7 @@ export function FavoritePage() {
                           {event.start ? ` · ${clockTime(event.start)}` : ''}
                         </span>
                         <span className="fav-next-tags">
-                          <CrowdFigure event={event} />
+                          <CrowdFigure event={event} ceiling />
                           <FrictionMark event={event} />
                         </span>
                       </span>

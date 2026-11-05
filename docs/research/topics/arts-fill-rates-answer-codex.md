@@ -2,6 +2,8 @@
 
 Status: saved Oct 26, 2026 (Kylie: "here is one answer"), in full as delivered. Folded in part the same day (Kylie: "apply the numbers we actually do know"; option B): the room- and production-specific figures it found (Broadway, the Met, the Christmas Spectacular, Québec by room size) are estimates in `src/data/expectedDrawBuild.ts` (`SPECIAL_ROOM_FILL`, `SPECIAL_RUNS`, `QUEBEC_FILL_BANDS`); its blank category × size table stands. The "Up to N" display for every other show still needs her approval and a mock.
 
+Status: closed, build 7.2 Section I (the I6 check confirmed this answers `docs/build-7-1/research-prompts/01-arts-theater-classical-fill-rates.md`; its "Up to N" fallback ships as the crowd ceiling, "14k cap" on rows and "Up to 14,000" on the event page), Nov 4, 2026
+
 **Research answer — Codex — 26 October 2026.** All cited sources were read on **2026-10-26, America/Los_Angeles**. This read date applies to every linked observation and source-directory entry below. Publication dates and covered periods are given separately. Research only; no code, eligibility rules or build changes.
 
 **Finding:** no general **category × requested room-size band** fill share is supported strongly enough by the free evidence inspected to recommend as a default across the United States, Canada and Mexico. There are useful published aggregate percentages and specific engagements with both sales and capacity. These are recorded below, rather than converted into unsupported band averages. “No published figure” below means **no usable published figure for that particular default**, not that nobody has ever published attendance in that category.

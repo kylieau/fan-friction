@@ -440,6 +440,17 @@ Shot: `docs/build-7-1/mockups/followups-oct27/upto-0-settings-now.png`. Mockup: 
 
 ### I5. Ceilings Follow the Renamed Switch (Locked)
 - **Locked (Kylie, Oct 30 form I5):** an event with only a ceiling shows or hides with the renamed "No Estimate" switch. It is never compared to the Min and Max range. Shot: none. Mockup: `docs/build-7-1/mockups/followups-oct27/upto-settings-mock.png`. Conflicts: none. product-decisions.md:291 stays (one switch, same behavior, new name).
+- **Built Nov 4, 2026 (evening).** Until then a ceiling-only event was compared by its room (`rangeNumber` fell through to the room size), so this is the group's one behavior change. Measured with Min 10,000 on three Los Angeles dates, switch on: 24 of 34, 14 of 22 and 32 of 43 rows show (were 4, 6 and 7); switch off: 4, 2 and 3. The saved key keeps its name (`showUnknown`); nothing migrates. Kylie sees the numbers in the gap report, question 1.
+
+### I6. The Check, and What Shipped (done Nov 4, 2026, evening)
+The full check is in `gap-report-7-2.md`, Group 0. In short: both Codex answers are the M35 research and answer their prompts (the NCAA answer never names which sports keep "Up to N", only that no sportwide call follows from its sample). On the Los Angeles catalog for the next 30 days, 239 of 511 listed events get a ceiling: 121 Ticketmaster shows and specials, 104 college games, 7 Reign games, a few one-offs. The arts research recommends exactly this display; the NCAA research supports a room size as a cap and never as an estimate. Tweaks, each with its reason:
+- **The I3 sentence is sport-specific and only where the formula ignores the room:** "Volleyball here draws far fewer than the room holds." shows for a small-draw sport at a college program in a 5,000+ room (9 of the 239: USC and UCLA women's volleyball). UCLA water polo at Spieker (800) gets "Up to 800" with no sentence, because there the room is the crowd's honest ceiling.
+- **Past events never show a ceiling, on any row** (R3c's reasoning, widened): a game that happened has a count or none; its room says nothing about it now. The event page keeps "Up to N" for a past event with no count, since its label line says what the number is.
+- **Rooms under 1,000 read the plain number** ("800 cap"); ".8k cap" would be odd for a pool.
+- **The grey is a theme token** (`ceiling`, #5F6B7D, 5.4:1 on white). It is 4.45:1 on the page's pale blue, so a ceiling must sit on a card; every row and the event page's crowd block do.
+- **Where rows carry it:** the date page lineup, the Explore List, the Map sheet (it shares the row, Kylie's Oct 13 rule), Home's three biggest, Further Out rows and a favorite's upcoming rows. Not a stub's facts line on the date page. A screen reader hears "up to 13,800", never "about".
+- **I4's labels-versus-buttons call:** switch rows are labels and took Title Case; "Copy my handle", "Export my events" and "Change past stubs…" are actions and stay sentence case (AGENTS.md's button rule; build 7.1 step 4 passed over them).
+- **Unchanged by design:** the verdict, Up Against, Local Competition and the map's totals never read a ceiling. The verdict card can still name a 5,000+ room as a draw ("Biggest draw: NHRA Finals, 40k"), by Kylie's Oct 7 rule; gap report question 2 asks whether that line should say "up to".
 
 ---
 
@@ -633,28 +644,28 @@ Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide i
 - Options: (1) Use #5F6B7D for every ceiling. (2) Find a lighter grey that just passes 4.5 to 1.
 - Lean: (1). It passes with margin and is what every frame was drawn and checked with.
 - Kylie said: I2, keep the grey and step darker if it fails 4.5 to 1.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), #5F6B7D for every ceiling, as the theme token `ceiling`**, because it is what every frame was drawn with and measures 5.40:1 on the white cards every ceiling sits on; the theme's `muted` is 3.65:1 and fails I2, and a grey that "just passes" would fail on the pale page ground (#5F6B7D itself is 4.45:1 there, so ceilings stay on cards).
 
 #### R3c. Ceilings On Past Activity Rows
 - Question: should past Activity rows ever show a ceiling?
 - Options: (1) No. (2) Yes, when there is no estimate.
 - Lean: (1). An attended game has a real crowd or none, and H6 keeps crowd figures off Activity rows.
 - Kylie said: H6, no crowd counts on rows.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), no**, because an attended game has a real crowd or none and H6 keeps crowd figures off Activity rows; the same reasoning now holds on every row, so a past event never shows a ceiling anywhere.
 
 #### R3d. Event Page "Up To": Sign Or Words
 - Question: should the event page "Up to 10,258" line use the row sign?
 - Options: (1) Stay as words ("Up to 10,258"). (2) Use the sign there too.
 - Lean: (1). The event page has room, and I3 locked the wording.
 - Kylie said: I3, "Up to 10,258" with "Room size · no estimate yet".
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 4): (1), words**, because the event page has room and I3 locked the wording; the number takes the same ceiling grey as the rows so the two read as one thing.
 
 #### R3e. A One-Time Key For D Or E (Only If R3a Is D Or E)
 - Question: if the ceiling is an icon (D or E), show a one-time key ("Hollow = room size")?
 - Options: (1) Yes, a one-time key. (2) No key.
 - Lean: (1). Hollow against solid at 12pt is too subtle to learn untold.
 - Kylie said: I1, she found the sign bulky and asked for other formats or ceiling symbols.
-- Builder decides: record the pick and the reason here (moot unless R3a is D or E).
+- **Decided (Nov 4): moot**, because R3a locked C (the word "cap"), which needs no key.
 
 Also for Section I: the I6 task stands. Confirm the M35 research, run I1 to I5 and these R3 picks through it, and record tweaks under Section I.
 

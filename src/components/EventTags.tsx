@@ -1,5 +1,6 @@
 import { FRICTION_LEVELS, frictionWord, showFriction, type Friction, type Occasion } from '../config/scoreLabels';
-import { isOpenAir, sizeTier, type CrowdEvent } from '../data';
+import { DEFAULT_METRO, METROS } from '../config/metros';
+import { ceilingShort, crowdCeiling, isOpenAir, sizeTier, todayIn, type CrowdEvent } from '../data';
 import { crowdShort } from '../map/crowdPoints';
 
 /**
@@ -153,10 +154,27 @@ export function CrowdMark() {
   );
 }
 
-/** "11k" with the crowd mark, the way the chips say it; nothing when there is no figure. */
-export function CrowdFigure({ event, className = '' }: { event: CrowdEvent; className?: string }) {
+/**
+ * "11k" with the crowd mark, the way the chips say it; nothing when there is no figure. With `ceiling`, an upcoming
+ * event with no figure but a room size shows "14k cap" in the ceiling grey (build 7.2, R3a: option C with the word
+ * "cap"; the lineup rows and a favorite's rows ask for it, a stub's facts never do). A past event with no count shows
+ * nothing: its crowd is known or lost, and a room size says nothing about it now.
+ */
+export function CrowdFigure({ event, className = '', ceiling = false }: { event: CrowdEvent; className?: string; ceiling?: boolean }) {
   const text = crowdShort(event, undefined, false);
-  if (text === 'No count yet') return null;
+  if (text === 'No count yet') {
+    const cap = ceiling ? crowdCeiling(event) : undefined;
+    if (!cap || event.date < todayIn(METROS[event.metroId] ?? DEFAULT_METRO)) return null;
+    return (
+      <span className={`crowd-figure crowd-ceiling ${className}`.trim()} aria-label={`Up to ${cap.toLocaleString('en-US')}, the room's size`}>
+        <CrowdMark />
+        <span aria-hidden>{ceilingShort(cap)}</span>
+        <span className="crowd-cap-word" aria-hidden>
+          cap
+        </span>
+      </span>
+    );
+  }
   return (
     <span className={`crowd-figure ${className}`.trim()}>
       <CrowdMark />

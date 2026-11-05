@@ -15,6 +15,9 @@ import {
   drawSize,
   atLeastMark,
   crowdFull,
+  FRICTION_ATTENDEES,
+  knownSize,
+  SMALL_DRAW_SPORTS,
   eventType,
   popupExplainer,
   setStubVisibility,
@@ -429,8 +432,16 @@ export function EventScreen() {
           <span className="crowd-number small">Sold Out</span>
         ) : me.capacity ? (
           <>
-            <span className="crowd-number small">{fmt(me.capacity)}</span>
-            <span className="crowd-kind">Seats · no estimate yet</span>
+            {/* A ceiling, never a count (build 7.2, I3 and R3d: words here, "14k cap" on rows): the room's size,
+                labeled as such. A small-draw college sport in a 5,000+ room (the formula already ignores the room,
+                read.ts) says so in one plain sentence, so "Up to 13,800" never reads as a volleyball crowd. */}
+            <span className="crowd-number small crowd-up-to">Up to {fmt(me.capacity)}</span>
+            <span className="crowd-kind">Room size · no estimate yet</span>
+            {e.audience.domain === 'sports' && SMALL_DRAW_SPORTS.has(e.audience.sport) && me.capacity >= FRICTION_ATTENDEES && (knownSize(e) ?? 0) < me.capacity && (
+              <p className="crowd-note crowd-up-to-note">
+                {e.audience.sport.charAt(0).toUpperCase() + e.audience.sport.slice(1)} here draws far fewer than the room holds.
+              </p>
+            )}
           </>
         ) : (
           // No count, estimate or room size (build 5, item 3). The word "unsized" never shows.
@@ -446,7 +457,8 @@ export function EventScreen() {
       </section>
       {showHow && <HowEstimatesWork onClose={() => setShowHow(false)} event={e} seats={me.capacity} />}
 
-      <p className="source-note">Counts are labeled by kind: announced, reported, or estimated. Distances are straight-line.</p>
+      {/* Room size is the fourth kind (build 7.2, I3): a ceiling, shown only when no count or estimate exists. */}
+      <p className="source-note">Counts are labeled by kind: announced, reported, estimated, or room size. Distances are straight-line.</p>
 
       {a && (
         <section className="card up-against" aria-label="Up Against">

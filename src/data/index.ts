@@ -436,7 +436,9 @@ export {
   savedNightRead,
   type SavedNightRead,
   knownCrowdCount,
+  knownSize,
   listedCapacity,
+  SMALL_DRAW_SPORTS,
   refreshStamp,
   scheduleCoverage,
   sizeTier,
@@ -449,6 +451,8 @@ export { CONCERT_FILL, roundEstimate } from './expectedDrawBuild';
 export {
   crowdFigures,
   highlightedCrowd,
+  crowdCeiling,
+  ceilingShort,
   atLeastMark,
   entryAtLeastMark,
   crowdFull,

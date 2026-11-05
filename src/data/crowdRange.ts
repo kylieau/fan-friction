@@ -4,15 +4,21 @@
 
 import { highlightedCrowd } from './crowdFigures';
 import type { FeedItem } from './profiles';
-import { drawSize } from './read';
+import { listedCapacity } from './read';
 import type { CrowdEvent, CrowdRange, PersonalLog } from './types';
 
 /** The slider's ends: 0 is no minimum, 80,000 is no maximum ("80,000+"). */
 export const CROWD_RANGE_TOP = 80000;
 
-/** The number a row shows, the one the range compares (notes: highlighted crowd, else drawSize). Undefined is unknown size. */
+/**
+ * The number the range compares: the highlighted crowd, else the room for a sold-out event with no count (a full room
+ * is a known size). An event with only a ceiling ("14k cap") has no number: it follows the No Estimate switch and is
+ * never compared to Min and Max (build 7.2, I5; until then it compared as its room, like drawSize).
+ */
 export function rangeNumber(event: CrowdEvent): number | undefined {
-  return highlightedCrowd(event)?.count ?? drawSize(event);
+  const count = highlightedCrowd(event)?.count;
+  if (count != null) return count;
+  return event.crowd.some((f) => f.soldOut) ? listedCapacity(event) : undefined;
 }
 
 /**
@@ -23,7 +29,7 @@ export function rangeOn(range: CrowdRange, surface: 'map' | 'lists'): CrowdRange
   return (surface === 'map' ? range.mapOff : range.listsOff) ? {} : range;
 }
 
-/** True when the range filters nothing: no min, no max, unknown sizes shown. New users start here. */
+/** True when the range filters nothing: no min, no max, events with no estimate shown. New users start here. */
 export function rangeIsOpen(range: CrowdRange): boolean {
   return !range.min && !range.max && range.showUnknown !== false;
 }

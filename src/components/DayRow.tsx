@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { drawSize, eventType, VENUES, venueNameOn, type CrowdEvent, type SkyKind } from '../data';
+import { crowdCeiling, drawSize, eventType, highlightedCrowd, VENUES, venueNameOn, type CrowdEvent, type SkyKind } from '../data';
 import { degreesFor } from '../config/metros';
 import { WeatherIcon } from './WeatherIcon';
 import { TypeIcon } from './TypeIcon';
@@ -64,7 +64,7 @@ export function RowBody({
             {name}
           </span>
           <span className="day-row-right">
-            <CrowdFigure event={e} />
+            <CrowdFigure event={e} ceiling />
             <FrictionMark event={e} />
           </span>
         </span>
@@ -109,8 +109,11 @@ export function DayRow({ event: e, day, line, you }: { event: CrowdEvent; day: r
  * Swamped: other events split this crowd". The friction ring has no tap target, so its words ride here (build 6, item 1).
  */
 export function spokenRow(e: CrowdEvent, venue: string | null, you?: ActivityKind | null): string {
-  const size = drawSize(e);
-  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size ? `about ${size.toLocaleString('en-US')}` : null, frictionSentence(e), you ? ACTIVITY_WORDS[you] : null].filter(Boolean).join(', ');
+  // The figure the row shows: a count or estimate as "about N"; a ceiling as "up to N" (build 7.2, I1), never "about".
+  const count = highlightedCrowd(e)?.count ?? (e.crowd.some((f) => f.soldOut) ? drawSize(e) : undefined);
+  const cap = count == null ? crowdCeiling(e) : undefined;
+  const size = count != null ? `about ${count.toLocaleString('en-US')}` : cap ? `up to ${cap.toLocaleString('en-US')}` : null;
+  return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size, frictionSentence(e), you ? ACTIVITY_WORDS[you] : null].filter(Boolean).join(', ');
 }
 
 /** Same venue name the event page uses. Every On-the-map row shows it. */

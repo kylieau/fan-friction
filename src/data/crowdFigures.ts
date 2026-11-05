@@ -72,6 +72,24 @@ export function crowdFull(shown: CrowdFigureShown, fmt: (n: number) => string): 
   return fmt(shown.count);
 }
 
+/**
+ * The crowd ceiling (build 7.2, Section I): the room's size on file for an event with no count, no sellout and no
+ * estimate. It is a cap, never a crowd: rows say "14k cap", the event page "Up to 14,000", and nothing else reads it
+ * (the verdict, Up Against, Local Competition and the map's totals never count a ceiling; the crowd size range never
+ * compares one, I5). Undefined when any figure exists or the room has no size on file.
+ */
+export function crowdCeiling(event: CrowdEvent): number | undefined {
+  if (highlightedCrowd(event) || event.crowd.some((f) => f.soldOut)) return undefined;
+  return listedCapacity(event);
+}
+
+/** "14k cap"'s number: thousands like every row figure, the plain number under 1,000 (".8k" would be odd for a pool). */
+export function ceilingShort(count: number): string {
+  if (count < 1000) return count.toLocaleString('en-US');
+  if (count >= 9950) return `${Math.round(count / 1000)}k`;
+  return `${(count / 1000).toFixed(1)}k`;
+}
+
 /** The crowd count shown on the map, chip card and sheet total (build 4 §0: Final > Announced > Estimated). */
 export function displayedCrowdCount(event: CrowdEvent): number | undefined {
   const count = highlightedCrowd(event)?.count;

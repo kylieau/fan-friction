@@ -1,0 +1,48 @@
+# Build 7.2 · gap report
+
+Written as the build goes, newest group at the top of the log. The spec is [`build-notes-7-2.md`](build-notes-7-2.md); the mockups are in [`mockups/`](mockups/INDEX.md). Built by Claude Code straight on `main` (Fable 5.1, with the advisor before each group and before calling it done, and a Codex read-only review after each group), one commit per item group, `npm run build` before each. Headless phone checks at 390 × 844; screenshots in the git-ignored `.playwright-mcp/`.
+
+## Progress log
+| Group | State | Commit | Notes |
+|---|---|---|---|
+| 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done | _(this commit)_ | measured on three Los Angeles dates and one event page; Codex review follows |
+
+## Group 0: Section I, crowd ceilings
+
+### The I6 check (Builder Task b)
+**Both Codex answers are the M35 research, and each answers its prompt.**
+- `docs/research/topics/arts-fill-rates-answer-codex.md` (saved Oct 26) answers `docs/build-7-1/research-prompts/01-arts-theater-classical-fill-rates.md`: it gives the category × room-size table the prompt asked for (every general cell "No published figure"), the configuration and per-show-figure findings, and the recommendation the prompt asked to end with: show "Up to N" wherever no count, sellout or published figure exists. The room- and production-specific figures it did find were folded on Oct 26 (Broadway, the Met, the Christmas Spectacular, Québec).
+- `docs/research/topics/ncaa-attendance-sources-answer-codex.md` (saved Oct 27) answers `docs/build-7-1/research-prompts/02-ncaa-per-school-attendance-sources.md`: sources by sport and platform, worked examples per completed result, terms of use, and a sport-by-sport table. One gap against the prompt: it never names which sports "should keep showing Up to N"; it says no sportwide call follows from its bounded sample. That is a weaker answer than asked for, not a wrong one, and it leaves the ceiling as the only honest figure until the box-score reader exists.
+- Both answers now carry a `Status: closed` line pointing here.
+
+**I1 to I5 run through the research, with what the live catalog shows.** Counted on the Los Angeles catalog, Nov 4 to Dec 3, 2026 (511 listed events):
+- **239 events (47%) get a ceiling**: 121 Ticketmaster shows and specials (113 in rooms under 5,000, 8 at 5,000+: the NHRA Finals at Pomona, Wild 'N Out at Intuit Dome), 104 college games from the school feeds and the UCLA copy, 7 Ontario Reign games, and a few one-offs (a boxing card at Dignity Health, MASL at Toyota Arena, USC vs Baylor at Intuit Dome). None was sold out without a count; none lacked a room size.
+- **Shows and specials (I1, I3):** the arts research's own recommendation is exactly this display. Honest.
+- **College games with no draw (I1, I3):** the NCAA research found announced crowds for these programs sit far under their rooms (USC women's basketball 2,361 to 10,258 at Galen, Harvard men's basketball 784 to 1,636) with no national rate to borrow. A room size labeled as a cap is the honest figure; an estimate is not. Honest, as a cap.
+- **Small-draw college sports in big rooms (I3's sentence):** 9 of the 239 (USC and UCLA women's volleyball at Galen and Pauley). The research saw USC volleyball reach 9,072 of Galen's 10,258 once, so the room is a true ceiling even there; the row's "cap" word and the event page's sentence keep it from reading as a crowd. **Tweak:** the sentence shows only where the formula itself ignores the room: a small-draw sport at a college program in a 5,000+ room. UCLA water polo at Spieker (800 seats) gets "Up to 800" with no sentence.
+- **I2, the grey:** the Oct 27 mock's #7B8798 (the theme's `muted`) is 3.65:1 on white and fails. #5F6B7D is 5.40:1 on white, where every row and the event page's crowd block sit (measured: every ceiling row's nearest painted background is white). It is 4.45:1 on the page's pale blue, so a ceiling must never sit straight on the page ground; none does today. Added as the theme token `ceiling`.
+- **I4, Title Case:** the five switch rows on Crowd Size are labels and read "Apply on the Map", "Apply on Date Pages and Lists", "Show Events With No Estimate", "Show on the Map", "Show on Date Pages and Lists" ("with" is not on AGENTS.md's joining-word list). "Copy my handle", "Export my events" and "Change past stubs…" are actions (a verb, an ellipsis), which AGENTS.md keeps in sentence case; build 7.1's step 4 already passed over them. Left as they are; Kylie can overrule.
+- **I5, the switch rule, is the one behavior change.** Until now a ceiling-only event was compared to Min and Max by its room (`rangeNumber` fell through to the room size). Now it has no number and follows the renamed switch only. Measured with Min 10,000 on three dates, switch on (the default): Nov 7 shows 24 of 34 rows (was 4), Nov 12 shows 14 of 22 (was 6), Nov 14 shows 32 of 43 (was 7). With the switch off: 4, 2 and 3 (the NHRA Finals and Wild 'N Out, which passed the minimum by their rooms, now hide with the rest). The saved key keeps its old name, so nothing migrates. **See the question below.**
+- **The verdict, Up Against, Local Competition and the map's totals never read a ceiling** (unchanged: they use the formula's own size, which still counts a 5,000+ room at its room, Kylie's Oct 7 rule). `scripts/crowd-range-check.mjs` passes on Nov 7, 12 and 14: verdicts identical with and without a range.
+
+### What shipped
+- **Rows:** an upcoming event with no count, sellout or estimate but a room on file shows "14k cap" in the ceiling grey at the right edge, the crowd mark at half strength before it (option C with "cap", R3a). Measured on the Nov 12 date page: number 13px/800, the word 11px/700, 3px apart, 61pt wide for "14k cap" (the mock's 61); "Cal State Fullerton" titles stay on one line unless the title itself is long. Rooms under 1,000 read the plain number ("800 cap"); "0.8k" would be odd for a pool. The rows that carry it: the date page lineup, the Explore List, the Map sheet (it shares the row), Home's three biggest, Further Out rows and a favorite's upcoming rows. Not a stub's facts line on the date page (that is your event, not a lineup row). A screen reader hears "up to 13,800", never "about".
+- **Past events never show a ceiling** (R3c, and the same reasoning on every row): a game that happened has a count or none, and its room says nothing about it now.
+- **The event page:** "Up to 13,800" in the ceiling grey over "Room size · no estimate yet"; a small-draw college sport in a 5,000+ room adds "Volleyball here draws far fewer than the room holds."; the footnote reads "Counts are labeled by kind: announced, reported, estimated, or room size." Words, not the row sign (R3d).
+- **Settings › Crowd Size:** the heading "No Estimate" and the row "Show Events With No Estimate" (was "Unknown Size" / "Show events with unknown size"); the four other switch rows in Title Case (I4).
+- **The About card's close button** (About This Verdict, Further Out, the Why card) is 36pt with no tap extension, the only round close button without one; it now reaches 44 × 44 through an invisible extension. Measured: hits at 3px outside every edge, none at 5px. The sheets' round close buttons (Log sheet, season sheets) were already 36 × 50 with their extension, inside G4's rule.
+
+### Builder Decides, recorded in the notes
+R3b: #5F6B7D for every ceiling. R3c: no ceilings on past Activity rows (or any past row). R3d: words on the event page. R3e: moot (R3a is C).
+
+### Not exactly as decided
+- I3's mock had the label line "Seats · no estimate yet" under "Up to 10,258"; the notes lock "Room size · no estimate yet", which is what shipped.
+- The I3 sentence is sport-specific ("Volleyball here…", "Water polo here…"), and only in rooms of 5,000+.
+
+### Questions for Kylie
+1. **I5's measured effect.** With a 10,000 minimum set, a date page now shows every college game and small show again (Nov 7: 24 rows instead of 4) until the "No Estimate" switch is turned off. That is what I5 locks, and the switch sits right under the range, named for this. Options: **A, keep I5 as locked (lean: the switch is the honest control, and a room size is not a crowd)**; B, go back to comparing a ceiling-only event by its room against Min and Max (the old behavior, rename only). If B, the 5,000+ specials would also pass a minimum by their rooms again.
+2. **The verdict card still names a room as a draw.** Nov 12's verdict reads "Biggest draw: In-N-Out Burger NHRA Finals, 40k" while its row reads "40k cap", because the formula counts a 5,000+ special at its room (Kylie, Oct 7). Options: A, leave it (the verdict's number is the size that counted); **B, let the verdict's "Biggest draw" line say "up to 40k" when the size is a room (lean: one word, same honesty as the rows)**; C, something else. Not built; it changes a verdict line.
+3. **The team page's dash.** Mosaic's note says the team page uses an em dash as the "no verdict" glyph. That dash is the verdict tile's own empty state everywhere ("— Quiet", "— No data"; Kylie, Oct 9), so changing it is a decision, not a fix. Options: **A, leave the dash (lean)**; B, use the Following row's grey "No verdict" tag (two centred lines in the 40pt tile) on the team page too; C, change the empty tile's glyph everywhere (say to what).
+
+### Checks run
+`npm run build` passes. `node scripts/crowd-range-check.mjs la 2026-11-07 2026-11-12 2026-11-14` passes. Contrast computed for #5F6B7D, #7B8798 and #4A5568 on white, the pale blue and the track grey. Headless shots: `.playwright-mcp/7-2-i-date-nov12.png`, `7-2-i-event-ucla-vb.png`, `7-2-i-settings-crowd.png`.
