@@ -280,7 +280,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
             {kind === 'attending' && plan && event.kind !== 'live-broadcast' && <SeatsRow seats={plan.seats} onChange={(next) => setPlanSeats(plan.id, next)} />}
             {(kind === 'attended' || kind === 'watched') && entry && <CostRow cost={entry.cost} watched={kind === 'watched'} onChange={(next) => setEntryCost(entry.id, next)} />}
             {(kind === 'attending' || kind === 'watching') && plan && <CostRow cost={plan.cost} watched={kind === 'watching'} onChange={(next) => setPlanCost(plan.id, next)} />}
-            {/* Personal Experience (Kylie, Nov 5): With and Review under one label, on a stub only. */}
+            {/* Your Notes (Kylie, Nov 5): With and Review under one label, on a stub only. */}
             {(kind === 'attended' || kind === 'watched') && entry && <ExperienceRows entry={entry} />}
         <button type="button" className="gold-button stub-done" onClick={onClose}>
               Done

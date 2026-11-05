@@ -13667,7 +13667,7 @@ a.follow-lead::after {
   color: var(--dodger);
 }
 
-/* Personal Experience in the Stub it sheet (Kylie, Nov 5): With and Review under one label, in the Seat and Cost row
+/* Your Notes in the Stub it sheet (Kylie, Nov 5): With and Review under one label, in the Seat and Cost row
    shape; the review line wraps. */
 .stub-experience {
   display: flex;
@@ -13717,4 +13717,33 @@ a.follow-lead::after {
   background: #fff7cc;
   font-size: 14px;
   line-height: 1.45;
+}
+
+/* The level tag on a Your Stubs row (Kylie, Nov 5, mock C): the Away tag's shape at the venue line's size, grey, only
+   when the stub's level is not her default. */
+.stub-venue {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+
+.level-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--card);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--ink2);
+  white-space: nowrap;
+}
+
+.level-tag svg {
+  width: 12px;
+  height: 12px;
 }

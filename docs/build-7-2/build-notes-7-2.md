@@ -596,6 +596,7 @@ Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide i
 - Lean: (1). It says who can see the stub, not who came.
 - Kylie said: H11a, the "friends" symbol next to her row "make it look like friends are also attending". Fix it "aesthetically / aligned with "your stub"". H11h keeps the pill visible.
 - **Decided (Nov 5): (1), "Visible to Friends"** with an eye, "Visible to Anyone" with an eye, "Private" with a lock, because it says who can see the stub, not who came; the menu behind it keeps Anyone, Friends, and Private.
+- **Kylie, Nov 5 (two rounds):** first "the icon, one word that the dropdown has" (built as the eye and one word), then her lean to the levels' own icons if the "attended with friends" read can be blocked another way, her worry being the event rows, not the ticket. Mocked (`mockups/activity-card/r3-sheet/` frames 06 to 09) and built as C: on Your Stubs rows the level is a grey outlined tag on the venue line, shown only when it is not her default (her "excessive / overstimulating" worry); the status line drops it; the ticket's pill uses the levels' own icons with the word.
 
 #### R2e. Status Word Color In Friends' Rows
 - Question: one rule for the status word color on the Activity tab and on the card?

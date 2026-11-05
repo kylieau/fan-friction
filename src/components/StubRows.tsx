@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { TypeIcon } from './TypeIcon';
 import { entryTypeKey } from '../map/typeIcons';
 import { DEFAULT_METRO, METROS } from '../config/metros';
-import { getAccount, isFurtherOutRoom, isOutsideGamePlan, stubLevel, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
+import { getAccount, isFurtherOutRoom, isOutsideGamePlan, stubDefault, stubLevel, watchPlaceOf, watchShareOf, type Entry, type Plan } from '../data';
 import { clearOpenedFromMap } from '../lib/mapReturn';
 import { shortLocalDate } from '../lib/dates';
 import { datePath, entryPath, eventPath, tagPath } from '../lib/view';
 import { StatusLine } from './ActivityLines';
+import { LevelTag } from './LevelPill';
 import { ReadTile } from './ReadTile';
 import { TitleText } from './TitleText';
 
@@ -59,8 +60,15 @@ export function StubRow({ entry, rating }: { entry: Entry; rating: number | null
           <TypeIcon typeKey={entryTypeKey(entry)} size={16} className="stub-type-icon" />
           <TitleText text={entry.title} />
         </span>
-        {entry.venue && <span className="stub-venue">{[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}</span>}
-        <StatusLine kind={entry.watched ? 'watched' : 'attended'} share={share} place={place} tags={entry.userTags} onTag={(tag) => navigate(tagPath(tag))} />
+        {/* The level rides on the venue line as a grey tag, only when it is not her default (Kylie, Nov 5, mock C); the
+            status line no longer carries it, so "Attended" never reads as "with Friends". */}
+        {(entry.venue || (share && share !== stubDefault())) && (
+          <span className="stub-venue">
+            {[entry.venue, entry.neutralSite ? 'Neutral site' : entry.away ? 'Away' : null].filter(Boolean).join(' · ')}
+            <LevelTag level={share} defaultLevel={stubDefault()} />
+          </span>
+        )}
+        <StatusLine kind={entry.watched ? 'watched' : 'attended'} place={place} tags={entry.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
       {/* An entry logged "elsewhere" has no city, so no date page: its tile stays plain, like a rough date (found Oct 19, 2026: it opened the default city's page).
           A further-out stub's tile is plain too (Kylie, Oct 20, 2026). A Watched stub has no tile at all (build 7.1, M23:
@@ -104,8 +112,13 @@ export function PlanRow({ plan, rating, typeKey }: { plan: Plan; rating: number 
           <TypeIcon typeKey={typeKey ?? (plan.manual ? entryTypeKey({ kind: plan.manual.kind, sport: plan.manual.sport ?? '', title: plan.title, venue: plan.venue }) : null)} size={16} className="stub-type-icon" />
           <TitleText text={plan.title} />
         </span>
-        {(plan.venue || city) && <span className="stub-venue">{[plan.venue, city].filter(Boolean).join(' · ')}</span>}
-        <StatusLine kind={plan.watch ? 'watching' : 'attending'} share={share} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />
+        {(plan.venue || city || (share && share !== stubDefault())) && (
+          <span className="stub-venue">
+            {[plan.venue, city].filter(Boolean).join(' · ')}
+            <LevelTag level={share} defaultLevel={stubDefault()} />
+          </span>
+        )}
+        <StatusLine kind={plan.watch ? 'watching' : 'attending'} place={place} tags={plan.userTags} onTag={(tag) => navigate(tagPath(tag))} />
       </span>
       {/* An away game outside the covered cities has no read (its plan is filed under the team's city); nor has a
           further-out event (Kylie, Oct 20, 2026). */}

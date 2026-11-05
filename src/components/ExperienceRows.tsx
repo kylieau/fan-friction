@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { updateEntry, type Entry } from '../data';
 
 /**
- * Personal Experience (build 7.2, R2a follow-up; Kylie, Nov 5: "combine the Review and With into a single Personal
- * Experience umbrella"): the Stub it sheet's own rows for who you went with and your review, under one label, in the
+ * Your Notes (build 7.2, R2a follow-up; Kylie, Nov 5: "combine the Review and With into a single ... umbrella", the name
+ * left to the builder): the Stub it sheet's own rows for who you went with and your review, under one label, in the
  * Seat and Cost row shape, so "Edit stub" on the ticket is the one place to edit everything. Only on a stub
  * (attended or watched); a plan has neither yet. Both fields stay yours alone: With is never shared, and the review
  * follows the stub's level as before.
@@ -20,8 +20,8 @@ export function ExperienceRows({ entry }: { entry: Entry }) {
     setEditing(null);
   };
   return (
-    <div className="stub-experience" role="group" aria-label="Personal Experience">
-      <span className="stub-experience-label">Personal Experience</span>
+    <div className="stub-experience" role="group" aria-label="Your Notes">
+      <span className="stub-experience-label">Your Notes</span>
       <div className="stub-seats-row" role="group" aria-label="With">
         <span className="stub-tags-label">With</span>
         {editing === 'with' ? (
