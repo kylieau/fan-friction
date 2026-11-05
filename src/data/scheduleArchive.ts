@@ -5,7 +5,7 @@
 import { METROS } from '../config/metros';
 import type { CrowdEvent, LocalDate } from './types';
 import { archivedReads, type ArchivedEventRead } from './forecastCapture';
-import { withExpectedDraws } from './expectedDraw';
+import { loadDrawTables, withExpectedDraws } from './expectedDraw';
 import { loadEspnSchedule } from './sources/espnSource';
 import { loadHockeytechSchedule } from './sources/hockeytechSource';
 import { dropGamesCoveredByFeeds } from './sources/types';
@@ -107,6 +107,7 @@ export interface ArchiveExtras {
 
 /** Listings for one city's window: live home games, plus seeded events already in the repo. */
 export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID, now = new Date(), extras: ArchiveExtras = {}): Promise<ScheduleSnapshot> {
+  await loadDrawTables();
   const metro = METROS[metroId];
   if (!metro) throw new Error(`Unknown metro ${metroId}. Nothing was saved.`);
   const capturedOn = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });

@@ -44,7 +44,8 @@ try {
   const { TEAMS } = await server.ssrLoadModule('/src/data/teams.ts');
   const { eventCrowdFight } = await server.ssrLoadModule('/src/data/formula/crowdFight.ts');
   const { TIER_WEIGHT } = await server.ssrLoadModule('/src/data/formula/overlap.ts');
-  const { withExpectedDraws } = await server.ssrLoadModule('/src/data/expectedDraw.ts');
+  const { loadDrawTables, withExpectedDraws } = await server.ssrLoadModule('/src/data/expectedDraw.ts');
+  await loadDrawTables();
 
   const dir = path.join(root, 'data', 'attendance', 'la');
   const games = [];

@@ -55,12 +55,20 @@ function offlineShell(): Plugin[] {
     manifest: false, // appIdentity() writes the manifest from the one app config
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2}'],
-      // 4 MiB since Nov 4, 2026: the chunk carrying the expected-draw table (about 3.15 MB, growing slowly with each
-      // nightly) crossed 3 MiB by 342 bytes and every deploy failed. Moving that table out of the bundle is in BACKLOG.
-      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+      // The expected-draw table (src/data/expectedDrawIndex.ts, rewritten nightly, about 2 MB) is its own chunk, loaded
+      // on first use and kept by the runtime rule below, never precached: on Nov 4, 2026 it crossed the 3 MiB precache
+      // limit and every deploy failed. The limit stays at 3 MiB as the guard for the app shell.
+      globIgnores: ['**/expectedDrawIndex-*.js'],
+      maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
       navigateFallback: '/index.html',
       navigateFallbackDenylist: [/^\/api\//],
       runtimeCaching: [
+        {
+          // The draw table's chunk: its name carries a hash, so a copy is good until the next deploy names a new one.
+          urlPattern: ({ url }) => url.origin === self.location.origin && /\/assets\/expectedDrawIndex-[^/]+\.js$/.test(url.pathname),
+          handler: 'CacheFirst',
+          options: { cacheName: 'draw-table', expiration: { maxEntries: 2, maxAgeSeconds: 30 * 86400 } },
+        },
         {
           // The shared catalog only: the network when it answers, the last copy when it doesn't.
           // Account tables (entries, notes, plans, settings, profiles, follows) are never cached (C116).

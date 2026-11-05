@@ -3,12 +3,33 @@
 // expectedDrawBuild.ts. The building stays the ceiling (drawSize). Always an
 // estimate, and said so.
 
-import { EXPECTED_DRAWS, OPPONENT_RATIOS, POSTSEASON_DRAWS, SEASON_LEVELS } from './expectedDrawIndex';
 import { TEAMS } from './teams';
-import { CONCERT_FILL, QUEBEC_FILL_BANDS, QUEBEC_METROS, QUEBEC_ROOMS_ELSEWHERE, SPECIAL_ROOM_FILL, SPECIAL_RUNS, VENUE_SHOW_AVERAGE, isHoliday, opponentKeyForVisitor, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow } from './expectedDrawBuild';
+import { CONCERT_FILL, QUEBEC_FILL_BANDS, QUEBEC_METROS, QUEBEC_ROOMS_ELSEWHERE, SPECIAL_ROOM_FILL, SPECIAL_RUNS, VENUE_SHOW_AVERAGE, isHoliday, opponentKeyForVisitor, pickDraw, postseasonPeople, roundBand, type ExpectedDrawRow, type OpponentRatioRow, type PostseasonRow, type SeasonLevelRow } from './expectedDrawBuild';
 import { VENUES, capacityOn } from './venues';
 import { cachedExpectedDraws } from './catalogCache';
 import type { CrowdEvent } from './types';
+
+/**
+ * The built-in tables (expectedDrawIndex.ts, rewritten nightly, about 2 MB) load on their own the first time a read
+ * needs them, as a chunk of their own outside the offline precache (Kylie, Nov 4, 2026: the table had grown past the
+ * cache's size limit and failed every deploy). Until loaded, every table is empty and reads fall back as if no row
+ * matched; getCityDate and getEventsBetween await `loadDrawTables()` first, so the app never reads them empty.
+ */
+let TABLES: { EXPECTED_DRAWS: readonly ExpectedDrawRow[]; OPPONENT_RATIOS: readonly OpponentRatioRow[]; POSTSEASON_DRAWS: readonly PostseasonRow[]; SEASON_LEVELS: readonly SeasonLevelRow[] } = {
+  EXPECTED_DRAWS: [],
+  OPPONENT_RATIOS: [],
+  POSTSEASON_DRAWS: [],
+  SEASON_LEVELS: [],
+};
+let loading: Promise<void> | undefined;
+
+/** Loads the built-in draw tables once. Safe to await any number of times. */
+export function loadDrawTables(): Promise<void> {
+  loading ??= import('./expectedDrawIndex').then((m) => {
+    TABLES = { EXPECTED_DRAWS: m.EXPECTED_DRAWS, OPPONENT_RATIOS: m.OPPONENT_RATIOS, POSTSEASON_DRAWS: m.POSTSEASON_DRAWS, SEASON_LEVELS: m.SEASON_LEVELS };
+  });
+  return loading;
+}
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const DAY_WORD: Record<string, string> = { weekday: 'weeknight', friday: 'Friday', saturday: 'Saturday', sunday: 'Sunday' };
@@ -16,7 +37,7 @@ const DAY_WORD: Record<string, string> = { weekday: 'weeknight', friday: 'Friday
 /** The shared catalog's rows when they are the current shape (with a building), else the ones built in. */
 function rowsFor(metroId: string): readonly ExpectedDrawRow[] {
   const cached = cachedExpectedDraws(metroId)?.filter((row) => typeof row.venueId === 'string' && typeof row.low === 'number');
-  return cached && cached.length > 0 ? cached : EXPECTED_DRAWS;
+  return cached && cached.length > 0 ? cached : TABLES.EXPECTED_DRAWS;
 }
 
 function describe(row: ExpectedDrawRow, date: string): string {
@@ -38,10 +59,10 @@ export function calibratedDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   // This season's level and the opponent's past draw here, in every league (Kylie, Oct 7).
   // The note names neither: how estimates are made is explained once, behind the (i) on
   // the event page, not per event (Kylie, Oct 7).
-  const level = event.preseason ? undefined : SEASON_LEVELS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home);
+  const level = event.preseason ? undefined : TABLES.SEASON_LEVELS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home);
   const away = event.teams.away;
   const oppKey = away ? opponentKeyForVisitor(away, event.teams.awayOpponent) : undefined;
-  const opp = event.preseason || !away ? undefined : OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === oppKey);
+  const opp = event.preseason || !away ? undefined : TABLES.OPPONENT_RATIOS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.opponent === oppKey);
   const k = (level?.level ?? 1) * (opp?.ratio ?? 1);
   return {
     count: Math.round(row.count * k),
@@ -70,7 +91,7 @@ export function postseasonDraw(event: CrowdEvent): CrowdEvent['expectedDraw'] {
   const venue = VENUES[venueId];
   const cap = venue ? capacityOn(venue, event.date, event.audience.sport) ?? capacityOn(venue, event.date) : undefined;
   if (!cap) return undefined;
-  const row = POSTSEASON_DRAWS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.venueId === venueId && r.band === band);
+  const row = TABLES.POSTSEASON_DRAWS.find((r) => r.metroId === event.metroId && r.teamId === event.teams?.home && r.venueId === venueId && r.band === band);
   // No comparables (the WNBA, NFL, NWSL today): the building itself, said so (Kylie, Oct 7: show the
   // building rather than "No count yet"). The friction read already used it.
   if (!row) return { count: cap, low: cap, high: cap, planning: true, basis: 'building', note: 'No past playoff crowds on file for this round; the building\'s capacity for this sport. An estimate.' };

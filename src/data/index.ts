@@ -15,7 +15,7 @@ import type { CalendarDay, CityDate, CrowdEvent, DateRating, Entry, LocalDate, D
 import { applyFormula } from './formulaRead';
 import { rateDate } from './formula';
 import { withResults } from './results';
-import { withExpectedDraws } from './expectedDraw';
+import { loadDrawTables, withExpectedDraws } from './expectedDraw';
 import './homeSync';
 import { primeDate } from './catalogCache';
 import { checkedFor, entryMetroId, nightKey, rememberNearby, sizeTier } from './read';
@@ -54,6 +54,7 @@ function preferSeed(events: CrowdEvent[]): CrowdEvent[] {
  * ratings in the seed are comparison data and never shown.
  */
 export async function getCityDate(metroId: string, date: LocalDate): Promise<CityDate> {
+  await loadDrawTables();
   // Weather, results and snapshots for the window around this date come from the shared catalog.
   const [answers] = await Promise.all([Promise.allSettled(EVENT_SOURCES.map((s) => s.eventsOn(metroId, date))), primeDate(metroId, date)]);
   const lists = answers.map((a) => (a.status === 'fulfilled' ? a.value : []));
@@ -114,6 +115,7 @@ export async function getUpcoming(metroId: string, afterDate: LocalDate, limit =
  * the city's further-out events (Kylie, Oct 20, 2026: a favorite's always show, on its page and Following).
  */
 export async function getEventsBetween(metroId: string, afterDate: LocalDate, throughDate: LocalDate, opts: { withFurtherOut?: boolean } = {}): Promise<CrowdEvent[]> {
+  await loadDrawTables();
   const lists = await Promise.all(
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );

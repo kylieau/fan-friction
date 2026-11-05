@@ -6,6 +6,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Group | State | Commit | Notes |
 |---|---|---|---|
 | 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done, pushed | `fb8d1771` | measured on three Los Angeles dates and one event page |
+| Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
 
