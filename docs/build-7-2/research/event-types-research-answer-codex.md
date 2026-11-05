@@ -1,6 +1,6 @@
 # Event Types Taxonomy: Research Answer (Codex)
 
-Status: saved Nov 4, 2026 (late evening), in full as delivered. The answer to `event-types-research-prompt.md`, run read-only by Codex from Claude Code (Kylie, Nov 4: "oh then go ahead"); scratch tables and scripts stayed outside the repo (the session's scratchpad, `event-types-research/`), and nothing in the working tree changed. Not folded: Kylie locks the taxonomy from its final table and its questions (section 8). Kylie's own run of the same prompt on ChatGPT, when pasted, goes beside this file as `event-types-research-answer-chatgpt.md`.
+Status: saved Nov 4, 2026 (late evening), in full as delivered. The answer to `event-types-research-prompt.md`, run read-only by Codex from Claude Code (Kylie, Nov 4: "oh then go ahead"); scratch tables and scripts stayed outside the repo (the session's scratchpad, `event-types-research/`), and nothing in the working tree changed. Status: closed, build 7.2 notes §1 (Kylie, Nov 4, late evening: "agree with your leans on all": the nine types with music festivals under Concerts & Music, the two renames, Esports added, and the six answers as the leans), Nov 4, 2026. Kylie's own run of the same prompt on ChatGPT, when pasted, goes beside this file as `event-types-research-answer-chatgpt.md`.
 
 ---
 

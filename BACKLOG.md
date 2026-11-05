@@ -108,7 +108,7 @@ Kylie locked the Oct 30 review answers and the Nov 4 mock picks. Start at the no
 - ~~Run Builder Task (b), the I6 ceilings research check, then ship Section I with "cap"~~ **done Nov 4 (evening)**: the report is `docs/build-7-2/gap-report-7-2.md`. Builder Task (a), the weather-data plan, is still to write.
 - Build the Nov 4 locked mock picks (R1a, R2a, R2b, R3a, R4, R5a final r3, Stub From Faves, Watching Season) and the already-locked Oct 30 sections that are not gated.
 - Record each Builder Decides pick in the notes.
-- Event Types setting stays gated on §1 taxonomy research.
+- ~~Event Types setting stays gated on §1 taxonomy research~~ gate lifted Nov 4 (late evening): taxonomy locked in the notes §1; Section C builds in its turn.
 - Known small 7.1 fixes Mosaic spotted: ~~36pt sheet close button~~ (done Nov 4: the About card's close button, the one with no tap extension, now reaches 44 × 44; the sheets' round close buttons already had one); the team page's em dash as the "no verdict" glyph is Kylie's Oct 9 tile convention ("— Quiet", "— No data"), so it is a question to her, not a fix (gap report 7.2).
 - Men's water polo stays (Kylie, Nov 4: "keep UCLA mens water polo"); Spieker's 800 is under the pre-list line, so the rows come from the one-time copy only.
 
