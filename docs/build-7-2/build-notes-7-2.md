@@ -4,7 +4,7 @@
 
 You are Claude Fable building Fan/Friction build 7.2 on `main`. Read this whole file before coding. Work straight on `main`, one commit per item group, stage files by name, run `npm run build` before every commit and push. No Supabase migration or SQL without putting the SQL in a report for Kylie. Never read `private/` or `.env`. Her stubs, plans, costs, and seats never leave the device.
 
-**This file is the source of truth for 7.2.** Where it changes a 7.1 lock (`docs/build-7-1/build-notes-7-1.md`), this file wins. Mockups are in `docs/build-7-2/mockups/` start from `mockups/INDEX.md` and build only frames marked FINAL.
+**This file is the source of truth for 7.2.** Where it changes a 7.1 lock (`docs/build-7-1/build-notes-7-1.md`), this file wins. Mockups are in `docs/build-7-2/mockups/`; start from `mockups/INDEX.md` and build only frames marked FINAL.
 
 **Build in this spirit (Kylie, Nov 4):** for every item, use the locked decision and the full discussion under it (contemplations, rejected alternatives, open questions, builder calls, mock paths). Do not ship from the one-line pick alone.
 
@@ -13,12 +13,12 @@ You are Claude Fable building Fan/Friction build 7.2 on `main`. Read this whole 
 2. **R2a** Event page Activity card: Your Stub Is The Hero. Build exactly the mock (`mockups/activity-card/round2/eA-*.png`). Her note: "really do love this".
 3. **R2b** Date page Activity card: by event, capped at 3 (`mockups/activity-card/round2/dA-*.png`).
 4. **R3a** Crowd ceilings: option C wording with **"cap"** (capacity), not "max". Apply wherever a crowd ceiling shows. FINAL: `mockups/crowd-ceilings/round3/`.
-5. **R4a / R4b / R4h** Getting There: all three surfaces as one path (frame 15), area names only, hidden on past dates (one-line traffic note in the event overview if that night was bad). Whole feature behind a Traffic/Roads Settings switch. Quote under R4a build so it makes sense, not mock-copy only.
-6. **R5a** Your Plans rows: FINAL direction is r3 match Activity (`mockups/upcoming-plan-rows/r3-final/`). Detail line placement C (`mockups/upcoming-plan-rows/r5-detail/column-C.png`). Read the full evolution do not build superseded r1/r2 plan-row frames.
+5. **R4a / R4b / R4h** Getting There: all three surfaces as one path (frame 15), area names only, hidden on past dates (one-line traffic note in the event overview if that night was bad). Whole feature behind a Traffic/Roads Settings switch. Quote under R4a; build so it makes sense, not mock-copy only.
+6. **R5a** Your Plans rows: FINAL direction is r3 match Activity (`mockups/upcoming-plan-rows/r3-final/`). Detail line placement C (`mockups/upcoming-plan-rows/r5-detail/column-C.png`). Read the full evolution; do not build superseded r1/r2 plan-row frames.
 7. **R6a** Add Seat for plans stays deferred.
 8. **R7d** Map day totals include events Crowd Size hides (same as Event Types).
 9. **Stub From Your Faves:** long-press (C) if buildable, else swipe (B). Toggles (A) rejected. Optional Stub It button is a builder call.
-10. **Watching Season:** sibling of Season Tickets quiet one-line rows postseason auto-added season watch record card (sample numbers in mocks).
+10. **Watching Season:** sibling of Season Tickets; quiet one-line rows; postseason auto-added; season watch record card (sample numbers in mocks).
 
 Also ship the already-locked Oct 30 sections (A to I) that are not gated, the Builder Tasks (weather plan, I6 ceilings research check), and the Builder Decides picks (record each choice in this file). Known small 7.1 fixes Mosaic spotted: team page "no verdict" score uses an em dash sheet close button is 36pt. Consider fixing them.
 
