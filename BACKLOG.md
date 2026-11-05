@@ -113,6 +113,8 @@ Kylie locked the Oct 30 review answers and the Nov 4 mock picks. Start at the no
 - Men's water polo stays (Kylie, Nov 4: "keep UCLA mens water polo"); Spieker's 800 is under the pre-list line, so the rows come from the one-time copy only.
 
 ### Build 7.1 follow-ups (Claude Code, Oct 24, 2026; the report is `docs/build-7-1/gap-report-7-1.md`)
+
+**Slated for build 7.3 (Kylie, Nov 4, 2026):** the follow-ups below are not in 7.2. Bring them into the 7.3 notes: plan details beyond the 60-day catalog window, one game identity across feeds, gap-report question 7 (a flagged past game clearing on its own), Kylie's questions 3 to 6 (Compare's "Side by side", the stored `why` wording, the weather summary sentence, and the Up Against pill), and the signed-in phone checks.
 Build 7.1 shipped steps 1–14 on Oct 24 (the notes: `docs/build-7-1/build-notes-7-1.md`). Closed by the notes, nothing to build: **M10** (add-on listings hidden, `addOns.ts`), **M12** (type icons option C and 20k rounding), **M13** (favorite cities on the switcher; reordering shipped as M31). **Season tickets** (item 15) shipped. Left, each with its why in the report:
 - ~~**Codex stages 4 and 5, re-run**~~ done Oct 24 evening; findings fixed (gap report, Codex findings).
 - **Gap-report question 7** (a flagged past season game clearing on its own once listed again): built that way as a builder's call; reverse if Kylie prefers a manual clear.
