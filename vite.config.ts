@@ -55,7 +55,9 @@ function offlineShell(): Plugin[] {
     manifest: false, // appIdentity() writes the manifest from the one app config
     workbox: {
       globPatterns: ['**/*.{js,css,html,svg,png,ico,webmanifest,woff2}'],
-      maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+      // 4 MiB since Nov 4, 2026: the chunk carrying the expected-draw table (about 3.15 MB, growing slowly with each
+      // nightly) crossed 3 MiB by 342 bytes and every deploy failed. Moving that table out of the bundle is in BACKLOG.
+      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       navigateFallback: '/index.html',
       navigateFallbackDenylist: [/^\/api\//],
       runtimeCaching: [
