@@ -7,7 +7,6 @@ import { listTitle } from '../lib/eventTitle';
 import { entryPath, eventPath, tagPath } from '../lib/view';
 import { ActivityIcon } from './ActivityLines';
 import { AddToCalendar } from './AddToCalendar';
-import { EntryLayer } from './EntryLayer';
 import { CrowdFigure } from './EventTags';
 import { friendStubState } from './FeedRow';
 import { LockMark, PencilIcon, PlusIcon } from './Icons';
@@ -95,9 +94,9 @@ export function YourStubTicket({
           ))}
         </dl>
       )}
-      {/* The review note and who you went with keep their own editor (the sheet edits the answer, tags, seat and
-          cost); With shows in the grid above, so the layer's own line is off. */}
-      {entry && <EntryLayer entry={entry} showLevel={false} showFacts={false} />}
+      {/* The review note (H11f, the gold-family exception). The sheet edits it, under Personal Experience (Kylie, Nov 5),
+          so the ticket carries no quiet link of its own. */}
+      {entry?.review && <p className="entry-review your-ticket-note">{entry.review}</p>}
       {tags.length > 0 && (
         <div className="your-stub-tags">
           {tags.map((tag) => (

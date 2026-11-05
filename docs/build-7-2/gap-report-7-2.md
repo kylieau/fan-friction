@@ -6,6 +6,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Group | State | Commit | Notes |
 |---|---|---|---|
 | 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done, pushed | `fb8d1771` | measured on three Los Angeles dates and one event page |
+| 2 (c). Kylie's Nov 5 answers: Personal Experience rows in the sheet (With and Review), the ticket's quiet link gone, the pill as the eye and one word | done | _(this commit)_ | the sheet's rows and the review editor opened and measured; the ticket's note read-only |
 | 2 (b). Codex review of the Activity cards, 6 findings fixed, 1 backlogged | done | _(this commit)_ | the cap rule checked with fixtures headless |
 | 2. Activity cards (R2a event page, R2b date page; R2c to R2j decided) | done, pushed | `eaca9f1d` | five ticket states, the Friends card and the date card measured with a pasted dev feed and hand-patched stubs |
 | 1 (b). Codex review of the Activity rows, 5 findings fixed plus the advisor's code-size catch | done | _(this commit)_ | facts fall through to the link, code 11px inside the card, a hand-added concert keeps its icon |
@@ -38,6 +39,11 @@ Seven findings: six accepted (two with a different fix), one backlogged as pre-e
 - **Dead code:** the old `ActivityLines` list had no users left and is removed; `ActivityIcon` and `StatusLine` stay.
 - **C7 (backlogged, pre-existing):** a plan whose date has passed but has not settled into a stub yet can read in the future tense on a past date page; settlement normally runs first. BACKLOG.
 - Also checked: dropping `firmPlan` from the date page's plans affects only the card (nothing else on the page reads them).
+
+### Kylie's answers to the four (Nov 5, morning)
+1. **Build the sheet rows, under one "Personal Experience" umbrella** ("combine the Review and With into a single Personal Experience umbrella"). Built: `ExperienceRows.tsx`, a labelled group after Cost on a stub's sheet with a With row and a Review row in the Seat and Cost shape ("+ Add who you went with", "+ Add a review"; a tap opens a text box with Cancel and Save), and the ticket's quiet link is gone, so "Edit stub" is the one place to edit. Measured: the sheet grows from 334 to 473pt with both filled; the review editor opens with Cancel and Save.
+2. **Lean:** buttons stay sentence case.
+3. **The pill: "fine for now"** as the eye and the level's one word ("Friends", "Anyone", a lock and "Private"); built, the spoken name says "Visible to friends". Her lean is the levels' own icons (globe, people, lock) **if another visual solution blocks the false "attended with friends" read, and her main worry is the event rows on other pages** (Your Stubs rows read "Attended · [people] Friends" inline), not the ticket. Mocked next: `mockups/activity-card/r3-sheet/` frames 06 to 09.
 
 ### Not exactly as drawn (each a one-line question for Kylie)
 1. **(Mocked Nov 5 at Kylie's ask: `mockups/activity-card/r3-sheet/`, with the pill's words as frames 04 and 05.)** **"Edit stub" is one button, but the review and With have their own editor.** The Stub it sheet edits the answer, tags, seat and cost; the review and who you went with are edited inline. So the ticket keeps the quiet "Edit" (or "Add a review, who you went with…") link under the note beside the big button. The alternative is adding review and With to the sheet, which changes a mocked piece.

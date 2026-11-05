@@ -13666,3 +13666,55 @@ a.follow-lead::after {
   font-weight: 800;
   color: var(--dodger);
 }
+
+/* Personal Experience in the Stub it sheet (Kylie, Nov 5): With and Review under one label, in the Seat and Cost row
+   shape; the review line wraps. */
+.stub-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stub-experience-label {
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink2);
+  margin: 6px 0 2px;
+}
+
+.stub-review-row {
+  align-items: flex-start;
+}
+
+.stub-review-row .stub-tags-label {
+  padding-top: 11px;
+}
+
+.stub-review-line {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  white-space: normal;
+  line-height: 1.4;
+  padding: 11px 0;
+  font-weight: 600;
+}
+
+.stub-experience-editor {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* The ticket's own review note, now read-only here. */
+.your-ticket-note {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fff7cc;
+  font-size: 14px;
+  line-height: 1.45;
+}

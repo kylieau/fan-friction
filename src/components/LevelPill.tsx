@@ -17,8 +17,13 @@ export function levelWord(level: StubVisibility): string {
  * a menu of Anyone / Friends / Private with your default marked, and beside it "Your default", or a gold "Not your
  * default" when this stub differs. `bare` drops that side label (the event page's status line keeps it short).
  */
-/** The ticket's wording (build 7.2, R2d): who can see the stub, not who came. The menu keeps Anyone / Friends / Private. */
-const VISIBLE_WORDS: Record<StubVisibility, string> = { anyone: 'Visible to Anyone', friends: 'Visible to Friends', private: 'Private' };
+/**
+ * The ticket's pill (build 7.2, R2d; Kylie, Nov 5: "the icon, one word that the dropdown has"): an eye and the level's
+ * own word, a lock for Private. The eye says "seen by", which is what keeps "Friends" from reading as company; the
+ * spoken name spells it out.
+ */
+const VISIBLE_WORDS: Record<StubVisibility, string> = { anyone: 'Anyone', friends: 'Friends', private: 'Private' };
+const VISIBLE_SPOKEN: Record<StubVisibility, string> = { anyone: 'Visible to anyone', friends: 'Visible to friends', private: 'Private' };
 
 export function LevelPill({ value, defaultLevel, onChange, bare = false, down = false, labels = 'level' }: { value: StubVisibility; defaultLevel: StubVisibility; onChange: (level: StubVisibility) => void; bare?: boolean; /** Open the menu below (near the top of a page); above is for the bottom sheet. */ down?: boolean; /** "visible": the Your Stub ticket's pill, an eye and "Visible to Friends" (R2d), a lock and "Private". */ labels?: 'level' | 'visible' }) {
   const [open, setOpen] = useState(false);
@@ -39,7 +44,7 @@ export function LevelPill({ value, defaultLevel, onChange, bare = false, down = 
   const current = LEVELS.find((l) => l.level === value)!;
   return (
     <span className="level-pill-wrap" ref={root}>
-      <button type="button" className={`level-pill${labels === 'visible' ? ' is-visible' : ''}`} aria-haspopup="menu" aria-expanded={open} aria-label={labels === 'visible' ? `${VISIBLE_WORDS[value]}, who sees this stub` : `Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
+      <button type="button" className={`level-pill${labels === 'visible' ? ' is-visible' : ''}`} aria-haspopup="menu" aria-expanded={open} aria-label={labels === 'visible' ? `${VISIBLE_SPOKEN[value]}, who sees this stub` : `Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
         {labels === 'visible' ? (value === 'private' ? <LockMark size={15} /> : <EyeIcon size={15} />) : current.icon(15)}
         {labels === 'visible' ? VISIBLE_WORDS[value] : current.word}
         <span className="level-pill-chevron" aria-hidden>
