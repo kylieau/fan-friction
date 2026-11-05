@@ -10,7 +10,6 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
-import { refreshWeatherIndex } from './weather-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Optional --metro=<id> for a city build; without it the nightly job covers every city.
@@ -178,8 +177,8 @@ try {
     console.error(`${METRO} weather: skipped (${err instanceof Error ? err.message : err}). Yesterday's rows stay in place.`);
   }
   }
-  const index = await refreshWeatherIndex(root);
-  console.log(index.changed ? `Updated ${index.relative} (${index.count} rows, ${index.days} days).` : `No change in ${index.relative}.`);
+  // The 50 MB src/data/weatherIndex.ts is retired (Nov 4, 2026): the app reads weather from the catalog, and scripts
+  // read the day files directly (prime-from-files.mjs).
   if (failed.length > 0) {
     console.error(`Weather skipped for ${failed.join(', ')}.`);
     exitCode = 1;

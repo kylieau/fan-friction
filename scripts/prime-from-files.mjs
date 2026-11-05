@@ -3,9 +3,8 @@
 // so weather, results and snapshots resolve the way they do in the app.
 // Usage, after a vite dev server is up:  await primeFromFiles(server, 'la')
 //
-// Weather is read from the city's own day files (data/weather/<metro>/*.json), not from src/data/weatherIndex.ts:
-// past about 45 MB that module no longer parses (Nov 2, 2026: "Failed to convert rust `String` into napi `string`"),
-// and the nightly archive skipped every city for three nights.
+// Weather is read from the city's own day files (data/weather/<metro>/*.json). The old src/data/weatherIndex.ts
+// stopped parsing past about 45 MB (Nov 2, 2026) and was retired on Nov 4.
 
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -13,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
-/** One city's stored weather, in the order weather-index.mjs writes it (its day files, sorted by name). */
+/** One city's stored weather, its day files in name order. */
 export async function weatherFromFiles(metroId) {
   const dir = path.join(root, 'data', 'weather', metroId);
   let files = [];
