@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { METROS } from '../config/metros';
 import { competitionOf, entryType, entryTypeLabel, eventType, lengthLine, seatsLine, type CrowdEvent, type Entry, type FeedItem, type LabeledFact } from '../data';
-import { ACTIVITY_WORDS, feedKind, type ActivityKind } from '../lib/activity';
+import { ACTIVITY_WORDS, feedKind, namesList, type ActivityKind } from '../lib/activity';
 import { sportLabelOf, splitTitleLabel } from '../lib/eventTitle';
 import { shortLocalDate } from '../lib/dates';
 import { DateBox } from './StubRows';
@@ -115,11 +115,7 @@ export function headerLines(people: readonly FeedItem[]): { kind: ActivityKind; 
 export function namesLine(people: readonly FeedItem[]): string {
   const you = people.some((p) => p.friend.id === YOU_ID);
   const others = people.filter((p) => p.friend.id !== YOU_ID).map((p) => p.friend.displayName ?? p.friend.handle ?? 'Someone');
-  const names = you ? ['You', ...others] : others;
-  if (names.length <= 1) return names[0] ?? '';
-  if (names.length === 2) return `${names[0]} and ${names[1]}`;
-  if (names.length === 3) return `${names[0]}, ${names[1]}, and ${names[2]}`;
-  return `${names[0]}, ${names[1]}, and ${names.length - 2} more`;
+  return namesList(you ? ['You', ...others] : others);
 }
 
 /** The type words that say nothing a title does not: a stub with no sport reads "Sports event", a plain one "Event". */

@@ -588,56 +588,56 @@ Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide i
 - Options: (1) Yours first, then by time (a tie goes to the bigger crowd), shown in time order. (2) By time only. (3) By popularity and attention.
 - Lean: (1). Matches the Lineup above it, never hides her own stub, and popularity repeats what the Verdict says.
 - Kylie said: H11d, "is the priority in chronological order or by popularity/attention." Earlier 7.2 notes: cap 3, her events first, then friends by start time.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1)**, yours first, the rest by time with a tie to the bigger crowd, the three shown in time order, because it matches the Lineup above and never hides her own stub; "N" in "3 of N events" and "See all N events" counts the events with activity, since See all opens the rest in place.
 
 #### R2d. Privacy Pill Label
 - Question: is "Visible to Friends" the right pill label? (The sheet still says Anyone, Friends, and Private.)
 - Options: (1) "Visible to Friends". (2) "Friends Can See". (3) Keep "Friends", with the new eye icon.
 - Lean: (1). It says who can see the stub, not who came.
 - Kylie said: H11a, the "friends" symbol next to her row "make it look like friends are also attending". Fix it "aesthetically / aligned with "your stub"". H11h keeps the pill visible.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1), "Visible to Friends"** with an eye, "Visible to Anyone" with an eye, "Private" with a lock, because it says who can see the stub, not who came; the menu behind it keeps Anyone, Friends, and Private.
 
 #### R2e. Status Word Color In Friends' Rows
 - Question: one rule for the status word color on the Activity tab and on the card?
 - Options: (1) Blue status word, ink names, in both places. (2) All ink in both places. (3) Blue on the Activity tab, ink on the card.
 - Lean: (1). She asked for rows "like stubs," and Your Stubs puts the status word in blue.
 - Kylie said: H1, "like stubs where it says "watched/attended" with the icons and after says name."
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (3)**, blue on the Activity tab, your own status blue on the cards, friends' rows in ink on the cards, because her R2a lock says build exactly the mock and the FINAL frames draw the Friends card in ink (nothing there is a button); the lean's one-rule tidiness loses to her lock.
 
 #### R2f. Friends' Watched And Interested Rows On The Cards
 - Question: should the date and event cards hide friends' Watched and Interested rows by default, like the tab?
 - Options: (1) Show them on the cards. (2) Attended only, like the tab.
 - Lean: (1). On a future day nobody has attended yet, so an Attended-only card is empty.
 - Kylie said: H7, the Activity tab defaults to Attended.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1)**, every kind shows on the cards, because on a future day nobody has attended yet and the frames draw Attending, Watching, and Interested rows.
 
 #### R2g. Where A Friend Watched
 - Question: should a friend's watch name the place ("Jo T. at Tom's Bar")?
 - Options: (1) Keep the place on the card, as built. (2) Drop it, like the tab drops the venue.
 - Lean: (1). It is the friend's own news, and it is built.
 - Kylie said: H7, "do you think watched events needs the venue name listed?"
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1)**, the shared place stays ("Jo T. at Tom's Bar"), because it is the friend's own news and only shows when they shared it with friends.
 
 #### R2h. Date C Drops The Review (Only If R2b Is C)
 - Question: if date option C ships, is dropping the review note OK?
 - Options: (1) No, keep a review line under C. (2) Yes, reviews on the event page only.
 - Lean: (1). She chose to keep the review note (H11f).
 - Kylie said: H11f, keep the yellow review note.
-- Builder decides: record the pick and the reason here (moot unless R2b is C).
+- **Decided (Nov 5): moot**, because R2b is A; the review note shows on the date card.
 
 #### R2i. Remove From Log Link
 - Question: in event option A, should Remove From Log move into the ticket?
 - Options: (1) Keep it at the bottom, as built. (2) Move it into the ticket.
 - Lean: (1). A rare, hard-to-undo action should not sit beside Edit Stub.
 - Kylie said: nothing specific.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1)**, Remove from log stays at the bottom of the page, because a rare, hard-to-undo action should not sit beside Edit stub.
 
 #### R2j. "Sold Out" Or "Sold out"
 - Question: which casing everywhere? The mocks say "Sold Out", and `crowdShort` writes "Sold out".
 - Options: (1) "Sold Out" everywhere (Title Case). (2) "Sold out" everywhere (as coded).
 - Lean: (1). The copy rule is Title Case, and every mock draws it that way.
 - Kylie said: her standing Title Case rule.
-- Builder decides: record the pick and the reason here.
+- **Decided (Nov 5): (1), "Sold Out"** on every figure (`crowdShort`'s "Sold Out" and "(Sold Out)"), because it is a label; the event header's lowercase fact chips ("sold out", "opener", "rivalry") stay lowercase as a set, as the FINAL frames draw them.
 
 ### R3. Crowd Ceilings
 
@@ -902,6 +902,7 @@ Exported answers: slim form storage key `ff-review-nov4-open10` (parent form `ff
 - **Lean she kept:** A. Lean reason: only option where her stub lives in one place answers "greater attention to the user's own attendance/editing option", and two cards stop friends from reading as part of her answer.
 - **Mocks FINAL:** `mockups/activity-card/round2/eA-attended.png`, `eA-attending.png`, `eA-empty.png`, `eA-friends.png`, `eA-watched.png` (and the round2 INDEX). Earlier H11 event-page remock request is answered by this pick. Still align privacy pill / "Friends" mark per H11a and R2d (builder decides).
 - **Open around it:** R2c to R2j under Builder Decides.
+- **Built Nov 5, 2026 (morning):** `src/components/ActivityCards.tsx` (`YourStubTicket`, `FriendsCard`) on the catalog page and the game-only page. Not exactly as drawn, each a question for Kylie in the gap report: the review and With keep their own editor (the sheet does not edit them), so the ticket carries the quiet "Edit" / "Add a review, who you went with…" link under the note beside the one big "Edit stub" button; buttons stay sentence case per her Oct 23 rule ("Edit stub", "+ Stub it", "Add to calendar"); the pill shows only signed in (the level needs an account), so the headless measure had none.
 
 ### R2b. Date Page Activity Card: A, By Event, Capped At 3 (Locked)
 
@@ -909,6 +910,7 @@ Exported answers: slim form storage key `ff-review-nov4-open10` (parent form `ff
 - **Lean reason:** blue-edged strip is a mini version of the event page ticket and keeps the H11d cap.
 - **Mocks FINAL:** `mockups/activity-card/round2/dA-lean.png`, `dA-future.png`, `dA-friends-only.png`, `dA-popular.png`, `dA-time.png`.
 - R2h (date C drops review) is moot.
+- **Built Nov 5, 2026 (morning):** `DateActivityCard` in the Attended card's slot, replacing it and the Following block (H11e). Interested plans now reach the date page (the future frame draws an Interested strip; `firmPlan` had kept them out). Measured on Nov 1 (3 of 5, yours first, See all 48pt) and Nov 12 (two events, no rule line).
 
 ### R3a. Ceiling Format: C, Max Word, But Label It "Cap" (Locked)
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import type { StubVisibility } from '../data';
-import { GlobeIcon, LockMark, PeopleIcon } from './Icons';
+import { EyeIcon, GlobeIcon, LockMark, PeopleIcon } from './Icons';
 
 const LEVELS: { level: StubVisibility; word: string; sub: string; icon: (size: number) => ReactNode }[] = [
   { level: 'anyone', word: 'Anyone', sub: 'Anyone on Fan/Friction can see it', icon: (s) => <GlobeIcon size={s} /> },
@@ -17,7 +17,10 @@ export function levelWord(level: StubVisibility): string {
  * a menu of Anyone / Friends / Private with your default marked, and beside it "Your default", or a gold "Not your
  * default" when this stub differs. `bare` drops that side label (the event page's status line keeps it short).
  */
-export function LevelPill({ value, defaultLevel, onChange, bare = false, down = false }: { value: StubVisibility; defaultLevel: StubVisibility; onChange: (level: StubVisibility) => void; bare?: boolean; /** Open the menu below (near the top of a page); above is for the bottom sheet. */ down?: boolean }) {
+/** The ticket's wording (build 7.2, R2d): who can see the stub, not who came. The menu keeps Anyone / Friends / Private. */
+const VISIBLE_WORDS: Record<StubVisibility, string> = { anyone: 'Visible to Anyone', friends: 'Visible to Friends', private: 'Private' };
+
+export function LevelPill({ value, defaultLevel, onChange, bare = false, down = false, labels = 'level' }: { value: StubVisibility; defaultLevel: StubVisibility; onChange: (level: StubVisibility) => void; bare?: boolean; /** Open the menu below (near the top of a page); above is for the bottom sheet. */ down?: boolean; /** "visible": the Your Stub ticket's pill, an eye and "Visible to Friends" (R2d), a lock and "Private". */ labels?: 'level' | 'visible' }) {
   const [open, setOpen] = useState(false);
   const root = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -36,9 +39,9 @@ export function LevelPill({ value, defaultLevel, onChange, bare = false, down = 
   const current = LEVELS.find((l) => l.level === value)!;
   return (
     <span className="level-pill-wrap" ref={root}>
-      <button type="button" className="level-pill" aria-haspopup="menu" aria-expanded={open} aria-label={`Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
-        {current.icon(15)}
-        {current.word}
+      <button type="button" className={`level-pill${labels === 'visible' ? ' is-visible' : ''}`} aria-haspopup="menu" aria-expanded={open} aria-label={`Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
+        {labels === 'visible' ? (value === 'private' ? <LockMark size={15} /> : <EyeIcon size={15} />) : current.icon(15)}
+        {labels === 'visible' ? VISIBLE_WORDS[value] : current.word}
         <span className="level-pill-chevron" aria-hidden>
           ⌄
         </span>

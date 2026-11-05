@@ -10,7 +10,7 @@ import { CalendarIcon } from './Icons';
  * "+ Stub it" that opens a chooser: the device calendar (an .ics file) or Google Calendar (a prefilled link).
  * Written once, no sync. Shown while the event is ahead.
  */
-export function AddToCalendar({ event, venue }: { event: CrowdEvent; venue: string | null }) {
+export function AddToCalendar({ event, venue, variant = 'icon' }: { event: CrowdEvent; venue: string | null; /** "button": the ticket's 46pt labelled button (build 7.2, R2a); "icon": the 44pt corner icon. */ variant?: 'icon' | 'button' }) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (!open) return;
@@ -20,9 +20,16 @@ export function AddToCalendar({ event, venue }: { event: CrowdEvent; venue: stri
   }, [open]);
   return (
     <>
-      <button type="button" className="calendar-button" aria-label="Add to calendar" onClick={() => setOpen(true)}>
-        <CalendarIcon />
-      </button>
+      {variant === 'button' ? (
+        <button type="button" className="ticket-button" onClick={() => setOpen(true)}>
+          <CalendarIcon />
+          Add to calendar
+        </button>
+      ) : (
+        <button type="button" className="calendar-button" aria-label="Add to calendar" onClick={() => setOpen(true)}>
+          <CalendarIcon />
+        </button>
+      )}
       {open && (
         <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-labelledby="calendar-title" onClick={() => setOpen(false)}>
           <div className="action-sheet bulk-sheet" onClick={(ev) => ev.stopPropagation()}>

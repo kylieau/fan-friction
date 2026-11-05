@@ -89,6 +89,16 @@ export function BookmarkIcon({ size = 18 }: { size?: number }) {
 }
 
 /** A lock, for Private; plain (no label) beside its word. */
+/** The eye on the "Visible to Friends" pill (build 7.2, R2d). */
+export function EyeIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
 export function LockMark({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" {...base} aria-hidden>
@@ -170,6 +180,16 @@ export function ChevronDown() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
       <polyline points="6 9 12 15 18 9" />
+    </svg>
+  );
+}
+
+/** The pencil on the ticket's Edit button (build 7.2, R2a). */
+export function PencilIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" {...base} aria-hidden>
+      <path d="M12 20h9" />
+      <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
     </svg>
   );
 }

@@ -43,7 +43,7 @@ const PRIVATE: (keyof EntryEdit)[] = ['with'];
  * quiet Edit. Nothing here touches the read; the no-results rule holds
  * because the formula never looks at these fields.
  */
-export function EntryLayer({ entry, showLevel = true }: { entry: Entry; /** Off on the event page, whose status line carries the pill. */ showLevel?: boolean }) {
+export function EntryLayer({ entry, showLevel = true, showFacts = true }: { entry: Entry; /** Off on the event page, whose status line carries the pill. */ showLevel?: boolean; /** Off inside the Your Stub ticket, whose grid shows With (build 7.2, R2a). */ showFacts?: boolean }) {
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [editing, setEditing] = useState(false);
   const [tagging, setTagging] = useState(false);
@@ -72,7 +72,7 @@ export function EntryLayer({ entry, showLevel = true }: { entry: Entry; /** Off 
   return (
     <section className="card entry-layer" aria-label="Your entry">
       {entry.review && <p className="entry-review">{entry.review}</p>}
-      <FactList facts={facts} />
+      {showFacts && <FactList facts={facts} />}
       {/* A listed event edits its tags in the + Stub it sheet; a hand-added entry has no sheet, so its page carries the row. */}
       {isManualEntry(entry) && (
         <div className="stub-tags-row" role="group" aria-label="Tags">

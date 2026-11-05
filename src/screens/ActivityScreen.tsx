@@ -9,7 +9,6 @@ import { friendStubState } from '../components/FeedRow';
 import { CheckRow, FilterButton, FilterChips, FilterSheet, SheetHeading, prunePicked, readPicked, toggleIn, writePicked, type Picked } from '../components/FilterSheet';
 import {
   canSignIn,
-  EXAMPLE_FEED,
   followingFeedWithStatus,
   getAccount,
   getCityDate,
@@ -30,6 +29,7 @@ import { ACTIVITY_WORDS, feedKind, type ActivityKind } from '../lib/activity';
 import { addDays, timelineGroup } from '../lib/dates';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { getPref, setPref } from '../lib/prefs';
+import { devFeed } from '../lib/devFeed';
 import { backFrom, datePath, entryPath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
@@ -56,13 +56,6 @@ function initialKinds(): Picked {
   return new Set(['attended']);
 }
 
-/** Dev only: a feed pasted into the phone's storage (`activity-example-feed`, a JSON list of feed lines) stands in for friends, so friends' rows can be measured headless without an account. */
-function devFeed(): FeedItem[] | null {
-  if (!import.meta.env.DEV) return null;
-  const pasted = getPref<FeedItem[] | null>('activity-example-feed', null);
-  if (pasted === null) return null;
-  return Array.isArray(pasted) && pasted.length > 0 ? pasted : EXAMPLE_FEED;
-}
 
 /**
  * Activity (build 7, §3.4; Kylie, Oct 22, 2026: the Friends side renamed, "it should include the user's own

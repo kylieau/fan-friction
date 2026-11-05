@@ -18,6 +18,24 @@ export interface ActivityPerson {
 
 export type ActivityGroups = Partial<Record<ActivityKind, ActivityPerson[]>>;
 
+/**
+ * The names rule (build 7.2, round 2 Activity mocks; Kylie, Oct 30, H7: names, never "Friends"): "Sam R.",
+ * "Sam R. and Priya K.", "Sam R., Priya K., and Jo L.", "Sam R., Priya K., and 2 more". The caller puts You first.
+ */
+export function namesList(names: readonly string[]): string {
+  if (names.length <= 1) return names[0] ?? '';
+  if (names.length === 2) return `${names[0]} and ${names[1]}`;
+  if (names.length === 3) return `${names[0]}, ${names[1]}, and ${names[2]}`;
+  return `${names[0]}, ${names[1]}, and ${names.length - 2} more`;
+}
+
+/** A group's names, You first, with the shared place on a watch ("Jo T. at Tom's Bar"). */
+export function groupNames(kind: ActivityKind, people: readonly ActivityPerson[]): string {
+  const watch = kind === 'watching' || kind === 'watched';
+  const named = (p: ActivityPerson) => `${p.name}${watch ? placeClause(p.place) : ''}`;
+  return namesList([...people.filter((p) => p.you), ...people.filter((p) => !p.you)].map(named));
+}
+
 /** "Attending", "Watched": the word on a grouped list or a Stubs row. */
 export const ACTIVITY_WORDS: Record<ActivityKind, string> = {
   attending: 'Attending',

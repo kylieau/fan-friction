@@ -125,9 +125,9 @@ export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), w
   const highlighted = highlightedCrowd(event);
   const sold = withSold && event.crowd.some((c) => c.soldOut);
   if (highlighted) {
-    return `${crowdThousands(highlighted.count)}${highlighted.atLeast ? '+' : ''}${sold ? ' (sold out)' : ''}`;
+    return `${crowdThousands(highlighted.count)}${highlighted.atLeast ? '+' : ''}${sold ? ' (Sold Out)' : ''}`;
   }
-  if (sold && capacity) return `${crowdThousands(capacity)} (sold out)`;
+  if (sold && capacity) return `${crowdThousands(capacity)} (Sold Out)`;
   if (!withSold && capacity && event.crowd.some((c) => c.soldOut)) return crowdThousands(capacity);
   // A playoff estimate shows its low end (Kylie, Oct 7): that is what counts toward friction.
   if (!sold && withDraw && event.expectedDraw) {
@@ -136,7 +136,7 @@ export function crowdShort(event: CrowdEvent, capacity = eventCapacity(event), w
     // In practice crowdFigures already turns the draw into the highlighted estimate, so this rarely runs.
     return crowdThousands(roundEstimate(shown));
   }
-  return sold ? 'Sold out' : 'No count yet';
+  return sold ? 'Sold Out' : 'No count yet';
 }
 
 /** The kind of a crowd figure, for labels: "announced", "reported" or "estimated". */

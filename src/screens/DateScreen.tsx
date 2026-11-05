@@ -4,8 +4,9 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
-import { ActivityLines } from '../components/ActivityLines';
-import { activityGroups, friendsLine, yourActivity } from '../lib/activity';
+import { DateActivityCard } from '../components/ActivityCards';
+import { friendsLine, yourActivity } from '../lib/activity';
+import { devFeed } from '../lib/devFeed';
 import { DayTimeline } from '../components/DayTimeline';
 import { DayWeather } from '../components/DayWeather';
 import { HiddenLine } from '../components/HiddenLine';
@@ -23,7 +24,7 @@ import {
   getAccount,
   getCityDate,
   getPersonalLog,
-  firmPlan,
+  stubLevel,
   isStampLocked,
   drawSize,
   savedNightRead,
@@ -46,7 +47,6 @@ import {
 import { VENUES, venueNameOn } from '../data';
 import { clockTime, longLocalDate, shortLocalDate, weekdayLong } from '../lib/dates';
 import { getHomeId } from '../lib/homeCity';
-import { CrowdFigure } from '../components/EventTags';
 import { comparePath, eventPath } from '../lib/view';
 import { APP } from '../config/app';
 
@@ -93,6 +93,11 @@ export function DateScreen() {
 
   useEffect(() => {
     let current = true;
+    const pasted = devFeed();
+    if (pasted) {
+      setFriends(pasted.filter((f) => f.date === date && (f.metroId ?? DEFAULT_METRO.id) === metro.id));
+      return;
+    }
     if (!account) {
       setFriends([]);
       return;
@@ -130,7 +135,8 @@ export function DateScreen() {
     [log, date, metro.id],
   );
   // A flagged season game (no longer on the schedule) isn't counted as yours on its day (substitute review for stage 5).
-  const plans = useMemo(() => log.plans.filter((p) => firmPlan(p) && !p.season?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
+  // Every plan, Interested included (build 7.2, R2b: the future frame draws an Interested strip); a flagged season game stays out.
+  const plans = useMemo(() => log.plans.filter((p) => !p.season?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
   const dayRange = cityDayRange(metro.id, date);
@@ -349,39 +355,11 @@ export function DateScreen() {
         </section>
       )}
 
-      {(mine.length > 0 || plans.length > 0) && (
-        <section className="you-block" aria-labelledby="your-entry">
-          {/* At the bottom, above Share and Compare, with no gold edge (M7, Kylie, Oct 23, 2026: gold is for crowd
-              figures and the Cooked verdict). Section titles sit inside their card, like Local Competition (Oct 15). */}
-          <div className="entry-card">
-            <h2 id="your-entry" className="you-heading in-card-title">
-              {ahead ? (plans.length > 0 && plans.every((p) => p.watch) ? 'Watching' : 'Attending') : 'Attended'}
-            </h2>
-            {mine.map((entry) => {
-              const event = events.find((e) => e.id === entry.eventId);
-              return (
-                <div key={entry.id} className="entry">
-                  <span className="entry-title">{entry.title}</span>
-                  <span className="entry-facts">
-                    {[entry.venue, event?.start ? clockTime(event.start) : null].filter(Boolean).join(' · ')}
-                    {event && (
-                      <>
-                        {' · '}
-                        <CrowdFigure event={event} />
-                      </>
-                    )}
-                  </span>
-                  {entry.review && <span className="entry-note">{entry.review}</span>}
-                </div>
-              );
-            })}
-            {plans.map((plan) => (
-              <div key={plan.id} className="entry">
-                <span className="entry-title">{plan.title}</span>
-                <span className="entry-facts">{plan.venue ?? ''}</span>
-              </div>
-            ))}
-          </div>
+      {/* Activity (build 7.2, R2b; Kylie, Nov 4): one card by event, yours and the people you follow, capped at 3 with
+          "See all". It replaces the Attended card (M7) and the Following block (H11e), in the Attended card's slot. */}
+      {(mine.length > 0 || plans.length > 0 || friends.length > 0) && (
+        <section className="you-block" aria-label="Activity">
+          <DateActivityCard events={events} entries={mine} plans={plans} friends={friends} level={(row) => (account ? stubLevel(row) : null)} />
         </section>
       )}
 
@@ -398,21 +376,6 @@ export function DateScreen() {
         </Link>
       )}
 
-      {friends.length > 0 && (
-        <section className="you-block" aria-labelledby="friends-date">
-          <h2 id="friends-date" className="you-heading">
-            Following
-          </h2>
-          {/* Grouped per event like the event page (Kylie, Oct 11; 8.1, items 11 and 12), Interested included. */}
-          {groupByEvent(friends).map((group) => (
-            <div key={group.key} className="date-friends-group">
-              <span className="log-facts date-friends-title">{group.title}</span>
-              <ActivityLines groups={activityGroups(group.items, null)} />
-            </div>
-          ))}
-        </section>
-      )}
-
       {shareNote && (
         <p className="you-fine" role="status">
           {shareNote}
@@ -423,17 +386,6 @@ export function DateScreen() {
 }
 
 /** Friends' answers by event, in the day's order. */
-function groupByEvent(items: FeedItem[]): { key: string; title: string; items: FeedItem[] }[] {
-  const groups = new Map<string, { key: string; title: string; items: FeedItem[] }>();
-  for (const item of items) {
-    const key = item.eventId ?? item.title;
-    const group = groups.get(key) ?? { key, title: item.title, items: [] };
-    group.items.push(item);
-    groups.set(key, group);
-  }
-  return [...groups.values()];
-}
-
 function venueOf(e: CrowdEvent): string | null {
   if (e.place.type === 'venue') {
     const venue = VENUES[e.place.venueId];

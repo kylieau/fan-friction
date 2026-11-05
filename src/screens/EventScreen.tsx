@@ -6,10 +6,8 @@ import { CrowdMark, FormulaCrowd, FrictionVerdict, OccasionTag, pageFriction } f
 import { StubSheet } from '../components/StubSheet';
 import { recordOpened } from '../lib/openedEvents';
 import { TypeIcon } from '../components/TypeIcon';
-import { LevelPill } from '../components/LevelPill';
-import { AddToCalendar } from '../components/AddToCalendar';
-import { ActivityLines, StatusLine } from '../components/ActivityLines';
-import { ACTIVITY_WORDS, activityGroups, yourActivity, type ActivityKind } from '../lib/activity';
+import { FriendsCard, YourStubTicket } from '../components/ActivityCards';
+import { yourActivity } from '../lib/activity';
 import {
   drawSize,
   crowdFull,
@@ -19,7 +17,6 @@ import {
   eventType,
   popupExplainer,
   setStubVisibility,
-  stubDefault,
   stubLevel,
   alwaysShownIds,
   crowdRangeOf,
@@ -27,9 +24,6 @@ import {
   splitByRange,
   feelsLikeLabel,
   isOpenAir,
-  seatsLine,
-  seatShort,
-  costWords,
   storyFor,
   sizeTier,
   venueNameOn,
@@ -51,7 +45,6 @@ import {
   getPersonalLog,
   subscribePersonalLog,
   todayIn,
-  watchShareOf,
   yourEntries,
   subscribeAccount,
   getAccount,
@@ -59,22 +52,21 @@ import {
   type FeedItem,
   type CityDate,
   type CrowdEvent,
-  type Entry,
 } from '../data';
 import { crowdPoints, showsOnMap } from '../map/crowdPoints';
-import { EntryLayer, RemoveFromLog } from '../components/EntryLayer';
+import { RemoveFromLog } from '../components/EntryLayer';
 import { SameTour } from '../components/SameTour';
 import { FactList } from '../components/FactList';
-import { ArrowRight, ChevronDown, ClockIcon, CompareIcon, MapIcon, PinIcon, ShareIcon } from '../components/Icons';
+import { ArrowRight, ClockIcon, CompareIcon, MapIcon, PinIcon, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
 import { ShareRow } from '../components/ShareCard';
-import { TagChip } from '../components/TagChip';
 import { clockTime, dateWithYear, shortLocalDate } from '../lib/dates';
 import { fullTitle, headerTitle, isLabelText, mapTitle } from '../lib/eventTitle';
 import { clearOpenedFromMap, openedFromMap, readMapMemory } from '../lib/mapReturn';
-import { comparePath, datePath, openedMetroId, eventPath, tagPath } from '../lib/view';
+import { comparePath, datePath, openedMetroId, eventPath } from '../lib/view';
 import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
+import { devFeed } from '../lib/devFeed';
 import { TitleText } from '../components/TitleText';
 import { eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
 import { BackLink } from '../components/BackLink';
@@ -186,6 +178,12 @@ export function EventScreen() {
   const [dayFriends, setDayFriends] = useState<FeedItem[]>([]);
   useEffect(() => {
     let current = true;
+    const pasted = devFeed();
+    if (pasted && liveEvent) {
+      setFriends(pasted.filter((f) => f.eventId === liveEvent.id));
+      setDayFriends(pasted.filter((f) => f.date === liveEvent.date));
+      return;
+    }
     if (!account || !liveEvent) {
       setFriends([]);
       setDayFriends([]);
@@ -231,7 +229,6 @@ export function EventScreen() {
   // Your own answer, for the status line under the button.
   const you = yourActivity(e.id, log);
   const youRow = log.plans.find((p) => p.eventId === e.id) ?? logged;
-  const youShare = youRow && (you?.kind === 'watching' || you?.kind === 'watched') ? watchShareOf(youRow) : undefined;
   const ahead = e.date >= todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
   // The station: the schedule's when it names one, else what you wrote down.
   const tv = e.broadcast ?? logged?.tv;
@@ -259,9 +256,6 @@ export function EventScreen() {
   // This Day verdict and no verdict in what it shares (M23).
   const today = todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
   const watchedPage = you?.kind === 'watched';
-  const logBits = logged
-    ? [!logged.watched ? seatShort(logged.seats) || null : null, logged.cost && costWords(logged.cost) ? costWords(logged.cost) : null, logged.with ? `With ${logged.with}` : null, logged.review ? 'Review' : null].filter((b): b is string => Boolean(b))
-    : [];
   const level = account && youRow ? stubLevel(youRow) : null;
   // Only a friction call the page itself makes is shared: a small room's raw assessment stays out (Codex stage 4 re-run).
   const shareLine = a && verdict ? `${frictionVerdictTitle(a.friction, a.rival)}. ${a.why}` : '';
@@ -270,7 +264,6 @@ export function EventScreen() {
   const tier = sizeTier(e);
   const tooSmall = !verdict && !e.belowFloor && (tier === 'prelist' || tier === 'under-prelist');
   const shareCrowd = shown ? `${shown.atLeast ? 'At least ' : ''}${fmt(shown.count)} ${crowdKindWord(shown.kind)}` : me.soldOut ? 'Sold Out' : null;
-  const toStubCard = () => document.getElementById('your-stub')?.scrollIntoView({ block: 'start', behavior: 'smooth' });
 
   return (
     <div className="screen page event-page">
@@ -320,52 +313,23 @@ export function EventScreen() {
         )}
       </header>
 
-      {/* The action (M33): "+ Stub it" with Add to Calendar while ahead; once answered, the status chip with the stub's
-          level and Edit, which opens the same sheet. */}
-      <div className="event-marks">
-        {you ? (
-          <span className="stub-actions">
-            <span className="status-chip">
-              <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} />
-              {level && (
-                <>
-                  <span aria-hidden>·</span>
-                  <LevelPill down value={level} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(e.id, next)} />
-                </>
-              )}
-              <button type="button" className="link-button status-chip-edit" onClick={() => setSheet(true)}>
-                Edit <ChevronDown />
-              </button>
-            </span>
-            {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
-          </span>
-        ) : (
-          <span className="stub-actions">
-            <button type="button" className="gold-button" onClick={() => setSheet(true)}>
-              + Stub it
-            </button>
-            {ahead && <AddToCalendar event={e} venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name} />}
-          </span>
-        )}
-        {/* A plan's tags (Attending, Watching) show under the chip; a stub's are on the Your Stub card (M33). */}
-        {!logged && (youRow?.userTags ?? []).length > 0 && (
-          <div className="your-stub-tags plan-tags">
-            {(youRow?.userTags ?? []).map((tag) => (
-              <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
-            ))}
-          </div>
-        )}
-        {/* The Your Stub line (M33, Lean): Attended or Watched on a full catalog page; a plan gets none, nor does a
-            further-out page (its card is near the top). A thin stub reads as a prompt. */}
-        {logged && !further && (
-          <button type="button" className="stub-line" onClick={toStubCard}>
-            <span className="stub-line-words">
-              <strong>Your Stub</strong>
-              {logBits.length > 0 ? ` · ${logBits.join(' · ')}` : logged.watched ? ' · Add a cost or a review' : ' · Add seats, cost, or a review'}
-            </span>
-            <span className="stub-line-see">See ›</span>
-          </button>
-        )}
+      {/* Activity (build 7.2, R2a; Kylie, Nov 4: "Your Stub Is The Hero"): your stub as a ticket under an ACTIVITY
+          label, then the Friends card. The status chip, the Your Stub line, the bottom Your Stub card and the
+          Following section are merged into these two (H11a, H11e). */}
+      <div className="activity-section">
+        <span className="activity-section-label">Activity</span>
+        <YourStubTicket
+          event={e}
+          you={you}
+          entry={logged}
+          row={youRow}
+          level={level}
+          ahead={ahead}
+          venue={e.place.type === 'venue' ? (VENUES[e.place.venueId] ? venueNameOn(VENUES[e.place.venueId], e.date) : null) : e.place.name}
+          onEdit={() => setSheet(true)}
+          onLevel={(next) => void setStubVisibility(e.id, next)}
+        />
+        <FriendsCard friends={friends} />
       </div>
       {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
       <RecordOpened event={e} />
@@ -518,18 +482,6 @@ export function EventScreen() {
         </Link>
       )}
 
-      {friends.length > 0 && (
-        <section className="you-block" aria-labelledby="friends-event">
-          <h2 id="friends-event" className="you-heading">
-            Following
-          </h2>
-          {/* Grouped like the Friends cards (Kylie, Oct 11): "Attending · Sam, Priya", "Watching · Jo at Tom's Bar", "Interested · Lee". */}
-          <ActivityLines groups={activityGroups(friends, null)} />
-        </section>
-      )}
-
-      {/* Your Stub (M33): only on your own page; none of this reaches a shared table. */}
-      {logged && you && <YourStubCard entry={logged} kind={you.kind} level={level} tags={youRow?.userTags ?? []} onEdit={() => setSheet(true)} />}
 
       {ahead && <SameTour event={e} />}
 
@@ -563,43 +515,6 @@ export function EventScreen() {
 
       {logged && <RemoveFromLog entry={logged} />}
     </div>
-  );
-}
-
-/** The stub level's word on the Your Stub card (the pill's own words). */
-const LEVEL_WORDS: Record<'anyone' | 'friends' | 'private', string> = { anyone: 'Anyone', friends: 'Friends', private: 'Private' };
-
-/**
- * The Your Stub card (build 7.1, M33; mocks 504, 512): the status, seat and what you paid, then the review and With
- * with their own editor; "Edit stub" opens the Stub it sheet (tags, seat, cost); the tags as chips. The catalog page
- * and the GameOnly page share it. Only on her own page: nothing here reaches a shared table.
- */
-function YourStubCard({ entry, kind, level, tags, onEdit }: { entry: Entry; kind: ActivityKind; level: 'anyone' | 'friends' | 'private' | null; tags: readonly string[]; onEdit: () => void }) {
-  const navigate = useNavigate();
-  return (
-    <section id="your-stub" className="card your-stub" aria-label="Your Stub">
-      <div className="your-stub-head">
-        <span className="your-stub-label">Your Stub</span>
-        <button type="button" className="link-button your-stub-edit" onClick={onEdit}>
-          Edit stub
-        </button>
-      </div>
-      <FactList
-        facts={[
-          { label: 'Status', value: [ACTIVITY_WORDS[kind], level ? LEVEL_WORDS[level] : null].filter(Boolean).join(' · ') },
-          ...(!entry.watched && seatsLine(entry.seats) ? [{ label: 'Seats', value: seatsLine(entry.seats) }] : []),
-          ...(entry.cost && costWords(entry.cost) ? [{ label: 'You Paid', value: costWords(entry.cost)! }] : []),
-        ]}
-      />
-      <EntryLayer entry={entry} showLevel={false} />
-      {tags.length > 0 && (
-        <div className="your-stub-tags">
-          {tags.map((tag) => (
-            <TagChip key={tag} tag={tag} size="row" onClick={() => navigate(tagPath(tag))} />
-          ))}
-        </div>
-      )}
-    </section>
   );
 }
 
@@ -867,14 +782,12 @@ function RecordOpened({ event }: { event: CrowdEvent }) {
 }
 
 function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
-  const navigate = useNavigate();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
   const [sheet, setSheet] = useState(false);
   const you = yourActivity(event.id, log);
   const logged = yourEntries(log).find((entry) => entry.eventId === event.id);
   const youRow = log.plans.find((p) => p.eventId === event.id) ?? logged;
-  const youShare = youRow && (you?.kind === 'watching' || you?.kind === 'watched') ? watchShareOf(youRow) : undefined;
   const ahead = event.date >= todayIn(METROS[event.metroId] ?? DEFAULT_METRO);
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name || null;
   const team = link ? TEAMS[link.teamId] : undefined;
@@ -905,32 +818,22 @@ function GameOnlyPage({ event, link }: { event: CrowdEvent; link?: GameLink }) {
         )}
         <FactList facts={facts} />
       </header>
-      <div className="event-marks">
-        <span className="stub-actions">
-          <button type="button" className={`gold-button${you ? ' small stub-it-small' : ''}`} onClick={() => setSheet(true)}>
-            + Stub it
-          </button>
-          {ahead && <AddToCalendar event={event} venue={venue} />}
-        </span>
-        {you && (
-          <span className="event-status">
-            <StatusLine kind={you.kind} share={account && youRow ? undefined : youShare} place={you.place} tags={youRow?.userTags} tagsShown={99} onTag={(tag) => navigate(tagPath(tag))} />
-            {account && youRow && (
-              <>
-                <span aria-hidden>·</span>
-                <LevelPill down value={stubLevel(youRow)} defaultLevel={stubDefault()} onChange={(next) => void setStubVisibility(event.id, next)} />
-              </>
-            )}
-            {you.kind !== 'interested' && (
-              <button type="button" className="link-button" onClick={() => setSheet(true)}>
-                {you.kind === 'attended' || you.kind === 'watched' ? 'Edit stub' : 'Edit'}
-              </button>
-            )}
-          </span>
-        )}
+      {/* The same ticket as the catalog page (build 7.2, R2a; M33 made the Your Stub card part of this page's minimum).
+          No Friends card here: a page the catalog does not hold has no feed lines to show. */}
+      <div className="activity-section">
+        <span className="activity-section-label">Activity</span>
+        <YourStubTicket
+          event={event}
+          you={you}
+          entry={logged}
+          row={youRow}
+          level={account && youRow ? stubLevel(youRow) : null}
+          ahead={ahead}
+          venue={venue}
+          onEdit={() => setSheet(true)}
+          onLevel={(next) => void setStubVisibility(event.id, next)}
+        />
       </div>
-      {/* The Your Stub card here too (M33, mock 512: the GameOnly minimum includes it). */}
-      {logged && you && <YourStubCard entry={logged} kind={you.kind} level={account && youRow ? stubLevel(youRow) : null} tags={youRow?.userTags ?? []} onEdit={() => setSheet(true)} />}
       {sheet && <StubSheet event={event} onClose={() => setSheet(false)} />}
       <RecordOpened event={event} />
     </div>
