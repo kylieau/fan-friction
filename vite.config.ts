@@ -44,7 +44,8 @@ function appIdentity(): Plugin {
 
 /**
  * The installed app works offline (big-picture plan, step 8): the app shell is
- * kept on the phone, the shared catalog's last answers are kept for a week so
+ * kept on the phone (the expected-draw table is the one lazy piece, kept once
+ * first used), the shared catalog's last answers are kept for a week so
  * a night read on the train is still there in the tunnel, and map tiles and
  * fonts are kept once seen. Accounts and writes always go to the network.
  */

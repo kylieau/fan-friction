@@ -23,11 +23,21 @@ let TABLES: { EXPECTED_DRAWS: readonly ExpectedDrawRow[]; OPPONENT_RATIOS: reado
 };
 let loading: Promise<void> | undefined;
 
-/** Loads the built-in draw tables once. Safe to await any number of times. */
+/**
+ * Loads the built-in draw tables once. Safe to await any number of times. A failed load (offline on a first open, a
+ * stale shell asking for a chunk the last deploy renamed) never fails a read: the tables stay empty for that read, so
+ * estimates come from the catalog's rows without the season and opponent multipliers and no playoff draw is made,
+ * and the next read tries the load again.
+ */
 export function loadDrawTables(): Promise<void> {
-  loading ??= import('./expectedDrawIndex').then((m) => {
-    TABLES = { EXPECTED_DRAWS: m.EXPECTED_DRAWS, OPPONENT_RATIOS: m.OPPONENT_RATIOS, POSTSEASON_DRAWS: m.POSTSEASON_DRAWS, SEASON_LEVELS: m.SEASON_LEVELS };
-  });
+  loading ??= import('./expectedDrawIndex')
+    .then((m) => {
+      TABLES = { EXPECTED_DRAWS: m.EXPECTED_DRAWS, OPPONENT_RATIOS: m.OPPONENT_RATIOS, POSTSEASON_DRAWS: m.POSTSEASON_DRAWS, SEASON_LEVELS: m.SEASON_LEVELS };
+    })
+    .catch((err: unknown) => {
+      console.warn('The expected-draw table did not load; estimates read without it until it does.', err);
+      loading = undefined;
+    });
   return loading;
 }
 
