@@ -13150,12 +13150,18 @@ a.follow-lead::after {
   text-overflow: ellipsis;
 }
 
+.activity-sport-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .activity-code {
   flex-shrink: 0;
   padding: 0 4px;
   border-radius: 4px;
   border: 1px solid var(--line);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.4px;
   color: var(--ink2);
@@ -13197,7 +13203,6 @@ a.follow-lead::after {
 }
 
 .activity-facts {
-  pointer-events: auto;
   margin: 8px 0 2px;
   padding-top: 8px;
   border-top: 1px solid var(--line);

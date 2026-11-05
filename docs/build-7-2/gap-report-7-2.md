@@ -6,7 +6,8 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Group | State | Commit | Notes |
 |---|---|---|---|
 | 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done, pushed | `fb8d1771` | measured on three Los Angeles dates and one event page |
-| 1. Activity rows (R1a; R1b to R1i decided) | done | _(this commit)_ | measured with a pasted dev feed; Codex review follows |
+| 1 (b). Codex review of the Activity rows, 5 findings fixed plus the advisor's code-size catch | done | _(this commit)_ | facts fall through to the link, code 11px inside the card, a hand-added concert keeps its icon |
+| 1. Activity rows (R1a; R1b to R1i decided) | done, pushed | `d494ef13` | measured with a pasted dev feed |
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
@@ -24,6 +25,16 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 ### Measured (headless, 390 × 844)
 Own rows and friends' rows came from a pasted feed through a dev-only hook (`activity-example-feed` in the phone's storage, read only in a dev build, never in production); no account was touched. Collapsed rows 72 to 74pt (the frames: about 73). Open rows 113 (one fact), 133 (two), 152 to 156pt (two to three facts; the frames: 145 to 165). The chevron glyph 13pt, centred on the title line within 1px, 22pt from the card's edge; its target 44 × 44, inside the card, hit at every corner and centre, nothing 3px beyond on any side. Shots: `.playwright-mcp/7-2-r1a-collapsed.png`, `7-2-r1a-open.png`, `7-2-r1a-mixed.png`.
+
+### Codex review of the group (the same evening), reconciled with the advisor before any tweak
+Five findings, all accepted; two took a different fix than Codex's smallest; one more caught by the advisor. Fixed in the follow-up commit.
+- **C1:** the open facts block took taps instead of the row's words (a stray `pointer-events`), so tapping "Where" did nothing. Removed; measured: a tap on a fact lands on the event link.
+- **C2:** a college game whose title carries its sport ("Cal Baptist at UCLA (MBB · Preseason)") read "Men's Basketball · Men's Basketball · Preseason". The sport line now dedupes piece by piece (sport, competition, each part of the label), not whole strings. Reasoned from the code; the pasted feed had no real labeled past title to measure.
+- **C3:** a friend's hand-added row with no catalog event lost its type; the row now reads the type from the first stub behind it (a friend's card carries its kind), while seats, notes and your review stay yours only. A stub whose type is only the generic word ("Sports event", "Event") shows no type line, since it says nothing the title does not (builder's call, R1d). Measured: a friend's hand-added Khruangbin row carries the music icon and "Concert".
+- **C4:** a long sport line could push the away city code out of the card; the words now shrink with an ellipsis and the code never does. Measured on a long-titled New York row: the code sits inside the card.
+- **C5:** the row's spoken label and the chevron's now carry the title and date ("Chargers at Rams, Sun, Nov 1, Attended, Sam R."; "Show details for Chargers at Rams").
+- **Advisor:** the city code was new 10px text, under G4's 11pt floor with no listed exception; it is 11px now.
+- **Seen on the way:** the shared catalog (Supabase) answered 500 for about a minute; the rows drew from the feed's own words and filled in on the next open. The failure is caught per night, so a catalog outage never blanks the tab.
 
 ### Not exactly as drawn
 - The frames' "Football · Big Ten" competition line shows where the feed names one (pro leagues: "NFL", "MLS", "NBA"); a college game from ESPN has no competition on file, so it reads "Women's Volleyball" alone.

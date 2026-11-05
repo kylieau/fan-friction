@@ -4,6 +4,7 @@ import { METROS } from '../config/metros';
 import { competitionOf, entryType, entryTypeLabel, eventType, lengthLine, seatsLine, type CrowdEvent, type Entry, type FeedItem, type LabeledFact } from '../data';
 import { ACTIVITY_WORDS, feedKind, type ActivityKind } from '../lib/activity';
 import { sportLabelOf, splitTitleLabel } from '../lib/eventTitle';
+import { shortLocalDate } from '../lib/dates';
 import { DateBox } from './StubRows';
 import { FactList } from './FactList';
 import { ChevronDown, TicketIcon, TvIcon } from './Icons';
@@ -20,6 +21,8 @@ export interface ActivityPeople {
   venue?: string;
   metroId?: string;
   people: FeedItem[];
+  /** The first stub behind the row (yours when you have one), for its type when no event is loaded. */
+  entry?: Entry;
 }
 
 /**
@@ -51,10 +54,14 @@ export function ActivityRow({
   const [open, setOpen] = useState(false);
   const split = splitTitleLabel(item.title);
   const heads = headerLines(item.people);
-  const sport = sportLine(split.label ? `${split.label.own}${split.label.ifNecessary ? ' (if necessary)' : ''}` : undefined, event, ownEntry);
+  const labelWords = split.label ? `${split.label.own}${split.label.ifNecessary ? ' (if necessary)' : ''}` : undefined;
+  // The type behind the row: the event's, else the first stub's (a friend's card carries its kind, so a hand-added
+  // concert keeps its music icon); seats, notes and your review read your own stub only.
+  const typed = ownEntry ?? item.entry;
+  const sport = sportLine(labelWords, event, typed);
   const facts = rowFacts(item, event, ownEntry);
-  const typeKey = event ? eventType(event).key : ownEntry ? entryType(ownEntry).key : null;
-  const spoken = [split.name, ...heads.map((h) => `${ACTIVITY_WORDS[h.kind]}, ${h.names}`)].join(', ');
+  const typeKey = event ? eventType(event).key : typed ? entryType(typed).key : null;
+  const spoken = [split.name, labelWords, shortLocalDate(item.date), ...heads.map((h) => `${ACTIVITY_WORDS[h.kind]}, ${h.names}`)].filter(Boolean).join(', ');
   return (
     <div className={`activity-row${open ? ' is-open' : ''}${heads.length > 1 ? ' two-heads' : ''}`}>
       {to && <Link to={to} state={state} className="activity-row-link" aria-label={spoken} />}
@@ -78,7 +85,7 @@ export function ActivityRow({
         </span>
         {(sport || cityCode) && (
           <span className="activity-sport">
-            {sport}
+            {sport && <span className="activity-sport-text">{sport}</span>}
             {cityCode && <span className="activity-code">{cityCode}</span>}
           </span>
         )}
@@ -90,7 +97,7 @@ export function ActivityRow({
         {open && facts.length === 0 && <p className="activity-facts activity-facts-none">Nothing more on this one yet.</p>}
       </span>
       {/* The 13pt glyph, an invisible 44 × 44 target around it (r2-final); it flips when open. */}
-      <button type="button" className="activity-chevron" aria-expanded={open} aria-label={open ? 'Hide details' : 'Show details'} onClick={() => setOpen((v) => !v)}>
+      <button type="button" className="activity-chevron" aria-expanded={open} aria-label={`${open ? 'Hide' : 'Show'} details for ${split.name}`} onClick={() => setOpen((v) => !v)}>
         <ChevronDown />
       </button>
     </div>
@@ -115,19 +122,26 @@ export function namesLine(people: readonly FeedItem[]): string {
   return `${names[0]}, ${names[1]}, and ${names.length - 2} more`;
 }
 
+/** The type words that say nothing a title does not: a stub with no sport reads "Sports event", a plain one "Event". */
+const GENERIC_TYPE_WORDS = new Set(['Sports event', 'Event']);
+
 /**
  * "Football · Big Ten", "Men's Basketball · Preseason", "Baseball · Wild Card · Game 2", "Concert": the sport or type
- * in full words, the competition the feed names, then the title's own label. From the event when it is loaded, else
- * from your stub's type line, else the label alone.
+ * in full words, the competition the feed names, then the title's own label, each piece once (a college label already
+ * names its sport). From the event when it is loaded, else from the stub's type line when it says more than the
+ * generic word, else the label alone.
  */
-function sportLine(label: string | undefined, event?: CrowdEvent, ownEntry?: Entry): string {
+function sportLine(label: string | undefined, event?: CrowdEvent, entry?: Entry): string {
   const parts: string[] = [];
   if (event) {
     parts.push(sportLabelOf(event)?.words ?? eventType(event).label);
     const competition = competitionOf(event);
     if (competition) parts.push(competition);
-  } else if (ownEntry) parts.push(entryTypeLabel(ownEntry));
-  if (label) parts.push(label);
+  } else if (entry) {
+    const words = entryTypeLabel(entry);
+    if (!GENERIC_TYPE_WORDS.has(words)) parts.push(words);
+  }
+  if (label) parts.push(...label.split(' · '));
   return [...new Set(parts.filter(Boolean))].join(' · ');
 }
 
