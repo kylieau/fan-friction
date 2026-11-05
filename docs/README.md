@@ -16,6 +16,16 @@
 
 Research is still cited by the code as a source, so it stays in `research/` for good.
 
+## Builds
+
+| Folder | Notes |
+|---|---|
+| `build-7/` | Build 7 notes and mockups |
+| `build-7-1/` | Build 7.1 notes, gap report, mockups, research prompts |
+| `build-7-2/` | **Current.** Build 7.2 notes (`build-notes-7-2.md`) and mockups. Start at the "Start Here" prompt at the top of the notes. |
+
+Older build folders (`build-4/` to `build-6/`) keep their notes the same way.
+
 ## How things move
 
 A new research prompt goes in `research/city-builds/<city>/` or `research/topics/`. Save the answer beside it, named after the prompt (`bay-area-venue-table-answer.md` for `bay-area-venue-table-prompt.md`). A second model's answer takes a suffix (`milwaukee-venue-table-answer-codex.md`).

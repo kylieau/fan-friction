@@ -102,6 +102,15 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
+### Build 7.2 (notes locked Nov 4, 2026; `docs/build-7-2/build-notes-7-2.md`)
+
+Kylie locked the Oct 30 review answers and the Nov 4 mock picks. Start at the notes' Start Here. Mockups in `docs/build-7-2/mockups/`. Left for the builder (not deferred product):
+- Run Builder Tasks (a) weather-data plan and (b) I6 ceilings research check, then ship Section I with "cap".
+- Build the Nov 4 locked mock picks (R1a, R2a, R2b, R3a, R4, R5a final r3, Stub From Faves, Watching Season) and the already-locked Oct 30 sections that are not gated.
+- Record each Builder Decides pick in the notes.
+- Event Types setting stays gated on §1 taxonomy research.
+- Known small 7.1 fixes Mosaic spotted: team page em-dash "no verdict" score; 36pt sheet close button.
+
 ### Build 7.1 follow-ups (Claude Code, Oct 24, 2026; the report is `docs/build-7-1/gap-report-7-1.md`)
 Build 7.1 shipped steps 1–14 on Oct 24 (the notes: `docs/build-7-1/build-notes-7-1.md`). Closed by the notes, nothing to build: **M10** (add-on listings hidden, `addOns.ts`), **M12** (type icons option C and 20k rounding), **M13** (favorite cities on the switcher; reordering shipped as M31). **Season tickets** (item 15) shipped. Left, each with its why in the report:
 - ~~**Codex stages 4 and 5, re-run**~~ done Oct 24 evening; findings fixed (gap report, Codex findings).
