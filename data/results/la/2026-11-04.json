@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-clippers-401909935",
+      "metroId": "la",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 116
+      },
+      "away": {
+        "name": "Heat",
+        "score": 117
+      },
+      "attendance": 17504,
+      "note": "OT",
+      "capturedAt": "2026-11-05T16:30:05.318Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "22:40"
+    },
+    {
+      "eventId": "2026-11-04-espn-kings-401892646",
+      "metroId": "la",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 7
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 2
+      },
+      "attendance": 17010,
+      "capturedAt": "2026-11-05T16:30:05.318Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "22:18"
+    }
+  ]
+}

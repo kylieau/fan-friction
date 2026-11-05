@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-du-wbb-401923193",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-wbb",
+      "home": {
+        "name": "Denver",
+        "score": 66
+      },
+      "away": {
+        "name": "Lindenwood",
+        "score": 52
+      },
+      "attendance": 368,
+      "capturedAt": "2026-11-05T16:30:22.173Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-04-espn-nuggets-401909931",
+      "metroId": "denver",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 128
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 109
+      },
+      "attendance": 19520,
+      "capturedAt": "2026-11-05T16:30:22.173Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-ht-laval-rocket-1029246",
+      "metroId": "montreal",
+      "date": "2026-11-04",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 4
+      },
+      "away": {
+        "name": "Phantoms",
+        "score": 5
+      },
+      "attendance": 8030,
+      "note": "OT",
+      "capturedAt": "2026-11-05T16:30:10.062Z"
+    }
+  ]
+}

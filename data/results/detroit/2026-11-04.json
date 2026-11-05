@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-pistons-401909922",
+      "metroId": "detroit",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "pistons",
+      "home": {
+        "name": "Pistons",
+        "score": 106
+      },
+      "away": {
+        "name": "76ers",
+        "score": 112
+      },
+      "attendance": 20198,
+      "capturedAt": "2026-11-05T16:30:09.631Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "19:13"
+    }
+  ]
+}

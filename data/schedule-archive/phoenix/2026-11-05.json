@@ -1,0 +1,4092 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "metroName": "Phoenix",
+  "timeZone": "America/Phoenix",
+  "capturedOn": "2026-11-05",
+  "capturedAt": "2026-11-05T16:27:48.196Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-05",
+    "through": "2026-11-19"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 26
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 94
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 14
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-05-sa-gculopes-com-21154",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. San José State",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-05-espn-asu-wbb-401916081",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Arizona St vs. N Arizona",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-wbb",
+        "away": "n-arizona",
+        "awayOpponent": "n-arizona"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3095,
+        "low": 2579,
+        "high": 5375,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-suns-401909936",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Magic",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-17k8v0G61DxzIZM",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dan + Shay",
+      "officialTitle": "Dan + Shay: The Young Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "talking-stick-resort-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dan + Shay",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173kl0",
+        "K8vZ917QEF0",
+        "K8vZ917h770"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G61DxzIZM",
+      "expectedDraw": {
+        "count": 20106,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-1A_ZkfkGkdGw1Px",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "311",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "311",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171GyV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfkGkdGw1Px",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-1A_ZkfPGkd-iDxe",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Arizona Wildcats Hockey vs. Utah Men's Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Arizona Wildcats Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfPGkd-iDxe",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-05-tm-1A_ZkftGkdbrlCL",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "DJ Meredith Marks",
+      "officialTitle": "DJ Meredith Marks - YOU. CAN. DANCE. Tour (21+)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Meredith Marks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkftGkdbrlCL",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-1Av0Z_oGkYm9wPo",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Derulo",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jason Derulo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_oGkYm9wPo",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1A_ZkfPGkd0-lHo",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Arizona Wildcats Hockey vs. Utah Men's Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Arizona Wildcats Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfPGkd0-lHo",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-06-sa-gculopes-com-21358",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Yavapai College",
+      "place": {
+        "type": "venue",
+        "venueId": "gcu-ballpark"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "gcu-baseball",
+        "away": "Yavapai College",
+        "awayOpponent": "yavapai-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-espn-asu-hockey-401904868",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Arizona State vs. Denver",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "asu-hockey",
+        "away": "du-mhockey",
+        "awayOpponent": "denver"
+      },
+      "rank": {
+        "away": 4
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-06-espn-asu-mbb-401921732",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Arizona St vs. N Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-mbb",
+        "away": "n-colorado",
+        "awayOpponent": "n-colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7401,
+        "low": 6812,
+        "high": 9383,
+        "fromCrowds": true,
+        "games": 41,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 41 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-17k8v0G62KbcUJp",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tucson Roadrunners vs. Coachella Valley Firebirds",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tucson Roadrunners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62KbcUJp",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1Av0Z_FGkBW1MLA",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "One Vision of Queen",
+      "place": {
+        "type": "venue",
+        "venueId": "chandler-center-for-the-arts"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "One Vision of Queen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_FGkBW1MLA",
+      "expectedDraw": {
+        "count": 1508,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvdvE",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Oingo Boingo Former Members",
+      "officialTitle": "Oingo Boingo Former Members w/ The Untouchables",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Oingo Boingo Former Members",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvdvE",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-17k8v0G6u1Q4PFr",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Medium Build",
+      "officialTitle": "Medium Build Presents The King of Having Fun on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Medium Build",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6u1Q4PFr",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-17k8v0G6ukBgzh7",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "José Madero",
+      "officialTitle": "Jose Madero - USA Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "José Madero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6ukBgzh7",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-17k8v0G6uxW6bz2",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Chris Young",
+      "officialTitle": "Chris Young An Acoustic Evening",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Chris Young",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6uxW6bz2",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1A_Zko8GkeBJA4T",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Cristian Castro",
+      "officialTitle": "Cristian Castro: Nada Solo Exitos Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-diamond-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Cristian Castro",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175rm0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zko8GkeBJA4T",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1A_ZkoPGkdGi1SU",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Daniel Tosh: My First Farewell Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Tosh",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkoPGkdGi1SU"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZNCp",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Thats Not Me Comedy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Thats Not Me Comedy Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZNCp"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A7OEAM",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Arizona Wildcats Football vs. TCU Horned Frogs Football",
+      "place": {
+        "type": "venue",
+        "venueId": "casino-del-sol-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Arizona Wildcats Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OEAM"
+    },
+    {
+      "id": "2026-11-07-sa-gculopes-com-21155",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "11:30",
+      "kind": "game",
+      "title": "Grand Canyon vs. San José State",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-gculopes-com-21355",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Central Arizona College",
+      "place": {
+        "type": "venue",
+        "venueId": "gcu-ballpark"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "gcu-baseball",
+        "away": "Central Arizona College",
+        "awayOpponent": "central-arizona-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-1Fk8vP1dqbZ787u5",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Best Of Broadway: Lloyd Webber & More!",
+      "place": {
+        "type": "venue",
+        "venueId": "chandler-center-for-the-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Best Of Broadway: Lloyd Webber & More!",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Fk8vP1dqbZ787u5"
+    },
+    {
+      "id": "2026-11-07-espn-asu-football-401856852",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Arizona St vs. Colorado",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "mountain-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "asu-football",
+        "away": "colorado",
+        "awayOpponent": "colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 50263,
+        "low": 42289,
+        "high": 50909,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-gcu-mbb-401911345",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Bethune",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gcu-mbb",
+        "away": "bethune",
+        "awayOpponent": "bethune"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7233,
+        "low": 7130,
+        "high": 7324,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1Av0Z_8Gkw10Wpp",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Badfish - A Tribute To Sublime",
+      "officialTitle": "Badfish - A Tribute To Sublime \"Fall Tour 2026\"",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Badfish - A Tribute To Sublime",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_8Gkw10Wpp",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-suns-401909943",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Rockets",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17k8v0G62KhkUS9",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tucson Roadrunners vs. Coachella Valley Firebirds",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tucson Roadrunners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62KhkUS9",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17k8v0G65UbEPjg",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Dance Theatre of Harlem",
+      "place": {
+        "type": "venue",
+        "venueId": "asu-gammage"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Dance Theatre of Harlem",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G65UbEPjg"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AA7JOI",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "RUF MMA 71",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "RUF MMA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7JOI"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZ_7d",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Dusty Slay",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Dusty Slay",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ_7d"
+    },
+    {
+      "id": "2026-11-07-tm-17k8v0G61QGUUYM",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lupillo Rivera",
+      "officialTitle": "90s Corridos Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-diamond-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Lupillo Rivera",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171UtV",
+        "K8vZ917uwv7",
+        "K8vZ917hls7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G61QGUUYM",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17k8v0G659i4asL",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Whethan",
+      "officialTitle": "WHETHAN ? WAREHOUSE.WAVS TOUR (360 SHOW) 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Whethan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G659i4asL",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17k8v0G6uxy9FIT",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "WAR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "WAR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6uxy9FIT",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-asu-hockey-401904869",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Arizona State vs. Denver",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "asu-hockey",
+        "away": "du-mhockey",
+        "awayOpponent": "denver"
+      },
+      "rank": {
+        "away": 4
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-08-tm-17k8v0G6Cnfn0tP",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Strait Outta Texas-Tribute to George Strait",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Strait Outta Texas-Tribute to George Strait",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6Cnfn0tP",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAvdvI",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Musical Box",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Musical Box",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvdvI",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-17k8v0G61TFAEz1",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "officialTitle": "Don Omar \"The Last King World Tour\"",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Don Omar",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175yK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G61TFAEz1",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-17k8v0G6GkBwFpa",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "RØZ Presents: SE ESTÁ HACIENDO TARDE (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6GkBwFpa",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A7xpQo",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "start": null,
+      "kind": "game",
+      "title": "Arizona State Sun Devils Womens Volleyball vs. Utah Utes Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Arizona State Sun Devils Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpQo"
+    },
+    {
+      "id": "2026-11-09-espn-gcu-wbb-401918902",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Oregon",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gcu-wbb",
+        "away": "oregon",
+        "awayOpponent": "oregon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 604,
+        "low": 471,
+        "high": 755,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-17k8v0G6Gfgcsse",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Underoath",
+      "officialTitle": "Underoath - Define the Great Line 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Underoath",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Y30",
+        "K8vZ917GGe7",
+        "K8vZ9175prV",
+        "K8vZ917Gd2V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6Gfgcsse",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-espn-suns-401909958",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Spurs",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-17k8v0G6G7uWXj1",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bonobo",
+      "officialTitle": "Bonobo: Distance in Static Live North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bonobo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6G7uWXj1",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-asu-mbb-401921733",
+      "metroId": "phoenix",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Arizona St vs. Hofstra",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-mbb",
+        "away": "hofstra",
+        "awayOpponent": "hofstra"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6192,
+        "low": 6049,
+        "high": 6435,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-suns-401909962",
+      "metroId": "phoenix",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Clippers",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-sa-gculopes-com-21171",
+      "metroId": "phoenix",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Mountain West Championship Semifinal",
+      "place": {
+        "type": "venue",
+        "venueId": "gcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-10-tm-1A_Zkf4GkewVF3v",
+      "metroId": "phoenix",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Reyez",
+      "officialTitle": "Jessie Reyez: A Little Vengeance Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jessie Reyez",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174HJ7",
+        "K8vZpZAe6JJk"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zkf4GkewVF3v",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1A_Zk34GkeVDUMd",
+      "metroId": "phoenix",
+      "date": "2026-11-10",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Morrissey",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morrissey",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171Fvf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zk34GkeVDUMd",
+      "expectedDraw": {
+        "count": 2850,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17k8v0G65KTic13",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G65KTic13",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-gcu-mbb-401911346",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Cal Poly",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gcu-mbb",
+        "away": "cal-poly",
+        "awayOpponent": "cal-poly"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7123,
+        "low": 7004,
+        "high": 7198,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-1Av0ZbwGkRN_KUQ",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sabaton",
+      "officialTitle": "Sabaton: Legends on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sabaton",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GNYV",
+        "K8vZ917GSuV",
+        "K8vZ917rJ6f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0ZbwGkRN_KUQ",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70wPV",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Don McLean",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Don McLean",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70wPV",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17k8v0G61XA1K9D",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Smashing Pumpkins",
+      "officialTitle": "The Smashing Pumpkins: The Rats In A Cage Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Smashing Pumpkins",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171FDV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G61XA1K9D",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-gculopes-com-21239",
+      "metroId": "phoenix",
+      "date": "2026-11-11",
+      "start": null,
+      "kind": "game",
+      "title": "Grand Canyon vs. Semifinal",
+      "place": {
+        "type": "venue",
+        "venueId": "gcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-sa-gculopes-com-21156",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. UTEP",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-espn-suns-401909979",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Suns vs. Hornets",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "hornets",
+        "awayOpponent": "hornets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-espn-valley-suns-401914536",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Valley Suns vs. Coachella Valley Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valley-suns",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 725,
+        "low": 410,
+        "high": 1006,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 23 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-17k8v0G6GlG49ww",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "State Champs",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "State Champs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6GlG49ww",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1A_ZkfPGkdJcG47",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Arizona Wildcats Hockey vs. UNLV Men's Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Arizona Wildcats Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfPGkdJcG47",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7Jd-F",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Todd Rundgren",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Todd Rundgren",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Jd-F",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-17k8v0G62mFKKwz",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "With A Vengeance",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "With A Vengeance",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62mFKKwz",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1Av0Z_aGkDgUD4t",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gary Numan",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Gary Numan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_aGkDgUD4t",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-gcu-wbb-401920260",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. Gonzaga",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gcu-wbb",
+        "away": "gonzaga",
+        "awayOpponent": "gonzaga"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 609,
+        "low": 499,
+        "high": 899,
+        "fromCrowds": true,
+        "games": 31,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 31 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-asu-mbb-401917980",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Arizona St vs. UL Monroe",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-mbb",
+        "away": "ul-monroe",
+        "awayOpponent": "ul-monroe"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7401,
+        "low": 6812,
+        "high": 9383,
+        "fromCrowds": true,
+        "games": 41,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 41 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17k8v0G6Gwry6eD",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Benise",
+      "officialTitle": "BENISE - Spanish Nights by Candlelight",
+      "place": {
+        "type": "venue",
+        "venueId": "chandler-center-for-the-arts"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Benise",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6Gwry6eD",
+      "expectedDraw": {
+        "count": 1508,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1A_ZkfPGkdEDi-y",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Arizona Wildcats Hockey vs. UNLV Men's Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Arizona Wildcats Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkfPGkdEDi-y",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17k8v0G6GR0KbDO",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "officialTitle": "Vince Staples - Cry Baby Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Vince Staples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6GR0KbDO",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av0Z_3GkmEhJS5",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Baby Smoove",
+      "officialTitle": "Baby Smoove Live!   The Purple Heart Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Baby Smoove",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_3GkmEhJS5",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av0Z_AGkRoAnWE",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Grupo Duelo",
+      "officialTitle": "Grupo Duelo - GRAVEDAD TOUR 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Grupo Duelo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uYv7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_AGkRoAnWE",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gculopes-com-21157",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. UTEP",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-espn-gcu-mbb-401911347",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Grand Canyon vs. UL Monroe",
+      "place": {
+        "type": "venue",
+        "venueId": "global-credit-union-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gcu-mbb",
+        "away": "ul-monroe",
+        "awayOpponent": "ul-monroe"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7233,
+        "low": 7130,
+        "high": 7324,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 19 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-17k8v0G6260_Fs7",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tucson Roadrunners vs. Texas Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tucson Roadrunners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6260_Fs7",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-tm-17k8v0G6CJCbdOE",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Felipe Esparza Laughter Will Save Us",
+      "place": {
+        "type": "venue",
+        "venueId": "the-showroom-at-wild-horse-pass"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Felipe Esparza",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6CJCbdOE"
+    },
+    {
+      "id": "2026-11-14-tm-1A_ZkoJGkdjSr3Z",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Black Moods",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Black Moods",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_ZkoJGkdjSr3Z",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1Av0Z_FGkTukFB_",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Cirque Mechanics: Tilt!",
+      "place": {
+        "type": "venue",
+        "venueId": "chandler-center-for-the-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Cirque Mechanics",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_FGkTukFB_"
+    },
+    {
+      "id": "2026-11-14-tm-17k8v0G6C_HH3Za",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "TroyBoi",
+      "officialTitle": "TroyBoi - Hear2Move",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "TroyBoi",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6C_HH3Za",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-17k8v0G6GH6BhFJ",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brand New",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Brand New",
+      "act": true,
+      "performerIds": [
+        "K8vZ91751C0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6GH6BhFJ",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gculopes-com-21240",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": null,
+      "kind": "game",
+      "title": "Grand Canyon vs. Championship",
+      "place": {
+        "type": "venue",
+        "venueId": "gcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OEAU",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "start": null,
+      "kind": "game",
+      "title": "Arizona Wildcats Football vs. Utah Utes Football",
+      "place": {
+        "type": "venue",
+        "venueId": "casino-del-sol-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Arizona Wildcats Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OEAU"
+    },
+    {
+      "id": "2026-11-15-espn-asu-wbb-401916083",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Arizona St vs. Penn State",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-wbb",
+        "away": "penn-state",
+        "awayOpponent": "penn-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3954,
+        "low": 2846,
+        "high": 5688,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-suns-401909986",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Suns vs. Lakers",
+      "broadcast": "Spectrum Sports Net",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "suns",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-valley-suns-401914554",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Valley Suns vs. Coachella Valley Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valley-suns",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 863,
+        "low": 490,
+        "high": 1131,
+        "fromCrowds": true,
+        "games": 30,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 30 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-arizona-cardinals-401873061",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "14:05",
+      "kind": "game",
+      "title": "Cardinals vs. Rams",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "arizona-cardinals",
+        "away": "rams",
+        "awayOpponent": "rams"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 62686,
+        "low": 61776,
+        "high": 63692,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17k8v0G62KbRkJ_",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Tucson Roadrunners vs. Texas Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "tucson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tucson Roadrunners",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62KbRkJ_",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17k8v0G658fumZF",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "DragonForce",
+      "officialTitle": "DragonForce: Inhuman Rampage 20th Anniversary",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "DragonForce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G658fumZF",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17k8v0G6uB8nfa2",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Alice Cooper",
+      "place": {
+        "type": "venue",
+        "venueId": "findlay-toyota-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Alice Cooper",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171ulV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6uB8nfa2",
+      "expectedDraw": {
+        "count": 6200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17k8v0G62Qiwken",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Donavon Frankenreiter",
+      "officialTitle": "Rolling Together Revue: Donavon Frankenreiter + The Band Of Heathens",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Donavon Frankenreiter",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G62Qiwken",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-valley-suns-401914561",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Valley Suns vs. Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valley-suns",
+        "away": "salt-lake-city-stars",
+        "awayOpponent": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 907,
+        "low": 513,
+        "high": 1259,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 23 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-1Av0Z_FGkBNa4B9",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "officialTitle": "Teddy Swims: The UGLY Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0",
+        "K8vZ9175ng0",
+        "K8vZ917OJSf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_FGkBNa4B9",
+      "expectedDraw": {
+        "count": 7162,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-17k8v0G61L--aUW",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Band of Horses",
+      "officialTitle": "An Evening With Band Of Horses",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Band of Horses",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G61L--aUW",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-1Av0Z_8GkDsRTeQ",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "CupcakKe",
+      "place": {
+        "type": "venue",
+        "venueId": "the-nile-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "CupcakKe",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_8GkDsRTeQ",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-asu-wbb-401916084",
+      "metroId": "phoenix",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Arizona St vs. San Diego",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-wbb",
+        "away": "san-diego",
+        "awayOpponent": "san-diego"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3095,
+        "low": 2579,
+        "high": 5375,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 6 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1A_Zk3fGkdZRI2O",
+      "metroId": "phoenix",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "GWAR",
+      "officialTitle": "GWAR - Gor Gor Must Die",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "GWAR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A_Zk3fGkdZRI2O",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-16_Zkf6FZZA2G752",
+      "metroId": "phoenix",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "arizona-financial-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174s67"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16_Zkf6FZZA2G752",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1Av0Z_3GkBPBkD4",
+      "metroId": "phoenix",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Nick Cannon Presents: Wild 'N Out Live - The Next Generation",
+      "place": {
+        "type": "venue",
+        "venueId": "mortgage-matchup-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nick Cannon Presents: Wild 'N Out Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_3GkBPBkD4"
+    },
+    {
+      "id": "2026-11-17-tm-1Av0Z_3GkljfnRC",
+      "metroId": "phoenix",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Chicks in the Office: The Just Between Us Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Chicks in the Office",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_3GkljfnRC"
+    },
+    {
+      "id": "2026-11-18-espn-asu-mbb-401921734",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Arizona St vs. Oakland",
+      "place": {
+        "type": "venue",
+        "venueId": "desert-financial-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "asu-mbb",
+        "away": "oakland",
+        "awayOpponent": "oakland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6192,
+        "low": 6049,
+        "high": 6435,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-valley-suns-401914570",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Valley Suns vs. Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "mullett-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "valley-suns",
+        "away": "salt-lake-city-stars",
+        "awayOpponent": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 907,
+        "low": 513,
+        "high": 1259,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 23 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A70FqA",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Leonid & Friends",
+      "officialTitle": "Leonid and Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Leonid & Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70FqA",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-17k8v0G6CPSh3um",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "special",
+      "title": "On Cinema - The Certified \"Five Bags of Popcorn\" Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "marquee-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "On Cinema",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17k8v0G6CPSh3um"
+    },
+    {
+      "id": "2026-11-18-tm-1Av0Z_8GkUhEpF1",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Clara La San",
+      "officialTitle": "Clara La San - Chosen Silences Tour Fall 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "the-van-buren"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Clara La San",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av0Z_8GkUhEpF1",
+      "expectedDraw": {
+        "count": 1900,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A70Kx4",
+      "metroId": "phoenix",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Psychedelic Furs",
+      "officialTitle": "Psychedelic Furs",
+      "place": {
+        "type": "venue",
+        "venueId": "celebrity-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Psychedelic Furs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Kx4",
+      "expectedDraw": {
+        "count": 2606,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-05-sa-gculopes-com-21154",
+      "date": "2026-11-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-asu-wbb-401916081",
+      "date": "2026-11-05",
+      "start": "18:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3095,
+        "low": 2579,
+        "high": 5375
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-suns-401909936",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Dan + Shay · The Young Tour 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-17k8v0G61DxzIZM",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Magic at Suns 9.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20106
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-1A_ZkfkGkdGw1Px",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Dan + Shay · The Young Tour and Magic at Suns 9.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-1A_ZkfPGkd-iDxe",
+      "date": "2026-11-05",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-05-tm-1A_ZkftGkdbrlCL",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-1Av0Z_oGkYm9wPo",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1A_ZkfPGkd0-lHo",
+      "date": "2026-11-06",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-gculopes-com-21358",
+      "date": "2026-11-06",
+      "start": "15:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-asu-hockey-401904868",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Heavy",
+        "why": "N Colorado at Arizona St (MBB) next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-asu-mbb-401921732",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Heavy",
+        "why": "Denver at Arizona State (MHKY) next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7401,
+        "low": 6812,
+        "high": 9383
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-17k8v0G62KbcUJp",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-1Av0Z_FGkBW1MLA",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1508
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvdvE",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2606
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-17k8v0G6u1Q4PFr",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-17k8v0G6ukBgzh7",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-17k8v0G6uxW6bz2",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1A_Zko8GkeBJA4T",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "N Colorado at Arizona St (MBB) 20 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-1A_ZkoPGkdGi1SU",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZNCp",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A7OEAM",
+      "date": "2026-11-06",
+      "start": "20:15"
+    },
+    {
+      "eventId": "2026-11-07-sa-gculopes-com-21155",
+      "date": "2026-11-07",
+      "start": "11:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-gculopes-com-21355",
+      "date": "2026-11-07",
+      "start": "13:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1Fk8vP1dqbZ787u5",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-asu-football-401856852",
+      "date": "2026-11-07",
+      "start": "17:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Rockets at Suns and 90s Corridos Tour 8.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 50263,
+        "low": 42289,
+        "high": 50909
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-gcu-mbb-401911345",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Heavy",
+        "why": "Rockets at Suns 5.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7233,
+        "low": 7130,
+        "high": 7324
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1Av0Z_8Gkw10Wpp",
+      "date": "2026-11-07",
+      "start": "18:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-suns-401909943",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Colorado at Arizona St (FB) and Bethune at Grand Canyon (MBB) 8.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17k8v0G62KhkUS9",
+      "date": "2026-11-07",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-17k8v0G65UbEPjg",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AA7JOI",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZ_7d",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17k8v0G61QGUUYM",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Colorado at Arizona St (FB) 20 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17k8v0G659i4asL",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17k8v0G6uxy9FIT",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-asu-hockey-401904869",
+      "date": "2026-11-08",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17k8v0G6Cnfn0tP",
+      "date": "2026-11-08",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAvdvI",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2606
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17k8v0G61TFAEz1",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17k8v0G6GkBwFpa",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A7xpQo",
+      "date": "2026-11-08",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-gcu-wbb-401918902",
+      "date": "2026-11-09",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 604,
+        "low": 471,
+        "high": 755
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-17k8v0G6Gfgcsse",
+      "date": "2026-11-09",
+      "start": "18:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Spurs at Suns 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-suns-401909958",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Underoath 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-17k8v0G6G7uWXj1",
+      "date": "2026-11-09",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-asu-mbb-401921733",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Heavy",
+        "why": "Clippers at Suns 8.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6192,
+        "low": 6049,
+        "high": 6435
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-suns-401909962",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "Hofstra at Arizona St (MBB) 8.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-10-sa-gculopes-com-21171",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A_Zkf4GkewVF3v",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Clippers at Suns 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A_Zk34GkeVDUMd",
+      "date": "2026-11-10",
+      "start": "20:30",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Clippers at Suns 8.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 2850
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-17k8v0G65KTic13",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-gcu-mbb-401911346",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The Smashing Pumpkins 5.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7123,
+        "low": 7004,
+        "high": 7198
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1Av0ZbwGkRN_KUQ",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Moderate",
+        "why": "The Smashing Pumpkins and Cal Poly at Grand Canyon (MBB) 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70wPV",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2606
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-17k8v0G61XA1K9D",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Cal Poly at Grand Canyon (MBB) and Sabaton · Legends on Tour 5.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-gculopes-com-21239",
+      "date": "2026-11-11",
+      "start": null,
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-gculopes-com-21156",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-suns-401909979",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-valley-suns-401914536",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 725,
+        "low": 410,
+        "high": 1006
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-17k8v0G6GlG49ww",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1A_ZkfPGkdJcG47",
+      "date": "2026-11-12",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7Jd-F",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2606
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-17k8v0G62mFKKwz",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1Av0Z_aGkDgUD4t",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-gcu-wbb-401920260",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 609,
+        "low": 499,
+        "high": 899
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-asu-mbb-401917980",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Grupo Duelo · GRAVEDAD TOUR 2026 8.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7401,
+        "low": 6812,
+        "high": 9383
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17k8v0G6Gwry6eD",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1508
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1A_ZkfPGkdEDi-y",
+      "date": "2026-11-13",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-13-tm-17k8v0G6GR0KbDO",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av0Z_3GkmEhJS5",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av0Z_AGkRoAnWE",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "UL Monroe at Arizona St (MBB) 8.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gculopes-com-21157",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-gcu-mbb-401911347",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Brand New 5.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7233,
+        "low": 7130,
+        "high": 7324
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17k8v0G6260_Fs7",
+      "date": "2026-11-14",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-14-tm-17k8v0G6CJCbdOE",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A_ZkoJGkdjSr3Z",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1Av0Z_FGkTukFB_",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17k8v0G6C_HH3Za",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17k8v0G6GH6BhFJ",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "UL Monroe at Grand Canyon (MBB) 5.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gculopes-com-21240",
+      "date": "2026-11-14",
+      "start": null,
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OEAU",
+      "date": "2026-11-14",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-15-espn-asu-wbb-401916083",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3954,
+        "low": 2846,
+        "high": 5688
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-suns-401909986",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Rams at Cardinals 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17071,
+        "low": 17071,
+        "high": 17071
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-valley-suns-401914554",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 863,
+        "low": 490,
+        "high": 1131
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-arizona-cardinals-401873061",
+      "date": "2026-11-15",
+      "start": "14:05",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Lakers at Suns 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 62686,
+        "low": 61776,
+        "high": 63692
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17k8v0G62KbRkJ_",
+      "date": "2026-11-15",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-15-tm-17k8v0G658fumZF",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17k8v0G6uB8nfa2",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "draw": {
+        "count": 6200
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17k8v0G62Qiwken",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-valley-suns-401914561",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 907,
+        "low": 513,
+        "high": 1259
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-1Av0Z_FGkBNa4B9",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7162
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17k8v0G61L--aUW",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-1Av0Z_8GkDsRTeQ",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-asu-wbb-401916084",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3095,
+        "low": 2579,
+        "high": 5375
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1A_Zk3fGkdZRI2O",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-16_Zkf6FZZA2G752",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Nick Cannon Presents: Wild 'N O… 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1Av0Z_3GkBPBkD4",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Steve Lacy · Oh yeah? Tour 0.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1Av0Z_3GkljfnRC",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-asu-mbb-401921734",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6192,
+        "low": 6049,
+        "high": 6435
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-valley-suns-401914570",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 907,
+        "low": 513,
+        "high": 1259
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A70FqA",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2606
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-17k8v0G6CPSh3um",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1Av0Z_8GkUhEpF1",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1900
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A70Kx4",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "draw": {
+        "count": 2606
+      }
+    }
+  ]
+}

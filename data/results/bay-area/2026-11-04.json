@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-cal-mbb-401918052",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 84
+      },
+      "away": {
+        "name": "Radford",
+        "score": 70
+      },
+      "attendance": 1952,
+      "capturedAt": "2026-11-05T16:30:07.624Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    },
+    {
+      "eventId": "2026-11-04-espn-stanford-wbb-401915978",
+      "metroId": "bay-area",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-wbb",
+      "home": {
+        "name": "Stanford",
+        "score": 87
+      },
+      "away": {
+        "name": "Saint Mary's",
+        "score": 54
+      },
+      "attendance": 1900,
+      "capturedAt": "2026-11-05T16:30:07.624Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "22:03"
+    }
+  ]
+}

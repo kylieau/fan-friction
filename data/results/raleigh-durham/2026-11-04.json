@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-nc-state-wbb-401913736",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reynolds-coliseum",
+      "homeTeamId": "nc-state-wbb",
+      "home": {
+        "name": "NC State",
+        "score": 80
+      },
+      "away": {
+        "name": "Campbell",
+        "score": 45
+      },
+      "attendance": 4912,
+      "capturedAt": "2026-11-05T16:30:20.927Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-04-espn-nccu-wbb-401925620",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mcdougald-mclendon-arena",
+      "homeTeamId": "nccu-wbb",
+      "home": {
+        "name": "NC Central",
+        "score": 99
+      },
+      "away": {
+        "name": "Johnson C Smth",
+        "score": 73
+      },
+      "attendance": 492,
+      "capturedAt": "2026-11-05T16:30:20.927Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

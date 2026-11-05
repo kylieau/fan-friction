@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-vanderbilt-wbb-401913884",
+      "metroId": "nashville",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-wbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 100
+      },
+      "away": {
+        "name": "Queens",
+        "score": 42
+      },
+      "attendance": 2806,
+      "capturedAt": "2026-11-05T16:30:13.897Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    }
+  ]
+}

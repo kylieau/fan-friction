@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-spurs-401909933",
+      "metroId": "san-antonio",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 112
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 111
+      },
+      "attendance": 18354,
+      "capturedAt": "2026-11-05T16:30:19.626Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "21:48"
+    }
+  ]
+}

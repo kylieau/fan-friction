@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-st-thomas-wbb-401918723",
+      "metroId": "minneapolis",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-wbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 77
+      },
+      "away": {
+        "name": "Bethel (MN)",
+        "score": 43
+      },
+      "attendance": 599,
+      "capturedAt": "2026-11-05T16:30:18.198Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

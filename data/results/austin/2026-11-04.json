@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-texas-state-wbb-401919931",
+      "metroId": "austin",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-wbb",
+      "home": {
+        "name": "Texas St",
+        "score": 69
+      },
+      "away": {
+        "name": "Long Island",
+        "score": 51
+      },
+      "attendance": 917,
+      "capturedAt": "2026-11-05T16:30:14.307Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-04-espn-texas-wbb-401918840",
+      "metroId": "austin",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-wbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 85
+      },
+      "away": {
+        "name": "FDU",
+        "score": 65
+      },
+      "attendance": 9688,
+      "capturedAt": "2026-11-05T16:30:14.307Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

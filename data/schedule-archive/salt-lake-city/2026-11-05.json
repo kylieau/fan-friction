@@ -1,0 +1,1968 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "metroName": "Salt Lake City",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-11-05",
+  "capturedAt": "2026-11-05T16:29:04.481Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-05",
+    "through": "2026-11-19"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 17
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 40
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 10
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-05-espn-utah-mbb-401921698",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Towson",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "towson",
+        "awayOpponent": "towson"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1A7JZPF",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Outlander in Concert - Infants not admitted",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Outlander in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JZPF"
+    },
+    {
+      "id": "2026-11-06-espn-utah-wbb-401918932",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Colorado St",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-wbb",
+        "away": "colorado-st",
+        "awayOpponent": "colorado-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3243,
+        "low": 2697,
+        "high": 3977,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 28 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1A70U8A",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U8A",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvgjS",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "BYU Cougars Mens Basketball vs. Nebraska Omaha Mavericks Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "marriott-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "BYU Cougars Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvgjS",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAvZfA",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Alex Boye",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Alex Boye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvZfA",
+      "expectedDraw": {
+        "count": 2468,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-utah-utes-football-401856849",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "10:00",
+      "kind": "game",
+      "title": "Utah Utes vs. BYU",
+      "broadcast": "ABC",
+      "place": {
+        "type": "venue",
+        "venueId": "rice-eccles-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utah-utes-football",
+        "away": "byu",
+        "awayOpponent": "byu"
+      },
+      "rank": {
+        "home": 3,
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 51213,
+        "low": 50943,
+        "high": 51462,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70U8F",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U8F",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAZN46",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Utah State Aggies Mens Basketball vs. Nebraska Omaha Mavericks Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "dee-glen-smith-spectrum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Utah State University Aggies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZN46",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70U86",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U86",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7roZ4",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Real Salt Lake vs. Los Angeles Galaxy",
+      "place": {
+        "type": "venue",
+        "venueId": "america-first-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Real Salt Lake",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7roZ4"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70U8k",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U8k",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A70pGV",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Utah State Aggies Football vs. Fresno State Bulldogs Football",
+      "place": {
+        "type": "venue",
+        "venueId": "maverik-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Utah State Aggies Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pGV"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-Exk",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "start": null,
+      "kind": "game",
+      "title": "Idaho State Bengals Football vs. Montana State Bobcats Football",
+      "place": {
+        "type": "venue",
+        "venueId": "iccu-dome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Idaho State University Bengals Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Exk"
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A70U8a",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U8a",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A70U88",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Disney On Ice Presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70U88",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-09-espn-utah-wbb-401918583",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Bethune",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-wbb",
+        "away": "bethune",
+        "awayOpponent": "bethune"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-salt-lake-city-stars-401914521",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Stars vs. Remix",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "salt-lake-city-stars",
+        "away": "rip-city-remix",
+        "awayOpponent": "remix"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3000,
+        "low": 2723,
+        "high": 4689,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-utah-jazz-401909963",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Jazz vs. Heat",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "heat",
+        "awayOpponent": "heat"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-utah-mbb-401921699",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Weber St",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "weber-st",
+        "awayOpponent": "weber-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A7-7uI",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uI",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A7P9CA",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": null,
+      "kind": "game",
+      "title": "BYU Cougars Mens Basketball vs. Queens Royals Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "marriott-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "BYU Cougars Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P9CA",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1AAZbad",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "start": null,
+      "kind": "game",
+      "title": "Utah State Aggies Mens Basketball vs. Utah Tech Trailblazers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "dee-glen-smith-spectrum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Utah State University Aggies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZbad",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-espn-salt-lake-city-stars-401914529",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-11",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Stars vs. Remix",
+      "place": {
+        "type": "venue",
+        "venueId": "maverik-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "salt-lake-city-stars",
+        "away": "rip-city-remix",
+        "awayOpponent": "remix"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1342,
+        "low": 1006,
+        "high": 1659,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 18 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-utah-jazz-401909973",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Jazz vs. Magic",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A7-7ut",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7ut",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-espn-utah-mammoth-401892704",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Blues",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "blues",
+        "awayOpponent": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12753,
+        "low": 11720,
+        "high": 12753,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-utahutes-com-24650",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah vs. Texas Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7-7uY",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uY",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1AAvgjV",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-12",
+      "start": null,
+      "kind": "game",
+      "title": "BYU Cougars Mens Basketball vs. Montana State Bobcats Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "marriott-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "BYU Cougars Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvgjV",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7-7uS",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uS",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5vzZ_6KhA5IC",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "special",
+      "title": "CHELSEA HANDLER: THE HIGH AND MIGHTY TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "kingsbury-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Chelsea Handler",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6KhA5IC"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAZbae",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-13",
+      "start": null,
+      "kind": "game",
+      "title": "Utah State Aggies Mens Basketball vs. UC San Diego Tritons Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "dee-glen-smith-spectrum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Utah State University Aggies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZbae",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-7ug",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7ug",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-14-espn-utah-mbb-401921760",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "uw-mbb",
+        "awayOpponent": "washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6299,
+        "low": 6257,
+        "high": 6682,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-utah-mammoth-401892718",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Sharks",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "sharks",
+        "awayOpponent": "sharks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-7uV",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uV",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5vzZ_4C4Gfp-",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": null,
+      "kind": "special",
+      "title": "Worlds Finals Watch Party, Clash of Clans",
+      "place": {
+        "type": "venue",
+        "venueId": "maverik-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Multimedia"
+      },
+      "performer": "Worlds Finals Watch Party, Clash of Clans",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_4C4Gfp-"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OSGU",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "start": null,
+      "kind": "game",
+      "title": "BYU Cougars Football vs. Baylor Bears Football",
+      "place": {
+        "type": "venue",
+        "venueId": "lavell-edwards-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "BYU Cougars Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OSGU"
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7-7uU",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uU",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-15-espn-utah-jazz-401909988",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Jazz vs. Spurs",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-jazz",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18131,
+        "low": 18131,
+        "high": 18131,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7-7uM",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Outsiders (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Outsiders (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-7uM",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-16-espn-utah-wbb-401918934",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah Utes vs. Hou Christian",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-wbb",
+        "away": "hou-christian",
+        "awayOpponent": "hou-christian"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-utah-mammoth-401892727",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Mammoth vs. Canucks",
+      "broadcast": "Utah 16",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12478,
+        "low": 11468,
+        "high": 12478,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-utah-mbb-401920720",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Utah Utes vs. E Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utah-mbb",
+        "away": "e-washington",
+        "awayOpponent": "e-washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6403,
+        "low": 6090,
+        "high": 6506,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AAZpef",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Cloud Gate Dance Theatre of Taiwan",
+      "place": {
+        "type": "venue",
+        "venueId": "kingsbury-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Cloud Gate Dance Theatre of Taiwan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZpef"
+    },
+    {
+      "id": "2026-11-18-espn-utah-mammoth-401892741",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mammoth vs. Avalanche",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "delta-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "utah-mammoth",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12753,
+        "low": 11720,
+        "high": 12753,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A7PbvS",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-18",
+      "start": null,
+      "kind": "game",
+      "title": "BYU Cougars Mens Basketball vs. Northern Colorado Bears Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "marriott-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "BYU Cougars Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PbvS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AAZbav",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-18",
+      "start": null,
+      "kind": "game",
+      "title": "Utah State Aggies Mens Basketball vs. Weber State Wildcats Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "dee-glen-smith-spectrum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Utah State University Aggies Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZbav",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-19-sa-utahutes-com-24652",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Utah vs. Cincinnati",
+      "place": {
+        "type": "venue",
+        "venueId": "jon-m-huntsman-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7P8Co",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Scott Bradlee's Postmodern Jukebox",
+      "place": {
+        "type": "venue",
+        "venueId": "eccles-theater-slc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Scott Bradlee's Postmodern Jukebox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P8Co",
+      "expectedDraw": {
+        "count": 2468,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-05-espn-utah-mbb-401921698",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1A7JZPF",
+      "date": "2026-11-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-espn-utah-wbb-401918932",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3243,
+        "low": 2697,
+        "high": 3977
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1A70U8A",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Nebraska Omaha Mavericks Mens Basketball at BYU Cougars Mens Basketball 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvgjS",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Disney On Ice · Find Your Hero 38 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAvZfA",
+      "date": "2026-11-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2468
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-utah-utes-football-401856849",
+      "date": "2026-11-07",
+      "start": "10:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "Disney On Ice · Find Your Hero and Disney On Ice · Find Your Hero 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 51213,
+        "low": 50943,
+        "high": 51462
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70U8F",
+      "date": "2026-11-07",
+      "start": "11:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "BYU at Utah Utes (FB) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAZN46",
+      "date": "2026-11-07",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70U86",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "BYU at Utah Utes (FB) and Los Angeles Galaxy at Real Salt Lake 2.8 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7roZ4",
+      "date": "2026-11-07",
+      "start": "17:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Disney On Ice · Find Your Hero and Disney On Ice · Find Your Hero 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70U8k",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "Los Angeles Galaxy at Real Salt Lake 13 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A70pGV",
+      "date": "2026-11-07",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-Exk",
+      "date": "2026-11-07",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A70U8a",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A70U88",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-09-espn-utah-wbb-401918583",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "draw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-salt-lake-city-stars-401914521",
+      "date": "2026-11-10",
+      "start": "10:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000,
+        "low": 2723,
+        "high": 4689
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-utah-jazz-401909963",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Weber St at Utah Utes (MBB) and Queens Royals Mens Basketball at BYU Cougars Mens Basketball 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-utah-mbb-401921699",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Heavy",
+        "why": "Heat at Jazz 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6587,
+        "low": 6265,
+        "high": 6693
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A7-7uI",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A7P9CA",
+      "date": "2026-11-10",
+      "start": null,
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Heat at Jazz 38 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1AAZbad",
+      "date": "2026-11-10",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-11-espn-salt-lake-city-stars-401914529",
+      "date": "2026-11-11",
+      "start": "10:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1342,
+        "low": 1006,
+        "high": 1659
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-utah-jazz-401909973",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18175,
+        "low": 18175,
+        "high": 18186
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A7-7ut",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-utah-mammoth-401892704",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Montana State Bobcats Mens Basketball at BYU Cougars Mens Basketball 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12753,
+        "low": 11720,
+        "high": 12753
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-utahutes-com-24650",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7-7uY",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1AAvgjV",
+      "date": "2026-11-12",
+      "start": null,
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Blues at Mammoth 38 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7-7uS",
+      "date": "2026-11-13",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-13-tm-G5vzZ_6KhA5IC",
+      "date": "2026-11-13",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAZbae",
+      "date": "2026-11-13",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-7ug",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-utah-mbb-401921760",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Sharks at Mammoth 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6299,
+        "low": 6257,
+        "high": 6682
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-utah-mammoth-401892718",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Baylor Bears Football at BYU Cougars Football and Washington at Utah Utes (MBB) 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11131,
+        "low": 11131,
+        "high": 12478
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-7uV",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5vzZ_4C4Gfp-",
+      "date": "2026-11-14",
+      "start": null,
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "Baylor Bears Football at BYU Cougars Football 34 mi away, earlier in the day.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OSGU",
+      "date": "2026-11-14",
+      "start": null,
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7-7uU",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-utah-jazz-401909988",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18131,
+        "low": 18131,
+        "high": 18131
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7-7uM",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-utah-wbb-401918934",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3129,
+        "low": 2267,
+        "high": 3819
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-utah-mammoth-401892727",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12478,
+        "low": 11468,
+        "high": 12478
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-utah-mbb-401920720",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6403,
+        "low": 6090,
+        "high": 6506
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AAZpef",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-utah-mammoth-401892741",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Northern Colorado Bears Mens Basketball at BYU Cougars Mens Basketball 38 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12753,
+        "low": 11720,
+        "high": 12753
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A7PbvS",
+      "date": "2026-11-18",
+      "start": null,
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Avalanche at Mammoth 38 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AAZbav",
+      "date": "2026-11-18",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-19-sa-utahutes-com-24652",
+      "date": "2026-11-19",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7P8Co",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "draw": {
+        "count": 2468
+      }
+    }
+  ]
+}

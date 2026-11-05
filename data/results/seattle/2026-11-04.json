@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-kraken-401892647",
+      "metroId": "seattle",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 2
+      },
+      "away": {
+        "name": "Flames",
+        "score": 1
+      },
+      "attendance": 17151,
+      "note": "OT",
+      "capturedAt": "2026-11-05T16:30:06.505Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

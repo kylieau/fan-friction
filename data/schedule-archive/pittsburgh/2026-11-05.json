@@ -1,0 +1,3120 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "metroName": "Pittsburgh",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-05",
+  "capturedAt": "2026-11-05T16:26:51.321Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-05",
+    "through": "2026-11-19"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 23
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 63
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 30
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-05-espn-robert-morris-wbb-401929107",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Robert Morris vs. UIC",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-wbb",
+        "away": "uic",
+        "awayOpponent": "uic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 420,
+        "low": 257,
+        "high": 842,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-penguins-401892654",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Bruins",
+      "broadcast": "NESN",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "bruins",
+        "awayOpponent": "bruins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16779,
+        "low": 15812,
+        "high": 17994,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-espn-pitt-mbb-401909706",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Buffalo",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-mbb",
+        "away": "buffalo",
+        "awayOpponent": "buffalo"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6310,
+        "low": 5063,
+        "high": 6523,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-17AOv0G61mlJbl3",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nurse John: Against Medical Advice Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nurse John",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G61mlJbl3"
+    },
+    {
+      "id": "2026-11-05-tm-17AOv0G65K2blxu",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lauren Alaina",
+      "officialTitle": "Lauren Alaina - The Stages Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lauren Alaina",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65K2blxu",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-vv1AAZkfdGkdIh0D4",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sugarland",
+      "officialTitle": "Sugarland:  Ride or Die Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sugarland",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175cBV",
+        "K8vZ917jJr7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfdGkdIh0D4",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AA774s",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Basketball vs. George Washington Revolutionaries Women Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA774s"
+    },
+    {
+      "id": "2026-11-05-tm-Z7r9jZ1AAZPea",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Blasting Company",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The Blasting Company",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZPea"
+    },
+    {
+      "id": "2026-11-06-sa-rmucolonials-com-15243",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Cleveland State",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-goduquesne-com-22989",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duquesne vs. George Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAZK49",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Coco Live-to-Film Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "carnegie-music-hall-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Coco Live-to-Film Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZK49"
+    },
+    {
+      "id": "2026-11-06-sa-goduquesne-com-23240",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duquesne vs. La Salle",
+      "place": {
+        "type": "venue",
+        "venueId": "arthur-j-rooney-athletic-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-pittsburghpanthers-com-15272",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Duke",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-sa-rmucolonials-com-15254",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Robert Morris vs. RIT",
+      "place": {
+        "type": "venue",
+        "venueId": "clearview-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "robert-morris-whockey",
+        "away": "RIT",
+        "awayOpponent": "rit"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-06-tm-17AOv0G6G08ScIb",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Vince Staples",
+      "officialTitle": "Vince Staples - Cry Baby Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Vince Staples",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6G08ScIb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-06-tm-Z7r9jZ1AAek0v",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Mens Basketball vs. Stetson Hatters Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAek0v",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-06-tm-1AvbZ_kGkweSf_T",
+      "metroId": "pittsburgh",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_kGkweSf_T",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-duquesne-football-401867922",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Duquesne vs. Robert Morris",
+      "broadcast": "SportsNet PIT",
+      "place": {
+        "type": "venue",
+        "venueId": "arthur-j-rooney-athletic-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "duquesne-football",
+        "away": "robert-morris-football",
+        "awayOpponent": "robert-morris"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1437,
+        "low": 1436,
+        "high": 1439,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-pitt-wbb-401913745",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Pitt vs. Long Island",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-wbb",
+        "away": "long-island",
+        "awayOpponent": "long-island"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 528,
+        "low": 315,
+        "high": 741,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-goduquesne-com-22990",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Duquesne vs. George Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-rmucolonials-com-15255",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Robert Morris vs. RIT",
+      "place": {
+        "type": "venue",
+        "venueId": "clearview-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "robert-morris-whockey",
+        "away": "RIT",
+        "awayOpponent": "rit"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-1AvbZ_FGkXMBa_6",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jim Gaffigan: Everything is Wonderful!",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_FGkXMBa_6"
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1AAe34M",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bingo Loco",
+      "officialTitle": "Bingo Loco (21 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Bingo Loco",
+      "act": true,
+      "performerIds": [
+        "K8vZ91798_7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe34M",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-espn-duquesne-mbb-401925780",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Duquesne vs. Central St",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-mbb",
+        "away": "central-st",
+        "awayOpponent": "central-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1AvbZ_kGkWSCsDv",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sting",
+      "officialTitle": "STING 3.0 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sting",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_kGkWSCsDv",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-sa-pittsburghpanthers-com-15273",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Pitt vs. North Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1A70efk",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Volleyball vs. Colorado Buffaloes Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "West Virginia Mountaineers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70efk",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-08-espn-duquesne-wbb-401915763",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Duquesne vs. Clarion",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "clarion",
+        "awayOpponent": "clarion"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 895,
+        "low": 747,
+        "high": 1154,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-robert-morris-wbb-401929108",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Delaware St",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-wbb",
+        "away": "delaware-st",
+        "awayOpponent": "delaware-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 321,
+        "low": 217,
+        "high": 472,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 27 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-17AOv0G6GGCGEN4",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Twin Peaks: A Conversation With The Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Twin Peaks in consert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6GGCGEN4"
+    },
+    {
+      "id": "2026-11-09-tm-1AvbZ_oGkRo2cp1",
+      "metroId": "pittsburgh",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chief Keef",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Chief Keef",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_oGkRo2cp1",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-duquesne-mbb-401925781",
+      "metroId": "pittsburgh",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duquesne vs. Washington St",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-mbb",
+        "away": "washington-st",
+        "awayOpponent": "washington-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2112,
+        "low": 2057,
+        "high": 2179,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-pitt-wbb-401913746",
+      "metroId": "pittsburgh",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Delaware St",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-wbb",
+        "away": "delaware-st",
+        "awayOpponent": "delaware-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 610,
+        "low": 576,
+        "high": 1126,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z7r9jZ1A7-gvF",
+      "metroId": "pittsburgh",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gvF",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-11-espn-duquesne-wbb-401915764",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duquesne vs. Marist",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "marist",
+        "awayOpponent": "marist"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 814,
+        "low": 735,
+        "high": 912,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-robert-morris-wbb-401929109",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Robert Morris vs. E Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-wbb",
+        "away": "e-michigan",
+        "awayOpponent": "e-michigan"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 420,
+        "low": 257,
+        "high": 842,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-pittsburghpanthers-com-15274",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Notre Dame",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAv6Qk",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv6Qk",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17AOv0G62hhgGFI",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jodeci",
+      "officialTitle": "WAMO Fall Fest Featuring Jodeci",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G62hhgGFI",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1kAOv0xFGA560gt",
+      "metroId": "pittsburgh",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917KV20",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOv0xFGA560gt",
+      "expectedDraw": {
+        "count": 8286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7-gvA",
+      "metroId": "pittsburgh",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gvA",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-12-tm-16pZk36ayZA885eC",
+      "metroId": "pittsburgh",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jack White",
+      "officialTitle": "JACK WHITE LIVE 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jack White",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16pZk36ayZA885eC",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1AAek0e",
+      "metroId": "pittsburgh",
+      "date": "2026-11-12",
+      "start": null,
+      "kind": "game",
+      "title": "West Virginia Mountaineers Mens Basketball vs. Mercer Bears Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAek0e",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-sa-rmucolonials-com-15245",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-espn-pitt-football-401858293",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Florida St",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "acrisure-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "pitt-football",
+        "away": "florida-st",
+        "awayOpponent": "florida-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 44755,
+        "low": 42823,
+        "high": 51364,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 17 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70goJ",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Toledo Walleye",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70goJ"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7-gvk",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gvk",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAZduP",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gym Class Heroes",
+      "officialTitle": "Gym Class Heroes w/ Lupe Fiasco",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Gym Class Heroes",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175n_V",
+        "K8vZ9175W37",
+        "K8vZ917GJKf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZduP",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-duquesne-football-401869155",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Duquesne vs. Mercyhurst",
+      "broadcast": "SportsNet PIT",
+      "place": {
+        "type": "venue",
+        "venueId": "arthur-j-rooney-athletic-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "duquesne-football",
+        "away": "mercyhurst",
+        "awayOpponent": "mercyhurst"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1437,
+        "low": 1436,
+        "high": 1439,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-pitt-wbb-401913747",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Pitt vs. Charleston So",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-wbb",
+        "away": "charleston-so",
+        "awayOpponent": "charleston-so"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 528,
+        "low": 315,
+        "high": 741,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-robert-morris-football-401867923",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Stonehill",
+      "broadcast": "NEC Front Row",
+      "place": {
+        "type": "venue",
+        "venueId": "joe-walton-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "robert-morris-football",
+        "away": "stonehill",
+        "awayOpponent": "stonehill"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 917,
+        "low": 716,
+        "high": 1261,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-pittsburghpanthers-com-15413",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Pitt vs. Buffalo",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-gv6",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gv6",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-14-sa-rmucolonials-com-15246",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Green Bay",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-17AOv0G6GNoh1zo",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Pouya",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pouya",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6GNoh1zo",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-penguins-401892713",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Senators",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17450,
+        "low": 16945,
+        "high": 18076,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A70-r9",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "ZOLTAN KASZAS: WORLDWIDE(ish) TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "carnegie-music-hall-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Zoltan Kaszas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70-r9"
+    },
+    {
+      "id": "2026-11-14-espn-duquesne-mbb-401911276",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Duquesne vs. Binghamton",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-mbb",
+        "away": "binghamton",
+        "awayOpponent": "binghamton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-gv7",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-gv7",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7Pe7s",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Pittsburgh Symphony Orchestra",
+      "officialTitle": "Natural Woman: The Music of Aretha Franklin with The Pittsburgh Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "heinz-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Pittsburgh Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pe7s",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2676,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OEAa",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "start": null,
+      "kind": "game",
+      "title": "West Virginia Mountaineers Football vs. Kansas Jayhawks Football",
+      "place": {
+        "type": "venue",
+        "venueId": "mountaineer-field-at-milan-puskar-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "West Virginia Mountaineers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OEAa",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A70ef6",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Volleyball vs. UCF Knights Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "West Virginia Mountaineers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70ef6",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AAv6QF",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv6QF",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-15-espn-robert-morris-mbb-401928825",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Capital",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-mbb",
+        "away": "capital",
+        "awayOpponent": "capital"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 1016,
+        "low": 585,
+        "high": 1303,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1AvbZ_aGklJIiVV",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "kind": "show",
+      "title": "The Menzingers",
+      "officialTitle": "The Menzingers: Everything I Ever Saw North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Menzingers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_aGklJIiVV",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AAv6Q6",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Notebook (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Notebook (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv6Q6",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1ApZk3aGkeMlQ3x",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Rock Orchestra",
+      "officialTitle": "The Rock Orchestra: Arena of Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Rock Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hVUV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk3aGkeMlQ3x",
+      "expectedDraw": {
+        "count": 5130,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1AvbZ_oGkR42unA",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_oGkR42unA",
+      "expectedDraw": {
+        "count": 8286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1AvbZ_kGkw797Pc",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Wyatt Flores",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Wyatt Flores",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_kGkw797Pc",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-sa-pittsburghpanthers-com-15275",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Pitt vs. Louisville",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-16-espn-duquesne-wbb-401915766",
+      "metroId": "pittsburgh",
+      "date": "2026-11-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duquesne vs. Robert Morris",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "robert-morris-wbb",
+        "awayOpponent": "robert-morris"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 814,
+        "low": 735,
+        "high": 912,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AAZSoA",
+      "metroId": "pittsburgh",
+      "date": "2026-11-17",
+      "start": "10:30",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Basketball vs. Akron Zips Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZSoA"
+    },
+    {
+      "id": "2026-11-17-tm-17AOv0G6G2bJrEG",
+      "metroId": "pittsburgh",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Whitechapel",
+      "officialTitle": "Whitechapel - 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Whitechapel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6G2bJrEG",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-pitt-mbb-401909708",
+      "metroId": "pittsburgh",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pitt vs. Villanova",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-mbb",
+        "away": "villanova-mbb",
+        "awayOpponent": "villanova"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6310,
+        "low": 5063,
+        "high": 6523,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-pitt-wbb-401913748",
+      "metroId": "pittsburgh",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Pitt vs. UMBC",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-wbb",
+        "away": "umbc",
+        "awayOpponent": "umbc"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 610,
+        "low": 576,
+        "high": 1126,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-17AOv0G6GwWXBdr",
+      "metroId": "pittsburgh",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Imminence",
+      "officialTitle": "Imminence - Axis Mundi Tour: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Imminence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6GwWXBdr",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-goduquesne-com-23126",
+      "metroId": "pittsburgh",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duquesne vs. Howard",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "duquesne-mbb",
+        "away": "Howard",
+        "awayOpponent": "howard"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2112,
+        "low": 2057,
+        "high": 2179,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A70t36",
+      "metroId": "pittsburgh",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Beartooth",
+      "officialTitle": "Beartooth w/ Don Broco",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Beartooth",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178zM0",
+        "K8vZ9178Nb0",
+        "K8vZfZ7aEak",
+        "K8vZ917hOD0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t36",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17AOv0G62d8WQS8",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Goldfinger",
+      "officialTitle": "Goldfinger w/ Mustard Plug, The Planet Smashers, Sullvn",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Goldfinger",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G62d8WQS8",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7PNqd",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "act": true,
+      "performerIds": [
+        "K8vZ917r7o7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PNqd",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-espn-penguins-401892745",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Blues",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "blues",
+        "awayOpponent": "blues"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15757,
+        "low": 14849,
+        "high": 16898,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17AOv0G65Rjc5Jp",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Goose",
+      "officialTitle": "An Evening with Goose Presented by WYEP",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Goose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G65Rjc5Jp",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7P3qY",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Drumline Live",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Drumline Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P3qY"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-05-espn-robert-morris-wbb-401929107",
+      "date": "2026-11-05",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 420,
+        "low": 257,
+        "high": 842
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-penguins-401892654",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Buffalo at Pitt (MBB) 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16779,
+        "low": 15812,
+        "high": 17994
+      }
+    },
+    {
+      "eventId": "2026-11-05-espn-pitt-mbb-401909706",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Bruins at Penguins 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6310,
+        "low": 5063,
+        "high": 6523
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-17AOv0G61mlJbl3",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-17AOv0G65K2blxu",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-vv1AAZkfdGkdIh0D4",
+      "date": "2026-11-05",
+      "start": "19:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AA774s",
+      "date": "2026-11-05",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-05-tm-Z7r9jZ1AAZPea",
+      "date": "2026-11-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-06-sa-rmucolonials-com-15243",
+      "date": "2026-11-06",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-goduquesne-com-22989",
+      "date": "2026-11-06",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAZK49",
+      "date": "2026-11-06",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-goduquesne-com-23240",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-pittsburghpanthers-com-15272",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-sa-rmucolonials-com-15254",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-17AOv0G6G08ScIb",
+      "date": "2026-11-06",
+      "start": "19:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-06-tm-Z7r9jZ1AAek0v",
+      "date": "2026-11-06",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-06-tm-1AvbZ_kGkweSf_T",
+      "date": "2026-11-06",
+      "start": "20:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-duquesne-football-401867922",
+      "date": "2026-11-07",
+      "start": "12:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1437,
+        "low": 1436,
+        "high": 1439
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-pitt-wbb-401913745",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 528,
+        "low": 315,
+        "high": 741
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-goduquesne-com-22990",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-rmucolonials-com-15255",
+      "date": "2026-11-07",
+      "start": "15:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AvbZ_FGkXMBa_6",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Bingo Loco (21 and Over) 1.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1AAe34M",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Jim Gaffigan 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-duquesne-mbb-401925780",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AvbZ_kGkWSCsDv",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-pittsburghpanthers-com-15273",
+      "date": "2026-11-08",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1A70efk",
+      "date": "2026-11-08",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-08-espn-duquesne-wbb-401915763",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "draw": {
+        "count": 895,
+        "low": 747,
+        "high": 1154
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-robert-morris-wbb-401929108",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "draw": {
+        "count": 321,
+        "low": 217,
+        "high": 472
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17AOv0G6GGCGEN4",
+      "date": "2026-11-08",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-09-tm-1AvbZ_oGkRo2cp1",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-duquesne-mbb-401925781",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "draw": {
+        "count": 2112,
+        "low": 2057,
+        "high": 2179
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-pitt-wbb-401913746",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "draw": {
+        "count": 610,
+        "low": 576,
+        "high": 1126
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z7r9jZ1A7-gvF",
+      "date": "2026-11-10",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-11-espn-duquesne-wbb-401915764",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "draw": {
+        "count": 814,
+        "low": 735,
+        "high": 912
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-robert-morris-wbb-401929109",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "draw": {
+        "count": 420,
+        "low": 257,
+        "high": 842
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-pittsburghpanthers-com-15274",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAv6Qk",
+      "date": "2026-11-11",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-11-tm-17AOv0G62hhgGFI",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1kAOv0xFGA560gt",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8286
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7-gvA",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-16pZk36ayZA885eC",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1AAek0e",
+      "date": "2026-11-12",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-13-sa-rmucolonials-com-15245",
+      "date": "2026-11-13",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-pitt-football-401858293",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 44755,
+        "low": 42823,
+        "high": 51364
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70goJ",
+      "date": "2026-11-13",
+      "start": "19:10"
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7-gvk",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAZduP",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Florida St at Pitt (FB) next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-duquesne-football-401869155",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1437,
+        "low": 1436,
+        "high": 1439
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-pitt-wbb-401913747",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 528,
+        "low": 315,
+        "high": 741
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-robert-morris-football-401867923",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 917,
+        "low": 716,
+        "high": 1261
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-pittsburghpanthers-com-15413",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-gv6",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-rmucolonials-com-15246",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17AOv0G6GNoh1zo",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-penguins-401892713",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17450,
+        "low": 16945,
+        "high": 18076
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A70-r9",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-duquesne-mbb-401911276",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-gv7",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7Pe7s",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2676
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OEAa",
+      "date": "2026-11-14",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A70ef6",
+      "date": "2026-11-15",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AAv6QF",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-robert-morris-mbb-401928825",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1016,
+        "low": 585,
+        "high": 1303
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AvbZ_aGklJIiVV",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AAv6Q6",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1ApZk3aGkeMlQ3x",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Moderate",
+        "why": "RUSH · Fifty Something 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5130
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AvbZ_oGkR42unA",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "The Rock Orchestra 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8286
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AvbZ_kGkw797Pc",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-15-sa-pittsburghpanthers-com-15275",
+      "date": "2026-11-15",
+      "start": "20:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-duquesne-wbb-401915766",
+      "date": "2026-11-16",
+      "start": "18:00",
+      "draw": {
+        "count": 814,
+        "low": 735,
+        "high": 912
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AAZSoA",
+      "date": "2026-11-17",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-11-17-tm-17AOv0G6G2bJrEG",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-pitt-mbb-401909708",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6310,
+        "low": 5063,
+        "high": 6523
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-pitt-wbb-401913748",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 610,
+        "low": 576,
+        "high": 1126
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-17AOv0G6GwWXBdr",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-goduquesne-com-23126",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2112,
+        "low": 2057,
+        "high": 2179
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A70t36",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17AOv0G62d8WQS8",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7PNqd",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Blues at Penguins 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-penguins-401892745",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Lenny Pearce 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15757,
+        "low": 14849,
+        "high": 16898
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17AOv0G65Rjc5Jp",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7P3qY",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-panthers-401892645",
+      "metroId": "miami",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 5
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 3
+      },
+      "attendance": 19482,
+      "capturedAt": "2026-11-05T16:30:12.915Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

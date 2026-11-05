@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-sac-state-football-401866457",
+      "metroId": "sacramento",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-stadium",
+      "homeTeamId": "sac-state-football",
+      "home": {
+        "name": "Sacramento St",
+        "score": 17
+      },
+      "away": {
+        "name": "Toledo",
+        "score": 20
+      },
+      "attendance": 7928,
+      "capturedAt": "2026-11-05T16:30:15.202Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-04-espn-sacramento-kings-401909934",
+      "metroId": "sacramento",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 103
+      },
+      "away": {
+        "name": "Lakers",
+        "score": 116
+      },
+      "attendance": 14484,
+      "capturedAt": "2026-11-05T16:30:15.202Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

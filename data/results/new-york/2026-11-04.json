@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-04",
+  "results": [
+    {
+      "eventId": "2026-11-04-espn-knicks-401909926",
+      "metroId": "new-york",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 135
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 105
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-05T16:30:06.849Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-11-04-espn-nets-401909925",
+      "metroId": "new-york",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "barclays-center",
+      "homeTeamId": "nets",
+      "home": {
+        "name": "Nets",
+        "score": 114
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 104
+      },
+      "attendance": 16943,
+      "capturedAt": "2026-11-05T16:30:06.849Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    },
+    {
+      "eventId": "2026-11-04-espn-rutgers-wbb-401913004",
+      "metroId": "new-york",
+      "date": "2026-11-04",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 75
+      },
+      "away": {
+        "name": "La Salle",
+        "score": 62
+      },
+      "attendance": 1214,
+      "capturedAt": "2026-11-05T16:30:06.849Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}
