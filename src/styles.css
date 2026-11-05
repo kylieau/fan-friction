@@ -12990,11 +12990,13 @@ a.follow-lead::after {
    A room size shown where no count, sellout or estimate exists. Grey (5.4:1 on white), never the figure's ink, so a
    ceiling never reads as a crowd; the mark keeps its gold at half strength. Number 13px/800, the word 11px/700, 3px apart
    (the row's own gap). The event page says it in words, "Up to 13,800", in the same grey. */
-.crowd-figure.crowd-ceiling {
+.crowd-figure.crowd-ceiling,
+.bar-crowd.crowd-ceiling,
+.rival-crowd.crowd-ceiling {
   color: var(--ceiling);
 }
 
-.crowd-figure.crowd-ceiling .crowd-mark {
+.crowd-ceiling .crowd-mark {
   opacity: 0.55;
 }
 

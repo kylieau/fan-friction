@@ -11,6 +11,7 @@ import { hoursOf } from '../lib/windows';
 import { listTitle, splitTitleLabel } from '../lib/eventTitle';
 import { crowdThousands } from '../map/crowdPoints';
 import { METROS } from '../config/metros';
+import { crowdCeiling } from './crowdFigures';
 import { durationOf } from './formula/crowdFight';
 import { asMetroDate, drawSize, eventFeedsFriction, FRICTION_ATTENDEES, isStampLocked, savedNightRead, type SavedNightRead } from './read';
 import type { CityDate, CrowdEvent, LocalTime } from './types';
@@ -22,6 +23,8 @@ export interface VerdictItem {
   start: LocalTime | null;
   /** The expected crowd, or null when unknown. */
   draw: number | null;
+  /** The draw is the room itself (no count, sellout or estimate; build 7.2, Kylie, Nov 4): the headline says "40k cap". */
+  ceiling?: boolean;
   /** Big enough to count as a rival: the app's eligibility rule when the event is known, else the raw floor. */
   big: boolean;
   /** The feed that listed it ("espn", "ticketmaster"); seeds and fan rows are not sources. */
@@ -40,7 +43,7 @@ const NOT_A_SOURCE = new Set(['seed', 'fan', '']);
 
 /** Today's events as verdict items (the day's own events; Further Out ones never come here). */
 export function liveItems(events: readonly CrowdEvent[]): VerdictItem[] {
-  return events.map((event) => ({ event, start: event.start, draw: drawSize(event) ?? null, big: eventFeedsFriction(event), source: event.sourceId ?? null }));
+  return events.map((event) => ({ event, start: event.start, draw: drawSize(event) ?? null, ceiling: crowdCeiling(event) != null, big: eventFeedsFriction(event), source: event.sourceId ?? null }));
 }
 
 /** The feed an event id names ("2026-10-21-espn-lakers-4019…" → espn), in the catalog's own source names. */
@@ -61,7 +64,8 @@ export function savedItems(rows: readonly ArchiveForecastRow[], events: readonly
     // The feed survives even when the event has gone, read from the id; a seed's own words there name no feed.
     const tag = /^\d{4}-\d{2}-\d{2}-/.test(row.eventId) ? row.eventId.slice(11).split('-')[0] : '';
     const source = event?.sourceId ?? ID_TAGS[tag] ?? null;
-    out.push({ event, start: row.start ?? null, draw, big: event ? eventFeedsFriction(event) : (draw ?? 0) >= FRICTION_ATTENDEES, source });
+    // A frozen draw is a ceiling only when the event is still listed and its room is still all the app knows.
+    out.push({ event, start: row.start ?? null, draw, ceiling: event != null && draw != null && crowdCeiling(event) === draw, big: event ? eventFeedsFriction(event) : (draw ?? 0) >= FRICTION_ATTENDEES, source });
   }
   return out;
 }
@@ -106,7 +110,8 @@ export function verdictLines(items: readonly VerdictItem[], cityName: string): V
   if (!biggest) return { headline: count === 0 ? `Nothing on in ${cityName}.` : `${count} ${count === 1 ? 'event' : 'events'}, no crowd figures yet.`, detail: null, meta, sources };
   // The name alone: the row under it carries the label ("Home Opener"), the headline does not (the 06-c board).
   const name = biggest.event ? splitTitleLabel(listTitle(biggest.event)).name : 'An event no longer listed';
-  const headline = `Biggest draw: ${name}, ${crowdThousands(biggest.draw as number)}`;
+  // A room that counted at its size says so ("40k cap"; Kylie, Nov 4, 2026): the math is the same, the word is honest.
+  const headline = `Biggest draw: ${name}, ${crowdThousands(biggest.draw as number)}${biggest.ceiling ? ' cap' : ''}`;
   const window = windowOf(biggest);
   if (!window) return { headline, detail: null, meta, sources };
   const rivals = items.filter((it) => it !== biggest && it.big && overlaps(windowOf(it), window));

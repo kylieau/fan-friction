@@ -450,7 +450,7 @@ The full check is in `gap-report-7-2.md`, Group 0. In short: both Codex answers 
 - **The grey is a theme token** (`ceiling`, #5F6B7D, 5.4:1 on white). It is 4.45:1 on the page's pale blue, so a ceiling must sit on a card; every row and the event page's crowd block do.
 - **Where rows carry it:** the date page lineup, the Explore List, the Map sheet (it shares the row, Kylie's Oct 13 rule), Home's three biggest, Further Out rows and a favorite's upcoming rows. Not a stub's facts line on the date page. A screen reader hears "up to 13,800", never "about".
 - **I4's labels-versus-buttons call:** switch rows are labels and took Title Case; "Copy my handle", "Export my events" and "Change past stubs…" are actions and stay sentence case (AGENTS.md's button rule; build 7.1 step 4 passed over them).
-- **Unchanged by design:** the verdict, Up Against, Local Competition and the map's totals never read a ceiling. The verdict card can still name a 5,000+ room as a draw ("Biggest draw: NHRA Finals, 40k"), by Kylie's Oct 7 rule; gap report question 2 asks whether that line should say "up to".
+- **Unchanged by design:** the verdict, Up Against, Local Competition and the map's totals never read a ceiling as a crowd; a 5,000+ room with no count still counts at its room (Kylie, Oct 7). **Kylie, Nov 4, late evening ("agree with your leans for all 3 questions"):** where that room is the size shown, the verdict headline, the Local Competition bars and Up Against's rival rows say "40k cap" in the ceiling grey (built the same evening); I5 stays as locked (a 10,000 minimum shows the no-estimate rows until the switch is off); the team page's empty-tile dash stays (her Oct 9 convention).
 
 ---
 

@@ -1,6 +1,6 @@
 import { FRICTION_LEVELS, frictionWord, showFriction, type Friction, type Occasion } from '../config/scoreLabels';
-import { ceilingShort, isOpenAir, shownCeiling, sizeTier, type CrowdEvent } from '../data';
-import { crowdShort } from '../map/crowdPoints';
+import { atLeastMark, ceilingShort, crowdCeiling, drawSize, isOpenAir, shownCeiling, sizeTier, type CrowdEvent } from '../data';
+import { crowdShort, crowdThousands } from '../map/crowdPoints';
 
 /**
  * Friction and occasion on screen (build 6, items 1 and 2). Conclusion marks live on list rows and the
@@ -137,6 +137,35 @@ export function ByLine({ event }: { event: CrowdEvent }) {
     <span className="by-line">
       by <strong>{rival.name}</strong>
       {rival.more > 0 ? ` +${rival.more}` : ''}
+    </span>
+  );
+}
+
+/**
+ * The size the formula counted, as Up Against's rival rows and the Local Competition bars show it: a count or estimate
+ * as "17k"; a room that counted at its size as "40k cap" in the ceiling grey (Kylie, Nov 4, 2026: the same word as the
+ * rows, the same math). Nothing when the formula has no size. Past or upcoming alike: this is what counted.
+ */
+export function FormulaCrowd({ event, className }: { event: CrowdEvent; className: string }) {
+  const size = drawSize(event);
+  if (!size) return null;
+  const cap = crowdCeiling(event);
+  if (cap != null) {
+    return (
+      <span className={`${className} crowd-ceiling`} role="img" aria-label={`Up to ${cap.toLocaleString('en-US')}, the room's size`}>
+        <CrowdMark />
+        <span aria-hidden>{ceilingShort(cap)}</span>
+        <span className="crowd-cap-word" aria-hidden>
+          cap
+        </span>
+      </span>
+    );
+  }
+  return (
+    <span className={className}>
+      <CrowdMark />
+      {crowdThousands(size)}
+      {atLeastMark(event)}
     </span>
   );
 }

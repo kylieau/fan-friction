@@ -2,7 +2,7 @@ import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
-import { CrowdMark, FrictionVerdict, OccasionTag, pageFriction } from '../components/EventTags';
+import { CrowdMark, FormulaCrowd, FrictionVerdict, OccasionTag, pageFriction } from '../components/EventTags';
 import { StubSheet } from '../components/StubSheet';
 import { recordOpened } from '../lib/openedEvents';
 import { TypeIcon } from '../components/TypeIcon';
@@ -10,10 +10,8 @@ import { LevelPill } from '../components/LevelPill';
 import { AddToCalendar } from '../components/AddToCalendar';
 import { ActivityLines, StatusLine } from '../components/ActivityLines';
 import { ACTIVITY_WORDS, activityGroups, yourActivity, type ActivityKind } from '../lib/activity';
-import { crowdThousands } from '../map/crowdPoints';
 import {
   drawSize,
-  atLeastMark,
   crowdFull,
   FRICTION_ATTENDEES,
   knownSize,
@@ -484,13 +482,7 @@ export function EventScreen() {
                         <span className="rival-name">{mapTitle(r, day.events)}</span>
                         <span className="rival-dist">{[where, r.start ? clockTime(r.start) : null, away].filter(Boolean).join(' · ')}</span>
                       </span>
-                      {drawSize(r) ? (
-                        <span className="rival-crowd">
-                          <CrowdMark />
-                          {crowdThousands(drawSize(r)!)}
-                          {atLeastMark(r)}
-                        </span>
-                      ) : null}
+                      <FormulaCrowd event={r} className="rival-crowd" />
                     </Link>
                   </li>
                 );

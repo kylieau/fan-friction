@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import { CrowdMark } from './EventTags';
+import { FormulaCrowd } from './EventTags';
 import { TypeIcon } from './TypeIcon';
-import { atLeastMark, drawSize, eventType, sizeTier, type CrowdEvent } from '../data';
+import { drawSize, eventType, sizeTier, type CrowdEvent } from '../data';
 import { listTitle } from '../lib/eventTitle';
 import { eventPath } from '../lib/view';
 import { hoursOf, runningHours } from '../lib/windows';
-import { crowdThousands } from '../map/crowdPoints';
 import { TitleText } from './TitleText';
 
 /**
@@ -75,7 +74,6 @@ function TbaBand({ events }: { events: readonly CrowdEvent[] }) {
 
 /** One row: the event's name and crowd over its bar; a TBA row's bar runs the whole axis, blank and dashed (not a read). */
 function barRow(e: CrowdEvent, at: { left: string; width: string } | null) {
-  const size = drawSize(e);
   return (
     <li key={e.id} className="bar-row">
       <Link to={eventPath(e.id, e.metroId)} className="bar-link">
@@ -85,13 +83,7 @@ function barRow(e: CrowdEvent, at: { left: string; width: string } | null) {
               <TypeIcon typeKey={eventType(e).key} size={17} />
               <TitleText layout="inline" text={listTitle(e)} />
             </span>
-            {size ? (
-              <span className="bar-crowd">
-                <CrowdMark />
-                {crowdThousands(size)}
-                {atLeastMark(e)}
-              </span>
-            ) : null}
+            <FormulaCrowd event={e} className="bar-crowd" />
           </span>
         </div>
         <div className="bar-track">{at ? <span className="bar" style={at} /> : <span className="bar bar-tba" />}</div>
