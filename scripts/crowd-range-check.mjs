@@ -1,8 +1,9 @@
 // Build 5, item 6: the crowd size range is a display filter only. This check proves two things:
 // (1) no file on the read's path (the date read, the crowd fight, the day strip) mentions the range, and
 // (2) setting a narrow range leaves each sampled day's read identical while the lists do hide events.
-// It also lists events where the muting size (knownSize) and the number a row shows fall on different
-// sides of 5,000, for review. Usage: node scripts/crowd-range-check.mjs [metro] [dates...]
+// It also lists events where the muting size (knownSize) and the number the range compares (rangeNumber: a count,
+// an estimate or a sold-out room; never a bare ceiling, build 7.2 I5) fall on different sides of 5,000, for review.
+// A row that shows only "14k cap" has no range number and is skipped here on purpose. Usage: node scripts/crowd-range-check.mjs [metro] [dates...]
 
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -66,7 +67,7 @@ try {
       if (k != null && n != null && (k >= 5000) !== (n >= 5000)) flags.push(`${date} ${e.title}: muting size ${k}, shown ${n}`);
     }
   }
-  console.log(flags.length ? `Muting size and shown number on different sides of 5,000:\n  ${flags.join('\n  ')}` : 'No event has its muting size and shown number on different sides of 5,000.');
+  console.log(flags.length ? `Muting size and range number on different sides of 5,000:\n  ${flags.join('\n  ')}` : 'No event has its muting size and range number on different sides of 5,000.');
 } finally {
   await server.close();
 }

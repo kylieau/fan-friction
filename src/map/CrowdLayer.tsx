@@ -14,7 +14,7 @@ import {
   type PlacedChip,
 } from './chipPlacement';
 import { typeIconSvg } from './typeIcons';
-import { drawSize } from '../data';
+import { displayedCrowdCount } from '../data';
 import { applyChipActivity, type ChipActivity } from './chipActivity';
 
 /** People in the disc. A sold-out show with no separate count uses the room. A muted event has no glow. */
@@ -535,7 +535,8 @@ const CHIP_NAME_LINE = 14;
 
 /** The chip read as one sentence (labels r3): "Brewers at Dodgers, NLCS Game 3, 5:00 pm, Dodger Stadium, about 51,000". */
 function spokenChip(p: CrowdPoint): string {
-  const size = drawSize(p.event);
+  // The count the chip shows (build 7.2, Section I follow-up): a room with no count says nothing, as the chip does.
+  const size = displayedCrowdCount(p.event);
   return [spokenTitle(p.event), p.event.start ? clockTime(p.event.start) : null, p.venueName, size ? `about ${size.toLocaleString('en-US')}` : null].filter(Boolean).join(', ');
 }
 

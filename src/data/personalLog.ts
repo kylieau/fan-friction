@@ -21,7 +21,7 @@ import { asMetroDate, createStamp, entryMetroId, forecastBeforeStart, isStampLoc
 import { addDays } from '../lib/dates';
 import { seedEventsOn } from './sources/seedSource';
 import { isFurtherOutRoom } from './sources/venueMetro';
-import { drawSize } from './read';
+import { listedCapacity } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
@@ -780,7 +780,9 @@ function freshEntry(event: CrowdEvent, watched: boolean): Entry {
  */
 function lockedCrowd(event: CrowdEvent): Pick<Entry, 'crowdAnnounced' | 'crowdEstimated' | 'crowdAtLeast'> {
   const figures = crowdFigures(event);
-  const estimated = figures.estimated ?? drawSize(event);
+  // A room is never saved as an estimate (build 7.2, I5's rule on saved data): a sold-out room with no count is a
+  // known size; a ceiling alone ("14k cap") locks nothing. Stubs locked before Nov 4, 2026 keep what they saved.
+  const estimated = figures.estimated ?? (event.crowd.some((f) => f.soldOut) ? listedCapacity(event) : undefined);
   return {
     ...(figures.announced ? { crowdAnnounced: figures.announced } : {}),
     ...(estimated ? { crowdEstimated: estimated } : {}),

@@ -117,9 +117,13 @@ export async function getEventsBetween(metroId: string, afterDate: LocalDate, th
   const lists = await Promise.all(
     EVENT_SOURCES.map((s) => (s.upcoming ? s.upcoming(metroId, afterDate) : Promise.resolve([]))),
   );
-  return uniqueById(lists.flat())
-    .filter((e) => e.date > afterDate && e.date <= throughDate && (belongsToCity(e, metroId) || (opts.withFurtherOut === true && e.metroId === metroId && isFurtherOut(e))))
-    .sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
+  // The same results and expected draws getCityDate attaches (build 7.2, Section I follow-up): until then a favorite's
+  // page, Home's rows and Same Tour saw bare listings, so a game with an estimate on the date page showed none here.
+  return withExpectedDraws(
+    withResults(
+      uniqueById(lists.flat()).filter((e) => e.date > afterDate && e.date <= throughDate && (belongsToCity(e, metroId) || (opts.withFurtherOut === true && e.metroId === metroId && isFurtherOut(e)))),
+    ),
+  ).sort((a, b) => (a.date + (a.start ?? '')).localeCompare(b.date + (b.start ?? '')));
 }
 
 /**
@@ -452,6 +456,7 @@ export {
   crowdFigures,
   highlightedCrowd,
   crowdCeiling,
+  shownCeiling,
   ceilingShort,
   atLeastMark,
   entryAtLeastMark,

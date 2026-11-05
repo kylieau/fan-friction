@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { crowdCeiling, drawSize, eventType, highlightedCrowd, VENUES, venueNameOn, type CrowdEvent, type SkyKind } from '../data';
+import { drawSize, eventType, highlightedCrowd, shownCeiling, VENUES, venueNameOn, type CrowdEvent, type SkyKind } from '../data';
 import { degreesFor } from '../config/metros';
 import { WeatherIcon } from './WeatherIcon';
 import { TypeIcon } from './TypeIcon';
@@ -111,7 +111,7 @@ export function DayRow({ event: e, day, line, you }: { event: CrowdEvent; day: r
 export function spokenRow(e: CrowdEvent, venue: string | null, you?: ActivityKind | null): string {
   // The figure the row shows: a count or estimate as "about N"; a ceiling as "up to N" (build 7.2, I1), never "about".
   const count = highlightedCrowd(e)?.count ?? (e.crowd.some((f) => f.soldOut) ? drawSize(e) : undefined);
-  const cap = count == null ? crowdCeiling(e) : undefined;
+  const cap = count == null ? shownCeiling(e) : undefined;
   const size = count != null ? `about ${count.toLocaleString('en-US')}` : cap ? `up to ${cap.toLocaleString('en-US')}` : null;
   return [spokenTitle(e), e.start ? clockTime(e.start) : null, venue, size, frictionSentence(e), you ? ACTIVITY_WORDS[you] : null].filter(Boolean).join(', ');
 }

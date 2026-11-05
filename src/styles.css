@@ -13023,3 +13023,13 @@ a.follow-lead::after {
   position: absolute;
   inset: -4px;
 }
+
+/* A favorite's rows (Next at Home, the schedule, a venue's or festival's upcoming) lay the figure out in a row like
+   the day rows; the base rule stacks it, which showed once ceilings filled those rows (build 7.2, Section I follow-up). */
+.fav-next-tags .crowd-figure {
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  font-size: 13px;
+  font-weight: 800;
+}

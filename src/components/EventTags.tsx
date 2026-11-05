@@ -1,6 +1,5 @@
 import { FRICTION_LEVELS, frictionWord, showFriction, type Friction, type Occasion } from '../config/scoreLabels';
-import { DEFAULT_METRO, METROS } from '../config/metros';
-import { ceilingShort, crowdCeiling, isOpenAir, sizeTier, todayIn, type CrowdEvent } from '../data';
+import { ceilingShort, isOpenAir, shownCeiling, sizeTier, type CrowdEvent } from '../data';
 import { crowdShort } from '../map/crowdPoints';
 
 /**
@@ -163,10 +162,11 @@ export function CrowdMark() {
 export function CrowdFigure({ event, className = '', ceiling = false }: { event: CrowdEvent; className?: string; ceiling?: boolean }) {
   const text = crowdShort(event, undefined, false);
   if (text === 'No count yet') {
-    const cap = ceiling ? crowdCeiling(event) : undefined;
-    if (!cap || event.date < todayIn(METROS[event.metroId] ?? DEFAULT_METRO)) return null;
+    const cap = ceiling ? shownCeiling(event) : undefined;
+    if (!cap) return null;
+    // role="img" so the label is read where the row's link has no spoken sentence of its own (a favorite's rows).
     return (
-      <span className={`crowd-figure crowd-ceiling ${className}`.trim()} aria-label={`Up to ${cap.toLocaleString('en-US')}, the room's size`}>
+      <span className={`crowd-figure crowd-ceiling ${className}`.trim()} role="img" aria-label={`Up to ${cap.toLocaleString('en-US')}, the room's size`}>
         <CrowdMark />
         <span aria-hidden>{ceilingShort(cap)}</span>
         <span className="crowd-cap-word" aria-hidden>

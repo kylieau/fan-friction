@@ -441,6 +441,7 @@ export function FavoritePage() {
                         {event.metroId !== metro.id ? ` · ${METROS[event.metroId]?.name ?? ''}` : ''}
                       </span>
                       <span className="fav-next-tags">
+                        <CrowdFigure event={event} ceiling />
                         <FrictionMark event={event} />
                       </span>
                     </span>

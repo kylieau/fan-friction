@@ -7,6 +7,7 @@
 // Announced is the box-score attendance, or a seeded announced or reported count. Final has no
 // source yet (build notes 3, ⚑4): the field exists, nothing writes it.
 
+import { DEFAULT_METRO, METROS } from '../config/metros';
 import type { CrowdEvent, Entry } from './types';
 import { roundEstimate } from './expectedDrawBuild';
 import { listedCapacity } from './read';
@@ -81,6 +82,17 @@ export function crowdFull(shown: CrowdFigureShown, fmt: (n: number) => string): 
 export function crowdCeiling(event: CrowdEvent): number | undefined {
   if (highlightedCrowd(event) || event.crowd.some((f) => f.soldOut)) return undefined;
   return listedCapacity(event);
+}
+
+/**
+ * The ceiling a row shows or speaks: only while the event is still to come (today included). A past event with no
+ * count shows nothing (R3c, widened to every row): its crowd is known or lost, and a room says nothing about it now.
+ * The one rule for the figure and the spoken row alike.
+ */
+export function shownCeiling(event: CrowdEvent): number | undefined {
+  const metro = METROS[event.metroId] ?? DEFAULT_METRO;
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: metro.timeZone });
+  return event.date < today ? undefined : crowdCeiling(event);
 }
 
 /** "14k cap"'s number: thousands like every row figure, the plain number under 1,000 (".8k" would be odd for a pool). */
