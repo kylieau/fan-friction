@@ -40,8 +40,8 @@ Seven findings: six accepted (two with a different fix), one backlogged as pre-e
 - Also checked: dropping `firmPlan` from the date page's plans affects only the card (nothing else on the page reads them).
 
 ### Not exactly as drawn (each a one-line question for Kylie)
-1. **"Edit stub" is one button, but the review and With have their own editor.** The Stub it sheet edits the answer, tags, seat and cost; the review and who you went with are edited inline. So the ticket keeps the quiet "Edit" (or "Add a review, who you went with…") link under the note beside the big button. The alternative is adding review and With to the sheet, which changes a mocked piece.
-2. **Buttons stay sentence case** ("Edit stub", "+ Stub it", "Add to calendar", "See all 5 events ›") per her Oct 23 rule; the frames draw them Title Case. Labels are Title Case (YOUR STUB, FRIENDS, SEAT, YOU PAID, WITH, "Visible to Friends").
+1. **(Mocked Nov 5 at Kylie's ask: `mockups/activity-card/r3-sheet/`, with the pill's words as frames 04 and 05.)** **"Edit stub" is one button, but the review and With have their own editor.** The Stub it sheet edits the answer, tags, seat and cost; the review and who you went with are edited inline. So the ticket keeps the quiet "Edit" (or "Add a review, who you went with…") link under the note beside the big button. The alternative is adding review and With to the sheet, which changes a mocked piece.
+2. **Buttons stay sentence case** ("Edit stub", "+ Stub it", "Add to calendar", "See all 5 events ›") per her Oct 23 rule; the frames draw them Title Case. Labels are Title Case (YOUR STUB, FRIENDS, SEAT, YOU PAID, WITH, "Visible to Friends"). **Kylie, Nov 5: "lean": buttons stay sentence case.**
 3. The pill adds "Visible to Anyone" for an Anyone stub (the frames show Friends and Private only).
 4. The status word in friends' rows is ink on the cards and blue on the Activity tab (R2e, decided (3) for her "exactly the mock" lock).
 

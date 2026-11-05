@@ -15,7 +15,7 @@ All frames for the 7.2 notes. Paths below are relative to this folder. Annotated
 | `night-story/` | Section D story section | Locked Oct 30 |
 | `onboarding/` | Section F first-run | Locked Oct 30 |
 | `activity-rows/` | H / R1a. `round2/` = option set. `round3-r1/` = first chevron mock (superseded size). `r2-final/` = **FINAL** smaller chevron | Locked Nov 4: A Fact List, smaller chevron |
-| `activity-card/` | H11 / R2a / R2b. `round2/` = option set (eA / dA are **FINAL**) | Locked Nov 4 |
+| `activity-card/` | H11 / R2a / R2b. `round2/` = option set (eA / dA are **FINAL**). `r3-sheet/` = Nov 5 asks: the sheet's Review and With rows, the pill's words (waiting on Kylie) | Locked Nov 4; r3 open |
 | `crowd-ceilings/` | I / R3a. `round2/` = A to G options. `round3/` = max vs **cap** actual-size check (**FINAL**: use "cap") | Locked Nov 4: C with "cap" |
 | `getting-there/` | E / R4. Round 2 frames; **FINAL** path is frame 15 (all three) behind a Settings switch | Locked Nov 4 |
 | `upcoming-plan-rows/` | R5a evolution. `round2/` options. `round3-r1/` status-on-tile (superseded). `r2/` status upper-left on tile (superseded). `r3-final/` **FINAL** match Activity. `r4/` sport-label approaches. `r5-detail/` detail-line placements (**FINAL**: column-C) | Locked Nov 4 |
