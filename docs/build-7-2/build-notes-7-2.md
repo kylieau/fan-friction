@@ -37,9 +37,9 @@ Shot: none. Mockup: none yet. The settings screen waits for the locked taxonomy.
 - **Festivals and any further splits are deferred to the research below.** Do not move festivals or split any type until the research reports.
 - **Do not build the setting, its screen, its storage, or any filter until Kylie locks the taxonomy.** This item is research only.
 - **Builder task, in this order:**
-  1. **Write the research prompt you would want to run, and show it to Kylie before you run anything.** `/workspace/ff-claims/event-types/builder-research-prompt.md` is an optional draft: use it, change it, or replace it. You may have Codex run the work (follow the Codex stage rules in Builder prompt additions › 6, and give Codex the read-only rules below word for word).
+  1. **Write the research prompt you would want to run, and show it to Kylie before you run anything.** `docs/build-7-2/research/builder-research-prompt.md` is an optional draft: use it, change it, or replace it. You may have Codex run the work (follow the Codex stage rules in Builder prompt additions › 6, and give Codex the read-only rules below word for word).
   2. **Run it read-only.** No commits, no Supabase, never read `private/`. Scratch scripts and output go outside the repo.
-  3. **Check the nine types and the levels Pro, Minor League, College, and High School against what the app's data already tags** (`src/data/eventTypes.ts` and the nightly schedule archive). Start from `/workspace/ff-claims/event-types/taxonomy-research.md` and re-check its numbers instead of trusting them.
+  3. **Check the nine types and the levels Pro, Minor League, College, and High School against what the app's data already tags** (`src/data/eventTypes.ts` and the nightly schedule archive). Start from `docs/build-7-2/research/taxonomy-research.md` and re-check its numbers instead of trusting them.
   4. **Compare how Ticketmaster, SeatGeek, and Eventbrite categorize events.** Cite only pages you opened, and mark the rest unverified.
   5. **Decide where the 207 "Event" rows go**, and where the concerts with no genre go (about 195 in the starting data).
   6. **End with a final taxonomy table and up to 10 choice questions for Kylie.** Each question is a choice, with your lean beside it.
@@ -508,7 +508,7 @@ Standing things Kylie has said that bear on these calls:
 
 Where an entry depends on a mock pick (marked "Follows R1a" and so on), decide it for the lean option now and revisit only if Kylie picks differently.
 
-**Builder note: seed2's plans step crashes.** `/workspace/ff-claims/review-7-1-gap/pw/seed2.mjs` line 7 calls `pl.togglePlan(by['2026-11-01-espn-lafc-761921'], 'watch')`, and LAFC event 761921 is no longer in the catalog, so the lookup is undefined. The round 2 mocks swapped in the Ducks 11-01 game as the Watching plan (`mockups/activity-card/round2/INDEX.md`). Fix or swap the event before reusing the seed.
+**Builder note: seed2's plans step crashes.** `docs/build-7-2/research/seed2.mjs` line 7 calls `pl.togglePlan(by['2026-11-01-espn-lafc-761921'], 'watch')`, and LAFC event 761921 is no longer in the catalog, so the lookup is undefined. The round 2 mocks swapped in the Ducks 11-01 game as the Watching plan (`mockups/activity-card/round2/INDEX.md`). Fix or swap the event before reusing the seed.
 
 ### R1. Activity Rows
 
