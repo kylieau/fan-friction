@@ -9,6 +9,7 @@ import { ActivityIcon } from './ActivityLines';
 import { AddToCalendar } from './AddToCalendar';
 import { EntryLayer } from './EntryLayer';
 import { CrowdFigure } from './EventTags';
+import { friendStubState } from './FeedRow';
 import { LockMark, PencilIcon, PlusIcon } from './Icons';
 import { LevelPill } from './LevelPill';
 import { TagChip } from './TagChip';
@@ -82,7 +83,7 @@ export function YourStubTicket({
           {ACTIVITY_WORDS[you.kind]}
           {watched && you.place ? <span className="your-ticket-place"> · {you.place}</span> : null}
         </span>
-        {level && <LevelPill down labels="visible" value={level} defaultLevel={stubDefault()} onChange={onLevel} />}
+        {level && <LevelPill down bare labels="visible" value={level} defaultLevel={stubDefault()} onChange={onLevel} />}
       </div>
       {grid.length > 0 && (
         <dl className="your-ticket-grid">
@@ -145,9 +146,11 @@ export function FriendsCard({ friends }: { friends: readonly FeedItem[] }) {
 }
 
 /** One event's activity on a date: yours, a friend's, or both. */
-interface DateItem {
+export interface DateItem {
   key: string;
   event?: CrowdEvent;
+  /** The catalog id behind the item, kept even when the catalog's event is not loaded, so the header still opens it. */
+  eventId?: string;
   title: string;
   venue?: string;
   start?: string;
@@ -159,6 +162,27 @@ interface DateItem {
 /** The cap on a big day (H11d): three events, then "See all". */
 const CAP = 3;
 
+/** By time, an item with no time last; a tie goes to the bigger crowd. */
+function byTime(a: DateItem, b: DateItem): number {
+  const t = (a.start ?? '99').localeCompare(b.start ?? '99');
+  if (t !== 0) return t;
+  const draw = (it: DateItem) => (it.event ? (drawSize(it.event) ?? 0) : 0);
+  return draw(b) - draw(a);
+}
+
+/**
+ * The cap rule (R2c): every item in time order; past the cap, yours first, then the rest by time, and the picks shown
+ * in time order. Pure, so it can be checked with fixtures.
+ */
+export function orderDateItems(items: readonly DateItem[], cap = CAP, all = false): { everything: DateItem[]; shown: DateItem[]; capped: boolean } {
+  const everything = [...items].sort(byTime);
+  const capped = everything.length > cap && !all;
+  if (!capped) return { everything, shown: everything, capped };
+  const yours = everything.filter((it) => it.entry || it.plan);
+  const picked = new Set([...yours, ...everything.filter((it) => !yours.includes(it))].slice(0, cap));
+  return { everything, shown: everything.filter((it) => picked.has(it)), capped };
+}
+
 /**
  * The date page's Activity card (build 7.2, R2b; Kylie, Nov 4: by event, capped at 3; FINAL frames `dA-*.png`). It
  * replaces the Attended card and the Following block (H11e). Each event: a 44pt header that opens its page, with the
@@ -166,30 +190,32 @@ const CAP = 3;
  * friends' rows. The cap (R2c): yours first, the rest by time (a tie to the bigger crowd), the three shown in time
  * order, a rule line saying so and a "See all" row that opens the rest in place. Three or fewer: no line, no row.
  */
-export function DateActivityCard({ events, entries, plans, friends, level }: { events: readonly CrowdEvent[]; entries: readonly Entry[]; plans: readonly Plan[]; friends: readonly FeedItem[]; /** Who sees a stub, for the Private mark on your strip. */ level: (row: Entry | Plan) => StubVisibility | null }) {
+export function DateActivityCard({ events, entries, plans, friends, metroId, level }: { events: readonly CrowdEvent[]; entries: readonly Entry[]; plans: readonly Plan[]; friends: readonly FeedItem[]; /** The page's city, for a header whose catalog event is not loaded. */ metroId: string; /** Who sees a stub, for the Private mark on your strip. */ level: (row: Entry | Plan) => StubVisibility | null }) {
   const [all, setAll] = useState(false);
   const byId = new Map(events.map((e) => [e.id, e]));
   const items = new Map<string, DateItem>();
+  // One item per catalog event; a hand-added night groups by its title and room, so two "Open Mic" entries at two
+  // rooms stay apart while two friends at the same hand-added show stay together.
   const itemFor = (eventId: string | undefined, title: string, venue?: string): DateItem => {
-    const key = eventId ?? `title:${title.toLowerCase()}`;
+    const key = eventId ?? `title:${title.toLowerCase()}|${(venue ?? '').toLowerCase()}`;
     const event = eventId ? byId.get(eventId) : undefined;
-    const item: DateItem = items.get(key) ?? { key, event, title: event ? listTitle(event) : title, venue, start: event?.start ?? undefined, friends: [] };
+    const item: DateItem = items.get(key) ?? { key, event, eventId, title: event ? listTitle(event) : title, venue, start: event?.start ?? undefined, friends: [] };
     items.set(key, item);
     return item;
   };
-  for (const entry of entries) itemFor(entry.eventId, entry.title, entry.venue).entry = entry;
-  for (const plan of plans) itemFor(plan.eventId, plan.title, plan.venue).plan = plan;
-  for (const line of friends) itemFor(line.eventId, line.title, line.venue).friends.push(line);
-  const byTime = (a: DateItem, b: DateItem) => (a.start ?? '99').localeCompare(b.start ?? '99') || (a.event ? (drawSize(b.event!) ?? 0) : 0) - (b.event ? (drawSize(a.event!) ?? 0) : 0);
-  const everything = [...items.values()].sort(byTime);
-  if (everything.length === 0) return null;
-  const capped = everything.length > CAP && !all;
-  let shown = everything;
-  if (capped) {
-    const yours = everything.filter((it) => it.entry || it.plan);
-    const picked = [...yours, ...everything.filter((it) => !yours.includes(it))].slice(0, CAP);
-    shown = everything.filter((it) => picked.includes(it));
+  for (const entry of entries) {
+    const item = itemFor(entry.eventId, entry.title, entry.venue);
+    item.entry = entry;
+    item.start ??= entry.start;
   }
+  for (const plan of plans) {
+    const item = itemFor(plan.eventId, plan.title, plan.venue);
+    item.plan = plan;
+    item.start ??= plan.manual?.start;
+  }
+  for (const line of friends) itemFor(line.eventId, line.title, line.venue).friends.push(line);
+  const { everything, shown, capped } = orderDateItems([...items.values()], CAP, all);
+  if (everything.length === 0) return null;
   return (
     <section className="date-activity" aria-labelledby="date-activity-title">
       <h2 id="date-activity-title" className="you-heading in-card-title">
@@ -212,7 +238,7 @@ export function DateActivityCard({ events, entries, plans, friends, level }: { e
       <ul className="date-activity-list">
         {shown.map((item) => (
           <li key={item.key} className="date-activity-item">
-            <DateItemHead item={item} />
+            <DateItemHead item={item} metroId={metroId} />
             {(item.entry || item.plan) && <YourStrip entry={item.entry} plan={item.plan} level={level(item.entry ?? item.plan!)} />}
             {item.entry?.review && <p className="entry-note date-activity-note">{item.entry.review}</p>}
             <FriendsRows friends={item.friends} />
@@ -228,9 +254,14 @@ export function DateActivityCard({ events, entries, plans, friends, level }: { e
   );
 }
 
-/** The event's header on the date card: type icon and title, venue and time, the crowd pinned right. Opens the event. */
-function DateItemHead({ item }: { item: DateItem }) {
-  const to = item.event ? eventPath(item.event.id, item.event.metroId) : item.entry ? entryPath(item.entry.id) : null;
+/**
+ * The event's header on the date card: type icon and title, venue and time, the crowd pinned right. Opens the event
+ * page (a catalog id still opens it when the event is not loaded, through the friend-stub state the Activity rows use);
+ * a hand-added entry or plan opens its own page.
+ */
+function DateItemHead({ item, metroId }: { item: DateItem; metroId: string }) {
+  const to = item.eventId ? eventPath(item.eventId, item.event?.metroId ?? metroId) : item.entry ? entryPath(item.entry.id) : item.plan ? entryPath(item.plan.id) : null;
+  const state = item.eventId && !item.event ? friendStubState(item.eventId, { title: item.title, date: item.entry?.when.sort ?? item.plan?.date ?? item.friends[0]?.date ?? '', venue: item.venue, metroId, entry: item.entry ?? item.friends[0]?.entry }) : undefined;
   const body: ReactNode = (
     <>
       <span className="date-activity-title">
@@ -246,7 +277,7 @@ function DateItemHead({ item }: { item: DateItem }) {
     </>
   );
   return to ? (
-    <Link to={to} className="date-activity-head">
+    <Link to={to} state={state} className="date-activity-head">
       {body}
     </Link>
   ) : (

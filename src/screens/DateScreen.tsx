@@ -359,7 +359,7 @@ export function DateScreen() {
           "See all". It replaces the Attended card (M7) and the Following block (H11e), in the Attended card's slot. */}
       {(mine.length > 0 || plans.length > 0 || friends.length > 0) && (
         <section className="you-block" aria-label="Activity">
-          <DateActivityCard events={events} entries={mine} plans={plans} friends={friends} level={(row) => (account ? stubLevel(row) : null)} />
+          <DateActivityCard events={events} entries={mine} plans={plans} friends={friends} metroId={metro.id} level={(row) => (account ? stubLevel(row) : null)} />
         </section>
       )}
 

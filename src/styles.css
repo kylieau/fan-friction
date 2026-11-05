@@ -13331,6 +13331,16 @@ a.follow-lead::after {
   color: var(--ink2);
 }
 
+/* The pill's menu opens under its right edge, inside the ticket. */
+.your-ticket-top .level-pill-wrap {
+  position: relative;
+}
+
+.your-ticket-top .level-menu {
+  left: auto;
+  right: 0;
+}
+
 .your-ticket-top .level-pill {
   min-height: 44px;
   padding: 0 14px;

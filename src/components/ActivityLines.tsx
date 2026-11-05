@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import { TagChip } from './TagChip';
 import type { ReactNode } from 'react';
-import { ACTIVITY_WORDS, activityOrder, placeClause, type ActivityGroups, type ActivityKind } from '../lib/activity';
+import { ACTIVITY_WORDS, type ActivityKind } from '../lib/activity';
 import { BookmarkIcon, GlobeIcon, LockMark, PeopleIcon, TicketIcon, TvIcon } from './Icons';
 
 /** The icon for a kind (build notes 3, 4.4): a ticket for attending, a TV for watching, a bookmark for interested. */
@@ -9,29 +9,6 @@ export function ActivityIcon({ kind }: { kind: ActivityKind }) {
   if (kind === 'watching' || kind === 'watched') return <TvIcon />;
   if (kind === 'interested') return <BookmarkIcon size={15} />;
   return <TicketIcon size={16} />;
-}
-
-/**
- * Grouped lists (Kylie, Oct 11; build notes 3, 8.1 items 11, 12 and 25): "Attending · Sam, Priya",
- * "Watching · Jo at Tom's Bar", "Interested · Lee"; after the date "Attended · Sam", "Watched · Jo".
- * A place shows only on a Friends watch. Nothing when nobody answered.
- */
-export function ActivityLines({ groups }: { groups: ActivityGroups }) {
-  const kinds = activityOrder(groups);
-  if (kinds.length === 0) return null;
-  return (
-    <ul className="activity-lines">
-      {kinds.map((kind) => (
-        <li key={kind} className="activity-line">
-          <span className="activity-word">
-            <ActivityIcon kind={kind} />
-            {ACTIVITY_WORDS[kind]}
-          </span>
-          <span className="activity-names">{groups[kind]!.map((p) => `${p.name}${kind === 'watching' || kind === 'watched' ? placeClause(p.place) : ''}`).join(', ')}</span>
-        </li>
-      ))}
-    </ul>
-  );
 }
 
 /**

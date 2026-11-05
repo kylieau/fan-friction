@@ -6,7 +6,8 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Group | State | Commit | Notes |
 |---|---|---|---|
 | 0. Section I: the I6 check, then crowd ceilings with "cap" (I1 to I5, R3b to R3e), plus the About card's close button | done, pushed | `fb8d1771` | measured on three Los Angeles dates and one event page |
-| 2. Activity cards (R2a event page, R2b date page; R2c to R2j decided) | done | _(this commit)_ | five ticket states, the Friends card and the date card measured with a pasted dev feed and hand-patched stubs; Codex review follows |
+| 2 (b). Codex review of the Activity cards, 6 findings fixed, 1 backlogged | done | _(this commit)_ | the cap rule checked with fixtures headless |
+| 2. Activity cards (R2a event page, R2b date page; R2c to R2j decided) | done, pushed | `eaca9f1d` | five ticket states, the Friends card and the date card measured with a pasted dev feed and hand-patched stubs |
 | 1 (b). Codex review of the Activity rows, 5 findings fixed plus the advisor's code-size catch | done | _(this commit)_ | facts fall through to the link, code 11px inside the card, a hand-added concert keeps its icon |
 | 1. Activity rows (R1a; R1b to R1i decided) | done, pushed | `d494ef13` | measured with a pasted dev feed |
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
@@ -25,6 +26,18 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ### Measured (headless, 390 × 844, signed out)
 Friends from the pasted dev feed; your own stubs made through "+ Stub it" and then patched in the phone's storage for a seat, cost, With, review and tags. Event page: the empty past ticket ("+ Stub it" 331 × 48); the attended ticket (status 21px in action blue; Seat, You Paid, With; the yellow note; two tags; "Edit stub" 333 × 46); the watched private ticket (With only, the note, "Edit stub"); the Attending ticket with a tag and "Edit" 119 × 46 beside "Add to calendar" 204 × 46 on one line; the Interested ticket; the Friends card on each (rows 44pt, word in ink, "Attending · Sam R., Priya N., and Lee K.", "Watching · Jo T. at Tom's Bar", "Interested · Dee P."). No status chip, Your Stub line, `#your-stub` card or Following section remains on either page. Date page, Nov 1: "3 of 5 events", yours first (Chargers, the Ducks watch), then MNUFC at LAFC by time, in time order; headers 44pt with the crowd on one line; strips and notes; "See all 5 events ›" 48pt. Nov 12: two events, no rule line, no See all, an Interested strip. **Not measured:** the privacy pill (it needs an account; the same `LevelPill` as before, with new words) and the Private mark on a strip, for the same reason; the game-only page.
 Shots: `.playwright-mcp/7-2-r2a-friends-empty.png`, `7-2-r2a-attended.png`, `7-2-r2a-watched.png`, `7-2-r2a-attending.png`, `7-2-r2b-date-nov1.png`, `7-2-r2b-date-nov12.png`.
+
+### Codex review of the group (Nov 5, morning), reconciled with the advisor before any tweak
+Seven findings: six accepted (two with a different fix), one backlogged as pre-existing. Fixed in the follow-up commit.
+- **C1 (P1):** the date card's time-tie comparison could crash when a catalog event with no time tied with a hand-added item, and the crowd tiebreak ran the wrong way. The cap rule is now one pure function (`orderDateItems`) checked with fixtures headless: a timeless pair with and without an event does not throw; a five-event day shows yours first then by time, in time order; a time tie puts the bigger crowd first.
+- **C2:** two hand-added nights with the same title merged into one item. They group by title and room now (Codex's fix, by entry id, would have split two friends at the same hand-added show).
+- **C3:** a hand-added night's saved start time was ignored, so it sorted last and could lose its place under the cap; the item now reads `Entry.start` and a plan's saved start when the catalog has none.
+- **C4:** a header whose catalog event was not loaded, or a hand-added plan, had nowhere to open; a catalog id now opens the event page (with the same stub state the Activity rows pass), a hand-added plan its own page.
+- **C5:** the ticket's privacy pill carried the "Your default" side label and its menu could open past the card's right edge; the pill is bare now and its menu opens under its right edge. **Not measured:** the pill and its menu need an account; added to Kylie's signed-in phone checks.
+- **C6:** the pill's spoken name now contains its visible words ("Visible to Friends, who sees this stub").
+- **Dead code:** the old `ActivityLines` list had no users left and is removed; `ActivityIcon` and `StatusLine` stay.
+- **C7 (backlogged, pre-existing):** a plan whose date has passed but has not settled into a stub yet can read in the future tense on a past date page; settlement normally runs first. BACKLOG.
+- Also checked: dropping `firmPlan` from the date page's plans affects only the card (nothing else on the page reads them).
 
 ### Not exactly as drawn (each a one-line question for Kylie)
 1. **"Edit stub" is one button, but the review and With have their own editor.** The Stub it sheet edits the answer, tags, seat and cost; the review and who you went with are edited inline. So the ticket keeps the quiet "Edit" (or "Add a review, who you went with…") link under the note beside the big button. The alternative is adding review and With to the sheet, which changes a mocked piece.

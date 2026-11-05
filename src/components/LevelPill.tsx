@@ -39,7 +39,7 @@ export function LevelPill({ value, defaultLevel, onChange, bare = false, down = 
   const current = LEVELS.find((l) => l.level === value)!;
   return (
     <span className="level-pill-wrap" ref={root}>
-      <button type="button" className={`level-pill${labels === 'visible' ? ' is-visible' : ''}`} aria-haspopup="menu" aria-expanded={open} aria-label={`Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
+      <button type="button" className={`level-pill${labels === 'visible' ? ' is-visible' : ''}`} aria-haspopup="menu" aria-expanded={open} aria-label={labels === 'visible' ? `${VISIBLE_WORDS[value]}, who sees this stub` : `Who sees this: ${current.word}`} onClick={() => setOpen((o) => !o)}>
         {labels === 'visible' ? (value === 'private' ? <LockMark size={15} /> : <EyeIcon size={15} />) : current.icon(15)}
         {labels === 'visible' ? VISIBLE_WORDS[value] : current.word}
         <span className="level-pill-chevron" aria-hidden>

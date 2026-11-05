@@ -110,6 +110,7 @@ Kylie locked the Oct 30 review answers and the Nov 4 mock picks. Start at the no
 - Record each Builder Decides pick in the notes.
 - ~~Event Types setting stays gated on §1 taxonomy research~~ gate lifted Nov 4 (late evening): taxonomy locked in the notes §1; Section C builds in its turn.
 - Known small 7.1 fixes Mosaic spotted: ~~36pt sheet close button~~ (done Nov 4: the About card's close button, the one with no tap extension, now reaches 44 × 44; the sheets' round close buttons already had one); the team page's em dash as the "no verdict" glyph is Kylie's Oct 9 tile convention ("— Quiet", "— No data"), so it is a question to her, not a fix (gap report 7.2).
+- **A plan past its date reads in the future tense until it settles** (Codex, Nov 5, pre-existing): `yourActivity` prefers a plan without checking its date, so a date page opened before settlement runs can say "Attending" on a day that has passed. Fix when touching settlement: ignore plans whose date is past, or make sure settlement runs before the page reads.
 - Men's water polo stays (Kylie, Nov 4: "keep UCLA mens water polo"); Spieker's 800 is under the pre-list line, so the rows come from the one-time copy only.
 
 ### Build 7.1 follow-ups (Claude Code, Oct 24, 2026; the report is `docs/build-7-1/gap-report-7-1.md`)
