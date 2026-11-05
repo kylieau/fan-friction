@@ -13,3 +13,19 @@ Drawn in the headless phone (390 × 844) on the built R2a ticket (Chargers at Ra
 ## Lean (not confirmed)
 - **Sheet:** add the two rows (frames 01 and 02) and drop the ticket's quiet link (frame 03). One place to edit, as the R2a frames drew it. Cost: the sheet grows about 150pt and gains two taps; a plan's sheet does not get them (a plan has no review or With).
 - **Pill: A, the eye and one word.** The eye is what fixes her H11a misread: the old pill's people icon said "with friends"; an eye says "seen by". "Friends" alone beside "Attended" still reads as company for a moment, which is why B spelled it out. Lean A because the word matches the dropdown, it is 64pt narrower, and the eye carries the meaning; if she still reads "attended with friends" in frame 04, B is the safe pick.
+
+## Round 3b (Nov 5, later): The Level Mark On Event Rows
+Kylie, Nov 5: the ticket's pill is "fine for now" as the eye and one word; her lean is the levels' own icons (globe, people, lock) **if another visual solution blocks the false "attended with friends" read, and her main worry is the event rows on other pages**. The rows that carry the mark: Your Stubs (every stub and plan row, `StubRows.tsx`, through the status line "Attended · [icon] Friends"). Drawn on a real Your Stubs row (Chargers at Rams, Nov 1) with the mark injected, since the test phone is signed out.
+
+| Frame | What it shows |
+|---|---|
+| `06-row-0-as-built-signed-in.png` | As built when signed in: "Attended · [people] Friends" inline on the status line. The misread lives here. |
+| `07-row-a-eye-one-word-inline.png` | A: the eye and one word, inline, matching the ticket. Same slot, the eye instead of the people. |
+| `08-row-b-own-icon-venue-line.png` | B: the level's own icon alone, grey, at the end of the venue line ("SoFi Stadium · [people]"). Off the status line, no word. |
+| `09-row-c-own-icon-tag-venue-line.png` | C: the level's own icon and word as a small grey outlined tag on the venue line ("[people] Friends"), the Away tag's shape. Off the status line. |
+| `10-built-sheet-personal-experience.png` | Built, for reference: the sheet's Personal Experience group (With, Review) after Cost. |
+
+Not drawn: a mark in the row's top-right corner (it collides with the verdict tile on every row).
+
+### Lean (not confirmed)
+**C.** It keeps the levels' own icons, which she leans to, and moves the mark off the "Attended" line onto the venue line as a grey outlined tag, the same shape the Away tag already uses, so it reads as a label about the stub, not company. B is quieter but an icon alone needs learning; A is consistent with the ticket but keeps the mark beside "Attended". If she picks C, the ticket's pill can take the same icons (people, globe, lock) with its word, since the ticket has no "Attended · " in front of the pill.
