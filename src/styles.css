@@ -13815,6 +13815,13 @@ button.types-top-words {
   color: var(--action);
   cursor: pointer;
 }
+.types-switch-wrap {
+  display: inline-flex;
+  flex: none;
+  padding: 12px 10px;
+  margin: -12px -10px -12px 0;
+  cursor: pointer;
+}
 .types-children {
   padding: 0 0 4px;
   background: color-mix(in srgb, var(--ink) 3%, var(--card));
@@ -13845,8 +13852,12 @@ button.types-top-words {
   cursor: pointer;
 }
 .types-level {
-  padding: 0 8px 0 0;
+  padding: 0 6px 0 0;
+  gap: 6px;
   font-size: 14px;
+}
+.types-level > span {
+  white-space: nowrap;
 }
 .types-level:nth-child(2n) {
   padding-left: 12px;

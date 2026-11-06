@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import { SearchIcon } from './Icons';
 import { ReadTile } from './ReadTile';
@@ -14,6 +14,7 @@ import {
   follow,
   getAccount,
   getPersonalLog,
+  subscribePersonalLog,
   PEOPLE_SEARCH_MIN,
   peopleList,
   searchAllDates,
@@ -78,6 +79,8 @@ export function SearchSheet({
   const [friends, setFriends] = useState<FeedItem[]>([]);
   const [showAll, setShowAll] = useState(false);
   const [hiddenReason, setHiddenReason] = useState<HiddenReason | null>(null);
+  // The log itself, so a favorite or stub added while the sheet is open re-judges the exceptions (Codex, Section C review).
+  const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   useEffect(() => {
     let current = true;
     if (signedIn) followingFeed(300).then((list) => current && setFriends(list));
@@ -94,7 +97,6 @@ export function SearchSheet({
     let current = true;
     setHits(null);
     setShowAll(false);
-    const log = getPersonalLog();
     const filter = displayFilter(log, 'lists', friends);
     // Further out follows its own lists switch (Kylie, Oct 20, 2026).
     const withFurtherOut = !crowdRangeOf(log).furtherListsOff;
@@ -115,7 +117,7 @@ export function SearchSheet({
     return () => {
       current = false;
     };
-  }, [homeId, trimmed, friends]);
+  }, [homeId, trimmed, friends, log]);
   const shownHits = (hits ?? []).filter((hit) => showAll || !hit.hidden);
   const hiddenHits = (hits ?? []).filter((hit) => hit.hidden).length;
 
@@ -128,12 +130,12 @@ export function SearchSheet({
       return;
     }
     let current = true;
-    const filter = displayFilter(getPersonalLog(), 'lists', friends);
+    const filter = displayFilter(log, 'lists', friends);
     searchEvents(homeId, trimmed, 8).then((list) => current && setEvents(list.filter((event) => !hiddenBySize(event, filter) && !hiddenByTypes(event, filter))));
     return () => {
       current = false;
     };
-  }, [homeId, trimmed, friends]);
+  }, [homeId, trimmed, friends, log]);
 
   useEffect(() => {
     if (!signedIn || trimmed.length < PEOPLE_SEARCH_MIN) {

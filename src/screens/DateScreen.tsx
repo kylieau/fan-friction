@@ -131,9 +131,10 @@ export function DateScreen() {
   const furtherSplit = useMemo(() => {
     const all = day?.furtherOut ?? [];
     const listed = crowdRangeOf(log).furtherListsOff ? all.filter((e) => filter.keep.has(e.id)) : all;
-    return splitByDisplay(listed, { ...filter, range: {} });
+    return { ...splitByDisplay(listed, { ...filter, range: {} }), listed };
   }, [day, log, filter]);
-  const further = showAll ? [...furtherSplit.shown, ...furtherSplit.hidden] : furtherSplit.shown;
+  // Show lists them in their own order, not the hidden ones after the shown.
+  const further = showAll ? furtherSplit.listed : furtherSplit.shown;
   const hiddenCount = lineup.hidden.length + furtherSplit.hidden.length;
   const hiddenReason = split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
@@ -337,6 +338,12 @@ export function DateScreen() {
             ))}
             </ul>
           </div>
+          <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
+        </section>
+      )}
+      {/* A day with no city events but hidden Further Out rows still gets the line (Codex, Section C review). */}
+      {events.length === 0 && hiddenCount > 0 && (
+        <section className="you-block">
           <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
         </section>
       )}

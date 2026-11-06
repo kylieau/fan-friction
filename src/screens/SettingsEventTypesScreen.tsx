@@ -107,15 +107,21 @@ function TypeGroup({ top, hidden, open, onOpen, onToggle, onSave }: { top: Filte
             </span>
           </button>
         )}
-        <input
-          type="checkbox"
-          className={`switch${state === 'mixed' ? ' mixed' : ''}`}
-          role="switch"
-          aria-checked={state === 'mixed' ? 'mixed' : state === 'on'}
-          aria-label={`${top.label}, ${line.toLowerCase()}`}
-          checked={state !== 'off'}
-          onChange={tapParent}
-        />
+        {/* A native checkbox, not role="switch": a switch cannot be mixed, a checkbox can (its `indeterminate` property,
+            which React has no prop for, so a ref sets it). The label around it gives the 48 × 28 control a 68 × 52 tap
+            area (mock 03, callout 2; Codex, Section C review). */}
+        <label className="types-switch-wrap">
+          <input
+            ref={(el) => {
+              if (el) el.indeterminate = state === 'mixed';
+            }}
+            type="checkbox"
+            className={`switch${state === 'mixed' ? ' mixed' : ''}`}
+            aria-label={`${top.label}, ${line.toLowerCase()}`}
+            checked={state !== 'off'}
+            onChange={tapParent}
+          />
+        </label>
       </div>
       {expandable && open && (
         <div id={panelId} className="types-children">

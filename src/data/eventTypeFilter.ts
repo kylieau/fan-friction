@@ -48,7 +48,9 @@ export const FILTER_LEVELS: readonly LevelDef[] = [
   { key: 'level.pro', level: 'pro', label: 'Pro' },
   { key: 'level.minor', level: 'minor', label: 'Minor League' },
   { key: 'level.college', level: 'college', label: 'College' },
-  { key: 'level.school', level: 'school', label: 'High School', dormant: true },
+  // On the screen since Nov 6, 2026: the Ticketmaster high-school listings already in the feed count as its source once
+  // their level is reliably derived (Kylie, Nov 4, answer 4); the title rule in `filterLevelOf` derives it.
+  { key: 'level.school', level: 'school', label: 'High School' },
 ];
 
 /** The nine top types and their sub-types, in the screen's order (the research's corrected label list). */
@@ -234,29 +236,48 @@ const SUB_OF_GENRE: Record<string, string> = {
  * paid. Every other non-college league on file is Pro, the Canadian and Mexican top tiers included (CEBL, CPL, NSL,
  * Liga MX, LMB, LNBP).
  */
-const MINOR_LEAGUE = /^(AHL|ECHL|NBA G League|WHL|OHL|QMJHL|BCHL|USL Championship|MLS Next Pro|High-A|Double-A|Triple-A|Independent baseball|Frontier League|WCL)\b/i;
+const MINOR_LEAGUE = /^(AHL|ECHL|NBA G League|WHL|OHL|QMJHL|BCHL|USL Championship|MLS Next Pro|Single-A|Low-A|High-A|Double-A|Triple-A|Independent baseball|Frontier League|WCL)\b/i;
 /** ONEFA is Mexican college football; isCollegeLeague does not read it. */
 const COLLEGE_LEAGUE = /^ONEFA\b/i;
+/**
+ * A high-school listing by its title (Kylie, Nov 4, answer 4: the feed's own high-school rows count once the level is
+ * reliably derived): the words "high school", or a state or provincial school-athletics association of four letters
+ * or more (CHSAA's state volleyball days in Denver). Three-letter names (CIF, UIL) collide with other words and stay out.
+ */
+const SCHOOL_TITLE = /\bhigh school\b|\b(?:CHSAA|OHSAA|FHSAA|OFSAA|TSSAA|GHSA|WIAA|PIAA|IHSA|IHSAA|MHSAA|NCHSAA|VHSL|OSAA|NYSPHSAA|KHSAA|LHSAA|MSHSAA|AHSAA|SCHSL|NJSIAA|MIAA|CIAC|NHIAA|NSAA|KSHSAA|UHSAA|NMAA|WHSAA|SDHSAA|NDHSAA|OSSAA|TAPPS|ASAA|SHSAA|MPSSAA|DIAA|RIIL|WVSSAC)\b/i;
 
 /**
  * A game's level (Kylie, Nov 4, answer 3, and the research's rule): the explicit level first, then the home team's
- * league. Unknown is left undefined and is never Pro (types.ts says an absent level reads as top pro for the read;
- * this filter does not follow that, by her lock), so a level switch never hides a game whose level is not known.
+ * league, then a high-school title. Unknown is left undefined and is never Pro (types.ts says an absent level reads as
+ * top pro for the read; this filter does not follow that, by her lock), so a level switch never hides a game whose
+ * level is not known. A listing the classifier reads as a sport from its title (a tag of Undefined) has no explicit
+ * level and no team record, so only the title rule can place it.
  */
 export function filterLevelOf(event: CrowdEvent): FilterLevel | undefined {
-  if (event.audience.domain !== 'sports') return undefined;
-  const explicit = event.audience.level;
+  const explicit = event.audience.domain === 'sports' ? event.audience.level : undefined;
   if (explicit === 'pro') return 'pro';
   if (explicit === 'lower') return 'minor';
   if (explicit === 'college') return 'college';
   if (explicit === 'school') return 'school';
   if (explicit === 'amateur') return undefined;
   const league = event.teams?.home ? TEAMS[event.teams.home]?.league : undefined;
-  if (!league) return undefined;
-  if (isCollegeLeague(league) || COLLEGE_LEAGUE.test(league)) return 'college';
-  if (MINOR_LEAGUE.test(league)) return 'minor';
-  return 'pro';
+  if (league) {
+    if (isCollegeLeague(league) || COLLEGE_LEAGUE.test(league)) return 'college';
+    if (MINOR_LEAGUE.test(league)) return 'minor';
+    return 'pro';
+  }
+  if (SCHOOL_TITLE.test(`${event.title} ${event.officialTitle ?? ''}`)) return 'school';
+  return undefined;
 }
+
+/**
+ * A film or show billed with a live orchestra is music (Kylie, Nov 4, answer 6: a film with a live orchestra sits
+ * under Concerts & Music; ordinary screenings under Film and Screenings). The seller's tag can file it as theatre or
+ * film ("Hocus Pocus: Live With The Atlanta Symphony Orchestra" is tagged Miscellaneous Theatre), so the filter reads
+ * the title: an orchestra, symphony or philharmonic named in it. "In Concert" alone is left out, since the research
+ * found it names film-only screenings too. The row keeps its display icon; only the switches change.
+ */
+const ORCHESTRA_TITLE = /\b(?:orchestra|symphony|philharmonic)\b/i;
 
 export interface FilterKeys {
   top: string;
@@ -272,6 +293,7 @@ export function filterKeysOf(event: CrowdEvent): FilterKeys {
     const genre = event.audience.domain === 'music' ? genreCategory(event.audience.genre) : null;
     sub = (genre && SUB_OF_GENRE[genre]) ?? 'concerts.unknown';
   } else if (type.key === 'sports.other' && type.subtype === 'Esports') sub = 'sports.esports';
+  else if ((type.key.startsWith('arts.') || type.key.startsWith('family.')) && ORCHESTRA_TITLE.test(`${event.title} ${event.officialTitle ?? ''}`)) sub = 'concerts.classical_opera';
   else sub = SUB_OF_DISPLAY[type.key] ?? 'other';
   const top = sub.includes('.') ? sub.slice(0, sub.indexOf('.')) : sub;
   const level = top === 'sports' ? filterLevelOf(event) : undefined;

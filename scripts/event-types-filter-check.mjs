@@ -93,11 +93,9 @@ try {
     }
   }
   console.log('Sports levels:', [...levels.entries()].map(([k, v]) => `${k} ${v}`).join(', '));
+  // High School shows on the screen (Nov 6, 2026); a window with no school-level game is a warning, not a failure.
   const school = levels.get('school') ?? 0;
-  if (school > 0) {
-    console.log(`FAIL ${school} games carry a school level; High School is still dormant`);
-    failed = true;
-  } else console.log('ok   no game carries a school level (High School stays off the screen)');
+  console.log(school > 0 ? `ok   ${school} games carry a school level (the High School switch has events)` : 'warn no game carries a school level this window');
 } finally {
   await server.close();
 }
