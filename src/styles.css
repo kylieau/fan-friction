@@ -13900,3 +13900,240 @@ button.types-top-words {
   border-radius: 1px;
   background: var(--action);
 }
+
+/* ---------- Getting There (build 7.2, Section E; mocks getting-there/04, 07, 11) ---------- */
+/* The date card: heading with the "Estimate · not live" tag, the summary, one strip per area on the shared axis, the
+   key, the honesty notes, two 44pt links. The road blues are the theme's own three (E6); Light wears a thin ink edge so
+   it never vanishes on the light-blue page (R4d). */
+.getting-there {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.gt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.gt-head .you-heading {
+  margin: 0;
+}
+.gt-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+  white-space: nowrap;
+}
+.gt-summary {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.road-axis {
+  position: relative;
+  height: 14px;
+  margin: 2px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.road-axis span {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+.road-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.road-area-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.road-area-name {
+  font-weight: 700;
+  color: var(--ink);
+}
+.road-area-when {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  color: var(--ink2);
+}
+.road-area-when strong {
+  color: var(--ink);
+}
+.road-strip {
+  display: flex;
+  gap: 2px;
+  height: 12px;
+}
+.road-cell {
+  flex: 1;
+  border-radius: 2px;
+  background: var(--roadLight);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 18%, transparent);
+}
+.road-cell.busy {
+  background: var(--roadBusy);
+  box-shadow: none;
+}
+.road-cell.heavy {
+  background: var(--roadHeavy);
+  box-shadow: none;
+}
+.road-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--roadLight);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 30%, transparent);
+}
+.road-swatch.busy {
+  background: var(--roadBusy);
+  box-shadow: none;
+}
+.road-swatch.heavy {
+  background: var(--roadHeavy);
+  box-shadow: none;
+}
+.road-key {
+  display: flex;
+  gap: 14px;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.road-key-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.road-key-note {
+  margin: -4px 0 0;
+  font-size: 13px;
+  color: var(--ink2);
+}
+.road-notes {
+  margin: 0;
+  padding: 0 0 0 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink2);
+}
+.gt-links {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, var(--card));
+}
+.gt-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dodger);
+  text-decoration: none;
+  cursor: pointer;
+}
+.gt-link + .gt-link {
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, var(--card));
+}
+/* The event page row (mock 07): icon, label, the words, the tag, a chevron; the whole card is the tap. */
+.gt-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: inherit;
+}
+.gt-row-icon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--dodger);
+}
+.gt-row-words {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
+}
+.gt-row-label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--dodger);
+}
+.gt-row-line {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.gt-past {
+  margin-top: -4px;
+}
+/* The about card (mock 11): the About This Verdict card's shape with two short lists and a full-width outline Close,
+   over a pale-blue scrim rather than the dark one (mock 11, callout 5: no dark overlay). */
+.gt-backdrop {
+  background: rgba(218, 235, 254, 0.88);
+}
+.gt-about {
+  gap: 8px;
+}
+.gt-about-heading {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+}
+.gt-about-list {
+  margin: 0;
+  padding: 0 0 0 18px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.gt-about-close {
+  width: 100%;
+  min-height: 46px;
+  margin-top: 6px;
+  border: 1.5px solid var(--dodger);
+  border-radius: 12px;
+  background: var(--card);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dodger);
+  cursor: pointer;
+}

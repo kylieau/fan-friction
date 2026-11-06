@@ -1567,6 +1567,17 @@ export function setHiddenEventTypes(keys: readonly string[]) {
   commit({ ...rest, ...(clean.length > 0 ? { hiddenEventTypes: clean } : {}), hiddenEventTypesAt: new Date().toISOString() });
 }
 
+/** Getting There on or off (build 7.2, Section E); off until switched on. */
+export function gettingThereOn(log: PersonalLog = snapshot): boolean {
+  return log.gettingThereOn === true;
+}
+
+/** Save the Getting There switch, stamped so the newest copy wins across devices. */
+export function setGettingThere(on: boolean) {
+  const { gettingThereOn: _on, ...rest } = snapshot;
+  commit({ ...rest, ...(on ? { gettingThereOn: true } : {}), gettingThereAt: new Date().toISOString() });
+}
+
 export function logBackup(log: PersonalLog = snapshot): LogBackup {
   return {
     app: 'Fan/Friction',

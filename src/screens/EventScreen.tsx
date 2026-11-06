@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'reac
 import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
 import { CrowdMark, FormulaCrowd, FrictionVerdict, OccasionTag, pageFriction } from '../components/EventTags';
+import { GettingThereRow } from '../components/GettingThere';
 import { StubSheet } from '../components/StubSheet';
 import { recordOpened } from '../lib/openedEvents';
 import { TypeIcon } from '../components/TypeIcon';
@@ -18,7 +19,11 @@ import {
   popupExplainer,
   setStubVisibility,
   stubLevel,
+  dateRoads,
   displayFilter,
+  eventRoads,
+  gettingThereOn,
+  pastRoadsLine,
   splitByDisplay,
   feelsLikeLabel,
   isOpenAir,
@@ -253,6 +258,9 @@ export function EventScreen() {
   // Against, Weather, the story, This Day, Following, Your Stub, More Dates, the footer card. A Watched page carries no
   // This Day verdict and no verdict in what it shares (M23).
   const today = todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
+  const roads = gettingThereOn(log) ? dateRoads(e.metroId, date, day.events) : null;
+  const roadsRow = roads && ahead ? eventRoads(roads, e.id) : null;
+  const pastRoads = roads && !ahead ? pastRoadsLine(roads, e.id) : null;
   const watchedPage = you?.kind === 'watched';
   const level = account && youRow ? stubLevel(youRow) : null;
   // Only a friction call the page itself makes is shared: a small room's raw assessment stays out (Codex stage 4 re-run).
@@ -419,6 +427,11 @@ export function EventScreen() {
 
       {/* Room size is the fourth kind (build 7.2, I3): a ceiling, shown only when no count or estimate exists. */}
       <p className="source-note">Counts are labeled by kind: announced, reported, estimated, or room size. Distances are straight-line.</p>
+
+      {/* Getting There (build 7.2, Section E; mock 07): one row under Crowd (R4e) while the switch is on and the date is
+          ahead; on a past date, one quiet line only when the roads read Heavy (R4h). */}
+      {roadsRow && <GettingThereRow roads={roadsRow} metroId={e.metroId} date={date} />}
+      {pastRoads && <p className="source-note gt-past">{pastRoads}</p>}
 
       {a && (
         <section className="card up-against" aria-label="Up Against">

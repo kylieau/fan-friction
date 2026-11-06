@@ -19,7 +19,9 @@ import {
   crowdRangeLabel,
   crowdRangeOf,
   eventTypesLabel,
+  gettingThereOn,
   hiddenEventTypesOf,
+  setGettingThere,
   entryMatches,
   favoriteCitiesOf,
   favoriteDisplayName,
@@ -501,6 +503,17 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
           {pageRow('crowd', 'Crowd Size', <span className="settings-value">{crowdRangeLabel(crowdRangeOf(log))}</span>)}
           {/* Event Types (build 7.2, C1): directly under Crowd Size, a standing preference like it; "All On" or "N Off". */}
           {pageRow('types', 'Event Types', <span className="settings-value">{eventTypesLabel(hiddenEventTypesOf(log))}</span>)}
+          {/* Getting There (build 7.2, Section E; Kylie, Nov 4, R4a: the whole feature behind a "traffic/roads" setting).
+              Off until switched on: the date card, the event row and the Map's Traffic mode all follow it. */}
+          <button type="button" className="settings-row settings-link settings-group-row" role="switch" aria-checked={gettingThereOn(log)} data-section="roads" onClick={() => setGettingThere(!gettingThereOn(log))}>
+            <span className="settings-row-words">
+              <span className="settings-row-title">Getting There</span>
+              <span className="settings-row-sub">Road estimates on dates, events, and the map. Never live.</span>
+            </span>
+            <span className="settings-row-side">
+              <span className="settings-value">{gettingThereOn(log) ? 'On' : 'Off'}</span>
+            </span>
+          </button>
           {/* Blocked shows signed in even when empty, reading "None" (the summary-row empty states, Codex, 11 (a) review). */}
           {account &&
             disclosure(

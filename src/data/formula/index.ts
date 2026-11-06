@@ -16,7 +16,7 @@ export { eventCrowdFight, dateCrowdFight, timeFactor, verdictFromScore } from '.
 export { occasionFor, occasionPoints, occasionFromPoints } from './occasion';
 export { overlapTier, isBroad } from './overlap';
 export { eventConditions, dateConditions, weatherGlyph, feelsLikeLabel, isOpenAir } from './weather';
-export { dateGridlock, zonesFor } from './gridlock';
+export { dateGridlock, roadHours, roadWindows, zonesFor, type RoadHalfHour, type ZoneHours } from './gridlock';
 
 export interface Reason {
   name: 'Crowd fight' | 'Gridlock' | 'Conditions';
@@ -99,6 +99,22 @@ function clock(time: string): string {
   return `${hour}:${String(m).padStart(2, '0')} ${h < 12 ? 'am' : 'pm'}`;
 }
 
+/** The events with rain in their forecast, from scored conditions: what Gridlock's background reads. */
+function rainyIds(conditions: readonly { event: CrowdEvent; conditions: EventConditions }[]): Set<string> {
+  return new Set(conditions.filter((row) => row.conditions.cause === 'rain').map((row) => row.event.id));
+}
+
+/**
+ * The same rainy set the verdict uses, for Getting There (build 7.2, Section E), so its hours and the verdict's
+ * Gridlock reason read the same weather.
+ */
+export function rainyFor(events: readonly CrowdEvent[], before?: Date): Set<string> {
+  const conditions = events
+    .map((event) => ({ event, conditions: eventConditions(event, weatherForEvent(event, before)) }))
+    .filter((row): row is { event: CrowdEvent; conditions: EventConditions } => row.conditions !== null);
+  return rainyIds(conditions);
+}
+
 /** Rate one date in a city from its events. Crowd fight and Conditions; Gridlock next. */
 export function rateDate(metroId: string, events: readonly CrowdEvent[], before?: Date): DateRead {
   const crowdFight = dateCrowdFight(metroId, events);
@@ -109,7 +125,7 @@ export function rateDate(metroId: string, events: readonly CrowdEvent[], before?
   const condScore = dateConditions(conditions.map((row) => ({ capacity: listedCapacity(row.event) ?? 0, conditions: row.conditions })));
   if (condScore !== null) reasons.push({ name: 'Conditions', score: condScore, why: conditionsWhy(conditions) });
   const date = events[0]?.date ?? '';
-  const rainy = new Set(conditions.filter((row) => row.conditions.cause === 'rain').map((row) => row.event.id));
+  const rainy = rainyIds(conditions);
   const gridlock = dateGridlock(metroId, date, events, rainy);
   if (events.length > 0) reasons.push({ name: 'Gridlock', score: gridlock.score, why: gridlockWhy(gridlock, date) });
   const rating = Number(formatScore(combine(reasons.map((r) => r.score))));

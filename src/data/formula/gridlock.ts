@@ -636,6 +636,88 @@ export function dateGridlock(metroId: string, date: string, events: readonly Cro
   return { score, zones: scored, worst, byEvent };
 }
 
+/**
+ * The hours behind a zone's score, for Getting There (build 7.2, Section E; Kylie, Nov 4, R4a). A read-only view:
+ * each half hour's value is the very expression the score takes at its peak (1 + SCALE × log2(background × seats on
+ * the road ÷ a normal night)), so the worst half hour of a zone equals its score, and the strips can never disagree
+ * with the verdict. `dateGridlock` is untouched. Events with no start time count at their usual start here as they do
+ * in the score (an honesty note on the surface says so).
+ */
+export interface RoadHalfHour {
+  /** Hours since midnight, in halves (17.5 is 5:30 pm). */
+  hour: number;
+  /** On the score's 1 to 10 scale. */
+  value: number;
+  arriving: CrowdEvent[];
+  leaving: CrowdEvent[];
+}
+
+export interface ZoneHours {
+  zone: Zone;
+  events: CrowdEvent[];
+  halves: RoadHalfHour[];
+  /** The zone's score, the max of `halves`. */
+  score: number;
+  capacityUnknown: string[];
+  /** Events in the zone whose start time is not set, so a usual start was assumed. */
+  startAssumed: CrowdEvent[];
+  /** What lifted the background above a plain night, in words: "the weekday rush", "the Friday rush", "rain". */
+  backgroundWhy: string[];
+}
+
+/** The background factor's causes, in words, by the same rules `backgroundFor` applies (numbers untouched). */
+function backgroundWhy(events: readonly CrowdEvent[], date: string, rain: boolean): string[] {
+  const day = new Date(`${date}T12:00:00Z`).getUTCDay();
+  const why: string[] = [];
+  const rush = events.some((e) => {
+    const start = startHour(e);
+    return start - ARRIVAL_HOURS < 19.5 && start > 16;
+  });
+  if (day >= 1 && day <= 5 && rush) why.push(day === 5 ? 'the Friday rush' : 'the weekday rush');
+  if (rain) why.push('rain');
+  return why;
+}
+
+export function roadHours(metroId: string, date: string, events: readonly CrowdEvent[], rainy: ReadonlySet<string> = new Set()): ZoneHours[] {
+  const g = dateGridlock(metroId, date, events, rainy);
+  const cityType = CITY_TYPE[metroId] ?? 'sprawl';
+  const inZone = new Map(g.zones.map((z) => [z.zone.id, z.events]));
+  const out: ZoneHours[] = [];
+  for (const scored of g.zones) {
+    const halves: RoadHalfHour[] = [];
+    for (let hour = 0; hour < 24; hour += 0.5) {
+      let seats = activeSeats(scored.events, hour);
+      for (const other of g.zones) {
+        if (other.zone.id === scored.zone.id) continue;
+        const weight = spillWeight(other.zone, scored.zone, cityType);
+        if (weight > 0) seats += weight * activeSeats(inZone.get(other.zone.id) ?? [], hour);
+      }
+      const ratio = scored.normal > 0 ? (scored.background * seats) / scored.normal : 1;
+      const value = Math.max(1, Math.min(10, 1 + SCALE * Math.log2(Math.max(ratio, 0.01))));
+      const arriving = scored.events.filter((e) => hour >= startHour(e) - ARRIVAL_HOURS && hour < startHour(e));
+      const leaving = scored.events.filter((e) => hour >= endHour(e) && hour < endHour(e) + EXIT_HOURS);
+      halves.push({ hour, value, arriving, leaving });
+    }
+    out.push({
+      zone: scored.zone,
+      events: scored.events,
+      halves,
+      score: scored.score,
+      capacityUnknown: scored.capacityUnknown,
+      startAssumed: scored.events.filter((e) => !e.start),
+      backgroundWhy: backgroundWhy(scored.events, date, scored.events.some((e) => rainy.has(e.id))),
+    });
+  }
+  return out;
+}
+
+/** An event's arrival and exit windows as the score sees them, in hours since midnight. */
+export function roadWindows(event: CrowdEvent): { arriveFrom: number; start: number; end: number; leaveTo: number } {
+  const start = startHour(event);
+  const end = endHour(event);
+  return { arriveFrom: start - ARRIVAL_HOURS, start, end, leaveTo: end + EXIT_HOURS };
+}
+
 /** "Inglewood: Beyoncé and Rauw Alejandro arriving together, Monday evening." */
 export function gridlockWhy(g: DateGridlock, date: string): string {
   const z = g.worst;

@@ -10,6 +10,7 @@ import { devFeed } from '../lib/devFeed';
 import { DayTimeline } from '../components/DayTimeline';
 import { DayWeather } from '../components/DayWeather';
 import { HiddenLine } from '../components/HiddenLine';
+import { GettingThereCard } from '../components/GettingThere';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { formatScore, scoreBand, scoreLabel } from '../config/scoreLabels';
 import {
@@ -32,7 +33,9 @@ import {
   subscribePersonalLog,
   todayIn,
   crowdRangeOf,
+  dateRoads,
   displayFilter,
+  gettingThereOn,
   splitByDisplay,
   yourEntries,
   verdictLinesForDay,
@@ -137,6 +140,15 @@ export function DateScreen() {
   const further = showAll ? furtherSplit.listed : furtherSplit.shown;
   const hiddenCount = lineup.hidden.length + furtherSplit.hidden.length;
   const hiddenReason = split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
+  // Getting There (build 7.2, Section E): the roads around the day's venues, from every event on the day (hidden ones
+  // included, as the verdict counts them). Behind the Settings switch (R4a) and never on a past date (R4h).
+  const roadsOn = gettingThereOn(log) && ahead && events.length > 0;
+  const roads = useMemo(() => (roadsOn ? dateRoads(metro.id, date, events) : null), [roadsOn, metro.id, date, events]);
+  // An event row's tap lands on the card (`#getting-there`); scroll once the card is there.
+  useEffect(() => {
+    if (!roads || window.location.hash !== '#getting-there') return;
+    window.setTimeout(() => document.getElementById('getting-there')?.scrollIntoView({ block: 'start', behavior: 'smooth' }), 120);
+  }, [roads]);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
   const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
@@ -357,6 +369,10 @@ export function DateScreen() {
         </section>
       )}
 
+      {/* Getting There (build 7.2, Section E; mock 04): after Local Competition, so the crowd story reads first and the
+          roads second (D3's order: Crowd, Up Against, Getting There). */}
+      {roads && <GettingThereCard roads={roads} today={today} />}
+
       {/* Further out (Kylie, Oct 19–20, 2026): big events within about a 2-hour drive, after the lineup, never in the
           verdict. The lists switch hides them; ones you stubbed or friends are attending always show. */}
       {further.length > 0 && (
@@ -432,7 +448,8 @@ function AboutRead({ saved, sources, onClose }: { saved: SavedNightRead | null; 
           </button>
         </div>
         {saved && <p className="about-read-line">Settled the morning after. This verdict is frozen from the last schedule we saved before the day{counts}.</p>}
-        <p className="about-read-line">It weighs each event's expected crowd against the others that overlap it, plus outdoor weather.</p>
+        {/* E11 (Kylie, Oct 30): roads are one of the reasons, said plainly. */}
+        <p className="about-read-line">It weighs each event's expected crowd against the others that overlap it, how many people are arriving or leaving the same area at the same hours, and outdoor weather.</p>
         {saved?.rescoredOn && (
           <p className="about-read-line about-read-revised">
             Revised {shortLocalDate(saved.rescoredOn)} when we improved the method.{typeof saved.previousRating === 'number' ? ` It was ${formatScore(saved.previousRating)}.` : ''}

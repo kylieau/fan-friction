@@ -42,6 +42,14 @@ export const THEME = {
    * 5.4:1 on white; `muted` (3.65:1) fails the 4.5:1 check (I2).
    */
   ceiling: '#5F6B7D',
+  /**
+   * Getting There's three road blues (build 7.2, Section E, E6: their own blues, no verdict colors, never red, orange
+   * or yellow). Heavy sits away from the action blue (#005A9C) by the builder's call R4c; Light takes a thin ink edge
+   * on the light-blue page (R4d).
+   */
+  roadLight: '#C9DDF1',
+  roadBusy: '#5B93D0',
+  roadHeavy: '#12406E',
   /** Crowd bars. */
   crowdBar: '#E3A600',
   /** The crowd number and date on the dark share card. */

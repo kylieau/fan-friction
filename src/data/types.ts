@@ -821,6 +821,14 @@ export interface PersonalLog {
   /** When the hidden keys last changed (ISO). The newer copy wins, like the crowd range. */
   hiddenEventTypesAt?: string;
   /**
+   * Getting There (build 7.2, Section E; Kylie, Nov 4, R4a: the whole feature "behind a traffic/roads type of setting").
+   * True shows the date card, the event row and the Map's Traffic mode; absent or false shows none of them. Saved
+   * with the settings. A display setting only: the verdict's Gridlock reason is there either way.
+   */
+  gettingThereOn?: boolean;
+  /** When the switch last changed (ISO). The newer copy wins, like the crowd range. */
+  gettingThereAt?: string;
+  /**
    * Temperature Units (build 7.1, M40; Kylie, Oct 23, 2026): °F or °C for every degree in the app. Absent means no
    * choice yet, and each city's own rule applies (°C in Canada and Mexico). Saved with the settings.
    */

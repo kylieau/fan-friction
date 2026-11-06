@@ -261,6 +261,8 @@ Shot: the built story styling. Mockup: `mockups/night-story/01-big-game-lean-A.p
 
 ## Section E: Getting There
 
+**Built Nov 6, 2026, first half** (`src/data/formula/gridlock.ts` `roadHours`, `src/data/gettingThere.ts`, `src/components/GettingThere.tsx`; report and measurements in `gap-report-7-2.md`, group 4): the Settings switch (Off by default), the date card after Local Competition, the event row under Crowd, the about card, the past-date line, E11's wording. The Map's Traffic mode is the second half. Builder picks R4c to R4j are recorded under Builder Decides. Three questions for Kylie in the report: where Busy starts (E4's placeholders leave the mock's own overlap day Light), whether Off is the right default, and whether a lone weekday game may read Busy from the rush.
+
 **Approved to build (Kylie, Nov 4; R4a), behind a Settings switch.** The Oct 30 answers below stay as the rules the build must follow. On Nov 4 she picked all three surfaces as one path (round 2 frame 15), area names only (R4b), and she wants the whole feature gated by a "Traffic/Roads" style setting on the Settings page. See **Nov 4 Locked Mock Picks › R4a** for her note (quoted), past-date behavior (R4h), and the builder attention she asked for. The earlier "not approved" line is superseded by R4a.
 
 ### E3 to E14. Getting There Rules (Locked, Feature Not Approved)
@@ -684,6 +686,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). E6 locked three blues, so move the one swatch that clashes.
 - Kylie said: E6, their own three blues, no verdict colors, no red, orange, or yellow.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** Heavy is `#12406E` (theme `roadHeavy`), a navy a clear step from the action blue `#005A9C`; Busy `#5B93D0`, Light `#C9DDF1`. Three blues of their own, as E6 locked, with the one clash moved.
 
 #### R4d. Light Swatch Ink Edge
 - Question: Light (#C9DDF1) nearly vanishes on the light-blue sheet. Keep the thin ink edge?
@@ -691,6 +694,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). Light stays visible and the three steps stay apart.
 - Kylie said: E6, as above.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** Light keeps a thin ink edge (an inset 1px at 18% ink on cells, 30% on key swatches), so the three steps stay apart on the light-blue page without darkening Light toward Busy.
 
 #### R4e. Event Row: Under Crowd Or Inside Up Against (Only If R4a Includes The Event Page)
 - Question: does the event page row sit under Crowd (07) or inside the violet Up Against card (08)?
@@ -698,6 +702,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). Violet means friction, and blue road cues inside it blur both colors.
 - Kylie said: D3, if Getting There is ever built, the story goes under whichever of Crowd, Up Against, and Getting There exist.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1), under Crowd.** Violet means friction; blue road cues inside the violet card would blur both meanings. The row sits after the Crowd card's source note and before Up Against, so D3's order (Crowd, Up Against, Getting There) still reads top to bottom with the row as Crowd's tail.
 
 #### R4f. Half-Hour Strips: Too Precise?
 - Question: do half-hour strips promise more than a schedule-based estimate can deliver?
@@ -705,6 +710,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). The data is start times and crowd sizes, so half-hour cells look more exact than they are.
 - Kylie said: E14, no live data ever, and "Estimate · not live".
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1), whole-hour cells.** The data is start times and crowd sizes, so half-hour cells look more exact than they are. Each cell takes the worse of its two half hours, so a strip's worst cell is still the zone's score; the window words keep the half hour ("about 4:30 to 6:00 pm"), since the score's own windows end on the half hour.
 
 #### R4g. "Directions In Maps" Hand-Off (Only If R4b Allows Named Roads)
 - Question: if named roads ship, is a Directions in Maps link (hand-off only) right?
@@ -712,6 +718,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). Maps gives the live answer the estimate cannot.
 - Kylie said: E14, no live traffic data in the app.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): moot** while named roads are out (R4b). Noted as a future hand-off if she reopens roads.
 
 #### R4h. Past Dates
 - **Decided by Kylie, Nov 4 (not a builder pick):** hide Getting There on past dates if traffic was bad that night, one line in the event overview. She considered and rejected locking a snapshot of that night's UI (needs stored data nobody plans around). Changes E7. Full write-up under Nov 4 Locked Mock Picks › R4h.
@@ -722,6 +729,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). She approved the offline PeMS check before any launch, and the cut points are what it tests.
 - Kylie said: E4, the cut points are placeholders. E13: PeMS check before launch (she applies for the free account).
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** The cut points are E4's placeholders on the score's own 1 to 10 scale (Light below 3, Busy 3 to 6, Heavy above 6; `ROAD_CUTS` in `gettingThere.ts`) until the E13 PeMS check sets them; nothing new was invented.
 
 #### R4j. Plan Link On Upcoming
 - Question: keep "Check the roads for Sunday" under an Attending plan (12)?
@@ -729,6 +737,7 @@ Kylie said for all of R4: E1, not convinced it belongs in the app. She wants ser
 - Lean: (1). With the smallest version, the warning already sits in the verdict tile.
 - Kylie said: E1, as above.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1), left out.** The event page row and the date card already carry the warning for anyone with a plan; a fourth surface compounds a wrong call.
 
 ### R5. Upcoming Plan Titles
 

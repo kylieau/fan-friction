@@ -44,12 +44,14 @@ export function useView(): View {
 }
 
 /** The Explore address for one place and one date. `view` forces Map or List; without it the remembered view opens. */
-export function mapPath(opts: { metroId: string; date: string; today: string; view?: 'map' | 'list'; /** The event to open selected (a search hit). */ eventId?: string }): string {
+export function mapPath(opts: { metroId: string; date: string; today: string; view?: 'map' | 'list'; /** The event to open selected (a search hit). */ eventId?: string; /** Open the Map in Traffic mode (build 7.2, Section E), at this hour when given. */ mode?: 'traffic'; hour?: number }): string {
   const params = new URLSearchParams();
   if (opts.metroId !== openedMetroId()) params.set('metro', opts.metroId);
   if (opts.date !== opts.today) params.set('date', opts.date);
   if (opts.view) params.set('view', opts.view);
   if (opts.eventId) params.set('event', opts.eventId);
+  if (opts.mode) params.set('mode', opts.mode);
+  if (opts.hour !== undefined) params.set('hour', String(opts.hour));
   const q = params.toString();
   return `/explore${q ? `?${q}` : ''}`;
 }

@@ -203,6 +203,8 @@ export function readLocalLog(): PersonalLog {
       ...(readStamp(parsed.crowdRangeAt) ? { crowdRangeAt: readStamp(parsed.crowdRangeAt) } : {}),
       ...(readHiddenEventTypes(parsed.hiddenEventTypes) ? { hiddenEventTypes: readHiddenEventTypes(parsed.hiddenEventTypes) } : {}),
       ...(readStamp(parsed.hiddenEventTypesAt) ? { hiddenEventTypesAt: readStamp(parsed.hiddenEventTypesAt) } : {}),
+      ...(parsed.gettingThereOn === true ? { gettingThereOn: true } : {}),
+      ...(readStamp(parsed.gettingThereAt) ? { gettingThereAt: readStamp(parsed.gettingThereAt) } : {}),
       ...(readTemperatureUnit(parsed.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(parsed.temperatureUnit) } : {}),
       ...(readStamp(parsed.temperatureUnitAt) ? { temperatureUnitAt: readStamp(parsed.temperatureUnitAt) } : {}),
       ...(readSeasonTickets(parsed.seasonTickets) ? { seasonTickets: readSeasonTickets(parsed.seasonTickets) } : {}),

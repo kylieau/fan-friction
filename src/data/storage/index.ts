@@ -183,6 +183,8 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.crowdRangeAt !== after.crowdRangeAt ||
     !sameList(before.hiddenEventTypes, after.hiddenEventTypes) ||
     before.hiddenEventTypesAt !== after.hiddenEventTypesAt ||
+    before.gettingThereOn !== after.gettingThereOn ||
+    before.gettingThereAt !== after.gettingThereAt ||
     before.temperatureUnit !== after.temperatureUnit ||
     before.temperatureUnitAt !== after.temperatureUnitAt ||
     JSON.stringify(before.seasonTickets ?? null) !== JSON.stringify(after.seasonTickets ?? null) ||
@@ -226,6 +228,7 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     ...mergeCities(account, phone),
     ...mergeCrowdRange(account, phone),
     ...mergeHiddenEventTypes(account, phone),
+    ...mergeGettingThere(account, phone),
     ...mergeTemperatureUnit(account, phone),
     ...mergeSeasonTickets(account, phone),
     removed,
@@ -264,6 +267,14 @@ function mergeCities(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog
   const joined = [...new Set([...(account.favoriteCities ?? []), ...(phone.favoriteCities ?? [])])];
   const stamp = a ?? b;
   return { ...(joined.length > 0 || stamp ? { favoriteCities: joined } : {}), ...(stamp ? { favoriteCitiesAt: stamp } : {}) };
+}
+
+/** Getting There (build 7.2, Section E): the copy changed last wins; an unstamped copy yields. */
+function mergeGettingThere(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'gettingThereOn' | 'gettingThereAt'> {
+  const a = account.gettingThereAt ?? '';
+  const b = phone.gettingThereAt ?? '';
+  const mine = b > a ? phone : account;
+  return { ...(mine.gettingThereOn ? { gettingThereOn: true } : {}), ...(mine.gettingThereAt ? { gettingThereAt: mine.gettingThereAt } : {}) };
 }
 
 /** Event Types (build 7.2, Section C): the copy changed last wins, as with the crowd range; an unstamped copy yields. */
