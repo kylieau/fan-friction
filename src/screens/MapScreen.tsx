@@ -44,7 +44,7 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdMark, FRICTION_LADDER, FrictionVerdict } from '../components/EventTags';
 import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
-import { alwaysShownIds, crowdRangeOf, displayedCrowdCount, drawSize, rangeOn, sizeTier, splitByRange } from '../data';
+import { crowdRangeOf, displayFilter, displayedCrowdCount, drawSize, sizeTier, splitByDisplay } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
@@ -145,14 +145,15 @@ export function MapScreen() {
   const rating = shown?.rating ?? null;
   // Every event at a known venue is a pin and a sheet row; a room under the friction floor is drawn muted (Kylie, Oct 9, 3.4).
   const allDayEvents = useMemo(() => (shown?.events ?? []).filter(showsOnMap), [shown]);
-  // The crowd size range (build 5, item 6): chips, rows and both totals show only what's in range; Show reveals the rest
-  // for this view. Stubbed events and ones friends are attending always show. The read never sees this.
+  // The crowd size range (build 5, item 6) and Event Types (build 7.2, Section C): chips and rows show only what both
+  // settings allow; Show reveals the rest for this view. Stubbed events and ones friends are attending always show
+  // (favorites too, under Event Types). The read never sees this, and since build 7.2 (C11b, R7d) neither do the
+  // header's count and crowd total: they count every event on the day, so every number on a day agrees.
   const [showAll, setShowAll] = useState(false);
-  const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
-  const split = useMemo(() => splitByRange(allDayEvents, rangeOn(crowdRangeOf(log), 'map'), keep), [allDayEvents, log, keep]);
+  const filter = useMemo(() => displayFilter(log, 'map', friends), [log, friends]);
+  const split = useMemo(() => splitByDisplay(allDayEvents, filter), [allDayEvents, filter]);
   const dayEvents = showAll ? allDayEvents : split.shown;
-  // The line keeps its count while the hidden ones show, so Show can turn into Hide (Kylie, Oct 17).
-  const hiddenCount = split.hidden.length;
+  const keep = filter.keep;
 
   // The map shows one day (Kylie, Oct 6). An empty day stays empty: the strip
   // shows where the next reads are, and the sheet names the next event.
@@ -167,10 +168,16 @@ export function MapScreen() {
   // Further out (Kylie, Oct 19–20, 2026): the day's big events within about a 2-hour drive, drawn muted like small
   // rooms, with no ring. Only the drawing layer gets them: the camera keeps framing the city, and the sheet's rows,
   // totals and the verdict never see them. The map switch hides them, except your stubs and friends' plans.
-  const furtherOn = useMemo(() => {
+  // Further out follows Event Types too (C12), never the range; its hidden pins come back with the same Show.
+  const furtherSplit = useMemo(() => {
     const all = shown?.furtherOut ?? [];
-    return crowdRangeOf(log).furtherMapOff ? all.filter((e) => keep.has(e.id)) : all;
-  }, [shown, log, keep]);
+    const listed = crowdRangeOf(log).furtherMapOff ? all.filter((e) => keep.has(e.id)) : all;
+    return splitByDisplay(listed, { ...filter, range: {} });
+  }, [shown, log, keep, filter]);
+  const furtherOn = useMemo(() => (showAll ? [...furtherSplit.shown, ...furtherSplit.hidden] : furtherSplit.shown), [showAll, furtherSplit]);
+  // The line keeps its count while the hidden ones show, so Show can turn into Hide (Kylie, Oct 17).
+  const hiddenCount = split.hidden.length + furtherSplit.hidden.length;
+  const hiddenReason = split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
   const furtherPoints = useMemo(
     () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true, furtherOut: true })) : []),
     [shown, mode, furtherOn, date],
@@ -223,19 +230,20 @@ export function MapScreen() {
   const selected = events.find((e) => e.id === selectedId) ?? furtherOn.find((e) => e.id === selectedId) ?? null;
 
   const headerRating = rating ? rating.rating : null;
-  // The day's crowd, over the friction floor, for the count line and the Why card.
-  const crowdTotal = dayEvents
+  // The day's crowd, over the friction floor, for the count line and the Why card: every event on the day, hidden
+  // ones included (C11b, R7d), like the verdict.
+  const crowdTotal = allDayEvents
     .filter((e) => sizeTier(e) === 'feeds-friction')
     .reduce((sum, e) => sum + (displayedCrowdCount(e) ?? 0), 0);
   const showScore = true;
 
   const caption = !shown
     ? ' '
-    : dayEvents.length === 0
+    : allDayEvents.length === 0
       ? 'No events'
-      : dayEvents.length === 1
+      : allDayEvents.length === 1
         ? '1 event'
-        : `${dayEvents.length} events`;
+        : `${allDayEvents.length} events`;
   // The city point's feels-like low and high for the day (Kylie, Oct 6), on quiet days too.
   // Orientation only; venues have their own. The evening hourly number is the fallback for old data.
   const dayRange = cityDayRange(metro.id, date);
@@ -546,7 +554,7 @@ export function MapScreen() {
                 ))}
             </ul>
           )}
-          {!selected && <HiddenLine count={hiddenCount} shown={showAll} onToggle={() => setShowAll((v) => !v)} />}
+          {!selected && <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />}
         </div>
       </section>
 

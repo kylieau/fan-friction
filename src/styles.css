@@ -13747,3 +13747,145 @@ a.follow-lead::after {
   width: 12px;
   height: 12px;
 }
+
+/* ---------- Settings › Event Types (build 7.2, Section C; mocks event-types/03 and 04) ---------- */
+/* The lead and the bold promise (mock 03, callout 1), then one card of type groups: a 56pt parent row (title and the
+   "10 of 12 On · 1 Level Off" line, a 44pt chevron, a switch), its children under it when open. Levels sit in a two-up
+   grid under "Levels · Apply to Every Sport"; sub-types are 45pt rows. A mixed parent is the light-blue track with a
+   blue ring and a dash; an off parent dims its children and disables their switches. */
+.types-settings {
+  gap: 8px;
+}
+.types-lead {
+  margin: 4px 2px 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.types-promise {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.types-settings .settings-heading {
+  margin-top: 4px;
+}
+.types-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+.types-group + .types-group {
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, var(--card));
+}
+.types-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 8px 16px;
+}
+.types-top-words {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+button.types-top-words {
+  cursor: pointer;
+}
+.types-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin: -6px 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--action);
+  cursor: pointer;
+}
+.types-children {
+  padding: 0 0 4px;
+  background: color-mix(in srgb, var(--ink) 3%, var(--card));
+}
+.types-subhead {
+  padding: 10px 16px 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+.types-levels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 0 16px;
+  padding: 1px 0;
+}
+.types-level,
+.types-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 45px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+}
+.types-level {
+  padding: 0 8px 0 0;
+  font-size: 14px;
+}
+.types-level:nth-child(2n) {
+  padding-left: 12px;
+  border-left: 1px solid color-mix(in srgb, var(--ink) 8%, var(--card));
+}
+.types-subs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.types-subs li + li {
+  border-top: 1px solid color-mix(in srgb, var(--ink) 6%, var(--card));
+}
+.types-sub {
+  padding: 0 16px;
+}
+.types-level.is-off,
+.types-sub.is-off {
+  color: var(--muted);
+  cursor: default;
+}
+.switch:disabled {
+  opacity: 0.55;
+}
+/* A mixed parent: some children off. Light-blue track, blue ring, the thumb mid-way with a dash. */
+.switch.mixed {
+  background: color-mix(in srgb, var(--action) 22%, var(--card));
+  box-shadow: 0 0 0 2px var(--action);
+}
+.switch.mixed::before {
+  transform: translateX(10px);
+}
+.switch.mixed::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 8px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--action);
+}

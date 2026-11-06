@@ -176,6 +176,7 @@ function Shell() {
           <Route path="/you/settings/cities" element={<PanelRedirect section="cities" />} />
           <Route path="/you/settings/privacy" element={<PanelRedirect section="privacy" />} />
           <Route path="/you/settings/crowd" element={<PanelRedirect section="crowd" />} />
+          <Route path="/you/settings/types" element={<PanelRedirect section="types" />} />
           <Route path="/nights" element={<ExploreRedirect view="list" />} />
           <Route path="/night/:date" element={<OldDateRedirect />} />
           <Route path="*" element={<Navigate to="/" replace />} />

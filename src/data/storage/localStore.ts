@@ -3,6 +3,7 @@
 
 import { APP } from '../../config/app';
 import { METROS } from '../../config/metros';
+import { cleanHiddenTypes } from '../eventTypeFilter';
 import { parseStamp } from '../read';
 import { normalizeSeats } from '../stubTags';
 import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, Seats } from '../types';
@@ -109,6 +110,13 @@ export function readTemperatureUnit(value: unknown): 'F' | 'C' | undefined {
   return value === 'F' || value === 'C' ? value : undefined;
 }
 
+/** The saved Event Types keys that are off (build 7.2, Section C): known keys only; undefined when none. */
+export function readHiddenEventTypes(value: unknown): string[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const keys = cleanHiddenTypes(value);
+  return keys.length > 0 ? keys : undefined;
+}
+
 /** A saved seat, checked field by field: text only, so a malformed copy can never reach the seat line (Codex, steps 9–10). */
 function seatsOf(value: unknown): Seats | undefined {
   if (!value || typeof value !== 'object') return undefined;
@@ -193,6 +201,8 @@ export function readLocalLog(): PersonalLog {
       ...(readStamp(parsed.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(parsed.favoriteCitiesAt) } : {}),
       ...(readCrowdRange(parsed.crowdRange) ? { crowdRange: readCrowdRange(parsed.crowdRange) } : {}),
       ...(readStamp(parsed.crowdRangeAt) ? { crowdRangeAt: readStamp(parsed.crowdRangeAt) } : {}),
+      ...(readHiddenEventTypes(parsed.hiddenEventTypes) ? { hiddenEventTypes: readHiddenEventTypes(parsed.hiddenEventTypes) } : {}),
+      ...(readStamp(parsed.hiddenEventTypesAt) ? { hiddenEventTypesAt: readStamp(parsed.hiddenEventTypesAt) } : {}),
       ...(readTemperatureUnit(parsed.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(parsed.temperatureUnit) } : {}),
       ...(readStamp(parsed.temperatureUnitAt) ? { temperatureUnitAt: readStamp(parsed.temperatureUnitAt) } : {}),
       ...(readSeasonTickets(parsed.seasonTickets) ? { seasonTickets: readSeasonTickets(parsed.seasonTickets) } : {}),

@@ -31,10 +31,9 @@ import {
   subscribeAccount,
   subscribePersonalLog,
   todayIn,
-  alwaysShownIds,
   crowdRangeOf,
-  rangeOn,
-  splitByRange,
+  displayFilter,
+  splitByDisplay,
   yourEntries,
   verdictLinesForDay,
   outdoorPeaks,
@@ -116,18 +115,27 @@ export function DateScreen() {
   const ahead = date >= today;
   // By start time (build 5, item 4): the lineup reads like the evening. An event with no time goes last.
   const events = useMemo(() => (day ? [...day.events].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99') || (drawSize(b) ?? 0) - (drawSize(a) ?? 0)) : []), [day]);
-  // The crowd size range (build 5, item 6): the lineup shows what's in range, with one hidden-events line under it;
-  // Local Competition is not filtered (answer B). Show reveals the rest for this visit.
+  // The crowd size range (build 5, item 6) and Event Types (build 7.2, Section C): the lineup shows what both
+  // settings allow, with one hidden-events line under it that says which setting did it (C9a, C9b). Show reveals the
+  // rest for this visit. Local Competition follows Event Types (C11a) but not the range (answer B).
   const [showAll, setShowAll] = useState(false);
   useEffect(() => setShowAll(false), [metro.id, date]);
-  const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
+  const filter = useMemo(() => displayFilter(log, 'lists', friends), [log, friends]);
   // The split is always known, so the line keeps its count and reads Hide while everything shows (Kylie, Oct 17).
-  const split = useMemo(() => splitByRange(events, rangeOn(crowdRangeOf(log), 'lists'), keep), [events, log, keep]);
+  const split = useMemo(() => splitByDisplay(events, filter), [events, filter]);
   const lineup = useMemo(() => (showAll ? { shown: events, hidden: split.hidden } : split), [events, showAll, split]);
-  const further = useMemo(() => {
+  // The bars Event Types hid stay off the timeline until Show (C11a); the range never touches it.
+  const competition = useMemo(() => (showAll ? events : events.filter((e) => !split.byTypes.has(e.id))), [events, showAll, split]);
+  // Further out: its own lists switch (Kylie, Oct 20, 2026) and Event Types (C12), never the range. Its hidden rows
+  // count on the one line and come back with the same Show.
+  const furtherSplit = useMemo(() => {
     const all = day?.furtherOut ?? [];
-    return crowdRangeOf(log).furtherListsOff ? all.filter((e) => keep.has(e.id)) : all;
-  }, [day, log, keep]);
+    const listed = crowdRangeOf(log).furtherListsOff ? all.filter((e) => filter.keep.has(e.id)) : all;
+    return splitByDisplay(listed, { ...filter, range: {} });
+  }, [day, log, filter]);
+  const further = showAll ? [...furtherSplit.shown, ...furtherSplit.hidden] : furtherSplit.shown;
+  const hiddenCount = lineup.hidden.length + furtherSplit.hidden.length;
+  const hiddenReason = split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
   // The biggest event, for the share line's fallback title (it was events[0] while the list sorted by crowd).
   const biggest = useMemo(() => [...events].sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0))[0], [events]);
   const mine = useMemo(
@@ -329,7 +337,7 @@ export function DateScreen() {
             ))}
             </ul>
           </div>
-          <HiddenLine count={lineup.hidden.length} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
+          <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
         </section>
       )}
 
@@ -338,7 +346,7 @@ export function DateScreen() {
           {/* Build 5, item 4 (board datepage-r3-lean): the timeline of the day's big crowds. No summary line and no
               read tile: the read is in the card above. The hourly weather left for its own strip (M3, Oct 23, 2026). */}
           <h2 className="you-heading">Local Competition</h2>
-          <DayTimeline events={events} />
+          <DayTimeline events={competition} />
         </section>
       )}
 

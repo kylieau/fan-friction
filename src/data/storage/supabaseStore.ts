@@ -18,7 +18,7 @@
 
 import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
-import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readRemoved, readStamp, readTemperatureUnit, readSeasonTickets } from './localStore';
+import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readHiddenEventTypes, readRemoved, readStamp, readTemperatureUnit, readSeasonTickets } from './localStore';
 import { notThereYet } from './dbErrors';
 import type { EntryStore, LogDiff } from './types';
 
@@ -60,7 +60,7 @@ interface SettingsRow {
   user_id: string;
   you_order: string;
   hidden_seed_ids: string[];
-  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown; crowdRange?: unknown; crowdRangeAt?: unknown; temperatureUnit?: unknown; temperatureUnitAt?: unknown; seasonTickets?: unknown };
+  data?: { favorites?: unknown; removed?: unknown; favoriteCities?: unknown; favoriteCitiesAt?: unknown; crowdRange?: unknown; crowdRangeAt?: unknown; hiddenEventTypes?: unknown; hiddenEventTypesAt?: unknown; temperatureUnit?: unknown; temperatureUnitAt?: unknown; seasonTickets?: unknown };
 }
 
 interface RemovedRow {
@@ -198,6 +198,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         ...(readStamp(settings?.data?.favoriteCitiesAt) ? { favoriteCitiesAt: readStamp(settings?.data?.favoriteCitiesAt) } : {}),
         ...(readCrowdRange(settings?.data?.crowdRange) ? { crowdRange: readCrowdRange(settings?.data?.crowdRange) } : {}),
         ...(readStamp(settings?.data?.crowdRangeAt) ? { crowdRangeAt: readStamp(settings?.data?.crowdRangeAt) } : {}),
+        ...(readHiddenEventTypes(settings?.data?.hiddenEventTypes) ? { hiddenEventTypes: readHiddenEventTypes(settings?.data?.hiddenEventTypes) } : {}),
+        ...(readStamp(settings?.data?.hiddenEventTypesAt) ? { hiddenEventTypesAt: readStamp(settings?.data?.hiddenEventTypesAt) } : {}),
         ...(readTemperatureUnit(settings?.data?.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(settings?.data?.temperatureUnit) } : {}),
         ...(readStamp(settings?.data?.temperatureUnitAt) ? { temperatureUnitAt: readStamp(settings?.data?.temperatureUnitAt) } : {}),
         ...(readSeasonTickets(settings?.data?.seasonTickets) ? { seasonTickets: readSeasonTickets(settings?.data?.seasonTickets) } : {}),
@@ -255,6 +257,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
               ...(log.favoriteCitiesAt ? { favoriteCitiesAt: log.favoriteCitiesAt } : {}),
               ...(log.crowdRange ? { crowdRange: log.crowdRange } : {}),
               ...(log.crowdRangeAt ? { crowdRangeAt: log.crowdRangeAt } : {}),
+              ...(log.hiddenEventTypes?.length ? { hiddenEventTypes: log.hiddenEventTypes } : {}),
+              ...(log.hiddenEventTypesAt ? { hiddenEventTypesAt: log.hiddenEventTypesAt } : {}),
               ...(log.temperatureUnit ? { temperatureUnit: log.temperatureUnit } : {}),
               ...(log.temperatureUnitAt ? { temperatureUnitAt: log.temperatureUnitAt } : {}),
               ...(log.seasonTickets?.length ? { seasonTickets: log.seasonTickets } : {}),

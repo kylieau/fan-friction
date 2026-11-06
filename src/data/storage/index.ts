@@ -181,6 +181,8 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.favoriteCitiesAt !== after.favoriteCitiesAt ||
     JSON.stringify(before.crowdRange ?? null) !== JSON.stringify(after.crowdRange ?? null) ||
     before.crowdRangeAt !== after.crowdRangeAt ||
+    !sameList(before.hiddenEventTypes, after.hiddenEventTypes) ||
+    before.hiddenEventTypesAt !== after.hiddenEventTypesAt ||
     before.temperatureUnit !== after.temperatureUnit ||
     before.temperatureUnitAt !== after.temperatureUnitAt ||
     JSON.stringify(before.seasonTickets ?? null) !== JSON.stringify(after.seasonTickets ?? null) ||
@@ -223,6 +225,7 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     favorites: mergeFavorites(account.favorites, phone.favorites),
     ...mergeCities(account, phone),
     ...mergeCrowdRange(account, phone),
+    ...mergeHiddenEventTypes(account, phone),
     ...mergeTemperatureUnit(account, phone),
     ...mergeSeasonTickets(account, phone),
     removed,
@@ -261,6 +264,14 @@ function mergeCities(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog
   const joined = [...new Set([...(account.favoriteCities ?? []), ...(phone.favoriteCities ?? [])])];
   const stamp = a ?? b;
   return { ...(joined.length > 0 || stamp ? { favoriteCities: joined } : {}), ...(stamp ? { favoriteCitiesAt: stamp } : {}) };
+}
+
+/** Event Types (build 7.2, Section C): the copy changed last wins, as with the crowd range; an unstamped copy yields. */
+function mergeHiddenEventTypes(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'hiddenEventTypes' | 'hiddenEventTypesAt'> {
+  const a = account.hiddenEventTypesAt ?? '';
+  const b = phone.hiddenEventTypesAt ?? '';
+  const mine = b > a ? phone : account;
+  return { ...(mine.hiddenEventTypes?.length ? { hiddenEventTypes: mine.hiddenEventTypes } : {}), ...(mine.hiddenEventTypesAt ? { hiddenEventTypesAt: mine.hiddenEventTypesAt } : {}) };
 }
 
 /** The crowd range (build 5, item 6): the copy changed last wins, as with the starred cities; an unstamped copy yields. */

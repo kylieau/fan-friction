@@ -9,6 +9,7 @@ import { ChevronDown, HomeIcon } from '../components/Icons';
 import { ProfileForm } from './ProfileEditScreen';
 import { PrivacySettings, VISIBILITY_WORDS } from './SettingsPrivacyScreen';
 import { CrowdSizeSettings } from './SettingsCrowdScreen';
+import { EventTypesSettings } from './SettingsEventTypesScreen';
 import { PeoplePanel } from './PeopleScreen';
 import { ReviewQueue } from '../components/ReviewQueue';
 import { DEFAULT_METRO, METROS, usesCelsius } from '../config/metros';
@@ -17,6 +18,8 @@ import {
   blockedPeople,
   crowdRangeLabel,
   crowdRangeOf,
+  eventTypesLabel,
+  hiddenEventTypesOf,
   entryMatches,
   favoriteCitiesOf,
   favoriteDisplayName,
@@ -44,10 +47,10 @@ import {
 } from '../data';
 
 /** The page's sections. Short ones open in place (⌄); long ones are pages of their own (›), reached by `?page=`. */
-export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'privacy' | 'blocked' | 'faves' | 'people' | 'events' | 'review' | 'app';
-type SubPage = 'people' | 'faves' | 'cities' | 'profile' | 'privacy' | 'crowd' | 'review';
-const SUB_PAGES: readonly SubPage[] = ['people', 'faves', 'cities', 'profile', 'privacy', 'crowd', 'review'];
-const SECTIONS: readonly SettingsSectionId[] = ['profile', 'account', 'cities', 'crowd', 'privacy', 'blocked', 'faves', 'people', 'events', 'review', 'app'];
+export type SettingsSectionId = 'profile' | 'account' | 'cities' | 'crowd' | 'types' | 'privacy' | 'blocked' | 'faves' | 'people' | 'events' | 'review' | 'app';
+type SubPage = 'people' | 'faves' | 'cities' | 'profile' | 'privacy' | 'crowd' | 'types' | 'review';
+const SUB_PAGES: readonly SubPage[] = ['people', 'faves', 'cities', 'profile', 'privacy', 'crowd', 'types', 'review'];
+const SECTIONS: readonly SettingsSectionId[] = ['profile', 'account', 'cities', 'crowd', 'types', 'privacy', 'blocked', 'faves', 'people', 'events', 'review', 'app'];
 
 export function isSection(value: string | null): value is SettingsSectionId {
   return value !== null && (SECTIONS as readonly string[]).includes(value);
@@ -60,6 +63,7 @@ const SUB_TITLES: Record<SubPage, string> = {
   profile: 'Edit Profile',
   privacy: 'Privacy',
   crowd: 'Crowd Size',
+  types: 'Event Types',
   review: 'Review Queue',
 };
 
@@ -68,7 +72,7 @@ const SUB_TITLES: Record<SubPage, string> = {
  * the pinned "‹ You · Profile & Settings" head, the profile card (avatar, name, "@handle · N people", Edit, Share,
  * Home City + Change, Privacy ›), the People & Faves group with a preview on each row (Followers, Teams & Artists,
  * Favorite Cities, each › to its own page), and the "App & Account" group: Account ⌄, Temperature Units (M40, the
- * °F | °C control), Crowd Size ›, Blocked ⌄, Your Events ⌄, Review Queue › (admin), App ⌄. Sub-pages ride on
+ * °F | °C control), Crowd Size ›, Event Types › (build 7.2, C1), Blocked ⌄, Your Events ⌄, Review Queue › (admin), App ⌄. Sub-pages ride on
  * `?page=`; the old `#section` and `?panel=` addresses are folded into it, so every old link still lands. Signed
  * out: the sign-in card on top, then what a signed-out person can use. It replaces build 7's one page of open
  * sections (which panned sideways, M18).
@@ -224,6 +228,7 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
       profile: <ProfileForm onSaved={() => (hasAppHistory() ? navigate(-1) : navigate('/you/settings', { replace: true }))} />,
       privacy: <PrivacySettings />,
       crowd: <CrowdSizeSettings />,
+      types: <EventTypesSettings />,
       review: <ReviewQueue key={account?.id ?? 'none'} />,
     };
     return (
@@ -494,6 +499,8 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
             </span>
           </div>
           {pageRow('crowd', 'Crowd Size', <span className="settings-value">{crowdRangeLabel(crowdRangeOf(log))}</span>)}
+          {/* Event Types (build 7.2, C1): directly under Crowd Size, a standing preference like it; "All On" or "N Off". */}
+          {pageRow('types', 'Event Types', <span className="settings-value">{eventTypesLabel(hiddenEventTypesOf(log))}</span>)}
           {/* Blocked shows signed in even when empty, reading "None" (the summary-row empty states, Codex, 11 (a) review). */}
           {account &&
             disclosure(

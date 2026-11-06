@@ -11,7 +11,7 @@ All frames for the 7.2 notes. Paths below are relative to this folder. Annotated
 | `crops/` | Section A review crops (A1 to A7) and story / traffic / stubs refs | Locked Oct 30 |
 | `gap-shots/` | 7.1 gap review shots cited in Section B | Locked Oct 30 |
 | `favorite-cities/` | B1 Favorite Cities settings and Explore switcher | Locked Oct 30 |
-| `event-types/` | Section C Event Types settings and day-page lines | Locked Oct 30 (gated by taxonomy research) |
+| `event-types/` | Section C Event Types settings and day-page lines | Locked Oct 30; taxonomy locked Nov 4; **built Nov 6** (03 and 04 without the Proposed pill, the dashed note, High School, Parades and Pop-Ups; 09's three wordings; 08's bars) |
 | `night-story/` | Section D story section | Locked Oct 30 |
 | `onboarding/` | Section F first-run | Locked Oct 30 |
 | `activity-rows/` | H / R1a. `round2/` = option set. `round3-r1/` = first chevron mock (superseded size). `r2-final/` = **FINAL** smaller chevron | Locked Nov 4: A Fact List, smaller chevron |

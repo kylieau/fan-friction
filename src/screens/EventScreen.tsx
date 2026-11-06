@@ -18,10 +18,8 @@ import {
   popupExplainer,
   setStubVisibility,
   stubLevel,
-  alwaysShownIds,
-  crowdRangeOf,
-  rangeOn,
-  splitByRange,
+  displayFilter,
+  splitByDisplay,
   feelsLikeLabel,
   isOpenAir,
   storyFor,
@@ -241,13 +239,13 @@ export function EventScreen() {
   const rivalVenue = (r: CrowdEvent) => (r.place.type === 'venue' ? (VENUES[r.place.venueId] ? venueNameOn(VENUES[r.place.venueId], r.date) : null) : r.place.name);
   // Straight-line miles from this venue to a rival's (build notes 3, 3.3: distance helps explain the pull).
   const rivalMiles = (r: CrowdEvent) => (r.place.type === 'venue' && VENUES[r.place.venueId] ? milesBetween(me.location, VENUES[r.place.venueId].location) : null);
-  // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range only
-  // (build 5, item 6, answer A). Up against above stays unfiltered (answer B).
+  // The day's events on the map and its biggest draw, for the This day card; inside the crowd size range and
+  // Event Types only (build 5, item 6, answer A; build 7.2, C12). Up against above stays unfiltered (answer B).
   // A further-out event (outside the city, within about 2 hours) opens on its own; it has no This day card.
   const furtherRoom = e.place.type === 'venue' ? VENUES[e.place.venueId]?.furtherOut : undefined;
   const further = Boolean(furtherRoom);
   const furtherTown = furtherRoom?.town;
-  const dayEvents = splitByRange(day.events.filter(showsOnMap), rangeOn(crowdRangeOf(log), 'lists'), alwaysShownIds(log, dayFriends)).shown;
+  const dayEvents = splitByDisplay(day.events.filter(showsOnMap), displayFilter(log, 'lists', dayFriends)).shown;
   const dayCount = dayEvents.length;
   const biggest = [...dayEvents].sort((x, y) => (drawSize(y) ?? 0) - (drawSize(x) ?? 0))[0];
 

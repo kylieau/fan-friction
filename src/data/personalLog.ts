@@ -24,6 +24,7 @@ import { isFurtherOutRoom } from './sources/venueMetro';
 import { listedCapacity } from './read';
 import { backfillEntryCrowd, crowdFigures, entryCrowd } from './crowdFigures';
 import { competitionOf, entryType, eventType } from './eventTypes';
+import { cleanHiddenTypes } from './eventTypeFilter';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
 import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
@@ -1557,6 +1558,13 @@ export function setCrowdRange(range: CrowdRange) {
     ...(range.furtherListsOff ? { furtherListsOff: true } : {}),
   };
   commit({ ...snapshot, crowdRange: clean, crowdRangeAt: new Date().toISOString() });
+}
+
+/** Save the Event Types switches that are off (build 7.2, Section C), stamped so the newest copy wins across devices. */
+export function setHiddenEventTypes(keys: readonly string[]) {
+  const clean = cleanHiddenTypes(keys);
+  const { hiddenEventTypes: _hidden, ...rest } = snapshot;
+  commit({ ...rest, ...(clean.length > 0 ? { hiddenEventTypes: clean } : {}), hiddenEventTypesAt: new Date().toISOString() });
 }
 
 export function logBackup(log: PersonalLog = snapshot): LogBackup {

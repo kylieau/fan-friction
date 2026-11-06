@@ -26,12 +26,14 @@ import {
   type Favorite,
   type FollowStatus,
   type Profile,
-  alwaysShownIds,
   crowdRangeOf,
-  rangeOn,
+  displayFilter,
   followingFeed,
-  passesCrowdRange,
+  hiddenBySize,
+  hiddenByTypes,
+  reasonOf,
   type FeedItem,
+  type HiddenReason,
 } from '../data';
 import { longLocalDate } from '../lib/dates';
 import { parseTypedDate } from '../lib/searchDate';
@@ -70,10 +72,12 @@ export function SearchSheet({
   const typedDate = parseTypedDate(trimmed, today);
   const signedIn = Boolean(getAccount());
 
-  // The crowd size range applies here too (build 5, item 6, "everywhere"): a date whose matching events are all
-  // outside it sits under the Show line. Your stubs and events friends are attending always count.
+  // The crowd size range applies here too (build 5, item 6, "everywhere"), and Event Types since build 7.2 (C12): a
+  // date whose matching events are all hidden sits under the Show line, which names the setting that hid them.
+  // Your stubs and events friends are attending always count (favorites too, under Event Types).
   const [friends, setFriends] = useState<FeedItem[]>([]);
   const [showAll, setShowAll] = useState(false);
+  const [hiddenReason, setHiddenReason] = useState<HiddenReason | null>(null);
   useEffect(() => {
     let current = true;
     if (signedIn) followingFeed(300).then((list) => current && setFriends(list));
@@ -91,11 +95,23 @@ export function SearchSheet({
     setHits(null);
     setShowAll(false);
     const log = getPersonalLog();
-    const range = rangeOn(crowdRangeOf(log), 'lists');
-    const keep = alwaysShownIds(log, friends);
+    const filter = displayFilter(log, 'lists', friends);
     // Further out follows its own lists switch (Kylie, Oct 20, 2026).
     const withFurtherOut = !crowdRangeOf(log).furtherListsOff;
-    searchAllDates(homeId, trimmed, (event) => passesCrowdRange(event, range, keep), { withFurtherOut }).then((list) => current && setHits(list));
+    let anySize = false;
+    let anyTypes = false;
+    const visible = (event: CrowdEvent) => {
+      const size = hiddenBySize(event, filter);
+      const types = hiddenByTypes(event, filter);
+      anySize ||= size;
+      anyTypes ||= types;
+      return !size && !types;
+    };
+    searchAllDates(homeId, trimmed, visible, { withFurtherOut }).then((list) => {
+      if (!current) return;
+      setHits(list);
+      setHiddenReason(reasonOf(anySize, anyTypes));
+    });
     return () => {
       current = false;
     };
@@ -112,10 +128,8 @@ export function SearchSheet({
       return;
     }
     let current = true;
-    const log = getPersonalLog();
-    const range = rangeOn(crowdRangeOf(log), 'lists');
-    const keep = alwaysShownIds(log, friends);
-    searchEvents(homeId, trimmed, 8).then((list) => current && setEvents(list.filter((event) => passesCrowdRange(event, range, keep))));
+    const filter = displayFilter(getPersonalLog(), 'lists', friends);
+    searchEvents(homeId, trimmed, 8).then((list) => current && setEvents(list.filter((event) => !hiddenBySize(event, filter) && !hiddenByTypes(event, filter))));
     return () => {
       current = false;
     };
@@ -294,7 +308,7 @@ export function SearchSheet({
                 </li>
               ))}
             </ul>
-            <HiddenLine count={hiddenHits} noun="date" shown={showAll} onToggle={() => setShowAll((v) => !v)} />
+            <HiddenLine count={hiddenHits} noun="date" reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />
           </section>
         )}
         {group('Teams', 'team')}

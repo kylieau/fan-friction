@@ -813,6 +813,14 @@ export interface PersonalLog {
   /** When the range last changed (ISO). The newer copy wins, like the starred cities. */
   crowdRangeAt?: string;
   /**
+   * Event Types (build 7.2, Section C; Kylie, Oct 30 and Nov 4, 2026): the switches turned off, by key
+   * (`eventTypeFilter.ts`). Only hidden keys are stored (C8), so a new type appears on. A display filter only,
+   * saved with the settings. Absent or empty means everything shows.
+   */
+  hiddenEventTypes?: string[];
+  /** When the hidden keys last changed (ISO). The newer copy wins, like the crowd range. */
+  hiddenEventTypesAt?: string;
+  /**
    * Temperature Units (build 7.1, M40; Kylie, Oct 23, 2026): °F or °C for every degree in the app. Absent means no
    * choice yet, and each city's own rule applies (°C in Canada and Mexico). Saved with the settings.
    */

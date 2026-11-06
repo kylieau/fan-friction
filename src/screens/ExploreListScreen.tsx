@@ -14,10 +14,10 @@ import {
   type CityDate,
   type CrowdEvent,
   type FeedItem,
-  alwaysShownIds,
   crowdRangeOf,
-  rangeOn,
-  splitByRange,
+  displayFilter,
+  splitByDisplay,
+  type HiddenReason,
 } from '../data';
 import { addDays } from '../lib/dates';
 import { weekStartOf } from '../data/cityList';
@@ -239,34 +239,45 @@ export function ExploreListScreen() {
   const lastLoaded = weekStarts[weekStarts.length - 1];
   firstLoadedRef.current = firstLoaded;
 
-  // The crowd size range (build 5, item 6): each band's rows show only what's in range, with its own
-  // "N events outside your crowd size · Show"; Show reveals that band for this visit. The read box never changes.
+  // The crowd size range (build 5, item 6) and Event Types (build 7.2, Section C): each band's rows show only what
+  // both settings allow, with its own hidden line naming the setting that did it; Show reveals that band for this
+  // visit. The read box never changes.
   const [revealed, setRevealed] = useState<ReadonlySet<string>>(() => new Set());
   useEffect(() => setRevealed(new Set()), [metro.id]);
-  const keep = useMemo(() => alwaysShownIds(log, friends), [log, friends]);
-  const crowdRange = rangeOn(crowdRangeOf(log), 'lists');
+  const filter = useMemo(() => displayFilter(log, 'lists', friends), [log, friends]);
   const furtherOff = Boolean(crowdRangeOf(log).furtherListsOff);
 
   // The days that show: a row for every event at a known venue, empty days hidden (V08). A day whose rows are all
   // outside the range keeps its band, so its hidden line can be found. A day with only further-out events that the
   // lists switch shows keeps its band too (found Oct 21, 2026: it vanished from the List).
   const days = useMemo(() => {
-    const out: { date: string; day: CityDate; events: CrowdEvent[]; hidden: number; further: CrowdEvent[] }[] = [];
+    const out: { date: string; day: CityDate; events: CrowdEvent[]; hidden: number; reason: HiddenReason | null; further: CrowdEvent[] }[] = [];
     if (!range) return out;
     for (const weekStart of weekStarts) {
       for (const day of weeks.get(weekStart) ?? []) {
         if (day.date < range.from || day.date > range.through) continue;
         const all = day.events.filter(showsOnMap);
-        const further = (day.furtherOut ?? []).filter((e) => !furtherOff || keep.has(e.id));
-        if (all.length === 0 && further.length === 0) continue;
+        const listedFurther = (day.furtherOut ?? []).filter((e) => !furtherOff || filter.keep.has(e.id));
+        if (all.length === 0 && listedFurther.length === 0) continue;
         // The hidden count stays while the day shows everything, so its line can read Hide (Kylie, Oct 17).
-        const split = splitByRange(all, crowdRange, keep);
-        out.push({ date: day.date, day, events: revealed.has(day.date) ? all : split.shown, hidden: split.hidden.length, further });
+        const split = splitByDisplay(all, filter);
+        // Further out follows Event Types (C12), never the range; its hidden rows share the day's line and Show.
+        const furtherSplit = splitByDisplay(listedFurther, { ...filter, range: {} });
+        const open = revealed.has(day.date);
+        const reason: HiddenReason | null =
+          split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
+        out.push({
+          date: day.date,
+          day,
+          events: open ? all : split.shown,
+          hidden: split.hidden.length + furtherSplit.hidden.length,
+          reason,
+          further: open ? listedFurther : furtherSplit.shown,
+        });
       }
     }
     return out;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [weeks, weekStarts, range, revealed, keep, furtherOff, crowdRange.min, crowdRange.max, crowdRange.showUnknown]);
+  }, [weeks, weekStarts, range, revealed, filter, furtherOff]);
 
   // Keep the place when earlier weeks are added above: the scroll moves by the height they take.
   useLayoutEffect(() => {
@@ -483,7 +494,7 @@ export function ExploreListScreen() {
         >
           {range && days.length === 0 && weeks.size > 0 && <p className="you-fine explore-list-empty">Nothing listed yet.</p>}
           {firstIsPast && <div className="explore-list-earlier">Earlier</div>}
-          {days.map(({ date, day, events, hidden, further }) => (
+          {days.map(({ date, day, events, hidden, reason, further }) => (
             <section key={date} className="explore-list-day" data-day={date} aria-label={dayLabel(date, today)}>
               <Link to={datePath(date, metro.id)} className="list-band-link">
                 <ListBand label={dayLabel(date, today)} right={<ReadTile size="inline" rating={day.rating?.rating ?? null} empty={day.empty} />} />
@@ -499,6 +510,7 @@ export function ExploreListScreen() {
               </ul>
               <HiddenLine
                 count={hidden}
+                reason={reason}
                 shown={revealed.has(date)}
                 onToggle={() =>
                   setRevealed((set) => {

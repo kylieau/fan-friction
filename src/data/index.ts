@@ -529,7 +529,7 @@ export {
 export type { EntryEdit, LabeledFact, ManualEntryEdit, ManualNight, SyncStatus } from './personalLog';
 export { entryTypeLabel } from './personalLog';
 export { stubDefault, setStubDefault, stubLevel, setStubVisibility, setEntryVisibility, setPastStubsVisibility } from './personalLog';
-export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, temperatureUnitOf, setTemperatureUnit, toggleFavoriteCity, reorderFavoriteCities, setEntrySeats, setPlanSeats, setEntryCost, setPlanCost, entryTeams, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
+export { favoriteCitiesOf, cityOrder, crowdRangeOf, setCrowdRange, setHiddenEventTypes, temperatureUnitOf, setTemperatureUnit, toggleFavoriteCity, reorderFavoriteCities, setEntrySeats, setPlanSeats, setEntryCost, setPlanCost, entryTeams, isManualEntry, setStubTags, setRowTags, renameTag, deleteTag } from './personalLog';
 export { normalizeTag, normalizeTags, tagSummaries, userTagsOf, normalizeSeats, seatsLine, SEAT_LIMITS, SEAT_SPOTS, TAG_MAX, type TagSummary } from './stubTags';
 export type { Cost, CostKind, CostLine } from './types';
 export { hasUnsyncedChanges } from './storage';
@@ -552,6 +552,8 @@ export { ticketPrice, priceLine, type TicketPrice } from './tickets';
 export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';
 export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, rangeOn, splitByRange } from './crowdRange';
+export { FILTER_LEVELS, FILTER_TYPES, eventTypesLabel, eventTypesOpen, filterKeysOf, filterLevelOf, hiddenByEventTypes, hiddenEventTypesOf, hiddenSwitchCount, type FilterLevel, type FilterSub, type FilterTop, type LevelDef } from './eventTypeFilter';
+export { displayFilter, hiddenBySize, hiddenByTypes, passesDisplay, reasonOf, splitByDisplay, type DisplayFilter, type DisplaySplit, type HiddenReason } from './displayFilter';
 export { EVENT_TYPES, competitionOf, entryType, eventType, genreCasing, typeDef, type EventType, type TypeDef } from './eventTypes';
 export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';
