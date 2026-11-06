@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
@@ -258,7 +258,9 @@ export function EventScreen() {
   // Against, Weather, the story, This Day, Following, Your Stub, More Dates, the footer card. A Watched page carries no
   // This Day verdict and no verdict in what it shares (M23).
   const today = todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
-  const roads = gettingThereOn(log) ? dateRoads(e.metroId, date, day.events) : null;
+  // Memoized: the roads read the weather per event, so it runs once per day's events, not per render (advisor, Nov 6).
+  const roadsOn = gettingThereOn(log);
+  const roads = useMemo(() => (roadsOn ? dateRoads(e.metroId, date, day.events) : null), [roadsOn, e.metroId, date, day.events]);
   const roadsRow = roads && ahead ? eventRoads(roads, e.id) : null;
   const pastRoads = roads && !ahead ? pastRoadsLine(roads, e.id) : null;
   const watchedPage = you?.kind === 'watched';
