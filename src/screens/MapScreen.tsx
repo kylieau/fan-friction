@@ -26,6 +26,8 @@ import { getPref, setPref } from '../lib/prefs';
 import { PeopleIcon } from '../components/Icons';
 import { BaseMap, MapContext } from '../map/BaseMap';
 import { CrowdLayer } from '../map/CrowdLayer';
+import { TrafficLayer, type RoadArea } from '../map/TrafficLayer';
+import { TrafficBar, TrafficBody, cueAt } from '../components/TrafficSheet';
 import { chipActivities } from '../map/chipActivity';
 import { HandMoveWatch, MapCamera } from '../map/MapCamera';
 import { crowdPoints, crowdThousands, showsOnMap } from '../map/crowdPoints';
@@ -44,19 +46,19 @@ import { DayStrip } from '../components/DayStrip';
 import { ChipCard } from '../components/ChipCard';
 import { CrowdMark, FRICTION_LADDER, FrictionVerdict } from '../components/EventTags';
 import { DayRow, RowBody, sheetVenue, spokenRow } from '../components/DayRow';
-import { crowdRangeOf, displayFilter, displayedCrowdCount, drawSize, sizeTier, splitByDisplay } from '../data';
+import { crowdRangeOf, dateRoads, displayFilter, displayedCrowdCount, drawSize, gettingThereOn, sizeTier, splitByDisplay } from '../data';
 import { HiddenLine } from '../components/HiddenLine';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
 type Mode = 'crowds' | 'traffic';
-/** No traffic layer exists yet; the switch stays off the map until one does (C079). */
-const TRAFFIC_BUILT = false;
 
 // The map is the screen; the header and the sheet sit on it. Opens on Today, even
 // when it's quiet. A famous night opens here too ("/?date=2024-10-25").
 // One view (place + date), one selected event shared by the dot, its label and its row.
 export function MapScreen() {
-  const [mode, setMode] = useState<Mode>('crowds');
+  // Crowds | Traffic (build 7.2, Section E; mock getting-there/01). Traffic exists only while the Getting There switch
+  // is on (R4a); a link can open it ("See it on the map"), and the mode sticks while you browse dates (mock 03).
+  const [mode, setMode] = useState<Mode>(() => (new URLSearchParams(window.location.search).get('mode') === 'traffic' ? 'traffic' : 'crowds'));
   const [legend, setLegend] = useState(false);
   // The key's room: from just under the floating header to just over its button, so it never tucks under the
   // header on a short window (Kylie, Oct 17). Measured when it opens and whenever the window changes.
@@ -178,6 +180,30 @@ export function MapScreen() {
   // The line keeps its count while the hidden ones show, so Show can turn into Hide (Kylie, Oct 17).
   const hiddenCount = split.hidden.length + furtherSplit.hidden.length;
   const hiddenReason = split.reason === 'both' || (split.reason && furtherSplit.reason && split.reason !== furtherSplit.reason) ? 'both' : (split.reason ?? furtherSplit.reason);
+
+  // Traffic mode (build 7.2, Section E): the roads around the day's venues, from every event on the day (hidden ones
+  // included, as the verdict counts them), at the hour the slider sits on. Never on a past date (R4h).
+  const trafficOn = gettingThereOn(log);
+  const traffic = mode === 'traffic' && trafficOn;
+  useEffect(() => {
+    if (mode === 'traffic' && !trafficOn) setMode('crowds');
+  }, [mode, trafficOn]);
+  const roads = useMemo(() => (traffic && shown && date >= todayIn(metro) ? dateRoads(metro.id, date, allDayEvents) : null), [traffic, shown, date, metro, allDayEvents]);
+  // The slider: a linked hour, else the hour the worst area peaks, else the axis's first hour; reset on a new date.
+  const [pickedHour, setPickedHour] = useState<number | null>(() => {
+    const h = Number(new URLSearchParams(window.location.search).get('hour'));
+    return Number.isFinite(h) && h > 0 ? h : null;
+  });
+  useEffect(() => setPickedHour(null), [date, metro.id]);
+  // Traffic mode opens the sheet, so the rows and the slider show (mock 01), on this date and the next one browsed.
+  useEffect(() => {
+    if (traffic) setOpen(true);
+  }, [traffic, date]);
+  const hour = roads && !roads.quiet ? (pickedHour !== null && pickedHour >= roads.axis.lo && pickedHour < roads.axis.hi ? pickedHour : roads.areas[0]?.window ? Math.floor(roads.areas[0].window.from) : roads.axis.lo) : null;
+  const roadAreas = useMemo<RoadArea[]>(
+    () => (roads && !roads.quiet && hour !== null ? roads.areas.map((a) => ({ id: a.id, name: a.name, center: a.hours.zone.center, cue: cueAt(a, hour) })) : []),
+    [roads, hour],
+  );
   const furtherPoints = useMemo(
     () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true, furtherOut: true })) : []),
     [shown, mode, furtherOn, date],
@@ -319,6 +345,7 @@ export function MapScreen() {
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro} camera={memory}>
           <CrowdLayer points={layerPoints} selectedId={selectedId} onSelect={select} activity={chipActivity} />
+          {traffic && <TrafficLayer areas={roadAreas} />}
           <MapCamera
             points={points}
             selectedId={selectedId}
@@ -410,8 +437,8 @@ export function MapScreen() {
               </div>
             )}
           </div>
-          {/* The Crowds/Traffic switch is hidden until a Traffic layer exists (C079; Traffic is parked). */}
-          {TRAFFIC_BUILT && (
+          {/* The Crowds/Traffic switch shows while Getting There is on (build 7.2, Section E; E3: "Traffic" on the switch). */}
+          {trafficOn && (
             <div className="segmented small" role="tablist" aria-label="Map mode">
               <button type="button" role="tab" aria-selected={mode === 'crowds'} onClick={() => setMode('crowds')}>
                 Crowds
@@ -484,7 +511,7 @@ export function MapScreen() {
       {/* The sheet (build notes 3, 4.2; Kylie's answer, 8.1 item 20): with no chip picked, its collapsed bar reads
           "4 events · 94k ›" and opens the date page, and the list under it is the day's rows by time. A tapped chip
           puts the compact card on top with the rivals it is fighting under it (build notes 2, T1). */}
-      <section className={`sheet${selected || dayEvents.length > 0 || hiddenCount > 0 ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={selected ? listTitle(selected) : 'This day'} aria-hidden={!selected && dayEvents.length === 0 && hiddenCount === 0}>
+      <section className={`sheet${traffic || selected || dayEvents.length > 0 || hiddenCount > 0 ? '' : ' sheet-none'}`} ref={sheetRef} aria-label={traffic ? 'Traffic' : selected ? listTitle(selected) : 'This day'} aria-hidden={!traffic && !selected && dayEvents.length === 0 && hiddenCount === 0}>
         <div className="sheet-top" ref={topRef}>
           <div
             className="sheet-grab"
@@ -497,7 +524,9 @@ export function MapScreen() {
           >
             <span className="sheet-handle" aria-hidden />
           </div>
-          {selected ? (
+          {traffic ? (
+            <TrafficBar roads={roads} hour={hour} date={date} isToday={isToday} />
+          ) : selected ? (
             <ChipCard event={selected} friends={activity ? friends.filter((f) => f.eventId === selected.id) : undefined} onOpen={() => markOpenedFromMap()} />
           ) : (
             <div className="sheet-bar">
@@ -522,7 +551,8 @@ export function MapScreen() {
         </div>
 
         <div className="sheet-body" ref={bodyRef}>
-          {selected && rivals.length > 0 && (
+          {traffic && <TrafficBody roads={roads} hour={hour} onHour={setPickedHour} past={date < todayIn(metro)} city={metro.name} date={date} metroId={metro.id} />}
+          {!traffic && selected && rivals.length > 0 && (
             <>
               <div className="section-title">Fighting Today</div>
               <ul className="event-list">
@@ -542,8 +572,8 @@ export function MapScreen() {
               </ul>
             </>
           )}
-          {selected && rivals.length === 0 && <p className="you-fine">Nothing else over 5,000 starts within the hour.</p>}
-          {!selected && dayEvents.length > 0 && (
+          {!traffic && selected && rivals.length === 0 && <p className="you-fine">Nothing else over 5,000 starts within the hour.</p>}
+          {!traffic && !selected && dayEvents.length > 0 && (
             <ul className="day-list" aria-label="Events">
               {[...dayEvents]
                 .sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99'))
@@ -554,7 +584,7 @@ export function MapScreen() {
                 ))}
             </ul>
           )}
-          {!selected && <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />}
+          {!traffic && !selected && <HiddenLine count={hiddenCount} reason={hiddenReason} shown={showAll} onToggle={() => setShowAll((v) => !v)} />}
         </div>
       </section>
 

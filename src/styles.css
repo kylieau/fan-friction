@@ -14137,3 +14137,164 @@ button.types-top-words {
   color: var(--dodger);
   cursor: pointer;
 }
+
+/* ---------- The Map's Traffic mode (build 7.2, Section E; mocks getting-there/01 and 03) ---------- */
+/* An area label over its blob: a white chip with the name and the cue, in the chip's own type. */
+.road-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.18);
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--ink);
+  pointer-events: none;
+  white-space: nowrap;
+}
+.road-label-name {
+  font-weight: 800;
+}
+.road-label-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+/* The sheet in Traffic mode: the bar with the hour and the tag, rows per area, the slider over a strip of the busiest
+   area's cues, the hint and the link. */
+.traffic-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 32px;
+}
+.traffic-bar-when {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink);
+}
+.traffic-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 8px;
+}
+.traffic-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.traffic-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+}
+.traffic-row-words {
+  min-width: 0;
+}
+.traffic-row-name {
+  font-weight: 800;
+  color: var(--ink);
+}
+.traffic-row-who {
+  color: var(--ink2);
+}
+.traffic-row-cue {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.traffic-slider {
+  position: relative;
+  padding-bottom: 16px;
+}
+.traffic-track {
+  height: 8px;
+  margin: 18px 0;
+}
+.traffic-slider input[type='range'] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  appearance: none;
+  background: none;
+}
+.traffic-slider input[type='range']::-webkit-slider-runnable-track {
+  height: 44px;
+  background: none;
+}
+.traffic-slider input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  margin-top: 8px;
+  border-radius: 50%;
+  border: 3px solid var(--dodger);
+  background: var(--card);
+  box-shadow: 0 1px 4px rgba(15, 27, 45, 0.25);
+}
+.traffic-slider input[type='range']::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid var(--dodger);
+  background: var(--card);
+}
+.traffic-axis {
+  top: 34px;
+}
+.traffic-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+}
+.traffic-foot-hint {
+  font-size: 13px;
+  color: var(--ink2);
+}
+.traffic-foot-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dodger);
+  text-decoration: none;
+}
+.traffic-quiet {
+  margin: 4px 0 12px;
+  font-size: 14px;
+  color: var(--ink2);
+}
+.traffic-quiet-card {
+  margin: 0 0 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--card);
+}
+.traffic-quiet-lead {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+}
+.traffic-quiet-sub {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink2);
+}
