@@ -132,7 +132,8 @@ export function CrowdSizeSettings() {
           <span className="settings-value">{saved.listsOff ? 'Off' : 'On'}</span>
         </button>
         <p className="you-fine">Home always shows today's three biggest events, and a favorite's page shows all of its events.</p>
-        <p className="you-fine">Events you've stubbed or friends are attending always show.</p>
+        {/* Favorites too since Nov 6, 2026 (Kylie: favorites and activity supersede both Crowd Size and Event Types). */}
+        <p className="you-fine">Your faves, events you've stubbed, and friends' plans always show.</p>
       </div>
       {/* "No Estimate" (build 7.2, I4 and I5; was "Unknown Size"): the one switch for events with no count, sellout or
           estimate. An event with only a room size ("14k cap") is one of them; it is never compared to Min and Max. The

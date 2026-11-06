@@ -36,7 +36,8 @@ export function rangeIsOpen(range: CrowdRange): boolean {
 
 /**
  * Events that always show, whatever the range: ones you stubbed (any plan or entry), and ones the people you
- * follow are attending or attended (Watching and Interested don't count: the notes say "attending").
+ * follow are attending or attended (Watching and Interested don't count: the notes say "attending"). A favorite's
+ * events are kept too, by `displayFilter.ts` (Kylie, Nov 6, 2026), since a favorite is matched, not an id.
  */
 export function alwaysShownIds(log: PersonalLog, friends: readonly FeedItem[] = []): Set<string> {
   const ids = new Set<string>();

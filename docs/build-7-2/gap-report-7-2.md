@@ -43,11 +43,14 @@ Shots: `.playwright-mcp/7-2-c-types-all-on.png`, `7-2-c-types-mixed.png` (before
 7. **"Chip counts" (C11b)** is read as the header's numbers; a hidden event has no pin, so no chip can count it.
 8. **The classifier is untouched; two of Kylie's answers are read by the filter instead** (after the Codex review): a theatre, film or family listing whose title names an orchestra, symphony or philharmonic answers to Concerts & Music › Classical and Opera (answer 6; "In Concert" alone stays out, since the research found it on film-only screenings), and a sport listing whose title says "high school" or names a state or provincial school-athletics association of four letters or more (CHSAA) carries the High School level (answer 4), so that switch shows in every city while only Denver has rows today. Those rows keep their display icons; only the switches change. The research's other candidate re-filings still wait for the one-at-a-time check.
 
-### Questions for Kylie
-1. **Should Crowd Size protect favorites too?** Event Types does (C2); Crowd Size can still hide a favorite's game. Lean: yes, one rule for both, in a follow-up commit.
-2. **CoComelon under Kids and Family** (the research's note) rather than Genre Unknown: fine?
-3. **Esports waits for events** (builder call 1) rather than shipping a title rule now ("Worlds 20xx", "LCS"): fine? (High School no longer waits: its title rule is in, per answer 4.)
-4. **The quiet-day sentence under Local Competition.** Her Oct 19 wording ("One big event that day.", "Nothing big that day.") shows when fewer than two bars remain. Now that Event Types can take a bar away (C11a), a day with two big events, one hidden, reads "One big event that day." under a verdict that says another crowd overlaps it. Lean: when a bar was hidden by Event Types, keep the timeline with its one bar instead of the sentence, so the card and the verdict agree. Built as the sentence for now, by her wording.
+### Kylie's answers (Nov 6, afternoon), built in the follow-up commit
+1. **Favorites and activity supersede both settings** ("favorites and activity events should not be hidden by crowd size or event types, they should supersede"). Built: a favorite team's, artist's, venue's or festival's events now pass Crowd Size too, through the same `isKept` rule as Event Types; the Crowd Size page's helper reads "Your faves, events you've stubbed, and friends' plans always show." Measured: Nov 7 with a 25,000 minimum, Hockey off and the Kings a favorite keeps the Kings row (18k) in the lineup and its bar in Local Competition.
+2. **CoComelon under Kids and Family:** fine.
+3. **Esports waits for events:** fine.
+4. **The quiet-day sentence:** "idc, not married to that wording at all". Built as the lean: when Event Types hid a bar, the one bar left still draws as a timeline; "One big event that day." stays for a day that really has one. Measured: Nov 11 with Hockey off shows the Alanis Morissette bar on its axis, no quiet sentence, under "Biggest draw: Predators at Ducks, 15k. 1 other big crowd overlaps it", with "1 event hidden by Event Types · Show".
+
+### Questions for Kylie, earlier draft (answered above)
+1. Should Crowd Size protect favorites too? 2. CoComelon under Kids and Family? 3. Esports waits for events? 4. The quiet-day sentence under Local Competition once a bar is hidden.
 
 ### Codex review of the group (Nov 6, afternoon), reconciled with the advisor before any tweak
 Eight findings: seven fixed (two with a different fix than proposed), one already in the working tree. Fixed in the follow-up commit.

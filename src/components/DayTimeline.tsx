@@ -18,7 +18,7 @@ import { TitleText } from './TitleText';
  * With fewer than two big events the card says so in one line, so it never looks empty by mistake (Kylie,
  * Oct 16, Q9). Big events that are all untimed still get their "Time TBA" band, alone, with no axis (Q13 lean).
  */
-export function DayTimeline({ events }: { events: readonly CrowdEvent[] }) {
+export function DayTimeline({ events, hiddenBars = false }: { events: readonly CrowdEvent[]; /** Event Types took a bar away (build 7.2, C11a): one bar still draws as a timeline, so the card agrees with the verdict (Kylie, Nov 6, 2026: not married to the quiet sentence). */ hiddenBars?: boolean }) {
   const big = events.filter((e) => sizeTier(e) === 'feeds-friction');
   const timed = big.filter((e) => e.start);
   // Big events with no start on file (research-loaded past dates, a game with no kickoff set) sit in a "Time TBA" band
@@ -27,7 +27,7 @@ export function DayTimeline({ events }: { events: readonly CrowdEvent[] }) {
   const untimed = big.filter((e) => !e.start).sort((a, b) => (drawSize(b) ?? 0) - (drawSize(a) ?? 0));
   // The quiet-day line by count (Kylie, Oct 19, 2026, superseding her Oct 16 Q9 sentence "No other big events that
   // day.", whose "other" had no anchor on a date page; tester-readiness review R10).
-  if (big.length < 2) return <p className="timeline-quiet">{big.length === 0 ? 'Nothing big that day.' : 'One big event that day.'}</p>;
+  if (big.length === 0 || (big.length === 1 && !hiddenBars)) return <p className="timeline-quiet">{big.length === 0 ? 'Nothing big that day.' : 'One big event that day.'}</p>;
   if (timed.length === 0) {
     return (
       <div className="day-timeline" aria-label="Timeline">

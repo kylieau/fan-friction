@@ -3,9 +3,9 @@
 // friend's plan, a favorite) is judged the same way everywhere (the research's "evaluate protection once"). Neither
 // setting reaches the read: verdicts and totals keep every event.
 //
-// The exceptions differ on purpose: Crowd Size keeps your stubs and plans and what friends are attending; Event
-// Types keeps those and a favorite team's, artist's, venue's or festival's events too (C2). Kylie has not said
-// whether Crowd Size should protect favorites, so it does not (notes §C2: "Do not change Crowd Size, ask her").
+// The exceptions are the same for both (Kylie, Nov 6, 2026: "favorites and activity events should not be hidden by
+// crowd size or event types, they should supersede"): your stubs and plans, what friends are attending, and a favorite
+// team's, artist's, venue's or festival's events always show. Until that answer Crowd Size kept only the first two.
 
 import { alwaysShownIds, passesCrowdRange, rangeOn } from './crowdRange';
 import { hiddenByEventTypes, hiddenEventTypesOf, isFavoriteEvent } from './eventTypeFilter';
@@ -20,7 +20,7 @@ export interface DisplayFilter {
   keep: ReadonlySet<string>;
   /** The Event Types keys switched off. */
   hidden: ReadonlySet<string>;
-  /** Favorites, which Event Types never hides. */
+  /** Favorites, which neither setting hides (Kylie, Nov 6, 2026). */
   favorites: readonly Favorite[];
 }
 
@@ -35,12 +35,18 @@ export function displayFilter(log: PersonalLog, surface: 'map' | 'lists', friend
   return { range: rangeOn(log.crowdRange ?? {}, surface), keep: alwaysShownIds(log, friends), hidden: hiddenEventTypesOf(log), favorites: favoritesOf(log) };
 }
 
-/** Hidden by the crowd size range (its own exceptions applied). */
-export function hiddenBySize(event: CrowdEvent, filter: DisplayFilter): boolean {
-  return !passesCrowdRange(event, filter.range, filter.keep);
+/** An event neither setting may hide: yours, a friend's, or a favorite's (Kylie, Nov 6, 2026). */
+export function isKept(event: CrowdEvent, filter: DisplayFilter): boolean {
+  return filter.keep.has(event.id) || isFavoriteEvent(event, filter.favorites);
 }
 
-/** Hidden by Event Types, after its exceptions (C2). Local Competition reads this alone (C11a). */
+/** Hidden by the crowd size range, after the exceptions. */
+export function hiddenBySize(event: CrowdEvent, filter: DisplayFilter): boolean {
+  if (passesCrowdRange(event, filter.range, filter.keep)) return false;
+  return !isFavoriteEvent(event, filter.favorites);
+}
+
+/** Hidden by Event Types, after the exceptions (C2). Local Competition reads this alone (C11a). */
 export function hiddenByTypes(event: CrowdEvent, filter: DisplayFilter): boolean {
   if (filter.hidden.size === 0 || filter.keep.has(event.id)) return false;
   if (!hiddenByEventTypes(event, filter.hidden)) return false;

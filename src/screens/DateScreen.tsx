@@ -353,7 +353,7 @@ export function DateScreen() {
           {/* Build 5, item 4 (board datepage-r3-lean): the timeline of the day's big crowds. No summary line and no
               read tile: the read is in the card above. The hourly weather left for its own strip (M3, Oct 23, 2026). */}
           <h2 className="you-heading">Local Competition</h2>
-          <DayTimeline events={competition} />
+          <DayTimeline events={competition} hiddenBars={!showAll && split.byTypes.size > 0} />
         </section>
       )}
 

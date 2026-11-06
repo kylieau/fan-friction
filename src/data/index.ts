@@ -553,7 +553,7 @@ export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';
 export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, rangeOn, splitByRange } from './crowdRange';
 export { FILTER_LEVELS, FILTER_TYPES, eventTypesLabel, eventTypesOpen, filterKeysOf, filterLevelOf, hiddenByEventTypes, hiddenEventTypesOf, hiddenSwitchCount, type FilterLevel, type FilterSub, type FilterTop, type LevelDef } from './eventTypeFilter';
-export { displayFilter, hiddenBySize, hiddenByTypes, passesDisplay, reasonOf, splitByDisplay, type DisplayFilter, type DisplaySplit, type HiddenReason } from './displayFilter';
+export { displayFilter, hiddenBySize, hiddenByTypes, isKept, passesDisplay, reasonOf, splitByDisplay, type DisplayFilter, type DisplaySplit, type HiddenReason } from './displayFilter';
 export { EVENT_TYPES, competitionOf, entryType, eventType, genreCasing, typeDef, type EventType, type TypeDef } from './eventTypes';
 export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';
