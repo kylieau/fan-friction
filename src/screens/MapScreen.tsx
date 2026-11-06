@@ -161,8 +161,9 @@ export function MapScreen() {
   // shows where the next reads are, and the sheet names the next event.
   const events = dayEvents;
   // One mark and one card per event. Cards that overlap are dropped; the marks stay.
+  // The camera frames the day's venues in both modes (Codex, Section E review); only the drawn pins empty in Traffic.
   const points = useMemo(() => {
-    if (!shown || mode !== 'crowds') return [];
+    if (!shown) return [];
     const all = crowdPoints(events, date);
     all.sort((a, b) => (a.event.date + (a.event.start ?? '')).localeCompare(b.event.date + (b.event.start ?? '')));
     return all;
@@ -191,22 +192,33 @@ export function MapScreen() {
   const roads = useMemo(() => (traffic && shown && date >= todayIn(metro) ? dateRoads(metro.id, date, allDayEvents) : null), [traffic, shown, date, metro, allDayEvents]);
   // The slider: a linked hour, else the hour the worst area peaks, else the axis's first hour; reset on a new date.
   const [pickedHour, setPickedHour] = useState<number | null>(() => {
-    const h = Number(new URLSearchParams(window.location.search).get('hour'));
-    return Number.isFinite(h) && h > 0 ? h : null;
+    const raw = new URLSearchParams(window.location.search).get('hour');
+    const h = raw === null ? NaN : Number(raw);
+    return Number.isInteger(h) && h >= 0 && h < 24 ? h : null;
   });
-  useEffect(() => setPickedHour(null), [date, metro.id]);
-  // Traffic mode opens the sheet, so the rows and the slider show (mock 01), on this date and the next one browsed.
+  // A new date or city drops the picked hour; the opening date keeps the linked one (Codex, Section E review). The
+  // guard compares against the opening date, as the date-reset effect below does, so a double-run in development
+  // (StrictMode) cannot clear it on mount.
+  const openedOn = useRef(`${metro.id}|${date}`);
+  useEffect(() => {
+    if (`${metro.id}|${date}` === openedOn.current) return;
+    setPickedHour(null);
+  }, [date, metro.id]);
+  // Traffic mode opens the sheet, so the rows and the slider show (mock 01); the date-change reset below reads this
+  // ref so browsing dates in Traffic keeps it open while Crowds still closes it.
+  const trafficRef = useRef(traffic);
+  trafficRef.current = traffic;
   useEffect(() => {
     if (traffic) setOpen(true);
-  }, [traffic, date]);
+  }, [traffic]);
   const hour = roads && !roads.quiet ? (pickedHour !== null && pickedHour >= roads.axis.lo && pickedHour < roads.axis.hi ? pickedHour : roads.areas[0]?.window ? Math.floor(roads.areas[0].window.from) : roads.axis.lo) : null;
   const roadAreas = useMemo<RoadArea[]>(
     () => (roads && !roads.quiet && hour !== null ? roads.areas.map((a) => ({ id: a.id, name: a.name, center: a.hours.zone.center, cue: cueAt(a, hour) })) : []),
     [roads, hour],
   );
   const furtherPoints = useMemo(
-    () => (shown && mode === 'crowds' ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true, furtherOut: true })) : []),
-    [shown, mode, furtherOn, date],
+    () => (shown ? crowdPoints(furtherOn, date).map((p) => ({ ...p, muted: true, furtherOut: true })) : []),
+    [shown, furtherOn, date],
   );
   const layerPoints = useMemo(() => (furtherPoints.length ? [...points, ...furtherPoints] : points), [points, furtherPoints]);
   // Collapsed, the sheet peeks the title. Open, it is as tall as the rows, and the
@@ -230,7 +242,7 @@ export function MapScreen() {
     setFreezeCamera(false);
     setMovedByHand(false);
     setSelectedId(null);
-    setOpen(false);
+    setOpen(trafficRef.current);
     setLegend(false);
     setShowAll(false);
   }, [date]);
@@ -344,7 +356,7 @@ export function MapScreen() {
     <div className={`screen map-screen${open ? ' sheet-open' : ''}`}>
       <div className="map-area" onPointerDown={() => setMenu(null)}>
         <BaseMap metro={metro} camera={memory}>
-          <CrowdLayer points={layerPoints} selectedId={selectedId} onSelect={select} activity={chipActivity} />
+          <CrowdLayer points={traffic ? [] : layerPoints} selectedId={selectedId} onSelect={select} activity={chipActivity} />
           {traffic && <TrafficLayer areas={roadAreas} />}
           <MapCamera
             points={points}

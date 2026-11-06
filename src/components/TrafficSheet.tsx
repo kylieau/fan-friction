@@ -87,6 +87,7 @@ export function TrafficBody({ roads, hour, onHour, past, city, date, metroId }: 
           );
         })}
       </ul>
+      {roads.areas.some((a) => a.notes.length > 0) && <p className="traffic-note">{[...new Set(roads.areas.flatMap((a) => a.notes))].join(' ')}</p>}
       <div className="traffic-slider">
         <div className="road-strip traffic-track" aria-hidden>
           {hours.map((h) => (

@@ -14271,10 +14271,19 @@ button.types-top-words {
   color: var(--ink2);
 }
 .traffic-foot-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-size: 15px;
   font-weight: 700;
   color: var(--dodger);
   text-decoration: none;
+}
+.traffic-note {
+  margin: -6px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink2);
 }
 .traffic-quiet {
   margin: 4px 0 12px;

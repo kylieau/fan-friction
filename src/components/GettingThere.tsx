@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { cueWord, roadSpan, type AreaRoads, type DateRoads, type EventRoads, type RoadCue } from '../data';
 import { datePath, mapPath } from '../lib/view';
@@ -131,18 +131,19 @@ export function GettingThereCard({ roads, today }: { roads: DateRoads; today: st
           </ul>
           <RoadKey />
           <p className="road-key-note">Crowds arriving and leaving</p>
-          {notes.length > 0 && (
-            <ul className="road-notes">
-              {notes.map((n) => (
-                <li key={n}>{n}</li>
-              ))}
-            </ul>
-          )}
         </>
+      )}
+      {/* The honesty notes (E8, E9) show on a Light day too: a hillside room reads busier whatever the day (Codex, Section E review). */}
+      {notes.length > 0 && (
+        <ul className="road-notes">
+          {notes.map((n) => (
+            <li key={n}>{n}</li>
+          ))}
+        </ul>
       )}
       <div className="gt-links">
         {!roads.quiet && (
-          <Link to={mapPath({ metroId: roads.metroId, date: roads.date, today, mode: 'traffic' })} className="gt-link">
+          <Link to={mapPath({ metroId: roads.metroId, date: roads.date, today, view: 'map', mode: 'traffic' })} className="gt-link">
             See it on the map <span aria-hidden>›</span>
           </Link>
         )}
@@ -176,12 +177,19 @@ export function GettingThereRow({ roads, metroId, date }: { roads: EventRoads; m
 
 /** "How Getting There Works" (mock 11), in the shape of the date page's About card. */
 export function GettingThereAbout({ onClose }: { onClose: () => void }) {
+  const closeButton = useRef<HTMLButtonElement>(null);
   useEffect(() => {
+    // Focus lands on Close while the card is open and goes back to whatever opened it after (Codex, Section E review).
+    const opener = document.activeElement as HTMLElement | null;
+    closeButton.current?.focus();
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') onClose();
     };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      opener?.focus?.();
+    };
   }, [onClose]);
   return (
     <div className="home-backdrop gt-backdrop" role="dialog" aria-modal="true" aria-labelledby="gt-about-title" onClick={onClose}>
@@ -203,7 +211,7 @@ export function GettingThereAbout({ onClose }: { onClose: () => void }) {
           <li>No live traffic, routes, drive times, or parking.</li>
           <li>Not counted: street events, like marathons, parades, and festivals.</li>
         </ul>
-        <button type="button" className="gt-about-close" onClick={onClose}>
+        <button type="button" className="gt-about-close" ref={closeButton} onClick={onClose}>
           Close
         </button>
       </div>

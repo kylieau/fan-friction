@@ -115,7 +115,11 @@ function whyAt(arriving: readonly CrowdEvent[], leaving: readonly CrowdEvent[], 
   const tail = background.length > 0 ? `, in ${background.join(' and ')}` : '';
   // Two shows of one act in one room: the first lets out as the next one's crowd arrives.
   if (leaving.length > 0 && arriving.length > 0 && names(leaving) === names(arriving)) return `${names(leaving)}'s first show lets out as the next one's fans arrive${tail}.`;
-  if (leaving.length > 0 && arriving.length > 0) return `${names(leaving)} lets out as ${names(arriving)} fans arrive${tail}.`;
+  // An act that is both letting out and arriving (two shows) is named once, on the leaving side.
+  const leavingNames = new Set(leaving.map(plainName));
+  const arrivingOnly = arriving.filter((e) => !leavingNames.has(plainName(e)));
+  if (leaving.length > 0 && arrivingOnly.length > 0) return `${names(leaving)} lets out as ${names(arrivingOnly)} fans arrive${tail}.`;
+  if (leaving.length > 0 && arriving.length > 0) return `${names(leaving)}'s first show lets out as the next one's fans arrive${tail}.`;
   if (arriving.length > 1) return `${names(arriving)} fans arrive together${tail}.`;
   if (arriving.length === 1) return `${names(arriving)} fans arrive${tail}.`;
   if (leaving.length > 1) return `${names(leaving)} let out together${tail}.`;
@@ -186,16 +190,18 @@ export function dateRoads(metroId: string, date: string, events: readonly CrowdE
 export interface EventRoads {
   area: AreaRoads;
   arriving: RoadWindow;
-  leaving: RoadWindow;
+  /** Null when the exit runs past midnight, outside the modeled day. */
+  leaving: RoadWindow | null;
   /** The other events in the area whose fans arrive while this one lets out. */
   others: CrowdEvent[];
   /** "Inglewood: Busy arriving before the start, Heavy leaving about 4:30 to 6:00 pm as Pelicans at Clippers fans arrive." */
   line: string;
 }
 
-function cueOver(hours: ZoneHours, from: number, to: number): RoadCue {
-  let cue: RoadCue = 'light';
-  for (const h of hours.halves) if (h.hour >= from && h.hour < to) cue = worse(cue, roadCue(h.value));
+/** The worst cue over a window, or null when no sampled half hour falls in it (an exit past midnight: the formula never counts it). */
+function cueOver(hours: ZoneHours, from: number, to: number): RoadCue | null {
+  let cue: RoadCue | null = null;
+  for (const h of hours.halves) if (h.hour >= from && h.hour < to) cue = worse(cue ?? 'light', roadCue(h.value));
   return cue;
 }
 
@@ -205,15 +211,20 @@ export function eventRoads(roads: DateRoads, eventId: string): EventRoads | null
   if (!area) return null;
   const event = area.events.find((e) => e.id === eventId)!;
   const w = roadWindows(event);
-  const arriving: RoadWindow = { from: w.arriveFrom, to: w.start, cue: cueOver(area.hours, w.arriveFrom, w.start) };
-  const leaving: RoadWindow = { from: w.end, to: w.leaveTo, cue: cueOver(area.hours, w.end, w.leaveTo) };
-  const others = area.events.filter((o) => {
-    if (o.id === eventId) return false;
-    const ow = roadWindows(o);
-    return ow.arriveFrom < leaving.to && ow.start > leaving.from;
-  });
+  const arriving: RoadWindow = { from: w.arriveFrom, to: w.start, cue: cueOver(area.hours, w.arriveFrom, w.start) ?? 'light' };
+  const leaveCue = cueOver(area.hours, w.end, w.leaveTo);
+  const leaving: RoadWindow | null = leaveCue ? { from: w.end, to: w.leaveTo, cue: leaveCue } : null;
+  const others = leaving
+    ? area.events.filter((o) => {
+        if (o.id === eventId) return false;
+        const ow = roadWindows(o);
+        return ow.arriveFrom < leaving.to && ow.start > leaving.from;
+      })
+    : [];
   const tail = others.length > 0 ? ` as ${names(others)} fans arrive` : '';
-  const line = `${area.name}: ${cueWord(arriving.cue)} arriving before the start, ${cueWord(leaving.cue)} leaving about ${roadSpan(leaving.from, leaving.to)}${tail}.`;
+  const line = leaving
+    ? `${area.name}: ${cueWord(arriving.cue)} arriving before the start, ${cueWord(leaving.cue)} leaving about ${roadSpan(leaving.from, leaving.to)}${tail}.`
+    : `${area.name}: ${cueWord(arriving.cue)} arriving before the start. The exit runs past midnight, which is not estimated.`;
   return { area, arriving, leaving, others, line };
 }
 

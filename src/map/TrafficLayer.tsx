@@ -22,8 +22,8 @@ const SOURCE = 'road-areas';
 const LAYER = 'road-blobs';
 /** The zone's radius, about 2 km (gridlock.ts ZONE_MILES). */
 const RADIUS_M = 2012;
-/** Meters per pixel at zoom 0 on the equator (Web Mercator). */
-const MPP_ZOOM0 = 156543.03392;
+/** Meters per pixel at zoom 0 on the equator: MapLibre's world is 512 pixels wide (40,075,016.686 m ÷ 512). */
+const MPP_ZOOM0 = 78271.517;
 
 const CUE_COLOR: Record<RoadCue, string> = { light: THEME.roadLight, busy: THEME.roadBusy, heavy: THEME.roadHeavy };
 
