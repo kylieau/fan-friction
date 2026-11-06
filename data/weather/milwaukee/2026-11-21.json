@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-21",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "milwaukee",
+      "venueId": "city",
+      "date": "2026-11-21",
+      "basis": "forecast",
+      "capturedAt": "2026-11-06T15:44:12.212Z",
+      "feelsLikeHighF": 55.8,
+      "feelsLikeLowF": 44.7,
+      "code": 55,
+      "precipProbability": 27,
+      "precipMm": 6.2
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-depaul-mbb-401909501",
+      "metroId": "chicago",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-mbb",
+      "home": {
+        "name": "DePaul",
+        "score": 82
+      },
+      "away": {
+        "name": "South Florida",
+        "score": 80
+      },
+      "attendance": 3025,
+      "capturedAt": "2026-11-06T16:04:00.991Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "20:37"
+    },
+    {
+      "eventId": "2026-11-05-espn-northwestern-wbb-401913016",
+      "metroId": "chicago",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-wbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 78
+      },
+      "away": {
+        "name": "Xavier",
+        "score": 91
+      },
+      "attendance": 826,
+      "capturedAt": "2026-11-06T16:04:00.991Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

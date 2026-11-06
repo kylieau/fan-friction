@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-gt-wbb-401913715",
+      "metroId": "atlanta",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-wbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 84
+      },
+      "away": {
+        "name": "Samford",
+        "score": 58
+      },
+      "attendance": 2131,
+      "capturedAt": "2026-11-06T16:04:00.365Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

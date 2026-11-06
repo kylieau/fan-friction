@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-canadiens-401892648",
+      "metroId": "montreal",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 5
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 4
+      },
+      "attendance": 20962,
+      "note": "OT",
+      "capturedAt": "2026-11-06T16:04:01.856Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "19:13"
+    }
+  ]
+}

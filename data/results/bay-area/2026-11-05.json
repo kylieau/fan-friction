@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-cal-wbb-401906063",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-wbb",
+      "home": {
+        "name": "California",
+        "score": 100
+      },
+      "away": {
+        "name": "Long Beach St",
+        "score": 46
+      },
+      "attendance": 1628,
+      "capturedAt": "2026-11-06T16:04:00.668Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    },
+    {
+      "eventId": "2026-11-05-espn-warriors-401909937",
+      "metroId": "bay-area",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 120
+      },
+      "away": {
+        "name": "Heat",
+        "score": 100
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-06T16:04:00.668Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    }
+  ]
+}

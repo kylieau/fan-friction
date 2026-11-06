@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-butler-wbb-401916068",
+      "metroId": "indianapolis",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-wbb",
+      "home": {
+        "name": "Butler",
+        "score": 104
+      },
+      "away": {
+        "name": "Lipscomb",
+        "score": 57
+      },
+      "attendance": 678,
+      "capturedAt": "2026-11-06T16:04:07.414Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    }
+  ]
+}

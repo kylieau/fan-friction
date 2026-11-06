@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-avalanche-401892658",
+      "metroId": "denver",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 2
+      },
+      "away": {
+        "name": "Predators",
+        "score": 3
+      },
+      "attendance": 18085,
+      "note": "OT",
+      "capturedAt": "2026-11-06T16:04:10.568Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "21:39"
+    }
+  ]
+}

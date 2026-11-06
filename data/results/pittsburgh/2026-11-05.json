@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-penguins-401892654",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 6
+      },
+      "attendance": 17316,
+      "capturedAt": "2026-11-06T16:04:02.969Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-05-espn-pitt-mbb-401909706",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-mbb",
+      "home": {
+        "name": "Pitt",
+        "score": 80
+      },
+      "away": {
+        "name": "Buffalo",
+        "score": 61
+      },
+      "attendance": 3939,
+      "capturedAt": "2026-11-06T16:04:02.969Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-05-espn-robert-morris-wbb-401929107",
+      "metroId": "pittsburgh",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-events-center",
+      "homeTeamId": "robert-morris-wbb",
+      "home": {
+        "name": "Robert Morris",
+        "score": 58
+      },
+      "away": {
+        "name": "UIC",
+        "score": 71
+      },
+      "attendance": 120,
+      "capturedAt": "2026-11-06T16:04:02.969Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    }
+  ]
+}

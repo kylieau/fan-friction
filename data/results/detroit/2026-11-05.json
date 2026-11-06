@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-michigan-wbb-401911737",
+      "metroId": "detroit",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crisler-center",
+      "homeTeamId": "michigan-wbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 77
+      },
+      "away": {
+        "name": "UConn",
+        "score": 66
+      },
+      "attendance": 9575,
+      "capturedAt": "2026-11-06T16:04:01.617Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "18:31"
+    },
+    {
+      "eventId": "2026-11-05-espn-red-wings-401892649",
+      "metroId": "detroit",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 1
+      },
+      "away": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "attendance": 19515,
+      "capturedAt": "2026-11-06T16:04:01.617Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-devils-401892651",
+      "metroId": "new-york",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 5
+      },
+      "away": {
+        "name": "Blues",
+        "score": 4
+      },
+      "attendance": 16514,
+      "note": "OT",
+      "capturedAt": "2026-11-06T16:03:59.858Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-05-espn-islanders-401892652",
+      "metroId": "new-york",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 5
+      },
+      "attendance": 14234,
+      "capturedAt": "2026-11-06T16:03:59.858Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-05-espn-ny-rangers-401892653",
+      "metroId": "new-york",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 3
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-11-06T16:03:59.858Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

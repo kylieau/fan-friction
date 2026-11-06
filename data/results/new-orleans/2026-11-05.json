@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-tulane-mbb-401919002",
+      "metroId": "new-orleans",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-mbb",
+      "home": {
+        "name": "Tulane",
+        "score": 85
+      },
+      "away": {
+        "name": "Jackson St",
+        "score": 87
+      },
+      "attendance": 1077,
+      "capturedAt": "2026-11-06T16:04:08.156Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-uw-wbb-401917684",
+      "metroId": "seattle",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-wbb",
+      "home": {
+        "name": "Washington",
+        "score": 75
+      },
+      "away": {
+        "name": "Pacific",
+        "score": 54
+      },
+      "attendance": 841,
+      "capturedAt": "2026-11-06T16:03:59.272Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}

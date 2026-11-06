@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-rice-mbb-401921094",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tudor-fieldhouse",
+      "homeTeamId": "rice-mbb",
+      "home": {
+        "name": "Rice Owls",
+        "score": 71
+      },
+      "away": {
+        "name": "East Texas A&M",
+        "score": 72
+      },
+      "attendance": 719,
+      "capturedAt": "2026-11-06T16:04:06.753Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-05-espn-uh-wbb-401923479",
+      "metroId": "houston",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fertitta-center",
+      "homeTeamId": "uh-wbb",
+      "home": {
+        "name": "Houston",
+        "score": 78
+      },
+      "away": {
+        "name": "Sam Houston",
+        "score": 50
+      },
+      "attendance": 1009,
+      "capturedAt": "2026-11-06T16:04:06.753Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

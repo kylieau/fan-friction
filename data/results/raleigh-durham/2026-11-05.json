@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-duke-mbb-401909563",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-mbb",
+      "home": {
+        "name": "Duke",
+        "score": 113
+      },
+      "away": {
+        "name": "Coastal",
+        "score": 52
+      },
+      "attendance": 9314,
+      "capturedAt": "2026-11-06T16:04:09.980Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "20:05"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-belmont-mbb-401920759",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-mbb",
+      "home": {
+        "name": "Belmont",
+        "score": 75
+      },
+      "away": {
+        "name": "Centre",
+        "score": 45
+      },
+      "attendance": 1349,
+      "capturedAt": "2026-11-06T16:04:04.625Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-05-espn-tsu-mbb-401920765",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gentry-center",
+      "homeTeamId": "tsu-mbb",
+      "home": {
+        "name": "Tennessee St",
+        "score": 127
+      },
+      "away": {
+        "name": "East West",
+        "score": 61
+      },
+      "attendance": 694,
+      "capturedAt": "2026-11-06T16:04:04.625Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    },
+    {
+      "eventId": "2026-11-05-espn-vanderbilt-mbb-401909726",
+      "metroId": "nashville",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-mbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 74
+      },
+      "away": {
+        "name": "Wake Forest",
+        "score": 51
+      },
+      "attendance": 7240,
+      "capturedAt": "2026-11-06T16:04:04.625Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

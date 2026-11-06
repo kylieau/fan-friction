@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-lightning-401892650",
+      "metroId": "tampa",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 1
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-06T16:04:03.472Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

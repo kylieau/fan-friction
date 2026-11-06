@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-ucla-wbb-401918897",
+      "metroId": "la",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wbb",
+      "home": {
+        "name": "UCLA",
+        "score": 78
+      },
+      "away": {
+        "name": "UC Irvine",
+        "score": 42
+      },
+      "attendance": 2548,
+      "capturedAt": "2026-11-06T16:03:58.247Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    }
+  ]
+}

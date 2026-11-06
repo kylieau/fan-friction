@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-slu-wbb-401921233",
+      "metroId": "st-louis",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-wbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 81
+      },
+      "away": {
+        "name": "Milwaukee",
+        "score": 62
+      },
+      "attendance": 369,
+      "capturedAt": "2026-11-06T16:04:10.250Z",
+      "duration": {
+        "minutes": 96,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

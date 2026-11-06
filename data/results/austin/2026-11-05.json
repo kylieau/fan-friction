@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-texas-mbb-401906864",
+      "metroId": "austin",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-mbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 98
+      },
+      "away": {
+        "name": "Gardner-Webb",
+        "score": 50
+      },
+      "attendance": 10807,
+      "capturedAt": "2026-11-06T16:04:04.980Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-05-espn-texas-state-mbb-401929198",
+      "metroId": "austin",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-mbb",
+      "home": {
+        "name": "Texas St",
+        "score": 135
+      },
+      "away": {
+        "name": "Howard Payne",
+        "score": 66
+      },
+      "attendance": 1291,
+      "capturedAt": "2026-11-06T16:04:04.980Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

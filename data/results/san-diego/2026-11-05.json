@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-sdsu-wbb-401926048",
+      "metroId": "san-diego",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "sdsu-wbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 73
+      },
+      "away": {
+        "name": "North Texas",
+        "score": 57
+      },
+      "attendance": 5090,
+      "capturedAt": "2026-11-06T16:03:58.824Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "14:03"
+    }
+  ]
+}

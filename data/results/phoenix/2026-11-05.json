@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-05",
+  "results": [
+    {
+      "eventId": "2026-11-05-espn-asu-wbb-401916081",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-wbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 79
+      },
+      "away": {
+        "name": "N Arizona",
+        "score": 52
+      },
+      "attendance": 2179,
+      "capturedAt": "2026-11-06T16:04:05.204Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "20:33"
+    },
+    {
+      "eventId": "2026-11-05-espn-suns-401909936",
+      "metroId": "phoenix",
+      "date": "2026-11-05",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 117
+      },
+      "away": {
+        "name": "Magic",
+        "score": 104
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-11-06T16:04:05.204Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}
