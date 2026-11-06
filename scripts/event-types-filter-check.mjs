@@ -39,24 +39,30 @@ try {
   const data = await server.ssrLoadModule('/src/data/index.ts');
   const { FILTER_LEVELS, FILTER_TYPES, filterKeysOf, hiddenByEventTypes } = await server.ssrLoadModule('/src/data/eventTypeFilter.ts');
 
-  // (2) Same read with everything on and everything off.
+  // (2) Same read with everything on, then with every type and level switched off through the app's own setter
+  // (the pattern of crowd-range-check.mjs): the saved keys must land, and each day's rating must not move.
   const dates = dateArgs.length ? dateArgs : (await data.getRatedDates(metroId)).slice(0, 3).map((r) => r.date);
-  const everyKey = new Set([...FILTER_TYPES.map((t) => t.key), ...FILTER_LEVELS.map((l) => l.key)]);
-  for (const date of dates) {
-    const day = await data.getCityDate(metroId, date);
-    if (!day) {
+  const everyKey = [...FILTER_TYPES.map((t) => t.key), ...FILTER_LEVELS.map((l) => l.key)];
+  const before = [];
+  for (const date of dates) before.push(await data.getCityDate(metroId, date));
+  data.setHiddenEventTypes(everyKey);
+  const saved = data.hiddenEventTypesOf(data.getPersonalLog());
+  if (saved.size !== everyKey.length) {
+    console.log(`FAIL the setting did not save (${saved.size} of ${everyKey.length} keys)`);
+    failed = true;
+  }
+  for (const [i, date] of dates.entries()) {
+    const after = await data.getCityDate(metroId, date);
+    if (!before[i] || !after) {
       console.log(`skip ${date}: no day`);
       continue;
     }
-    const hidden = day.events.filter((e) => hiddenByEventTypes(e, everyKey)).length;
-    // The read is computed from the day's events alone; the setting has no path into it, so the rating is the same
-    // object either way. This asserts the list filter would hide something while the read's inputs are untouched.
-    const rating = day.rating?.rating ?? null;
-    const again = (await data.getCityDate(metroId, date))?.rating?.rating ?? null;
-    if (rating !== again) {
-      console.log(`FAIL ${date}: read ${rating} became ${again}`);
-      failed = true;
-    } else console.log(`ok   ${date}: read ${rating ?? 'none'} with every type off; ${hidden} of ${day.events.length} events would hide from the lists`);
+    const a = before[i].rating?.rating ?? null;
+    const b = after.rating?.rating ?? null;
+    const same = a === b && JSON.stringify(before[i].rating ?? null) === JSON.stringify(after.rating ?? null);
+    if (!same) failed = true;
+    const hidden = after.events.filter((e) => hiddenByEventTypes(e, saved)).length;
+    console.log(`${same ? 'ok  ' : 'FAIL'} ${metroId} ${date}: read ${a ?? 'none'} → ${b ?? 'none'} with every type off; the setting hides ${hidden} of ${after.events.length} from the lists`);
   }
 
   // (3) Counts per key across the latest file of every city, and the dormant list against them.
