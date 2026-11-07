@@ -1,6 +1,7 @@
 import { FurtherOutList } from '../components/FurtherOut';
 import { RowBody, spokenRow } from '../components/DayRow';
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronDown, ShareIcon } from '../components/Icons';
 import { ReadTile } from '../components/ReadTile';
@@ -436,14 +437,18 @@ function AboutRead({ saved, sources, onClose }: { saved: SavedNightRead | null; 
   const n = saved?.rows.length ?? 0;
   const s = saved ? sources : 0;
   const counts = n > 0 ? `: ${n} ${n === 1 ? 'event' : 'events'}${s > 0 ? ` from ${s} ${s === 1 ? 'source' : 'sources'}` : ''}` : '';
+  // The shared dialog rule: focus on Close, the page behind inert, Tab inside, Escape closes, focus back after.
+  const card = useRef<HTMLDivElement>(null);
+  const closeButton = useRef<HTMLButtonElement>(null);
+  useDialogFocus(card, onClose, { initial: closeButton });
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="about-read-title" onClick={onClose}>
-      <div className="home-card about-read" onClick={(event) => event.stopPropagation()}>
+      <div ref={card} className="home-card about-read" onClick={(event) => event.stopPropagation()}>
         <div className="about-read-head">
           <h2 id="about-read-title" className="home-title">
             About This Verdict
           </h2>
-          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
+          <button type="button" className="about-read-close" aria-label="Close" ref={closeButton} onClick={onClose}>
             ×
           </button>
         </div>

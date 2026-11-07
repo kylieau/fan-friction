@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { VENUES, venueNameOn, type CrowdEvent } from '../data';
 import { clockTime } from '../lib/dates';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { eventPath } from '../lib/view';
 import { RowBody, spokenRow } from './DayRow';
 
@@ -43,22 +44,19 @@ export function FurtherOutInfo() {
 }
 
 function FurtherOutCard({ onClose }: { onClose: () => void }) {
-  useEffect(() => {
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule: focus on Close, the page behind inert, Tab inside, Escape closes, focus back after.
+  const card = useRef<HTMLDivElement>(null);
+  const closeButton = useRef<HTMLButtonElement>(null);
+  useDialogFocus(card, onClose, { initial: closeButton });
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="further-out-title" onClick={onClose}>
       {/* Its own text styling: in Settings the card sits inside an uppercase, letter-spaced heading. */}
-      <div className="home-card about-read further-out-card" onClick={(event) => event.stopPropagation()}>
+      <div ref={card} className="home-card about-read further-out-card" onClick={(event) => event.stopPropagation()}>
         <div className="about-read-head">
           <h2 id="further-out-title" className="home-title">
             Further Out
           </h2>
-          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
+          <button type="button" className="about-read-close" aria-label="Close" ref={closeButton} onClick={onClose}>
             ×
           </button>
         </div>

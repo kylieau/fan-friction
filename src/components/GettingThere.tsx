@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { cueWord, roadSpan, type AreaRoads, type DateRoads, type EventRoads, type RoadCue } from '../data';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { datePath, mapPath } from '../lib/view';
 
 /**
@@ -177,23 +178,14 @@ export function GettingThereRow({ roads, metroId, date }: { roads: EventRoads; m
 
 /** "How Getting There Works" (mock 11), in the shape of the date page's About card. */
 export function GettingThereAbout({ onClose }: { onClose: () => void }) {
+  // The shared dialog rule (was: focus on Close and back to the opener, Codex, Section E review; now also the page
+  // behind inert and Tab kept inside).
+  const card = useRef<HTMLDivElement>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
-    // Focus lands on Close while the card is open and goes back to whatever opened it after (Codex, Section E review).
-    const opener = document.activeElement as HTMLElement | null;
-    closeButton.current?.focus();
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => {
-      window.removeEventListener('keydown', onKey);
-      opener?.focus?.();
-    };
-  }, [onClose]);
+  useDialogFocus(card, onClose, { initial: closeButton });
   return (
     <div className="home-backdrop gt-backdrop" role="dialog" aria-modal="true" aria-labelledby="gt-about-title" onClick={onClose}>
-      <div className="home-card about-read gt-about" onClick={(event) => event.stopPropagation()}>
+      <div ref={card} className="home-card about-read gt-about" onClick={(event) => event.stopPropagation()}>
         <h2 id="gt-about-title" className="home-title">
           How Getting There Works
         </h2>

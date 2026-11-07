@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, useSyncExternalStore, type ReactNode, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import {
   currencySign,
   deviceCurrency,
@@ -118,23 +119,13 @@ export function defaultsLine(ticket: SeasonTicket): string {
 /** The sheet shell every season sheet shares: the backdrop, the handle, a title, a sub line and a close button. */
 export function SeasonSheet({ title, sub, label, onClose, children }: { title: string; sub?: string; label: string; onClose: () => void; children: ReactNode }) {
   const titleRef = useRef<HTMLHeadingElement>(null);
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => ev.key === 'Escape' && onClose();
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
-  // Focus enters on the title (a field with autoFocus takes it from there) and goes back to the opener on close
-  // (Codex, group 11 review). The opener is read during the first render, before a child's autoFocus moves focus.
-  // Tab containment is the shared dialog item in BACKLOG.
-  const [opener] = useState(() => (typeof document === 'undefined' ? null : (document.activeElement as HTMLElement | null)));
-  useEffect(() => {
-    const sheet = titleRef.current?.closest('.season-sheet');
-    if (sheet && !sheet.contains(document.activeElement)) titleRef.current?.focus();
-    return () => opener?.focus?.();
-  }, [opener]);
+  const sheetRef = useRef<HTMLDivElement>(null);
+  // The shared dialog rule: focus enters on the title (a field with autoFocus takes it from there), the page behind
+  // is inert, Tab stays inside, Escape closes, and focus goes back to the opener on close (Codex, group 11 review).
+  useDialogFocus(sheetRef, onClose, { initial: titleRef });
   return (
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label={label} onClick={onClose}>
-      <div className="action-sheet stub-sheet season-sheet" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={sheetRef} className="action-sheet stub-sheet season-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         <div className="log-sheet-head">
           <h2 ref={titleRef} className="stub-sheet-title" tabIndex={-1}>{title}</h2>

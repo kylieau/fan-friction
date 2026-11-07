@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { BookmarkIcon, ChevronRight, TicketIcon, TvIcon } from './Icons';
 import { StubSheet } from './StubSheet';
 import { eventFromGame, getPersonalLog, plannedKind, subscribePersonalLog, togglePlan, type CrowdEvent, type PlanAnswer } from '../data';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import type { ScheduleRow } from './useFavoriteRows';
 
 /** The event a faves row can stub: its listed event, else the page built from the team's schedule game. */
@@ -31,11 +32,12 @@ export function StubFromFaveMenu({ row, event, rect, to, lifted, onClose }: { ro
   const [sheet, setSheet] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
   const [top, setTop] = useState<number | null>(null);
-  const returnTo = useRef<Element | null>(null);
+  // The shared dialog rule: the page behind inert, Tab kept inside, Escape closes, focus back to the row after. It
+  // stands down once the Stub it sheet takes the menu's place (the menu's element leaves the page).
+  useDialogFocus(menu, onClose);
 
   // Under the row, or above it when the tab bar is in the way; the first item takes focus.
   useLayoutEffect(() => {
-    returnTo.current = document.activeElement;
     const el = menu.current;
     if (!el) return;
     const h = el.offsetHeight;
@@ -49,31 +51,12 @@ export function StubFromFaveMenu({ row, event, rect, to, lifted, onClose }: { ro
     if (top !== null) (menu.current?.querySelector('[role="menuitem"]') as HTMLElement | null)?.focus();
   }, [top]);
 
-  // Focus goes back where it was once, when the menu leaves (not each time the parent re-renders its onClose).
-  useEffect(() => () => (returnTo.current as HTMLElement | null)?.focus?.(), []);
-
-  const close = useRef(onClose);
-  close.current = onClose;
-  const sheetOpen = useRef(false);
-  sheetOpen.current = sheet;
+  // The arrows walk the menu's items (Tab and Escape are the shared rule's).
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
-      // The Stub it sheet, once open, handles its own keys.
-      if (sheetOpen.current) return;
-      if (ev.key === 'Escape') {
-        ev.stopPropagation();
-        close.current();
-        return;
-      }
       const items = Array.from(menu.current?.querySelectorAll<HTMLElement>('[role="menuitem"]') ?? []);
       const i = items.indexOf(document.activeElement as HTMLElement);
       if (items.length === 0) return;
-      // Tab and the arrows stay inside the menu (the page behind it is not inert; BACKLOG, the shared focus rule).
-      if (ev.key === 'Tab') {
-        ev.preventDefault();
-        items[i < 0 ? 0 : (i + (ev.shiftKey ? items.length - 1 : 1)) % items.length].focus();
-        return;
-      }
       if ((ev.key !== 'ArrowDown' && ev.key !== 'ArrowUp') || i < 0) return;
       ev.preventDefault();
       items[(i + (ev.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length].focus();

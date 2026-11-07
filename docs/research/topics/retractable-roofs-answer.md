@@ -24,4 +24,4 @@
 - **Left as they were:** fixed domes and canopies (Allegiant, Ford Field, Caesars Superdome, U.S. Bank, SoFi, Lumen's partial cover), and every indoor arena.
 - **Not in the covered metros, so not on file:** Marlins' and Rays' temporary homes aside, the other retractable rooms in North America sit outside the 40 metros (none known).
 - **How sure:** the roof type is well established for every room above; the sources are for the record. Which way the roof stands on a given day is not on file anywhere public, so the app states the fact and stops (Kylie, Nov 7, question 3).
-- **The canopy cases** (a fixed cover over the stands with the field open, like SoFi) stay `covered`; a `roofNote` for them was in the plan and is not built (BACKLOG).
+- **The canopy cases** (a fixed cover over the stands with the field open, like SoFi) stay `covered`; a `roofNote` for them was in the plan. Closed Nov 7, 2026: Kylie's answer to the plan's question 2 was "retractable rooms only" (deferring to the lean), so the canopy rooms carry no note.
