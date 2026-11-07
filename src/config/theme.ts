@@ -42,6 +42,9 @@ export const THEME = {
    * 5.4:1 on white; `muted` (3.65:1) fails the 4.5:1 check (I2).
    */
   ceiling: '#5F6B7D',
+  /** Upcoming's YOUR FAVES band and the paler month strip under it (build 7.2, A1; Kylie, Oct 30). */
+  favesBand: '#C9DAEE',
+  monthStrip: '#E3EDF8',
   /**
    * Getting There's three road blues (build 7.2, Section E, E6: their own blues, no verdict colors, never red, orange
    * or yellow). Heavy sits away from the action blue (#005A9C) by the builder's call R4c; Light takes a thin ink edge

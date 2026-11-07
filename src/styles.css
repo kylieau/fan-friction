@@ -9482,7 +9482,8 @@ a.follow-lead::after {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
-  width: 64px;
+  /* A3 (Kylie, Oct 30, 2026): a 72px tap area; the chevron about 8pt after the 40pt tile and about 19pt from the edge. */
+  width: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9495,7 +9496,7 @@ a.follow-lead::after {
 
 .follow-chevron {
   position: absolute;
-  right: 4px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--dodger);
@@ -11697,14 +11698,29 @@ a.follow-lead::after {
   top: 0;
   z-index: 3;
 }
-.upcoming-faves-band .list-band,
-.upcoming-month > .list-band {
-  background: color-mix(in srgb, var(--ink) 8%, var(--bg));
+/* A1 (Kylie, Oct 30, 2026): YOUR FAVES is the darker 33pt band over a paler 28 to 29pt month strip, about 61pt
+   together while pinned, instead of two same-color 40pt bands. The Your Plans band stays 44pt (A8). */
+.upcoming-faves-band .list-band {
+  min-height: 33px;
+  padding: 6px 20px;
+  background: var(--favesBand);
 }
 .upcoming-month > .list-band {
   position: sticky;
-  top: var(--faves-band-h, 40px);
+  top: var(--faves-band-h, 33px);
   z-index: 2;
+  min-height: 28px;
+  padding: 5px 20px;
+  background: var(--monthStrip);
+}
+.upcoming-month > .list-band .list-band-label {
+  font-size: 12px;
+}
+/* A2 (Kylie, Oct 30, 2026): faves rows run full width like the plans rows: no inset card, margins, radius or shadow. */
+.upcoming-month > .log-list {
+  margin: 0 -16px;
+  border-radius: 0;
+  box-shadow: none;
 }
 .upcoming-faves .empty-card {
   margin-top: 10px;

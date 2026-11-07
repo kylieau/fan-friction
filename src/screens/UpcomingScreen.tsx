@@ -39,7 +39,7 @@ import {
   type Plan,
   type TeamGame,
 } from '../data';
-import { addDays, clockTime, dayBandLabel, shortLocalDate, timelineGroup } from '../lib/dates';
+import { addDays, clockTime, shortLocalDate, timelineGroup } from '../lib/dates';
 import { listTitle } from '../lib/eventTitle';
 import { ACTIVITY_WORDS, feedKind } from '../lib/activity';
 import { favoriteTypeKey } from '../map/typeIcons';
@@ -428,10 +428,8 @@ export function UpcomingScreen() {
                 )}
               </section>
             )}
-            {/* The Today divider, with room above and below (item 16: about 22pt; a swipe here moves the page). */}
-            <div className="today-line upcoming-today">
-              <h3 className="today-line-label">{dayBandLabel(today, today)}</h3>
-            </div>
+            {/* The Today line is gone (build 7.2, R5b, builder's lean; Kylie, A4: "i dont think we need the today line above
+                your faves"): the date tiles say when, and the YOUR FAVES band carries the swipe-outside-the-box zone (R5f). */}
             {friendsNote && (
               <p className="you-fine" role="status">
                 {friendsNote}
