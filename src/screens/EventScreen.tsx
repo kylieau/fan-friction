@@ -201,6 +201,13 @@ export function EventScreen() {
       current = false;
     };
   }, [account?.id, liveEvent?.id]);
+  // Memoized: the roads read the weather per event, so it runs once per day's events, not per render (advisor, Nov 6).
+  // Above the early returns: a hook after them ran only once the day had loaded, so a cold open of any event page
+  // rendered more hooks than its first pass and crashed to a blank screen (found Nov 6, evening; see the 7.2 report).
+  const roadsOn = gettingThereOn(log);
+  const roadsMetro = me?.event.metroId ?? null;
+  const dayEventsForRoads = day?.events ?? null;
+  const roads = useMemo(() => (roadsOn && roadsMetro && dayEventsForRoads ? dateRoads(roadsMetro, date, dayEventsForRoads) : null), [roadsOn, roadsMetro, date, dayEventsForRoads]);
   if (!day) return <div className="screen page" />;
   if (!me) {
     // No catalog event: a schedule game, or a stub saved from one, still gets its page and its Stub it.
@@ -258,9 +265,6 @@ export function EventScreen() {
   // Against, Weather, the story, This Day, Following, Your Stub, More Dates, the footer card. A Watched page carries no
   // This Day verdict and no verdict in what it shares (M23).
   const today = todayIn(METROS[e.metroId] ?? DEFAULT_METRO);
-  // Memoized: the roads read the weather per event, so it runs once per day's events, not per render (advisor, Nov 6).
-  const roadsOn = gettingThereOn(log);
-  const roads = useMemo(() => (roadsOn ? dateRoads(e.metroId, date, day.events) : null), [roadsOn, e.metroId, date, day.events]);
   const roadsRow = roads && ahead ? eventRoads(roads, e.id) : null;
   const pastRoads = roads && !ahead ? pastRoadsLine(roads, e.id) : null;
   const watchedPage = you?.kind === 'watched';

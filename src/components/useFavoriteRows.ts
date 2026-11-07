@@ -87,7 +87,9 @@ export function useFavoriteRows(favorites: readonly Favorite[], home: Metro, ahe
           // The row reads from the Fave's side (Kylie, Oct 19): "vs. Wisconsin", "at Michigan St"; a past game writes
           // its result in first ("W 17–15 at Oregon"), the team page's way.
           const mark = past ? scoreMark(game) : undefined;
-          const side = teamRelativeTitle(game, sport, fav.teamId);
+          // Upcoming's faves rows read "vs Penguins" like its plan rows (Kylie, Nov 6, 2026, deferring to the builder's
+          // lean: one form on Upcoming). The team page keeps "vs." under the Oct 11 and Oct 15 rules.
+          const side = teamRelativeTitle(game, sport, fav.teamId).replace(/^vs\. /, 'vs ');
           out.push({
             key,
             fav,

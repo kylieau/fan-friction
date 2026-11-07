@@ -45,6 +45,8 @@ import { favoriteTypeKey } from '../map/typeIcons';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
 import { datePath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
+import { useLongPress } from '../lib/useLongPress';
+import { StubFromFaveMenu, rowEvent } from '../components/StubFromFaveMenu';
 
 /** Both lines of time reach 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
 const SPAN_DAYS = 60;
@@ -107,6 +109,8 @@ export function UpcomingScreen() {
   const genres = useArtistGenres(favorites);
   const [sheet, setSheet] = useState(false);
   const [editingFaves, setEditingFaves] = useState(false);
+  // The faves row held down, and where it sat (build 7.2, Stub From Your Faves, mock C).
+  const [pressed, setPressed] = useState<{ row: ScheduleRow; rect: DOMRect } | null>(null);
   const [filter, setFilterState] = useState<UpcomingFilter>(readFilter);
   const setFilter = (next: UpcomingFilter) => {
     setFilterState(next);
@@ -241,6 +245,10 @@ export function UpcomingScreen() {
     else friendRows.push(lines);
   }
 
+  const faveRating = (row: ScheduleRow) => (row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null);
+  const pressedEvent = pressed ? rowEvent(pressed.row) : null;
+  const pressedPlan = pressed ? planByEvent.get(rowEventId(pressed.row) ?? '') : undefined;
+  const pressedMark = pressedPlan ? planIcon(planKind(pressedPlan)) : null;
   type Dated = { key: string; date: string; start: string | null; node: ReactNode };
   const faveItems: Dated[] = filter.faves
     ? shownRows.map((row) => {
@@ -253,10 +261,11 @@ export function UpcomingScreen() {
           node: (
             <FaveRow
               row={row}
-              rating={row.metroId && !(row.event && isFurtherOut(row.event)) ? (ratings.get(nightKey(row.metroId, row.date)) ?? null) : null}
+              rating={faveRating(row)}
               home={home.id}
               mark={plan ? planIcon(planKind(plan)) : null}
               line={id && friendsByEvent.has(id) ? friendsLineText(friendsByEvent.get(id)!) : null}
+              onPress={rowEvent(row) ? (rect) => setPressed({ row, rect }) : undefined}
             />
           ),
         };
@@ -472,6 +481,16 @@ export function UpcomingScreen() {
         />
       )}
       {editingFaves && <EditFavoritesSheet onClose={() => setEditingFaves(false)} />}
+      {pressed && pressedEvent && (
+        <StubFromFaveMenu
+          row={pressed.row}
+          event={pressedEvent}
+          rect={pressed.rect}
+          to={faveRowPath(pressed.row, home.id)}
+          lifted={<FaveRow row={pressed.row} rating={faveRating(pressed.row)} home={home.id} mark={pressedMark} />}
+          onClose={() => setPressed(null)}
+        />
+      )}
     </div>
   );
 }
@@ -527,10 +546,17 @@ function PlanBandRow(props: { plan: Plan; event?: CrowdEvent; start: string | nu
 }
 
 /** A Fave's row: the icon and display name lead (a link to its page), the title from its side, time and venue; a plan mark and a friends line when they apply. */
-function FaveRow({ row, rating, home, mark, line }: { row: ScheduleRow; rating: number | null; home: string; mark?: ReactNode; line?: string | null }) {
-  const to = row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : datePath(row.date, row.metroId ?? home);
+/** Where a faves row's words open: the event page, a schedule game's page, else the date page. */
+function faveRowPath(row: ScheduleRow, home: string): string {
+  return row.event ? eventPath(row.event.id, row.event.metroId) : row.link ? eventPath(row.link.game.eventId ?? gameEventId(row.link.game), row.metroId ?? home) : datePath(row.date, row.metroId ?? home);
+}
+
+function FaveRow({ row, rating, home, mark, line, onPress }: { row: ScheduleRow; rating: number | null; home: string; mark?: ReactNode; line?: string | null; /** Press and hold (build 7.2, Stub From Your Faves); none on the lifted copy. */ onPress?: (rect: DOMRect) => void }) {
+  const to = faveRowPath(row, home);
+  const press = useLongPress((rect) => onPress?.(rect), Boolean(onPress));
   return (
     <FollowRow
+      press={press}
       date={row.date}
       lead={{ icon: <LeadIcon typeKey={favoriteTypeKey(row.fav)} />, text: favoriteDisplayName(row.fav), to: favPath(row.fav), label: favoriteName(row.fav) }}
       title={row.title}

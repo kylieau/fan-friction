@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { HTMLAttributes, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { DateBox } from './StubRows';
 import { ReadTile } from './ReadTile';
@@ -30,6 +30,7 @@ export function FollowRow({
   noTile,
   mark,
   line,
+  press,
 }: {
   date: string;
   /** The blue first line: its icon, its words, and where it goes when it is a link (a Fave's page). */
@@ -53,10 +54,12 @@ export function FollowRow({
   mark?: ReactNode;
   /** One quiet line under the facts ("Friends · Sam R. Attending"; build 7.1, M22). */
   line?: string | null;
+  /** Press-and-hold handlers for the whole row (build 7.2, Stub From Your Faves): only Upcoming's faves rows pass them. */
+  press?: HTMLAttributes<HTMLDivElement>;
 }) {
   const split = splitTitleLabel(title);
   return (
-    <div className="follow-row">
+    <div className="follow-row" {...press}>
       {to && <Link to={to} state={state} className="follow-row-link" aria-label={spoken} />}
       <DateBox when={{ sort: date, label: '', precision: 'day' }} />
       <span className="follow-main">

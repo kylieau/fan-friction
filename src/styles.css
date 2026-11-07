@@ -9366,6 +9366,10 @@ span.fav-sched-read {
   display: flex;
   align-items: stretch;
   border-bottom: 1px solid var(--line);
+  /* Press and hold (build 7.2, Stub From Your Faves): no link callout or text selection while a row is held. */
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .log-list li:last-child .follow-row {
@@ -14391,4 +14395,99 @@ button.types-top-words {
 }
 .plan-read {
   width: 64px;
+}
+
+/* Stub From Your Faves (build 7.2; Kylie, Nov 4, 2026: long-press, mock C). The held row lifts above a pale blue
+   blur, no dark scrim; the quick menu sits under it (or above, near the tab bar), 50pt rows. */
+.press-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: rgba(227, 237, 248, 0.72);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.press-lift {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  pointer-events: none;
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 10px 28px rgba(15, 27, 45, 0.18);
+  overflow: hidden;
+}
+
+.press-lift .follow-row {
+  border-bottom: none;
+}
+
+.press-menu {
+  position: fixed;
+  left: 44px;
+  width: min(290px, calc(100vw - 56px));
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 12px 32px rgba(15, 27, 45, 0.22);
+  overflow: hidden;
+}
+
+.press-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 50px;
+  padding: 0 14px;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  font: inherit;
+  text-align: left;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.press-menu-row:last-child {
+  border-bottom: none;
+}
+
+.press-menu-row:focus-visible {
+  outline: 2px solid var(--dodger);
+  outline-offset: -2px;
+}
+
+.press-menu-open {
+  border-top: 6px solid var(--bg);
+}
+
+.press-menu-icon {
+  display: inline-flex;
+  width: 22px;
+  justify-content: center;
+  color: var(--dodger);
+}
+
+.press-menu-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.press-menu-word {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.press-menu-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.press-menu-check {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dodger);
 }

@@ -1015,6 +1015,13 @@ From her anything-else note on the Nov 4 export: she wants an easier way to stub
 - **Builder call (not locked):** she also wonders whether to drop the date verdict on Upcoming or Faves rows and put a "Stub It" button there instead. Left to the builder. Optional mock: `mockups/stub-from-faves/r2-optional/01-faves-stub-it-button.png`. The pill is wider and wraps long venue names, and it raises whether the verdict and away code should live only on the game page. Builder's call. Record the choice here.
 - Round 3 judgment notes: A grows rows about 39pt (about 5 fave rows instead of 7), and B needs a first-run hint because a swipe has no visible cue.
 
+**Built Nov 6, 2026 (evening), group 6 of the gap report.** Long-press (C) proved buildable headless, so B was not needed: a hold of about 450 ms on a Your Faves row lifts it (a white card, 12px in from each edge, over a pale blue blur, no dark scrim) and opens the quick menu under it (above it when the tab bar is in the way): Attending "I have tickets", Watching "Pick a place next", Interested, then Open Event, 50pt rows. A short tap still opens the event; a drift or a scroll cancels the hold; the click after a long release goes nowhere. A right-click or the keyboard's menu key opens the same menu (the desktop and keyboard path). Builder calls, recorded here:
+- **The optional Stub It button (r2-optional): not built; the verdict tile stays** (Kylie, Nov 6: "good with your leans (as default choices)"). Long-press covers the ask, and the pill wrapped long venue names.
+- **The answer already given is marked with a check; tapping it opens the Stub it sheet** (where it can be changed or taken back), so the menu never removes a plan on its own. Attending and Interested save at once; Watching saves, then opens the Stub it sheet with Watching on, for the place (its own chips and Where field; no second picker).
+- **A row with no event to stub** (no listed event and no schedule game behind it) takes no hold.
+- **"vs Penguins" on Upcoming's faves rows too** (Kylie, Nov 6, deferring to the lean: one form on Upcoming, matching the plan rows' Nov 4 lock). The team page keeps "vs." under the Oct 11 and Oct 15 rules.
+- Not provable headless: the phone's own link callout on a long-press (suppressed in CSS by `-webkit-touch-callout`), and the haptic tick. On Kylie's phone list.
+
 ### New. Watching Season (Locked Direction)
 
 From the same anything-else note: a watching version of season ticketholders.
