@@ -1,0 +1,41 @@
+# The story section's weekly link check (build 7.2, Section D, D4g; Kylie, Oct 30, 2026, Locked): every story's
+# source links are asked for their page, the gone ones are written to src/data/seed/storyLinksBroken.ts and the
+# app leaves those rows out while the story stays. Free on this public repo: no accounts or keys. Runs where the
+# stories are stored (the repo), never against Supabase. With no stories it writes nothing and stays green.
+
+name: Weekly story link check
+
+on:
+  schedule:
+    - cron: '31 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: story-links
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node scripts/story-links-check.mjs
+      - name: Commit the broken-link list when it changed
+        run: |
+          if git diff --quiet -- src/data/seed/storyLinksBroken.ts; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/seed/storyLinksBroken.ts
+          git commit -m "Weekly story link check: the broken-link list changed"
+          git push

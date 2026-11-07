@@ -363,6 +363,19 @@ Shot: none. Mockup: `mockups/onboarding/02-home.png` draws Los Angeles preselect
 - Shot and mockup: none.
 - Conflicts: **changes** product-decisions.md:218 (update its M14 note into this list).
 
+**Proposed rule text (Claude Code, Nov 6, 2026; for Kylie's yes before the sweep; it replaces the "Each keeps a 44 pt tap area" sentence and the M14 note in product-decisions.md:218):**
+
+> **Tap areas and type sizes (Kylie, Oct 13 and Oct 30, 2026).** Every tap area is at least 44pt tall and wide, counting an invisible extension (vertical only where neighbors are close, so nothing overlaps), and every word on screen is at least 11pt, **except the items on this list**. Anything not on the list follows the rule, and adding to the list takes Kylie's OK.
+> 1. **Small words inside tiles:** the verdict word (8px), the read word and chip word (8 to 9px), the date tile's weekday (9px), and the Away tag (8px). The tile is the target, not the word.
+> 2. **The day-strip words at 9px:** the Map score word and the Explore verdict words (after B2's fix from 7px).
+> 3. **Small labels at 10px or more:** the Explore day strip's weekday (10px), the map pin captions (10.5px), and the hourly weather glyph (10.5px, an icon).
+> 4. **Kylie's size calls:** the city switcher's rows at 36pt with no extension (M14, Oct 23), the Local Competition timeline bars at 29pt unpadded, the verdict tile at 40pt on Your Stubs and Activity (H9), and the story's inline 14pt source line (D5). The source links and the tile take the largest extension that overlaps nothing.
+> 5. **Secondary links and buttons at 36 to 40pt that stay as drawn**, extended vertically where that overlaps nothing: the Explore day band links (40), "See the whole day ›" (37), the stub read links (40), segmented buttons (40), the avatar button (40), the Compare link (37), and the share round button (36).
+> 6. **Visual sizes that already carry a 44pt extension** (M39): the Back link (55 by 21), the info dot (18), and the read info dot (22).
+> 7. **"Show" on the hidden line**, where 44pt would cover the next row.
+
+The sweep (B2's list: the day-strip words to 9px; 44pt extensions on the year select, the recap chip, the Map day step arrows, the header date link, the activity chip, the Explore header round buttons, the Upcoming and Activity Filter and Search, the Hide Mine chip, the Map Feels and Legend buttons, the stub review row, and the Favorite Cities minus buttons; the clipped distance text on E4) runs once she says yes to the text.
+
 ### G5. Notifications Later, Share Cards Maybe Never (Locked)
 - **Locked (Kylie, Oct 30 form G5):** no notifications now. Keep them for later. Do not draw or build a share card now. Her note: she is not sure the app will ever need share cards. Shot and mockup: none.
 - Conflicts: the product brief says the event screen ends on a shareable card, and product-decisions.md "Share cards (four)" is on file. Treat both as on hold, not removed, until she decides (Open, G5).
