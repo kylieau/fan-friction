@@ -1,4 +1,5 @@
 import { useMemo, useState, useSyncExternalStore } from 'react';
+import { Link } from 'react-router-dom';
 import {
   getPersonalLog,
   HOME_SPOT,
@@ -23,6 +24,7 @@ import { TvIcon } from './Icons';
 import { ConfirmDialog, SeasonSheet } from './SeasonTickets';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { shortLocalDate } from '../lib/dates';
+import { favPath } from '../screens/FavoritesScreen';
 
 /**
  * Watching Season on a team page (build 7.2; Kylie, Nov 4, 2026, Locked; mocks `watching-season/01` to `03`, `06`):
@@ -62,9 +64,10 @@ export function WatchingSeasonRow({ team, schedule }: { team: Team; schedule: Te
             <span className="season-card-line">{season.place}</span>
             <span className="season-card-sub">Default spot{counts.changed > 0 ? ` · ${games(counts.changed)} changed` : ''}</span>
           </span>
-          <button type="button" className="heading-link season-card-link link-button" onClick={() => setStep('spot')}>
-            Change spot ›
-          </button>
+          {/* Board 07 (Kylie, Nov 7, 2026): the foot row opens the Games & Spot page, where the default has its own Change. */}
+          <Link to={`${favPath({ kind: 'team', id: team.id })}/watching`} className="heading-link season-card-link">
+            Games & Spot ›
+          </Link>
         </div>
       )}
       {(step === 'setup' || step === 'spot') && schedule && <WatchingSetupSheet team={team} games={schedule} mode={step} place={season?.place ?? HOME_SPOT} onClose={() => setStep(null)} />}
@@ -92,18 +95,56 @@ export function WatchingSeasonRow({ team, schedule }: { team: Team; schedule: Te
 }
 
 /**
- * The setup sheet (02): Where You Usually Watch, Home or A Place (typed, with the places from other watches as chips;
- * the mock's address search would need a places service, a new source, so the Stub it sheet's free text serves),
- * the note on the games that stay as they are, and the one button. The same sheet changes the default spot later.
+ * Home or A Place (02 and 08): the two options, and for A Place the typed field with the places from other watches as
+ * chips (the mock's address search would need a places service, a new source, so the Stub it sheet's free text
+ * serves). Shared by the setup sheet and the per-game sheet on the Games & Spot page.
  */
-function WatchingSetupSheet({ team, games, mode, place, onClose }: { team: Team; games: TeamGame[]; mode: 'setup' | 'spot'; place: string; onClose: () => void }) {
+export function SpotPicker({ choice, typed, log, onChoice, onTyped, onEnter }: { choice: 'home' | 'place'; typed: string; log: ReturnType<typeof getPersonalLog>; onChoice: (next: 'home' | 'place') => void; onTyped: (next: string) => void; onEnter: () => void }) {
+  const recent = recentWatchPlaces(log, 4).filter((p) => p.toLowerCase() !== typed.trim().toLowerCase());
+  const option = (value: 'home' | 'place', title: string, sub: string) => (
+    <button type="button" className={`season-option${choice === value ? ' on' : ''}`} role="radio" aria-checked={choice === value} onClick={() => onChoice(value)}>
+      <span className="season-option-dot" aria-hidden />
+      <span className="season-option-words">
+        <span className="season-option-title">{title}</span>
+        <span className="season-option-sub">{sub}</span>
+      </span>
+    </button>
+  );
+  return (
+    <>
+      <div className="season-options" role="radiogroup" aria-label="Where you watch">
+        {option('home', 'Home', 'On TV or streaming at your place.')}
+        {option('place', 'A Place', "A bar, a friend's, anywhere you watch.")}
+      </div>
+      {choice === 'place' && (
+        <div className="watch-spot-field">
+          <input className="account-input" value={typed} placeholder="Barney's Beanery" aria-label="The place" autoFocus onChange={(ev) => onTyped(ev.target.value.slice(0, 80))} onKeyDown={(ev) => ev.key === 'Enter' && onEnter()} />
+          {recent.length > 0 && (
+            <div className="watch-spot-chips">
+              {recent.map((p) => (
+                <button key={p} type="button" className="filter-chip" onClick={() => onTyped(p)}>
+                  {p}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </>
+  );
+}
+
+/**
+ * The setup sheet (02): Where You Usually Watch, Home or A Place, the note on the games that stay as they are, and
+ * the one button. The same sheet changes the default spot later (from the Games & Spot page's Change since Nov 7).
+ */
+export function WatchingSetupSheet({ team, games, mode, place, onClose }: { team: Team; games: TeamGame[]; mode: 'setup' | 'spot'; place: string; onClose: () => void }) {
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const today = todayIn(METROS[team.metroId ?? ''] ?? DEFAULT_METRO);
   const isHome = /^home$/i.test(place);
   const [choice, setChoice] = useState<'home' | 'place'>(isHome ? 'home' : 'place');
   const [typed, setTyped] = useState(isHome ? '' : place);
   const counts = useMemo(() => watchSetupCounts(games, log.plans, watchingSeasonOf(team.id, log), today), [games, log, team.id, today]);
-  const recent = recentWatchPlaces(log, 4).filter((p) => p.toLowerCase() !== typed.trim().toLowerCase());
   const spot = choice === 'home' ? HOME_SPOT : typed.trim();
   const ready = choice === 'home' || spot.length > 0;
   const g = (n: number) => `${n} ${n === 1 ? 'game' : 'games'}`;
@@ -113,15 +154,6 @@ function WatchingSetupSheet({ team, games, mode, place, onClose }: { team: Team;
     else setWatchingSpot(team.id, spot);
     onClose();
   };
-  const option = (value: 'home' | 'place', title: string, sub: string) => (
-    <button type="button" className={`season-option${choice === value ? ' on' : ''}`} role="radio" aria-checked={choice === value} onClick={() => setChoice(value)}>
-      <span className="season-option-dot" aria-hidden />
-      <span className="season-option-words">
-        <span className="season-option-title">{title}</span>
-        <span className="season-option-sub">{sub}</span>
-      </span>
-    </button>
-  );
   return (
     <SeasonSheet title={mode === 'setup' ? 'Watching Season' : 'Where You Usually Watch'} sub={`${team.name} · ${seasonLabel(games)} · ${g(counts.total)}`} label={mode === 'setup' ? 'Watching season setup' : 'Change the default spot'} onClose={onClose}>
       <div className="season-section">
@@ -129,24 +161,7 @@ function WatchingSetupSheet({ team, games, mode, place, onClose }: { team: Team;
           <h3 className="season-section-title">Where You Usually Watch</h3>
           <span className="stub-where-optional">Change any game later</span>
         </div>
-        <div className="season-options" role="radiogroup" aria-label="Where you usually watch">
-          {option('home', 'Home', 'On TV or streaming at your place.')}
-          {option('place', 'A Place', "A bar, a friend's, anywhere you watch.")}
-        </div>
-        {choice === 'place' && (
-          <div className="watch-spot-field">
-            <input className="account-input" value={typed} placeholder="Barney's Beanery" aria-label="The place" autoFocus onChange={(ev) => setTyped(ev.target.value.slice(0, 80))} onKeyDown={(ev) => ev.key === 'Enter' && save()} />
-            {recent.length > 0 && (
-              <div className="watch-spot-chips">
-                {recent.map((p) => (
-                  <button key={p} type="button" className="filter-chip" onClick={() => setTyped(p)}>
-                    {p}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        )}
+        <SpotPicker choice={choice} typed={typed} log={log} onChoice={setChoice} onTyped={setTyped} onEnter={save} />
       </div>
       {mode === 'setup' && (
         <div className="watch-note card">

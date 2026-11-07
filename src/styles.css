@@ -12120,6 +12120,38 @@ a.follow-lead::after {
   font-weight: 700;
   color: var(--action);
 }
+/* Games & Spot (build 7.2, Watching Season boards 07 and 08, approved Nov 7, 2026): the default spot row, the game rows
+   (a Link when tickets win, a button otherwise; both wear the season row), and the answer chip on a ticketed game. */
+.watch-default-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+.watch-default-row .season-card-words {
+  flex: 1;
+  min-width: 0;
+}
+.watch-default-row .season-card-link {
+  flex: none;
+}
+a.watch-row {
+  text-decoration: none;
+}
+.season-row.watch-row .log-facts strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+.season-chip.watch-answer {
+  flex: none;
+  gap: 5px;
+  height: 26px;
+  padding: 0 10px;
+  background: color-mix(in srgb, var(--dodger) 12%, var(--card));
+  color: var(--dodger);
+}
+
 .season-check {
   flex: none;
   width: 22px;

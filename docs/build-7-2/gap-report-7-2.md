@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 11. Games & Spot (Watching Season boards 07 and 08, approved Nov 7): the page from the team page's foot row with the default spot card, the games ahead by month with their spots and a Changed chip, tickets-win rows that open the event, removed games greyed with Re-add, Not on the Schedule with Remove; This Game Only with the shared Home / A Place picker, Back to default, Save and Remove this game | done | _(this commit)_ | walked headless on a seeded Kings season: change a spot, back to default, remove, re-add, a ticketed game's row; every button measured at 44 or more |
 | 10. The G4 sweep on the approved rule (B2's list measured and fixed: the day-strip words 7px to 9px, the header date link, Feels, Legend, the year select, the avatar, the recap chips, the Favorite Cities minus buttons and the stub's review link to 44pt, E4's clipped distance line wrapping), Crowd Size and caps on the lean (a cap under Min hides), and the nightly weather fetch made to skip one failed point-date instead of a whole city | done | _(this commit)_ | every target probed headless at 390 with elementFromPoint; `crowd-range-check.mjs` 11 of 11; the weather fix proves itself on the next nightly |
 | 8 (b). Codex review of onboarding, 6 findings, all fixed: a Skip's fallback home is never sent up to the account and the account's home clears the mark; a pending Crowd Size edit is written when the step leaves; a fave's name inside the step no longer navigates under the screen; focus lands on the title, Tab stays inside, focus returns on close; picking Los Angeles itself clears Default; another tab's writes reach this one | done | _(this commit)_ | re-walked: focus on the title, 12 Tabs stay inside, LA picked clears the mark, a typed Min then Continue saves, a name tap stays on the step while Follow works, Done's rows, finish lands on Explore |
 | 9. Sections D and G4, the parts that need no code or no yes: the story block checked as locked (D3 placement, D4e no block, D5 the 14pt line), the weekly broken-link check built (D4g: a script, a Monday workflow, a generated list the block reads), the D4a plan written for Kylie (`docs/product/story-plan.md`, X as a source and its 🚩), and the G4 rule text proposed in the notes for her yes before the sweep | done | _(this commit)_ | the script run: 0 stories, 0 links, the list unchanged; the workflow is free and commits only on a change |
@@ -30,6 +31,22 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
+
+## Group 11: Games & Spot
+
+Boards 07 and 08 (`mockups/watching-season/`), approved by Kylie on Nov 7, 2026 (deferring to the lean), built the same day. The full note is in the build notes under Watching Season.
+
+### What shipped
+- **The page** (`/favorites/team/:id/watching`): the team page's foot row reads "Games & Spot ›" and opens it. The sub line, the default spot card with Change (the setup sheet in its spot mode), then the games ahead by month on the Season Tickets page's row: date tile, "vs Islanders" / "at Bruins", the time and the spot (a place in bold ink, Home plain), a Changed chip, a chevron. A ticketed or otherwise planned game shows its answer as a chip with the plan's icon and opens the event page. A removed game is greyed with Re-add; a dropped game sits under Not on the Schedule with Remove.
+- **This Game Only:** Home or A Place for this game (the picker is now one shared piece, `SpotPicker`, used by the setup sheet too), Back to default on a changed game, Save, Remove this game in the outline treatment (the board's orange is not the app's). Picking the default again clears the game's own spot.
+- **Not built:** the Season Watch Record card's "All ›" (no board). **Also fixed:** "Games & settings ›" on the Season Tickets card is Title Case now ("Games & Settings ›", Oct 23 rule).
+
+### Checks
+- Headless on a seeded Kings season (70 games): the foot link's href; the page's rows (358 × 60); Change at the card's right (tap 45); the sheet's Save 44, Remove 49, close 50, Back to default 45. Set a game to "The Short Stop": the row reads bold with Changed and the season's `changed` map holds it. Back to default clears it. Remove: the row greys with Re-add and the id lands in `removed`; Re-add brings it back and clears `removed`. Two games turned Attending by hand: their rows are links to the event with the Attending chip, and the sub line counts 68 left.
+- `npm run build` passes.
+
+### Codex review
+_(pending)_
 
 ## Group 10: The G4 Sweep, Crowd Size and Caps, and the Nightly Weather Fix
 
