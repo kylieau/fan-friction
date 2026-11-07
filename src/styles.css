@@ -14361,12 +14361,18 @@ button.types-top-words {
 .plan-head-fave {
   pointer-events: auto;
   position: relative;
+  display: inline-flex;
   min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
   font-weight: 700;
   color: var(--dodger);
   text-decoration: none;
+}
+/* The words carry the ellipsis, so the link's tap area can reach outside them (Codex, group 5 review). */
+.plan-head-fave-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 /* The fave link's tap area reaches into the row's top padding and a little under its text (the follow lead's rule). */
 .plan-head-fave::after {

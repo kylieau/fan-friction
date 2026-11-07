@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 5 (b). Codex review of Upcoming, 3 findings, all fixed: the opponent from the listing's title when not on file, college opponents by their school word, the fave link's tap area no longer clipped | done | _(this commit)_ | "vs North Florida" measured on a seeded plan; the link's reach measured |
 | 5. Upcoming: Section A (A1, A2, A3, A5; A4's rule) and R5a, the plan rows on the Activity row's shape (R5b to R5g decided) | done | `3fe66312`, _(this commit)_ | measured with five seeded plans and two fave teams: bands 33 and 28pt, rows 69 to 70pt, the window 244pt, the three lines at the Activity row's sizes |
 | 4 (c). Codex review of Getting There, 9 findings: 8 fixed as proposed or nearly, 1 (the camera) fixed in a cheaper form | done | _(this commit)_ | the linked hour, the sheet across dates, the blob radius, the link's 44pt, the about card's focus and scrim measured; the check rerun |
 | 4 (b). Section E, second half: the Map's Traffic mode (the Crowds | Traffic switch while Getting There is on, one soft blob and a label per area, the sheet with rows, the leave-time slider and See the whole day; the quiet and past-date sentences) | done | _(this commit)_ | measured on Boston Nov 6 and Feb 20, a past date; the two links between the card and the map walked |
@@ -34,10 +35,16 @@ Bands: YOUR PLANS · 5 at 44pt; YOUR FAVES 33pt in rgb(201, 218, 238); NOVEMBER 
 Shots: `.playwright-mcp/7-2-a-upcoming-before-r5a.png` (Section A alone), `7-2-r5a-upcoming.png`.
 
 ### Builder calls
-1. **A plan whose event is not loaded** (past the 60-day window, or a season game the schedule holds but the catalog does not): the header shows the status icon alone, the title is the plan's stored one, and the detail line is the time and place. A season plan could read "at Opponent" from its schedule game; left for the 7.3 item on plan details past the window.
+1. **A plan whose event is not loaded** (past the 60-day window, or a season game the schedule holds but the catalog does not): the header shows the status icon alone, the title is the plan's stored one, and the detail line is the time and place. A season plan could read "at Opponent" from its schedule game; left for the 7.3 item on plan details past the window, which also owns a fave's game whose title the opponent parse cannot read (after the Codex review).
 2. **The sport tag on the detail line** shows only for a college or school game whose header does not already carry the sport words (a venue fave's "UCLA vs Oregon · Men's Basketball"), so the category header and the tag never repeat.
 3. **The city name** left the detail line; the code over the tile says it (the old row carried both).
 4. **The season seat** sits last on the detail line, after the sport tag.
+
+### Codex review of the group (Nov 6, evening), reconciled with the advisor before any tweak
+Three findings, all accepted and fixed in the follow-up commit:
+- **1 (P2):** an opponent with no team record (a school feed's visitor, "North Florida") fell back to the whole matchup. The opponent now comes from the listing's own title: the half of "A at B" or "A vs. B" that is not the fave, and only when the other half positively is the fave (its label, short name, full name, school word or an alias); a title the parse cannot read keeps the plan's stored title, which the 7.3 item on plan details past the window owns. Measured: a seeded plan on North Florida at UCLA reads "UCLA Men's Basketball / vs North Florida / 7:30 pm · Pauley Pavilion".
+- **2 (P2):** the fave link's ellipsis clipped its own tap area. The words moved to an inner span; the link's reach is 8px up, 22px left, 8px right and 5px down of the text (measured), and a tap 20px past the name lands on the row's event link.
+- **3 (P3):** a college opponent read with its program code ("vs USC WBB"). On-file college opponents use their school word (`schoolWord`); a parsed title drops a trailing code (`withoutProgramCode`, exported through the data index).
 
 ### Question for Kylie
 1. **"vs Penguins" on plan rows, "vs. Penguins" on faves rows.** The R5a lock says no period after vs; the Oct 15 lock for a fave's rows says "vs." with one. Both are built as locked, on the same screen. Should Upcoming carry one form? Lean: drop the period on the faves rows too, one rule for the screen.

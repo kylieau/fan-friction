@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { METROS } from '../config/metros';
-import { eventType, favoriteDisplayName, isFurtherOutRoom, isOutsideGamePlan, seatShort, TEAMS, type CrowdEvent, type Favorite, type Plan } from '../data';
+import { eventType, favoriteDisplayName, isCollegeTeam, isFurtherOutRoom, isOutsideGamePlan, schoolWord, seatShort, TEAMS, withoutProgramCode, type CrowdEvent, type Favorite, type Plan } from '../data';
 import { eventMatches } from '../data/favorites';
 import { listTitle, sportLabelOf, splitTitleLabel } from '../lib/eventTitle';
 import { clockTime, shortLocalDate } from '../lib/dates';
@@ -50,12 +50,37 @@ export function planFavorite(event: CrowdEvent | undefined, favorites: readonly 
 export function planTitle(plan: Plan, event: CrowdEvent | undefined, fave: Favorite | undefined): string {
   if (fave?.teamId && event?.teams) {
     const us = fave.teamId;
+    const home = event.teams.home === us;
     const other = event.teams.home === us ? event.teams.away : event.teams.home;
-    const opponent = TEAMS[other]?.shortName;
-    if (opponent) return event.neutralSite || event.teams.home === us ? `vs ${opponent}` : `at ${opponent}`;
+    const opponent = opponentName(other, event, fave);
+    if (opponent) return event.neutralSite || home ? `vs ${opponent}` : `at ${opponent}`;
   }
   if (fave?.kind === 'artist' && event) return showName(splitTitleLabel(listTitle(event)).name, fave.label);
   return splitTitleLabel(event ? listTitle(event) : plan.title).name;
+}
+
+/**
+ * The opponent's name for a fave's row: the team on file (its school word for a college program, so never "USC WBB";
+ * the club's short name otherwise), else the half of the listing's own title that is not the fave (a school feed's
+ * visitor with no record, "North Florida"), with any program code trimmed. Null when neither half of the title is
+ * the fave, so a title the parse cannot read keeps the plan's stored one (Codex, group 5 review).
+ */
+function opponentName(otherId: string, event: CrowdEvent, fave: Favorite): string | null {
+  const team = TEAMS[otherId];
+  if (team) return isCollegeTeam(team) ? schoolWord(team) : team.shortName;
+  const name = splitTitleLabel(listTitle(event)).name;
+  const halves = name.split(/\s+(?:at|vs\.?)\s+/);
+  if (halves.length !== 2) return null;
+  const us = TEAMS[fave.teamId ?? ''];
+  const ours = new Set([fave.label, favoriteDisplayName(fave), us?.shortName, us?.name, us ? schoolWord(us) : undefined, ...(us?.aliases ?? [])].filter((x): x is string => Boolean(x)).map((x) => x.toLowerCase()));
+  const isUs = (half: string) => {
+    const plain = withoutProgramCode(half).toLowerCase();
+    return ours.has(plain) || ours.has(half.toLowerCase()) || (us && isCollegeTeam(us) && plain.startsWith(schoolWord(us).toLowerCase()));
+  };
+  const [a, b] = halves;
+  if (isUs(a) && !isUs(b)) return withoutProgramCode(b);
+  if (isUs(b) && !isUs(a)) return withoutProgramCode(a);
+  return null;
 }
 
 /** "Men's Soccer", "Concert", "Hockey": the category a non-fave row's header carries (the Activity row's sport words). */
@@ -110,7 +135,7 @@ export function PlanRow({ plan, event, start, favorites, rating, home }: { plan:
           {planIcon(kind)}
           {fave ? (
             <Link to={favPath(fave)} className="plan-head-fave" aria-label={favoriteName(fave)}>
-              {header}
+              <span className="plan-head-fave-text">{header}</span>
             </Link>
           ) : (
             header && <span className="plan-head-category">{header}</span>

@@ -136,6 +136,11 @@ const SCHOOL_WORDS: Record<string, string> = {
   'TMU Bold': 'TMU',
 };
 
+/** A team name a feed wrote with a program code on the end ("UCLA WBB", "USC MBB"), without the code. */
+export function withoutProgramCode(name: string): string {
+  return name.replace(TRAILING_CODE, '').replace(/\s+W$/, '').trim();
+}
+
 /** The school word as stored in the short name, before the reviewed mapping ("IU Indy", "Gophers"): what a feed may write. */
 export function storedSchoolWord(team: Team): string {
   return team.shortName.replace(TRAILING_CODE, '').replace(/\s+W$/, '').trim();
