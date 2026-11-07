@@ -47,6 +47,7 @@ import { datePath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
 import { useLongPress } from '../lib/useLongPress';
 import { StubFromFaveMenu, rowEvent } from '../components/StubFromFaveMenu';
+import { SetupNudge } from '../components/Onboarding';
 
 /** Both lines of time reach 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
 const SPAN_DAYS = 60;
@@ -428,6 +429,8 @@ export function UpcomingScreen() {
                     </button>
                   </div>
                 )}
+                {/* Resume Setup (build 7.2, F3): on the empty Upcoming while steps were skipped, behind the setup gate. */}
+                {favorites.length === 0 && plans.length === 0 && <SetupNudge />}
               </section>
             )}
             {/* The Today line is gone (build 7.2, R5b, builder's lean; Kylie, A4: "i dont think we need the today line above

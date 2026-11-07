@@ -2,6 +2,8 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-route
 import { TabBar } from './components/TabBar';
 import { LogSheet } from './components/LogSheet';
 import { HomePicker } from './components/HomePicker';
+import { Onboarding } from './components/Onboarding';
+import { enableSetupPreview, onSetupRequest, setupEnabled, type SetupStep } from './lib/setup';
 import { HomeScreen } from './screens/HomeScreen';
 import { ExploreScreen } from './screens/ExploreScreen';
 import { EventScreen } from './screens/EventScreen';
@@ -97,6 +99,22 @@ function Shell() {
   }, [locationKey]);
   // The first-open picker: on while no home is set, and kept open after home is picked until Done.
   const [firstOpen, setFirstOpen] = useState(() => !getHomeId());
+  // First-run setup (build 7.2, Section F), gated: `?setup=1` previews it for the session; Set Up Again and the
+  // Resume Setup nudge open it at a step.
+  const [setupStep, setSetupStep] = useState<SetupStep | null>(() => {
+    if (new URLSearchParams(window.location.search).get('setup') === '1') {
+      enableSetupPreview();
+      return 'welcome';
+    }
+    return null;
+  });
+  useEffect(() => {
+    const off = onSetupRequest((step) => setSetupStep(step));
+    return () => {
+      off();
+    };
+  }, []);
+  const setupOn = setupEnabled();
 
   // The level a new stub takes is the profile's switch (build 5, stub privacy); Private when signed out.
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
@@ -188,7 +206,16 @@ function Shell() {
       {logging && <LogSheet onClose={() => setLogging(false)} />}
       {/* Home city is chosen first, on Explore or Home. No first-run tips: the ? and the empty states carry it (3.17).
           It stays open after home is set, so cities can be starred, until Done (build 5, item 8). */}
-      {firstOpen && (pathname === '/explore' || pathname === '/home') && <HomePicker onDone={() => setFirstOpen(false)} />}
+      {firstOpen && (pathname === '/explore' || pathname === '/home') && !setupStep && (setupOn ? <Onboarding onClose={() => setFirstOpen(false)} /> : <HomePicker onDone={() => setFirstOpen(false)} />)}
+      {setupStep && (
+        <Onboarding
+          start={setupStep}
+          onClose={() => {
+            setSetupStep(null);
+            setFirstOpen(false);
+          }}
+        />
+      )}
     </div>
   );
 }

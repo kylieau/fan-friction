@@ -48,13 +48,17 @@ export function EventTypesSettings() {
 }
 
 /** The switches under a type that a person can see today: its live sub-types, plus the levels under Sports. */
-function childKeys(top: FilterTop): string[] {
+export function childKeys(top: FilterTop): string[] {
   const keys = top.subs.filter((s) => !s.dormant).map((s) => s.key);
   if (top.key === 'sports') for (const l of FILTER_LEVELS) if (!l.dormant) keys.push(l.key);
   return keys;
 }
 
 /** "All On", "10 of 12 On · 1 Level Off", "Off": the line under a type's name. */
+export function typeSummary(top: FilterTop, hidden: ReadonlySet<string>): string {
+  return summary(top, hidden);
+}
+
 function summary(top: FilterTop, hidden: ReadonlySet<string>): string {
   if (hidden.has(top.key)) return 'Off';
   const subs = top.subs.filter((s) => !s.dormant);

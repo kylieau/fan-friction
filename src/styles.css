@@ -14669,3 +14669,347 @@ button.types-top-words {
   font-size: 12.5px;
   color: var(--ink2);
 }
+
+/* First-run setup (build 7.2, Section F; mocks onboarding/01 to 09). A full screen over the app, gated. */
+.setup-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.setup-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(14px + env(safe-area-inset-top, 0px)) 16px 6px;
+  min-height: 44px;
+}
+
+.setup-head-side {
+  width: 72px;
+}
+
+.setup-back,
+.setup-skip {
+  width: 72px;
+  min-height: 44px;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.setup-back {
+  text-align: left;
+  color: var(--dodger);
+}
+
+.setup-skip {
+  text-align: right;
+  color: var(--ink2);
+}
+
+.setup-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.setup-step-word {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.setup-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.setup-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #a9c3e0;
+  transition: width 160ms ease;
+}
+
+.setup-dot.current {
+  width: 22px;
+  background: var(--dodger);
+}
+
+.setup-dot.filled {
+  background: var(--dodger);
+}
+
+.setup-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 10px 16px 16px;
+}
+
+.setup-brand {
+  display: block;
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dodger);
+  margin-bottom: 6px;
+}
+
+.setup-title {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.setup-lead {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink2);
+}
+
+.setup-heading {
+  margin: 14px 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink2);
+}
+
+.setup-card {
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setup-tiles {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.setup-tiles-ends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.setup-card-line {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.setup-example {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.setup-example-words {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.setup-example-words strong {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.setup-units {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-top: 10px;
+}
+
+.setup-crowd .settings-heading,
+.setup-crowd .types-lead {
+  display: none;
+}
+
+.setup-more-title {
+  color: var(--dodger);
+}
+
+/* The faves picker inside the step: its own Done is the step's Continue. */
+.setup-faves .gold-button,
+.setup-faves .pick-done {
+  display: none;
+}
+
+.setup-rows {
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+}
+
+.setup-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.setup-row:last-child {
+  border-bottom: none;
+}
+
+.setup-row-label {
+  flex: 0 0 96px;
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.setup-row-value {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.setup-row-sub {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--ink2);
+}
+
+.setup-row-change {
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.setup-tips p {
+  margin: 0;
+  padding: 12px 0;
+  font-size: 15px;
+  border-bottom: 1px solid var(--line);
+}
+
+.setup-tips p:last-child {
+  border-bottom: none;
+}
+
+.setup-fine {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--ink2);
+}
+
+.setup-foot {
+  padding: 8px 16px calc(14px + env(safe-area-inset-bottom, 0px));
+  background: var(--bg);
+  box-shadow: 0 -1px 0 rgba(15, 27, 45, 0.06);
+}
+
+.setup-promise {
+  margin: 0 0 10px;
+}
+
+.setup-primary {
+  width: 100%;
+  background: var(--dodger);
+  color: #fff;
+}
+
+.setup-primary:disabled {
+  opacity: 0.45;
+}
+
+/* The Resume Setup nudge (F3). */
+.setup-nudge {
+  display: flex;
+  align-items: center;
+  padding: 0 4px 0 14px;
+  margin-top: 10px;
+}
+
+.setup-nudge-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 0;
+  border: none;
+  background: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.setup-nudge-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--dodger);
+}
+
+.setup-nudge-sub {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.setup-nudge-x {
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  color: var(--ink2);
+  cursor: pointer;
+}
+
+/* Setup fixes after the first walk: Skip setup on one line; only the slider card of Crowd Size in the step (its
+   Applies, No Estimate and Further Out switches stay in Settings, mock 04); the Default home row keeps its words. */
+.setup-skip {
+  width: auto;
+  min-width: 72px;
+  white-space: nowrap;
+}
+
+.setup-crowd .settings:not(:first-child) {
+  display: none;
+}
+
+.setup-crowd .settings {
+  margin: 0;
+}
+
+.profile-change {
+  white-space: nowrap;
+}
+
+.profile-home-value {
+  white-space: normal;
+  text-align: right;
+  line-height: 1.2;
+}

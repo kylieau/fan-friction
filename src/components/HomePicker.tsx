@@ -14,7 +14,7 @@ export const HOME_HELPER = "Tap a city to make it home. Star any others you foll
  * order. Tapping a row sets home; the star (44pt) stars or unstars it and never sets home. The app never
  * asks for location (Kylie, Oct 5). `page` draws white rows for the Settings page's blue background.
  */
-export function CityList({ variant = 'dialog' }: { variant?: 'dialog' | 'page' }) {
+export function CityList({ variant = 'dialog', stars = true }: { variant?: 'dialog' | 'page'; /** Off in setup (F1: stars stay in Settings). */ stars?: boolean }) {
   const [query, setQuery] = useState('');
   const home = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
@@ -45,7 +45,7 @@ export function CityList({ variant = 'dialog' }: { variant?: 'dialog' | 'page' }
                   <span className="city-row-name">{city.name}</span>
                   {isHome && <span className="city-row-tag">Home</span>}
                 </button>
-                {!isHome && (
+                {!isHome && stars && (
                   <button
                     type="button"
                     className={`area-star city-star${isStar ? ' on' : ''}`}

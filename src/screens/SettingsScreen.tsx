@@ -14,6 +14,8 @@ import { PeoplePanel } from './PeopleScreen';
 import { ReviewQueue } from '../components/ReviewQueue';
 import { DEFAULT_METRO, METROS, usesCelsius } from '../config/metros';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
+import { getSetup, requestSetup, resetDismissal, setupEnabled, subscribeSetup } from '../lib/setup';
+import { SetupNudge } from '../components/Onboarding';
 import {
   blockedPeople,
   crowdRangeLabel,
@@ -201,6 +203,10 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
   }, [favorites, entries]);
   const cities = favoriteCitiesOf(log).filter((id) => id !== homeId && METROS[id]);
   const home = homeId ? METROS[homeId] : undefined;
+  // Home after a skipped setup reads "(Default)" with Set Home (F2); the mark clears on a real pick.
+  const setup = useSyncExternalStore(subscribeSetup, getSetup, getSetup);
+  const homeLabel = home ? `${home.name}${setup.homeDefault ? ' (Default)' : ''}` : 'Choose home';
+  const homeAction = setup.homeDefault ? 'Set Home' : 'Change';
   const followers = (people ?? []).filter((p) => p.followsYou);
   const unit = temperatureUnitOf(log);
   const celsius = usesCelsius(homeId ?? DEFAULT_METRO.id);
@@ -314,9 +320,9 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
               <HomeIcon /> Home City
             </span>
             <span className="settings-row-side">
-              <span className="settings-value profile-home-value">{home?.name ?? 'Choose home'}</span>
+              <span className="settings-value profile-home-value">{homeLabel}</span>
               <button type="button" className="link-button profile-change" onClick={() => goPage('cities', { home: '1' })}>
-                Change
+                {homeAction}
               </button>
             </span>
           </div>
@@ -339,9 +345,9 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
                 <HomeIcon /> Home City
               </span>
               <span className="settings-row-side">
-                <span className="settings-value profile-home-value">{home?.name ?? 'Choose home'}</span>
+                <span className="settings-value profile-home-value">{homeLabel}</span>
                 <button type="button" className="link-button profile-change" onClick={() => goPage('cities', { home: '1' })}>
-                  Change
+                  {homeAction}
                 </button>
               </span>
             </div>
@@ -579,6 +585,27 @@ export function ProfileSettingsScreen({ editFaves = false }: { editFaves?: boole
               <p className="you-fine">Your events are saved on this phone, and in your account if you sign in. No location, no tracking, nothing sold.</p>
             </>,
           )}
+          {/* First-run setup (build 7.2, Section F, behind its gate): Set Up Again (F8) and the Resume Setup nudge (F3). */}
+          {setupEnabled() && (
+            <button
+              type="button"
+              className="settings-row settings-link settings-group-row"
+              data-section="setup"
+              onClick={() => {
+                resetDismissal();
+                requestSetup('welcome');
+              }}
+            >
+              <span className="settings-row-words">
+                <span className="settings-row-title">Set Up Again</span>
+                <span className="settings-row-sub">Home, what to see, and your Faves, step by step.</span>
+              </span>
+              <span className="settings-chevron" aria-hidden>
+                ›
+              </span>
+            </button>
+          )}
+          <SetupNudge />
         </div>
       </section>
       <span className="sr-only">{unit ? `Temperatures in °${unit}` : ''}</span>
