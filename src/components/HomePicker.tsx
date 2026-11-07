@@ -2,6 +2,7 @@ import { useState, useSyncExternalStore } from 'react';
 import { cityOrder, favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
 import { metroMatchesSearch } from '../config/metros';
 import { getHomeId, setHomeId, subscribeHome } from '../lib/homeCity';
+import { clearHomeDefault } from '../lib/setup';
 import { HomeMark } from './AreaSwitcher';
 import { SearchIcon, StarIcon } from './Icons';
 
@@ -40,7 +41,12 @@ export function CityList({ variant = 'dialog', stars = true }: { variant?: 'dial
             return (
               <li key={city.id} className="city-row">
                 {index === ordered.length && pinned.length > 0 && rest.length > 0 && <div className="city-divider" role="separator" />}
-                <button type="button" className={`home-city${isHome ? ' is-home' : ''}`} aria-pressed={isHome} onClick={() => setHomeId(city.id)}>
+                <button type="button" className={`home-city${isHome ? ' is-home' : ''}`} aria-pressed={isHome} onClick={() => {
+                    setHomeId(city.id);
+                    // A tap is a choice even when it lands on the fallback city (Codex, group 8 review).
+                    clearHomeDefault();
+                  }}
+                >
                   {isHome && <HomeMark />}
                   <span className="city-row-name">{city.name}</span>
                   {isHome && <span className="city-row-tag">Home</span>}

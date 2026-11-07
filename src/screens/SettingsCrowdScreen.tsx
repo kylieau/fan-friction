@@ -26,10 +26,13 @@ export function CrowdSizeSettings() {
   const [max, setMax] = useState(saved.max ?? CROWD_RANGE_TOP);
   const timer = useRef<number | undefined>(undefined);
 
-  // Save a moment after the last change, so a drag writes once.
+  // Save a moment after the last change, so a drag writes once. A change still pending when the control leaves the
+  // screen (Continue on the setup step, Back on the page) is written then, not dropped (Codex, group 8 review).
+  const pending = useRef<(() => void) | null>(null);
   const save = (nextMin: number, nextMax: number, showUnknown = saved.showUnknown) => {
     window.clearTimeout(timer.current);
-    timer.current = window.setTimeout(() => {
+    const write = () => {
+      pending.current = null;
       const range: CrowdRange = {
         ...(nextMin > 0 ? { min: nextMin } : {}),
         ...(nextMax < CROWD_RANGE_TOP ? { max: nextMax } : {}),
@@ -37,9 +40,17 @@ export function CrowdSizeSettings() {
         ...scope,
       };
       setCrowdRange(range);
-    }, 350);
+    };
+    pending.current = write;
+    timer.current = window.setTimeout(write, 350);
   };
-  useEffect(() => () => window.clearTimeout(timer.current), []);
+  useEffect(
+    () => () => {
+      window.clearTimeout(timer.current);
+      pending.current?.();
+    },
+    [],
+  );
 
   // Min above Max (or Max below Min): the other end moves to match.
   const apply = (nextMin: number, nextMax: number, moved: 'min' | 'max') => {

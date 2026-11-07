@@ -1,4 +1,4 @@
-import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   crowdRangeLabel,
@@ -44,11 +44,46 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
   const at = ORDER.indexOf(step);
   const index = Math.min(at, 3);
 
+  // Focus: the title takes it on every step, Tab stays inside the screen, and it goes back where it was on close
+  // (Codex, group 8 review: the page behind stayed reachable by keyboard).
+  const screen = useRef<HTMLDivElement>(null);
+  const returnTo = useRef<Element | null>(null);
   useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => ev.key === 'Escape' && step !== 'welcome' && goBack();
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  });
+    returnTo.current = document.activeElement;
+    return () => (returnTo.current as HTMLElement | null)?.focus?.();
+  }, []);
+  useEffect(() => {
+    (screen.current?.querySelector('.setup-title') as HTMLElement | null)?.focus();
+  }, [step]);
+  const stepRef = useRef(step);
+  stepRef.current = step;
+  const backRef = useRef<() => void>(() => {});
+  useEffect(() => {
+    const onKey = (ev: KeyboardEvent) => {
+      if (ev.key === 'Escape' && stepRef.current !== 'welcome') {
+        backRef.current();
+        return;
+      }
+      if (ev.key !== 'Tab' || !screen.current) return;
+      const items = Array.from(screen.current.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), input:not([disabled]), select, [tabindex]:not([tabindex="-1"])')).filter((el) => el.offsetParent !== null);
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      if (!active || !screen.current.contains(active)) {
+        ev.preventDefault();
+        first.focus();
+      } else if (ev.shiftKey && active === first) {
+        ev.preventDefault();
+        last.focus();
+      } else if (!ev.shiftKey && active === last) {
+        ev.preventDefault();
+        first.focus();
+      }
+    };
+    window.addEventListener('keydown', onKey, true);
+    return () => window.removeEventListener('keydown', onKey, true);
+  }, []);
 
   const go = (next: Step) => {
     setStep(next);
@@ -67,6 +102,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
       go('done');
     } else if (at > 0) go(ORDER[at - 1]);
   };
+  backRef.current = goBack;
   const skip = () => {
     if (step === 'welcome') {
       // Skip setup: the whole flow, every default (F13, F2).
@@ -105,7 +141,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
   const titles: Record<Step, string> = { welcome: WELCOME.title, home: "Where's Home?", see: 'What Do You Want to See?', faves: 'Follow Your Faves', done: "You're All Set" };
 
   return (
-    <div className="setup-screen" role="dialog" aria-modal="true" aria-label={titles[step]}>
+    <div ref={screen} className="setup-screen" role="dialog" aria-modal="true" aria-label={titles[step]}>
       <header className="setup-head">
         {step === 'welcome' ? (
           <span className="setup-head-side" />
@@ -135,7 +171,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
         {step === 'welcome' && (
           <>
             <span className="setup-brand">Fan/Friction</span>
-            <h1 className="setup-title">{WELCOME.title}</h1>
+            <h1 className="setup-title" tabIndex={-1}>{WELCOME.title}</h1>
             <p className="setup-lead">{WELCOME.lead}</p>
             <h2 className="setup-heading">{WELCOME.verdictHeading}</h2>
             <div className="card setup-card">
@@ -166,7 +202,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
 
         {step === 'home' && (
           <>
-            <h1 className="setup-title">{titles.home}</h1>
+            <h1 className="setup-title" tabIndex={-1}>{titles.home}</h1>
             <p className="setup-lead">Explore opens on your home city. Pick it, or search for another.</p>
             <CityList stars={false} />
             <div className="card setup-units">
@@ -188,7 +224,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
 
         {step === 'see' && (
           <>
-            <h1 className="setup-title">{titles.see}</h1>
+            <h1 className="setup-title" tabIndex={-1}>{titles.see}</h1>
             <p className="setup-lead">Both start wide open. Narrow them now, or leave them.</p>
             <h2 className="setup-heading">Crowd Size</h2>
             <div className="setup-crowd">
@@ -251,9 +287,19 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
 
         {step === 'faves' && (
           <>
-            <h1 className="setup-title">{titles.faves}</h1>
+            <h1 className="setup-title" tabIndex={-1}>{titles.faves}</h1>
             <p className="setup-lead">Their games and shows land in Upcoming. Follow a few, or none.</p>
-            <div className="setup-faves">
+            {/* The picker's rows link to a fave's page; inside setup a tap on the name does nothing (the Follow pill
+                still works), so nothing navigates under the screen (Codex, group 8 review). */}
+            <div
+              className="setup-faves"
+              onClickCapture={(ev) => {
+                if ((ev.target as HTMLElement).closest('a')) {
+                  ev.preventDefault();
+                  ev.stopPropagation();
+                }
+              }}
+            >
               <FavoritesScreen embedded edit />
             </div>
           </>
@@ -261,7 +307,7 @@ export function Onboarding({ start = 'welcome', onClose }: { start?: SetupStep; 
 
         {step === 'done' && (
           <>
-            <h1 className="setup-title">{titles.done}</h1>
+            <h1 className="setup-title" tabIndex={-1}>{titles.done}</h1>
             <p className="setup-lead">Explore opens on {homeMetro?.name ?? DEFAULT_METRO.name}. Pick a day on the strip to see how crowded it will be.</p>
             <h2 className="setup-heading">Your Setup</h2>
             <div className="card setup-rows">

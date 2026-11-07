@@ -6,7 +6,8 @@
 
 import { getAccount, onAccountChange } from './account';
 import { getMyProfile, updateMyProfile } from './profiles';
-import { getHomeId, setHomeId, subscribeHome } from '../lib/homeCity';
+import { getHomeId, homeSetQuietly, setHomeId, subscribeHome } from '../lib/homeCity';
+import { clearHomeDefault, getSetup } from '../lib/setup';
 
 let applyingFromAccount = false;
 
@@ -21,13 +22,16 @@ onAccountChange(async (account) => {
       setHomeId(profile.homeMetroId);
       applyingFromAccount = false;
     }
-  } else if (phone) {
+    // The account's home is a real one, whatever the phone had (a setup Skip's fallback included).
+    clearHomeDefault();
+  } else if (phone && !getSetup().homeDefault) {
+    // A fallback from a skipped setup is not a choice to send up (build 7.2, Section F).
     await updateMyProfile({ homeMetroId: phone });
   }
 });
 
 subscribeHome(() => {
-  if (applyingFromAccount || !getAccount()) return;
+  if (applyingFromAccount || homeSetQuietly() || !getAccount()) return;
   const id = getHomeId();
   if (id) void updateMyProfile({ homeMetroId: id });
 });

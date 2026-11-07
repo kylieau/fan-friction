@@ -1,5 +1,5 @@
 import { getPref, setPref } from './prefs';
-import { getHomeId, setHomeId, subscribeHome } from './homeCity';
+import { getHomeId, setHomeIdQuietly, subscribeHome } from './homeCity';
 import { DEFAULT_METRO } from '../config/metros';
 import { ONBOARDING_FLOW } from '../config/onboarding';
 
@@ -72,20 +72,35 @@ let markingDefault = false;
 
 /**
  * Skipping Where's Home (F2, F12): Los Angeles as the fallback, marked Default, never over a home already set (an
- * account's, or an earlier pick). A later real pick clears the mark (the subscription below).
+ * account's, or an earlier pick), and never sent up to the account (a quiet set). A later real pick clears the mark.
  */
 export function defaultHome() {
   if (getHomeId()) return;
   markingDefault = true;
-  setHomeId(DEFAULT_METRO.id);
+  setHomeIdQuietly(DEFAULT_METRO.id);
   markingDefault = false;
   write({ ...getSetup(), homeDefault: true });
 }
 
+/** A real pick, or the account's own home: the Default mark goes, even when the city is Los Angeles itself. */
+export function clearHomeDefault() {
+  if (getSetup().homeDefault) write({ ...getSetup(), homeDefault: false });
+}
+
 subscribeHome(() => {
   if (markingDefault) return;
-  if (getSetup().homeDefault) write({ ...getSetup(), homeDefault: false });
+  clearHomeDefault();
 });
+
+// Another tab's writes (a dismissal, a finished step) reach this one, so a stale copy never writes them back.
+if (typeof window !== 'undefined') {
+  window.addEventListener('storage', (ev) => {
+    if (ev.key === null || ev.key.endsWith(`:${PREF}`)) {
+      cached = null;
+      listeners.forEach((l) => l());
+    }
+  });
+}
 
 // ---------- Opening the flow from elsewhere (Set Up Again, Resume Setup) ----------
 

@@ -15013,3 +15013,11 @@ button.types-top-words {
   text-align: right;
   line-height: 1.2;
 }
+
+.setup-title:focus {
+  outline: none;
+}
+
+.setup-faves .fav-row {
+  cursor: default;
+}

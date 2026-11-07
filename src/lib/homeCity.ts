@@ -36,6 +36,26 @@ export function setHomeId(id: string) {
   notify();
 }
 
+let quiet = false;
+
+/**
+ * A home set as a fallback (setup's Skip, build 7.2): saved on the phone and announced to the app, but never sent up
+ * to the account, so a Skip during sign-in can never overwrite an account's home (Codex, group 8 review).
+ */
+export function setHomeIdQuietly(id: string) {
+  quiet = true;
+  try {
+    setHomeId(id);
+  } finally {
+    quiet = false;
+  }
+}
+
+/** True while a fallback home is being set: the account sync leaves it alone. */
+export function homeSetQuietly(): boolean {
+  return quiet;
+}
+
 export function subscribeHome(listener: () => void) {
   listeners.add(listener);
   return () => listeners.delete(listener);
