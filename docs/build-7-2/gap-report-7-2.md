@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 13. The story loop's two tools the plan marked "to write": `scripts/story-candidates.mjs` (the week's biggest-verdict and sold-out events with no story, from the files on disk) and `docs/research/topics/story-draft-prompt.md` (the one prompt every draft comes from, answering in the shape `stories.ts` takes); the story plan's four questions carry the builder's picks (no lean had been offered) | done | _(this commit)_ | run for Los Angeles and Boston: 6 candidates over 7 days, none with a story; no model calls, no network |
 | 12. Weather, from Kylie's Nov 7 answers to the plan: the M3 sentence from the stored numbers on the day card; `roof: 'retractable'` on 15 rooms with sources and "Retractable roof" under the event card's title (M33); observed rows fetched the night after for the last two days and "What it was at …" on a past event's card, the verdict untouched | done | _(this commit)_ | `weather-build-check.mjs` all passed (3 cities, 15 verdicts identical with observed rows planted, 30 sentences); the observed fetch run once by hand for Ottawa; the past card, the sentence and the roof line seen headless |
 | 11. Games & Spot (Watching Season boards 07 and 08, approved Nov 7): the page from the team page's foot row with the default spot card, the games ahead by month with their spots and a Changed chip, tickets-win rows that open the event, removed games greyed with Re-add, Not on the Schedule with Remove; This Game Only with the shared Home / A Place picker, Back to default, Save and Remove this game | done | _(this commit)_ | walked headless on a seeded Kings season: change a spot, back to default, remove, re-add, a ticketed game's row; every button measured at 44 or more |
 | 10. The G4 sweep on the approved rule (B2's list measured and fixed: the day-strip words 7px to 9px, the header date link, Feels, Legend, the year select, the avatar, the recap chips, the Favorite Cities minus buttons and the stub's review link to 44pt, E4's clipped distance line wrapping), Crowd Size and caps on the lean (a cap under Min hides), and the nightly weather fetch made to skip one failed point-date instead of a whole city | done | _(this commit)_ | every target probed headless at 390 with elementFromPoint; `crowd-range-check.mjs` 11 of 11; the weather fix proves itself on the next nightly |
@@ -32,6 +33,21 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
+
+## Group 13: The Story Loop's Tools
+
+Kylie's yes to `docs/product/story-plan.md` on Nov 7, 2026 ("good with leans for all"). The plan's four open questions had no lean on them, so the picks recorded there are the builder's: the built block's title stays, the spot-check is by hand until she names the models (a script is a 🚩 per-story cost), no quoting a post on X (links only, the Oct 4 shape), and she approves every story.
+
+### What shipped
+- **`scripts/story-candidates.mjs`:** for each city (all 40 by default), the last seven days' dates read from the files on disk the way the app reads them; the top three verdict dates' biggest draw and every sold-out event, each with the verdict, the final score and the attendance from the results files, and whether `stories.ts` already has it. Prints a table, or `--json`. Calls nothing, writes nothing.
+- **`docs/research/topics/story-draft-prompt.md`:** the one prompt a person pastes into any model with the event and up to three sources: the rules (sources only, about 60 words, the result as a fact never a judgment, no crowd words or verdict words, no quoting posts, the copy rules) and the exact JSON answer `stories.ts` takes.
+- **Not built:** the spot-check script (D4f) and anything that reads X by program, both 🚩 costs waiting on her.
+
+### Checks
+- `node scripts/story-candidates.mjs la boston`: 6 candidates in the last 7 days (Ohio State at USC on the 9.0 Halloween, Chargers at Rams on the 8.6, Blazers at Lakers, three Boston rows), none with a story, no sold-out rows in the window.
+
+### Codex review
+_(pending)_
 
 ## Group 12: Weather (M3, M33, and What It Was)
 
