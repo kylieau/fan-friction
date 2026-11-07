@@ -59,6 +59,13 @@ Kylie, Nov 7, 2026 (afternoon): "let's start on the small 7.2 leftovers". The ha
 
 The tab bar carries `inert` while each is open. The A Place picker inside the season sheet still puts focus on its input, and Escape from there returns it to the game's row. `npm run build` passes.
 
+### Codex review (4 findings, all fixed in the follow-up commit; none high)
+- **A background menu that stays mounted could take the "topmost" slot** (medium): the first rule took the last `role="dialog"`, `alertdialog` or `menu` in the page, inert or not, so a page with a persistent menu later in document order would leave a card deaf to Tab and Escape. Now only a dialog that is neither inert nor hidden counts; anything behind an open dialog is inert by construction.
+- **A lower dialog closing under an upper one uncovered the page** (medium): two sibling dialogs shared the marks the first set, and the first's close removed them and pulled focus back to its opener. The marks are now counted per element across the open dialogs (a mark something else set, the lifted row's, is counted but never removed), and a closing dialog returns focus to its opener only when nothing else holds it. No flow among the five does this today; the rule is for the thirteen still to wire.
+- **Shift+Tab from the sheet's title went forward** (low): from a focus outside the list (the `tabIndex={-1}` title), Shift+Tab now goes to the last stop. Measured: This Game Only's title, Shift+Tab, "Remove this game"; the faves menu's Attending, Shift+Tab, Open Event.
+- **StrictMode's replay in development could move focus off an autoFocus field** (low, pre-existing in the old SeasonSheet effect): the cleanup now remembers where focus stood inside the dialog and the replayed setup puts it back there.
+- Checked and found fine by Codex: the opener read before the commit, the marks balanced on an ordinary close, a gone opener skipped, GettingThereAbout's restore and SeasonSheet's title focus intact, the faves menu's swap to the Stub it sheet (its marks hold the page until the final close), the labels and `aria-modal`; native `inert` is in Safari from 15.5. Codex reviewed from source and a logic harness only (no browser); the measurements above are the builder's, re-run after the fixes with every line the same and the two Shift+Tab lines added.
+
 ## Group 13: The Story Loop's Tools
 
 Kylie's yes to `docs/archive/proposals/story-plan.md` on Nov 7, 2026 ("good with leans for all"). The plan's four open questions had no lean on them, so the picks recorded there are the builder's: the built block's title stays, the spot-check is by hand until she names the models (a script is a 🚩 per-story cost), no quoting a post on X (links only, the Oct 4 shape), and she approves every story.
