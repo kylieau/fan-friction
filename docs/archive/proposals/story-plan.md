@@ -1,5 +1,7 @@
 # The story section: how a story gets written, checked, and kept honest
 
+Status: closed, the candidates script, the draft prompt and the weekly link check are built; the picks sit in the build 7.2 notes and gap report, Nov 7, 2026
+
 **Status: closed, Kylie's yes on Nov 7, 2026 ("good with leans for all", deferring). The four questions below carried no lean, so the picks under them are the builder's, recorded Nov 7, and any of them is hers to overturn. The candidates script and the draft prompt the loop names are written the same day.**
 
 **Earlier status: a plan for Kylie's yes (Nov 6, 2026). Nothing here is built except the weekly link check (D4g) and the block the app already shows. Written by Claude Code from the Section D locks in `docs/build-7-2/build-notes-7-2.md` (Kylie, Oct 30, 2026).**
@@ -18,7 +20,7 @@
 Today the app reads `src/data/seed/stories.ts`, an event id to a text and its links, empty since build 4. The plan keeps stories in the repo, one file, reviewed in a commit like any other change, so nothing new is stored in Supabase (D4g: the check "never runs against Supabase without Kylie's OK") and no account or key is needed.
 
 ## The drafting loop (D4a)
-1. **Pick the events.** After each nightly run, a script lists the past week's events with the biggest verdicts and the sold-out ones (D4b) that have no story yet: `node scripts/story-candidates.mjs [metro ...] [--days=7] [--json]` (written Nov 7, 2026; it reads the day files and the results on disk, calls nothing, writes nothing: the week's top three verdict dates' biggest draws and every sold-out event, with the final score, the attendance and whether a story exists).
+1. **Pick the events.** After each nightly run, a script lists the past week's events with the biggest verdicts and the sold-out ones (D4b) that have no story yet: `node scripts/story-candidates.mjs [metro ...] [--days=7] [--json]` (written Nov 7, 2026; it reads the schedule archive, the saved verdicts and the results on disk, no catalog read and no network, and writes no data: the week's top three verdict dates' biggest draws and every sold-out event with no story yet, with the final score and the attendance).
 2. **Gather the sources.** For each candidate, a person collects up to three public links: the box score or league recap, a local outlet's report, and a post on X when one is the best account of the night (her note on D1). Only links, never screenshots or embedded posts (the Oct 4 lock); post text is not shown in the app unless she says so.
 3. **Draft.** A model writes the recap from those sources alone, in the app's voice (plain, factual, no hype, no score as a verdict), about 60 words, every claim traceable to one of the links. The prompt is saved beside the stories so every draft comes from the same words: `docs/research/topics/story-draft-prompt.md` (written Nov 7, 2026: the rules, the JSON shape `stories.ts` takes, the fields to fill).
 4. **Approve.** The person reads the draft against the sources, edits, and commits it to `stories.ts`. The commit message names the event. Nothing goes live before this step.

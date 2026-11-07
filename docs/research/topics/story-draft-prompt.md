@@ -1,6 +1,6 @@
 # The story draft prompt
 
-**Status: in use from Nov 7, 2026 (the drafting loop's step 3 in `docs/product/story-plan.md`; Kylie's yes to the plan on Nov 7, 2026). Every draft comes from these same words, so the stories read alike. Written by Claude Code.**
+**Status: in use from Nov 7, 2026 (the drafting loop's step 3 in `docs/archive/proposals/story-plan.md`; Kylie's yes to the plan on Nov 7, 2026). Every draft comes from these same words, so the stories read alike. Written by Claude Code.**
 
 The person pastes the block below into any model, fills in the three fields at the bottom, and reads the answer against the links before it goes anywhere near the app (step 4: she approves every story; a tool drafts, never publishes).
 
@@ -14,7 +14,7 @@ You are writing a short recap for Fan/Friction, a personal log of live events pe
 3. Never present the result as a judgment of the night or the crowd ("a disappointing loss", "the fans were let down"). State what happened; the score may appear as a fact.
 4. Never say how crowded the night was, never a number for the crowd, and never a verdict word (Chill, Spicy, Cooked): the app shows those from its own data.
 5. No quotes from a post on X or any social post: links only. A fact a post reports may be stated in your own words with that post as its source.
-6. Sentence case. American spelling. Oxford comma. No em dashes. "Night" only for an evening event; otherwise "the game", "the show", "the day".
+6. Sentence case. American spelling. Oxford comma. No em dashes. Say "the game", "the show", or "the event"; "night" only when a source puts the whole city's evening in view (the app keeps that word for a city-date after 5 pm), never from a start time you were not given.
 7. Name people and teams as the sources do. No nicknames the sources don't use.
 
 **Answer in this exact shape, nothing else:**

@@ -1,4 +1,4 @@
-// The weather build's checks (build 7.2, Nov 7, 2026; Kylie's answers to docs/product/weather-data-plan.md):
+// The weather build's checks (build 7.2, Nov 7, 2026; Kylie's answers to docs/archive/proposals/weather-data-plan.md):
 // (1) observed rows never reach the verdict: with an observed row planted on every forecast key of a city's past
 //     dates (absurd numbers, so any leak would move the read), every past date's verdict is byte-identical and
 //     `weatherAt` never answers with an observed row, while `weatherAsItWas` does;
