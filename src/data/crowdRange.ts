@@ -13,12 +13,22 @@ export const CROWD_RANGE_TOP = 80000;
 /**
  * The number the range compares: the highlighted crowd, else the room for a sold-out event with no count (a full room
  * is a known size). An event with only a ceiling ("14k cap") has no number: it follows the No Estimate switch and is
- * never compared to Min and Max (build 7.2, I5; until then it compared as its room, like drawSize).
+ * never compared to Max (build 7.2, I5; until then it compared as its room, like drawSize). Since Nov 7, 2026 its
+ * ceiling is still held against Min (`rangeCap`): a 3,000-seat room cannot hold a 5,000 crowd (Kylie's Nov 6 note on
+ * I5, built on the lean at the end of build 7.2).
  */
 export function rangeNumber(event: CrowdEvent): number | undefined {
   const count = highlightedCrowd(event)?.count;
   if (count != null) return count;
   return event.crowd.some((f) => f.soldOut) ? listedCapacity(event) : undefined;
+}
+
+/**
+ * The ceiling of an event with no range number: its room on file, compared against Min only. A room above Min says
+ * nothing about the crowd, so it never meets Max, and the No Estimate switch still decides those rows.
+ */
+export function rangeCap(event: CrowdEvent): number | undefined {
+  return rangeNumber(event) == null ? listedCapacity(event) : undefined;
 }
 
 /**
@@ -54,7 +64,11 @@ export function alwaysShownIds(log: PersonalLog, friends: readonly FeedItem[] = 
 export function passesCrowdRange(event: CrowdEvent, range: CrowdRange, keep: ReadonlySet<string>): boolean {
   if (rangeIsOpen(range) || keep.has(event.id)) return true;
   const n = rangeNumber(event);
-  if (n == null) return range.showUnknown !== false;
+  if (n == null) {
+    const cap = rangeCap(event);
+    if (range.min && cap != null && cap < range.min) return false;
+    return range.showUnknown !== false;
+  }
   if (range.min && n < range.min) return false;
   if (range.max && n > range.max) return false;
   return true;

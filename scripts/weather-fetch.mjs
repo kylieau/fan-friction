@@ -122,12 +122,22 @@ try {
 
   const byDate = new Map();
   let fetched = 0;
+  // One point-date failing after its retries (Nov 4 to 7, 2026: a different city each night, "fetch failed") skips
+  // that point-date and keeps yesterday's rows for it; the city still saves everything else. Only a city whose
+  // every call failed is skipped whole.
+  const missed = [];
   for (const ask of asks.values()) {
-    const rows = await fetchWeather(METRO, ask.venueId, ask.location, ask.date, [...ask.hours], now);
-    fetched += 1;
-    byDate.set(ask.date, [...(byDate.get(ask.date) ?? []), ...rows]);
+    try {
+      const rows = await fetchWeather(METRO, ask.venueId, ask.location, ask.date, [...ask.hours], now);
+      fetched += 1;
+      byDate.set(ask.date, [...(byDate.get(ask.date) ?? []), ...rows]);
+    } catch (err) {
+      missed.push(`${ask.venueId} ${ask.date}`);
+      console.error(`${METRO} weather: ${ask.venueId} ${ask.date} skipped (${err instanceof Error ? err.message : err}).`);
+    }
     await new Promise((r) => setTimeout(r, 150)); // be gentle with a free service
   }
+  if (asks.size > 0 && missed.length === asks.size) throw new Error(`every point-date failed (${missed.length})`);
 
   // The city point's daily high and low. Nightly: one call for today through 15 days
   // ahead, events or not. Backfill: one call per seeded past date.
@@ -140,8 +150,14 @@ try {
       await new Promise((r) => setTimeout(r, 150));
     }
   } else {
-    for (const day of await fetchWeatherDays(METRO, metro.center, today, addDays(today, DAYS_AHEAD), now)) daysByDate.set(day.date, [...(daysByDate.get(day.date) ?? []), day]);
-    dayCalls = 1;
+    try {
+      for (const day of await fetchWeatherDays(METRO, metro.center, today, addDays(today, DAYS_AHEAD), now)) daysByDate.set(day.date, [...(daysByDate.get(day.date) ?? []), day]);
+      dayCalls = 1;
+    } catch (err) {
+      // Yesterday's highs and lows stay in place for the window; the hourly rows above still save.
+      missed.push('city days');
+      console.error(`${METRO} weather: the day-range call skipped (${err instanceof Error ? err.message : err}).`);
+    }
   }
 
   const outDir = path.join(root, 'data', 'weather', METRO);
@@ -170,7 +186,7 @@ try {
       written += 1;
     }
   }
-  console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${backfill ? ' (backfill)' : ''}.`);
+  console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${missed.length > 0 ? `, ${missed.length} skipped` : ''}${backfill ? ' (backfill)' : ''}.`);
   } catch (err) {
     // One city's weather failing (Oct 10, 2026) must not cost every city its night: skip it, say so, carry on.
     failed.push(METRO);

@@ -252,10 +252,18 @@ button {
   min-width: 0;
 }
 
-/* The header date is plain text that opens the date page (build notes 3, 4.1). */
+/* The header date is plain text that opens the date page (build notes 3, 4.1). Its 30pt line takes an invisible 44pt
+   tap area (G4 sweep, B2); the count line under it is not a tap. */
 .map-header-date-link {
+  position: relative;
+  display: inline-block;
   color: inherit;
   text-decoration: none;
+}
+.map-header-date-link::after {
+  content: '';
+  position: absolute;
+  inset: -7px 0;
 }
 
 .map-header-date {
@@ -641,6 +649,7 @@ button {
 }
 
 .map-feels {
+  position: relative;
   display: flex;
   cursor: pointer;
   align-items: center;
@@ -657,6 +666,14 @@ button {
   line-height: 1.2;
   color: var(--ink);
   white-space: nowrap;
+}
+
+/* G4 sweep (B2): the 36pt Feels pill and the Legend button take 44pt invisible tap areas; nothing sits above or below. */
+.map-feels::after,
+.legend-button::after {
+  content: '';
+  position: absolute;
+  inset: -4px 0;
 }
 
 .map-feels span {
@@ -3242,10 +3259,19 @@ button {
 }
 
 .entry-edit {
+  position: relative;
   align-self: flex-start;
   min-height: 32px;
   font-size: 14px;
   color: var(--dodger);
+}
+
+/* G4 sweep (B2): the 32pt "Add a review, who you went with…" / Edit link takes a 44pt tap area; the pill beside it
+   sits to the right, and the rows above and below are not taps at that edge. */
+.entry-edit::after {
+  content: '';
+  position: absolute;
+  inset: -6px 0;
 }
 
 .field-private {
@@ -4743,7 +4769,7 @@ ul.fav-strip {
 }
 
 .day-cell .log-score-word {
-  font-size: 7px;
+  font-size: 9px; /* 7px until the G4 sweep (Kylie, Oct 30, B2): the 9px floor, item 2 of the rule's list */
   margin-top: 3px;
 }
 
@@ -4756,6 +4782,7 @@ ul.fav-strip {
   min-width: 18px;
   height: 18px;
   line-height: 18px;
+  font-size: 11px; /* G4 sweep: the number was 10px on no exception; the weekday (.day-name) keeps 10px, item 3 */
   border-radius: 9px;
   text-align: center;
   font-variant-numeric: tabular-nums;
@@ -5699,6 +5726,11 @@ ul.fav-strip {
   border: 0;
   background: none;
   flex-shrink: 0;
+}
+.you-avatar-btn::after {
+  content: '';
+  position: absolute;
+  inset: -2px 0; /* 40 drawn, 44 tapped (G4 list, item 5) */
 }
 
 .avatar-chevron {
@@ -10554,7 +10586,7 @@ a.follow-lead::after {
 
 .year-select {
   position: absolute;
-  inset: 0;
+  inset: -7px 0; /* G4 sweep (B2): the 30pt year word's tap area reaches 44 */
   width: 100%;
   opacity: 0;
   font-size: 16px;
@@ -10946,14 +10978,15 @@ a.follow-lead::after {
 .recap-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 12px 6px; /* G4 sweep (B2): rows 12 apart so each chip's 6px extensions meet without overlapping */
 }
 
 .recap-chip {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  height: 28px;
+  height: 32px; /* 28 before the sweep; with the extension below the tap area is 44 */
   padding: 0 10px;
   border-radius: 14px;
   background: var(--chrome);
@@ -10966,6 +10999,11 @@ a.follow-lead::after {
 .recap-chip svg {
   width: 13px;
   height: 13px;
+}
+.recap-chip::after {
+  content: '';
+  position: absolute;
+  inset: -6px 0;
 }
 
 .recap-tag-link {
@@ -12587,7 +12625,7 @@ a.follow-lead::after {
 .outline-remove::after {
   content: '';
   position: absolute;
-  inset: -8px;
+  inset: -10px; /* G4 sweep: -8 measured 42 (the 1.5px border eats into it); 44 now */
 }
 
 /* Codex, steps 9–10 review: the Log sheet's lists never shrink inside its scroll (rows were cut and the reserved past
@@ -12830,9 +12868,7 @@ a.follow-lead::after {
   font-weight: 600;
 }
 .rival-dist {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal; /* G4 sweep (B2's bug): "Dignity Health Sports Park · 2:00 pm · 7.7 mi away" wraps instead of clipping */
 }
 /* The Your Stub card. */
 .your-stub {

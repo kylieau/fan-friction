@@ -775,7 +775,8 @@ export type YouOrder = 'plans-first' | 'nights-first';
 /**
  * Which crowd sizes the lists show (build 5, item 6). Whole thousands; no `min` means no minimum, no `max` no
  * maximum. `showUnknown: false` hides events with no estimate (no count, no sellout, no estimate; a ceiling alone does
- * not count, build 7.2 I5; the switch reads "Show Events With No Estimate"); absent or true shows them. Never read by
+ * not count, build 7.2 I5, though a ceiling under the minimum hides the row whatever the switch, Nov 7, 2026; the
+ * switch reads "Show Events With No Estimate"); absent or true shows them. Never read by
  * the score.
  * `mapOff` / `listsOff`: the range does not apply on the map (and its sheet), or on date pages, the Explore List and
  * search (Kylie, Oct 19, 2026: one range, two switches, both on by default); absent means it applies.

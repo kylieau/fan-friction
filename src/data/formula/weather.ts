@@ -233,11 +233,15 @@ function rowAt(hourly: Hourly, index: number, base: Omit<WeatherRow, 'feelsLikeF
   };
 }
 
-/** Open-Meteo drops a connection, or answers with a text error, now and then; one bad call must not end the nightly run. Three tries, backing off. */
+/**
+ * Open-Meteo drops a connection, or answers with a text error, now and then; one bad call must not end the nightly run.
+ * Four tries, backing off (4, 8 and 16 seconds: three tries over 12 seconds still lost one city a night, Nov 4 to 7,
+ * 2026), and a dropped connection's own cause is kept in the message so the log says more than "fetch failed".
+ */
 async function fetchSteady(url: string): Promise<Response> {
   let last: unknown;
-  for (let attempt = 0; attempt < 3; attempt++) {
-    if (attempt) await new Promise((resolve) => setTimeout(resolve, attempt * 4000));
+  for (let attempt = 0; attempt < 4; attempt++) {
+    if (attempt) await new Promise((resolve) => setTimeout(resolve, 2000 * 2 ** attempt));
     try {
       const res = await fetch(url);
       if (res.ok) {
@@ -250,7 +254,8 @@ async function fetchSteady(url: string): Promise<Response> {
       if (res.status < 500 && res.status !== 429) return res;
       last = new Error(`Open-Meteo ${res.status}`);
     } catch (err) {
-      last = err;
+      const cause = err instanceof Error && err.cause instanceof Error ? `: ${err.cause.message}` : '';
+      last = err instanceof Error ? new Error(`${err.message}${cause}`) : err;
     }
   }
   throw last instanceof Error ? last : new Error(String(last));

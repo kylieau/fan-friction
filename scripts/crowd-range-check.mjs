@@ -3,7 +3,9 @@
 // (2) setting a narrow range leaves each sampled day's read identical while the lists do hide events.
 // It also lists events where the muting size (knownSize) and the number the range compares (rangeNumber: a count,
 // an estimate or a sold-out room; never a bare ceiling, build 7.2 I5) fall on different sides of 5,000, for review.
-// A row that shows only "14k cap" has no range number and is skipped here on purpose. Usage: node scripts/crowd-range-check.mjs [metro] [dates...]
+// A row that shows only "14k cap" has no range number; since Nov 7, 2026 its room is held against Min alone
+// (rangeCap): (3) proves a cap under Min hides, a cap at or above Min follows the No Estimate switch, and Max never
+// reads a cap. Usage: node scripts/crowd-range-check.mjs [metro] [dates...]
 
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -68,6 +70,23 @@ try {
     }
   }
   console.log(flags.length ? `Muting size and range number on different sides of 5,000:\n  ${flags.join('\n  ')}` : 'No event has its muting size and range number on different sides of 5,000.');
+
+  // (3) A ceiling alone: under Min hidden, at or above Min the switch decides, and Max never reads it.
+  const capOnly = [];
+  for (const date of dates) for (const e of (await data.getCityDate(metroId, date)).events) if (data.rangeNumber(e) == null && data.rangeCap(e) != null) capOnly.push(e);
+  const under = capOnly.filter((e) => data.rangeCap(e) < 5000);
+  const over = capOnly.filter((e) => data.rangeCap(e) >= 5000);
+  const keep = new Set();
+  const check = (label, ok) => {
+    console.log(`${ok ? 'ok  ' : 'FAIL'} ${label}`);
+    if (!ok) failed = true;
+  };
+  check(`cap-only rows found: ${under.length} under 5,000, ${over.length} at or above`, capOnly.length > 0);
+  check('a cap under Min hides whatever the switch says', under.every((e) => !data.passesCrowdRange(e, { min: 5000 }, keep) && !data.passesCrowdRange(e, { min: 5000, showUnknown: false }, keep)));
+  check('a cap at or above Min shows with the switch on', over.every((e) => data.passesCrowdRange(e, { min: 5000 }, keep)));
+  check('a cap at or above Min hides with the switch off', over.every((e) => !data.passesCrowdRange(e, { min: 5000, showUnknown: false }, keep)));
+  check('Max never reads a cap', over.every((e) => data.passesCrowdRange(e, { max: 1000 }, keep)));
+  check('a stubbed row with a small cap still shows', under.every((e) => data.passesCrowdRange(e, { min: 5000 }, new Set([e.id]))));
 } finally {
   await server.close();
 }

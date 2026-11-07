@@ -147,10 +147,12 @@ export function CrowdSizeSettings() {
         <p className="you-fine">Your faves, events you've stubbed, and friends' plans always show.</p>
       </div>
       {/* "No Estimate" (build 7.2, I4 and I5; was "Unknown Size"): the one switch for events with no count, sellout or
-          estimate. An event with only a room size ("14k cap") is one of them; it is never compared to Min and Max. The
-          saved key keeps its old name (`showUnknown`), so nothing migrates. */}
+          estimate. An event with only a room size ("14k cap") is one of them; its room is never compared to Max, though
+          a room under Min hides the row whatever this switch says (Kylie's Nov 6 note, built Nov 7, 2026). The saved
+          key keeps its old name (`showUnknown`), so nothing migrates. */}
       <div className="settings">
         <div className="settings-heading">No Estimate</div>
+        <p className="you-fine">A room smaller than your minimum is hidden either way.</p>
         <button
           type="button"
           className="settings-row settings-link"

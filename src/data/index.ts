@@ -553,7 +553,7 @@ export type * from './types';
 export { ticketPrice, priceLine, type TicketPrice } from './tickets';
 export { artistSite } from './artistSite';
 export { saveWatchPlace, clearWatchPlace, placesForEvent, placeKey, SAVE_FAILED, type EventPlace } from './watchPlaces';
-export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeIsOpen, rangeNumber, rangeOn, splitByRange } from './crowdRange';
+export { CROWD_RANGE_TOP, alwaysShownIds, crowdRangeLabel, passesCrowdRange, rangeCap, rangeIsOpen, rangeNumber, rangeOn, splitByRange } from './crowdRange';
 export { FILTER_LEVELS, FILTER_TYPES, eventTypesLabel, eventTypesOpen, filterKeysOf, filterLevelOf, hiddenByEventTypes, hiddenEventTypesOf, hiddenSwitchCount, type FilterLevel, type FilterSub, type FilterTop, type LevelDef } from './eventTypeFilter';
 export { cueWord, dateRoads, eventRoads, pastRoadsLine, roadClock, roadCue, roadSpan, ROAD_CUTS, type AreaRoads, type DateRoads, type EventRoads, type RoadCell, type RoadCue, type RoadWindow } from './gettingThere';
 export { displayFilter, hiddenBySize, hiddenByTypes, isKept, passesDisplay, reasonOf, splitByDisplay, type DisplayFilter, type DisplaySplit, type HiddenReason } from './displayFilter';
