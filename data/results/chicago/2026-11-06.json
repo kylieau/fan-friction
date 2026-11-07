@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-depaul-wbb-401913045",
+      "metroId": "chicago",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 87
+      },
+      "away": {
+        "name": "Purdue FW",
+        "score": 62
+      },
+      "attendance": 8270,
+      "capturedAt": "2026-11-07T15:04:10.651Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-06-espn-northwestern-mbb-401920733",
+      "metroId": "chicago",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-mbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 78
+      },
+      "away": {
+        "name": "Stony Brook",
+        "score": 65
+      },
+      "attendance": 3697,
+      "capturedAt": "2026-11-07T15:04:10.651Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-06-espn-uic-mbb-401928823",
+      "metroId": "chicago",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "credit-union-1-arena",
+      "homeTeamId": "uic-mbb",
+      "home": {
+        "name": "UIC",
+        "score": 79
+      },
+      "away": {
+        "name": "Robert Morris",
+        "score": 56
+      },
+      "attendance": 2318,
+      "capturedAt": "2026-11-07T15:04:10.651Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-06-espn-windy-city-bulls-401914503",
+      "metroId": "chicago",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "now-arena",
+      "homeTeamId": "windy-city-bulls",
+      "home": {
+        "name": "Windy City Bulls",
+        "score": 127
+      },
+      "away": {
+        "name": "Boom",
+        "score": 102
+      },
+      "attendance": 2268,
+      "capturedAt": "2026-11-07T15:04:10.651Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

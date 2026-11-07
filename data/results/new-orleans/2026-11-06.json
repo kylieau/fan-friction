@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-pelicans-401909293",
+      "metroId": "new-orleans",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "smoothie-king-center",
+      "homeTeamId": "pelicans",
+      "home": {
+        "name": "Pelicans",
+        "score": 109
+      },
+      "away": {
+        "name": "Timberwolves",
+        "score": 115
+      },
+      "attendance": 17767,
+      "capturedAt": "2026-11-07T15:04:18.385Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

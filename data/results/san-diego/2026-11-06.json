@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-wave-401932959",
+      "metroId": "san-diego",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "wave",
+      "home": {
+        "name": "Wave",
+        "score": 0
+      },
+      "away": {
+        "name": "Royals",
+        "score": 1
+      },
+      "attendance": 12638,
+      "capturedAt": "2026-11-07T15:04:07.860Z"
+    }
+  ]
+}

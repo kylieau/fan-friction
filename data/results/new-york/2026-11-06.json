@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-rutgers-mbb-401926135",
+      "metroId": "new-york",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-mbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 81
+      },
+      "away": {
+        "name": "New Haven",
+        "score": 54
+      },
+      "attendance": 8000,
+      "capturedAt": "2026-11-07T15:04:08.614Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

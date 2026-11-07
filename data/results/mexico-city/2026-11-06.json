@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-atlante-401876908",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "atlante",
+      "home": {
+        "name": "Atlante",
+        "score": 0
+      },
+      "away": {
+        "name": "Santos",
+        "score": 2
+      },
+      "capturedAt": "2026-11-07T15:04:16.394Z"
+    },
+    {
+      "eventId": "2026-11-06-espn-pumas-femenil-401924362",
+      "metroId": "mexico-city",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-olimpico-universitario",
+      "homeTeamId": "pumas-femenil",
+      "home": {
+        "name": "Pumas",
+        "score": 3
+      },
+      "away": {
+        "name": "Atl. San Luis",
+        "score": 1
+      },
+      "capturedAt": "2026-11-07T15:04:16.394Z"
+    }
+  ]
+}

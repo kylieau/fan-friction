@@ -1,0 +1,7189 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "metroName": "Washington, DC",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-07",
+  "capturedAt": "2026-11-07T15:03:16.275Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-07",
+    "through": "2026-11-21"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 28
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 178
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 38
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-07-sa-gwsports-com-15712",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "08:30",
+      "kind": "game",
+      "title": "George Washington vs. Loyola (MD)",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "swimming",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-espn-capitals-401892662",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Capitals vs. Panthers",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18055,
+        "low": 17944,
+        "high": 18165,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-sa-guhoyas-com-21897",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Georgetown vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "cooper-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-Z1r9uZrrZCuZ1AvPzOa",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOa",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z7r9jZ1A7-OFz",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Navy Midshipmen Football vs. Temple Owls Football",
+      "place": {
+        "type": "venue",
+        "venueId": "navymarine-corps-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Navy Midshipmen Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-OFz"
+    },
+    {
+      "id": "2026-11-07-tm-1A4ZkCKGkd16Qa1",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "kind": "game",
+      "title": "D.C. United vs New York City FC",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "D.C. United",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkCKGkd16Qa1"
+    },
+    {
+      "id": "2026-11-07-espn-gw-mbb-401926825",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "game",
+      "title": "G Washington vs. Hampton",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gw-mbb",
+        "away": "hampton",
+        "awayOpponent": "hampton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1754,
+        "low": 1382,
+        "high": 1967,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1A4ZkokGkeHVn3m",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hiss Golden Messenger",
+      "officialTitle": "Hiss Golden Messenger - I'm People Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Hiss Golden Messenger",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkokGkeHVn3m",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-rZ7HnEZ1AfP_pK",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Best Friends Podcast - Sasheer Zamata & Nicole Byer",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Best Friends Podcast",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfP_pK"
+    },
+    {
+      "id": "2026-11-07-sa-gomason-com-14484",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "George Mason vs. Rhode Island",
+      "place": {
+        "type": "venue",
+        "venueId": "george-mason-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-sa-umterps-com-21683",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maryland vs. Michigan",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-07-tm-17A8v0G6533KP2H",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alter Bridge",
+      "officialTitle": "Alter Bridge - What Lies Within Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Alter Bridge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6533KP2H",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1AvfZ_oGklvtMo2",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Madama Butterfly",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklvtMo2",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-07-espn-georgetown-mbb-401909513",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Georgetown vs. Maryland",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "georgetown-mbb",
+        "away": "maryland-mbb",
+        "awayOpponent": "maryland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4648,
+        "low": 4184,
+        "high": 7621,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-17A8v0G6umB0Bf5",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Pat McGee",
+      "officialTitle": "WRC Presents Pat McGee Band, Freddy Jones Band and Jackopierce",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Pat McGee",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6umB0Bf5",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-Z1r9uZrrZCuZ1AvPzrb",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzrb",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1A4Zkf-Gkd1-lBn",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Watch What Crappens: In The Mix Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Watch What Crappens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zkf-Gkd1-lBn"
+    },
+    {
+      "id": "2026-11-07-tm-1AvfZ_aGkITUrHr",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Brian Regan",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Brian Regan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_aGkITUrHr"
+    },
+    {
+      "id": "2026-11-07-tm-17A8v0G61rNpBAo",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Madeon",
+      "officialTitle": "Madeon presents Victory Live",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Madeon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61rNpBAo",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-07-tm-1A4Zk39GkdQ8T5x",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Winyah",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Winyah",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk39GkdQ8T5x",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-maryland-wbb-401918915",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Maryland vs. George Mason",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-wbb",
+        "away": "george-mason",
+        "awayOpponent": "george-mason"
+      },
+      "rank": {
+        "home": 20
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 6506,
+        "low": 5896,
+        "high": 7239,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-08-espn-washington-401873043",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Commanders vs. Rams",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "northwest-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "washington",
+        "away": "rams",
+        "awayOpponent": "rams"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 64205,
+        "low": 63292,
+        "high": 64704,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-sa-hubison-com-12455",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Howard vs. Mercyhurst",
+      "place": {
+        "type": "venue",
+        "venueId": "greene-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-sa-umterps-com-22454",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Maryland vs. Navy",
+      "place": {
+        "type": "venue",
+        "venueId": "bob-turtle-smith-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "baseball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "maryland-baseball",
+        "away": "Navy",
+        "awayOpponent": "navy"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-Z7r9jZ1AAvPvx",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Navy Midshipmen Mens Basketball vs. Central Penn College Knights Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "alumni-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Navy Midshipman Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvPvx",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-08-sa-guhoyas-com-22211",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Georgetown vs. St. Peter's",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdonough-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "georgetown-wbb",
+        "away": "St. Peter's",
+        "awayOpponent": "st-peter-s"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-08-tm-Z1r9uZrrZCuZ1AvPzO8",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzO8",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-08-espn-spirit-401932957",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Spirit vs. Thorns",
+      "broadcast": "ABC",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "spirit",
+        "away": "thorns",
+        "awayOpponent": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21790,
+        "low": 17277,
+        "high": 23275,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 11 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-1A4ZkfgGkdFE_8d",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "kind": "special",
+      "title": "GW and Politics & Prose Presents: Rachel Maddow | Department of Fate",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "GW and Politics & Prose Presents: Rachel Maddow | Department of Fate",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfgGkdFE_8d"
+    },
+    {
+      "id": "2026-11-08-tm-17A8v0G6GCQanCy",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Mountain Grass Unit",
+      "officialTitle": "The Mountain Grass Unit - Appalachian Smoke Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Mountain Grass Unit",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GCQanCy",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-17A8v0G6GK0Lsw3",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Heroes Off Duty Comedy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Heroes Off Duty Comedy Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GK0Lsw3"
+    },
+    {
+      "id": "2026-11-08-tm-17A8v0G6u6Liwmo",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Microwave",
+      "officialTitle": "Microwave + Free Throw",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Microwave",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6u6Liwmo",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-08-tm-Z1r9uZrrZCuZ1AvPzr_",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzr_",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-08-tm-rZ7HnEZ1AfOxGd",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Akeem Ali",
+      "officialTitle": "AKEEM ALI THE TEXTURE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Akeem Ali",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfOxGd",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-09-tm-17A8v0G61pc6FdB",
+      "metroId": "washington-dc",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61pc6FdB",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-georgetown-mbb-401909514",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Georgetown vs. Delaware St",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdonough-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "georgetown-mbb",
+        "away": "delaware-st",
+        "awayOpponent": "delaware-st"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-10-tm-17A8v0G6Cngp9Y6",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "18:35",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "TRIVIUM: CROWN IN THE GRAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6Cngp9Y6",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-espn-gw-mbb-401911209",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "G Washington vs. Elon",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gw-mbb",
+        "away": "elon",
+        "awayOpponent": "elon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1682,
+        "low": 1598,
+        "high": 1703,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1A4Zk3vGkd85lNI",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "K8vZ917KV20",
+        "K8vZ917_JxV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk3vGkd85lNI",
+      "expectedDraw": {
+        "count": 11603,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1A4ZkfkGkd4DDF3",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The NINETEEN 62 at CFG Bank Arena - Dave Matthews Band",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The NINETEEN 62 at CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfkGkd4DDF3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1A4ZkfkGkdK8Qzk",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Fearless Club At CFG Bank Arena - Dave Matthews Band",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Fearless Club At CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfkGkdK8Qzk",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1kA8vPevGAuW1qW",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dave Matthews Band",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dave Matthews Band",
+      "act": true,
+      "performerIds": [
+        "K8vZ91713NV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kA8vPevGAuW1qW",
+      "expectedDraw": {
+        "count": 14000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-Z1r9uZrrZCuZ1AvPzOZ",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOZ",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-10-tm-17A8v0G62BUJ_ZI",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BEAT",
+      "officialTitle": "BEAT: Belew/Vai/Levin/Bozzio Performing the Music of KING CRIMSON",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "BEAT",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G62BUJ_ZI",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-17A8v0G65MNHazY",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Julia Jacklin",
+      "officialTitle": "Julia Jacklin -  North America Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Julia Jacklin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G65MNHazY",
+      "expectedDraw": {
+        "count": 1225,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-1A4ZkoVGkdsqci3",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "special",
+      "title": "AN EVENING WITH JOHN CUSACK AND A SPECIAL SCREENING OF SAY ANYTHING",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "John Cusack",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkoVGkdsqci3"
+    },
+    {
+      "id": "2026-11-10-tm-rZ7HnEZ1AfFt47",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "New Constellations",
+      "officialTitle": "New Constellations: It Comes In Waves Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "New Constellations",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFt47",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAvJZe",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "15:00",
+      "kind": "game",
+      "title": "2026 Navy Men's Basketball Veterans Classic - USF vs St. Joseph's & Penn vs Navy",
+      "place": {
+        "type": "venue",
+        "venueId": "alumni-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Navy Midshipman Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvJZe",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-11-sa-gwsports-com-15755",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "George Washington vs. Georgetown",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gw-wbb",
+        "away": "georgetown-wbb",
+        "awayOpponent": "georgetown"
+      },
+      "ticketmasterId": "15006545BB1A8286",
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-sa-umterps-com-20216",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maryland vs. Penn State",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-17A8v0G6urDxFdJ",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "DC Power FC vs. Brooklyn FC",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "DC Power FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6urDxFdJ"
+    },
+    {
+      "id": "2026-11-11-tm-1AvfZ_aGkmVpzjT",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amble",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Amble",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_aGkmVpzjT",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-17A8v0G62WHGV7Z",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Bill Blumenreich Presents:  Alex O'Connor",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Alex O'Connor",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G62WHGV7Z"
+    },
+    {
+      "id": "2026-11-11-tm-1A4ZkfIGkd1_Q06",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Alex O'Connor: Pre-show Q&A Ticket",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Alex O'Connor: Pre-show Q&A Ticket",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfIGkd1_Q06"
+    },
+    {
+      "id": "2026-11-11-tm-Z1r9uZrrZCuZ1AvPzOv",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOv",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-11-tm-1A4ZkffGkeIwzLi",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkffGkeIwzLi",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-1AvfZ_3GktiPKBi",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alyssa Grace",
+      "officialTitle": "Alyssa Grace / Wanna Be Singer Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Alyssa Grace",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_3GktiPKBi",
+      "expectedDraw": {
+        "count": 1225,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-rZ7HnEZ1AfFk87",
+      "metroId": "washington-dc",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Blasting Company",
+      "officialTitle": "The Blasting Company plays Over The Garden Wall",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "The Blasting Company",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFk87",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-espn-wizards-401909977",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wizards vs. Pistons",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "wizards",
+        "away": "pistons",
+        "awayOpponent": "pistons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15520,
+        "low": 15331,
+        "high": 15657,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1A4ZkfKGke0xzeq",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "special",
+      "title": "National Symphony Orchestra: Serenades & Simple Songs",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "National Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfKGke0xzeq",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1A4ZkoYGkeO1kE7",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkoYGkeO1kE7",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z1r9uZrrZCuZ1AvPzOe",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOe",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-12-tm-164Zk3FFYZACFekC",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jodeci",
+      "officialTitle": "Jodeci - 35th Anniversary Tour of Forever My Lady",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "164Zk3FFYZACFekC",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-17A8v0G6umEV6YT",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Australia's Thunder From Down Under",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Australias Thunder From Down Under",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6umEV6YT"
+    },
+    {
+      "id": "2026-11-12-tm-1A4ZkfbGkewKp2O",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "ODESZA",
+      "officialTitle": "ODESZA [DJ Set]",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "ODESZA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfbGkewKp2O",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1AvfZ_KGkV3WoML",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Unpopular Opinion Night (21+)",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Unpopular Opinion",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_KGkV3WoML"
+    },
+    {
+      "id": "2026-11-12-sa-hubison-com-12740",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "start": null,
+      "kind": "game",
+      "title": "Howard vs. Stetson",
+      "place": {
+        "type": "venue",
+        "venueId": "burr-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-gwsports-com-15604",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "13:30",
+      "kind": "game",
+      "title": "George Washington vs. Loyola Chicago",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-gomason-com-14254",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "George Mason vs. Duquesne",
+      "place": {
+        "type": "venue",
+        "venueId": "george-mason-rac"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-hubison-com-12415",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Howard vs. Norfolk State",
+      "place": {
+        "type": "venue",
+        "venueId": "burr-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-1A4ZkosGkdvOtGL",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkosGkdvOtGL",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-gw-mbb-401911210",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "G Washington vs. Harvard",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gw-mbb",
+        "away": "harvard",
+        "awayOpponent": "harvard"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2118,
+        "low": 2049,
+        "high": 3694,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AvfZ_oGklvnMox",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Madama Butterfly",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklvnMox",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AvfZ_aGkVxYDa3",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Blade Runner Live",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Blade Runner Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_aGkVxYDa3"
+    },
+    {
+      "id": "2026-11-13-tm-Z1r9uZrrZCuZ1AvPzOd",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOd",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-13-espn-maryland-mbb-401916297",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Maryland vs. Virginia",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-mbb",
+        "away": "virginia",
+        "awayOpponent": "virginia"
+      },
+      "rank": {
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13449,
+        "low": 11617,
+        "high": 15410,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17A8v0G6Gpn4B8s",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Air Supply",
+      "officialTitle": "Air Supply - A Matter of Time Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Air Supply",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6Gpn4B8s",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17A8v0G6GpoB9Zv",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The War And Treaty",
+      "officialTitle": "The War  And Treaty",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "The War And Treaty",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GpoB9Zv",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1A4Zk39GkdTr0P4",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geese",
+      "officialTitle": "Geese - Getting Killed Again Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geese",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_6ef",
+        "K8vZ917_Yp0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk39GkdTr0P4",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AvfZ_oGklNKnKW",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Joe Russo's Almost Dead",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Joe Russo's Almost Dead",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklNKnKW",
+      "expectedDraw": {
+        "count": 1847,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-rZ7HnEZ1AfagF7",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Joy Oladokun",
+      "officialTitle": "Joy Oladokun: The Heavy Things Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Joy Oladokun",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfagF7",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17A8v0G65njtM7g",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Strawberry Guy",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Strawberry Guy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G65njtM7g",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AvfZ_oGkReohCs",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Brutalismus 3000",
+      "officialTitle": "Brutalismus 3000: Harmony US Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Brutalismus 3000",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGkReohCs",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-maryland-football-401858520",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Maryland vs. Wisconsin",
+      "broadcast": "FS1",
+      "place": {
+        "type": "venue",
+        "venueId": "secu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "maryland-football",
+        "away": "wisconsin",
+        "awayOpponent": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 50388,
+        "low": 38317,
+        "high": 53138,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gwsports-com-15744",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "George Washington vs. Loyola Chicago",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-hubison-com-12307",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Howard vs. Delaware State",
+      "place": {
+        "type": "venue",
+        "venueId": "greene-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "howard-football",
+        "away": "Delaware State",
+        "awayOpponent": "delaware-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-17A8v0G6CkdnNku",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Secretaries' Cup Fan Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Secretaries' Cup Fan Fest",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6CkdnNku"
+    },
+    {
+      "id": "2026-11-14-tm-17A8v0G6uU_hPal",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Secretaries' Cup: USCGA VS. USMMA",
+      "place": {
+        "type": "venue",
+        "venueId": "audi-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "United States Merchant Marine Academy Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6uU_hPal"
+    },
+    {
+      "id": "2026-11-14-tm-Z1r9uZrrZCuZ1AvPzOo",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOo",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gomason-com-14255",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "kind": "game",
+      "title": "George Mason vs. Duquesne",
+      "place": {
+        "type": "venue",
+        "venueId": "george-mason-rac"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-gomason-com-14265",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "kind": "game",
+      "title": "George Mason vs. North Carolina Central",
+      "place": {
+        "type": "venue",
+        "venueId": "eaglebank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gmu-wbb",
+        "away": "North Carolina Central",
+        "awayOpponent": "north-carolina-central"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AAvPv0",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Navy Midshipmen Mens Basketball vs. Hampton Pirates Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "alumni-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Navy Midshipman Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvPv0",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gwsports-com-15772",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "17:30",
+      "kind": "game",
+      "title": "George Washington vs. Long Island",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gw-wbb",
+        "away": "Long Island",
+        "awayOpponent": "long-island"
+      },
+      "ticketmasterId": "15006545BB1E828A",
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-17A8v0G61MbWhsC",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sammy Rae & The Friends",
+      "officialTitle": "Sammy Rae & The Friends - the GET DOWN!",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Sammy Rae & The Friends",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61MbWhsC",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AvfZ_aGkS8AGoF",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Matteo Lane: We Gotta Catch Up!",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matteo Lane",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_aGkS8AGoF"
+    },
+    {
+      "id": "2026-11-14-espn-capital-city-go-go-401914549",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Go-Go vs. Raptors 905",
+      "place": {
+        "type": "venue",
+        "venueId": "carefirst-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "capital-city-go-go",
+        "away": "raptors-905",
+        "awayOpponent": "905"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 688,
+        "low": 607,
+        "high": 1016,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-capitals-401892714",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Capitals vs. Devils",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17729,
+        "low": 17620,
+        "high": 17837,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-16vfZ_7FZG7tDbF",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16vfZ_7FZG7tDbF",
+      "expectedDraw": {
+        "count": 14000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-17A8v0G61Q3cFPq",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Amber Autry: Happy Holler Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Amber Autry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61Q3cFPq",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1A4ZkoEGkd9GHJh",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Fearless Club At CFG Bank Arena - Disney Worlds Collide",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Fearless Club At CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkoEGkd9GHJh",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1A4ZkoEGkd9ZiP0",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The NINETEEN 62 at CFG Bank Arena - Disney Worlds Collide",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The NINETEEN 62 at CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkoEGkd9ZiP0",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AvfZ_oGkwVPbD1",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Nixon in China",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGkwVPbD1",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AvfZ_3Gkl9Nw1V",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trey Anastasio",
+      "officialTitle": "Trey Anastasio Band",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trey Anastasio",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171hrf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_3Gkl9Nw1V",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z1r9uZrrZCuZ1AvPzO7",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzO7",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1A4ZkfKGke0NIeS",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "special",
+      "title": "National Symphony Orchestra: Serenades & Simple Songs",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "National Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfKGke0NIeS",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AvfZ_8GkYruMRo",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jeffrey Osborne",
+      "officialTitle": "Jeffrey Osborne & Will Downing",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jeffrey Osborne",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_8GkYruMRo",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-rZ7HnEZ1Af00oN",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ax and the Hatchetmen",
+      "officialTitle": "Ax and the Hatchetmen: The Late Checkout Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ax and the Hatchetmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af00oN",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1A4ZkowGkdBJuWJ",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Fruit Bats",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Fruit Bats",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkowGkdBJuWJ",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-maryland-wbb-401918916",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Maryland vs. Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-wbb",
+        "away": "columbia",
+        "awayOpponent": "columbia"
+      },
+      "rank": {
+        "home": 20
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6506,
+        "low": 5896,
+        "high": 7239,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-sa-guhoyas-com-22213",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Georgetown vs. Howard",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdonough-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "georgetown-wbb",
+        "away": "howard-wbb",
+        "awayOpponent": "howard"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-15-tm-1AvfZ_oGklvlEoE",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Madama Butterfly",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklvlEoE",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z1r9uZrrZCuZ1AvPzO3",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzO3",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-15-tm-16vfZ_37wG7nz5L",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Amber Autry: Happy Holler Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Amber Autry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16vfZ_37wG7nz5L",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G623zrtPi",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Daniel Sloss: BITTER (Brand New Tour!)",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G623zrtPi"
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G61VJceF3",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Beartooth",
+      "officialTitle": "Beartooth: Pure Ecstasy World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Beartooth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61VJceF3",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-wizards-401909991",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wizards vs. Rockets",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "wizards",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15721,
+        "low": 14765,
+        "high": 16652,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G613u1U0-",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Giant Rooks",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Giant Rooks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G613u1U0-",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G61m7lVyn",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chris Tomlin",
+      "officialTitle": "CHRIS TOMLIN, TOBYMAC, THIRD DAY",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "Chris Tomlin",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175WR0",
+        "K8vZ9175Av7",
+        "K8vZ9171O9f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61m7lVyn",
+      "expectedDraw": {
+        "count": 14000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G61xEsQin",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Fearless Club At CFG Bank Arena - Toby Mac",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Fearless Club At CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61xEsQin",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G61xtTnyH",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The NINETEEN 62 at CFG Bank Arena - Toby Mac",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The NINETEEN 62 at CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G61xtTnyH",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-15-tm-17A8v0G6GS9HFwz",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Imminence",
+      "officialTitle": "Imminence - Axis Mundi Tour: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Imminence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GS9HFwz",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1A4ZkftGkdUPYH8",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Capital Wind Symphony",
+      "officialTitle": "Dia De Los Muertos: Vibrations From The Afterlife",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Capital Wind Symphony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkftGkdUPYH8",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z1r9uZrrZCuZ1AvPzOA",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Mamma Mia!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mamma Mia! (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOA",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-15-tm-rZ7HnEZ1AfuzqV",
+      "metroId": "washington-dc",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pi'erre Bourne",
+      "officialTitle": "PI'ERRE BOURNE - MADE IN PARIS",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pi'erre Bourne",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfuzqV",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-gw-mbb-401911211",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "12:00",
+      "kind": "game",
+      "title": "G Washington vs. Ferrum",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gw-mbb",
+        "away": "ferrum",
+        "awayOpponent": "ferrum"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1682,
+        "low": 1598,
+        "high": 1703,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-capital-city-go-go-401914559",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Go-Go vs. Raptors 905",
+      "place": {
+        "type": "venue",
+        "venueId": "carefirst-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "capital-city-go-go",
+        "away": "raptors-905",
+        "awayOpponent": "905"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 292,
+        "low": 181,
+        "high": 456,
+        "fromCrowds": true,
+        "games": 24,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 24 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-maryland-mbb-401916298",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Maryland vs. Alcorn St",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-mbb",
+        "away": "alcorn-st",
+        "awayOpponent": "alcorn-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9712,
+        "low": 9485,
+        "high": 9871,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-wizards-401909996",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wizards vs. Memphis Grizzlies",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "wizards",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15458,
+        "low": 15269,
+        "high": 15594,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-17A8v0G6G5hsyS3",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Gregory Porter",
+      "officialTitle": "Gregory Porter - DC Jazz Festival Benefit Concert, A Night of Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Gregory Porter",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uwFf",
+        "K8vZ917hLC0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6G5hsyS3",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-17A8v0G629xY2jP",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Love Actually Live in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Music"
+      },
+      "performer": "Love Actually Live in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G629xY2jP"
+    },
+    {
+      "id": "2026-11-16-tm-17A8v0G6uCYxtFq",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rival Sons",
+      "officialTitle": "Rival Sons - Domestic Bliss Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Rival Sons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6uCYxtFq",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-1AvfZ_FGkUM0yVV",
+      "metroId": "washington-dc",
+      "date": "2026-11-16",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Baltimore Ravens v Los Angeles Chargers",
+      "place": {
+        "type": "venue",
+        "venueId": "m-t-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Baltimore Ravens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_FGkUM0yVV"
+    },
+    {
+      "id": "2026-11-17-sa-gwsports-com-15773",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "George Washington vs. Temple",
+      "place": {
+        "type": "venue",
+        "venueId": "charles-e-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gw-wbb",
+        "away": "Temple",
+        "awayOpponent": "temple"
+      },
+      "ticketmasterId": "15006545BB228292",
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-tm-1A4Zko-GkdyCR8u",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zko-GkdyCR8u",
+      "expectedDraw": {
+        "count": 11603,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1A4ZkoKGkeVWhsJ",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Die Spitz",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Die Spitz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkoKGkeVWhsJ",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1A4Zkf6GkdJ0c00",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Andrea Gibson's Love Letter From The Afterlife",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Andrea Gibson",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zkf6GkdJ0c00"
+    },
+    {
+      "id": "2026-11-17-tm-Z1r9uZrrZCuZ1AvPzOK",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOK",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-17-tm-17A8v0G62rYTbMX",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Samantha Fish",
+      "officialTitle": "Samantha Fish - Paper Doll Live World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Samantha Fish",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G62rYTbMX",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-17A8v0G6udaxBN_",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sleep",
+      "officialTitle": "Sleep: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sleep",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6udaxBN_",
+      "expectedDraw": {
+        "count": 1225,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-rZ7HnEZ1Af-Aed",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Pineapple Thief",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Pineapple Thief",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af-Aed",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A7QZQK",
+      "metroId": "washington-dc",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Big Head Todd & the Monsters",
+      "place": {
+        "type": "venue",
+        "venueId": "music-center-strathmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Big Head Todd & the Monsters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7QZQK",
+      "expectedDraw": {
+        "count": 1976,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-maryland-wbb-401918917",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Maryland vs. Coppin St",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-wbb",
+        "away": "coppin-st",
+        "awayOpponent": "coppin-st"
+      },
+      "rank": {
+        "home": 20
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4940,
+        "low": 4930,
+        "high": 5201,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-georgetown-mbb-401909516",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Georgetown vs. Navy",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "georgetown-mbb",
+        "away": "navy",
+        "awayOpponent": "navy"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2750,
+        "low": 2427,
+        "high": 2915,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-gmu-mbb-401920075",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "George Mason vs. NC Central",
+      "place": {
+        "type": "venue",
+        "venueId": "eaglebank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gmu-mbb",
+        "away": "nccu-mbb",
+        "awayOpponent": "nc-central"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2481,
+        "low": 2367,
+        "high": 2747,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-hubison-com-12663",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Howard vs. Ohio",
+      "place": {
+        "type": "venue",
+        "venueId": "burr-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "howard-wbb",
+        "away": "Ohio",
+        "awayOpponent": "ohio"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-tm-17A8v0G652QcQgT",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Matt Hansen",
+      "officialTitle": "Matt Hansen - The Orchid Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Matt Hansen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G652QcQgT",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1AvfZ_oGklvcEoz",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Madama Butterfly",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklvcEoz",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1A4ZkfkGkdT4m3D",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Rishab Rikhiram Sharma",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rishab Rikhiram Sharma",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfkGkdT4m3D",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z1r9uZrrZCuZ1AvPzOf",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPzOf",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1A4Zkf4GkeVR1oT",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Reyez",
+      "officialTitle": "Jessie Reyez: A Little Vengeance Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jessie Reyez",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zkf4GkeVR1oT",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1A4ZkowGkdUrqi5",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Geoff Tate",
+      "officialTitle": "Geoff Tate's Operation: Mindcrime - The Final Chapter",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Geoff Tate",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkowGkdUrqi5",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1kA8vxb-GA15UVL",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bill Murray & His Blood Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Bill Murray & His Blood Brothers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kA8vxb-GA15UVL",
+      "expectedDraw": {
+        "count": 1847,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-rZ7HnEZ1Afk94f",
+      "metroId": "washington-dc",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ben Caplan",
+      "officialTitle": "Yaelokre",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Ben Caplan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Afk94f",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z1r9uZrrZCuZ1AeAM0o",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AeAM0o",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-19-espn-capitals-401892746",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Capitals vs. Sabres",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "capitals",
+        "away": "sabres",
+        "awayOpponent": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17061,
+        "low": 16675,
+        "high": 17656,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-1A4Zk3FGkdZaQvH",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "They Might Be Giants",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "They Might Be Giants",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk3FGkdZaQvH",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-1AvfZ_oGkwVJID4",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Nixon in China",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGkwVJID4",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17A8v0G65zyk5-u",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Drag Queen Christmas (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "warner-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "A Drag Queen Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G65zyk5-u"
+    },
+    {
+      "id": "2026-11-19-tm-Z1r9uZrrZCuZ1AvPz-d",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPz-d",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-19-tm-16vfZ_31aG7zV_q",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "ROA",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "ROA",
+      "act": true,
+      "performerIds": [
+        "K8vZ917raXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16vfZ_31aG7zV_q",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-rZ7HnEZ1Af0oAd",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gene",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Gene",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af0oAd",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-17A8v0G62TOoHHg",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Ilana Glazer Live!",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ilana Glazer",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G62TOoHHg"
+    },
+    {
+      "id": "2026-11-20-espn-maryland-mbb-401916299",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Maryland vs. Wagner",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-mbb",
+        "away": "wagner",
+        "awayOpponent": "wagner"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13449,
+        "low": 11617,
+        "high": 15410,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-sa-hubison-com-12664",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Howard vs. George Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "burr-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "howard-wbb",
+        "away": "gw-wbb",
+        "awayOpponent": "george-washington"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-tm-17A8v0G6CJzKIGT",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "for KING & COUNTRY",
+      "officialTitle": "for KING + COUNTRY: A Drummer Boy Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "eaglebank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "for KING & COUNTRY",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172rR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6CJzKIGT",
+      "expectedDraw": {
+        "count": 5700,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-17A8v0G6G1lNr6W",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Wage War",
+      "officialTitle": "WAGE WAR - EMERGENCY BROADCAST TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Wage War",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6G1lNr6W",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1A4Zk3FGkdZJ17d",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "They Might Be Giants",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "They Might Be Giants",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk3FGkdZJ17d",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1AvfZ_oGklvm9oB",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Madama Butterfly",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGklvm9oB",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1A4ZkuNGkdv5Bxq",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The NINETEEN 62 at CFG Bank Arena - Doja Cat",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "The NINETEEN 62 at CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkuNGkdv5Bxq",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1A4ZkuNGkdvZn-n",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Fearless Club At CFG Bank Arena - Doja Cat",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Fearless Club At CFG Bank Arena",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkuNGkdvZn-n",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1AvfZbSGknFRe1X",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "cfg-bank-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173TJf",
+        "K8vZ917_glV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZbSGknFRe1X",
+      "expectedDraw": {
+        "count": 14000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z1r9uZrrZCuZ1AvPz-7",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPz-7",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-tm-17A8v0G6ueT4aRL",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mike Epps",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Mike Epps",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6ueT4aRL",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1a4Zk3f08vfZeG8",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace - USA & Canada Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Palace",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KbJV",
+        "K8vZ917qayV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1a4Zk3f08vfZeG8",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1A4Zk3pGkd1HQYz",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Full Moon Fever",
+      "officialTitle": "Full Moon Fever: A Tom Petty Tribute",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Full Moon Fever",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk3pGkd1HQYz",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-rZ7HnEZ1Af0AuS",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Caroline",
+      "place": {
+        "type": "venue",
+        "venueId": "howard-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Caroline",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af0AuS",
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1AvfZ_8GkS7ma47",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Eric Prydz",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Eric Prydz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_8GkS7ma47",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-maryland-wbb-401918918",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Maryland vs. Morgan St",
+      "place": {
+        "type": "venue",
+        "venueId": "umd-xfinity-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "maryland-wbb",
+        "away": "morgan-st",
+        "awayOpponent": "morgan-st"
+      },
+      "rank": {
+        "home": 20
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7020,
+        "low": 5455,
+        "high": 9035,
+        "fromCrowds": true,
+        "games": 32,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 32 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-gomason-com-14266",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "George Mason vs. JMU",
+      "place": {
+        "type": "venue",
+        "venueId": "eaglebank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gmu-wbb",
+        "away": "JMU",
+        "awayOpponent": "jmu"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7-OaZ",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Navy Midshipmen Football vs. Memphis Tigers Football",
+      "place": {
+        "type": "venue",
+        "venueId": "navymarine-corps-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Navy Midshipmen Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-OaZ"
+    },
+    {
+      "id": "2026-11-21-tm-17A8v0G6GpL1ziD",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "12:30",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "officialTitle": "LENNY PEARCE  -  TODDLER RAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GpL1ziD",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1AvfZ_oGkwVEIDq",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Washington National Opera presents Nixon in China",
+      "place": {
+        "type": "venue",
+        "venueId": "dar-constitution-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "Washington National Opera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvfZ_oGkwVEIDq",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z1r9uZrrZCuZ1AvPz-k",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPz-k",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-21-espn-gmu-mbb-401918995",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "kind": "game",
+      "title": "George Mason vs. South Florida",
+      "place": {
+        "type": "venue",
+        "venueId": "eaglebank-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gmu-mbb",
+        "away": "usf-mbb",
+        "awayOpponent": "south-florida"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3268,
+        "low": 2887,
+        "high": 4265,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-17A8v0G6GpLQFRh",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Lenny Pearce",
+      "officialTitle": "LENNY PEARCE  -  TODDLER RAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-silver-spring"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Lenny Pearce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6GpLQFRh",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-georgetown-mbb-401909517",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Georgetown vs. Coppin St",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdonough-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "georgetown-mbb",
+        "away": "coppin-st",
+        "awayOpponent": "coppin-st"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-21-tm-17A8v0G616oCWWa",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Michelle Wolf - Best Job in the World",
+      "place": {
+        "type": "venue",
+        "venueId": "lincoln-theatre-dc"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Michelle Wolf",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G616oCWWa"
+    },
+    {
+      "id": "2026-11-21-tm-17A8v0G62Lazlo5",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dark Star Orchestra",
+      "officialTitle": "Dark Star Orchestra - Celebrating 45 Years of Reckoning",
+      "place": {
+        "type": "venue",
+        "venueId": "the-anthem-dc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Dark Star Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171IA0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G62Lazlo5",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1A4Zk34Gkegk6aY",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "They Might Be Giants",
+      "place": {
+        "type": "venue",
+        "venueId": "9-30-club"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "They Might Be Giants",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4Zk34Gkegk6aY",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 1200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1A4ZkGyGkdPgPRp",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "capital-one-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173TJf",
+        "K8vZ917_glV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkGyGkdPgPRp",
+      "expectedDraw": {
+        "count": 11603,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z1r9uZrrZCuZ1AvPz-A",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "the-national-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z1r9uZrrZCuZ1AvPz-A",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-21-tm-17A8v0G6ueTpaRS",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Mike Epps",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-national-harbor-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Mike Epps",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17A8v0G6ueTpaRS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1A4ZkfKGke00beX",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "National Symphony Orchestra: The Nutcracker & Cinderella",
+      "place": {
+        "type": "venue",
+        "venueId": "lisner-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "National Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A4ZkfKGke00beX",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-164Zk4faFZAuFv1G",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Alison Wonderland",
+      "officialTitle": "Alison Wonderland Presents: Let Them Rave",
+      "place": {
+        "type": "venue",
+        "venueId": "echostage"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Alison Wonderland",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "164Zk4faFZAuFv1G",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-07-sa-gwsports-com-15712",
+      "date": "2026-11-07",
+      "start": "08:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-capitals-401892662",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Temple Owls Football at Navy Midshipmen Football and New York City FC at D.C. United 28 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18055,
+        "low": 17944,
+        "high": 18165
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-guhoyas-com-21897",
+      "date": "2026-11-07",
+      "start": "12:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z1r9uZrrZCuZ1AvPzOa",
+      "date": "2026-11-07",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z7r9jZ1A7-OFz",
+      "date": "2026-11-07",
+      "start": "15:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "New York City FC at D.C. United and Panthers at Capitals 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1A4ZkCKGkd16Qa1",
+      "date": "2026-11-07",
+      "start": "16:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Temple Owls Football at Navy Midshipmen Football 28 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-gw-mbb-401926825",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1754,
+        "low": 1382,
+        "high": 1967
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1A4ZkokGkeHVn3m",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-rZ7HnEZ1AfP_pK",
+      "date": "2026-11-07",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-gomason-com-14484",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-sa-umterps-com-21683",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17A8v0G6533KP2H",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AvfZ_oGklvtMo2",
+      "date": "2026-11-07",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-espn-georgetown-mbb-401909513",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4648,
+        "low": 4184,
+        "high": 7621
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17A8v0G6umB0Bf5",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-Z1r9uZrrZCuZ1AvPzrb",
+      "date": "2026-11-07",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1A4Zkf-Gkd1-lBn",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1AvfZ_aGkITUrHr",
+      "date": "2026-11-07",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-17A8v0G61rNpBAo",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-07-tm-1A4Zk39GkdQ8T5x",
+      "date": "2026-11-07",
+      "start": "22:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-maryland-wbb-401918915",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Rams at Commanders and Thorns at Spirit 7.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6506,
+        "low": 5896,
+        "high": 7239
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-washington-401873043",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Thorns at Spirit 8.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 64205,
+        "low": 63292,
+        "high": 64704
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-hubison-com-12455",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-umterps-com-22454",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z7r9jZ1AAvPvx",
+      "date": "2026-11-08",
+      "start": "13:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-sa-guhoyas-com-22211",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z1r9uZrrZCuZ1AvPzO8",
+      "date": "2026-11-08",
+      "start": "14:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-espn-spirit-401932957",
+      "date": "2026-11-08",
+      "start": "15:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Rams at Commanders 8.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21790,
+        "low": 17277,
+        "high": 23275
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-1A4ZkfgGkdFE_8d",
+      "date": "2026-11-08",
+      "start": "17:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17A8v0G6GCQanCy",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17A8v0G6GK0Lsw3",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-17A8v0G6u6Liwmo",
+      "date": "2026-11-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-Z1r9uZrrZCuZ1AvPzr_",
+      "date": "2026-11-08",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-08-tm-rZ7HnEZ1AfOxGd",
+      "date": "2026-11-08",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-09-tm-17A8v0G61pc6FdB",
+      "date": "2026-11-09",
+      "start": "19:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-georgetown-mbb-401909514",
+      "date": "2026-11-10",
+      "start": "18:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-17A8v0G6Cngp9Y6",
+      "date": "2026-11-10",
+      "start": "18:35",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-10-espn-gw-mbb-401911209",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1682,
+        "low": 1598,
+        "high": 1703
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A4Zk3vGkd85lNI",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Dave Matthews Band 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11603
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A4ZkfkGkd4DDF3",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Dave Matthews Band and Fearless Club At CFG Bank Arena next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A4ZkfkGkdK8Qzk",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Dave Matthews Band and The NINETEEN 62 at CFG Bank Are… next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1kA8vPevGAuW1qW",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "Sombr · You Are The Reason Tour 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14000
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-Z1r9uZrrZCuZ1AvPzOZ",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-17A8v0G62BUJ_ZI",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-17A8v0G65MNHazY",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1225
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-1A4ZkoVGkdsqci3",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-rZ7HnEZ1AfFt47",
+      "date": "2026-11-10",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAvJZe",
+      "date": "2026-11-11",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-gwsports-com-15755",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-umterps-com-20216",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-17A8v0G6urDxFdJ",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1AvfZ_aGkmVpzjT",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-17A8v0G62WHGV7Z",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1A4ZkfIGkd1_Q06",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z1r9uZrrZCuZ1AvPzOv",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1A4ZkffGkeIwzLi",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1AvfZ_3GktiPKBi",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1225
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-rZ7HnEZ1AfFk87",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-wizards-401909977",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15520,
+        "low": 15331,
+        "high": 15657
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1A4ZkfKGke0xzeq",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1A4ZkoYGkeO1kE7",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z1r9uZrrZCuZ1AvPzOe",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-164Zk3FFYZACFekC",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-17A8v0G6umEV6YT",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1A4ZkfbGkewKp2O",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1AvfZ_KGkV3WoML",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-hubison-com-12740",
+      "date": "2026-11-12",
+      "start": null,
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-gwsports-com-15604",
+      "date": "2026-11-13",
+      "start": "13:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-gomason-com-14254",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-hubison-com-12415",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1A4ZkosGkdvOtGL",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-gw-mbb-401911210",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2118,
+        "low": 2049,
+        "high": 3694
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AvfZ_oGklvnMox",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AvfZ_aGkVxYDa3",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z1r9uZrrZCuZ1AvPzOd",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-maryland-mbb-401916297",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Geese 9.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13449,
+        "low": 11617,
+        "high": 15410
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17A8v0G6Gpn4B8s",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17A8v0G6GpoB9Zv",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1A4Zk39GkdTr0P4",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Virginia at Maryland (MBB) 9.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AvfZ_oGklNKnKW",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1847
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-rZ7HnEZ1AfagF7",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17A8v0G65njtM7g",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AvfZ_oGkReohCs",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-maryland-football-401858520",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Moderate",
+        "why": "USMMA · Secretaries' Cup 9.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 50388,
+        "low": 38317,
+        "high": 53138
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gwsports-com-15744",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-hubison-com-12307",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Extreme",
+        "why": "Wisconsin at Maryland (FB) and USMMA · Secretaries' Cup 6.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17A8v0G6CkdnNku",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Wisconsin at Maryland (FB) 9.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17A8v0G6uU_hPal",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Wisconsin at Maryland (FB) 9.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z1r9uZrrZCuZ1AvPzOo",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gomason-com-14255",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gomason-com-14265",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Extreme",
+        "why": "Wisconsin at Maryland (FB) and Secretaries' Cup Fan Fest 22 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AAvPv0",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gwsports-com-15772",
+      "date": "2026-11-14",
+      "start": "17:30",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17A8v0G61MbWhsC",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AvfZ_aGkS8AGoF",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-capital-city-go-go-401914549",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 688,
+        "low": 607,
+        "high": 1016
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-capitals-401892714",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Disney Descendants, ZOMBIES & C… and Fearless Club At CFG Bank Arena 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17729,
+        "low": 17620,
+        "high": 17837
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-16vfZ_7FZG7tDbF",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Devils at Capitals and Fearless Club At CFG Bank Arena 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17A8v0G61Q3cFPq",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A4ZkoEGkd9GHJh",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Devils at Capitals and Disney Descendants, ZOMBIES & C… 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A4ZkoEGkd9ZiP0",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Devils at Capitals and Disney Descendants, ZOMBIES & C… 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AvfZ_oGkwVPbD1",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AvfZ_3Gkl9Nw1V",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 8.2,
+        "friction": "Heavy",
+        "why": "Devils at Capitals and Disney Descendants, ZOMBIES & C… 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z1r9uZrrZCuZ1AvPzO7",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A4ZkfKGke0NIeS",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AvfZ_8GkYruMRo",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-rZ7HnEZ1Af00oN",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A4ZkowGkdBJuWJ",
+      "date": "2026-11-14",
+      "start": "22:00",
+      "read": {
+        "rating": 8.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-maryland-wbb-401918916",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Rockets at Wizards 8.0 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6506,
+        "low": 5896,
+        "high": 7239
+      }
+    },
+    {
+      "eventId": "2026-11-15-sa-guhoyas-com-22213",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AvfZ_oGklvlEoE",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z1r9uZrrZCuZ1AvPzO3",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-16vfZ_37wG7nz5L",
+      "date": "2026-11-15",
+      "start": "16:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G623zrtPi",
+      "date": "2026-11-15",
+      "start": "16:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G61VJceF3",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-wizards-401909991",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Chris Tomlin, Tobymac, Third Day and Fearless Club At CFG Bank Arena 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15721,
+        "low": 14765,
+        "high": 16652
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G613u1U0-",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G61m7lVyn",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Rockets at Wizards and Fearless Club At CFG Bank Arena 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G61xEsQin",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Chris Tomlin, Tobymac, Third Day and Rockets at Wizards next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G61xtTnyH",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Chris Tomlin, Tobymac, Third Day and Rockets at Wizards next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-17A8v0G6GS9HFwz",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1A4ZkftGkdUPYH8",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z1r9uZrrZCuZ1AvPzOA",
+      "date": "2026-11-15",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-rZ7HnEZ1AfuzqV",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-gw-mbb-401911211",
+      "date": "2026-11-16",
+      "start": "12:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1682,
+        "low": 1598,
+        "high": 1703
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-capital-city-go-go-401914559",
+      "date": "2026-11-16",
+      "start": "14:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 292,
+        "low": 181,
+        "high": 456
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-maryland-mbb-401916298",
+      "date": "2026-11-16",
+      "start": "18:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Heavy",
+        "why": "Memphis Grizzlies at Wizards 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9712,
+        "low": 9485,
+        "high": 9871
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-wizards-401909996",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "Alcorn St at Maryland (MBB) and Baltimore Ravens v Los Angeles… 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15458,
+        "low": 15269,
+        "high": 15594
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17A8v0G6G5hsyS3",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "Baltimore Ravens v Los Angeles… 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17A8v0G629xY2jP",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17A8v0G6uCYxtFq",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-1AvfZ_FGkUM0yVV",
+      "date": "2026-11-16",
+      "start": "20:15",
+      "read": {
+        "rating": 4.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-sa-gwsports-com-15773",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1A4Zko-GkdyCR8u",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Andrea Gibson's Love Letter Fro… 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11603
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1A4ZkoKGkeVWhsJ",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1A4Zkf6GkdJ0c00",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Disney Descendants, ZOMBIES & C… 1.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z1r9uZrrZCuZ1AvPzOK",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-17A8v0G62rYTbMX",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-17A8v0G6udaxBN_",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1225
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-rZ7HnEZ1Af-Aed",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A7QZQK",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1976
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-maryland-wbb-401918917",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "draw": {
+        "count": 4940,
+        "low": 4930,
+        "high": 5201
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-georgetown-mbb-401909516",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "draw": {
+        "count": 2750,
+        "low": 2427,
+        "high": 2915
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-gmu-mbb-401920075",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "draw": {
+        "count": 2481,
+        "low": 2367,
+        "high": 2747
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-hubison-com-12663",
+      "date": "2026-11-18",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-18-tm-17A8v0G652QcQgT",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1AvfZ_oGklvcEoz",
+      "date": "2026-11-18",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-18-tm-1A4ZkfkGkdT4m3D",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z1r9uZrrZCuZ1AvPzOf",
+      "date": "2026-11-18",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-18-tm-1A4Zkf4GkeVR1oT",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1A4ZkowGkdUrqi5",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1kA8vxb-GA15UVL",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "draw": {
+        "count": 1847
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-rZ7HnEZ1Afk94f",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z1r9uZrrZCuZ1AeAM0o",
+      "date": "2026-11-19",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-capitals-401892746",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "ROA 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17061,
+        "low": 16675,
+        "high": 17656
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-1A4Zk3FGkdZaQvH",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-1AvfZ_oGkwVJID4",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17A8v0G65zyk5-u",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z1r9uZrrZCuZ1AvPz-d",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-16vfZ_31aG7zV_q",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Sabres at Capitals 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-rZ7HnEZ1Af0oAd",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17A8v0G62TOoHHg",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-espn-maryland-mbb-401916299",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Doja Cat and The NINETEEN 62 at CFG Bank Are… 27 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13449,
+        "low": 11617,
+        "high": 15410
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-hubison-com-12664",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17A8v0G6CJzKIGT",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "friction": "Heavy",
+        "why": "Doja Cat and The NINETEEN 62 at CFG Bank Are… 49 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5700
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17A8v0G6G1lNr6W",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1A4Zk3FGkdZJ17d",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1AvfZ_oGklvm9oB",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1A4ZkuNGkdv5Bxq",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Doja Cat and Fearless Club At CFG Bank Arena next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1A4ZkuNGkdvZn-n",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Doja Cat and The NINETEEN 62 at CFG Bank Are… next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1AvfZbSGknFRe1X",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "The NINETEEN 62 at CFG Bank Are… and Fearless Club At CFG Bank Arena next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z1r9uZrrZCuZ1AvPz-7",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17A8v0G6ueT4aRL",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1a4Zk3f08vfZeG8",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "friction": "Heavy",
+        "why": "Doja Cat and The NINETEEN 62 at CFG Bank Are… 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1A4Zk3pGkd1HQYz",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-rZ7HnEZ1Af0AuS",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1AvfZ_8GkS7ma47",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-maryland-wbb-401918918",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "JMU at George Mason (WBB) 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7020,
+        "low": 5455,
+        "high": 9035
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-gomason-com-14266",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Morgan St at Maryland (WBB) and Memphis Tigers Football at Navy Midshipmen Football 23 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7-OaZ",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "JMU at George Mason (WBB) 44 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17A8v0G6GpL1ziD",
+      "date": "2026-11-21",
+      "start": "12:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1AvfZ_oGkwVEIDq",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z1r9uZrrZCuZ1AvPz-k",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-gmu-mbb-401918995",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3268,
+        "low": 2887,
+        "high": 4265
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17A8v0G6GpLQFRh",
+      "date": "2026-11-21",
+      "start": "17:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-georgetown-mbb-401909517",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17A8v0G616oCWWa",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17A8v0G62Lazlo5",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Doja Cat 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1A4Zk34Gkegk6aY",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1200
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1A4ZkGyGkdPgPRp",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Dark Star Orchestra 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11603
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z1r9uZrrZCuZ1AvPz-A",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17A8v0G6ueTpaRS",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1A4ZkfKGke00beX",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-164Zk4faFZAuFv1G",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    }
+  ]
+}

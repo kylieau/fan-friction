@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-bc-mbb-401909552",
+      "metroId": "boston",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bc-mbb",
+      "home": {
+        "name": "Boston College",
+        "score": 71
+      },
+      "away": {
+        "name": "UMass",
+        "score": 55
+      },
+      "attendance": 4734,
+      "capturedAt": "2026-11-07T15:04:12.444Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "16:04"
+    }
+  ]
+}

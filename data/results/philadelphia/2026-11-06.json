@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-villanova-mbb-401921285",
+      "metroId": "philadelphia",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-mbb",
+      "home": {
+        "name": "Villanova",
+        "score": 95
+      },
+      "away": {
+        "name": "Holy Cross",
+        "score": 66
+      },
+      "attendance": 6501,
+      "capturedAt": "2026-11-07T15:04:12.677Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

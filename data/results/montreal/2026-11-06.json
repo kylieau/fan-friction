@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-ht-laval-rocket-1029257",
+      "metroId": "montreal",
+      "date": "2026-11-06",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 6
+      },
+      "away": {
+        "name": "Monsters",
+        "score": 2
+      },
+      "attendance": 10019,
+      "capturedAt": "2026-11-07T15:04:11.825Z"
+    }
+  ]
+}

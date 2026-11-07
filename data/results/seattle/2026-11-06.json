@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-ht-everett-silvertips-1023254",
+      "metroId": "seattle",
+      "date": "2026-11-06",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 2
+      },
+      "away": {
+        "name": "Tigers",
+        "score": 5
+      },
+      "attendance": 7017,
+      "capturedAt": "2026-11-07T15:04:08.210Z"
+    }
+  ]
+}

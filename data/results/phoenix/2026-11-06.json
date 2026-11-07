@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-asu-hockey-401904868",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "asu-hockey",
+      "home": {
+        "name": "Arizona State",
+        "score": 3
+      },
+      "away": {
+        "name": "Denver",
+        "score": 6
+      },
+      "capturedAt": "2026-11-07T15:04:15.416Z"
+    },
+    {
+      "eventId": "2026-11-06-espn-asu-mbb-401921732",
+      "metroId": "phoenix",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-mbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 90
+      },
+      "away": {
+        "name": "N Colorado",
+        "score": 63
+      },
+      "attendance": 5295,
+      "capturedAt": "2026-11-07T15:04:15.416Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    }
+  ]
+}

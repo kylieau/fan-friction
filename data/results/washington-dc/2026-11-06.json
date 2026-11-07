@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-gmu-mbb-401920072",
+      "metroId": "washington-dc",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "eaglebank-arena",
+      "homeTeamId": "gmu-mbb",
+      "home": {
+        "name": "George Mason",
+        "score": 68
+      },
+      "away": {
+        "name": "Coppin St",
+        "score": 51
+      },
+      "attendance": 3301,
+      "capturedAt": "2026-11-07T15:04:19.590Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

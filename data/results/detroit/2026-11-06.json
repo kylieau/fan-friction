@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-michigan-mbb-401920685",
+      "metroId": "detroit",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "michigan-mbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 77
+      },
+      "away": {
+        "name": "UConn",
+        "score": 85
+      },
+      "attendance": 18053,
+      "capturedAt": "2026-11-07T15:04:11.575Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

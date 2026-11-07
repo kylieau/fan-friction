@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-ht-henderson-silver-knights-1029256",
+      "metroId": "las-vegas",
+      "date": "2026-11-06",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 1
+      },
+      "away": {
+        "name": "Gulls",
+        "score": 0
+      },
+      "attendance": 2948,
+      "capturedAt": "2026-11-07T15:04:16.666Z"
+    }
+  ]
+}

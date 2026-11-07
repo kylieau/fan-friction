@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-stanford-mbb-401921727",
+      "metroId": "bay-area",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-mbb",
+      "home": {
+        "name": "Stanford",
+        "score": 81
+      },
+      "away": {
+        "name": "Oakland",
+        "score": 63
+      },
+      "attendance": 2706,
+      "capturedAt": "2026-11-07T15:04:10.278Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    }
+  ]
+}

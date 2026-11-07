@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-ht-portland-winterhawks-1023257",
+      "metroId": "portland",
+      "date": "2026-11-06",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "veterans-memorial-coliseum",
+      "homeTeamId": "portland-winterhawks",
+      "home": {
+        "name": "Winterhawks",
+        "score": 5
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 6
+      },
+      "attendance": 3823,
+      "capturedAt": "2026-11-07T15:04:20.612Z"
+    }
+  ]
+}

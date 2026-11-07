@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-lakers-401909294",
+      "metroId": "la",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 124
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 118
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-11-07T15:04:07.322Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
+    },
+    {
+      "eventId": "2026-11-06-espn-ucla-mbb-401922219",
+      "metroId": "la",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 114
+      },
+      "away": {
+        "name": "North Florida",
+        "score": 63
+      },
+      "attendance": 4684,
+      "capturedAt": "2026-11-07T15:04:07.322Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "22:41"
+    }
+  ]
+}

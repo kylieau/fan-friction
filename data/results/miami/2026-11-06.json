@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-fiu-mbb-401922248",
+      "metroId": "miami",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ocean-bank-convocation-center",
+      "homeTeamId": "fiu-mbb",
+      "home": {
+        "name": "FIU",
+        "score": 85
+      },
+      "away": {
+        "name": "West Florida",
+        "score": 75
+      },
+      "capturedAt": "2026-11-07T15:04:13.651Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-06-espn-fort-lauderdale-united-401878613",
+      "metroId": "miami",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "beyond-bancard-field",
+      "homeTeamId": "fort-lauderdale-united",
+      "home": {
+        "name": "Fort Lauderdale Utd",
+        "score": 0
+      },
+      "away": {
+        "name": "Sun FC",
+        "score": 0
+      },
+      "attendance": 1324,
+      "capturedAt": "2026-11-07T15:04:13.651Z"
+    },
+    {
+      "eventId": "2026-11-06-espn-miami-hurricanes-mbb-401921719",
+      "metroId": "miami",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "watsco-center",
+      "homeTeamId": "miami-hurricanes-mbb",
+      "home": {
+        "name": "Miami",
+        "score": 83
+      },
+      "away": {
+        "name": "Wagner",
+        "score": 57
+      },
+      "attendance": 5707,
+      "capturedAt": "2026-11-07T15:04:13.651Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "21:11"
+    }
+  ]
+}

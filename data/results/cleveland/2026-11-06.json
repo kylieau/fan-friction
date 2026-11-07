@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-cavaliers-401909289",
+      "metroId": "cleveland",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 119
+      },
+      "away": {
+        "name": "76ers",
+        "score": 95
+      },
+      "attendance": 19432,
+      "capturedAt": "2026-11-07T15:04:14.364Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:43"
+    },
+    {
+      "eventId": "2026-11-06-espn-cleveland-state-mbb-401921166",
+      "metroId": "cleveland",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wolstein-center",
+      "homeTeamId": "cleveland-state-mbb",
+      "home": {
+        "name": "Cleveland St",
+        "score": 103
+      },
+      "away": {
+        "name": "UM Dearborn",
+        "score": 79
+      },
+      "attendance": 2036,
+      "capturedAt": "2026-11-07T15:04:14.364Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

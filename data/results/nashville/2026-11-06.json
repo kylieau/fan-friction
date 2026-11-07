@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-belmont-wbb-401913863",
+      "metroId": "nashville",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-wbb",
+      "home": {
+        "name": "Belmont",
+        "score": 66
+      },
+      "away": {
+        "name": "South Florida",
+        "score": 69
+      },
+      "attendance": 1091,
+      "capturedAt": "2026-11-07T15:04:14.604Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "20:41"
+    }
+  ]
+}

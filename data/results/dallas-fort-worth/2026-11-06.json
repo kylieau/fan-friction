@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-mavericks-401909290",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 112
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 100
+      },
+      "attendance": 19568,
+      "capturedAt": "2026-11-07T15:04:11.272Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-06-espn-smu-football-401858288",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gerald-j-ford-stadium",
+      "homeTeamId": "smu-football",
+      "home": {
+        "name": "SMU",
+        "score": 51
+      },
+      "away": {
+        "name": "Virginia Tech",
+        "score": 28
+      },
+      "attendance": 32566,
+      "capturedAt": "2026-11-07T15:04:11.272Z",
+      "duration": {
+        "minutes": 206,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-06-espn-tcu-mbb-401919048",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 106
+      },
+      "away": {
+        "name": "Southern",
+        "score": 54
+      },
+      "attendance": 4633,
+      "capturedAt": "2026-11-07T15:04:11.272Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

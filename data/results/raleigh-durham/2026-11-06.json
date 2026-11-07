@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-nc-state-mbb-401918956",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "nc-state-mbb",
+      "home": {
+        "name": "NC State",
+        "score": 77
+      },
+      "away": {
+        "name": "ETSU",
+        "score": 63
+      },
+      "attendance": 15413,
+      "capturedAt": "2026-11-07T15:04:20.895Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-06-espn-unc-mbb-401913100",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dean-smith-center",
+      "homeTeamId": "unc-mbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 109
+      },
+      "away": {
+        "name": "Wofford",
+        "score": 70
+      },
+      "attendance": 17032,
+      "capturedAt": "2026-11-07T15:04:20.895Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "19:04"
+    }
+  ]
+}

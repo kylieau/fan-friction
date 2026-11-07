@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-bucks-401909292",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "bucks",
+      "home": {
+        "name": "Bucks",
+        "score": 107
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 121
+      },
+      "attendance": 14057,
+      "capturedAt": "2026-11-07T15:04:12.029Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-11-06-espn-marquette-mbb-401909523",
+      "metroId": "milwaukee",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "marquette-mbb",
+      "home": {
+        "name": "Marquette",
+        "score": 93
+      },
+      "away": {
+        "name": "Detroit Mercy",
+        "score": 32
+      },
+      "attendance": 3750,
+      "capturedAt": "2026-11-07T15:04:12.029Z",
+      "duration": {
+        "minutes": 109,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

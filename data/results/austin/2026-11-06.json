@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-ht-texas-stars-1029262",
+      "metroId": "austin",
+      "date": "2026-11-06",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 4
+      },
+      "away": {
+        "name": "Wolves",
+        "score": 3
+      },
+      "attendance": 5750,
+      "capturedAt": "2026-11-07T15:04:15.050Z"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-gophers-mbb-401916304",
+      "metroId": "minneapolis",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-mbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 76
+      },
+      "away": {
+        "name": "St Thomas",
+        "score": 62
+      },
+      "attendance": 10604,
+      "capturedAt": "2026-11-07T15:04:17.999Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-06-espn-st-thomas-hockey-401904675",
+      "metroId": "minneapolis",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 5
+      },
+      "away": {
+        "name": "Alaska Anchorage",
+        "score": 2
+      },
+      "capturedAt": "2026-11-07T15:04:17.999Z"
+    },
+    {
+      "eventId": "2026-11-06-espn-wild-401892660",
+      "metroId": "minneapolis",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 4
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 1
+      },
+      "attendance": 19009,
+      "capturedAt": "2026-11-07T15:04:17.999Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

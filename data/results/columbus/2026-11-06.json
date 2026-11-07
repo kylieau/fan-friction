@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-06",
+  "results": [
+    {
+      "eventId": "2026-11-06-espn-osu-mbb-401916314",
+      "metroId": "columbus",
+      "date": "2026-11-06",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 89
+      },
+      "away": {
+        "name": "Youngstown St",
+        "score": 65
+      },
+      "attendance": 10768,
+      "capturedAt": "2026-11-07T15:04:14.123Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "18:31"
+    }
+  ]
+}
