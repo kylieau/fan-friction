@@ -10114,7 +10114,8 @@ a.follow-lead::after {
 .filter-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 14px 8px; /* rows 14 apart: each chip's 7px tap extension meets the next row's without overlapping (G4) */
+  margin-top: 6px; /* the same 14 from the date fields' row above */
 }
 
 /* The Team dropdown in the Your Stubs filter (build 7.1, item 8): the app's form select, a white field on the sheet. */
