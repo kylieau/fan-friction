@@ -54,23 +54,38 @@ export function StubFromFaveMenu({ row, event, rect, to, lifted, onClose }: { ro
 
   const close = useRef(onClose);
   close.current = onClose;
+  const sheetOpen = useRef(false);
+  sheetOpen.current = sheet;
   useEffect(() => {
     const onKey = (ev: KeyboardEvent) => {
+      // The Stub it sheet, once open, handles its own keys.
+      if (sheetOpen.current) return;
       if (ev.key === 'Escape') {
         ev.stopPropagation();
         close.current();
         return;
       }
-      if (ev.key !== 'ArrowDown' && ev.key !== 'ArrowUp') return;
       const items = Array.from(menu.current?.querySelectorAll<HTMLElement>('[role="menuitem"]') ?? []);
-      if (items.length === 0) return;
       const i = items.indexOf(document.activeElement as HTMLElement);
+      if (items.length === 0) return;
+      // Tab and the arrows stay inside the menu (the page behind it is not inert; BACKLOG, the shared focus rule).
+      if (ev.key === 'Tab') {
+        ev.preventDefault();
+        items[i < 0 ? 0 : (i + (ev.shiftKey ? items.length - 1 : 1)) % items.length].focus();
+        return;
+      }
+      if ((ev.key !== 'ArrowDown' && ev.key !== 'ArrowUp') || i < 0) return;
       ev.preventDefault();
       items[(i + (ev.key === 'ArrowDown' ? 1 : items.length - 1)) % items.length].focus();
     };
     window.addEventListener('keydown', onKey, true);
     return () => window.removeEventListener('keydown', onKey, true);
   }, []);
+
+  // The sheet opened from here takes focus on its first answer, so Tab does not fall back to the page behind.
+  useEffect(() => {
+    if (sheet) (document.querySelector('[aria-label="Stub it"] .stub-choice') as HTMLElement | null)?.focus();
+  }, [sheet]);
 
   const pick = (answer: PlanAnswer) => {
     if (current === answer) {
@@ -86,10 +101,10 @@ export function StubFromFaveMenu({ row, event, rect, to, lifted, onClose }: { ro
 
   return (
     <div className="press-scrim" onClick={onClose}>
-      <div className="press-lift" style={{ top: rect.top }} aria-hidden inert>
+      <div className="press-lift" style={{ top: rect.top, left: rect.left + 12, width: rect.width - 24 }} aria-hidden inert>
         {lifted}
       </div>
-      <div ref={menu} className="press-menu" role="menu" aria-label={`Stub ${row.title}`} style={{ top: top ?? rect.bottom + 12, visibility: top === null ? 'hidden' : undefined }} onClick={(e) => e.stopPropagation()}>
+      <div ref={menu} className="press-menu" role="menu" aria-label={`Stub ${row.title}`} style={{ top: top ?? rect.bottom + 12, left: rect.left + 44, width: Math.min(290, rect.width - 56), visibility: top === null ? 'hidden' : undefined }} onClick={(e) => e.stopPropagation()}>
         {ANSWERS.map((a) => (
           <button key={a.answer} type="button" role="menuitem" className="press-menu-row" aria-current={current === a.answer ? 'true' : undefined} onClick={() => pick(a.answer)}>
             <span className="press-menu-icon">{a.icon}</span>

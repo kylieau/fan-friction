@@ -14410,8 +14410,6 @@ button.types-top-words {
 
 .press-lift {
   position: fixed;
-  left: 12px;
-  right: 12px;
   pointer-events: none;
   background: var(--card);
   border-radius: 16px;
@@ -14425,8 +14423,6 @@ button.types-top-words {
 
 .press-menu {
   position: fixed;
-  left: 44px;
-  width: min(290px, calc(100vw - 56px));
   display: flex;
   flex-direction: column;
   border-radius: 16px;
