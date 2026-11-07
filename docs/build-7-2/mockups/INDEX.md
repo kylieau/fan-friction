@@ -20,7 +20,7 @@ All frames for the 7.2 notes. Paths below are relative to this folder. Annotated
 | `getting-there/` | E / R4. Round 2 frames; **FINAL** path is frame 15 (all three) behind a Settings switch | Locked Nov 4 |
 | `upcoming-plan-rows/` | R5a evolution. `round2/` options. `round3-r1/` status-on-tile (superseded). `r2/` status upper-left on tile (superseded). `r3-final/` **FINAL** match Activity. `r4/` sport-label approaches. `r5-detail/` detail-line placements (**FINAL**: column-C) | Locked Nov 4 |
 | `stub-from-faves/` | New. `round3/` A toggles / B swipe / C long-press (**FINAL**: C, else B). `r2-optional/` Stub It button (builder call) | Locked Nov 4 direction |
-| `watching-season/` | New. Team switch, setup, quiet rows (**FINAL** option 1), rejected "N more", season watch record | Locked Nov 4 |
+| `watching-season/` | New. Team switch, setup, quiet rows (**FINAL** option 1), rejected "N more", season watch record | Locked Nov 4; **built Nov 6** (01 to 04, 06). `07-games-and-spot.png` and `08-game-sheet.png` (drawn Nov 6 by the builder): the Games & Spot page and its per-game sheet, **waiting on Kylie** |
 | `plans-add-seat/` | R6a Add Seat | Locked Nov 4: stays deferred |
 
 ## Round 3 Boards
