@@ -39,7 +39,7 @@ The words follow the app's rules: no "night" (the strip says "Today's Weather"),
 
 ## 4. Archive versus forecast
 - **Future dates:** the nightly rewrites each date's rows while it sits inside the 16-day horizon, so a forecast sharpens as the day nears. The app shows the latest row saved before now.
-- **Past dates:** the row the app shows is the last forecast saved before the stamp locked (24 hours after the day's last start), never the observed weather (Kylie, Oct 5: a past date keeps the forecast it was judged on). Pre-app dates, with no saved forecast, read the reanalysis archive and say "estimated".
+- **Past dates:** the row the app shows today is the last forecast saved before the stamp locked (24 hours after the day's last start), not the observed weather. That is how the code reads (`src/data/weather.ts`), and the verdict itself is frozen at the scheduled start (#11). Kylie's Oct 5 clarification of the no-results rule (AGENTS.md) allows observed weather from the archive to rate a past date; the narrower reading in the code was an assistant's, not hers. Pre-app dates, with no saved forecast, read the reanalysis archive and say "estimated".
 - **Where it lives:** the rows and the daily highs and lows are committed to the repo each night (`data/weather/<city>/`), and the catalog the app reads carries them for the window; the app never calls a weather service itself. Nothing changes here for the sentence or the roof note.
 
 ## 5. Cost and effort
@@ -54,5 +54,5 @@ The words follow the app's rules: no "night" (the strip says "Today's Weather"),
 1. **The sentence: built from the numbers, or a text feed?** Lean: the numbers. Same words in every city, no account, no cost.
 2. **The roof note: retractable rooms only, or every covered room too?** Lean: retractable only, as M33 says; a covered grandstand already shows weather like an open one.
 3. **Open or closed on the day:** state "Retractable roof" and stop, or chase a game-day source later? Lean: state it and stop; no public feed says which.
-4. **Past dates keep the last forecast before the lock** (the Oct 5 rule), or show the observed weather now that the archive has it? Lean: keep the rule; the verdict was judged on the forecast, and the date page says so.
+4. **Past dates: what should the weather card show?** Today it shows the last forecast saved before the lock; your Oct 5 clarification allows the observed weather. Options: (a) the card shows what happened (observed, labeled) while the verdict keeps the frozen forecast it was judged on; (b) the card keeps the frozen forecast too. Lean, as a lean: (a), with "Forecast at 7:00 pm" becoming "What it was" and the stamp untouched, since the stamp rule and the card are separate things.
 5. **The commercial switch, when it comes:** Open-Meteo's paid plan, or MET Norway free with attribution? Lean: MET Norway, since the numbers are the same and the credit line costs nothing; decide only when a launch is in view.
