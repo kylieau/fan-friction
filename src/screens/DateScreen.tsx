@@ -157,7 +157,7 @@ export function DateScreen() {
   );
   // A flagged season game (no longer on the schedule) isn't counted as yours on its day (substitute review for stage 5).
   // Every plan, Interested included (build 7.2, R2b: the future frame draws an Interested strip); a flagged season game stays out.
-  const plans = useMemo(() => log.plans.filter((p) => !p.season?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
+  const plans = useMemo(() => log.plans.filter((p) => !p.season?.gone && !p.watchSeason?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
   // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
   const dayRange = cityDayRange(metro.id, date);

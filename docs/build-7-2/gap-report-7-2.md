@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 7 (b). Codex review of Watching Season, 10 findings, all fixed: away Watched stubs credit the team, the Stub it sheet's place counts as a per-game change, a marked game in an uncovered city settles from the schedule once it has a score, a moved game landing on her own plan gives way, a removal from the Season Tickets page is remembered by the watching season too, doubleheaders never double in the record, the season picker offers the stubs before this season by year, program codes read on both sides of a title, a dropped game's flag reads on the date page and the quiet row, the hidden duplicate detail gone | done | _(this commit)_ | the check script 17 checks; quiet rows, a date page and the team page re-walked headless |
 | 7. Watching Season: the sibling row and foot row on the team page, the setup sheet (Home or A Place, the tickets-win note, Add N games), quiet 44pt rows on Upcoming, the Season Watch Record card; the rules in `watchingSeason.ts` with their check script | done | _(this commit)_ | `scripts/watching-season-check.mjs` 16 checks; the Kings measured headless: 67 games added from 70 (3 planned stay), the card's lines, the default spot changed to Home across all 67, off removes the 67 and keeps the 3 |
 | 6 (b). Codex review of Stub From Your Faves, 6 findings, all fixed: a hold's timer cleared on unmount and the latest callback read through a ref, one pointer per hold (a second finger ends it), the click swallow expires after 700 ms, Tab and the arrows stay inside the menu, the Stub it sheet takes focus when opened from the menu, the overlays sit on the row's own rectangle (a desktop window keeps them in the phone frame) | done | _(this commit)_ | hold, Tab cycle, Escape then Enter, the sheet's focus, drag and tap re-measured; a 1200px window measured |
 | 6. Stub From Your Faves: long-press (C) on a faves row lifts it over a pale blue blur and opens the quick menu (Attending, Watching then the sheet, Interested, Open Event); the Stub It button not built; "vs" on faves rows; plus a pre-existing crash fix on the event page | done | _(this commit)_ | the gate probe (a hold stays on Upcoming, a tap opens the event), then the lift, the menu, every pick, the flip near the tab bar, right-click, Escape and focus measured on 26 seeded Kings rows; a cold event page no longer blank |
@@ -40,6 +41,18 @@ Off: "Watching Season / Add every Kings game, home and away, as Watching. Games 
 Shots: `.playwright-mcp/7-2-watching-card-off.png`, `7-2-watching-sheet-home.png`, `7-2-watching-sheet-place.png`, `7-2-watching-card-on.png`, `7-2-watching-record.png`, `7-2-watching-upcoming-quiet.png`, `7-2-watching-sheet-spot.png`.
 **Not measured:** the record card with watched stubs (none exist on the headless phone; the streak and record arithmetic is exercised by hand in the component, not by a fixture), an earlier season in the picker, the account sync of `watchingSeasons` (signed in), a season whose game moves or is dropped live (the script covers the rule), the quiet row for a team with no record on file (falls back to the stored title).
 
+### Codex review (10 findings, all fixed in the follow-up commit)
+1. **Away Watched stubs credited nobody** (high): a catalog stub names the home side in `sides` and the visitor's tag in `opponents`, and the season matcher read only `sides` and `tags`. Both now read as the stub's sides and tags, so a Dodgers-at-Giants stub counts for the Dodgers. The same matcher serves Season Tickets' attended counts, which gain the same away cases.
+2. **The Stub it sheet's place was not a per-game change** (high): `setWatchDetails` now writes the place into the season's `changed` list (and clears it when the place is the default again), so a default change leaves it be.
+3. **A game in an uncovered city never settled** (high): settlement now falls back, for a season or watching-season plan with no catalog event on its date, to the schedule's own game once it carries a final score, through `eventFromGame`, with no friction stamp (only a catalog night can give one). Schedules are read once per team per run.
+4. **A moved game landing on an event she already planned** made two plans with one id: the moved plan gives way to hers (checked in the script).
+5. **A removal from the Season Tickets page** of a game both switches marked came back as Watching: the removal is written to the watching season too.
+6. **Doubleheaders doubled in the record:** a watched game is matched by its own event id; a stub with no event of its own counts by date only when the team played once that day.
+7. **The season picker** excluded a spring's stubs in an autumn season of the same year: earlier seasons are the watched stubs before this season's first game, by year.
+8. **Program codes in the quiet row's title** read on both sides now ("UCLA MBB" and "UCLA" are one name), and the opponent shows without its code.
+9. **A dropped game's flag** now keeps the plan off the date page's "yours" count and shows "Not on the Schedule" on the quiet row.
+10. **The hidden duplicate detail** on the quiet row is gone; the visible spot is hidden from the reader, whose one line is the row link's label.
+
 ### Builder calls
 1. **Preseason out, postseason in** on its own.
 2. **Any existing plan wins**, not only a ticket's; a ticket adopting a watch plan turns it Attending.
@@ -50,7 +63,7 @@ Shots: `.playwright-mcp/7-2-watching-card-off.png`, `7-2-watching-sheet-home.png
 
 ### Flags
 - **Firm plans everywhere:** the Map's next-saved-night card, a profile's Coming Up and friends' lines now carry a whole season of Watching plans. Lean: leave them; a quieter rule is one line if she prefers.
-- **Away games at buildings outside the covered cities never settle** (pre-existing; BACKLOG, "A plan past its date"): a watch plan for a game whose city the app does not cover finds no catalog event on its date, so it waits past its date instead of becoming a Watched stub. Season Tickets had the same gap for its rare away cases; a season of watching makes it visible. A settlement from the schedule's own game (its score is there) is the fix; it belongs with the 7.3 item on plan details past the window.
+- ~~Away games at buildings outside the covered cities never settle~~ **fixed in 7 (b)**: a marked game settles from the schedule's own game once it has a score (no friction stamp). A game with no score yet (a postponed one) waits, as before.
 - **The team page's "Next at Home" reads "No home game listed yet" for the Kings** while the schedule lists home games (seen in the shots; pre-existing, not this group's).
 
 ## Group 6: Stub From Your Faves (mock C)

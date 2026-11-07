@@ -60,6 +60,13 @@ try {
   const fourth = w.reconcileWatchPlans(third, season, games, today, 'friends');
   check(fourth.find((p) => p.watchSeason?.gameId === 'g6')?.watchSeason.gone === undefined, 'the flag clears once the schedule lists the game again');
 
+  // 3b. A game moved onto a day she already planned by hand gives way to her plan: one plan, hers.
+  const g6Id = t.seasonPlanEventId(games[6]);
+  const hand6 = { id: 'plan-hand6', date: games[6].date, metroId: 'la', eventId: g6Id, title: 'Cubs at Dodgers', visibility: 'friends' };
+  const onto = games.map((g) => (g.id === 'g5' ? { ...g, date: games[6].date, id: 'g5', home: true, opponent: 'Cubs', eventId: g6Id } : g));
+  const collided = w.reconcileWatchPlans([...first, hand6], season, onto, today, 'friends');
+  check(collided.filter((p) => p.eventId === g6Id).length === 2 && !collided.some((p) => p.watchSeason?.gameId === 'g5'), 'a moved game landing on her own plan gives way (no two plans with one id)');
+
   // 4. Off: nothing from the reconcile (the log's stop handles the plans).
   check(w.reconcileWatchPlans(first, { ...season, on: false }, games, today, 'friends').length === first.length, 'an off season changes nothing');
   check(w.reconcileWatchPlans(first, season, [], today, 'friends').length === first.length, 'an empty schedule changes nothing');

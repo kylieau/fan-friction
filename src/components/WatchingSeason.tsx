@@ -211,19 +211,26 @@ export function SeasonWatchRecord({ team, schedule, outcomeOf }: { team: Team; s
   const games = useMemo(() => (schedule ? watchSeasonGames(schedule) : []), [schedule]);
   const current = games.length > 0 ? seasonLabel(games) : null;
   const seasonStart = games.length > 0 ? games.map((g) => g.date).sort()[0] : null;
-  const years = [...new Set(watchedAll.map((e) => e.when.sort.slice(0, 4)))].filter((y) => !seasonStart || y < seasonStart.slice(0, 4)).sort().reverse();
+  // Earlier seasons: the watched stubs from before this season's first game, offered by year (a stub from last spring
+  // is not this autumn's season, whatever the year; Codex, group 7 review).
+  const earlier = seasonStart ? watchedAll.filter((e) => e.when.sort < seasonStart) : current ? [] : watchedAll;
+  const years = [...new Set(earlier.map((e) => e.when.sort.slice(0, 4)))].sort().reverse();
   const options = [...(current ? [current] : []), ...years];
   const [picked, setPicked] = useState<string | null>(null);
   const shown = picked && options.includes(picked) ? picked : (options[0] ?? null);
   if (!season?.on && watchedAll.length === 0) return null;
   if (!shown) return null;
   const isCurrent = shown === current;
-  const watched = isCurrent ? watchedAll.filter((e) => !seasonStart || e.when.sort >= seasonStart) : watchedAll.filter((e) => e.when.sort.startsWith(shown));
-  // Played games in date order; a watched game is a watched stub on the game's own event, or on its date.
+  const watched = isCurrent ? watchedAll.filter((e) => !seasonStart || e.when.sort >= seasonStart) : earlier.filter((e) => e.when.sort.startsWith(shown));
+  // Played games in date order. A watched game is a watched stub on the game's own event; a stub with no event of its
+  // own (a hand-added watch) counts by date only when the team played once that day (a doubleheader never doubles).
   const played = isCurrent ? games.filter((g) => g.score).sort((a, b) => a.date.localeCompare(b.date)) : [];
-  const watchedIds = new Set(watched.map((e) => e.eventId));
-  const watchedDates = new Set(watched.map((e) => e.when.sort));
-  const watchedFlags = played.map((g) => watchedIds.has(seasonPlanEventId(g)) || watchedDates.has(g.date));
+  const playedIds = new Set(played.map((g) => seasonPlanEventId(g)));
+  const watchedIds = new Set(watched.map((e) => e.eventId).filter((id): id is string => Boolean(id)));
+  const looseDates = new Set(watched.filter((e) => !e.eventId || !playedIds.has(e.eventId)).map((e) => e.when.sort));
+  const perDate = new Map<string, number>();
+  for (const g of played) perDate.set(g.date, (perDate.get(g.date) ?? 0) + 1);
+  const watchedFlags = played.map((g) => watchedIds.has(seasonPlanEventId(g)) || (perDate.get(g.date) === 1 && looseDates.has(g.date)));
   const watchedGames = played.filter((_, i) => watchedFlags[i]);
   const wins = isCurrent ? watchedGames.filter((g) => g.score && g.score.us > g.score.them).length : watched.filter((e) => outcomeOf(e) === 'W').length;
   const losses = isCurrent ? watchedGames.filter((g) => g.score && g.score.us < g.score.them).length : watched.filter((e) => outcomeOf(e) === 'L').length;

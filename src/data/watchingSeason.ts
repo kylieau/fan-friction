@@ -87,6 +87,8 @@ export function reconcileWatchPlans(plans: readonly Plan[], season: WatchingSeas
   const next: Plan[] = [];
   const seen = new Set<string>();
   let changed = false;
+  // Events her other plans already hold: a moved game landing on one gives way (her answer wins; Codex, group 7 review).
+  const taken = new Set(plans.filter((plan) => plan.watchSeason?.teamId !== season.teamId).map((plan) => plan.eventId));
   for (const plan of plans) {
     if (plan.watchSeason?.teamId !== season.teamId) {
       next.push(plan);
@@ -107,7 +109,7 @@ export function reconcileWatchPlans(plans: readonly Plan[], season: WatchingSeas
     }
     if (game.date >= today) seen.add(game.id);
     if (plan.eventId !== seasonPlanEventId(game) || plan.date !== game.date) {
-      next.push(movePlan(plan, season.teamId, game));
+      if (!taken.has(seasonPlanEventId(game))) next.push(movePlan(plan, season.teamId, game));
       changed = true;
     } else if (plan.watchSeason.gone) {
       const { gone: _gone, ...marker } = plan.watchSeason;

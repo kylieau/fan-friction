@@ -27,6 +27,7 @@ import { competitionOf, entryType, eventType } from './eventTypes';
 import { cleanHiddenTypes } from './eventTypeFilter';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
+import { eventFromGame } from './gameStub';
 import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
 import { reconcileWatchPlans, spotWatchPlan, watchPlanFrom, watchSpotFor } from './watchingSeason';
 import { getTeamSchedule } from './teamSchedule';
@@ -982,10 +983,20 @@ export async function setWatchDetails(eventId: string, share: 'private' | 'frien
     if (share === 'private' && clean && next.watchedWhere === 'public') next.watchedPlacePrivate = true;
     return next;
   };
+  // A Watching Season game's place set here is this game's own (build 7.2): written down, so a default change leaves it be.
+  const marked = snapshot.plans.find((plan) => plan.eventId === eventId && plan.watch && plan.watchSeason);
+  const season = marked?.watchSeason ? watchingSeasonOf(marked.watchSeason.teamId) : undefined;
+  let watchingSeasons = snapshot.watchingSeasons;
+  if (marked?.watchSeason && season) {
+    const { [marked.watchSeason.gameId]: _old, ...rest } = season.changed;
+    const changed = clean && clean.toLowerCase() !== season.place.toLowerCase() ? { ...rest, [marked.watchSeason.gameId]: clean } : rest;
+    watchingSeasons = withWatchingSeason(snapshot, { ...season, changed });
+  }
   commit({
     ...snapshot,
     plans: snapshot.plans.map((plan) => (plan.eventId === eventId && plan.watch ? apply(plan) : plan)),
     added: snapshot.added.map((entry) => (entry.eventId === eventId && entry.watched ? apply(entry) : entry)),
+    watchingSeasons,
   });
   if (share === 'friends' && clean) return saveWatchPlace(eventId, clean, true);
   return clearWatchPlace(eventId);
@@ -1131,6 +1142,11 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   if (passed.length === 0) return;
   const added: Entry[] = [];
   const settledIds = new Set<string>();
+  const schedules = new Map<string, Promise<TeamGame[] | null>>();
+  const scheduleFor = (teamId: string) => {
+    if (!schedules.has(teamId)) schedules.set(teamId, getTeamSchedule(teamId).catch(() => null));
+    return schedules.get(teamId)!;
+  };
   for (const plan of passed) {
     // A season game the schedule no longer lists stays a flagged plan, never a stub: an old listing still in the catalog
     // must not turn a cancelled game into an Attended one (partial Codex stage 4 finding). She removes it herself.
@@ -1158,8 +1174,22 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
     }
     try {
       const day = await loadDate(plan.metroId, plan.date);
-      const event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === plan.eventId);
-      if (!event) continue;
+      let event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === plan.eventId);
+      // A season or watching-season game at a building the app does not cover (an away game in another city) has no
+      // catalog event: it settles from the schedule's own game once that carries a final score, with no friction stamp,
+      // which only a catalog night can give (Codex, group 7 review; BACKLOG, "A plan past its date").
+      let fromSchedule = false;
+      if (!event) {
+        const marker = plan.season ?? plan.watchSeason;
+        if (!marker) continue;
+        const games = await scheduleFor(marker.teamId);
+        const game = games?.find((g) => g.id === marker.gameId);
+        if (!game?.score) continue;
+        const built = eventFromGame({ teamId: marker.teamId, game });
+        if (!built || built.id !== plan.eventId) continue;
+        event = built;
+        fromSchedule = true;
+      }
       const entry = carryPlanExtras(plan, entryFromEvent(event));
       if (plan.userTags?.length) entry.userTags = plan.userTags;
       // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
@@ -1171,7 +1201,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         if (plan.watchedPlace) entry.watchedPlace = plan.watchedPlace;
         if (plan.watchedPlace) entry.watchedWhere = /^home$/i.test(plan.watchedPlace) ? 'home' : 'public';
       }
-      const stamp = stampNow(event, now);
+      const stamp = fromSchedule ? undefined : stampNow(event, now);
       if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
       settledIds.add(plan.id);
     } catch {
@@ -1302,7 +1332,7 @@ export function resetSeasonGame(planId: string) {
 export function removeSeasonGame(planId: string, reason?: SeasonRemovalReason, soldFor?: number) {
   const plan = snapshot.plans.find((p) => p.id === planId);
   if (!plan?.season) return;
-  commit({ ...snapshot, plans: snapshot.plans.filter((p) => p.id !== planId), seasonTickets: withSeasonRemoval(snapshot, plan, reason, soldFor) });
+  commit({ ...snapshot, plans: snapshot.plans.filter((p) => p.id !== planId), seasonTickets: withSeasonRemoval(snapshot, plan, reason, soldFor), watchingSeasons: withWatchRemoval(snapshot, plan) });
 }
 
 /** Re-add a removed game: its plan comes back with the defaults. On a Partial plan it is picked again too. */
@@ -1358,11 +1388,13 @@ export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot, kind:
   const sport = team.sport.toLowerCase();
   return yourEntries(log).filter((entry) => {
     if (Boolean(entry.watched) !== (kind === 'watched') || entry.kind !== 'game') return false;
-    const sides = entry.sides ?? [];
+    // A catalog stub names the home side in `sides` and the visitor's tag in `opponents` (Codex, group 7 review: an away
+    // game's Watched stub credited nobody), so both read as the stub's sides and tags here.
+    const sides = [...(entry.sides ?? []), ...(entry.opponents ?? [])];
     // A program tag decides first: "SDSU MBB" credits the men's team, never the women's (Codex, 11 (c) review).
     const own = [team.shortName, ...(team.aliases ?? [])].map((n) => n.toLowerCase());
     // A credited tag can repeat its code ("SDSU MBB MBB"); one copy reads.
-    const tags = (entry.tags ?? []).map((t) => t.toLowerCase().replace(/\b(\S+)(\s+\1)+$/, '$1'));
+    const tags = [...(entry.tags ?? []), ...(entry.opponents ?? [])].map((t) => t.toLowerCase().replace(/\b(\S+)(\s+\1)+$/, '$1'));
     const codeOf = (t: Team) => `${t.shortName} ${t.id.split('-').pop()}`.toLowerCase();
     const siblings = Object.values(TEAMS).filter((o) => o.id !== team.id && o.metroId === team.metroId && o.shortName === team.shortName && o.sport.toLowerCase() === sport);
     if (tags.includes(codeOf(team))) return true;

@@ -186,8 +186,8 @@ function QuietWatchRow({ plan, start }: { plan: Plan; start: string | null }) {
   const atHome = /^home$/i.test(spot);
   const day = shortLocalDate(plan.date).replace(/^(\w+), \w+ (\d+)$/, '$1 $2');
   const side = team ? sideOf(plan.title, team.shortName, team.name, team.aliases ?? []) : null;
-  const detail = [start ? clockTime(start) : null, spot].filter(Boolean).join(' · ');
-  const spoken = `Watching, ${team ? `${team.shortName} ${side ?? plan.title}` : plan.title}, ${shortLocalDate(plan.date)}${start ? `, ${clockTime(start)}` : ''}, ${atHome ? 'at home' : `at ${spot}`}`;
+  const gone = Boolean(plan.watchSeason?.gone);
+  const spoken = `Watching, ${team ? `${team.shortName} ${side ?? plan.title}` : plan.title}, ${shortLocalDate(plan.date)}${start ? `, ${clockTime(start)}` : ''}, ${atHome ? 'at home' : `at ${spot}`}${gone ? ', not on the schedule' : ''}`;
   return (
     <div className="activity-row plan-row quiet-row">
       <Link to={to} className="activity-row-link" aria-label={spoken} />
@@ -206,12 +206,12 @@ function QuietWatchRow({ plan, start }: { plan: Plan; start: string | null }) {
         ) : (
           <TitleText text={splitTitleLabel(plan.title).name} />
         )}
+        {gone && <span className="follow-lead-tag">Not on the Schedule</span>}
       </span>
-      <span className="quiet-spot">
+      <span className="quiet-spot" aria-hidden>
         {start && <span className="quiet-time">{clockTime(start)} · </span>}
         <span className={atHome ? 'quiet-home' : 'quiet-place'}>{spot}</span>
       </span>
-      <span className="sr-only">{detail}</span>
     </div>
   );
 }
@@ -221,11 +221,12 @@ function sideOf(title: string, shortName: string, name: string, aliases: readonl
   const plain = splitTitleLabel(title).name;
   const parts = plain.split(/\s+(at|vs\.?)\s+/);
   if (parts.length !== 3) return null;
-  const ours = new Set([shortName, name, ...aliases].map((x) => x.toLowerCase()));
+  // Both sides lose their program code ("UCLA MBB" and "UCLA" are one name; Codex, group 7 review).
+  const ours = new Set([shortName, name, ...aliases].map((x) => withoutProgramCode(x).toLowerCase()));
   const [a, word, b] = parts;
   const isUs = (half: string) => ours.has(withoutProgramCode(half).toLowerCase());
-  if (word.startsWith('vs')) return isUs(a) ? `vs ${b}` : isUs(b) ? `vs ${a}` : null;
-  if (isUs(b)) return `vs ${a}`;
-  if (isUs(a)) return `at ${b}`;
+  if (word.startsWith('vs')) return isUs(a) ? `vs ${withoutProgramCode(b)}` : isUs(b) ? `vs ${withoutProgramCode(a)}` : null;
+  if (isUs(b)) return `vs ${withoutProgramCode(a)}`;
+  if (isUs(a)) return `at ${withoutProgramCode(b)}`;
   return null;
 }
