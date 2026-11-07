@@ -992,9 +992,11 @@ export async function setWatchDetails(eventId: string, share: 'private' | 'frien
     const changed = clean && clean.toLowerCase() !== season.place.toLowerCase() ? { ...rest, [marked.watchSeason.gameId]: clean } : rest;
     watchingSeasons = withWatchingSeason(snapshot, { ...season, changed });
   }
+  // A cleared place on a season game goes back to the season's default spot, never to nothing (advisor, group 7).
+  const fallback = marked?.watchSeason && season && !clean ? season.place : undefined;
   commit({
     ...snapshot,
-    plans: snapshot.plans.map((plan) => (plan.eventId === eventId && plan.watch ? apply(plan) : plan)),
+    plans: snapshot.plans.map((plan) => (plan.eventId === eventId && plan.watch ? (fallback && plan.watchSeason ? spotWatchPlan(apply(plan), fallback) : apply(plan)) : plan)),
     added: snapshot.added.map((entry) => (entry.eventId === eventId && entry.watched ? apply(entry) : entry)),
     watchingSeasons,
   });
@@ -1388,13 +1390,15 @@ export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot, kind:
   const sport = team.sport.toLowerCase();
   return yourEntries(log).filter((entry) => {
     if (Boolean(entry.watched) !== (kind === 'watched') || entry.kind !== 'game') return false;
-    // A catalog stub names the home side in `sides` and the visitor's tag in `opponents` (Codex, group 7 review: an away
-    // game's Watched stub credited nobody), so both read as the stub's sides and tags here.
-    const sides = [...(entry.sides ?? []), ...(entry.opponents ?? [])];
+    // A catalog stub names the home side in `sides` and the visitor's tag in `opponents`. A watched stub reads both, so an
+    // away game watched counts for the team (Codex, group 7 review). An attended stub reads `sides` and `tags` alone, as
+    // before: Season Tickets' counts and its Past Games are home games by Kylie's Oct 23 lock.
+    const away = kind === 'watched' ? (entry.opponents ?? []) : [];
+    const sides = [...(entry.sides ?? []), ...away];
     // A program tag decides first: "SDSU MBB" credits the men's team, never the women's (Codex, 11 (c) review).
     const own = [team.shortName, ...(team.aliases ?? [])].map((n) => n.toLowerCase());
     // A credited tag can repeat its code ("SDSU MBB MBB"); one copy reads.
-    const tags = [...(entry.tags ?? []), ...(entry.opponents ?? [])].map((t) => t.toLowerCase().replace(/\b(\S+)(\s+\1)+$/, '$1'));
+    const tags = [...(entry.tags ?? []), ...away].map((t) => t.toLowerCase().replace(/\b(\S+)(\s+\1)+$/, '$1'));
     const codeOf = (t: Team) => `${t.shortName} ${t.id.split('-').pop()}`.toLowerCase();
     const siblings = Object.values(TEAMS).filter((o) => o.id !== team.id && o.metroId === team.metroId && o.shortName === team.shortName && o.sport.toLowerCase() === sport);
     if (tags.includes(codeOf(team))) return true;

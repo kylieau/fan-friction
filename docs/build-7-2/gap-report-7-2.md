@@ -42,7 +42,7 @@ Shots: `.playwright-mcp/7-2-watching-card-off.png`, `7-2-watching-sheet-home.png
 **Not measured:** the record card with watched stubs (none exist on the headless phone; the streak and record arithmetic is exercised by hand in the component, not by a fixture), an earlier season in the picker, the account sync of `watchingSeasons` (signed in), a season whose game moves or is dropped live (the script covers the rule), the quiet row for a team with no record on file (falls back to the stored title).
 
 ### Codex review (10 findings, all fixed in the follow-up commit)
-1. **Away Watched stubs credited nobody** (high): a catalog stub names the home side in `sides` and the visitor's tag in `opponents`, and the season matcher read only `sides` and `tags`. Both now read as the stub's sides and tags, so a Dodgers-at-Giants stub counts for the Dodgers. The same matcher serves Season Tickets' attended counts, which gain the same away cases.
+1. **Away Watched stubs credited nobody** (high): a catalog stub names the home side in `sides` and the visitor's tag in `opponents`, and the season matcher read only `sides` and `tags`. For a watched stub both now read, so a Dodgers-at-Giants stub counts for the Dodgers. The attended path is untouched (the advisor's catch): Season Tickets' counts and its Past Games stay home games, as Kylie locked on Oct 23. Whether away attended stubs belong on that page is a question for her, not a side effect.
 2. **The Stub it sheet's place was not a per-game change** (high): `setWatchDetails` now writes the place into the season's `changed` list (and clears it when the place is the default again), so a default change leaves it be.
 3. **A game in an uncovered city never settled** (high): settlement now falls back, for a season or watching-season plan with no catalog event on its date, to the schedule's own game once it carries a final score, through `eventFromGame`, with no friction stamp (only a catalog night can give one). Schedules are read once per team per run.
 4. **A moved game landing on an event she already planned** made two plans with one id: the moved plan gives way to hers (checked in the script).
@@ -63,6 +63,8 @@ Shots: `.playwright-mcp/7-2-watching-card-off.png`, `7-2-watching-sheet-home.png
 
 ### Flags
 - **Firm plans everywhere:** the Map's next-saved-night card, a profile's Coming Up and friends' lines now carry a whole season of Watching plans. Lean: leave them; a quieter rule is one line if she prefers.
+- **A stub settled from the schedule takes the team's home city** when the away building is not on file (`eventFromGame`'s fallback), so a Reds game watched from Barney's files under Los Angeles for Nights per city and the LA date page's "yours". The plan already carried that city, so nothing got worse; said here so it is not read as a new bug later.
+- **The Stub it sheet clearing a place on a season game** puts the plan back on the season's default spot, never on nothing (advisor, 7 (b)).
 - ~~Away games at buildings outside the covered cities never settle~~ **fixed in 7 (b)**: a marked game settles from the schedule's own game once it has a score (no friction stamp). A game with no score yet (a postponed one) waits, as before.
 - **The team page's "Next at Home" reads "No home game listed yet" for the Kings** while the schedule lists home games (seen in the shots; pre-existing, not this group's).
 
