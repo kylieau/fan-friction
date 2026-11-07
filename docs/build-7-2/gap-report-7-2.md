@@ -57,7 +57,7 @@ Kylie, Nov 7, 2026 (afternoon): "let's start on the small 7.2 leftovers". The ha
 | This Game Only (Games & Spot) | the title | 77, 0 reachable | Close, Home, A Place, Save, Remove this game, Close… | Close | Remove this game | the game's row | 0 |
 | Stub From Your Faves (Upcoming, a hold on the first Kings row) | Attending | 230, 0 reachable | Watching, Interested, Open Event, Attending… | Attending | Open Event | the held row's link | 0 |
 
-The tab bar carries `inert` while each is open. The A Place picker inside the season sheet still puts focus on its input, and Escape from there returns it to the game's row. `npm run build` passes.
+The tab bar carries `inert` while each is open. The A Place picker inside the season sheet still puts focus on its input, and Escape from there returns it to the game's row. The menu's swap for the Stub it sheet, walked: a hold, ArrowDown to Watching, Enter; the sheet opens with focus on its first choice (Attending) and Tab moves to Watching inside it while the menu's marks hold the page (4 `inert`); Escape closes the sheet, focus lands on the held row, 0 `inert` left. `npm run build` passes.
 
 ### Codex review (4 findings, all fixed in the follow-up commit; none high)
 - **A background menu that stays mounted could take the "topmost" slot** (medium): the first rule took the last `role="dialog"`, `alertdialog` or `menu` in the page, inert or not, so a page with a persistent menu later in document order would leave a card deaf to Tab and Escape. Now only a dialog that is neither inert nor hidden counts; anything behind an open dialog is inert by construction.
