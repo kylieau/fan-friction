@@ -4571,6 +4571,22 @@ button.back-link {
   font-weight: 800;
 }
 
+/* M33 (Nov 7, 2026): "Retractable roof" under the card's title, quiet, one line. */
+.weather-roof {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+/* M3's sentence (Nov 7, 2026): one line of plain words under the city's figures. */
+.day-weather-line {
+  margin: 2px 0 8px;
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
 .weather-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 12. Weather, from Kylie's Nov 7 answers to the plan: the M3 sentence from the stored numbers on the day card; `roof: 'retractable'` on 15 rooms with sources and "Retractable roof" under the event card's title (M33); observed rows fetched the night after for the last two days and "What it was at …" on a past event's card, the verdict untouched | done | _(this commit)_ | `weather-build-check.mjs` all passed (3 cities, 15 verdicts identical with observed rows planted, 30 sentences); the observed fetch run once by hand for Ottawa; the past card, the sentence and the roof line seen headless |
 | 11. Games & Spot (Watching Season boards 07 and 08, approved Nov 7): the page from the team page's foot row with the default spot card, the games ahead by month with their spots and a Changed chip, tickets-win rows that open the event, removed games greyed with Re-add, Not on the Schedule with Remove; This Game Only with the shared Home / A Place picker, Back to default, Save and Remove this game | done | _(this commit)_ | walked headless on a seeded Kings season: change a spot, back to default, remove, re-add, a ticketed game's row; every button measured at 44 or more |
 | 10. The G4 sweep on the approved rule (B2's list measured and fixed: the day-strip words 7px to 9px, the header date link, Feels, Legend, the year select, the avatar, the recap chips, the Favorite Cities minus buttons and the stub's review link to 44pt, E4's clipped distance line wrapping), Crowd Size and caps on the lean (a cap under Min hides), and the nightly weather fetch made to skip one failed point-date instead of a whole city | done | _(this commit)_ | every target probed headless at 390 with elementFromPoint; `crowd-range-check.mjs` 11 of 11; the weather fix proves itself on the next nightly |
 | 8 (b). Codex review of onboarding, 6 findings, all fixed: a Skip's fallback home is never sent up to the account and the account's home clears the mark; a pending Crowd Size edit is written when the step leaves; a fave's name inside the step no longer navigates under the screen; focus lands on the title, Tab stays inside, focus returns on close; picking Los Angeles itself clears Default; another tab's writes reach this one | done | _(this commit)_ | re-walked: focus on the title, 12 Tabs stay inside, LA picked clears the mark, a typed Min then Continue saves, a name tap stays on the step while Follow works, Done's rows, finish lands on Explore |
@@ -31,6 +32,23 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
+
+## Group 12: Weather (M3, M33, and What It Was)
+
+Kylie's Nov 7, 2026 answers to `docs/product/weather-data-plan.md` ("good with leans for all"): the sentence from the numbers, retractable rooms only, state it and stop, the card shows what happened while the verdict keeps its forecast, MET Norway later. The full note is in the build notes under B5.
+
+### What shipped
+- **The M3 sentence** on the day page's expanded weather card: sky, wind, rain or the evening's temperature, from the stored hourly rows, in the city's units. Seen: "Sunny. Cools to the low 60s after 4 pm." on Los Angeles, Nov 8.
+- **The roof note:** `roof: 'retractable'` (a fourth value) on 15 rooms with a source each (`docs/research/topics/retractable-roofs-prompt.md` and `-answer.md`); "Retractable roof" under the event card's title (seen on Colts at Lucas Oil Stadium, Nov 8); the verdict's weather line says "retractable roof" instead of "no roof" there; `isOpenAir` unchanged, so the rows and the formula are untouched.
+- **What it was:** the nightly's weather step asks the forecast service for the last two days' point-dates again as `observed` rows (its analysis of the day gone by), once each, hourly and the day's high and low; the event page's card reads them from the day after as "What it was at 1:05 pm" (the reanalysis archive on pre-app dates reads the same: seen on Dodgers, Oct 25, 2024). The verdict and the stamp read forecasts only.
+- **Not built, on purpose:** the day page's strip and card on a past date (the question named the event card); the canopy `roofNote`.
+
+### Checks
+- `scripts/weather-build-check.mjs la boston toronto`: roof values on file are the four allowed; 15 retractable rooms all open-air; 794 (Boston) and 573 (Toronto) observed rows planted with absurd numbers on five past dates each, `weatherAt` answered with none, `weatherAsItWas` with all, every verdict byte-identical; 30 of 30 dates gave a sentence of 5 to 11 words. `npm run build` passes.
+- The observed fetch, by hand: `node scripts/weather-fetch.mjs --metro=ottawa-gatineau` wrote 6 observed hourly rows and one observed day for Nov 6, every value differing from the last forecast. Calls: about one day's worth of point-dates per city more each night (about 100 across the 40 cities, within Open-Meteo's free 10,000 a day; no money).
+
+### Codex review
+_(pending)_
 
 ## Group 11: Games & Spot
 

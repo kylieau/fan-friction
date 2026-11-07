@@ -5,6 +5,7 @@
 // reanalysis archive (before the app had forecasts) show nothing here (the builder's call, recorded in the gap report).
 // An event's window is its start plus three hours, the notes' rule for an unknown end (no listing carries an end).
 
+import { degreesFor } from '../config/metros';
 import { hoursOf } from '../lib/windows';
 import { isOpenAir, weatherHourFor, type WeatherDay, type WeatherRow } from './formula/weather';
 import { sunHours } from './formula/sun';
@@ -87,6 +88,79 @@ export function cityHourly(metroId: string, date: LocalDate, before?: Date): Wea
     if (row && row.basis === 'forecast') rows.push(row);
   }
   return rows;
+}
+
+/** "7 pm", "12 pm": a whole hour's word. */
+function hourWord(h: number): string {
+  const x = h % 24;
+  return `${x % 12 === 0 ? 12 : x % 12} ${x < 12 ? 'am' : 'pm'}`;
+}
+
+/** The sky from a WMO code, in the app's words; sunny words only while the sun is up. */
+function skyWords(code: number | undefined, daylight: boolean): string | null {
+  if (code == null) return null;
+  if (code === 0) return daylight ? 'Sunny' : 'Clear';
+  if (code === 1) return daylight ? 'Mostly sunny' : 'Mostly clear';
+  if (code === 2) return 'Partly cloudy';
+  if (code === 3) return 'Overcast';
+  if (code === 45 || code === 48) return 'Foggy';
+  if (code >= 51 && code <= 57) return 'Drizzle';
+  if (code >= 61 && code <= 67) return 'Rain';
+  if (code >= 71 && code <= 77) return 'Snow';
+  if (code >= 80 && code <= 82) return 'Showers';
+  if (code === 85 || code === 86) return 'Snow showers';
+  if (code >= 95) return 'Thunderstorms';
+  return null;
+}
+
+const WET = new Set(['Drizzle', 'Rain', 'Snow', 'Showers', 'Snow showers', 'Thunderstorms']);
+
+/** "low 60s", "mid 60s", "upper 60s", in the city's own units. */
+function band(f: number, metroId: string): string {
+  const n = parseInt(degreesFor(f, metroId), 10);
+  const tens = Math.floor(n / 10) * 10;
+  const ones = n - tens;
+  return `${ones < 4 ? 'low' : ones < 7 ? 'mid' : 'upper'} ${tens}s`;
+}
+
+/**
+ * The M3 weather sentence (build 7.2, Nov 7, 2026; Kylie's answer to the weather plan: built from the numbers the
+ * app already stores, no text feed, the same words in every city). One or two short clauses, about a dozen words:
+ * the sky at the start hour (with "breezy" and the wind when it is 15 mph or more), then the rain when its chance is
+ * 30% or more (with its hour), else the evening's temperature: the drop when feels-like falls 8° or more after the
+ * start, the rise when it climbs as much, else the start and the last stored hour when they differ by 4° or more,
+ * else "around N° all evening". Null with no hourly rows. Sentence case; degrees follow the Temperature Units rule.
+ */
+export function weatherSentence(metroId: string, date: LocalDate, hourly: readonly WeatherRow[], startHour: number): string | null {
+  const rows = [...hourly].sort((a, b) => a.hour - b.hour);
+  if (rows.length === 0) return null;
+  const at = rows.find((r) => r.hour >= startHour) ?? rows[rows.length - 1];
+  const after = rows.filter((r) => r.hour >= at.hour);
+  const sun = sunHours(metroId, date);
+  const daylight = sun ? at.hour + 0.5 < sun.set : true;
+  const sky = skyWords(at.code, daylight);
+  const wind = Math.max(...after.map((r) => r.windMph ?? 0));
+  const windy = wind >= 15 ? `${sky ? ' and breezy' : 'Breezy'}, ${Math.round(wind)} mph` : '';
+  const first = sky || windy ? `${sky ?? ''}${windy}.` : null;
+  const wettest = after.reduce<WeatherRow | null>((best, r) => ((r.precipProbability ?? 0) > (best?.precipProbability ?? 0) ? r : best), null);
+  const chance = wettest?.precipProbability ?? 0;
+  let second: string;
+  if (chance >= 30 && wettest) {
+    second = sky && WET.has(sky) ? `A ${Math.round(chance)}% chance around ${hourWord(wettest.hour)}.` : `A ${Math.round(chance)}% chance of rain around ${hourWord(wettest.hour)}.`;
+  } else {
+    const last = after[after.length - 1];
+    const drop = at.feelsLikeF - last.feelsLikeF;
+    const deg = (f: number) => degreesFor(f, metroId);
+    if (drop >= 8) {
+      const when = after.find((r) => at.feelsLikeF - r.feelsLikeF >= 8) ?? last;
+      second = `Cools to the ${band(last.feelsLikeF, metroId)} after ${hourWord(when.hour)}.`;
+    } else if (drop <= -8) {
+      second = `Warms to the ${band(last.feelsLikeF, metroId)} by ${hourWord(last.hour)}.`;
+    } else if (Math.abs(drop) >= 4 && last !== at) {
+      second = `${deg(at.feelsLikeF)} at ${hourWord(at.hour)}, ${deg(last.feelsLikeF)} by ${hourWord(last.hour)}.`;
+    } else second = `Around ${deg(at.feelsLikeF)} all evening.`;
+  }
+  return [first, second].filter(Boolean).join(' ');
 }
 
 /** Local sunset as "6:11 pm", from the city's point; null for polar day or night or an unknown city. */

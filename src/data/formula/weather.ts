@@ -9,7 +9,13 @@ import { VENUES } from '../venues';
 import { isDarkAt } from './sun';
 import type { CrowdEvent, LocalDate } from '../types';
 
-export type WeatherBasis = 'forecast' | 'reanalysis';
+/**
+ * Where a row came from: a forecast saved before the hour; the reanalysis archive (pre-app dates, weeks later);
+ * or `observed`, Open-Meteo's own analysis of a recent day as it happened, fetched the next night from the same
+ * forecast service (build 7.2, Nov 7, 2026; Kylie's Oct 5 clarification allows observed weather on a past date).
+ * The verdict and the stamp read forecasts only; observed rows feed the past date's weather card alone.
+ */
+export type WeatherBasis = 'forecast' | 'reanalysis' | 'observed';
 
 /** One venue (or the city point) at one hour on one date. Every component the source returns is kept. */
 export interface WeatherRow {
@@ -111,8 +117,9 @@ export function heatThresholdF(metroId: string, date: LocalDate): number {
 
 /**
  * Weather counts unless the building is fully indoor. A covered, open-sided
- * stadium (SoFi) still feels the day (Kylie, Oct 5). A retractable roof is a
- * game-time note, not a third category.
+ * stadium (SoFi) still feels the day (Kylie, Oct 5). A retractable roof keeps
+ * its rows too and is a game-time note on the event page (M33), never a
+ * reason to drop the weather: no feed says which way it stands on the day.
  */
 export function isOpenAir(event: CrowdEvent): boolean {
   if (event.place.type !== 'venue') return true;
@@ -263,7 +270,8 @@ async function fetchSteady(url: string): Promise<Response> {
 
 /**
  * Fetch one point for one date and return the rows for the hours asked.
- * Past dates use the reanalysis archive; today and later use the forecast.
+ * Past dates use the reanalysis archive; today and later use the forecast. `observed` asks the forecast service
+ * for a recent past date (it serves the last three months as its own analysis), the night after.
  */
 export async function fetchWeather(
   metroId: string,
@@ -272,11 +280,12 @@ export async function fetchWeather(
   date: LocalDate,
   hours: number[],
   now = new Date(),
+  basisOverride?: WeatherBasis,
 ): Promise<WeatherRow[]> {
   const metro = METROS[metroId];
   const tz = metro?.timeZone ?? 'America/Los_Angeles';
   const today = now.toLocaleDateString('en-CA', { timeZone: tz });
-  const basis: WeatherBasis = date < today ? 'reanalysis' : 'forecast';
+  const basis: WeatherBasis = basisOverride ?? (date < today ? 'reanalysis' : 'forecast');
   const [lng, lat] = location;
   const params = new URLSearchParams({
     latitude: String(lat),
@@ -325,7 +334,7 @@ interface Daily {
 /**
  * Fetch the city point's daily feels-like high and low for a run of dates, one
  * call. Past runs use the reanalysis archive; today and later use the forecast.
- * A run must not straddle today.
+ * A run must not straddle today. `observed` reads a recent past day from the forecast service.
  */
 export async function fetchWeatherDays(
   metroId: string,
@@ -333,11 +342,12 @@ export async function fetchWeatherDays(
   startDate: LocalDate,
   endDate: LocalDate,
   now = new Date(),
+  basisOverride?: WeatherBasis,
 ): Promise<WeatherDay[]> {
   const metro = METROS[metroId];
   const tz = metro?.timeZone ?? 'America/Los_Angeles';
   const today = now.toLocaleDateString('en-CA', { timeZone: tz });
-  const basis: WeatherBasis = endDate < today ? 'reanalysis' : 'forecast';
+  const basis: WeatherBasis = basisOverride ?? (endDate < today ? 'reanalysis' : 'forecast');
   const [lng, lat] = location;
   const daily = ['apparent_temperature_max', 'apparent_temperature_min', 'weather_code', 'precipitation_sum'];
   if (basis === 'forecast') daily.push('precipitation_probability_max');

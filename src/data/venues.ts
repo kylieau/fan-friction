@@ -37,7 +37,8 @@ export const VENUES: Record<string, Venue> = {
         note: 'Official. MLB currently publishes 41,900; Claude cites 40,100 after 2025 seat removal. No mechanical subtraction; current sellable inventory remains disputed. Source: https://www.mlb.com/news/featured/american-family-field-guide-capacity-seating-chart-parking-and-more'
       }
     ],
-    roof: 'covered'
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.nbc26.com/sports/mlb/milwaukee-brewers/a-look-at-the-unique-rooftop-of-american-family-field
+    roof: 'retractable'
   },
   'milwaukee-mile': {
     id: 'milwaukee-mile',
@@ -1517,7 +1518,8 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 36742, setup: 'baseball', note: 'Reported. Seated baseball; 37,442 with standing room not used as seated. Source: venue table A03.' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.walterpmoore.com/projects/loandepot-park-retractable-roof
+    roof: 'retractable',
   },
   'nu-stadium': {
     id: 'nu-stadium',
@@ -3430,7 +3432,8 @@ export const VENUES: Record<string, Venue> = {
     // The US Open's daily grounds crowd (record 73,201) is three times this room. A US Open day is sized by that figure on the event, not by Ashe.
     capacity: [{ seats: 23771, setup: 'tennis', note: 'Official; finals draw ~28,000 with standing room' }],
     // Retractable, like T-Mobile Park: closes for rain.
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.sportsvideo.org/2016/08/30/arthur-ashe-stadium-roof-new-grandstand-make-long-awaited-us-open-debut/
+    roof: 'retractable',
   },
   'madison-square-garden': {
     id: 'madison-square-garden',
@@ -3582,7 +3585,8 @@ export const VENUES: Record<string, Venue> = {
     ticketmasterIds: ['KovZpZAFFtkA'],
     capacity: [{ seats: 14000, setup: 'tennis', fromYear: 2018, note: 'Reported; rebuilt 2018. 14,069 could not be confirmed.' }],
     // Retractable.
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.boston.com/sports/tennis/2018/05/18/us-open-second-roofed-stadium/
+    roof: 'retractable',
   },
   'lavalle-stadium': {
     id: 'lavalle-stadium',
@@ -4905,7 +4909,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 30144, setup: 'football', note: 'One-off football setup (reported)' },
     ],
     // Retractable: an umbrella that closes for rain, with open sides. Closest of the three roof kinds.
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.mlb.com/news/t-mobile-park-roof-and-rain-history
+    roof: 'retractable',
   },
   'pacific-raceways': {
     id: 'pacific-raceways',
@@ -5416,7 +5421,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 80000, setup: 'soccer', note: "The 2026 World Cup drew about 70,000 per match, not FIFA's listed 94,000; the seated bowl is the ceiling" },
       { seats: 80000, setup: 'concert', note: 'Not published; the seated bowl as the ceiling. Estimated.' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://abcnews.go.com/Sports/wireStory/debris-falls-roof-home-cowboys-game-texans-injuries-115989519
+    roof: 'retractable',
   },
   'cotton-bowl': {
     id: 'cotton-bowl',
@@ -5468,7 +5474,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 40300, setup: 'baseball', note: 'Official (the Rangers); 40,518 has no source; record 42,500 (2023 World Series)' },
       { seats: 43598, setup: 'concert', note: 'Reported: the Morgan Wallen record (Oct 2022), as the ceiling' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.mlb.com/news/rangers-give-globe-life-field-update-c301172772
+    roof: 'retractable',
   },
   'gerald-j-ford-stadium': {
     id: 'gerald-j-ford-stadium',
@@ -6009,7 +6016,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 42500, setup: 'soccer', note: 'Official, the upper-bowl curtain for Atlanta United; the full bowl opens for big matches (record 73,019, 2018 MLS Cup, reported).' },
     ],
     // Retractable roof; the venue type has no such value, so covered, as the roof is usually closed for events.
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.guinnessworldrecords.com/world-records/553692-largest-aperture-style-retractable-stadium-roof
+    roof: 'retractable',
   },
   'echopark-speedway': {
     id: 'echopark-speedway',
@@ -7618,7 +7626,8 @@ export const VENUES: Record<string, Venue> = {
         fromYear: 2018,
       },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.walterpmoore.com/projects/state-farm-stadium
+    roof: 'retractable',
   },
   'mountain-america-stadium': {
     id: 'mountain-america-stadium',
@@ -7653,7 +7662,8 @@ export const VENUES: Record<string, Venue> = {
         note: 'Reported. Conflicts with 48,330 (Meet Stadium) and 48,519 (Stadium Journey) in the city-type answer. Lease expires 2027; extension not signed. Source: https://www.thestadiumbusiness.com/2025/09/05/state-approval-sets-up-chase-field-renovations/',
       },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.mlb.com/news/chase-field-roof-to-be-fully-functional-for-2025-opener
+    roof: 'retractable',
   },
   'phoenix-raceway': {
     id: 'phoenix-raceway',
@@ -8054,7 +8064,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 54500, setup: 'football', note: 'Reported (Ticketmaster blog). Also 54,320 (Soccer Stadium Digest). Venue marketing says over 55,000, not an exact count. FIFA 2026 configuration 54,000 (CBC) was a tournament setup. Concerts with a floor are reported as over 65,000; no exact seat count is stored.' },
       { seats: 22120, setup: 'soccer', note: 'Reported (Wikipedia, city-type answer): lower bowl, upper deck closed. Venue table also reports about 22,000 (SeatGeek) and 21,000 (Soccer Stadium Digest).' },
     ],
-    roof: 'open',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'open'). Source: https://bcplace.com/the-stadium/the-roof
+    roof: 'retractable',
   },
   'rogers-arena': {
     id: 'rogers-arena',
@@ -9459,7 +9470,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 72220, setup: 'football', note: 'Official current. Reported steps: 69,500 (2002), 71,054 (2003–13), 71,795 (2014–17), 72,220 (2018–). Conflict: 71,995 on a Titans media guide. Source: https://www.reliantpark.com/reliant-stadium/' },
       { seats: 80000, setup: 'concert', note: 'Official upper of "72,000 to 80,000" for special events. An 80,203 concert is attendance, not a seat count. Source: https://www.reliantpark.com/reliant-stadium/' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.click2houston.com/news/investigates/2019/11/29/investigation-it-cost-450m-to-build-a-retractable-roof-at-nrg-but-they-rarely-open-it/
+    roof: 'retractable',
   },
   'reliant-arena': {
     id: 'reliant-arena',
@@ -9504,7 +9516,8 @@ export const VENUES: Record<string, Venue> = {
     capacity: [
       { seats: 41168, setup: 'baseball', note: 'Reported (SportCal / Wikipedia). Conflicts: 40,950 Baseball-Reference, 40,963 AP. The Astros\' own figure was not fetched. Source: https://www.sportcal.com/newsletters/astros-to-rename-minute-maid-park-as-daikin-secures-stadium-naming-rights' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.mlb.com/astros/ballpark/information/facts-and-figures
+    roof: 'retractable',
   },
   'toyota-center': {
     id: 'toyota-center',
@@ -9878,7 +9891,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 39150, setup: 'baseball', fromYear: 2024, note: 'Reported seats after the 2022–24 renovation. MLB\'s March 2026 guide says "over 41,000" (likely standing and social areas). 2026 announced average 41,220 exceeded 39,150. Conflict kept; 39,150 is the sourced seat count. Source: https://baseballparks.com/indepth/rogers-centre-renovation/' },
       { seats: 50000, setup: 'concert', note: 'Reported concert range 40,000–50,000. The high end is stored so a sellout is not sized under the published range; it is not an average. A city-type note also cites 10,000–55,000 by configuration. Source: https://en.wikipedia.org/wiki/List_of_music_venues_in_Toronto' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://globalnews.ca/news/9619636/rogers-centre-roof-open-for-jays-tigers-game
+    roof: 'retractable',
   },
   'bmo-field': {
     id: 'bmo-field',
@@ -10540,7 +10554,8 @@ export const VENUES: Record<string, Venue> = {
       { seats: 67000, setup: 'football', note: 'Official. Conflicts with 63,000 reported (IBJ 2012). Expanded basketball and major events exceed 70,000 in a separate configuration. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
       { seats: 70000, setup: 'basketball', note: 'Official: expandable to over 70,000 for basketball. Source: https://www.lucasoilstadium.com/tours-stadium-info/background-history/' },
     ],
-    roof: 'covered',
+    // Retractable roof (build 7.2, M33; Nov 7, 2026; was 'covered'). Source: https://www.uni-systems.com/projects/retractable-roof-lucas-oil-stadium
+    roof: 'retractable',
   },
   'lucas-oil-indianapolis-raceway-park': {
     id: 'lucas-oil-indianapolis-raceway-park',

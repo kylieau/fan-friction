@@ -33,6 +33,7 @@ import {
   VENUES,
   cityTravelLine,
   weatherForEvent,
+  weatherForEventAsItWas,
   weatherGlyph,
   weatherRangeForEvent,
 } from '../data';
@@ -702,11 +703,20 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
   );
 }
 
+/**
+ * The event page's weather card. Before and on the day, the forecast at the start; from the day after, what it was
+ * (the observed rows the nightly fetches the night after, else the reanalysis archive), while the verdict keeps the
+ * forecast it was judged on (Kylie, Nov 7, 2026, the weather plan's question 4). A retractable room says so under
+ * the title (M33): the forecast still applies, since no feed says whether the roof is closed on the day.
+ */
 function WeatherDetail({ event }: { event: CrowdEvent }) {
   if (!isOpenAir(event)) return null;
-  const row = weatherForEvent(event);
+  const over = event.date < todayIn(METROS[event.metroId] ?? DEFAULT_METRO);
+  const asItWas = over ? weatherForEventAsItWas(event) : undefined;
+  const row = asItWas ?? weatherForEvent(event);
   if (!row) return null;
-  const range = weatherRangeForEvent(event);
+  const range = weatherRangeForEvent(event, undefined, Boolean(asItWas));
+  const retractable = event.place.type === 'venue' && VENUES[event.place.venueId]?.roof === 'retractable';
   const rows: [string, string][] = [
     ['Feels Like', feelsLikeLabel(row, event.metroId)],
     ['Air', degreesFor(row.tempF, event.metroId)],
@@ -726,7 +736,8 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
           {weatherGlyph(row)}
         </span>
         <span className="weather-title">
-          {row.basis === 'forecast' ? 'Forecast' : 'Weather'} at {event.start ? clockTime(event.start) : 'start'}
+          {row.basis === 'forecast' ? 'Forecast' : 'What it was'} at {event.start ? clockTime(event.start) : 'start'}
+          {retractable && <span className="weather-roof">Retractable roof</span>}
         </span>
       </div>
       <dl className="weather-grid">

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { METROS, degreesFor } from '../config/metros';
-import { cityForecastRange, cityHourly, sunsetLabel, weatherGlyph, VENUES, venueNameOn, type CrowdEvent, type OutdoorPeak } from '../data';
+import { cityForecastRange, cityHourly, sunsetLabel, weatherGlyph, weatherSentence, VENUES, venueNameOn, type CrowdEvent, type OutdoorPeak } from '../data';
 import { DayOccasionTag } from './EventTags';
 import { clockTime, weekdayLong } from '../lib/dates';
 import { listTitle, splitTitleLabel } from '../lib/eventTitle';
@@ -64,6 +64,8 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
   const windRows = hours.filter((row) => row.windMph != null);
   const wind = windRows.length > 0 ? Math.round(windRows.reduce((sum, row) => sum + (row.windMph ?? 0), 0) / windRows.length) : null;
   const sunset = sunsetLabel(metroId, date);
+  // The M3 sentence (Kylie, Nov 7, 2026): from the stored numbers, read at the first outdoor start, else 7 pm.
+  const sentence = weatherSentence(metroId, date, hourly, peaks.length > 0 ? firstHour : 19);
   const updated = [...peaks.map((p) => p.capturedAt), ...(range ? [range.capturedAt] : [])].sort().at(-1);
   const updatedLabel = updated && metro ? new Date(updated).toLocaleTimeString('en-US', { timeZone: metro.timeZone, hour: 'numeric', minute: '2-digit' }).toLowerCase() : null;
   const hourLabel = (h: number) => (h % 12 === 0 ? 12 : h % 12) + (h < 12 ? 'a' : 'p');
@@ -92,6 +94,7 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
           </span>
         </div>
       )}
+      {sentence && <p className="day-weather-line">{sentence}</p>}
       <div className="day-weather-stats">
         {rain != null && (
           <span className="day-weather-stat">

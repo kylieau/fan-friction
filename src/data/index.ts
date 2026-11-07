@@ -360,7 +360,7 @@ export async function searchAllDates(homeId: string | null, query: string, visib
 export { VENUES, venueNameOn, capacityOn } from './venues';
 export { TEAMS, isCollegeLeague, isCollegeTeam, schoolWord, teamDisplayName, teamLongName, withoutProgramCode } from './teams';
 export { storyFor, type NightStory } from './seed/stories';
-export { weatherAt, weatherForEvent, weatherRangeForEvent, cityWeather, cityDayRange } from './weather';
+export { weatherAt, weatherForEvent, weatherForEventAsItWas, weatherAsItWas, weatherRangeForEvent, cityWeather, cityDayRange } from './weather';
 export { weatherGlyph, feelsLikeLabel, rangeLabel, rangeSpoken, isOpenAir, type WeatherRow, type WeatherDay } from './formula/weather';
 export {
   eventMatches,
@@ -562,6 +562,6 @@ export { wallClockToUtc } from './read';
 export { popupDraw, popupExplainer, type PopupFacts } from './sources/popupSizing';
 export { eventFromGame, eventFromStub, gameEventId, gameRefFromId, gameVenueName, isGameEventId, isOutsideGamePlan, isOutsideGame, sameGame, stubShapeOf, type GameLink, type StubShape } from './gameStub';
 export { verdictLines, verdictLinesForDay, liveItems, savedItems, type VerdictLines } from './verdictLines';
-export { outdoorPeaks, cityForecastRange, cityHourly, sunsetLabel, skyOf, type OutdoorPeak, type SkyKind } from './dayWeather';
+export { outdoorPeaks, cityForecastRange, cityHourly, weatherSentence, sunsetLabel, skyOf, type OutdoorPeak, type SkyKind } from './dayWeather';
 export { ARTISTS, artistByName, artistMatches, type Artist } from './artists';
 export { genreCategory, artistGenreWord, UNKNOWN_GENRE_WORD } from './genres';

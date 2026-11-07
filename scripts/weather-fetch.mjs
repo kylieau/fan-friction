@@ -160,6 +160,49 @@ try {
     }
   }
 
+  // What it was (Nov 7, 2026; Kylie's answer to the weather plan's question 4): the last two days' point-dates are
+  // asked again as observed rows (the forecast service's own analysis of a day gone by), once each, so a past
+  // date's weather card can show what happened while the verdict keeps its frozen forecast. The point-dates come
+  // from the day file itself (the venues and hours the forecasts covered), so nothing new is asked for; about one
+  // extra day's worth of calls a night per city, well inside the free tier's 10,000 a day.
+  let observedCalls = 0;
+  if (!backfill) {
+    for (const date of [addDays(today, -1), addDays(today, -2)]) {
+      const existing = await readDay(path.join(root, 'data', 'weather', METRO, `${date}.json`));
+      const wanted = new Map();
+      for (const row of existing.rows) {
+        if (row.basis !== 'forecast') continue;
+        const key = `${row.venueId}`;
+        const ask = wanted.get(key) ?? { venueId: row.venueId, location: row.venueId === 'city' ? metro.center : VENUES[row.venueId]?.location, hours: new Set(), have: new Set() };
+        ask.hours.add(row.hour);
+        wanted.set(key, ask);
+      }
+      for (const row of existing.rows) if (row.basis === 'observed') wanted.get(row.venueId)?.have.add(row.hour);
+      for (const ask of wanted.values()) {
+        const hours = [...ask.hours].filter((h) => !ask.have.has(h));
+        if (hours.length === 0 || !ask.location) continue;
+        try {
+          const rows = await fetchWeather(METRO, ask.venueId, ask.location, date, hours, now, 'observed');
+          observedCalls += 1;
+          byDate.set(date, [...(byDate.get(date) ?? []), ...rows]);
+        } catch (err) {
+          missed.push(`${ask.venueId} ${date} observed`);
+          console.error(`${METRO} weather: ${ask.venueId} ${date} observed skipped (${err instanceof Error ? err.message : err}).`);
+        }
+        await new Promise((r) => setTimeout(r, 150));
+      }
+      if (existing.days.some((d) => d.basis === 'forecast') && !existing.days.some((d) => d.basis === 'observed')) {
+        try {
+          for (const day of await fetchWeatherDays(METRO, metro.center, date, date, now, 'observed')) daysByDate.set(day.date, [...(daysByDate.get(day.date) ?? []), day]);
+          observedCalls += 1;
+        } catch (err) {
+          missed.push(`city days ${date} observed`);
+          console.error(`${METRO} weather: the ${date} observed day-range call skipped (${err instanceof Error ? err.message : err}).`);
+        }
+      }
+    }
+  }
+
   const outDir = path.join(root, 'data', 'weather', METRO);
   await mkdir(outDir, { recursive: true });
   let written = 0;
@@ -170,15 +213,15 @@ try {
     for (const row of byDate.get(date) ?? []) {
       const prior = merged.filter((r) => sameKey(r, row));
       const last = prior[prior.length - 1];
-      // Reanalysis never changes; a forecast is appended only when its numbers moved.
-      if (last && (row.basis === 'reanalysis' || sameValues(last, row))) continue;
+      // Reanalysis and observed rows never change; a forecast is appended only when its numbers moved.
+      if (last && (row.basis === 'reanalysis' || row.basis === 'observed' || sameValues(last, row))) continue;
       merged.push(row);
     }
     const mergedDays = [...existing.days];
     for (const day of daysByDate.get(date) ?? []) {
       const prior = mergedDays.filter((d) => sameDayKey(d, day));
       const last = prior[prior.length - 1];
-      if (last && (day.basis === 'reanalysis' || sameDayValues(last, day))) continue;
+      if (last && (day.basis === 'reanalysis' || day.basis === 'observed' || sameDayValues(last, day))) continue;
       mergedDays.push(day);
     }
     if (merged.length !== existing.rows.length || mergedDays.length !== existing.days.length) {
@@ -186,7 +229,7 @@ try {
       written += 1;
     }
   }
-  console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched, ${written} day file${written === 1 ? '' : 's'} changed${missed.length > 0 ? `, ${missed.length} skipped` : ''}${backfill ? ' (backfill)' : ''}.`);
+  console.log(`${METRO} weather: ${fetched} point-dates and ${dayCalls} day-range call${dayCalls === 1 ? '' : 's'} fetched${observedCalls > 0 ? `, ${observedCalls} observed` : ''}, ${written} day file${written === 1 ? '' : 's'} changed${missed.length > 0 ? `, ${missed.length} skipped` : ''}${backfill ? ' (backfill)' : ''}.`);
   } catch (err) {
     // One city's weather failing (Oct 10, 2026) must not cost every city its night: skip it, say so, carry on.
     failed.push(METRO);

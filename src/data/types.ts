@@ -39,8 +39,13 @@ export interface Venue {
   names: VenueName[];
   location: LngLat;
   capacity: Capacity[];
-  /** Open-air venues feel the weather; roofed ones mostly don't. */
-  roof: 'open' | 'covered' | 'indoor';
+  /**
+   * Open-air venues feel the weather; roofed ones mostly don't. `covered` is a roofed stand that still feels the wind
+   * (a canopy, a pavilion); `retractable` is a roof that opens and closes by the day (build 7.2, M33, Nov 7, 2026):
+   * it keeps its weather rows like an open room, and the event page says "Retractable roof" since no feed says which
+   * way it stands on the day.
+   */
+  roof: 'open' | 'covered' | 'indoor' | 'retractable';
   /**
    * Hand flag for a hard-access site, used only when scripts/venue-access.mjs
    * has not measured the venue. Measured venues use the rule in venues.ts
