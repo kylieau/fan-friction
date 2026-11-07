@@ -542,6 +542,8 @@ export { entriesInYear, yearsOf, yearStatPool, teamCounts, cityCounts, longestSt
 export { ATTENDED_COST_KINDS, WATCHED_COST_KINDS, COST_LABELS, COST_MAX, deviceCurrency, normalizeCost, costTotal, lineTotal, formatMoney, costLine, costWords, currencySign } from './costs';
 export { getTeamSchedule, nextTeamGame, onTeamSchedule, recordLine, scoreMark, seriesLine, teamRecord, type TeamRecord } from './teamSchedule';
 export { seasonHomeGames, seasonGameSet, seasonPlayoffGames, seasonPlanEventId, seasonDefaultCost, seasonLabel, seatShort } from './seasonTickets';
+export { watchingSeasonOf, startWatchingSeason, syncWatchingSchedule, setWatchingSpot, setWatchingGameSpot, readdWatchingGame, stopWatchingSeason, watchingCounts, refreshWatchingSeasons, watchingDefaultSpot } from './personalLog';
+export { watchSeasonGames, watchGameSet, watchSpotFor, watchSetupCounts, reconcileWatchPlans, HOME_SPOT } from './watchingSeason';
 export { seasonTicketOf, startSeasonTickets, syncSeasonSchedule, updateSeasonDefaults, seasonEditCounts, setSeasonGame, resetSeasonGame, removeSeasonGame, readdSeasonGame, answerSeasonPlayoff, stopSeasonTickets, seasonCounts, seasonStubsOf, refreshSeasonTickets } from './personalLog';
 export { espnTeamUrl } from './sources/espnSource';
 export { entryOutcome, hoursAtGames, lengthLine, resultFor, scoreLine } from './results';

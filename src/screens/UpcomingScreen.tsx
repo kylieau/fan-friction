@@ -199,7 +199,8 @@ export function UpcomingScreen() {
     let current = true;
     scoresForNights([
       ...shownRows.flatMap((row) => (row.metroId ? [{ metroId: row.metroId, date: row.date }] : [])),
-      ...shownPlans.map((plan) => ({ metroId: plan.metroId, date: plan.date })),
+      // A quiet Watching Season row shows no tile, so its night is never loaded for a verdict (a season is 162 nights).
+      ...shownPlans.filter((plan) => !(plan.watchSeason && planKind(plan) === 'watching')).map((plan) => ({ metroId: plan.metroId, date: plan.date })),
       ...friendPlans.flatMap((line) => (line.metroId ? [{ metroId: line.metroId, date: line.date }] : [])),
     ]).then((map) => current && setRatings(map));
     return () => {

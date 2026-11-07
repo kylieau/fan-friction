@@ -28,8 +28,9 @@ import { cleanHiddenTypes } from './eventTypeFilter';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
 import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
+import { reconcileWatchPlans, spotWatchPlan, watchPlanFrom, watchSpotFor } from './watchingSeason';
 import { getTeamSchedule } from './teamSchedule';
-import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, SportsLevel, Stamp, PersonalLog, StubVisibility, Team, TeamGame, YouOrder } from './types';
+import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, WatchingSeason, SportsLevel, Stamp, PersonalLog, StubVisibility, Team, TeamGame, YouOrder } from './types';
 
 export interface CountRow {
   label: string;
@@ -1081,7 +1082,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     const plans = snapshot.plans.filter((plan) => plan.eventId !== event.id);
     if (kind === answer) {
       // Taking a season game out here is a removal like the season page's (no reason), so the season does not add it back.
-      commit({ ...snapshot, plans, seasonTickets: withSeasonRemoval(snapshot, snapshot.plans.find((plan) => plan.eventId === event.id)) });
+      const leaving = snapshot.plans.find((plan) => plan.eventId === event.id);
+      commit({ ...snapshot, plans, seasonTickets: withSeasonRemoval(snapshot, leaving), watchingSeasons: withWatchRemoval(snapshot, leaving) });
       return;
     }
   }
@@ -1101,6 +1103,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     ...(before?.seats && answer === 'attend' ? { seats: before.seats } : {}),
     // A season game stays a season game whatever the answer (build 7.1, item 15; Codex would otherwise see it added twice).
     ...(before?.season ? { season: before.season } : {}),
+    // So does a Watching Season game's marker (build 7.2): a ticket turns it Attending, and the season leaves it be.
+    ...(before?.watchSeason ? { watchSeason: before.watchSeason } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
@@ -1130,7 +1134,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   for (const plan of passed) {
     // A season game the schedule no longer lists stays a flagged plan, never a stub: an old listing still in the catalog
     // must not turn a cancelled game into an Attended one (partial Codex stage 4 finding). She removes it herself.
-    if (plan.season?.gone) continue;
+    if (plan.season?.gone || plan.watchSeason?.gone) continue;
     // Interested never becomes a stub (Kylie, Oct 11): the answer just lapses with the date.
     if (plan.interested) {
       settledIds.add(plan.id);
@@ -1204,7 +1208,8 @@ function carryPlanExtras(plan: Plan, entry: Entry): Entry {
 }
 
 export function removePlan(planId: string) {
-  commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.id !== planId), seasonTickets: withSeasonRemoval(snapshot, snapshot.plans.find((plan) => plan.id === planId)) });
+  const leaving = snapshot.plans.find((plan) => plan.id === planId);
+  commit({ ...snapshot, plans: snapshot.plans.filter((plan) => plan.id !== planId), seasonTickets: withSeasonRemoval(snapshot, leaving), watchingSeasons: withWatchRemoval(snapshot, leaving) });
 }
 
 // ---------- Season tickets (build 7.1, item 15; Kylie, Oct 23, 2026) ----------
@@ -1347,12 +1352,12 @@ export function stopSeasonTickets(teamId: string) {
  * short name only on a game of the same sport in the team's own city (a school's "Lakers" is not the LA Lakers;
  * Codex, steps 9–10 review). One matcher for both counts.
  */
-export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot): Entry[] {
+export function seasonStubsOf(teamId: string, log: PersonalLog = snapshot, kind: 'attended' | 'watched' = 'attended'): Entry[] {
   const team = TEAMS[teamId];
   if (!team) return [];
   const sport = team.sport.toLowerCase();
   return yourEntries(log).filter((entry) => {
-    if (entry.watched || entry.kind !== 'game') return false;
+    if (Boolean(entry.watched) !== (kind === 'watched') || entry.kind !== 'game') return false;
     const sides = entry.sides ?? [];
     // A program tag decides first: "SDSU MBB" credits the men's team, never the women's (Codex, 11 (c) review).
     const own = [team.shortName, ...(team.aliases ?? [])].map((n) => n.toLowerCase());
@@ -1398,6 +1403,110 @@ export async function refreshSeasonTickets() {
     const games = await getTeamSchedule(ticket.teamId).catch(() => null);
     if (games) syncSeasonSchedule(ticket.teamId, games);
   }
+}
+
+// ---------- Watching Season (build 7.2; Kylie, Nov 4, 2026) ----------
+
+/** The team's watching-season record, on or off. */
+export function watchingSeasonOf(teamId: string, log: PersonalLog = snapshot): WatchingSeason | undefined {
+  return log.watchingSeasons?.find((w) => w.teamId === teamId);
+}
+
+function withWatchingSeason(log: PersonalLog, season: WatchingSeason): WatchingSeason[] {
+  return [...(log.watchingSeasons ?? []).filter((w) => w.teamId !== season.teamId), { ...season, updatedAt: new Date().toISOString() }];
+}
+
+/** A watching-season plan leaving by any door is written down, so the season never adds it back. */
+function withWatchRemoval(log: PersonalLog, plan: Plan | undefined): WatchingSeason[] | undefined {
+  if (!plan?.watchSeason) return log.watchingSeasons;
+  const season = watchingSeasonOf(plan.watchSeason.teamId, log);
+  if (!season) return log.watchingSeasons;
+  return withWatchingSeason(log, { ...season, removed: { ...season.removed, [plan.watchSeason.gameId]: { at: new Date().toISOString() } } });
+}
+
+/** Turn the switch on: the record is saved and every game ahead with no plan of hers becomes a Watching plan at its spot. */
+export function startWatchingSeason(teamId: string, games: readonly TeamGame[], place: string) {
+  const before = watchingSeasonOf(teamId);
+  const season: WatchingSeason = { teamId, on: true, place: place.trim().slice(0, 80) || 'Home', changed: before?.changed ?? {}, removed: before?.removed ?? {}, updatedAt: new Date().toISOString() };
+  commit({ ...snapshot, watchingSeasons: withWatchingSeason(snapshot, season), plans: reconcileWatchPlans(snapshot.plans, season, games, todayFor(teamId), stubDefault()) });
+}
+
+/** The schedule has loaded (any screen, app start): the team's watching season follows it. Quiet when nothing changed. */
+export function syncWatchingSchedule(teamId: string, games: readonly TeamGame[]) {
+  const season = watchingSeasonOf(teamId);
+  if (!season?.on) return;
+  const plans = reconcileWatchPlans(snapshot.plans, season, games, todayFor(teamId), stubDefault());
+  if (plans.length === snapshot.plans.length && plans.every((plan, i) => plan === snapshot.plans[i])) return;
+  commit({ ...snapshot, plans });
+}
+onTeamSchedule(syncWatchingSchedule);
+
+/** The default spot changed: saved, then applied to the upcoming games still at the old default (a game she changed keeps its own). */
+export function setWatchingSpot(teamId: string, place: string) {
+  const before = watchingSeasonOf(teamId);
+  if (!before?.on) return;
+  const spot = place.trim().slice(0, 80) || 'Home';
+  const today = todayFor(teamId);
+  const plans = snapshot.plans.map((plan) => (plan.watchSeason?.teamId === teamId && plan.watch && plan.date >= today && !(plan.watchSeason.gameId in before.changed) ? spotWatchPlan(plan, spot) : plan));
+  commit({ ...snapshot, watchingSeasons: withWatchingSeason(snapshot, { ...before, place: spot }), plans });
+}
+
+/** One game's spot, this game only; `null` puts it back on the default. */
+export function setWatchingGameSpot(planId: string, place: string | null) {
+  const plan = snapshot.plans.find((p) => p.id === planId);
+  const season = plan?.watchSeason ? watchingSeasonOf(plan.watchSeason.teamId) : undefined;
+  if (!plan?.watchSeason || !season) return;
+  const { [plan.watchSeason.gameId]: _old, ...rest } = season.changed;
+  const spot = place?.trim().slice(0, 80) || null;
+  const changed = spot ? { ...rest, [plan.watchSeason.gameId]: spot } : rest;
+  commit({ ...snapshot, watchingSeasons: withWatchingSeason(snapshot, { ...season, changed }), plans: snapshot.plans.map((p) => (p.id === planId ? spotWatchPlan(p, spot ?? season.place) : p)) });
+}
+
+/** Re-add a game she took out: its plan comes back at the default spot, unless she has a plan on it by now. */
+export function readdWatchingGame(teamId: string, game: TeamGame) {
+  const season = watchingSeasonOf(teamId);
+  if (!season?.on) return;
+  const { [game.id]: _dropped, ...removed } = season.removed;
+  const next: WatchingSeason = { ...season, removed };
+  const eventId = seasonPlanEventId(game);
+  const plans = snapshot.plans.some((plan) => plan.eventId === eventId) ? snapshot.plans : [...snapshot.plans, watchPlanFrom(next, game, stubDefault())];
+  commit({ ...snapshot, watchingSeasons: withWatchingSeason(snapshot, next), plans });
+}
+
+/** Turn the switch off: the upcoming games still Watching leave the plans; a game she turned Attending stays, and so do past stubs. */
+export function stopWatchingSeason(teamId: string) {
+  const season = watchingSeasonOf(teamId);
+  if (!season) return;
+  const today = todayFor(teamId);
+  commit({
+    ...snapshot,
+    watchingSeasons: withWatchingSeason(snapshot, { ...season, on: false, removed: {}, changed: {} }),
+    plans: snapshot.plans.filter((plan) => !(plan.watchSeason?.teamId === teamId && plan.watch && (plan.date >= today || plan.watchSeason.gone))),
+  });
+}
+
+/** The card's counts: games still ahead as Watching, how many spots she changed, and watched stubs from this team's games since the season began. */
+export function watchingCounts(teamId: string, seasonStart: string | null, log: PersonalLog = snapshot): { left: number; changed: number; watched: number; removed: number } {
+  const today = todayFor(teamId);
+  const season = watchingSeasonOf(teamId, log);
+  const left = log.plans.filter((plan) => plan.watchSeason?.teamId === teamId && plan.watch && plan.date >= today && !plan.watchSeason.gone).length;
+  const watched = seasonStubsOf(teamId, log, 'watched').filter((entry) => !seasonStart || entry.when.sort >= seasonStart).length;
+  return { left, changed: Object.keys(season?.changed ?? {}).length, watched, removed: Object.keys(season?.removed ?? {}).length };
+}
+
+/** Every switched-on watching season follows its schedule as it stands: at app start and once the account copy is in. */
+export async function refreshWatchingSeasons() {
+  for (const season of snapshot.watchingSeasons ?? []) {
+    if (!season.on) continue;
+    const games = await getTeamSchedule(season.teamId).catch(() => null);
+    if (games) syncWatchingSchedule(season.teamId, games);
+  }
+}
+
+/** The spot a watching-season plan takes by default (the season's, with no per-game change), for the per-game sheet. */
+export function watchingDefaultSpot(teamId: string, gameId: string, log: PersonalLog = snapshot): string | null {
+  const season = watchingSeasonOf(teamId, log);
+  return season ? watchSpotFor({ ...season, changed: {} }, gameId) : null;
 }
 
 /** Plans still ahead, soonest first. A past plan stays in the backup but leaves Up next. */

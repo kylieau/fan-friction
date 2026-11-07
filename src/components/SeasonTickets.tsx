@@ -20,6 +20,7 @@ import {
   type TeamGame,
 } from '../data';
 import { TicketIcon } from './Icons';
+import { WatchingSeasonRow } from './WatchingSeason';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { shortLocalDate } from '../lib/dates';
 import { favPath } from '../screens/FavoritesScreen';
@@ -45,7 +46,7 @@ export function SeasonTicketCard({ team, schedule }: { team: Team; schedule: Tea
     else if (canStart) setStep('plan');
   };
   return (
-    <section className="card season-card" aria-label="Season Tickets">
+    <section className="card season-card" aria-label="Season Tickets and Watching Season">
       {/* The whole row is the switch's label, so the tap target is the row, not the 48 × 28 track (Codex, steps 9–10). */}
       <label className="season-card-row season-switch-label">
         <TicketIcon size={18} />
@@ -72,6 +73,8 @@ export function SeasonTicketCard({ team, schedule }: { team: Team; schedule: Tea
           </Link>
         </div>
       )}
+      {/* Watching Season (build 7.2): the sibling row under the ticket rows, in the same card. */}
+      <WatchingSeasonRow team={team} schedule={schedule} />
       {step === 'plan' && schedule && (
         <PlanChoiceSheet
           team={team}

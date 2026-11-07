@@ -188,6 +188,7 @@ export function diffLogs(before: PersonalLog, after: PersonalLog, now = serverNo
     before.temperatureUnit !== after.temperatureUnit ||
     before.temperatureUnitAt !== after.temperatureUnitAt ||
     JSON.stringify(before.seasonTickets ?? null) !== JSON.stringify(after.seasonTickets ?? null) ||
+    JSON.stringify(before.watchingSeasons ?? null) !== JSON.stringify(after.watchingSeasons ?? null) ||
     JSON.stringify(before.removed ?? {}) !== JSON.stringify(removed);
   return { entries, plans, settings, log };
 }
@@ -231,6 +232,7 @@ export function mergeLogs(account: PersonalLog, phone: PersonalLog): PersonalLog
     ...mergeGettingThere(account, phone),
     ...mergeTemperatureUnit(account, phone),
     ...mergeSeasonTickets(account, phone),
+    ...mergeWatchingSeasons(account, phone),
     removed,
   };
 }
@@ -243,6 +245,16 @@ function mergeSeasonTickets(account: PersonalLog, phone: PersonalLog): Pick<Pers
     if (!mine || t.updatedAt > mine.updatedAt) byTeam.set(t.teamId, t);
   }
   return byTeam.size > 0 ? { seasonTickets: [...byTeam.values()] } : {};
+}
+
+/** Watching Season (build 7.2): team by team, the copy changed last wins, like the season tickets. */
+function mergeWatchingSeasons(account: PersonalLog, phone: PersonalLog): Pick<PersonalLog, 'watchingSeasons'> {
+  const byTeam = new Map((account.watchingSeasons ?? []).map((w) => [w.teamId, w]));
+  for (const w of phone.watchingSeasons ?? []) {
+    const mine = byTeam.get(w.teamId);
+    if (!mine || w.updatedAt > mine.updatedAt) byTeam.set(w.teamId, w);
+  }
+  return byTeam.size > 0 ? { watchingSeasons: [...byTeam.values()] } : {};
 }
 
 /** Temperature Units (build 7.1, M40): the copy changed last wins, as with the crowd range; an unstamped copy yields. */

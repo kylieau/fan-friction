@@ -6,7 +6,7 @@ import { METROS } from '../../config/metros';
 import { cleanHiddenTypes } from '../eventTypeFilter';
 import { parseStamp } from '../read';
 import { normalizeSeats } from '../stubTags';
-import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, Seats } from '../types';
+import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, WatchingSeason, Seats } from '../types';
 import type { EntryStore } from './types';
 
 const KEY = `${APP.slug}:your-nights`;
@@ -127,6 +127,23 @@ function seatsOf(value: unknown): Seats | undefined {
 }
 
 /** Season tickets as saved (build 7.1, item 15): one record per team, each checked piece by piece; anything else is dropped. */
+/** Watching Season records (build 7.2): a team, a default spot, the changed spots and removals, each dated. */
+export function readWatchingSeasons(value: unknown): WatchingSeason[] | undefined {
+  if (!Array.isArray(value)) return undefined;
+  const out: WatchingSeason[] = [];
+  for (const raw of value) {
+    if (!raw || typeof raw !== 'object') continue;
+    const w = raw as Partial<WatchingSeason>;
+    if (typeof w.teamId !== 'string' || typeof w.updatedAt !== 'string') continue;
+    const changed: WatchingSeason['changed'] = {};
+    if (w.changed && typeof w.changed === 'object') for (const [gameId, place] of Object.entries(w.changed)) if (typeof place === 'string' && place.trim()) changed[gameId] = place.trim().slice(0, 80);
+    const removed: WatchingSeason['removed'] = {};
+    if (w.removed && typeof w.removed === 'object') for (const [gameId, r] of Object.entries(w.removed as Record<string, { at?: unknown }>)) if (r && typeof r === 'object' && typeof r.at === 'string') removed[gameId] = { at: r.at };
+    out.push({ teamId: w.teamId, on: w.on === true, place: typeof w.place === 'string' && w.place.trim() ? w.place.trim().slice(0, 80) : 'Home', changed, removed, updatedAt: w.updatedAt });
+  }
+  return out.length > 0 ? out : undefined;
+}
+
 export function readSeasonTickets(value: unknown): SeasonTicket[] | undefined {
   if (!Array.isArray(value)) return undefined;
   const out: SeasonTicket[] = [];
@@ -208,6 +225,7 @@ export function readLocalLog(): PersonalLog {
       ...(readTemperatureUnit(parsed.temperatureUnit) ? { temperatureUnit: readTemperatureUnit(parsed.temperatureUnit) } : {}),
       ...(readStamp(parsed.temperatureUnitAt) ? { temperatureUnitAt: readStamp(parsed.temperatureUnitAt) } : {}),
       ...(readSeasonTickets(parsed.seasonTickets) ? { seasonTickets: readSeasonTickets(parsed.seasonTickets) } : {}),
+      ...(readWatchingSeasons(parsed.watchingSeasons) ? { watchingSeasons: readWatchingSeasons(parsed.watchingSeasons) } : {}),
       ...(parsed.removed ? { removed: readRemoved(parsed.removed) } : {}),
     };
   } catch {

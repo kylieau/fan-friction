@@ -110,6 +110,8 @@ function amateurSport(event: CrowdEvent | undefined): string | null {
  */
 export function PlanRow({ plan, event, start, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
   const kind = planKind(plan);
+  // A Watching Season game still Watching is a quiet row (build 7.2, mock 04, option 1 FINAL); one she turned Attending keeps the full row.
+  if (plan.watchSeason && kind === 'watching') return <QuietWatchRow plan={plan} start={start} />;
   const fave = planFavorite(event, favorites);
   const to = plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
   const noRead = isOutsideGamePlan(plan) || isFurtherOutRoom(plan.metroId, plan.venue);
@@ -170,4 +172,60 @@ export function PlanRow({ plan, event, start, favorites, rating, home }: { plan:
       )}
     </div>
   );
+}
+
+/**
+ * A Watching Season game on Upcoming (build 7.2, mock 04, FINAL option 1): one 44pt line, the date as text, the TV
+ * icon, the team in blue (a link to its page) and the opponent from its side, then the time and the spot, Home in
+ * grey and a place in bold ink. No tile, no verdict. The row opens the event; nothing is hidden.
+ */
+function QuietWatchRow({ plan, start }: { plan: Plan; start: string | null }) {
+  const team = TEAMS[plan.watchSeason?.teamId ?? ''];
+  const to = plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
+  const spot = plan.watchedPlace ?? 'Home';
+  const atHome = /^home$/i.test(spot);
+  const day = shortLocalDate(plan.date).replace(/^(\w+), \w+ (\d+)$/, '$1 $2');
+  const side = team ? sideOf(plan.title, team.shortName, team.name, team.aliases ?? []) : null;
+  const detail = [start ? clockTime(start) : null, spot].filter(Boolean).join(' · ');
+  const spoken = `Watching, ${team ? `${team.shortName} ${side ?? plan.title}` : plan.title}, ${shortLocalDate(plan.date)}${start ? `, ${clockTime(start)}` : ''}, ${atHome ? 'at home' : `at ${spot}`}`;
+  return (
+    <div className="activity-row plan-row quiet-row">
+      <Link to={to} className="activity-row-link" aria-label={spoken} />
+      <span className="quiet-date">{day}</span>
+      <span className="quiet-icon">
+        <TvIcon />
+      </span>
+      <span className="quiet-title">
+        {team && side ? (
+          <>
+            <Link to={favPath({ kind: 'team', id: team.id })} className="quiet-fave" aria-label={team.name}>
+              {team.shortName}
+            </Link>{' '}
+            {side}
+          </>
+        ) : (
+          <TitleText text={splitTitleLabel(plan.title).name} />
+        )}
+      </span>
+      <span className="quiet-spot">
+        {start && <span className="quiet-time">{clockTime(start)} · </span>}
+        <span className={atHome ? 'quiet-home' : 'quiet-place'}>{spot}</span>
+      </span>
+      <span className="sr-only">{detail}</span>
+    </div>
+  );
+}
+
+/** "vs Giants" or "at Giants" from a stored title ("Giants at Dodgers", "Dodgers at Giants", "Dodgers vs. Giants"); null when the team is not in it. */
+function sideOf(title: string, shortName: string, name: string, aliases: readonly string[]): string | null {
+  const plain = splitTitleLabel(title).name;
+  const parts = plain.split(/\s+(at|vs\.?)\s+/);
+  if (parts.length !== 3) return null;
+  const ours = new Set([shortName, name, ...aliases].map((x) => x.toLowerCase()));
+  const [a, word, b] = parts;
+  const isUs = (half: string) => ours.has(withoutProgramCode(half).toLowerCase());
+  if (word.startsWith('vs')) return isUs(a) ? `vs ${b}` : isUs(b) ? `vs ${a}` : null;
+  if (isUs(b)) return `vs ${a}`;
+  if (isUs(a)) return `at ${b}`;
+  return null;
 }

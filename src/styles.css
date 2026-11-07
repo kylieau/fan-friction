@@ -14487,3 +14487,185 @@ button.types-top-words {
   font-weight: 800;
   color: var(--dodger);
 }
+
+/* Watching Season (build 7.2; Kylie, Nov 4, 2026). The setup sheet's place field and chips. */
+.watch-spot-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.watch-spot-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.watch-note {
+  padding: 12px 14px;
+  background: #f3f7fb;
+  box-shadow: none;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.watch-note p {
+  margin: 0;
+}
+
+.watch-note strong {
+  color: var(--ink);
+}
+
+/* The quiet row on Upcoming (mock 04): one 44pt line, no tile. */
+.quiet-row {
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 14px 0 12px;
+}
+
+.quiet-date {
+  flex: 0 0 48px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.quiet-icon {
+  display: inline-flex;
+  color: var(--dodger);
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.quiet-title {
+  /* The title shows whole (the mock's priority); a long spot name gives way. */
+  flex: 1 0 auto;
+  max-width: 60%;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quiet-fave {
+  position: relative;
+  z-index: 1;
+  color: var(--dodger);
+  text-decoration: none;
+}
+
+.quiet-spot {
+  flex: 0 1 auto;
+  min-width: 0;
+  font-size: 13px;
+  color: var(--ink2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The setup sheet's section head keeps its title on one line beside the small right-hand note. */
+.watch-head .season-section-title {
+  white-space: nowrap;
+}
+
+.watch-head .stub-where-optional {
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+
+.quiet-place {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* The Season Watch Record card (mock 06). */
+.watch-record {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.watch-record-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.watch-record-pick {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dodger);
+  background: var(--card);
+  border: 1.5px solid var(--dodger);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+
+.watch-record-pick.is-plain {
+  color: var(--ink2);
+  border-color: var(--line);
+}
+
+.watch-tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.watch-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #f3f7fb;
+  min-height: 96px;
+}
+
+.watch-tile-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.watch-tile-big {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.watch-tile-small {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.watch-tile-sub {
+  font-size: 12.5px;
+  color: var(--ink2);
+}
+
+.watch-tile-sub strong {
+  color: var(--dodger);
+}
+
+.watch-record-foot {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--ink2);
+}

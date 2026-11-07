@@ -742,6 +742,12 @@ export interface Plan {
    */
   season?: { teamId: string; gameId: string; edited?: boolean; gone?: boolean };
   /**
+   * A Watching Season game (build 7.2; Kylie, Nov 4, 2026): the team whose season this is and the feed's game id.
+   * Separate from `season` (the tickets), so the two reconciles never mistake one for the other. `gone` once the
+   * schedule no longer lists the game. The marker stays when she changes the answer (a ticket turns it Attending).
+   */
+  watchSeason?: { teamId: string; gameId: string; gone?: boolean };
+  /**
    * Not written. Save stores the night only. An older phone copy may still
    * have one; it is dropped on load.
    */
@@ -837,6 +843,8 @@ export interface PersonalLog {
   temperatureUnitAt?: string;
   /** Season tickets, one record per team (build 7.1, item 15). Saved with the settings; each team's newer copy wins. */
   seasonTickets?: SeasonTicket[];
+  /** Watching Season per team (build 7.2; Kylie, Nov 4, 2026): the default spot, per-game spots and removals. */
+  watchingSeasons?: WatchingSeason[];
   /**
    * Entries and plans taken out, by id, with when (ISO). Kept so a copy on
    * another device cannot put them back; pruned after half a year.
@@ -871,6 +879,23 @@ export interface SeasonTicket {
   removed: Record<string, { reason?: SeasonRemovalReason; soldFor?: number; at: string }>;
   /** Home playoff games answered "Not this one", by game id. */
   declined?: string[];
+  /** When this record last changed (ISO); the newer copy wins per team. */
+  updatedAt: string;
+}
+
+/**
+ * Watching Season (build 7.2; Kylie, Nov 4, 2026, Locked): every game of the season, home and away, as a Watching
+ * plan with a default spot she can change per game. Games with tickets, or any plan of her own, stay as they are.
+ */
+export interface WatchingSeason {
+  teamId: string;
+  on: boolean;
+  /** The default spot: "Home", or a place she named. */
+  place: string;
+  /** Games whose spot she changed, by game id. */
+  changed: Record<string, string>;
+  /** Games taken out of the plans, by game id, and when. */
+  removed: Record<string, { at: string }>;
   /** When this record last changed (ISO); the newer copy wins per team. */
   updatedAt: string;
 }

@@ -62,6 +62,7 @@ import { TitleText } from '../components/TitleText';
 import { BackLink } from '../components/BackLink';
 import { QuickAddSheet } from '../components/QuickAddSheet';
 import { SeasonTicketCard } from '../components/SeasonTickets';
+import { SeasonWatchRecord } from '../components/WatchingSeason';
 
 /** How many schedule rows show before "See all". */
 const ROWS = 5;
@@ -469,6 +470,9 @@ export function FavoritePage() {
           </Link>
         </div>
       )}
+
+      {/* Watching Season's record (build 7.2, mock 06): under You at games, once the season is on or a watched stub exists. */}
+      {fav.kind === 'team' && team && <SeasonWatchRecord team={team} schedule={schedule} outcomeOf={(entry) => entryOutcome(entry, names)} />}
 
       <section className="you-block" aria-labelledby="fav-mine">
         <h2 id="fav-mine" className="you-heading">

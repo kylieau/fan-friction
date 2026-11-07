@@ -180,8 +180,17 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
 
 /** Her own plan on a season game joins the season; a seat or cost she typed counts as this game's edit. */
 export function adoptPlan(own: Plan, ticket: SeasonTicket, game: TeamGame): Plan {
-  const joined: Plan = { ...own, season: { teamId: ticket.teamId, gameId: game.id, ...(own.seats || own.cost ? { edited: true } : {}) } };
+  // Tickets win (build 7.2, Watching Season): a Watching Season plan on this game becomes the ticket's Attending plan;
+  // its marker stays, so the watching reconcile sees the game as hers and leaves it be.
+  const base: Plan = own.watchSeason && own.watch ? stripWatch(own) : own;
+  const joined: Plan = { ...base, season: { teamId: ticket.teamId, gameId: game.id, ...(own.seats || own.cost ? { edited: true } : {}) } };
   return withDefaults(joined, ticket, { seats: Boolean(own.seats), cost: Boolean(own.cost) });
+}
+
+/** The Watching answer and its place off a plan (a ticket makes it Attending). */
+function stripWatch(plan: Plan): Plan {
+  const { watch: _w, watchedPlace: _p, watchShare: _s, ...rest } = plan;
+  return rest;
 }
 
 /** The defaults applied again to a season plan (a default changed; "Apply to N unedited" or "Apply to all upcoming"). */
