@@ -100,11 +100,12 @@ export function StubFromFaveMenu({ row, event, rect, to, lifted, onClose }: { ro
   if (sheet) return <StubSheet event={event} onClose={onClose} />;
 
   return (
-    <div className="press-scrim" onClick={onClose}>
+    // A new press outside closes (never the lift of the finger that opened it, which a phone may turn into a click here).
+    <div className="press-scrim" onPointerDown={onClose}>
       <div className="press-lift" style={{ top: rect.top, left: rect.left + 12, width: rect.width - 24 }} aria-hidden inert>
         {lifted}
       </div>
-      <div ref={menu} className="press-menu" role="menu" aria-label={`Stub ${row.title}`} style={{ top: top ?? rect.bottom + 12, left: rect.left + 44, width: Math.min(290, rect.width - 56), visibility: top === null ? 'hidden' : undefined }} onClick={(e) => e.stopPropagation()}>
+      <div ref={menu} className="press-menu" role="menu" aria-label={`Stub ${row.title}`} style={{ top: top ?? rect.bottom + 12, left: rect.left + 44, width: Math.min(290, rect.width - 56), visibility: top === null ? 'hidden' : undefined }} onPointerDown={(e) => e.stopPropagation()}>
         {ANSWERS.map((a) => (
           <button key={a.answer} type="button" role="menuitem" className="press-menu-row" aria-current={current === a.answer ? 'true' : undefined} onClick={() => pick(a.answer)}>
             <span className="press-menu-icon">{a.icon}</span>

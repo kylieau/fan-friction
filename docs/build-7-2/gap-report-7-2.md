@@ -47,6 +47,8 @@ Shots: `.playwright-mcp/7-2-stub-from-faves-menu.png`, `7-2-stub-from-faves-menu
 6. The click swallow could stay armed past its gesture and eat a later keyboard click: it expires 700 ms after the hold fires (measured: Escape, then Enter on the row's link opens the event).
 Also from the review: the menu's Escape stays out of the way once the sheet is open.
 
+**Advisor's reconcile (third commit):** the scrim closes on a new press (`pointerdown`), never on a click, since a phone can turn the lift of the finger that opened the menu into a click on the scrim and close it at once (measured: the menu is open while the mouse is down, still open after release, closed by a tap outside, and an item still picks); and a `contextmenu` arriving within 700 ms of a fired hold (Android's, about 500 ms into a touch) is ignored, so the menu never opens twice over itself (measured: one menu after a right-click).
+
 ### Builder calls
 1. **The Stub It button stays unbuilt; the verdict tile stays** (Kylie, Nov 6: "good with your leans (as default choices)").
 2. **No silent removal from the menu:** the current answer is checked and opens the sheet, where the sheet's own take-it-back rule applies.

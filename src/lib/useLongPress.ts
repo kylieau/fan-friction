@@ -85,6 +85,8 @@ export function useLongPress(onLongPress: (rect: DOMRect) => void, enabled = tru
     },
     onContextMenu: (e: MouseEvent<HTMLElement>) => {
       e.preventDefault();
+      // Android fires this about 500 ms into a touch hold, after the hold itself has opened the menu: not twice.
+      if (firedAt.current && Date.now() - firedAt.current <= SWALLOW_MS) return;
       clear();
       latest.current(e.currentTarget.getBoundingClientRect());
     },
