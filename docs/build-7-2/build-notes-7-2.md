@@ -332,6 +332,8 @@ Shot: none. Mockup: `mockups/onboarding/02-home.png` draws Los Angeles preselect
 - **Locked (Kylie, Oct 30 form F13):** "Skip Setup" on Welcome ends the whole flow with the F2 defaults, and the later steps have a plain Skip and Back. Shot: none. Mockup: `mockups/onboarding/01-welcome.png`. Conflicts: none.
 
 **Built Nov 6, 2026 (evening), group 8 of the gap report, behind a gate.** The whole flow (`src/components/Onboarding.tsx`, the device state in `src/lib/setup.ts`): Welcome, Where's Home, What To See, Follow Your Faves, Done, to mocks 01 to 09 with the copy rules over the mocks (sentence-case buttons, Title Case headings, the Oxford comma). **Off by default** (`ONBOARDING_FLOW` in `src/config/onboarding.ts`) because F10 is open: the Welcome copy waits for Kylie. `?setup=1` on any address opens it for a look; Set Up Again (F8) and the Resume Setup nudge (F3) sit behind the same gate. The first-open "Where's home?" picker stays live until she flips it (one line).
+
+**On since Nov 7, 2026 (Kylie, Nov 7, deferring to the lean: the Welcome copy approved as drafted, with "Fan/Friction verdict" named once per R7j).** `ONBOARDING_FLOW` is true: a first open shows the flow in place of the "Where's home?" picker; a device with a home already set never sees it (Set Up Again in Settings does). Set Up Again and the Resume Setup nudge are live with it.
 - **The Welcome draft, for her yes or edits** (`WELCOME` in `src/config/onboarding.ts`): title "See How Crowded a Day Will Be"; lead "Fan/Friction reads the crowds for the days and events near you, so you can plan around them."; under "What a Verdict Is", five verdict tiles (1.4 Chill to 9.3 Cooked) with "Fewer people" and "More people", then "A verdict is a score from 1 to 10 and a word for how crowded a day or event will be. It comes from the events that day, the crowds they draw, and how they overlap. Who wins never counts." and the example day row; under "Tags and Marks", "A ticket, a TV, or a bookmark marks what you plan: Attending, Watching, or Interested. Every crowd number says where it comes from: announced, reported, or estimated."; the foot "Under a minute. Every step has defaults, and every step can be skipped."
 - **Builder calls:** the flow shows on Explore or Home, never over a deep link (today's rule kept); nothing is preselected on Where's Home and Continue waits for a pick (F12); Skip there sets Los Angeles with a Default mark that any real pick clears, never over a home already set; units default by the city's own rule and are saved only when toggled; What To See is the Crowd Size slider card alone (its Applies and No Estimate switches stay in Settings) and the first four live Event Types as parent switches with "N More Types" computed from the rest; Follow Your Faves is the existing picker (search, Suggested in the home city, Browse by League collapsed) with its own Done hidden, and no artist suggestions since none exist; Done's Change returns to its step and then back to Done; primary buttons are the app's 40pt main button (Kylie, Oct 13), not the mock's 52pt.
 - **Phone checks for Kylie:** the flow at `/explore?setup=1`, both paths; the Resume Setup nudge on an empty Upcoming and at the foot of Settings.
@@ -375,6 +377,8 @@ Shot: none. Mockup: `mockups/onboarding/02-home.png` draws Los Angeles preselect
 > 7. **"Show" on the hidden line**, where 44pt would cover the next row.
 
 The sweep (B2's list: the day-strip words to 9px; 44pt extensions on the year select, the recap chip, the Map day step arrows, the header date link, the activity chip, the Explore header round buttons, the Upcoming and Activity Filter and Search, the Hide Mine chip, the Map Feels and Legend buttons, the stub review row, and the Favorite Cities minus buttons; the clipped distance text on E4) runs once she says yes to the text.
+
+**Approved (Kylie, Nov 7, 2026, deferring to the lean: "good with leans for all").** The text above is now the rule in `docs/product/product-decisions.md` (the Explore density section, in place of the flat "44 pt, no text under 11 pt" sentence and the M14 note, which is item 4). The sweep ran the same day: see the gap report, group 10.
 
 ### G5. Notifications Later, Share Cards Maybe Never (Locked)
 - **Locked (Kylie, Oct 30 form G5):** no notifications now. Keep them for later. Do not draw or build a share card now. Her note: she is not sure the app will ever need share cards. Shot and mockup: none.
@@ -901,6 +905,7 @@ Kylie said: H11i, "i'm not even sure what "plans" means?? fine to defer/but also
 - Lean: (1). Names it once, with short labels elsewhere.
 - Kylie said: F10, "i want a better/more informative explanation for the Fan/Friction verdict (i think we should call it that?)", plus the tags and marks (occasion, crowd squeeze, and everything in the old tips) on Welcome.
 - Builder decides: record the pick and the reason here, and write the fuller Welcome copy to match.
+- **Pick (Nov 7, 2026):** (1). Welcome's verdict line opens "The Fan/Friction verdict is a score from 1 to 10..." and every other screen says "verdict". The fuller copy (the draft under F13) was approved by Kylie on Nov 7, deferring to the lean, and the gate flipped the same day.
 
 #### R7k (F4). Saved Personal Data And Accounts
 - Question: should saved personal data (Faves) require an account, unlike view settings?
@@ -915,6 +920,7 @@ Kylie said: H11i, "i'm not even sure what "plans" means?? fine to defer/but also
 - Lean: (1). It says exactly what she asked for.
 - Kylie said: G4, "change the hard rule then, because we already have exceptions". B2, fine with exceptions unless one is a real problem.
 - Builder decides: record the pick and the reason here, then run the sweep. Adding to the exception list still takes Kylie's OK.
+- **Pick (Nov 7, 2026):** (1), and Kylie approved the full text the same day (deferring to the lean). The sweep is group 10 in the gap report.
 
 ## Nov 4 Locked Mock Picks (Kylie, Review Form Open10 + Round 3 Mocks)
 
@@ -1060,8 +1066,8 @@ From the same anything-else note: a watching version of season ticketholders.
 - **No "New" pill** on the row: a personal app with no release notes has no use for one.
 - **The default-spot change applies to the upcoming games still at the old default**; a game whose spot she changed keeps it (per-game changes go through the event page's Stub it sheet until the Games & Spot page is mocked; see Waiting On Kylie).
 - **A watch plan's place is written on the plan, never through the sheet's share call,** so a season of games makes no network writes; quiet rows request no verdict, so a season never loads 162 nights.
-- **Not built, waiting on a mock (the Oct 13 rule):** the Games & Spot page (the per-game list) and the record card's "All ›". Per-game spot changes work today through the event page's Stub it sheet. A removal from the Stub it sheet or a plan's page is remembered, so the season never adds that game back.
-- **Flag for Kylie (lean, not a lock):** every surface that lists firm plans (the Map's next-saved-night card, a profile's Coming Up, friends' lines in Activity and Upcoming) now carries the whole season's watch plans. Lean: leave them in; they are her plans. A quieter rule (watch-season plans off the Map card and profiles) is one line if she prefers it.
+- **Not built, waiting on a mock (the Oct 13 rule):** the Games & Spot page (the per-game list) and the record card's "All ›". Per-game spot changes work today through the event page's Stub it sheet. A removal from the Stub it sheet or a plan's page is remembered, so the season never adds that game back. **Boards 07 and 08 approved as drawn (Kylie, Nov 7, 2026, deferring to the lean); built the same day, group 11 in the gap report.**
+- **Flag for Kylie (lean, not a lock):** every surface that lists firm plans (the Map's next-saved-night card, a profile's Coming Up, friends' lines in Activity and Upcoming) now carries the whole season's watch plans. Lean: leave them in; they are her plans. A quieter rule (watch-season plans off the Map card and profiles) is one line if she prefers it. **Decided (Kylie, Nov 7, 2026, deferring to the lean): they stay.**
 
 ### Known 7.1 Issues Mosaic Spotted And Left Alone
 
@@ -1071,5 +1077,5 @@ Small fixes for the builder to consider (not full 7.2 features):
 
 ### Waiting On Kylie (Mock Picks)
 
-**The Games & Spot page** (Watching Season's per-game list, mock 03's "Games & spot ›") has no board: the Oct 13 rule wants a phone-size mock and her yes before code. Proposed shape: the season page's rows by month, each with its spot, a tap opening a small sheet (Home / A Place / Back to default / Remove this game), removed games greyed with Re-add. None pending from the Oct 30 round 2 set. The former pending list (R1a, R2a, R2b, R3a, R4a, R4b, R5a, R6a) is locked above. New contemplations that still need her only if the builder cannot decide: league-tag codes without a clean mapping, the optional Stub It button if the builder wants her eyes before shipping, and Watching Season copy polish if quiet rows still feel too heavy in a real 162-game season.
+**The Games & Spot page** (Watching Season's per-game list, mock 03's "Games & spot ›") had no board on Nov 6; the builder drew `mockups/watching-season/07-games-and-spot.png` and `08-game-sheet.png` that evening and Kylie approved them on Nov 7 (deferring to the lean), so it is built (group 11). The shape as drawn: the season page's rows by month, each with its spot, a tap opening a small sheet (Home / A Place / Back to default / Remove this game), removed games greyed with Re-add. None pending from the Oct 30 round 2 set. The former pending list (R1a, R2a, R2b, R3a, R4a, R4b, R5a, R6a) is locked above. New contemplations that still need her only if the builder cannot decide: league-tag codes without a clean mapping, the optional Stub It button if the builder wants her eyes before shipping, and Watching Season copy polish if quiet rows still feel too heavy in a real 162-game season.
 

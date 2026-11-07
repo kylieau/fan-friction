@@ -1,6 +1,8 @@
 # The weather-data build: a plan for Kylie's review
 
-**Status: a plan only (Builder Task (a), build 7.2; Kylie, Oct 30, 2026, B5 and G7). Nothing here is built, no new service is signed up for, nothing touches Supabase. Written by Claude Code, Nov 6, 2026.** Facts about outside services are as last published and need a look before any signup; every cost is a 🚩.
+**Status: closed, Kylie's answers on Nov 7, 2026 ("good with leans for all", deferring to every lean in section 6): (1) the sentence is built from the numbers, (2) the roof note covers retractable rooms only, (3) it states "Retractable roof" and stops, (4) a past date's card shows what happened, labeled, while the verdict keeps the frozen forecast, (5) MET Norway when a launch is in view, nothing now. The build from these answers is in the build 7.2 gap report (group 12).**
+
+**Earlier status: a plan only (Builder Task (a), build 7.2; Kylie, Oct 30, 2026, B5 and G7). Nothing here is built, no new service is signed up for, nothing touches Supabase. Written by Claude Code, Nov 6, 2026.** Facts about outside services are as last published and need a look before any signup; every cost is a 🚩.
 
 ## 1. Sources
 

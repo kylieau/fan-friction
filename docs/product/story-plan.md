@@ -1,6 +1,8 @@
 # The story section: how a story gets written, checked, and kept honest
 
-**Status: a plan for Kylie's yes (Nov 6, 2026). Nothing here is built except the weekly link check (D4g) and the block the app already shows. Written by Claude Code from the Section D locks in `docs/build-7-2/build-notes-7-2.md` (Kylie, Oct 30, 2026).**
+**Status: closed, Kylie's yes on Nov 7, 2026 ("good with leans for all", deferring). The four questions below carried no lean, so the picks under them are the builder's, recorded Nov 7, and any of them is hers to overturn. The candidates script and the draft prompt the loop names are written the same day.**
+
+**Earlier status: a plan for Kylie's yes (Nov 6, 2026). Nothing here is built except the weekly link check (D4g) and the block the app already shows. Written by Claude Code from the Section D locks in `docs/build-7-2/build-notes-7-2.md` (Kylie, Oct 30, 2026).**
 
 ## What is locked (Section D)
 - A short recap, about three sentences, one paragraph, about 60 words, up to 3 source rows (D1, D4d).
@@ -32,8 +34,8 @@ Today the app reads `src/data/seed/stories.ts`, an event id to a text and its li
 - `.github/workflows/story-links.yml` runs it every Monday at 08:31 UTC and commits the file when it changed. Free on the public repo, no key. With zero stories it writes nothing and stays green.
 - A broken link comes back on its own once the address answers again (the file is rewritten each week).
 
-## Open for Kylie
-1. The section's title (D2): the built block says "The Evening" or "The Day".
-2. Which models spot-check, and whether that runs by script (a per-story API cost) or by hand.
-3. Whether a post on X may be quoted in a recap, with the link as its source.
-4. Who the person in step 4 is while it is only her: the same loop works with one approver.
+## Open for Kylie (answered Nov 7, 2026: she deferred; no lean had been offered, so these are the builder's picks)
+1. The section's title (D2): the built block says "The Evening" or "The Day". **Pick: keep it as built** (the block's own words already follow the "night" rule); D2 stays open only if she wants another title.
+2. Which models spot-check, and whether that runs by script (a per-story API cost) or by hand. **Pick: by hand until there are stories to check; a script is a 🚩 per-story API cost and waits for her OK and a named model pair.**
+3. Whether a post on X may be quoted in a recap, with the link as its source. **Pick: no quoting; links only, the Oct 4 lock's shape.** A recap may say what happened in its own words with the post as a source row.
+4. Who the person in step 4 is while it is only her: the same loop works with one approver. **Pick: Kylie approves every story; a tool drafts, never publishes.**
