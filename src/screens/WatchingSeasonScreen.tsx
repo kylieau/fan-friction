@@ -11,6 +11,7 @@ import {
   getPersonalLog,
   getTeamSchedule,
   HOME_SPOT,
+  ownWatchPlan,
   readdWatchingGame,
   removePlan,
   seasonLabel,
@@ -95,6 +96,7 @@ export function WatchingSeasonScreen() {
   const g = (n: number) => `${n} ${n === 1 ? 'game' : 'games'}`;
   const sub = `${team.name} · ${seasonLabel(games)} · ${g(counts.left)} left · ${counts.watched} watched`;
   const openPlan = gameOpen ? planOf(gameOpen) : undefined;
+  const openOwn = gameOpen && openPlan ? ownWatchPlan(openPlan, id, gameOpen.id) && openPlan.watch : false;
 
   return (
     <div className="screen page season-page">
@@ -165,7 +167,7 @@ export function WatchingSeasonScreen() {
       )}
 
       {changing && schedule && <WatchingSetupSheet team={team} games={schedule} mode="spot" place={season.place} onClose={() => setChanging(false)} />}
-      {gameOpen && openPlan?.watchSeason && openPlan.watch && <GameSpotSheet team={team} game={gameOpen} plan={openPlan} season={season} onClose={() => setGameOpen(null)} />}
+      {gameOpen && openPlan && openOwn && <GameSpotSheet team={team} game={gameOpen} plan={openPlan} season={season} onClose={() => setGameOpen(null)} />}
     </div>
   );
 }
@@ -181,8 +183,9 @@ function GameRow({ team, game, plan, season, onOpen }: { team: Team; game: TeamG
   const when = { sort: game.date, label: '', precision: 'day' as const };
   const time = game.start ? clockTime(game.start) : null;
   const removed = game.id in season.removed;
-  // Tickets win (07, 3): a ticket or any plan of hers that is not the season's own Watching shows that answer and opens the event page.
-  if (plan && !(plan.watchSeason && plan.watch)) {
+  // Tickets win (07, 3): a ticket or any plan of hers that is not this season's own Watching plan (another followed
+  // team's season on a shared game included) shows that answer and opens the event page.
+  if (plan && !(ownWatchPlan(plan, team.id, game.id) && plan.watch)) {
     const kind = plan.watch ? 'watching' : plan.interested ? 'interested' : 'attending';
     const word = kind === 'watching' ? 'Watching' : kind === 'interested' ? 'Interested' : 'Attending';
     return (

@@ -115,12 +115,23 @@ function skyWords(code: number | undefined, daylight: boolean): string | null {
 
 const WET = new Set(['Drizzle', 'Rain', 'Snow', 'Showers', 'Snow showers', 'Thunderstorms']);
 
-/** "low 60s", "mid 60s", "upper 60s", in the city's own units. */
+/** "low 60s", "mid 60s", "upper 60s", in the city's own units; below 10° (or below zero) the exact degree (Codex, group 12). */
 function band(f: number, metroId: string): string {
-  const n = parseInt(degreesFor(f, metroId), 10);
+  const shown = degreesFor(f, metroId);
+  const n = parseInt(shown, 10);
+  if (n < 10) return shown;
   const tens = Math.floor(n / 10) * 10;
   const ones = n - tens;
   return `${ones < 4 ? 'low' : ones < 7 ? 'mid' : 'upper'} ${tens}s`;
+}
+
+/** The precipitation word at the wettest hour: from its code, else from the cold (Codex, group 12: snow was "rain"). */
+function wetWord(row: Pick<WeatherRow, 'code' | 'feelsLikeF'>): string {
+  const code = row.code ?? -1;
+  if ((code >= 71 && code <= 77) || code === 85 || code === 86) return 'snow';
+  if (code >= 95) return 'storms';
+  if (code >= 51) return 'rain';
+  return row.feelsLikeF <= 34 ? 'snow' : 'rain';
 }
 
 /**
@@ -137,7 +148,7 @@ export function weatherSentence(metroId: string, date: LocalDate, hourly: readon
   const at = rows.find((r) => r.hour >= startHour) ?? rows[rows.length - 1];
   const after = rows.filter((r) => r.hour >= at.hour);
   const sun = sunHours(metroId, date);
-  const daylight = sun ? at.hour + 0.5 < sun.set : true;
+  const daylight = sun ? at.hour + 0.5 > sun.rise && at.hour + 0.5 < sun.set : true;
   const sky = skyWords(at.code, daylight);
   const wind = Math.max(...after.map((r) => r.windMph ?? 0));
   const windy = wind >= 15 ? `${sky ? ' and breezy' : 'Breezy'}, ${Math.round(wind)} mph` : '';
@@ -145,12 +156,15 @@ export function weatherSentence(metroId: string, date: LocalDate, hourly: readon
   const wettest = after.reduce<WeatherRow | null>((best, r) => ((r.precipProbability ?? 0) > (best?.precipProbability ?? 0) ? r : best), null);
   const chance = wettest?.precipProbability ?? 0;
   let second: string;
+  const deg = (f: number) => degreesFor(f, metroId);
   if (chance >= 30 && wettest) {
-    second = sky && WET.has(sky) ? `A ${Math.round(chance)}% chance around ${hourWord(wettest.hour)}.` : `A ${Math.round(chance)}% chance of rain around ${hourWord(wettest.hour)}.`;
+    second = sky && WET.has(sky) ? `A ${Math.round(chance)}% chance around ${hourWord(wettest.hour)}.` : `A ${Math.round(chance)}% chance of ${wetWord(wettest)} around ${hourWord(wettest.hour)}.`;
+  } else if (after.length < 2) {
+    // One stored hour at or after the start (the rows ran out early): that hour alone, no claim about the evening.
+    second = `${deg(at.feelsLikeF)} at ${hourWord(at.hour)}.`;
   } else {
     const last = after[after.length - 1];
     const drop = at.feelsLikeF - last.feelsLikeF;
-    const deg = (f: number) => degreesFor(f, metroId);
     if (drop >= 8) {
       const when = after.find((r) => at.feelsLikeF - r.feelsLikeF >= 8) ?? last;
       second = `Cools to the ${band(last.feelsLikeF, metroId)} after ${hourWord(when.hour)}.`;

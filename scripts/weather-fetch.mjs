@@ -145,8 +145,14 @@ try {
   let dayCalls = 0;
   if (backfill) {
     for (const date of [...new Set(events.map((e) => e.date))].sort()) {
-      for (const day of await fetchWeatherDays(METRO, metro.center, date, date, now)) daysByDate.set(day.date, [...(daysByDate.get(day.date) ?? []), day]);
-      dayCalls += 1;
+      // One failed day never discards the rows already fetched (Codex, group 10).
+      try {
+        for (const day of await fetchWeatherDays(METRO, metro.center, date, date, now)) daysByDate.set(day.date, [...(daysByDate.get(day.date) ?? []), day]);
+        dayCalls += 1;
+      } catch (err) {
+        missed.push(`city days ${date}`);
+        console.error(`${METRO} weather: the ${date} day-range call skipped (${err instanceof Error ? err.message : err}).`);
+      }
       await new Promise((r) => setTimeout(r, 150));
     }
   } else {
@@ -157,6 +163,8 @@ try {
       // Yesterday's highs and lows stay in place for the window; the hourly rows above still save.
       missed.push('city days');
       console.error(`${METRO} weather: the day-range call skipped (${err instanceof Error ? err.message : err}).`);
+      // A city with no events ahead makes this its only call: nothing fetched is a failed city (Codex, group 10).
+      if (fetched === 0) throw new Error('nothing fetched: the day-range call failed and there were no point-dates');
     }
   }
 

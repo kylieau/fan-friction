@@ -47,8 +47,14 @@ Kylie's Nov 7, 2026 answers to `docs/product/weather-data-plan.md` ("good with l
 - `scripts/weather-build-check.mjs la boston toronto`: roof values on file are the four allowed; 15 retractable rooms all open-air; 794 (Boston) and 573 (Toronto) observed rows planted with absurd numbers on five past dates each, `weatherAt` answered with none, `weatherAsItWas` with all, every verdict byte-identical; 30 of 30 dates gave a sentence of 5 to 11 words. `npm run build` passes.
 - The observed fetch, by hand: `node scripts/weather-fetch.mjs --metro=ottawa-gatineau` wrote 6 observed hourly rows and one observed day for Nov 6, every value differing from the last forecast. Calls: about one day's worth of point-dates per city more each night (about 100 across the 40 cities, within Open-Meteo's free 10,000 a day; no money).
 
-### Codex review
-_(pending)_
+### Codex review (6 findings, all fixed in the follow-up commit)
+- **"What it was" rows are the service's archived model run, not a reading:** the card now says "estimated" beside the title for observed and reanalysis rows alike (the Oct 5 rule's "labeled estimated"); the basis doc says what the rows are.
+- **The event's own why line still said "no roof" at a retractable room** (`formulaRead.ts`): one shared `roofWord` now serves the date's and the event's lines.
+- **Negative degrees made "the upper -10s":** below 10° the band is the exact degree ("Cools to -2° after 9 pm").
+- **Snow read as rain:** the precipitation word comes from the wettest hour's code (snow, storms, rain), else from the cold.
+- **One stored hour claimed a whole evening:** fewer than two hours at or after the start give "3° at 2 pm." alone.
+- **"Sunny" before sunrise:** daylight checks sunrise and sunset. Rerun: all passed, 30 sentences, Toronto's "0° at 7 pm, -2° by 11 pm" intact.
+- Unreviewed by Codex (its own note): the fetch script's `wanted` map, `have` set and `sameKey` merge, the backfill branch, `todayIn` for an uncovered metro, `getCityDate` caching. The by-hand Ottawa run and the planted-rows check cover the first three in practice.
 
 ## Group 11: Games & Spot
 
@@ -63,8 +69,10 @@ Boards 07 and 08 (`mockups/watching-season/`), approved by Kylie on Nov 7, 2026 
 - Headless on a seeded Kings season (70 games): the foot link's href; the page's rows (358 × 60); Change at the card's right (tap 45); the sheet's Save 44, Remove 49, close 50, Back to default 45. Set a game to "The Short Stop": the row reads bold with Changed and the season's `changed` map holds it. Back to default clears it. Remove: the row greys with Re-add and the id lands in `removed`; Re-add brings it back and clears `removed`. Two games turned Attending by hand: their rows are links to the event with the Attending chip, and the sub line counts 68 left.
 - `npm run build` passes.
 
-### Codex review
-_(pending)_
+### Codex review (2 findings, both fixed in the follow-up commit)
+- **A shared game between two followed teams opened the wrong season's editor:** `ownWatchPlan(plan, teamId, gameId)` in `watchingSeason.ts` now decides both the row's branch and the sheet's guard; another team's season plan renders as the existing-answer row (its Watching chip, opens the event). `watching-season-check.mjs` has a two-team fixture (the shared game has one event id from either side; the second season never touches the plan; only the first team's page owns it): 2 new checks pass.
+- **The sheet left keyboard focus behind:** the shared `SeasonSheet` now reads the opener during its first render, moves focus to its title on open (a field with autoFocus takes it from there) and returns it to the opener on close. Measured: Enter on a row puts focus on "This Game Only", Escape puts it back on that row; the A Place sheet's input takes focus and gives it back. Tab containment joins the shared dialog item in BACKLOG.
+- Codex did not report on items (b), (d), (e), (g) or (h) of the brief; its render check at 390 failed, so the layout at that width rests on the builder's measurements above.
 
 ## Group 10: The G4 Sweep, Crowd Size and Caps, and the Nightly Weather Fix
 
@@ -82,8 +90,14 @@ Kylie, Nov 7, 2026: "good with leans for all". The rule text she approved is now
 - `npm run build` passes. The first-run flow with the real gate on: both paths walked headless after the flip (Skip setup lands on Explore with Los Angeles marked Default; Continue through all five steps with Boston picked lands on Explore with Boston as home, the flow gone on the next open).
 - Headless seeding for a hand-added stub: `fan-friction:your-nights` needs `version: 1` or the log reads empty; an entry wants `id`, `kind`, `title`, `when {sort, label, precision}`, `tags`, `sport`, `sides`.
 
-### Codex review
-_(pending)_
+### Codex review (6 findings, all fixed in the follow-up commit)
+- **The minus button's extension reached the favorite's link beside it:** vertical only now (28 × 48); measured, the point 4px left of the button belongs to the row, not the button.
+- **Review and Cost tap areas overlapped by 5px** on a hand-added stub: 5px more above the actions row; measured, nothing tappable sits in the 8px above the edit link's extension.
+- **The date link's extension reached the city switcher by 1px:** 6 up, 8 down; measured, 7px above the link is the switcher's chip and 5px above is the link.
+- **A city with no events ahead whose one day-range call failed exited green:** nothing fetched now throws for that city.
+- **Backfill lost its fetched rows on one failed day:** each day's call is caught on its own.
+- **The crowd check's cap section could pass on an empty sample:** it runs on two fixtures (a 1,500 room and Dodger Stadium, no count) and prints the live counts for the record; `rangeCap` also ignores a room with no seats on file. Rerun: all passed.
+- Checked by Codex, no issue: the `keep` bypass runs first; `Error.cause` compiles. Not covered by Codex: `.year-select`, `.recap-chip`, `.entry-edit` beside the pill, `.legend-button` (the builder's gap probes above cover the year select, the legend and Feels against the map, and the edit link).
 
 ## Group 9: The Story Section (D) and the G4 Rule Text, the parts that need no yes
 

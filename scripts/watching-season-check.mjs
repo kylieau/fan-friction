@@ -83,6 +83,16 @@ try {
 
   // 7. Preseason stays out of the season's set, the playoff game is in.
   check(w.watchSeasonGames(games).length === 6, 'the season is six games (no preseason)');
+
+  // 9. Two followed teams share a game (Codex, group 11 review): the plan keeps the first season's marker, the second
+  //    season leaves it alone, and only the first team's Games & Spot page may edit it.
+  const otherSeason = { teamId: 'padres', on: true, place: 'The Bar', changed: {}, removed: {}, updatedAt: '2027-01-01T00:00:00Z' };
+  const sharedPlan = first.find((p) => p.watchSeason?.gameId === 'g5');
+  const theirGame = { ...games[5], home: true, opponent: 'Dodgers' }; // the same feed game, seen from the Padres' side
+  check(t.seasonPlanEventId(theirGame) === sharedPlan.eventId, 'the shared game has one event id from either side');
+  const withOther = w.reconcileWatchPlans([sharedPlan], otherSeason, [theirGame], today, 'friends');
+  check(withOther.length === 1 && withOther[0] === sharedPlan, "the second team's season never touches a plan already on the shared game");
+  check(w.ownWatchPlan(sharedPlan, teamId, 'g5') && !w.ownWatchPlan(sharedPlan, 'padres', 'g5') && !w.ownWatchPlan(sharedPlan, teamId, 'g2') && !w.ownWatchPlan(undefined, teamId, 'g5'), "ownWatchPlan: the first team's page owns it, the second's and another game's do not");
 } finally {
   await server.close();
 }

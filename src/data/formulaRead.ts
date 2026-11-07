@@ -9,7 +9,7 @@ import { verdictFromScore, type EventCrowdFight } from './formula/crowdFight';
 import { milesBetween } from '../lib/windows';
 import { VENUES } from './venues';
 import { METROS, degreesFor } from '../config/metros';
-import { eventConditions } from './formula/weather';
+import { eventConditions, roofWord } from './formula/weather';
 import { weatherForEvent } from './weather';
 import { drawSize, sizeTier } from './read';
 import { listTitle, mapTitle } from '../lib/eventTitle';
@@ -30,8 +30,9 @@ function eventWhy(row: EventCrowdFight, read: DateRead): string {
     const start = row.event.start ? ` at a ${clock(row.event.start)} start` : '';
     if (cond.cause === 'rain') return `Rain in the forecast${start}.`;
     // Degrees follow the unit rule like every other temperature (M40; Codex, stage 2).
-    if (cond.cause === 'cold') return `${degreesFor(cond.row.feelsLikeF, row.event.metroId)} feels-like${start}, no roof.`;
-    return `${degreesFor(cond.effectiveF, row.event.metroId)} feels-like${start}, no roof.`;
+    // A retractable room is named as such (M33; Codex, group 12: the event's line had kept "no roof").
+    if (cond.cause === 'cold') return `${degreesFor(cond.row.feelsLikeF, row.event.metroId)} feels-like${start}, ${roofWord(row.event)}.`;
+    return `${degreesFor(cond.effectiveF, row.event.metroId)} feels-like${start}, ${roofWord(row.event)}.`;
   }
   // An Unopposed event says it from its own side (Kylie, Oct 11, build notes 3, 8.1, item 15).
   if (!top || top.d < 0.03) return 'The biggest event around.';

@@ -263,7 +263,7 @@ button {
 .map-header-date-link::after {
   content: '';
   position: absolute;
-  inset: -7px 0;
+  inset: -6px 0 -8px; /* 6 up (the city switcher's row sits 7px above), 8 down: 44 (Codex, group 10) */
 }
 
 .map-header-date {
@@ -4571,6 +4571,14 @@ button.back-link {
   font-weight: 800;
 }
 
+/* A past day's "estimated" beside the title (the archived run, not a reading), the chip's grey. */
+.weather-basis {
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
 /* M33 (Nov 7, 2026): "Retractable roof" under the card's title, quiet, one line. */
 .weather-roof {
   display: block;
@@ -5683,6 +5691,7 @@ ul.fav-strip {
   justify-content: space-between;
   gap: 12px;
   flex-wrap: wrap;
+  padding-top: 5px; /* Cost's 7px extension above and the edit link's 6px below never meet (Codex, group 10) */
 }
 
 .entry-private {
@@ -12673,7 +12682,7 @@ a.watch-row {
 .outline-remove::after {
   content: '';
   position: absolute;
-  inset: -10px; /* G4 sweep: -8 measured 42 (the 1.5px border eats into it); 44 now */
+  inset: -10px 0; /* G4 sweep: 28 wide, 48 tall; vertical only, so it never covers the favorite's link beside it (Codex, group 10) */
 }
 
 /* Codex, steps 9–10 review: the Log sheet's lists never shrink inside its scroll (rows were cut and the reserved past

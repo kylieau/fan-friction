@@ -71,22 +71,33 @@ try {
   }
   console.log(flags.length ? `Muting size and range number on different sides of 5,000:\n  ${flags.join('\n  ')}` : 'No event has its muting size and range number on different sides of 5,000.');
 
-  // (3) A ceiling alone: under Min hidden, at or above Min the switch decides, and Max never reads it.
-  const capOnly = [];
-  for (const date of dates) for (const e of (await data.getCityDate(metroId, date)).events) if (data.rangeNumber(e) == null && data.rangeCap(e) != null) capOnly.push(e);
-  const under = capOnly.filter((e) => data.rangeCap(e) < 5000);
-  const over = capOnly.filter((e) => data.rangeCap(e) >= 5000);
+  // (3) A ceiling alone: under Min hidden, at or above Min the switch decides, and Max never reads it. Proved on
+  // fixtures (a real room each, no count), so the check never passes on an empty sample (Codex, group 10); the live
+  // rows are counted for the record.
   const keep = new Set();
   const check = (label, ok) => {
     console.log(`${ok ? 'ok  ' : 'FAIL'} ${label}`);
     if (!ok) failed = true;
   };
-  check(`cap-only rows found: ${under.length} under 5,000, ${over.length} at or above`, capOnly.length > 0);
-  check('a cap under Min hides whatever the switch says', under.every((e) => !data.passesCrowdRange(e, { min: 5000 }, keep) && !data.passesCrowdRange(e, { min: 5000, showUnknown: false }, keep)));
-  check('a cap at or above Min shows with the switch on', over.every((e) => data.passesCrowdRange(e, { min: 5000 }, keep)));
-  check('a cap at or above Min hides with the switch off', over.every((e) => !data.passesCrowdRange(e, { min: 5000, showUnknown: false }, keep)));
-  check('Max never reads a cap', over.every((e) => data.passesCrowdRange(e, { max: 1000 }, keep)));
-  check('a stubbed row with a small cap still shows', under.every((e) => data.passesCrowdRange(e, { min: 5000 }, new Set([e.id]))));
+  const { VENUES } = await server.ssrLoadModule('/src/data/venues.ts');
+  const roomOf = (pick) => Object.values(VENUES).find((v) => v.metroId === metroId && v.capacity.some((c) => pick(c.seats)));
+  const small = roomOf((n) => n >= 1000 && n < 4000);
+  const large = roomOf((n) => n >= 20000);
+  const fixture = (venue, id) => ({ id, metroId, date: dates[0], title: 'Fixture', kind: 'game', audience: { domain: 'sports', sport: 'basketball' }, place: { type: 'venue', venueId: venue.id }, crowd: [], source: { id: 'seed' } });
+  check(`fixtures: a small room (${small?.names.at(-1).name}) and a large one (${large?.names.at(-1).name})`, Boolean(small && large));
+  if (small && large) {
+    const s = fixture(small, 'fixture-small');
+    const l = fixture(large, 'fixture-large');
+    check(`the fixtures have no range number and a cap (${data.rangeCap(s)} and ${data.rangeCap(l)})`, data.rangeNumber(s) == null && data.rangeNumber(l) == null && data.rangeCap(s) < 5000 && data.rangeCap(l) >= 5000);
+    check('a cap under Min hides whatever the switch says', !data.passesCrowdRange(s, { min: 5000 }, keep) && !data.passesCrowdRange(s, { min: 5000, showUnknown: false }, keep));
+    check('a cap at or above Min shows with the switch on', data.passesCrowdRange(l, { min: 5000 }, keep));
+    check('a cap at or above Min hides with the switch off', !data.passesCrowdRange(l, { min: 5000, showUnknown: false }, keep));
+    check('Max never reads a cap', data.passesCrowdRange(l, { max: 1000 }, keep) && data.passesCrowdRange(s, { max: 1000 }, keep));
+    check('a stubbed row with a small cap still shows', data.passesCrowdRange(s, { min: 5000 }, new Set([s.id])));
+  }
+  const capOnly = [];
+  for (const date of dates) for (const e of (await data.getCityDate(metroId, date)).events) if (data.rangeNumber(e) == null && data.rangeCap(e) != null) capOnly.push(e);
+  console.log(`     live cap-only rows on the sampled dates: ${capOnly.filter((e) => data.rangeCap(e) < 5000).length} under 5,000, ${capOnly.filter((e) => data.rangeCap(e) >= 5000).length} at or above`);
 } finally {
   await server.close();
 }

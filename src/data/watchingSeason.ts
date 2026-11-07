@@ -26,6 +26,15 @@ export function watchGameSet(games: readonly TeamGame[], season: WatchingSeason)
   return watchSeasonGames(games).filter((game) => !(game.id in season.removed));
 }
 
+/**
+ * Whether a plan is this team's own watching-season plan for this game. Two followed teams share a game (Kings at
+ * Ducks), and the plan carries the marker of whichever season added it first; the other team's Games & Spot page
+ * treats it as an answer of hers (the existing-answer row), never as its own to edit (Codex, group 11 review).
+ */
+export function ownWatchPlan(plan: Pick<Plan, 'watchSeason'> | undefined, teamId: string, gameId: string): boolean {
+  return plan?.watchSeason?.teamId === teamId && plan.watchSeason.gameId === gameId;
+}
+
 /** The spot a game takes: its own when she changed it, else the season's default. */
 export function watchSpotFor(season: WatchingSeason, gameId: string): string {
   return season.changed[gameId] ?? season.place;

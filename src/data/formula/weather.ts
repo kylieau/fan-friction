@@ -11,9 +11,11 @@ import type { CrowdEvent, LocalDate } from '../types';
 
 /**
  * Where a row came from: a forecast saved before the hour; the reanalysis archive (pre-app dates, weeks later);
- * or `observed`, Open-Meteo's own analysis of a recent day as it happened, fetched the next night from the same
- * forecast service (build 7.2, Nov 7, 2026; Kylie's Oct 5 clarification allows observed weather on a past date).
- * The verdict and the stamp read forecasts only; observed rows feed the past date's weather card alone.
+ * or `observed`, the same forecast service asked the next night for the day gone by. Open-Meteo serves that as its
+ * archived short-range model run (its "historical forecast"), the closest free thing to a reading and not one, so
+ * the app labels it estimated, as it does the reanalysis rows (build 7.2, Nov 7, 2026; Kylie's Oct 5 clarification
+ * allows observed weather on a past date). The verdict and the stamp read forecasts only; observed rows feed the
+ * past date's weather card alone.
  */
 export type WeatherBasis = 'forecast' | 'reanalysis' | 'observed';
 
@@ -125,6 +127,12 @@ export function isOpenAir(event: CrowdEvent): boolean {
   if (event.place.type !== 'venue') return true;
   const venue = VENUES[event.place.venueId];
   return venue ? venue.roof !== 'indoor' : true;
+}
+
+/** "retractable roof" at a room whose roof opens and closes (M33), else "no roof": the why lines' words. */
+export function roofWord(event: CrowdEvent): 'retractable roof' | 'no roof' {
+  const venue = event.place.type === 'venue' ? VENUES[event.place.venueId] : undefined;
+  return venue?.roof === 'retractable' ? 'retractable roof' : 'no roof';
 }
 
 /** The hours an event runs, for the event page's high and low: start through end plus the exit hour. */

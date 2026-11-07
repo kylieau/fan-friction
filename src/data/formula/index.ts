@@ -7,10 +7,9 @@ import { formatScore } from '../../config/scoreLabels';
 import { listTitle } from '../../lib/eventTitle';
 import { eventFeedsFriction, listedCapacity } from '../read';
 import type { CrowdEvent } from '../types';
-import { VENUES } from '../venues';
 import { weatherForEvent } from '../weather';
 import { dateCrowdFight, leftOut, type DateCrowdFight } from './crowdFight';
-import { dateConditions, eventConditions, type EventConditions, weatherGlyph } from './weather';
+import { dateConditions, eventConditions, roofWord, type EventConditions, weatherGlyph } from './weather';
 import { dateGridlock, gridlockWhy, type DateGridlock } from './gridlock';
 
 export { eventCrowdFight, dateCrowdFight, timeFactor, verdictFromScore } from './crowdFight';
@@ -90,7 +89,7 @@ function conditionsWhy(rows: { event: CrowdEvent; conditions: EventConditions }[
   const start = worst.event.start ? ` at a ${clock(worst.event.start)} start` : '';
   const name = listTitle(worst.event);
   // A retractable room is named as such (M33): the formula still counts the day, since no feed says if it is closed.
-  const roof = worst.event.place.type === 'venue' && VENUES[worst.event.place.venueId]?.roof === 'retractable' ? 'retractable roof' : 'no roof';
+  const roof = roofWord(worst.event);
   if (c.cause === 'heat') return `${degreesFor(c.effectiveF, worst.event.metroId)} feels-like${start}, ${roof} (${name}).`;
   if (c.cause === 'rain') return `${weatherGlyph(c.row)} Rain in the forecast${start} (${name}).`;
   return `${degreesFor(c.row.feelsLikeF, worst.event.metroId)} feels-like${start}, ${roof} (${name}).`;

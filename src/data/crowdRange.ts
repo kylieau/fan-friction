@@ -28,7 +28,9 @@ export function rangeNumber(event: CrowdEvent): number | undefined {
  * nothing about the crowd, so it never meets Max, and the No Estimate switch still decides those rows.
  */
 export function rangeCap(event: CrowdEvent): number | undefined {
-  return rangeNumber(event) == null ? listedCapacity(event) : undefined;
+  if (rangeNumber(event) != null) return undefined;
+  const cap = listedCapacity(event);
+  return cap != null && cap > 0 ? cap : undefined;
 }
 
 /**

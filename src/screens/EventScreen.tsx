@@ -737,6 +737,9 @@ function WeatherDetail({ event }: { event: CrowdEvent }) {
         </span>
         <span className="weather-title">
           {row.basis === 'forecast' ? 'Forecast' : 'What it was'} at {event.start ? clockTime(event.start) : 'start'}
+          {/* A past day's rows are the weather service's own archived model run or the reanalysis archive, not a station's
+              reading, so they carry the label every estimate does (Codex, group 12; the Oct 5 rule's "labeled estimated"). */}
+          {row.basis !== 'forecast' && <span className="weather-basis">estimated</span>}
           {retractable && <span className="weather-roof">Retractable roof</span>}
         </span>
       </div>
