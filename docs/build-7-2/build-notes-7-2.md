@@ -55,6 +55,8 @@ Short paths used below (all under `docs/build-7-2/mockups/` unless noted): `mock
 
 ## Section A: Upcoming Screen Fixes
 
+**Built Nov 6, 2026** with R5a (`3fe66312` and the R5a commit; report group 5): A1, A2, A3, A5 as locked; A4's rule (a fave by id on either side, never a name match) inside the new plan row; A7 stays a lean, outlines kept. R5b to R5g decided below.
+
 ### A1. Two-Level Faves Band (Locked)
 Shot: `mockups/crops/a1-slab.png` (built left). Mockup: `docs/build-7-1/mockups/season-tickets/28-plans-window-few-plans.png`, `30-faves-sticky-end-state.png`, and `32-faves-overlap-closeup.png`.
 - **Locked (Kylie, Oct 30 form A1):** YOUR FAVES is the darker band (33pt, `#C9DAEE`) over a paler month strip (28 to 29pt, `#E3EDF8`), about 61pt together while pinned, instead of the built flat 80pt slab of two same-color 40pt bands.
@@ -749,13 +751,15 @@ Kylie said for all of R5: A4, "this actually feels repetitive to me under Your P
 - Lean: (1). The date tiles already say when.
 - Kylie said: A4, "i dont think we need the today line above "your faves"???"
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** The line is gone; the date tiles say when, and the YOUR FAVES band (33pt) carries the swipe zone.
 
 #### R5c. Lead Wording: Code Or Spelled Out (Follows R5a)
 - Question: B3 ("Attending · UCLA FB") and A6 ("Attending · Women's Basketball") conflict. Which way does the lead read?
 - Options: (1) Spelled out, no school: "Attending · Men's Basketball" (A6). (2) Code with the school: "Attending · UCLA FB" (B3). (3) Code without the school: "Attending · FB".
 - Lean: (1), paired with the R5a lean C. If Kylie picks B in R5a, use the code.
 - Kylie said: B3 picked the code, A6 agreed with spelled out "in a vacuum", and A4 wants the repeat gone.
-- Builder decides: record the pick and the reason here. Sport label lines elsewhere keep full words either way (M38, H10).
+- Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): answered by the r3 final.** No status word on plan rows; a fave's row leads with the fave's name, a non-fave row with the category in full words ("Men's Soccer", "Concert"). B3's "Attending · UCLA FB" is superseded. Sport lines elsewhere keep full words (M38, H10). Sport label lines elsewhere keep full words either way (M38, H10).
 
 #### R5d. Your Faves Rows: Same Rule
 - Question: should Your Faves rows follow the plan row rule?
@@ -763,6 +767,7 @@ Kylie said for all of R5: A4, "this actually feels repetitive to me under Your P
 - Lean: (1). In Your Faves, the fave name is the information, not a repeat.
 - Kylie said: A4, as above.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** Faves rows keep their rule; there the fave's name is the information.
 
 #### R5e. Plan Rows Without The Grey Label Line (Follows R5a)
 - Question: is it OK for C or D to move the sport off the label line (bending M38 for plan rows only)?
@@ -770,6 +775,7 @@ Kylie said for all of R5: A4, "this actually feels repetitive to me under Your P
 - Lean: (1). The sport still shows, in the lead, and M38 was about never losing it.
 - Kylie said: A4, as above.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1), plan rows only.** The sport sits in the header (the category) or on the detail line (a college game the header does not name); M38 holds everywhere else.
 
 #### R5f. The Swipe Zone Without The Today Line
 - Question: with the Today line gone, does the Your Faves band carry the swipe-outside-the-box zone (7.1 item 16)?
@@ -777,6 +783,7 @@ Kylie said for all of R5: A4, "this actually feels repetitive to me under Your P
 - Lean: (1). The band is 40pt, bigger than the 22pt line it replaces.
 - Kylie said: nothing specific.
 - Builder decides: record the pick and the reason here.
+- **Decided (Nov 6, 2026): (1).** The YOUR FAVES band carries the zone; at 33pt it is taller than the 22pt line it replaces.
 
 #### R5g. Option D: Mark On Faves Date Tiles (Only If R5a Is D)
 - Question: if D ships, does the date tile mark also show on Your Faves rows?
@@ -784,6 +791,7 @@ Kylie said for all of R5: A4, "this actually feels repetitive to me under Your P
 - Lean: (1). One place for status on the screen.
 - Kylie said: nothing specific.
 - Builder decides: record the pick and the reason here (moot unless R5a is D).
+- **Decided (Nov 6, 2026): moot.** R5a is the r3 final, not D; faves rows keep the plan mark after the title.
 
 ### R6. What A Plan Is
 

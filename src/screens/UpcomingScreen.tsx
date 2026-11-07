@@ -1,9 +1,10 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { SearchButton } from '../components/SearchButton';
-import { BookmarkIcon, PeopleIcon, TicketIcon, TvIcon } from '../components/Icons';
+import { BookmarkIcon, PeopleIcon, TicketIcon } from '../components/Icons';
 import { ListBand } from '../components/ListBand';
 import { FollowRow, LeadIcon, readPath } from '../components/FollowRow';
+import { PLAN_WORDS, PlanRow, planIcon, planKind, type PlanKind } from '../components/PlanRow';
 import { useFavoriteRows, type ScheduleRow } from '../components/useFavoriteRows';
 import { useArtistGenres } from '../components/useArtistGenres';
 import { CheckRow, FAVORITE_KINDS, FilterButton, FilterChips, FilterSheet, SheetHeading, favoriteSub, prunePicked, readPicked, toggleIn, writePicked, type Picked } from '../components/FilterSheet';
@@ -22,12 +23,10 @@ import {
   getTeamSchedule,
   seasonPlanEventId,
   seasonPlayoffGames,
-  seatShort,
   TEAMS,
   isFurtherOut,
   isFurtherOutRoom,
   isOutsideGame,
-  isOutsideGamePlan,
   gameEventId,
   nightKey,
   scoresForNights,
@@ -44,13 +43,12 @@ import { listTitle } from '../lib/eventTitle';
 import { ACTIVITY_WORDS, feedKind } from '../lib/activity';
 import { favoriteTypeKey } from '../map/typeIcons';
 import { getHomeId, subscribeHome } from '../lib/homeCity';
-import { datePath, entryPath, eventPath } from '../lib/view';
+import { datePath, eventPath } from '../lib/view';
 import { useEdgeFade } from '../lib/useEdgeFade';
 
 /** Both lines of time reach 60 days each way (the notes' Q4 horizon; the past, Kylie, Oct 17). */
 const SPAN_DAYS = 60;
 
-type PlanKind = 'attending' | 'watching' | 'interested';
 type DatePreset = 'all' | '7' | '30' | 'month' | 'custom';
 
 /** The Upcoming filter (build 7, §3.3; mock 12). Session only, like Following's picks were, so it resets when the app closes. */
@@ -82,12 +80,6 @@ function readFilter(): UpcomingFilter {
     return DEFAULT_FILTER;
   }
 }
-
-function planKind(plan: Plan): PlanKind {
-  return plan.interested ? 'interested' : plan.watch ? 'watching' : 'attending';
-}
-
-const PLAN_WORDS: Record<PlanKind, string> = { attending: 'Attending', watching: 'Watching', interested: 'Interested' };
 
 /** The plans window shows three full rows and half the fourth (item 16, Locked: 3.5 rows at the drawn ~69pt); the start value before the rows are measured. */
 const PLANS_WINDOW_PX = 240;
@@ -484,11 +476,6 @@ export function UpcomingScreen() {
   );
 }
 
-/** The plan's icon: ticket for Attending, TV for Watching, bookmark for Interested (the Stub it sheet's own). */
-function planIcon(kind: PlanKind): ReactNode {
-  return kind === 'attending' ? <TicketIcon size={13} /> : kind === 'watching' ? <TvIcon /> : <BookmarkIcon size={13} />;
-}
-
 /** A plan's start time: the listing's when the app holds it, else the fave's schedule game's, else what a hand-typed plan carries. */
 function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>): string | null {
   return (plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId)) : undefined) ?? plan.manual?.start ?? null;
@@ -534,37 +521,9 @@ function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[];
   );
 }
 
-/**
- * A plan in the window: the status leads, with the favorite's short name when the plan's event is a favorite's by id
- * ("Attending · UCLA FB"; item 11, never guessed from the title), then the title, the start time and venue (item 10),
- * the date's read; no log button (Kylie, Oct 22, 2026).
- */
-function PlanBandRow({ plan, event, start, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
-  const kind = planKind(plan);
-  const icon = planIcon(kind);
-  const to = plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
-  const noRead = isOutsideGamePlan(plan) || isFurtherOutRoom(plan.metroId, plan.venue);
-  const city = plan.metroId !== home ? METROS[plan.metroId]?.name : null;
-  // A favorite linked by id: a team on either side, else the venue itself (Codex, stage 3); never a name match.
-  const venueId = event?.place.type === 'venue' ? event.place.venueId : undefined;
-  const fave =
-    (event?.teams ? favorites.find((f) => f.teamId && (f.teamId === event.teams!.home || f.teamId === event.teams!.away)) : undefined) ??
-    (venueId ? favorites.find((f) => f.venueId === venueId) : undefined);
-  return (
-    <FollowRow
-      date={plan.date}
-      lead={{ icon, text: fave ? `${PLAN_WORDS[kind]} · ${favoriteDisplayName(fave)}` : PLAN_WORDS[kind], ...(plan.season ? { tag: plan.season.gone ? 'Not on the schedule' : 'Season' } : {}) }}
-      title={plan.title}
-      // A season game's row carries its seat (item 15; 20-r2): "7:10 pm · Dodger Stadium · Sec 48".
-      facts={[start ? clockTime(start) : null, plan.venue, city, plan.season ? seatShort(plan.seats) || null : null].filter(Boolean).join(' · ')}
-      to={to}
-      rating={noRead ? null : rating}
-      readTo={noRead ? null : readPath(plan.date, plan.metroId, plan.eventId)}
-      away={noRead && isOutsideGamePlan(plan) ? 'Away' : undefined}
-      cityCode={plan.metroId !== home ? METROS[plan.metroId]?.code : null}
-      spoken={`${PLAN_WORDS[kind]}, ${plan.title}, ${shortLocalDate(plan.date)}`}
-    />
-  );
+/** A plan in the window (build 7.2, R5a): the Activity row's shape, built in `PlanRow`. */
+function PlanBandRow(props: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
+  return <PlanRow {...props} />;
 }
 
 /** A Fave's row: the icon and display name lead (a link to its page), the title from its side, time and venue; a plan mark and a friends line when they apply. */

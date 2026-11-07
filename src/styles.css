@@ -9482,16 +9482,27 @@ a.follow-lead::after {
   position: relative;
   z-index: 1;
   flex-shrink: 0;
-  /* A3 (Kylie, Oct 30, 2026): a 72px tap area; the chevron about 8pt after the 40pt tile and about 19pt from the edge. */
+  /* A3 (Kylie, Oct 30, 2026): a 72px tap area; the tile sits 4px in, so the chevron's glyph starts about 8pt after it
+     and about 19pt from the screen edge (10px to the glyph's right edge). */
   width: 72px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2px;
-  padding: 6px 4px;
+  padding: 6px 0 6px 4px;
   color: inherit;
   text-decoration: none;
+}
+/* The city code stays centred over the 40px tile now that the column is left-aligned. */
+.follow-read .fav-sched-code {
+  width: 40px;
+  text-align: center;
+}
+/* The plan rows' tile has no chevron, so it centres in its 64px (R5a). */
+.plan-read {
+  align-items: center;
+  padding: 6px 4px;
 }
 
 .follow-chevron {
@@ -14322,4 +14333,56 @@ button.types-top-words {
   margin: 0;
   font-size: 14px;
   color: var(--ink2);
+}
+
+/* ---------- Upcoming's plan rows (build 7.2, R5a, FINAL r3; detail line column C) ---------- */
+/* The Activity row's skeleton with no chevron: the header line carries the status icon and the fave's name in blue or
+   the category in grey (icon and words in the line's color), the verdict tile sits at the right edge, and the row is
+   about 69pt (A5): 8px of padding around three lines. */
+.plan-row .activity-main {
+  padding: 7px 10px 7px 12px;
+}
+.plan-row .activity-sport {
+  line-height: 1.3;
+}
+.plan-row > .stub-date {
+  margin-top: 12px;
+}
+.plan-head {
+  color: var(--ink2);
+}
+.plan-head > svg {
+  color: inherit;
+}
+.plan-head.is-fave,
+.plan-head.is-fave > svg {
+  color: var(--dodger);
+}
+.plan-head-fave {
+  pointer-events: auto;
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  color: var(--dodger);
+  text-decoration: none;
+}
+/* The fave link's tap area reaches into the row's top padding and a little under its text (the follow lead's rule). */
+.plan-head-fave::after {
+  content: '';
+  position: absolute;
+  left: -22px;
+  right: -8px;
+  top: -8px;
+  bottom: -5px;
+}
+.plan-head-category {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 700;
+}
+.plan-read {
+  width: 64px;
 }
