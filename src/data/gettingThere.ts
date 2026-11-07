@@ -13,14 +13,16 @@ import { isStrained, VENUES, venueNameOn } from './venues';
 export type RoadCue = 'light' | 'busy' | 'heavy';
 
 /**
- * The cue words (E4: Light, Busy, Heavy) and their cut points on the score's 1 to 10 scale: Light below 3, Busy 3 to
- * 6, Heavy above 6. Placeholders until the offline Caltrans PeMS check (E13; R4i, builder's lean: keep them as
- * placeholders rather than invent new ones).
+ * The cue words (E4: Light, Busy, Heavy) and their cut points on the score's 1 to 10 scale: Light below 2, Busy from
+ * 2 (about 10% over the area's usual event night), Heavy from 4 (about a third over). Placeholders until the offline
+ * Caltrans PeMS check (E13). E4's mock numbers were 3 and 6; on those the mock's own overlap afternoon (Chargers out,
+ * Clippers in at Inglewood, 2.1) read Light, so Kylie took the builder's lean of 2 and 4 on Nov 6, 2026 ("fine with
+ * your leans across the board", deferring rather than deliberating; gap report 7.2, group 4).
  */
-export const ROAD_CUTS = { busy: 3, heavy: 6 } as const;
+export const ROAD_CUTS = { busy: 2, heavy: 4 } as const;
 
 export function roadCue(value: number): RoadCue {
-  return value > ROAD_CUTS.heavy ? 'heavy' : value >= ROAD_CUTS.busy ? 'busy' : 'light';
+  return value >= ROAD_CUTS.heavy ? 'heavy' : value >= ROAD_CUTS.busy ? 'busy' : 'light';
 }
 
 export function cueWord(cue: RoadCue): string {

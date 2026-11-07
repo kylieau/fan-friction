@@ -62,7 +62,10 @@ Across seven cities (Los Angeles, New York, Chicago, Boston, Philadelphia, Dalla
 ### Builder calls (recorded in the notes under R4c to R4j)
 R4c Heavy `#12406E`; R4d the ink edge stays; R4e under Crowd; R4f whole hours; R4g moot; R4i E4's placeholders kept; R4j the plan link left out. Also: the card collapses to its sentence when every area is Light; the about sheet says what Light means; the scrim is pale blue (mock 11), unlike About This Verdict's dark one; the rush or rain is named in the why line when it is what lifted an area; a venue-named area is a data gap, not hand-tuned (110 of 810 areas across 40 cities have a name on file; Los Angeles 6 of 64, New York 0 of 61).
 
-### Questions for Kylie
+### Kylie's answers (Nov 6, evening): "fine with your leans across the board, but just defaulting to your lean rather than basing it on logic/thorough deliberation."
+Recorded as deferrals to the leans, not deliberated calls. Built in the follow-up commit: `ROAD_CUTS` is Busy from 2 and Heavy from 4 (measured on Los Angeles Nov 8: the card now reads "Inglewood, about 4:30 to 5:30 pm. Texans at Chargers lets out as Pelicans at Clippers fans arrive." with two Busy cells on Inglewood's strip and the other four areas Light; the check still finds each worst cell equal to its zone score; a lone Wednesday Rams game on Nov 25 reads Busy "in the weekday rush"); Off stays the default until the PeMS check; a lone weekday game keeps reading Busy from the rush, with the why line naming it.
+
+### Questions for Kylie, as asked
 1. **Where should Busy start?** On E4's placeholders the Chargers-out, Clippers-in afternoon the mock was drawn for reads Light (2.1). Starting Busy at 2 on the scale (about 10% over a usual event night) and Heavy at 4 (about a third over) would make that day Busy and lift 62 instead of 35 area-days over two months in seven cities. Lean: 2 and 4 as the placeholders until the PeMS check (E13), since the feature exists for that overlap. Built on 3 and 6, her numbers, until she says.
 2. **Default Off** (R4a's plain reading) means no tester finds it. Lean: keep Off until the PeMS check, then On.
 3. **A weekday game alone reads Busy** from the rush background (Trenton's Friday nights at 4.6, Hamilton's at 3.0). The why line says so ("in the Friday rush"). Fine, or should a lone crowd never pass Light?
