@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-fiu-football-401871074",
+      "metroId": "miami",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pitbull-stadium",
+      "homeTeamId": "fiu-football",
+      "home": {
+        "name": "FIU",
+        "score": 23
+      },
+      "away": {
+        "name": "Missouri St",
+        "score": 20
+      },
+      "attendance": 10575,
+      "capturedAt": "2026-11-08T15:09:12.958Z",
+      "duration": {
+        "minutes": 253,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    },
+    {
+      "eventId": "2026-11-07-espn-inter-miami-cf-761938",
+      "metroId": "miami",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nu-stadium",
+      "homeTeamId": "inter-miami-cf",
+      "home": {
+        "name": "Inter Miami",
+        "score": 3
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 3
+      },
+      "capturedAt": "2026-11-08T15:09:12.958Z"
+    }
+  ]
+}

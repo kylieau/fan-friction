@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-islanders-401892667",
+      "metroId": "new-york",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 4
+      },
+      "away": {
+        "name": "Devils",
+        "score": 5
+      },
+      "attendance": 17345,
+      "note": "OT",
+      "capturedAt": "2026-11-08T15:09:07.659Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    },
+    {
+      "eventId": "2026-11-07-espn-red-bulls-761939",
+      "metroId": "new-york",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "red-bulls",
+      "home": {
+        "name": "Red Bull NY",
+        "score": 3
+      },
+      "away": {
+        "name": "Atlanta United",
+        "score": 0
+      },
+      "attendance": 23826,
+      "capturedAt": "2026-11-08T15:09:07.659Z"
+    }
+  ]
+}

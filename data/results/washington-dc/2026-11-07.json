@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-capitals-401892662",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 4
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 3
+      },
+      "attendance": 18347,
+      "capturedAt": "2026-11-08T15:09:18.976Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "12:38"
+    },
+    {
+      "eventId": "2026-11-07-espn-dc-united-761936",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "dc-united",
+      "home": {
+        "name": "D.C. United",
+        "score": 0
+      },
+      "away": {
+        "name": "NYCFC",
+        "score": 1
+      },
+      "capturedAt": "2026-11-08T15:09:18.976Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-georgetown-mbb-401909513",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "georgetown-mbb",
+      "home": {
+        "name": "Georgetown",
+        "score": 86
+      },
+      "away": {
+        "name": "Maryland",
+        "score": 74
+      },
+      "attendance": 14739,
+      "capturedAt": "2026-11-08T15:09:18.976Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-07-espn-gw-mbb-401926825",
+      "metroId": "washington-dc",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "charles-e-smith-center",
+      "homeTeamId": "gw-mbb",
+      "home": {
+        "name": "G Washington",
+        "score": 75
+      },
+      "away": {
+        "name": "Hampton",
+        "score": 61
+      },
+      "attendance": 1753,
+      "capturedAt": "2026-11-08T15:09:18.976Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

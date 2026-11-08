@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-austin-fc-761942",
+      "metroId": "austin",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "q2-stadium",
+      "homeTeamId": "austin-fc",
+      "home": {
+        "name": "Austin FC",
+        "score": 0
+      },
+      "away": {
+        "name": "Timbers",
+        "score": 2
+      },
+      "attendance": 20738,
+      "capturedAt": "2026-11-08T15:09:14.515Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-texas-wbb-401918841",
+      "metroId": "austin",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-wbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 91
+      },
+      "away": {
+        "name": "N Colorado",
+        "score": 29
+      },
+      "attendance": 9306,
+      "capturedAt": "2026-11-08T15:09:14.515Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-07-ht-texas-stars-1029278",
+      "metroId": "austin",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Wolves",
+        "score": 5
+      },
+      "attendance": 6301,
+      "capturedAt": "2026-11-08T15:09:14.516Z"
+    }
+  ]
+}

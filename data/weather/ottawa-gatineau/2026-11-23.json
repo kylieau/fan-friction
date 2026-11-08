@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-23",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-11-23",
+      "basis": "forecast",
+      "capturedAt": "2026-11-08T14:59:30.959Z",
+      "feelsLikeHighF": 55.2,
+      "feelsLikeLowF": 39.5,
+      "code": 63,
+      "precipProbability": 35,
+      "precipMm": 36
+    }
+  ]
+}

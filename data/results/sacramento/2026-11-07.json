@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-sacramento-republic-401933015",
+      "metroId": "sacramento",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "heart-health-park",
+      "homeTeamId": "sacramento-republic",
+      "home": {
+        "name": "Republic FC",
+        "score": 2
+      },
+      "away": {
+        "name": "El Paso",
+        "score": 1
+      },
+      "attendance": 11569,
+      "capturedAt": "2026-11-08T15:09:15.354Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-uc-davis-football-401868166",
+      "metroId": "sacramento",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "uc-davis-health-stadium",
+      "homeTeamId": "uc-davis-football",
+      "home": {
+        "name": "UC Davis",
+        "score": 24
+      },
+      "away": {
+        "name": "Utah Tech",
+        "score": 17
+      },
+      "attendance": 10011,
+      "capturedAt": "2026-11-08T15:09:15.354Z",
+      "duration": {
+        "minutes": 179,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-avalanche-401892671",
+      "metroId": "denver",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 4
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 0
+      },
+      "attendance": 18114,
+      "capturedAt": "2026-11-08T15:09:21.199Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "21:13"
+    }
+  ]
+}

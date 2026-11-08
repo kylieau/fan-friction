@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-gophers-football-401858512",
+      "metroId": "minneapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "huntington-bank-stadium",
+      "homeTeamId": "gophers-football",
+      "home": {
+        "name": "Minnesota",
+        "score": 20
+      },
+      "away": {
+        "name": "UCLA",
+        "score": 34
+      },
+      "attendance": 43841,
+      "capturedAt": "2026-11-08T15:09:16.956Z",
+      "duration": {
+        "minutes": 220,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    },
+    {
+      "eventId": "2026-11-07-espn-gophers-hockey-401923151",
+      "metroId": "minneapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 0
+      },
+      "away": {
+        "name": "Wisconsin",
+        "score": 6
+      },
+      "capturedAt": "2026-11-08T15:09:16.956Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-minnesota-united-761945",
+      "metroId": "minneapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allianz-field",
+      "homeTeamId": "minnesota-united",
+      "home": {
+        "name": "MNUFC",
+        "score": 3
+      },
+      "away": {
+        "name": "Earthquakes",
+        "score": 1
+      },
+      "attendance": 19714,
+      "capturedAt": "2026-11-08T15:09:16.956Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-st-thomas-hockey-401904676",
+      "metroId": "minneapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 7
+      },
+      "away": {
+        "name": "Alaska Anchorage",
+        "score": 4
+      },
+      "capturedAt": "2026-11-08T15:09:16.956Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-wild-401892670",
+      "metroId": "minneapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 3
+      },
+      "away": {
+        "name": "Lightning",
+        "score": 4
+      },
+      "attendance": 19155,
+      "note": "OT",
+      "capturedAt": "2026-11-08T15:09:16.956Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

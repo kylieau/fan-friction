@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-cavaliers-401909940",
+      "metroId": "cleveland",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 97
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 109
+      },
+      "attendance": 19432,
+      "capturedAt": "2026-11-08T15:09:13.977Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:12"
+    }
+  ]
+}

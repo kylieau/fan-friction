@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-gsu-mbb-401929449",
+      "metroId": "atlanta",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-mbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 111
+      },
+      "away": {
+        "name": "Andrew",
+        "score": 61
+      },
+      "attendance": 1528,
+      "capturedAt": "2026-11-08T15:09:08.284Z",
+      "duration": {
+        "minutes": 103,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-07-espn-gt-football-401858287",
+      "metroId": "atlanta",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bobby-dodd-stadium",
+      "homeTeamId": "gt-football",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 17
+      },
+      "away": {
+        "name": "Louisville",
+        "score": 44
+      },
+      "attendance": 44680,
+      "capturedAt": "2026-11-08T15:09:08.284Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "19:35"
+    },
+    {
+      "eventId": "2026-11-07-espn-hawks-401909939",
+      "metroId": "atlanta",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 124
+      },
+      "away": {
+        "name": "Nets",
+        "score": 121
+      },
+      "attendance": 16117,
+      "capturedAt": "2026-11-08T15:09:08.284Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    },
+    {
+      "eventId": "2026-11-07-espn-ksu-football-401871073",
+      "metroId": "atlanta",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fifth-third-stadium",
+      "homeTeamId": "ksu-football",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 42
+      },
+      "away": {
+        "name": "Delaware",
+        "score": 40
+      },
+      "attendance": 10300,
+      "capturedAt": "2026-11-08T15:09:08.284Z",
+      "duration": {
+        "minutes": 230,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    }
+  ]
+}

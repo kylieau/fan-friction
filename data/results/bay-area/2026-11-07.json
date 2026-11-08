@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-sjsu-football-401864534",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cefcu-stadium",
+      "homeTeamId": "sjsu-football",
+      "home": {
+        "name": "San José St",
+        "score": 30
+      },
+      "away": {
+        "name": "N Illinois",
+        "score": 19
+      },
+      "attendance": 9786,
+      "capturedAt": "2026-11-08T15:09:08.684Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    },
+    {
+      "eventId": "2026-11-07-espn-warriors-401909942",
+      "metroId": "bay-area",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 126
+      },
+      "away": {
+        "name": "Magic",
+        "score": 119
+      },
+      "attendance": 18064,
+      "note": "OT",
+      "capturedAt": "2026-11-08T15:09:08.684Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "20:41"
+    }
+  ]
+}

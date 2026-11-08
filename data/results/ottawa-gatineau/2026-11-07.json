@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-ottawa-senators-401892666",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 4
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 2
+      },
+      "attendance": 17054,
+      "capturedAt": "2026-11-08T15:09:18.666Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:19"
+    }
+  ]
+}

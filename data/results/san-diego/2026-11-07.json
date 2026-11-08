@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-san-diego-fc-761947",
+      "metroId": "san-diego",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "san-diego-fc",
+      "home": {
+        "name": "San Diego FC",
+        "score": 0
+      },
+      "away": {
+        "name": "Sporting KC",
+        "score": 1
+      },
+      "capturedAt": "2026-11-08T15:09:06.802Z"
+    }
+  ]
+}

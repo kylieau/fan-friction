@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-kings-401892672",
+      "metroId": "la",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 2
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 5
+      },
+      "attendance": 18145,
+      "capturedAt": "2026-11-08T15:09:05.351Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
+    }
+  ]
+}

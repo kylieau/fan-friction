@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-utsa-mbb-401926201",
+      "metroId": "san-antonio",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-mbb",
+      "home": {
+        "name": "UTSA",
+        "score": 70
+      },
+      "away": {
+        "name": "VMI",
+        "score": 68
+      },
+      "attendance": 1037,
+      "capturedAt": "2026-11-08T15:09:19.227Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-hurricanes-401892668",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 9
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "attendance": 18862,
+      "capturedAt": "2026-11-08T15:09:20.360Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-07-espn-nc-state-football-401858286",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carter-finley-stadium",
+      "homeTeamId": "nc-state-football",
+      "home": {
+        "name": "NC State",
+        "score": 3
+      },
+      "away": {
+        "name": "Duke",
+        "score": 41
+      },
+      "attendance": 56919,
+      "capturedAt": "2026-11-08T15:09:20.360Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "12:40"
+    }
+  ]
+}

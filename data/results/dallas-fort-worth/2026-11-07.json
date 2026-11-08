@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-dallas-stars-401892669",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 4
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-11-08T15:09:10.253Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-07-espn-fc-dallas-761943",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-stadium",
+      "homeTeamId": "fc-dallas",
+      "home": {
+        "name": "FC Dallas",
+        "score": 3
+      },
+      "away": {
+        "name": "Rapids",
+        "score": 1
+      },
+      "attendance": 10925,
+      "capturedAt": "2026-11-08T15:09:10.253Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-unt-football-401862821",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "datcu-stadium",
+      "homeTeamId": "unt-football",
+      "home": {
+        "name": "North Texas",
+        "score": 52
+      },
+      "away": {
+        "name": "Rice Owls",
+        "score": 23
+      },
+      "attendance": 23443,
+      "capturedAt": "2026-11-08T15:09:10.253Z",
+      "duration": {
+        "minutes": 216,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    }
+  ]
+}

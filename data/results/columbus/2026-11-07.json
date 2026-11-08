@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-osu-football-401858514",
+      "metroId": "columbus",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ohio-stadium",
+      "homeTeamId": "osu-football",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 28
+      },
+      "away": {
+        "name": "Oregon",
+        "score": 41
+      },
+      "attendance": 103551,
+      "capturedAt": "2026-11-08T15:09:13.113Z",
+      "duration": {
+        "minutes": 225,
+        "kind": "estimated"
+      },
+      "startedAt": "15:41"
+    }
+  ]
+}

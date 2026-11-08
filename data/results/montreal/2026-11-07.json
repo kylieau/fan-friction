@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-cf-montreal-761934",
+      "metroId": "montreal",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "stade-saputo",
+      "homeTeamId": "cf-montreal",
+      "home": {
+        "name": "CF Montréal",
+        "score": 0
+      },
+      "away": {
+        "name": "Vancouver",
+        "score": 2
+      },
+      "capturedAt": "2026-11-08T15:09:10.715Z"
+    },
+    {
+      "eventId": "2026-11-07-ht-laval-rocket-1029271",
+      "metroId": "montreal",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 4
+      },
+      "away": {
+        "name": "Monsters",
+        "score": 2
+      },
+      "attendance": 9763,
+      "capturedAt": "2026-11-08T15:09:10.715Z"
+    }
+  ]
+}

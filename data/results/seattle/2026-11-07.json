@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-kraken-401892664",
+      "metroId": "seattle",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 3
+      },
+      "away": {
+        "name": "Rangers",
+        "score": 4
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-11-08T15:09:07.005Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "17:09"
+    },
+    {
+      "eventId": "2026-11-07-espn-sounders-761948",
+      "metroId": "seattle",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "sounders",
+      "home": {
+        "name": "Sounders",
+        "score": 2
+      },
+      "away": {
+        "name": "LAFC",
+        "score": 1
+      },
+      "attendance": 40171,
+      "capturedAt": "2026-11-08T15:09:07.005Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-uw-football-401858516",
+      "metroId": "seattle",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "husky-stadium",
+      "homeTeamId": "uw-football",
+      "home": {
+        "name": "Washington",
+        "score": 25
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 28
+      },
+      "attendance": 67879,
+      "capturedAt": "2026-11-08T15:09:07.005Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "15:40"
+    },
+    {
+      "eventId": "2026-11-07-ht-seattle-thunderbirds-1023267",
+      "metroId": "seattle",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 1
+      },
+      "away": {
+        "name": "Tigers",
+        "score": 7
+      },
+      "attendance": 4220,
+      "capturedAt": "2026-11-08T15:09:07.007Z"
+    }
+  ]
+}

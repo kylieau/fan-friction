@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-marquette-wbb-401918909",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-mcguire-center",
+      "homeTeamId": "marquette-wbb",
+      "home": {
+        "name": "Marquette",
+        "score": 79
+      },
+      "away": {
+        "name": "Minnesota",
+        "score": 87
+      },
+      "attendance": 1450,
+      "capturedAt": "2026-11-08T15:09:10.959Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    },
+    {
+      "eventId": "2026-11-07-ht-milwaukee-admirals-1029273",
+      "metroId": "milwaukee",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "uwm-panther-arena",
+      "homeTeamId": "milwaukee-admirals",
+      "home": {
+        "name": "Admirals",
+        "score": 1
+      },
+      "away": {
+        "name": "Wild",
+        "score": 3
+      },
+      "attendance": 6330,
+      "capturedAt": "2026-11-08T15:09:10.959Z"
+    }
+  ]
+}

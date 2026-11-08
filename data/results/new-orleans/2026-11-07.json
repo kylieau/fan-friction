@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-lsuno-mbb-401925047",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lakefront-arena",
+      "homeTeamId": "lsuno-mbb",
+      "home": {
+        "name": "LSU N Orleans",
+        "score": 90
+      },
+      "away": {
+        "name": "Loyola NO",
+        "score": 65
+      },
+      "attendance": 2472,
+      "capturedAt": "2026-11-08T15:09:18.316Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "14:04"
+    },
+    {
+      "eventId": "2026-11-07-espn-tulane-football-401862822",
+      "metroId": "new-orleans",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yulman-stadium",
+      "homeTeamId": "tulane-football",
+      "home": {
+        "name": "Tulane",
+        "score": 10
+      },
+      "away": {
+        "name": "Tulsa",
+        "score": 60
+      },
+      "attendance": 27539,
+      "capturedAt": "2026-11-08T15:09:18.316Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    }
+  ]
+}

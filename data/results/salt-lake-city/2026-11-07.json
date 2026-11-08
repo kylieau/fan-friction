@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-real-salt-lake-761946",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "america-first-field",
+      "homeTeamId": "real-salt-lake",
+      "home": {
+        "name": "Real Salt Lake",
+        "score": 2
+      },
+      "away": {
+        "name": "Galaxy",
+        "score": 1
+      },
+      "attendance": 20738,
+      "capturedAt": "2026-11-08T15:09:18.472Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-utah-utes-football-401856849",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rice-eccles-stadium",
+      "homeTeamId": "utah-utes-football",
+      "home": {
+        "name": "Utah Utes",
+        "score": 28
+      },
+      "away": {
+        "name": "BYU",
+        "score": 20
+      },
+      "attendance": 52901,
+      "capturedAt": "2026-11-08T15:09:18.472Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "12:04"
+    }
+  ]
+}

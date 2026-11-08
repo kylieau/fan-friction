@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-blazers-401909944",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moda-center",
+      "homeTeamId": "blazers",
+      "home": {
+        "name": "Blazers",
+        "score": 103
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 125
+      },
+      "attendance": 19916,
+      "capturedAt": "2026-11-08T15:09:19.834Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "22:12"
+    },
+    {
+      "eventId": "2026-11-07-ht-portland-winterhawks-1023264",
+      "metroId": "portland",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "veterans-memorial-coliseum",
+      "homeTeamId": "portland-winterhawks",
+      "home": {
+        "name": "Winterhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 1
+      },
+      "attendance": 4940,
+      "capturedAt": "2026-11-08T15:09:19.834Z"
+    }
+  ]
+}

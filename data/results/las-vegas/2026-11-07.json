@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-unlv-football-401864535",
+      "metroId": "las-vegas",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "unlv-football",
+      "home": {
+        "name": "UNLV",
+        "score": 35
+      },
+      "away": {
+        "name": "Wyoming",
+        "score": 41
+      },
+      "attendance": 25277,
+      "capturedAt": "2026-11-08T15:09:16.133Z",
+      "duration": {
+        "minutes": 215,
+        "kind": "estimated"
+      },
+      "startedAt": "22:36"
+    },
+    {
+      "eventId": "2026-11-07-espn-unlv-mbb-401924912",
+      "metroId": "las-vegas",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "thomas-mack-center",
+      "homeTeamId": "unlv-mbb",
+      "home": {
+        "name": "UNLV",
+        "score": 88
+      },
+      "away": {
+        "name": "Samford",
+        "score": 79
+      },
+      "attendance": 4122,
+      "capturedAt": "2026-11-08T15:09:16.133Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-07-ht-henderson-silver-knights-1029270",
+      "metroId": "las-vegas",
+      "date": "2026-11-07",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 2
+      },
+      "away": {
+        "name": "Gulls",
+        "score": 1
+      },
+      "attendance": 3806,
+      "note": "OT",
+      "capturedAt": "2026-11-08T15:09:16.133Z"
+    }
+  ]
+}

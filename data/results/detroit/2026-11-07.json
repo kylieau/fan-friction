@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-michigan-football-401858511",
+      "metroId": "detroit",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michigan-stadium",
+      "homeTeamId": "michigan-football",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 6
+      },
+      "away": {
+        "name": "Michigan St",
+        "score": 15
+      },
+      "attendance": 111172,
+      "capturedAt": "2026-11-08T15:09:10.538Z",
+      "duration": {
+        "minutes": 210,
+        "kind": "estimated"
+      },
+      "startedAt": "19:44"
+    }
+  ]
+}

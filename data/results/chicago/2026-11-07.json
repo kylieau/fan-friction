@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-chicago-fire-761935",
+      "metroId": "chicago",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "seatgeek-stadium",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 3
+      },
+      "away": {
+        "name": "Crew",
+        "score": 4
+      },
+      "capturedAt": "2026-11-08T15:09:09.641Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-northwestern-football-401858513",
+      "metroId": "chicago",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ryan-field",
+      "homeTeamId": "northwestern-football",
+      "home": {
+        "name": "Northwestern",
+        "score": 10
+      },
+      "away": {
+        "name": "Iowa",
+        "score": 24
+      },
+      "attendance": 31151,
+      "capturedAt": "2026-11-08T15:09:09.641Z",
+      "duration": {
+        "minutes": 190,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    },
+    {
+      "eventId": "2026-11-07-espn-windy-city-bulls-401914510",
+      "metroId": "chicago",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "now-arena",
+      "homeTeamId": "windy-city-bulls",
+      "home": {
+        "name": "Windy City Bulls",
+        "score": 135
+      },
+      "away": {
+        "name": "Boom",
+        "score": 128
+      },
+      "attendance": 3501,
+      "capturedAt": "2026-11-08T15:09:09.641Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

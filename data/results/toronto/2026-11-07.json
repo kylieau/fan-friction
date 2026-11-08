@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-maple-leafs-401892665",
+      "metroId": "toronto",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 2
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 4
+      },
+      "attendance": 19253,
+      "capturedAt": "2026-11-08T15:09:16.791Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

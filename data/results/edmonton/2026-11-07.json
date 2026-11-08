@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-oilers-401892673",
+      "metroId": "edmonton",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 2
+      },
+      "attendance": 17555,
+      "capturedAt": "2026-11-08T15:09:18.854Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "22:14"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-bc-football-401858289",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alumni-stadium",
+      "homeTeamId": "bc-football",
+      "home": {
+        "name": "Boston College",
+        "score": 24
+      },
+      "away": {
+        "name": "Florida St",
+        "score": 31
+      },
+      "attendance": 37155,
+      "capturedAt": "2026-11-08T15:09:11.895Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-07-espn-harvard-football-401867824",
+      "metroId": "boston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "harvard-stadium",
+      "homeTeamId": "harvard-football",
+      "home": {
+        "name": "Harvard",
+        "score": 37
+      },
+      "away": {
+        "name": "Columbia",
+        "score": 0
+      },
+      "capturedAt": "2026-11-08T15:09:11.895Z",
+      "duration": {
+        "minutes": 180,
+        "kind": "estimated"
+      },
+      "startedAt": "12:59"
+    }
+  ]
+}

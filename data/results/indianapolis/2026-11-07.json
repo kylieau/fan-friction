@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-butler-football-401868216",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sellick-bowl",
+      "homeTeamId": "butler-football",
+      "home": {
+        "name": "Butler",
+        "score": 41
+      },
+      "away": {
+        "name": "St Thomas",
+        "score": 14
+      },
+      "attendance": 3029,
+      "capturedAt": "2026-11-08T15:09:16.651Z",
+      "duration": {
+        "minutes": 208,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    },
+    {
+      "eventId": "2026-11-07-espn-pacers-401909938",
+      "metroId": "indianapolis",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arena-cdmx",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 102
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 114
+      },
+      "attendance": 20191,
+      "capturedAt": "2026-11-08T15:09:16.651Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "17:15"
+    }
+  ]
+}

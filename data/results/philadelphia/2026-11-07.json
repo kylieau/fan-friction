@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-philadelphia-union-761941",
+      "metroId": "philadelphia",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "subaru-park",
+      "homeTeamId": "philadelphia-union",
+      "home": {
+        "name": "Union",
+        "score": 4
+      },
+      "away": {
+        "name": "Toronto FC",
+        "score": 1
+      },
+      "capturedAt": "2026-11-08T15:09:12.388Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-temple-wbb-401926054",
+      "metroId": "philadelphia",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "liacouras-center",
+      "homeTeamId": "temple-wbb",
+      "home": {
+        "name": "Temple",
+        "score": 97
+      },
+      "away": {
+        "name": "Navy",
+        "score": 77
+      },
+      "attendance": 1272,
+      "capturedAt": "2026-11-08T15:09:12.388Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-07-espn-villanova-football-401868038",
+      "metroId": "philadelphia",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "villanova-stadium",
+      "homeTeamId": "villanova-football",
+      "home": {
+        "name": "Villanova",
+        "score": 30
+      },
+      "away": {
+        "name": "Richmond",
+        "score": 0
+      },
+      "attendance": 3747,
+      "capturedAt": "2026-11-08T15:09:12.388Z",
+      "duration": {
+        "minutes": 170,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

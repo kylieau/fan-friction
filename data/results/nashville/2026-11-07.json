@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-lipscomb-mbb-401920703",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-mbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 78
+      },
+      "away": {
+        "name": "SIUE",
+        "score": 77
+      },
+      "attendance": 2247,
+      "capturedAt": "2026-11-08T15:09:14.146Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    },
+    {
+      "eventId": "2026-11-07-espn-lipscomb-wbb-401916069",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-wbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 90
+      },
+      "away": {
+        "name": "Carolina U",
+        "score": 49
+      },
+      "attendance": 417,
+      "capturedAt": "2026-11-08T15:09:14.146Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "14:30"
+    },
+    {
+      "eventId": "2026-11-07-espn-mtsu-football-401871076",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "floyd-stadium",
+      "homeTeamId": "mtsu-football",
+      "home": {
+        "name": "MTSU",
+        "score": 51
+      },
+      "away": {
+        "name": "Western KY",
+        "score": 42
+      },
+      "attendance": 12127,
+      "capturedAt": "2026-11-08T15:09:14.146Z",
+      "duration": {
+        "minutes": 244,
+        "kind": "estimated"
+      },
+      "startedAt": "15:30"
+    },
+    {
+      "eventId": "2026-11-07-espn-predators-401892663",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 3
+      },
+      "away": {
+        "name": "Blues",
+        "score": 1
+      },
+      "attendance": 17159,
+      "capturedAt": "2026-11-08T15:09:14.146Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    },
+    {
+      "eventId": "2026-11-07-espn-tsu-football-401868200",
+      "metroId": "nashville",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "tsu-football",
+      "home": {
+        "name": "Tennessee St",
+        "score": 14
+      },
+      "away": {
+        "name": "SE Missouri",
+        "score": 33
+      },
+      "attendance": 1184,
+      "capturedAt": "2026-11-08T15:09:14.146Z",
+      "duration": {
+        "minutes": 190,
+        "kind": "estimated"
+      },
+      "startedAt": "15:33"
+    }
+  ]
+}

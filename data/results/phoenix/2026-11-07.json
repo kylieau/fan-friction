@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-asu-football-401856852",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mountain-america-stadium",
+      "homeTeamId": "asu-football",
+      "home": {
+        "name": "Arizona St",
+        "score": 20
+      },
+      "away": {
+        "name": "Colorado",
+        "score": 10
+      },
+      "attendance": 54166,
+      "capturedAt": "2026-11-08T15:09:14.737Z",
+      "duration": {
+        "minutes": 192,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-07-espn-gcu-mbb-401911345",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "global-credit-union-arena",
+      "homeTeamId": "gcu-mbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 99
+      },
+      "away": {
+        "name": "Bethune",
+        "score": 81
+      },
+      "attendance": 7055,
+      "capturedAt": "2026-11-08T15:09:14.737Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    },
+    {
+      "eventId": "2026-11-07-espn-suns-401909943",
+      "metroId": "phoenix",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 102
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 99
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-11-08T15:09:14.737Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

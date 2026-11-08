@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-duquesne-football-401867922",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "homeTeamId": "duquesne-football",
+      "home": {
+        "name": "Duquesne",
+        "score": 10
+      },
+      "away": {
+        "name": "Robert Morris",
+        "score": 13
+      },
+      "attendance": 1595,
+      "capturedAt": "2026-11-08T15:09:12.604Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-07-espn-duquesne-mbb-401925780",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-mbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 68
+      },
+      "away": {
+        "name": "Central St",
+        "score": 58
+      },
+      "attendance": 2129,
+      "capturedAt": "2026-11-08T15:09:12.604Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-07-espn-pitt-wbb-401913745",
+      "metroId": "pittsburgh",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 92
+      },
+      "away": {
+        "name": "Long Island",
+        "score": 42
+      },
+      "attendance": 695,
+      "capturedAt": "2026-11-08T15:09:12.604Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    }
+  ]
+}

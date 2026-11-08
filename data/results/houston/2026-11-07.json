@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-dynamo-761944",
+      "metroId": "houston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "dynamo",
+      "home": {
+        "name": "Dynamo",
+        "score": 0
+      },
+      "away": {
+        "name": "CITY SC",
+        "score": 1
+      },
+      "attendance": 19886,
+      "capturedAt": "2026-11-08T15:09:16.423Z"
+    },
+    {
+      "eventId": "2026-11-07-espn-pvamu-football-401868302",
+      "metroId": "houston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pvamu-panther-stadium",
+      "homeTeamId": "pvamu-football",
+      "home": {
+        "name": "Prairie View",
+        "score": 31
+      },
+      "away": {
+        "name": "Alabama A&M",
+        "score": 10
+      },
+      "attendance": 8409,
+      "capturedAt": "2026-11-08T15:09:16.423Z",
+      "duration": {
+        "minutes": 193,
+        "kind": "estimated"
+      },
+      "startedAt": "15:10"
+    },
+    {
+      "eventId": "2026-11-07-espn-texas-southern-football-401868331",
+      "metroId": "houston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "texas-southern-football",
+      "home": {
+        "name": "Texas Southern Tigers",
+        "score": 31
+      },
+      "away": {
+        "name": "Alabama St",
+        "score": 34
+      },
+      "attendance": 5921,
+      "capturedAt": "2026-11-08T15:09:16.423Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "15:06"
+    },
+    {
+      "eventId": "2026-11-07-espn-uh-football-401856851",
+      "metroId": "houston",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tdecu-stadium",
+      "homeTeamId": "uh-football",
+      "home": {
+        "name": "Houston",
+        "score": 31
+      },
+      "away": {
+        "name": "Cincinnati",
+        "score": 24
+      },
+      "attendance": 32372,
+      "capturedAt": "2026-11-08T15:09:16.423Z",
+      "duration": {
+        "minutes": 214,
+        "kind": "estimated"
+      },
+      "startedAt": "15:46"
+    }
+  ]
+}

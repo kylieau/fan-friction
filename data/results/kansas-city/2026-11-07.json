@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-11-07",
+  "results": [
+    {
+      "eventId": "2026-11-07-espn-kc-current-401932976",
+      "metroId": "kansas-city",
+      "date": "2026-11-07",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cpkc-stadium",
+      "homeTeamId": "kc-current",
+      "home": {
+        "name": "Current",
+        "score": 1
+      },
+      "away": {
+        "name": "Angel City",
+        "score": 0
+      },
+      "capturedAt": "2026-11-08T15:09:16.303Z"
+    }
+  ]
+}
