@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-pistons-401909954",
+      "metroId": "detroit",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "pistons",
+      "home": {
+        "name": "Pistons",
+        "score": 122
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 111
+      },
+      "attendance": 18982,
+      "capturedAt": "2026-11-10T16:32:23.275Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

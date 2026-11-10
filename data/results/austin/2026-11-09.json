@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-texas-mbb-401906865",
+      "metroId": "austin",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-mbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 93
+      },
+      "away": {
+        "name": "Grambling",
+        "score": 62
+      },
+      "attendance": 10872,
+      "capturedAt": "2026-11-10T16:32:30.943Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

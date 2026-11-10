@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-duquesne-wbb-401915763",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 97
+      },
+      "away": {
+        "name": "Clarion",
+        "score": 60
+      },
+      "attendance": 701,
+      "capturedAt": "2026-11-10T16:32:24.724Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-08-espn-robert-morris-wbb-401929108",
+      "metroId": "pittsburgh",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-events-center",
+      "homeTeamId": "robert-morris-wbb",
+      "home": {
+        "name": "Robert Morris",
+        "score": 69
+      },
+      "away": {
+        "name": "Delaware St",
+        "score": 53
+      },
+      "attendance": 165,
+      "capturedAt": "2026-11-10T16:32:24.724Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

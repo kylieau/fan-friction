@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-saints-401873039",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "caesars-superdome",
+      "homeTeamId": "saints",
+      "home": {
+        "name": "Saints",
+        "score": 23
+      },
+      "away": {
+        "name": "Browns",
+        "score": 22
+      },
+      "attendance": 70182,
+      "note": "OT",
+      "capturedAt": "2026-11-10T16:32:33.687Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-08-espn-tulane-wbb-401912991",
+      "metroId": "new-orleans",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-wbb",
+      "home": {
+        "name": "Tulane",
+        "score": 63
+      },
+      "away": {
+        "name": "Alabama",
+        "score": 68
+      },
+      "attendance": 962,
+      "capturedAt": "2026-11-10T16:32:33.687Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

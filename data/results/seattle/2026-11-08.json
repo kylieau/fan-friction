@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-seahawks-401873048",
+      "metroId": "seattle",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "seahawks",
+      "home": {
+        "name": "Seahawks",
+        "score": 17
+      },
+      "away": {
+        "name": "Cardinals",
+        "score": 3
+      },
+      "attendance": 68636,
+      "capturedAt": "2026-11-10T16:32:16.364Z",
+      "duration": {
+        "minutes": 175,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    },
+    {
+      "eventId": "2026-11-08-ht-everett-silvertips-1023273",
+      "metroId": "seattle",
+      "date": "2026-11-08",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 3
+      },
+      "away": {
+        "name": "Americans",
+        "score": 4
+      },
+      "attendance": 5987,
+      "note": "SO",
+      "capturedAt": "2026-11-10T16:32:16.366Z"
+    }
+  ]
+}

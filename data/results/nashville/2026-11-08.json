@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-belmont-wbb-401919323",
+      "metroId": "nashville",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-wbb",
+      "home": {
+        "name": "Belmont",
+        "score": 64
+      },
+      "away": {
+        "name": "Columbia",
+        "score": 84
+      },
+      "attendance": 767,
+      "capturedAt": "2026-11-10T16:32:25.757Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "15:38"
+    }
+  ]
+}

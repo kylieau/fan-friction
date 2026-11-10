@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-sharks-401892682",
+      "metroId": "bay-area",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 3
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 2
+      },
+      "attendance": 13769,
+      "note": "SO",
+      "capturedAt": "2026-11-10T16:32:22.176Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-09-espn-stanford-mbb-401921095",
+      "metroId": "bay-area",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-mbb",
+      "home": {
+        "name": "Stanford",
+        "score": 91
+      },
+      "away": {
+        "name": "Rice Owls",
+        "score": 73
+      },
+      "attendance": 1763,
+      "capturedAt": "2026-11-10T16:32:22.176Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    },
+    {
+      "eventId": "2026-11-09-espn-warriors-401909959",
+      "metroId": "bay-area",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 138
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 87
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-10T16:32:22.176Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    }
+  ]
+}

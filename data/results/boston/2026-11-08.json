@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-bruins-401892674",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 4
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 1
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-10T16:32:23.934Z",
+      "duration": {
+        "minutes": 177,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    },
+    {
+      "eventId": "2026-11-08-espn-patriots-401873049",
+      "metroId": "boston",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "patriots",
+      "home": {
+        "name": "Patriots",
+        "score": 27
+      },
+      "away": {
+        "name": "Packers",
+        "score": 45
+      },
+      "attendance": 64628,
+      "capturedAt": "2026-11-10T16:32:23.934Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

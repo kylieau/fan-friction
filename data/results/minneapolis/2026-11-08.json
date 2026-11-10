@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-st-thomas-mbb-401920843",
+      "metroId": "minneapolis",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-mbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 67
+      },
+      "away": {
+        "name": "Green Bay",
+        "score": 76
+      },
+      "attendance": 1620,
+      "capturedAt": "2026-11-10T16:32:33.442Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "14:07"
+    },
+    {
+      "eventId": "2026-11-08-espn-timberwolves-401909947",
+      "metroId": "minneapolis",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 115
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 100
+      },
+      "attendance": 18029,
+      "capturedAt": "2026-11-10T16:32:33.442Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

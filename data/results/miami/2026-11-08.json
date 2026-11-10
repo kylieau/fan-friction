@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-dolphins-401873042",
+      "metroId": "miami",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "dolphins",
+      "home": {
+        "name": "Dolphins",
+        "score": 9
+      },
+      "away": {
+        "name": "Lions",
+        "score": 19
+      },
+      "attendance": 62984,
+      "capturedAt": "2026-11-10T16:32:25.118Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-bears-401873050",
+      "metroId": "chicago",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "bears",
+      "home": {
+        "name": "Bears",
+        "score": 27
+      },
+      "away": {
+        "name": "Buccaneers",
+        "score": 24
+      },
+      "attendance": 60470,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 195,
+        "kind": "estimated"
+      },
+      "startedAt": "20:23"
+    },
+    {
+      "eventId": "2026-11-08-espn-bulls-401909945",
+      "metroId": "chicago",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 121
+      },
+      "away": {
+        "name": "76ers",
+        "score": 127
+      },
+      "attendance": 21060,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "15:40"
+    },
+    {
+      "eventId": "2026-11-08-espn-depaul-wbb-401913046",
+      "metroId": "chicago",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 95
+      },
+      "away": {
+        "name": "Stonehill",
+        "score": 63
+      },
+      "attendance": 1071,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "15:01"
+    }
+  ]
+}

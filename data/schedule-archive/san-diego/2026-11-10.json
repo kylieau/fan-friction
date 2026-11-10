@@ -1,0 +1,1604 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "metroName": "San Diego",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-11-10",
+  "capturedAt": "2026-11-10T16:24:59.925Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-10",
+    "through": "2026-11-24"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 27
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 14
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-10-sa-usdtoreros-com-15591",
+      "metroId": "san-diego",
+      "date": "2026-11-10",
+      "start": "18:00",
+      "kind": "game",
+      "title": "San Diego vs. Portland State",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usd-wbb",
+        "away": "Portland State",
+        "awayOpponent": "portland-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-espn-sdsu-mbb-401925717",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "kind": "game",
+      "title": "San Diego St vs. Bethune",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sdsu-mbb",
+        "away": "bethune",
+        "awayOpponent": "bethune"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12366,
+        "low": 12240,
+        "high": 12414,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-sdsu-wbb-401923475",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Diego St vs. Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sdsu-wbb",
+        "away": "colorado",
+        "awayOpponent": "colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1220,
+        "low": 1069,
+        "high": 2464,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-ht-san-diego-gulls-1029293",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Barracuda",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "barracuda"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4702,
+        "low": 4643,
+        "high": 4787,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAv7FP",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oceanside Shock vs. Stockton Thunder",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Oceanside Shock",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7FP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-12-sa-ucsdtritons-com-12422",
+      "metroId": "san-diego",
+      "date": "2026-11-12",
+      "start": "11:00",
+      "kind": "game",
+      "title": "UC San Diego vs. Portland State",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ucsd-wbb",
+        "away": "Portland State",
+        "awayOpponent": "portland-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-vvG1IZ_8SgP9RO",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Vintage Culture",
+      "officialTitle": "Nonstop Presents: Vintage Culture \"affairs\"",
+      "place": {
+        "type": "venue",
+        "venueId": "rady-shell"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Vintage Culture",
+      "act": true,
+      "performerIds": [
+        "K8vZ917plcf",
+        "K8vZ9172xH0",
+        "K8vZ917jiTf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_8SgP9RO",
+      "expectedDraw": {
+        "count": 10000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-ucsdtritons-com-12186",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UC San Diego vs. Cal State Bakersfield",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7P48Y",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Crankdat",
+      "officialTitle": "Crankdat (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Crankdat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174XQV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P48Y",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-usdtoreros-com-15579",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "kind": "game",
+      "title": "San Diego vs. Chicago State",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usd-mbb",
+        "away": "Chicago State",
+        "awayOpponent": "chicago-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-vvG1IZ_Cn0_F3S",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Ohgeesy",
+      "officialTitle": "Who Want The Smoke",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Ohgeesy",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_NFf",
+        "K8vZ917j217",
+        "K8vZ917h40f",
+        "K8vZ917QEHV",
+        "K8vZ917qVV0",
+        "K8vZ917q7ZV",
+        "K8vZ917_x7f",
+        "K8vZ917bAK7",
+        "K8vZ917rief",
+        "K8vZ917rjMf",
+        "K8vZ917OTHf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_Cn0_F3S",
+      "expectedDraw": {
+        "count": 6954,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7xpf-",
+      "metroId": "san-diego",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpf-",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-usdtoreros-com-15592",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "game",
+      "title": "San Diego vs. CSUN",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usd-wbb",
+        "away": "csun-wbb",
+        "awayOpponent": "csun"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-ucsdtritons-com-12187",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "UC San Diego vs. CSUN",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-espn-sdsu-football-401860915",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "kind": "game",
+      "title": "San Diego St vs. Utah State",
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "snapdragon-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sdsu-football",
+        "away": "utah-state",
+        "awayOpponent": "utah-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 21338,
+        "low": 20687,
+        "high": 22433,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1IZ_CQvON00",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "kind": "game",
+      "title": "SDSU Aztec Football vs. Utah State University Aggies Football",
+      "place": {
+        "type": "venue",
+        "venueId": "san-diego-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "SDSU Aztec Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_CQvON00"
+    },
+    {
+      "id": "2026-11-14-tm-vvG1IZ_K1HQ1L9",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Deorro",
+      "officialTitle": "Deorro - 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "north-island-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Deorro",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ohff",
+        "K8vZ917fN50",
+        "K8vZ917rxrf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_K1HQ1L9",
+      "expectedDraw": {
+        "count": 20500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-p4F",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Tigres del Norte",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Los Tigres del Norte",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171187"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-p4F",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-sa-ucsdtritons-com-12423",
+      "metroId": "san-diego",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UC San Diego vs. San Francisco",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ucsd-wbb",
+        "away": "San Francisco",
+        "awayOpponent": "san-francisco"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AA7Zqe",
+      "metroId": "san-diego",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Compete 4 Cause Classic",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Compete 4 Cause Classic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7Zqe"
+    },
+    {
+      "id": "2026-11-15-tm-vvG1IZ_30O742u",
+      "metroId": "san-diego",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nick Cannon Presents: Wild 'N Out Live - The Next Generation",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nick Cannon Presents: Wild 'N Out Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_30O742u"
+    },
+    {
+      "id": "2026-11-16-sa-ucsdtritons-com-12415",
+      "metroId": "san-diego",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UC San Diego vs. Texas Southern",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "ucsd-mbb",
+        "away": "Texas Southern",
+        "awayOpponent": "texas-southern"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AAv7FJ",
+      "metroId": "san-diego",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oceanside Shock vs. Fresno Falcons",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Oceanside Shock",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7FJ",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-18-sa-usdtoreros-com-15605",
+      "metroId": "san-diego",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "game",
+      "title": "San Diego vs. UC Riverside",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usd-mbb",
+        "away": "UC Riverside",
+        "awayOpponent": "uc-riverside"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-espn-sdsu-mbb-401929146",
+      "metroId": "san-diego",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Diego St vs. Texas Southern Tigers",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sdsu-mbb",
+        "away": "texas-southern",
+        "awayOpponent": "texas-southern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12366,
+        "low": 12240,
+        "high": 12414,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-ht-san-diego-gulls-1029339",
+      "metroId": "san-diego",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Condors",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "condors"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5446,
+        "low": 5378,
+        "high": 5544,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AAv7FE",
+      "metroId": "san-diego",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Oceanside Shock vs. Fresno Falcons",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Oceanside Shock",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv7FE",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-19-sa-usdtoreros-com-15492",
+      "metroId": "san-diego",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Diego vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-tm-vvG1IZ_8pRdDbi",
+      "metroId": "san-diego",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Steve Lacy",
+      "officialTitle": "Steve Lacy: Oh yeah? Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "petco-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Steve Lacy",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174s67"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZ_8pRdDbi",
+      "expectedDraw": {
+        "count": 22720,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-ht-san-diego-gulls-1029348",
+      "metroId": "san-diego",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6710,
+        "low": 5969,
+        "high": 7044,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1IZbUCiWp5C",
+      "metroId": "san-diego",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Three Days Grace",
+      "officialTitle": "Three Days Grace - Alienation Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Three Days Grace",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175jBV",
+        "K8vZ917K5Nf",
+        "K8vZ9173cE7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1IZbUCiWp5C",
+      "expectedDraw": {
+        "count": 6954,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAvtp_",
+      "metroId": "san-diego",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Diego Clippers vs. The Valley Suns",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Diego Clippers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtp_",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-sa-usdtoreros-com-15493",
+      "metroId": "san-diego",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "San Diego vs. Seattle",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-sa-usdtoreros-com-15463",
+      "metroId": "san-diego",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "kind": "game",
+      "title": "San Diego vs. Stetson",
+      "place": {
+        "type": "venue",
+        "venueId": "torero-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-ht-san-diego-gulls-1029360",
+      "metroId": "san-diego",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Gulls vs. Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "wild"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6519,
+        "low": 5893,
+        "high": 9756,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 8 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-usdtoreros-com-15594",
+      "metroId": "san-diego",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Diego vs. UC Irvine",
+      "place": {
+        "type": "venue",
+        "venueId": "jenny-craig-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usd-wbb",
+        "away": "uc-irvine-wbb",
+        "awayOpponent": "uc-irvine"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-espn-sdsu-wbb-401909674",
+      "metroId": "san-diego",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "San Diego St vs. Winthrop",
+      "place": {
+        "type": "venue",
+        "venueId": "viejas-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sdsu-wbb",
+        "away": "winthrop",
+        "awayOpponent": "winthrop"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1701,
+        "low": 1206,
+        "high": 2160,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 27 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAvtbZ",
+      "metroId": "san-diego",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "special",
+      "title": "San Diego Clippers vs. Coachella Valley Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "frontwave-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "San Diego Clippers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtbZ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-24-sa-ucsdtritons-com-12424",
+      "metroId": "san-diego",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UC San Diego vs. Whittier",
+      "place": {
+        "type": "venue",
+        "venueId": "liontree-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ucsd-wbb",
+        "away": "Whittier",
+        "awayOpponent": "whittier"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-24-ht-san-diego-gulls-1029374",
+      "metroId": "san-diego",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Gulls vs. Reign",
+      "place": {
+        "type": "venue",
+        "venueId": "pechanga-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "san-diego-gulls",
+        "away": "reign"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5382,
+        "low": 5315,
+        "high": 5479,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2023–2025."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-10-sa-usdtoreros-com-15591",
+      "date": "2026-11-10",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-11-espn-sdsu-mbb-401925717",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Oceanside Shock vs. Stockton Th… 33 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12366,
+        "low": 12240,
+        "high": 12414
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-sdsu-wbb-401923475",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1220,
+        "low": 1069,
+        "high": 2464
+      }
+    },
+    {
+      "eventId": "2026-11-11-ht-san-diego-gulls-1029293",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4702,
+        "low": 4643,
+        "high": 4787
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAv7FP",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Bethune at San Diego St (MBB) 33 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-ucsdtritons-com-12422",
+      "date": "2026-11-12",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1IZ_8SgP9RO",
+      "date": "2026-11-13",
+      "start": "15:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Crankdat (18+ Event) 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10000
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-ucsdtritons-com-12186",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7P48Y",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Nonstop Presents: Vintage Cultu… and Who Want The Smoke 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-usdtoreros-com-15579",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1IZ_Cn0_F3S",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Crankdat (18+ Event) 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6954
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7xpf-",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Crankdat (18+ Event) 4.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-usdtoreros-com-15592",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 5.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-ucsdtritons-com-12187",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 5.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-sdsu-football-401860915",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Heavy",
+        "why": "Utah State University Aggies Football at SDSU Aztec Football next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21338,
+        "low": 20687,
+        "high": 22433
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1IZ_CQvON00",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Utah State at San Diego St (FB) next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1IZ_K1HQ1L9",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Utah State University Aggies Football at SDSU Aztec Football 15 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20500
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-p4F",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 5.3,
+        "friction": "Moderate",
+        "why": "Utah State University Aggies Football at SDSU Aztec Football and Deorro · 18+ 5.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-11-15-sa-ucsdtritons-com-12423",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AA7Zqe",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1.2,
+        "friction": "Low",
+        "why": "Nick Cannon Presents: Wild 'N O… 33 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1IZ_30O742u",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-16-sa-ucsdtritons-com-12415",
+      "date": "2026-11-16",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AAv7FJ",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-usdtoreros-com-15605",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-sdsu-mbb-401929146",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Oceanside Shock vs. Fresno Falc… and Condors at Gulls 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12366,
+        "low": 12240,
+        "high": 12414
+      }
+    },
+    {
+      "eventId": "2026-11-18-ht-san-diego-gulls-1029339",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Texas Southern Tigers at San Diego St (MBB) and Oceanside Shock vs. Fresno Falc… 8.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5446,
+        "low": 5378,
+        "high": 5544
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AAv7FE",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Texas Southern Tigers at San Diego St (MBB) 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-sa-usdtoreros-com-15492",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1IZ_8pRdDbi",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22720
+      }
+    },
+    {
+      "eventId": "2026-11-20-ht-san-diego-gulls-1029348",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Three Days Grace and San Diego Clippers vs. The Vall… 8.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6710,
+        "low": 5969,
+        "high": 7044
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1IZbUCiWp5C",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "San Diego Clippers vs. The Vall… and Wild at Gulls 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6954
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAvtp_",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Moderate",
+        "why": "Three Days Grace and Wild at Gulls 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-usdtoreros-com-15493",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-usdtoreros-com-15463",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Wild at Gulls 2.1 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-ht-san-diego-gulls-1029360",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Stetson at San Diego (FB) 2.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6519,
+        "low": 5893,
+        "high": 9756
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-usdtoreros-com-15594",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-sdsu-wbb-401909674",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1701,
+        "low": 1206,
+        "high": 2160
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAvtbZ",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-sa-ucsdtritons-com-12424",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-ht-san-diego-gulls-1029374",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5382,
+        "low": 5315,
+        "high": 5479
+      }
+    }
+  ]
+}

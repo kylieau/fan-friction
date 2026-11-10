@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-gotham-401932958",
+      "metroId": "new-york",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sports-illustrated-stadium",
+      "homeTeamId": "gotham",
+      "home": {
+        "name": "Gotham",
+        "score": 1
+      },
+      "away": {
+        "name": "Reign",
+        "score": 0
+      },
+      "capturedAt": "2026-11-10T16:32:16.701Z"
+    },
+    {
+      "eventId": "2026-11-08-espn-rutgers-wbb-401913005",
+      "metroId": "new-york",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 107
+      },
+      "away": {
+        "name": "Indiana St",
+        "score": 76
+      },
+      "attendance": 1657,
+      "capturedAt": "2026-11-10T16:32:16.701Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-08-espn-stjohns-mbb-401924646",
+      "metroId": "new-york",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "stjohns-mbb",
+      "home": {
+        "name": "St John's",
+        "score": 104
+      },
+      "away": {
+        "name": "Iona",
+        "score": 65
+      },
+      "attendance": 13753,
+      "capturedAt": "2026-11-10T16:32:16.701Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "12:03"
+    }
+  ]
+}

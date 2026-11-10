@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-osu-wbb-401919942",
+      "metroId": "columbus",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-wbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 91
+      },
+      "away": {
+        "name": "Mercyhurst",
+        "score": 57
+      },
+      "attendance": 4726,
+      "capturedAt": "2026-11-10T16:32:25.372Z",
+      "duration": {
+        "minutes": 96,
+        "kind": "estimated"
+      },
+      "startedAt": "13:01"
+    }
+  ]
+}

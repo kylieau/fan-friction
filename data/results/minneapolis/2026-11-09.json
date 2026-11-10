@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-vikings-401873051",
+      "metroId": "minneapolis",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "us-bank-stadium",
+      "homeTeamId": "vikings",
+      "home": {
+        "name": "Vikings",
+        "score": 6
+      },
+      "away": {
+        "name": "Bills",
+        "score": 23
+      },
+      "attendance": 66955,
+      "capturedAt": "2026-11-10T16:32:33.442Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "20:16"
+    }
+  ]
+}

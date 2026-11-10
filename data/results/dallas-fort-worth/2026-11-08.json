@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-dallas-trinity-401878610",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cotton-bowl",
+      "homeTeamId": "dallas-trinity",
+      "home": {
+        "name": "Trinity FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Sporting Jax",
+        "score": 1
+      },
+      "attendance": 1731,
+      "capturedAt": "2026-11-10T16:32:22.959Z"
+    },
+    {
+      "eventId": "2026-11-08-espn-mavericks-401909948",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 130
+      },
+      "away": {
+        "name": "Nets",
+        "score": 93
+      },
+      "attendance": 19184,
+      "capturedAt": "2026-11-10T16:32:22.959Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    },
+    {
+      "eventId": "2026-11-08-espn-smu-wbb-401915962",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-wbb",
+      "home": {
+        "name": "SMU",
+        "score": 78
+      },
+      "away": {
+        "name": "East Texas A&M",
+        "score": 65
+      },
+      "attendance": 1012,
+      "capturedAt": "2026-11-10T16:32:22.959Z",
+      "duration": {
+        "minutes": 175,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-08-espn-tcu-wbb-401917940",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 89
+      },
+      "away": {
+        "name": "Tarleton St",
+        "score": 42
+      },
+      "attendance": 2855,
+      "capturedAt": "2026-11-10T16:32:22.959Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    }
+  ]
+}

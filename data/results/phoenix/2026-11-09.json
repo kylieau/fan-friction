@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-gcu-wbb-401918902",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "global-credit-union-arena",
+      "homeTeamId": "gcu-wbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 81
+      },
+      "away": {
+        "name": "Oregon",
+        "score": 74
+      },
+      "attendance": 2103,
+      "capturedAt": "2026-11-10T16:32:31.444Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "22:05"
+    },
+    {
+      "eventId": "2026-11-09-espn-suns-401909958",
+      "metroId": "phoenix",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 96
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 122
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-11-10T16:32:31.444Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-capitanes-401914518",
+      "metroId": "mexico-city",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arena-cdmx",
+      "homeTeamId": "capitanes",
+      "home": {
+        "name": "Mexico City Capitanes",
+        "score": 107
+      },
+      "away": {
+        "name": "Legends",
+        "score": 91
+      },
+      "attendance": 9862,
+      "capturedAt": "2026-11-10T16:32:32.117Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    }
+  ]
+}

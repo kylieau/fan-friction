@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-gsu-wbb-401929160",
+      "metroId": "atlanta",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-wbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 60
+      },
+      "away": {
+        "name": "Wofford",
+        "score": 64
+      },
+      "attendance": 551,
+      "capturedAt": "2026-11-10T16:32:21.784Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-08-espn-gt-wbb-401907165",
+      "metroId": "atlanta",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-wbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 63
+      },
+      "away": {
+        "name": "West Virginia",
+        "score": 81
+      },
+      "attendance": 2875,
+      "capturedAt": "2026-11-10T16:32:21.784Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

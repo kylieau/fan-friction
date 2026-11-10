@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-eagles-401873044",
+      "metroId": "philadelphia",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "eagles",
+      "home": {
+        "name": "Eagles",
+        "score": 11
+      },
+      "away": {
+        "name": "Giants",
+        "score": 19
+      },
+      "attendance": 69879,
+      "capturedAt": "2026-11-10T16:32:24.171Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-08-espn-temple-mbb-401911238",
+      "metroId": "philadelphia",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "temple-mbb",
+      "home": {
+        "name": "Temple",
+        "score": 53
+      },
+      "away": {
+        "name": "Richmond",
+        "score": 79
+      },
+      "attendance": 3600,
+      "capturedAt": "2026-11-10T16:32:24.171Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    }
+  ]
+}

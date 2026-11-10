@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-penn-mbb-401921180",
+      "metroId": "philadelphia",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-mbb",
+      "home": {
+        "name": "Penn",
+        "score": 78
+      },
+      "away": {
+        "name": "Howard",
+        "score": 65
+      },
+      "capturedAt": "2026-11-10T16:32:24.171Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "18:33"
+    }
+  ]
+}

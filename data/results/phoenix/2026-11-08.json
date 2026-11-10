@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-asu-hockey-401904869",
+      "metroId": "phoenix",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "asu-hockey",
+      "home": {
+        "name": "Arizona State",
+        "score": 0
+      },
+      "away": {
+        "name": "Denver",
+        "score": 1
+      },
+      "note": "OT",
+      "capturedAt": "2026-11-10T16:32:31.444Z"
+    }
+  ]
+}

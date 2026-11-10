@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-nccu-wbb-401925622",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mcdougald-mclendon-arena",
+      "homeTeamId": "nccu-wbb",
+      "home": {
+        "name": "NC Central",
+        "score": 60
+      },
+      "away": {
+        "name": "Fay'ville St",
+        "score": 56
+      },
+      "attendance": 839,
+      "capturedAt": "2026-11-10T16:32:35.025Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-uw-mbb-401925737",
+      "metroId": "seattle",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-mbb",
+      "home": {
+        "name": "Washington",
+        "score": 77
+      },
+      "away": {
+        "name": "Miss Valley St",
+        "score": 64
+      },
+      "attendance": 4778,
+      "capturedAt": "2026-11-10T16:32:16.364Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "22:07"
+    }
+  ]
+}

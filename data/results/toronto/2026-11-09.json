@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-raptors-401909955",
+      "metroId": "toronto",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 102
+      },
+      "away": {
+        "name": "Memphis Grizzlies",
+        "score": 118
+      },
+      "attendance": 19106,
+      "capturedAt": "2026-11-10T16:32:33.091Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    }
+  ]
+}

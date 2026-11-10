@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-tsu-mbb-401920766",
+      "metroId": "nashville",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gentry-center",
+      "homeTeamId": "tsu-mbb",
+      "home": {
+        "name": "Tennessee St",
+        "score": 123
+      },
+      "away": {
+        "name": "Fisk",
+        "score": 73
+      },
+      "attendance": 3521,
+      "capturedAt": "2026-11-10T16:32:25.757Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    },
+    {
+      "eventId": "2026-11-09-espn-vanderbilt-wbb-401918828",
+      "metroId": "nashville",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-wbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 102
+      },
+      "away": {
+        "name": "Morehead St",
+        "score": 50
+      },
+      "attendance": 3146,
+      "capturedAt": "2026-11-10T16:32:25.757Z"
+    }
+  ]
+}

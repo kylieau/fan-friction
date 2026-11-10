@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-sacramento-kings-401909951",
+      "metroId": "sacramento",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 108
+      },
+      "away": {
+        "name": "Heat",
+        "score": 114
+      },
+      "attendance": 13016,
+      "capturedAt": "2026-11-10T16:32:31.880Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

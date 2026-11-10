@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-chicago-state-mbb-401919733",
+      "metroId": "chicago",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jones-convocation-center",
+      "homeTeamId": "chicago-state-mbb",
+      "home": {
+        "name": "Chicago St",
+        "score": 67
+      },
+      "away": {
+        "name": "SC State",
+        "score": 82
+      },
+      "attendance": 207,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-09-espn-depaul-mbb-401909502",
+      "metroId": "chicago",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-mbb",
+      "home": {
+        "name": "DePaul",
+        "score": 84
+      },
+      "away": {
+        "name": "Alabama A&M",
+        "score": 47
+      },
+      "attendance": 3316,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
+    },
+    {
+      "eventId": "2026-11-09-espn-northwestern-mbb-401920734",
+      "metroId": "chicago",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-mbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 72
+      },
+      "away": {
+        "name": "Boston U",
+        "score": 55
+      },
+      "attendance": 3927,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "20:05"
+    },
+    {
+      "eventId": "2026-11-09-espn-uic-mbb-401926181",
+      "metroId": "chicago",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "credit-union-1-arena",
+      "homeTeamId": "uic-mbb",
+      "home": {
+        "name": "UIC",
+        "score": 82
+      },
+      "away": {
+        "name": "UNC Greensboro",
+        "score": 72
+      },
+      "attendance": 1007,
+      "capturedAt": "2026-11-10T16:32:22.637Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

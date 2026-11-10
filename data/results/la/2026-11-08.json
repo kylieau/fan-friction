@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-chargers-401873046",
+      "metroId": "la",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "chargers",
+      "home": {
+        "name": "Chargers",
+        "score": 22
+      },
+      "away": {
+        "name": "Texans",
+        "score": 44
+      },
+      "attendance": 67590,
+      "capturedAt": "2026-11-10T16:32:14.935Z",
+      "duration": {
+        "minutes": 239,
+        "kind": "estimated"
+      },
+      "startedAt": "15:29"
+    },
+    {
+      "eventId": "2026-11-08-espn-clippers-401909950",
+      "metroId": "la",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 139
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 123
+      },
+      "attendance": 17927,
+      "capturedAt": "2026-11-10T16:32:14.935Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    },
+    {
+      "eventId": "2026-11-08-espn-ducks-401892679",
+      "metroId": "la",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 5
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-11-10T16:32:14.935Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-08-espn-usc-wbb-401927106",
+      "metroId": "la",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-wbb",
+      "home": {
+        "name": "USC",
+        "score": 118
+      },
+      "away": {
+        "name": "Utah State",
+        "score": 40
+      },
+      "attendance": 7807,
+      "capturedAt": "2026-11-10T16:32:14.935Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    }
+  ]
+}

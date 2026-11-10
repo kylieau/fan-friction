@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-25",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "san-antonio",
+      "venueId": "city",
+      "date": "2026-11-25",
+      "basis": "forecast",
+      "capturedAt": "2026-11-10T16:22:13.082Z",
+      "feelsLikeHighF": 61.8,
+      "feelsLikeLowF": 47.5,
+      "code": 51,
+      "precipProbability": 13,
+      "precipMm": 0.2
+    }
+  ]
+}

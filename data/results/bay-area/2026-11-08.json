@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-sf-49ers-401873047",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "levis-stadium",
+      "homeTeamId": "sf-49ers",
+      "home": {
+        "name": "49ers",
+        "score": 38
+      },
+      "away": {
+        "name": "Raiders",
+        "score": 17
+      },
+      "attendance": 71753,
+      "capturedAt": "2026-11-10T16:32:22.176Z",
+      "duration": {
+        "minutes": 167,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    },
+    {
+      "eventId": "2026-11-08-espn-stanford-wbb-401915979",
+      "metroId": "bay-area",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-wbb",
+      "home": {
+        "name": "Stanford",
+        "score": 67
+      },
+      "away": {
+        "name": "UC Davis",
+        "score": 60
+      },
+      "attendance": 2098,
+      "capturedAt": "2026-11-10T16:32:22.176Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    }
+  ]
+}

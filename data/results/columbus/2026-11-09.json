@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-osu-mbb-401916315",
+      "metroId": "columbus",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 84
+      },
+      "away": {
+        "name": "Marshall",
+        "score": 74
+      },
+      "attendance": 7984,
+      "capturedAt": "2026-11-10T16:32:25.372Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "18:01"
+    }
+  ]
+}

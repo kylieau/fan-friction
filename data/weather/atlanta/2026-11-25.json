@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-25",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "atlanta",
+      "venueId": "city",
+      "date": "2026-11-25",
+      "basis": "forecast",
+      "capturedAt": "2026-11-10T16:07:25.918Z",
+      "feelsLikeHighF": 48.4,
+      "feelsLikeLowF": 37.4,
+      "code": 3,
+      "precipProbability": 20,
+      "precipMm": 0
+    }
+  ]
+}

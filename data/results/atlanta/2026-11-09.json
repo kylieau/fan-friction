@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-hawks-401909952",
+      "metroId": "atlanta",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 114
+      },
+      "away": {
+        "name": "Lakers",
+        "score": 124
+      },
+      "attendance": 15561,
+      "capturedAt": "2026-11-10T16:32:21.784Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

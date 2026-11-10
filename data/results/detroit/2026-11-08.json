@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-michigan-wbb-401927068",
+      "metroId": "detroit",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crisler-center",
+      "homeTeamId": "michigan-wbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 109
+      },
+      "away": {
+        "name": "Wright St",
+        "score": 52
+      },
+      "attendance": 3608,
+      "capturedAt": "2026-11-10T16:32:23.275Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-08-espn-pistons-401909946",
+      "metroId": "detroit",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "pistons",
+      "home": {
+        "name": "Pistons",
+        "score": 116
+      },
+      "away": {
+        "name": "Lakers",
+        "score": 121
+      },
+      "attendance": 20178,
+      "capturedAt": "2026-11-10T16:32:23.275Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "18:11"
+    }
+  ]
+}

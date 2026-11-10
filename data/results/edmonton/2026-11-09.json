@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-oilers-401892680",
+      "metroId": "edmonton",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 3
+      },
+      "away": {
+        "name": "Rangers",
+        "score": 1
+      },
+      "attendance": 17047,
+      "capturedAt": "2026-11-10T16:32:34.299Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

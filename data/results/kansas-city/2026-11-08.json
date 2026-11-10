@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-chiefs-401873045",
+      "metroId": "kansas-city",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arrowhead-stadium",
+      "homeTeamId": "chiefs",
+      "home": {
+        "name": "Chiefs",
+        "score": 35
+      },
+      "away": {
+        "name": "Jets",
+        "score": 12
+      },
+      "attendance": 73628,
+      "capturedAt": "2026-11-10T16:32:32.490Z",
+      "duration": {
+        "minutes": 183,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-usf-wbb-401913864",
+      "metroId": "tampa",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "usf-wbb",
+      "home": {
+        "name": "South Florida",
+        "score": 63
+      },
+      "away": {
+        "name": "Rhode Island",
+        "score": 82
+      },
+      "attendance": 203,
+      "capturedAt": "2026-11-10T16:32:24.930Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

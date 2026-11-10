@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-utah-wbb-401918583",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-wbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 65
+      },
+      "away": {
+        "name": "Bethune",
+        "score": 47
+      },
+      "attendance": 1467,
+      "capturedAt": "2026-11-10T16:32:33.891Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

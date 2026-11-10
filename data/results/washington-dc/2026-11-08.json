@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-maryland-wbb-401918915",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-wbb",
+      "home": {
+        "name": "Maryland",
+        "score": 81
+      },
+      "away": {
+        "name": "George Mason",
+        "score": 62
+      },
+      "attendance": 6065,
+      "capturedAt": "2026-11-10T16:32:34.459Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "13:01"
+    },
+    {
+      "eventId": "2026-11-08-espn-spirit-401932957",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "spirit",
+      "home": {
+        "name": "Spirit",
+        "score": 4
+      },
+      "away": {
+        "name": "Thorns",
+        "score": 1
+      },
+      "attendance": 19215,
+      "capturedAt": "2026-11-10T16:32:34.459Z"
+    },
+    {
+      "eventId": "2026-11-08-espn-washington-401873043",
+      "metroId": "washington-dc",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "northwest-stadium",
+      "homeTeamId": "washington",
+      "home": {
+        "name": "Commanders",
+        "score": 13
+      },
+      "away": {
+        "name": "Rams",
+        "score": 20
+      },
+      "attendance": 64016,
+      "capturedAt": "2026-11-10T16:32:34.459Z",
+      "duration": {
+        "minutes": 188,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

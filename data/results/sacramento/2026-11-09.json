@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-sac-state-wbb-401921598",
+      "metroId": "sacramento",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-pavilion",
+      "homeTeamId": "sac-state-wbb",
+      "home": {
+        "name": "Sacramento St",
+        "score": 82
+      },
+      "away": {
+        "name": "Cal State EB",
+        "score": 52
+      },
+      "attendance": 523,
+      "capturedAt": "2026-11-10T16:32:31.880Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "21:32"
+    }
+  ]
+}

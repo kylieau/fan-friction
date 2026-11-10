@@ -1,0 +1,1877 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "metroName": "San Antonio",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-10",
+  "capturedAt": "2026-11-10T16:31:27.802Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-10",
+    "through": "2026-11-24"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 12
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 38
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 6
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-10-tm-G5dIZ_fx0YGtZ",
+      "metroId": "san-antonio",
+      "date": "2026-11-10",
+      "start": "08:00",
+      "kind": "show",
+      "title": "U.I.L. State Marching Band Contest",
+      "officialTitle": "UIL State Marching Band Contest Session 2: 2A Prelims & 6A Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "U.I.L. State Marching Band Contest",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u_p0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_fx0YGtZ",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 37293,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-G5dIZ_1m4TFkD",
+      "metroId": "san-antonio",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "MOVEMENTS - HAPPIER NOW USA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Movements",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1m4TFkD",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-10-tm-G5dIZ_fx0sGt1",
+      "metroId": "san-antonio",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "kind": "show",
+      "title": "U.I.L. State Marching Band Contest",
+      "officialTitle": "UIL State Marching Band Contest Session 3: 2A Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "U.I.L. State Marching Band Contest",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u_p0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_fx0sGt1",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 37293,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-G5dIZ_fx0wjto",
+      "metroId": "san-antonio",
+      "date": "2026-11-11",
+      "start": "08:30",
+      "kind": "show",
+      "title": "U.I.L. State Marching Band Contest",
+      "officialTitle": "UIL State Marching Band Contest Session 4: 4A Prelims",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "U.I.L. State Marching Band Contest",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u_p0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_fx0wjto",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 37293,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-utsa-wbb-401925802",
+      "metroId": "san-antonio",
+      "date": "2026-11-11",
+      "start": "11:00",
+      "kind": "game",
+      "title": "UTSA vs. Incarnate Word",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-wbb",
+        "away": "uiw-wbb",
+        "awayOpponent": "incarnate-word"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 850,
+        "low": 775,
+        "high": 1000,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-G5dIZ_fx0SjtI",
+      "metroId": "san-antonio",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "U.I.L. State Marching Band Contest",
+      "officialTitle": "UIL State Marching Band Contest Session 5: 4A Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "U.I.L. State Marching Band Contest",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u_p0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_fx0SjtI",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 37293,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70gQ4",
+      "metroId": "san-antonio",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Carpenters Songbook - A Live Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Carpenters Songbook - A Live Celebration",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70gQ4",
+      "expectedDraw": {
+        "count": 2264,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-uiwcardinals-com-7847",
+      "metroId": "san-antonio",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. The University of Texas Rio Grande Valley",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A70oke",
+      "metroId": "san-antonio",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Alton Brown",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Alton Brown",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oke"
+    },
+    {
+      "id": "2026-11-12-tm-G5dIZ_G1q36i0",
+      "metroId": "san-antonio",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "RØZ Presents: SE ESTÁ HACIENDO TARDE",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_G1q36i0",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5dIZ_50TkeUI",
+      "metroId": "san-antonio",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Periphery",
+      "officialTitle": "Periphery - A Pale White Dot US Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Periphery",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_50TkeUI",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5dIZ_GSUpJ1v",
+      "metroId": "san-antonio",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Daughtry",
+      "officialTitle": "Daughtry - 20 Years Unplugged Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Daughtry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GSUpJ1v",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-spurs-401909302",
+      "metroId": "san-antonio",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Warriors",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19359,
+        "low": 19299,
+        "high": 19371,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-uiwcardinals-com-7848",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Texas A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-espn-uiw-football-401869148",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Nicholls",
+      "place": {
+        "type": "venue",
+        "venueId": "benson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "uiw-football",
+        "away": "nicholls",
+        "awayOpponent": "nicholls"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-14-tm-G5dIZ_4f3nKdb",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Martin Amini",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Martin Amini",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_4f3nKdb"
+    },
+    {
+      "id": "2026-11-14-tm-G5dIZ_8UwWBjr",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jonas Brothers",
+      "officialTitle": "Jonas Brothers: The Burning Up Tour All Over Again",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Jonas Brothers",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175T17",
+        "K8vZ917hhq0",
+        "K8vZ917Cz1V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8UwWBjr",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-utsa-football-401862827",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "game",
+      "title": "UTSA vs. North Texas",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utsa-football",
+        "away": "unt-football",
+        "awayOpponent": "north-texas"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19238,
+        "low": 17026,
+        "high": 22440,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AAZJ36",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Horoscopos De Durango",
+      "place": {
+        "type": "venue",
+        "venueId": "the-espee"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Los Horoscopos De Durango",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZJ36",
+      "expectedDraw": {
+        "count": 3175,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5dIZ_2pQ99Yb",
+      "metroId": "san-antonio",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas v Baylor Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Texas Longhorns Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_2pQ99Yb"
+    },
+    {
+      "id": "2026-11-15-espn-utsa-mbb-401929200",
+      "metroId": "san-antonio",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UTSA vs. Texas St",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-mbb",
+        "away": "texas-state-mbb",
+        "awayOpponent": "texas-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1061,
+        "low": 976,
+        "high": 1117,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5dIZ_aoJXxD9",
+      "metroId": "san-antonio",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "officialTitle": "Streetlight Manifesto: The Presence of the Past Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_aoJXxD9",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-utsa-wbb-401926947",
+      "metroId": "san-antonio",
+      "date": "2026-11-16",
+      "start": "18:30",
+      "kind": "game",
+      "title": "UTSA vs. Louisiana",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-wbb",
+        "away": "louisiana",
+        "awayOpponent": "louisiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 850,
+        "low": 775,
+        "high": 1000,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-G5dIZ_8lA4Bw7",
+      "metroId": "san-antonio",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Yo Yo Ma & Jeffrey Kahane ft. Harmonium of Texas",
+      "place": {
+        "type": "venue",
+        "venueId": "lila-cockrell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Yo Yo Ma",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8lA4Bw7"
+    },
+    {
+      "id": "2026-11-17-sa-uiwcardinals-com-7955",
+      "metroId": "san-antonio",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Texas State University",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uiw-wbb",
+        "away": "Texas State University",
+        "awayOpponent": "texas-state-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-espn-spurs-401910004",
+      "metroId": "san-antonio",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Pistons",
+      "broadcast": "NBC",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "pistons",
+        "awayOpponent": "pistons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17163,
+        "low": 17087,
+        "high": 18354,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-utsa-mbb-401929420",
+      "metroId": "san-antonio",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UTSA vs. Florida A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-mbb",
+        "away": "florida-a-m",
+        "awayOpponent": "florida-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1058,
+        "low": 842,
+        "high": 1260,
+        "fromCrowds": true,
+        "games": 19,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 19 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-espn-spurs-401910022",
+      "metroId": "san-antonio",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Clippers",
+      "broadcast": "KTLA",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17197,
+        "low": 17121,
+        "high": 18391,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-G5dIZ_53xq1SU",
+      "metroId": "san-antonio",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alter Bridge",
+      "officialTitle": "Alter Bridge - What Lies Within Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Alter Bridge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_53xq1SU",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-sa-uiwcardinals-com-8051",
+      "metroId": "san-antonio",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Central Baptist",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "uiw-mbb",
+        "away": "Central Baptist",
+        "awayOpponent": "central-baptist"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-tm-G5dIZ_uL_YvA5",
+      "metroId": "san-antonio",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uL_YvA5",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-tm-G5dIZ_26S2f8b",
+      "metroId": "san-antonio",
+      "date": "2026-11-20",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Amarillo Wranglers",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26S2f8b",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-tm-G5dIZ_u55HxY7",
+      "metroId": "san-antonio",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Bowling for Soup",
+      "officialTitle": "Bowling For Soup - Hey! Let's Be Friends...the Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Bowling for Soup",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_u55HxY7",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7J3-3",
+      "metroId": "san-antonio",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lyle Lovett",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lyle Lovett",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J3-3",
+      "expectedDraw": {
+        "count": 2264,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-utsa-wbb-401918798",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "UTSA vs. N Dakota St",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-wbb",
+        "away": "n-dakota-st",
+        "awayOpponent": "n-dakota-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 959,
+        "low": 761,
+        "high": 1352,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_uL_wsAz",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uL_wsAz",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-espn-utsa-mbb-401911337",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UTSA vs. Air Force",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-mbb",
+        "away": "air-force",
+        "awayOpponent": "air-force"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 858,
+        "low": 843,
+        "high": 887,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-spurs-401910027",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Pelicans",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "pelicans",
+        "awayOpponent": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18335,
+        "low": 18183,
+        "high": 18521,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_uL_s-A0",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uL_s-A0",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_26S80o5",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Amarillo Wranglers",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26S80o5",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_1mkdATX",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Band of Horses",
+      "officialTitle": "An Evening With Band Of Horses",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Band of Horses",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1mkdATX",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_8I_WSrC",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pedro Fernández",
+      "officialTitle": "Pedro Fernández - Ave Fénix Two'r",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Pedro Fernández",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8I_WSrC",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A706-Y",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Jim Gaffigan",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A706-Y",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dIZ_uL_Vskj",
+      "metroId": "san-antonio",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uL_Vskj",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dIZ_uL_SsAD",
+      "metroId": "san-antonio",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uL_SsAD",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70SJ4",
+      "metroId": "san-antonio",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jim Gaffigan",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Jim Gaffigan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SJ4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dIZ_3x3hgs3",
+      "metroId": "san-antonio",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Isaiah Rashad",
+      "officialTitle": "ISAIAH RASHAD: Lil Sunny's Awful Road Trip",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Isaiah Rashad",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_3x3hgs3",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-sa-uiwcardinals-com-7957",
+      "metroId": "san-antonio",
+      "date": "2026-11-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Texas A&M University",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uiw-wbb",
+        "away": "Texas A&M University",
+        "awayOpponent": "texas-a-m-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-23-tm-G5dIZ_3xcyFSH",
+      "metroId": "san-antonio",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lil Tracy",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Tracy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_3xcyFSH",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-10-tm-G5dIZ_fx0YGtZ",
+      "date": "2026-11-10",
+      "start": "08:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37293
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-G5dIZ_1m4TFkD",
+      "date": "2026-11-10",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-11-10-tm-G5dIZ_fx0sGt1",
+      "date": "2026-11-10",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37293
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-G5dIZ_fx0wjto",
+      "date": "2026-11-11",
+      "start": "08:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37293
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-utsa-wbb-401925802",
+      "date": "2026-11-11",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 850,
+        "low": 775,
+        "high": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-G5dIZ_fx0SjtI",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 37293
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70gQ4",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2264
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-uiwcardinals-com-7847",
+      "date": "2026-11-12",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A70oke",
+      "date": "2026-11-12",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-12-tm-G5dIZ_G1q36i0",
+      "date": "2026-11-12",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5dIZ_50TkeUI",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5dIZ_GSUpJ1v",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-spurs-401909302",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19359,
+        "low": 19299,
+        "high": 19371
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-uiwcardinals-com-7848",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-uiw-football-401869148",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Heavy",
+        "why": "Rain in the forecast at a 2:00 pm start.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5dIZ_4f3nKdb",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5dIZ_8UwWBjr",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "North Texas at UTSA (FB) 2.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-utsa-football-401862827",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "Jonas Brothers 2.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19238,
+        "low": 17026,
+        "high": 22440
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AAZJ36",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3175
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5dIZ_2pQ99Yb",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-utsa-mbb-401929200",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1061,
+        "low": 976,
+        "high": 1117
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5dIZ_aoJXxD9",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-utsa-wbb-401926947",
+      "date": "2026-11-16",
+      "start": "18:30",
+      "draw": {
+        "count": 850,
+        "low": 775,
+        "high": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-G5dIZ_8lA4Bw7",
+      "date": "2026-11-16",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-17-sa-uiwcardinals-com-7955",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-spurs-401910004",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17163,
+        "low": 17087,
+        "high": 18354
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-utsa-mbb-401929420",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "draw": {
+        "count": 1058,
+        "low": 842,
+        "high": 1260
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-spurs-401910022",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17197,
+        "low": 17121,
+        "high": 18391
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-G5dIZ_53xq1SU",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-uiwcardinals-com-8051",
+      "date": "2026-11-20",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-G5dIZ_uL_YvA5",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-G5dIZ_26S2f8b",
+      "date": "2026-11-20",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-20-tm-G5dIZ_u55HxY7",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7J3-3",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "draw": {
+        "count": 2264
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-utsa-wbb-401918798",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 959,
+        "low": 761,
+        "high": 1352
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_uL_wsAz",
+      "date": "2026-11-21",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-21-espn-utsa-mbb-401911337",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 858,
+        "low": 843,
+        "high": 887
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-spurs-401910027",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18335,
+        "low": 18183,
+        "high": 18521
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_uL_s-A0",
+      "date": "2026-11-21",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_26S80o5",
+      "date": "2026-11-21",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_1mkdATX",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_8I_WSrC",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A706-Y",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dIZ_uL_Vskj",
+      "date": "2026-11-22",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dIZ_uL_SsAD",
+      "date": "2026-11-22",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70SJ4",
+      "date": "2026-11-22",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dIZ_3x3hgs3",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-11-23-sa-uiwcardinals-com-7957",
+      "date": "2026-11-23",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-23-tm-G5dIZ_3xcyFSH",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    }
+  ]
+}

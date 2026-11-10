@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-08",
+  "results": [
+    {
+      "eventId": "2026-11-08-espn-colts-401873040",
+      "metroId": "indianapolis",
+      "date": "2026-11-08",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lucas-oil-stadium",
+      "homeTeamId": "colts",
+      "home": {
+        "name": "Colts",
+        "score": 23
+      },
+      "away": {
+        "name": "Cowboys",
+        "score": 27
+      },
+      "attendance": 65479,
+      "capturedAt": "2026-11-10T16:32:32.904Z",
+      "duration": {
+        "minutes": 210,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

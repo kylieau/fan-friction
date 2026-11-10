@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-09",
+  "results": [
+    {
+      "eventId": "2026-11-09-espn-mavericks-401909956",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-09",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 125
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 122
+      },
+      "attendance": 19065,
+      "capturedAt": "2026-11-10T16:32:22.959Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}
