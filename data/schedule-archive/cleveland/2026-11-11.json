@@ -1,0 +1,1884 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "metroName": "Cleveland",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-11",
+  "capturedAt": "2026-11-11T16:13:03.219Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-11",
+    "through": "2026-11-25"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 8
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 44
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 5
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-11-tm-vv1AAZk33GkdSFHSD",
+      "metroId": "cleveland",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace - USA & Canada Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Palace",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZk33GkdSFHSD",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAvzfK",
+      "metroId": "cleveland",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Trippie Redd",
+      "officialTitle": "Trippie Redd ??? The Non-Disclosure Agreement Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Trippie Redd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvzfK",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7PzG3",
+      "metroId": "cleveland",
+      "date": "2026-11-12",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Erie Otters vs. Kitchener Rangers",
+      "place": {
+        "type": "venue",
+        "venueId": "erie-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Erie Otters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzG3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vvG1fZ_GfKKTgG",
+      "metroId": "cleveland",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Pouya",
+      "officialTitle": "Pouya - The Foreverglades Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pouya",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_GfKKTgG",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7OyoP",
+      "metroId": "cleveland",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Daniel Sloss",
+      "place": {
+        "type": "venue",
+        "venueId": "mimi-ohio-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OyoP"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A70_7K",
+      "metroId": "cleveland",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70_7K",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv1kfZ_abeG7YgaQ",
+      "metroId": "cleveland",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "show",
+      "title": "The Menzingers",
+      "officialTitle": "The Menzingers: Everything I Ever Saw North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Menzingers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kfZ_abeG7YgaQ",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70k-z",
+      "metroId": "cleveland",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Cameron Mitchell",
+      "officialTitle": "John Cameron Mitchell: Hedwig 25th Anniversary Movie Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mimi-ohio-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "John Cameron Mitchell",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70k-z",
+      "expectedDraw": {
+        "count": 997,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7xav7",
+      "metroId": "cleveland",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sombr",
+      "officialTitle": "SOMBR - You Are The Reason Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Sombr",
+      "act": true,
+      "performerIds": [
+        "K8vZ917ji4V",
+        "Z7r9jZa2RB",
+        "Z7r9jZa8em"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xav7",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7PzGK",
+      "metroId": "cleveland",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Erie Otters vs. Niagara IceDogs",
+      "place": {
+        "type": "venue",
+        "venueId": "erie-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Erie Otters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzGK",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1fZ_u60Xk8J",
+      "metroId": "cleveland",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "AJ McLean",
+      "officialTitle": "AJ McLean presents Alexander James: The Better Man Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "AJ McLean",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_u60Xk8J",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-cavaliers-401909981",
+      "metroId": "cleveland",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Cavaliers vs. Mavericks",
+      "broadcast": "KFAA-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "mavericks",
+        "awayOpponent": "mavericks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AAed_7",
+      "metroId": "cleveland",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jodeci",
+      "place": {
+        "type": "venue",
+        "venueId": "keybank-state-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jodeci",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAed_7",
+      "expectedDraw": {
+        "count": 3098,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-browns-401873056",
+      "metroId": "cleveland",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Browns vs. Texans",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-bank-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "browns",
+        "away": "texans",
+        "awayOpponent": "texans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 65880,
+        "low": 62753,
+        "high": 66357,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7POp8",
+      "metroId": "cleveland",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Master P",
+      "officialTitle": "Cash Money & No Limit Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Master P",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171be7",
+        "Z7r9jZadV4",
+        "K8vZ9171jTf",
+        "K8vZ917oYA0",
+        "K8vZ917CCY0",
+        "K8vZ9171UiV",
+        "K8vZ91741of",
+        "K8vZ9171nV7",
+        "K8vZ917hKBf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7POp8",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-cavaliers-401909995",
+      "metroId": "cleveland",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cavaliers vs. Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-ht-cleveland-monsters-1029331",
+      "metroId": "cleveland",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Monsters vs. Hammers",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "hammers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5179,
+        "low": 4716,
+        "high": 5928,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A70pk4",
+      "metroId": "cleveland",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pk4",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A7-yed",
+      "metroId": "cleveland",
+      "date": "2026-11-17",
+      "start": null,
+      "kind": "game",
+      "title": "Kent State Golden Flashes Football vs. Miami of Ohio Redhawks Football",
+      "place": {
+        "type": "venue",
+        "venueId": "dix-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Kent State University Golden Flashes Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-yed"
+    },
+    {
+      "id": "2026-11-18-espn-cavaliers-401910007",
+      "metroId": "cleveland",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cavaliers vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-vvG1fZ_uk-St4L",
+      "metroId": "cleveland",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Rival Sons",
+      "officialTitle": "Rival Sons - Domestic Bliss Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Rival Sons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_uk-St4L",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A700e7",
+      "metroId": "cleveland",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A700e7",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vvG1fZ_1hjbMSa",
+      "metroId": "cleveland",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Everclear",
+      "officialTitle": "Everclear - Lucky 7 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Everclear",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_1hjbMSa",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1AAZOFo",
+      "metroId": "cleveland",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pentatonix",
+      "officialTitle": "Pentatonix: Christmas in the City Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Pentatonix",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172Wtf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZOFo",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A700eA",
+      "metroId": "cleveland",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A700eA",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7PFZ8",
+      "metroId": "cleveland",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dweezil Zappa",
+      "officialTitle": "Dweezil Zappa w/ Like Father",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dweezil Zappa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PFZ8",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vv17fZ_oGkn5l47F",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Skilla Baby",
+      "officialTitle": "Skilla Baby: The Price of Fame Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Skilla Baby",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_oGkn5l47F",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7PzGf",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Erie Otters vs. Saginaw Spirit",
+      "place": {
+        "type": "venue",
+        "venueId": "erie-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Erie Otters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzGf",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-20-espn-cavaliers-401909307",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Cavaliers vs. Pacers",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cavaliers",
+        "away": "pacers",
+        "awayOpponent": "pacers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70pko",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pko",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7P83d",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Wheeler Walker Jr.",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Wheeler Walker Jr.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P83d",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAvt3d",
+      "metroId": "cleveland",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Ron White (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "keybank-state-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Ron White",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt3d"
+    },
+    {
+      "id": "2026-11-21-espn-cleveland-state-mbb-401921169",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cleveland St vs. Kent State",
+      "place": {
+        "type": "venue",
+        "venueId": "wolstein-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cleveland-state-mbb",
+        "away": "kent-state",
+        "awayOpponent": "kent-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1412,
+        "low": 1399,
+        "high": 1906,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70pkf",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pkf",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-21-espn-cleveland-state-wbb-401929020",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Cleveland St vs. Kent State",
+      "place": {
+        "type": "venue",
+        "venueId": "wolstein-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cleveland-state-wbb",
+        "away": "kent-state",
+        "awayOpponent": "kent-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 331,
+        "low": 243,
+        "high": 539,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv17fZ_6GkV5UWwG",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Ekoostik Hookah",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ekoostik Hookah",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_6GkV5UWwG",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7PzG4",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Erie Otters vs. Owen Sound Attack",
+      "place": {
+        "type": "venue",
+        "venueId": "erie-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Erie Otters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzG4",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-21-ht-cleveland-monsters-1029353",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Monsters vs. Comets",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "comets"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 7741,
+        "low": 7604,
+        "high": 9902,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7P6jE",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Tropidelic",
+      "officialTitle": "Tropidelic w/ Surfer Girl",
+      "place": {
+        "type": "venue",
+        "venueId": "agora-theatre-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Tropidelic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P6jE",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A700ed",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A700ed",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70pkK",
+      "metroId": "cleveland",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pkK",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-ht-cleveland-monsters-1029366",
+      "metroId": "cleveland",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Monsters vs. Comets",
+      "place": {
+        "type": "venue",
+        "venueId": "rocket-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "cleveland-monsters",
+        "away": "comets"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 7890,
+        "low": 7574,
+        "high": 8005,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70pk3",
+      "metroId": "cleveland",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Clue (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "connor-palace"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Clue (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70pk3",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-23-tm-vv17fZ_3GkTxj-kz",
+      "metroId": "cleveland",
+      "date": "2026-11-23",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Emo Orchestra",
+      "officialTitle": "Emo Orchestra With The Spill Canvas - An Evening Of Emo",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Emo Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_3GkTxj-kz",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-sa-csuvikings-com-21051",
+      "metroId": "cleveland",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Cleveland State vs. Georgia Southern University",
+      "place": {
+        "type": "venue",
+        "venueId": "woodling-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cleveland-state-wbb",
+        "away": "Georgia Southern University",
+        "awayOpponent": "georgia-southern-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-24-tm-vv17fZ_8GkTIInLl",
+      "metroId": "cleveland",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "bleood",
+      "officialTitle": "bleood - Kill Your Idols Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-cleveland"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "bleood",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GkTIInLl",
+      "expectedDraw": {
+        "count": 1240,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-sa-csuvikings-com-21050",
+      "metroId": "cleveland",
+      "date": "2026-11-25",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Cleveland State vs. Lindenwood",
+      "place": {
+        "type": "venue",
+        "venueId": "woodling-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cleveland-state-wbb",
+        "away": "Lindenwood",
+        "awayOpponent": "lindenwood"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-25-espn-cleveland-state-mbb-401921170",
+      "metroId": "cleveland",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cleveland St vs. Case Western",
+      "place": {
+        "type": "venue",
+        "venueId": "woodling-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cleveland-state-mbb",
+        "away": "case-western",
+        "awayOpponent": "case-western"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7PzGp",
+      "metroId": "cleveland",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Erie Otters vs. London Knights",
+      "place": {
+        "type": "venue",
+        "venueId": "erie-insurance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Erie Otters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzGp",
+      "occasionFacts": {
+        "run": 4
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-11-tm-vv1AAZk33GkdSFHSD",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAvzfK",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7PzG3",
+      "date": "2026-11-12",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG1fZ_GfKKTgG",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7OyoP",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A70_7K",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1kfZ_abeG7YgaQ",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70k-z",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 997
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7xav7",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7PzGK",
+      "date": "2026-11-14",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1fZ_u60Xk8J",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-cavaliers-401909981",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AAed_7",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3098
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-browns-401873056",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65880,
+        "low": 62753,
+        "high": 66357
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7POp8",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "Texans at Browns 0.9 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-cavaliers-401909995",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-11-17-ht-cleveland-monsters-1029331",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "draw": {
+        "count": 5179,
+        "low": 4716,
+        "high": 5928
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A70pk4",
+      "date": "2026-11-17",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A7-yed",
+      "date": "2026-11-17",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-18-espn-cavaliers-401910007",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vvG1fZ_uk-St4L",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A700e7",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1fZ_1hjbMSa",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1AAZOFo",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A700eA",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7PFZ8",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vv17fZ_oGkn5l47F",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7PzGf",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-espn-cavaliers-401909307",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19432,
+        "low": 19432,
+        "high": 19432
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70pko",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7P83d",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAvt3d",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-cleveland-state-mbb-401921169",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1412,
+        "low": 1399,
+        "high": 1906
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70pkf",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-cleveland-state-wbb-401929020",
+      "date": "2026-11-21",
+      "start": "15:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 331,
+        "low": 243,
+        "high": 539
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv17fZ_6GkV5UWwG",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7PzG4",
+      "date": "2026-11-21",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-21-ht-cleveland-monsters-1029353",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7741,
+        "low": 7604,
+        "high": 9902
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7P6jE",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A700ed",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70pkK",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-ht-cleveland-monsters-1029366",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7890,
+        "low": 7574,
+        "high": 8005
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70pk3",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-vv17fZ_3GkTxj-kz",
+      "date": "2026-11-23",
+      "start": "18:00",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-24-sa-csuvikings-com-21051",
+      "date": "2026-11-24",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-24-tm-vv17fZ_8GkTIInLl",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "draw": {
+        "count": 1240
+      }
+    },
+    {
+      "eventId": "2026-11-25-sa-csuvikings-com-21050",
+      "date": "2026-11-25",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-25-espn-cleveland-state-mbb-401921170",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7PzGp",
+      "date": "2026-11-25",
+      "start": "19:00"
+    }
+  ]
+}

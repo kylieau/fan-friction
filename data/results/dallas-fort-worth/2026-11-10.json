@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-smu-mbb-401918969",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-mbb",
+      "home": {
+        "name": "SMU",
+        "score": 98
+      },
+      "away": {
+        "name": "Prairie View",
+        "score": 63
+      },
+      "attendance": 3758,
+      "capturedAt": "2026-11-11T16:15:32.548Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-10-espn-tcu-mbb-401917979",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 100
+      },
+      "away": {
+        "name": "UL Monroe",
+        "score": 92
+      },
+      "attendance": 4521,
+      "note": "2OT",
+      "capturedAt": "2026-11-11T16:15:32.548Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    },
+    {
+      "eventId": "2026-11-10-espn-tcu-wbb-401915666",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 78
+      },
+      "away": {
+        "name": "Iona",
+        "score": 53
+      },
+      "attendance": 2118,
+      "capturedAt": "2026-11-11T16:15:32.548Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

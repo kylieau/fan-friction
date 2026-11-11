@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-georgetown-mbb-401909514",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "georgetown-mbb",
+      "home": {
+        "name": "Georgetown",
+        "score": 83
+      },
+      "away": {
+        "name": "Delaware St",
+        "score": 78
+      },
+      "attendance": 1154,
+      "capturedAt": "2026-11-11T16:15:41.807Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "18:33"
+    },
+    {
+      "eventId": "2026-11-10-espn-gw-mbb-401911209",
+      "metroId": "washington-dc",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "charles-e-smith-center",
+      "homeTeamId": "gw-mbb",
+      "home": {
+        "name": "G Washington",
+        "score": 69
+      },
+      "away": {
+        "name": "Elon",
+        "score": 50
+      },
+      "attendance": 1392,
+      "capturedAt": "2026-11-11T16:15:41.807Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

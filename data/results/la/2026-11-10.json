@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-kings-401892689",
+      "metroId": "la",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 0
+      },
+      "away": {
+        "name": "Predators",
+        "score": 3
+      },
+      "attendance": 15008,
+      "capturedAt": "2026-11-11T16:15:29.198Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "22:09"
+    },
+    {
+      "eventId": "2026-11-10-espn-usc-wbb-401927107",
+      "metroId": "la",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-wbb",
+      "home": {
+        "name": "USC",
+        "score": 105
+      },
+      "away": {
+        "name": "Charleston",
+        "score": 44
+      },
+      "attendance": 3870,
+      "capturedAt": "2026-11-11T16:15:29.198Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "22:38"
+    }
+  ]
+}

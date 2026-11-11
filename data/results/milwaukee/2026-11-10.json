@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-marquette-wbb-401919075",
+      "metroId": "milwaukee",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-mcguire-center",
+      "homeTeamId": "marquette-wbb",
+      "home": {
+        "name": "Marquette",
+        "score": 87
+      },
+      "away": {
+        "name": "Presbyterian",
+        "score": 54
+      },
+      "attendance": 2443,
+      "capturedAt": "2026-11-11T16:15:33.402Z",
+      "duration": {
+        "minutes": 104,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-10-ht-milwaukee-admirals-1029285",
+      "metroId": "milwaukee",
+      "date": "2026-11-10",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "uwm-panther-arena",
+      "homeTeamId": "milwaukee-admirals",
+      "home": {
+        "name": "Admirals",
+        "score": 4
+      },
+      "away": {
+        "name": "Wild",
+        "score": 1
+      },
+      "attendance": 9109,
+      "capturedAt": "2026-11-11T16:15:33.403Z"
+    }
+  ]
+}

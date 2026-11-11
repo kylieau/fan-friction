@@ -1,0 +1,5674 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "metroName": "Dallas–Fort Worth",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-11",
+  "capturedAt": "2026-11-11T16:10:37.193Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-11",
+    "through": "2026-11-25"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 33
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 126
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 27
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-11-sa-meangreensports-com-7422",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "11:00",
+      "kind": "game",
+      "title": "North Texas vs. HCU",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unt-wbb",
+        "away": "HCU",
+        "awayOpponent": "hcu"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAZz8e",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZz8e",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-11-espn-smu-wbb-401915963",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SMU vs. Long Island",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-wbb",
+        "away": "long-island",
+        "awayOpponent": "long-island"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1251,
+        "low": 1162,
+        "high": 1412,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-espn-unt-mbb-401917522",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Texas vs. Santa Clara",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unt-mbb",
+        "away": "santa-clara",
+        "awayOpponent": "santa-clara"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2887,
+        "low": 2703,
+        "high": 3184,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG1YZ_GEn0Toq",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "RØZ Presents: SE ESTÁ HACIENDO TARDE",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GEn0Toq",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A7PJvt",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Movements",
+      "officialTitle": "Movements (16 and Under with Parent or Legal Guardian)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-bomb-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Movements",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PJvt",
+      "expectedDraw": {
+        "count": 4300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG1YZ_5l_flYx",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l_flYx",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-11-tm-vvG1YZ_1JrlMao",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "officialTitle": "KATSEYE: THE WILDWORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "act": true,
+      "performerIds": [
+        "K8vZ917q517"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1JrlMao",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1AAvdq7",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvdq7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-12-sa-utamavs-com-21272",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UT Arlington vs. Austin Peay",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-espn-tcu-wbb-401917941",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "18:30",
+      "kind": "game",
+      "title": "TCU vs. SE Louisiana",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-wbb",
+        "away": "se-louisiana",
+        "awayOpponent": "se-louisiana"
+      },
+      "rank": {
+        "home": 15
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2663,
+        "low": 2425,
+        "high": 3482,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-espn-dallas-stars-401892703",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Winnipeg Jets",
+      "broadcast": "KDFI",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-smumustangs-com-14823",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "SMU vs. Louisville",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-vvG1YZ_1LYMSYF",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nurse John: Against Medical Advice Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nurse John",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1LYMSYF"
+    },
+    {
+      "id": "2026-11-12-tm-vvG1YZ_GpF5VWX",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Helado Negro",
+      "officialTitle": "Helado Negro and Reyna Tropical as \"Helado Tropical\"",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Helado Negro",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GpF5VWX",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vvG1YZ_u1gzt3U",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "José Madero",
+      "officialTitle": "Jose Madero - USA Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "José Madero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_u1gzt3U",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A70efY",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Volleyball vs. BYU Cougars Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "ferrell-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Baylor Bears Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70efY"
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1AA76-6",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Basketball vs. Prairie View A & M Panthers Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "foster-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Baylor Bears Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA76-6",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-12-tm-vvG1YZ_5l_4DYI",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l_4DYI",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7J8u3",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dallas Symphony Orchestra",
+      "officialTitle": "Dallas Symphony Orchestra Presents Ravel and Gershwin",
+      "place": {
+        "type": "venue",
+        "venueId": "morton-h-meyerson-symphony-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Dallas Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J8u3",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2062,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-Z7r9jZ1A7OpqM",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "special",
+      "title": "PBR Stockyards Showcase",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "PBR Stockyards Showcase",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OpqM",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-espn-tcu-mbb-401919049",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "TCU vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-mbb",
+        "away": "uwm-mbb",
+        "awayOpponent": "milwaukee"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5574,
+        "low": 5300,
+        "high": 6000,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-texas-legends-401914541",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Legends vs. Vipers",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-legends",
+        "away": "vipers",
+        "awayOpponent": "vipers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5772,
+        "low": 5405,
+        "high": 6112,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_a7Xwp3d",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "officialTitle": "Streetlight Manifesto: The Presence of the Past Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_a7Xwp3d",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_FMhH5rm",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "They Might Be Giants",
+      "officialTitle": "TWO NIGHTS WITH THEY MIGHT BE GIANTS - 16+ Event",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "They Might Be Giants",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FMhH5rm",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_Fn1yMAd",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Michael Blaustein: The Taste Me Tour: The Final Leg",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Michael Blaustein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_Fn1yMAd"
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_k9prrh2",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_k9prrh2",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_5l_9hYm",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l_9hYm",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70w4J",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dallas Symphony Orchestra",
+      "officialTitle": "Dallas Symphony Orchestra Presents Ravel and Gershwin",
+      "place": {
+        "type": "venue",
+        "venueId": "morton-h-meyerson-symphony-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Dallas Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70w4J",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2062,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7OpPN",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OpPN",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-13-espn-smu-mbb-401911014",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "game",
+      "title": "SMU vs. Ball State",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-mbb",
+        "away": "ball-state",
+        "awayOpponent": "ball-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5468,
+        "low": 4672,
+        "high": 5974,
+        "fromCrowds": true,
+        "games": 49,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 49 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1YZ_orPO7Mb",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Reyez",
+      "officialTitle": "Jessie Reyez: A Little Vengeance Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "south-side-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jessie Reyez",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_orPO7Mb",
+      "expectedDraw": {
+        "count": 3200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70oOA",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "La Mafia",
+      "place": {
+        "type": "venue",
+        "venueId": "lucas-oil-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "La Mafia",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171QXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oOA",
+      "expectedDraw": {
+        "count": 6500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A7PV_Z",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mannequin Pussy",
+      "officialTitle": "Mannequin P*ssy and Wednesday (16 and Under with Parent or Legal Guardian)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-bomb-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Mannequin Pussy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PV_Z",
+      "expectedDraw": {
+        "count": 4300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAZP4K",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Kolby Cooper",
+      "officialTitle": "Kolby Cooper (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Kolby Cooper",
+      "act": true,
+      "performerIds": [
+        "K8vZ917b6p0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZP4K",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-smu-football-401858301",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "kind": "game",
+      "title": "SMU vs. Wake Forest",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "gerald-j-ford-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "smu-football",
+        "away": "wake-forest",
+        "awayOpponent": "wake-forest"
+      },
+      "rank": {
+        "away": 13
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 31239,
+        "low": 30334,
+        "high": 31967,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_k9pLmh9",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "11:30",
+      "kind": "game",
+      "title": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_k9pLmh9",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-espn-tcu-football-401856862",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "TCU vs. Kansas St",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "amon-g-carter-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tcu-football",
+        "away": "kansas-st",
+        "awayOpponent": "kansas-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 36395,
+        "low": 35663,
+        "high": 37625,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-utamavs-com-21273",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UT Arlington vs. Central Arkansas",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_5l_blYg",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l_blYg",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OY4V",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "13:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OY4V",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-sa-meangreensports-com-7423",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "game",
+      "title": "North Texas vs. Incarnate Word",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unt-wbb",
+        "away": "Incarnate Word",
+        "awayOpponent": "incarnate-word"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-utamavs-com-21361",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "14:30",
+      "kind": "game",
+      "title": "UT Arlington vs. LSU-Shreveport",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uta-wbb",
+        "away": "LSU-Shreveport",
+        "awayOpponent": "lsu-shreveport"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-espn-unt-mbb-401925827",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "North Texas vs. South Alabama",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unt-mbb",
+        "away": "south-alabama",
+        "awayOpponent": "south-alabama"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3454,
+        "low": 3255,
+        "high": 4196,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-uta-mbb-401925108",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UT Arlington vs. UT Rio Grande",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uta-mbb",
+        "away": "ut-rio-grande",
+        "awayOpponent": "ut-rio-grande"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2512,
+        "low": 1280,
+        "high": 2934,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_k9pOmhO",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_k9pOmhO",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-espn-dallas-stars-401892717",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Sabres",
+      "broadcast": "MSGB",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "sabres",
+        "awayOpponent": "sabres"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 28 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_FMhW5rz",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "They Might Be Giants",
+      "officialTitle": "TWO NIGHTS WITH THEY MIGHT BE GIANTS - 16+ Event",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "They Might Be Giants",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FMhW5rz",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_G5egy4w",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Røz",
+      "officialTitle": "The Monster Energy Outbreak Tour Presents RØZ: SE ESTÁ HACIENDO TARDE",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_G5egy4w",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_GEA3DRR",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Daughtry",
+      "officialTitle": "Daughtry - 20 Years Unplugged Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Daughtry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GEA3DRR",
+      "expectedDraw": {
+        "count": 1704,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_5l__DYH",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l__DYH",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OpP0",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OpP0",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_1fa7M7W",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "El Tri",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "El Tri",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171a97"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1fa7M7W",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1YZ_8OImZWq",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Caiden Wallace",
+      "place": {
+        "type": "venue",
+        "venueId": "tannahills-music-hall-and-lounge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Caiden Wallace",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_8OImZWq",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AAZdJ4",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Ryan Bingham",
+      "officialTitle": "Ryan Bingham and The Texas Gentleman (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ryan Bingham",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GaG7",
+        "Z7r9jZaGkN"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZdJ4",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-sa-smumustangs-com-14573",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "12:00",
+      "kind": "game",
+      "title": "SMU vs. Notre Dame",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-15-tm-vvG1YZ_5l_h5sk",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_5l_h5sk",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG1YZ_Fh1s1Jg",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "kind": "show",
+      "title": "Cowtown",
+      "officialTitle": "From The Saddle To Symphony Hall - Cowtown Birthplace Of Western Swing",
+      "place": {
+        "type": "venue",
+        "venueId": "will-rogers-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Cowtown",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_Fh1s1Jg",
+      "expectedDraw": {
+        "count": 2856,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG1YZ_k9pxChP",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "kind": "game",
+      "title": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "motorsports"
+      },
+      "performer": "Hot Wheels Monster Trucks™ Live Glow-N-Fire",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_k9pxChP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7OZ_A",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Spirit of Mexico Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Spirit of Mexico Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OZ_A"
+    },
+    {
+      "id": "2026-11-15-espn-tcu-wbb-401917942",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "TCU vs. Abilene Chrstn",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-wbb",
+        "away": "abilene-chrstn",
+        "awayOpponent": "abilene-chrstn"
+      },
+      "rank": {
+        "home": 15
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2302,
+        "low": 2293,
+        "high": 2409,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG1YZ_FkVTlxW",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Elmo's Got the Moves",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Sesame Street Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_FkVTlxW"
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AA76-F",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Basketball vs. East Texas A&M Lions Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "foster-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Baylor Bears Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA76-F",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-15-espn-texas-legends-401914552",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Legends vs. Vipers",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-legends",
+        "away": "vipers",
+        "awayOpponent": "vipers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5825,
+        "low": 5668,
+        "high": 6442,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-cowboys-401873063",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "15:25",
+      "kind": "game",
+      "title": "Cowboys vs. 49ers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "att-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cowboys",
+        "away": "sf-49ers",
+        "awayOpponent": "49ers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 92871,
+        "low": 92737,
+        "high": 93024,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-smu-wbb-401915964",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SMU vs. Nicholls",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-wbb",
+        "away": "nicholls",
+        "awayOpponent": "nicholls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1431,
+        "low": 1264,
+        "high": 1612,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7OZ_k",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Spirit of Mexico Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Spirit of Mexico Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OZ_k"
+    },
+    {
+      "id": "2026-11-15-espn-dallas-stars-401892722",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Panthers",
+      "broadcast": "NHL Net",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG1YZ_CJxxgym",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Amity Affliction",
+      "officialTitle": "The Amity Affliction: HOUSE OF CARDS 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "tannahills-music-hall-and-lounge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "The Amity Affliction",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_CJxxgym",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7JaeZ",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Asim Azhar",
+      "place": {
+        "type": "venue",
+        "venueId": "eisemann-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Asim Azhar",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JaeZ",
+      "expectedDraw": {
+        "count": 1563,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-Z7r9jZ1AAed88",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-16",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAed88",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AAed8o",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-17",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAed8o",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-17-tm-vvG1YZ_59UtUqU",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "show",
+      "title": "DragonForce",
+      "officialTitle": "DragonForce: Inhuman Rampage 20th Anniversary",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "DragonForce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_59UtUqU",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-smu-mbb-401918970",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "SMU vs. Oral Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-mbb",
+        "away": "oral-roberts",
+        "awayOpponent": "oral-roberts"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4421,
+        "low": 4285,
+        "high": 4972,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A70toU",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Lyle Lovett",
+      "officialTitle": "Lyle Lovett and his Small Large Band",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-performance-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lyle Lovett",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70toU",
+      "expectedDraw": {
+        "count": 2042,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AAea8-",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Baylor Bears Mens Basketball vs. Jackson State Tigers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "foster-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Baylor University Bears Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAea8-"
+    },
+    {
+      "id": "2026-11-18-espn-tcu-wbb-401918003",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "game",
+      "title": "TCU vs. UT Arlington",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-wbb",
+        "away": "ut-arlington",
+        "awayOpponent": "ut-arlington"
+      },
+      "rank": {
+        "home": 15
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2663,
+        "low": 2425,
+        "high": 3482,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-meangreensports-com-7424",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "game",
+      "title": "North Texas vs. Saint Francis",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unt-wbb",
+        "away": "Saint Francis",
+        "awayOpponent": "saint-francis"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-tm-vvG1YZ_161IQqj",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amble",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Amble",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_161IQqj",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A7Pt0F",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Lyle Lovett",
+      "place": {
+        "type": "venue",
+        "venueId": "margot-and-bill-winspear-opera-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lyle Lovett",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pt0F",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-mavericks-401910016",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Mavericks vs. Warriors",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mavericks",
+        "away": "warriors",
+        "awayOpponent": "warriors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19711,
+        "low": 19027,
+        "high": 19789,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-espn-tcu-mbb-401919050",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "TCU vs. Texas A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-mbb",
+        "away": "texas-a-m",
+        "awayOpponent": "texas-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4815,
+        "low": 4567,
+        "high": 5438,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vvG1YZ_3RxSok6",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nick Cannon Presents: Wild 'N Out Live - The Next Generation",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nick Cannon Presents: Wild 'N Out Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_3RxSok6"
+    },
+    {
+      "id": "2026-11-19-tm-vvG1YZ_Gwj3MCz",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Holywatr",
+      "officialTitle": "Holywatr: Deo Gratias Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Holywatr",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_Gwj3MCz",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7OY4g",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "PBR Stockyards Showcase",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "PBR Stockyards Showcase",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OY4g",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1AA7_Ox",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Gunnar Latham",
+      "officialTitle": "Gunnar Latham (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Gunnar Latham",
+      "act": true,
+      "performerIds": [
+        "Z7r9jZa85m"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7_Ox",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A707o4",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "18:30",
+      "kind": "game",
+      "title": "TCU Horned Frogs Womens Volleyball vs. Arizona State Sun Devils Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TCU Horned Frogs Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A707o4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-espn-smu-mbb-401929459",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "SMU vs. South Alabama",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-mbb",
+        "away": "south-alabama",
+        "awayOpponent": "south-alabama"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5468,
+        "low": 4672,
+        "high": 5974,
+        "fromCrowds": true,
+        "games": 49,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 49 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_1xWxG8B",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Band of Horses",
+      "officialTitle": "An Evening With Band Of Horses",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Band of Horses",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1xWxG8B",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_2S6dGko",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Allen Americans vs Kansas City Mavericks - Red Out",
+      "place": {
+        "type": "venue",
+        "venueId": "cutx-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Allen Americans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_2S6dGko",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_3RRJNFT",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Syd",
+      "officialTitle": "Syd: Beard Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Syd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_3RRJNFT",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_8B1Z44m",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Brett Goldstein: Sex, Death & Small Talk",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Brett Goldstein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_8B1Z44m"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7xpqa",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Volleyball vs. Iowa State Cyclones Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "ferrell-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Baylor Bears Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpqa",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_14W7VrN",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_14W7VrN",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_6eg_Ff7",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Fab Four",
+      "officialTitle": "The Fab Four: Tribute to the Beatles' A Hard Day's Night",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "The Fab Four",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_6eg_Ff7",
+      "expectedDraw": {
+        "count": 1704,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7J3ba",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dallas Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "morton-h-meyerson-symphony-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Dallas Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J3ba",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2062,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7OY4U",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OY4U",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1YZ_GXsGJTD",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Elijah Scott",
+      "place": {
+        "type": "venue",
+        "venueId": "tannahills-music-hall-and-lounge"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Elijah Scott",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GXsGJTD",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70kOp",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "All The Feels R&B",
+      "officialTitle": "All The Feels R and B (16 and Under with Parent or Legal Guardian)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-bomb-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "All The Feels R&B",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70kOp",
+      "expectedDraw": {
+        "count": 4300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7Pge3",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Don Lemon w/ D. L. Hughley",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Don Lemon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pge3"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAZpqS",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Justin Moore",
+      "officialTitle": "Justin Moore (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Justin Moore",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G_If"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZpqS",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7OY4z",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OY4z",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-21-espn-smu-wbb-401915965",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "kind": "game",
+      "title": "SMU vs. Grand Canyon",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "smu-wbb",
+        "away": "gcu-wbb",
+        "awayOpponent": "grand-canyon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1206,
+        "low": 1150,
+        "high": 1220,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_82fTtfh",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Better Than Ezra",
+      "officialTitle": "Better Than Ezra - Legends of the Fall: Closer To The Edge",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Better Than Ezra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_82fTtfh",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-mavericks-401910025",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Mavericks vs. Clippers",
+      "broadcast": "KFAA-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "mavericks",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19911,
+        "low": 19570,
+        "high": 20014,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-texas-legends-401914587",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Legends vs. Hustle",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-legends",
+        "away": "hustle",
+        "awayOpponent": "hustle"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6253,
+        "low": 5938,
+        "high": 6658,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_2S67Hkp",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Allen Americans vs Kansas City Mavericks",
+      "place": {
+        "type": "venue",
+        "venueId": "cutx-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Allen Americans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_2S67Hkp",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAZJxe",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sugarland",
+      "place": {
+        "type": "venue",
+        "venueId": "texas-trust-cu-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sugarland",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175cBV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZJxe",
+      "expectedDraw": {
+        "count": 6350,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-dallas-trinity-401878604",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Trinity FC vs. Lexington",
+      "place": {
+        "type": "venue",
+        "venueId": "cotton-bowl"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "dallas-trinity",
+        "away": "lexington",
+        "awayOpponent": "lexington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2549,
+        "low": 2271,
+        "high": 2824,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2025."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_2dvOBAI",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "tripleS",
+      "officialTitle": "2026 tripleS World Tour [ANDLESS] in Fort Worth",
+      "place": {
+        "type": "venue",
+        "venueId": "will-rogers-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "tripleS",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_2dvOBAI",
+      "expectedDraw": {
+        "count": 2856,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_61DJQEl",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Ty Myers",
+      "officialTitle": "Ty Myers: The Legal Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Ty Myers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917j970",
+        "K8vZ917hsIV",
+        "K8vZ917L5b0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_61DJQEl",
+      "expectedDraw": {
+        "count": 7980,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70w4U",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dallas Symphony Orchestra",
+      "officialTitle": "Dallas Symphony Orchestra Presents Debussy's La mer and Karen Gomyo",
+      "place": {
+        "type": "venue",
+        "venueId": "morton-h-meyerson-symphony-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Dallas Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70w4U",
+      "occasionFacts": {
+        "run": 5
+      },
+      "expectedDraw": {
+        "count": 2062,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7OY4M",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Stockyards Championship Rodeo",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "rodeo"
+      },
+      "performer": "Stockyards Championship Rodeo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OY4M",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AA7k80",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Lone Star Murder Mystery & Dinner show",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Lone Star Murder Mystery & Dinner show",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7k80"
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_kYuI28O",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rawayana",
+      "officialTitle": "RAWAYANA - ¿Dónde es el after? World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Rawayana",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p5tf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_kYuI28O",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7PSG_",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Paul Cauthen",
+      "place": {
+        "type": "venue",
+        "venueId": "the-bomb-factory"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Paul Cauthen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PSG_",
+      "expectedDraw": {
+        "count": 4300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_3DmtmLH",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Carousel Club Burlesque Presents Rhinestone Rodeo (Ages 18 & Up)",
+      "place": {
+        "type": "venue",
+        "venueId": "tannahills-music-hall-and-lounge"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Variety"
+      },
+      "performer": "Carousel Club Burlesque",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_3DmtmLH"
+    },
+    {
+      "id": "2026-11-21-tm-vvG1YZ_fhyvDhJ",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Live Nation Presents: Yallah Habibi Crew - 21+ Event",
+      "place": {
+        "type": "venue",
+        "venueId": "the-echo-lounge-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Live Nation Presents: Yallah Habibi Crew - 21+ Event",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_fhyvDhJ",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAv4Fe",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Wade Bowen",
+      "officialTitle": "Wade Bowen - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Wade Bowen",
+      "act": true,
+      "performerIds": [
+        "K8vZ91750Af"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv4Fe",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-tcu-football-401856872",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "TCU vs. Utah Utes",
+      "place": {
+        "type": "venue",
+        "venueId": "amon-g-carter-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "tcu-football",
+        "away": "utah-utes-football",
+        "awayOpponent": "utah"
+      },
+      "rank": {
+        "away": 2
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 36395,
+        "low": 35663,
+        "high": 37625,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-utamavs-com-21411",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "UT Arlington vs. UT Arlington",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7OJOO",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "Baylor Bears Football vs. Texas Tech Red Raiders Football",
+      "place": {
+        "type": "venue",
+        "venueId": "mclane-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Baylor University Bears Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OJOO"
+    },
+    {
+      "id": "2026-11-22-espn-cowboys-401873073",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Cowboys vs. Titans",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "att-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cowboys",
+        "away": "titans",
+        "awayOpponent": "titans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 92871,
+        "low": 92737,
+        "high": 93024,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG1YZ_oEbGiZg",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "kind": "game",
+      "title": "LS² - Hoops with Heart - Weekend I",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Texas Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_oEbGiZg"
+    },
+    {
+      "id": "2026-11-22-tm-vvG1YZ_KwLgAL7",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Hoopfest Basketball Women's Challenge Session 1",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Hoopfest Basketball Women's Challenge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_KwLgAL7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A7Op-f",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Ultimate Bullfighters",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Ultimate Bullfighters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Op-f"
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A707op",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "game",
+      "title": "TCU Horned Frogs Womens Volleyball vs. Iowa State Cyclones Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "schollmaier-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "TCU Horned Frogs Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A707op",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70w4g",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "show",
+      "title": "Dallas Symphony Orchestra",
+      "officialTitle": "Dallas Symphony Orchestra Presents Debussy's La mer and Karen Gomyo",
+      "place": {
+        "type": "venue",
+        "venueId": "morton-h-meyerson-symphony-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Dallas Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70w4g",
+      "occasionFacts": {
+        "run": 6
+      },
+      "expectedDraw": {
+        "count": 2062,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A7xpqK",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Volleyball vs. Arizona State Sun Devils Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "ferrell-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Baylor Bears Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpqK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AA76-a",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Baylor Bears Womens Basketball vs. Northern Kentucky Norse Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "foster-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Baylor Bears Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA76-a",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-espn-tcu-wbb-401918004",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "kind": "game",
+      "title": "TCU vs. Utah State",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-wbb",
+        "away": "utah-state",
+        "awayOpponent": "utah-state"
+      },
+      "neutralSite": true,
+      "rank": {
+        "home": 15
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-22-espn-dallas-stars-401892771",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Stars vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "penguins",
+        "awayOpponent": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG1YZ_6rEMkBa",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "CHELSEA HANDLER: THE HIGH AND MIGHTY TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "toyota-music-factory"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Chelsea Handler",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_6rEMkBa"
+    },
+    {
+      "id": "2026-11-22-tm-vvG1YZ_o2zAu3h",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Charlie Zaa",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-dallas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Charlie Zaa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_o2zAu3h",
+      "expectedDraw": {
+        "count": 1625,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-Z7r9jZ1AAZz8d",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-23",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZz8d",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-23-tm-vvG1YZ_KwLMALG",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-23",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Hoopfest Basketball Women's Challenge Session 2",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Hoopfest Basketball Women's Challenge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_KwLMALG",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-espn-tcu-mbb-401915941",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "TCU vs. Miami",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "tcu-mbb",
+        "away": "miami-hurricanes-mbb",
+        "awayOpponent": "miami"
+      },
+      "neutralSite": true,
+      "rank": {
+        "away": 17
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-24-tm-vvG1YZ_KwLzALq",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Hoopfest Basketball Women's Challenge Session 3",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Hoopfest Basketball Women's Challenge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_KwLzALq",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-sa-meangreensports-com-7426",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "start": "18:30",
+      "kind": "game",
+      "title": "North Texas vs. University of Dallas",
+      "place": {
+        "type": "venue",
+        "venueId": "unt-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unt-wbb",
+        "away": "University of Dallas",
+        "awayOpponent": "university-of-dallas"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-24-espn-uta-mbb-401929359",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UT Arlington vs. Oral Roberts",
+      "place": {
+        "type": "venue",
+        "venueId": "college-park-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uta-mbb",
+        "away": "oral-roberts",
+        "awayOpponent": "oral-roberts"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1119,
+        "low": 941,
+        "high": 1197,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1YZ_GUPzPRs",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Imminence",
+      "officialTitle": "Imminence- Axis Mundi Tour: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "south-side-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Imminence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_GUPzPRs",
+      "expectedDraw": {
+        "count": 3200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1YZ_KwLy4LI",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Hoopfest Basketball Women's Challenge Session 4",
+      "place": {
+        "type": "venue",
+        "venueId": "comerica-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Hoopfest Basketball Women's Challenge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_KwLy4LI",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAed83",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "12:30",
+      "kind": "special",
+      "title": "Legacy of the Longhorn",
+      "place": {
+        "type": "venue",
+        "venueId": "cowtown-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Legacy of the Longhorn",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAed83",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-25-sa-smumustangs-com-14576",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "SMU vs. Georgia Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-25-espn-dallas-stars-401892790",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Predators",
+      "broadcast": "KDFI",
+      "place": {
+        "type": "venue",
+        "venueId": "american-airlines-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "dallas-stars",
+        "away": "predators",
+        "awayOpponent": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1YZ_2h1n_sF",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic in the Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "cutx-event-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic in the Stars",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_2h1n_sF",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1YZ_1TuUH40",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dr. Seuss' How the Grinch Stole Christmas! The Musical (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-at-fair-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dr. Seuss' How the Grinch Stole Christmas! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1YZ_1TuUH40",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAZg8y",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-25",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Sam Riggs",
+      "officialTitle": "Sam Riggs - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "billy-bobs-texas"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Sam Riggs",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oxqf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZg8y",
+      "expectedDraw": {
+        "count": 6000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-11-sa-meangreensports-com-7422",
+      "date": "2026-11-11",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAZz8e",
+      "date": "2026-11-11",
+      "start": "12:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-smu-wbb-401915963",
+      "date": "2026-11-11",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1251,
+        "low": 1162,
+        "high": 1412
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-unt-mbb-401917522",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2887,
+        "low": 2703,
+        "high": 3184
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG1YZ_GEn0Toq",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A7PJvt",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4300
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG1YZ_5l_flYx",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-vvG1YZ_1JrlMao",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1AAvdq7",
+      "date": "2026-11-12",
+      "start": "12:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-utamavs-com-21272",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-tcu-wbb-401917941",
+      "date": "2026-11-12",
+      "start": "18:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2663,
+        "low": 2425,
+        "high": 3482
+      }
+    },
+    {
+      "eventId": "2026-11-12-espn-dallas-stars-401892703",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Nurse John 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-smumustangs-com-14823",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG1YZ_1LYMSYF",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Winnipeg Jets at Stars 9.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG1YZ_GpF5VWX",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG1YZ_u1gzt3U",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A70efY",
+      "date": "2026-11-12",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1AA76-6",
+      "date": "2026-11-12",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-vvG1YZ_5l_4DYI",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7J8u3",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2062
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-Z7r9jZ1A7OpqM",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-tcu-mbb-401919049",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Vipers at Legends 42 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5574,
+        "low": 5300,
+        "high": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-texas-legends-401914541",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Heavy",
+        "why": "Milwaukee at TCU (MBB) 42 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5772,
+        "low": 5405,
+        "high": 6112
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_a7Xwp3d",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_FMhH5rm",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_Fn1yMAd",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_k9prrh2",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "Kolby Cooper (18 and Over) and Milwaukee at TCU (MBB) 3.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_5l_9hYm",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70w4J",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2062
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7OpPN",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-smu-mbb-401911014",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5468,
+        "low": 4672,
+        "high": 5974
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1YZ_orPO7Mb",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3200
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70oOA",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "draw": {
+        "count": 6500
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A7PV_Z",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4300
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAZP4K",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "Hot Wheels Monster Trucks™ Live… 3.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-smu-football-401858301",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Kansas St at TCU (FB) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 31239,
+        "low": 30334,
+        "high": 31967
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_k9pLmh9",
+      "date": "2026-11-14",
+      "start": "11:30",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Kansas St at TCU (FB) and Wake Forest at SMU (FB) 2.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-tcu-football-401856862",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Wake Forest at SMU (FB) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 36395,
+        "low": 35663,
+        "high": 37625
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-utamavs-com-21273",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_5l_blYg",
+      "date": "2026-11-14",
+      "start": "13:30",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OY4V",
+      "date": "2026-11-14",
+      "start": "13:30",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-meangreensports-com-7423",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Heavy",
+        "why": "LSU-Shreveport at UT Arlington (WBB) and Kansas St at TCU (FB) 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-utamavs-com-21361",
+      "date": "2026-11-14",
+      "start": "14:30",
+      "read": {
+        "rating": 7.2,
+        "friction": "Extreme",
+        "why": "Incarnate Word at North Texas (WBB) 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-unt-mbb-401925827",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3454,
+        "low": 3255,
+        "high": 4196
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-uta-mbb-401925108",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2512,
+        "low": 1280,
+        "high": 2934
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_k9pOmhO",
+      "date": "2026-11-14",
+      "start": "18:30",
+      "read": {
+        "rating": 7.2,
+        "friction": "Heavy",
+        "why": "Sabres at Stars and Kansas St at TCU (FB) 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-dallas-stars-401892717",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Hot Wheels Monster Trucks™ Live… and Kansas St at TCU (FB) 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_FMhW5rz",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_G5egy4w",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_GEA3DRR",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1704
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_5l__DYH",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OpP0",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_1fa7M7W",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Sabres at Stars and Hot Wheels Monster Trucks™ Live… 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1YZ_8OImZWq",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "read": {
+        "rating": 7.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AAZdJ4",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "read": {
+        "rating": 7.2,
+        "friction": "Moderate",
+        "why": "Sabres at Stars and Hot Wheels Monster Trucks™ Live… 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-15-sa-smumustangs-com-14573",
+      "date": "2026-11-15",
+      "start": "12:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1YZ_5l_h5sk",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1YZ_Fh1s1Jg",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2856
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1YZ_k9pxChP",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "read": {
+        "rating": 5.4,
+        "friction": "Heavy",
+        "why": "49ers at Cowboys 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7OZ_A",
+      "date": "2026-11-15",
+      "start": "13:30",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-tcu-wbb-401917942",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2302,
+        "low": 2293,
+        "high": 2409
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1YZ_FkVTlxW",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AA76-F",
+      "date": "2026-11-15",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-15-espn-texas-legends-401914552",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "read": {
+        "rating": 5.4,
+        "friction": "Heavy",
+        "why": "49ers at Cowboys 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5825,
+        "low": 5668,
+        "high": 6442
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-cowboys-401873063",
+      "date": "2026-11-15",
+      "start": "15:25",
+      "read": {
+        "rating": 5.4,
+        "friction": "Low",
+        "why": "Panthers at Stars 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 92871,
+        "low": 92737,
+        "high": 93024
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-smu-wbb-401915964",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1431,
+        "low": 1264,
+        "high": 1612
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7OZ_k",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-dallas-stars-401892722",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 5.4,
+        "friction": "Heavy",
+        "why": "49ers at Cowboys 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1YZ_CJxxgym",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7JaeZ",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 5.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1563
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-Z7r9jZ1AAed88",
+      "date": "2026-11-16",
+      "start": "12:30"
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AAed8o",
+      "date": "2026-11-17",
+      "start": "12:30"
+    },
+    {
+      "eventId": "2026-11-17-tm-vvG1YZ_59UtUqU",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-smu-mbb-401918970",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "draw": {
+        "count": 4421,
+        "low": 4285,
+        "high": 4972
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A70toU",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "draw": {
+        "count": 2042
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AAea8-",
+      "date": "2026-11-18",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-11-18-espn-tcu-wbb-401918003",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2663,
+        "low": 2425,
+        "high": 3482
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-meangreensports-com-7424",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Warriors at Mavericks 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vvG1YZ_161IQqj",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A7Pt0F",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-mavericks-401910016",
+      "date": "2026-11-18",
+      "start": "20:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "Saint Francis at North Texas (WBB) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19711,
+        "low": 19027,
+        "high": 19789
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-tcu-mbb-401919050",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4815,
+        "low": 4567,
+        "high": 5438
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1YZ_3RxSok6",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Gunnar Latham (18 and Over) 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1YZ_Gwj3MCz",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7OY4g",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1AA7_Ox",
+      "date": "2026-11-19",
+      "start": "21:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Nick Cannon Presents: Wild 'N O… 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A707o4",
+      "date": "2026-11-20",
+      "start": "18:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-espn-smu-mbb-401929459",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5468,
+        "low": 4672,
+        "high": 5974
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_1xWxG8B",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_2S6dGko",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Journey 25 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_3RRJNFT",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_8B1Z44m",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7xpqa",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_14W7VrN",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Don Lemon w/ D. L. Hughley and Kansas City Mavericks - Red Out at Allen Americans 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_6eg_Ff7",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1704
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7J3ba",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2062
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7OY4U",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1YZ_GXsGJTD",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70kOp",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4300
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7Pge3",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Journey 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAZpqS",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Journey 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7OY4z",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-smu-wbb-401915965",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1206,
+        "low": 1150,
+        "high": 1220
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_82fTtfh",
+      "date": "2026-11-21",
+      "start": "18:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-mavericks-401910025",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7,
+        "friction": "Heavy",
+        "why": "Utah Utes at TCU (FB) 33 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19911,
+        "low": 19570,
+        "high": 20014
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-texas-legends-401914587",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7,
+        "friction": "Extreme",
+        "why": "Clippers at Mavericks 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6253,
+        "low": 5938,
+        "high": 6658
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_2S67Hkp",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7,
+        "friction": "Extreme",
+        "why": "Clippers at Mavericks 25 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAZJxe",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7,
+        "friction": "Extreme",
+        "why": "Ty Myers · The Legal Tour 2026 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6350
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-dallas-trinity-401878604",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2549,
+        "low": 2271,
+        "high": 2824
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_2dvOBAI",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2856
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_61DJQEl",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "friction": "Heavy",
+        "why": "Sugarland 23 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7980
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70w4U",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2062
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7OY4M",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AA7k80",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7,
+        "friction": "Extreme",
+        "why": "Clippers at Mavericks and Ty Myers · The Legal Tour 2026 31 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_kYuI28O",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 7,
+        "friction": "Heavy",
+        "why": "Clippers at Mavericks 9.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7PSG_",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4300
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_3DmtmLH",
+      "date": "2026-11-21",
+      "start": "21:00",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1YZ_fhyvDhJ",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "read": {
+        "rating": 7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAv4Fe",
+      "date": "2026-11-21",
+      "start": "22:00",
+      "read": {
+        "rating": 7,
+        "friction": "Heavy",
+        "why": "Clippers at Mavericks and Ty Myers · The Legal Tour 2026 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-tcu-football-401856872",
+      "date": "2026-11-21",
+      "start": null,
+      "read": {
+        "rating": 7,
+        "friction": "Low",
+        "why": "Clippers at Mavericks 33 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 36395,
+        "low": 35663,
+        "high": 37625
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-utamavs-com-21411",
+      "date": "2026-11-21",
+      "start": null,
+      "read": {
+        "rating": 7,
+        "friction": "Heavy",
+        "why": "Clippers at Mavericks 18 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7OJOO",
+      "date": "2026-11-21",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-22-espn-cowboys-401873073",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "read": {
+        "rating": 6,
+        "friction": "Low",
+        "why": "LS² - Hoops with Heart - Weeken… and TCU · Neutral site (WBB) 16 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 92871,
+        "low": 92737,
+        "high": 93024
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1YZ_oEbGiZg",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "read": {
+        "rating": 6,
+        "friction": "Heavy",
+        "why": "Titans at Cowboys 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1YZ_KwLgAL7",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A7Op-f",
+      "date": "2026-11-22",
+      "start": "13:30",
+      "read": {
+        "rating": 6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A707op",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70w4g",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2062
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A7xpqK",
+      "date": "2026-11-22",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AA76-a",
+      "date": "2026-11-22",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-22-espn-tcu-wbb-401918004",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "read": {
+        "rating": 6,
+        "friction": "Heavy",
+        "why": "Titans at Cowboys 16 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-dallas-stars-401892771",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 6,
+        "friction": "Moderate",
+        "why": "Titans at Cowboys 17 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1YZ_6rEMkBa",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 6,
+        "friction": "Moderate",
+        "why": "Penguins at Stars 9.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1YZ_o2zAu3h",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1625
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-Z7r9jZ1AAZz8d",
+      "date": "2026-11-23",
+      "start": "12:30"
+    },
+    {
+      "eventId": "2026-11-23-tm-vvG1YZ_KwLMALG",
+      "date": "2026-11-23",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-24-espn-tcu-mbb-401915941",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1YZ_KwLzALq",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-sa-meangreensports-com-7426",
+      "date": "2026-11-24",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-uta-mbb-401929359",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1119,
+        "low": 941,
+        "high": 1197
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1YZ_GUPzPRs",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3200
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1YZ_KwLy4LI",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAed83",
+      "date": "2026-11-25",
+      "start": "12:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-sa-smumustangs-com-14576",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-dallas-stars-401892790",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Disney On Ice and Sam Riggs · Ages 18+ 25 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18532,
+        "low": 18532,
+        "high": 18532
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1YZ_2h1n_sF",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Predators at Stars 25 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1YZ_1TuUH40",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAZg8y",
+      "date": "2026-11-25",
+      "start": "21:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Predators at Stars 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6000
+      }
+    }
+  ]
+}

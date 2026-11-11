@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-sixers-401909961",
+      "metroId": "philadelphia",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 101
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 123
+      },
+      "attendance": 21497,
+      "capturedAt": "2026-11-11T16:15:34.035Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    },
+    {
+      "eventId": "2026-11-10-espn-villanova-mbb-401921774",
+      "metroId": "philadelphia",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-mbb",
+      "home": {
+        "name": "Villanova",
+        "score": 80
+      },
+      "away": {
+        "name": "La Salle",
+        "score": 59
+      },
+      "attendance": 6501,
+      "capturedAt": "2026-11-11T16:15:34.035Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

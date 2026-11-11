@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-maple-leafs-401892683",
+      "metroId": "toronto",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 3
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 6
+      },
+      "attendance": 18853,
+      "capturedAt": "2026-11-11T16:15:40.265Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

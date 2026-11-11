@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-lipscomb-mbb-401920704",
+      "metroId": "nashville",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-mbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 88
+      },
+      "away": {
+        "name": "Belmont",
+        "score": 75
+      },
+      "attendance": 3577,
+      "capturedAt": "2026-11-11T16:15:35.804Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    },
+    {
+      "eventId": "2026-11-10-espn-mtsu-mbb-401927369",
+      "metroId": "nashville",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "murphy-center",
+      "homeTeamId": "mtsu-mbb",
+      "home": {
+        "name": "MTSU",
+        "score": 73
+      },
+      "away": {
+        "name": "Evansville",
+        "score": 68
+      },
+      "attendance": 2112,
+      "capturedAt": "2026-11-11T16:15:35.804Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-10-espn-vanderbilt-mbb-401918987",
+      "metroId": "nashville",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-mbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 105
+      },
+      "away": {
+        "name": "Memphis",
+        "score": 81
+      },
+      "attendance": 9350,
+      "capturedAt": "2026-11-11T16:15:35.804Z"
+    }
+  ]
+}

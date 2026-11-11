@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-ht-seattle-thunderbirds-1023279",
+      "metroId": "seattle",
+      "date": "2026-11-10",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 4
+      },
+      "away": {
+        "name": "Royals",
+        "score": 5
+      },
+      "attendance": 4754,
+      "note": "OT",
+      "capturedAt": "2026-11-11T16:15:30.310Z"
+    }
+  ]
+}

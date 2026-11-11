@@ -1,0 +1,1303 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "metroName": "Vancouver",
+  "timeZone": "America/Vancouver",
+  "capturedOn": "2026-11-11",
+  "capturedAt": "2026-11-11T16:13:25.652Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-11",
+    "through": "2026-11-25"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 26
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 9
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A7J8AI",
+      "metroId": "vancouver",
+      "date": "2026-11-11",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Abbotsford Canucks vs. Colorado Eagles",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Abbotsford Canucks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J8AI"
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1AAZzbM",
+      "metroId": "vancouver",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Brett Goldstein",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-vancouver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Brett Goldstein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZzbM"
+    },
+    {
+      "id": "2026-11-12-sa-gothunderbirds-ca-11000",
+      "metroId": "vancouver",
+      "date": "2026-11-12",
+      "start": "18:30",
+      "kind": "game",
+      "title": "UBC vs. Université Laval",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-1778v0G62h9bHzO",
+      "metroId": "vancouver",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Houndmouth",
+      "officialTitle": "Houndmouth: The Lordy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Houndmouth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G62h9bHzO",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-gothunderbirds-ca-11158",
+      "metroId": "vancouver",
+      "date": "2026-11-13",
+      "start": "17:30",
+      "kind": "game",
+      "title": "UBC vs. University of Northern British Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-wbb",
+        "away": "University of Northern British Columbia",
+        "awayOpponent": "university-of-northern-british-columbia"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-espn-vancouver-canucks-401892706",
+      "metroId": "vancouver",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Canucks vs. Rangers",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-canucks",
+        "away": "ny-rangers",
+        "awayOpponent": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18765,
+        "low": 18626,
+        "high": 18916,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-gothunderbirds-ca-11075",
+      "metroId": "vancouver",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UBC vs. University of Alberta",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "ubc-hockey",
+        "away": "University of Alberta",
+        "awayOpponent": "university-of-alberta"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-1778v0G6GTaLiRS",
+      "metroId": "vancouver",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "BOYNEXTDOOR",
+      "officialTitle": "BOYNEXTDOOR TOUR 'KNOCK ON Vol.2' IN NORTH AMERICA",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "BOYNEXTDOOR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6GTaLiRS",
+      "expectedDraw": {
+        "count": 2765,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gothunderbirds-ca-10952",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UBC vs. University of Regina Rams",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "teams": {
+        "home": "ubc-football",
+        "away": "University of Regina Rams",
+        "awayOpponent": "university-of-regina-rams"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-1Av7Z_dGkUqFM3d",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Raffi",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Raffi",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_dGkUqFM3d",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-sa-gothunderbirds-ca-11159",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UBC vs. Thompson Rivers University",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-wbb",
+        "away": "Thompson Rivers University",
+        "awayOpponent": "thompson-rivers-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-1778v0G62KjzhJ1",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Arch Enemy",
+      "officialTitle": "Arch Enemy & The Black Dahlia Murder: Wrath Across North America",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Arch Enemy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G62KjzhJ1",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-ht-vancouver-giants-1023304",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Giants vs. Vees",
+      "place": {
+        "type": "venue",
+        "venueId": "langley-events-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-giants",
+        "away": "vees"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3118,
+        "low": 2896,
+        "high": 3449,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 10 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1Av7Z_dGkyUL7KG",
+      "metroId": "vancouver",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Raffi",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Raffi",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_dGkyUL7KG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-16-tm-Z7r9jZ1A7PKPb",
+      "metroId": "vancouver",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rhye",
+      "place": {
+        "type": "venue",
+        "venueId": "vogue-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Rhye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PKPb",
+      "expectedDraw": {
+        "count": 1280,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1778v0G6ukOg1hj",
+      "metroId": "vancouver",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Turnover",
+      "officialTitle": "Turnover - Down On Earth Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "commodore-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Turnover",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ukOg1hj",
+      "expectedDraw": {
+        "count": 990,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7J8AE",
+      "metroId": "vancouver",
+      "date": "2026-11-20",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Abbotsford Canucks vs. Tucson Roadrunners",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Abbotsford Canucks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J8AE",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-sa-gothunderbirds-ca-11160",
+      "metroId": "vancouver",
+      "date": "2026-11-20",
+      "start": "17:30",
+      "kind": "game",
+      "title": "UBC vs. MacEwan University",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-wbb",
+        "away": "MacEwan University",
+        "awayOpponent": "macewan-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-sa-gothunderbirds-ca-11109",
+      "metroId": "vancouver",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UBC vs. University of Regina",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-whockey",
+        "away": "University of Regina",
+        "awayOpponent": "university-of-regina"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7P4-7",
+      "metroId": "vancouver",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rodrigo y Gabriela",
+      "place": {
+        "type": "venue",
+        "venueId": "vogue-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Rodrigo y Gabriela",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P4-7",
+      "expectedDraw": {
+        "count": 1280,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-gothunderbirds-ca-11110",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "game",
+      "title": "UBC vs. University of Regina",
+      "place": {
+        "type": "venue",
+        "venueId": "thunderbird-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-whockey",
+        "away": "University of Regina",
+        "awayOpponent": "university-of-regina"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7JFqw",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Abbotsford Canucks vs. Tucson Roadrunners",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Abbotsford Canucks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JFqw",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-sa-gothunderbirds-ca-11161",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "kind": "game",
+      "title": "UBC vs. MacEwan University",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-gym"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ubc-wbb",
+        "away": "MacEwan University",
+        "awayOpponent": "macewan-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-ht-vancouver-giants-1023332",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Giants vs. Cougars",
+      "place": {
+        "type": "venue",
+        "venueId": "langley-events-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-giants",
+        "away": "cougars"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2916,
+        "low": 2708,
+        "high": 3225,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 10 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-vancouver-canucks-401892766",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Canucks vs. Wild",
+      "broadcast": "MINNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-canucks",
+        "away": "wild",
+        "awayOpponent": "wild"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18500,
+        "low": 18452,
+        "high": 18593,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7P6P9",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gary Numan",
+      "place": {
+        "type": "venue",
+        "venueId": "vogue-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Gary Numan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P6P9",
+      "expectedDraw": {
+        "count": 1280,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-ht-vancouver-giants-1023335",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Giants vs. Blazers",
+      "place": {
+        "type": "venue",
+        "venueId": "langley-events-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-giants",
+        "away": "blazers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3643,
+        "low": 3397,
+        "high": 4129,
+        "fromCrowds": true,
+        "games": 26,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 26 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-espn-vancouver-canucks-401892772",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Canucks vs. Blackhawks",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "vancouver-canucks",
+        "away": "blackhawks",
+        "awayOpponent": "blackhawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18680,
+        "low": 18652,
+        "high": 18694,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1AoZk44GkdQJhrC",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "kind": "game",
+      "title": "2026 MLS Cup Playoffs Rd 1 Game 1 Whitecaps FC v TBD",
+      "place": {
+        "type": "venue",
+        "venueId": "bc-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Vancouver Whitecaps FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZk44GkdQJhrC"
+    },
+    {
+      "id": "2026-11-22-tm-1Av7Z_3GkDOoTaW",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Natalie MacMaster",
+      "officialTitle": "Natalie MacMaster & Donnell Leahy Present: A Celtic Family Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Natalie MacMaster",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_3GkDOoTaW",
+      "expectedDraw": {
+        "count": 1052,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-1778v0G6uChEErL",
+      "metroId": "vancouver",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Amanda Marshall",
+      "officialTitle": "Amanda Marshall - The Dirty 30 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-vancouver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amanda Marshall",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6uChEErL",
+      "expectedDraw": {
+        "count": 2672,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-1778v0G6CT-HDnH",
+      "metroId": "vancouver",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CT-HDnH",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7PO37",
+      "metroId": "vancouver",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "GWAR",
+      "officialTitle": "Gwar w/ Midnight - Band",
+      "place": {
+        "type": "venue",
+        "venueId": "vogue-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "GWAR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PO37",
+      "expectedDraw": {
+        "count": 1280,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAZF8b",
+      "metroId": "vancouver",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In",
+      "place": {
+        "type": "venue",
+        "venueId": "pacific-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZF8b",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1778v0G6CT-Xhl7",
+      "metroId": "vancouver",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "queen-elizabeth-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CT-Xhl7",
+      "occasionFacts": {
+        "run": 6
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A7J8AI",
+      "date": "2026-11-11",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1AAZzbM",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-gothunderbirds-ca-11000",
+      "date": "2026-11-12",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-12-tm-1778v0G62h9bHzO",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-gothunderbirds-ca-11158",
+      "date": "2026-11-13",
+      "start": "17:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-vancouver-canucks-401892706",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18765,
+        "low": 18626,
+        "high": 18916
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-gothunderbirds-ca-11075",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1778v0G6GTaLiRS",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2765
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gothunderbirds-ca-10952",
+      "date": "2026-11-14",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-14-tm-1Av7Z_dGkUqFM3d",
+      "date": "2026-11-14",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-14-sa-gothunderbirds-ca-11159",
+      "date": "2026-11-14",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-14-tm-1778v0G62KjzhJ1",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-11-14-ht-vancouver-giants-1023304",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "draw": {
+        "count": 3118,
+        "low": 2896,
+        "high": 3449
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1Av7Z_dGkyUL7KG",
+      "date": "2026-11-15",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-16-tm-Z7r9jZ1A7PKPb",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "draw": {
+        "count": 1280
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1778v0G6ukOg1hj",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "draw": {
+        "count": 990
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7J8AE",
+      "date": "2026-11-20",
+      "start": "17:00",
+      "read": {
+        "rating": 4.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-gothunderbirds-ca-11160",
+      "date": "2026-11-20",
+      "start": "17:30",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-gothunderbirds-ca-11109",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7P4-7",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 4.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1280
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-gothunderbirds-ca-11110",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7JFqw",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Wild at Canucks 41 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-gothunderbirds-ca-11161",
+      "date": "2026-11-21",
+      "start": "16:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-ht-vancouver-giants-1023332",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2916,
+        "low": 2708,
+        "high": 3225
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-vancouver-canucks-401892766",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18500,
+        "low": 18452,
+        "high": 18593
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7P6P9",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1280
+      }
+    },
+    {
+      "eventId": "2026-11-22-ht-vancouver-giants-1023335",
+      "date": "2026-11-22",
+      "start": "16:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3643,
+        "low": 3397,
+        "high": 4129
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-vancouver-canucks-401892772",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "2026 MLS Cup Playoffs Rd 1 Game… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18680,
+        "low": 18652,
+        "high": 18694
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1AoZk44GkdQJhrC",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Blackhawks at Canucks next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1Av7Z_3GkDOoTaW",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1052
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-1778v0G6uChEErL",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "draw": {
+        "count": 2672
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-1778v0G6CT-HDnH",
+      "date": "2026-11-24",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7PO37",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1280
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAZF8b",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-1778v0G6CT-Xhl7",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    }
+  ]
+}

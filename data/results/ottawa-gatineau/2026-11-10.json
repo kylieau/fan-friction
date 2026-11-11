@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-ottawa-senators-401892685",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 2
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 3
+      },
+      "attendance": 16679,
+      "note": "OT",
+      "capturedAt": "2026-11-11T16:15:41.408Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

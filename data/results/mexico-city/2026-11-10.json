@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-capitanes-401914526",
+      "metroId": "mexico-city",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arena-cdmx",
+      "homeTeamId": "capitanes",
+      "home": {
+        "name": "Mexico City Capitanes",
+        "score": 97
+      },
+      "away": {
+        "name": "Legends",
+        "score": 93
+      },
+      "attendance": 4085,
+      "capturedAt": "2026-11-11T16:15:36.965Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "21:09"
+    },
+    {
+      "eventId": "2026-11-10-espn-pumas-femenil-401932079",
+      "metroId": "mexico-city",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-olimpico-universitario",
+      "homeTeamId": "pumas-femenil",
+      "home": {
+        "name": "Pumas",
+        "score": 2
+      },
+      "away": {
+        "name": "Tigres",
+        "score": 3
+      },
+      "capturedAt": "2026-11-11T16:15:36.965Z"
+    }
+  ]
+}

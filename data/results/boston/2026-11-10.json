@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-bc-mbb-401909553",
+      "metroId": "boston",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-mbb",
+      "home": {
+        "name": "Boston College",
+        "score": 82
+      },
+      "away": {
+        "name": "MD Eastern",
+        "score": 54
+      },
+      "attendance": 2553,
+      "capturedAt": "2026-11-11T16:15:33.724Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

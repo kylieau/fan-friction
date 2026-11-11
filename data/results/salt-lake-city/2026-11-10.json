@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-salt-lake-city-stars-401914521",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "salt-lake-city-stars",
+      "home": {
+        "name": "Stars",
+        "score": 93
+      },
+      "away": {
+        "name": "Remix",
+        "score": 108
+      },
+      "attendance": 3000,
+      "capturedAt": "2026-11-11T16:15:41.057Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "12:14"
+    },
+    {
+      "eventId": "2026-11-10-espn-utah-jazz-401909963",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 109
+      },
+      "away": {
+        "name": "Heat",
+        "score": 115
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-11T16:15:41.057Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    },
+    {
+      "eventId": "2026-11-10-espn-utah-mbb-401921699",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-mbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 85
+      },
+      "away": {
+        "name": "Weber St",
+        "score": 64
+      },
+      "attendance": 5742,
+      "capturedAt": "2026-11-11T16:15:41.057Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    }
+  ]
+}

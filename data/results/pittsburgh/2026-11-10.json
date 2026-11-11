@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-duquesne-mbb-401925781",
+      "metroId": "pittsburgh",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-mbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 72
+      },
+      "away": {
+        "name": "Washington St",
+        "score": 71
+      },
+      "attendance": 2377,
+      "capturedAt": "2026-11-11T16:15:34.455Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-10-espn-pitt-wbb-401913746",
+      "metroId": "pittsburgh",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 129
+      },
+      "away": {
+        "name": "Delaware St",
+        "score": 51
+      },
+      "attendance": 589,
+      "capturedAt": "2026-11-11T16:15:34.455Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-knicks-401909960",
+      "metroId": "new-york",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 117
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 85
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-11T16:15:30.856Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-11-10-espn-rutgers-mbb-401920866",
+      "metroId": "new-york",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-mbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 101
+      },
+      "away": {
+        "name": "NJIT",
+        "score": 64
+      },
+      "attendance": 7026,
+      "capturedAt": "2026-11-11T16:15:30.856Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "18:31"
+    }
+  ]
+}

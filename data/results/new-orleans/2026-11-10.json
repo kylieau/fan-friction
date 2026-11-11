@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-tulane-mbb-401919003",
+      "metroId": "new-orleans",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-mbb",
+      "home": {
+        "name": "Tulane",
+        "score": 77
+      },
+      "away": {
+        "name": "Nicholls",
+        "score": 63
+      },
+      "attendance": 956,
+      "capturedAt": "2026-11-11T16:15:40.631Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

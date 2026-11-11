@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-duke-mbb-401909564",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "duke-mbb",
+      "home": {
+        "name": "Duke",
+        "score": 73
+      },
+      "away": {
+        "name": "Michigan St",
+        "score": 79
+      },
+      "capturedAt": "2026-11-11T16:15:42.651Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "19:05"
+    },
+    {
+      "eventId": "2026-11-10-espn-nc-state-mbb-401918957",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "nc-state-mbb",
+      "home": {
+        "name": "NC State",
+        "score": 94
+      },
+      "away": {
+        "name": "Presbyterian",
+        "score": 60
+      },
+      "attendance": 11764,
+      "capturedAt": "2026-11-11T16:15:42.651Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-10-espn-unc-mbb-401913101",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dean-smith-center",
+      "homeTeamId": "unc-mbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 76
+      },
+      "away": {
+        "name": "Wyoming",
+        "score": 63
+      },
+      "attendance": 16805,
+      "capturedAt": "2026-11-11T16:15:42.651Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

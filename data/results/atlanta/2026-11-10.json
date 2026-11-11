@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-gt-mbb-401920306",
+      "metroId": "atlanta",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-mbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 85
+      },
+      "away": {
+        "name": "E Kentucky",
+        "score": 71
+      },
+      "attendance": 4789,
+      "capturedAt": "2026-11-11T16:15:31.312Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-10-espn-ksu-mbb-401925708",
+      "metroId": "atlanta",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-mbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 88
+      },
+      "away": {
+        "name": "Winthrop",
+        "score": 79
+      },
+      "attendance": 1353,
+      "capturedAt": "2026-11-11T16:15:31.312Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    }
+  ]
+}

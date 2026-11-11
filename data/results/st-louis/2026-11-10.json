@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-blues-401892687",
+      "metroId": "st-louis",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 3
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 2
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-11-11T16:15:43.097Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    },
+    {
+      "eventId": "2026-11-10-espn-slu-mbb-401911250",
+      "metroId": "st-louis",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-mbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 125
+      },
+      "away": {
+        "name": "N Kentucky",
+        "score": 63
+      },
+      "attendance": 4742,
+      "capturedAt": "2026-11-11T16:15:43.097Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    }
+  ]
+}

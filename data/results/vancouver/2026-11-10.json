@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-ht-vancouver-giants-1023280",
+      "metroId": "vancouver",
+      "date": "2026-11-10",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "langley-events-centre",
+      "homeTeamId": "vancouver-giants",
+      "home": {
+        "name": "Giants",
+        "score": 2
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 4
+      },
+      "attendance": 3117,
+      "capturedAt": "2026-11-11T16:15:36.383Z"
+    }
+  ]
+}

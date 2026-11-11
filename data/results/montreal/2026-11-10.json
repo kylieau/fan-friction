@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-canadiens-401892684",
+      "metroId": "montreal",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 1
+      },
+      "away": {
+        "name": "Wild",
+        "score": 2
+      },
+      "attendance": 20962,
+      "note": "OT",
+      "capturedAt": "2026-11-11T16:15:33.047Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:22"
+    }
+  ]
+}

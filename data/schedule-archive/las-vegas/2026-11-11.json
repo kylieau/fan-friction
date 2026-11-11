@@ -1,0 +1,2499 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "metroName": "Las Vegas",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-11-11",
+  "capturedAt": "2026-11-11T16:13:40.252Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-11",
+    "through": "2026-11-25"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 57
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 9
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-11-tm-17AYv0G6ulh8dA2",
+      "metroId": "las-vegas",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6ulh8dA2",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-11-espn-golden-knights-401892693",
+      "metroId": "las-vegas",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Golden Knights vs. Mammoth",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "golden-knights",
+        "away": "utah-mammoth",
+        "awayOpponent": "mammoth"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17878,
+        "low": 17791,
+        "high": 18008,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-tm-1kAYvN_IGAGL9hQ",
+      "metroId": "las-vegas",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAYvN_IGAGL9hQ",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-11-tm-Z7r9jZ1A70EqS",
+      "metroId": "las-vegas",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Don Omar",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Don Omar",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175yK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70EqS",
+      "expectedDraw": {
+        "count": 6840,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-tm-1FAYv0GoCkZ78vC7",
+      "metroId": "las-vegas",
+      "date": "2026-11-12",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1FAYv0GoCkZ78vC7",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-12-sa-unlvrebels-com-17855",
+      "metroId": "las-vegas",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UNLV vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-ht-henderson-silver-knights-1029298",
+      "metroId": "las-vegas",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Silver Knights vs. Wranglers",
+      "place": {
+        "type": "venue",
+        "venueId": "lees-family-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "henderson-silver-knights",
+        "away": "wranglers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2711,
+        "low": 2269,
+        "high": 2832,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 15 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-169Zk8sk3ZA2vGeF",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "169Zk8sk3ZA2vGeF",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-11-13-espn-unlv-mbb-401921728",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UNLV vs. Stanford",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "thomas-mack-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unlv-mbb",
+        "away": "stanford-mbb",
+        "awayOpponent": "stanford"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5553,
+        "low": 4885,
+        "high": 6240,
+        "fromCrowds": true,
+        "games": 43,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 43 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-golden-knights-401892707",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Golden Knights vs. Predators",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "golden-knights",
+        "away": "predators",
+        "awayOpponent": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18026,
+        "low": 17874,
+        "high": 18216,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5ezZ_ur4KsK0",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Kill Tony",
+      "place": {
+        "type": "venue",
+        "venueId": "dolby-live"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Kill Tony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5ezZ_ur4KsK0",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Ad0Z_oGkctuYgF",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jeezy",
+      "officialTitle": "Jeezy | Official Caesars Ticket + Hotel Packages",
+      "place": {
+        "type": "venue",
+        "venueId": "ph-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Jeezy",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Gesf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Ad0Z_oGkctuYgF",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1A9Zk37GkdXVozi",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Eagles",
+      "officialTitle": "Eagles Live at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Eagles",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171ob7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9Zk37GkdXVozi",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 17600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1kAYvN_tGA2j_xN",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAYvN_tGA2j_xN",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-14-sa-unlvrebels-com-17856",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UNLV vs. New Mexico",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-ht-henderson-silver-knights-1029310",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Silver Knights vs. Wranglers",
+      "place": {
+        "type": "venue",
+        "venueId": "lees-family-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "henderson-silver-knights",
+        "away": "wranglers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2847,
+        "low": 2839,
+        "high": 2867,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5ezZ_ur44oKW",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Kill Tony",
+      "place": {
+        "type": "venue",
+        "venueId": "dolby-live"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Kill Tony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5ezZ_ur44oKW",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7xpfb",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Teddy Swims",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Teddy Swims",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bnP0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xpfb",
+      "expectedDraw": {
+        "count": 10260,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1Ad0Z_oGkctCZg1",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jeezy",
+      "officialTitle": "Jeezy | Official Caesars Ticket + Hotel Packages",
+      "place": {
+        "type": "venue",
+        "venueId": "ph-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Jeezy",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Gesf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Ad0Z_oGkctCZg1",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5ezZ_1Y6-wMN",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "officialTitle": "KATSEYE: THE WILDWORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "mgm-grand-garden"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "act": true,
+      "performerIds": [
+        "K8vZ917q517"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5ezZ_1Y6-wMN",
+      "expectedDraw": {
+        "count": 16800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5ezZ_KdvFglO",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Nick Cannon Presents: Wild 'N Out Live - The Next Generation",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nick Cannon Presents: Wild 'N Out Live",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5ezZ_KdvFglO"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AAZVOe",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bailey Zimmerman",
+      "place": {
+        "type": "venue",
+        "venueId": "laughlin-event-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Bailey Zimmerman",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Q0Zf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZVOe",
+      "expectedDraw": {
+        "count": 11500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1A9Zk37GkdXg-zV",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Eagles",
+      "officialTitle": "Eagles Live at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Eagles",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171ob7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9Zk37GkdXg-zV",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 17600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1avjZ_d7_GYZdGd2",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1avjZ_d7_GYZdGd2",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-15-sa-unlvrebels-com-17937",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UNLV vs. Montana State",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unlv-wbb",
+        "away": "Montana State",
+        "awayOpponent": "montana-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-15-espn-raiders-401873062",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "start": "13:05",
+      "kind": "game",
+      "title": "Raiders vs. Seahawks",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "allegiant-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "raiders",
+        "away": "seahawks",
+        "awayOpponent": "seahawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 62626,
+        "low": 62434,
+        "high": 62739,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1A9ZkfpGkdQ89E3",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkfpGkdQ89E3",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-15-espn-golden-knights-401892724",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Golden Knights vs. Canucks",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "golden-knights",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17851,
+        "low": 17803,
+        "high": 17937,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-17AYv0G6ulhoNA4",
+      "metroId": "las-vegas",
+      "date": "2026-11-16",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6ulhoNA4",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-16-tm-1kAYvN_IGAGO6hq",
+      "metroId": "las-vegas",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAYvN_IGAGO6hq",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A7JKuv",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Players Era 8 Men's Tournament - Session 1 (Houston vs Rutgers, Florida vs Notre Dame)",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKuv",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-17-tm-169Zk8skKZA2vGk2",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "169Zk8skKZA2vGk2",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-17-sa-unlvrebels-com-17938",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "game",
+      "title": "UNLV vs. Rice",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unlv-wbb",
+        "away": "Rice",
+        "awayOpponent": "rice"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A7JKFZ",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Players Era 8 Men's Tournament - Session 2 (Kansas vs UNLV, West Virginia vs Auburn)",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKFZ",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-17-espn-golden-knights-401892737",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Golden Knights vs. Stars",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "golden-knights",
+        "away": "dallas-stars",
+        "awayOpponent": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17842,
+        "low": 17755,
+        "high": 17972,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A7JKue",
+      "metroId": "las-vegas",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Players Era 8 Men's Tournament - Session 3",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKue",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-18-tm-17AYv0G6uErAooU",
+      "metroId": "las-vegas",
+      "date": "2026-11-18",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6uErAooU",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1A7JKFv",
+      "metroId": "las-vegas",
+      "date": "2026-11-18",
+      "start": "16:30",
+      "kind": "special",
+      "title": "Players Era 8 Men's Tournament - Session 4",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKFv",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-18-ht-henderson-silver-knights-1029337",
+      "metroId": "las-vegas",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Silver Knights vs. Barracuda",
+      "place": {
+        "type": "venue",
+        "venueId": "lees-family-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "henderson-silver-knights",
+        "away": "barracuda"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2417,
+        "low": 2023,
+        "high": 2525,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 15 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-1kAYvN_tGAGu_6F",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAYvN_tGAGu_6F",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7JKud",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Players Era 8 Men's Tournament - Session 5 (TIME TBA)",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKud",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17AYv0G6Crbu_5d",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6Crbu_5d",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-19-espn-golden-knights-401892753",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Golden Knights vs. Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "golden-knights",
+        "away": "dallas-stars",
+        "awayOpponent": "stars"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17842,
+        "low": 17755,
+        "high": 17972,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-16vjZbUffG7UHY9",
+      "metroId": "las-vegas",
+      "date": "2026-11-20",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16vjZbUffG7UHY9",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-20-tm-17AYv0G6Crb2t5o",
+      "metroId": "las-vegas",
+      "date": "2026-11-20",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6Crb2t5o",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1A9ZkuPGkdxmafl",
+      "metroId": "las-vegas",
+      "date": "2026-11-21",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkuPGkdxmafl",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-21-sa-unlvrebels-com-17939",
+      "metroId": "las-vegas",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "game",
+      "title": "UNLV vs. Cincinnati",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unlv-wbb",
+        "away": "Cincinnati",
+        "awayOpponent": "cincinnati"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-tm-16vjZbUffG7MHY_",
+      "metroId": "las-vegas",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16vjZbUffG7MHY_",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1FAYv0GoCoZ78v2F",
+      "metroId": "las-vegas",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1FAYv0GoCoZ78v2F",
+      "occasionFacts": {
+        "run": 15
+      }
+    },
+    {
+      "id": "2026-11-23-tm-17AYv0G6ulp_xLB",
+      "metroId": "las-vegas",
+      "date": "2026-11-23",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6ulp_xLB",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-23-tm-1FAYv0GoCpZ78v8v",
+      "metroId": "las-vegas",
+      "date": "2026-11-23",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1FAYv0GoCpZ78v8v",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-23-espn-unlv-mbb-401920721",
+      "metroId": "las-vegas",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UNLV vs. E Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "thomas-mack-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unlv-mbb",
+        "away": "e-washington",
+        "awayOpponent": "e-washington"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4817,
+        "low": 4702,
+        "high": 5006,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-17AYv0G6ulpheOa",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "11:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6ulpheOa",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7Jau6",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Players Era 16 Men's Tournament - Session 1 (TIME TBA)",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Jau6",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7JKC3",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "kind": "special",
+      "title": "T-Mobile Arena Players Era 16 Men's Tournament - Session 1 (Michigan vs Creighton, TCU vs Miami)",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKC3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-24-tm-169Zk8s7yZAu8evF",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "17:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "169Zk8s7yZAu8evF",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7JauF",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Players Era 16 Men's Tournament - Session 2  (TIME TBA)",
+      "place": {
+        "type": "venue",
+        "venueId": "michelob-ultra-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JauF",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7JKCK",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "T-Mobile Arena Players Era 16 Men's Tournament - Session 2 (Gonzaga vs Kansas St, Baylor vs Alabama)",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Players Era Festival Men???s Championship",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKCK",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-24-sa-unlvrebels-com-17859",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": null,
+      "kind": "game",
+      "title": "UNLV vs. Mountain West Conference",
+      "place": {
+        "type": "venue",
+        "venueId": "cox-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-25-espn-unlv-wbb-401917723",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "UNLV WBB vs. LMU",
+      "place": {
+        "type": "venue",
+        "venueId": "thomas-mack-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unlv-wbb",
+        "away": "lmu",
+        "awayOpponent": "lmu"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 908,
+        "low": 824,
+        "high": 916,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-17AYv0G6uEhn8W9",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G6uEhn8W9",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A70gu4",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Duke Blue Devils Mens Basketball vs. UConn Huskies Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Duke Blue Devils Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70gu4"
+    },
+    {
+      "id": "2026-11-25-ht-henderson-silver-knights-1029378",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Silver Knights vs. Canucks",
+      "place": {
+        "type": "venue",
+        "venueId": "lees-family-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "henderson-silver-knights",
+        "away": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2508,
+        "low": 2099,
+        "high": 2620,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 15 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1A9ZkuPGkdYcnII",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "special",
+      "title": "The Wizard of Oz at Sphere",
+      "place": {
+        "type": "venue",
+        "venueId": "sphere"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Spectacular"
+      },
+      "performer": "The Wizard of Oz at Sphere",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkuPGkdYcnII",
+      "occasionFacts": {
+        "run": 14
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-11-tm-17AYv0G6ulh8dA2",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "Mammoth at Golden Knights 1.6 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-espn-golden-knights-401892693",
+      "date": "2026-11-11",
+      "start": "18:30",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "The Wizard of Oz at Sphere and The Wizard of Oz at Sphere 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17878,
+        "low": 17791,
+        "high": 18008
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-1kAYvN_IGAGL9hQ",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "Mammoth at Golden Knights 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-11-tm-Z7r9jZ1A70EqS",
+      "date": "2026-11-11",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "The Wizard of Oz at Sphere and Mammoth at Golden Knights 2.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6840
+      }
+    },
+    {
+      "eventId": "2026-11-12-tm-1FAYv0GoCkZ78vC7",
+      "date": "2026-11-12",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-unlvrebels-com-17855",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-12-ht-henderson-silver-knights-1029298",
+      "date": "2026-11-12",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2711,
+        "low": 2269,
+        "high": 2832
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-169Zk8sk3ZA2vGeF",
+      "date": "2026-11-13",
+      "start": "11:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-unlv-mbb-401921728",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5553,
+        "low": 4885,
+        "high": 6240
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-golden-knights-401892707",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Eagles Live at Sphere 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18026,
+        "low": 17874,
+        "high": 18216
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5ezZ_ur4KsK0",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Ad0Z_oGkctuYgF",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "Eagles Live at Sphere and Predators at Golden Knights 0.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1A9Zk37GkdXVozi",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Predators at Golden Knights 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17600
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1kAYvN_tGA2j_xN",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-unlvrebels-com-17856",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-ht-henderson-silver-knights-1029310",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2847,
+        "low": 2839,
+        "high": 2867
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5ezZ_ur44oKW",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7xpfb",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Eagles Live at Sphere and KATSEYE · The Wildworld Tour 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10260
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1Ad0Z_oGkctCZg1",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Heavy",
+        "why": "Eagles Live at Sphere and KATSEYE · The Wildworld Tour 0.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5ezZ_1Y6-wMN",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Eagles Live at Sphere 1.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16800
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5ezZ_KdvFglO",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "Eagles Live at Sphere and KATSEYE · The Wildworld Tour 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AAZVOe",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "draw": {
+        "count": 11500
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1A9Zk37GkdXg-zV",
+      "date": "2026-11-14",
+      "start": "20:30",
+      "read": {
+        "rating": 4.4,
+        "friction": "Moderate",
+        "why": "KATSEYE · The Wildworld Tour 1.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17600
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1avjZ_d7_GYZdGd2",
+      "date": "2026-11-15",
+      "start": "11:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Seahawks at Raiders 2.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-sa-unlvrebels-com-17937",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-raiders-401873062",
+      "date": "2026-11-15",
+      "start": "13:05",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere and The Wizard of Oz at Sphere 2.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 62626,
+        "low": 62434,
+        "high": 62739
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1A9ZkfpGkdQ89E3",
+      "date": "2026-11-15",
+      "start": "17:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Seahawks at Raiders 2.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-golden-knights-401892724",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Seahawks at Raiders 0.9 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17851,
+        "low": 17803,
+        "high": 17937
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17AYv0G6ulhoNA4",
+      "date": "2026-11-16",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-1kAYvN_IGAGO6hq",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A7JKuv",
+      "date": "2026-11-17",
+      "start": "11:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere 2.3 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-169Zk8skKZA2vGk2",
+      "date": "2026-11-17",
+      "start": "17:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Stars at Golden Knights and Players Era 8 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-sa-unlvrebels-com-17938",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A7JKFZ",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "The Wizard of Oz at Sphere and Stars at Golden Knights 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-golden-knights-401892737",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere and Players Era 8 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17842,
+        "low": 17755,
+        "high": 17972
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A7JKue",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-17AYv0G6uErAooU",
+      "date": "2026-11-18",
+      "start": "14:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Players Era 8 Men's Tournament… and Players Era 8 Men's Tournament… 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1A7JKFv",
+      "date": "2026-11-18",
+      "start": "16:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-ht-henderson-silver-knights-1029337",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2417,
+        "low": 2023,
+        "high": 2525
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-1kAYvN_tGAGu_6F",
+      "date": "2026-11-19",
+      "start": "11:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Players Era 8 Men's Tournament… 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7JKud",
+      "date": "2026-11-19",
+      "start": "12:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "The Wizard of Oz at Sphere 2.3 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17AYv0G6Crbu_5d",
+      "date": "2026-11-19",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Stars at Golden Knights 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-golden-knights-401892753",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere 1.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17842,
+        "low": 17755,
+        "high": 17972
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-16vjZbUffG7UHY9",
+      "date": "2026-11-20",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17AYv0G6Crb2t5o",
+      "date": "2026-11-20",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1A9ZkuPGkdxmafl",
+      "date": "2026-11-21",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-unlvrebels-com-17939",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-16vjZbUffG7MHY_",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1FAYv0GoCoZ78v2F",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-17AYv0G6ulp_xLB",
+      "date": "2026-11-23",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-1FAYv0GoCpZ78v8v",
+      "date": "2026-11-23",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-unlv-mbb-401920721",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4817,
+        "low": 4702,
+        "high": 5006
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-17AYv0G6ulpheOa",
+      "date": "2026-11-24",
+      "start": "11:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "T-Mobile Arena Players Era 16 M… and Players Era 16 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7Jau6",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "T-Mobile Arena Players Era 16 M… and The Wizard of Oz at Sphere 0.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7JKC3",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "The Wizard of Oz at Sphere and Players Era 16 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-169Zk8s7yZAu8evF",
+      "date": "2026-11-24",
+      "start": "17:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "T-Mobile Arena Players Era 16 M… and Players Era 16 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7JauF",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Moderate",
+        "why": "T-Mobile Arena Players Era 16 M… and The Wizard of Oz at Sphere 0.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7JKCK",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 4.7,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere and Players Era 16 Men's Tournament… 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-sa-unlvrebels-com-17859",
+      "date": "2026-11-24",
+      "start": null,
+      "read": {
+        "rating": 4.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-unlv-wbb-401917723",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 908,
+        "low": 824,
+        "high": 916
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-17AYv0G6uEhn8W9",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "UConn Huskies Mens Basketball at Duke Blue Devils Mens Basketball 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A70gu4",
+      "date": "2026-11-25",
+      "start": "16:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "The Wizard of Oz at Sphere and The Wizard of Oz at Sphere 1.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-ht-henderson-silver-knights-1029378",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2508,
+        "low": 2099,
+        "high": 2620
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-1A9ZkuPGkdYcnII",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "UConn Huskies Mens Basketball at Duke Blue Devils Mens Basketball 1.6 mi away, back to back.",
+        "method": "formula"
+      }
+    }
+  ]
+}

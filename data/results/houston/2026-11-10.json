@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-uh-wbb-401923480",
+      "metroId": "houston",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fertitta-center",
+      "homeTeamId": "uh-wbb",
+      "home": {
+        "name": "Houston",
+        "score": 89
+      },
+      "away": {
+        "name": "SF Austin",
+        "score": 59
+      },
+      "attendance": 835,
+      "capturedAt": "2026-11-11T16:15:39.767Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

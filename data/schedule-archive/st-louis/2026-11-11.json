@@ -1,0 +1,1755 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "metroName": "St. Louis",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-11",
+  "capturedAt": "2026-11-11T16:15:18.747Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-11",
+    "through": "2026-11-25"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 28
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 23
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-11-espn-slu-wbb-401921234",
+      "metroId": "st-louis",
+      "date": "2026-11-11",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Saint Louis vs. E Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "slu-wbb",
+        "away": "e-illinois",
+        "awayOpponent": "e-illinois"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 532,
+        "low": 428,
+        "high": 913,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-11-sa-lindenwoodlions-com-27825",
+      "metroId": "st-louis",
+      "date": "2026-11-11",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Lindenwood vs. Houston Christian University",
+      "place": {
+        "type": "venue",
+        "venueId": "harlen-c-hunter-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-sa-slubillikens-com-18816",
+      "metroId": "st-louis",
+      "date": "2026-11-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Saint Louis vs. Rhode Island",
+      "place": {
+        "type": "venue",
+        "venueId": "hermann-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-11-tm-17F8v0G62TCmJs7",
+      "metroId": "st-louis",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "kind": "show",
+      "title": "311",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "311",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G62TCmJs7",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-12-sa-siuecougars-com-17443",
+      "metroId": "st-louis",
+      "date": "2026-11-12",
+      "start": "11:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Central Methodist (Mo.)",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "siue-wbb",
+        "away": "Central Methodist (Mo.)",
+        "awayOpponent": "central-methodist-mo-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-sa-lindenwoodlions-com-27940",
+      "metroId": "st-louis",
+      "date": "2026-11-12",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Lindenwood vs. Tennessee State University",
+      "place": {
+        "type": "venue",
+        "venueId": "hyland-performance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-12-tm-17F8v0G6Cy8VxDJ",
+      "metroId": "st-louis",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Cheap Trick",
+      "officialTitle": "Cheap Trick: All Washed Up Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cheap Trick",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G6Cy8VxDJ",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-lindenwoodlions-com-27993",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Lindenwood vs. Stephens College (Mo.)",
+      "place": {
+        "type": "venue",
+        "venueId": "hyland-performance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "lindenwood-wbb",
+        "away": "Stephens College (Mo.)",
+        "awayOpponent": "stephens-college-mo-"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-lindenwoodlions-com-27941",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Lindenwood vs. Tennessee State University",
+      "place": {
+        "type": "venue",
+        "venueId": "hyland-performance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-siuecougars-com-17475",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. George Mason",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-vv17bZ_7GkRLNrrf",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Micky Dolenz",
+      "officialTitle": "Micky Dolenz - 60 YEARS OF THE MONKEES",
+      "place": {
+        "type": "venue",
+        "venueId": "family-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Micky Dolenz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u6W7",
+        "K8vZ917bKSV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17bZ_7GkRLNrrf",
+      "expectedDraw": {
+        "count": 11522,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17F8v0G61Kum4NQ",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Scott Bradlee's Postmodern Jukebox",
+      "officialTitle": "Scott Bradlee's Postmodern Jukebox - The Future Is Vintage World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Scott Bradlee's Postmodern Jukebox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G61Kum4NQ",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1bZ_2N8R0Ox",
+      "metroId": "st-louis",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Blackberry Smoke",
+      "officialTitle": "Blackberry Smoke: 25th Anniversary Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "stifel-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blackberry Smoke",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2N8R0Ox",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-espn-slu-wbb-401919693",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Saint Louis vs. Illinois St",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "slu-wbb",
+        "away": "illinois-st",
+        "awayOpponent": "illinois-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-siuecougars-com-17444",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Eureka College",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "siue-wbb",
+        "away": "Eureka College",
+        "awayOpponent": "eureka-college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-IPp",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Southern Illinois Salukis Football vs. South Dakota State Jackrabbits Football",
+      "place": {
+        "type": "venue",
+        "venueId": "saluki-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Southern Illinois Salukis Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-IPp"
+    },
+    {
+      "id": "2026-11-14-sa-slubillikens-com-18952",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Saint Louis vs. Fordham",
+      "place": {
+        "type": "venue",
+        "venueId": "hermann-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-espn-blues-401892716",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blues vs. Panthers",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17969,
+        "low": 17358,
+        "high": 17969,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1bZ_2dr5KYd",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Dropout Improv, Presented By Flyover Comedy Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "stifel-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Dropout Improv, Presented By Flyover Comedy Festival 2026",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_2dr5KYd"
+    },
+    {
+      "id": "2026-11-14-tm-vvG1bZ_59J4w1R",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Hairball",
+      "officialTitle": "Hairball with Special Guest Drew Cagle & The Reputation",
+      "place": {
+        "type": "venue",
+        "venueId": "family-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hairball",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GfO0",
+        "K8vZ917r_H0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_59J4w1R",
+      "expectedDraw": {
+        "count": 11522,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-17F8v0G65kiP-BD",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charles Wesley Godwin",
+      "officialTitle": "Charles Wesley Godwin - The Christian Name Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Charles Wesley Godwin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G65kiP-BD",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-espn-slu-mbb-401911251",
+      "metroId": "st-louis",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Saint Louis vs. High Point",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "slu-mbb",
+        "away": "high-point",
+        "awayOpponent": "high-point"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5045,
+        "low": 4723,
+        "high": 5433,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-1Ae7Z_3GkirKUtx",
+      "metroId": "st-louis",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Jason Bonham's Led Zeppelin Evening",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Jason Bonham's Led Zeppelin Evening",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Ae7Z_3GkirKUtx",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-vvG1bZ_1QQKiFJ",
+      "metroId": "st-louis",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_1QQKiFJ",
+      "expectedDraw": {
+        "count": 10315,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-sa-siuecougars-com-17185",
+      "metroId": "st-louis",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Southern Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-espn-blues-401892734",
+      "metroId": "st-louis",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blues vs. Ducks",
+      "broadcast": "KTTV",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "ducks",
+        "awayOpponent": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17445,
+        "low": 16775,
+        "high": 17445,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1Ae7Z_FGkTKU3M4",
+      "metroId": "st-louis",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Little Feat",
+      "officialTitle": "Little Feat: The Last Farewell Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Little Feat",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Ae7Z_FGkTKU3M4",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-siuecougars-com-17186",
+      "metroId": "st-louis",
+      "date": "2026-11-18",
+      "start": "17:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Southern Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-espn-slu-wbb-401921235",
+      "metroId": "st-louis",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Saint Louis vs. Missouri St",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "slu-wbb",
+        "away": "missouri-st",
+        "awayOpponent": "missouri-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 532,
+        "low": 428,
+        "high": 913,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-17F8v0G6u9YlUiX",
+      "metroId": "st-louis",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Wednesday",
+      "officialTitle": "Bitch Cabal feat. Wednesday & Mannequin Pussy",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Wednesday",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G6u9YlUiX",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-sa-siuecougars-com-17462",
+      "metroId": "st-louis",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. North Park",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "siue-mbb",
+        "away": "North Park",
+        "awayOpponent": "north-park"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-tm-vv1AkZkf6GkdOQL6H",
+      "metroId": "st-louis",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sugarland",
+      "officialTitle": "Sugarland: Ride or Die Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "family-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sugarland",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175cBV",
+        "K8vZ917jJr7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkf6GkdOQL6H",
+      "expectedDraw": {
+        "count": 11522,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17F8v0G6C5Xg4KV",
+      "metroId": "st-louis",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "THE ORCHESTRA Starring ELO Former Members",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "THE ORCHESTRA Starring ELO Former Members",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G6C5Xg4KV",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-sa-lindenwoodlions-com-27901",
+      "metroId": "st-louis",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lindenwood vs. LIU",
+      "place": {
+        "type": "venue",
+        "venueId": "centene-community-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "lindenwood-mhockey",
+        "away": "LIU",
+        "awayOpponent": "liu"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-tm-1A-ZkoKGkdOqSYE",
+      "metroId": "st-louis",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "special",
+      "title": "GenX Takeover Comedy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "GenX Takeover Comedy Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A-ZkoKGkdOqSYE"
+    },
+    {
+      "id": "2026-11-21-espn-slu-wbb-401921236",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Saint Louis vs. SE Missouri",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "slu-wbb",
+        "away": "se-missouri",
+        "awayOpponent": "se-missouri"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-lindenwood-football-401868208",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Lindenwood vs. W Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "harlen-c-hunter-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lindenwood-football",
+        "away": "w-illinois",
+        "awayOpponent": "w-illinois"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4645,
+        "low": 3637,
+        "high": 5308,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-blues-401892763",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blues vs. Devils",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18096,
+        "low": 17480,
+        "high": 18096,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-slubillikens-com-18881",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Saint Louis vs. SEMO",
+      "place": {
+        "type": "venue",
+        "venueId": "chaifetz-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "slu-wbb",
+        "away": "SEMO",
+        "awayOpponent": "semo"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-lindenwoodlions-com-27902",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Lindenwood vs. LIU",
+      "place": {
+        "type": "venue",
+        "venueId": "centene-community-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "lindenwood-mhockey",
+        "away": "LIU",
+        "awayOpponent": "liu"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7-V0P",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Leanne Morgan",
+      "place": {
+        "type": "venue",
+        "venueId": "fabulous-fox-theatre-stl"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Leanne Morgan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-V0P"
+    },
+    {
+      "id": "2026-11-21-tm-1A-ZkoYGkdco07S",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Brian Kilmeade",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Brian Kilmeade",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A-ZkoYGkdco07S"
+    },
+    {
+      "id": "2026-11-22-sa-lindenwoodlions-com-28066",
+      "metroId": "st-louis",
+      "date": "2026-11-22",
+      "start": "10:00",
+      "kind": "game",
+      "title": "Lindenwood vs. TBA",
+      "place": {
+        "type": "venue",
+        "venueId": "hyland-performance-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-sa-siuecougars-com-17446",
+      "metroId": "st-louis",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Valparaiso",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "siue-wbb",
+        "away": "Valparaiso",
+        "awayOpponent": "valparaiso"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-espn-blues-401892770",
+      "metroId": "st-louis",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Blues vs. Oilers",
+      "place": {
+        "type": "venue",
+        "venueId": "enterprise-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blues",
+        "away": "oilers",
+        "awayOpponent": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18024,
+        "low": 17717,
+        "high": 18024,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-25-sa-siuecougars-com-17463",
+      "metroId": "st-louis",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "SIU Edwardsville vs. Northern Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "siue-vadalabene-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "siue-mbb",
+        "away": "Northern Illinois",
+        "awayOpponent": "northern-illinois"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-25-tm-17F8v0G6Cy863B6",
+      "metroId": "st-louis",
+      "date": "2026-11-25",
+      "start": "18:35",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "TRIVIUM: CROWN IN THE GRAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-factory-stl"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17F8v0G6Cy863B6",
+      "expectedDraw": {
+        "count": 3000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-11-espn-slu-wbb-401921234",
+      "date": "2026-11-11",
+      "start": "16:00",
+      "draw": {
+        "count": 532,
+        "low": 428,
+        "high": 913
+      }
+    },
+    {
+      "eventId": "2026-11-11-sa-lindenwoodlions-com-27825",
+      "date": "2026-11-11",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-11-sa-slubillikens-com-18816",
+      "date": "2026-11-11",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-tm-17F8v0G62TCmJs7",
+      "date": "2026-11-11",
+      "start": "19:30",
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-12-sa-siuecougars-com-17443",
+      "date": "2026-11-12",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-11-12-sa-lindenwoodlions-com-27940",
+      "date": "2026-11-12",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-12-tm-17F8v0G6Cy8VxDJ",
+      "date": "2026-11-12",
+      "start": "19:30",
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-lindenwoodlions-com-27993",
+      "date": "2026-11-13",
+      "start": "11:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-lindenwoodlions-com-27941",
+      "date": "2026-11-13",
+      "start": "17:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-siuecougars-com-17475",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv17bZ_7GkRLNrrf",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11522
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17F8v0G61Kum4NQ",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1bZ_2N8R0Ox",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-slu-wbb-401919693",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-siuecougars-com-17444",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-IPp",
+      "date": "2026-11-14",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-14-sa-slubillikens-com-18952",
+      "date": "2026-11-14",
+      "start": "16:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-blues-401892716",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Hairball with Special Guest Dre… 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17969,
+        "low": 17358,
+        "high": 17969
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1bZ_2dr5KYd",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1bZ_59J4w1R",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Panthers at Blues 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11522
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-17F8v0G65kiP-BD",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-slu-mbb-401911251",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "draw": {
+        "count": 5045,
+        "low": 4723,
+        "high": 5433
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-1Ae7Z_3GkirKUtx",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-vvG1bZ_1QQKiFJ",
+      "date": "2026-11-16",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10315
+      }
+    },
+    {
+      "eventId": "2026-11-17-sa-siuecougars-com-17185",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-blues-401892734",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17445,
+        "low": 16775,
+        "high": 17445
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1Ae7Z_FGkTKU3M4",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-siuecougars-com-17186",
+      "date": "2026-11-18",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-18-espn-slu-wbb-401921235",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "draw": {
+        "count": 532,
+        "low": 428,
+        "high": 913
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-17F8v0G6u9YlUiX",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-19-sa-siuecougars-com-17462",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv1AkZkf6GkdOQL6H",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11522
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17F8v0G6C5Xg4KV",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3000
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-lindenwoodlions-com-27901",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-1A-ZkoKGkdOqSYE",
+      "date": "2026-11-20",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-21-espn-slu-wbb-401921236",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-lindenwood-football-401868208",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4645,
+        "low": 3637,
+        "high": 5308
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-blues-401892763",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18096,
+        "low": 17480,
+        "high": 18096
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-slubillikens-com-18881",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 885,
+        "low": 675,
+        "high": 1217
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-lindenwoodlions-com-27902",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7-V0P",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1A-ZkoYGkdco07S",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-sa-lindenwoodlions-com-28066",
+      "date": "2026-11-22",
+      "start": "10:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-sa-siuecougars-com-17446",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-blues-401892770",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18024,
+        "low": 17717,
+        "high": 18024
+      }
+    },
+    {
+      "eventId": "2026-11-25-sa-siuecougars-com-17463",
+      "date": "2026-11-25",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-17F8v0G6Cy863B6",
+      "date": "2026-11-25",
+      "start": "18:35",
+      "draw": {
+        "count": 3000
+      }
+    }
+  ]
+}

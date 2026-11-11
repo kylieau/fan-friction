@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-sacramento-kings-401909964",
+      "metroId": "sacramento",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 100
+      },
+      "away": {
+        "name": "Magic",
+        "score": 107
+      },
+      "attendance": 13573,
+      "capturedAt": "2026-11-11T16:15:36.657Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}
