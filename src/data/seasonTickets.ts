@@ -51,9 +51,21 @@ export function seasonDefaultCost(ticket: Pick<SeasonTicket, 'ticket' | 'parking
  */
 function withDefaults<T extends Plan>(plan: T, ticket: SeasonTicket, keep: { seats?: boolean; cost?: boolean } = {}): T {
   const { seats: oldSeats, cost: oldCost, ...rest } = plan;
+  // The ticket's seat and cost belong to Attending (Kylie, Nov 12, 2026: a game she watched instead must not carry the
+  // season price); Watching and Interested get neither. Supersedes the Codex call above that kept the cost on Watching.
   const seats = keep.seats ? oldSeats : plan.watch || plan.interested ? undefined : normalizeSeats(ticket.seats);
-  const cost = keep.cost ? oldCost : plan.interested ? undefined : seasonDefaultCost(ticket);
+  const cost = keep.cost ? oldCost : plan.watch || plan.interested ? undefined : seasonDefaultCost(ticket);
   return { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}) } as T;
+}
+
+/**
+ * A season game's answer changed (the Stub it sheet, the faves quick menu): an unedited game takes the defaults its new
+ * answer allows and nothing else, so Watching or Interested drops the ticket's price and Attending brings it back. An
+ * edited game, or one whose ticket is off, is returned as it came: what she typed is hers and the caller's carry rules hold.
+ */
+export function seasonAnswerDefaults(plan: Plan, ticket: SeasonTicket | undefined): Plan {
+  if (!ticket?.on || !plan.season || plan.season.edited) return plan;
+  return withDefaults(plan, ticket);
 }
 
 /** What a game's plan shows and where it is, from the schedule row (the event page's own words for the game). */
@@ -102,16 +114,27 @@ function movePlan(plan: Plan, teamId: string, game: TeamGame): Plan {
  */
 export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicket, games: readonly TeamGame[], today: string, level: StubVisibility): Plan[] {
   if (!ticket.on) return [...plans];
+  let changed = false;
+  // A plan whose answer left Attending before Nov 12, 2026 still carries the ticket's seat or price (the old carry rule):
+  // an unedited Watching or Interested plan holds nothing of the ticket's, so any load takes them off, a failed schedule
+  // read included (Codex, group 15 review). Never adds or replaces a default (she may have declined "Apply to N
+  // unedited"); quiet when there is nothing to take off.
+  const stripped = plans.map((plan) => {
+    if (plan.season?.teamId !== ticket.teamId || plan.season.edited || !(plan.watch || plan.interested)) return plan;
+    if (!plan.seats && !plan.cost) return plan;
+    const { seats: _seats, cost: _cost, ...bare } = plan;
+    changed = true;
+    return bare;
+  });
   // No schedule (a failed read handed in as an empty list) says nothing about which games went: leave every plan be
   // (Codex stage 4 re-run: saving a default after a failed load flagged every game).
-  if (games.length === 0) return [...plans];
+  if (games.length === 0) return changed ? stripped : [...plans];
   const eligible = seasonGameSet(games, ticket);
   const wanted = eligible.filter((game) => game.date >= today);
   const byGameId = new Map(games.map((game) => [game.id, game]));
   const next: Plan[] = [];
   const seenGames = new Set<string>();
-  let changed = false;
-  for (const plan of plans) {
+  for (const plan of stripped) {
     if (plan.season?.teamId !== ticket.teamId) {
       next.push(plan);
       continue;

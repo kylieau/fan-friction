@@ -28,7 +28,7 @@ import { cleanHiddenTypes } from './eventTypeFilter';
 import { clearWatchPlace, saveWatchPlace } from './watchPlaces';
 import { onTeamSchedule } from './teamSchedule';
 import { eventFromGame } from './gameStub';
-import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
+import { adoptPlan, applySeasonDefaults, editSeasonPlan, reconcileSeasonPlans, seasonAnswerDefaults, seasonDefaultCost, seasonPlanEventId, seasonPlanFrom } from './seasonTickets';
 import { reconcileWatchPlans, spotWatchPlan, watchPlanFrom, watchSpotFor } from './watchingSeason';
 import { getTeamSchedule } from './teamSchedule';
 import type { CrowdEvent, CrowdRange, Division, Entry, MetroDate, Plan, SeasonRemovalReason, SeasonTicket, WatchingSeason, SportsLevel, Stamp, PersonalLog, StubVisibility, Team, TeamGame, YouOrder } from './types';
@@ -1025,10 +1025,25 @@ export function markWasThere(event: CrowdEvent) {
     if (!existing.watched) return;
     const { watched: _w, ...rest } = existing;
     void _w;
-    commit({ ...snapshot, added: snapshot.added.map((entry) => (entry.id === existing.id ? rest : entry)) });
+    // Back to Attended on an unedited season stub: the ticket's seat and price return (Kylie, Nov 12, 2026: the defaults
+    // belong to Attending). A builder's call for a past stub: from the ticket's defaults as they stand today.
+    const ticket = rest.season && !rest.season.edited ? seasonTicketOf(rest.season.teamId) : undefined;
+    const seats = ticket?.on ? normalizeSeats(ticket.seats) : undefined;
+    const cost = ticket?.on ? seasonDefaultCost(ticket) : undefined;
+    const restored: Entry = ticket?.on ? { ...rest, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}) } : rest;
+    commit({ ...snapshot, added: snapshot.added.map((entry) => (entry.id === existing.id ? restored : entry)) });
     return;
   }
   commit({ ...snapshot, added: [...snapshot.added, freshEntry(event, false)] });
+}
+
+/**
+ * Whether a stub's cost is the season ticket's untouched default (Kylie, Nov 12, 2026): a settled season game not
+ * edited since. A stub settled before the marker existed says nothing, so its cost stays (a price-matching guess was
+ * tried and dropped on Codex's group 15 review: a cost she typed that happened to equal the default would have gone).
+ */
+function seasonDefaultOn(entry: Entry): boolean {
+  return Boolean(entry.cost && entry.season && !entry.season.edited);
 }
 
 /** "I watched it": the same entry with a quiet mark; the friction stamp still applies. */
@@ -1036,14 +1051,15 @@ export function markWatched(event: CrowdEvent) {
   const existing = snapshot.added.find((entry) => entry.eventId === event.id);
   if (existing) {
     if (existing.watched) return;
-    // Watched is not in person: seats do not go with it.
+    // Watched is not in person: seats do not go with it, and neither does a season ticket's default price (Kylie,
+    // Nov 12, 2026: "I wasn't there tonight"); a cost she typed stays, editable as before.
     commit({
       ...snapshot,
       added: snapshot.added.map((entry) => {
         if (entry.id !== existing.id) return entry;
-        const { seats: _seats, ...rest } = entry;
+        const { seats: _seats, cost, ...rest } = entry;
         void _seats;
-        return { ...rest, watched: true };
+        return { ...rest, ...(cost && !seasonDefaultOn(entry) ? { cost } : {}), watched: true };
       }),
     });
     return;
@@ -1123,7 +1139,10 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
     visibility: before?.visibility ?? stubDefault(),
   };
-  commit({ ...snapshot, plans: [...snapshot.plans.filter((row) => row.eventId !== event.id), plan] });
+  // A season game's defaults follow its answer (Kylie, Nov 12, 2026): an unedited game's seat and price are the ticket's
+  // while Attending and nothing on Watching or Interested; an edited game keeps what she typed, carried as above.
+  const settled = plan.season ? seasonAnswerDefaults(plan, seasonTicketOf(plan.season.teamId)) : plan;
+  commit({ ...snapshot, plans: [...snapshot.plans.filter((row) => row.eventId !== event.id), settled] });
 }
 
 /**
@@ -1219,7 +1238,15 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   const merged = snapshot.added.map((row) => {
     const prepared = added.find((entry) => twin(entry) === row);
     if (!prepared) return row;
-    return { ...row, ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}), ...(prepared.cost && !row.cost ? { cost: prepared.cost } : {}) };
+    // A ticket's default never lands on a stub she marked Watched meanwhile, and the season marker comes along so the
+    // stub keeps its provenance (Codex, group 15 review).
+    const defaultCost = Boolean(prepared.season && !prepared.season.edited);
+    return {
+      ...row,
+      ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}),
+      ...(prepared.cost && !row.cost && !(row.watched && defaultCost) ? { cost: prepared.cost } : {}),
+      ...(prepared.season && !row.season ? { season: prepared.season } : {}),
+    };
   });
   commit({
     ...snapshot,
@@ -1235,8 +1262,13 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
  */
 function carryPlanExtras(plan: Plan, entry: Entry): Entry {
   const seats = !plan.watch ? normalizeSeats(plan.seats) : undefined;
-  const cost = normalizeCost(plan.cost);
-  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}) };
+  // An unedited Watching season plan holds nothing of the ticket's, whether or not a schedule load has taken the old
+  // default off it yet (Codex, group 15 review: a plan stored under the old rule settled with the price).
+  const cost = plan.watch && plan.season && !plan.season.edited ? undefined : normalizeCost(plan.cost);
+  // The season marker comes along (Kylie, Nov 12, 2026), so the stub knows its seat and cost were the ticket's defaults
+  // and a later switch to Watched can take them off; `gone` stays with the plan.
+  const season = plan.season ? { teamId: plan.season.teamId, gameId: plan.season.gameId, ...(plan.season.edited ? { edited: true } : {}) } : undefined;
+  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), ...(season ? { season } : {}) };
 }
 
 export function removePlan(planId: string) {
@@ -1820,7 +1852,9 @@ export function setEntryCost(entryId: string, cost: Cost | undefined) {
       if (entry.id !== entryId) return entry;
       const { cost: _old, ...rest } = entry;
       void _old;
-      return next ? { ...rest, cost: next } : rest;
+      // A season stub's cost set here is this stub's own (Kylie, Nov 12, 2026): a later answer switch leaves it be.
+      const marked = entry.season ? { ...rest, season: { ...entry.season, edited: true } } : rest;
+      return next ? { ...marked, cost: next } : marked;
     }),
   });
 }
@@ -1848,7 +1882,8 @@ export function setEntrySeats(entryId: string, seats: Seats | undefined) {
       if (entry.id !== entryId || entry.watched || entry.kind === 'live-broadcast') return entry;
       const { seats: _old, ...rest } = entry;
       void _old;
-      return next ? { ...rest, seats: next } : rest;
+      const marked = entry.season ? { ...rest, season: { ...entry.season, edited: true } } : rest;
+      return next ? { ...marked, seats: next } : marked;
     }),
   });
 }

@@ -603,6 +603,11 @@ export interface Entry {
   /** What you paid (build 7, §3.5). Attended and watched stubs; absent means not entered, never $0. */
   cost?: Cost;
   /**
+   * A settled season-ticket game (Kylie, Nov 12, 2026): the team and the feed's game id, carried from the plan so the
+   * stub knows its seat and cost were the ticket's defaults. `edited` once a seat or cost was set on this stub itself.
+   */
+  season?: { teamId: string; gameId: string; edited?: boolean };
+  /**
    * Type name used for filters. A game uses the sport (Baseball, Women's basketball).
    * A show uses "Concerts". This is not a sports-only field.
    */

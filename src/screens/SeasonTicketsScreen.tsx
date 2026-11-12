@@ -425,10 +425,11 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
   const defaultParking = defaults?.lines.find((line) => line.kind === 'parking')?.amount;
   const sameSeat = seatsLine(seats) === seatsLine(ticket.seats);
   const edited = Boolean(plan.season?.edited);
-  // The Stub it sheet's rules (item 6): a seat only on an Attending game, a cost on Attending or Watching, neither on
-  // Interested (Codex stage 4 re-run: this sheet let them back in).
+  // The ticket's seat and price belong to Attending (Kylie, Nov 12, 2026): a Watching or Interested game shows neither
+  // here (a stream or food cost on a Watching game goes through the Stub it sheet). Before, a cost showed on Watching too
+  // (Codex stage 4 re-run), which offered "Reset to $50" on a game she was not at.
   const canSeat = !plan.watch && !plan.interested;
-  const canCost = !plan.interested;
+  const canCost = canSeat;
   const save = () => {
     const lines: CostLine[] = [];
     const t = moneyOf(price);
@@ -444,7 +445,7 @@ function GameSheet({ team, ticket, game, plan, onClose, onRemoved }: { team: { i
     onClose();
   };
   if (removing) {
-    const off = [defaultTicket !== undefined ? `${formatMoney(planTicket ?? defaultTicket, currency)} ticket` : null, planParking ? `${formatMoney(planParking, currency)} parking` : null].filter(Boolean);
+    const off = canCost ? [defaultTicket !== undefined ? `${formatMoney(planTicket ?? defaultTicket, currency)} ticket` : null, planParking ? `${formatMoney(planParking, currency)} parking` : null].filter(Boolean) : [];
     return (
       <SeasonSheet title="Remove This Game?" sub={sub} label="Remove this game" onClose={onClose}>
         <div className="season-section-head">

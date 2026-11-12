@@ -95,7 +95,8 @@ ok('a game moved onto a hand-made plan leaves one plan for that event', p10.filt
 ok('that plan keeps her seat as this game\'s edit', p10.find((p) => p.eventId === '2027-04-09-mlb-1').seats.section === '12');
 const watching = applySeasonDefaults({ ...p6[0], watch: true }, ticket);
 const interested = applySeasonDefaults({ ...p6[0], interested: true }, ticket);
-ok('defaults give a Watching plan a cost but no seat', !watching.seats && watching.cost);
+// Kylie, Nov 12, 2026: the ticket's seat and price belong to Attending, so a Watching plan gets neither (was: a cost, no seat).
+ok('defaults give a Watching plan neither seat nor cost', !watching.seats && !watching.cost);
 ok('defaults give an Interested plan neither', !interested.seats && !interested.cost);
 
 // 6c. Codex 11 (c) review: a game moved after its date passed takes its plan along; a moved Watching plan takes no seat.
