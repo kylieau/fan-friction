@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-sdsu-mbb-401925717",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "sdsu-mbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 88
+      },
+      "away": {
+        "name": "Bethune",
+        "score": 75
+      },
+      "attendance": 10124,
+      "capturedAt": "2026-11-12T16:53:56.609Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-11-espn-sdsu-wbb-401923475",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "sdsu-wbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 55
+      },
+      "away": {
+        "name": "Colorado",
+        "score": 64
+      },
+      "attendance": 2427,
+      "capturedAt": "2026-11-12T16:53:56.609Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-11-ht-san-diego-gulls-1029293",
+      "metroId": "san-diego",
+      "date": "2026-11-11",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 4
+      },
+      "away": {
+        "name": "Barracuda",
+        "score": 1
+      },
+      "attendance": 6323,
+      "capturedAt": "2026-11-12T16:53:56.610Z"
+    }
+  ]
+}

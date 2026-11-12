@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-27",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "new-york",
+      "venueId": "city",
+      "date": "2026-11-27",
+      "basis": "forecast",
+      "capturedAt": "2026-11-12T16:34:44.228Z",
+      "feelsLikeHighF": 47.8,
+      "feelsLikeLowF": 36.4,
+      "code": 3,
+      "precipProbability": 30,
+      "precipMm": 0
+    }
+  ]
+}

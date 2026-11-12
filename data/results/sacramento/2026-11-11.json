@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-uc-davis-mbb-401911519",
+      "metroId": "sacramento",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-mbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 81
+      },
+      "away": {
+        "name": "Incarnate Word",
+        "score": 69
+      },
+      "attendance": 1977,
+      "capturedAt": "2026-11-12T16:54:03.298Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "14:17"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-ducks-401892694",
+      "metroId": "la",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "away": {
+        "name": "Predators",
+        "score": 4
+      },
+      "attendance": 17174,
+      "capturedAt": "2026-11-12T16:53:55.955Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    },
+    {
+      "eventId": "2026-11-11-espn-ucla-mbb-401930177",
+      "metroId": "la",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 106
+      },
+      "away": {
+        "name": "AR-Pine Bluff",
+        "score": 37
+      },
+      "attendance": 3312,
+      "capturedAt": "2026-11-12T16:53:55.955Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "21:05"
+    }
+  ]
+}

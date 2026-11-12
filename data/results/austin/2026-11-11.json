@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-texas-wbb-401918842",
+      "metroId": "austin",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-wbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 93
+      },
+      "away": {
+        "name": "S Dakota St",
+        "score": 63
+      },
+      "attendance": 9700,
+      "capturedAt": "2026-11-12T16:54:02.712Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-11-ht-texas-stars-1029295",
+      "metroId": "austin",
+      "date": "2026-11-11",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Moose",
+        "score": 1
+      },
+      "attendance": 5335,
+      "capturedAt": "2026-11-12T16:54:02.713Z"
+    }
+  ]
+}

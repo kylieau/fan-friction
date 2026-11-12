@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-pacers-401909966",
+      "metroId": "indianapolis",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 114
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 101
+      },
+      "attendance": 16679,
+      "capturedAt": "2026-11-12T16:54:04.938Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-delaware-mbb-401920903",
+      "metroId": "philadelphia",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-mbb",
+      "home": {
+        "name": "Delaware",
+        "score": 61
+      },
+      "away": {
+        "name": "James Madison",
+        "score": 71
+      },
+      "attendance": 1694,
+      "capturedAt": "2026-11-12T16:54:00.477Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-11-espn-temple-mbb-401925858",
+      "metroId": "philadelphia",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "liacouras-center",
+      "homeTeamId": "temple-mbb",
+      "home": {
+        "name": "Temple",
+        "score": 81
+      },
+      "away": {
+        "name": "Charleston",
+        "score": 91
+      },
+      "attendance": 2502,
+      "capturedAt": "2026-11-12T16:54:00.477Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    }
+  ]
+}

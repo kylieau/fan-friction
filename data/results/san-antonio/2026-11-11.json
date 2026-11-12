@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-utsa-wbb-401925802",
+      "metroId": "san-antonio",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-wbb",
+      "home": {
+        "name": "UTSA",
+        "score": 73
+      },
+      "away": {
+        "name": "Incarnate Word",
+        "score": 51
+      },
+      "attendance": 738,
+      "capturedAt": "2026-11-12T16:54:07.497Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    }
+  ]
+}

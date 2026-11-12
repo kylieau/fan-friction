@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-bc-wbb-401906033",
+      "metroId": "boston",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-wbb",
+      "home": {
+        "name": "Boston College",
+        "score": 86
+      },
+      "away": {
+        "name": "UMass Lowell",
+        "score": 57
+      },
+      "attendance": 676,
+      "capturedAt": "2026-11-12T16:54:00.188Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

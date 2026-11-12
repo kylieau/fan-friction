@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-duquesne-wbb-401915764",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 72
+      },
+      "away": {
+        "name": "Marist",
+        "score": 67
+      },
+      "attendance": 792,
+      "capturedAt": "2026-11-12T16:54:00.981Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-11-espn-robert-morris-wbb-401929109",
+      "metroId": "pittsburgh",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-events-center",
+      "homeTeamId": "robert-morris-wbb",
+      "home": {
+        "name": "Robert Morris",
+        "score": 69
+      },
+      "away": {
+        "name": "E Michigan",
+        "score": 51
+      },
+      "attendance": 215,
+      "capturedAt": "2026-11-12T16:54:00.981Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-smu-wbb-401915963",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-wbb",
+      "home": {
+        "name": "SMU",
+        "score": 69
+      },
+      "away": {
+        "name": "Long Island",
+        "score": 50
+      },
+      "attendance": 847,
+      "capturedAt": "2026-11-12T16:53:59.109Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-11-espn-unt-mbb-401917522",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "unt-coliseum",
+      "homeTeamId": "unt-mbb",
+      "home": {
+        "name": "North Texas",
+        "score": 71
+      },
+      "away": {
+        "name": "Santa Clara",
+        "score": 76
+      },
+      "attendance": 3689,
+      "capturedAt": "2026-11-12T16:53:59.109Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

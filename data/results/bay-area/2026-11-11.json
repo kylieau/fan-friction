@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-cal-mbb-401918054",
+      "metroId": "bay-area",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 65
+      },
+      "away": {
+        "name": "USC",
+        "score": 77
+      },
+      "attendance": 5087,
+      "capturedAt": "2026-11-12T16:53:58.295Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "23:01"
+    },
+    {
+      "eventId": "2026-11-11-espn-sharks-401892695",
+      "metroId": "bay-area",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 2
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "attendance": 17435,
+      "note": "SO",
+      "capturedAt": "2026-11-12T16:53:58.295Z",
+      "duration": {
+        "minutes": 173,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-blazers-401909975",
+      "metroId": "portland",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moda-center",
+      "homeTeamId": "blazers",
+      "home": {
+        "name": "Blazers",
+        "score": 118
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 108
+      },
+      "attendance": 19851,
+      "capturedAt": "2026-11-12T16:54:07.743Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    }
+  ]
+}

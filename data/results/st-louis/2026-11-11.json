@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-slu-wbb-401921234",
+      "metroId": "st-louis",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-wbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 64
+      },
+      "away": {
+        "name": "E Illinois",
+        "score": 58
+      },
+      "attendance": 362,
+      "capturedAt": "2026-11-12T16:54:08.380Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    }
+  ]
+}

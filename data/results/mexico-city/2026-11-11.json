@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-america-femenil-401932063",
+      "metroId": "mexico-city",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "america-femenil",
+      "home": {
+        "name": "América",
+        "score": 3
+      },
+      "away": {
+        "name": "Toluca",
+        "score": 0
+      },
+      "capturedAt": "2026-11-12T16:54:03.600Z"
+    }
+  ]
+}

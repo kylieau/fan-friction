@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-vanderbilt-wbb-401918829",
+      "metroId": "nashville",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-wbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 101
+      },
+      "away": {
+        "name": "Western KY",
+        "score": 59
+      },
+      "attendance": 3190,
+      "capturedAt": "2026-11-12T16:54:02.282Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

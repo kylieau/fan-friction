@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-raptors-401909968",
+      "metroId": "toronto",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 93
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 98
+      },
+      "attendance": 19800,
+      "capturedAt": "2026-11-12T16:54:05.292Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:13"
+    },
+    {
+      "eventId": "2026-11-11-espn-raptors-905-401914531",
+      "metroId": "toronto",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mississauga-sports-centre",
+      "homeTeamId": "raptors-905",
+      "home": {
+        "name": "Raptors 905",
+        "score": 120
+      },
+      "away": {
+        "name": "Swarm",
+        "score": 112
+      },
+      "capturedAt": "2026-11-12T16:54:05.292Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-oilers-401892692",
+      "metroId": "edmonton",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-place",
+      "homeTeamId": "oilers",
+      "home": {
+        "name": "Oilers",
+        "score": 3
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "attendance": 18347,
+      "note": "OT",
+      "capturedAt": "2026-11-12T16:54:06.827Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "21:12"
+    }
+  ]
+}

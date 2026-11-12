@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-nc-state-wbb-401912506",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reynolds-coliseum",
+      "homeTeamId": "nc-state-wbb",
+      "home": {
+        "name": "NC State",
+        "score": 71
+      },
+      "away": {
+        "name": "Liberty Flames",
+        "score": 47
+      },
+      "attendance": 4729,
+      "capturedAt": "2026-11-12T16:54:08.036Z",
+      "duration": {
+        "minutes": 81,
+        "kind": "estimated"
+      },
+      "startedAt": "19:31"
+    },
+    {
+      "eventId": "2026-11-11-espn-unc-wbb-401906090",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carmichael-arena",
+      "homeTeamId": "unc-wbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 109
+      },
+      "away": {
+        "name": "NC Central",
+        "score": 40
+      },
+      "attendance": 1969,
+      "capturedAt": "2026-11-12T16:54:08.036Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

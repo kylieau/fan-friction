@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-knicks-401909967",
+      "metroId": "new-york",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 107
+      },
+      "away": {
+        "name": "Cavaliers",
+        "score": 115
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-12T16:53:57.408Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:13"
+    },
+    {
+      "eventId": "2026-11-11-espn-rutgers-wbb-401913006",
+      "metroId": "new-york",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 64
+      },
+      "away": {
+        "name": "Monmouth",
+        "score": 62
+      },
+      "attendance": 1606,
+      "capturedAt": "2026-11-12T16:53:57.408Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-11-11-espn-stjohns-mbb-401920680",
+      "metroId": "new-york",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carnesecca-arena",
+      "homeTeamId": "stjohns-mbb",
+      "home": {
+        "name": "St John's",
+        "score": 90
+      },
+      "away": {
+        "name": "Colgate",
+        "score": 59
+      },
+      "attendance": 5260,
+      "capturedAt": "2026-11-12T16:53:57.408Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-salt-lake-city-stars-401914529",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maverik-center",
+      "homeTeamId": "salt-lake-city-stars",
+      "home": {
+        "name": "Stars",
+        "score": 123
+      },
+      "away": {
+        "name": "Remix",
+        "score": 102
+      },
+      "attendance": 3677,
+      "capturedAt": "2026-11-12T16:54:06.108Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "12:32"
+    },
+    {
+      "eventId": "2026-11-11-espn-utah-jazz-401909973",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 108
+      },
+      "away": {
+        "name": "Magic",
+        "score": 123
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-12T16:54:06.108Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "21:11"
+    }
+  ]
+}

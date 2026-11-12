@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-bulls-401909969",
+      "metroId": "chicago",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 119
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 124
+      },
+      "attendance": 19699,
+      "capturedAt": "2026-11-12T16:53:58.719Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-11-espn-depaul-wbb-401919967",
+      "metroId": "chicago",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 85
+      },
+      "away": {
+        "name": "N Illinois",
+        "score": 65
+      },
+      "attendance": 1199,
+      "capturedAt": "2026-11-12T16:53:58.719Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

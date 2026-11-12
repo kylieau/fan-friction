@@ -1,0 +1,1274 @@
+{
+  "schema": 1,
+  "metroId": "edmonton",
+  "metroName": "Edmonton",
+  "timeZone": "America/Edmonton",
+  "capturedOn": "2026-11-12",
+  "capturedAt": "2026-11-12T16:53:06.380Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-12",
+    "through": "2026-11-26"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 1
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 1
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 33
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 8
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-12-tm-1778v0G61WV4xIk",
+      "metroId": "edmonton",
+      "date": "2026-11-12",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Arch Enemy",
+      "officialTitle": "Arch Enemy & The Black Dahlia Murder: Wrath Across North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Arch Enemy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G61WV4xIk",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-bearsandpandas-ca-9887",
+      "metroId": "edmonton",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Alberta vs. Trinity Western University",
+      "place": {
+        "type": "venue",
+        "venueId": "saville-community-sports-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ualberta-wbb",
+        "away": "Trinity Western University",
+        "awayOpponent": "trinity-western-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-sa-bearsandpandas-ca-9948",
+      "metroId": "edmonton",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Alberta vs. University of British Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "silent-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ualberta-whockey",
+        "away": "University of British Columbia",
+        "awayOpponent": "university-of-british-columbia"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-1778v0G61sBMS9l",
+      "metroId": "edmonton",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dax",
+      "officialTitle": "Dax - The Anger Management Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Dax",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G61sBMS9l",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AoZkozGkdMmWjY",
+      "metroId": "edmonton",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Story of Ozzy Osbourne",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Story of Ozzy Osbourne",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkozGkdMmWjY",
+      "expectedDraw": {
+        "count": 2538,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av7Z_fGkMi-lam",
+      "metroId": "edmonton",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "kind": "show",
+      "title": "George Strait Tribute - Strait from me to you with Gil Grand",
+      "place": {
+        "type": "venue",
+        "venueId": "river-cree-resort"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "George Strait Tribute - Strait from me to you with Gil Grand",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_fGkMi-lam"
+    },
+    {
+      "id": "2026-11-14-sa-bearsandpandas-ca-9888",
+      "metroId": "edmonton",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Alberta vs. Trinity Western University",
+      "place": {
+        "type": "venue",
+        "venueId": "saville-community-sports-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ualberta-wbb",
+        "away": "Trinity Western University",
+        "awayOpponent": "trinity-western-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-bearsandpandas-ca-9949",
+      "metroId": "edmonton",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Alberta vs. University of British Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "silent-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ualberta-whockey",
+        "away": "University of British Columbia",
+        "awayOpponent": "university-of-british-columbia"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-17-tm-1778v0G6CTO2D--",
+      "metroId": "edmonton",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTO2D--",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1778v0G6CTOo5-s",
+      "metroId": "edmonton",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTOo5-s",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-19-tm-1Av7Z_8GkMkw-3x",
+      "metroId": "edmonton",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "kind": "show",
+      "title": "DZIDZIO",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "DZIDZIO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_8GkMkw-3x",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-1778v0G6CTO3h-z",
+      "metroId": "edmonton",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTO3h-z",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1778v0G6CTOfDxG",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTOfDxG",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-sa-bearsandpandas-ca-10021",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Alberta vs. UBC-Okanagan",
+      "place": {
+        "type": "venue",
+        "venueId": "saville-community-sports-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-sa-bearsandpandas-ca-9915",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Alberta vs. MacEwan University",
+      "place": {
+        "type": "venue",
+        "venueId": "silent-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "ualberta-hockey",
+        "away": "MacEwan University",
+        "awayOpponent": "macewan-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-20-tm-1778v0G6ujq-AUB",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujq-AUB",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7Pyog",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Deer Rebels vs. Lethbridge Hurricanes",
+      "place": {
+        "type": "venue",
+        "venueId": "marchant-crane-centrium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Red Deer Rebels",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pyog",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1778v0G6CTOKlxv",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTOKlxv",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1k78vP7_GACdJ9K",
+      "metroId": "edmonton",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Jiqui",
+      "officialTitle": "DEATHPACT PRESENTS: FROM DARKNESS, COMES LIGHT: ECLIPSED",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Jiqui",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1k78vP7_GACdJ9K",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1778v0G6ujqx4Md",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujqx4Md",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1778v0G6CTO9lxO",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTO9lxO",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1778v0G6ujqN4M5",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujqN4M5",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-sa-bearsandpandas-ca-10022",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Alberta vs. UBC-Okanagan",
+      "place": {
+        "type": "venue",
+        "venueId": "saville-community-sports-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7Py37",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Red Deer Rebels vs. Swift Current Broncos",
+      "place": {
+        "type": "venue",
+        "venueId": "marchant-crane-centrium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Red Deer Rebels",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Py37",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-sa-bearsandpandas-ca-9947",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Alberta vs. MacEwan University",
+      "place": {
+        "type": "venue",
+        "venueId": "silent-ice-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "ualberta-whockey",
+        "away": "MacEwan University",
+        "awayOpponent": "macewan-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-1778v0G6ujq04MC",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujq04MC",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1AoZkf_GkdrPWBJ",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Chad Brownlee",
+      "officialTitle": "Bar None 79",
+      "place": {
+        "type": "venue",
+        "venueId": "midway-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Chad Brownlee",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AoZkf_GkdrPWBJ",
+      "expectedDraw": {
+        "count": 1450,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1778v0G6CTOp5xb",
+      "metroId": "edmonton",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTOp5xb",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1778v0G6ujqP4M9",
+      "metroId": "edmonton",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujqP4M9",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1778v0G6CTObDxE",
+      "metroId": "edmonton",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Disney's Beauty and the Beast (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Disney's Beauty and the Beast (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6CTObDxE",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1778v0G6ujqJPM-",
+      "metroId": "edmonton",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Jump In!",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Jump In!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6ujqJPM-",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-24-tm-1Av7Z_fGkD1odAy",
+      "metroId": "edmonton",
+      "date": "2026-11-24",
+      "start": "15:00",
+      "kind": "special",
+      "title": "University of Alberta Fall Convocation 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "University of Alberta Convocation",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_fGkD1odAy",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-24-espn-oilers-401892780",
+      "metroId": "edmonton",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oilers vs. Golden Knights",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "oilers",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17027,
+        "low": 16866,
+        "high": 17027,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1Av7Z_fGkD1oNkZ",
+      "metroId": "edmonton",
+      "date": "2026-11-25",
+      "start": "10:00",
+      "kind": "special",
+      "title": "University of Alberta Fall Convocation 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "University of Alberta Convocation",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_fGkD1oNkZ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1Av7Z_fGkD13Nk5",
+      "metroId": "edmonton",
+      "date": "2026-11-25",
+      "start": "15:00",
+      "kind": "special",
+      "title": "University of Alberta Fall Convocation 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "University of Alberta Convocation",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av7Z_fGkD13Nk5",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-ht-oil-kings-1023338",
+      "metroId": "edmonton",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Oil Kings vs. Blades",
+      "place": {
+        "type": "venue",
+        "venueId": "rogers-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "oil-kings",
+        "away": "blades"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3929,
+        "low": 3639,
+        "high": 4174,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-26-tm-1778v0G6u1Phy40",
+      "metroId": "edmonton",
+      "date": "2026-11-26",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Amanda Marshall",
+      "officialTitle": "Amanda Marshall - The Dirty 30 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "northern-alberta-jubilee"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amanda Marshall",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1778v0G6u1Phy40",
+      "expectedDraw": {
+        "count": 2538,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-12-tm-1778v0G61WV4xIk",
+      "date": "2026-11-12",
+      "start": "17:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-bearsandpandas-ca-9887",
+      "date": "2026-11-13",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-13-sa-bearsandpandas-ca-9948",
+      "date": "2026-11-13",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-13-tm-1778v0G61sBMS9l",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AoZkozGkdMmWjY",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "draw": {
+        "count": 2538
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av7Z_fGkMi-lam",
+      "date": "2026-11-13",
+      "start": "21:00"
+    },
+    {
+      "eventId": "2026-11-14-sa-bearsandpandas-ca-9888",
+      "date": "2026-11-14",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-14-sa-bearsandpandas-ca-9949",
+      "date": "2026-11-14",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-17-tm-1778v0G6CTO2D--",
+      "date": "2026-11-17",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-18-tm-1778v0G6CTOo5-s",
+      "date": "2026-11-18",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-19-tm-1Av7Z_8GkMkw-3x",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-1778v0G6CTO3h-z",
+      "date": "2026-11-19",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-20-tm-1778v0G6CTOfDxG",
+      "date": "2026-11-20",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-bearsandpandas-ca-10021",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-bearsandpandas-ca-9915",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1778v0G6ujq-AUB",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7Pyog",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-1778v0G6CTOKlxv",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1k78vP7_GACdJ9K",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1778v0G6ujqx4Md",
+      "date": "2026-11-21",
+      "start": "11:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1778v0G6CTO9lxO",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1778v0G6ujqN4M5",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-bearsandpandas-ca-10022",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7Py37",
+      "date": "2026-11-21",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-21-sa-bearsandpandas-ca-9947",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1778v0G6ujq04MC",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1AoZkf_GkdrPWBJ",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1450
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1778v0G6CTOp5xb",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1778v0G6ujqP4M9",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1778v0G6CTObDxE",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 7.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1778v0G6ujqJPM-",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "read": {
+        "rating": 7.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-1Av7Z_fGkD1odAy",
+      "date": "2026-11-24",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-oilers-401892780",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17027,
+        "low": 16866,
+        "high": 17027
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-1Av7Z_fGkD1oNkZ",
+      "date": "2026-11-25",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-1Av7Z_fGkD13Nk5",
+      "date": "2026-11-25",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-25-ht-oil-kings-1023338",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "draw": {
+        "count": 3929,
+        "low": 3639,
+        "high": 4174
+      }
+    },
+    {
+      "eventId": "2026-11-26-tm-1778v0G6u1Phy40",
+      "date": "2026-11-26",
+      "start": "19:30",
+      "draw": {
+        "count": 2538
+      }
+    }
+  ]
+}
