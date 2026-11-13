@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-bruins-401892696",
+      "metroId": "boston",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 2
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 5
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-13T16:12:52.797Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

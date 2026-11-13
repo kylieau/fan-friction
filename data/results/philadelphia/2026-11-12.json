@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-penn-wbb-401922325",
+      "metroId": "philadelphia",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-wbb",
+      "home": {
+        "name": "Penn",
+        "score": 72
+      },
+      "away": {
+        "name": "Longwood",
+        "score": 53
+      },
+      "attendance": 299,
+      "capturedAt": "2026-11-13T16:12:53.045Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-12-espn-sixers-401909976",
+      "metroId": "philadelphia",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 123
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 112
+      },
+      "attendance": 20986,
+      "capturedAt": "2026-11-13T16:12:53.045Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    },
+    {
+      "eventId": "2026-11-12-espn-villanova-wbb-401923470",
+      "metroId": "philadelphia",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-wbb",
+      "home": {
+        "name": "Villanova",
+        "score": 97
+      },
+      "away": {
+        "name": "Merrimack",
+        "score": 44
+      },
+      "attendance": 1783,
+      "capturedAt": "2026-11-13T16:12:53.045Z",
+      "duration": {
+        "minutes": 104,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

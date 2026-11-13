@@ -1,0 +1,1759 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "metroName": "Mexico City",
+  "timeZone": "America/Mexico_City",
+  "capturedOn": "2026-11-13",
+  "capturedAt": "2026-11-13T16:10:44.177Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-13",
+    "through": "2026-11-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 39
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 0
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-13-tm-1AfZk3eGkeDtEUW",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDtEUW",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-17AZv0G6CXnQJmA",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Andrés Calamaro",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Andrés Calamaro",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G6f7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6CXnQJmA",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1Av8Z_FGkTJZgK9",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Viernes Espectacular de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJZgK9",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5dVZ_A1YCxRq",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Majo Aguilar",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Majo Aguilar",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hdIf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_A1YCxRq",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-1AfZk3vGkeIokuW",
+      "metroId": "mexico-city",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Karol G",
+      "officialTitle": "Karol G, Viajando por el mundo, Zona de Discapacidad Auditiva",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-gnp-seguros"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Karol G",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p3-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3vGkeIokuW",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 65000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AfZk3eGkeDtEUT",
+      "metroId": "mexico-city",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDtEUT",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-1AfZk3vGketlp_s",
+      "metroId": "mexico-city",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Karol G",
+      "officialTitle": "Karol G, Viajando por el mundo, Zona de Discapacidad Auditiva",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-gnp-seguros"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Karol G",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p3-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3vGketlp_s",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 65000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5dVZ_phF7riI",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Pumas CU UNAM v. Burros Blancos IPN",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Pumas Unam Futbol Americano",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_phF7riI"
+    },
+    {
+      "id": "2026-11-15-tm-1Av8Z_FGkTs8_sq",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs8_sq",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5dVZ_1kyjEzA",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Daniel Boaventura",
+      "officialTitle": "Daniel Boaventura Sinfónico",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Ballads/Romantic"
+      },
+      "performer": "Daniel Boaventura",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hNsf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_1kyjEzA",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1AfZk3eGkeDJMUJ",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDJMUJ",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1Av8Z_fGkDednAr",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "BB Trickz",
+      "officialTitle": "debut Presenta: Rapaparty! Feat BBtrickz, Fanta Rosario y más",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "BB Trickz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917-yn7",
+        "K8vZ917rbp0",
+        "K8vZpa2tve",
+        "K8vZ917-yS7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_fGkDednAr",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-1AfZk3vGketlp_S",
+      "metroId": "mexico-city",
+      "date": "2026-11-15",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Karol G",
+      "officialTitle": "Karol G, Viajando por el mundo, Zona de Discapacidad Auditiva",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-gnp-seguros"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Karol G",
+      "act": true,
+      "performerIds": [
+        "K8vZ917p3-V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3vGketlp_S",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 65000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-capitanes-401914558",
+      "metroId": "mexico-city",
+      "date": "2026-11-16",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Mexico City Capitanes vs. Magic",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-cdmx"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "capitanes",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4531,
+        "low": 3568,
+        "high": 6342,
+        "fromCrowds": true,
+        "games": 25,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 25 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-17AZv0G6ClhnhYg",
+      "metroId": "mexico-city",
+      "date": "2026-11-16",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Lucha KINGDOM",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "boxing"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6ClhnhYg",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1Av8Z_FGkTP_PZv",
+      "metroId": "mexico-city",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Martes Populares de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP_PZv",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-17-tm-1AfZk3eGkeDtMMv",
+      "metroId": "mexico-city",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Morat",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Morat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174edf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk3eGkeDtMMv",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-G5dVZ_akOa4k3",
+      "metroId": "mexico-city",
+      "date": "2026-11-17",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Jerry Rivera",
+      "officialTitle": "Jerry Rivera.",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Jerry Rivera",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171haf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_akOa4k3",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-1AfZk4AGkdVLWTu",
+      "metroId": "mexico-city",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "kind": "game",
+      "title": "NFL x CMLL: Noche de cascos y mascaras",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "boxing"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk4AGkdVLWTu",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-18-tm-G5dVZ_8UVTPmH",
+      "metroId": "mexico-city",
+      "date": "2026-11-18",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Emmanuel & Mijares",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Emmanuel & Mijares",
+      "act": true,
+      "performerIds": [
+        "K8vZ917oTG0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_8UVTPmH",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-17AZv0G6G3_bAnq",
+      "metroId": "mexico-city",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dimash Qudaibergen",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Dimash Qudaibergen",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bqI7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6G3_bAnq",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-G5dVZ_1Me6trr",
+      "metroId": "mexico-city",
+      "date": "2026-11-19",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Los Cafres",
+      "officialTitle": "Cafres y Estrambóticos",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Los Cafres",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KfMf",
+        "K8vZ917G6Wf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_1Me6trr",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-17AZv0G6G3h6gUV",
+      "metroId": "mexico-city",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dimash Qudaibergen",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Dimash Qudaibergen",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bqI7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G6G3h6gUV",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1Av8Z_FGkTJvAKc",
+      "metroId": "mexico-city",
+      "date": "2026-11-20",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Viernes Espectacular de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJvAKc",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-20-tm-G5dVZ_21CgeNN",
+      "metroId": "mexico-city",
+      "date": "2026-11-20",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Los Angeles Azules",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Angeles Azules",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175pMV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_21CgeNN",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-pumas-unam-401877049",
+      "metroId": "mexico-city",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pumas vs. Monterrey",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-olimpico-universitario"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "teams": {
+        "home": "pumas-unam",
+        "away": "monterrey",
+        "awayOpponent": "monterrey"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 43930,
+        "low": 38611,
+        "high": 47062,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-17AZv0G62wcDySs",
+      "metroId": "mexico-city",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Cuarteto de Nos",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cuarteto de Nos",
+      "act": true,
+      "performerIds": [
+        "K8vZ917h4M0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G62wcDySs",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dVZ_212E3Jk",
+      "metroId": "mexico-city",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Angeles Azules",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Angeles Azules",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175pMV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_212E3Jk",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1Av8Z_FGkTs8tsE",
+      "metroId": "mexico-city",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Domingo Familiar de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTs8tsE",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dVZ_1XsG1vX",
+      "metroId": "mexico-city",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "LP",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "LP",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172MA0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_1XsG1vX",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dVZ_2XluVSu",
+      "metroId": "mexico-city",
+      "date": "2026-11-22",
+      "start": "19:20",
+      "kind": "game",
+      "title": "San Francisco 49ers v. Minnesota Vikings",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-banorte"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "NFL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_2XluVSu"
+    },
+    {
+      "id": "2026-11-23-tm-17AZv0G65wU4X_s",
+      "metroId": "mexico-city",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Soda Stereo",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Soda Stereo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G7y7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G65wU4X_s",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-1Av8Z_FGkTP_PZ7",
+      "metroId": "mexico-city",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Martes Populares de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTP_PZ7",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1AfZk39GkeB4nU2",
+      "metroId": "mexico-city",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Babasonicos",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Babasonicos",
+      "act": true,
+      "performerIds": [
+        "K8vZ917G6ff"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AfZk39GkeB4nU2",
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5dVZ_62sUa_c",
+      "metroId": "mexico-city",
+      "date": "2026-11-25",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Love of Lesbian",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Love of Lesbian",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Gref"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_62sUa_c",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-26-tm-G5dVZ_1Q0Q4BC",
+      "metroId": "mexico-city",
+      "date": "2026-11-26",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Hayley Williams",
+      "officialTitle": "\"The Hayley Williams Show\" (Numerado)",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Hayley Williams",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bV3f",
+        "K8vZ917_NsV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_1Q0Q4BC",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-17AZv0G61CIypf-",
+      "metroId": "mexico-city",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Røz",
+      "place": {
+        "type": "venue",
+        "venueId": "pepsi-center-wtc"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Røz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917rpkf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G61CIypf-",
+      "expectedDraw": {
+        "count": 8000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-17AZv0G61muJeVj",
+      "metroId": "mexico-city",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "KATSEYE",
+      "officialTitle": "KATSEYE:  THE WILDWORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "palacio-de-los-deportes"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "KATSEYE",
+      "act": true,
+      "performerIds": [
+        "K8vZ917q517"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AZv0G61muJeVj",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 21000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-1Av8Z_FGkTJvAKR",
+      "metroId": "mexico-city",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Viernes Espectacular de Lucha Libre CMLL",
+      "place": {
+        "type": "venue",
+        "venueId": "arena-mexico"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling"
+      },
+      "performer": "Lucha Libre CMLL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_FGkTJvAKR",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5dVZ_6B-jxEU",
+      "metroId": "mexico-city",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Caloncho",
+      "officialTitle": "Caloncho (General de pie)",
+      "place": {
+        "type": "venue",
+        "venueId": "auditorio-nacional"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Caloncho",
+      "act": true,
+      "performerIds": [
+        "K8vZ917f0v7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dVZ_6B-jxEU",
+      "expectedDraw": {
+        "count": 9366,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-1Av8Z_aGkBsbG4a",
+      "metroId": "mexico-city",
+      "date": "2026-11-27",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Los Autenticos Caligaris",
+      "place": {
+        "type": "venue",
+        "venueId": "estadio-gnp-seguros"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Los Autenticos Caligaris",
+      "act": true,
+      "performerIds": [
+        "K8vZ917OatV",
+        "K8vZ917rCdf",
+        "K8vZ917G697"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1Av8Z_aGkBsbG4a",
+      "expectedDraw": {
+        "count": 65000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-13-tm-1AfZk3eGkeDtEUW",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 6.4,
+        "friction": "Moderate",
+        "why": "Karol G, Viajando por el mundo,… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-17AZv0G6CXnQJmA",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1Av8Z_FGkTJZgK9",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Moderate",
+        "why": "Karol G, Viajando por el mundo,… 3.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5dVZ_A1YCxRq",
+      "date": "2026-11-13",
+      "start": "20:30",
+      "read": {
+        "rating": 6.4,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-1AfZk3vGkeIokuW",
+      "date": "2026-11-13",
+      "start": "21:00",
+      "read": {
+        "rating": 6.4,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AfZk3eGkeDtEUT",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Karol G, Viajando por el mundo,… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-1AfZk3vGketlp_s",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5dVZ_phF7riI",
+      "date": "2026-11-15",
+      "start": "11:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1Av8Z_FGkTs8_sq",
+      "date": "2026-11-15",
+      "start": "17:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 3.9 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5dVZ_1kyjEzA",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AfZk3eGkeDJMUJ",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Moderate",
+        "why": "Karol G, Viajando por el mundo,… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1Av8Z_fGkDednAr",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Heavy",
+        "why": "Karol G, Viajando por el mundo,… and Morat 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-1AfZk3vGketlp_S",
+      "date": "2026-11-15",
+      "start": "21:00",
+      "read": {
+        "rating": 5.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65000
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-capitanes-401914558",
+      "date": "2026-11-16",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4531,
+        "low": 3568,
+        "high": 6342
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-17AZv0G6ClhnhYg",
+      "date": "2026-11-16",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1Av8Z_FGkTP_PZv",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Morat 3.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-1AfZk3eGkeDtMMv",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Martes Populares de Lucha Libre… 3.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-G5dVZ_akOa4k3",
+      "date": "2026-11-17",
+      "start": "20:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Morat and Martes Populares de Lucha Libre… 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-1AfZk4AGkdVLWTu",
+      "date": "2026-11-18",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Emmanuel & Mijares 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-G5dVZ_8UVTPmH",
+      "date": "2026-11-18",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "NFL x CMLL: Noche de cascos y m… 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-17AZv0G6G3_bAnq",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Cafres y Estrambóticos 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-G5dVZ_1Me6trr",
+      "date": "2026-11-19",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Dimash Qudaibergen 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-17AZv0G6G3h6gUV",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Viernes Espectacular de Lucha L… 3.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1Av8Z_FGkTJvAKc",
+      "date": "2026-11-20",
+      "start": "20:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Dimash Qudaibergen 3.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-G5dVZ_21CgeNN",
+      "date": "2026-11-20",
+      "start": "20:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Dimash Qudaibergen and Viernes Espectacular de Lucha L… 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-pumas-unam-401877049",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "Cuarteto de Nos 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 43930,
+        "low": 38611,
+        "high": 47062
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17AZv0G62wcDySs",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "Monterrey at Pumas (MSOC) 7.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dVZ_212E3Jk",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "Monterrey at Pumas (MSOC) and Cuarteto de Nos 6.4 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1Av8Z_FGkTs8tsE",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "San Francisco 49ers v. Minnesot… 8.4 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dVZ_1XsG1vX",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "San Francisco 49ers v. Minnesot… 8.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dVZ_2XluVSu",
+      "date": "2026-11-22",
+      "start": "19:20",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-17AZv0G65wU4X_s",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-1Av8Z_FGkTP_PZ7",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-1AfZk39GkeB4nU2",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Love of Lesbian 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5dVZ_62sUa_c",
+      "date": "2026-11-25",
+      "start": "20:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Babasonicos 6.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-26-tm-G5dVZ_1Q0Q4BC",
+      "date": "2026-11-26",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-17AZv0G61CIypf-",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Los Autenticos Caligaris and KATSEYE · The Wildworld Tour 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8000
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-17AZv0G61muJeVj",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Los Autenticos Caligaris next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 21000
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-1Av8Z_FGkTJvAKR",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Moderate",
+        "why": "Los Autenticos Caligaris 3.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5dVZ_6B-jxEU",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "read": {
+        "rating": 6.5,
+        "friction": "Heavy",
+        "why": "Los Autenticos Caligaris 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9366
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-1Av8Z_aGkBsbG4a",
+      "date": "2026-11-27",
+      "start": "21:00",
+      "read": {
+        "rating": 6.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65000
+      }
+    }
+  ]
+}

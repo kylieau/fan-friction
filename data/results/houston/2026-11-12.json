@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-rice-wbb-401913832",
+      "metroId": "houston",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tudor-fieldhouse",
+      "homeTeamId": "rice-wbb",
+      "home": {
+        "name": "Rice Owls",
+        "score": 71
+      },
+      "away": {
+        "name": "Texas Southern Tigers",
+        "score": 46
+      },
+      "attendance": 630,
+      "capturedAt": "2026-11-13T16:12:56.038Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-wizards-401909977",
+      "metroId": "washington-dc",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "wizards",
+      "home": {
+        "name": "Wizards",
+        "score": 140
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 144
+      },
+      "attendance": 17443,
+      "note": "2OT",
+      "capturedAt": "2026-11-13T16:12:59.619Z",
+      "duration": {
+        "minutes": 183,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

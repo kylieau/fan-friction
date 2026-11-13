@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-du-wbb-401923327",
+      "metroId": "denver",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-wbb",
+      "home": {
+        "name": "Denver",
+        "score": 50
+      },
+      "away": {
+        "name": "Colorado St",
+        "score": 86
+      },
+      "attendance": 602,
+      "capturedAt": "2026-11-13T16:13:00.926Z",
+      "duration": {
+        "minutes": 100,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

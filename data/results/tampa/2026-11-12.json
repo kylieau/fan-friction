@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-usf-football-401862824",
+      "metroId": "tampa",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "raymond-james-stadium",
+      "homeTeamId": "usf-football",
+      "home": {
+        "name": "South Florida",
+        "score": 41
+      },
+      "away": {
+        "name": "Memphis",
+        "score": 52
+      },
+      "capturedAt": "2026-11-13T16:12:53.574Z",
+      "duration": {
+        "minutes": 227,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

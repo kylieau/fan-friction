@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-suns-401909979",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 101
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 96
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-11-13T16:12:54.729Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    },
+    {
+      "eventId": "2026-11-12-espn-valley-suns-401914536",
+      "metroId": "phoenix",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "valley-suns",
+      "home": {
+        "name": "Valley Suns",
+        "score": 99
+      },
+      "away": {
+        "name": "Coachella Valley Lakers",
+        "score": 108
+      },
+      "attendance": 1054,
+      "capturedAt": "2026-11-13T16:12:54.729Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

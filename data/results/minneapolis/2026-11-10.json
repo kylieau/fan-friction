@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-10",
+  "results": [
+    {
+      "eventId": "2026-11-10-espn-gophers-wbb-401918910",
+      "metroId": "minneapolis",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-wbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 86
+      },
+      "away": {
+        "name": "Southern",
+        "score": 47
+      },
+      "attendance": 3646,
+      "capturedAt": "2026-11-13T16:12:56.779Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-10-espn-st-thomas-wbb-401918724",
+      "metroId": "minneapolis",
+      "date": "2026-11-10",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-wbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 76
+      },
+      "away": {
+        "name": "St. Catherine",
+        "score": 29
+      },
+      "attendance": 456,
+      "capturedAt": "2026-11-13T16:12:56.779Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-st-thomas-mbb-401920844",
+      "metroId": "minneapolis",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-mbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 119
+      },
+      "away": {
+        "name": "Macalester",
+        "score": 82
+      },
+      "attendance": 1553,
+      "capturedAt": "2026-11-13T16:12:56.779Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

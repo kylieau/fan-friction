@@ -1,0 +1,6513 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "metroName": "Chicago",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-13",
+  "capturedAt": "2026-11-13T16:07:58.148Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-13",
+    "through": "2026-11-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 21
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 164
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 17
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-13-espn-bulls-401909299",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Hawks",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "hawks",
+        "awayOpponent": "hawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19579,
+        "low": 19491,
+        "high": 20233,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-sa-depaulbluedemons-com-6867",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "DePaul vs. St. John's",
+      "place": {
+        "type": "venue",
+        "venueId": "mcgrath-phillips-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-13-tm-vv17jZbyGknZJSqs",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nikki Glaser: The Stunning Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nikki Glaser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZbyGknZJSqs",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv1k8Z_okKG7lgia",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rockford IceHogs vs. Milwaukee Admirals",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Rockford IceHogs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_okKG7lgia",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG18Z_u59uG9H",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "almost monday",
+      "officialTitle": "almost monday - THANK GOD IT'S ALMOST MONDAY",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "almost monday",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_u59uG9H",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1fZ_5YNUcRS",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Patti LaBelle",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-northern-indiana"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Patti LaBelle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_5YNUcRS",
+      "expectedDraw": {
+        "count": 1894,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1jZ_263RFjn",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263RFjn",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70Ub7",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Amber Autry",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Amber Autry",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Ub7"
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAeZad",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Notre Dame Fighting Irish Hockey vs. Michigan State Spartans Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "compton-family-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Notre Dame Men's Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZad"
+    },
+    {
+      "id": "2026-11-13-tm-vvG1jZ_uM2m7bz",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Deana Carter",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Deana Carter",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uM2m7bz",
+      "expectedDraw": {
+        "count": 1966,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-espn-northwestern-mbb-401909503",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Northwestern vs. DePaul",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-mbb",
+        "away": "depaul-mbb",
+        "awayOpponent": "depaul"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5811,
+        "low": 5576,
+        "high": 5882,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vv1kvZv00aGACHUYR",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Palace",
+      "officialTitle": "Palace with Rollo Doherty - USA & Canada Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Palace",
+      "act": true,
+      "performerIds": [
+        "K8vZ917KbJV",
+        "K8vZ917qayV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZv00aGACHUYR",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1jZ_GRfKJpc",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Master P",
+      "officialTitle": "Cash Money & No Limit Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Master P",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171be7",
+        "K8vZ9171at0",
+        "K8vZ9171jTf",
+        "K8vZ917CCY0",
+        "K8vZ917pkB0",
+        "K8vZ91741of",
+        "K8vZ9171UiV",
+        "K8vZ917oYA0",
+        "K8vZ917hKBf",
+        "K8vZ9171nV7",
+        "K8vZ917Laef",
+        "K8vZ917QRZV",
+        "K8vZ917-bu7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_GRfKJpc",
+      "expectedDraw": {
+        "count": 5921,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-vvG1jZ_u5ok_x7",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shaun Cassidy",
+      "officialTitle": "Shaun Cassidy UNWRAPPED: Songs & Stories for The Holidays",
+      "place": {
+        "type": "venue",
+        "venueId": "genesee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Shaun Cassidy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_u5ok_x7",
+      "expectedDraw": {
+        "count": 2403,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAvOa6",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Eric Gales",
+      "place": {
+        "type": "venue",
+        "venueId": "des-plaines-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Eric Gales",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvOa6",
+      "expectedDraw": {
+        "count": 998,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAZ7af",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "kind": "show",
+      "title": "SIX60",
+      "officialTitle": "Six60 (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "metro"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "SIX60",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ7af",
+      "expectedDraw": {
+        "count": 1150,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAvkof",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "kind": "special",
+      "title": "otta - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "concord-music-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "otta",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvkof"
+    },
+    {
+      "id": "2026-11-14-sa-gocsucougars-com-7870",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Chicago State vs. Virginia University of Lynchburg",
+      "place": {
+        "type": "venue",
+        "venueId": "seatgeek-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-sa-loyolaramblers-com-7297",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Loyola Chicago vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "loyola-chicago-wbb",
+        "away": "Milwaukee",
+        "awayOpponent": "milwaukee"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-vv166Zk3F-3ZA5deFu",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Wild Kratts Live! 2.0",
+      "place": {
+        "type": "venue",
+        "venueId": "the-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "The Wild Kratts Live!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv166Zk3F-3ZA5deFu"
+    },
+    {
+      "id": "2026-11-14-tm-vvG1jZ_263wFqG",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263wFqG",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-14-espn-blackhawks-401892708",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Blackhawks vs. Winnipeg Jets",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "jets",
+        "awayOpponent": "jets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19303,
+        "low": 18994,
+        "high": 20488,
+        "fromCrowds": true,
+        "games": 18,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 18 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7OYk7",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Notre Dame Fighting Irish Football vs. Boston College Eagles Football",
+      "place": {
+        "type": "venue",
+        "venueId": "notre-dame-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Notre Dame Fighting Irish Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OYk7",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-espn-windy-city-bulls-401914548",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Windy City Bulls vs. Gold",
+      "place": {
+        "type": "venue",
+        "venueId": "now-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "windy-city-bulls",
+        "away": "gold",
+        "awayOpponent": "gold"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4312,
+        "low": 3504,
+        "high": 5132,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-sa-depaulbluedemons-com-6868",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "game",
+      "title": "DePaul vs. Seton Hall",
+      "place": {
+        "type": "venue",
+        "venueId": "mcgrath-phillips-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-14-tm-vv166Zk3F-3ZA8deae",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Wild Kratts Live! 2.0",
+      "place": {
+        "type": "venue",
+        "venueId": "the-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "The Wild Kratts Live!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv166Zk3F-3ZA8deae"
+    },
+    {
+      "id": "2026-11-14-tm-vvG18Z_2LKEoyW",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Lucky Boys Confusion",
+      "officialTitle": "Lucky Boys Confusion - 25 Years of Throwing the Game",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Lucky Boys Confusion",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_2LKEoyW",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vv17jZbyGknZIKqU",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nikki Glaser: The Stunning Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nikki Glaser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZbyGknZIKqU",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vv1k8Z_okKG7mPi3",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rockford IceHogs vs. Manitoba Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Rockford IceHogs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_okKG7mPi3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG18Z_1k0JQAc",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Menzingers",
+      "officialTitle": "The Menzingers: Everything I Ever Saw North American Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Menzingers",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GmQ7",
+        "K8vZ9171hyf",
+        "K8vZ917KsnV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1k0JQAc",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vvG1jZ_G9OqFIS",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Ali Siddiq: The Custom Fit Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ali Siddiq",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_G9OqFIS"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A70Ubk",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Michelle Wolf",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Michelle Wolf",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Ubk"
+    },
+    {
+      "id": "2026-11-14-tm-vv1A6Zk3dGkeOC0M3",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Patti LaBelle",
+      "place": {
+        "type": "venue",
+        "venueId": "genesee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Patti LaBelle",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zk3dGkeOC0M3",
+      "expectedDraw": {
+        "count": 2403,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-vv1A6Zk3vGkd3LyvO",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Bored Teachers: \"Is It Friday Yet?!\" Comedy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Bored Teachers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zk3vGkd3LyvO"
+    },
+    {
+      "id": "2026-11-14-tm-vvG1jZ_263YIjX",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263YIjX",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7J67S",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "John Waite",
+      "place": {
+        "type": "venue",
+        "venueId": "des-plaines-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "John Waite",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J67S",
+      "expectedDraw": {
+        "count": 998,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7PkuS",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Afghan Whigs",
+      "officialTitle": "The Afghan Whigs (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "metro"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Afghan Whigs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PkuS",
+      "expectedDraw": {
+        "count": 1150,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AA74u_",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "start": "22:00",
+      "kind": "special",
+      "title": "Pedro Sampaio",
+      "place": {
+        "type": "venue",
+        "venueId": "ramova-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Pedro Sampaio",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA74u_"
+    },
+    {
+      "id": "2026-11-15-tm-vvG1jZ_263Vzqc",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263Vzqc",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vv17jZ_FGkDOUMCO",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Be Like Blippi Tour - Photo Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Be Like Blippi Tour - Photo Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_FGkDOUMCO"
+    },
+    {
+      "id": "2026-11-15-tm-vv1A6Zk36GkdELpwt",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Be Like Blippi Tour!",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "Blippi Live!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zk36GkdELpwt"
+    },
+    {
+      "id": "2026-11-15-espn-windy-city-bulls-401914553",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Windy City Bulls vs. Herd",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "now-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "windy-city-bulls",
+        "away": "herd",
+        "awayOpponent": "herd"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4735,
+        "low": 2209,
+        "high": 5035,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-15-ht-chicago-wolves-1029322",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Wolves vs. Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "moose"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6121,
+        "low": 5482,
+        "high": 7120,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-rZ7HnEZ1AfFIaV",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "15:45",
+      "kind": "show",
+      "title": "7th Heaven",
+      "officialTitle": "Rockin' for Heroes: A Veteran's Day Tribute Featuring 7th Heaven & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "joes-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "7th Heaven",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfFIaV",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vv178Z_FGkBm7pn6",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Saosin",
+      "officialTitle": "Saosin: 20 Years of Self-Titled",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Saosin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_FGkBm7pn6",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG1jZ_263SIqp",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263SIqp",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vv17jZbyGknZtSqB",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nikki Glaser: The Stunning Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nikki Glaser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZbyGknZtSqB",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vv1A7ZkfzGkdlK_kn",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "special",
+      "title": "NXT Pre-Show Q&A and Photo Opportunity",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "WWE Q&A Panel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkfzGkdlK_kn"
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AAedrb",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Manchester Orchestra",
+      "officialTitle": "Manchester Orchestra - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Manchester Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAedrb",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-vvG18Z_23C64-4",
+      "metroId": "chicago",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pimpinela",
+      "officialTitle": "Pimpinela - Leyendas Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "rosemont-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Pimpinela",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_23C64-4",
+      "expectedDraw": {
+        "count": 4400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-northwestern-mbb-401920735",
+      "metroId": "chicago",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northwestern vs. Columbia",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-mbb",
+        "away": "columbia",
+        "awayOpponent": "columbia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4564,
+        "low": 4426,
+        "high": 5034,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-tm-vv1A7Zkf4GkeYVoGs",
+      "metroId": "chicago",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jessie Reyez",
+      "officialTitle": "Jessie Reyez: A Little Vengeance Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jessie Reyez",
+      "act": true,
+      "performerIds": [
+        "K8vZ9174HJ7",
+        "K8vZ9178_c7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zkf4GkeYVoGs",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-blackhawks-401892733",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Blackhawks vs. Maple Leafs",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "maple-leafs",
+        "awayOpponent": "maple-leafs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18855,
+        "low": 17971,
+        "high": 19502,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-espn-depaul-mbb-401909504",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "DePaul vs. MD Eastern",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "depaul-mbb",
+        "away": "md-eastern",
+        "awayOpponent": "md-eastern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2790,
+        "low": 2734,
+        "high": 2826,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-vv178Z_oGkl_Aw9r",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Skilla Baby",
+      "officialTitle": "Skilla Baby: The Price of Fame Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Skilla Baby",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_oGkl_Aw9r",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-vv1A6Zk3pGkeMMPrx",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Motown Christmas",
+      "officialTitle": "A Motown Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Motown Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zk3pGkeMMPrx",
+      "expectedDraw": {
+        "count": 1966,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-vv1k8Z_okKG7RgiQ",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rockford IceHogs vs. Chicago Wolves",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Rockford IceHogs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_okKG7RgiQ",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-17-tm-vvG1jZ_263UbqX",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263UbqX",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AA7-bV",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "kind": "special",
+      "title": "An Evening with Phoebe Judge",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Phoebe Judge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7-bV"
+    },
+    {
+      "id": "2026-11-17-tm-vvG18Z_2nCWJfG",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ana Gasteyer",
+      "officialTitle": "Ana Gasteyer: Sugar & Booze Holiday Spectacular",
+      "place": {
+        "type": "venue",
+        "venueId": "cahn-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Ana Gasteyer",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_2nCWJfG",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-gocsucougars-com-7991",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Chicago State vs. University of South Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "jones-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "chicago-state-wbb",
+        "away": "University of South Dakota",
+        "awayOpponent": "university-of-south-dakota"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-tm-vvG1jZ_263zzrn",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263zzrn",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-18-espn-depaul-wbb-401913048",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "kind": "game",
+      "title": "DePaul vs. Bradley",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "depaul-wbb",
+        "away": "bradley",
+        "awayOpponent": "bradley"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1305,
+        "low": 980,
+        "high": 2634,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-espn-uic-mbb-401919735",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UIC vs. Chicago St",
+      "place": {
+        "type": "venue",
+        "venueId": "credit-union-1-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uic-mbb",
+        "away": "chicago-state-mbb",
+        "awayOpponent": "chicago-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1554,
+        "low": 1154,
+        "high": 2090,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-vvG18Z_5hkX5Sz",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hawthorne Heights",
+      "officialTitle": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hawthorne Heights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_5hkX5Sz",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-sa-loyolaramblers-com-7307",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Loyola Chicago vs. Wichita State",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "loyola-chicago-mbb",
+        "away": "Wichita State",
+        "awayOpponent": "wichita-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-18-tm-vv1A7ZkoaGkdxvkbx",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Neighbourhood",
+      "officialTitle": "The Neighbourhood: THE WOURLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Neighbourhood",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Kzef",
+        "K8vZ917_-2f",
+        "K8vZ917L-Mf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkoaGkdxvkbx",
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-vvG1jZ_263MIrC",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263MIrC",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-18-tm-vv1k8Z_3bAG7XJoo",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Victoria Monét",
+      "officialTitle": "Victoria Monét: Frequency Of Love Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Victoria Monét",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fYD7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_3bAG7XJoo",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vv167ZkffedZAGuvC1",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Jake Cornell",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jake Cornell",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv167ZkffedZAGuvC1"
+    },
+    {
+      "id": "2026-11-19-espn-blackhawks-401892748",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blackhawks vs. Blue Jackets",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "blue-jackets",
+        "awayOpponent": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18394,
+        "low": 17532,
+        "high": 19026,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-sa-uicflames-com-21623",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UIC vs. Lindenwood",
+      "place": {
+        "type": "venue",
+        "venueId": "credit-union-1-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uic-wbb",
+        "away": "Lindenwood",
+        "awayOpponent": "lindenwood"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-tm-vvG1jZ_263BbrU",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263BbrU",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7JFvy",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Protomartyr",
+      "officialTitle": "Protomartyr (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "metro"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Protomartyr",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JFvy",
+      "expectedDraw": {
+        "count": 1150,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vv17jZ_aGkSaDU6u",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Sara Evans",
+      "officialTitle": "Sara Evans: We Got The Beat Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "genesee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Sara Evans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_aGkSaDU6u",
+      "expectedDraw": {
+        "count": 2403,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vv1A6ZkoyGkdjZ6Tk",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "An Evening with Ina Garten",
+      "place": {
+        "type": "venue",
+        "venueId": "the-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Food & Drink"
+      },
+      "performer": "Ina Garten",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6ZkoyGkdjZ6Tk"
+    },
+    {
+      "id": "2026-11-19-tm-vvG1jZ_GoHfsSB",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Little Big Town",
+      "officialTitle": "Little Big Town - For The Art Of It Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Little Big Town",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_GoHfsSB",
+      "expectedDraw": {
+        "count": 3553,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7PwGd",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Jayhawks",
+      "officialTitle": "The Jayhawks (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "riviera-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Jayhawks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PwGd",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1AAZPZO",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Chicago Comedy Club",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Chicago Comedy Club",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZPZO"
+    },
+    {
+      "id": "2026-11-19-tm-vvG18Z_1N6xT5T",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Slow Pulp",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Slow Pulp",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bK5V",
+        "K8vZ917jHE0",
+        "K8vZ917O6P7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1N6xT5T",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1AAv_bZ",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Charlie Zaa",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Charlie Zaa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv_bZ",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG18Z_1NJ0Ag4",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Beartooth",
+      "officialTitle": "Beartooth: Pure Ecstasy World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Beartooth",
+      "act": true,
+      "performerIds": [
+        "K8vZ9178zM0",
+        "K8vZ9178Nb0",
+        "K8vZfZ7aEak",
+        "K8vZ917hOD0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1NJ0Ag4",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-espn-bulls-401909309",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Wizards",
+      "broadcast": "MNMT",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "wizards",
+        "awayOpponent": "wizards"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20099,
+        "low": 20008,
+        "high": 20770,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vv1kfZ_fG7G7w-Vt",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Scarface",
+      "officialTitle": "The Function Tour: Scarface, Too $hort, & Do or Die",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-northern-indiana"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Scarface",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kfZ_fG7G7w-Vt",
+      "expectedDraw": {
+        "count": 1894,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1jZ_1Kmz6qD",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Nurse John: Against Medical Advice Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Nurse John",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_1Kmz6qD"
+    },
+    {
+      "id": "2026-11-20-tm-vvG1jZ_263HFLF",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263HFLF",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1jZ_Gmlwf7-",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Black Violin",
+      "officialTitle": "Black Violin: The Be Free Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "genesee-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Black Violin",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_Gmlwf7-",
+      "expectedDraw": {
+        "count": 2403,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7xo4-",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Marc Maron: Yammering into the Void Tour (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Marc Maron",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xo4-"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAva0J",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Lyric Opera of Chicago",
+      "officialTitle": "Wagner: Myth & Music",
+      "place": {
+        "type": "venue",
+        "venueId": "lyric-opera-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Lyric Opera of Chicago",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAva0J",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3276,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1jZ_2xxjfKZ",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Live Conversation w/ Chevy Chase & National Lampoon Christmas Vacation",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Chevy Chase",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_2xxjfKZ"
+    },
+    {
+      "id": "2026-11-20-tm-rZ7HnEZ1Af160f",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jackson Dean",
+      "officialTitle": "US99 Presents: Jackson Dean - Magnolia Sage Tour with Jaid Joice",
+      "place": {
+        "type": "venue",
+        "venueId": "joes-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Jackson Dean",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af160f",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG18Z_GlvFWtL",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fetty Wap",
+      "officialTitle": "Fetty Wap: Nostalgia Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Fetty Wap",
+      "act": true,
+      "performerIds": [
+        "K8vZ917K8TV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_GlvFWtL",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAv9oy",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dalvin La Melodia",
+      "place": {
+        "type": "venue",
+        "venueId": "riviera-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Dalvin La Melodia",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv9oy",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70tFa",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Adult.",
+      "officialTitle": "Adult. (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "metro"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Adult.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tFa",
+      "expectedDraw": {
+        "count": 1150,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vv178Z_fGkMbV_lR",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Love in the Club - 2000's Hip Hop and R&B Party",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Love in the Club - 2000's Hip Hop and R&B Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_fGkMbV_lR",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAZYuN",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Ahee",
+      "officialTitle": "Ahee (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "ramova-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ahee",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZYuN",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-sa-loyolaramblers-com-7277",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "start": null,
+      "kind": "game",
+      "title": "Loyola Chicago vs. A-10 Quarterfinals",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-espn-northwestern-wbb-401919969",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Northwestern vs. N Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-wbb",
+        "away": "n-illinois",
+        "awayOpponent": "n-illinois"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1377,
+        "low": 1152,
+        "high": 1408,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 3 games, 2025."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-uicflames-com-21624",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "UIC vs. Ball State",
+      "place": {
+        "type": "venue",
+        "venueId": "credit-union-1-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uic-wbb",
+        "away": "Ball State",
+        "awayOpponent": "ball-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-espn-depaul-wbb-401913049",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "game",
+      "title": "DePaul vs. IU Indy",
+      "place": {
+        "type": "venue",
+        "venueId": "wintrust-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "depaul-wbb",
+        "away": "iu-indy-wbb",
+        "awayOpponent": "iu-indy"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1327,
+        "low": 1250,
+        "high": 1354,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1jZ_263TzLm",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263TzLm",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1A6Zkf3GkeiGdUH",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "special",
+      "title": "MARVIN - The Marvin Gaye Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "arie-crown-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "MARVIN - The Marvin Gaye Musical",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zkf3GkeiGdUH"
+    },
+    {
+      "id": "2026-11-21-tm-vvG1fZ_2DP8pYo",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Wynonna Judd",
+      "officialTitle": "Wynonna Judd - The Hard Truth Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-northern-indiana"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Wynonna Judd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_2DP8pYo",
+      "expectedDraw": {
+        "count": 1894,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG18Z_CNMg_I8",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "18:35",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "TRIVIUM: CROWN IN THE GRAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Ylf",
+        "K8vZ9171n_V",
+        "K8vZ917_6u7",
+        "K8vZ917_qm7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_CNMg_I8",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1A7Zk8sGkdLdbON",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Zac Brown Band",
+      "officialTitle": "Zac Brown Band: Love & Fear Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Zac Brown Band",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175zn0",
+        "K8vZ917um57"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk8sGkdLdbON",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG18Z_1StXXnz",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Dax",
+      "officialTitle": "Dax - The Anger Management Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Dax",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_1StXXnz",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1jZ_5CPEK5_",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "GEORGE LOPEZ",
+      "place": {
+        "type": "venue",
+        "venueId": "the-chicago-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "George Lopez",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_5CPEK5_"
+    },
+    {
+      "id": "2026-11-21-tm-vv1A6Zkf6GkeB7b06",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Andrea Gibson's Love Letter From The Afterlife",
+      "place": {
+        "type": "venue",
+        "venueId": "the-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Andrea Gibson",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zkf6GkeB7b06"
+    },
+    {
+      "id": "2026-11-21-tm-vvG1jZ_263WzLb",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_263WzLb",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70Ub6",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Giant Rooks",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Giant Rooks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Ub6",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAeejO",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Smithereens",
+      "officialTitle": "The Smithereens",
+      "place": {
+        "type": "venue",
+        "venueId": "park-west"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Smithereens",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeejO",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-rZ7HnEZ1Af-M_N",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "INNA",
+      "place": {
+        "type": "venue",
+        "venueId": "joes-live"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "INNA",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1Af-M_N",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1A6Zkf3GkeniNsJ",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "MARVIN - The Marvin Gaye Musical",
+      "place": {
+        "type": "venue",
+        "venueId": "arie-crown-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "MARVIN - The Marvin Gaye Musical",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6Zkf3GkeniNsJ"
+    },
+    {
+      "id": "2026-11-21-tm-vv1A7ZkfNGkd8KE_P",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Stevie Wonder",
+      "officialTitle": "Stevie Wonder Songs in The Key of Life Performances 50th Anniversary",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Stevie Wonder",
+      "act": true,
+      "performerIds": [
+        "K8vZ91715af"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkfNGkd8KE_P",
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1kvZvPeoGAG8zv4",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Wood Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "cahn-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "The Wood Brothers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZvPeoGAG8zv4",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG18Z_CEj4L_D",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Death Cab for Cutie",
+      "officialTitle": "2026 Beyond Hunger Benefit with Death Cab for Cutie",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Death Cab for Cutie",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171NGf",
+        "K8vZ917qVH7",
+        "K8vZ917rpXV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_CEj4L_D",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAvJGM",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": "21:30",
+      "kind": "show",
+      "title": "Eptic",
+      "officialTitle": "EPTIC - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "ramova-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Eptic",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvJGM",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-loyolaramblers-com-7278",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "Loyola Chicago vs. A-10 Semifinals",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7-sZV",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "Valparaiso Beacons Football vs. St. Thomas Tommies Football",
+      "place": {
+        "type": "venue",
+        "venueId": "brown-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Valparaiso University Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-sZV"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7rbpb",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "start": null,
+      "kind": "game",
+      "title": "Notre Dame Fighting Irish Football vs. SMU Mustangs Football",
+      "place": {
+        "type": "venue",
+        "venueId": "notre-dame-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Notre Dame Fighting Irish Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7rbpb",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG18Z_CEFQWER",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "10:00",
+      "kind": "show",
+      "title": "House of Blues Gospel Brunch",
+      "officialTitle": "World Famous Gospel Brunch at House of Blues (CHI)",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Religious"
+      },
+      "performer": "House of Blues Gospel Brunch",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_CEFQWER",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG18Z_2h332Lc",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Butler vs Nebraska Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "credit-union-1-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Butler vs Nebraska Men's Basketball",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_2h332Lc"
+    },
+    {
+      "id": "2026-11-22-espn-bears-401873071",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Bears vs. Saints",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "soldier-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "bears",
+        "away": "saints",
+        "awayOpponent": "saints"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 59207,
+        "low": 59178,
+        "high": 59716,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 5 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv178Z_KGkUIQ_vd",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "kind": "game",
+      "title": "D3 Windy City Shootout",
+      "place": {
+        "type": "venue",
+        "venueId": "now-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "D3 Windy City Shootout",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178Z_KGkUIQ_vd"
+    },
+    {
+      "id": "2026-11-22-tm-vvG1jZ_26KvILU",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Jersey Boys (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Jersey Boys (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_26KvILU",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAva0E",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "show",
+      "title": "Lyric Opera of Chicago",
+      "officialTitle": "Wagner: Myth & Music",
+      "place": {
+        "type": "venue",
+        "venueId": "lyric-opera-house"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Lyric Opera of Chicago",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAva0E",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 3276,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv1A7Zk4JGkdX7R1V",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "kind": "game",
+      "title": "2026 MLS Playoffs Round 1 Game 1: Chicago Fire FC v Charlotte FC",
+      "place": {
+        "type": "venue",
+        "venueId": "seatgeek-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Chicago Fire FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk4JGkdX7R1V"
+    },
+    {
+      "id": "2026-11-22-espn-bulls-401910032",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Bulls vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19667,
+        "low": 18486,
+        "high": 20708,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG18Z_2o77qjU",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Tyla",
+      "officialTitle": "TYLA - THE A*POP WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Tyla",
+      "act": true,
+      "performerIds": [
+        "K8vZ917h2v0",
+        "K8vZ917qBbV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_2o77qjU",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv1A6ZkoeGkdV_EZm",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Daniel Sloss: BITTER  (Brand New Tour!)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Daniel Sloss",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6ZkoeGkdV_EZm"
+    },
+    {
+      "id": "2026-11-22-tm-vv1kvZvPA7GA2ah-H",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZvPA7GA2ah-H",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAedr_",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Danna Paola",
+      "officialTitle": "DANNA - THE BEDROOM SESSIONS US TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Danna Paola",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAedr_",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-sa-loyolaramblers-com-7279",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "start": null,
+      "kind": "game",
+      "title": "Loyola Chicago vs. A-10 Finals",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-23-tm-vv1A7ZkfbGkdshZEq",
+      "metroId": "chicago",
+      "date": "2026-11-23",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Amorphis",
+      "officialTitle": "Amorphis & Insomnium",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amorphis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7ZkfbGkdshZEq",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-espn-bulls-401910041",
+      "metroId": "chicago",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bulls vs. Cavaliers",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bulls",
+        "away": "cavaliers",
+        "awayOpponent": "cavaliers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20067,
+        "low": 19150,
+        "high": 20512,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-espn-northwestern-wbb-401921444",
+      "metroId": "chicago",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northwestern vs. Oakland",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-wbb",
+        "away": "oakland",
+        "awayOpponent": "oakland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1478,
+        "low": 1109,
+        "high": 1728,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 12 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-Z7r9jZ1AAZ_Zb",
+      "metroId": "chicago",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jorja Smith",
+      "officialTitle": "Jorja Smith - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "riviera-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Jorja Smith",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ_Zb",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-sa-gocsucougars-com-7994",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Chicago State vs. Western Illinois University",
+      "place": {
+        "type": "venue",
+        "venueId": "jones-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "chicago-state-wbb",
+        "away": "Western Illinois University",
+        "awayOpponent": "western-illinois-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-24-tm-vvG18Z_G2hsrFm",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Underoath",
+      "officialTitle": "Underoath - Define the Great Line 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Underoath",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Y30",
+        "K8vZ917GGe7",
+        "K8vZ9175prV",
+        "K8vZ917Gd2V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_G2hsrFm",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7Ps_4",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Notre Dame Fighting Irish Hockey vs. Bowling Green Falcons Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "compton-family-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Notre Dame Men's Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ps_4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-24-sa-loyolaramblers-com-7300",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Loyola Chicago vs. DePaul",
+      "place": {
+        "type": "venue",
+        "venueId": "gentile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "loyola-chicago-wbb",
+        "away": "depaul-wbb",
+        "awayOpponent": "depaul"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-24-tm-vv178ZbwGklTPKsE",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sabaton",
+      "officialTitle": "Sabaton: Legends on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sabaton",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GNYV",
+        "K8vZ917GSuV",
+        "K8vZ917rJ6f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv178ZbwGklTPKsE",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vv17jZ_8GkwJWX_C",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Blue Man Group - A New Holiday Surprise",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Blue Man Group On Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkwJWX_C",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG18Z_52-BljX",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7",
+        "K8vZ917KHI7",
+        "K8vZ917hRfV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_52-BljX",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1jZ_CJEYeCa",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cadillac-palace-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CJEYeCa",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1jZ_CnwsNAN",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "james-m-nederlander-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CnwsNAN",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vv167Zk36GbZA8aC5C",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Black Label Society",
+      "officialTitle": "Black Label Society - Moved To Ramova",
+      "place": {
+        "type": "venue",
+        "venueId": "ramova-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Black Label Society",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv167Zk36GbZA8aC5C",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1AAvt4v",
+      "metroId": "chicago",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "show",
+      "title": "JoJo",
+      "place": {
+        "type": "venue",
+        "venueId": "park-west"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "JoJo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvt4v",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vv17jZ_8GkwEZX_p",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Blue Man Group - A New Holiday Surprise",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Blue Man Group On Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkwEZX_p",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1jZ_CJEMxCJ",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cadillac-palace-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CJEMxCJ",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vv1A7Zk44GkdjuDa0",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Turnover",
+      "officialTitle": "Turnover - Down On Earth Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Turnover",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk44GkdjuDa0",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vv17jZ_8GkwJTm_K",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Blue Man Group - A New Holiday Surprise",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Blue Man Group On Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkwJTm_K",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vv1k8Z_okKG7YgiO",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rockford IceHogs vs. Milwaukee Admirals",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Rockford IceHogs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_okKG7YgiO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1jZ_CJEVwC-",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cadillac-palace-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CJEVwC-",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1jZ_CnwSdAE",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "james-m-nederlander-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CnwSdAE",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vv1kvZvPAZGAGaHuu",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "El Tri",
+      "officialTitle": "EL TRI \"ADICTO AL ROCANROL\"",
+      "place": {
+        "type": "venue",
+        "venueId": "aragon-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "El Tri",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171a97",
+        "K8vZ917u8nf",
+        "K8vZ9174oT7",
+        "K8vZ917G4s7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvZvPAZGAGaHuu",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG18Z_52-Dlqv",
+      "metroId": "chicago",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7",
+        "K8vZ917KHI7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_52-Dlqv",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 13395,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1jZ_2M6Jgu9",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "09:30",
+      "kind": "special",
+      "title": "Teddy Bear Tea",
+      "place": {
+        "type": "venue",
+        "venueId": "rialto-square-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Food & Drink"
+      },
+      "performer": "Teddy Bear Tea",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_2M6Jgu9"
+    },
+    {
+      "id": "2026-11-27-espn-northwestern-wbb-401913050",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Northwestern vs. DePaul",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-wbb",
+        "away": "depaul-wbb",
+        "awayOpponent": "depaul"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1507,
+        "low": 1139,
+        "high": 1892,
+        "fromCrowds": true,
+        "games": 30,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 30 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv17jZ_8GkwE7X_L",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Blue Man Group - A New Holiday Surprise",
+      "place": {
+        "type": "venue",
+        "venueId": "cibc-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Blue Man Group On Tour",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_8GkwE7X_L",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1jZ_CJETxCD",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cadillac-palace-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CJETxCD",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1jZ_CnwUdAS",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "james-m-nederlander-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CnwUdAS",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7Ps_3",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Notre Dame Fighting Irish Hockey vs. Boston College Eagles Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "compton-family-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Notre Dame Men's Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ps_3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-espn-blackhawks-401892806",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Blackhawks vs. Rangers",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "united-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blackhawks",
+        "away": "ny-rangers",
+        "awayOpponent": "rangers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19625,
+        "low": 19087,
+        "high": 20196,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-northwestern-mbb-401920737",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northwestern vs. Northeastern",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "welsh-ryan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "northwestern-mbb",
+        "away": "northeastern-mbb",
+        "awayOpponent": "northeastern"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5811,
+        "low": 5576,
+        "high": 5882,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-ht-chicago-wolves-1029387",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wolves vs. Admirals",
+      "place": {
+        "type": "venue",
+        "venueId": "allstate-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "chicago-wolves",
+        "away": "admirals"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 4678,
+        "low": 4324,
+        "high": 4717,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv1A7Zk3kGkdNxqha",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Pineapple Thief",
+      "place": {
+        "type": "venue",
+        "venueId": "house-of-blues-chicago"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Pineapple Thief",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A7Zk3kGkdNxqha",
+      "expectedDraw": {
+        "count": 1300,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv1k8Z_okKG7wAiP",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rockford IceHogs vs. Texas Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "bmo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Rockford IceHogs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1k8Z_okKG7wAiP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1jZ_CJEHwCs",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "cadillac-palace-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CJEHwCs",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1jZ_CnwVNAi",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Mrs. Doubtfire (Chicago)",
+      "place": {
+        "type": "venue",
+        "venueId": "james-m-nederlander-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Mrs. Doubtfire (Chicago)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_CnwVNAi",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7Ptav",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "BoDeans",
+      "officialTitle": "BoDeans (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-vic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "BoDeans",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ptav",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG18Z_CEvUGHA",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daily Bread",
+      "officialTitle": "Daily Bread - Vanishing Point Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "salt-shed"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Daily Bread",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pFm7",
+        "K8vZ917QBtf",
+        "K8vZ917rGw0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG18Z_CEvUGHA",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7P7oO",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "A Drag Queen Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "riviera-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "A Drag Queen Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P7oO"
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AA7U0-",
+      "metroId": "chicago",
+      "date": "2026-11-27",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Tchami",
+      "officialTitle": "Tchami (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ramova-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Tchami",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7U0-",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-13-espn-bulls-401909299",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "DePaul at Northwestern (MBB) 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19579,
+        "low": 19491,
+        "high": 20233
+      }
+    },
+    {
+      "eventId": "2026-11-13-sa-depaulbluedemons-com-6867",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv17jZbyGknZJSqs",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1k8Z_okKG7lgia",
+      "date": "2026-11-13",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG18Z_u59uG9H",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1fZ_5YNUcRS",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1894
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1jZ_263RFjn",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70Ub7",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAeZad",
+      "date": "2026-11-13",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1jZ_uM2m7bz",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1966
+      }
+    },
+    {
+      "eventId": "2026-11-13-espn-northwestern-mbb-401909503",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "friction": "Heavy",
+        "why": "Hawks at Bulls 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5811,
+        "low": 5576,
+        "high": 5882
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vv1kvZv00aGACHUYR",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Hawks at Bulls 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1jZ_GRfKJpc",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Hawks at Bulls 3.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5921
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-vvG1jZ_u5ok_x7",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2403
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAvOa6",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 998
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAZ7af",
+      "date": "2026-11-13",
+      "start": "20:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1150
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAvkof",
+      "date": "2026-11-13",
+      "start": "22:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-gocsucougars-com-7870",
+      "date": "2026-11-14",
+      "start": "12:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Winnipeg Jets at Blackhawks 11 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-loyolaramblers-com-7297",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv166Zk3F-3ZA5deFu",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1jZ_263wFqG",
+      "date": "2026-11-14",
+      "start": "14:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-blackhawks-401892708",
+      "date": "2026-11-14",
+      "start": "14:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Virginia University of Lynchburg at Chicago State (FB) 11 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19303,
+        "low": 18994,
+        "high": 20488
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7OYk7",
+      "date": "2026-11-14",
+      "start": "15:30"
+    },
+    {
+      "eventId": "2026-11-14-espn-windy-city-bulls-401914548",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4312,
+        "low": 3504,
+        "high": 5132
+      }
+    },
+    {
+      "eventId": "2026-11-14-sa-depaulbluedemons-com-6868",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv166Zk3F-3ZA8deae",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG18Z_2LKEoyW",
+      "date": "2026-11-14",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv17jZbyGknZIKqU",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv1k8Z_okKG7mPi3",
+      "date": "2026-11-14",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG18Z_1k0JQAc",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Ali Siddiq · The Custom Fit Tour and Winnipeg Jets at Blackhawks 4.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1jZ_G9OqFIS",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Winnipeg Jets at Blackhawks 3.3 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A70Ubk",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv1A6Zk3dGkeOC0M3",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2403
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vv1A6Zk3vGkd3LyvO",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-vvG1jZ_263YIjX",
+      "date": "2026-11-14",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7J67S",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 998
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7PkuS",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1150
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AA74u_",
+      "date": "2026-11-14",
+      "start": "22:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1jZ_263Vzqc",
+      "date": "2026-11-15",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vv17jZ_FGkDOUMCO",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vv1A6Zk36GkdELpwt",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-espn-windy-city-bulls-401914553",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4735,
+        "low": 2209,
+        "high": 5035
+      }
+    },
+    {
+      "eventId": "2026-11-15-ht-chicago-wolves-1029322",
+      "date": "2026-11-15",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6121,
+        "low": 5482,
+        "high": 7120
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-rZ7HnEZ1AfFIaV",
+      "date": "2026-11-15",
+      "start": "15:45",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vv178Z_FGkBm7pn6",
+      "date": "2026-11-15",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG1jZ_263SIqp",
+      "date": "2026-11-15",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vv17jZbyGknZtSqB",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vv1A7ZkfzGkdlK_kn",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AAedrb",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-vvG18Z_23C64-4",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4400
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-northwestern-mbb-401920735",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4564,
+        "low": 4426,
+        "high": 5034
+      }
+    },
+    {
+      "eventId": "2026-11-16-tm-vv1A7Zkf4GkeYVoGs",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-blackhawks-401892733",
+      "date": "2026-11-17",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18855,
+        "low": 17971,
+        "high": 19502
+      }
+    },
+    {
+      "eventId": "2026-11-17-espn-depaul-mbb-401909504",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2790,
+        "low": 2734,
+        "high": 2826
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-vv178Z_oGkl_Aw9r",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-vv1A6Zk3pGkeMMPrx",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1966
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-vv1k8Z_okKG7RgiQ",
+      "date": "2026-11-17",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-17-tm-vvG1jZ_263UbqX",
+      "date": "2026-11-17",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AA7-bV",
+      "date": "2026-11-17",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-vvG18Z_2nCWJfG",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-gocsucougars-com-7991",
+      "date": "2026-11-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The Neighbourhood 12 mi away, earlier in the day.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vvG1jZ_263zzrn",
+      "date": "2026-11-18",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-depaul-wbb-401913048",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1305,
+        "low": 980,
+        "high": 2634
+      }
+    },
+    {
+      "eventId": "2026-11-18-espn-uic-mbb-401919735",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1554,
+        "low": 1154,
+        "high": 2090
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vvG18Z_5hkX5Sz",
+      "date": "2026-11-18",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-18-sa-loyolaramblers-com-7307",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vv1A7ZkoaGkdxvkbx",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Victoria Monét 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vvG1jZ_263MIrC",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-vv1k8Z_3bAG7XJoo",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The Neighbourhood 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv167ZkffedZAGuvC1",
+      "date": "2026-11-19",
+      "start": "18:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-blackhawks-401892748",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Lindenwood at UIC (WBB) 1.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18394,
+        "low": 17532,
+        "high": 19026
+      }
+    },
+    {
+      "eventId": "2026-11-19-sa-uicflames-com-21623",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Blue Jackets at Blackhawks 1.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1jZ_263BbrU",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7JFvy",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1150
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv17jZ_aGkSaDU6u",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2403
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv1A6ZkoyGkdjZ6Tk",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG1jZ_GoHfsSB",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3553
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7PwGd",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1AAZPZO",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vvG18Z_1N6xT5T",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Blue Jackets at Blackhawks 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1AAv_bZ",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG18Z_1NJ0Ag4",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Wizards at Bulls 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-20-espn-bulls-401909309",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20099,
+        "low": 20008,
+        "high": 20770
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vv1kfZ_fG7G7w-Vt",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1894
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1jZ_1Kmz6qD",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1jZ_263HFLF",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1jZ_Gmlwf7-",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2403
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7xo4-",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAva0J",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3276
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1jZ_2xxjfKZ",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-rZ7HnEZ1Af160f",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG18Z_GlvFWtL",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Wizards at Bulls 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAv9oy",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70tFa",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1150
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vv178Z_fGkMbV_lR",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAZYuN",
+      "date": "2026-11-20",
+      "start": "22:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-20-sa-loyolaramblers-com-7277",
+      "date": "2026-11-20",
+      "start": null,
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-northwestern-wbb-401919969",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1377,
+        "low": 1152,
+        "high": 1408
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-uicflames-com-21624",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Zac Brown Band and Trivium 15 mi away, earlier in the day.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-depaul-wbb-401913049",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1327,
+        "low": 1250,
+        "high": 1354
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1jZ_263TzLm",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1A6Zkf3GkeiGdUH",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1fZ_2DP8pYo",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1894
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG18Z_CNMg_I8",
+      "date": "2026-11-21",
+      "start": "18:35",
+      "read": {
+        "rating": 3.1,
+        "friction": "Heavy",
+        "why": "Death Cab for Cutie 4.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1A7Zk8sGkdLdbON",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Stevie Wonder Songs in The Key… 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG18Z_1StXXnz",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1jZ_5CPEK5_",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1A6Zkf6GkeB7b06",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1jZ_263WzLb",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70Ub6",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAeejO",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-rZ7HnEZ1Af-M_N",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1A6Zkf3GkeniNsJ",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1A7ZkfNGkd8KE_P",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Zac Brown Band 14 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1kvZvPeoGAG8zv4",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG18Z_CEj4L_D",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Heavy",
+        "why": "Trivium 4.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAvJGM",
+      "date": "2026-11-21",
+      "start": "21:30",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-loyolaramblers-com-7278",
+      "date": "2026-11-21",
+      "start": null,
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7-sZV",
+      "date": "2026-11-21",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7rbpb",
+      "date": "2026-11-21",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG18Z_CEFQWER",
+      "date": "2026-11-22",
+      "start": "10:00",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG18Z_2h332Lc",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "read": {
+        "rating": 6.8,
+        "friction": "Heavy",
+        "why": "Saints at Bears 2.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-bears-401873071",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "read": {
+        "rating": 6.8,
+        "friction": "Moderate",
+        "why": "Nuggets at Bulls 3.2 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 59207,
+        "low": 59178,
+        "high": 59716
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv178Z_KGkUIQ_vd",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "read": {
+        "rating": 6.8,
+        "friction": "Extreme",
+        "why": "Saints at Bears 34 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1jZ_26KvILU",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAva0E",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3276
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1A7Zk4JGkdX7R1V",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "read": {
+        "rating": 6.8,
+        "friction": "Heavy",
+        "why": "Saints at Bears and Nuggets at Bulls 12 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-bulls-401910032",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 6.8,
+        "friction": "Heavy",
+        "why": "Saints at Bears 3.2 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19667,
+        "low": 18486,
+        "high": 20708
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG18Z_2o77qjU",
+      "date": "2026-11-22",
+      "start": "18:30",
+      "read": {
+        "rating": 6.8,
+        "friction": "Moderate",
+        "why": "2026 MLS Playoffs Round 1 Game… and Nuggets at Bulls 16 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1A6ZkoeGkdV_EZm",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1kvZvPA7GA2ah-H",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAedr_",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-22-sa-loyolaramblers-com-7279",
+      "date": "2026-11-22",
+      "start": null,
+      "read": {
+        "rating": 6.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-vv1A7ZkfbGkdshZEq",
+      "date": "2026-11-23",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-bulls-401910041",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20067,
+        "low": 19150,
+        "high": 20512
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-northwestern-wbb-401921444",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1478,
+        "low": 1109,
+        "high": 1728
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-Z7r9jZ1AAZ_Zb",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-24-sa-gocsucougars-com-7994",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "John Summit 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG18Z_G2hsrFm",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "John Summit 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7Ps_4",
+      "date": "2026-11-24",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-24-sa-loyolaramblers-com-7300",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vv178ZbwGklTPKsE",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Moderate",
+        "why": "John Summit 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vv17jZ_8GkwJWX_C",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG18Z_52-BljX",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "friction": "Low",
+        "why": "Western Illinois University at Chicago State (WBB) 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1jZ_CJEYeCa",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1jZ_CnwsNAN",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vv167Zk36GbZA8aC5C",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1AAvt4v",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "read": {
+        "rating": 2.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vv17jZ_8GkwEZX_p",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1jZ_CJEMxCJ",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vv1A7Zk44GkdjuDa0",
+      "date": "2026-11-25",
+      "start": "18:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vv17jZ_8GkwJTm_K",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vv1k8Z_okKG7YgiO",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1jZ_CJEVwC-",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1jZ_CnwSdAE",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vv1kvZvPAZGAGaHuu",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "John Summit 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG18Z_52-Dlqv",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "El Tri · Adicto Al Rocanrol 6.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13395
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1jZ_2M6Jgu9",
+      "date": "2026-11-27",
+      "start": "09:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-northwestern-wbb-401913050",
+      "date": "2026-11-27",
+      "start": "11:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1507,
+        "low": 1139,
+        "high": 1892
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vv17jZ_8GkwE7X_L",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1jZ_CJETxCD",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1jZ_CnwUdAS",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7Ps_3",
+      "date": "2026-11-27",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-27-espn-blackhawks-401892806",
+      "date": "2026-11-27",
+      "start": "16:30",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Northeastern at Northwestern (MBB) and Daily Bread 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19625,
+        "low": 19087,
+        "high": 20196
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-northwestern-mbb-401920737",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Rangers at Blackhawks 13 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5811,
+        "low": 5576,
+        "high": 5882
+      }
+    },
+    {
+      "eventId": "2026-11-27-ht-chicago-wolves-1029387",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4678,
+        "low": 4324,
+        "high": 4717
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vv1A7Zk3kGkdNxqha",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1300
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vv1k8Z_okKG7wAiP",
+      "date": "2026-11-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1jZ_CJEHwCs",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1jZ_CnwVNAi",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7Ptav",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG18Z_CEvUGHA",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "Rangers at Blackhawks 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7P7oO",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AA7U0-",
+      "date": "2026-11-27",
+      "start": "21:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    }
+  ]
+}

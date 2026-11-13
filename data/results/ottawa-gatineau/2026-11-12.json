@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-ottawa-senators-401892698",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 4
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 3
+      },
+      "attendance": 16289,
+      "note": "OT",
+      "capturedAt": "2026-11-13T16:12:59.263Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

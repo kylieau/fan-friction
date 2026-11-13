@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-11",
+  "results": [
+    {
+      "eventId": "2026-11-11-espn-michigan-mbb-401909524",
+      "metroId": "detroit",
+      "date": "2026-11-11",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crisler-center",
+      "homeTeamId": "michigan-mbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 84
+      },
+      "away": {
+        "name": "Marquette",
+        "score": 70
+      },
+      "attendance": 11357,
+      "capturedAt": "2026-11-13T16:12:52.245Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

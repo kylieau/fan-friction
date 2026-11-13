@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-dallas-stars-401892703",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 3
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 8
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-11-13T16:12:51.871Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    },
+    {
+      "eventId": "2026-11-12-espn-tcu-wbb-401917941",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 106
+      },
+      "away": {
+        "name": "SE Louisiana",
+        "score": 47
+      },
+      "attendance": 2202,
+      "capturedAt": "2026-11-13T16:12:51.871Z",
+      "duration": {
+        "minutes": 101,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

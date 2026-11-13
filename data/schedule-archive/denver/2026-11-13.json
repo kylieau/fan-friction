@@ -1,0 +1,2967 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "metroName": "Denver",
+  "timeZone": "America/Denver",
+  "capturedOn": "2026-11-13",
+  "capturedAt": "2026-11-13T16:12:36.971Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-13",
+    "through": "2026-11-27"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 15
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 70
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 10
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1A70FFa",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "show",
+      "title": "GRYFFIN",
+      "officialTitle": "Gryffin w/ Oliver Heldens",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "GRYFFIN",
+      "act": true,
+      "performerIds": [
+        "K8vZ917fZt0",
+        "K8vZ9173JpV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70FFa",
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAeFZK",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Earlybirds Club",
+      "officialTitle": "Earlybirds Club - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Earlybirds Club",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeFZK",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AA70ab",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Basketball vs. Wyoming Cowgirls Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70ab",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-espn-du-mhockey-401904870",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Denver vs. Lindenwood",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "lindenwood",
+        "awayOpponent": "lindenwood"
+      },
+      "rank": {
+        "home": 3
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-13-tm-G5vzZ_60Maz5j",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_60Maz5j",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-13-tm-G5vzZ_GTceDIG",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Fortune Feimster: Takin' Care of Biscuits Comedy Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Fortune Feimster",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_GTceDIG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-13-tm-Z7r9jZ1AAZFGO",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Macbeth",
+      "place": {
+        "type": "venue",
+        "venueId": "ellie-caulkins-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Macbeth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFGO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1AA7NO7",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "08:00",
+      "kind": "special",
+      "title": "CHSAA State Volleyball Day 3",
+      "place": {
+        "type": "venue",
+        "venueId": "denver-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "CHSAA State Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7NO7"
+    },
+    {
+      "id": "2026-11-14-tm-G5vzZ_60X-bIG",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_60X-bIG",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-espn-du-mbb-401924921",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Denver vs. Wyoming",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "du-mbb",
+        "away": "wyoming",
+        "awayOpponent": "wyoming"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "homeOpener": true,
+      "expectedDraw": {
+        "count": 818,
+        "low": 760,
+        "high": 1137,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home opener: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5vzZ_60TiFiA",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_60TiFiA",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-espn-du-mhockey-401904871",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Lindenwood",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "lindenwood",
+        "awayOpponent": "lindenwood"
+      },
+      "rank": {
+        "home": 3
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-14-tm-G5vzZ_GTcYhnM",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Fortune Feimster: Takin' Care of Biscuits Live Special Taping",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Fortune Feimster",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_GTcYhnM",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-14-tm-G5vzZ_60yrIKe",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_60yrIKe",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7JZ0-",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Carpenters Songbook - A Live Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Carpenters Songbook - A Live Celebration",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JZ0-",
+      "expectedDraw": {
+        "count": 2884,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7Ovqv",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "19:15",
+      "kind": "show",
+      "title": "MIKE.",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "MIKE.",
+      "act": true,
+      "performerIds": [
+        "K8vZ917CWUf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ovqv",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7-yP7",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "show",
+      "title": "NieR: Orchestra Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "NieR: Orchestra Concert",
+      "act": true,
+      "performerIds": [
+        "K8vZ917bxlf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-yP7",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7P8uZ",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "kind": "special",
+      "title": "MPH (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "MPH",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P8uZ"
+    },
+    {
+      "id": "2026-11-14-tm-Z7r9jZ1A7xaad",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "kind": "special",
+      "title": "Smoakland (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Smoakland",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xaad"
+    },
+    {
+      "id": "2026-11-15-tm-G5vzZ_6PZrzRL",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "10:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6PZrzRL",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1AAZFG-",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Macbeth",
+      "place": {
+        "type": "venue",
+        "venueId": "ellie-caulkins-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Macbeth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFG-",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5vzZ_6Pv7FsQ",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Find Your Hero",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Find Your Hero",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6Pv7FsQ",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7O6_O",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "15:15",
+      "kind": "show",
+      "title": "MIKE.",
+      "place": {
+        "type": "venue",
+        "venueId": "red-rocks-amphitheatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "MIKE.",
+      "act": true,
+      "performerIds": [
+        "K8vZ917CWUf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7O6_O",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 9525,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7-Ouv",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Living Tombstone",
+      "officialTitle": "The Living Tombstone - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "The Living Tombstone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Ouv"
+    },
+    {
+      "id": "2026-11-15-tm-G5vzZ_1BwrQu_",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Arcángel",
+      "officialTitle": "Arcángel - La 8va Maravilla World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Arcángel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1BwrQu_",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-G5vzZ_8I5_G1r",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pedro Fernández",
+      "officialTitle": "Pedro Fernández - Ave Fénix Two'r",
+      "place": {
+        "type": "venue",
+        "venueId": "bellco-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Pedro Fernández",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171pC0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_8I5_G1r",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-15-tm-Z7r9jZ1A7x9kv",
+      "metroId": "denver",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Black Angels",
+      "officialTitle": "The Black Angels (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "The Black Angels",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9kv",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-du-wbb-401923328",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Denver vs. Regis U",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "du-wbb",
+        "away": "regis-u",
+        "awayOpponent": "regis-u"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 371,
+        "low": 353,
+        "high": 392,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-nuggets-401910001",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Suns",
+      "broadcast": "Arizona's Family 3TV",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "suns",
+        "awayOpponent": "suns"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19716,
+        "low": 19615,
+        "high": 19875,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-16-espn-du-mbb-401926228",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Denver vs. UC Col Springs",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "du-mbb",
+        "away": "uc-col-springs",
+        "awayOpponent": "uc-col-springs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 673,
+        "low": 549,
+        "high": 1058,
+        "fromCrowds": true,
+        "games": 23,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 23 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1A7PPP3",
+      "metroId": "denver",
+      "date": "2026-11-17",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Volleyball vs. Texas State San Marcos Bobcats Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Colorado State University Rams Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PPP3"
+    },
+    {
+      "id": "2026-11-17-tm-Z7r9jZ1AAZp76",
+      "metroId": "denver",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Dead Poet Society",
+      "officialTitle": "Dead Poet Society w/ Honey Revenge",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Dead Poet Society",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZp76",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AA7xke",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Air Force Academy Falcons Womens Basketball vs. Southern Utah Thunderbirds Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "clune-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Air Force Academy Falcons Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7xke"
+    },
+    {
+      "id": "2026-11-18-espn-nuggets-401910015",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Nuggets vs. Celtics",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "celtics",
+        "awayOpponent": "celtics"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19716,
+        "low": 19615,
+        "high": 19875,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-G5vzZ_k4yJfD0",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sabaton",
+      "officialTitle": "Sabaton: Legends on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "blue-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sabaton",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GNYV",
+        "K8vZ917GSuV",
+        "K8vZ917rJ6f"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_k4yJfD0",
+      "expectedDraw": {
+        "count": 6800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AA7AGo",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Mens Basketball vs. North Dakota State Bison Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7AGo"
+    },
+    {
+      "id": "2026-11-18-tm-G5vzZ_aBwilEA",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Scott Bradlee's Postmodern Jukebox",
+      "officialTitle": "Scott Bradlee's Postmodern Jukebox - The Future Is Vintage World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Scott Bradlee's Postmodern Jukebox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_aBwilEA",
+      "expectedDraw": {
+        "count": 1870,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-18-tm-Z7r9jZ1AAeaog",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ivy Queen",
+      "officialTitle": "Ivy Queen - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ivy Queen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeaog",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-sa-denverpioneers-com-16092",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. Seattle",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-espn-avalanche-401892751",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Avalanche vs. Ducks",
+      "broadcast": "KCOP",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "ducks",
+        "awayOpponent": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18080,
+        "low": 18044,
+        "high": 18100,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-G5vzZ_8Q8SEHp",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "special",
+      "title": "A Twilight Conversation with Ashley Greene & Kellan Lutz",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Ashley Greene",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_8Q8SEHp"
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7P-1a",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Bonobo",
+      "officialTitle": "Bonobo (16+)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Bonobo",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P-1a"
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1A7Psf0",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Russian Circles",
+      "officialTitle": "Russian Circles (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Russian Circles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Psf0",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-Z7r9jZ1AAvVpb",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Just Between Us Tour - Ages 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Chicks in the Office Podcast",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvVpb"
+    },
+    {
+      "id": "2026-11-20-tm-G5vzZ_2QDTig-",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Tyla",
+      "officialTitle": "TYLA - THE A*POP WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Tyla",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_2QDTig-",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AA70a_",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Basketball vs. Harvard Crimson Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70a_",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-espn-du-mhockey-401904679",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Denver vs. St Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "st-thomas-hockey",
+        "awayOpponent": "st-thomas"
+      },
+      "rank": {
+        "home": 3
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70Aqp",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "AVELLO (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "AVELLO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Aqp"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAvA8F",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Havok",
+      "officialTitle": "Havok (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Havok",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvA8F",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-G5vzZ_3CisBJ_",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Warren Miller's \"Days Off\" - Ft. Katie Burrell Live",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Documentary"
+      },
+      "performer": "Warren Miller's Days Off",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_3CisBJ_",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-espn-nuggets-401909312",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Nuggets vs. Rockets",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "rockets",
+        "awayOpponent": "rockets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19863,
+        "low": 19670,
+        "high": 19876,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7PE4I",
+      "metroId": "denver",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Level Up",
+      "officialTitle": "LEVEL UP (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Level Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PE4I"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7PY1a",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show (Recommended for Ages 2 and Over. A ticket is required for each patron in attendance)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PY1a",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-sa-denverpioneers-com-16093",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Denver vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70tPo",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show (Recommended for Ages 2 and Over. A ticket is required for each patron in attendance)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tPo",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5vzZ_o66YlJp",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_o66YlJp",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7PY18",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show (Recommended for Ages 2 and Over. A ticket is required for each patron in attendance)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PY18",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5vzZ_G3prJzF",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Underoath",
+      "officialTitle": "Underoath - Define the Great Line 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Underoath",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_G3prJzF",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-du-mhockey-401904680",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. St Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "magness-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "du-mhockey",
+        "away": "st-thomas-hockey",
+        "awayOpponent": "st-thomas"
+      },
+      "rank": {
+        "home": 3
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7--ke",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Foy Vance",
+      "officialTitle": "Foy Vance (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Foy Vance",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7--ke",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5vzZ_3Cc3BtS",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Warren Miller's \"Days Off\"",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Documentary"
+      },
+      "performer": "Warren Miller's Days Off",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_3Cc3BtS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5vzZ_o66Jl0U",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_o66Jl0U",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAZFG0",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Penn And Teller",
+      "place": {
+        "type": "venue",
+        "venueId": "ellie-caulkins-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Penn & Teller",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFG0"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAZkA-",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "TVBOO",
+      "officialTitle": "TVBOO (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "TVBOO",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZkA-"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAv4Fd",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Westend",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Westend",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv4Fd",
+      "expectedDraw": {
+        "count": 1600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70tP3",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show (Recommended for Ages 2 and Over. A ticket is required for each patron in attendance)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70tP3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AA70aO",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Colorado State University Rams Womens Basketball vs. Weber State Wildcats Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "moby-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Colorado State Rams Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA70aO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-espn-broncos-401873075",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "14:25",
+      "kind": "game",
+      "title": "Broncos vs. Raiders",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "empower-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "broncos",
+        "away": "raiders",
+        "awayOpponent": "raiders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 76324,
+        "low": 76096,
+        "high": 76542,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A7Ptx3",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show (Recommended for Ages 2 and Over. A ticket is required for each patron in attendance)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ptx3",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5vzZ_6GZ5SNl",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Outlander in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-denver"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Drama"
+      },
+      "performer": "Outlander in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_6GZ5SNl"
+    },
+    {
+      "id": "2026-11-22-tm-G5vzZ_1Kxjfbe",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_1Kxjfbe",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-espn-du-wbb-401923329",
+      "metroId": "denver",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Denver vs. N Colorado",
+      "place": {
+        "type": "venue",
+        "venueId": "hamilton-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "du-wbb",
+        "away": "n-colorado",
+        "awayOpponent": "n-colorado"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 371,
+        "low": 353,
+        "high": 392,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-espn-nuggets-401909316",
+      "metroId": "denver",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Nuggets vs. Mavericks",
+      "broadcast": "NBCSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nuggets",
+        "away": "mavericks",
+        "awayOpponent": "mavericks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19637,
+        "low": 19536,
+        "high": 19796,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5vzZ_33Wiek4",
+      "metroId": "denver",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Last Waltz Revisited",
+      "officialTitle": "22nd Annual Last Waltz Revisited - feat. Polytoxic",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-auditorium-denver"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Last Waltz Revisited",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vzZ_33Wiek4",
+      "expectedDraw": {
+        "count": 3700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-espn-avalanche-401892792",
+      "metroId": "denver",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Avalanche vs. Canadiens",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "ball-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "avalanche",
+        "away": "canadiens",
+        "awayOpponent": "canadiens"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18080,
+        "low": 18044,
+        "high": 18100,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7Ps-g",
+      "metroId": "denver",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "special",
+      "title": "MADVKTM (16 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "ogden-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "MADVKTM",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Ps-g"
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAvKGd",
+      "metroId": "denver",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Josh Baker - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Josh Baker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvKGd"
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A70t_V",
+      "metroId": "denver",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Waitress (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "buell-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Waitress (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t_V",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAvO40",
+      "metroId": "denver",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Insomnium",
+      "officialTitle": "Insomnium & Amorphis - Ages 16+",
+      "place": {
+        "type": "venue",
+        "venueId": "gothic-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Insomnium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvO40",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAZyOs",
+      "metroId": "denver",
+      "date": "2026-11-27",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Eric Prydz",
+      "officialTitle": "Eric Prydz (16+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "mission-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Eric Prydz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZyOs"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1A70FFa",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Moderate",
+        "why": "Disney On Ice · Find Your Hero 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAeFZK",
+      "date": "2026-11-13",
+      "start": "18:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AA70ab",
+      "date": "2026-11-13",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-13-espn-du-mhockey-401904870",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Moderate",
+        "why": "Disney On Ice · Find Your Hero 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5vzZ_60Maz5j",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "friction": "Low",
+        "why": "Gryffin w/ Oliver Heldens 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-G5vzZ_GTceDIG",
+      "date": "2026-11-13",
+      "start": "19:00",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-13-tm-Z7r9jZ1AAZFGO",
+      "date": "2026-11-13",
+      "start": "19:30",
+      "read": {
+        "rating": 7.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1AA7NO7",
+      "date": "2026-11-14",
+      "start": "08:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5vzZ_60X-bIG",
+      "date": "2026-11-14",
+      "start": "11:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-du-mbb-401924921",
+      "date": "2026-11-14",
+      "start": "13:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 818,
+        "low": 760,
+        "high": 1137
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5vzZ_60TiFiA",
+      "date": "2026-11-14",
+      "start": "15:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "MIKE. 12 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-espn-du-mhockey-401904871",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Heavy",
+        "why": "Disney On Ice · Find Your Hero and Disney On Ice · Find Your Hero 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5vzZ_GTcYhnM",
+      "date": "2026-11-14",
+      "start": "18:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-G5vzZ_60yrIKe",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "MIKE. 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7JZ0-",
+      "date": "2026-11-14",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2884
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7Ovqv",
+      "date": "2026-11-14",
+      "start": "19:15",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Disney On Ice · Find Your Hero and Disney On Ice · Find Your Hero 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7-yP7",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Heavy",
+        "why": "Disney On Ice · Find Your Hero and MIKE. 0.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7P8uZ",
+      "date": "2026-11-14",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-14-tm-Z7r9jZ1A7xaad",
+      "date": "2026-11-14",
+      "start": "21:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5vzZ_6PZrzRL",
+      "date": "2026-11-15",
+      "start": "10:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "MIKE. 12 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1AAZFG-",
+      "date": "2026-11-15",
+      "start": "14:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5vzZ_6Pv7FsQ",
+      "date": "2026-11-15",
+      "start": "14:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "MIKE. 12 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7O6_O",
+      "date": "2026-11-15",
+      "start": "15:15",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "Disney On Ice · Find Your Hero and Disney On Ice · Find Your Hero 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9525
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7-Ouv",
+      "date": "2026-11-15",
+      "start": "19:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5vzZ_1BwrQu_",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-G5vzZ_8I5_G1r",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Moderate",
+        "why": "MIKE. and Disney On Ice · Find Your Hero 12 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-15-tm-Z7r9jZ1A7x9kv",
+      "date": "2026-11-15",
+      "start": "20:00",
+      "read": {
+        "rating": 3.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-du-wbb-401923328",
+      "date": "2026-11-16",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 371,
+        "low": 353,
+        "high": 392
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-nuggets-401910001",
+      "date": "2026-11-16",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19716,
+        "low": 19615,
+        "high": 19875
+      }
+    },
+    {
+      "eventId": "2026-11-16-espn-du-mbb-401926228",
+      "date": "2026-11-16",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 673,
+        "low": 549,
+        "high": 1058
+      }
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1A7PPP3",
+      "date": "2026-11-17",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-17-tm-Z7r9jZ1AAZp76",
+      "date": "2026-11-17",
+      "start": "20:00",
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AA7xke",
+      "date": "2026-11-18",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-18-espn-nuggets-401910015",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Sabaton · Legends on Tour 48 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19716,
+        "low": 19615,
+        "high": 19875
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-G5vzZ_k4yJfD0",
+      "date": "2026-11-18",
+      "start": "19:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Low",
+        "why": "Celtics at Nuggets 48 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6800
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AA7AGo",
+      "date": "2026-11-18",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-18-tm-G5vzZ_aBwilEA",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1870
+      }
+    },
+    {
+      "eventId": "2026-11-18-tm-Z7r9jZ1AAeaog",
+      "date": "2026-11-18",
+      "start": "20:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-19-sa-denverpioneers-com-16092",
+      "date": "2026-11-19",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-espn-avalanche-401892751",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18080,
+        "low": 18044,
+        "high": 18100
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-G5vzZ_8Q8SEHp",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7P-1a",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1A7Psf0",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-Z7r9jZ1AAvVpb",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-G5vzZ_2QDTig-",
+      "date": "2026-11-20",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AA70a_",
+      "date": "2026-11-20",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-20-espn-du-mhockey-401904679",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Rockets at Nuggets 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70Aqp",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAvA8F",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-G5vzZ_3CisBJ_",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-espn-nuggets-401909312",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "St Thomas at Denver (MHKY) 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19863,
+        "low": 19670,
+        "high": 19876
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7PE4I",
+      "date": "2026-11-20",
+      "start": "21:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7PY1a",
+      "date": "2026-11-21",
+      "start": "10:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-denverpioneers-com-16093",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70tPo",
+      "date": "2026-11-21",
+      "start": "13:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5vzZ_o66YlJp",
+      "date": "2026-11-21",
+      "start": "15:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "St Thomas at Denver (MHKY) 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7PY18",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5vzZ_G3prJzF",
+      "date": "2026-11-21",
+      "start": "17:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-du-mhockey-401904680",
+      "date": "2026-11-21",
+      "start": "18:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Moderate",
+        "why": "Trans-Siberian Orchestra and Trans-Siberian Orchestra 5.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7--ke",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5vzZ_3Cc3BtS",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5vzZ_o66Jl0U",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "St Thomas at Denver (MHKY) 5.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAZFG0",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAZkA-",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAv4Fd",
+      "date": "2026-11-21",
+      "start": "21:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1600
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70tP3",
+      "date": "2026-11-22",
+      "start": "11:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AA70aO",
+      "date": "2026-11-22",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-22-espn-broncos-401873075",
+      "date": "2026-11-22",
+      "start": "14:25",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 76324,
+        "low": 76096,
+        "high": 76542
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A7Ptx3",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5vzZ_6GZ5SNl",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5vzZ_1Kxjfbe",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Raiders at Broncos 0.7 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-du-wbb-401923329",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 371,
+        "low": 353,
+        "high": 392
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-nuggets-401909316",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19637,
+        "low": 19536,
+        "high": 19796
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5vzZ_33Wiek4",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3700
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-avalanche-401892792",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18080,
+        "low": 18044,
+        "high": 18100
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7Ps-g",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAvKGd",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A70t_V",
+      "date": "2026-11-27",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAvO40",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAZyOs",
+      "date": "2026-11-27",
+      "start": "21:00"
+    }
+  ]
+}

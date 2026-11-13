@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-devils-401892700",
+      "metroId": "new-york",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "devils",
+      "home": {
+        "name": "Devils",
+        "score": 5
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 2
+      },
+      "attendance": 15035,
+      "capturedAt": "2026-11-13T16:12:50.454Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-12-espn-ny-giants-401873052",
+      "metroId": "new-york",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-giants",
+      "home": {
+        "name": "Giants",
+        "score": 21
+      },
+      "away": {
+        "name": "Commanders",
+        "score": 24
+      },
+      "attendance": 80450,
+      "capturedAt": "2026-11-13T16:12:50.454Z",
+      "duration": {
+        "minutes": 184,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

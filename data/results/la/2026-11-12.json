@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-kings-401892705",
+      "metroId": "la",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "kings",
+      "home": {
+        "name": "Kings",
+        "score": 2
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 5
+      },
+      "attendance": 15622,
+      "capturedAt": "2026-11-13T16:12:49.074Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-12-espn-ucla-wbb-401913056",
+      "metroId": "la",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wbb",
+      "home": {
+        "name": "UCLA",
+        "score": 76
+      },
+      "away": {
+        "name": "Arizona",
+        "score": 44
+      },
+      "attendance": 2578,
+      "capturedAt": "2026-11-13T16:12:49.074Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "22:34"
+    },
+    {
+      "eventId": "2026-11-12-espn-ucla-wvb-401886088",
+      "metroId": "la",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wvb",
+      "home": {
+        "name": "UCLA",
+        "score": 3
+      },
+      "away": {
+        "name": "Washington",
+        "score": 1
+      },
+      "capturedAt": "2026-11-13T16:12:49.074Z"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-uw-wbb-401921495",
+      "metroId": "seattle",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-wbb",
+      "home": {
+        "name": "Washington",
+        "score": 85
+      },
+      "away": {
+        "name": "Bakersfield",
+        "score": 51
+      },
+      "capturedAt": "2026-11-13T16:12:49.996Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    }
+  ]
+}

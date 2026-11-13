@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-maple-leafs-401892697",
+      "metroId": "toronto",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 5
+      },
+      "attendance": 18397,
+      "capturedAt": "2026-11-13T16:12:56.555Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-12-espn-raptors-905-401914533",
+      "metroId": "toronto",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mississauga-sports-centre",
+      "homeTeamId": "raptors-905",
+      "home": {
+        "name": "Raptors 905",
+        "score": 106
+      },
+      "away": {
+        "name": "Swarm",
+        "score": 134
+      },
+      "attendance": 1700,
+      "capturedAt": "2026-11-13T16:12:56.555Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-lipscomb-wbb-401916070",
+      "metroId": "nashville",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-wbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 87
+      },
+      "away": {
+        "name": "Miss Valley St",
+        "score": 55
+      },
+      "attendance": 734,
+      "capturedAt": "2026-11-13T16:12:54.327Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-uc-davis-wbb-401920404",
+      "metroId": "sacramento",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-wbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 86
+      },
+      "away": {
+        "name": "Fullerton",
+        "score": 52
+      },
+      "attendance": 5281,
+      "capturedAt": "2026-11-13T16:12:55.162Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "14:07"
+    }
+  ]
+}

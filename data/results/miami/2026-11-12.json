@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-panthers-401892699",
+      "metroId": "miami",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 5
+      },
+      "away": {
+        "name": "Red Wings",
+        "score": 4
+      },
+      "attendance": 19151,
+      "capturedAt": "2026-11-13T16:12:53.702Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:38"
+    }
+  ]
+}

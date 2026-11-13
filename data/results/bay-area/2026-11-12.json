@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-cal-wbb-401906065",
+      "metroId": "bay-area",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-wbb",
+      "home": {
+        "name": "California",
+        "score": 78
+      },
+      "away": {
+        "name": "Charleston",
+        "score": 64
+      },
+      "attendance": 4915,
+      "capturedAt": "2026-11-13T16:12:51.204Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-12-espn-sjsu-mbb-401911471",
+      "metroId": "bay-area",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-mbb",
+      "home": {
+        "name": "San José St",
+        "score": 75
+      },
+      "away": {
+        "name": "UC Riverside",
+        "score": 80
+      },
+      "attendance": 2871,
+      "capturedAt": "2026-11-13T16:12:51.204Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "22:05"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-12",
+  "results": [
+    {
+      "eventId": "2026-11-12-espn-uwm-wbb-401918807",
+      "metroId": "milwaukee",
+      "date": "2026-11-12",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "klotsche-center",
+      "homeTeamId": "uwm-wbb",
+      "home": {
+        "name": "Milwaukee",
+        "score": 77
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 49
+      },
+      "attendance": 373,
+      "capturedAt": "2026-11-13T16:12:52.625Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}
