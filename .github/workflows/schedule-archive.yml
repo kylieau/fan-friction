@@ -9,6 +9,10 @@
 # Weather, the schedule and results are separate steps, each carrying on past a bad
 # feed (Oct 10, 2026: one Open-Meteo text error cost the whole night). Whatever was
 # saved is committed; the job then turns red if any step failed, so it still shows.
+# One ESPN team answering a server error after two retries no longer fails its city
+# (Kylie, Nov 13, 2026): the last saved snapshot's rows stand in for that team, the
+# source line in the file says so, and the step's log names the team. See
+# docs/reference/schedule-archive.md.
 # The job commits straight to main so the night is saved without waiting on a review.
 # A forecast list the app uses will build the site. A listing-only commit does not.
 

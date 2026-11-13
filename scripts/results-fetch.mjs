@@ -30,7 +30,10 @@ try {
   const failed = [];
   for (const RESULTS_METRO_ID of metroIds) {
   try {
-  const { from, through, rows } = await collectResults(RESULTS_METRO_ID);
+  const { from, through, rows, failed: teamsFailed } = await collectResults(RESULTS_METRO_ID);
+  // One ESPN team's schedule failing after its retries (Nov 13, 2026) costs only its finals tonight; the window
+  // looks three days back, so the next night catches them, and the files below keep every row already saved.
+  for (const f of teamsFailed) console.error(`${RESULTS_METRO_ID}: results for ${f.teamId} wait for the next night (${f.reason}; three tries). The rest saved.`);
   const dir = path.join(root, 'data', 'results', RESULTS_METRO_ID);
   await mkdir(dir, { recursive: true });
 

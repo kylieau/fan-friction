@@ -4,7 +4,7 @@
 
 import { METROS } from '../../config/metros';
 import type { GameResult, LocalDate } from '../types';
-import { loadEspnFinals } from './espnSource';
+import { loadEspnFinalsTolerant, type FeedFailure } from './espnSource';
 import { loadHockeytechFinals } from './hockeytechSource';
 import { loadMlbFinals } from './mlbSource';
 
@@ -17,13 +17,17 @@ function addCalendarDays(date: LocalDate, days: number): LocalDate {
   return new Date(Date.UTC(y, m - 1, d + days)).toISOString().slice(0, 10);
 }
 
-/** Finished home games in the window, from every feed. Throws when a feed can't be read, so nothing partial is saved. */
-export async function collectResults(metroId: string = RESULTS_METRO_ID, now = new Date()): Promise<{ from: LocalDate; through: LocalDate; rows: GameResult[] }> {
+/**
+ * Finished home games in the window, from every feed. Throws when a feed can't be read, so nothing partial is saved;
+ * except that one ESPN team whose schedule failed after its retries is listed in `failed` and its finals wait for the
+ * next night (Nov 13, 2026), since the saved files keep every row and the window looks three days back.
+ */
+export async function collectResults(metroId: string = RESULTS_METRO_ID, now = new Date()): Promise<{ from: LocalDate; through: LocalDate; rows: GameResult[]; failed: FeedFailure[] }> {
   const metro = METROS[metroId];
   if (!metro) throw new Error(`Unknown metro ${metroId}.`);
   const through = now.toLocaleDateString('en-CA', { timeZone: metro.timeZone });
   const from = addCalendarDays(through, -RESULTS_LOOKBACK_DAYS);
-  const [mlb, espn, ht] = await Promise.all([loadMlbFinals(metro.id, from, through), loadEspnFinals(metro.id, from, through), loadHockeytechFinals(metro.id, from, through)]);
-  const rows = [...mlb, ...espn, ...ht].sort((a, b) => (a.date + a.eventId).localeCompare(b.date + b.eventId));
-  return { from, through, rows };
+  const [mlb, espn, ht] = await Promise.all([loadMlbFinals(metro.id, from, through), loadEspnFinalsTolerant(metro.id, from, through), loadHockeytechFinals(metro.id, from, through)]);
+  const rows = [...mlb, ...espn.rows, ...ht].sort((a, b) => (a.date + a.eventId).localeCompare(b.date + b.eventId));
+  return { from, through, rows, failed: espn.failed };
 }

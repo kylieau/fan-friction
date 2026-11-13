@@ -61,7 +61,7 @@ let exitCode = 0;
 try {
   const { METROS } = await server.ssrLoadModule('/src/config/metros.ts');
   const { loadMlbSchedule } = await server.ssrLoadModule('/src/data/sources/mlbSource.ts');
-  const { loadEspnSchedule } = await server.ssrLoadModule('/src/data/sources/espnSource.ts');
+  const { loadEspnScheduleTolerant } = await server.ssrLoadModule('/src/data/sources/espnSource.ts');
   const { loadHockeytechSchedule } = await server.ssrLoadModule('/src/data/sources/hockeytechSource.ts');
   const { seedEvents } = await server.ssrLoadModule('/src/data/sources/seedSource.ts');
   const { loadTicketmasterEvents } = await server.ssrLoadModule('/src/data/sources/ticketmasterSource.ts');
@@ -106,12 +106,15 @@ try {
   // 1. The catalog: every home game the feeds list from a week back, plus the hand-seeded nights.
   // A feed that fails is carried on without, and its rows already in the catalog are left as they were: the stale-row
   // cleanup below skips a failed feed, since an empty read is not a feed saying the games are gone (gap review G7,
-  // Oct 19, 2026: a HockeyTech outage would have cleared the past week's hockey games). MLB and ESPN throw and stop
-  // the city's pass, so nothing of theirs is written or deleted that night.
+  // Oct 19, 2026: a HockeyTech outage would have cleared the past week's hockey games). MLB throws and stops the
+  // city's pass, so nothing of its is written or deleted that night. ESPN, since Nov 13, 2026: one team's schedule
+  // answering a server error after its retries writes the other teams' games and marks the feed failed, so tonight's
+  // stale delete spares every ESPN row (the failed team's rows keep their old stamp and stay; the other ESPN teams'
+  // stale rows, if any, wait a night). Only every team failing stops the city's pass.
   const failedFeeds = new Set();
-  const [mlb, espn, ht, seed, tm, sa] = await Promise.all([
+  const [mlb, espnRead, ht, seed, tm, sa] = await Promise.all([
     loadMlbSchedule(metroId, undefined, floorLocal),
-    loadEspnSchedule(metroId, floorLocal),
+    loadEspnScheduleTolerant(metroId, floorLocal),
     loadHockeytechSchedule(metroId, floorLocal).catch((error) => {
       failedFeeds.add('hockeytech');
       console.log(`${metroId}: HockeyTech failed (${error.message}); kept the rest, its rows untouched.`);
@@ -126,6 +129,11 @@ try {
       return [];
     }),
   ]);
+  const espn = espnRead.events;
+  if (espnRead.failed.length > 0) {
+    failedFeeds.add('espn');
+    for (const f of espnRead.failed) console.log(`${metroId}: ESPN schedule for ${f.teamId} failed (${f.reason}; three tries); kept the rest, every ESPN row untouched tonight.`);
+  }
   if (sa.length) console.log(`${metroId}: school calendars ${sa.length} games at rooms on file.`);
   let jbAll = [];
   if (jbKey && jbQuota && JAMBASE_METROS.includes(metroId)) {

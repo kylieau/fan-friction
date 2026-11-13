@@ -6,7 +6,7 @@ import { METROS } from '../config/metros';
 import type { CrowdEvent, LocalDate } from './types';
 import { archivedReads, type ArchivedEventRead } from './forecastCapture';
 import { loadDrawTables, withExpectedDraws } from './expectedDraw';
-import { loadEspnSchedule } from './sources/espnSource';
+import { loadEspnScheduleTolerant, type FeedFailure } from './sources/espnSource';
 import { loadHockeytechSchedule } from './sources/hockeytechSource';
 import { dropGamesCoveredByFeeds } from './sources/types';
 import { loadMlbSchedule } from './sources/mlbSource';
@@ -38,6 +38,13 @@ export interface ScheduleSnapshotSource {
   id: string;
   name: string;
   inWindow: number;
+  /**
+   * Set when part of this source stood in from an earlier snapshot (Kylie, Nov 13, 2026): a team whose schedule the
+   * feed would not give after its retries keeps the rows the last saved file had for it, and the city still saves.
+   * `from` is that file's capture date; `teams` the team ids carried; `reasons` the feed's answers. Those rows are up
+   * to that many days old, and a game on the window's last day is not in them (the earlier window ended sooner).
+   */
+  fallback?: { from: LocalDate; teams: string[]; reasons: string[] };
 }
 
 export interface ScheduleSnapshot {
@@ -87,7 +94,7 @@ function byListing(a: CrowdEvent, b: CrowdEvent): number {
   return (a.date + start(a) + a.sourceId + a.id).localeCompare(b.date + start(b) + b.sourceId + b.id);
 }
 
-async function readSource(name: string, load: () => Promise<CrowdEvent[]>): Promise<CrowdEvent[]> {
+async function readSource<T = CrowdEvent[]>(name: string, load: () => Promise<T>): Promise<T> {
   try {
     return await load();
   } catch (err) {
@@ -103,6 +110,28 @@ export interface ArchiveExtras {
    * job had no key, and then the source is not listed. Ranked last: a feed's copy of the same game or show wins.
    */
   fanEvents?: CrowdEvent[];
+  /**
+   * The latest earlier snapshot of this city, read by the script from disk, for a team whose feed fails tonight:
+   * its rows from there stand in (the `fallback` on the source line says so). Without it a failed team fails the
+   * city, as before Nov 13, 2026 (a city's first night has nothing to fall back on).
+   */
+  previous?: { capturedOn: LocalDate; events: CrowdEvent[] };
+}
+
+/**
+ * The ESPN listing with each failed team's rows taken from the earlier snapshot. Throws, as the plain read does, when
+ * every team failed (nothing is fresh) or a team failed and there is no earlier snapshot to stand in.
+ */
+async function espnWithFallback(metroId: string, previous: ArchiveExtras['previous']): Promise<{ events: CrowdEvent[]; failed: FeedFailure[] }> {
+  const read = await loadEspnScheduleTolerant(metroId);
+  if (read.failed.length === 0) return read;
+  if (!previous) throw new Error(`${read.failed.map((f) => f.reason).join('; ')}; no earlier snapshot to stand in`);
+  const failedTeams = new Set(read.failed.map((f) => f.teamId));
+  const fresh = new Set(read.events.map((e) => e.id));
+  // Every ESPN row is a home game, so the team is `teams.home`. A row the fresh read already has (another team's
+  // listing of the same game) is not doubled.
+  const carried = previous.events.filter((e) => e.sourceId === 'espn' && e.teams && failedTeams.has(e.teams.home) && !fresh.has(e.id));
+  return { events: [...read.events, ...carried].sort(byListing), failed: read.failed };
 }
 
 /** Listings for one city's window: live home games, plus seeded events already in the repo. */
@@ -119,7 +148,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   const jbKey = jambaseKey();
   const [mlb, espn, ht, seed, tm, sa, jb] = await Promise.all([
     readSource('MLB schedule', () => loadMlbSchedule(metroId, through)),
-    readSource('ESPN schedules', () => loadEspnSchedule(metroId)),
+    readSource('ESPN schedules', () => espnWithFallback(metroId, extras.previous)),
     readSource('HockeyTech schedules', () => loadHockeytechSchedule(metroId)),
     readSource('seeded catalog', () => seedCatalog(metroId)),
     key ? readSource('Ticketmaster listings', async () => (await loadTicketmasterEvents(metroId, key, now)).events) : Promise.resolve([] as CrowdEvent[]),
@@ -128,7 +157,11 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
   ]);
 
   const mlbWindow = inWindow(mlb, capturedOn, through);
-  const espnWindow = inWindow(espn, capturedOn, through);
+  const espnWindow = inWindow(espn.events, capturedOn, through);
+  const espnFallback =
+    espn.failed.length > 0 && extras.previous
+      ? { from: extras.previous.capturedOn, teams: espn.failed.map((f) => f.teamId), reasons: espn.failed.map((f) => f.reason) }
+      : undefined;
   const htWindow = inWindow(ht, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);
   const tmWindow = inWindow(tm, capturedOn, through);
@@ -154,7 +187,7 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
     note: NOTE,
     sources: [
       { id: 'mlb', name: 'MLB schedule', inWindow: mlbWindow.length },
-      { id: 'espn', name: 'ESPN schedules', inWindow: espnWindow.length },
+      { id: 'espn', name: 'ESPN schedules', inWindow: espnWindow.length, ...(espnFallback ? { fallback: espnFallback } : {}) },
       { id: 'hockeytech', name: 'HockeyTech schedules', inWindow: htWindow.length },
       { id: 'seed', name: seedEvents.name, inWindow: seedWindow.length },
       ...(key ? [{ id: 'ticketmaster', name: 'Ticketmaster listings', inWindow: tmWindow.length }] : []),

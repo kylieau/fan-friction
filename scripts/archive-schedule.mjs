@@ -1,6 +1,8 @@
-// Writes one Los Angeles schedule snapshot for today.
+// Writes each covered city's schedule snapshot for today.
 // Listings come from the same MLB, ESPN, and seed sources the app already uses.
 // A feed that cannot be read skips that city, so a blank file is never saved; the other cities still save.
+// One ESPN team whose schedule answers a server error after its retries keeps the rows the last saved snapshot had
+// for it, and the city still saves, with the source line naming the stand-in (Kylie, Nov 13, 2026).
 
 import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -10,6 +12,7 @@ import { refreshForecastIndex } from './forecast-index.mjs';
 import { primeFromFiles } from './prime-from-files.mjs';
 import { refreshScheduleIndex } from './schedule-index.mjs';
 import { fanEventsFor, serviceDb } from './fan-rows.mjs';
+import { fallbackLines, previousSnapshot } from './previous-snapshot.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Optional --metro=<id> for a city build; without it the nightly job covers every city.
@@ -44,15 +47,17 @@ try {
   try {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
   await primeFromFiles(server, metroId);
-  let extras = {};
+  const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
+  const previous = await previousSnapshot(root, metroId, todayLocal);
+  let extras = previous ? { previous } : {};
   if (fanDb) {
-    const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
     const fanRead = await fanEventsFor({ db: fanDb, fns: fanFns, metroId, floorLocal: todayLocal, todayLocal });
     if (fanRead.log) console.log(fanRead.log);
     // A failed read is logged and the snapshot still lists the source as read with none, never a missing night.
-    extras = { fanEvents: fanRead.events };
+    extras = { ...extras, fanEvents: fanRead.events };
   }
   const snapshot = await collectScheduleArchive(metroId, new Date(), extras);
+  for (const line of fallbackLines(metroId, snapshot)) console.error(line);
   const dir = path.join(root, 'data', 'schedule-archive', snapshot.metroId);
   const file = path.join(dir, `${snapshot.capturedOn}.json`);
   const relative = path.relative(root, file);

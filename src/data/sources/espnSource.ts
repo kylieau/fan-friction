@@ -12,16 +12,31 @@ import type { EventSource } from './types';
 
 const API = 'https://site.api.espn.com/apis/site/v2/sports';
 
-/** A fetch that tries again after a dropped connection (not after an error answer): ESPN resets some under load. */
-async function fetchRetry(url: string, tries = 3): Promise<Response> {
+/**
+ * A fetch that tries again after a dropped connection: ESPN resets some under load. A nightly (strict) read also
+ * tries again after a server error answer (500 and up; Nov 11 and 12, 2026: one college hockey schedule answered 500
+ * and five cities saved nothing). The app's own reads never wait on a bad answer, so a live outage costs no map load.
+ */
+async function fetchRetry(url: string, tries = 3, serverErrors = false): Promise<Response> {
   for (let i = 1; ; i++) {
     try {
-      return await fetch(url);
+      const r = await fetch(url);
+      if (serverErrors && r.status >= 500 && i < tries) {
+        await new Promise((resolve) => setTimeout(resolve, 1000 * i));
+        continue;
+      }
+      return r;
     } catch (err) {
       if (i >= tries) throw err;
       await new Promise((r) => setTimeout(r, 1000 * i));
     }
   }
+}
+
+/** One team's schedule the nightly could not read, after its retries. The caller decides what stands in for it. */
+export interface FeedFailure {
+  teamId: string;
+  reason: string;
 }
 const DAYS_AHEAD = 120;
 
@@ -1155,10 +1170,10 @@ async function scheduleFor(t: (typeof ESPN_TEAMS)[number], strict: boolean, seas
   const lists = await Promise.all(
     urls.map(async (u) => {
       try {
-        const r = await fetchRetry(u);
+        const r = await fetchRetry(u, 3, strict);
         if (!r.ok) {
           // 404 is a season that team does not have. Anything else, in a strict
-          // read, means the listing is incomplete and must not be saved.
+          // read, means the listing is incomplete and must not be saved as this team's.
           if (strict && r.status !== 404) throw new Error(`ESPN schedule for ${t.teamId} answered ${r.status}`);
           return [] as EspnGame[];
         }
@@ -1182,32 +1197,55 @@ function homeOpenerId(games: EspnGame[], espnId: string): string | undefined {
   return home[0]?.id;
 }
 
-function upcomingFor(metroId: string, strict = false, fromDate?: LocalDate): Promise<CrowdEvent[]> {
-  if (!strict) {
-    const hit = cache.get(metroId);
-    if (hit) return hit;
-  }
+/** The error's words, for a log line or a snapshot's source line. */
+function reasonOf(err: unknown): string {
+  return err instanceof Error ? err.message : String(err);
+}
+
+/**
+ * Each team's upcoming home games. In a strict read a team whose schedule could not be read after its retries is
+ * reported in `failed` instead of thrown, so the caller can stand yesterday's rows in for that one team (the nightly,
+ * Nov 13, 2026) or drop just its finals; the loose read (the app) treats a bad feed as an empty one, as before.
+ */
+async function upcomingByTeam(metroId: string, strict: boolean, fromDate?: LocalDate): Promise<{ events: CrowdEvent[]; failed: FeedFailure[] }> {
   const tz = METROS[metroId].timeZone;
   // From today, unless the nightly pass asks for the last few days too (so a game the feed dropped after its day leaves the catalog).
   const today = fromDate ?? new Date().toLocaleDateString('en-CA', { timeZone: tz });
   const end = new Date(Date.now() + DAYS_AHEAD * 86_400_000).toLocaleDateString('en-CA', { timeZone: tz });
-
-  const p = Promise.all(
+  const failed: FeedFailure[] = [];
+  const lists = await Promise.all(
     ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) => {
-      const games = await scheduleFor(t, strict);
+      let games: EspnGame[];
+      try {
+        games = await scheduleFor(t, strict);
+      } catch (err) {
+        failed.push({ teamId: t.teamId, reason: reasonOf(err) });
+        return [] as (CrowdEvent | null)[];
+      }
       const openerId = homeOpenerId(games, t.espnId);
       return games.map((g) => {
         const e = toEvent(g, t);
         return e && g.id === openerId ? { ...e, homeOpener: true } : e;
       });
     }),
-  ).then((lists) => {
-    const seen = new Set<string>();
-    return lists
-      .flat()
-      .filter((e): e is CrowdEvent => e !== null && e.date >= today && e.date <= end)
-      .filter((e) => !seen.has(e.id) && seen.add(e.id))
-      .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
+  );
+  const seen = new Set<string>();
+  const events = lists
+    .flat()
+    .filter((e): e is CrowdEvent => e !== null && e.date >= today && e.date <= end)
+    .filter((e) => !seen.has(e.id) && seen.add(e.id))
+    .sort((a, b) => (a.date + (a.start ?? '99:99')).localeCompare(b.date + (b.start ?? '99:99')));
+  return { events, failed };
+}
+
+function upcomingFor(metroId: string, strict = false, fromDate?: LocalDate): Promise<CrowdEvent[]> {
+  if (!strict) {
+    const hit = cache.get(metroId);
+    if (hit) return hit;
+  }
+  const p = upcomingByTeam(metroId, strict, fromDate).then(({ events, failed }) => {
+    if (failed.length > 0) throw new Error(failed.map((f) => f.reason).join('; '));
+    return events;
   });
   if (!strict) cache.set(metroId, p);
   return p;
@@ -1282,21 +1320,36 @@ function finalOf(g: EspnGame, event: CrowdEvent, metroId: string, capturedAt: st
  * how long the game ran. For the nightly results pass. Throws when a team
  * schedule can't be read; a missing game page only leaves the length off.
  */
-export async function loadEspnFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
+/**
+ * Finals for the metro's teams in the window. A team whose schedule could not be read after its retries is
+ * listed in `failed` and its finals wait for the next night (the results files keep every row already saved); only
+ * when every team failed is there nothing to save, and then it throws.
+ */
+export async function loadEspnFinalsTolerant(metroId: string, from: LocalDate, through: LocalDate): Promise<{ rows: GameResult[]; failed: FeedFailure[] }> {
   const capturedAt = new Date().toISOString();
   const spans = new Map<string, Promise<{ minutes: number; startedAt: LocalTime } | undefined>>();
+  const failed: FeedFailure[] = [];
+  const teams = ESPN_TEAMS.filter((t) => t.metroId === metroId);
   const lists = await Promise.all(
-    ESPN_TEAMS.filter((t) => t.metroId === metroId).map(async (t) =>
-      (await scheduleFor(t, true)).flatMap((g): GameResult[] => {
+    teams.map(async (t) => {
+      let games: EspnGame[];
+      try {
+        games = await scheduleFor(t, true);
+      } catch (err) {
+        failed.push({ teamId: t.teamId, reason: reasonOf(err) });
+        return [] as GameResult[];
+      }
+      return games.flatMap((g): GameResult[] => {
         const event = toEvent(g, t);
         if (!event || event.date < from || event.date > through) return [];
         const row = finalOf(g, event, metroId, capturedAt);
         if (!row) return [];
         spans.set(event.id, playClockSpan(t.path, g.id));
         return [row];
-      }),
-    ),
+      });
+    }),
   );
+  if (teams.length > 0 && failed.length === teams.length) throw new Error(failed.map((f) => f.reason).join('; '));
   const seen = new Set<string>();
   const rows = lists.flat().filter((row) => !seen.has(row.eventId) && seen.add(row.eventId));
   for (const row of rows) {
@@ -1306,6 +1359,13 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
       row.startedAt = span.startedAt;
     }
   }
+  return { rows, failed };
+}
+
+/** Finals for the metro's teams in the window. Throws if any team schedule cannot be read. */
+export async function loadEspnFinals(metroId: string, from: LocalDate, through: LocalDate): Promise<GameResult[]> {
+  const { rows, failed } = await loadEspnFinalsTolerant(metroId, from, through);
+  if (failed.length > 0) throw new Error(failed.map((f) => f.reason).join('; '));
   return rows;
 }
 
@@ -1316,6 +1376,18 @@ export async function loadEspnFinals(metroId: string, from: LocalDate, through: 
  */
 export function loadEspnSchedule(metroId: string, fromDate?: LocalDate): Promise<CrowdEvent[]> {
   return upcomingFor(metroId, true, fromDate);
+}
+
+/**
+ * Home games for the metro, one team at a time: a team whose schedule could not be read after its retries is in
+ * `failed` with the other teams' games intact, so the nightly can stand yesterday's rows in for it (Kylie, Nov 13,
+ * 2026). Throws only when every team in the city failed; then there is nothing to save.
+ */
+export async function loadEspnScheduleTolerant(metroId: string, fromDate?: LocalDate): Promise<{ events: CrowdEvent[]; failed: FeedFailure[] }> {
+  const read = await upcomingByTeam(metroId, true, fromDate);
+  const teams = ESPN_TEAMS.filter((t) => t.metroId === metroId).length;
+  if (teams > 0 && read.failed.length === teams) throw new Error(read.failed.map((f) => f.reason).join('; '));
+  return read;
 }
 
 /** The dates of a team's home games in its own city over past seasons (scripts/past-dates-load.mjs --teams). Null for a team this feed doesn't carry. */

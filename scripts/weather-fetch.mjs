@@ -10,6 +10,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createServer } from 'vite';
+import { fallbackLines, previousSnapshot } from './previous-snapshot.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Optional --metro=<id> for a city build; without it the nightly job covers every city.
@@ -80,7 +81,10 @@ try {
     events = (await seedEvents.catalog(METRO)).filter((e) => e.date < today);
   } else {
     const { collectScheduleArchive } = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
-    const snapshot = await collectScheduleArchive(METRO, now);
+    // A team whose feed fails tonight keeps its rows from the last saved snapshot (Nov 13, 2026), so its dates still get weather.
+    const previous = await previousSnapshot(root, METRO, today);
+    const snapshot = await collectScheduleArchive(METRO, now, previous ? { previous } : {});
+    for (const line of fallbackLines(METRO, snapshot)) console.error(line);
     events = snapshot.events.filter((e) => e.date >= today);
   }
 

@@ -238,6 +238,12 @@ async function getPage(url: string): Promise<Response> {
     if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
     lastRequestAt = Date.now();
     const r = await fetch(url);
+    // A server error (Nov 10, 2026: Edmonton's listing answered 500 and the city saved nothing) is asked again twice,
+    // with a short pause, before the page is handed back as it answered. Only the nightly reads this source.
+    if (r.status >= 500 && attempt < 2) {
+      await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
+      continue;
+    }
     if (r.status !== 429) return r;
     const reason = await r.text().catch(() => '');
     if (/quota/i.test(reason) || attempt >= 3) {
