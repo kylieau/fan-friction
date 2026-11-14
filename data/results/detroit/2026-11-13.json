@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-michigan-mhockey-401923154",
+      "metroId": "detroit",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yost-ice-arena",
+      "homeTeamId": "michigan-mhockey",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 6
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 3
+      },
+      "capturedAt": "2026-11-14T15:06:54.073Z"
+    },
+    {
+      "eventId": "2026-11-13-espn-motor-city-cruise-401914537",
+      "metroId": "detroit",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wayne-state-fieldhouse",
+      "homeTeamId": "motor-city-cruise",
+      "home": {
+        "name": "Cruise",
+        "score": 117
+      },
+      "away": {
+        "name": "Boom",
+        "score": 134
+      },
+      "capturedAt": "2026-11-14T15:06:54.073Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "18:33"
+    }
+  ]
+}

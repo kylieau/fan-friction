@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-gophers-hockey-401905084",
+      "metroId": "minneapolis",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 7
+      },
+      "away": {
+        "name": "Alaska Anchorage",
+        "score": 3
+      },
+      "capturedAt": "2026-11-14T15:06:59.253Z"
+    },
+    {
+      "eventId": "2026-11-13-espn-st-thomas-hockey-401904677",
+      "metroId": "minneapolis",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 0
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 2
+      },
+      "capturedAt": "2026-11-14T15:06:59.253Z"
+    }
+  ]
+}

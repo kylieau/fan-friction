@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-du-mhockey-401904870",
+      "metroId": "denver",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 6
+      },
+      "away": {
+        "name": "Lindenwood",
+        "score": 3
+      },
+      "capturedAt": "2026-11-14T15:07:01.565Z"
+    }
+  ]
+}

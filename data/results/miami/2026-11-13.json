@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-heat-401909298",
+      "metroId": "miami",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 133
+      },
+      "away": {
+        "name": "Cavaliers",
+        "score": 121
+      },
+      "attendance": 19646,
+      "capturedAt": "2026-11-14T15:06:55.846Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-11-13-espn-miami-hurricanes-mbb-401921721",
+      "metroId": "miami",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "watsco-center",
+      "homeTeamId": "miami-hurricanes-mbb",
+      "home": {
+        "name": "Miami",
+        "score": 94
+      },
+      "away": {
+        "name": "North Alabama",
+        "score": 52
+      },
+      "attendance": 3862,
+      "capturedAt": "2026-11-14T15:06:55.846Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "17:01"
+    }
+  ]
+}

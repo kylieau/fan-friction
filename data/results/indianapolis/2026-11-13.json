@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-butler-mbb-401902278",
+      "metroId": "indianapolis",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-mbb",
+      "home": {
+        "name": "Butler",
+        "score": 64
+      },
+      "away": {
+        "name": "Pitt",
+        "score": 76
+      },
+      "attendance": 7345,
+      "capturedAt": "2026-11-14T15:06:58.755Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    },
+    {
+      "eventId": "2026-11-13-espn-pacers-401909296",
+      "metroId": "indianapolis",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 106
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 104
+      },
+      "attendance": 17274,
+      "capturedAt": "2026-11-14T15:06:58.755Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

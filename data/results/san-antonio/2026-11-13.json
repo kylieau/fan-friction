@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-spurs-401909302",
+      "metroId": "san-antonio",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 123
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 85
+      },
+      "attendance": 18849,
+      "capturedAt": "2026-11-14T15:07:00.638Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "21:45"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-texas-state-mbb-401929199",
+      "metroId": "austin",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-mbb",
+      "home": {
+        "name": "Texas St",
+        "score": 85
+      },
+      "away": {
+        "name": "Southern Miss",
+        "score": 65
+      },
+      "attendance": 1414,
+      "capturedAt": "2026-11-14T15:06:56.837Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-13-espn-texas-state-wbb-401920440",
+      "metroId": "austin",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-wbb",
+      "home": {
+        "name": "Texas St",
+        "score": 63
+      },
+      "away": {
+        "name": "Texas A&M-CC",
+        "score": 47
+      },
+      "attendance": 2646,
+      "capturedAt": "2026-11-14T15:06:56.837Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "12:35"
+    }
+  ]
+}

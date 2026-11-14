@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-asu-mbb-401917980",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-mbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 92
+      },
+      "away": {
+        "name": "UL Monroe",
+        "score": 62
+      },
+      "attendance": 5351,
+      "capturedAt": "2026-11-14T15:06:57.050Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    },
+    {
+      "eventId": "2026-11-13-espn-gcu-wbb-401920260",
+      "metroId": "phoenix",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "global-credit-union-arena",
+      "homeTeamId": "gcu-wbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 82
+      },
+      "away": {
+        "name": "Gonzaga",
+        "score": 62
+      },
+      "attendance": 1722,
+      "capturedAt": "2026-11-14T15:06:57.050Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

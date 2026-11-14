@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-clippers-401909304",
+      "metroId": "la",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 113
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 112
+      },
+      "attendance": 17927,
+      "capturedAt": "2026-11-14T15:06:50.315Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "22:40"
+    },
+    {
+      "eventId": "2026-11-13-espn-ucla-football-401858526",
+      "metroId": "la",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rose-bowl",
+      "homeTeamId": "ucla-football",
+      "home": {
+        "name": "UCLA",
+        "score": 22
+      },
+      "away": {
+        "name": "Illinois",
+        "score": 14
+      },
+      "attendance": 45800,
+      "capturedAt": "2026-11-14T15:06:50.315Z",
+      "duration": {
+        "minutes": 214,
+        "kind": "estimated"
+      },
+      "startedAt": "21:04"
+    }
+  ]
+}

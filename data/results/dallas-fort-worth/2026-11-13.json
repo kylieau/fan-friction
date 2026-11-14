@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-smu-mbb-401911014",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-mbb",
+      "home": {
+        "name": "SMU",
+        "score": 90
+      },
+      "away": {
+        "name": "Ball State",
+        "score": 65
+      },
+      "attendance": 4011,
+      "capturedAt": "2026-11-14T15:06:53.701Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    },
+    {
+      "eventId": "2026-11-13-espn-tcu-mbb-401919049",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 76
+      },
+      "away": {
+        "name": "Milwaukee",
+        "score": 64
+      },
+      "attendance": 4765,
+      "capturedAt": "2026-11-14T15:06:53.701Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-13-espn-texas-legends-401914541",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "comerica-center",
+      "homeTeamId": "texas-legends",
+      "home": {
+        "name": "Legends",
+        "score": 102
+      },
+      "away": {
+        "name": "Vipers",
+        "score": 99
+      },
+      "attendance": 6234,
+      "capturedAt": "2026-11-14T15:06:53.701Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "20:09"
+    }
+  ]
+}

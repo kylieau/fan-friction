@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-golden-knights-401892707",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 2
+      },
+      "away": {
+        "name": "Predators",
+        "score": 3
+      },
+      "attendance": 16641,
+      "note": "SO",
+      "capturedAt": "2026-11-14T15:06:58.003Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-13-espn-unlv-mbb-401921728",
+      "metroId": "las-vegas",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "thomas-mack-center",
+      "homeTeamId": "unlv-mbb",
+      "home": {
+        "name": "UNLV",
+        "score": 76
+      },
+      "away": {
+        "name": "Stanford",
+        "score": 68
+      },
+      "attendance": 5776,
+      "capturedAt": "2026-11-14T15:06:58.003Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "21:06"
+    }
+  ]
+}

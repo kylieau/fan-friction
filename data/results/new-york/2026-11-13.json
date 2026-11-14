@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-rutgers-mbb-401923270",
+      "metroId": "new-york",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-mbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 72
+      },
+      "away": {
+        "name": "Bryant",
+        "score": 51
+      },
+      "attendance": 7932,
+      "capturedAt": "2026-11-14T15:06:52.196Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

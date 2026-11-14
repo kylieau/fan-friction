@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-sacramento-kings-401909303",
+      "metroId": "sacramento",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 107
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 120
+      },
+      "attendance": 14831,
+      "capturedAt": "2026-11-14T15:06:57.593Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

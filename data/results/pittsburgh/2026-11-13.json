@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-pitt-football-401858293",
+      "metroId": "pittsburgh",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "acrisure-stadium",
+      "homeTeamId": "pitt-football",
+      "home": {
+        "name": "Pitt",
+        "score": 10
+      },
+      "away": {
+        "name": "Florida St",
+        "score": 16
+      },
+      "attendance": 45734,
+      "capturedAt": "2026-11-14T15:06:55.354Z",
+      "duration": {
+        "minutes": 204,
+        "kind": "estimated"
+      },
+      "startedAt": "19:06"
+    }
+  ]
+}

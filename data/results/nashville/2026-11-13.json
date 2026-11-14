@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-belmont-wbb-401919663",
+      "metroId": "nashville",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-wbb",
+      "home": {
+        "name": "Belmont",
+        "score": 72
+      },
+      "away": {
+        "name": "Troy",
+        "score": 46
+      },
+      "attendance": 643,
+      "capturedAt": "2026-11-14T15:06:56.525Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-13-espn-mtsu-mbb-401926152",
+      "metroId": "nashville",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "murphy-center",
+      "homeTeamId": "mtsu-mbb",
+      "home": {
+        "name": "MTSU",
+        "score": 88
+      },
+      "away": {
+        "name": "SE Missouri",
+        "score": 75
+      },
+      "attendance": 2388,
+      "capturedAt": "2026-11-14T15:06:56.525Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-13-espn-vanderbilt-mbb-401921825",
+      "metroId": "nashville",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-mbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 89
+      },
+      "away": {
+        "name": "Prairie View",
+        "score": 62
+      },
+      "attendance": 7152,
+      "capturedAt": "2026-11-14T15:06:56.525Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-gw-mbb-401911210",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "charles-e-smith-center",
+      "homeTeamId": "gw-mbb",
+      "home": {
+        "name": "G Washington",
+        "score": 85
+      },
+      "away": {
+        "name": "Harvard",
+        "score": 57
+      },
+      "attendance": 2801,
+      "capturedAt": "2026-11-14T15:07:00.328Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-13-espn-maryland-mbb-401916297",
+      "metroId": "washington-dc",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-mbb",
+      "home": {
+        "name": "Maryland",
+        "score": 83
+      },
+      "away": {
+        "name": "Virginia",
+        "score": 87
+      },
+      "attendance": 16908,
+      "capturedAt": "2026-11-14T15:07:00.328Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

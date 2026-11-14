@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-bulls-401909299",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 125
+      },
+      "away": {
+        "name": "Hawks",
+        "score": 117
+      },
+      "attendance": 19466,
+      "note": "OT",
+      "capturedAt": "2026-11-14T15:06:53.355Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-13-espn-northwestern-mbb-401909503",
+      "metroId": "chicago",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-mbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 47
+      },
+      "away": {
+        "name": "DePaul",
+        "score": 67
+      },
+      "attendance": 4556,
+      "capturedAt": "2026-11-14T15:06:53.355Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    }
+  ]
+}

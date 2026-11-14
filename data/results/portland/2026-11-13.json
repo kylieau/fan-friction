@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-13",
+  "results": [
+    {
+      "eventId": "2026-11-13-espn-psu-football-401868157",
+      "metroId": "portland",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hillsboro-stadium",
+      "homeTeamId": "psu-football",
+      "home": {
+        "name": "Portland St",
+        "score": 21
+      },
+      "away": {
+        "name": "Southern Utah",
+        "score": 23
+      },
+      "attendance": 1435,
+      "capturedAt": "2026-11-14T15:07:00.810Z",
+      "duration": {
+        "minutes": 188,
+        "kind": "estimated"
+      },
+      "startedAt": "22:03"
+    },
+    {
+      "eventId": "2026-11-13-espn-up-pilots-mbb-401917527",
+      "metroId": "portland",
+      "date": "2026-11-13",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chiles-center",
+      "homeTeamId": "up-pilots-mbb",
+      "home": {
+        "name": "Portland",
+        "score": 88
+      },
+      "away": {
+        "name": "East Texas A&M",
+        "score": 94
+      },
+      "attendance": 1038,
+      "note": "2OT",
+      "capturedAt": "2026-11-14T15:07:00.810Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "22:04"
+    }
+  ]
+}
