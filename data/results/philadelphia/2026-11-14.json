@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-penn-football-401867843",
+      "metroId": "philadelphia",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "penn-franklin-field",
+      "homeTeamId": "penn-football",
+      "home": {
+        "name": "Penn",
+        "score": 24
+      },
+      "away": {
+        "name": "Harvard",
+        "score": 38
+      },
+      "attendance": 8246,
+      "capturedAt": "2026-11-15T15:29:55.115Z",
+      "duration": {
+        "minutes": 185,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    },
+    {
+      "eventId": "2026-11-14-espn-penn-wbb-401906091",
+      "metroId": "philadelphia",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-wbb",
+      "home": {
+        "name": "Penn",
+        "score": 60
+      },
+      "away": {
+        "name": "North Carolina",
+        "score": 71
+      },
+      "attendance": 2714,
+      "capturedAt": "2026-11-15T15:29:55.115Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-temple-football-401862829",
+      "metroId": "philadelphia",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "temple-football",
+      "home": {
+        "name": "Temple",
+        "score": 10
+      },
+      "away": {
+        "name": "UAB",
+        "score": 36
+      },
+      "attendance": 11881,
+      "capturedAt": "2026-11-15T15:29:55.115Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-villanova-mbb-401921775",
+      "metroId": "philadelphia",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-mbb",
+      "home": {
+        "name": "Villanova",
+        "score": 99
+      },
+      "away": {
+        "name": "Rider",
+        "score": 62
+      },
+      "attendance": 6501,
+      "capturedAt": "2026-11-15T15:29:55.115Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

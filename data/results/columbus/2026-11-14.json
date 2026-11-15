@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-blue-jackets-401892715",
+      "metroId": "columbus",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 3
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 4
+      },
+      "attendance": 15819,
+      "capturedAt": "2026-11-15T15:29:56.261Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-14-espn-osu-football-401858522",
+      "metroId": "columbus",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ohio-stadium",
+      "homeTeamId": "osu-football",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 28
+      },
+      "away": {
+        "name": "Northwestern",
+        "score": 19
+      },
+      "attendance": 101256,
+      "capturedAt": "2026-11-15T15:29:56.261Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "12:08"
+    }
+  ]
+}

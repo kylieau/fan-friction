@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-du-mbb-401924921",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-mbb",
+      "home": {
+        "name": "Denver",
+        "score": 53
+      },
+      "away": {
+        "name": "Wyoming",
+        "score": 76
+      },
+      "attendance": 1803,
+      "capturedAt": "2026-11-15T15:30:01.591Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-du-mhockey-401904871",
+      "metroId": "denver",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 7
+      },
+      "away": {
+        "name": "Lindenwood",
+        "score": 1
+      },
+      "capturedAt": "2026-11-15T15:30:01.591Z"
+    }
+  ]
+}

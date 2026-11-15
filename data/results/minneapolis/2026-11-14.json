@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-gophers-hockey-401905085",
+      "metroId": "minneapolis",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mariucci-arena",
+      "homeTeamId": "gophers-hockey",
+      "home": {
+        "name": "Minnesota",
+        "score": 4
+      },
+      "away": {
+        "name": "Alaska Anchorage",
+        "score": 3
+      },
+      "capturedAt": "2026-11-15T15:29:59.101Z"
+    },
+    {
+      "eventId": "2026-11-14-espn-st-thomas-hockey-401904678",
+      "metroId": "minneapolis",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-hockey",
+      "home": {
+        "name": "St Thomas",
+        "score": 2
+      },
+      "away": {
+        "name": "North Dakota",
+        "score": 6
+      },
+      "capturedAt": "2026-11-15T15:29:59.101Z"
+    },
+    {
+      "eventId": "2026-11-14-espn-timberwolves-401909984",
+      "metroId": "minneapolis",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 106
+      },
+      "away": {
+        "name": "Bulls",
+        "score": 117
+      },
+      "attendance": 18054,
+      "capturedAt": "2026-11-15T15:29:59.101Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

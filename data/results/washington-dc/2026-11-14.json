@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-capital-city-go-go-401914549",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carefirst-arena",
+      "homeTeamId": "capital-city-go-go",
+      "home": {
+        "name": "Go-Go",
+        "score": 118
+      },
+      "away": {
+        "name": "Raptors 905",
+        "score": 122
+      },
+      "attendance": 684,
+      "capturedAt": "2026-11-15T15:30:00.268Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-capitals-401892714",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 4
+      },
+      "away": {
+        "name": "Devils",
+        "score": 7
+      },
+      "attendance": 18347,
+      "capturedAt": "2026-11-15T15:30:00.268Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-14-espn-maryland-football-401858520",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "secu-stadium",
+      "homeTeamId": "maryland-football",
+      "home": {
+        "name": "Maryland",
+        "score": 24
+      },
+      "away": {
+        "name": "Wisconsin",
+        "score": 21
+      },
+      "attendance": 28885,
+      "capturedAt": "2026-11-15T15:30:00.268Z",
+      "duration": {
+        "minutes": 208,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    },
+    {
+      "eventId": "2026-11-14-espn-spirit-401933734",
+      "metroId": "washington-dc",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "spirit",
+      "home": {
+        "name": "Spirit",
+        "score": 2
+      },
+      "away": {
+        "name": "Royals",
+        "score": 1
+      },
+      "attendance": 19215,
+      "capturedAt": "2026-11-15T15:30:00.268Z"
+    }
+  ]
+}

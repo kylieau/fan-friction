@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-uiw-football-401869148",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benson-stadium",
+      "homeTeamId": "uiw-football",
+      "home": {
+        "name": "Incarnate Word",
+        "score": 42
+      },
+      "away": {
+        "name": "Nicholls",
+        "score": 24
+      },
+      "attendance": 3312,
+      "capturedAt": "2026-11-15T15:30:00.611Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "16:01"
+    },
+    {
+      "eventId": "2026-11-14-espn-utsa-football-401862827",
+      "metroId": "san-antonio",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alamodome",
+      "homeTeamId": "utsa-football",
+      "home": {
+        "name": "UTSA",
+        "score": 35
+      },
+      "away": {
+        "name": "North Texas",
+        "score": 16
+      },
+      "attendance": 25151,
+      "capturedAt": "2026-11-15T15:30:00.611Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "21:04"
+    }
+  ]
+}

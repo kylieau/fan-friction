@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-ht-henderson-silver-knights-1029310",
+      "metroId": "las-vegas",
+      "date": "2026-11-14",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 3
+      },
+      "away": {
+        "name": "Wranglers",
+        "score": 2
+      },
+      "attendance": 2993,
+      "capturedAt": "2026-11-15T15:29:57.973Z"
+    }
+  ]
+}

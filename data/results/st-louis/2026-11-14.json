@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-blues-401892716",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 1
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 4
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-11-15T15:30:01.378Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    },
+    {
+      "eventId": "2026-11-14-espn-slu-wbb-401919693",
+      "metroId": "st-louis",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-wbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 55
+      },
+      "away": {
+        "name": "Illinois St",
+        "score": 72
+      },
+      "attendance": 518,
+      "capturedAt": "2026-11-15T15:30:01.378Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    }
+  ]
+}

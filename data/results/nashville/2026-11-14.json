@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-belmont-mbb-401920760",
+      "metroId": "nashville",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-mbb",
+      "home": {
+        "name": "Belmont",
+        "score": 72
+      },
+      "away": {
+        "name": "Furman",
+        "score": 62
+      },
+      "attendance": 1471,
+      "capturedAt": "2026-11-15T15:29:56.658Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "20:47"
+    },
+    {
+      "eventId": "2026-11-14-espn-tsu-football-401868185",
+      "metroId": "nashville",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "tsu-football",
+      "home": {
+        "name": "Tennessee St",
+        "score": 13
+      },
+      "away": {
+        "name": "E Illinois",
+        "score": 12
+      },
+      "attendance": 1244,
+      "capturedAt": "2026-11-15T15:29:56.658Z",
+      "duration": {
+        "minutes": 207,
+        "kind": "estimated"
+      },
+      "startedAt": "15:34"
+    },
+    {
+      "eventId": "2026-11-14-espn-tsu-wbb-401923416",
+      "metroId": "nashville",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gentry-center",
+      "homeTeamId": "tsu-wbb",
+      "home": {
+        "name": "Tennessee St",
+        "score": 117
+      },
+      "away": {
+        "name": "Miss Valley St",
+        "score": 56
+      },
+      "attendance": 347,
+      "capturedAt": "2026-11-15T15:29:56.658Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "12:04"
+    },
+    {
+      "eventId": "2026-11-14-espn-vanderbilt-football-401856889",
+      "metroId": "nashville",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "firstbank-stadium",
+      "homeTeamId": "vanderbilt-football",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 6
+      },
+      "away": {
+        "name": "Alabama",
+        "score": 21
+      },
+      "attendance": 35000,
+      "capturedAt": "2026-11-15T15:29:56.658Z",
+      "duration": {
+        "minutes": 193,
+        "kind": "estimated"
+      },
+      "startedAt": "12:46"
+    }
+  ]
+}

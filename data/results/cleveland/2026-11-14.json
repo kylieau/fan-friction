@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-cavaliers-401909981",
+      "metroId": "cleveland",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 127
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 117
+      },
+      "attendance": 19432,
+      "capturedAt": "2026-11-15T15:29:56.474Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

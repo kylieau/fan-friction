@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-gsu-football-401869952",
+      "metroId": "atlanta",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "center-parc-stadium",
+      "homeTeamId": "gsu-football",
+      "home": {
+        "name": "Georgia St",
+        "score": 17
+      },
+      "away": {
+        "name": "GA Southern",
+        "score": 34
+      },
+      "attendance": 19452,
+      "capturedAt": "2026-11-15T15:29:52.695Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "15:32"
+    },
+    {
+      "eventId": "2026-11-14-espn-gt-mbb-401920307",
+      "metroId": "atlanta",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-mbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 75
+      },
+      "away": {
+        "name": "UNC Asheville",
+        "score": 74
+      },
+      "attendance": 5023,
+      "capturedAt": "2026-11-15T15:29:52.695Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "16:01"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-dallas-stars-401892717",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 0
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-11-15T15:29:53.730Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-14-espn-smu-football-401858301",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gerald-j-ford-stadium",
+      "homeTeamId": "smu-football",
+      "home": {
+        "name": "SMU",
+        "score": 7
+      },
+      "away": {
+        "name": "Wake Forest",
+        "score": 49
+      },
+      "attendance": 33571,
+      "capturedAt": "2026-11-15T15:29:53.730Z",
+      "duration": {
+        "minutes": 205,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    },
+    {
+      "eventId": "2026-11-14-espn-tcu-football-401856862",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amon-g-carter-stadium",
+      "homeTeamId": "tcu-football",
+      "home": {
+        "name": "TCU",
+        "score": 20
+      },
+      "away": {
+        "name": "Kansas St",
+        "score": 10
+      },
+      "attendance": 37203,
+      "capturedAt": "2026-11-15T15:29:53.730Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "14:03"
+    },
+    {
+      "eventId": "2026-11-14-espn-unt-mbb-401925827",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "unt-coliseum",
+      "homeTeamId": "unt-mbb",
+      "home": {
+        "name": "North Texas",
+        "score": 66
+      },
+      "away": {
+        "name": "South Alabama",
+        "score": 65
+      },
+      "attendance": 2328,
+      "capturedAt": "2026-11-15T15:29:53.730Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-uta-mbb-401925108",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "college-park-center",
+      "homeTeamId": "uta-mbb",
+      "home": {
+        "name": "UT Arlington",
+        "score": 85
+      },
+      "away": {
+        "name": "UT Rio Grande",
+        "score": 77
+      },
+      "attendance": 2449,
+      "capturedAt": "2026-11-15T15:29:53.730Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:17"
+    }
+  ]
+}

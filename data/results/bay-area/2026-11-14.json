@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-cal-mbb-401918055",
+      "metroId": "bay-area",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 79
+      },
+      "away": {
+        "name": "Utah Tech",
+        "score": 73
+      },
+      "attendance": 2862,
+      "capturedAt": "2026-11-15T15:29:52.986Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "17:01"
+    }
+  ]
+}

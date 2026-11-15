@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-detroit-mercy-mbb-401928804",
+      "metroId": "detroit",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "calihan-hall",
+      "homeTeamId": "detroit-mercy-mbb",
+      "home": {
+        "name": "Detroit Mercy",
+        "score": 72
+      },
+      "away": {
+        "name": "Toledo",
+        "score": 85
+      },
+      "attendance": 1201,
+      "capturedAt": "2026-11-15T15:29:54.177Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    },
+    {
+      "eventId": "2026-11-14-espn-michigan-mhockey-401923157",
+      "metroId": "detroit",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yost-ice-arena",
+      "homeTeamId": "michigan-mhockey",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 8
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 3
+      },
+      "capturedAt": "2026-11-15T15:29:54.177Z"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-sac-state-mbb-401911520",
+      "metroId": "sacramento",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-pavilion",
+      "homeTeamId": "sac-state-mbb",
+      "home": {
+        "name": "Sacramento St",
+        "score": 56
+      },
+      "away": {
+        "name": "UC Davis",
+        "score": 75
+      },
+      "attendance": 3122,
+      "capturedAt": "2026-11-15T15:29:57.644Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

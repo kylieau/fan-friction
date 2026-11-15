@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-laketown-squadron-401914544",
+      "metroId": "new-orleans",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pontchartrain-center",
+      "homeTeamId": "laketown-squadron",
+      "home": {
+        "name": "Squadron",
+        "score": 99
+      },
+      "away": {
+        "name": "Mexico City Capitanes",
+        "score": 86
+      },
+      "attendance": 2038,
+      "capturedAt": "2026-11-15T15:29:59.408Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-lsuno-mbb-401925048",
+      "metroId": "new-orleans",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lakefront-arena",
+      "homeTeamId": "lsuno-mbb",
+      "home": {
+        "name": "LSU N Orleans",
+        "score": 98
+      },
+      "away": {
+        "name": "Southern NO",
+        "score": 82
+      },
+      "attendance": 713,
+      "capturedAt": "2026-11-15T15:29:59.408Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-pelicans-401909980",
+      "metroId": "new-orleans",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "smoothie-king-center",
+      "homeTeamId": "pelicans",
+      "home": {
+        "name": "Pelicans",
+        "score": 108
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 116
+      },
+      "attendance": 15721,
+      "capturedAt": "2026-11-15T15:29:59.408Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-canadiens-401892711",
+      "metroId": "montreal",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 1
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 4
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-11-15T15:29:54.408Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "19:20"
+    }
+  ]
+}

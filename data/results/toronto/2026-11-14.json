@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-maple-leafs-401892710",
+      "metroId": "toronto",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 0
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 1
+      },
+      "attendance": 19002,
+      "capturedAt": "2026-11-15T15:29:58.872Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

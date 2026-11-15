@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-heat-401909982",
+      "metroId": "miami",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 137
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 117
+      },
+      "attendance": 19658,
+      "capturedAt": "2026-11-15T15:29:55.975Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-11-14-espn-miami-hurricanes-football-401858296",
+      "metroId": "miami",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "miami-hurricanes-football",
+      "home": {
+        "name": "Miami",
+        "score": 36
+      },
+      "away": {
+        "name": "Duke",
+        "score": 25
+      },
+      "attendance": 66618,
+      "capturedAt": "2026-11-15T15:29:55.975Z",
+      "duration": {
+        "minutes": 227,
+        "kind": "estimated"
+      },
+      "startedAt": "12:06"
+    }
+  ]
+}

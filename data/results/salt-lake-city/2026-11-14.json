@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-utah-mammoth-401892718",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 5
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 6
+      },
+      "attendance": 14111,
+      "note": "SO",
+      "capturedAt": "2026-11-15T15:29:59.687Z",
+      "duration": {
+        "minutes": 178,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    }
+  ]
+}

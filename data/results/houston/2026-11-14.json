@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-rice-football-401862828",
+      "metroId": "houston",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "first-community-stadium",
+      "homeTeamId": "rice-football",
+      "home": {
+        "name": "Rice Owls",
+        "score": 17
+      },
+      "away": {
+        "name": "Tulane",
+        "score": 20
+      },
+      "attendance": 18921,
+      "capturedAt": "2026-11-15T15:29:58.367Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "16:30"
+    }
+  ]
+}

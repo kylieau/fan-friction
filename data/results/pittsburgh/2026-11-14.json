@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-duquesne-football-401869155",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arthur-j-rooney-athletic-field",
+      "homeTeamId": "duquesne-football",
+      "home": {
+        "name": "Duquesne",
+        "score": 20
+      },
+      "away": {
+        "name": "Mercyhurst",
+        "score": 10
+      },
+      "attendance": 1444,
+      "capturedAt": "2026-11-15T15:29:55.469Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "12:03"
+    },
+    {
+      "eventId": "2026-11-14-espn-duquesne-mbb-401911276",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-mbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 71
+      },
+      "away": {
+        "name": "Binghamton",
+        "score": 58
+      },
+      "attendance": 2411,
+      "capturedAt": "2026-11-15T15:29:55.469Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-14-espn-penguins-401892713",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 1
+      },
+      "away": {
+        "name": "Senators",
+        "score": 4
+      },
+      "attendance": 18363,
+      "capturedAt": "2026-11-15T15:29:55.469Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:23"
+    },
+    {
+      "eventId": "2026-11-14-espn-pitt-wbb-401913747",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 102
+      },
+      "away": {
+        "name": "Charleston So",
+        "score": 33
+      },
+      "attendance": 692,
+      "capturedAt": "2026-11-15T15:29:55.469Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-robert-morris-football-401867923",
+      "metroId": "pittsburgh",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "joe-walton-stadium",
+      "homeTeamId": "robert-morris-football",
+      "home": {
+        "name": "Robert Morris",
+        "score": 14
+      },
+      "away": {
+        "name": "Stonehill",
+        "score": 3
+      },
+      "attendance": 1192,
+      "capturedAt": "2026-11-15T15:29:55.469Z",
+      "duration": {
+        "minutes": 183,
+        "kind": "estimated"
+      },
+      "startedAt": "12:03"
+    }
+  ]
+}

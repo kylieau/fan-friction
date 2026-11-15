@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-nc-state-football-401858300",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carter-finley-stadium",
+      "homeTeamId": "nc-state-football",
+      "home": {
+        "name": "NC State",
+        "score": 31
+      },
+      "away": {
+        "name": "Syracuse",
+        "score": 34
+      },
+      "attendance": 53948,
+      "capturedAt": "2026-11-15T15:30:01.044Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-unc-football-401858298",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kenan-stadium",
+      "homeTeamId": "unc-football",
+      "home": {
+        "name": "North Carolina",
+        "score": 14
+      },
+      "away": {
+        "name": "Louisville",
+        "score": 16
+      },
+      "attendance": 44664,
+      "capturedAt": "2026-11-15T15:30:01.044Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "19:04"
+    }
+  ]
+}

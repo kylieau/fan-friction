@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-gcu-mbb-401911347",
+      "metroId": "phoenix",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "global-credit-union-arena",
+      "homeTeamId": "gcu-mbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 88
+      },
+      "away": {
+        "name": "UL Monroe",
+        "score": 52
+      },
+      "capturedAt": "2026-11-15T15:29:57.190Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

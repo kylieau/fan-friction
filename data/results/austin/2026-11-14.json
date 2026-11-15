@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-texas-state-football-401860916",
+      "metroId": "austin",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ufcu-stadium",
+      "homeTeamId": "texas-state-football",
+      "home": {
+        "name": "Texas St",
+        "score": 37
+      },
+      "away": {
+        "name": "Fresno St",
+        "score": 35
+      },
+      "attendance": 15226,
+      "capturedAt": "2026-11-15T15:29:56.961Z",
+      "duration": {
+        "minutes": 197,
+        "kind": "estimated"
+      },
+      "startedAt": "16:10"
+    },
+    {
+      "eventId": "2026-11-14-espn-texas-wbb-401918433",
+      "metroId": "austin",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-wbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 91
+      },
+      "away": {
+        "name": "Tarleton St",
+        "score": 35
+      },
+      "attendance": 9416,
+      "capturedAt": "2026-11-15T15:29:56.961Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

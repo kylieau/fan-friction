@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-fordham-football-401868014",
+      "metroId": "new-york",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coffey-field",
+      "homeTeamId": "fordham-football",
+      "home": {
+        "name": "Fordham",
+        "score": 37
+      },
+      "away": {
+        "name": "Georgetown",
+        "score": 15
+      },
+      "attendance": 1323,
+      "capturedAt": "2026-11-15T15:29:52.186Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    },
+    {
+      "eventId": "2026-11-14-espn-rutgers-401858525",
+      "metroId": "new-york",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shi-stadium",
+      "homeTeamId": "rutgers",
+      "home": {
+        "name": "Rutgers",
+        "score": 0
+      },
+      "away": {
+        "name": "Nebraska",
+        "score": 31
+      },
+      "attendance": 36425,
+      "capturedAt": "2026-11-15T15:29:52.186Z",
+      "duration": {
+        "minutes": 181,
+        "kind": "estimated"
+      },
+      "startedAt": "12:33"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-blackhawks-401892708",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 4
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 5
+      },
+      "attendance": 18451,
+      "note": "SO",
+      "capturedAt": "2026-11-15T15:29:53.320Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "15:39"
+    },
+    {
+      "eventId": "2026-11-14-espn-windy-city-bulls-401914548",
+      "metroId": "chicago",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "now-arena",
+      "homeTeamId": "windy-city-bulls",
+      "home": {
+        "name": "Windy City Bulls",
+        "score": 103
+      },
+      "away": {
+        "name": "Gold",
+        "score": 108
+      },
+      "attendance": 2524,
+      "capturedAt": "2026-11-15T15:29:53.320Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

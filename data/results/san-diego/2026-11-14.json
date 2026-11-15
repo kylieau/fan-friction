@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-sdsu-football-401860915",
+      "metroId": "san-diego",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "snapdragon-stadium",
+      "homeTeamId": "sdsu-football",
+      "home": {
+        "name": "San Diego St",
+        "score": 30
+      },
+      "away": {
+        "name": "Utah State",
+        "score": 13
+      },
+      "attendance": 21231,
+      "capturedAt": "2026-11-15T15:29:51.349Z",
+      "duration": {
+        "minutes": 203,
+        "kind": "estimated"
+      },
+      "startedAt": "21:45"
+    }
+  ]
+}

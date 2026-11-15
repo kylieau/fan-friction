@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-30",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "new-orleans",
+      "venueId": "city",
+      "date": "2026-11-30",
+      "basis": "forecast",
+      "capturedAt": "2026-11-15T15:27:58.637Z",
+      "feelsLikeHighF": 67.6,
+      "feelsLikeLowF": 51.5,
+      "code": 0,
+      "precipProbability": 19,
+      "precipMm": 0
+    }
+  ]
+}

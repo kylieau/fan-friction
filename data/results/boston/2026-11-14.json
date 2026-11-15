@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-espn-bc-wbb-401906034",
+      "metroId": "boston",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-wbb",
+      "home": {
+        "name": "Boston College",
+        "score": 75
+      },
+      "away": {
+        "name": "Providence",
+        "score": 73
+      },
+      "attendance": 913,
+      "capturedAt": "2026-11-15T15:29:54.777Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-14-espn-bruins-401892709",
+      "metroId": "boston",
+      "date": "2026-11-14",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 6
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-15T15:29:54.777Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

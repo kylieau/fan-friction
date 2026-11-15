@@ -1089,6 +1089,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:02"
   },
   {
+    "eventId": "2026-11-14-espn-gsu-football-401869952",
+    "metroId": "atlanta",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "center-parc-stadium",
+    "homeTeamId": "gsu-football",
+    "home": {
+      "name": "Georgia St",
+      "score": 17
+    },
+    "away": {
+      "name": "GA Southern",
+      "score": 34
+    },
+    "attendance": 19452,
+    "capturedAt": "2026-11-15T15:29:52.695Z",
+    "duration": {
+      "minutes": 186,
+      "kind": "estimated"
+    },
+    "startedAt": "15:32"
+  },
+  {
+    "eventId": "2026-11-14-espn-gt-mbb-401920307",
+    "metroId": "atlanta",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mccamish-pavilion",
+    "homeTeamId": "gt-mbb",
+    "home": {
+      "name": "Georgia Tech",
+      "score": 75
+    },
+    "away": {
+      "name": "UNC Asheville",
+      "score": 74
+    },
+    "attendance": 5023,
+    "capturedAt": "2026-11-15T15:29:52.695Z",
+    "duration": {
+      "minutes": 133,
+      "kind": "estimated"
+    },
+    "startedAt": "16:01"
+  },
+  {
     "eventId": "2026-10-10-espn-austin-fc-761856",
     "metroId": "austin",
     "date": "2026-10-10",
@@ -1659,6 +1707,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "12:35"
+  },
+  {
+    "eventId": "2026-11-14-espn-texas-state-football-401860916",
+    "metroId": "austin",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ufcu-stadium",
+    "homeTeamId": "texas-state-football",
+    "home": {
+      "name": "Texas St",
+      "score": 37
+    },
+    "away": {
+      "name": "Fresno St",
+      "score": 35
+    },
+    "attendance": 15226,
+    "capturedAt": "2026-11-15T15:29:56.961Z",
+    "duration": {
+      "minutes": 197,
+      "kind": "estimated"
+    },
+    "startedAt": "16:10"
+  },
+  {
+    "eventId": "2026-11-14-espn-texas-wbb-401918433",
+    "metroId": "austin",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "moody-center",
+    "homeTeamId": "texas-wbb",
+    "home": {
+      "name": "Texas Longhorns",
+      "score": 91
+    },
+    "away": {
+      "name": "Tarleton St",
+      "score": 35
+    },
+    "attendance": 9416,
+    "capturedAt": "2026-11-15T15:29:56.961Z",
+    "duration": {
+      "minutes": 126,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
   },
   {
     "eventId": "2026-10-04-espn-sf-49ers-401872975",
@@ -2915,6 +3011,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "22:05"
   },
   {
+    "eventId": "2026-11-14-espn-cal-mbb-401918055",
+    "metroId": "bay-area",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "haas-pavilion",
+    "homeTeamId": "cal-mbb",
+    "home": {
+      "name": "California",
+      "score": 79
+    },
+    "away": {
+      "name": "Utah Tech",
+      "score": 73
+    },
+    "attendance": 2862,
+    "capturedAt": "2026-11-15T15:29:52.986Z",
+    "duration": {
+      "minutes": 113,
+      "kind": "estimated"
+    },
+    "startedAt": "17:01"
+  },
+  {
     "eventId": "2026-10-10-espn-bruins-401892469",
     "metroId": "boston",
     "date": "2026-10-10",
@@ -3654,6 +3774,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:09"
+  },
+  {
+    "eventId": "2026-11-14-espn-bc-wbb-401906034",
+    "metroId": "boston",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "conte-forum",
+    "homeTeamId": "bc-wbb",
+    "home": {
+      "name": "Boston College",
+      "score": 75
+    },
+    "away": {
+      "name": "Providence",
+      "score": 73
+    },
+    "attendance": 913,
+    "capturedAt": "2026-11-15T15:29:54.777Z",
+    "duration": {
+      "minutes": 114,
+      "kind": "estimated"
+    },
+    "startedAt": "12:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-bruins-401892709",
+    "metroId": "boston",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "td-garden",
+    "homeTeamId": "bruins",
+    "home": {
+      "name": "Bruins",
+      "score": 2
+    },
+    "away": {
+      "name": "Wild",
+      "score": 6
+    },
+    "attendance": 17850,
+    "capturedAt": "2026-11-15T15:29:54.777Z",
+    "duration": {
+      "minutes": 158,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
   },
   {
     "eventId": "2026-10-04-espn-bears-401872972",
@@ -5043,6 +5211,55 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "21:01"
   },
   {
+    "eventId": "2026-11-14-espn-blackhawks-401892708",
+    "metroId": "chicago",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "united-center",
+    "homeTeamId": "blackhawks",
+    "home": {
+      "name": "Blackhawks",
+      "score": 4
+    },
+    "away": {
+      "name": "Winnipeg Jets",
+      "score": 5
+    },
+    "attendance": 18451,
+    "note": "SO",
+    "capturedAt": "2026-11-15T15:29:53.320Z",
+    "duration": {
+      "minutes": 166,
+      "kind": "estimated"
+    },
+    "startedAt": "15:39"
+  },
+  {
+    "eventId": "2026-11-14-espn-windy-city-bulls-401914548",
+    "metroId": "chicago",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "now-arena",
+    "homeTeamId": "windy-city-bulls",
+    "home": {
+      "name": "Windy City Bulls",
+      "score": 103
+    },
+    "away": {
+      "name": "Gold",
+      "score": 108
+    },
+    "attendance": 2524,
+    "capturedAt": "2026-11-15T15:29:53.320Z",
+    "duration": {
+      "minutes": 132,
+      "kind": "estimated"
+    },
+    "startedAt": "18:02"
+  },
+  {
     "eventId": "2026-10-10-mlb-849831",
     "metroId": "cleveland",
     "date": "2026-10-10",
@@ -5430,6 +5647,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:12"
+  },
+  {
+    "eventId": "2026-11-14-espn-cavaliers-401909981",
+    "metroId": "cleveland",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "rocket-arena",
+    "homeTeamId": "cavaliers",
+    "home": {
+      "name": "Cavaliers",
+      "score": 127
+    },
+    "away": {
+      "name": "Mavericks",
+      "score": 117
+    },
+    "attendance": 19432,
+    "capturedAt": "2026-11-15T15:29:56.474Z",
+    "duration": {
+      "minutes": 139,
+      "kind": "estimated"
+    },
+    "startedAt": "19:41"
   },
   {
     "eventId": "2026-10-09-espn-blue-jackets-401892467",
@@ -5972,6 +6213,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "18:32"
+  },
+  {
+    "eventId": "2026-11-14-espn-blue-jackets-401892715",
+    "metroId": "columbus",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nationwide-arena",
+    "homeTeamId": "blue-jackets",
+    "home": {
+      "name": "Blue Jackets",
+      "score": 3
+    },
+    "away": {
+      "name": "Flyers",
+      "score": 4
+    },
+    "attendance": 15819,
+    "capturedAt": "2026-11-15T15:29:56.261Z",
+    "duration": {
+      "minutes": 150,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
+  },
+  {
+    "eventId": "2026-11-14-espn-osu-football-401858522",
+    "metroId": "columbus",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ohio-stadium",
+    "homeTeamId": "osu-football",
+    "home": {
+      "name": "Ohio State Buckeyes",
+      "score": 28
+    },
+    "away": {
+      "name": "Northwestern",
+      "score": 19
+    },
+    "attendance": 101256,
+    "capturedAt": "2026-11-15T15:29:56.261Z",
+    "duration": {
+      "minutes": 197,
+      "kind": "estimated"
+    },
+    "startedAt": "12:08"
   },
   {
     "eventId": "2026-10-05-espn-dallas-stars-401892448",
@@ -7313,6 +7602,126 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "20:09"
   },
   {
+    "eventId": "2026-11-14-espn-dallas-stars-401892717",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "american-airlines-center",
+    "homeTeamId": "dallas-stars",
+    "home": {
+      "name": "Stars",
+      "score": 2
+    },
+    "away": {
+      "name": "Sabres",
+      "score": 0
+    },
+    "attendance": 18532,
+    "capturedAt": "2026-11-15T15:29:53.730Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "20:08"
+  },
+  {
+    "eventId": "2026-11-14-espn-smu-football-401858301",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gerald-j-ford-stadium",
+    "homeTeamId": "smu-football",
+    "home": {
+      "name": "SMU",
+      "score": 7
+    },
+    "away": {
+      "name": "Wake Forest",
+      "score": 49
+    },
+    "attendance": 33571,
+    "capturedAt": "2026-11-15T15:29:53.730Z",
+    "duration": {
+      "minutes": 205,
+      "kind": "estimated"
+    },
+    "startedAt": "12:05"
+  },
+  {
+    "eventId": "2026-11-14-espn-tcu-football-401856862",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "amon-g-carter-stadium",
+    "homeTeamId": "tcu-football",
+    "home": {
+      "name": "TCU",
+      "score": 20
+    },
+    "away": {
+      "name": "Kansas St",
+      "score": 10
+    },
+    "attendance": 37203,
+    "capturedAt": "2026-11-15T15:29:53.730Z",
+    "duration": {
+      "minutes": 182,
+      "kind": "estimated"
+    },
+    "startedAt": "14:03"
+  },
+  {
+    "eventId": "2026-11-14-espn-unt-mbb-401925827",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "unt-coliseum",
+    "homeTeamId": "unt-mbb",
+    "home": {
+      "name": "North Texas",
+      "score": 66
+    },
+    "away": {
+      "name": "South Alabama",
+      "score": 65
+    },
+    "attendance": 2328,
+    "capturedAt": "2026-11-15T15:29:53.730Z",
+    "duration": {
+      "minutes": 126,
+      "kind": "estimated"
+    },
+    "startedAt": "18:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-uta-mbb-401925108",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "college-park-center",
+    "homeTeamId": "uta-mbb",
+    "home": {
+      "name": "UT Arlington",
+      "score": 85
+    },
+    "away": {
+      "name": "UT Rio Grande",
+      "score": 77
+    },
+    "attendance": 2449,
+    "capturedAt": "2026-11-15T15:29:53.730Z",
+    "duration": {
+      "minutes": 154,
+      "kind": "estimated"
+    },
+    "startedAt": "19:17"
+  },
+  {
     "eventId": "2026-10-10-espn-avalanche-401892478",
     "metroId": "denver",
     "date": "2026-10-10",
@@ -7961,6 +8370,48 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-11-14T15:07:01.565Z"
   },
   {
+    "eventId": "2026-11-14-espn-du-mbb-401924921",
+    "metroId": "denver",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hamilton-gymnasium",
+    "homeTeamId": "du-mbb",
+    "home": {
+      "name": "Denver",
+      "score": 53
+    },
+    "away": {
+      "name": "Wyoming",
+      "score": 76
+    },
+    "attendance": 1803,
+    "capturedAt": "2026-11-15T15:30:01.591Z",
+    "duration": {
+      "minutes": 106,
+      "kind": "estimated"
+    },
+    "startedAt": "15:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-du-mhockey-401904871",
+    "metroId": "denver",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "magness-arena",
+    "homeTeamId": "du-mhockey",
+    "home": {
+      "name": "Denver",
+      "score": 7
+    },
+    "away": {
+      "name": "Lindenwood",
+      "score": 1
+    },
+    "capturedAt": "2026-11-15T15:30:01.591Z"
+  },
+  {
     "eventId": "2026-10-10-espn-detroit-city-fc-401842285",
     "metroId": "detroit",
     "date": "2026-10-10",
@@ -8604,6 +9055,48 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "18:33"
+  },
+  {
+    "eventId": "2026-11-14-espn-detroit-mercy-mbb-401928804",
+    "metroId": "detroit",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "calihan-hall",
+    "homeTeamId": "detroit-mercy-mbb",
+    "home": {
+      "name": "Detroit Mercy",
+      "score": 72
+    },
+    "away": {
+      "name": "Toledo",
+      "score": 85
+    },
+    "attendance": 1201,
+    "capturedAt": "2026-11-15T15:29:54.177Z",
+    "duration": {
+      "minutes": 108,
+      "kind": "estimated"
+    },
+    "startedAt": "16:03"
+  },
+  {
+    "eventId": "2026-11-14-espn-michigan-mhockey-401923157",
+    "metroId": "detroit",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "yost-ice-arena",
+    "homeTeamId": "michigan-mhockey",
+    "home": {
+      "name": "Michigan Wolverines",
+      "score": 8
+    },
+    "away": {
+      "name": "Penn State",
+      "score": 3
+    },
+    "capturedAt": "2026-11-15T15:29:54.177Z"
   },
   {
     "eventId": "2026-10-15-espn-oilers-401892515",
@@ -9768,6 +10261,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:41"
+  },
+  {
+    "eventId": "2026-11-14-espn-rice-football-401862828",
+    "metroId": "houston",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "first-community-stadium",
+    "homeTeamId": "rice-football",
+    "home": {
+      "name": "Rice Owls",
+      "score": 17
+    },
+    "away": {
+      "name": "Tulane",
+      "score": 20
+    },
+    "attendance": 18921,
+    "capturedAt": "2026-11-15T15:29:58.367Z",
+    "duration": {
+      "minutes": 196,
+      "kind": "estimated"
+    },
+    "startedAt": "16:30"
   },
   {
     "eventId": "2026-10-10-espn-butler-football-401868212",
@@ -12023,6 +12540,72 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "21:04"
   },
   {
+    "eventId": "2026-11-14-espn-ducks-401892719",
+    "metroId": "la",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "honda-center",
+    "homeTeamId": "ducks",
+    "home": {
+      "name": "Ducks",
+      "score": 2
+    },
+    "away": {
+      "name": "Islanders",
+      "score": 6
+    },
+    "attendance": 16184,
+    "capturedAt": "2026-11-15T15:29:50.534Z",
+    "duration": {
+      "minutes": 146,
+      "kind": "estimated"
+    },
+    "startedAt": "22:09"
+  },
+  {
+    "eventId": "2026-11-14-espn-kings-401892720",
+    "metroId": "la",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "crypto-com-arena",
+    "homeTeamId": "kings",
+    "home": {
+      "name": "Kings",
+      "score": 2
+    },
+    "away": {
+      "name": "Flames",
+      "score": 3
+    },
+    "attendance": 16880,
+    "capturedAt": "2026-11-15T15:29:50.534Z",
+    "duration": {
+      "minutes": 156,
+      "kind": "estimated"
+    },
+    "startedAt": "22:19"
+  },
+  {
+    "eventId": "2026-11-14-espn-ucla-wvb-401885946",
+    "metroId": "la",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pauley-pavilion",
+    "homeTeamId": "ucla-wvb",
+    "home": {
+      "name": "UCLA",
+      "score": 1
+    },
+    "away": {
+      "name": "Oregon",
+      "score": 3
+    },
+    "capturedAt": "2026-11-15T15:29:50.534Z"
+  },
+  {
     "eventId": "2026-10-09-espn-aces-401918300",
     "metroId": "las-vegas",
     "date": "2026-10-09",
@@ -12609,6 +13192,25 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "21:06"
+  },
+  {
+    "eventId": "2026-11-14-ht-henderson-silver-knights-1029310",
+    "metroId": "las-vegas",
+    "date": "2026-11-14",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "lees-family-forum",
+    "homeTeamId": "henderson-silver-knights",
+    "home": {
+      "name": "Silver Knights",
+      "score": 3
+    },
+    "away": {
+      "name": "Wranglers",
+      "score": 2
+    },
+    "attendance": 2993,
+    "capturedAt": "2026-11-15T15:29:57.973Z"
   },
   {
     "eventId": "2026-10-10-espn-club-america-401876950",
@@ -13754,6 +14356,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "17:01"
   },
   {
+    "eventId": "2026-11-14-espn-heat-401909982",
+    "metroId": "miami",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "kaseya-center",
+    "homeTeamId": "heat",
+    "home": {
+      "name": "Heat",
+      "score": 137
+    },
+    "away": {
+      "name": "Pistons",
+      "score": 117
+    },
+    "attendance": 19658,
+    "capturedAt": "2026-11-15T15:29:55.975Z",
+    "duration": {
+      "minutes": 152,
+      "kind": "estimated"
+    },
+    "startedAt": "20:11"
+  },
+  {
+    "eventId": "2026-11-14-espn-miami-hurricanes-football-401858296",
+    "metroId": "miami",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hard-rock-stadium",
+    "homeTeamId": "miami-hurricanes-football",
+    "home": {
+      "name": "Miami",
+      "score": 36
+    },
+    "away": {
+      "name": "Duke",
+      "score": 25
+    },
+    "attendance": 66618,
+    "capturedAt": "2026-11-15T15:29:55.975Z",
+    "duration": {
+      "minutes": 227,
+      "kind": "estimated"
+    },
+    "startedAt": "12:06"
+  },
+  {
     "eventId": "2026-10-10-ht-milwaukee-admirals-1029116",
     "metroId": "milwaukee",
     "date": "2026-10-10",
@@ -14343,6 +14993,25 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:02"
+  },
+  {
+    "eventId": "2026-11-14-ht-milwaukee-admirals-1029313",
+    "metroId": "milwaukee",
+    "date": "2026-11-14",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "uwm-panther-arena",
+    "homeTeamId": "milwaukee-admirals",
+    "home": {
+      "name": "Admirals",
+      "score": 3
+    },
+    "away": {
+      "name": "Wolves",
+      "score": 2
+    },
+    "attendance": 5923,
+    "capturedAt": "2026-11-15T15:29:54.590Z"
   },
   {
     "eventId": "2026-10-09-espn-st-thomas-hockey-401904337",
@@ -15277,6 +15946,66 @@ export const GAME_RESULTS: GameResult[] = [
     "capturedAt": "2026-11-14T15:06:59.253Z"
   },
   {
+    "eventId": "2026-11-14-espn-gophers-hockey-401905085",
+    "metroId": "minneapolis",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "mariucci-arena",
+    "homeTeamId": "gophers-hockey",
+    "home": {
+      "name": "Minnesota",
+      "score": 4
+    },
+    "away": {
+      "name": "Alaska Anchorage",
+      "score": 3
+    },
+    "capturedAt": "2026-11-15T15:29:59.101Z"
+  },
+  {
+    "eventId": "2026-11-14-espn-st-thomas-hockey-401904678",
+    "metroId": "minneapolis",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "anderson-arena",
+    "homeTeamId": "st-thomas-hockey",
+    "home": {
+      "name": "St Thomas",
+      "score": 2
+    },
+    "away": {
+      "name": "North Dakota",
+      "score": 6
+    },
+    "capturedAt": "2026-11-15T15:29:59.101Z"
+  },
+  {
+    "eventId": "2026-11-14-espn-timberwolves-401909984",
+    "metroId": "minneapolis",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "target-center",
+    "homeTeamId": "timberwolves",
+    "home": {
+      "name": "Timberwolves",
+      "score": 106
+    },
+    "away": {
+      "name": "Bulls",
+      "score": 117
+    },
+    "attendance": 18054,
+    "capturedAt": "2026-11-15T15:29:59.101Z",
+    "duration": {
+      "minutes": 135,
+      "kind": "estimated"
+    },
+    "startedAt": "20:10"
+  },
+  {
     "eventId": "2026-10-06-espn-canadiens-401891815",
     "metroId": "montreal",
     "date": "2026-10-06",
@@ -15692,6 +16421,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:22"
+  },
+  {
+    "eventId": "2026-11-14-espn-canadiens-401892711",
+    "metroId": "montreal",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "bell-centre",
+    "homeTeamId": "canadiens",
+    "home": {
+      "name": "Canadiens",
+      "score": 1
+    },
+    "away": {
+      "name": "Avalanche",
+      "score": 4
+    },
+    "attendance": 20962,
+    "capturedAt": "2026-11-15T15:29:54.408Z",
+    "duration": {
+      "minutes": 156,
+      "kind": "estimated"
+    },
+    "startedAt": "19:20"
   },
   {
     "eventId": "2026-10-10-espn-tsu-football-401868198",
@@ -16798,6 +17551,102 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:01"
   },
   {
+    "eventId": "2026-11-14-espn-belmont-mbb-401920760",
+    "metroId": "nashville",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "curb-event-center",
+    "homeTeamId": "belmont-mbb",
+    "home": {
+      "name": "Belmont",
+      "score": 72
+    },
+    "away": {
+      "name": "Furman",
+      "score": 62
+    },
+    "attendance": 1471,
+    "capturedAt": "2026-11-15T15:29:56.658Z",
+    "duration": {
+      "minutes": 128,
+      "kind": "estimated"
+    },
+    "startedAt": "20:47"
+  },
+  {
+    "eventId": "2026-11-14-espn-tsu-football-401868185",
+    "metroId": "nashville",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "nissan-stadium",
+    "homeTeamId": "tsu-football",
+    "home": {
+      "name": "Tennessee St",
+      "score": 13
+    },
+    "away": {
+      "name": "E Illinois",
+      "score": 12
+    },
+    "attendance": 1244,
+    "capturedAt": "2026-11-15T15:29:56.658Z",
+    "duration": {
+      "minutes": 207,
+      "kind": "estimated"
+    },
+    "startedAt": "15:34"
+  },
+  {
+    "eventId": "2026-11-14-espn-tsu-wbb-401923416",
+    "metroId": "nashville",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "gentry-center",
+    "homeTeamId": "tsu-wbb",
+    "home": {
+      "name": "Tennessee St",
+      "score": 117
+    },
+    "away": {
+      "name": "Miss Valley St",
+      "score": 56
+    },
+    "attendance": 347,
+    "capturedAt": "2026-11-15T15:29:56.658Z",
+    "duration": {
+      "minutes": 127,
+      "kind": "estimated"
+    },
+    "startedAt": "12:04"
+  },
+  {
+    "eventId": "2026-11-14-espn-vanderbilt-football-401856889",
+    "metroId": "nashville",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "firstbank-stadium",
+    "homeTeamId": "vanderbilt-football",
+    "home": {
+      "name": "Vanderbilt",
+      "score": 6
+    },
+    "away": {
+      "name": "Alabama",
+      "score": 21
+    },
+    "attendance": 35000,
+    "capturedAt": "2026-11-15T15:29:56.658Z",
+    "duration": {
+      "minutes": 193,
+      "kind": "estimated"
+    },
+    "startedAt": "12:46"
+  },
+  {
     "eventId": "2026-10-11-espn-saints-401872987",
     "metroId": "new-orleans",
     "date": "2026-10-11",
@@ -17302,6 +18151,78 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:10"
+  },
+  {
+    "eventId": "2026-11-14-espn-laketown-squadron-401914544",
+    "metroId": "new-orleans",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "pontchartrain-center",
+    "homeTeamId": "laketown-squadron",
+    "home": {
+      "name": "Squadron",
+      "score": 99
+    },
+    "away": {
+      "name": "Mexico City Capitanes",
+      "score": 86
+    },
+    "attendance": 2038,
+    "capturedAt": "2026-11-15T15:29:59.408Z",
+    "duration": {
+      "minutes": 130,
+      "kind": "estimated"
+    },
+    "startedAt": "12:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-lsuno-mbb-401925048",
+    "metroId": "new-orleans",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "lakefront-arena",
+    "homeTeamId": "lsuno-mbb",
+    "home": {
+      "name": "LSU N Orleans",
+      "score": 98
+    },
+    "away": {
+      "name": "Southern NO",
+      "score": 82
+    },
+    "attendance": 713,
+    "capturedAt": "2026-11-15T15:29:59.408Z",
+    "duration": {
+      "minutes": 115,
+      "kind": "estimated"
+    },
+    "startedAt": "18:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-pelicans-401909980",
+    "metroId": "new-orleans",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "smoothie-king-center",
+    "homeTeamId": "pelicans",
+    "home": {
+      "name": "Pelicans",
+      "score": 108
+    },
+    "away": {
+      "name": "Nuggets",
+      "score": 116
+    },
+    "attendance": 15721,
+    "capturedAt": "2026-11-15T15:29:59.408Z",
+    "duration": {
+      "minutes": 144,
+      "kind": "estimated"
+    },
+    "startedAt": "19:10"
   },
   {
     "eventId": "2026-10-03-espn-columbia-football-401867819",
@@ -19195,6 +20116,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "18:02"
   },
   {
+    "eventId": "2026-11-14-espn-fordham-football-401868014",
+    "metroId": "new-york",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "coffey-field",
+    "homeTeamId": "fordham-football",
+    "home": {
+      "name": "Fordham",
+      "score": 37
+    },
+    "away": {
+      "name": "Georgetown",
+      "score": 15
+    },
+    "attendance": 1323,
+    "capturedAt": "2026-11-15T15:29:52.186Z",
+    "duration": {
+      "minutes": 203,
+      "kind": "estimated"
+    },
+    "startedAt": "12:05"
+  },
+  {
+    "eventId": "2026-11-14-espn-rutgers-401858525",
+    "metroId": "new-york",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "shi-stadium",
+    "homeTeamId": "rutgers",
+    "home": {
+      "name": "Rutgers",
+      "score": 0
+    },
+    "away": {
+      "name": "Nebraska",
+      "score": 31
+    },
+    "attendance": 36425,
+    "capturedAt": "2026-11-15T15:29:52.186Z",
+    "duration": {
+      "minutes": 181,
+      "kind": "estimated"
+    },
+    "startedAt": "12:33"
+  },
+  {
     "eventId": "2026-10-10-espn-ottawa-senators-401892474",
     "metroId": "ottawa-gatineau",
     "date": "2026-10-10",
@@ -20403,6 +21372,102 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:02"
   },
   {
+    "eventId": "2026-11-14-espn-penn-football-401867843",
+    "metroId": "philadelphia",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "penn-franklin-field",
+    "homeTeamId": "penn-football",
+    "home": {
+      "name": "Penn",
+      "score": 24
+    },
+    "away": {
+      "name": "Harvard",
+      "score": 38
+    },
+    "attendance": 8246,
+    "capturedAt": "2026-11-15T15:29:55.115Z",
+    "duration": {
+      "minutes": 185,
+      "kind": "estimated"
+    },
+    "startedAt": "13:03"
+  },
+  {
+    "eventId": "2026-11-14-espn-penn-wbb-401906091",
+    "metroId": "philadelphia",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "the-palestra",
+    "homeTeamId": "penn-wbb",
+    "home": {
+      "name": "Penn",
+      "score": 60
+    },
+    "away": {
+      "name": "North Carolina",
+      "score": 71
+    },
+    "attendance": 2714,
+    "capturedAt": "2026-11-15T15:29:55.115Z",
+    "duration": {
+      "minutes": 118,
+      "kind": "estimated"
+    },
+    "startedAt": "16:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-temple-football-401862829",
+    "metroId": "philadelphia",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "lincoln-financial-field",
+    "homeTeamId": "temple-football",
+    "home": {
+      "name": "Temple",
+      "score": 10
+    },
+    "away": {
+      "name": "UAB",
+      "score": 36
+    },
+    "attendance": 11881,
+    "capturedAt": "2026-11-15T15:29:55.115Z",
+    "duration": {
+      "minutes": 196,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-villanova-mbb-401921775",
+    "metroId": "philadelphia",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "finneran-pavilion",
+    "homeTeamId": "villanova-mbb",
+    "home": {
+      "name": "Villanova",
+      "score": 99
+    },
+    "away": {
+      "name": "Rider",
+      "score": 62
+    },
+    "attendance": 6501,
+    "capturedAt": "2026-11-15T15:29:55.115Z",
+    "duration": {
+      "minutes": 123,
+      "kind": "estimated"
+    },
+    "startedAt": "19:02"
+  },
+  {
     "eventId": "2026-10-09-espn-asu-hockey-401904433",
     "metroId": "phoenix",
     "date": "2026-10-09",
@@ -21184,6 +22249,29 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "20:06"
   },
   {
+    "eventId": "2026-11-14-espn-gcu-mbb-401911347",
+    "metroId": "phoenix",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "global-credit-union-arena",
+    "homeTeamId": "gcu-mbb",
+    "home": {
+      "name": "Grand Canyon",
+      "score": 88
+    },
+    "away": {
+      "name": "UL Monroe",
+      "score": 52
+    },
+    "capturedAt": "2026-11-15T15:29:57.190Z",
+    "duration": {
+      "minutes": 115,
+      "kind": "estimated"
+    },
+    "startedAt": "20:03"
+  },
+  {
     "eventId": "2026-10-10-espn-duquesne-football-401867911",
     "metroId": "pittsburgh",
     "date": "2026-10-10",
@@ -21919,6 +23007,126 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:06"
+  },
+  {
+    "eventId": "2026-11-14-espn-duquesne-football-401869155",
+    "metroId": "pittsburgh",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "arthur-j-rooney-athletic-field",
+    "homeTeamId": "duquesne-football",
+    "home": {
+      "name": "Duquesne",
+      "score": 20
+    },
+    "away": {
+      "name": "Mercyhurst",
+      "score": 10
+    },
+    "attendance": 1444,
+    "capturedAt": "2026-11-15T15:29:55.469Z",
+    "duration": {
+      "minutes": 202,
+      "kind": "estimated"
+    },
+    "startedAt": "12:03"
+  },
+  {
+    "eventId": "2026-11-14-espn-duquesne-mbb-401911276",
+    "metroId": "pittsburgh",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "upmc-cooper-fieldhouse",
+    "homeTeamId": "duquesne-mbb",
+    "home": {
+      "name": "Duquesne",
+      "score": 71
+    },
+    "away": {
+      "name": "Binghamton",
+      "score": 58
+    },
+    "attendance": 2411,
+    "capturedAt": "2026-11-15T15:29:55.469Z",
+    "duration": {
+      "minutes": 123,
+      "kind": "estimated"
+    },
+    "startedAt": "19:32"
+  },
+  {
+    "eventId": "2026-11-14-espn-penguins-401892713",
+    "metroId": "pittsburgh",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ppg-paints-arena",
+    "homeTeamId": "penguins",
+    "home": {
+      "name": "Penguins",
+      "score": 1
+    },
+    "away": {
+      "name": "Senators",
+      "score": 4
+    },
+    "attendance": 18363,
+    "capturedAt": "2026-11-15T15:29:55.469Z",
+    "duration": {
+      "minutes": 151,
+      "kind": "estimated"
+    },
+    "startedAt": "19:23"
+  },
+  {
+    "eventId": "2026-11-14-espn-pitt-wbb-401913747",
+    "metroId": "pittsburgh",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "petersen-events-center",
+    "homeTeamId": "pitt-wbb",
+    "home": {
+      "name": "Pitt",
+      "score": 102
+    },
+    "away": {
+      "name": "Charleston So",
+      "score": 33
+    },
+    "attendance": 692,
+    "capturedAt": "2026-11-15T15:29:55.469Z",
+    "duration": {
+      "minutes": 111,
+      "kind": "estimated"
+    },
+    "startedAt": "12:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-robert-morris-football-401867923",
+    "metroId": "pittsburgh",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "joe-walton-stadium",
+    "homeTeamId": "robert-morris-football",
+    "home": {
+      "name": "Robert Morris",
+      "score": 14
+    },
+    "away": {
+      "name": "Stonehill",
+      "score": 3
+    },
+    "attendance": 1192,
+    "capturedAt": "2026-11-15T15:29:55.469Z",
+    "duration": {
+      "minutes": 183,
+      "kind": "estimated"
+    },
+    "startedAt": "12:03"
   },
   {
     "eventId": "2026-10-10-espn-psu-football-401868156",
@@ -23233,6 +24441,54 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:01"
   },
   {
+    "eventId": "2026-11-14-espn-nc-state-football-401858300",
+    "metroId": "raleigh-durham",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "carter-finley-stadium",
+    "homeTeamId": "nc-state-football",
+    "home": {
+      "name": "NC State",
+      "score": 31
+    },
+    "away": {
+      "name": "Syracuse",
+      "score": 34
+    },
+    "attendance": 53948,
+    "capturedAt": "2026-11-15T15:30:01.044Z",
+    "duration": {
+      "minutes": 202,
+      "kind": "estimated"
+    },
+    "startedAt": "12:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-unc-football-401858298",
+    "metroId": "raleigh-durham",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "kenan-stadium",
+    "homeTeamId": "unc-football",
+    "home": {
+      "name": "North Carolina",
+      "score": 14
+    },
+    "away": {
+      "name": "Louisville",
+      "score": 16
+    },
+    "attendance": 44664,
+    "capturedAt": "2026-11-15T15:30:01.044Z",
+    "duration": {
+      "minutes": 202,
+      "kind": "estimated"
+    },
+    "startedAt": "19:04"
+  },
+  {
     "eventId": "2026-10-10-espn-sacramento-republic-401842277",
     "metroId": "sacramento",
     "date": "2026-10-10",
@@ -23786,6 +25042,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "22:10"
+  },
+  {
+    "eventId": "2026-11-14-espn-sac-state-mbb-401911520",
+    "metroId": "sacramento",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "hornet-pavilion",
+    "homeTeamId": "sac-state-mbb",
+    "home": {
+      "name": "Sacramento St",
+      "score": 56
+    },
+    "away": {
+      "name": "UC Davis",
+      "score": 75
+    },
+    "attendance": 3122,
+    "capturedAt": "2026-11-15T15:29:57.644Z",
+    "duration": {
+      "minutes": 134,
+      "kind": "estimated"
+    },
+    "startedAt": "20:02"
   },
   {
     "eventId": "2026-10-10-espn-utah-utes-football-401856827",
@@ -24484,6 +25764,31 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "21:08"
   },
   {
+    "eventId": "2026-11-14-espn-utah-mammoth-401892718",
+    "metroId": "salt-lake-city",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "delta-center",
+    "homeTeamId": "utah-mammoth",
+    "home": {
+      "name": "Mammoth",
+      "score": 5
+    },
+    "away": {
+      "name": "Sharks",
+      "score": 6
+    },
+    "attendance": 14111,
+    "note": "SO",
+    "capturedAt": "2026-11-15T15:29:59.687Z",
+    "duration": {
+      "minutes": 178,
+      "kind": "estimated"
+    },
+    "startedAt": "21:08"
+  },
+  {
     "eventId": "2026-10-14-espn-spurs-401898722",
     "metroId": "san-antonio",
     "date": "2026-10-14",
@@ -24880,6 +26185,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "21:45"
+  },
+  {
+    "eventId": "2026-11-14-espn-uiw-football-401869148",
+    "metroId": "san-antonio",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "benson-stadium",
+    "homeTeamId": "uiw-football",
+    "home": {
+      "name": "Incarnate Word",
+      "score": 42
+    },
+    "away": {
+      "name": "Nicholls",
+      "score": 24
+    },
+    "attendance": 3312,
+    "capturedAt": "2026-11-15T15:30:00.611Z",
+    "duration": {
+      "minutes": 199,
+      "kind": "estimated"
+    },
+    "startedAt": "16:01"
+  },
+  {
+    "eventId": "2026-11-14-espn-utsa-football-401862827",
+    "metroId": "san-antonio",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "alamodome",
+    "homeTeamId": "utsa-football",
+    "home": {
+      "name": "UTSA",
+      "score": 35
+    },
+    "away": {
+      "name": "North Texas",
+      "score": 16
+    },
+    "attendance": 25151,
+    "capturedAt": "2026-11-15T15:30:00.611Z",
+    "duration": {
+      "minutes": 209,
+      "kind": "estimated"
+    },
+    "startedAt": "21:04"
   },
   {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
@@ -25370,6 +26723,30 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 6323,
     "capturedAt": "2026-11-12T16:53:56.610Z"
+  },
+  {
+    "eventId": "2026-11-14-espn-sdsu-football-401860915",
+    "metroId": "san-diego",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "snapdragon-stadium",
+    "homeTeamId": "sdsu-football",
+    "home": {
+      "name": "San Diego St",
+      "score": 30
+    },
+    "away": {
+      "name": "Utah State",
+      "score": 13
+    },
+    "attendance": 21231,
+    "capturedAt": "2026-11-15T15:29:51.349Z",
+    "duration": {
+      "minutes": 203,
+      "kind": "estimated"
+    },
+    "startedAt": "21:45"
   },
   {
     "eventId": "2026-10-04-espn-kraken-401891824",
@@ -26101,6 +27478,26 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "22:02"
   },
   {
+    "eventId": "2026-11-14-ht-seattle-thunderbirds-1023301",
+    "metroId": "seattle",
+    "date": "2026-11-14",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "accesso-showare-center",
+    "homeTeamId": "seattle-thunderbirds",
+    "home": {
+      "name": "Thunderbirds",
+      "score": 5
+    },
+    "away": {
+      "name": "Chiefs",
+      "score": 4
+    },
+    "attendance": 4731,
+    "note": "OT",
+    "capturedAt": "2026-11-15T15:29:51.689Z"
+  },
+  {
     "eventId": "2026-10-10-espn-blues-401892477",
     "metroId": "st-louis",
     "date": "2026-10-10",
@@ -26507,6 +27904,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "17:03"
+  },
+  {
+    "eventId": "2026-11-14-espn-blues-401892716",
+    "metroId": "st-louis",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "enterprise-center",
+    "homeTeamId": "blues",
+    "home": {
+      "name": "Blues",
+      "score": 1
+    },
+    "away": {
+      "name": "Panthers",
+      "score": 4
+    },
+    "attendance": 18096,
+    "capturedAt": "2026-11-15T15:30:01.378Z",
+    "duration": {
+      "minutes": 145,
+      "kind": "estimated"
+    },
+    "startedAt": "19:12"
+  },
+  {
+    "eventId": "2026-11-14-espn-slu-wbb-401919693",
+    "metroId": "st-louis",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "chaifetz-arena",
+    "homeTeamId": "slu-wbb",
+    "home": {
+      "name": "Saint Louis",
+      "score": 55
+    },
+    "away": {
+      "name": "Illinois St",
+      "score": 72
+    },
+    "attendance": 518,
+    "capturedAt": "2026-11-15T15:30:01.378Z",
+    "duration": {
+      "minutes": 116,
+      "kind": "estimated"
+    },
+    "startedAt": "14:01"
   },
   {
     "eventId": "2026-10-12-mlb-849820",
@@ -27022,6 +28467,54 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:06"
+  },
+  {
+    "eventId": "2026-11-14-espn-lightning-401892712",
+    "metroId": "tampa",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "benchmark-international-arena",
+    "homeTeamId": "lightning",
+    "home": {
+      "name": "Lightning",
+      "score": 0
+    },
+    "away": {
+      "name": "Red Wings",
+      "score": 2
+    },
+    "attendance": 19092,
+    "capturedAt": "2026-11-15T15:29:55.774Z",
+    "duration": {
+      "minutes": 176,
+      "kind": "estimated"
+    },
+    "startedAt": "19:09"
+  },
+  {
+    "eventId": "2026-11-14-espn-usf-mbb-401918993",
+    "metroId": "tampa",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "yuengling-center",
+    "homeTeamId": "usf-mbb",
+    "home": {
+      "name": "South Florida",
+      "score": 73
+    },
+    "away": {
+      "name": "Coppin St",
+      "score": 63
+    },
+    "attendance": 2677,
+    "capturedAt": "2026-11-15T15:29:55.774Z",
+    "duration": {
+      "minutes": 123,
+      "kind": "estimated"
+    },
+    "startedAt": "14:02"
   },
   {
     "eventId": "2026-10-10-espn-raptors-401902645",
@@ -27607,6 +29100,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:32"
   },
   {
+    "eventId": "2026-11-14-espn-maple-leafs-401892710",
+    "metroId": "toronto",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "scotiabank-arena",
+    "homeTeamId": "maple-leafs",
+    "home": {
+      "name": "Maple Leafs",
+      "score": 0
+    },
+    "away": {
+      "name": "Oilers",
+      "score": 1
+    },
+    "attendance": 19002,
+    "capturedAt": "2026-11-15T15:29:58.872Z",
+    "duration": {
+      "minutes": 145,
+      "kind": "estimated"
+    },
+    "startedAt": "19:15"
+  },
+  {
     "eventId": "2026-10-10-ht-vancouver-giants-1023159",
     "metroId": "vancouver",
     "date": "2026-10-10",
@@ -27924,6 +29441,25 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "21:12"
+  },
+  {
+    "eventId": "2026-11-14-ht-vancouver-giants-1023304",
+    "metroId": "vancouver",
+    "date": "2026-11-14",
+    "sourceId": "hockeytech",
+    "status": "final",
+    "venueId": "langley-events-centre",
+    "homeTeamId": "vancouver-giants",
+    "home": {
+      "name": "Giants",
+      "score": 4
+    },
+    "away": {
+      "name": "Vees",
+      "score": 6
+    },
+    "attendance": 3827,
+    "capturedAt": "2026-11-15T15:29:57.424Z"
   },
   {
     "eventId": "2026-10-10-espn-wizards-401906510",
@@ -28851,5 +30387,96 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "20:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-capital-city-go-go-401914549",
+    "metroId": "washington-dc",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "carefirst-arena",
+    "homeTeamId": "capital-city-go-go",
+    "home": {
+      "name": "Go-Go",
+      "score": 118
+    },
+    "away": {
+      "name": "Raptors 905",
+      "score": 122
+    },
+    "attendance": 684,
+    "capturedAt": "2026-11-15T15:30:00.268Z",
+    "duration": {
+      "minutes": 141,
+      "kind": "estimated"
+    },
+    "startedAt": "19:02"
+  },
+  {
+    "eventId": "2026-11-14-espn-capitals-401892714",
+    "metroId": "washington-dc",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "capital-one-arena",
+    "homeTeamId": "capitals",
+    "home": {
+      "name": "Capitals",
+      "score": 4
+    },
+    "away": {
+      "name": "Devils",
+      "score": 7
+    },
+    "attendance": 18347,
+    "capturedAt": "2026-11-15T15:30:00.268Z",
+    "duration": {
+      "minutes": 159,
+      "kind": "estimated"
+    },
+    "startedAt": "19:08"
+  },
+  {
+    "eventId": "2026-11-14-espn-maryland-football-401858520",
+    "metroId": "washington-dc",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "secu-stadium",
+    "homeTeamId": "maryland-football",
+    "home": {
+      "name": "Maryland",
+      "score": 24
+    },
+    "away": {
+      "name": "Wisconsin",
+      "score": 21
+    },
+    "attendance": 28885,
+    "capturedAt": "2026-11-15T15:30:00.268Z",
+    "duration": {
+      "minutes": 208,
+      "kind": "estimated"
+    },
+    "startedAt": "12:01"
+  },
+  {
+    "eventId": "2026-11-14-espn-spirit-401933734",
+    "metroId": "washington-dc",
+    "date": "2026-11-14",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "audi-field",
+    "homeTeamId": "spirit",
+    "home": {
+      "name": "Spirit",
+      "score": 2
+    },
+    "away": {
+      "name": "Royals",
+      "score": 1
+    },
+    "attendance": 19215,
+    "capturedAt": "2026-11-15T15:30:00.268Z"
   }
 ];

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-ht-vancouver-giants-1023304",
+      "metroId": "vancouver",
+      "date": "2026-11-14",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "langley-events-centre",
+      "homeTeamId": "vancouver-giants",
+      "home": {
+        "name": "Giants",
+        "score": 4
+      },
+      "away": {
+        "name": "Vees",
+        "score": 6
+      },
+      "attendance": 3827,
+      "capturedAt": "2026-11-15T15:29:57.424Z"
+    }
+  ]
+}

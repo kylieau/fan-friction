@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-14",
+  "results": [
+    {
+      "eventId": "2026-11-14-ht-seattle-thunderbirds-1023301",
+      "metroId": "seattle",
+      "date": "2026-11-14",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 5
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 4
+      },
+      "attendance": 4731,
+      "note": "OT",
+      "capturedAt": "2026-11-15T15:29:51.689Z"
+    }
+  ]
+}
