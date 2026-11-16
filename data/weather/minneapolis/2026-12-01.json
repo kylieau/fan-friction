@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-12-01",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "minneapolis",
+      "venueId": "city",
+      "date": "2026-12-01",
+      "basis": "forecast",
+      "capturedAt": "2026-11-16T18:12:01.180Z",
+      "feelsLikeHighF": 31.8,
+      "feelsLikeLowF": 26.5,
+      "code": 45,
+      "precipProbability": 20,
+      "precipMm": 0
+    }
+  ]
+}

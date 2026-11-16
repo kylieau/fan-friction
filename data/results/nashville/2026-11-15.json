@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-titans-401873057",
+      "metroId": "nashville",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nissan-stadium",
+      "homeTeamId": "titans",
+      "home": {
+        "name": "Titans",
+        "score": 23
+      },
+      "away": {
+        "name": "Jaguars",
+        "score": 40
+      },
+      "attendance": 61239,
+      "capturedAt": "2026-11-16T18:17:19.144Z",
+      "duration": {
+        "minutes": 190,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

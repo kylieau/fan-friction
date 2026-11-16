@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-colts-401873059",
+      "metroId": "indianapolis",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lucas-oil-stadium",
+      "homeTeamId": "colts",
+      "home": {
+        "name": "Colts",
+        "score": 24
+      },
+      "away": {
+        "name": "Dolphins",
+        "score": 22
+      },
+      "attendance": 64235,
+      "capturedAt": "2026-11-16T18:17:21.137Z",
+      "duration": {
+        "minutes": 193,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

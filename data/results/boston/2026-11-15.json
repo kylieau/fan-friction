@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-bc-mbb-401909554",
+      "metroId": "boston",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-mbb",
+      "home": {
+        "name": "Boston College",
+        "score": 67
+      },
+      "away": {
+        "name": "New Hampshire",
+        "score": 55
+      },
+      "attendance": 2606,
+      "capturedAt": "2026-11-16T18:17:17.546Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "13:31"
+    },
+    {
+      "eventId": "2026-11-15-espn-celtics-401909989",
+      "metroId": "boston",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 131
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 94
+      },
+      "attendance": 19156,
+      "capturedAt": "2026-11-16T18:17:17.546Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "18:10"
+    }
+  ]
+}

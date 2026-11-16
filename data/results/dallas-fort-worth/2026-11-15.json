@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-cowboys-401873063",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "att-stadium",
+      "homeTeamId": "cowboys",
+      "home": {
+        "name": "Cowboys",
+        "score": 40
+      },
+      "away": {
+        "name": "49ers",
+        "score": 46
+      },
+      "attendance": 90763,
+      "capturedAt": "2026-11-16T18:17:16.523Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    },
+    {
+      "eventId": "2026-11-15-espn-dallas-stars-401892722",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Panthers",
+        "score": 1
+      },
+      "attendance": 18532,
+      "note": "OT",
+      "capturedAt": "2026-11-16T18:17:16.523Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    },
+    {
+      "eventId": "2026-11-15-espn-smu-wbb-401915964",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-wbb",
+      "home": {
+        "name": "SMU",
+        "score": 77
+      },
+      "away": {
+        "name": "Nicholls",
+        "score": 65
+      },
+      "attendance": 906,
+      "capturedAt": "2026-11-16T18:17:16.523Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-15-espn-tcu-wbb-401917942",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 88
+      },
+      "away": {
+        "name": "Abilene Chrstn",
+        "score": 55
+      },
+      "attendance": 2621,
+      "capturedAt": "2026-11-16T18:17:16.523Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    }
+  ]
+}

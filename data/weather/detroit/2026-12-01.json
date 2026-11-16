@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-12-01",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "detroit",
+      "venueId": "city",
+      "date": "2026-12-01",
+      "basis": "forecast",
+      "capturedAt": "2026-11-16T18:01:15.642Z",
+      "feelsLikeHighF": 32.6,
+      "feelsLikeLowF": 30.7,
+      "code": 51,
+      "precipProbability": 16,
+      "precipMm": 2.7
+    }
+  ]
+}

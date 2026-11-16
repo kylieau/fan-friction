@@ -20,9 +20,9 @@
         "score": 2
       },
       "attendance": 19092,
-      "capturedAt": "2026-11-15T15:29:55.774Z",
+      "capturedAt": "2026-11-16T18:17:18.385Z",
       "duration": {
-        "minutes": 176,
+        "minutes": 174,
         "kind": "estimated"
       },
       "startedAt": "19:09"
@@ -44,7 +44,7 @@
         "score": 63
       },
       "attendance": 2677,
-      "capturedAt": "2026-11-15T15:29:55.774Z",
+      "capturedAt": "2026-11-16T18:17:18.385Z",
       "duration": {
         "minutes": 123,
         "kind": "estimated"

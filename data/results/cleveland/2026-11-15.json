@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-browns-401873056",
+      "metroId": "cleveland",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "huntington-bank-field",
+      "homeTeamId": "browns",
+      "home": {
+        "name": "Browns",
+        "score": 27
+      },
+      "away": {
+        "name": "Texans",
+        "score": 24
+      },
+      "attendance": 58342,
+      "capturedAt": "2026-11-16T18:17:18.988Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

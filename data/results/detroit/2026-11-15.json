@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-michigan-mbb-401918453",
+      "metroId": "detroit",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crisler-center",
+      "homeTeamId": "michigan-mbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 123
+      },
+      "away": {
+        "name": "William & Mary",
+        "score": 79
+      },
+      "attendance": 10838,
+      "capturedAt": "2026-11-16T18:17:16.921Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-15-espn-motor-city-cruise-401914556",
+      "metroId": "detroit",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wayne-state-fieldhouse",
+      "homeTeamId": "motor-city-cruise",
+      "home": {
+        "name": "Cruise",
+        "score": 128
+      },
+      "away": {
+        "name": "Boom",
+        "score": 116
+      },
+      "attendance": 831,
+      "capturedAt": "2026-11-16T18:17:16.921Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

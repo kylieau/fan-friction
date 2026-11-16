@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-falcons-401873058",
+      "metroId": "atlanta",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mercedes-benz-stadium",
+      "homeTeamId": "falcons",
+      "home": {
+        "name": "Falcons",
+        "score": 13
+      },
+      "away": {
+        "name": "Chiefs",
+        "score": 35
+      },
+      "attendance": 72045,
+      "capturedAt": "2026-11-16T18:17:15.529Z",
+      "duration": {
+        "minutes": 189,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-15-espn-gsu-mbb-401925896",
+      "metroId": "atlanta",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-mbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 78
+      },
+      "away": {
+        "name": "Norfolk St",
+        "score": 53
+      },
+      "attendance": 1279,
+      "capturedAt": "2026-11-16T18:17:15.529Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-15-espn-gt-wbb-401913717",
+      "metroId": "atlanta",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-wbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 85
+      },
+      "away": {
+        "name": "Georgia St",
+        "score": 54
+      },
+      "attendance": 2532,
+      "capturedAt": "2026-11-16T18:17:15.529Z",
+      "duration": {
+        "minutes": 100,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-15-espn-ksu-wbb-401927996",
+      "metroId": "atlanta",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-wbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 82
+      },
+      "away": {
+        "name": "South Alabama",
+        "score": 77
+      },
+      "attendance": 658,
+      "capturedAt": "2026-11-16T18:17:15.529Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "14:03"
+    }
+  ]
+}

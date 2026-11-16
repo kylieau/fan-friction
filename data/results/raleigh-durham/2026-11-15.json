@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-duke-wbb-401915909",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-wbb",
+      "home": {
+        "name": "Duke",
+        "score": 88
+      },
+      "away": {
+        "name": "Marshall",
+        "score": 51
+      },
+      "attendance": 3617,
+      "capturedAt": "2026-11-16T18:17:23.311Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "15:06"
+    }
+  ]
+}

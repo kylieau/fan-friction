@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-raptors-401909990",
+      "metroId": "toronto",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 108
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 112
+      },
+      "attendance": 19800,
+      "note": "OT",
+      "capturedAt": "2026-11-16T18:17:21.411Z",
+      "duration": {
+        "minutes": 166,
+        "kind": "estimated"
+      },
+      "startedAt": "18:12"
+    }
+  ]
+}

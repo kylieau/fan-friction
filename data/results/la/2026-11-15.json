@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-clippers-401909987",
+      "metroId": "la",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 113
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 105
+      },
+      "attendance": 17487,
+      "capturedAt": "2026-11-16T18:17:12.081Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "16:40"
+    },
+    {
+      "eventId": "2026-11-15-espn-ducks-401892723",
+      "metroId": "la",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 6
+      },
+      "away": {
+        "name": "Flames",
+        "score": 1
+      },
+      "attendance": 15686,
+      "capturedAt": "2026-11-16T18:17:12.081Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-15-espn-ucla-wbb-401915326",
+      "metroId": "la",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wbb",
+      "home": {
+        "name": "UCLA",
+        "score": 55
+      },
+      "away": {
+        "name": "Princeton",
+        "score": 34
+      },
+      "attendance": 8909,
+      "capturedAt": "2026-11-16T18:17:12.081Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "18:04"
+    },
+    {
+      "eventId": "2026-11-15-espn-usc-mbb-401926772",
+      "metroId": "la",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-mbb",
+      "home": {
+        "name": "USC",
+        "score": 122
+      },
+      "away": {
+        "name": "AR-Pine Bluff",
+        "score": 46
+      },
+      "attendance": 2564,
+      "capturedAt": "2026-11-16T18:17:12.081Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

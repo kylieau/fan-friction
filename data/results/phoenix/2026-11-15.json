@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-arizona-cardinals-401873061",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-stadium",
+      "homeTeamId": "arizona-cardinals",
+      "home": {
+        "name": "Cardinals",
+        "score": 6
+      },
+      "away": {
+        "name": "Rams",
+        "score": 34
+      },
+      "attendance": 60926,
+      "capturedAt": "2026-11-16T18:17:19.681Z",
+      "duration": {
+        "minutes": 164,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    },
+    {
+      "eventId": "2026-11-15-espn-suns-401909986",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mortgage-matchup-center",
+      "homeTeamId": "suns",
+      "home": {
+        "name": "Suns",
+        "score": 123
+      },
+      "away": {
+        "name": "Lakers",
+        "score": 131
+      },
+      "attendance": 17071,
+      "capturedAt": "2026-11-16T18:17:19.681Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "16:10"
+    },
+    {
+      "eventId": "2026-11-15-espn-valley-suns-401914554",
+      "metroId": "phoenix",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "valley-suns",
+      "home": {
+        "name": "Valley Suns",
+        "score": 121
+      },
+      "away": {
+        "name": "Coachella Valley Lakers",
+        "score": 134
+      },
+      "attendance": 1125,
+      "capturedAt": "2026-11-16T18:17:19.681Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "16:01"
+    }
+  ]
+}

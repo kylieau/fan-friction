@@ -63,6 +63,18 @@
       "code": 3,
       "precipProbability": 39,
       "precipMm": 0
+    },
+    {
+      "metroId": "cleveland",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "forecast",
+      "capturedAt": "2026-11-16T18:05:36.566Z",
+      "feelsLikeHighF": 52.1,
+      "feelsLikeLowF": 38.6,
+      "code": 53,
+      "precipProbability": 16,
+      "precipMm": 4.1
     }
   ]
 }

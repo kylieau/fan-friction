@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-delaware-mbb-401920771",
+      "metroId": "philadelphia",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-mbb",
+      "home": {
+        "name": "Delaware",
+        "score": 64
+      },
+      "away": {
+        "name": "Colgate",
+        "score": 58
+      },
+      "attendance": 1626,
+      "capturedAt": "2026-11-16T18:17:17.806Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-15-espn-delaware-wbb-401919465",
+      "metroId": "philadelphia",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-wbb",
+      "home": {
+        "name": "Delaware",
+        "score": 83
+      },
+      "away": {
+        "name": "American",
+        "score": 61
+      },
+      "attendance": 1626,
+      "capturedAt": "2026-11-16T18:17:17.806Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-15-espn-flyers-401892721",
+      "metroId": "philadelphia",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 2
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 5
+      },
+      "attendance": 18903,
+      "capturedAt": "2026-11-16T18:17:17.806Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:39"
+    },
+    {
+      "eventId": "2026-11-15-espn-sixers-401909985",
+      "metroId": "philadelphia",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 131
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 124
+      },
+      "attendance": 21024,
+      "capturedAt": "2026-11-16T18:17:17.806Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "13:11"
+    }
+  ]
+}

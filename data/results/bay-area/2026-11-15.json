@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-sharks-401892725",
+      "metroId": "bay-area",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 4
+      },
+      "away": {
+        "name": "Predators",
+        "score": 2
+      },
+      "attendance": 14949,
+      "capturedAt": "2026-11-16T18:17:15.851Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    },
+    {
+      "eventId": "2026-11-15-espn-sjsu-mbb-401911472",
+      "metroId": "bay-area",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-mbb",
+      "home": {
+        "name": "San José St",
+        "score": 80
+      },
+      "away": {
+        "name": "Alabama St",
+        "score": 68
+      },
+      "attendance": 2008,
+      "capturedAt": "2026-11-16T18:17:15.851Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "21:04"
+    },
+    {
+      "eventId": "2026-11-15-espn-sjsu-wbb-401927001",
+      "metroId": "bay-area",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-wbb",
+      "home": {
+        "name": "San José St",
+        "score": 72
+      },
+      "away": {
+        "name": "Portland St",
+        "score": 70
+      },
+      "attendance": 368,
+      "capturedAt": "2026-11-16T18:17:15.851Z",
+      "duration": {
+        "minutes": 100,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    },
+    {
+      "eventId": "2026-11-15-espn-stanford-wbb-401915981",
+      "metroId": "bay-area",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-wbb",
+      "home": {
+        "name": "Stanford",
+        "score": 67
+      },
+      "away": {
+        "name": "Gonzaga",
+        "score": 65
+      },
+      "attendance": 2405,
+      "capturedAt": "2026-11-16T18:17:15.851Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

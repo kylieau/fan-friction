@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-robert-morris-mbb-401928825",
+      "metroId": "pittsburgh",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-events-center",
+      "homeTeamId": "robert-morris-mbb",
+      "home": {
+        "name": "Robert Morris",
+        "score": 94
+      },
+      "away": {
+        "name": "Capital",
+        "score": 45
+      },
+      "attendance": 750,
+      "capturedAt": "2026-11-16T18:17:18.135Z",
+      "duration": {
+        "minutes": 104,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

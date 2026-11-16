@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-golden-knights-401892724",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 3
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 6
+      },
+      "attendance": 16336,
+      "capturedAt": "2026-11-16T18:17:20.411Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "21:08"
+    },
+    {
+      "eventId": "2026-11-15-espn-raiders-401873062",
+      "metroId": "las-vegas",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allegiant-stadium",
+      "homeTeamId": "raiders",
+      "home": {
+        "name": "Raiders",
+        "score": 13
+      },
+      "away": {
+        "name": "Seahawks",
+        "score": 21
+      },
+      "attendance": 62624,
+      "capturedAt": "2026-11-16T18:17:20.411Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    }
+  ]
+}

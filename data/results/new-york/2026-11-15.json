@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-gotham-401933740",
+      "metroId": "new-york",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "icahn-stadium",
+      "homeTeamId": "gotham",
+      "home": {
+        "name": "Gotham",
+        "score": 1
+      },
+      "away": {
+        "name": "Current",
+        "score": 2
+      },
+      "capturedAt": "2026-11-16T18:17:13.258Z"
+    },
+    {
+      "eventId": "2026-11-15-espn-ny-jets-401873054",
+      "metroId": "new-york",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-jets",
+      "home": {
+        "name": "Jets",
+        "score": 12
+      },
+      "away": {
+        "name": "Bills",
+        "score": 31
+      },
+      "attendance": 82953,
+      "capturedAt": "2026-11-16T18:17:13.258Z",
+      "duration": {
+        "minutes": 183,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    },
+    {
+      "eventId": "2026-11-15-espn-stjohns-mbb-401920681",
+      "metroId": "new-york",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "stjohns-mbb",
+      "home": {
+        "name": "St John's",
+        "score": 79
+      },
+      "away": {
+        "name": "Syracuse",
+        "score": 62
+      },
+      "attendance": 16431,
+      "capturedAt": "2026-11-16T18:17:13.258Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

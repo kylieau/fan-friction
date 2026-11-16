@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-sacramento-kings-401909993",
+      "metroId": "sacramento",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 103
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 125
+      },
+      "attendance": 13021,
+      "capturedAt": "2026-11-16T18:17:20.074Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "21:10"
+    }
+  ]
+}

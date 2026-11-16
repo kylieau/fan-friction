@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-texas-mbb-401906866",
+      "metroId": "austin",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "texas-mbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 75
+      },
+      "away": {
+        "name": "Baylor",
+        "score": 72
+      },
+      "attendance": 6164,
+      "capturedAt": "2026-11-16T18:17:19.479Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "15:05"
+    }
+  ]
+}

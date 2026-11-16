@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-usf-wbb-401913865",
+      "metroId": "tampa",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-wbb",
+      "home": {
+        "name": "South Florida",
+        "score": 69
+      },
+      "away": {
+        "name": "FIU",
+        "score": 35
+      },
+      "attendance": 2060,
+      "capturedAt": "2026-11-16T18:17:18.385Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    }
+  ]
+}

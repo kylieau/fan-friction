@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-15",
+  "results": [
+    {
+      "eventId": "2026-11-15-espn-utsa-mbb-401929200",
+      "metroId": "san-antonio",
+      "date": "2026-11-15",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-mbb",
+      "home": {
+        "name": "UTSA",
+        "score": 67
+      },
+      "away": {
+        "name": "Texas St",
+        "score": 87
+      },
+      "attendance": 1242,
+      "capturedAt": "2026-11-16T18:17:22.883Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}
