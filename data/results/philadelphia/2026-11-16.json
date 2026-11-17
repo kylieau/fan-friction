@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-penn-mbb-401921182",
+      "metroId": "philadelphia",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-mbb",
+      "home": {
+        "name": "Penn",
+        "score": 75
+      },
+      "away": {
+        "name": "DeSales",
+        "score": 53
+      },
+      "attendance": 1208,
+      "capturedAt": "2026-11-17T17:38:33.512Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

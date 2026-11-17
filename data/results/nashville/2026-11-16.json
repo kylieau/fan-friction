@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-mtsu-wbb-401928008",
+      "metroId": "nashville",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "murphy-center",
+      "homeTeamId": "mtsu-wbb",
+      "home": {
+        "name": "MTSU",
+        "score": 71
+      },
+      "away": {
+        "name": "Tennessee Tech",
+        "score": 61
+      },
+      "attendance": 3124,
+      "capturedAt": "2026-11-17T17:38:35.099Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-du-mbb-401926228",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-mbb",
+      "home": {
+        "name": "Denver",
+        "score": 101
+      },
+      "away": {
+        "name": "UC Col Springs",
+        "score": 63
+      },
+      "attendance": 593,
+      "capturedAt": "2026-11-17T17:38:40.050Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-16-espn-du-wbb-401923328",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-wbb",
+      "home": {
+        "name": "Denver",
+        "score": 72
+      },
+      "away": {
+        "name": "Regis U",
+        "score": 51
+      },
+      "attendance": 827,
+      "capturedAt": "2026-11-17T17:38:40.050Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-16-espn-nuggets-401910001",
+      "metroId": "denver",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 105
+      },
+      "away": {
+        "name": "Suns",
+        "score": 117
+      },
+      "attendance": 19520,
+      "capturedAt": "2026-11-17T17:38:40.050Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "21:11"
+    }
+  ]
+}

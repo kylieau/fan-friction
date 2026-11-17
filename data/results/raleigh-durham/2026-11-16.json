@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-nccu-mbb-401927352",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mcdougald-mclendon-arena",
+      "homeTeamId": "nccu-mbb",
+      "home": {
+        "name": "NC Central",
+        "score": 117
+      },
+      "away": {
+        "name": "VA Lynchburg",
+        "score": 71
+      },
+      "attendance": 2325,
+      "capturedAt": "2026-11-17T17:38:39.443Z",
+      "duration": {
+        "minutes": 93,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

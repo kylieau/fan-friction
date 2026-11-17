@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-12-02",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "nashville",
+      "venueId": "city",
+      "date": "2026-12-02",
+      "basis": "forecast",
+      "capturedAt": "2026-11-17T17:31:06.235Z",
+      "feelsLikeHighF": 52.3,
+      "feelsLikeLowF": 44,
+      "code": 80,
+      "precipProbability": 26,
+      "precipMm": 10.2
+    }
+  ]
+}

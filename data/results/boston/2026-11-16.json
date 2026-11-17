@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-celtics-401909994",
+      "metroId": "boston",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "celtics",
+      "home": {
+        "name": "Celtics",
+        "score": 105
+      },
+      "away": {
+        "name": "Magic",
+        "score": 115
+      },
+      "attendance": 19156,
+      "capturedAt": "2026-11-17T17:38:33.283Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

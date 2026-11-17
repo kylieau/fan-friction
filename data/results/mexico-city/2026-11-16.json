@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-capitanes-401914558",
+      "metroId": "mexico-city",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "arena-cdmx",
+      "homeTeamId": "capitanes",
+      "home": {
+        "name": "Mexico City Capitanes",
+        "score": 79
+      },
+      "away": {
+        "name": "Magic",
+        "score": 95
+      },
+      "attendance": 6718,
+      "capturedAt": "2026-11-17T17:38:36.335Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "17:04"
+    }
+  ]
+}

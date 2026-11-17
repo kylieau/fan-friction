@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-northwestern-mbb-401920735",
+      "metroId": "chicago",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-mbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 53
+      },
+      "away": {
+        "name": "Columbia",
+        "score": 75
+      },
+      "attendance": 3874,
+      "capturedAt": "2026-11-17T17:38:32.087Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-utsa-wbb-401926947",
+      "metroId": "san-antonio",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-wbb",
+      "home": {
+        "name": "UTSA",
+        "score": 61
+      },
+      "away": {
+        "name": "Louisiana",
+        "score": 60
+      },
+      "attendance": 1524,
+      "capturedAt": "2026-11-17T17:38:39.049Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

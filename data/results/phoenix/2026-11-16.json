@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-asu-wbb-401916083",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-wbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 85
+      },
+      "away": {
+        "name": "Penn State",
+        "score": 41
+      },
+      "attendance": 2083,
+      "capturedAt": "2026-11-17T17:38:35.664Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-16-espn-valley-suns-401914561",
+      "metroId": "phoenix",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "valley-suns",
+      "home": {
+        "name": "Valley Suns",
+        "score": 143
+      },
+      "away": {
+        "name": "Stars",
+        "score": 145
+      },
+      "attendance": 386,
+      "note": "OT",
+      "capturedAt": "2026-11-17T17:38:35.664Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

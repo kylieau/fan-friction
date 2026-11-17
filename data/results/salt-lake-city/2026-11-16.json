@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-utah-mammoth-401892727",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 2
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 3
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-11-17T17:38:38.139Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "21:38"
+    },
+    {
+      "eventId": "2026-11-16-espn-utah-wbb-401918934",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-wbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 98
+      },
+      "away": {
+        "name": "Hou Christian",
+        "score": 49
+      },
+      "attendance": 1524,
+      "capturedAt": "2026-11-17T17:38:38.139Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

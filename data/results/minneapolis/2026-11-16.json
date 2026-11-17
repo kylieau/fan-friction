@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-gophers-mbb-401916307",
+      "metroId": "minneapolis",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-mbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 99
+      },
+      "away": {
+        "name": "W Illinois",
+        "score": 63
+      },
+      "attendance": 6831,
+      "capturedAt": "2026-11-17T17:38:37.578Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    },
+    {
+      "eventId": "2026-11-16-espn-timberwolves-401909999",
+      "metroId": "minneapolis",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 106
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 98
+      },
+      "attendance": 18236,
+      "capturedAt": "2026-11-17T17:38:37.578Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    }
+  ]
+}

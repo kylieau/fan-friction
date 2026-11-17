@@ -67146,6 +67146,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   },
   {
     "metroId": "chicago",
+    "teamId": "northwestern-mbb",
+    "season": 2027,
+    "level": 0.8,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
     "teamId": "windy-city-bulls",
     "season": 2027,
     "level": 0.585,
@@ -67496,6 +67503,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   },
   {
     "metroId": "new-orleans",
+    "teamId": "pelicans",
+    "season": 2027,
+    "level": 0.996,
+    "games": 10
+  },
+  {
+    "metroId": "new-orleans",
     "teamId": "saints",
     "season": 2026,
     "level": 1,
@@ -67548,7 +67562,7 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "ny-rangers",
     "season": 2027,
     "level": 1,
-    "games": 10
+    "games": 11
   },
   {
     "metroId": "new-york",
@@ -67815,6 +67829,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2027,
     "level": 0.991,
     "games": 12
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gw-mbb",
+    "season": 2027,
+    "level": 1.033,
+    "games": 5
   },
   {
     "metroId": "washington-dc",
@@ -71059,7 +71080,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "celtics",
     "opponent": "magic",
     "ratio": 1,
-    "games": 3
+    "games": 4
   },
   {
     "metroId": "boston",
@@ -73075,7 +73096,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "cavaliers",
     "opponent": "bulls",
     "ratio": 1,
-    "games": 4
+    "games": 5
   },
   {
     "metroId": "cleveland",
@@ -75832,8 +75853,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "denver",
     "teamId": "du-mbb",
     "opponent": "uc-col-springs",
-    "ratio": 1.026,
-    "games": 2
+    "ratio": 0.999,
+    "games": 3
   },
   {
     "metroId": "denver",
@@ -75875,6 +75896,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "du-wbb",
     "opponent": "oral-roberts",
     "ratio": 0.999,
+    "games": 2
+  },
+  {
+    "metroId": "denver",
+    "teamId": "du-wbb",
+    "opponent": "regis-u",
+    "ratio": 1.478,
     "games": 2
   },
   {
@@ -76063,8 +76091,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "denver",
     "teamId": "nuggets",
     "opponent": "suns",
-    "ratio": 1.003,
-    "games": 5
+    "ratio": 1.001,
+    "games": 6
   },
   {
     "metroId": "denver",
@@ -82034,8 +82062,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "miami",
     "teamId": "heat",
     "opponent": "rockets",
-    "ratio": 1,
-    "games": 2
+    "ratio": 1.001,
+    "games": 3
   },
   {
     "metroId": "miami",
@@ -85351,6 +85379,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "nashville",
     "teamId": "mtsu-wbb",
+    "opponent": "tennessee-tech",
+    "ratio": 0.992,
+    "games": 2
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "mtsu-wbb",
     "opponent": "utep",
     "ratio": 0.994,
     "games": 2
@@ -86430,8 +86465,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-orleans",
     "teamId": "pelicans",
     "opponent": "warriors",
-    "ratio": 1.024,
-    "games": 5
+    "ratio": 1.026,
+    "games": 6
   },
   {
     "metroId": "new-orleans",
@@ -87774,8 +87809,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "nets",
     "opponent": "76ers",
-    "ratio": 0.995,
-    "games": 4
+    "ratio": 0.991,
+    "games": 5
   },
   {
     "metroId": "new-york",
@@ -88089,8 +88124,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "ny-rangers",
     "opponent": "canadiens",
-    "ratio": 0.993,
-    "games": 5
+    "ratio": 0.994,
+    "games": 6
   },
   {
     "metroId": "new-york",
@@ -91029,8 +91064,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "phoenix",
     "teamId": "valley-suns",
     "opponent": "stars",
-    "ratio": 1.251,
-    "games": 2
+    "ratio": 1.085,
+    "games": 3
   },
   {
     "metroId": "phoenix",
@@ -91198,6 +91233,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "duquesne-wbb",
     "opponent": "dayton",
     "ratio": 1.029,
+    "games": 2
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "duquesne-wbb",
+    "opponent": "robert-morris",
+    "ratio": 1.016,
     "games": 2
   },
   {
@@ -93500,8 +93542,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "raleigh-durham",
     "teamId": "nccu-mbb",
     "opponent": "va-lynchburg",
-    "ratio": 0.57,
-    "games": 2
+    "ratio": 0.881,
+    "games": 3
   },
   {
     "metroId": "raleigh-durham",
@@ -94872,8 +94914,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "salt-lake-city",
     "teamId": "utah-mammoth",
     "opponent": "canucks",
-    "ratio": 1,
-    "games": 3
+    "ratio": 1.023,
+    "games": 4
   },
   {
     "metroId": "salt-lake-city",
@@ -100472,8 +100514,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "washington-dc",
     "teamId": "maryland-mbb",
     "opponent": "alcorn-st",
-    "ratio": 0.931,
-    "games": 3
+    "ratio": 0.919,
+    "games": 4
   },
   {
     "metroId": "washington-dc",

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-duquesne-wbb-401915766",
+      "metroId": "pittsburgh",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 73
+      },
+      "away": {
+        "name": "Robert Morris",
+        "score": 68
+      },
+      "attendance": 828,
+      "capturedAt": "2026-11-17T17:38:33.872Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

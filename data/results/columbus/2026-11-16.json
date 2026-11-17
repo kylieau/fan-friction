@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-osu-mbb-401916317",
+      "metroId": "columbus",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 86
+      },
+      "away": {
+        "name": "Prairie View",
+        "score": 59
+      },
+      "attendance": 8305,
+      "capturedAt": "2026-11-17T17:38:34.555Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "18:31"
+    }
+  ]
+}

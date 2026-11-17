@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-16",
+  "results": [
+    {
+      "eventId": "2026-11-16-espn-ucla-mbb-401924265",
+      "metroId": "la",
+      "date": "2026-11-16",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 105
+      },
+      "away": {
+        "name": "Long Beach St",
+        "score": 66
+      },
+      "attendance": 3729,
+      "capturedAt": "2026-11-17T17:38:29.274Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}
