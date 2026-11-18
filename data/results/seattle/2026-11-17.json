@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-uw-mbb-401934595",
+      "metroId": "seattle",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-mbb",
+      "home": {
+        "name": "Washington",
+        "score": 96
+      },
+      "away": {
+        "name": "Simon Fraser",
+        "score": 59
+      },
+      "attendance": 3488,
+      "capturedAt": "2026-11-18T17:12:35.357Z",
+      "duration": {
+        "minutes": 104,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}

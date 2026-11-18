@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-miami-hurricanes-mbb-401921722",
+      "metroId": "miami",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "watsco-center",
+      "homeTeamId": "miami-hurricanes-mbb",
+      "home": {
+        "name": "Miami",
+        "score": 95
+      },
+      "away": {
+        "name": "Rider",
+        "score": 48
+      },
+      "attendance": 3589,
+      "capturedAt": "2026-11-18T17:12:41.200Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-17-espn-panthers-401892730",
+      "metroId": "miami",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 2
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 5
+      },
+      "attendance": 18432,
+      "capturedAt": "2026-11-18T17:12:41.200Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

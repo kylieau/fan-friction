@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-motor-city-cruise-401914562",
+      "metroId": "detroit",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wayne-state-fieldhouse",
+      "homeTeamId": "motor-city-cruise",
+      "home": {
+        "name": "Cruise",
+        "score": 100
+      },
+      "away": {
+        "name": "Gold",
+        "score": 112
+      },
+      "attendance": 1962,
+      "capturedAt": "2026-11-18T17:12:38.224Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "11:04"
+    }
+  ]
+}

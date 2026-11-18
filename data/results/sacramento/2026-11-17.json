@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-uc-davis-mbb-401911521",
+      "metroId": "sacramento",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-mbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 68
+      },
+      "away": {
+        "name": "Alabama St",
+        "score": 75
+      },
+      "attendance": 879,
+      "capturedAt": "2026-11-18T17:12:43.724Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "21:06"
+    }
+  ]
+}

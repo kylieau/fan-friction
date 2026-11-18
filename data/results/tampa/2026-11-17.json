@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-lightning-401892729",
+      "metroId": "tampa",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 5
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 2
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-18T17:12:40.738Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "19:39"
+    },
+    {
+      "eventId": "2026-11-17-espn-usf-mbb-401918994",
+      "metroId": "tampa",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-mbb",
+      "home": {
+        "name": "South Florida",
+        "score": 98
+      },
+      "away": {
+        "name": "Tennessee St",
+        "score": 71
+      },
+      "attendance": 2599,
+      "capturedAt": "2026-11-18T17:12:40.738Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-clippers-401910006",
+      "metroId": "la",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "clippers",
+      "home": {
+        "name": "Clippers",
+        "score": 107
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 132
+      },
+      "attendance": 14716,
+      "capturedAt": "2026-11-18T17:12:33.924Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "22:40"
+    },
+    {
+      "eventId": "2026-11-17-espn-lakers-401910005",
+      "metroId": "la",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 118
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 114
+      },
+      "attendance": 19057,
+      "note": "OT",
+      "capturedAt": "2026-11-18T17:12:33.924Z",
+      "duration": {
+        "minutes": 169,
+        "kind": "estimated"
+      },
+      "startedAt": "23:12"
+    },
+    {
+      "eventId": "2026-11-17-espn-ucla-wvb-401886069",
+      "metroId": "la",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-wvb",
+      "home": {
+        "name": "UCLA",
+        "score": 3
+      },
+      "away": {
+        "name": "USC",
+        "score": 0
+      },
+      "capturedAt": "2026-11-18T17:12:33.924Z"
+    }
+  ]
+}

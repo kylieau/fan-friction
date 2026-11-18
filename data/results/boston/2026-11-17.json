@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-bc-wbb-401906035",
+      "metroId": "boston",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-wbb",
+      "home": {
+        "name": "Boston College",
+        "score": 70
+      },
+      "away": {
+        "name": "Merrimack",
+        "score": 45
+      },
+      "attendance": 547,
+      "capturedAt": "2026-11-18T17:12:39.474Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-17-espn-bruins-401892728",
+      "metroId": "boston",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 0
+      },
+      "away": {
+        "name": "Kings",
+        "score": 3
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-18T17:12:39.474Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

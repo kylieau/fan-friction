@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-12-03",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "houston",
+      "venueId": "city",
+      "date": "2026-12-03",
+      "basis": "forecast",
+      "capturedAt": "2026-11-18T17:07:19.689Z",
+      "feelsLikeHighF": 63.6,
+      "feelsLikeLowF": 55.6,
+      "code": 3,
+      "precipProbability": 34,
+      "precipMm": 0
+    }
+  ]
+}

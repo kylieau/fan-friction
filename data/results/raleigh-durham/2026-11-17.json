@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-duke-mbb-401909566",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-mbb",
+      "home": {
+        "name": "Duke",
+        "score": 78
+      },
+      "away": {
+        "name": "Illinois",
+        "score": 99
+      },
+      "attendance": 9314,
+      "capturedAt": "2026-11-18T17:12:49.075Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-rice-mbb-401921097",
+      "metroId": "houston",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tudor-fieldhouse",
+      "homeTeamId": "rice-mbb",
+      "home": {
+        "name": "Rice Owls",
+        "score": 81
+      },
+      "away": {
+        "name": "Texas A&M-CC",
+        "score": 74
+      },
+      "attendance": 723,
+      "capturedAt": "2026-11-18T17:12:45.203Z",
+      "duration": {
+        "minutes": 156,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-17-espn-uh-mbb-401920511",
+      "metroId": "houston",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "uh-mbb",
+      "home": {
+        "name": "Houston",
+        "score": 85
+      },
+      "away": {
+        "name": "Rutgers",
+        "score": 73
+      },
+      "capturedAt": "2026-11-18T17:12:45.203Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-17-espn-uh-wbb-401920441",
+      "metroId": "houston",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fertitta-center",
+      "homeTeamId": "uh-wbb",
+      "home": {
+        "name": "Houston",
+        "score": 70
+      },
+      "away": {
+        "name": "Texas A&M-CC",
+        "score": 57
+      },
+      "attendance": 751,
+      "capturedAt": "2026-11-18T17:12:45.203Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

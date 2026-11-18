@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-blackhawks-401892733",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 6
+      },
+      "away": {
+        "name": "Maple Leafs",
+        "score": 3
+      },
+      "attendance": 19988,
+      "capturedAt": "2026-11-18T17:12:37.280Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:39"
+    },
+    {
+      "eventId": "2026-11-17-espn-depaul-mbb-401909504",
+      "metroId": "chicago",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-mbb",
+      "home": {
+        "name": "DePaul",
+        "score": 83
+      },
+      "away": {
+        "name": "MD Eastern",
+        "score": 39
+      },
+      "attendance": 2725,
+      "capturedAt": "2026-11-18T17:12:37.280Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "20:05"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-golden-knights-401892737",
+      "metroId": "las-vegas",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 3
+      },
+      "away": {
+        "name": "Stars",
+        "score": 4
+      },
+      "attendance": 16242,
+      "note": "OT",
+      "capturedAt": "2026-11-18T17:12:44.493Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "22:18"
+    }
+  ]
+}

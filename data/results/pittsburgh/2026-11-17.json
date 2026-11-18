@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-pitt-mbb-401909708",
+      "metroId": "pittsburgh",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-mbb",
+      "home": {
+        "name": "Pitt",
+        "score": 81
+      },
+      "away": {
+        "name": "Villanova",
+        "score": 61
+      },
+      "attendance": 6428,
+      "capturedAt": "2026-11-18T17:12:40.328Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-gt-mbb-401920308",
+      "metroId": "atlanta",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-mbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 93
+      },
+      "away": {
+        "name": "Norfolk St",
+        "score": 79
+      },
+      "attendance": 5234,
+      "capturedAt": "2026-11-18T17:12:36.245Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

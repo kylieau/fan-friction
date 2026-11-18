@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-timberwolves-401910003",
+      "metroId": "minneapolis",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 106
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 105
+      },
+      "attendance": 18281,
+      "capturedAt": "2026-11-18T17:12:46.254Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-17-espn-wild-401892735",
+      "metroId": "minneapolis",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 7
+      },
+      "away": {
+        "name": "Predators",
+        "score": 3
+      },
+      "attendance": 18807,
+      "capturedAt": "2026-11-18T17:12:46.254Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:08"
+    }
+  ]
+}

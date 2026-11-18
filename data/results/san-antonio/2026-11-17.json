@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-spurs-401910004",
+      "metroId": "san-antonio",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 93
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 105
+      },
+      "attendance": 18412,
+      "capturedAt": "2026-11-18T17:12:48.351Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    }
+  ]
+}

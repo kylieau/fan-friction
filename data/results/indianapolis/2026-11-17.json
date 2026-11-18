@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-butler-mbb-401902279",
+      "metroId": "indianapolis",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-mbb",
+      "home": {
+        "name": "Butler",
+        "score": 89
+      },
+      "away": {
+        "name": "W Carolina",
+        "score": 64
+      },
+      "attendance": 5339,
+      "capturedAt": "2026-11-18T17:12:45.652Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

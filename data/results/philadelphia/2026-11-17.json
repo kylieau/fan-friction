@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-delaware-mbb-401920904",
+      "metroId": "philadelphia",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-mbb",
+      "home": {
+        "name": "Delaware",
+        "score": 93
+      },
+      "away": {
+        "name": "Wilson",
+        "score": 47
+      },
+      "attendance": 1237,
+      "capturedAt": "2026-11-18T17:12:39.945Z",
+      "duration": {
+        "minutes": 100,
+        "kind": "estimated"
+      },
+      "startedAt": "11:02"
+    },
+    {
+      "eventId": "2026-11-17-espn-flyers-401892732",
+      "metroId": "philadelphia",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "flyers",
+      "home": {
+        "name": "Flyers",
+        "score": 4
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 3
+      },
+      "attendance": 18457,
+      "capturedAt": "2026-11-18T17:12:39.945Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:12"
+    }
+  ]
+}

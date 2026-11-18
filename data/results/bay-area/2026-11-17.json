@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-17",
+  "results": [
+    {
+      "eventId": "2026-11-17-espn-sharks-401892738",
+      "metroId": "bay-area",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 2
+      },
+      "away": {
+        "name": "Flames",
+        "score": 5
+      },
+      "attendance": 13876,
+      "capturedAt": "2026-11-18T17:12:36.769Z",
+      "duration": {
+        "minutes": 151,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-17-espn-stanford-mbb-401921729",
+      "metroId": "bay-area",
+      "date": "2026-11-17",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-mbb",
+      "home": {
+        "name": "Stanford",
+        "score": 65
+      },
+      "away": {
+        "name": "UC Irvine",
+        "score": 61
+      },
+      "attendance": 2125,
+      "capturedAt": "2026-11-18T17:12:36.769Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}

@@ -146,6 +146,24 @@
       "shortwave": 0,
       "cloudCover": 100,
       "code": 3
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-11-23",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-11-18T17:07:09.731Z",
+      "feelsLikeF": 32.8,
+      "tempF": 40.6,
+      "humidity": 53,
+      "windMph": 7.1,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 36,
+      "code": 1
     }
   ],
   "days": [
@@ -255,6 +273,18 @@
       "feelsLikeLowF": 30.5,
       "code": 3,
       "precipProbability": 6,
+      "precipMm": 0
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-11-23",
+      "basis": "forecast",
+      "capturedAt": "2026-11-18T17:07:09.731Z",
+      "feelsLikeHighF": 39.7,
+      "feelsLikeLowF": 27.6,
+      "code": 3,
+      "precipProbability": 1,
       "precipMm": 0
     }
   ]
