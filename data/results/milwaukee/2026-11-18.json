@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-marquette-mbb-401909526",
+      "metroId": "milwaukee",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "marquette-mbb",
+      "home": {
+        "name": "Marquette",
+        "score": 79
+      },
+      "away": {
+        "name": "N Illinois",
+        "score": 65
+      },
+      "attendance": 12157,
+      "capturedAt": "2026-11-19T17:20:47.397Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-utah-mammoth-401892741",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 4
+      },
+      "away": {
+        "name": "Avalanche",
+        "score": 1
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-11-19T17:20:58.493Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "22:18"
+    }
+  ]
+}

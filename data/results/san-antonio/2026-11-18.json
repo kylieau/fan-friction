@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-utsa-mbb-401929420",
+      "metroId": "san-antonio",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-mbb",
+      "home": {
+        "name": "UTSA",
+        "score": 98
+      },
+      "away": {
+        "name": "Florida A&M",
+        "score": 78
+      },
+      "attendance": 733,
+      "capturedAt": "2026-11-19T17:21:01.880Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

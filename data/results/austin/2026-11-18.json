@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-texas-state-mbb-401929201",
+      "metroId": "austin",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-mbb",
+      "home": {
+        "name": "Texas St",
+        "score": 84
+      },
+      "away": {
+        "name": "Incarnate Word",
+        "score": 51
+      },
+      "attendance": 1413,
+      "capturedAt": "2026-11-19T17:20:52.112Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

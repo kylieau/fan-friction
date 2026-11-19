@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-usf-wbb-401913866",
+      "metroId": "tampa",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-wbb",
+      "home": {
+        "name": "South Florida",
+        "score": 72
+      },
+      "away": {
+        "name": "Binghamton",
+        "score": 61
+      },
+      "attendance": 1790,
+      "capturedAt": "2026-11-19T17:20:50.058Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

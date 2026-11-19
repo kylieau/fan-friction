@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-butler-wbb-401920253",
+      "metroId": "indianapolis",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-wbb",
+      "home": {
+        "name": "Butler",
+        "score": 99
+      },
+      "away": {
+        "name": "Kent State",
+        "score": 43
+      },
+      "attendance": 692,
+      "capturedAt": "2026-11-19T17:20:55.667Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    },
+    {
+      "eventId": "2026-11-18-espn-pacers-401910008",
+      "metroId": "indianapolis",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 104
+      },
+      "away": {
+        "name": "Rockets",
+        "score": 119
+      },
+      "attendance": 17274,
+      "capturedAt": "2026-11-19T17:20:55.667Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-12-04",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-12-04",
+      "basis": "forecast",
+      "capturedAt": "2026-11-19T17:10:18.227Z",
+      "feelsLikeHighF": 44.4,
+      "feelsLikeLowF": 30.7,
+      "code": 3,
+      "precipProbability": 29,
+      "precipMm": 0
+    }
+  ]
+}

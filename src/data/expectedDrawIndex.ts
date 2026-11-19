@@ -603,11 +603,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 70091,
-    "low": 69500,
-    "high": 71455,
-    "games": 22,
-    "seasons": "2023–2025"
+    "count": 70739,
+    "low": 69799,
+    "high": 72103,
+    "games": 15,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "atlanta",
@@ -616,10 +616,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "opener",
     "month": null,
     "count": 71610,
-    "low": 70604,
+    "low": 71377,
     "high": 71951,
     "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "atlanta",
@@ -627,11 +627,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "preseason",
     "month": null,
-    "count": 67523,
-    "low": 67477,
-    "high": 67784,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 67654,
+    "low": 67503,
+    "high": 67884,
+    "games": 4,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "atlanta",
@@ -651,11 +651,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 70285,
-    "low": 69529,
-    "high": 71455,
-    "games": 18,
-    "seasons": "2023–2025"
+    "count": 71042,
+    "low": 70198,
+    "high": 72155,
+    "games": 12,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "atlanta",
@@ -663,35 +663,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "sunday",
     "month": 9,
-    "count": 71848,
-    "low": 70932,
-    "high": 72263,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "atlanta",
-    "teamId": "falcons",
-    "venueId": "mercedes-benz-stadium",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 70306,
-    "low": 69806,
-    "high": 70854,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "atlanta",
-    "teamId": "falcons",
-    "venueId": "mercedes-benz-stadium",
-    "dayClass": "sunday",
-    "month": 11,
-    "count": 70453,
-    "low": 70053,
-    "high": 71221,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 72204,
+    "low": 71848,
+    "high": 72323,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "atlanta",
@@ -699,11 +675,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "mercedes-benz-stadium",
     "dayClass": "sunday",
     "month": 12,
-    "count": 69950,
-    "low": 69302,
-    "high": 70838,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 70404,
+    "low": 69563,
+    "high": 71272,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "atlanta",
@@ -22432,10 +22408,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "all",
     "month": null,
     "count": 73570,
-    "low": 73550,
-    "high": 73611,
-    "games": 20,
-    "seasons": "2023–2025"
+    "low": 73545,
+    "high": 73598,
+    "games": 14,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -22444,10 +22420,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "opener",
     "month": null,
     "count": 73558,
-    "low": 73540,
+    "low": 73551,
     "high": 73585,
     "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -22455,59 +22431,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "arrowhead-stadium",
     "dayClass": "preseason",
     "month": null,
-    "count": 73427,
-    "low": 73187,
-    "high": 73512,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "venueId": "arrowhead-stadium",
-    "dayClass": "weekday",
-    "month": null,
-    "count": 73581,
-    "low": 73559,
-    "high": 73633,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "venueId": "arrowhead-stadium",
-    "dayClass": "weekday",
-    "month": 10,
-    "count": 73569,
-    "low": 73549,
-    "high": 73581,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "venueId": "arrowhead-stadium",
-    "dayClass": "saturday",
-    "month": null,
-    "count": 73523,
-    "low": 73371,
-    "high": 73574,
-    "games": 4,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "venueId": "arrowhead-stadium",
-    "dayClass": "saturday",
-    "month": 12,
-    "count": 73523,
-    "low": 73371,
-    "high": 73574,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 72717,
+    "low": 72471,
+    "high": 73344,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -22515,11 +22443,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "arrowhead-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 73571,
-    "low": 73555,
-    "high": 73611,
-    "games": 11,
-    "seasons": "2023–2025"
+    "count": 73558,
+    "low": 73543,
+    "high": 73584,
+    "games": 9,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -22527,23 +22455,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "arrowhead-stadium",
     "dayClass": "sunday",
     "month": 9,
-    "count": 73558,
-    "low": 73555,
-    "high": 73560,
+    "count": 73552,
+    "low": 73452,
+    "high": 73555,
     "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "venueId": "arrowhead-stadium",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 73584,
-    "low": 73564,
-    "high": 73613,
-    "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "kansas-city",
@@ -22551,11 +22467,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "arrowhead-stadium",
     "dayClass": "sunday",
     "month": 12,
-    "count": 73591,
-    "low": 73447,
-    "high": 73618,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 73571,
+    "low": 73322,
+    "high": 73591,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "kansas-city",
@@ -23523,11 +23439,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "all",
     "month": null,
-    "count": 70240,
+    "count": 71018,
     "low": 70240,
-    "high": 71020,
-    "games": 22,
-    "seasons": "2023–2025"
+    "high": 71346,
+    "games": 15,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -23535,11 +23451,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "opener",
     "month": null,
-    "count": 70240,
-    "low": 70240,
-    "high": 70490,
+    "count": 70540,
+    "low": 70390,
+    "high": 70640,
     "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -23547,11 +23463,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "preseason",
     "month": null,
-    "count": 65325,
-    "low": 64901,
-    "high": 65728,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 65049,
+    "low": 63752,
+    "high": 65600,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -23559,11 +23475,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "weekday",
     "month": null,
-    "count": 70240,
+    "count": 70667,
     "low": 70240,
-    "high": 71094,
-    "games": 5,
-    "seasons": "2023–2025"
+    "high": 71381,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -23571,11 +23487,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 70240,
+    "count": 70629,
     "low": 70240,
-    "high": 70629,
-    "games": 15,
-    "seasons": "2023–2025"
+    "high": 71098,
+    "games": 10,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "la",
@@ -23583,11 +23499,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "sunday",
     "month": 10,
-    "count": 70240,
-    "low": 70240,
-    "high": 71021,
-    "games": 5,
-    "seasons": "2023–2025"
+    "count": 71021,
+    "low": 70631,
+    "high": 71073,
+    "games": 3,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -23595,11 +23511,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "sofi-stadium",
     "dayClass": "sunday",
     "month": 11,
-    "count": 70240,
-    "low": 70240,
-    "high": 70824,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 70629,
+    "low": 69879,
+    "high": 71307,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "la",
@@ -39652,10 +39568,10 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "dayClass": "all",
     "month": null,
     "count": 76871,
-    "low": 71047,
+    "low": 70918,
     "high": 81084,
-    "games": 21,
-    "seasons": "2023–2025"
+    "games": 13,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -39663,11 +39579,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "metlife-stadium",
     "dayClass": "opener",
     "month": null,
-    "count": 83253,
-    "low": 82033,
-    "high": 83299,
+    "count": 80812,
+    "low": 79743,
+    "high": 82033,
     "games": 3,
-    "seasons": "2023–2025"
+    "seasons": "2024–2026"
   },
   {
     "metroId": "new-york",
@@ -39675,11 +39591,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "metlife-stadium",
     "dayClass": "preseason",
     "month": null,
-    "count": 69102,
-    "low": 66844,
-    "high": 71241,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 67180,
+    "low": 65834,
+    "high": 70828,
+    "games": 5,
+    "seasons": "2024–2026"
   },
   {
     "metroId": "new-york",
@@ -39687,35 +39603,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "metlife-stadium",
     "dayClass": "sunday",
     "month": null,
-    "count": 76871,
-    "low": 71047,
-    "high": 80878,
-    "games": 17,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "ny-jets",
-    "venueId": "metlife-stadium",
-    "dayClass": "sunday",
-    "month": 9,
-    "count": 80878,
-    "low": 80877,
-    "high": 81561,
-    "games": 3,
-    "seasons": "2023–2025"
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "ny-jets",
-    "venueId": "metlife-stadium",
-    "dayClass": "sunday",
-    "month": 10,
-    "count": 81100,
-    "low": 78108,
-    "high": 82071,
-    "games": 4,
-    "seasons": "2023–2025"
+    "count": 74747,
+    "low": 70692,
+    "high": 80927,
+    "games": 12,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -39735,11 +39627,11 @@ export const EXPECTED_DRAWS: ExpectedDrawRow[] = [
     "venueId": "metlife-stadium",
     "dayClass": "sunday",
     "month": 12,
-    "count": 73706,
-    "low": 71428,
-    "high": 76267,
-    "games": 6,
-    "seasons": "2023–2025"
+    "count": 73895,
+    "low": 70345,
+    "high": 77924,
+    "games": 4,
+    "seasons": "2024–2025"
   },
   {
     "metroId": "new-york",
@@ -66940,9 +66832,9 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   {
     "metroId": "atlanta",
     "teamId": "falcons",
-    "season": 2026,
-    "level": 1.026,
-    "games": 5
+    "season": 2027,
+    "level": 1.017,
+    "games": 4
   },
   {
     "metroId": "atlanta",
@@ -66969,8 +66861,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "atlanta",
     "teamId": "gt-wbb",
     "season": 2027,
-    "level": 1.481,
-    "games": 5
+    "level": 1.535,
+    "games": 6
   },
   {
     "metroId": "atlanta",
@@ -67086,6 +66978,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   },
   {
     "metroId": "chicago",
+    "teamId": "depaul-wbb",
+    "season": 2027,
+    "level": 0.775,
+    "games": 5
+  },
+  {
+    "metroId": "chicago",
     "teamId": "northwestern-mbb",
     "season": 2027,
     "level": 0.8,
@@ -67137,8 +67036,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "columbus",
     "teamId": "osu-wbb",
     "season": 2027,
-    "level": 0.827,
-    "games": 5
+    "level": 0.835,
+    "games": 6
   },
   {
     "metroId": "dallas-fort-worth",
@@ -67186,8 +67085,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "dallas-fort-worth",
     "teamId": "tcu-wbb",
     "season": 2027,
-    "level": 0.871,
-    "games": 6
+    "level": 0.902,
+    "games": 7
   },
   {
     "metroId": "dallas-fort-worth",
@@ -67228,8 +67127,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "detroit",
     "teamId": "red-wings",
     "season": 2027,
-    "level": 0.935,
-    "games": 10
+    "level": 0.936,
+    "games": 11
   },
   {
     "metroId": "edmonton",
@@ -67281,20 +67180,6 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 5
   },
   {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "season": 2026,
-    "level": 1,
-    "games": 4
-  },
-  {
-    "metroId": "la",
-    "teamId": "chargers",
-    "season": 2026,
-    "level": 0.995,
-    "games": 4
-  },
-  {
     "metroId": "la",
     "teamId": "ducks",
     "season": 2027,
@@ -67340,8 +67225,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "las-vegas",
     "teamId": "henderson-silver-knights",
     "season": 2026,
-    "level": 0.856,
-    "games": 10
+    "level": 0.789,
+    "games": 11
   },
   {
     "metroId": "las-vegas",
@@ -67456,11 +67341,18 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 5
   },
   {
+    "metroId": "nashville",
+    "teamId": "vanderbilt-wbb",
+    "season": 2027,
+    "level": 0.971,
+    "games": 5
+  },
+  {
     "metroId": "new-orleans",
     "teamId": "pelicans",
     "season": 2027,
-    "level": 0.996,
-    "games": 10
+    "level": 1,
+    "games": 11
   },
   {
     "metroId": "new-orleans",
@@ -67487,8 +67379,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "new-york",
     "teamId": "devils",
     "season": 2027,
-    "level": 0.97,
-    "games": 11
+    "level": 0.983,
+    "games": 12
   },
   {
     "metroId": "new-york",
@@ -67514,9 +67406,9 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   {
     "metroId": "new-york",
     "teamId": "ny-jets",
-    "season": 2026,
-    "level": 0.965,
-    "games": 5
+    "season": 2027,
+    "level": 0.967,
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -67524,6 +67416,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2027,
     "level": 1,
     "games": 11
+  },
+  {
+    "metroId": "new-york",
+    "teamId": "stjohns-mbb",
+    "season": 2027,
+    "level": 1,
+    "games": 5
   },
   {
     "metroId": "ottawa-gatineau",
@@ -67582,6 +67481,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 5
   },
   {
+    "metroId": "phoenix",
+    "teamId": "asu-mbb",
+    "season": 2027,
+    "level": 0.737,
+    "games": 5
+  },
+  {
     "metroId": "pittsburgh",
     "teamId": "duquesne-football",
     "season": 2026,
@@ -67594,6 +67500,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 0.906,
     "games": 7
+  },
+  {
+    "metroId": "pittsburgh",
+    "teamId": "pitt-wbb",
+    "season": 2027,
+    "level": 1.311,
+    "games": 5
   },
   {
     "metroId": "pittsburgh",
@@ -67660,6 +67573,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   },
   {
     "metroId": "salt-lake-city",
+    "teamId": "utah-mammoth",
+    "season": 2027,
+    "level": 1.268,
+    "games": 10
+  },
+  {
+    "metroId": "salt-lake-city",
     "teamId": "utah-utes-football",
     "season": 2026,
     "level": 0.987,
@@ -67676,8 +67596,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "san-diego",
     "teamId": "san-diego-gulls",
     "season": 2026,
-    "level": 1.004,
-    "games": 7
+    "level": 1.002,
+    "games": 8
   },
   {
     "metroId": "san-diego",
@@ -68128,42 +68048,35 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "atlanta",
     "teamId": "falcons",
     "opponent": "buccaneers",
-    "ratio": 0.999,
-    "games": 3
-  },
-  {
-    "metroId": "atlanta",
-    "teamId": "falcons",
-    "opponent": "chiefs",
-    "ratio": 1.007,
-    "games": 2
-  },
-  {
-    "metroId": "atlanta",
-    "teamId": "falcons",
-    "opponent": "commanders",
     "ratio": 0.998,
     "games": 2
   },
   {
     "metroId": "atlanta",
     "teamId": "falcons",
-    "opponent": "panthers",
-    "ratio": 0.996,
-    "games": 4
+    "opponent": "chiefs",
+    "ratio": 1.005,
+    "games": 2
   },
   {
     "metroId": "atlanta",
     "teamId": "falcons",
-    "opponent": "saints",
-    "ratio": 0.997,
+    "opponent": "panthers",
+    "ratio": 0.994,
     "games": 3
   },
   {
     "metroId": "atlanta",
     "teamId": "falcons",
+    "opponent": "saints",
+    "ratio": 0.994,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "falcons",
     "opponent": "seahawks",
-    "ratio": 0.996,
+    "ratio": 0.993,
     "games": 2
   },
   {
@@ -68430,6 +68343,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "gt-wbb",
     "opponent": "clemson",
     "ratio": 1.006,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-wbb",
+    "opponent": "georgia",
+    "ratio": 1.351,
     "games": 2
   },
   {
@@ -69976,8 +69896,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "bay-area",
     "teamId": "sjsu-mbb",
     "opponent": "fresno-st",
-    "ratio": 0.968,
-    "games": 3
+    "ratio": 1.062,
+    "games": 4
   },
   {
     "metroId": "bay-area",
@@ -74729,8 +74649,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "dallas-fort-worth",
     "teamId": "mavericks",
     "opponent": "warriors",
-    "ratio": 0.985,
-    "games": 5
+    "ratio": 0.984,
+    "games": 6
   },
   {
     "metroId": "dallas-fort-worth",
@@ -75863,8 +75783,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "denver",
     "teamId": "nuggets",
     "opponent": "celtics",
-    "ratio": 1.003,
-    "games": 3
+    "ratio": 1.001,
+    "games": 4
   },
   {
     "metroId": "denver",
@@ -76605,8 +76525,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "detroit",
     "teamId": "motor-city-cruise",
     "opponent": "gold",
-    "ratio": 1.184,
-    "games": 5
+    "ratio": 1.113,
+    "games": 6
   },
   {
     "metroId": "detroit",
@@ -76878,8 +76798,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "detroit",
     "teamId": "red-wings",
     "opponent": "bruins",
-    "ratio": 0.991,
-    "games": 6
+    "ratio": 0.983,
+    "games": 7
   },
   {
     "metroId": "detroit",
@@ -78550,43 +78470,22 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "kansas-city",
     "teamId": "chiefs",
-    "opponent": "bengals",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
     "opponent": "broncos",
-    "ratio": 0.998,
-    "games": 3
+    "ratio": 0.999,
+    "games": 2
   },
   {
     "metroId": "kansas-city",
     "teamId": "chiefs",
     "opponent": "chargers",
     "ratio": 0.999,
-    "games": 4
+    "games": 3
   },
   {
     "metroId": "kansas-city",
     "teamId": "chiefs",
     "opponent": "colts",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "opponent": "eagles",
-    "ratio": 1,
-    "games": 2
-  },
-  {
-    "metroId": "kansas-city",
-    "teamId": "chiefs",
-    "opponent": "lions",
-    "ratio": 1,
+    "ratio": 0.999,
     "games": 2
   },
   {
@@ -78594,7 +78493,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "chiefs",
     "opponent": "raiders",
     "ratio": 1,
-    "games": 3
+    "games": 2
   },
   {
     "metroId": "kansas-city",
@@ -79132,35 +79031,21 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "chargers",
     "opponent": "broncos",
-    "ratio": 0.999,
-    "games": 4
-  },
-  {
-    "metroId": "la",
-    "teamId": "chargers",
-    "opponent": "chiefs",
-    "ratio": 0.996,
-    "games": 2
+    "ratio": 0.993,
+    "games": 3
   },
   {
     "metroId": "la",
     "teamId": "chargers",
     "opponent": "raiders",
-    "ratio": 1.006,
-    "games": 4
-  },
-  {
-    "metroId": "la",
-    "teamId": "chargers",
-    "opponent": "ravens",
-    "ratio": 1,
-    "games": 2
+    "ratio": 1.004,
+    "games": 3
   },
   {
     "metroId": "la",
     "teamId": "chargers",
     "opponent": "texans",
-    "ratio": 1,
+    "ratio": 0.992,
     "games": 2
   },
   {
@@ -80175,8 +80060,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "la",
     "teamId": "lakers",
     "opponent": "jazz",
-    "ratio": 0.998,
-    "games": 4
+    "ratio": 0.999,
+    "games": 5
   },
   {
     "metroId": "la",
@@ -80442,6 +80327,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "ucla-mbb",
     "opponent": "arizona-st",
     "ratio": 0.993,
+    "games": 2
+  },
+  {
+    "metroId": "la",
+    "teamId": "ucla-mbb",
+    "opponent": "fullerton",
+    "ratio": 0.912,
     "games": 2
   },
   {
@@ -80861,8 +80753,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "las-vegas",
     "teamId": "henderson-silver-knights",
     "opponent": "barracuda",
-    "ratio": 0.978,
-    "games": 6
+    "ratio": 0.93,
+    "games": 7
   },
   {
     "metroId": "las-vegas",
@@ -81827,8 +81719,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "miami",
     "teamId": "heat",
     "opponent": "bucks",
-    "ratio": 1,
-    "games": 4
+    "ratio": 1.005,
+    "games": 5
   },
   {
     "metroId": "miami",
@@ -83005,6 +82897,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "georgetown",
     "ratio": 0.993,
     "games": 3
+  },
+  {
+    "metroId": "milwaukee",
+    "teamId": "marquette-mbb",
+    "opponent": "n-illinois",
+    "ratio": 0.958,
+    "games": 2
   },
   {
     "metroId": "milwaukee",
@@ -86293,8 +86192,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-orleans",
     "teamId": "pelicans",
     "opponent": "pistons",
-    "ratio": 0.988,
-    "games": 3
+    "ratio": 1.001,
+    "games": 4
   },
   {
     "metroId": "new-orleans",
@@ -86721,7 +86620,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "devils",
     "opponent": "canadiens",
     "ratio": 1,
-    "games": 5
+    "games": 6
   },
   {
     "metroId": "new-york",
@@ -87707,8 +87606,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "nets",
     "opponent": "bulls",
-    "ratio": 1.004,
-    "games": 3
+    "ratio": 0.998,
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -87938,36 +87837,29 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "ny-jets",
     "opponent": "bills",
-    "ratio": 1.038,
-    "games": 4
+    "ratio": 1.055,
+    "games": 3
   },
   {
     "metroId": "new-york",
     "teamId": "ny-jets",
     "opponent": "browns",
-    "ratio": 0.964,
+    "ratio": 0.973,
     "games": 2
   },
   {
     "metroId": "new-york",
     "teamId": "ny-jets",
     "opponent": "dolphins",
-    "ratio": 0.955,
-    "games": 4
-  },
-  {
-    "metroId": "new-york",
-    "teamId": "ny-jets",
-    "opponent": "falcons",
-    "ratio": 0.989,
-    "games": 2
+    "ratio": 0.975,
+    "games": 3
   },
   {
     "metroId": "new-york",
     "teamId": "ny-jets",
     "opponent": "patriots",
     "ratio": 0.996,
-    "games": 3
+    "games": 2
   },
   {
     "metroId": "new-york",
@@ -90941,8 +90833,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "phoenix",
     "teamId": "valley-suns",
     "opponent": "stars",
-    "ratio": 1.085,
-    "games": 3
+    "ratio": 0.964,
+    "games": 4
   },
   {
     "metroId": "phoenix",
@@ -94105,8 +93997,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "sacramento",
     "teamId": "sacramento-kings",
     "opponent": "suns",
-    "ratio": 1.017,
-    "games": 4
+    "ratio": 0.979,
+    "games": 5
   },
   {
     "metroId": "sacramento",
@@ -94749,8 +94641,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "salt-lake-city",
     "teamId": "utah-mammoth",
     "opponent": "avalanche",
-    "ratio": 1.022,
-    "games": 4
+    "ratio": 1.037,
+    "games": 5
   },
   {
     "metroId": "salt-lake-city",
@@ -95771,8 +95663,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "san-diego",
     "teamId": "san-diego-gulls",
     "opponent": "condors",
-    "ratio": 1.113,
-    "games": 10
+    "ratio": 1.085,
+    "games": 11
   },
   {
     "metroId": "san-diego",
@@ -97757,6 +97649,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   },
   {
     "metroId": "st-louis",
+    "teamId": "slu-wbb",
+    "opponent": "missouri-st",
+    "ratio": 1.022,
+    "games": 2
+  },
+  {
+    "metroId": "st-louis",
     "teamId": "st-louis-city-sc",
     "opponent": "austin",
     "ratio": 1,
@@ -98879,8 +98778,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "toronto",
     "teamId": "raptors",
     "opponent": "wizards",
-    "ratio": 1,
-    "games": 5
+    "ratio": 0.999,
+    "games": 6
   },
   {
     "metroId": "toronto",
@@ -100138,6 +100037,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "washington-dc",
     "teamId": "gmu-mbb",
+    "opponent": "nc-central",
+    "ratio": 1.055,
+    "games": 2
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "gmu-mbb",
     "opponent": "penn",
     "ratio": 1.074,
     "games": 2
@@ -100491,6 +100397,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "rutgers",
     "ratio": 0.943,
     "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-wbb",
+    "opponent": "coppin-st",
+    "ratio": 0.968,
+    "games": 2
   },
   {
     "metroId": "washington-dc",

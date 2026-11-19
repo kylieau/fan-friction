@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-villanova-wbb-401923471",
+      "metroId": "philadelphia",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-wbb",
+      "home": {
+        "name": "Villanova",
+        "score": 62
+      },
+      "away": {
+        "name": "Towson",
+        "score": 59
+      },
+      "attendance": 1791,
+      "capturedAt": "2026-11-19T17:20:48.226Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

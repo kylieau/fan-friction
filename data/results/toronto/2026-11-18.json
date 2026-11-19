@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-raptors-401910012",
+      "metroId": "toronto",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "raptors",
+      "home": {
+        "name": "Raptors",
+        "score": 99
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 103
+      },
+      "attendance": 19007,
+      "capturedAt": "2026-11-19T17:20:56.329Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

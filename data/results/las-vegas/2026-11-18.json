@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-ht-henderson-silver-knights-1029337",
+      "metroId": "las-vegas",
+      "date": "2026-11-18",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 5
+      },
+      "away": {
+        "name": "Barracuda",
+        "score": 2
+      },
+      "attendance": 1972,
+      "capturedAt": "2026-11-19T17:20:54.765Z"
+    }
+  ]
+}

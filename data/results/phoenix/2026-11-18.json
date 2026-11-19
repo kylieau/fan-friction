@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-asu-mbb-401921734",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-mbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 68
+      },
+      "away": {
+        "name": "Oakland",
+        "score": 65
+      },
+      "attendance": 4942,
+      "capturedAt": "2026-11-19T17:20:52.445Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    },
+    {
+      "eventId": "2026-11-18-espn-valley-suns-401914570",
+      "metroId": "phoenix",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "valley-suns",
+      "home": {
+        "name": "Valley Suns",
+        "score": 103
+      },
+      "away": {
+        "name": "Stars",
+        "score": 124
+      },
+      "attendance": 343,
+      "capturedAt": "2026-11-19T17:20:52.445Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    }
+  ]
+}

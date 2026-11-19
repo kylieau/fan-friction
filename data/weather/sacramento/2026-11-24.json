@@ -111,6 +111,18 @@
       "code": 80,
       "precipProbability": 73,
       "precipMm": 17.4
+    },
+    {
+      "metroId": "sacramento",
+      "venueId": "city",
+      "date": "2026-11-24",
+      "basis": "forecast",
+      "capturedAt": "2026-11-19T17:13:03.355Z",
+      "feelsLikeHighF": 52,
+      "feelsLikeLowF": 41.2,
+      "code": 61,
+      "precipProbability": 70,
+      "precipMm": 5
     }
   ]
 }

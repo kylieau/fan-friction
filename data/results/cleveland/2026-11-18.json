@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-cavaliers-401910007",
+      "metroId": "cleveland",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cavaliers",
+      "home": {
+        "name": "Cavaliers",
+        "score": 121
+      },
+      "away": {
+        "name": "Memphis Grizzlies",
+        "score": 124
+      },
+      "attendance": 19432,
+      "capturedAt": "2026-11-19T17:20:51.628Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

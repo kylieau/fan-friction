@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-michigan-wbb-401916196",
+      "metroId": "detroit",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crisler-center",
+      "homeTeamId": "michigan-wbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 112
+      },
+      "away": {
+        "name": "Niagara",
+        "score": 31
+      },
+      "attendance": 3035,
+      "capturedAt": "2026-11-19T17:20:46.928Z",
+      "duration": {
+        "minutes": 98,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-11-18-espn-motor-city-cruise-401914569",
+      "metroId": "detroit",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wayne-state-fieldhouse",
+      "homeTeamId": "motor-city-cruise",
+      "home": {
+        "name": "Cruise",
+        "score": 95
+      },
+      "away": {
+        "name": "Gold",
+        "score": 106
+      },
+      "attendance": 691,
+      "capturedAt": "2026-11-19T17:20:46.928Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-18-espn-red-wings-401892739",
+      "metroId": "detroit",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 1
+      },
+      "away": {
+        "name": "Bruins",
+        "score": 4
+      },
+      "attendance": 18340,
+      "capturedAt": "2026-11-19T17:20:46.928Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:39"
+    }
+  ]
+}

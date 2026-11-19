@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-sjsu-mbb-401911473",
+      "metroId": "bay-area",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-mbb",
+      "home": {
+        "name": "San José St",
+        "score": 92
+      },
+      "away": {
+        "name": "Fresno St",
+        "score": 86
+      },
+      "attendance": 2808,
+      "capturedAt": "2026-11-19T17:20:45.234Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "21:04"
+    },
+    {
+      "eventId": "2026-11-18-espn-sjsu-wbb-401921579",
+      "metroId": "bay-area",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-wbb",
+      "home": {
+        "name": "San José St",
+        "score": 68
+      },
+      "away": {
+        "name": "CA Baptist",
+        "score": 82
+      },
+      "attendance": 301,
+      "capturedAt": "2026-11-19T17:20:45.234Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "14:04"
+    }
+  ]
+}

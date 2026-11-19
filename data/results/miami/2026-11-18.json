@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-heat-401910009",
+      "metroId": "miami",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 137
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 130
+      },
+      "attendance": 20253,
+      "capturedAt": "2026-11-19T17:20:50.787Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "19:17"
+    }
+  ]
+}

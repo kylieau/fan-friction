@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-depaul-wbb-401913048",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 86
+      },
+      "away": {
+        "name": "Bradley",
+        "score": 74
+      },
+      "attendance": 1011,
+      "capturedAt": "2026-11-19T17:20:46.166Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-18-espn-uic-mbb-401919735",
+      "metroId": "chicago",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "credit-union-1-arena",
+      "homeTeamId": "uic-mbb",
+      "home": {
+        "name": "UIC",
+        "score": 60
+      },
+      "away": {
+        "name": "Chicago St",
+        "score": 52
+      },
+      "attendance": 1118,
+      "capturedAt": "2026-11-19T17:20:46.166Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

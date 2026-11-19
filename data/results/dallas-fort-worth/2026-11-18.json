@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-mavericks-401910016",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 116
+      },
+      "away": {
+        "name": "Warriors",
+        "score": 94
+      },
+      "attendance": 19616,
+      "capturedAt": "2026-11-19T17:20:46.510Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-11-18-espn-tcu-wbb-401918003",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-wbb",
+      "home": {
+        "name": "TCU",
+        "score": 96
+      },
+      "away": {
+        "name": "UT Arlington",
+        "score": 48
+      },
+      "attendance": 2501,
+      "capturedAt": "2026-11-19T17:20:46.510Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

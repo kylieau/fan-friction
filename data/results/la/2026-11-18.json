@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-lakers-401910017",
+      "metroId": "la",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 97
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 109
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-11-19T17:20:37.323Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    },
+    {
+      "eventId": "2026-11-18-espn-ucla-mbb-401920158",
+      "metroId": "la",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 75
+      },
+      "away": {
+        "name": "Fullerton",
+        "score": 71
+      },
+      "attendance": 3353,
+      "capturedAt": "2026-11-19T17:20:37.323Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "22:37"
+    }
+  ]
+}

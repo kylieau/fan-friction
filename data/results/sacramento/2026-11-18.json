@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-sacramento-kings-401910018",
+      "metroId": "sacramento",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 107
+      },
+      "away": {
+        "name": "Suns",
+        "score": 128
+      },
+      "attendance": 13016,
+      "capturedAt": "2026-11-19T17:20:53.774Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

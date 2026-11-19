@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-nuggets-401910015",
+      "metroId": "denver",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 105
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 101
+      },
+      "attendance": 19520,
+      "capturedAt": "2026-11-19T17:21:03.184Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "21:47"
+    }
+  ]
+}

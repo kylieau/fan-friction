@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-gophers-wbb-401906966",
+      "metroId": "minneapolis",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-wbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 76
+      },
+      "away": {
+        "name": "Kansas",
+        "score": 58
+      },
+      "attendance": 3872,
+      "capturedAt": "2026-11-19T17:20:57.119Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

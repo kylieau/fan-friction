@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-belmont-mbb-401920761",
+      "metroId": "nashville",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-mbb",
+      "home": {
+        "name": "Belmont",
+        "score": 86
+      },
+      "away": {
+        "name": "Union (KY)",
+        "score": 44
+      },
+      "attendance": 1026,
+      "capturedAt": "2026-11-19T17:20:51.832Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    },
+    {
+      "eventId": "2026-11-18-espn-vanderbilt-wbb-401918831",
+      "metroId": "nashville",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-wbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 80
+      },
+      "away": {
+        "name": "North Alabama",
+        "score": 44
+      },
+      "attendance": 3063,
+      "capturedAt": "2026-11-19T17:20:51.832Z",
+      "duration": {
+        "minutes": 140,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

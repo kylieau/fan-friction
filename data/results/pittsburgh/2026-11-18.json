@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-18",
+  "results": [
+    {
+      "eventId": "2026-11-18-espn-pitt-wbb-401913748",
+      "metroId": "pittsburgh",
+      "date": "2026-11-18",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 72
+      },
+      "away": {
+        "name": "UMBC",
+        "score": 59
+      },
+      "attendance": 2903,
+      "capturedAt": "2026-11-19T17:20:49.057Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "11:02"
+    }
+  ]
+}
