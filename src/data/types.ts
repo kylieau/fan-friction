@@ -748,9 +748,10 @@ export interface Plan {
    * Your review, written before the night or during it (Kylie, Nov 19, 2026: "let users review once an event has
    * started, or even as soon as they stub it"); it carries into the stub when the date passes, where it follows the
    * stub's level. Until then it is hers alone: the plans table is owner-only (migration 0026) and the plan cards
-   * followers see carry no review. "With" stays on the stub: its private row is keyed to entries only.
+   * followers see carry no review. Who she is going with rides the same way and lands in the stub's private pair.
    */
   review?: string;
+  with?: string;
   /**
    * A season-ticket game (build 7.1, item 15; Kylie, Oct 23, 2026): the team whose season this is and the feed's own
    * game id, which stays the same when the game moves date. `edited` once its seat or cost was set for this game

@@ -1,22 +1,22 @@
 import { useState } from 'react';
-import { setPlanReview, updateEntry, type Entry, type Plan } from '../data';
+import { setPlanNote, updateEntry, type Entry, type Plan } from '../data';
 
 /**
  * Your Notes (build 7.2, R2a follow-up; Kylie, Nov 5: "combine the Review and With into a single ... umbrella", the name
  * left to the builder): the Stub it sheet's own rows for who you went with and your review, under one label, in the
  * Seat and Cost row shape, so "Edit stub" on the ticket is the one place to edit everything. On a stub (attended or
- * watched) both rows; on an Attending or Watching plan the Review row alone (Kylie, Nov 19, 2026: a review as soon as
- * she stubs it, or once the night has started), which carries into the stub when the date passes. With stays on the
- * stub: its private row is keyed to entries only, and a plan's data reaches approved followers. The review follows
- * the stub's (or plan's) level as before.
+ * watched) and, since Nov 19, 2026 (Kylie: a review as soon as she stubs it, or once the night has started; mock
+ * notes-and-record/01), on an Attending or Watching plan too, both rows carrying into the stub when the date passes.
+ * A plan is hers alone (the table is owner-only; the cards followers see carry neither); on the stub, With stays in
+ * the private pair and the review follows the stub's level as before.
  */
 export function ExperienceRows({ entry }: { entry: Entry }) {
   return <NotesRows fields={['with', 'review']} values={{ with: entry.with, review: entry.review }} onSave={(field, text) => updateEntry(entry.id, { [field]: text })} />;
 }
 
-/** The plan's Review row under Your Notes (mock `notes-and-record/01`, approved Nov 19, 2026). */
+/** The plan's rows under Your Notes (mock `notes-and-record/01`, approved Nov 19, 2026). */
 export function PlanNotesRows({ plan }: { plan: Plan }) {
-  return <NotesRows fields={['review']} values={{ review: plan.review }} onSave={(_field, text) => setPlanReview(plan.id, text)} />;
+  return <NotesRows fields={['with', 'review']} values={{ with: plan.with, review: plan.review }} onSave={(field, text) => setPlanNote(plan.id, field, text)} />;
 }
 
 type Field = 'with' | 'review';

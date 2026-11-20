@@ -1145,8 +1145,9 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     ...(before?.season ? { season: before.season } : {}),
     // So does a Watching Season game's marker (build 7.2): a ticket turns it Attending, and the season leaves it be.
     ...(before?.watchSeason ? { watchSeason: before.watchSeason } : {}),
-    // And a review written on the plan (Kylie, Nov 19, 2026), between Attending and Watching; Interested drops it.
+    // And the notes written on the plan (Kylie, Nov 19, 2026), between Attending and Watching; Interested drops them.
     ...(before?.review && answer !== 'interested' ? { review: before.review } : {}),
+    ...(before?.with && answer !== 'interested' ? { with: before.with } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
@@ -1176,8 +1177,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   if (passed.length === 0) return;
   const added: Entry[] = [];
   const settledIds = new Set<string>();
-  // A review on a plan whose stub already exists, to fill that stub when it has none (by event id).
-  const fills = new Map<string, string>();
+  // The notes on a plan whose stub already exists, to fill that stub where it has none (by event id).
+  const fills = new Map<string, Pick<Plan, 'review' | 'with'>>();
   const schedules = new Map<string, Promise<TeamGame[] | null>>();
   const scheduleFor = (teamId: string) => {
     if (!schedules.has(teamId)) schedules.set(teamId, getTeamSchedule(teamId).catch(() => null));
@@ -1207,7 +1208,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
     if (snapshot.added.some((entry) => entry.eventId === plan.eventId)) {
       // The stub exists already (logged by hand before the date passed): a review written on the plan reaches it
       // when it has none of its own (Codex, group 19 review).
-      if (plan.review) fills.set(plan.eventId, plan.review);
+      if (plan.review || plan.with) fills.set(plan.eventId, { review: plan.review, with: plan.with });
       settledIds.add(plan.id);
       continue;
     }
@@ -1262,7 +1263,7 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   const merged = snapshot.added.map((row) => {
     const prepared = added.find((entry) => twin(entry) === row);
     const fill = row.eventId ? fills.get(row.eventId) : undefined;
-    if (!prepared) return fill && !row.review ? { ...row, review: fill } : row;
+    if (!prepared) return fill ? { ...row, ...(fill.review && !row.review ? { review: fill.review } : {}), ...(fill.with && !row.with ? { with: fill.with } : {}) } : row;
     // A ticket's default never lands on a stub she marked Watched meanwhile, and the season marker comes along so the
     // stub keeps its provenance (Codex, group 15 review).
     const defaultCost = Boolean(prepared.season && !prepared.season.edited);
@@ -1271,8 +1272,9 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}),
       ...(prepared.cost && !row.cost && !(row.watched && defaultCost) ? { cost: prepared.cost } : {}),
       ...(prepared.season && !row.season ? { season: prepared.season } : {}),
-      // A review written on the plan reaches a stub made meanwhile that has none of its own (Kylie, Nov 19, 2026).
+      // The notes written on the plan reach a stub made meanwhile that has none of its own (Kylie, Nov 19, 2026).
       ...(prepared.review && !row.review ? { review: prepared.review } : {}),
+      ...(prepared.with && !row.with ? { with: prepared.with } : {}),
     };
   });
   commit({
@@ -1295,23 +1297,28 @@ function carryPlanExtras(plan: Plan, entry: Entry): Entry {
   // The season marker comes along (Kylie, Nov 12, 2026), so the stub knows its seat and cost were the ticket's defaults
   // and a later switch to Watched can take them off; `gone` stays with the plan.
   const season = plan.season ? { teamId: plan.season.teamId, gameId: plan.season.gameId, ...(plan.season.edited ? { edited: true } : {}) } : undefined;
-  // A review written on the plan (Kylie, Nov 19, 2026) is the stub's review.
+  // A review and a With written on the plan (Kylie, Nov 19, 2026) are the stub's; With lands in its private pair.
   const review = plan.review?.trim() || undefined;
-  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), ...(season ? { season } : {}), ...(review ? { review } : {}) };
+  const companions = plan.with?.trim() || undefined;
+  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), ...(season ? { season } : {}), ...(review ? { review } : {}), ...(companions ? { with: companions } : {}) };
 }
 
-/** A review on an Attending or Watching plan (Kylie, Nov 19, 2026); empty text clears it. Interested plans take none. */
-export function setPlanReview(planId: string, review: string) {
-  const next = review.trim();
+/** A note (the review, or who she is going with) on an Attending or Watching plan (Kylie, Nov 19, 2026); empty text clears it. Interested plans take none. */
+export function setPlanNote(planId: string, field: 'review' | 'with', text: string) {
+  const next = text.trim();
   commit({
     ...snapshot,
     plans: snapshot.plans.map((plan) => {
       if (plan.id !== planId || plan.interested) return plan;
-      const { review: _old, ...rest } = plan;
-      void _old;
-      return next ? { ...rest, review: next } : rest;
+      const rest: Plan = { ...plan };
+      delete rest[field];
+      return next ? { ...rest, [field]: next } : rest;
     }),
   });
+}
+
+export function setPlanReview(planId: string, review: string) {
+  setPlanNote(planId, 'review', review);
 }
 
 export function removePlan(planId: string) {

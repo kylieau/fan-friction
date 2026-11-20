@@ -135,6 +135,31 @@ try {
   const seasonPlan = { ...own, id: 'plan-season-sg1', review: undefined, season: { teamId: 'lakers', gameId: 'sg1' } };
   const folded = tickets.reconcileSeasonPlans([seasonPlan, own], ticket, [g], '2027-02-01', 'friends');
   check(folded.length === 1 && folded[0].review === 'Mine first.' && folded[0].season, "a season plan folding in her own plan keeps her review");
+
+  // 5. With rides on the plan the same way (the plans table is owner-only; the cards followers see carry neither note),
+  //    and lands in the stub's private pair at settlement.
+  const ahead3 = event('2027-02-14-espn-lakers-10', '2027-02-14');
+  log.togglePlan(ahead3, 'attend');
+  let p3 = log.getPersonalLog().plans.find((x) => x.eventId === ahead3.id);
+  log.setPlanNote(p3.id, 'with', '  Sam and Priya ');
+  p3 = log.getPersonalLog().plans.find((x) => x.id === p3.id);
+  check(p3.with === 'Sam and Priya', `With is saved on the plan, trimmed: "${p3.with}"`);
+  log.togglePlan(ahead3, 'watch');
+  p3 = log.getPersonalLog().plans.find((x) => x.eventId === ahead3.id);
+  check(p3.with === 'Sam and Priya', 'With survives Attending to Watching');
+  log.setPlanNote(p3.id, 'with', '');
+  check(log.getPersonalLog().plans.find((x) => x.id === p3.id).with === undefined, 'blank text clears With');
+  const past8 = event('2026-11-05-espn-lakers-11', '2026-11-05');
+  log.togglePlan(past8, 'attend');
+  const p8 = log.getPersonalLog().plans.find((x) => x.eventId === past8.id);
+  log.setPlanNote(p8.id, 'with', 'Dad');
+  log.setPlanNote(p8.id, 'review', 'Cold night.');
+  await log.settlePassedPlans(async () => ({ events: [past8] }), 'la');
+  const s8 = log.getPersonalLog().added.find((e) => e.eventId === past8.id);
+  check(s8?.with === 'Dad' && s8.review === 'Cold night.', `the stub carries With and the review: "${s8?.with}", "${s8?.review}"`);
+  const { entryRow } = await server.ssrLoadModule('/src/data/storage/supabaseStore.ts').then((m) => ({ entryRow: m.entryRowForCheck })).catch(() => ({ entryRow: null }));
+  if (entryRow) check(!('with' in entryRow('u', s8).data), "the stub's account row keeps With out of its shared data");
+  else console.log("     (the account row's shape is covered by storage-check: With never rides in entries.data)");
 } finally {
   await server.close();
 }

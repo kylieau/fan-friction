@@ -180,8 +180,8 @@ export function reconcileSeasonPlans(plans: readonly Plan[], ticket: SeasonTicke
     const seat = !plan.watch && !plan.interested ? own.seats : undefined;
     const cost = !plan.interested ? own.cost : undefined;
     const merged: Plan = !plan.season.edited && (seat || cost) ? { ...plan, ...(seat ? { seats: seat } : {}), ...(cost ? { cost } : {}), season: { ...plan.season, edited: true } } : plan;
-    // Her review on the plan being folded in stays when the season's plan has none (Codex, group 19 review).
-    next[i] = !merged.review && own.review ? { ...merged, review: own.review } : merged;
+    // Her notes on the plan being folded in stay when the season's plan has none (Codex, group 19 review).
+    next[i] = { ...merged, ...(!merged.review && own.review ? { review: own.review } : {}), ...(!merged.with && own.with ? { with: own.with } : {}) };
     next.splice(twin, 1);
     changed = true;
     if (twin < i) i--;
