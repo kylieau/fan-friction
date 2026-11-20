@@ -51,7 +51,9 @@ export function YourYearScreen() {
 
   const attended = inYear.filter((e) => !e.watched).length;
   const watched = inYear.length - attended;
-  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries), [inYear, year, entries]);
+  // Recomputed once the dates' scores land (`ratings`): the Hours and Record tiles read the results cache, which the
+  // same load fills, so a cold open showed neither until the next visit (measured, group 20).
+  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries), [inYear, year, entries, ratings]);
   const teams = teamCounts(inYear).slice(0, 3);
   const venues = useMemo(() => counts(inYear.filter((e) => !e.watched && e.venue).map((e) => e.venue!)).slice(0, 3), [inYear]);
   const tags = tagSummaries(inYear, []).slice(0, 3);

@@ -91,7 +91,9 @@ export function YouScreen() {
   const inYear = useMemo(() => entriesInYear(entries, year === 'All time' ? 'all' : year), [entries, year]);
   const attended = inYear.filter((e) => !e.watched).length;
   const watched = inYear.length - attended;
-  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries).slice(0, 4), [inYear, year, entries]);
+  // Recomputed once the dates' scores land (`ratings`): the Hours and Record tiles read the results cache, which the
+  // same load fills, so a cold open showed neither until the next visit (measured, group 20).
+  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries).slice(0, 4), [inYear, year, entries, ratings]);
 
   // Attending and Watching are plans; Interested counts beside them (build 7.1, item 5).
   const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today && !plan.interested).sort((a, b) => a.date.localeCompare(b.date)), [log, today]);

@@ -52,6 +52,8 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 **Measured:** `node scripts/record-stat-check.mjs`, 10 of 10 (results planted in the cache, no network). Headless at 390 with three attended games on real result rows (the Lakers' Nov 17 win and Nov 18 loss, UCLA's Nov 16 win) and a watched Lakers game: the You tab's block reads "2–1 Record when you attend", then Venues, Hours, Teams seen; the same on All time.
 
+**Found by the measure, fixed:** on a cold open of the Your Year page (and the You tab) the tiles were computed before the dates' results arrived, so the record tile, and the older Hours tile with it, showed only on the next visit; both screens now recompute the tiles once the dates' scores land (the same load fills the results cache). Measured: a cold open of Your Year on All time reads "2–1 Record when you attend" then Venues, Hours, Teams seen.
+
 **Builder's calls, each one place to reverse:** wins and losses only in the big figure (ties in the small line); the tile outranks every other stat once it has anything to say; the record counts the side her stub credits (its system tags), never the opponent, so a game logged "for" the visitor counts the visitor.
 
 ## Group 19: A Review as Soon as She Stubs It
