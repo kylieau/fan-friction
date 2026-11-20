@@ -1,5 +1,7 @@
-import { entryTeams, logStats } from './personalLog';
-import { hoursAtGames } from './results';
+import { entryTags, entryTeams, logStats } from './personalLog';
+import { entryOutcome, hoursAtGames } from './results';
+import { favoriteFor } from './favorites';
+import { TEAMS } from './teams';
 import { tagSummaries } from './stubTags';
 import { entryCrowd } from './crowdFigures';
 import { METROS } from '../config/metros';
@@ -22,7 +24,7 @@ export function yearsOf(entries: readonly Entry[], currentYear: string): string[
 }
 
 export interface YearStat {
-  key: 'venues' | 'newVenues' | 'hours' | 'cities' | 'teams' | 'topTeam' | 'topTag' | 'streak' | 'biggestCrowd';
+  key: 'record' | 'venues' | 'newVenues' | 'hours' | 'cities' | 'teams' | 'topTeam' | 'topTag' | 'streak' | 'biggestCrowd';
   /** The big figure. */
   value: string;
   /** The words under it. */
@@ -68,10 +70,48 @@ export function longestStreak(entries: readonly Entry[]): number {
  * are a lean): venues (new ones against the year before when there is one), hours at games, cities, teams seen, the
  * most-seen team, the top tag, the longest streak, the biggest crowd. A stat with too little to say stays out.
  */
+/**
+ * How an attended game went for the side she was there for: the stub's own sides and the names of the team its
+ * system tags credit (short name, full name, aliases), never its opponents, so a college stub whose side reads
+ * "UCLA MBB" still finds a result filed under "UCLA". Null with no result on file.
+ */
+export function attendedOutcome(entry: Entry): 'W' | 'L' | 'T' | null {
+  if (entry.kind !== 'game' || entry.watched) return null;
+  const names = new Set(entry.sides);
+  const teamIds: string[] = [];
+  const system = new Set(['Concerts', 'Sports', 'Event', entry.sport]);
+  for (const word of entryTags(entry).filter((tag) => !system.has(tag))) {
+    const fav = favoriteFor('team', word);
+    const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
+    if (!team) continue;
+    teamIds.push(team.id);
+    for (const n of [team.shortName, team.name, ...(team.abbr ? [team.abbr] : []), ...(team.aliases ?? [])]) names.add(n);
+  }
+  return entryOutcome(entry, [...names], teamIds);
+}
+
+/** Wins and losses over the attended games with a result on file (Kylie's Nov 19, 2026 note 2: a lifetime record in Stats). */
+export function attendedRecord(entries: readonly Entry[]): { wins: number; losses: number; ties: number } {
+  const out = { wins: 0, losses: 0, ties: 0 };
+  for (const entry of entries) {
+    const o = attendedOutcome(entry);
+    if (o === 'W') out.wins++;
+    else if (o === 'L') out.losses++;
+    else if (o === 'T') out.ties++;
+  }
+  return out;
+}
+
 export function yearStatPool(entries: readonly Entry[], year: string | 'all', allEntries: readonly Entry[]): YearStat[] {
   const attended = entries.filter((e) => !e.watched);
   const stats = logStats([...entries]);
   const pool: YearStat[] = [];
+  // The record when she attends (mock notes-and-record/02, approved Nov 19, 2026): first among the tiles once one
+  // attended game has a result; ties, rare, ride in the second line.
+  const record = attendedRecord(attended);
+  if (record.wins + record.losses + record.ties > 0) {
+    pool.push({ key: 'record', value: `${record.wins}–${record.losses}`, label: 'Record when you attend', sub: record.ties > 0 ? `${record.ties} ${record.ties === 1 ? 'tie' : 'ties'}` : undefined, weight: 10 + record.wins + record.losses });
+  }
   if (stats.venues > 0) {
     const before = year === 'all' ? [] : allEntries.filter((e) => !e.watched && e.when.sort < `${year}-01-01`);
     const seenBefore = new Set(before.map((e) => e.venue).filter(Boolean));

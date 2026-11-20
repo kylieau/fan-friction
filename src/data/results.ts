@@ -91,14 +91,17 @@ export function scoreLine(result: GameResult): string {
  * saved result, matched by event id. Null when no result is on file, or the entry's
  * sides name neither team. Evidence for "You at games: 4–2"; the read never sees it.
  */
-export function entryOutcome(entry: Entry, sideNames: readonly string[] = entry.sides): 'W' | 'L' | 'T' | null {
+export function entryOutcome(entry: Entry, sideNames: readonly string[] = entry.sides, teamIds: readonly string[] = []): 'W' | 'L' | 'T' | null {
   if (!entry.eventId || !entry.metroId) return null;
   const rows = cachedResults(entry.metroId, entry.when.sort) ?? [];
   const result = rows.find((row) => row.eventId === entry.eventId);
   if (!result) return null;
   const names = sideNames.map((n) => n.toLowerCase());
   const is = (name: string) => names.some((n) => n === name.toLowerCase() || name.toLowerCase().endsWith(` ${n}`) || name.toLowerCase().startsWith(`${n} `));
-  const us = is(result.home.name) ? result.home : is(result.away.name) ? result.away : null;
+  // The feed's own home team id decides first when the caller knows the team (a college result is filed under the
+  // school's word, "UCLA", which a program's names never carry; Nov 19, 2026); the names decide otherwise.
+  const ours = result.homeTeamId && teamIds.includes(result.homeTeamId);
+  const us = ours ? result.home : is(result.home.name) ? result.home : is(result.away.name) ? result.away : null;
   if (!us) return null;
   const them = us === result.home ? result.away : result.home;
   return us.score > them.score ? 'W' : us.score < them.score ? 'L' : 'T';
