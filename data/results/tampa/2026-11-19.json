@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-lightning-401892744",
+      "metroId": "tampa",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 3
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 1
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-20T16:53:06.528Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

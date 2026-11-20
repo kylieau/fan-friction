@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-st-thomas-mbb-401920845",
+      "metroId": "minneapolis",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-mbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 93
+      },
+      "away": {
+        "name": "SE Missouri",
+        "score": 61
+      },
+      "attendance": 1377,
+      "capturedAt": "2026-11-20T16:53:09.979Z",
+      "duration": {
+        "minutes": 117,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    },
+    {
+      "eventId": "2026-11-19-espn-timberwolves-401910021",
+      "metroId": "minneapolis",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 99
+      },
+      "away": {
+        "name": "Knicks",
+        "score": 102
+      },
+      "capturedAt": "2026-11-20T16:53:09.979Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-avalanche-401892751",
+      "metroId": "denver",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 4
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 0
+      },
+      "attendance": 18116,
+      "capturedAt": "2026-11-20T16:53:12.103Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "21:09"
+    }
+  ]
+}

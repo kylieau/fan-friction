@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-osu-mbb-401916318",
+      "metroId": "columbus",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 101
+      },
+      "away": {
+        "name": "UMBC",
+        "score": 62
+      },
+      "attendance": 7828,
+      "capturedAt": "2026-11-20T16:53:06.976Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

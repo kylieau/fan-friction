@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-tcu-mbb-401919050",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "schollmaier-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 92
+      },
+      "away": {
+        "name": "Texas A&M",
+        "score": 97
+      },
+      "attendance": 7066,
+      "note": "OT",
+      "capturedAt": "2026-11-20T16:53:04.448Z",
+      "duration": {
+        "minutes": 157,
+        "kind": "estimated"
+      },
+      "startedAt": "20:03"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-maple-leafs-401892742",
+      "metroId": "toronto",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 3
+      },
+      "away": {
+        "name": "Kings",
+        "score": 4
+      },
+      "attendance": 18641,
+      "note": "SO",
+      "capturedAt": "2026-11-20T16:53:09.640Z",
+      "duration": {
+        "minutes": 168,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

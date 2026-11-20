@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-capitals-401892746",
+      "metroId": "washington-dc",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 3
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 6
+      },
+      "attendance": 18347,
+      "capturedAt": "2026-11-20T16:53:10.916Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-penguins-401892745",
+      "metroId": "pittsburgh",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 2
+      },
+      "away": {
+        "name": "Blues",
+        "score": 5
+      },
+      "attendance": 15396,
+      "capturedAt": "2026-11-20T16:53:06.280Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-butler-mbb-401902280",
+      "metroId": "indianapolis",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-mbb",
+      "home": {
+        "name": "Butler",
+        "score": 84
+      },
+      "away": {
+        "name": "Northeastern",
+        "score": 77
+      },
+      "attendance": 5866,
+      "capturedAt": "2026-11-20T16:53:09.431Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

@@ -20,12 +20,61 @@
         "score": 44
       },
       "attendance": 3051,
-      "capturedAt": "2026-11-20T00:45:07.487Z",
+      "capturedAt": "2026-11-20T16:53:11.590Z",
       "duration": {
         "minutes": 131,
         "kind": "estimated"
       },
       "startedAt": "11:02"
+    },
+    {
+      "eventId": "2026-11-19-espn-hurricanes-401892747",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 1
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 2
+      },
+      "attendance": 18838,
+      "note": "OT",
+      "capturedAt": "2026-11-20T16:53:11.590Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    },
+    {
+      "eventId": "2026-11-19-espn-nc-state-wbb-401913738",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reynolds-coliseum",
+      "homeTeamId": "nc-state-wbb",
+      "home": {
+        "name": "NC State",
+        "score": 74
+      },
+      "away": {
+        "name": "Georgetown",
+        "score": 43
+      },
+      "attendance": 4753,
+      "capturedAt": "2026-11-20T16:53:11.590Z",
+      "duration": {
+        "minutes": 109,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
     }
   ]
 }

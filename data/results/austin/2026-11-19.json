@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-texas-mbb-401906867",
+      "metroId": "austin",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-mbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 92
+      },
+      "away": {
+        "name": "Southern Utah",
+        "score": 68
+      },
+      "attendance": 10399,
+      "capturedAt": "2026-11-20T16:53:07.674Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

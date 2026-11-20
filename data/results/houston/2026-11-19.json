@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-texans-401873066",
+      "metroId": "houston",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reliant-stadium",
+      "homeTeamId": "texans",
+      "home": {
+        "name": "Texans",
+        "score": 26
+      },
+      "away": {
+        "name": "Colts",
+        "score": 3
+      },
+      "attendance": 70942,
+      "capturedAt": "2026-11-20T16:53:09.112Z",
+      "duration": {
+        "minutes": 170,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

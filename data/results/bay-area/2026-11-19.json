@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-cal-mbb-401918056",
+      "metroId": "bay-area",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 86
+      },
+      "away": {
+        "name": "East Texas A&M",
+        "score": 54
+      },
+      "attendance": 2433,
+      "capturedAt": "2026-11-20T16:53:03.687Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    },
+    {
+      "eventId": "2026-11-19-espn-stanford-mbb-401920349",
+      "metroId": "bay-area",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "maples-pavilion",
+      "homeTeamId": "stanford-mbb",
+      "home": {
+        "name": "Stanford",
+        "score": 78
+      },
+      "away": {
+        "name": "Sacramento St",
+        "score": 65
+      },
+      "attendance": 1997,
+      "capturedAt": "2026-11-20T16:53:03.687Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}

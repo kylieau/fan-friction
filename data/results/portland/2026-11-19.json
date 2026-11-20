@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-psu-mbb-401925916",
+      "metroId": "portland",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viking-pavilion",
+      "homeTeamId": "psu-mbb",
+      "home": {
+        "name": "Portland St",
+        "score": 132
+      },
+      "away": {
+        "name": "NW Indian",
+        "score": 41
+      },
+      "attendance": 489,
+      "capturedAt": "2026-11-20T16:53:11.414Z",
+      "duration": {
+        "minutes": 97,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    }
+  ]
+}

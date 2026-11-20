@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-golden-knights-401892753",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "golden-knights",
+      "home": {
+        "name": "Golden Knights",
+        "score": 3
+      },
+      "away": {
+        "name": "Stars",
+        "score": 4
+      },
+      "attendance": 16238,
+      "note": "SO",
+      "capturedAt": "2026-11-20T16:53:08.670Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-19-espn-unlv-mbb-401920520",
+      "metroId": "las-vegas",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "unlv-mbb",
+      "home": {
+        "name": "UNLV",
+        "score": 70
+      },
+      "away": {
+        "name": "Rutgers",
+        "score": 89
+      },
+      "capturedAt": "2026-11-20T16:53:08.670Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "20:32"
+    }
+  ]
+}

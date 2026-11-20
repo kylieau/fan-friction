@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-blackhawks-401892748",
+      "metroId": "chicago",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "blackhawks",
+      "home": {
+        "name": "Blackhawks",
+        "score": 2
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 4
+      },
+      "attendance": 17409,
+      "capturedAt": "2026-11-20T16:53:04.059Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

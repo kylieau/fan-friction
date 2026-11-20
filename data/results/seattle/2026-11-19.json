@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-kraken-401892752",
+      "metroId": "seattle",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 5
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 1
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-11-20T16:53:02.157Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "21:48"
+    },
+    {
+      "eventId": "2026-11-19-espn-sounders-401933555",
+      "metroId": "seattle",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lumen-field",
+      "homeTeamId": "sounders",
+      "home": {
+        "name": "Sounders",
+        "score": 1
+      },
+      "away": {
+        "name": "Real Salt Lake",
+        "score": 1
+      },
+      "attendance": 29628,
+      "capturedAt": "2026-11-20T16:53:02.157Z"
+    },
+    {
+      "eventId": "2026-11-19-espn-uw-mbb-401925941",
+      "metroId": "seattle",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-mbb",
+      "home": {
+        "name": "Washington",
+        "score": 82
+      },
+      "away": {
+        "name": "Utah Tech",
+        "score": 69
+      },
+      "attendance": 5066,
+      "capturedAt": "2026-11-20T16:53:02.157Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "21:01"
+    }
+  ]
+}
