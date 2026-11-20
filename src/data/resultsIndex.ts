@@ -22684,6 +22684,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:02"
   },
   {
+    "eventId": "2026-11-19-espn-rutgers-wbb-401913008",
+    "metroId": "new-york",
+    "date": "2026-11-19",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "jersey-mikes-arena",
+    "homeTeamId": "rutgers-wbb",
+    "home": {
+      "name": "Rutgers",
+      "score": 91
+    },
+    "away": {
+      "name": "MD Eastern",
+      "score": 47
+    },
+    "attendance": 6118,
+    "capturedAt": "2026-11-20T00:44:54.770Z",
+    "duration": {
+      "minutes": 138,
+      "kind": "estimated"
+    },
+    "startedAt": "11:01"
+  },
+  {
     "eventId": "2026-10-10-espn-ottawa-senators-401892474",
     "metroId": "ottawa-gatineau",
     "date": "2026-10-10",
@@ -27560,6 +27584,30 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:03"
+  },
+  {
+    "eventId": "2026-11-19-espn-duke-wbb-401911746",
+    "metroId": "raleigh-durham",
+    "date": "2026-11-19",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "cameron-indoor-stadium",
+    "homeTeamId": "duke-wbb",
+    "home": {
+      "name": "Duke",
+      "score": 111
+    },
+    "away": {
+      "name": "Fordham",
+      "score": 44
+    },
+    "attendance": 3051,
+    "capturedAt": "2026-11-20T00:45:07.487Z",
+    "duration": {
+      "minutes": 131,
+      "kind": "estimated"
+    },
+    "startedAt": "11:02"
   },
   {
     "eventId": "2026-10-10-espn-sacramento-republic-401842277",

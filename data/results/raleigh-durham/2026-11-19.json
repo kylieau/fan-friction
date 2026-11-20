@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-duke-wbb-401911746",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cameron-indoor-stadium",
+      "homeTeamId": "duke-wbb",
+      "home": {
+        "name": "Duke",
+        "score": 111
+      },
+      "away": {
+        "name": "Fordham",
+        "score": 44
+      },
+      "attendance": 3051,
+      "capturedAt": "2026-11-20T00:45:07.487Z",
+      "duration": {
+        "minutes": 131,
+        "kind": "estimated"
+      },
+      "startedAt": "11:02"
+    }
+  ]
+}

@@ -1,0 +1,3835 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "metroName": "Detroit",
+  "timeZone": "America/Detroit",
+  "capturedOn": "2026-11-19",
+  "capturedAt": "2026-11-20T00:39:33.581Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-19",
+    "through": "2026-12-03"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 21
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 96
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 2
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-19-sa-detroittitans-com-6776",
+      "metroId": "detroit",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Detroit Mercy vs. Toledo",
+      "place": {
+        "type": "venue",
+        "venueId": "calihan-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "detroit-mercy-wbb",
+        "away": "Toledo",
+        "awayOpponent": "toledo"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-19-tm-vv17OZ_3Gkl7RMdW",
+      "metroId": "detroit",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "DJ Meredith Marks",
+      "officialTitle": "DJ Meredith Marks - YOU.CAN.DANCE.TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "DJ Meredith Marks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_3Gkl7RMdW",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vv17OZ_7GkwiaINO",
+      "metroId": "detroit",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Neighbourhood",
+      "officialTitle": "The Neighbourhood: THE WOURLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Neighbourhood",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Kzef",
+        "K8vZ917_-2f",
+        "K8vZ917L-Mf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_7GkwiaINO",
+      "expectedDraw": {
+        "count": 11124,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-19-tm-vv1AFZkfdGkeHSEK4",
+      "metroId": "detroit",
+      "date": "2026-11-19",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dow-event-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkfdGkeHSEK4"
+    },
+    {
+      "id": "2026-11-19-tm-177Zv0G61QPxMsr",
+      "metroId": "detroit",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lee Brice",
+      "officialTitle": "Lee Brice: Sunriser Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "colosseum-caesars-windsor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Lee Brice",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GU4f",
+        "K8vZ917hyEV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61QPxMsr",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAZdbU",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "Trivium w/ In Flames",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZdbU",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1OZ_52gfQyW",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Catch Your Breath",
+      "officialTitle": "Catch Your Breath - Not Broken Enough Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Catch Your Breath",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_52gfQyW",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-espn-michigan-mhockey-401923159",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Michigan State",
+      "place": {
+        "type": "venue",
+        "venueId": "yost-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "michigan-mhockey",
+        "away": "michigan-state",
+        "awayOpponent": "michigan-state"
+      },
+      "rank": {
+        "home": 1,
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-20-tm-vv17OZ_oGklF3QAi",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Rapids Gold vs. Cleveland Charge",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Grand Rapids Gold",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGklF3QAi",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70fkk",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Rodney Carrington",
+      "place": {
+        "type": "venue",
+        "venueId": "kellogg-arena-battle-creek"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Rodney Carrington",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70fkk"
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A70NOM",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Toledo Walleye vs. Rapid City Rush",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Toledo Walleye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70NOM",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-20-espn-pistons-401909308",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Pistons vs. Raptors",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "raptors",
+        "awayOpponent": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18912,
+        "low": 17619,
+        "high": 19982,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-177Zv0G61Mdj2ac",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Dean Brody",
+      "officialTitle": "Dean Brody & The Reklaws | Caesars Ticket + Hotel Packages",
+      "place": {
+        "type": "venue",
+        "venueId": "colosseum-caesars-windsor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Dean Brody",
+      "act": true,
+      "performerIds": [
+        "K8vZ917CdzV",
+        "K8vZ9173BCf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G61Mdj2ac",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-1AvZZ_aGkMA7W_q",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Dean Brody & The Reklaws \"Hometown Heroes\" Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "colosseum-caesars-windsor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Civic"
+      },
+      "performer": "Dean Brody & The Reklaws",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_aGkMA7W_q"
+    },
+    {
+      "id": "2026-11-20-tm-vvG1OZ_G9nEqkq",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Little Big Town",
+      "officialTitle": "Little Big Town - For The Art Of It Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Little Big Town",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175ykf",
+        "K8vZ917hzT7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_G9nEqkq",
+      "expectedDraw": {
+        "count": 5048,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1AAAZ-y",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZ-y",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-20-tm-vvG1OZ_55-dzV1",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Boney James",
+      "place": {
+        "type": "venue",
+        "venueId": "sound-board-motorcity"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Boney James",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_55-dzV1",
+      "expectedDraw": {
+        "count": 2405,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-20-tm-Z7r9jZ1A7OaPY",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Michigan State Spartans Football vs. Oregon Ducks Football",
+      "place": {
+        "type": "venue",
+        "venueId": "spartan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Michigan State University Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OaPY"
+    },
+    {
+      "id": "2026-11-21-sa-detroittitans-com-6777",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Detroit Mercy vs. Sacred Heart",
+      "place": {
+        "type": "venue",
+        "venueId": "calihan-hall"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "detroit-mercy-wbb",
+        "away": "Sacred Heart",
+        "awayOpponent": "sacred-heart"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAAZxZ",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxZ",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-21-espn-michigan-football-401858528",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. UCLA",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "michigan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "michigan-football",
+        "away": "ucla-football",
+        "awayOpponent": "ucla"
+      },
+      "rank": {
+        "away": 4
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 111100,
+        "low": 110865,
+        "high": 111158,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-red-wings-401892762",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Islanders",
+      "broadcast": "MSG2",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "islanders",
+        "awayOpponent": "islanders"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18065,
+        "low": 17899,
+        "high": 18065,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1AFZkffGkeE5kRo",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkffGkeE5kRo",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAv9qI",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Windsor Spitfires vs. Peterborough Petes",
+      "place": {
+        "type": "venue",
+        "venueId": "wfcu-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Windsor Spitfires",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv9qI",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70NOz",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Toledo Walleye vs. Rapid City Rush",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Toledo Walleye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70NOz",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7xvpF",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Bald and the Beautiful LIVE: Very Bald, Very Beautiful",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Bald and the Beautiful",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xvpF"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAAZxv",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxv",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vv1keZv0jIGA2jPfm",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Los Tigres del Norte",
+      "officialTitle": "Los Tigres del Mundo",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Los Tigres del Norte",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171187"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1keZv0jIGA2jPfm",
+      "expectedDraw": {
+        "count": 5048,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-vvG1OZ_Cl-cQb4",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Harvest Moon",
+      "officialTitle": "Harvest  Moon",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Harvest Moon",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_Cl-cQb4",
+      "expectedDraw": {
+        "count": 1730,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAZd_9",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "start": "20:30",
+      "kind": "show",
+      "title": "Daily Bread",
+      "officialTitle": "Daily Bread (18+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Daily Bread",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZd_9",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-espn-lions-401873072",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Lions vs. Buccaneers",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lions",
+        "away": "buccaneers",
+        "awayOpponent": "buccaneers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 63678,
+        "low": 63570,
+        "high": 63786,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAAZxe",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxe",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv17OZ_oGklFKQAR",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Grand Rapids Gold vs. Cleveland Charge",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Grand Rapids Gold",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGklFKQAR",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv17OZ_kGkRUMjG5",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Hawthorne Heights",
+      "officialTitle": "Hawthorne Heights - 20th anniversary of If Only You Were Lonely",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Hawthorne Heights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_kGkRUMjG5",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv17OZ_oGkR6VlfY",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Skilla Baby",
+      "officialTitle": "WJLB Presents Skilla Baby: The Price of Fame Tour (Ages 18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Skilla Baby",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGkR6VlfY",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vvG1OZ_265dtPn",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Cheap Trick",
+      "officialTitle": "Cheap Trick: All Washed Up Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "sound-board-motorcity"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Cheap Trick",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_265dtPn",
+      "expectedDraw": {
+        "count": 2405,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAAZxd",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxd",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-24-espn-michigan-mbb-401909495",
+      "metroId": "las-vegas",
+      "date": "2026-11-24",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Creighton",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "michigan-mbb",
+        "away": "creighton",
+        "awayOpponent": "creighton"
+      },
+      "neutralSite": true,
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-24-tm-vv17OZ_oGkSLJAaH",
+      "metroId": "detroit",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Toosii",
+      "officialTitle": "Toosii - Platinum Nights",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Toosii",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGkSLJAaH",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1AAZp-6",
+      "metroId": "detroit",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZp-6",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAAZx7",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZx7",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7PK7t",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Whitechapel",
+      "officialTitle": "Whitechapel w/ Chelsea Grin",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Whitechapel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PK7t",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1OZ_uEuj1sp",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Black Milk",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Black Milk",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_uEuj1sp",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A70JFy",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kalamazoo Wings vs. Toledo Walleye",
+      "place": {
+        "type": "venue",
+        "venueId": "wings-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kalamazoo Wings",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70JFy",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7PzuK",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Flint Firebirds vs. Saginaw Spirit",
+      "place": {
+        "type": "venue",
+        "venueId": "dort-financial-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Flint Firebirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PzuK",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAv9qt",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Windsor Spitfires vs. Kitchener Rangers",
+      "place": {
+        "type": "venue",
+        "venueId": "wfcu-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "other"
+      },
+      "performer": "Windsor Spitfires",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv9qt",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-espn-red-wings-401892789",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Red Wings vs. Canucks",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "vancouver-canucks",
+        "awayOpponent": "canucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17974,
+        "low": 17446,
+        "high": 17974,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAAZxA",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxA",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-26-espn-lions-401873081",
+      "metroId": "detroit",
+      "date": "2026-11-26",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Lions vs. Bears",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "ford-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "lions",
+        "away": "bears",
+        "awayOpponent": "bears"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 65548,
+        "low": 64464,
+        "high": 65640,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a holiday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-26-tm-vvG1OZ_CBHfUaV",
+      "metroId": "detroit",
+      "date": "2026-11-26",
+      "start": "16:30",
+      "kind": "game",
+      "title": "Michigan State v Arkansas Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Michigan State University Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_CBHfUaV"
+    },
+    {
+      "id": "2026-11-27-espn-motor-city-cruise-401914606",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Cruise vs. Windy City Bulls",
+      "broadcast": "CHSN",
+      "place": {
+        "type": "venue",
+        "venueId": "wayne-state-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "motor-city-cruise",
+        "away": "windy-city-bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1082,
+        "low": 1075,
+        "high": 1170,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-michigan-mhockey-401904611",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Ferris State",
+      "place": {
+        "type": "venue",
+        "venueId": "yost-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "michigan-mhockey",
+        "away": "ferris-state",
+        "awayOpponent": "ferris-state"
+      },
+      "rank": {
+        "home": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7J6pb",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Rapids Griffins vs. Iowa Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Grand Rapids Griffins",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J6pb",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A70NOy",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "19:15",
+      "kind": "game",
+      "title": "Toledo Walleye vs. Wheeling Nailers",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Toledo Walleye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70NOy",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-espn-pistons-401909327",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Pistons vs. Bucks",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "bucks",
+        "awayOpponent": "bucks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18950,
+        "low": 17655,
+        "high": 20022,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAAZxk",
+      "metroId": "detroit",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxk",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAAZx6",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZx6",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17OZ_fGkyDuoDW",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Prima Holiday Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Prima Holiday Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_fGkyDuoDW",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1OZ_1XUoFj4",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "kind": "special",
+      "title": "The Nutcracker with Grand Rapids Ballet and Detroit Opera Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_1XUoFj4",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-rZ7HnEZ1AfCfZf",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Holiday Glitz, Giggles, & Giving",
+      "place": {
+        "type": "venue",
+        "venueId": "the-crofoot"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Holiday Glitz, Giggles, & Giving",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "rZ7HnEZ1AfCfZf"
+    },
+    {
+      "id": "2026-11-28-tm-vvG1OZ_u6PSGnf",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Turnover",
+      "officialTitle": "Turnover - Down On Earth Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Turnover",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_u6PSGnf",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-michigan-mhockey-401904612",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Ferris State",
+      "place": {
+        "type": "venue",
+        "venueId": "yost-ice-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "michigan-mhockey",
+        "away": "ferris-state",
+        "awayOpponent": "ferris-state"
+      },
+      "rank": {
+        "home": 1
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-28-espn-red-wings-401892812",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Predators",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "predators",
+        "awayOpponent": "predators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17882,
+        "low": 17718,
+        "high": 17882,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17OZ_oGklFfQAU",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Rapids Gold vs. Noblesville Boom",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Grand Rapids Gold",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGklFfQAU",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A70gu-",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kalamazoo Wings vs. Wheeling Nailers",
+      "place": {
+        "type": "venue",
+        "venueId": "wings-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kalamazoo Wings",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70gu-",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A7Pzuf",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Flint Firebirds vs. Sarnia Sting",
+      "place": {
+        "type": "venue",
+        "venueId": "dort-financial-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Flint Firebirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pzuf",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1OZ_Gl4caDJ",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Saginaw Spirit vs. Soo Greyhounds",
+      "place": {
+        "type": "venue",
+        "venueId": "dow-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Saginaw Spirit",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_Gl4caDJ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17OZ_fGkyDusHe",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Prima Holiday Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Prima Holiday Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_fGkyDusHe",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1OZ_1XUoIj_",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Nutcracker with Grand Rapids Ballet and Detroit Opera Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_1XUoIj_",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAAZxF",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxF",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17OZ_oGklMLCWx",
+      "metroId": "detroit",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Udit Narayan",
+      "officialTitle": "LEGACY",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Udit Narayan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_oGklMLCWx",
+      "expectedDraw": {
+        "count": 1730,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAAZxa",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZxa",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vv17OZ_fGkyDC-HF",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Prima Holiday Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Prima Holiday Experience",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17OZ_fGkyDC-HF",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1OZ_1XU3Fjr",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "kind": "special",
+      "title": "The Nutcracker with Grand Rapids Ballet and Detroit Opera Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "detroit-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_1XU3Fjr",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-29-espn-motor-city-cruise-401914621",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Cruise vs. Windy City Bulls",
+      "place": {
+        "type": "venue",
+        "venueId": "wayne-state-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "motor-city-cruise",
+        "away": "windy-city-bulls",
+        "awayOpponent": "bulls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 757,
+        "low": 665,
+        "high": 967,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vv1AFZk4NGkd09Jd1",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "special",
+      "title": "LIGHTWIRE THEATER A VERY ELECTRIC CHRISTMAS",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Children's Theatre"
+      },
+      "performer": "A Very Electric Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZk4NGkd09Jd1"
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A70JFM",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Kalamazoo Wings vs. Cincinnati Cyclones",
+      "place": {
+        "type": "venue",
+        "venueId": "wings-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kalamazoo Wings",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70JFM",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A7J6qv",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Grand Rapids Griffins vs. Iowa Wild",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Grand Rapids Griffins",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J6qv",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A70N-Z",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "17:15",
+      "kind": "game",
+      "title": "Toledo Walleye vs. Fort Wayne Komets",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Toledo Walleye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70N-Z",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-29-espn-pistons-401910055",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Pistons vs. Magic",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "magic",
+        "awayOpponent": "magic"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19496,
+        "low": 18910,
+        "high": 20201,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vv1AFZkGPGkdnrJUw",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Sabaton",
+      "officialTitle": "Sabaton: Legends on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sabaton",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkGPGkdnrJUw",
+      "expectedDraw": {
+        "count": 2888,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1OZ_CLF0zIA",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Suicide Silence",
+      "officialTitle": "Suicide Silence: REMINDERS OF HELL TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "saint-andrews-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Suicide Silence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_CLF0zIA",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAAZx8",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Great Gatsby (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Great Gatsby (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAZx8",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAedaA",
+      "metroId": "detroit",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Baby Smoove",
+      "officialTitle": "Baby Smoove Live! - The Purple Heart Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-detroit"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Baby Smoove",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAedaA",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-espn-michigan-wbb-401927071",
+      "metroId": "detroit",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. S Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "crisler-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "michigan-wbb",
+        "away": "s-indiana",
+        "awayOpponent": "s-indiana"
+      },
+      "rank": {
+        "home": 2
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2423,
+        "low": 2218,
+        "high": 2490,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-30-espn-pistons-401910062",
+      "metroId": "detroit",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pistons vs. Nuggets",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "nuggets",
+        "awayOpponent": "nuggets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18486,
+        "low": 18087,
+        "high": 19108,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-michigan-mbb-401925734",
+      "metroId": "detroit",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Michigan Wolverines vs. Miss Valley St",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "crisler-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "michigan-mbb",
+        "away": "miss-valley-st",
+        "awayOpponent": "miss-valley-st"
+      },
+      "rank": {
+        "home": 18
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12707,
+        "low": 12052,
+        "high": 12707,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-red-wings-401892831",
+      "metroId": "detroit",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Flames",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "flames",
+        "awayOpponent": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18138,
+        "low": 18138,
+        "high": 18138,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-vv1AFZkf7GkdjsD3Z",
+      "metroId": "detroit",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "special",
+      "title": "How The Grinch Stole Christmas - Suite Rental",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dr. Seuss' How the Grinch Stole Christmas! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkf7GkdjsD3Z",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1AAAp4b",
+      "metroId": "detroit",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "special",
+      "title": "BOOP! The Musical (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Boop! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAp4b",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A70N-v",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "10:35",
+      "kind": "game",
+      "title": "Toledo Walleye vs. Fort Wayne Komets",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Toledo Walleye",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70N-v",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-02-espn-pistons-401910076",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Pistons vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pistons",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18005,
+        "low": 17944,
+        "high": 18269,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A7J33v",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Grand Rapids Griffins vs. Manitoba Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Grand Rapids Griffins",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J33v",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vv1AFZkf7Gkdjw53A",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "How The Grinch Stole Christmas - Suite Rental",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dr. Seuss' How the Grinch Stole Christmas! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkf7Gkdjw53A",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vvG1OZ_GXW3n4B",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Mannheim Steamroller Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "dow-event-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "New Age"
+      },
+      "performer": "Mannheim Steamroller Christmas",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175nZV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_GXW3n4B",
+      "expectedDraw": {
+        "count": 3150,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAAp4_",
+      "metroId": "detroit",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "BOOP! The Musical (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Boop! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAp4_",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAeo0N",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Sabrina Cast Reunion 30 Year Anniversary Live",
+      "place": {
+        "type": "venue",
+        "venueId": "royal-oak-music-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Multimedia"
+      },
+      "performer": "Melissa Joan Hart",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeo0N"
+    },
+    {
+      "id": "2026-12-03-espn-red-wings-401892845",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Red Wings vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "little-caesars-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "red-wings",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18266,
+        "low": 18266,
+        "high": 18266,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv1AFZk34GkeYPzNI",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amy Grant",
+      "officialTitle": "Christmas Together with Amy Grant, Michael W. Smith, and CeCe Winans",
+      "place": {
+        "type": "venue",
+        "venueId": "van-andel-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amy Grant",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171uaV",
+        "K8vZ9171fEV",
+        "K8vZ91714R0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZk34GkeYPzNI",
+      "expectedDraw": {
+        "count": 12000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv1AFZk4tGkeBg0ee",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Something Different Presents: Unpopular Opinion Night - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous Theatre"
+      },
+      "performer": "Unpopular Opinion",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZk4tGkeBg0ee"
+    },
+    {
+      "id": "2026-12-03-tm-vvG1OZ_uDLMj9e",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "One Sleepy Night - Detroit",
+      "place": {
+        "type": "venue",
+        "venueId": "music-hall-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "One Sleepy Night - Detroit",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1OZ_uDLMj9e",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv1AFZkf7Gkdjwh31",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "How The Grinch Stole Christmas - Suite Rental",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre-detroit"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Dr. Seuss' How the Grinch Stole Christmas! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AFZkf7Gkdjwh31",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAAp4O",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "BOOP! The Musical (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "fisher-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Boop! The Musical (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAp4O",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-03-tm-1AvZZ_8GkmWSzkc",
+      "metroId": "detroit",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Cirque Musica Holiday Wonderland",
+      "place": {
+        "type": "venue",
+        "venueId": "colosseum-caesars-windsor"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "Cirque Musica Holiday Wonderland",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvZZ_8GkmWSzkc"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-19-sa-detroittitans-com-6776",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "The Neighbourhood 6.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv17OZ_3Gkl7RMdW",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv17OZ_7GkwiaINO",
+      "date": "2026-11-19",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Toledo at Detroit Mercy (WBB) 6.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11124
+      }
+    },
+    {
+      "eventId": "2026-11-19-tm-vv1AFZkfdGkeHSEK4",
+      "date": "2026-11-19",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-19-tm-177Zv0G61QPxMsr",
+      "date": "2026-11-19",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "friction": "Moderate",
+        "why": "The Neighbourhood and Toledo at Detroit Mercy (WBB) 1.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAZdbU",
+      "date": "2026-11-20",
+      "start": "17:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1OZ_52gfQyW",
+      "date": "2026-11-20",
+      "start": "18:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-20-espn-michigan-mhockey-401923159",
+      "date": "2026-11-20",
+      "start": "19:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Raptors at Pistons 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vv17OZ_oGklF3QAi",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70fkk",
+      "date": "2026-11-20",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A70NOM",
+      "date": "2026-11-20",
+      "start": "19:15"
+    },
+    {
+      "eventId": "2026-11-20-espn-pistons-401909308",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Michigan State at Michigan Wolverines (MHKY) and Little Big Town 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18912,
+        "low": 17619,
+        "high": 19982
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-177Zv0G61Mdj2ac",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Heavy",
+        "why": "Little Big Town 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-1AvZZ_aGkMA7W_q",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1OZ_G9nEqkq",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Heavy",
+        "why": "Dean Brody & The Reklaws | Caes… 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5048
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1AAAZ-y",
+      "date": "2026-11-20",
+      "start": "19:30",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-vvG1OZ_55-dzV1",
+      "date": "2026-11-20",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2405
+      }
+    },
+    {
+      "eventId": "2026-11-20-tm-Z7r9jZ1A7OaPY",
+      "date": "2026-11-20",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-21-sa-detroittitans-com-6777",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "UCLA at Michigan Wolverines (FB) 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAAZxZ",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-michigan-football-401858528",
+      "date": "2026-11-21",
+      "start": "15:30",
+      "read": {
+        "rating": 4.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 111100,
+        "low": 110865,
+        "high": 111158
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-red-wings-401892762",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "UCLA at Michigan Wolverines (FB) 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18065,
+        "low": 17899,
+        "high": 18065
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1AFZkffGkeE5kRo",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAv9qI",
+      "date": "2026-11-21",
+      "start": "19:05",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "UCLA at Michigan Wolverines (FB) 42 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70NOz",
+      "date": "2026-11-21",
+      "start": "19:15"
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7xvpF",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAAZxv",
+      "date": "2026-11-21",
+      "start": "19:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vv1keZv0jIGA2jPfm",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "friction": "Moderate",
+        "why": "UCLA at Michigan Wolverines (FB) and Islanders at Red Wings 36 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5048
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-vvG1OZ_Cl-cQb4",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1730
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAZd_9",
+      "date": "2026-11-21",
+      "start": "20:30",
+      "read": {
+        "rating": 4.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-lions-401873072",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 63678,
+        "low": 63570,
+        "high": 63786
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAAZxe",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv17OZ_oGklFKQAR",
+      "date": "2026-11-22",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-vv17OZ_kGkRUMjG5",
+      "date": "2026-11-22",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv17OZ_oGkR6VlfY",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vvG1OZ_265dtPn",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2405
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAAZxd",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-michigan-mbb-401909495",
+      "date": "2026-11-24",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vv17OZ_oGkSLJAaH",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1AAZp-6",
+      "date": "2026-11-24",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAAZx7",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7PK7t",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1OZ_uEuj1sp",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A70JFy",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7PzuK",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAv9qt",
+      "date": "2026-11-25",
+      "start": "19:05",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Canucks at Red Wings 6.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-red-wings-401892789",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Kitchener Rangers at Windsor Spitfires 6.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17974,
+        "low": 17446,
+        "high": 17974
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAAZxA",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-26-espn-lions-401873081",
+      "date": "2026-11-26",
+      "start": "13:00",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Michigan State v Arkansas Mens… 0.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 65548,
+        "low": 64464,
+        "high": 65640
+      }
+    },
+    {
+      "eventId": "2026-11-26-tm-vvG1OZ_CBHfUaV",
+      "date": "2026-11-26",
+      "start": "16:30",
+      "read": {
+        "rating": 3.5,
+        "friction": "Low",
+        "why": "Bears at Lions 0.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-motor-city-cruise-401914606",
+      "date": "2026-11-27",
+      "start": "18:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1082,
+        "low": 1075,
+        "high": 1170
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-michigan-mhockey-401904611",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Bucks at Pistons 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7J6pb",
+      "date": "2026-11-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A70NOy",
+      "date": "2026-11-27",
+      "start": "19:15"
+    },
+    {
+      "eventId": "2026-11-27-espn-pistons-401909327",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Ferris State at Michigan Wolverines (MHKY) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18950,
+        "low": 17655,
+        "high": 20022
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAAZxk",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAAZx6",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17OZ_fGkyDuoDW",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1OZ_1XUoFj4",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-rZ7HnEZ1AfCfZf",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1OZ_u6PSGnf",
+      "date": "2026-11-28",
+      "start": "18:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-michigan-mhockey-401904612",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "Predators at Red Wings 35 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-red-wings-401892812",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Ferris State at Michigan Wolverines (MHKY) 35 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17882,
+        "low": 17718,
+        "high": 17882
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17OZ_oGklFfQAU",
+      "date": "2026-11-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A70gu-",
+      "date": "2026-11-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A7Pzuf",
+      "date": "2026-11-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1OZ_Gl4caDJ",
+      "date": "2026-11-28",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17OZ_fGkyDusHe",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1OZ_1XUoIj_",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAAZxF",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17OZ_oGklMLCWx",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1730
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAAZxa",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vv17OZ_fGkyDC-HF",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1OZ_1XU3Fjr",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-motor-city-cruise-401914621",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 757,
+        "low": 665,
+        "high": 967
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vv1AFZk4NGkd09Jd1",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A70JFM",
+      "date": "2026-11-29",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A7J6qv",
+      "date": "2026-11-29",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A70N-Z",
+      "date": "2026-11-29",
+      "start": "17:15"
+    },
+    {
+      "eventId": "2026-11-29-espn-pistons-401910055",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19496,
+        "low": 18910,
+        "high": 20201
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vv1AFZkGPGkdnrJUw",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2888
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1OZ_CLF0zIA",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAAZx8",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAedaA",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-11-30-espn-michigan-wbb-401927071",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2423,
+        "low": 2218,
+        "high": 2490
+      }
+    },
+    {
+      "eventId": "2026-11-30-espn-pistons-401910062",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18486,
+        "low": 18087,
+        "high": 19108
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-michigan-mbb-401925734",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Flames at Red Wings 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12707,
+        "low": 12052,
+        "high": 12707
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-red-wings-401892831",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Miss Valley St at Michigan Wolverines (MBB) 36 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18138,
+        "low": 18138,
+        "high": 18138
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-vv1AFZkf7GkdjsD3Z",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1AAAp4b",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A70N-v",
+      "date": "2026-12-02",
+      "start": "10:35"
+    },
+    {
+      "eventId": "2026-12-02-espn-pistons-401910076",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18005,
+        "low": 17944,
+        "high": 18269
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A7J33v",
+      "date": "2026-12-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-02-tm-vv1AFZkf7Gkdjw53A",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-vvG1OZ_GXW3n4B",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "draw": {
+        "count": 3150
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAAp4_",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAeo0N",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-red-wings-401892845",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18266,
+        "low": 18266,
+        "high": 18266
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vv1AFZk34GkeYPzNI",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 12000
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vv1AFZk4tGkeBg0ee",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vvG1OZ_uDLMj9e",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vv1AFZkf7Gkdjwh31",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAAp4O",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-1AvZZ_8GkmWSzkc",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    }
+  ]
+}

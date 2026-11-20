@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-19",
+  "results": [
+    {
+      "eventId": "2026-11-19-espn-rutgers-wbb-401913008",
+      "metroId": "new-york",
+      "date": "2026-11-19",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 91
+      },
+      "away": {
+        "name": "MD Eastern",
+        "score": 47
+      },
+      "attendance": 6118,
+      "capturedAt": "2026-11-20T00:44:54.770Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "11:01"
+    }
+  ]
+}
