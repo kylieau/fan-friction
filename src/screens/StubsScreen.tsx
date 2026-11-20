@@ -97,20 +97,28 @@ export function StubsScreen() {
       /* storage blocked */
     }
   };
-  // A favorite's "My Stubs ›" (`?filter=`) and a tag's page (`?tag=`) open the log narrowed to it.
+  // A favorite's "My Stubs ›" (`?filter=`), a tag's page (`?tag=`), a year's (`?year=`) and the Season Watch Record's
+  // "All ›" (`?type=watched&from=&to=`, the season's dates; Kylie's Nov 11 default decision) open the log narrowed to it.
   const wantedTeam = params.get('filter');
   const wantedTag = params.get('tag');
   const wantedYear = params.get('year');
+  const wantedType = params.get('type');
+  const wantedFrom = params.get('from');
+  const wantedTo = params.get('to');
   useEffect(() => {
-    if (!wantedTeam && !wantedTag && !wantedYear) return;
+    if (!wantedTeam && !wantedTag && !wantedYear && !wantedType && !wantedFrom && !wantedTo) return;
+    const day = (s: string | null) => (s && /^\d{4}-\d{2}-\d{2}$/.test(s) ? s : undefined);
+    const from = day(wantedFrom);
+    const to = day(wantedTo);
     // A drilldown starts clean and applies everything the link asks for together (Codex, stage 4).
     setFilter({
       ...DEFAULT_FILTER,
       ...(wantedTeam ? { team: wantedTeam } : {}),
       ...(wantedTag ? { tags: [wantedTag] } : {}),
-      ...(wantedYear && /^\d{4}$/.test(wantedYear) ? { dates: { preset: 'custom' as const, from: `${wantedYear}-01-01`, to: `${wantedYear}-12-31` } } : {}),
+      ...(wantedType === 'watched' || wantedType === 'attended' ? { type: wantedType } : {}),
+      ...(wantedYear && /^\d{4}$/.test(wantedYear) ? { dates: { preset: 'custom' as const, from: `${wantedYear}-01-01`, to: `${wantedYear}-12-31` } } : from || to ? { dates: { preset: 'custom' as const, from, to } } : {}),
     });
-  }, [wantedTeam, wantedTag, wantedYear]);
+  }, [wantedTeam, wantedTag, wantedYear, wantedType, wantedFrom, wantedTo]);
   const [sheet, setSheet] = useState(false);
   // The pinned head's divider (M30): the list reports leaving where it opened; the grid and calendar report their own scroll.
   const [listScrolled, setListScrolled] = useState(false);

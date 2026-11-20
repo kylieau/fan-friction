@@ -260,6 +260,10 @@ export function SeasonWatchRecord({ team, schedule, outcomeOf }: { team: Team; s
   const span = (list: TeamGame[], r: [number, number]) => dateSpan(list[r[0]].date, list[r[1]].date);
   const ended = isCurrent && games.length > 0 && games.every((g) => g.score || g.date < todayIn(METROS[team.metroId ?? ''] ?? DEFAULT_METRO));
   const nowWord = ended ? 'at season end' : 'now';
+  // "All ›": the current season runs from its first game to its last on the schedule; an earlier season is its year.
+  const seasonEnd = games.length > 0 ? games.map((g) => g.date).sort().at(-1) : null;
+  const dates = isCurrent && seasonStart && seasonEnd ? { from: seasonStart, to: seasonEnd } : { from: `${shown}-01-01`, to: `${shown}-12-31` };
+  const allStubsPath = `/you/stubs?filter=${encodeURIComponent(team.shortName)}&type=watched&from=${dates.from}&to=${dates.to}`;
   return (
     <section className="card watch-record" aria-label="Season Watch Record">
       <div className="watch-record-head">
@@ -313,7 +317,13 @@ export function SeasonWatchRecord({ team, schedule, outcomeOf }: { team: Team; s
           </>
         )}
       </div>
-      <p className="watch-record-foot">Attended games count in You at {team.shortName} games.</p>
+      <div className="watch-record-foot-row">
+        <p className="watch-record-foot">Attended games count in You at {team.shortName} games.</p>
+        {/* Mock 06's "All ›" (Kylie's Nov 11 default decision): My Stubs narrowed to the team, Watched and the shown season's dates. */}
+        <Link to={allStubsPath} className="heading-link watch-record-all">
+          All ›
+        </Link>
+      </div>
     </section>
   );
 }
