@@ -116,9 +116,16 @@ export function useDialogFocus(ref: RefObject<HTMLElement | null>, onClose: () =
       lastInside.current = active && el.contains(active) ? active : null;
       for (const node of claimed) release(node);
       // Focus goes back to the opener only when nothing else holds it: not when a dialog still open over this one
-      // has it (Codex, group 14 review).
+      // has it (Codex, group 14 review). It goes back after every cleanup in this commit has released its marks:
+      // when the faves menu closed with the Stub it sheet it had swapped in, the menu's cleanup ran first, the
+      // sheet's marks still held the held row's list inert, and the row could not take focus (measured, group 16).
       const loose = !active || active === document.body || el.contains(active);
-      if (loose && opener?.isConnected) opener.focus?.();
+      if (loose && opener?.isConnected) {
+        queueMicrotask(() => {
+          const now = document.activeElement;
+          if ((!now || now === document.body) && opener.isConnected) opener.focus?.();
+        });
+      }
     };
     // Runs once per open: the handlers read their refs, so a parent re-rendering its onClose never re-arms it.
   }, []);
