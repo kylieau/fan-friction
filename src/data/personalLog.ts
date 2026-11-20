@@ -1145,9 +1145,10 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     ...(before?.season ? { season: before.season } : {}),
     // So does a Watching Season game's marker (build 7.2): a ticket turns it Attending, and the season leaves it be.
     ...(before?.watchSeason ? { watchSeason: before.watchSeason } : {}),
-    // And the notes written on the plan (Kylie, Nov 19, 2026), between Attending and Watching; Interested drops them.
-    ...(before?.review && answer !== 'interested' ? { review: before.review } : {}),
-    ...(before?.with && answer !== 'interested' ? { with: before.with } : {}),
+    // And the notes written on the plan (Kylie, Nov 19, 2026), through every answer, Interested included (build 7.3,
+    // C3): the sheet hides the rows on Interested and shows them again on the way back.
+    ...(before?.review ? { review: before.review } : {}),
+    ...(before?.with ? { with: before.with } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).

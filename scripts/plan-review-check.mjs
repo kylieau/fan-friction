@@ -37,11 +37,13 @@ try {
   log.togglePlan(ahead, 'interested');
   plan = log.getPersonalLog().plans.find((p) => p.eventId === ahead.id);
   check(plan.interested === true, 'the plan is Interested now');
+  check(plan.review === 'Second try.', 'the review rides through Interested (build 7.3, C3)');
   log.setPlanReview(plan.id, 'Should not land.');
   plan = log.getPersonalLog().plans.find((p) => p.id === plan.id);
-  check(plan.review !== 'Should not land.', 'an Interested plan takes no review');
+  check(plan.review === 'Second try.', 'an Interested plan takes no new note');
   log.togglePlan(ahead, 'watch');
   plan = log.getPersonalLog().plans.find((p) => p.eventId === ahead.id);
+  check(plan.review === 'Second try.', 'and back from Interested to Watching it is still there');
   log.setPlanReview(plan.id, 'From the couch.');
   check(log.getPersonalLog().plans.find((p) => p.id === plan.id).review === 'From the couch.', 'a Watching plan takes one');
 

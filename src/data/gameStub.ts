@@ -37,6 +37,11 @@ export function gameRefFromId(id: string): { teamId: string; gameId: string } | 
 }
 
 /** The opponent's record by name, same sport first ("Giants" is three teams). */
+/** "Thunder" → "thunder", "Sac Kings" → "sac-kings": a stand-in id for an opponent with no team record. */
+function slugOf(name: string): string {
+  return name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'opponent';
+}
+
 function opponentOf(team: Team, name: string): Team | undefined {
   const key = name.trim().toLowerCase();
   const hits = Object.values(TEAMS).filter(
@@ -98,7 +103,10 @@ export function eventFromGame(link: GameLink): CrowdEvent | null {
   const { game } = link;
   const venue = venueOf(game, game.eventMetroId);
   const metroId = venue?.metroId ?? game.eventMetroId ?? team.metroId;
-  const pair = sides(team, game);
+  // The sides by team id; an opponent with no record of its own (a club from a city the app does not cover) still
+  // names the pair, as a slug with the listing word beside it, so a plan row finds its fave and reads "vs Thunder"
+  // (build 7.3, A1). `sameGame` keeps its stricter pair: a slug never has to match the catalog's own id.
+  const pair = sides(team, game) ?? (game.home ? { home: team.id, away: slugOf(game.opponent), awayOpponent: game.opponent } : { home: slugOf(game.opponent), away: team.id });
   const center = METROS[metroId]?.center ?? METROS[team.metroId]?.center ?? [0, 0];
   return {
     id: game.eventId ?? gameEventId(game),

@@ -28,6 +28,7 @@ import {
   isFurtherOutRoom,
   isOutsideGame,
   gameEventId,
+  eventFromGame,
   nightKey,
   scoresForNights,
   subscribeAccount,
@@ -130,11 +131,32 @@ export function UpcomingScreen() {
   const favFilter = useMemo(() => prunePicked(favPicked, favKeys), [favPicked, favKeys.join('|')]);
 
   // Future only (M22): no past rows, so nothing to reach by scrolling up and no Today pill.
-  const { rows, today, events: listed } = useFavoriteRows(favorites, home, SPAN_DAYS, 0);
+  const { rows, today, events: listed, schedules } = useFavoriteRows(favorites, home, SPAN_DAYS, 0);
   const listedById = useMemo(() => new Map(listed.map((e) => [e.id, e])), [listed]);
   // A schedule-only game's start, from the fave's loaded schedule, for plans the catalog window does not hold (Codex, stage 3).
   const startByGame = useMemo(() => new Map(rows.flatMap((row) => (row.link && row.start ? [[row.link.game.eventId ?? gameEventId(row.link.game), row.start] as const] : []))), [rows]);
-  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || (planStart(a, listedById, startByGame) ?? '99').localeCompare(planStart(b, listedById, startByGame) ?? '99') || a.title.localeCompare(b.title)), [log, today, listedById, startByGame]);
+  // A plan on a game the catalog window does not hold (build 7.3, A1): its event built from the followed team's own
+  // schedule, already loaded, so the row reads "vs Opponent · time · room" like any other, with no read of its own. A
+  // season or watching-season marker names the team and game; any other far-out game is found across the followed
+  // teams' schedules by its event id. A plan on a team she does not follow keeps its stored title.
+  const scheduleEventById = useMemo(() => {
+    const out = new Map<string, CrowdEvent>();
+    for (const plan of log.plans) {
+      if (!plan.eventId || out.has(plan.eventId)) continue;
+      const marker = plan.season ?? plan.watchSeason;
+      const candidates: { teamId: string; games: TeamGame[] | null | undefined }[] = marker ? [{ teamId: marker.teamId, games: schedules.get(marker.teamId) }] : [...schedules.entries()].map(([teamId, games]) => ({ teamId, games }));
+      for (const { teamId, games } of candidates) {
+        const game = games?.find((g) => (marker ? g.id === marker.gameId : g.eventId === plan.eventId || gameEventId(g) === plan.eventId));
+        if (!game) continue;
+        const event = eventFromGame({ teamId, game });
+        if (event) out.set(plan.eventId, event);
+        break;
+      }
+    }
+    return out;
+  }, [log.plans, schedules]);
+  const farEventById = useMemo(() => new Map([...scheduleEventById].filter(([id]) => !listedById.has(id))), [scheduleEventById, listedById]);
+  const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today).sort((a, b) => a.date.localeCompare(b.date) || (planStart(a, listedById, startByGame, farEventById) ?? '99').localeCompare(planStart(b, listedById, startByGame, farEventById) ?? '99') || a.title.localeCompare(b.title)), [log, today, listedById, startByGame, farEventById]);
 
   // Friends' upcoming plans (M22, item 1): what the feed already returns for approved followees, Interested included;
   // the privacy level is applied inside that read, exactly as Activity's was.
@@ -353,7 +375,7 @@ export function UpcomingScreen() {
     lastMonth = month;
     planRows.push(
       <li key={plan.id}>
-        <PlanBandRow plan={plan} event={plan.eventId ? listedById.get(plan.eventId) : undefined} start={planStart(plan, listedById, startByGame)} favorites={favorites} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
+        <PlanBandRow plan={plan} event={plan.eventId ? (listedById.get(plan.eventId) ?? farEventById.get(plan.eventId)) : undefined} scheduleEvent={plan.eventId ? scheduleEventById.get(plan.eventId) : undefined} start={planStart(plan, listedById, startByGame, farEventById)} favorites={favorites} rating={ratings.get(nightKey(plan.metroId, plan.date)) ?? null} home={home.id} />
       </li>,
     );
   }
@@ -500,8 +522,8 @@ export function UpcomingScreen() {
 }
 
 /** A plan's start time: the listing's when the app holds it, else the fave's schedule game's, else what a hand-typed plan carries. */
-function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>): string | null {
-  return (plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId)) : undefined) ?? plan.manual?.start ?? null;
+function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>, far: ReadonlyMap<string, CrowdEvent> = new Map()): string | null {
+  return (plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId) ?? far.get(plan.eventId)?.start ?? undefined) : undefined) ?? plan.manual?.start ?? null;
 }
 
 /**
@@ -545,7 +567,7 @@ function FriendRow({ lines, event, rating, home }: { lines: readonly FeedItem[];
 }
 
 /** A plan in the window (build 7.2, R5a): the Activity row's shape, built in `PlanRow`. */
-function PlanBandRow(props: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
+function PlanBandRow(props: { plan: Plan; event?: CrowdEvent; scheduleEvent?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
   return <PlanRow {...props} />;
 }
 

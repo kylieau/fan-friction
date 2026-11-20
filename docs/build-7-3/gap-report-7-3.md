@@ -1,0 +1,22 @@
+# Build 7.3 · gap report
+
+Written as the build goes, newest group at the top of the log. The spec is [`build-notes-7-3.md`](build-notes-7-3.md) (approved as default decisions Nov 19, 2026); the mockups are in [`mockups/`](mockups/). Built by Claude Code straight on `main` (Fable 5.1, with the advisor before each group and before calling it done, and a Codex read-only review after each group), one commit per item group, `npm run build` and `node --check` on every changed script before each. Headless phone checks at 390 wide; screenshots in the git-ignored `.playwright-mcp/`.
+
+## Progress log
+| Group | State | Commit | Notes |
+|---|---|---|---|
+| 1. A1, plan details past the catalog's window: a plan on a followed team's game the Upcoming window does not hold reads its opponent, time and room from the team's schedule, already loaded, with no read of its own; the schedule also names the opponent when a listing's title cannot be read. C3: a plan's With and Review ride through Interested | done | _(this commit)_ | headless at 390: a Lakers game 106 days out, stubbed Attending from its page, read "LA Lakers · vs Thunder · 5:30 pm · Crypto.com Arena" on Upcoming with the team link (it had read "Basketball · Thunder at Lakers · Crypto.com Arena" with no time); with season tickets on, all 32 home games through April read "vs Opponent · time · room", none bare; `plan-review-check.mjs` 28 of 28 (the notes ride through Interested and back) |
+
+## Group 1: A1, Plan Details Past the Catalog's Window; C3, Notes Through Interested
+
+**A1 as approved:** one read per far-out plan from the team's own schedule. **Built with a refinement:** no read at all. The Upcoming screen already loads every followed team's whole schedule for its faves rows (`useFavoriteRows`), so the hook now hands the schedules back and the screen builds the plan's event from the matching game (`eventFromGame`): a season or watching-season marker names the team and game; any other far-out game is found across the followed teams' schedules by its event id. A plan on a team she does not follow keeps its stored title, as before.
+
+**Found on the way, fixed:** a schedule game against a club with no team record of its own (the Thunder, from a city the app does not cover) built an event with no sides, so the row could not find its fave and read "Basketball · Thunder at Lakers". `eventFromGame` now names the pair with a stand-in id for such an opponent (the listing word beside it); `sameGame`'s stricter pair is untouched, so the catalog match never has to agree with a stand-in.
+
+**The second half of A1:** a listing whose title the opponent parse cannot read now takes the opponent from the team's own schedule game (`planTitle` reads the listing first, then the schedule event); the stored title remains the last fallback.
+
+**C3:** `togglePlan` carries `review` and `with` through every answer, Interested included; the sheet hides the rows on Interested and shows them again on the way back; `setPlanNote` still writes nothing new on an Interested plan. The decisions doc line is corrected.
+
+**Measured:** headless at 390 (`.playwright-mcp/7-3-a1-upcoming-far-plan.png`). The real path: the Lakers followed through the team page's Follow button; the Mar 6, 2027 home game (106 days out, past the 60-day window) opened from the schedule's "See all" list and stubbed Attending from its page; Upcoming's plan row reads "LA Lakers · vs Thunder · 5:30 pm · Crypto.com Arena", the team name a link to the team page. Before the fix the same row read "Basketball · Thunder at Lakers · Crypto.com Arena" with no time. Then season tickets seeded and the team page reloaded (the reconcile runs on the schedule's load): 32 home games through April on Upcoming, every row "vs Opponent · time · room", none bare. `plan-review-check.mjs` 28 of 28; `titles-check.mjs` passes; `npm run build` passes.
+
+**Builder's calls, each one place to reverse:** no read per plan (the loaded schedules serve); a plan on an unfollowed team keeps its stored title; a stand-in opponent id is the listing word slugged, never matched against the catalog.

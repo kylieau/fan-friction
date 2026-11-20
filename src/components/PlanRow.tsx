@@ -47,13 +47,15 @@ export function planFavorite(event: CrowdEvent | undefined, favorites: readonly 
  * the event's list title without its label. The plan's stored title when the event is not loaded or the opponent
  * is not on file.
  */
-export function planTitle(plan: Plan, event: CrowdEvent | undefined, fave: Favorite | undefined): string {
-  if (fave?.teamId && event?.teams) {
+export function planTitle(plan: Plan, event: CrowdEvent | undefined, fave: Favorite | undefined, scheduleEvent?: CrowdEvent): string {
+  // The listing first; when its opponent cannot be read, the team's own schedule game names it (build 7.3, A1).
+  for (const source of [event, scheduleEvent]) {
+    if (!fave?.teamId || !source?.teams) continue;
     const us = fave.teamId;
-    const home = event.teams.home === us;
-    const other = event.teams.home === us ? event.teams.away : event.teams.home;
-    const opponent = opponentName(other, event, fave);
-    if (opponent) return event.neutralSite || home ? `vs ${opponent}` : `at ${opponent}`;
+    const home = source.teams.home === us;
+    const other = source.teams.home === us ? source.teams.away : source.teams.home;
+    const opponent = opponentName(other, source, fave);
+    if (opponent) return source.neutralSite || home ? `vs ${opponent}` : `at ${opponent}`;
   }
   if (fave?.kind === 'artist' && event) return showName(splitTitleLabel(listTitle(event)).name, fave.label);
   return splitTitleLabel(event ? listTitle(event) : plan.title).name;
@@ -108,14 +110,14 @@ function amateurSport(event: CrowdEvent | undefined): string | null {
  * edge with no chevron. No status word on screen (the icon carries it; the spoken name keeps the word). About 69pt
  * (A5). The words open the event.
  */
-export function PlanRow({ plan, event, start, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
+export function PlanRow({ plan, event, scheduleEvent, start, favorites, rating, home }: { plan: Plan; event?: CrowdEvent; /** The followed team's own schedule game as an event (build 7.3, A1): the title's fallback when the listing's opponent cannot be read. */ scheduleEvent?: CrowdEvent; start: string | null; favorites: readonly Favorite[]; rating: number | null; home: string }) {
   const kind = planKind(plan);
   // A Watching Season game still Watching is a quiet row (build 7.2, mock 04, option 1 FINAL); one she turned Attending keeps the full row.
   if (plan.watchSeason && kind === 'watching') return <QuietWatchRow plan={plan} start={start} />;
   const fave = planFavorite(event, favorites);
   const to = plan.manual && !plan.eventId ? entryPath(plan.id) : plan.eventId ? eventPath(plan.eventId, plan.metroId) : datePath(plan.date, plan.metroId);
   const noRead = isOutsideGamePlan(plan) || isFurtherOutRoom(plan.metroId, plan.venue);
-  const title = planTitle(plan, event, fave);
+  const title = planTitle(plan, event, fave, scheduleEvent);
   const category = fave ? '' : categoryOf(event);
   const header = fave ? favoriteDisplayName(fave) : category;
   // Column C: time, place, sport, seat.
