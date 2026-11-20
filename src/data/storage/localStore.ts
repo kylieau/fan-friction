@@ -6,7 +6,8 @@ import { METROS } from '../../config/metros';
 import { cleanHiddenTypes } from '../eventTypeFilter';
 import { parseStamp } from '../read';
 import { normalizeSeats } from '../stubTags';
-import { mendEntryTags } from '../teamTags';
+import { mendEntryTags, mendTeamTag } from '../teamTags';
+import { favoriteFor } from '../favorites';
 import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, WatchingSeason, Seats } from '../types';
 import type { EntryStore } from './types';
 
@@ -189,7 +190,21 @@ export function readStamp(value: unknown): string | undefined {
 /** Favorites as saved, or undefined when this log has never had any (so they get derived once). */
 export function readFavorites(value: unknown): Favorite[] | undefined {
   if (!Array.isArray(value)) return undefined;
-  return value.filter(isFavorite);
+  // A team favorite saved under the doubled college tag ("UCLA MBB MBB", id "ucla-mbb-mbb", from the old
+  // favorites-from-log path) is the team itself once mended; one copy stays (Codex, Nov 19, 2026 review).
+  const seen = new Set<string>();
+  return value
+    .filter(isFavorite)
+    .map((fav) => {
+      if (fav.kind !== 'team' || fav.teamId) return fav;
+      const mended = mendTeamTag(fav.label);
+      const known = favoriteFor('team', mended);
+      return known.teamId ? known : fav;
+    })
+    .filter((fav) => {
+      const key = `${fav.kind}:${fav.id}`;
+      return !seen.has(key) && Boolean(seen.add(key));
+    });
 }
 
 function asOrder(value: unknown): YouOrder {

@@ -6,9 +6,13 @@
 
 import type { Entry } from './types';
 
-/** "UCLA MBB MBB" → "UCLA MBB"; anything else as written. Only a repeated last word goes, never a name's own words. */
+/**
+ * "UCLA MBB MBB" → "UCLA MBB", "UCLA BASEBALL Baseball" → "UCLA BASEBALL" (the code's case differed from the short
+ * name's; Codex, Nov 19 review); anything else as written. Only a repeated last word goes, whatever its case, and the
+ * first spelling stays; never a name's own words.
+ */
 export function mendTeamTag(tag: string): string {
-  const m = /^(.+\s(\S+))\s\2$/.exec(tag.trim());
+  const m = /^(.+\s(\S+))\s\2$/i.exec(tag.trim());
   return m ? m[1] : tag;
 }
 

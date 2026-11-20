@@ -25,6 +25,7 @@ import {
   todayIn,
   yourEntries,
   type Entry,
+  mendTeamTag,
 } from '../data';
 import { entryTypeKey } from '../map/typeIcons';
 import { addDays, dayBandLabel, loggedDateLabel, monthCells, monthTitle, shiftMonth, shortLocalDate, timelineGroup } from '../lib/dates';
@@ -60,7 +61,8 @@ function readFilter(): StubsFilter {
       dates: saved.dates && typeof saved.dates === 'object' && presets.includes(saved.dates.preset) ? saved.dates : DEFAULT_FILTER.dates,
       type: saved.type === 'attended' || saved.type === 'watched' ? saved.type : 'all',
       kind: saved.kind === 'game' || saved.kind === 'show' || saved.kind === 'other' ? saved.kind : 'all',
-      team: typeof saved.team === 'string' ? saved.team : null,
+      // A saved team word from before Nov 19, 2026 may be the doubled college tag; mended like the stubs' own.
+      team: typeof saved.team === 'string' ? mendTeamTag(saved.team) : null,
       tags: Array.isArray(saved.tags) ? saved.tags.filter((t): t is string => typeof t === 'string') : [],
     };
   } catch {
@@ -99,7 +101,7 @@ export function StubsScreen() {
   };
   // A favorite's "My Stubs ›" (`?filter=`), a tag's page (`?tag=`), a year's (`?year=`) and the Season Watch Record's
   // "All ›" (`?type=watched&from=&to=`, the season's dates; Kylie's Nov 11 default decision) open the log narrowed to it.
-  const wantedTeam = params.get('filter');
+  const wantedTeam = params.get('filter') ? mendTeamTag(params.get('filter')!) : null;
   const wantedTag = params.get('tag');
   const wantedYear = params.get('year');
   const wantedType = params.get('type');

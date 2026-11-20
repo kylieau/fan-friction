@@ -565,3 +565,4 @@ export { verdictLines, verdictLinesForDay, liveItems, savedItems, type VerdictLi
 export { outdoorPeaks, outdoorPeaksAsItWas, cityForecastRange, cityRangeAsItWas, cityHourly, cityHourlyAsItWas, weatherSentence, sunsetLabel, skyOf, type OutdoorPeak, type SkyKind } from './dayWeather';
 export { ARTISTS, artistByName, artistMatches, type Artist } from './artists';
 export { genreCategory, artistGenreWord, UNKNOWN_GENRE_WORD } from './genres';
+export { mendTeamTag, mendEntryTags } from './teamTags';

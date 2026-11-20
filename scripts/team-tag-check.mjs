@@ -28,6 +28,7 @@ try {
   check(mendTeamTag('USC FB FB') === 'USC FB', '"USC FB FB" → "USC FB"');
   for (const keep of ['Lakers', 'Sac Kings', 'UCLA MBB', 'New York New York', 'Kings Kings Kings'.slice(0, 11), 'MBB']) check(mendTeamTag(keep) === keep, `"${keep}" stays as written`);
   check(mendTeamTag('Kings Kings') === 'Kings Kings', '"Kings Kings" (no earlier word to keep) stays as written');
+  check(mendTeamTag('UCLA BASEBALL Baseball') === 'UCLA BASEBALL' && mendTeamTag('Ohio State Hockey hockey') === 'Ohio State Hockey', 'a repeated last word in another case goes too, the first spelling kept (Codex, Nov 19)');
   const entry = { tags: ['UCLA MBB MBB'], opponents: ['Delaware MBB MBB'], userTags: ['mbb mbb'] };
   const mended = mendEntryTags(entry);
   check(mended.tags[0] === 'UCLA MBB' && mended.opponents[0] === 'Delaware MBB' && mended.userTags[0] === 'mbb mbb', 'an entry: tags and opponents mended, her own tags untouched');
@@ -51,6 +52,12 @@ try {
   check(data.entryTeams(log.added[0]).includes('UCLA MBB'), 'the mended stub matches the team filter word');
   check(data.entryMatches(log.added[0], log.favorites[0]), "the favorite's credit still finds the mended stub");
   check(data.seasonStubsOf('ucla-mbb', log, 'attended').length === 1, "the season's attended stubs count it");
+
+  // 4. A favorite saved under the doubled word (the old favorites-from-log path) is the team once loaded, and one copy stays.
+  store.set('fan-friction:your-nights', JSON.stringify({ version: 1, hiddenSeedIds: [], added: [old], plans: [], order: 'plans-first', favorites: [{ kind: 'team', id: 'ucla-mbb-mbb', label: 'UCLA MBB MBB' }, { kind: 'team', id: 'ucla-mbb', label: 'UCLA MBB', teamId: 'ucla-mbb' }, { kind: 'venue', id: 'pauley-pavilion', label: 'Pauley Pavilion' }] }));
+  const favs = readLocalLog().favorites;
+  check(favs.length === 2 && favs[0].id === 'ucla-mbb' && favs[0].teamId === 'ucla-mbb' && favs[1].kind === 'venue', `a doubled-name favorite loads as the team, deduplicated (${favs.map((f) => f.id).join(', ')})`);
+  check(data.entryMatches(readLocalLog().added[0], favs[0]), 'and it still finds the mended stub');
 } finally {
   await server.close();
 }
