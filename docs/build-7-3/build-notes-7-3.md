@@ -28,7 +28,8 @@ Work straight on `main`, one commit per item group, stage files by name, `node -
 
 The research both items waited on came back Oct 27, 2026 (`docs/research/topics/ncaa-attendance-sources-answer-codex.md`) and closed for 7.2 Section I on Nov 4 (bounded observed ranges support a room-size ceiling, never an estimate, for college sports with no source).
 
-### B1. "Up to N" for Every Other Show, and the Unknown-Size Switch Rename (Mock First)
+### B1. "Up to N" for Every Other Show, and the Unknown-Size Switch Rename (Already Built; Nov 19 Check)
+**Checked Nov 19 while drawing the boards:** the ceiling line already covers any upcoming event with a room on file and no count, sellout, or estimate (7.2, R3a; `crowdCeiling` reads the listed capacity whatever the kind), shows included; and the switch was renamed "No Estimate" in 7.2 (I4, I5). Nothing to build; B2 follows directly.
 **What she sees today:** a show with no count, sellout, or estimate shows its room's ceiling as "14k cap" on rows and "Up to 14,000" on the event page (R3a, Nov 4). Item M35c asked whether every other show (arts, theater, the categories with no fill share) takes the same line, and what the Crowd Size switch's "unknown size" label should say.
 - **Lean:** yes, every show with a room on file takes the ceiling line (it is a fact about the room, not an estimate); the switch label reads "Rooms with no count" instead of "Unknown size". One mock of a date page row and the switch, then build.
 
@@ -53,7 +54,8 @@ Switching a plan to Interested drops its With and Review today; back to Attendin
 
 Recommended for 7.3: D1, D5, and D10. The rest wait, with the reason.
 
-### D1. Lifetime Record by Team (Lean: Build)
+### D1. Lifetime Record by Team (Already Built; Nov 19 Check)
+**Checked Nov 19:** the team page's "You at Lakers games: 2–1" line (7.1) is the record by team, with the count on its second line (`mockups/round1/04`). The one choice left is wording: "2–1 when you attend" (lean) or as is.
 "Dodgers 7–3 when you attend" beside the Season Watch Record on the team page: the attended half of what the watched half already shows. The data and the outcome reader exist (group 20). One mock of the card.
 
 ### D2. Quick Friction Rating at Stub Time (Lean: Wait)
