@@ -149,6 +149,10 @@ try {
   log.togglePlan(ahead3, 'watch');
   p3 = log.getPersonalLog().plans.find((x) => x.eventId === ahead3.id);
   check(p3.with === 'Sam and Priya', 'With survives Attending to Watching');
+  log.togglePlan(ahead3, 'interested');
+  log.togglePlan(ahead3, 'attend');
+  p3 = log.getPersonalLog().plans.find((x) => x.eventId === ahead3.id);
+  check(p3.with === 'Sam and Priya' && !p3.interested, 'and through Interested and back (build 7.3, C3)');
   log.setPlanNote(p3.id, 'with', '');
   check(log.getPersonalLog().plans.find((x) => x.id === p3.id).with === undefined, 'blank text clears With');
   const past8 = event('2026-11-05-espn-lakers-11', '2026-11-05');

@@ -145,13 +145,15 @@ export function UpcomingScreen() {
       if (!plan.eventId || out.has(plan.eventId)) continue;
       const marker = plan.season ?? plan.watchSeason;
       const candidates: { teamId: string; games: TeamGame[] | null | undefined }[] = marker ? [{ teamId: marker.teamId, games: schedules.get(marker.teamId) }] : [...schedules.entries()].map(([teamId, games]) => ({ teamId, games }));
-      for (const { teamId, games } of candidates) {
+      // Two followed teams against each other both list the game: the home team's schedule wins, whatever the order
+      // of her favorites, since each schedule tells the time on its own team's clock (Codex, 7.3 group 1 review).
+      const matches = candidates.flatMap(({ teamId, games }) => {
         const game = games?.find((g) => (marker ? g.id === marker.gameId : g.eventId === plan.eventId || gameEventId(g) === plan.eventId));
-        if (!game) continue;
-        const event = eventFromGame({ teamId, game });
-        if (event) out.set(plan.eventId, event);
-        break;
-      }
+        return game ? [{ teamId, game }] : [];
+      });
+      const pick = matches.find((m) => m.game.home) ?? matches[0];
+      const event = pick ? eventFromGame(pick) : null;
+      if (event) out.set(plan.eventId, event);
     }
     return out;
   }, [log.plans, schedules]);
@@ -522,8 +524,9 @@ export function UpcomingScreen() {
 }
 
 /** A plan's start time: the listing's when the app holds it, else the fave's schedule game's, else what a hand-typed plan carries. */
-function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>, far: ReadonlyMap<string, CrowdEvent> = new Map()): string | null {
-  return (plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId) ?? far.get(plan.eventId)?.start ?? undefined) : undefined) ?? plan.manual?.start ?? null;
+function planStart(plan: Plan, listed: ReadonlyMap<string, CrowdEvent>, byGame: ReadonlyMap<string, string>, far: ReadonlyMap<string, CrowdEvent>): string | null {
+  const fromEvent = plan.eventId ? (listed.get(plan.eventId)?.start ?? byGame.get(plan.eventId) ?? far.get(plan.eventId)?.start) : null;
+  return fromEvent ?? plan.manual?.start ?? null;
 }
 
 /**
