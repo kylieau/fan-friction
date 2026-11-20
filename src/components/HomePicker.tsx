@@ -1,4 +1,5 @@
-import { useState, useSyncExternalStore } from 'react';
+import { useRef, useState, useSyncExternalStore } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { cityOrder, favoriteCitiesOf, getPersonalLog, metrosWithEvents, subscribePersonalLog, toggleFavoriteCity } from '../data';
 import { metroMatchesSearch } from '../config/metros';
 import { getHomeId, setHomeId, subscribeHome } from '../lib/homeCity';
@@ -79,9 +80,13 @@ export function CityList({ variant = 'dialog', stars = true }: { variant?: 'dial
  */
 export function HomePicker({ onDone }: { onDone?: () => void } = {}) {
   const home = useSyncExternalStore(subscribeHome, getHomeId, getHomeId);
+  // The shared dialog rule (group 16): the page behind inert and Tab inside. Escape does nothing here: the first
+  // open has no home to fall back to, and Done is the only way out.
+  const card = useRef<HTMLDivElement>(null);
+  useDialogFocus(card, () => {}, { escape: false });
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="home-title">
-      <div className="home-card">
+      <div ref={card} className="home-card">
         <h1 id="home-title" className="home-title">
           Where's home?
         </h1>

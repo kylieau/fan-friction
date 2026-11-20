@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { Link } from 'react-router-dom';
 import { FavoritesScreen, favPath } from '../screens/FavoritesScreen';
 import { favoriteName } from './FavoriteBadge';
@@ -13,16 +14,12 @@ import { FAVORITE_KINDS } from './FilterSheet';
  * Opened from the favorites section's Edit, "Edit ›" on You's Faves row and "Manage faves ›" in the Upcoming filter.
  */
 export function EditFavoritesSheet({ onClose }: { onClose: () => void }) {
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const sheet = useRef<HTMLDivElement>(null);
+  useDialogFocus(sheet, onClose);
   return (
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Edit Favorites" onClick={onClose}>
-      <div className="action-sheet following-sheet filter-sheet edit-faves-sheet" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={sheet} className="action-sheet following-sheet filter-sheet edit-faves-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         <h2 className="filter-sheet-title">Edit Favorites</h2>
         <div className="filter-sheet-body">

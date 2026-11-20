@@ -1,6 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import type { Metro } from '../config/metros';
 import { CalendarPanel } from '../screens/CalendarScreen';
+import { useDialogFocus } from '../lib/useDialogFocus';
 
 /**
  * The month grid, search and Famous nights, dropped from the header over
@@ -25,13 +26,8 @@ export function MonthSheet({
   const sheetRef = useRef<HTMLDivElement>(null);
   const drag = useRef<{ startY: number; startedAt: number; dy: number } | null>(null);
 
-  useEffect(() => {
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-    };
-    document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  useDialogFocus(sheetRef, onClose);
 
   const onTouchStart = (event: React.TouchEvent) => {
     const el = sheetRef.current;

@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { Link } from 'react-router-dom';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { AddEntryScreen } from '../screens/AddEntryScreen';
@@ -52,16 +53,11 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
   const [hits, setHits] = useState<CrowdEvent[] | null>(null);
   const favorites = useMemo(() => favoritesOf(log), [log]);
 
-  // Escape closes the sheet, unless a sheet above it (Stub it, the Add card) or the city list is open: that one takes the key.
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key !== 'Escape' || areaOpen) return;
-      if (document.querySelectorAll('.sheet-backdrop, .home-backdrop').length > 1) return;
-      onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose, areaOpen]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener. A
+  // sheet above this one (Stub it, the Add card) takes the keys as the topmost dialog; the city list is not a dialog,
+  // so Escape is handed to it while it is open.
+  const sheet = useRef<HTMLDivElement>(null);
+  useDialogFocus(sheet, onClose, { escape: !areaOpen });
 
   // Today in this city, from the cache the app already keeps (warmed at open; Workbox serves it offline).
   useEffect(() => {
@@ -132,7 +128,7 @@ export function LogSheet({ onClose }: { onClose: () => void }) {
 
   return (
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Log an Event" onClick={onClose}>
-      <div className="action-sheet log-sheet" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={sheet} className="action-sheet log-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         <div className="log-sheet-head">
           <h2 className="stub-sheet-title">Log an Event</h2>

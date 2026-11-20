@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import type { CrowdEvent } from '../data';
+import { DialogPanel } from './DialogPanel';
 import { deviceCalendarName, downloadIcs, googleCalendarUrl } from '../lib/calendarExport';
 import { clockTime, shortLocalDate } from '../lib/dates';
 import { fullTitle } from '../lib/eventTitle';
@@ -12,12 +13,6 @@ import { CalendarIcon } from './Icons';
  */
 export function AddToCalendar({ event, venue, variant = 'icon' }: { event: CrowdEvent; venue: string | null; /** "button": the ticket's 46pt labelled button (build 7.2, R2a); "icon": the 44pt corner icon. */ variant?: 'icon' | 'button' }) {
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    if (!open) return;
-    const key = (ev: KeyboardEvent) => ev.key === 'Escape' && setOpen(false);
-    window.addEventListener('keydown', key);
-    return () => window.removeEventListener('keydown', key);
-  }, [open]);
   return (
     <>
       {variant === 'button' ? (
@@ -32,7 +27,8 @@ export function AddToCalendar({ event, venue, variant = 'icon' }: { event: Crowd
       )}
       {open && (
         <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-labelledby="calendar-title" onClick={() => setOpen(false)}>
-          <div className="action-sheet bulk-sheet" onClick={(ev) => ev.stopPropagation()}>
+          {/* The shared dialog rule (group 16) through the panel: the page behind inert, Tab inside, Escape closes. */}
+          <DialogPanel className="action-sheet bulk-sheet" onClose={() => setOpen(false)}>
             <span className="sheet-handle" aria-hidden />
             <h2 id="calendar-title" className="stub-sheet-title">
               Add to calendar
@@ -66,7 +62,7 @@ export function AddToCalendar({ event, venue, variant = 'icon' }: { event: Crowd
             <button type="button" className="link-button bulk-cancel" onClick={() => setOpen(false)}>
               Cancel
             </button>
-          </div>
+          </DialogPanel>
         </div>
       )}
     </>

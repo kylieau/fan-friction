@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { Link } from 'react-router-dom';
 import { SearchIcon } from './Icons';
 import { ReadTile } from './ReadTile';
@@ -158,13 +159,9 @@ export function SearchSheet({
     };
   }, [signedIn]);
 
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const card = useRef<HTMLDivElement>(null);
+  useDialogFocus(card, onClose);
 
   const weekend = parseTypedDate('this weekend', today) ?? today;
   const q = trimmed.toLowerCase();
@@ -247,7 +244,7 @@ export function SearchSheet({
 
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-label="Search" onClick={onClose}>
-      <div className="home-card search-card" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={card} className="home-card search-card" onClick={(ev) => ev.stopPropagation()}>
         <div className="search-box">
           <label className="search-field">
             <SearchIcon />

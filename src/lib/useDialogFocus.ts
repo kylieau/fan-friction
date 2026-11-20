@@ -55,6 +55,9 @@ export function useDialogFocus(ref: RefObject<HTMLElement | null>, onClose: () =
   close.current = onClose;
   const first = useRef(initial);
   first.current = initial;
+  // Read live: a sheet can hand Escape to a picker open inside it (the Log sheet's city list) and take it back after.
+  const escapes = useRef(escape);
+  escapes.current = escape;
   // Where focus stood inside the dialog when a setup was torn down (StrictMode replays it in development): the
   // replay puts it back there rather than on the initial element (Codex, group 14 review).
   const lastInside = useRef<HTMLElement | null>(null);
@@ -91,7 +94,7 @@ export function useDialogFocus(ref: RefObject<HTMLElement | null>, onClose: () =
       const live = Array.from(document.querySelectorAll(MODAL)).filter((d) => !d.closest('[inert]') && d.getClientRects().length > 0);
       if (live.length > 0 && live[live.length - 1] !== own) return;
       if (ev.key === 'Escape') {
-        if (!escape) return;
+        if (!escapes.current) return;
         ev.stopPropagation();
         close.current();
         return;

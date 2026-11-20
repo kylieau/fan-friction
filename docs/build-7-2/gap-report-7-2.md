@@ -5,6 +5,7 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 ## Progress log
 | Group | State | Commit | Notes |
 |---|---|---|---|
+| 16. The other dialogs (Kylie's Nov 11 default decision): the shared dialog focus rule `useDialogFocus` on Stub it, Log an Event, Search, the filter sheets, Edit Favorites, the month sheet, How Estimates Work, Add to Calendar, the Quick Add sheet, the home picker, Privacy's bulk sheet, the season confirm card and the parked Why card, replacing each one's own Escape listener; the Log sheet hands Escape to its city list while that is open (the hook's `escape` option now reads live); a `DialogPanel` wrapper for the two sheets screens render inline | done | _(this commit)_ | twelve dialogs measured headless at 390 (the table below): focus enters, 0 of the page's focusables reachable, 8 Tabs stay inside, last wraps to first and first to last, Escape returns to the opener, no inert mark left. Unmeasured: Privacy's bulk sheet (the page needs a signed-in account; same `DialogPanel` as Add to Calendar), the home picker (unreachable while the setup flow is on) and the Why card (parked). One fix found by the measure: the Quick Add sheet swapped its fields in after its defaults loaded and dropped focus to the page body; focus now returns to the first field |
 | 15. Season tickets, the answer rule (Kylie, Nov 12): a season game's default seat and price sit on it only while Attending; Watching, Interested and a past stub's Watched take them off ("+ Add cost"), Attending brings them back on an unedited game, and a seat or cost she typed stays; the settled stub carries the season marker; the reconcile takes the defaults off plans stored under the old carry rule; This Game Only shows no price on a Watching game | done | _(this commit)_ | `scripts/season-cost-check.mjs` 18 of 18 (plus `storage-check.mjs` and `watching-season-check.mjs`); walked headless at 390 on a seeded UCLA men's basketball ticket ($50, 16 games): the next home game Attending $50 → Watching "+ Add cost" → Interested no row → Attending $50, an edited $30 through Watching and back; last night's stub without a marker keeps its $50 on Watched (one tap clears it; a price-matching guess was dropped on Codex's review); with a marker Watched drops, Attended restores, a typed $35 survives Watched; the stored Watching plan healed on the next schedule load |
 | 14. The 7.2 leftovers: one shared dialog focus rule (`useDialogFocus`) on About This Verdict, the Further Out card, How Getting There Works, the Stub From Your Faves menu and the season sheet; the canopy `roofNote` closed by Kylie's Nov 7 answer (retractable rooms only); the day page's past-date weather and the record card's "All ›" taken to her as questions with a mock, not built | done | _(this commit)_ | all five dialogs measured headless at 390: focus enters, 0 of the page's focusables reachable, 8 Tabs stay inside, last wraps to first and first to last, Escape returns to the opener, no inert mark left |
 | 13. The story loop's two tools the plan marked "to write": `scripts/story-candidates.mjs` (the week's biggest-verdict and sold-out events with no story, from the files on disk) and `docs/research/topics/story-draft-prompt.md` (the one prompt every draft comes from, answering in the shape `stories.ts` takes); the story plan's four questions carry the builder's picks (no lean had been offered) | done | _(this commit)_ | run for Los Angeles and Boston: 6 candidates over 7 days, none with a story; no model calls, no network |
@@ -35,6 +36,37 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 | Cleanups (approved Nov 4): the weather index retired; the expected-draw table loads on its own, outside the precache | done | `ac489b2c`, _(this commit)_ | headless read check identical; the dev app's date page still shows estimates; the built precache no longer names the table |
 | 0 (c). Kylie's three answers (Nov 4, late evening: "agree with your leans for all 3"): "cap" on the three formula surfaces | done | _(this commit)_ | verdict headline, Local Competition bars and Up Against rival rows measured on Nov 12 |
 | 0 (b). Codex review and the builder's two findings, fixed | done, pushed | `c6083def`, report `42df1f30` | 7 Codex findings: 6 accepted, 1 turned into a question (Up Against and Local Competition); 2 self-found; a data-layer fix (`getEventsBetween`) measured on Home, two team pages and a venue page |
+
+## Group 16: The Other Dialogs
+
+**Kylie's Nov 11 default decision (deferring):** wire the twelve live `role="dialog"` sites plus the parked Why card to the shared rule in one pass, replacing their own partial handling, and measure each the way group 14 did.
+
+**Built (Nov 19, 2026):**
+- `useDialogFocus` on Stub it (`StubSheet.tsx`), Log an Event (`LogSheet.tsx`), Search (`SearchSheet.tsx`), the filter sheets (`FilterSheet.tsx`, shared by Upcoming, Activity and Your Stubs), Edit Favorites, the month sheet (the sheet element itself is the dialog), How Estimates Work (`EventScreen.tsx`), the Quick Add sheet, the home picker (`escape: false`: the first open has no home to fall back to), the confirm card `ConfirmDialog` (`SeasonTickets.tsx`; the season tickets and watching season "turn off" confirms) and the Why card (parked, with focus on Close like the other cards). Each one's own `keydown` listener for Escape is gone.
+- `src/components/DialogPanel.tsx`: the panel inside a backdrop for a sheet a screen renders inline behind `open &&` (Add to Calendar, Privacy's bulk sheet), so the rule arms each time the sheet opens.
+- The hook's `escape` option reads live: the Log sheet passes `escape: !areaOpen`, handing Escape to its city list (a listbox, not a dialog) while that is open, as its own listener did. A sheet above it (Stub it, the Add card) takes the keys as the topmost dialog; the old "more than one backdrop" check is gone.
+- The Quick Add sheet swaps its fields in once the defaults load (the opponent field, the venue field under the other branch), which dropped the focus the rule had put on the first field to the page body (measured). An effect puts focus on the first field again when that happens.
+
+**Measured headless at 390 (synthetic keys through the hook's window listener; "reachable" is a focusable outside the dialog with no inert ancestor):**
+
+| Dialog (opened from) | First focus | Focusables outside | 8 Tabs | Last → Tab | First → Shift+Tab | Escape returns focus to | `inert` left |
+|---|---|---|---|---|---|---|---|
+| Search (the Map's Search button) | the search field | 418, 0 reachable | all inside | the field | Pick a date | Search | 0 |
+| Log an Event (the tab bar) | the search field | 418, 0 reachable | all inside | Close | Not here? Add it yourself | Log an event | 0 |
+| Stub it (an event's Stub it) | Attending | 20, 0 reachable | all inside | Attending | Done | Stub it | 0 |
+| About This Estimate (the ⓘ) | Done (its only stop) | 20, 0 reachable | all inside | Done | Done | How estimates work | 0 |
+| Add to calendar (the calendar icon) | the device calendar row | 20, 0 reachable | all inside | the device calendar row | Cancel | Add to calendar | 0 |
+| Filter Your Stubs | the search field | 12, 0 reachable | all inside | the field | Done | Filter Your Stubs | 0 |
+| Filter Upcoming | the search field | 8, 0 reachable | all inside | the field | Done | Filter Upcoming | 0 |
+| Edit Favorites (You › Edit ›) | the find field | 16, 0 reachable | all inside | the field | Done | Edit › | 0 |
+| Find a date (the month sheet, `?pick=1`) | the sheet's search field | 438, 0 reachable | all inside | the field | the grab bar (Close) | the page title (the Search sheet's Pick a date chip closes itself and navigates, so there is no opener left) | 0 |
+| Quick Add (+ Add a game, after the fix) | the opponent field | 22, 0 reachable | all inside | the opponent field | Cancel | + Add a game | 0 |
+| Turn off watching season (the switch) | Remove … games | 22, 0 reachable | all inside | Remove | Keep watching season | the switch | 0 |
+| Turn off season tickets (the switch) | Remove … upcoming games | 22, 0 reachable | all inside | Remove | Keep season tickets | the switch | 0 |
+
+Not measured: Privacy's bulk sheet (the Privacy page renders only for a signed-in account; it uses the same `DialogPanel` as Add to Calendar, measured above; on Kylie's phone list), the home picker (`ONBOARDING_FLOW` is on, so the setup screen renders instead; wired for when the flow is off) and the Why card (parked, no route). The setup screen (`Onboarding.tsx`) also carries `role="dialog"`; it is a full first-open screen, not a modal over a page, and was not in the decision; left as it is. `npm run build` passes.
+
+**Builder's calls, each one place to reverse:** the home picker ignores Escape; the month sheet's Escape leaves focus where it was before the sheet mounted (no opener survives the navigation); the Quick Add sheet refocuses its first field only when focus was lost, so a field she had already tapped keeps focus.
 
 ## Group 15: Season Tickets, the Answer Rule
 

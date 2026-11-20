@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { Link, useLocation, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { DEFAULT_METRO, METROS, degreesFor } from '../config/metros';
 import { frictionVerdictTitle } from '../config/scoreLabels';
@@ -649,16 +650,12 @@ function HowEstimatesWork({ onClose, event, seats }: { onClose: () => void; even
   const about = aboutThisEstimate(event, seats);
   const ownShare = event.place.type === 'venue' ? VENUES[event.place.venueId]?.carShare : undefined;
   const travel = ownShare === undefined ? cityTravelLine(event.metroId) : null;
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const card = useRef<HTMLDivElement>(null);
+  useDialogFocus(card, onClose);
   return (
     <div className="home-backdrop" role="dialog" aria-modal="true" aria-labelledby="how-title" onClick={onClose}>
-      <div className="home-card" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={card} className="home-card" onClick={(ev) => ev.stopPropagation()}>
         <h1 id="how-title" className="home-title">
           {about ? 'About This Estimate' : 'How Estimates Work'}
         </h1>

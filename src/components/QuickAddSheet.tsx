@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { getCityDate, quickAddDefaults, saveQuickAdd, type Favorite, type QuickAddDefaults } from '../data';
 import { entryPath, eventPath } from '../lib/view';
 
@@ -36,11 +37,17 @@ export function QuickAddSheet({ target, homeId, genreWord, artistListed, playedR
     };
   }, [target, homeId, genreWord, artistListed, playedRooms]);
 
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const card = useRef<HTMLFormElement>(null);
+  useDialogFocus(card, onClose);
+  // The fields are swapped in once the defaults arrive (a game's opponent field, the venue field under the other
+  // branch), which drops the focus the rule had put on the first field; put it on the first field again (measured
+  // headless, group 16: focus landed on the page body before this).
   useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => ev.key === 'Escape' && onClose();
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+    const form = card.current;
+    if (!defaults || !form || form.contains(document.activeElement)) return;
+    form.querySelector<HTMLElement>('select, input, button')?.focus();
+  }, [defaults]);
 
   const game = defaults?.kind === 'game';
   const venueName = venue === OTHER ? otherVenue.trim() : venue;
@@ -61,6 +68,7 @@ export function QuickAddSheet({ target, homeId, genreWord, artistListed, playedR
   return (
     <div className="home-backdrop quick-backdrop" role="dialog" aria-modal="true" aria-labelledby="quick-add-title" onClick={onClose}>
       <form
+        ref={card}
         className="home-card quick-card"
         onClick={(ev) => ev.stopPropagation()}
         onSubmit={(ev) => {

@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { CrowdMark, DayOccasionTag, FrictionVerdict, listedFriction } from './EventTags';
 import { ReadTile, type EmptyKind } from './ReadTile';
 import { formatScore, FRICTION_LEVELS } from '../config/scoreLabels';
@@ -40,10 +42,15 @@ export function WhyCard({
   const top = [...starts.entries()].sort((a, b) => b[1] - a[1])[0];
   const count = `${events.length} ${events.length === 1 ? 'event' : 'events'}`;
   const starts_ = top && top[1] > 1 ? ` · ${top[1]} start at ${clockTime(top[0])}` : '';
+  // The shared dialog rule (group 16; the card is parked, wired for when it returns): the page behind inert, Tab
+  // inside, Escape closes, focus back to the opener.
+  const card = useRef<HTMLDivElement>(null);
+  const closeButton = useRef<HTMLButtonElement>(null);
+  useDialogFocus(card, onClose, { initial: closeButton });
 
   return (
     <div className="home-backdrop why-backdrop" role="dialog" aria-modal="true" aria-labelledby="why-title" onClick={onClose}>
-      <div className="home-card why-card" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={card} className="home-card why-card" onClick={(ev) => ev.stopPropagation()}>
         <div className="why-head">
           <ReadTile rating={rating} size="big" empty={empty} />
           <div className="why-head-text">
@@ -63,7 +70,7 @@ export function WhyCard({
               {starts_}
             </span>
           </div>
-          <button type="button" className="about-read-close" aria-label="Close" onClick={onClose}>
+          <button type="button" className="about-read-close" aria-label="Close" ref={closeButton} onClick={onClose}>
             ×
           </button>
         </div>

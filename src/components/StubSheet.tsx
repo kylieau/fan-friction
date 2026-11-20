@@ -1,4 +1,5 @@
-import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
+import { useDialogFocus } from '../lib/useDialogFocus';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import {
   getAccount,
@@ -95,13 +96,9 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
   const recent = recentWatchPlaces(log).filter((p) => p.toLowerCase() !== (place ?? '').toLowerCase());
   const venue = event.place.type === 'venue' ? (VENUES[event.place.venueId] ? venueNameOn(VENUES[event.place.venueId], event.date) : null) : event.place.name;
 
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const sheet = useRef<HTMLDivElement>(null);
+  useDialogFocus(sheet, onClose);
 
   // The places the people you follow named here (migration 0024): only while you share one yourself.
   useEffect(() => {
@@ -144,7 +141,7 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
 
   return (
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label="Stub it" onClick={onClose}>
-      <div className="action-sheet stub-sheet" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={sheet} className="action-sheet stub-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         {tagging && canTag ? (
           <TagsPanel tags={myTags} onChange={(next) => row && setRowTags(ahead ? 'plan' : 'entry', row.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />

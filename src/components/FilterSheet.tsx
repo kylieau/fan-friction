@@ -1,6 +1,7 @@
-import { useEffect, type ReactNode } from 'react';
+import { useRef, type ReactNode } from 'react';
 import { TEAMS, favoriteKey, type Favorite, type FavoriteKind } from '../data';
 import { SlidersIcon } from './Icons';
+import { useDialogFocus } from '../lib/useDialogFocus';
 
 /** A filter: null shows everything; a set of keys shows only those. */
 export type Picked = ReadonlySet<string> | null;
@@ -17,16 +18,12 @@ export const FAVORITE_KINDS: { kind: FavoriteKind; label: string }[] = [
  * Reset / Done footer. Changes apply as they are tapped; Done only closes. Escape closes too.
  */
 export function FilterSheet({ title, onReset, onClose, children }: { title: string; onReset: () => void; onClose: () => void; children: ReactNode }) {
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => {
-      if (ev.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind inert, Tab inside, Escape closes, focus back to the opener.
+  const sheet = useRef<HTMLDivElement>(null);
+  useDialogFocus(sheet, onClose);
   return (
     <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-label={title} onClick={onClose}>
-      <div className="action-sheet following-sheet filter-sheet" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={sheet} className="action-sheet following-sheet filter-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         <h2 className="filter-sheet-title">{title}</h2>
         <div className="filter-sheet-body">{children}</div>

@@ -1,5 +1,6 @@
 import { useEffect, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { GlobeIcon, LockMark, PeopleIcon } from '../components/Icons';
+import { DialogPanel } from '../components/DialogPanel';
 import { getAccount, getMyProfile, getPersonalLog, setPastStubsVisibility, setStubDefault, subscribeAccount, subscribePersonalLog, updateMyProfile, type StubVisibility, type Visibility } from '../data';
 
 /** The three levels (Kylie, Oct 14, answer E): the profile switch's values, relabeled. */
@@ -91,8 +92,9 @@ export function PrivacySettings() {
       )}
       {bulk && (
         <div className="home-backdrop sheet-backdrop" role="dialog" aria-modal="true" aria-labelledby="bulk-title" onClick={() => setBulk(false)}>
-          {/* Board privacy-r2 frame 2: any direction, unlike Venmo's more-private-only rule. */}
-          <div className="action-sheet bulk-sheet" onClick={(ev) => ev.stopPropagation()}>
+          {/* Board privacy-r2 frame 2: any direction, unlike Venmo's more-private-only rule. The shared dialog rule
+              (group 16) through the panel: the page behind inert, Tab inside, Escape closes. */}
+          <DialogPanel className="action-sheet bulk-sheet" onClose={() => setBulk(false)}>
             <span className="sheet-handle" aria-hidden />
             <h2 id="bulk-title" className="stub-sheet-title">
               Change Past Stubs
@@ -112,7 +114,7 @@ export function PrivacySettings() {
             <button type="button" className="link-button bulk-cancel" onClick={() => setBulk(false)}>
               Cancel
             </button>
-          </div>
+          </DialogPanel>
         </div>
       )}
     </div>

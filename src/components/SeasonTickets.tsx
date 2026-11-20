@@ -305,14 +305,13 @@ function SetupSheet({ team, games, plan, ticket, onClose }: { team: Team; games:
 
 /** The app's small confirm card (the tag and plan removals use it): a title, a body, stacked choices. */
 export function ConfirmDialog({ title, label, body, actions, onClose }: { title: string; label: string; body: ReactNode; actions: { label: string; sub?: string; quiet?: boolean; onPick?: () => void }[]; onClose: () => void }) {
-  useEffect(() => {
-    const onKey = (ev: KeyboardEvent) => ev.key === 'Escape' && onClose();
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+  // The shared dialog rule (group 16): the page behind (the season sheet under it included) inert, Tab inside,
+  // Escape closes, focus back to the opener. Focus starts on the first choice.
+  const card = useRef<HTMLDivElement>(null);
+  useDialogFocus(card, onClose);
   return (
     <div className="home-backdrop sheet-backdrop confirm-backdrop" role="alertdialog" aria-modal="true" aria-label={label} onClick={onClose}>
-      <div className="card confirm-card" onClick={(ev) => ev.stopPropagation()}>
+      <div ref={card} className="card confirm-card" onClick={(ev) => ev.stopPropagation()}>
         <h2 className="confirm-title">{title}</h2>
         <div className="confirm-body">{body}</div>
         {actions.map((action) => (
