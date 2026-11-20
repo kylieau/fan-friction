@@ -218,6 +218,14 @@ try {
     elsewhere.push(...data.filter((row) => !seen.has(row.id)).map((row) => row.data));
     if (data.length < 1000) break;
   }
+  // A failed ESPN team's rows stay in the table untouched tonight (step 1), so they join the one-game rule the same
+  // way: a seller's or a school's copy of one of its games is still dropped, and nothing of theirs is written
+  // (Codex, Nov 19, 2026: without this a copy could land beside the kept row). A failed read costs nothing but the check.
+  for (const f of espnRead.failed) {
+    const { data, error } = await db.from('events').select('id,data').eq('metro_id', metroId).eq('source_id', 'espn').eq('data->teams->>home', f.teamId).gte('date', floorLocal).order('id').range(0, 999);
+    if (error) { console.log(`${metroId}: ${f.teamId}'s kept rows not read for the one-game rule (${error.message}).`); continue; }
+    elsewhere.push(...data.filter((row) => !seen.has(row.id)).map((row) => row.data));
+  }
   const elsewhereIds = new Set(elsewhere.map((e) => e.id));
   const keptEvents = dropGamesCoveredByFeeds([...ours, ...elsewhere]).filter((e) => !elsewhereIds.has(e.id));
   const copies = dropGamesCoveredByFeeds(ours).length - keptEvents.length;

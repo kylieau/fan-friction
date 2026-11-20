@@ -233,15 +233,18 @@ const MIN_GAP_MS = 250;
 let lastRequestAt = 0;
 
 async function getPage(url: string): Promise<Response> {
-  for (let attempt = 0; ; attempt++) {
+  // Two separate budgets (Codex, Nov 19, 2026): a rate-limit answer never spends a server-error retry, nor the other way.
+  let serverErrors = 0;
+  for (let attempt = 0; ; ) {
     const wait = lastRequestAt + MIN_GAP_MS - Date.now();
     if (wait > 0) await new Promise((resolve) => setTimeout(resolve, wait));
     lastRequestAt = Date.now();
     const r = await fetch(url);
     // A server error (Nov 10, 2026: Edmonton's listing answered 500 and the city saved nothing) is asked again twice,
     // with a short pause, before the page is handed back as it answered. Only the nightly reads this source.
-    if (r.status >= 500 && attempt < 2) {
-      await new Promise((resolve) => setTimeout(resolve, 1000 * (attempt + 1)));
+    if (r.status >= 500 && serverErrors < 2) {
+      serverErrors += 1;
+      await new Promise((resolve) => setTimeout(resolve, 1000 * serverErrors));
       continue;
     }
     if (r.status !== 429) return r;
@@ -250,6 +253,7 @@ async function getPage(url: string): Promise<Response> {
       throw new Error(`Ticketmaster: ${/quota/i.test(reason) ? 'over the daily quota' : 'still refusing after retries'} (${reason.slice(0, 120)})`);
     }
     await new Promise((resolve) => setTimeout(resolve, 1000 * 2 ** attempt));
+    attempt += 1;
   }
 }
 

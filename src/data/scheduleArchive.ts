@@ -41,10 +41,11 @@ export interface ScheduleSnapshotSource {
   /**
    * Set when part of this source stood in from an earlier snapshot (Kylie, Nov 13, 2026): a team whose schedule the
    * feed would not give after its retries keeps the rows the last saved file had for it, and the city still saves.
-   * `from` is that file's capture date; `teams` the team ids carried; `reasons` the feed's answers. Those rows are up
-   * to that many days old, and a game on the window's last day is not in them (the earlier window ended sooner).
+   * `from` is that file's capture date; `teams` the team ids carried; `reasons` the feed's answers; `since` each
+   * team's last fresh capture (equal to `from` unless that file was itself standing in for the team). A game on the
+   * window's last day is not in them (the earlier window ended sooner).
    */
-  fallback?: { from: LocalDate; teams: string[]; reasons: string[] };
+  fallback?: { from: LocalDate; teams: string[]; reasons: string[]; since: Record<string, LocalDate> };
 }
 
 export interface ScheduleSnapshot {
@@ -115,7 +116,7 @@ export interface ArchiveExtras {
    * its rows from there stand in (the `fallback` on the source line says so). Without it a failed team fails the
    * city, as before Nov 13, 2026 (a city's first night has nothing to fall back on).
    */
-  previous?: { capturedOn: LocalDate; events: CrowdEvent[] };
+  previous?: { capturedOn: LocalDate; events: CrowdEvent[]; espnFallback?: ScheduleSnapshotSource['fallback'] };
 }
 
 /**
@@ -158,9 +159,15 @@ export async function collectScheduleArchive(metroId: string = ARCHIVE_METRO_ID,
 
   const mlbWindow = inWindow(mlb, capturedOn, through);
   const espnWindow = inWindow(espn.events, capturedOn, through);
+  const previous = extras.previous;
   const espnFallback =
-    espn.failed.length > 0 && extras.previous
-      ? { from: extras.previous.capturedOn, teams: espn.failed.map((f) => f.teamId), reasons: espn.failed.map((f) => f.reason) }
+    espn.failed.length > 0 && previous
+      ? {
+          from: previous.capturedOn,
+          teams: espn.failed.map((f) => f.teamId),
+          reasons: espn.failed.map((f) => f.reason),
+          since: Object.fromEntries(espn.failed.map((f) => [f.teamId, previous.espnFallback?.since?.[f.teamId] ?? (previous.espnFallback?.teams.includes(f.teamId) ? previous.espnFallback.from : previous.capturedOn)])),
+        }
       : undefined;
   const htWindow = inWindow(ht, capturedOn, through);
   const seedWindow = inWindow(seed, capturedOn, through);

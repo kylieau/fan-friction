@@ -18,12 +18,14 @@ export async function previousSnapshot(root, metroId, beforeDate) {
   const last = earlier[earlier.length - 1];
   if (!last) return null;
   const parsed = JSON.parse(await readFile(path.join(dir, last), 'utf8'));
-  return { capturedOn: parsed.capturedOn ?? last.slice(0, 10), events: Array.isArray(parsed.events) ? parsed.events : [] };
+  // That file's own ESPN stand-in, if it had one, so a chain of fallback nights still names each team's last fresh capture.
+  const espn = (parsed.sources ?? []).find((s) => s.id === 'espn');
+  return { capturedOn: parsed.capturedOn ?? last.slice(0, 10), events: Array.isArray(parsed.events) ? parsed.events : [], ...(espn?.fallback ? { espnFallback: espn.fallback } : {}) };
 }
 
 /** One log line per team that stood in, for the step's output. */
 export function fallbackLines(metroId, snapshot) {
   return (snapshot.sources ?? [])
     .filter((s) => s.fallback)
-    .flatMap((s) => s.fallback.teams.map((teamId, i) => `${metroId}: ${s.name} for ${teamId} kept from ${s.fallback.from} (${s.fallback.reasons[i]}; three tries). The city still saved.`));
+    .flatMap((s) => s.fallback.teams.map((teamId, i) => `${metroId}: ${s.name} for ${teamId} kept from ${s.fallback.from}${s.fallback.since?.[teamId] && s.fallback.since[teamId] !== s.fallback.from ? ` (last read fresh ${s.fallback.since[teamId]})` : ''} (${s.fallback.reasons[i]}; three tries). The city still saved.`));
 }

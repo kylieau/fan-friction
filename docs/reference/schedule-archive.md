@@ -20,7 +20,7 @@ Road games are not included. The app's feeds already skip them, because they do 
 
 If a live feed cannot be read, that city is skipped for the night and no file is written for it; the other cities still save (Oct 10, 2026). An empty file would look like a quiet city. A same-day rerun replaces the file only when the listings changed. Git keeps the earlier copy.
 
-One team is not a feed (Kylie, Nov 13, 2026, after ESPN answered 500 for one college hockey schedule on Nov 11 and 12 and five cities saved nothing for two nights). A server error from ESPN or Ticketmaster is asked again twice, a second and then two seconds later. If one ESPN team's schedule still fails, the rows the last saved snapshot had for that team stand in, the city saves, and the ESPN source line in the file carries a `fallback` naming the team, the feed's answer and the earlier file's date (`scripts/previous-snapshot.mjs` picks the latest earlier file, since a city that failed whole has a gap). Those rows are as old as that file, keep its expected draw, and lack a game on the window's last day. The city still fails when every ESPN team fails, when there is no earlier file (a city's first night), or when another feed fails. The same night's weather step uses the same stand-in rows; the results step saves the other teams' finals and reads the failed team's the next night (its window looks three days back); the catalog write saves the other teams' games and leaves every ESPN row in the catalog untouched that night. The compiled snapshot index lists the source as run, so the date still reads "checked" in the app (a builder's call, Nov 13). Proof: `node scripts/feed-fallback-check.mjs` (a fake feed, no network; a few minutes with the real retry pauses).
+One team is not a feed (Kylie, Nov 13, 2026, after ESPN answered 500 for one college hockey schedule on Nov 11 and 12 and five cities saved nothing for two nights). A server error from ESPN or Ticketmaster is asked again twice, a second and then two seconds later. If one ESPN team's schedule still fails, the rows the last saved snapshot had for that team stand in, the city saves, and the ESPN source line in the file carries a `fallback` naming the team, the feed's answer and the earlier file's date (`scripts/previous-snapshot.mjs` picks the latest earlier file, since a city that failed whole has a gap). Those rows are as old as that file, keep its expected draw, and lack a game on the window's last day. The city still fails when every ESPN team fails, when there is no earlier file (a city's first night), or when another feed fails. The same night's weather step uses the same stand-in rows; the results step saves the other teams' finals and reads the failed team's the next night (its window looks three days back); the catalog write writes the other teams' games fresh and spares every ESPN row from that night's stale delete (the failed team's rows keep their old stamp and still take part in the one-game rule, so a seller's copy of one of its games is still dropped). The compiled snapshot index lists the source as run, so the date still reads "checked" in the app (a builder's call, Nov 13). When the fallback runs on consecutive nights, `from` is the file the rows came from and `since` the team's last fresh capture, carried along the chain. Proof: `node scripts/feed-fallback-check.mjs` (a fake feed, no network; a few minutes with the real retry pauses).
 
 ## What the stamp uses
 
@@ -47,13 +47,13 @@ A night logged later is meant to be stamped from the saved schedule for that dat
 
 ## How it runs
 
-`npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, that city writes nothing that night and the run reports it. Weather, the schedule and results are three steps; a bad weather or results feed never blocks the schedule.
+`npm run archive-schedule` writes today's listing. It needs the network. If a live feed cannot be read, that city writes nothing that night and the run reports it (one ESPN team is the exception above). Weather, the schedule and results are three steps; a bad weather or results feed never blocks the schedule.
 
 GitHub runs that command once a day, asked for at **08:01 UTC** (12:01am Pacific in winter, 1:01am in summer; Kylie, Oct 11, 2026: just after midnight, and whenever GitHub actually starts it, lately six and a half hours later, is accepted), and commits to `main`. (From Oct 4 to Oct 9 the schedule carried a Los Angeles `timezone:` line, and every run started about seven hours late, 7–9am Pacific. It is back in plain UTC, Oct 9, with an odd minute to miss GitHub's busy top of the hour.) If `main` will not take the commit, the job opens a pull request instead, and that request needs a merge or the night stays missing.
 
 A commit that only adds schedule files does not redeploy the website. A commit that updates the forecast list the app reads does build the site. That is still the free Vercel plan. One build a night is inside the free cap of 100 a day.
 
-No new key, no credit card, no Ticketmaster.
+No credit card. (Written before the sellers joined: Ticketmaster listings have been in the snapshot since October 2026 with the job's free key, JamBase's too; see `docs/reference/data-sources.md`.)
 
 ### Limits of the free schedule
 
@@ -71,7 +71,7 @@ This uses the free GitHub-hosted runners. One run a night stays inside the free 
 - It does not change the Map, the event page, or any other screen.
 - It does not add Save or "I was there" anywhere. Those stay on the event page.
 - It does not start Traffic, Night story, accounts, or the rating formula.
-- It does not archive concerts from a ticket feed. Ticketmaster stays a later decision, and it needs a yes before any key.
+- (Stale since October 2026: concerts and shows now come in from Ticketmaster and JamBase with the job's free keys; the line stood "no ticket feed" when this was written.)
 
 ## How a later stamp knows
 

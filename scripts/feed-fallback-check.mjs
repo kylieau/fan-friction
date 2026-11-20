@@ -21,6 +21,7 @@ const check = (ok, what) => {
 const hits = new Map();
 const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
 const gameDate = new Date(Date.now() + 3 * 86_400_000).toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
+const playedDate = new Date(Date.now() - 86_400_000).toLocaleDateString('en-CA', { timeZone: 'America/Detroit' });
 const detroitVenue = { 'hockey/nhl/teams/5': 'Little Caesars Arena', 'basketball/nba/teams/8': 'Little Caesars Arena', 'football/nfl/teams/8': 'Ford Field' };
 const originalFetch = globalThis.fetch;
 // The retry pauses are real (a second, then two), so the run takes a few seconds; the count of calls proves the retry.
@@ -56,7 +57,15 @@ const fakeFetch = async (url) => {
       },
     ],
   };
-  return new Response(JSON.stringify({ events: [game] }), { status: 200, headers: { 'content-type': 'application/json' } });
+  // The Pistons also played last night: a final with scores, so the results read has one healthy final to keep.
+  const played = {
+    ...game,
+    id: `8${m[2]}001`,
+    date: `${playedDate}T00:30Z`,
+    competitions: [{ ...game.competitions[0], status: { type: { name: 'STATUS_FINAL', shortDetail: 'Final' } }, attendance: 19_000, competitors: game.competitions[0].competitors.map((x, i) => ({ ...x, score: { value: i === 0 ? 110 : 101 } })) }],
+  };
+  const events = key === 'basketball/nba/teams/8' ? [played, game] : [game];
+  return new Response(JSON.stringify({ events }), { status: 200, headers: { 'content-type': 'application/json' } });
 };
 
 const server = await createServer({ root, configFile: path.join(root, 'vite.config.ts'), server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' });
@@ -87,6 +96,10 @@ try {
   const before = hits.get(plainUrl);
   const loose = await espn.espnEvents.catalog('detroit');
   check(hits.get(plainUrl) === before + 1 && Array.isArray(loose), `the app's read asks the 500 once, no retry (${hits.get(plainUrl) - before})`);
+  const total = () => Array.from(hits.values()).reduce((n, v) => n + v, 0);
+  const requests = total();
+  const again = await espn.espnEvents.catalog('detroit');
+  check(again === loose && total() === requests, 'a second app read is the cached one, 0 more requests');
 
   // 3. The archive: the failed team's rows come from the earlier snapshot, the source line names it, the city saves.
   const archive = await server.ssrLoadModule('/src/data/scheduleArchive.ts');
@@ -136,11 +149,18 @@ try {
   check(threw, 'every team failing throws');
   globalThis.fetch = everyFail;
 
-  // 6. The results read: the failed team's finals wait; the rest are read.
+  // 6. The results read: the failed team's finals wait; the rest are read, the Pistons' final among them.
   const results = await server.ssrLoadModule('/src/data/sources/results.ts');
   const finals = await results.collectResults('detroit');
   check(finals.failed.length === 1 && finals.failed[0].teamId === 'michigan-mhockey', 'the results pass lists Michigan hockey as waiting and carries on');
-  check(Array.isArray(finals.rows), 'the results rows came back');
+  const pistonsFinal = finals.rows.find((r) => r.homeTeamId === 'pistons');
+  check(pistonsFinal?.status === 'final' && pistonsFinal.home.score === 110 && pistonsFinal.attendance === 19_000, `the Pistons' final is in the rows (${finals.rows.length} final${finals.rows.length === 1 ? '' : 's'})`);
+  // 7. A chain of fallback nights keeps each team's last fresh capture: the earlier file was itself standing in.
+  const chained = { ...previous, capturedOn: '2026-11-11', espnFallback: { from: '2026-11-10', teams: ['michigan-mhockey'], reasons: ['x'], since: { 'michigan-mhockey': '2026-11-08' } } };
+  const second = await archive.collectScheduleArchive('detroit', new Date(), { previous: chained });
+  const chainLine = second.sources.find((s) => s.id === 'espn');
+  check(chainLine?.fallback?.from === '2026-11-11' && chainLine.fallback.since['michigan-mhockey'] === '2026-11-08', 'on a second fallback night, from is the last file and since the last fresh capture');
+  check(line?.fallback?.since?.['michigan-mhockey'] === '2026-11-10', 'on a first fallback night, since is the earlier file\'s date');
   check(today <= gameDate, 'the fake game is ahead of today');
 } finally {
   globalThis.fetch = originalFetch;
