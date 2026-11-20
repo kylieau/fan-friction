@@ -48,8 +48,8 @@ try {
   // The reads saved tonight need weather; without Supabase here, it comes from the files.
   await primeFromFiles(server, metroId);
   const todayLocal = new Date().toLocaleDateString('en-CA', { timeZone: METROS[metroId].timeZone });
-  const previous = await previousSnapshot(root, metroId, todayLocal);
-  let extras = previous ? { previous } : {};
+  const earlier = await previousSnapshot(root, metroId, todayLocal);
+  let extras = earlier ? { previous: earlier } : {};
   if (fanDb) {
     const fanRead = await fanEventsFor({ db: fanDb, fns: fanFns, metroId, floorLocal: todayLocal, todayLocal });
     if (fanRead.log) console.log(fanRead.log);
