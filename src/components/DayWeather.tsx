@@ -27,7 +27,9 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday, basi
   const city = metro?.name ?? metroId;
   const asItWas = basis === 'as-it-was';
   const range = asItWas ? cityRangeAsItWas(metroId, date) : cityForecastRange(metroId, date, before);
-  if (!range && peaks.length === 0) return null;
+  const hourly = asItWas ? cityHourlyAsItWas(metroId, date) : cityHourly(metroId, date, before);
+  // A past date with observed city hours but no day range (the day-range call missed) still gets its card (Codex, group 17 review).
+  if (!range && peaks.length === 0 && !(asItWas && hourly.length > 0)) return null;
   // The label every past-day figure carries: the weather service's archived run or the reanalysis archive is an
   // estimate, not a station's reading (the Oct 5 rule's "labeled estimated"); a frozen forecast says it is one.
   const tag = asItWas ? 'estimated' : basis === 'frozen' ? 'forecast' : null;
@@ -62,16 +64,17 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday, basi
     );
   }
 
-  const hourly = asItWas ? cityHourlyAsItWas(metroId, date) : cityHourly(metroId, date, before);
   // The hours the day is lived in: from the first outdoor event (or mid-afternoon) to 11 pm, every other hour when
   // the row would otherwise crowd the card.
   const firstHour = peaks.length > 0 ? Math.min(...peaks.map((p) => (p.event.start ? Number(p.event.start.slice(0, 2)) : 15))) : 15;
   const shownHours = hourly.filter((row) => row.hour >= Math.min(firstHour, 15));
   // Every other hour when the row would crowd the card, the last stored hour always kept (Codex, stage 2).
   const hours = shownHours.length > 7 ? shownHours.filter((_, i) => i % 2 === 0 || i === shownHours.length - 1) : shownHours;
-  // The chance of rain ahead; what fell on a past date (the observed rows carry millimetres, no chance).
+  // The chance of rain ahead; what fell on a past date: the observed day's total, else the stored hours summed only
+  // when every hour of the day is on file (the nightly stores the event-window hours, so a partial day would read
+  // "none" on a rainy day; Codex, group 17 review, Boston Nov 8). Otherwise no Rain stat.
   const rain = !asItWas && hourly.length > 0 ? Math.max(...hourly.map((row) => row.precipProbability ?? 0)) : null;
-  const fell = asItWas && hourly.some((row) => row.precipMm != null) ? hourly.reduce((sum, row) => sum + (row.precipMm ?? 0), 0) : null;
+  const fell = !asItWas ? null : range?.precipMm != null ? range.precipMm : hourly.length === 24 && hourly.every((row) => row.precipMm != null) ? hourly.reduce((sum, row) => sum + (row.precipMm ?? 0), 0) : null;
   const windRows = hours.filter((row) => row.windMph != null);
   const wind = windRows.length > 0 ? Math.round(windRows.reduce((sum, row) => sum + (row.windMph ?? 0), 0) / windRows.length) : null;
   const sunset = sunsetLabel(metroId, date);

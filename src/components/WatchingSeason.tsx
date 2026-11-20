@@ -1,6 +1,7 @@
 import { useMemo, useState, useSyncExternalStore } from 'react';
 import { Link } from 'react-router-dom';
 import {
+  teamFilterTag,
   getPersonalLog,
   HOME_SPOT,
   recentWatchPlaces,
@@ -260,10 +261,14 @@ export function SeasonWatchRecord({ team, schedule, outcomeOf }: { team: Team; s
   const span = (list: TeamGame[], r: [number, number]) => dateSpan(list[r[0]].date, list[r[1]].date);
   const ended = isCurrent && games.length > 0 && games.every((g) => g.score || g.date < todayIn(METROS[team.metroId ?? ''] ?? DEFAULT_METRO));
   const nowWord = ended ? 'at season end' : 'now';
-  // "All ›": the current season runs from its first game to its last on the schedule; an earlier season is its year.
+  // "All ›": the current season runs from its first game to its last on the schedule; an earlier season is its year,
+  // ending the day before the current season's first game when that falls in the same year (Codex, group 18 review:
+  // "2026" picked during 2026–27 must not list this autumn's games). The team word is the tag its catalog stubs carry.
   const seasonEnd = games.length > 0 ? games.map((g) => g.date).sort().at(-1) : null;
-  const dates = isCurrent && seasonStart && seasonEnd ? { from: seasonStart, to: seasonEnd } : { from: `${shown}-01-01`, to: `${shown}-12-31` };
-  const allStubsPath = `/you/stubs?filter=${encodeURIComponent(team.shortName)}&type=watched&from=${dates.from}&to=${dates.to}`;
+  const dayBefore = (date: string) => new Date(Date.parse(`${date}T12:00:00Z`) - 86_400_000).toISOString().slice(0, 10);
+  const yearEnd = seasonStart && seasonStart.startsWith(shown) ? dayBefore(seasonStart) : `${shown}-12-31`;
+  const dates = isCurrent && seasonStart && seasonEnd ? { from: seasonStart, to: seasonEnd } : { from: `${shown}-01-01`, to: yearEnd };
+  const allStubsPath = `/you/stubs?filter=${encodeURIComponent(teamFilterTag(team.id))}&type=watched&from=${dates.from}&to=${dates.to}`;
   return (
     <section className="card watch-record" aria-label="Season Watch Record">
       <div className="watch-record-head">

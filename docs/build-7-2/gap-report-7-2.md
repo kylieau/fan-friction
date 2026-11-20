@@ -49,7 +49,12 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 **Measured:** headless at 390 with a seeded Lakers favorite, a watching season and four stubs (two watched this season, one attended, one watched last March). The card reads "Games Watched 2 of 16 played · 1 home · 1 Barney's"; "All ›" is 44 px tall; the stubs page opens on the link with the dates chip "Wed, Oct 21 – Sun, Apr 11", Watched and Lakers (badge 3) and lists the Thunder and Jazz games only. Screenshots `.playwright-mcp/record-all-02-stubs.png`.
 
-**Builder's calls, each one place to reverse:** the season's dates ride along as a third chip (mock 09 drew two; without the dates, last season's watched games would list too, and the chip row scrolls); the current season's end is the last game on the schedule, so a postseason game added later widens it on the next load; an earlier season is its calendar year.
+**Codex review (Nov 19, from source), two medium findings, both fixed:**
+- **A college team's link opened an empty list:** the link passed the team's short name, but a catalog stub's filter word is the tag `tagFor` writes ("UCLA MBB" for the Bruins' basketball, the same as the short name for a pro team). The link, and the Season Tickets page's past-games link that had the same weakness, now pass `teamFilterTag(team.id)`, the tag the team's catalog stubs carry; checked against stubs built from the Nov 19 Los Angeles snapshot.
+- **An earlier year's link took in the current season's autumn:** "2026" picked during 2026–27 counted only stubs before the season's first game, but the link asked for the whole year. The year now ends the day before the current season's first game when that game falls in the same year.
+- Found fine by Codex: a one-bound range, the session filter on a drilldown, a hand-removed chip, the foot's layout by inspection (wrapping at 390 unmeasured by Codex; measured here, the link 44 px tall beside the wrapped foot line), the copy rules, the types.
+
+**Builder's calls, each one place to reverse:** the season's dates ride along as a third chip (mock 09 drew two; without the dates, last season's watched games would list too, and the chip row scrolls); the current season's end is the last game on the schedule, so a postseason game added later widens it on the next load; an earlier season is its calendar year, cut at the current season's first game.
 
 ## Group 17: The Day Page's Past-Date Weather
 
@@ -63,8 +68,14 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 **Measured:** `node scripts/weather-build-check.mjs la`, 28 of 28, the new section (4) running before the fake observed rows are planted. Headless at 390 (screenshots `.playwright-mcp/day-weather-past-01-card.png`, `-02-strip.png`): Nov 17, 2026 in Los Angeles reads "Tuesday's Weather · estimated", 64° / 48° (the observed day; the forecast had been the same), "Clear. Around 55° all evening.", Rain none, Wind 6 mph, five hours from 3p; Nov 14 "Los Angeles 73° / 59° · Outdoor 62° to 73° · estimated" with the rows' markers at the same figures; Nov 15 two Outdoor rows (the Pomona dragstrip and SoFi) and "Partly cloudy. 60° at 8 am, 64° by 11 pm." read from the first outdoor start, as the forecast sentence is. One Nov 14 load came up with no strip while Supabase answered 500; a reload showed it (the reader was fine).
 
+**Codex review (Nov 19, from source; no path by which the verdict or the stamp reads an observed row), three medium findings, all fixed:**
+- **Rain could read "none" on a rainy day:** the stat summed the stored city hours, but the nightly stores the event-window hours, not all 24 (Boston, Nov 8: 5.1 mm observed, "none" shown). The stat now reads the observed day's own total, else sums the hours only when all 24 are on file, else shows no Rain stat. Measured: Boston Nov 8 reads "Rain 5.1 mm" with "Partly cloudy and breezy, 15 mph. Cooled to the low 40s after 9 pm."
+- **The page header still showed the forecast beside the observed card** (Boston Nov 18: 56° in the header, 58° in the card): the header's high and low now follow the card's basis; the verdict's readers are untouched.
+- **Observed city hours alone never switched the card:** an indoor-only day whose day-range call missed kept the forecast. The switch now counts observed city hours, and the card renders on hours alone (city name on the strip, the hours inside).
+- Low, fixed: the check's past-tense assertions were Fahrenheit-only and ran for whichever city came first (it runs for Los Angeles now, with a Celsius drop checked on Toronto's units); the section proves more (non-empty forecast hours, peaks' bases, the October date's peaks, and two planted fixtures: observed hours with no day, forecast rows only). The stale "never observed weather" comment at the top of `dayWeather.ts` is rewritten. 31 of 31.
+
 **Builder's calls, each one place to reverse:**
-- One basis per card: the as-it-was set is used whole when the city has an observed day or any venue has observed rows; a venue with no observed rows that day is simply absent from the list, never shown from the forecast beside observed ones.
+- One basis per card: the as-it-was set is used whole when the city has an observed day, observed city hours, or any venue has observed rows; a venue with no observed rows that day is simply absent from the list, never shown from the forecast beside observed ones.
 - Reanalysis-only days now show on the day page as "estimated" (group 12 had them show nothing under the frozen-forecast rule); this matches the event card, and the seeded old nights are the only such days.
 - The switch is the city's next morning (`date < today`), before the 24-hour lock, since the observed rows land the night after; the morning after a day with no observed rows yet shows the frozen forecast, labeled.
 - "Rain" on a past date is the day's millimetres summed over the stored hours (none under one), not a chance.

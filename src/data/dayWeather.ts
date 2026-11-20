@@ -1,8 +1,9 @@
 // The day page's weather (build 7.1, M3, Flow X; Kylie, Oct 23, 2026, Locked): the city's high and low, the city by
 // the hour, and each outdoor event's peak feels-like at its own venue during its own window (the Rose Bowl can run
-// twenty degrees hotter than Inglewood). Reads through the Oct 5 rules in ./weather.ts: before a night the latest
-// forecast counts, after the lock the last forecast saved before it, never observed weather. Days with only the
-// reanalysis archive (before the app had forecasts) show nothing here (the builder's call, recorded in the gap report).
+// twenty degrees hotter than Inglewood). The forecast readers follow the Oct 5 rules in ./weather.ts: before a night
+// the latest forecast counts, after the lock the last forecast saved before it. The `AsItWas` readers (Kylie's Nov 11
+// default decision, built Nov 19, 2026) read the observed rows fetched the night after, else the reanalysis archive,
+// for a past date's card; the verdict never reads them.
 // An event's window is its start plus three hours, the notes' rule for an unknown end (no listing carries an end).
 
 import { degreesFor } from '../config/metros';

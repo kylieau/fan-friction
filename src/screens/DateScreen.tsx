@@ -43,6 +43,7 @@ import {
   outdoorPeaks,
   outdoorPeaksAsItWas,
   cityRangeAsItWas,
+  cityHourlyAsItWas,
   stampLocksAt,
   type CityDate,
   type CrowdEvent,
@@ -162,9 +163,20 @@ export function DateScreen() {
   // Every plan, Interested included (build 7.2, R2b: the future frame draws an Interested strip); a flagged season game stays out.
   const plans = useMemo(() => log.plans.filter((p) => !p.season?.gone && !p.watchSeason?.gone && p.date === date && p.metroId === metro.id), [log, date, metro.id]);
   const rating = day?.rating ?? null;
-  // The day's feels-like low and high at the city point (Kylie, Oct 6); the hourly number is the fallback for old data.
-  const dayRange = cityDayRange(metro.id, date);
-  const cityRow = dayRange ? undefined : cityWeather(metro.id, date, events);
+  // A past date's card and markers show what it was, as the event card does (Kylie's Nov 11 default decision): the
+  // observed rows fetched the night after, else the reanalysis archive. The verdict still reads the frozen forecast.
+  // A past date with nothing observed yet (the morning after, or before the observed fetch began on Nov 8, 2026)
+  // keeps the frozen forecast, labeled as one. The day is past from the city's next morning, before the lock.
+  // Observed city hours alone count too (Codex, group 17 review: an indoor-only day with the day-range call missed).
+  const past = date < today;
+  const wasPeaks = past ? outdoorPeaksAsItWas(events) : [];
+  const wasRange = past ? cityRangeAsItWas(metro.id, date) : undefined;
+  const wasHourly = past ? cityHourlyAsItWas(metro.id, date) : [];
+  const asItWas = past && (wasPeaks.length > 0 || wasRange !== undefined || wasHourly.length > 0);
+  // The day's feels-like low and high at the city point (Kylie, Oct 6), following the card's basis (Codex, group 17
+  // review: the header read the forecast beside the observed card); the hourly number is the fallback for old data.
+  const dayRange = asItWas ? wasRange : cityDayRange(metro.id, date);
+  const cityRow = dayRange ? undefined : asItWas ? (wasHourly.find((row) => row.hour === 19) ?? wasHourly.at(-1)) : cityWeather(metro.id, date, events);
 
   // The event the share line names: the highlighted one, or the only one.
   const target = events.find((e) => e.id === highlight) ?? (events.length === 1 ? events[0] : undefined);
@@ -233,14 +245,6 @@ export function DateScreen() {
   const lines = verdictLinesForDay(day, saved);
   // Weather on a settled day is the last forecast saved before the lock (Kylie, Oct 5); ahead of it, the latest.
   const weatherBefore = locked ? (stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone) ?? undefined) : undefined;
-  // A past date's card and markers show what it was, as the event card does (Kylie's Nov 11 default decision): the
-  // observed rows fetched the night after, else the reanalysis archive. The verdict still reads the frozen forecast.
-  // A past date with nothing observed yet (the morning after, or before the observed fetch began on Nov 8, 2026)
-  // keeps the frozen forecast, labeled as one. The day is past from the city's next morning, before the lock.
-  const past = date < today;
-  const wasPeaks = past ? outdoorPeaksAsItWas(events) : [];
-  const wasRange = past ? cityRangeAsItWas(metro.id, date) : undefined;
-  const asItWas = past && (wasPeaks.length > 0 || wasRange !== undefined);
   const peaks = asItWas ? wasPeaks : outdoorPeaks(events, weatherBefore);
   const peakFor = new Map(peaks.map((p) => [p.event.id, p]));
 

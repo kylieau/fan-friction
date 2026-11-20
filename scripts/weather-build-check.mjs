@@ -48,20 +48,27 @@ try {
     //     as-it-was readers answer observed rows and days while the forecast readers still answer forecasts; on a
     //     date from before the observed fetch began, the as-it-was readers answer nothing and the page keeps the
     //     frozen forecast; the sentence takes the past tense from synthetic rows. Runs before (1) plants fake rows.
-    if (metroId === metros[0]) {
+    if (metroId === 'la') {
       const seen = addDays(today, -2);
       const wasRange = data.cityRangeAsItWas(metroId, seen);
       const willRange = data.cityForecastRange(metroId, seen);
       check(`${metroId} ${seen}: the city's day as it was is observed (${wasRange?.basis ?? 'none'}: ${wasRange?.feelsLikeHighF ?? '—'} / ${wasRange?.feelsLikeLowF ?? '—'}), the forecast reader still a forecast (${willRange?.basis ?? 'none'})`, wasRange?.basis === 'observed' && willRange?.basis === 'forecast');
       const wasHours = data.cityHourlyAsItWas(metroId, seen);
       const willHours = data.cityHourly(metroId, seen);
-      check(`${metroId} ${seen}: ${wasHours.length} observed city hours as it was, ${willHours.length} forecast hours the other way, none mixed`, wasHours.length > 0 && wasHours.every((r) => r.basis === 'observed') && willHours.every((r) => r.basis === 'forecast'));
+      check(`${metroId} ${seen}: ${wasHours.length} observed city hours as it was, ${willHours.length} forecast hours the other way, none mixed`, wasHours.length > 0 && wasHours.every((r) => r.basis === 'observed') && willHours.length > 0 && willHours.every((r) => r.basis === 'forecast'));
       const dayRead = await data.getCityDate(metroId, seen);
       const wasPeaks = data.outdoorPeaksAsItWas(dayRead.events);
       const willPeaks = data.outdoorPeaks(dayRead.events);
-      check(`${metroId} ${seen}: ${wasPeaks.length} outdoor peaks as they were beside ${willPeaks.length} forecast peaks (${dayRead.events.length} events)`, wasPeaks.length === 0 || wasPeaks.every((p) => data.weatherAsItWas(metroId, p.venueId, seen, p.hour)?.basis !== 'forecast'));
+      check(`${metroId} ${seen}: ${wasPeaks.length} outdoor peaks as they were beside ${willPeaks.length} forecast peaks (${dayRead.events.length} events)`, (willPeaks.length === 0 || wasPeaks.length > 0) && wasPeaks.every((p) => ['observed', 'reanalysis'].includes(data.weatherAsItWas(metroId, p.venueId, seen, p.hour)?.basis)));
       const old = '2026-10-20';
-      check(`${metroId} ${old}: before the observed fetch began, nothing as it was (range ${data.cityRangeAsItWas(metroId, old)?.basis ?? 'none'}, ${data.cityHourlyAsItWas(metroId, old).length} hours), so the page keeps the frozen forecast`, data.cityRangeAsItWas(metroId, old) === undefined && data.cityHourlyAsItWas(metroId, old).length === 0);
+      const oldRead = await data.getCityDate(metroId, old);
+      check(`${metroId} ${old}: before the observed fetch began, nothing as it was (range ${data.cityRangeAsItWas(metroId, old)?.basis ?? 'none'}, ${data.cityHourlyAsItWas(metroId, old).length} hours, ${data.outdoorPeaksAsItWas(oldRead.events).length} peaks), so the page keeps the frozen forecast (${data.cityHourly(metroId, old).length} forecast hours)`, data.cityRangeAsItWas(metroId, old) === undefined && data.cityHourlyAsItWas(metroId, old).length === 0 && data.outdoorPeaksAsItWas(oldRead.events).length === 0 && data.cityHourly(metroId, old).length > 0);
+      // Deterministic fixtures: a date with observed city hours only (the day-range call missed) answers hours and no
+      // range; a date with forecast rows only answers nothing as it was (the morning after, before the observed fetch).
+      const planted = (date, basis, hours) => hours.map((hour) => ({ metroId, venueId: 'city', date, hour, basis, capturedAt: '2026-01-20T00:00:00Z', feelsLikeF: 50 + hour, tempF: 50 + hour, code: 1 }));
+      primeFromRows(metroId, { hours: [...planted('2026-01-15', 'observed', [15, 17, 19, 21]), ...planted('2026-01-16', 'forecast', [15, 17, 19, 21])], days: [{ metroId, venueId: 'city', date: '2026-01-16', basis: 'forecast', capturedAt: '2026-01-15T00:00:00Z', feelsLikeHighF: 60, feelsLikeLowF: 40 }] });
+      check(`a day with observed city hours only: ${data.cityHourlyAsItWas(metroId, '2026-01-15').length} hours as it was, range ${data.cityRangeAsItWas(metroId, '2026-01-15')?.basis ?? 'none'} (the page still switches on the hours)`, data.cityHourlyAsItWas(metroId, '2026-01-15').length === 4 && data.cityRangeAsItWas(metroId, '2026-01-15') === undefined);
+      check(`a day with forecast rows only: nothing as it was (${data.cityHourlyAsItWas(metroId, '2026-01-16').length} hours, range ${data.cityRangeAsItWas(metroId, '2026-01-16')?.basis ?? 'none'}), the forecast readers answer (${data.cityHourly(metroId, '2026-01-16').length} hours, ${data.cityForecastRange(metroId, '2026-01-16')?.basis ?? 'none'})`, data.cityHourlyAsItWas(metroId, '2026-01-16').length === 0 && data.cityRangeAsItWas(metroId, '2026-01-16') === undefined && data.cityHourly(metroId, '2026-01-16').length === 4 && data.cityForecastRange(metroId, '2026-01-16')?.basis === 'forecast');
       const row = (hour, feelsLikeF, extra = {}) => ({ metroId, venueId: 'city', date: seen, hour, basis: 'observed', capturedAt: '2026-11-19T00:00:00Z', feelsLikeF, tempF: feelsLikeF, code: 0, ...extra });
       const cooled = data.weatherSentence(metroId, seen, [row(19, 62), row(20, 58), row(21, 53), row(22, 51), row(23, 50)], 19, 'past');
       check(`past tense, a drop: "${cooled}"`, cooled === 'Clear. Cooled to the low 50s after 9 pm.');
@@ -73,6 +80,9 @@ try {
       check(`past tense, a trace of rain is not rain: "${dry}"`, dry === 'Clear. Around 60° all evening.');
       const present = data.weatherSentence(metroId, seen, [row(19, 62, { basis: 'forecast', precipProbability: 40, code: 61 }), row(23, 50, { basis: 'forecast' })], 19);
       check(`present tense unchanged: "${present}"`, present === 'Rain. A 40% chance around 7 pm.');
+      // The same drop in a Celsius city reads in its own units (Codex, group 17 review: the wording is unit-aware).
+      const cooledC = data.weatherSentence('toronto', seen, [{ ...row(19, 62), metroId: 'toronto' }, { ...row(21, 53), metroId: 'toronto' }, { ...row(23, 50), metroId: 'toronto' }], 19, 'past');
+      check(`past tense in Celsius: "${cooledC}"`, cooledC === 'Clear. Cooled to the low 10s after 9 pm.');
     }
 
     // (1) The verdict before and after observed rows land.

@@ -654,6 +654,15 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   return { tag: side, side };
 }
 
+/**
+ * The filter word a team's catalog stubs carry (the tag `tagFor` writes: "Kings", "UCLA MBB"), for a link into My
+ * Stubs narrowed to the team (Codex, group 18 review: a college team's short name alone matched nothing).
+ */
+export function teamFilterTag(teamId: string): string {
+  const team = TEAMS[teamId];
+  return team ? tagFor(teamId, team.sport.toLowerCase()).tag : teamId;
+}
+
 /** The away team's filter tag, when the catalog names it, so a game credits both teams (Kylie, Oct 22, 2026). */
 function opponentTags(event: CrowdEvent): string[] {
   if (event.audience.domain !== 'sports' || !event.teams?.away || !TEAMS[event.teams.away]) return [];

@@ -36,6 +36,7 @@ import {
   type SeasonTicket,
   type Seats,
   type TeamGame,
+  teamFilterTag,
 } from '../data';
 import { DEFAULT_METRO, METROS } from '../config/metros';
 import { listTitle } from '../lib/eventTitle';
@@ -171,7 +172,7 @@ export function SeasonTicketsScreen() {
               <span className="settings-value">{ticket.preseason ? 'Included' : 'Not included'}</span>
             </button>
           </div>
-          <Link to={`/you/stubs?filter=${encodeURIComponent(team.shortName)}`} className="card settings-row settings-link season-past">
+          <Link to={`/you/stubs?filter=${encodeURIComponent(teamFilterTag(team.id))}`} className="card settings-row settings-link season-past">
             <span className="season-card-words">
               <span>Past Games</span>
               <span className="season-card-sub">{pastStubs.length > 0 ? `${shortLocalDate(pastStubs[0].when.sort).replace(/^\w+, /, '')} – ${shortLocalDate(pastStubs[pastStubs.length - 1].when.sort).replace(/^\w+, /, '')} · now stubs in You` : 'Your stubs from these games show here'}</span>
