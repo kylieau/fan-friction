@@ -59,6 +59,9 @@ export function YouScreen() {
     clearOpenedFromMap();
   }, []);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
+  // True once the stubs' dates have loaded (their results with them): the record tile waits for it, so a part-loaded
+  // record never reads as final (Codex, group 20 review).
+  const [resultsReady, setResultsReady] = useState(false);
   const navigate = useNavigate();
   const [editingFaves, setEditingFaves] = useState(false);
   const [visibility, setVisibility] = useState<'anyone' | 'friends' | 'private'>('private');
@@ -77,7 +80,9 @@ export function YouScreen() {
   useEffect(() => {
     let current = true;
     scoresForNights(nightsOf(entries)).then((map) => {
-      if (current) setRatings(map);
+      if (!current) return;
+      setRatings(map);
+      setResultsReady(true);
     });
     return () => {
       current = false;
@@ -93,7 +98,7 @@ export function YouScreen() {
   const watched = inYear.length - attended;
   // Recomputed once the dates' scores land (`ratings`): the Hours and Record tiles read the results cache, which the
   // same load fills, so a cold open showed neither until the next visit (measured, group 20).
-  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries).slice(0, 4), [inYear, year, entries, ratings]);
+  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries, { resultsReady }).slice(0, 4), [inYear, year, entries, ratings, resultsReady]);
 
   // Attending and Watching are plans; Interested counts beside them (build 7.1, item 5).
   const plans = useMemo(() => log.plans.filter((plan) => plan.date >= today && !plan.interested).sort((a, b) => a.date.localeCompare(b.date)), [log, today]);

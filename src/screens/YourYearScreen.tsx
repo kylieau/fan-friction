@@ -41,9 +41,16 @@ export function YourYearScreen() {
   const year = yearParam(params.get('year'), thisYear);
   const inYear = useMemo(() => entriesInYear(entries, year === 'All time' ? 'all' : year), [entries, year]);
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
+  // True once the year's dates have loaded (their results with them): the record tile waits for it (Codex, group 20 review).
+  const [resultsReady, setResultsReady] = useState(false);
   useEffect(() => {
     let current = true;
-    scoresForNights(nightsOf(inYear)).then((map) => current && setRatings(map));
+    setResultsReady(false);
+    scoresForNights(nightsOf(inYear)).then((map) => {
+      if (!current) return;
+      setRatings(map);
+      setResultsReady(true);
+    });
     return () => {
       current = false;
     };
@@ -53,7 +60,7 @@ export function YourYearScreen() {
   const watched = inYear.length - attended;
   // Recomputed once the dates' scores land (`ratings`): the Hours and Record tiles read the results cache, which the
   // same load fills, so a cold open showed neither until the next visit (measured, group 20).
-  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries), [inYear, year, entries, ratings]);
+  const stats = useMemo(() => yearStatPool(inYear, year === 'All time' ? 'all' : year, entries, { resultsReady }), [inYear, year, entries, ratings, resultsReady]);
   const teams = teamCounts(inYear).slice(0, 3);
   const venues = useMemo(() => counts(inYear.filter((e) => !e.watched && e.venue).map((e) => e.venue!)).slice(0, 3), [inYear]);
   const tags = tagSummaries(inYear, []).slice(0, 3);

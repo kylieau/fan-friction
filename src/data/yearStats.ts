@@ -5,7 +5,7 @@ import { TEAMS } from './teams';
 import { tagSummaries } from './stubTags';
 import { entryCrowd } from './crowdFigures';
 import { METROS } from '../config/metros';
-import type { Entry } from './types';
+import type { Entry, Team } from './types';
 
 // The numbers behind You's year card, Your year and Ranks (build 7, §3.6, §3.8, §3.9). Counts and milestones only,
 // all from the log; no money on the card (Kylie, Oct 22, 2026: "I might prefer venues over spent cost"). Every team
@@ -77,17 +77,20 @@ export function longestStreak(entries: readonly Entry[]): number {
  */
 export function attendedOutcome(entry: Entry): 'W' | 'L' | 'T' | null {
   if (entry.kind !== 'game' || entry.watched) return null;
-  const names = new Set(entry.sides);
-  const teamIds: string[] = [];
   const system = new Set(['Concerts', 'Sports', 'Event', entry.sport]);
+  const teams = new Map<string, Team>();
   for (const word of entryTags(entry).filter((tag) => !system.has(tag))) {
     const fav = favoriteFor('team', word);
     const team = fav.teamId ? TEAMS[fav.teamId] : undefined;
-    if (!team) continue;
-    teamIds.push(team.id);
-    for (const n of [team.shortName, team.name, ...(team.abbr ? [team.abbr] : []), ...(team.aliases ?? [])]) names.add(n);
+    if (team) teams.set(team.id, team);
   }
-  return entryOutcome(entry, [...names], teamIds);
+  // One credited team: its names alone, never the stub's other side (a hand-added game carries both names in
+  // `sides`, and the opponent's would have matched; Codex, group 20 review). Two of her teams against each other:
+  // no side to be on, so no outcome. No team on file: the stub's one side, when it has exactly one.
+  if (teams.size > 1) return null;
+  const team = [...teams.values()][0];
+  if (!team) return entry.sides.length === 1 ? entryOutcome(entry, entry.sides) : null;
+  return entryOutcome(entry, [team.shortName, team.name, ...(team.abbr ? [team.abbr] : []), ...(team.aliases ?? [])], [team.id]);
 }
 
 /** Wins and losses over the attended games with a result on file (Kylie's Nov 19, 2026 note 2: a lifetime record in Stats). */
@@ -102,15 +105,15 @@ export function attendedRecord(entries: readonly Entry[]): { wins: number; losse
   return out;
 }
 
-export function yearStatPool(entries: readonly Entry[], year: string | 'all', allEntries: readonly Entry[]): YearStat[] {
+export function yearStatPool(entries: readonly Entry[], year: string | 'all', allEntries: readonly Entry[], options: { /** False while the dates' results are still loading: no record tile until they are, so a part-loaded record never reads as final (Codex, group 20 review). */ resultsReady?: boolean } = {}): YearStat[] {
   const attended = entries.filter((e) => !e.watched);
   const stats = logStats([...entries]);
   const pool: YearStat[] = [];
-  // The record when she attends (mock notes-and-record/02, approved Nov 19, 2026): first among the tiles once one
-  // attended game has a result; ties, rare, ride in the second line.
-  const record = attendedRecord(attended);
+  // The record when she attends (mock notes-and-record/02, approved Nov 19, 2026): pinned first among the tiles once
+  // one attended game has a result, whatever the other stats weigh; ties, rare, ride in the second line.
+  const record = options.resultsReady === false ? { wins: 0, losses: 0, ties: 0 } : attendedRecord(attended);
   if (record.wins + record.losses + record.ties > 0) {
-    pool.push({ key: 'record', value: `${record.wins}–${record.losses}`, label: 'Record when you attend', sub: record.ties > 0 ? `${record.ties} ${record.ties === 1 ? 'tie' : 'ties'}` : undefined, weight: 10 + record.wins + record.losses });
+    pool.push({ key: 'record', value: `${record.wins}–${record.losses}`, label: 'Record when you attend', sub: record.ties > 0 ? `${record.ties} ${record.ties === 1 ? 'tie' : 'ties'}` : undefined, weight: Number.POSITIVE_INFINITY });
   }
   if (stats.venues > 0) {
     const before = year === 'all' ? [] : allEntries.filter((e) => !e.watched && e.when.sort < `${year}-01-01`);

@@ -53,6 +53,20 @@ try {
   check(!quiet.some((s) => s.key === 'record'), 'with nothing to say, no tile');
   const year = yearStatPool([ucla, loss, win], '2026', [ucla, loss, win, tie]);
   check(year[0]?.key === 'record' && year[0].value === '2–1' && !year[0].sub, 'a single year counts its own games, no tie line');
+  // Codex, group 20 review: the side is the one credited team's, never the stub's other name; two of her teams
+  // against each other give no side; the tile waits for the results to load; it is pinned first whatever the rest weigh.
+  primeFromRows('la', { results: [result('g-celtics', '2026-11-19', 'Lakers', 'Celtics', 110, 100, 'lakers')] });
+  const forVisitor = entry('e7', 'g-celtics', '2026-11-19', ['Celtics'], ['Celtics', 'Lakers']);
+  check(attendedOutcome(forVisitor) === 'L', "a hand-added game with both names in its sides counts the tagged team's result: Celtics lost, L");
+  const bothHers = entry('e8', 'g-celtics', '2026-11-19', ['Lakers', 'Celtics'], ['Lakers']);
+  check(attendedOutcome(bothHers) === null, 'two of her teams against each other: no side, no outcome');
+  const untagged = entry('e9', 'g-celtics', '2026-11-19', [], ['Celtics']);
+  check(attendedOutcome(untagged) === 'L', 'no team on file but one side named: that side');
+  const waiting = yearStatPool([ucla, loss, win], 'all', [ucla, loss, win], { resultsReady: false });
+  check(!waiting.some((s) => s.key === 'record'), 'while the results are still loading, no tile');
+  const busy = Array.from({ length: 30 }, (_, i) => entry(`b${i}`, `g-b${i}`, `2026-0${1 + (i % 9)}-${String(1 + (i % 27)).padStart(2, '0')}`, [`Team ${i % 25}`], [`Team ${i % 25}`], { venue: `Venue ${i % 12}`, metroId: ['la', 'boston', 'chicago', 'denver'][i % 4], userTags: ['loud'] }));
+  const crowded = yearStatPool([...busy, loss, win], 'all', [...busy, loss, win]);
+  check(crowded[0]?.key === 'record' && crowded.length > 4, `in a busy log (${crowded.length} stats) the record is still first`);
 } finally {
   await server.close();
 }
