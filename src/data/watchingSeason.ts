@@ -98,6 +98,7 @@ export function reconcileWatchPlans(plans: readonly Plan[], season: WatchingSeas
   let changed = false;
   // Events her other plans already hold: a moved game landing on one gives way (her answer wins; Codex, group 7 review).
   const taken = new Set(plans.filter((plan) => plan.watchSeason?.teamId !== season.teamId).map((plan) => plan.eventId));
+  const orphanReviews = new Map<string, string>();
   for (const plan of plans) {
     if (plan.watchSeason?.teamId !== season.teamId) {
       next.push(plan);
@@ -119,6 +120,9 @@ export function reconcileWatchPlans(plans: readonly Plan[], season: WatchingSeas
     if (game.date >= today) seen.add(game.id);
     if (plan.eventId !== seasonPlanEventId(game) || plan.date !== game.date) {
       if (!taken.has(seasonPlanEventId(game))) next.push(movePlan(plan, season.teamId, game));
+      // The moved plan gives way to her own answer on that event, but a review she wrote on it is not lost: it goes
+      // to her plan there when that one has none (Codex, group 19 review).
+      else if (plan.review) orphanReviews.set(seasonPlanEventId(game), plan.review);
       changed = true;
     } else if (plan.watchSeason.gone) {
       const { gone: _gone, ...marker } = plan.watchSeason;
@@ -133,6 +137,13 @@ export function reconcileWatchPlans(plans: readonly Plan[], season: WatchingSeas
     if (planned.has(seasonPlanEventId(game))) continue;
     next.push(watchPlanFrom(season, game, level));
     changed = true;
+  }
+  if (orphanReviews.size > 0) {
+    for (let i = 0; i < next.length; i++) {
+      const id = next[i].eventId;
+      const review = id ? orphanReviews.get(id) : undefined;
+      if (review && !next[i].review) next[i] = { ...next[i], review };
+    }
   }
   return changed ? next : [...plans];
 }

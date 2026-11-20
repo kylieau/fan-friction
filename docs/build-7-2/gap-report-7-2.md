@@ -52,9 +52,17 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 **Measured:** `node scripts/record-stat-check.mjs`, 10 of 10 (results planted in the cache, no network). Headless at 390 with three attended games on real result rows (the Lakers' Nov 17 win and Nov 18 loss, UCLA's Nov 16 win) and a watched Lakers game: the You tab's block reads "2–1 Record when you attend", then Venues, Hours, Teams seen; the same on All time.
 
+**Codex review (Nov 19, from source), four medium findings, all fixed the same day:**
+- A hand-added game carries both names in its sides, so the opponent's name could match and the wrong side count (a Celtics-tagged stub read W after a Lakers win). The side is now the one credited team's names alone; a stub with no team on file counts only when it names exactly one side.
+- Two of her teams against each other silently took the home side; no side, no outcome now.
+- A part-loaded record could show as final; the tile waits until the stubs' dates (and their results) have loaded.
+- The tile could fall out of the four on a busy log (other weights are unbounded); it is pinned first.
+- Codex's first finding, that a catalog stub credits the home team even when she went for the visitor, is the stub's own rule everywhere (its tag is the home team's), recorded as a builder's call below rather than changed: a "went for" side would be a new input.
+- The check covers each (`record-stat-check.mjs`, 15 of 15).
+
 **Found by the measure, fixed:** on a cold open of the Your Year page (and the You tab) the tiles were computed before the dates' results arrived, so the record tile, and the older Hours tile with it, showed only on the next visit; both screens now recompute the tiles once the dates' scores land (the same load fills the results cache). Measured: a cold open of Your Year on All time reads "2–1 Record when you attend" then Venues, Hours, Teams seen.
 
-**Builder's calls, each one place to reverse:** wins and losses only in the big figure (ties in the small line); the tile outranks every other stat once it has anything to say; the record counts the side her stub credits (its system tags), never the opponent, so a game logged "for" the visitor counts the visitor.
+**Builder's calls, each one place to reverse:** wins and losses only in the big figure (ties in the small line); the tile outranks every other stat once it has anything to say; the record counts the side her stub credits (its system tags, the home team's on a catalog stub), never the opponent; a game she went to for the visitor counts the home side until a "went for" input exists, which the simple-inputs rule argues against.
 
 ## Group 19: A Review as Soon as She Stubs It
 
@@ -71,7 +79,16 @@ Written as the build goes, newest group at the top of the log. The spec is [`bui
 
 **Measured:** `node scripts/plan-review-check.mjs`, 10 of 10. Headless at 390: the Lakers' Nov 20 game, Attending, the sheet reads Seats, Cost, Your Notes › Review with "+ Add a review"; the editor takes focus, Save, the line shows "Loud building, great seats.", the plan holds it, the sheet reopened shows it; the dialog rule intact (the page behind inert). The stub's own rows are unchanged (With and Review).
 
-**Builder's calls, each one place to reverse:** no time gate at all (a line before the night is still hers); an Interested plan takes no review; the plan's review stays when the answer changes between Attending and Watching.
+**Codex review (Nov 19, from source), one high and five medium findings, all fixed the same day; a sixth corrected the record:**
+- **High: a Private plan's level never reached an Attending stub** (pre-existing: only the Watching branch carried it), so a Private plan's review would have settled on a stub at the account's default level. Every settled stub takes the plan's level now. Measured in the check: a Private Attending plan settles as a Private stub with its review.
+- The review was dropped on Attending ↔ Watching (`togglePlan` rebuilds the plan from chosen fields); carried now, both ways. The first write-up of this group claimed otherwise; wrong, corrected.
+- "Shared at the plan's level" was wrong: the plans table is owner-only since migration 0026 and the plan cards followers see carry no review, so a plan's review is hers alone until the stub, where it follows the stub's level. The decisions doc, the type and this section say so now. Exposing it on plan cards is Kylie's call, not built.
+- A stub logged by hand before the date passed never received the plan's review (that path cleared the plan without extras); it fills the stub's missing review now.
+- Settlement used the plan as it stood before the dates loaded; an edit or an account copy landing meanwhile was lost, and a plan removed meanwhile still settled. It re-reads the plan after the load: the current review wins, a gone plan settles nothing.
+- A season ticket's plan folding in her own plan on the same game dropped her review; a watching-season plan moved onto a game she had already planned was dropped whole. Both keep the review on the surviving plan.
+- The check covers each (`plan-review-check.mjs`, 21 of 21); `watching-season-check` and `season-cost-check` still pass.
+
+**Builder's calls, each one place to reverse:** no time gate at all (a line before the night is still hers); an Interested plan takes no review (switching to Interested drops the text; a round trip would need `togglePlan` to carry it, Kylie's call); the plan's review is private until the stub.
 
 ## Group 18: The Season Watch Record's "All ›"
 

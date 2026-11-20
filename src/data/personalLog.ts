@@ -1145,6 +1145,8 @@ export function togglePlan(event: CrowdEvent, answer: PlanAnswer = 'attend') {
     ...(before?.season ? { season: before.season } : {}),
     // So does a Watching Season game's marker (build 7.2): a ticket turns it Attending, and the season leaves it be.
     ...(before?.watchSeason ? { watchSeason: before.watchSeason } : {}),
+    // And a review written on the plan (Kylie, Nov 19, 2026), between Attending and Watching; Interested drops it.
+    ...(before?.review && answer !== 'interested' ? { review: before.review } : {}),
     ...(answer === 'watch' ? { watch: true } : {}),
     ...(answer === 'interested' ? { interested: true } : {}),
     // The level stays with the stub when the answer changes; a new one takes your default (build 5, stub privacy).
@@ -1174,6 +1176,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   if (passed.length === 0) return;
   const added: Entry[] = [];
   const settledIds = new Set<string>();
+  // A review on a plan whose stub already exists, to fill that stub when it has none (by event id).
+  const fills = new Map<string, string>();
   const schedules = new Map<string, Promise<TeamGame[] | null>>();
   const scheduleFor = (teamId: string) => {
     if (!schedules.has(teamId)) schedules.set(teamId, getTeamSchedule(teamId).catch(() => null));
@@ -1201,11 +1205,18 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       continue;
     }
     if (snapshot.added.some((entry) => entry.eventId === plan.eventId)) {
+      // The stub exists already (logged by hand before the date passed): a review written on the plan reaches it
+      // when it has none of its own (Codex, group 19 review).
+      if (plan.review) fills.set(plan.eventId, plan.review);
       settledIds.add(plan.id);
       continue;
     }
     try {
       const day = await loadDate(plan.metroId, plan.date);
+      // The plan as it stands now, not as it stood before the dates loaded: an edit or an account copy that landed
+      // meanwhile wins, and a plan removed meanwhile settles nothing (Codex, group 19 review).
+      const live = snapshot.plans.find((row) => row.id === plan.id);
+      if (!live) continue;
       let event = [...day.events, ...(day.furtherOut ?? [])].find((e) => e.id === plan.eventId);
       // A season or watching-season game at a building the app does not cover (an away game in another city) has no
       // catalog event: it settles from the schedule's own game once that carries a final score, with no friction stamp,
@@ -1222,16 +1233,18 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         event = built;
         fromSchedule = true;
       }
-      const entry = carryPlanExtras(plan, entryFromEvent(event));
-      if (plan.userTags?.length) entry.userTags = plan.userTags;
+      const entry = carryPlanExtras(live, entryFromEvent(event));
+      if (live.userTags?.length) entry.userTags = live.userTags;
+      // The plan's level is the stub's, Attending or Watching (Codex, group 19 review: an Attending stub fell back to
+      // the account default, and a Private plan's review would have settled as Friends).
+      if (live.visibility) Object.assign(entry, withLevel(entry, live.visibility));
       // A Watching? answer becomes a Watched stub (Kylie, Oct 11); the friction stamp still applies.
       // Its Private / Friends choice and place come along (build notes 3, 4.7).
-      if (plan.watch) {
+      if (live.watch) {
         entry.watched = true;
-        if (plan.watchShare) entry.watchShare = plan.watchShare;
-        if (plan.visibility) Object.assign(entry, withLevel(entry, plan.visibility));
-        if (plan.watchedPlace) entry.watchedPlace = plan.watchedPlace;
-        if (plan.watchedPlace) entry.watchedWhere = /^home$/i.test(plan.watchedPlace) ? 'home' : 'public';
+        if (live.watchShare) entry.watchShare = live.watchShare;
+        if (live.watchedPlace) entry.watchedPlace = live.watchedPlace;
+        if (live.watchedPlace) entry.watchedWhere = /^home$/i.test(live.watchedPlace) ? 'home' : 'public';
       }
       const stamp = fromSchedule ? undefined : stampNow(event, now);
       if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
@@ -1248,7 +1261,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   // A stub another run made meanwhile keeps the plan's seat and cost when it has none of its own (Codex, stage 1).
   const merged = snapshot.added.map((row) => {
     const prepared = added.find((entry) => twin(entry) === row);
-    if (!prepared) return row;
+    const fill = row.eventId ? fills.get(row.eventId) : undefined;
+    if (!prepared) return fill && !row.review ? { ...row, review: fill } : row;
     // A ticket's default never lands on a stub she marked Watched meanwhile, and the season marker comes along so the
     // stub keeps its provenance (Codex, group 15 review).
     const defaultCost = Boolean(prepared.season && !prepared.season.edited);

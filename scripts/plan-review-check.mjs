@@ -1,8 +1,8 @@
 // A review on a plan (Kylie, Nov 19, 2026: "let users review once an event has started, or even as soon as they stub
 // it"): proves the setter writes and clears a review on an Attending or Watching plan and never on an Interested one,
 // that the review reaches the stub when the plan settles, that a stub another run made meanwhile takes the plan's
-// review only when it has none, and that the account row carries it in `data` (shared at the plan's level, as a
-// stub's review is). Usage: node scripts/plan-review-check.mjs
+// review only when it has none; the Codex cases (section 4): the answer change, a Private plan's level, a stub logged
+// before the date, an edit or a removal during the dates' load, a season plan folding in her own. Usage: node scripts/plan-review-check.mjs
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -78,6 +78,63 @@ try {
   }, 'la');
   const took = log.getPersonalLog().added.filter((e) => e.eventId === past3.id);
   check(took.length === 1 && took[0].review === 'Carried over.', `a stub made meanwhile with no review takes the plan's (${took.length} stub, "${took[0]?.review}")`);
+
+  // 4. Codex, group 19 review: the review survives Attending <-> Watching; a Private plan's level reaches the stub; a
+  //    stub logged before the date passed takes the plan's review; an edit during the dates' load wins; a season
+  //    plan folding in her own plan keeps her review.
+  const ahead2 = event('2027-02-12-espn-lakers-5', '2027-02-12');
+  log.togglePlan(ahead2, 'attend');
+  let p = log.getPersonalLog().plans.find((x) => x.eventId === ahead2.id);
+  log.setPlanReview(p.id, 'Kept across answers.');
+  log.togglePlan(ahead2, 'watch');
+  p = log.getPersonalLog().plans.find((x) => x.eventId === ahead2.id);
+  check(p.watch === true && p.review === 'Kept across answers.', 'Attending to Watching keeps the review');
+  log.togglePlan(ahead2, 'attend');
+  p = log.getPersonalLog().plans.find((x) => x.eventId === ahead2.id);
+  check(!p.watch && p.review === 'Kept across answers.', 'and back to Attending keeps it');
+  const past4 = event('2026-11-09-espn-lakers-6', '2026-11-09');
+  log.togglePlan(past4, 'attend');
+  const p4 = log.getPersonalLog().plans.find((x) => x.eventId === past4.id);
+  const privacy = await server.ssrLoadModule('/src/data/personalLog.ts');
+  await privacy.setStubVisibility(past4.id, 'private');
+  log.setPlanReview(p4.id, 'Just for me.');
+  await log.settlePassedPlans(async () => ({ events: [past4] }), 'la');
+  const s4 = log.getPersonalLog().added.find((e) => e.eventId === past4.id);
+  check(s4?.visibility === 'private' && s4.review === 'Just for me.', `a Private Attending plan settles as a Private stub with its review (${s4?.visibility})`);
+  const past5 = event('2026-11-08-espn-lakers-7', '2026-11-08');
+  log.markWasThere(past5);
+  log.togglePlan(past5, 'attend');
+  const p5 = log.getPersonalLog().plans.find((x) => x.eventId === past5.id);
+  if (p5) {
+    log.setPlanReview(p5.id, 'Written on the plan.');
+    await log.settlePassedPlans(async () => ({ events: [past5] }), 'la');
+    const s5 = log.getPersonalLog().added.filter((e) => e.eventId === past5.id);
+    check(s5.length === 1 && s5[0].review === 'Written on the plan.' && !log.getPersonalLog().plans.some((x) => x.eventId === past5.id), "a stub logged before the date passed takes the plan's review, and the plan clears");
+  } else console.log('     (a plan on an already-logged event is not kept; the fill path has no case here)');
+  const past6 = event('2026-11-07-espn-lakers-8', '2026-11-07');
+  log.togglePlan(past6, 'attend');
+  const p6 = log.getPersonalLog().plans.find((x) => x.eventId === past6.id);
+  log.setPlanReview(p6.id, 'OLD');
+  await log.settlePassedPlans(async () => {
+    log.setPlanReview(p6.id, 'NEW');
+    return { events: [past6] };
+  }, 'la');
+  check(log.getPersonalLog().added.find((e) => e.eventId === past6.id)?.review === 'NEW', "an edit that lands while the dates load is the stub's review");
+  const past7 = event('2026-11-06-espn-lakers-9', '2026-11-06');
+  log.togglePlan(past7, 'attend');
+  const p7 = log.getPersonalLog().plans.find((x) => x.eventId === past7.id);
+  await log.settlePassedPlans(async () => {
+    log.removePlan(p7.id);
+    return { events: [past7] };
+  }, 'la');
+  check(!log.getPersonalLog().added.some((e) => e.eventId === past7.id), 'a plan removed while the dates load settles nothing');
+  const tickets = await server.ssrLoadModule('/src/data/seasonTickets.ts');
+  const g = { id: 'sg1', date: '2027-03-01', start: '19:00', home: true, opponent: 'Kings' };
+  const ticket = { teamId: 'lakers', on: true, plan: 'full', seats: { section: '1' }, ticket: 50, currency: 'USD', preseason: true, removed: {}, updatedAt: '2027-01-01T00:00:00Z' };
+  const own = { id: `plan-${tickets.seasonPlanEventId(g)}`, date: g.date, metroId: 'la', eventId: tickets.seasonPlanEventId(g), title: 'Kings at Lakers', review: 'Mine first.', visibility: 'friends' };
+  const seasonPlan = { ...own, id: 'plan-season-sg1', review: undefined, season: { teamId: 'lakers', gameId: 'sg1' } };
+  const folded = tickets.reconcileSeasonPlans([seasonPlan, own], ticket, [g], '2027-02-01', 'friends');
+  check(folded.length === 1 && folded[0].review === 'Mine first.' && folded[0].season, "a season plan folding in her own plan keeps her review");
 } finally {
   await server.close();
 }

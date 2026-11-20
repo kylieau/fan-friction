@@ -746,8 +746,9 @@ export interface Plan {
   cost?: Cost;
   /**
    * Your review, written before the night or during it (Kylie, Nov 19, 2026: "let users review once an event has
-   * started, or even as soon as they stub it"); it carries into the stub when the date passes. Shared at the plan's
-   * level, as a stub's review is. "With" stays on the stub: its private row is keyed to entries only.
+   * started, or even as soon as they stub it"); it carries into the stub when the date passes, where it follows the
+   * stub's level. Until then it is hers alone: the plans table is owner-only (migration 0026) and the plan cards
+   * followers see carry no review. "With" stays on the stub: its private row is keyed to entries only.
    */
   review?: string;
   /**
