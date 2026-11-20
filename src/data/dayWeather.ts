@@ -9,7 +9,7 @@ import { degreesFor } from '../config/metros';
 import { hoursOf } from '../lib/windows';
 import { isOpenAir, weatherHourFor, type WeatherDay, type WeatherRow } from './formula/weather';
 import { sunHours } from './formula/sun';
-import { cityDayRange, weatherAt } from './weather';
+import { cityDayRange, cityDayRangeAsItWas, weatherAsItWas, weatherAt } from './weather';
 import type { CrowdEvent, LocalDate } from './types';
 
 /** The three row marks the day page draws: a plain sun, cloud or rain, no temperature color (M3). */
@@ -74,10 +74,35 @@ export function outdoorPeaks(events: readonly CrowdEvent[], before?: Date): Outd
   return out;
 }
 
+/**
+ * Each outdoor event's peak as it was (the observed rows fetched the night after, else the reanalysis archive; never
+ * a forecast), for a past date's day card (Kylie's Nov 11 default decision: the day page shows what it was, as the
+ * event card does). The same shape as `outdoorPeaks`, so the card and the rows' markers read either.
+ */
+export function outdoorPeaksAsItWas(events: readonly CrowdEvent[]): OutdoorPeak[] {
+  const out: OutdoorPeak[] = [];
+  for (const event of events) {
+    if (event.place.type !== 'venue' || !isOpenAir(event)) continue;
+    const venueId = event.place.venueId;
+    const rows = windowHours(event)
+      .map(([date, hour]) => [hour, weatherAsItWas(event.metroId, venueId, date, hour)] as const)
+      .filter((pair): pair is readonly [number, WeatherRow] => pair[1] !== undefined);
+    if (rows.length === 0) continue;
+    const [hour, peak] = rows.reduce((best, pair) => (pair[1].feelsLikeF > best[1].feelsLikeF ? pair : best));
+    out.push({ event, venueId, peakF: peak.feelsLikeF, sky: skyOf(peak), hour, capturedAt: peak.capturedAt });
+  }
+  return out;
+}
+
 /** The city's forecast high and low for the day, or undefined when only the reanalysis archive has it. */
 export function cityForecastRange(metroId: string, date: LocalDate, before?: Date): WeatherDay | undefined {
   const day = cityDayRange(metroId, date, before);
   return day && day.basis === 'forecast' ? day : undefined;
+}
+
+/** The city's high and low as they were (observed, else the reanalysis archive), for a past date's day card. */
+export function cityRangeAsItWas(metroId: string, date: LocalDate): WeatherDay | undefined {
+  return cityDayRangeAsItWas(metroId, date);
 }
 
 /** The city point's forecast rows for the day, one per stored hour, in hour order. */
@@ -86,6 +111,16 @@ export function cityHourly(metroId: string, date: LocalDate, before?: Date): Wea
   for (let hour = 0; hour <= 23; hour += 1) {
     const row = weatherAt(metroId, 'city', date, hour, before);
     if (row && row.basis === 'forecast') rows.push(row);
+  }
+  return rows;
+}
+
+/** The city point's rows as they were (observed, else the reanalysis archive), one per stored hour, in hour order. */
+export function cityHourlyAsItWas(metroId: string, date: LocalDate): WeatherRow[] {
+  const rows: WeatherRow[] = [];
+  for (let hour = 0; hour <= 23; hour += 1) {
+    const row = weatherAsItWas(metroId, 'city', date, hour);
+    if (row) rows.push(row);
   }
   return rows;
 }
@@ -141,8 +176,10 @@ function wetWord(row: Pick<WeatherRow, 'code' | 'feelsLikeF'>): string {
  * 30% or more (with its hour), else the evening's temperature: the drop when feels-like falls 8° or more after the
  * start, the rise when it climbs as much, else the start and the last stored hour when they differ by 4° or more,
  * else "around N° all evening". Null with no hourly rows. Sentence case; degrees follow the Temperature Units rule.
+ * In the past tense (a past date's card, from the observed rows, which carry rain in millimetres and no chance):
+ * "Cooled to", "Warmed to", and "Rain around 8 pm." when a millimetre or more fell in an hour, never a chance.
  */
-export function weatherSentence(metroId: string, date: LocalDate, hourly: readonly WeatherRow[], startHour: number): string | null {
+export function weatherSentence(metroId: string, date: LocalDate, hourly: readonly WeatherRow[], startHour: number, tense: 'present' | 'past' = 'present'): string | null {
   const rows = [...hourly].sort((a, b) => a.hour - b.hour);
   if (rows.length === 0) return null;
   const at = rows.find((r) => r.hour >= startHour) ?? rows[rows.length - 1];
@@ -153,11 +190,18 @@ export function weatherSentence(metroId: string, date: LocalDate, hourly: readon
   const wind = Math.max(...after.map((r) => r.windMph ?? 0));
   const windy = wind >= 15 ? `${sky ? ' and breezy' : 'Breezy'}, ${Math.round(wind)} mph` : '';
   const first = sky || windy ? `${sky ?? ''}${windy}.` : null;
-  const wettest = after.reduce<WeatherRow | null>((best, r) => ((r.precipProbability ?? 0) > (best?.precipProbability ?? 0) ? r : best), null);
-  const chance = wettest?.precipProbability ?? 0;
+  const past = tense === 'past';
+  const wettest = past
+    ? after.reduce<WeatherRow | null>((best, r) => ((r.precipMm ?? 0) > (best?.precipMm ?? 0) ? r : best), null)
+    : after.reduce<WeatherRow | null>((best, r) => ((r.precipProbability ?? 0) > (best?.precipProbability ?? 0) ? r : best), null);
+  const chance = past ? 0 : (wettest?.precipProbability ?? 0);
+  const fell = past ? (wettest?.precipMm ?? 0) : 0;
   let second: string;
   const deg = (f: number) => degreesFor(f, metroId);
-  if (chance >= 30 && wettest) {
+  if (past && fell >= 1 && wettest) {
+    const word = wetWord(wettest);
+    second = sky && WET.has(sky) ? `${word[0].toUpperCase()}${word.slice(1)} around ${hourWord(wettest.hour)}.` : `${word[0].toUpperCase()}${word.slice(1)} around ${hourWord(wettest.hour)}.`;
+  } else if (chance >= 30 && wettest) {
     second = sky && WET.has(sky) ? `A ${Math.round(chance)}% chance around ${hourWord(wettest.hour)}.` : `A ${Math.round(chance)}% chance of ${wetWord(wettest)} around ${hourWord(wettest.hour)}.`;
   } else if (after.length < 2) {
     // One stored hour at or after the start (the rows ran out early): that hour alone, no claim about the evening.
@@ -167,9 +211,9 @@ export function weatherSentence(metroId: string, date: LocalDate, hourly: readon
     const drop = at.feelsLikeF - last.feelsLikeF;
     if (drop >= 8) {
       const when = after.find((r) => at.feelsLikeF - r.feelsLikeF >= 8) ?? last;
-      second = `Cools to the ${band(last.feelsLikeF, metroId)} after ${hourWord(when.hour)}.`;
+      second = `${past ? 'Cooled' : 'Cools'} to the ${band(last.feelsLikeF, metroId)} after ${hourWord(when.hour)}.`;
     } else if (drop <= -8) {
-      second = `Warms to the ${band(last.feelsLikeF, metroId)} by ${hourWord(last.hour)}.`;
+      second = `${past ? 'Warmed' : 'Warms'} to the ${band(last.feelsLikeF, metroId)} by ${hourWord(last.hour)}.`;
     } else if (Math.abs(drop) >= 4 && last !== at) {
       second = `${deg(at.feelsLikeF)} at ${hourWord(at.hour)}, ${deg(last.feelsLikeF)} by ${hourWord(last.hour)}.`;
     } else second = `Around ${deg(at.feelsLikeF)} all evening.`;

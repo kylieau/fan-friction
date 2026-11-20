@@ -43,6 +43,38 @@ try {
     const addDays = (d, n) => new Date(Date.parse(`${d}T12:00:00Z`) + n * 864e5).toISOString().slice(0, 10);
     const past = [1, 2, 3, 5, 8].map((n) => addDays(today, -n));
 
+    // (4) A past date's day card reads what it was (Kylie's Nov 11 default decision; built Nov 19, 2026): on a date
+    //     with observed rows on file (two days back; the nightly fetches the last two days the night after), the
+    //     as-it-was readers answer observed rows and days while the forecast readers still answer forecasts; on a
+    //     date from before the observed fetch began, the as-it-was readers answer nothing and the page keeps the
+    //     frozen forecast; the sentence takes the past tense from synthetic rows. Runs before (1) plants fake rows.
+    if (metroId === metros[0]) {
+      const seen = addDays(today, -2);
+      const wasRange = data.cityRangeAsItWas(metroId, seen);
+      const willRange = data.cityForecastRange(metroId, seen);
+      check(`${metroId} ${seen}: the city's day as it was is observed (${wasRange?.basis ?? 'none'}: ${wasRange?.feelsLikeHighF ?? '—'} / ${wasRange?.feelsLikeLowF ?? '—'}), the forecast reader still a forecast (${willRange?.basis ?? 'none'})`, wasRange?.basis === 'observed' && willRange?.basis === 'forecast');
+      const wasHours = data.cityHourlyAsItWas(metroId, seen);
+      const willHours = data.cityHourly(metroId, seen);
+      check(`${metroId} ${seen}: ${wasHours.length} observed city hours as it was, ${willHours.length} forecast hours the other way, none mixed`, wasHours.length > 0 && wasHours.every((r) => r.basis === 'observed') && willHours.every((r) => r.basis === 'forecast'));
+      const dayRead = await data.getCityDate(metroId, seen);
+      const wasPeaks = data.outdoorPeaksAsItWas(dayRead.events);
+      const willPeaks = data.outdoorPeaks(dayRead.events);
+      check(`${metroId} ${seen}: ${wasPeaks.length} outdoor peaks as they were beside ${willPeaks.length} forecast peaks (${dayRead.events.length} events)`, wasPeaks.length === 0 || wasPeaks.every((p) => data.weatherAsItWas(metroId, p.venueId, seen, p.hour)?.basis !== 'forecast'));
+      const old = '2026-10-20';
+      check(`${metroId} ${old}: before the observed fetch began, nothing as it was (range ${data.cityRangeAsItWas(metroId, old)?.basis ?? 'none'}, ${data.cityHourlyAsItWas(metroId, old).length} hours), so the page keeps the frozen forecast`, data.cityRangeAsItWas(metroId, old) === undefined && data.cityHourlyAsItWas(metroId, old).length === 0);
+      const row = (hour, feelsLikeF, extra = {}) => ({ metroId, venueId: 'city', date: seen, hour, basis: 'observed', capturedAt: '2026-11-19T00:00:00Z', feelsLikeF, tempF: feelsLikeF, code: 0, ...extra });
+      const cooled = data.weatherSentence(metroId, seen, [row(19, 62), row(20, 58), row(21, 53), row(22, 51), row(23, 50)], 19, 'past');
+      check(`past tense, a drop: "${cooled}"`, cooled === 'Clear. Cooled to the low 50s after 9 pm.');
+      const warmed = data.weatherSentence(metroId, seen, [row(19, 50), row(21, 55), row(23, 60)], 19, 'past');
+      check(`past tense, a rise: "${warmed}"`, warmed === 'Clear. Warmed to the low 60s by 11 pm.');
+      const rained = data.weatherSentence(metroId, seen, [row(19, 60, { code: 3 }), row(20, 59, { code: 61, precipMm: 2.4 }), row(23, 58)], 19, 'past');
+      check(`past tense, rain that fell: "${rained}"`, rained === 'Overcast. Rain around 8 pm.');
+      const dry = data.weatherSentence(metroId, seen, [row(19, 60, { precipMm: 0.2 }), row(23, 58, { precipMm: 0 })], 19, 'past');
+      check(`past tense, a trace of rain is not rain: "${dry}"`, dry === 'Clear. Around 60° all evening.');
+      const present = data.weatherSentence(metroId, seen, [row(19, 62, { basis: 'forecast', precipProbability: 40, code: 61 }), row(23, 50, { basis: 'forecast' })], 19);
+      check(`present tense unchanged: "${present}"`, present === 'Rain. A 40% chance around 7 pm.');
+    }
+
     // (1) The verdict before and after observed rows land.
     const before = [];
     for (const date of past) before.push(await data.getCityDate(metroId, date));

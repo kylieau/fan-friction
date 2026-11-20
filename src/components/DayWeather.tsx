@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { METROS, degreesFor } from '../config/metros';
-import { cityForecastRange, cityHourly, sunsetLabel, todayIn, weatherGlyph, weatherSentence, VENUES, venueNameOn, type CrowdEvent, type OutdoorPeak } from '../data';
+import { cityForecastRange, cityHourly, cityHourlyAsItWas, cityRangeAsItWas, sunsetLabel, weatherGlyph, weatherSentence, VENUES, venueNameOn, type CrowdEvent, type OutdoorPeak } from '../data';
 import { DayOccasionTag } from './EventTags';
 import { clockTime, weekdayLong } from '../lib/dates';
 import { listTitle, splitTitleLabel } from '../lib/eventTitle';
@@ -16,13 +16,21 @@ import { WeatherIcon } from './WeatherIcon';
  * Outdoor Venues list, each outdoor event's peak at its own venue during its own window, with a plain grey mark and
  * one ink for every temperature. Weather is out of Local Competition. The city's sun and moon stay in color (Kylie:
  * they are the city's sky, not a temperature). Every degree follows the Temperature Units rule (M40).
+ *
+ * A past date (Kylie's Nov 11 default decision, as the event card since group 12): `basis` "as-it-was" reads the
+ * observed rows (else the reanalysis archive) and carries the "estimated" label every past-day figure does; "frozen"
+ * is a past date with nothing observed yet, the last forecast saved before the lock, labeled "forecast".
  */
-export function DayWeather({ metroId, date, peaks, events, before, isToday }: { metroId: string; date: string; peaks: readonly OutdoorPeak[]; /** Every event that day, for the MAJOR tag beside a venue row's temp. */ events: readonly CrowdEvent[]; before?: Date; isToday: boolean }) {
+export function DayWeather({ metroId, date, peaks, events, before, isToday, basis = 'forecast' }: { metroId: string; date: string; peaks: readonly OutdoorPeak[]; /** Every event that day, for the MAJOR tag beside a venue row's temp. */ events: readonly CrowdEvent[]; before?: Date; isToday: boolean; basis?: 'forecast' | 'frozen' | 'as-it-was' }) {
   const [open, setOpen] = useState(false);
   const metro = METROS[metroId];
   const city = metro?.name ?? metroId;
-  const range = cityForecastRange(metroId, date, before);
+  const asItWas = basis === 'as-it-was';
+  const range = asItWas ? cityRangeAsItWas(metroId, date) : cityForecastRange(metroId, date, before);
   if (!range && peaks.length === 0) return null;
+  // The label every past-day figure carries: the weather service's archived run or the reanalysis archive is an
+  // estimate, not a station's reading (the Oct 5 rule's "labeled estimated"); a frozen forecast says it is one.
+  const tag = asItWas ? 'estimated' : basis === 'frozen' ? 'forecast' : null;
   const deg = (f: number) => degreesFor(f, metroId);
   // One venue, or every peak the same, reads as one figure; several share the venue through its highest peak.
   const byVenue = new Map<string, OutdoorPeak>();
@@ -46,6 +54,7 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
           </span>
         )}
         <span className="day-weather-strip-text">{stripText}</span>
+        {tag && <span className="weather-basis">{tag}</span>}
         <span className="day-weather-chevron" aria-hidden>
           <ChevronRight />
         </span>
@@ -53,20 +62,23 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
     );
   }
 
-  const hourly = cityHourly(metroId, date, before);
+  const hourly = asItWas ? cityHourlyAsItWas(metroId, date) : cityHourly(metroId, date, before);
   // The hours the day is lived in: from the first outdoor event (or mid-afternoon) to 11 pm, every other hour when
   // the row would otherwise crowd the card.
   const firstHour = peaks.length > 0 ? Math.min(...peaks.map((p) => (p.event.start ? Number(p.event.start.slice(0, 2)) : 15))) : 15;
   const shownHours = hourly.filter((row) => row.hour >= Math.min(firstHour, 15));
   // Every other hour when the row would crowd the card, the last stored hour always kept (Codex, stage 2).
   const hours = shownHours.length > 7 ? shownHours.filter((_, i) => i % 2 === 0 || i === shownHours.length - 1) : shownHours;
-  const rain = hourly.length > 0 ? Math.max(...hourly.map((row) => row.precipProbability ?? 0)) : null;
+  // The chance of rain ahead; what fell on a past date (the observed rows carry millimetres, no chance).
+  const rain = !asItWas && hourly.length > 0 ? Math.max(...hourly.map((row) => row.precipProbability ?? 0)) : null;
+  const fell = asItWas && hourly.some((row) => row.precipMm != null) ? hourly.reduce((sum, row) => sum + (row.precipMm ?? 0), 0) : null;
   const windRows = hours.filter((row) => row.windMph != null);
   const wind = windRows.length > 0 ? Math.round(windRows.reduce((sum, row) => sum + (row.windMph ?? 0), 0) / windRows.length) : null;
   const sunset = sunsetLabel(metroId, date);
-  // The M3 sentence (Kylie, Nov 7, 2026): from the stored numbers, read at the first outdoor start, else 7 pm. Not on a
-  // past date: the card there still holds the frozen forecast, and a present-tense line would read as what happened.
-  const sentence = metro && date < todayIn(metro) ? null : weatherSentence(metroId, date, hourly, peaks.length > 0 ? firstHour : 19);
+  // The M3 sentence (Kylie, Nov 7, 2026): from the stored numbers, read at the first outdoor start, else 7 pm. In the
+  // past tense from the observed rows on a past date; not on a frozen forecast, where a present-tense line would read
+  // as what happened.
+  const sentence = basis === 'frozen' ? null : weatherSentence(metroId, date, hourly, peaks.length > 0 ? firstHour : 19, asItWas ? 'past' : 'present');
   const updated = [...peaks.map((p) => p.capturedAt), ...(range ? [range.capturedAt] : [])].sort().at(-1);
   const updatedLabel = updated && metro ? new Date(updated).toLocaleTimeString('en-US', { timeZone: metro.timeZone, hour: 'numeric', minute: '2-digit' }).toLowerCase() : null;
   const hourLabel = (h: number) => (h % 12 === 0 ? 12 : h % 12) + (h < 12 ? 'a' : 'p');
@@ -77,6 +89,7 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
       <div className="day-weather-head">
         <h2 id="day-weather-title" className="you-heading">
           {isToday ? "Today's Weather" : `${weekdayLong(date)}'s Weather`}
+          {tag && <span className="weather-basis">{tag}</span>}
         </h2>
         <button type="button" className="day-weather-hide" aria-expanded onClick={() => setOpen(false)}>
           Hide <span aria-hidden>⌃</span>
@@ -101,6 +114,12 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
           <span className="day-weather-stat">
             <span className="day-weather-stat-label">Rain</span>
             <strong>{Math.round(rain)}%</strong>
+          </span>
+        )}
+        {fell != null && (
+          <span className="day-weather-stat">
+            <span className="day-weather-stat-label">Rain</span>
+            <strong>{fell >= 1 ? `${fell.toFixed(1)} mm` : 'none'}</strong>
           </span>
         )}
         {wind != null && (
@@ -162,7 +181,7 @@ export function DayWeather({ metroId, date, peaks, events, before, isToday }: { 
       )}
       <p className="day-weather-note">
         City figures are for {city}. Venue temps are the peak at each venue during its event and can run far from the city's. Feels-like.
-        {updatedLabel ? ` Updated ${updatedLabel}.` : ''}
+        {asItWas ? ' What it was, from the weather service’s archived run, not a station’s reading.' : basis === 'frozen' ? ' The last forecast saved before the day.' : updatedLabel ? ` Updated ${updatedLabel}.` : ''}
       </p>
     </section>
   );

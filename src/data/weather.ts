@@ -47,6 +47,17 @@ export function weatherAsItWas(metroId: string, venueId: string, date: LocalDate
   return rows.find((r) => r.basis === 'reanalysis');
 }
 
+/**
+ * What the city's day was: the latest observed day (fetched the night after), else the reanalysis archive's. Never
+ * a forecast; the verdict reads `cityDayRange`. For a past date's day card (Kylie's Nov 11 default decision).
+ */
+export function cityDayRangeAsItWas(metroId: string, date: LocalDate): WeatherDay | undefined {
+  const days = cachedWeatherDays(metroId, date) ?? [];
+  const observed = days.filter((d) => d.basis === 'observed').sort((a, b) => a.capturedAt.localeCompare(b.capturedAt));
+  if (observed.length > 0) return observed[observed.length - 1];
+  return days.find((d) => d.basis === 'reanalysis');
+}
+
 /** What it was at an event's venue at its start hour; undefined until the night after the day. */
 export function weatherForEventAsItWas(event: CrowdEvent): WeatherRow | undefined {
   if (event.place.type !== 'venue') return undefined;

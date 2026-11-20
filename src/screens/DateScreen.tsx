@@ -41,6 +41,8 @@ import {
   yourEntries,
   verdictLinesForDay,
   outdoorPeaks,
+  outdoorPeaksAsItWas,
+  cityRangeAsItWas,
   stampLocksAt,
   type CityDate,
   type CrowdEvent,
@@ -231,7 +233,15 @@ export function DateScreen() {
   const lines = verdictLinesForDay(day, saved);
   // Weather on a settled day is the last forecast saved before the lock (Kylie, Oct 5); ahead of it, the latest.
   const weatherBefore = locked ? (stampLocksAt(asMetroDate(metro.id, date, events), metro.timeZone) ?? undefined) : undefined;
-  const peaks = outdoorPeaks(events, weatherBefore);
+  // A past date's card and markers show what it was, as the event card does (Kylie's Nov 11 default decision): the
+  // observed rows fetched the night after, else the reanalysis archive. The verdict still reads the frozen forecast.
+  // A past date with nothing observed yet (the morning after, or before the observed fetch began on Nov 8, 2026)
+  // keeps the frozen forecast, labeled as one. The day is past from the city's next morning, before the lock.
+  const past = date < today;
+  const wasPeaks = past ? outdoorPeaksAsItWas(events) : [];
+  const wasRange = past ? cityRangeAsItWas(metro.id, date) : undefined;
+  const asItWas = past && (wasPeaks.length > 0 || wasRange !== undefined);
+  const peaks = asItWas ? wasPeaks : outdoorPeaks(events, weatherBefore);
   const peakFor = new Map(peaks.map((p) => [p.event.id, p]));
 
   return (
@@ -320,7 +330,7 @@ export function DateScreen() {
 
       {/* The day's weather (M3, Flow X): a slim strip that opens into the card, between the verdict and the lineup.
           Keyed by the date so it is collapsed on every visit. */}
-      <DayWeather key={`${metro.id}|${date}`} metroId={metro.id} date={date} peaks={peaks} events={events} before={weatherBefore} isToday={date === today} />
+      <DayWeather key={`${metro.id}|${date}`} metroId={metro.id} date={date} peaks={peaks} events={events} before={weatherBefore} isToday={date === today} basis={asItWas ? 'as-it-was' : past ? 'frozen' : 'forecast'} />
 
       {/* Order since build 7.1 (M1, Kylie, Oct 23, 2026): the verdict, then the lineup (people open a day to see what's
           on), then Local Competition, then Further Out; the Attended card sits at the bottom (M7). */}
