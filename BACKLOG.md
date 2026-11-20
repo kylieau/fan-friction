@@ -103,6 +103,24 @@ Kylie answered the open items on Oct 11 (`docs/reviews/build-notes-3-oct11.md`, 
 
 ## Next
 
+### Kylie's Nov 19, 2026 notes (two to build, ten to consider)
+
+**To build (mock first; boards in `docs/build-7-2/mockups/notes-and-record/`, waiting on her yes):**
+1. **Reviews from the Stub it sheet.** Today the Review row (free text, under Your Notes with "With") is on a stub only, and a plan becomes a stub the morning after the date (`settlePassedPlans` runs on open once `plan.date` is before the city's today). So a review is reachable only from the next day on, never on the night, and never from a plan's sheet. Kylie: let people review once an event has started, or as soon as they stub it. Builder's lean: Your Notes (With and Review) on an Attending or Watching plan too, saved on the plan and carried to the stub at settlement the way a plan's seat and cost already are (same-day logging, build 7 option A); no time gate at all, since a note before the night is still hers.
+2. **Lifetime record in Stats.** The You tab's Your Year block has a year picker with "All time" and four stat tiles from `yearStatPool`; none is a win–loss record. Builder's lean: a "Record When You Attend" tile (W–L from `entryOutcome` over attended stubs with a result on file, all time and per year), shown when at least one game has a result; the same line on the Your Year page.
+
+**To consider (her related ideas; where one overlaps something built, the overlap is named):**
+3. Quick review at stub time: a one-tap friction rating when stubbing, the full review later. (Hand ratings are evidence, never a target; the stored rating would be hers alone.)
+4. A review nudge the morning after a stubbed, unreviewed event. (A push or an in-app line; nothing nudges today.)
+5. Lifetime record by team ("Dodgers 7–3 when you attend"): the Season Watch Record card has the watched half per team; the attended half would sit beside it on the team page.
+6. Venue passport: venues visited, visits per venue, average friction at each. (Ranks has venues by count; no friction average.)
+7. Streaks and milestones: first event, 10th stub, new venue, new city, most events in a month. (Your Year has days-in-a-row and new venues; no milestones.)
+8. Year in review, shareable: total events, total friction, worst getaway, favorite venue. (Recap and Your Year exist and share; "worst getaway" and total friction are new.)
+9. Personal friction vs. the crowd: her rating against everyone else's for the same night. (Needs other people's ratings; nothing collects them.)
+10. Edit or add to a review later, a photo or note days after, without losing the original rating. (The Review row edits in place; no photos anywhere by the guardrails' no-public-photo-walls rule, a private photo would be new.)
+11. Stub history timeline: every night, feeding the record and stats. (My Stubs' list and calendar views are this.)
+12. "Would go again" toggle per venue or event. (New field; one tap, so it fits the simple-inputs rule.)
+
 ### Build 7.2 (notes locked Nov 4, 2026; `docs/build-7-2/build-notes-7-2.md`)
 
 Kylie locked the Oct 30 review answers and the Nov 4 mock picks. Start at the notes' Start Here. Mockups in `docs/build-7-2/mockups/`. Left for the builder (not deferred product):
