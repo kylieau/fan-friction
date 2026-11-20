@@ -1257,6 +1257,8 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
       ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}),
       ...(prepared.cost && !row.cost && !(row.watched && defaultCost) ? { cost: prepared.cost } : {}),
       ...(prepared.season && !row.season ? { season: prepared.season } : {}),
+      // A review written on the plan reaches a stub made meanwhile that has none of its own (Kylie, Nov 19, 2026).
+      ...(prepared.review && !row.review ? { review: prepared.review } : {}),
     };
   });
   commit({
@@ -1279,7 +1281,23 @@ function carryPlanExtras(plan: Plan, entry: Entry): Entry {
   // The season marker comes along (Kylie, Nov 12, 2026), so the stub knows its seat and cost were the ticket's defaults
   // and a later switch to Watched can take them off; `gone` stays with the plan.
   const season = plan.season ? { teamId: plan.season.teamId, gameId: plan.season.gameId, ...(plan.season.edited ? { edited: true } : {}) } : undefined;
-  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), ...(season ? { season } : {}) };
+  // A review written on the plan (Kylie, Nov 19, 2026) is the stub's review.
+  const review = plan.review?.trim() || undefined;
+  return { ...entry, ...(seats ? { seats } : {}), ...(cost ? { cost } : {}), ...(season ? { season } : {}), ...(review ? { review } : {}) };
+}
+
+/** A review on an Attending or Watching plan (Kylie, Nov 19, 2026); empty text clears it. Interested plans take none. */
+export function setPlanReview(planId: string, review: string) {
+  const next = review.trim();
+  commit({
+    ...snapshot,
+    plans: snapshot.plans.map((plan) => {
+      if (plan.id !== planId || plan.interested) return plan;
+      const { review: _old, ...rest } = plan;
+      void _old;
+      return next ? { ...rest, review: next } : rest;
+    }),
+  });
 }
 
 export function removePlan(planId: string) {
