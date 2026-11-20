@@ -649,7 +649,9 @@ function tagFor(teamId: string | undefined, sport: string): { tag: string; side:
   if (team && /college/i.test(team.league)) {
     const abbr =
       sport === 'football' ? 'FB' : sport === 'basketball' ? (teamId?.endsWith('-wbb') ? 'WBB' : 'MBB') : sport === 'baseball' ? 'Baseball' : sport;
-    return { tag: `${side} ${abbr}`, side };
+    // A program's short name already ends with its code ("UCLA MBB"); until Nov 19, 2026 the tag doubled it
+    // ("UCLA MBB MBB", Kylie: "the wart"). Stored copies are mended on load (src/data/teamTags.ts).
+    return { tag: side.toLowerCase().endsWith(` ${abbr.toLowerCase()}`) ? side : `${side} ${abbr}`, side };
   }
   return { tag: side, side };
 }

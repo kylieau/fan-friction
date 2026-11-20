@@ -6,6 +6,7 @@ import { METROS } from '../../config/metros';
 import { cleanHiddenTypes } from '../eventTypeFilter';
 import { parseStamp } from '../read';
 import { normalizeSeats } from '../stubTags';
+import { mendEntryTags } from '../teamTags';
 import type { CrowdRange, DatePrecision, Favorite, Entry, LoggedWhen, Plan, PersonalLog, YouOrder, SeasonTicket, WatchingSeason, Seats } from '../types';
 import type { EntryStore } from './types';
 
@@ -43,7 +44,8 @@ function isEntry(value: unknown): value is Entry {
 
 function cleanEntry(entry: Entry): Entry {
   const stamp = parseStamp(entry.stamp);
-  const next: Entry = { ...entry };
+  // A doubled college tag from before Nov 19, 2026 ("UCLA MBB MBB") is mended on every load.
+  const next: Entry = { ...mendEntryTags(entry) };
   delete next.forecast;
   if (stamp) next.stamp = stamp;
   else delete next.stamp;

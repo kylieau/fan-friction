@@ -20,6 +20,7 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 import type { Entry, Plan, PersonalLog, YouOrder } from '../types';
 import { EMPTY_LOG, readCrowdRange, readFavoriteCities, readFavorites, readHiddenEventTypes, readRemoved, readStamp, readTemperatureUnit, readSeasonTickets, readWatchingSeasons } from './localStore';
 import { notThereYet } from './dbErrors';
+import { mendEntryTags } from '../teamTags';
 import type { EntryStore, LogDiff } from './types';
 
 interface EntryRow {
@@ -166,7 +167,8 @@ export function createSupabaseEntryStore(client: SupabaseClient, userId: () => s
         version: 1,
         hiddenSeedIds: settings?.hidden_seed_ids ?? EMPTY_LOG.hiddenSeedIds,
         added: (entries ?? []).map((row) => {
-          const entry: Entry = { ...row.data, id: row.id };
+          // A doubled college tag from before Nov 19, 2026 ("UCLA MBB MBB") is mended on every read, as the phone's copy is.
+          const entry: Entry = { ...mendEntryTags(row.data), id: row.id };
           // A row saved before levels existed takes the level the database gave it (0026's backfill).
           if (!entry.visibility && isLevel(row.visibility)) entry.visibility = row.visibility;
           // The edit time the app wrote (on the server's clock) decides who wins (R06); the server's own stamp is the fallback.
