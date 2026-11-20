@@ -157,9 +157,48 @@ try {
   await log.settlePassedPlans(async () => ({ events: [past8] }), 'la');
   const s8 = log.getPersonalLog().added.find((e) => e.eventId === past8.id);
   check(s8?.with === 'Dad' && s8.review === 'Cold night.', `the stub carries With and the review: "${s8?.with}", "${s8?.review}"`);
-  const { entryRow } = await server.ssrLoadModule('/src/data/storage/supabaseStore.ts').then((m) => ({ entryRow: m.entryRowForCheck })).catch(() => ({ entryRow: null }));
-  if (entryRow) check(!('with' in entryRow('u', s8).data), "the stub's account row keeps With out of its shared data");
-  else console.log("     (the account row's shape is covered by storage-check: With never rides in entries.data)");
+  const { entryRow } = await server.ssrLoadModule('/src/data/storage/supabaseStore.ts');
+  const row8 = entryRow('u', s8);
+  check(!('with' in row8.data) && !('note' in row8.data) && 'review' in row8.data, "the stub's account row keeps With (and the note) out of its shared data; the review rides at the stub's level");
+
+  // 6. Codex, group 19 review (second pass): the plans as they stand at the commit. A level changed to Private while a
+  //    later date loaded settles Private; a plan turned Interested meanwhile settles nothing and stays; a Private plan's
+  //    review never widens a hand-logged Friends stub (the stub turns Private).
+  const pastA = event('2026-11-04-espn-lakers-12', '2026-11-04');
+  const pastB = event('2026-11-03-espn-lakers-13', '2026-11-03');
+  log.togglePlan(pastA, 'attend');
+  log.togglePlan(pastB, 'attend');
+  const pA = log.getPersonalLog().plans.find((x) => x.eventId === pastA.id);
+  const pB = log.getPersonalLog().plans.find((x) => x.eventId === pastB.id);
+  log.setPlanReview(pA.id, 'First words.');
+  let loads = 0;
+  await log.settlePassedPlans(async (_metro, date) => {
+    loads++;
+    // While the second date loads, the first plan goes Private with new words, and the second turns Interested.
+    if (loads === 2) {
+      await privacy.setStubVisibility(pastA.id, 'private');
+      log.setPlanReview(pA.id, 'Second words.');
+      log.togglePlan(pastB, 'interested');
+    }
+    return { events: date === pastA.date ? [pastA] : [pastB] };
+  }, 'la');
+  const sA = log.getPersonalLog().added.find((e) => e.eventId === pastA.id);
+  check(sA?.visibility === 'private' && sA.review === 'Second words.', `a level and a note changed while a later date loaded reach the stub (${sA?.visibility}, "${sA?.review}")`);
+  check(!log.getPersonalLog().added.some((e) => e.eventId === pastB.id) && log.getPersonalLog().plans.find((x) => x.eventId === pastB.id)?.interested === true, 'a plan turned Interested while the dates loaded settles nothing and stays');
+  const pastC = event('2026-11-02-espn-lakers-14', '2026-11-02');
+  log.markWasThere(pastC);
+  await privacy.setStubVisibility(pastC.id, 'friends');
+  const handLogged = log.getPersonalLog().added.find((e) => e.eventId === pastC.id);
+  log.togglePlan(pastC, 'attend');
+  const pC = log.getPersonalLog().plans.find((x) => x.eventId === pastC.id);
+  // No setter targets a plan when the event's stub exists, so the plan's level is set through the log's own commit path:
+  // setPlanNote writes the review; the level comes from the default, which this environment keeps Private.
+  log.setPlanReview(pC.id, 'Only mine.');
+  const pC2 = log.getPersonalLog().plans.find((x) => x.eventId === pastC.id);
+  check(handLogged?.visibility === 'friends' && pC2?.visibility === 'private', `the setup: a Friends hand-logged stub and a Private plan with a review (${handLogged?.visibility}, ${pC2?.visibility})`);
+  await log.settlePassedPlans(async () => ({ events: [pastC] }), 'la');
+  const sC = log.getPersonalLog().added.find((e) => e.eventId === pastC.id);
+  check(sC?.review === 'Only mine.' && sC.visibility === 'private', `a Private plan's review on a hand-logged Friends stub turns the stub Private (${sC?.visibility})`);
 } finally {
   await server.close();
 }

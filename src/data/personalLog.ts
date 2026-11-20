@@ -1177,8 +1177,11 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
   if (passed.length === 0) return;
   const added: Entry[] = [];
   const settledIds = new Set<string>();
-  // The notes on a plan whose stub already exists, to fill that stub where it has none (by event id).
-  const fills = new Map<string, Pick<Plan, 'review' | 'with'>>();
+  // Each prepared entry's source plan, and the plans whose stub already exists (by event id): both are read again as
+  // they stand at the commit, after every date has loaded (Codex, group 19 review: a level or a note changed while a
+  // later date loaded was lost, and a plan turned Interested meanwhile still settled).
+  const sourceOf = new Map<string, string>();
+  const fillPlans = new Map<string, string>();
   const schedules = new Map<string, Promise<TeamGame[] | null>>();
   const scheduleFor = (teamId: string) => {
     if (!schedules.has(teamId)) schedules.set(teamId, getTeamSchedule(teamId).catch(() => null));
@@ -1200,15 +1203,16 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         if (!snapshot.added.some((entry) => entry.id === id) && !added.some((entry) => entry.id === id)) {
           const entry = carryPlanExtras(plan, manualEntryFrom(nightFromPlan(plan), homeMetroId, id));
           added.push(plan.visibility ? withLevel(entry, plan.visibility) : entry);
+          sourceOf.set(entry.id, plan.id);
         }
         settledIds.add(plan.id);
       }
       continue;
     }
     if (snapshot.added.some((entry) => entry.eventId === plan.eventId)) {
-      // The stub exists already (logged by hand before the date passed): a review written on the plan reaches it
-      // when it has none of its own (Codex, group 19 review).
-      if (plan.review || plan.with) fills.set(plan.eventId, { review: plan.review, with: plan.with });
+      // The stub exists already (logged by hand before the date passed): the notes written on the plan reach it
+      // where it has none of its own, read at the commit (Codex, group 19 review).
+      fillPlans.set(plan.eventId, plan.id);
       settledIds.add(plan.id);
       continue;
     }
@@ -1248,34 +1252,78 @@ export async function settlePassedPlans(loadDate: (metroId: string, date: string
         if (live.watchedPlace) entry.watchedWhere = /^home$/i.test(live.watchedPlace) ? 'home' : 'public';
       }
       const stamp = fromSchedule ? undefined : stampNow(event, now);
-      if (!added.some((row) => row.id === entry.id)) added.push(stamp ? { ...entry, stamp } : entry);
+      if (!added.some((row) => row.id === entry.id)) {
+        added.push(stamp ? { ...entry, stamp } : entry);
+        sourceOf.set(entry.id, plan.id);
+      }
       settledIds.add(plan.id);
     } catch {
       /* try again next open */
     }
   }
+  // The plans as they stand now, after every date has loaded: a plan gone or turned Interested meanwhile settles
+  // nothing (it stays for the next open), and the stub takes the plan's current notes and level.
+  const eligible = (plan: Plan | undefined): plan is Plan => Boolean(plan) && !plan!.interested && !plan!.season?.gone && !plan!.watchSeason?.gone;
+  const notesOf = (plan: Plan) => ({ review: plan.review?.trim() || undefined, with: plan.with?.trim() || undefined });
+  const current: Entry[] = [];
+  for (const entry of added) {
+    const planId = sourceOf.get(entry.id);
+    const plan = snapshot.plans.find((row) => row.id === planId);
+    if (!eligible(plan)) {
+      if (planId) settledIds.delete(planId);
+      continue;
+    }
+    const notes = notesOf(plan);
+    const next: Entry = { ...entry };
+    delete next.review;
+    delete next.with;
+    if (notes.review) next.review = notes.review;
+    if (notes.with) next.with = notes.with;
+    current.push(plan.visibility ? withLevel(next, plan.visibility) : next);
+  }
+  const fills = new Map<string, { review?: string; with?: string; level?: StubVisibility }>();
+  for (const [eventId, planId] of fillPlans) {
+    const plan = snapshot.plans.find((row) => row.id === planId);
+    if (!eligible(plan)) {
+      settledIds.delete(planId);
+      continue;
+    }
+    const notes = notesOf(plan);
+    if (notes.review || notes.with) fills.set(eventId, { ...notes, level: plan.visibility });
+  }
   if (settledIds.size === 0) return;
+  // A note imported from a plan never widens who sees it: the stub takes the stricter of its level and the plan's
+  // (Codex, group 19 review: a Private plan's review landed on a Friends stub).
+  const rank: Record<StubVisibility, number> = { anyone: 0, friends: 1, private: 2 };
+  const stricter = (row: Entry, level: StubVisibility | undefined): Entry => (level && rank[level] > rank[row.visibility ?? stubDefault()] ? withLevel(row, level) : row);
   // App start and the account load can both run this; the log may have changed while the dates loaded, so a stub
   // another run already made is not added twice (found Oct 20, 2026: one passed plan became two identical stubs).
   const twin = (entry: Entry) => snapshot.added.find((row) => row.id === entry.id || (entry.eventId && row.eventId === entry.eventId));
-  const fresh = added.filter((entry) => !twin(entry));
+  const fresh = current.filter((entry) => !twin(entry));
   // A stub another run made meanwhile keeps the plan's seat and cost when it has none of its own (Codex, stage 1).
   const merged = snapshot.added.map((row) => {
-    const prepared = added.find((entry) => twin(entry) === row);
+    const prepared = current.find((entry) => twin(entry) === row);
     const fill = row.eventId ? fills.get(row.eventId) : undefined;
-    if (!prepared) return fill ? { ...row, ...(fill.review && !row.review ? { review: fill.review } : {}), ...(fill.with && !row.with ? { with: fill.with } : {}) } : row;
+    if (!prepared) {
+      if (!fill) return row;
+      const takes = Boolean((fill.review && !row.review) || (fill.with && !row.with));
+      const filled = { ...row, ...(fill.review && !row.review ? { review: fill.review } : {}), ...(fill.with && !row.with ? { with: fill.with } : {}) };
+      return takes ? stricter(filled, fill.level) : row;
+    }
     // A ticket's default never lands on a stub she marked Watched meanwhile, and the season marker comes along so the
     // stub keeps its provenance (Codex, group 15 review).
     const defaultCost = Boolean(prepared.season && !prepared.season.edited);
-    return {
+    const kept: Entry = {
       ...row,
       ...(prepared.seats && !row.seats && !row.watched ? { seats: prepared.seats } : {}),
       ...(prepared.cost && !row.cost && !(row.watched && defaultCost) ? { cost: prepared.cost } : {}),
       ...(prepared.season && !row.season ? { season: prepared.season } : {}),
-      // The notes written on the plan reach a stub made meanwhile that has none of its own (Kylie, Nov 19, 2026).
-      ...(prepared.review && !row.review ? { review: prepared.review } : {}),
-      ...(prepared.with && !row.with ? { with: prepared.with } : {}),
     };
+    // The notes written on the plan reach a stub made meanwhile that has none of its own (Kylie, Nov 19, 2026), and
+    // never widen who sees it.
+    const takes = Boolean((prepared.review && !row.review) || (prepared.with && !row.with));
+    const noted = { ...kept, ...(prepared.review && !row.review ? { review: prepared.review } : {}), ...(prepared.with && !row.with ? { with: prepared.with } : {}) };
+    return takes ? stricter(noted, prepared.visibility) : kept;
   });
   commit({
     ...snapshot,

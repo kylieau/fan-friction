@@ -69,7 +69,8 @@ interface RemovedRow {
   removed_at: string;
 }
 
-function entryRow(userId: string, entry: Entry): EntryRow {
+/** The account row for a stub; exported for scripts/plan-review-check.mjs (With and the note never ride in `data`). */
+export function entryRow(userId: string, entry: Entry): EntryRow {
   // The private pair never rides along in `data`, which approved followers can read.
   const { note: _note, with: _with, ...data } = entry;
   void _note;

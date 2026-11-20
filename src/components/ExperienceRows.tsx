@@ -16,12 +16,13 @@ export function ExperienceRows({ entry }: { entry: Entry }) {
 
 /** The plan's rows under Your Notes (mock `notes-and-record/01`, approved Nov 19, 2026). */
 export function PlanNotesRows({ plan }: { plan: Plan }) {
-  return <NotesRows fields={['with', 'review']} values={{ with: plan.with, review: plan.review }} onSave={(field, text) => setPlanNote(plan.id, field, text)} />;
+  return <NotesRows fields={['with', 'review']} values={{ with: plan.with, review: plan.review }} onSave={(field, text) => setPlanNote(plan.id, field, text)} ahead />;
 }
 
 type Field = 'with' | 'review';
 
-function NotesRows({ fields, values, onSave }: { fields: readonly Field[]; values: Partial<Record<Field, string | undefined>>; onSave: (field: Field, text: string) => void }) {
+function NotesRows({ fields, values, onSave, ahead = false }: { fields: readonly Field[]; values: Partial<Record<Field, string | undefined>>; onSave: (field: Field, text: string) => void; /** A plan: the night is ahead, so "going with", not "went with" (Codex, group 19 review). */ ahead?: boolean }) {
+  const withWords = ahead ? "who you're going with" : 'who you went with';
   const [editing, setEditing] = useState<Field | null>(null);
   const [draft, setDraft] = useState('');
   const open = (field: Field) => {
@@ -50,7 +51,7 @@ function NotesRows({ fields, values, onSave }: { fields: readonly Field[]; value
           <span className="stub-tags-label">With</span>
           {editing === 'with' ? (
             <span className="stub-experience-editor">
-              <input className="account-input" type="text" value={draft} placeholder="Who you went with" autoFocus maxLength={80} onChange={(ev) => setDraft(ev.target.value)} />
+              <input className="account-input" type="text" value={draft} placeholder={`${withWords[0].toUpperCase()}${withWords.slice(1)}`} autoFocus maxLength={80} onChange={(ev) => setDraft(ev.target.value)} />
               {actions}
             </span>
           ) : values.with ? (
@@ -59,7 +60,7 @@ function NotesRows({ fields, values, onSave }: { fields: readonly Field[]; value
             </button>
           ) : (
             <button type="button" className="stub-tags-add" onClick={() => open('with')}>
-              + Add who you went with
+              + Add {withWords}
             </button>
           )}
         </div>
