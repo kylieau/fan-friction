@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-maryland-mbb-401916299",
+      "metroId": "washington-dc",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-mbb",
+      "home": {
+        "name": "Maryland",
+        "score": 62
+      },
+      "away": {
+        "name": "Wagner",
+        "score": 45
+      },
+      "attendance": 10701,
+      "capturedAt": "2026-11-21T16:16:19.431Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

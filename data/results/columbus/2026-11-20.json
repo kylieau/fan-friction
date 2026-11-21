@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-osu-mhockey-401923160",
+      "metroId": "columbus",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mhockey",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 3
+      },
+      "away": {
+        "name": "Notre Dame",
+        "score": 7
+      },
+      "capturedAt": "2026-11-21T16:16:15.204Z"
+    }
+  ]
+}

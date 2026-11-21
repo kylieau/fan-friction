@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-raptors-905-401914578",
+      "metroId": "toronto",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mississauga-sports-centre",
+      "homeTeamId": "raptors-905",
+      "home": {
+        "name": "Raptors 905",
+        "score": 117
+      },
+      "away": {
+        "name": "Westchester Knicks",
+        "score": 130
+      },
+      "attendance": 2302,
+      "capturedAt": "2026-11-21T16:16:18.280Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-ht-texas-stars-1029350",
+      "metroId": "austin",
+      "date": "2026-11-20",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Barracuda",
+        "score": 4
+      },
+      "attendance": 5888,
+      "capturedAt": "2026-11-21T16:16:15.824Z"
+    }
+  ]
+}

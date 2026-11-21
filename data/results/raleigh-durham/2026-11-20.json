@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-duke-football-401858303",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wallace-wade-stadium",
+      "homeTeamId": "duke-football",
+      "home": {
+        "name": "Duke",
+        "score": 10
+      },
+      "away": {
+        "name": "Clemson",
+        "score": 20
+      },
+      "attendance": 25311,
+      "capturedAt": "2026-11-21T16:16:20.125Z",
+      "duration": {
+        "minutes": 212,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-20-espn-unc-mbb-401912710",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dean-smith-center",
+      "homeTeamId": "unc-mbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 88
+      },
+      "away": {
+        "name": "Marshall",
+        "score": 72
+      },
+      "attendance": 16391,
+      "capturedAt": "2026-11-21T16:16:20.125Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "21:05"
+    }
+  ]
+}

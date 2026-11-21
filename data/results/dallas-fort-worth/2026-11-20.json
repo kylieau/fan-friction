@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-smu-mbb-401929459",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-mbb",
+      "home": {
+        "name": "SMU",
+        "score": 101
+      },
+      "away": {
+        "name": "South Alabama",
+        "score": 55
+      },
+      "attendance": 3663,
+      "capturedAt": "2026-11-21T16:16:13.153Z",
+      "duration": {
+        "minutes": 100,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

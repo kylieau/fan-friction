@@ -159,6 +159,18 @@
       "code": 1,
       "precipProbability": 6,
       "precipMm": 0
+    },
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-11-23",
+      "basis": "forecast",
+      "capturedAt": "2026-11-21T16:02:08.575Z",
+      "feelsLikeHighF": 58.7,
+      "feelsLikeLowF": 39.8,
+      "code": 2,
+      "precipProbability": 2,
+      "precipMm": 0
     }
   ]
 }

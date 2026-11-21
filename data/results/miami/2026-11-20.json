@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-miami-hurricanes-mbb-401921723",
+      "metroId": "miami",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "watsco-center",
+      "homeTeamId": "miami-hurricanes-mbb",
+      "home": {
+        "name": "Miami",
+        "score": 106
+      },
+      "away": {
+        "name": "Manhattan",
+        "score": 54
+      },
+      "attendance": 3677,
+      "capturedAt": "2026-11-21T16:16:14.968Z",
+      "duration": {
+        "minutes": 189,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    }
+  ]
+}

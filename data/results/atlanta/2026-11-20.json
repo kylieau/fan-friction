@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-gt-mbb-401906784",
+      "metroId": "atlanta",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mccamish-pavilion",
+      "homeTeamId": "gt-mbb",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 82
+      },
+      "away": {
+        "name": "Georgia",
+        "score": 88
+      },
+      "attendance": 8600,
+      "capturedAt": "2026-11-21T16:16:12.316Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    },
+    {
+      "eventId": "2026-11-20-espn-hawks-401909305",
+      "metroId": "atlanta",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 111
+      },
+      "away": {
+        "name": "Hornets",
+        "score": 97
+      },
+      "attendance": 15488,
+      "capturedAt": "2026-11-21T16:16:12.316Z",
+      "duration": {
+        "minutes": 126,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    },
+    {
+      "eventId": "2026-11-20-espn-ksu-mbb-401920818",
+      "metroId": "atlanta",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-mbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 96
+      },
+      "away": {
+        "name": "SE Louisiana",
+        "score": 59
+      },
+      "attendance": 1103,
+      "capturedAt": "2026-11-21T16:16:12.316Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

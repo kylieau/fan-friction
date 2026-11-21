@@ -66830,8 +66830,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "atlanta",
     "teamId": "gt-mbb",
     "season": 2027,
-    "level": 1.26,
-    "games": 5
+    "level": 1.318,
+    "games": 6
   },
   {
     "metroId": "atlanta",
@@ -66848,6 +66848,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 5
   },
   {
+    "metroId": "atlanta",
+    "teamId": "ksu-mbb",
+    "season": 2027,
+    "level": 0.742,
+    "games": 5
+  },
+  {
     "metroId": "austin",
     "teamId": "texas-football",
     "season": 2027,
@@ -66858,8 +66865,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "austin",
     "teamId": "texas-stars",
     "season": 2026,
-    "level": 1.027,
-    "games": 8
+    "level": 1.011,
+    "games": 9
   },
   {
     "metroId": "austin",
@@ -66922,6 +66929,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "bc-football",
     "season": 2026,
     "level": 0.855,
+    "games": 5
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bc-wbb",
+    "season": 2027,
+    "level": 0.908,
     "games": 5
   },
   {
@@ -66996,6 +67010,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
   },
   {
     "metroId": "cleveland",
+    "teamId": "cavaliers",
+    "season": 2027,
+    "level": 1,
+    "games": 10
+  },
+  {
+    "metroId": "cleveland",
     "teamId": "cleveland-monsters",
     "season": 2026,
     "level": 0.89,
@@ -67055,7 +67076,7 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "smu-mbb",
     "season": 2027,
     "level": 0.851,
-    "games": 5
+    "games": 6
   },
   {
     "metroId": "dallas-fort-worth",
@@ -67268,6 +67289,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 5
   },
   {
+    "metroId": "miami",
+    "teamId": "miami-hurricanes-mbb",
+    "season": 2027,
+    "level": 0.831,
+    "games": 5
+  },
+  {
     "metroId": "milwaukee",
     "teamId": "milwaukee-admirals",
     "season": 2026,
@@ -67301,6 +67329,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "season": 2026,
     "level": 1.007,
     "games": 8
+  },
+  {
+    "metroId": "nashville",
+    "teamId": "belmont-wbb",
+    "season": 2027,
+    "level": 0.76,
+    "games": 5
   },
   {
     "metroId": "nashville",
@@ -67341,8 +67376,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "nashville",
     "teamId": "vanderbilt-mbb",
     "season": 2027,
-    "level": 1.278,
-    "games": 5
+    "level": 1.308,
+    "games": 6
   },
   {
     "metroId": "nashville",
@@ -67370,6 +67405,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "tulane-football",
     "season": 2026,
     "level": 0.96,
+    "games": 5
+  },
+  {
+    "metroId": "new-orleans",
+    "teamId": "tulane-wbb",
+    "season": 2027,
+    "level": 1.026,
     "games": 5
   },
   {
@@ -67551,8 +67593,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "raleigh-durham",
     "teamId": "duke-football",
     "season": 2026,
-    "level": 0.801,
-    "games": 5
+    "level": 0.861,
+    "games": 6
   },
   {
     "metroId": "raleigh-durham",
@@ -67566,6 +67608,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "teamId": "unc-football",
     "season": 2026,
     "level": 0.884,
+    "games": 5
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "unc-mbb",
+    "season": 2027,
+    "level": 0.902,
     "games": 5
   },
   {
@@ -67597,6 +67646,13 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "games": 6
   },
   {
+    "metroId": "salt-lake-city",
+    "teamId": "utah-wbb",
+    "season": 2027,
+    "level": 0.527,
+    "games": 5
+  },
+  {
     "metroId": "san-antonio",
     "teamId": "utsa-football",
     "season": 2026,
@@ -67607,8 +67663,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "san-diego",
     "teamId": "san-diego-gulls",
     "season": 2026,
-    "level": 1.002,
-    "games": 8
+    "level": 1.004,
+    "games": 9
   },
   {
     "metroId": "san-diego",
@@ -67621,8 +67677,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "seattle",
     "teamId": "everett-silvertips",
     "season": 2026,
-    "level": 0.987,
-    "games": 6
+    "level": 0.949,
+    "games": 7
   },
   {
     "metroId": "seattle",
@@ -67642,8 +67698,8 @@ export const SEASON_LEVELS: SeasonLevelRow[] = [
     "metroId": "seattle",
     "teamId": "seattle-thunderbirds",
     "season": 2026,
-    "level": 0.971,
-    "games": 9
+    "level": 0.995,
+    "games": 10
   },
   {
     "metroId": "seattle",
@@ -68296,6 +68352,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "atlanta",
     "teamId": "gt-mbb",
+    "opponent": "georgia",
+    "ratio": 1.223,
+    "games": 2
+  },
+  {
+    "metroId": "atlanta",
+    "teamId": "gt-mbb",
     "opponent": "mississippi-st",
     "ratio": 1.002,
     "games": 2
@@ -68493,8 +68556,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "atlanta",
     "teamId": "hawks",
     "opponent": "hornets",
-    "ratio": 1.007,
-    "games": 4
+    "ratio": 0.999,
+    "games": 5
   },
   {
     "metroId": "atlanta",
@@ -68969,8 +69032,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "austin",
     "teamId": "texas-stars",
     "opponent": "barracuda",
-    "ratio": 0.987,
-    "games": 4
+    "ratio": 0.992,
+    "games": 5
   },
   {
     "metroId": "austin",
@@ -70559,6 +70622,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "bc-wbb",
     "opponent": "syracuse",
     "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "boston",
+    "teamId": "bc-wbb",
+    "opponent": "umass",
+    "ratio": 1.147,
     "games": 2
   },
   {
@@ -73044,7 +73114,7 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "teamId": "cavaliers",
     "opponent": "pacers",
     "ratio": 1,
-    "games": 4
+    "games": 5
   },
   {
     "metroId": "cleveland",
@@ -75920,8 +75990,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "denver",
     "teamId": "nuggets",
     "opponent": "rockets",
-    "ratio": 0.997,
-    "games": 6
+    "ratio": 0.995,
+    "games": 7
   },
   {
     "metroId": "denver",
@@ -76725,8 +76795,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "detroit",
     "teamId": "pistons",
     "opponent": "raptors",
-    "ratio": 0.996,
-    "games": 3
+    "ratio": 1.009,
+    "games": 4
   },
   {
     "metroId": "detroit",
@@ -87694,8 +87764,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "new-york",
     "teamId": "nets",
     "opponent": "magic",
-    "ratio": 1.004,
-    "games": 3
+    "ratio": 0.994,
+    "games": 4
   },
   {
     "metroId": "new-york",
@@ -92656,6 +92726,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
   {
     "metroId": "raleigh-durham",
     "teamId": "duke-football",
+    "opponent": "clemson",
+    "ratio": 1.02,
+    "games": 2
+  },
+  {
+    "metroId": "raleigh-durham",
+    "teamId": "duke-football",
     "opponent": "elon",
     "ratio": 0.841,
     "games": 2
@@ -94603,8 +94680,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "salt-lake-city",
     "teamId": "utah-jazz",
     "opponent": "suns",
-    "ratio": 1,
-    "games": 3
+    "ratio": 0.997,
+    "games": 4
   },
   {
     "metroId": "salt-lake-city",
@@ -95723,8 +95800,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "san-diego",
     "teamId": "san-diego-gulls",
     "opponent": "wild",
-    "ratio": 0.943,
-    "games": 4
+    "ratio": 0.979,
+    "games": 5
   },
   {
     "metroId": "san-diego",
@@ -96031,8 +96108,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "seattle",
     "teamId": "everett-silvertips",
     "opponent": "blazers",
-    "ratio": 0.916,
-    "games": 6
+    "ratio": 0.922,
+    "games": 7
   },
   {
     "metroId": "seattle",
@@ -96640,8 +96717,8 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "metroId": "seattle",
     "teamId": "seattle-thunderbirds",
     "opponent": "americans",
-    "ratio": 0.97,
-    "games": 9
+    "ratio": 0.985,
+    "games": 10
   },
   {
     "metroId": "seattle",
@@ -100401,6 +100478,13 @@ export const OPPONENT_RATIOS: OpponentRatioRow[] = [
     "opponent": "rutgers",
     "ratio": 0.943,
     "games": 3
+  },
+  {
+    "metroId": "washington-dc",
+    "teamId": "maryland-mbb",
+    "opponent": "wagner",
+    "ratio": 0.942,
+    "games": 2
   },
   {
     "metroId": "washington-dc",

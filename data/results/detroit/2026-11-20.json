@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-michigan-mhockey-401923159",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yost-ice-arena",
+      "homeTeamId": "michigan-mhockey",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 5
+      },
+      "away": {
+        "name": "Michigan State",
+        "score": 1
+      },
+      "capturedAt": "2026-11-21T16:16:13.433Z"
+    },
+    {
+      "eventId": "2026-11-20-espn-pistons-401909308",
+      "metroId": "detroit",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "pistons",
+      "home": {
+        "name": "Pistons",
+        "score": 102
+      },
+      "away": {
+        "name": "Raptors",
+        "score": 105
+      },
+      "attendance": 20178,
+      "capturedAt": "2026-11-21T16:16:13.433Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "19:43"
+    }
+  ]
+}

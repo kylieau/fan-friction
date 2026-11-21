@@ -1,0 +1,2382 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "metroName": "Pittsburgh",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-21",
+  "capturedAt": "2026-11-21T16:12:47.069Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-21",
+    "through": "2026-12-05"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 16
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 56
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 16
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-21-espn-robert-morris-football-401867915",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Long Island",
+      "place": {
+        "type": "venue",
+        "venueId": "joe-walton-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "robert-morris-football",
+        "away": "long-island",
+        "awayOpponent": "long-island"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 971,
+        "low": 758,
+        "high": 1335,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-duquesne-wbb-401915767",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Duquesne vs. Stony Brook",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "stony-brook",
+        "awayOpponent": "stony-brook"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 843,
+        "low": 815,
+        "high": 1050,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-sa-pittsburghpanthers-com-15415",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Pitt vs. Lehigh",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7OEAo",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Football vs. Houston Cougars Football",
+      "place": {
+        "type": "venue",
+        "venueId": "mountaineer-field-at-milan-puskar-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "West Virginia Mountaineers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OEAo"
+    },
+    {
+      "id": "2026-11-21-espn-pitt-wbb-401913749",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Pitt vs. Canisius",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-wbb",
+        "away": "canisius",
+        "awayOpponent": "canisius"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 692,
+        "low": 413,
+        "high": 971,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-17AOv0G6C6h2e61",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Ten - Pearl Jam Tribute Band",
+      "officialTitle": "35 YEARS OF GRUNGE - The Ten Band & Disciple of The Garden",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Ten - Pearl Jam Tribute Band",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G6C6h2e61",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1ApZkfdGkdrCD8B",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Pentatonix",
+      "officialTitle": "Pentatonix: Christmas in the City Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Pentatonix",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172Wtf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkfdGkdrCD8B",
+      "expectedDraw": {
+        "count": 8286,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A70goP",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Kalamazoo Wings",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70goP",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-21-tm-1AvbZ_3GkmU0kVd",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jason Bonham's Led Zeppelin Evening",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Undefined"
+      },
+      "performer": "Jason Bonham's Led Zeppelin Evening",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_3GkmU0kVd",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1A7xb74",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "officialTitle": "Streetlight Manifesto w/ Hot Rod Circuit",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175TXf",
+        "K8vZ91710Bf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xb74",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-vv1AAZkfAGkd2ZwpT",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfAGkd2ZwpT",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAvtbI",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "kind": "show",
+      "title": "Pittsburgh Symphony Orchestra",
+      "officialTitle": "Pittsburgh Symphony Orchestra: How To Train Your Dragon In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "heinz-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Pittsburgh Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtbI",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2676,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A70go0",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "16:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Kalamazoo Wings",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70go0",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-22-sa-pittsburghpanthers-com-15543",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Pitt vs. Grand Canyon",
+      "place": {
+        "type": "venue",
+        "venueId": "ambrose-urbanic-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-tm-vv1AAZkfAGkeygXe1",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfAGkeygXe1",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-1ApZkftGkexNgTR",
+      "metroId": "pittsburgh",
+      "date": "2026-11-22",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Victoria Monét",
+      "officialTitle": "Victoria Monét: Frequency Of Love Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Victoria Monét",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkftGkexNgTR",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-espn-duquesne-wbb-401915596",
+      "metroId": "pittsburgh",
+      "date": "2026-11-23",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duquesne vs. Canisius",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "canisius",
+        "awayOpponent": "canisius"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 814,
+        "low": 735,
+        "high": 912,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-espn-duquesne-wbb-401915768",
+      "metroId": "pittsburgh",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Duquesne vs. Niagara",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "niagara",
+        "awayOpponent": "niagara"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 814,
+        "low": 735,
+        "high": 912,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7Pao-",
+      "metroId": "pittsburgh",
+      "date": "2026-11-24",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Drag Queen Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "byham-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "A Drag Queen Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pao-"
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A70efF",
+      "metroId": "pittsburgh",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Volleyball vs. Baylor Bears Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "West Virginia Mountaineers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70efF",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-17AOv0G659EKr1G",
+      "metroId": "pittsburgh",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Catch Your Breath",
+      "officialTitle": "Catch Your Breath - Not Broken Enough Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Catch Your Breath",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G659EKr1G",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-espn-penguins-401892786",
+      "metroId": "pittsburgh",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Flames",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "flames",
+        "awayOpponent": "flames"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17387,
+        "low": 16385,
+        "high": 18646,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A70goN",
+      "metroId": "pittsburgh",
+      "date": "2026-11-25",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Indy Fuel",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70goN",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-espn-steelers-401873083",
+      "metroId": "pittsburgh",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Steelers vs. Broncos",
+      "place": {
+        "type": "venue",
+        "venueId": "acrisure-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "steelers",
+        "away": "broncos",
+        "awayOpponent": "broncos"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66308,
+        "low": 65796,
+        "high": 66897,
+        "fromCrowds": true,
+        "games": 22,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 22 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A70efa",
+      "metroId": "pittsburgh",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Volleyball vs. Texas Tech Red Raider Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "West Virginia Mountaineers Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70efa",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-27-sa-rmucolonials-com-15278",
+      "metroId": "pittsburgh",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Niagara University",
+      "place": {
+        "type": "venue",
+        "venueId": "clearview-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "robert-morris-mhockey",
+        "away": "Niagara University",
+        "awayOpponent": "niagara-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7Pe7t",
+      "metroId": "pittsburgh",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Pittsburgh Symphony Orchestra",
+      "officialTitle": "Strauss and Tchaikovsky with Pittsburgh Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "heinz-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Pittsburgh Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pe7t",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 2676,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-pittsburghpanthers-com-15279",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Pitt vs. NC State",
+      "place": {
+        "type": "venue",
+        "venueId": "victory-heights-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-tm-1AvbZ_KGkBRpze8",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Rain Athletics | Rain Reveal 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Rain Athletics | Rain Reveal 2026",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_KGkBRpze8"
+    },
+    {
+      "id": "2026-11-28-tm-1ApZkoJGkdtRTon",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Punchline",
+      "officialTitle": "PUNCHLINE '37 Everywhere' 20th Anniversary Show",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Punchline",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkoJGkdtRTon",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-penguins-401892815",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Maple Leafs",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "maple-leafs",
+        "awayOpponent": "maple-leafs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17774,
+        "low": 17259,
+        "high": 18411,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-rmucolonials-com-15279",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Niagara University",
+      "place": {
+        "type": "venue",
+        "venueId": "clearview-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "robert-morris-mhockey",
+        "away": "Niagara University",
+        "awayOpponent": "niagara-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-espn-duquesne-mbb-401925783",
+      "metroId": "pittsburgh",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Duquesne vs. SC State",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-mbb",
+        "away": "sc-state",
+        "awayOpponent": "sc-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-espn-duquesne-wbb-401915769",
+      "metroId": "pittsburgh",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Duquesne vs. West Liberty",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-cooper-fieldhouse"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duquesne-wbb",
+        "away": "west-liberty",
+        "awayOpponent": "west-liberty"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 895,
+        "low": 747,
+        "high": 1154,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 8 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A7Pe7U",
+      "metroId": "pittsburgh",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "kind": "show",
+      "title": "Pittsburgh Symphony Orchestra",
+      "officialTitle": "Strauss and Tchaikovsky with Pittsburgh Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "heinz-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Pittsburgh Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pe7U",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2676,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-espn-penguins-401892827",
+      "metroId": "pittsburgh",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Penguins vs. Blue Jackets",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "blue-jackets",
+        "awayOpponent": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17124,
+        "low": 16137,
+        "high": 18363,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-30-tm-Z7r9jZ1AA774w",
+      "metroId": "pittsburgh",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Basketball vs. Coppin State Eagles Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA774w",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1AAek0d",
+      "metroId": "pittsburgh",
+      "date": "2026-12-01",
+      "start": null,
+      "kind": "game",
+      "title": "West Virginia Mountaineers Mens Basketball vs. Mercyhurst Lakers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAek0d",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-tm-1AvbZ_kGkwAPfcQ",
+      "metroId": "pittsburgh",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Stephen Wilson Jr.",
+      "officialTitle": "Stephen Wilson Jr. - Gary The Torch Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Stephen Wilson Jr.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_kGkwAPfcQ",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAZ7PK",
+      "metroId": "pittsburgh",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Daily Bread",
+      "place": {
+        "type": "venue",
+        "venueId": "stage-ae-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Daily Bread",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pFm7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ7PK",
+      "expectedDraw": {
+        "count": 5500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-robert-morris-wbb-401919082",
+      "metroId": "pittsburgh",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Green Bay",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-wbb",
+        "away": "green-bay",
+        "awayOpponent": "green-bay"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 482,
+        "low": 409,
+        "high": 531,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-1AvbZ_kGkwFJP1j",
+      "metroId": "pittsburgh",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sabaton",
+      "officialTitle": "Sabaton: Legends on Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "citizens-live-wylie"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Sabaton",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_kGkwFJP1j",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vvG1fZ_Ch-x75F",
+      "metroId": "pittsburgh",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic of Family",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic of Family",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Ch-x75F",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AA774S",
+      "metroId": "pittsburgh",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Basketball vs. Mount St. Mary's Mountaineers Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA774S",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A70-Ps",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Pittsburgh Ballet Theatre w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Pittsburgh Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70-Ps",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-04-tm-17AOv0G653HwBfz",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "That Arena Rock Show",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "That Arena Rock Show",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G653HwBfz",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1fZ_Ch-xV5h",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic of Family",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic of Family",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Ch-xV5h",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A70-PN",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Pittsburgh Ballet Theatre w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Pittsburgh Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70-PN",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AA774V",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "West Virginia Mountaineers Womens Basketball vs. Harvard Crimson Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA774V",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A70Pbw",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Indy Fuel",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70Pbw",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAeeqJ",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Garrison Keillor w/ Richard Dworsky",
+      "place": {
+        "type": "venue",
+        "venueId": "carnegie-music-hall-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Hobby/Special Interest Expos"
+      },
+      "performer": "Garrison Keillor",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeeqJ"
+    },
+    {
+      "id": "2026-12-04-sa-pittsburghpanthers-com-15416",
+      "metroId": "pittsburgh",
+      "date": "2026-12-04",
+      "start": null,
+      "kind": "game",
+      "title": "Pitt vs. Iowa",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-05-tm-vvG1fZ_Ch-NV5l",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "10:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic of Family",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic of Family",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Ch-NV5l",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-espn-robert-morris-mbb-401919213",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Youngstown St",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-mbb",
+        "away": "youngstown-st",
+        "awayOpponent": "youngstown-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1755,
+        "low": 1601,
+        "high": 1954,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70-PV",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Pittsburgh Ballet Theatre w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Pittsburgh Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70-PV",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1fZ_Ch-005y",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic of Family",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic of Family",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Ch-005y",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-espn-penguins-401892862",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Penguins vs. Devils",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "ppg-paints-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "penguins",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18405,
+        "low": 17469,
+        "high": 18493,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-espn-pitt-mbb-401909711",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Pitt vs. Tarleton St",
+      "place": {
+        "type": "venue",
+        "venueId": "petersen-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "pitt-mbb",
+        "away": "tarleton-st",
+        "awayOpponent": "tarleton-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7808,
+        "low": 7486,
+        "high": 8089,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-05-espn-robert-morris-wbb-401919089",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Robert Morris vs. Milwaukee",
+      "place": {
+        "type": "venue",
+        "venueId": "upmc-events-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "robert-morris-wbb",
+        "away": "uwm-wbb",
+        "awayOpponent": "milwaukee"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 254,
+        "low": 174,
+        "high": 262,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-16pZkfgZfZAuGC6v",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Sabrina Cast Reunion 30 Year Anniversary Live (Fully Seated)",
+      "place": {
+        "type": "venue",
+        "venueId": "roxian-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Multimedia"
+      },
+      "performer": "Melissa Joan Hart",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "16pZkfgZfZAuGC6v"
+    },
+    {
+      "id": "2026-12-05-tm-vvG1fZ_Ch-PVGI",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Magic of Family",
+      "place": {
+        "type": "venue",
+        "venueId": "covelli-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Magic of Family",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_Ch-PVGI",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70-P_",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Pittsburgh Ballet Theatre w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "benedum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "Pittsburgh Ballet Theatre",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70-P_",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70P_e",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "19:10",
+      "kind": "game",
+      "title": "Wheeling Nailers vs. Indy Fuel",
+      "place": {
+        "type": "venue",
+        "venueId": "wesbanco-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Wheeling Nailers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70P_e",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7J7AU",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Pittsburgh Symphony Orchestra",
+      "officialTitle": "Pittsburgh Symphony Orchestra presents Handels Messiah",
+      "place": {
+        "type": "venue",
+        "venueId": "heinz-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Pittsburgh Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J7AU",
+      "occasionFacts": {
+        "run": 4
+      },
+      "expectedDraw": {
+        "count": 2676,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAek07",
+      "metroId": "pittsburgh",
+      "date": "2026-12-05",
+      "start": null,
+      "kind": "game",
+      "title": "West Virginia Mountaineers Mens Basketball vs. Virginia Tech Hokies Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "hope-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "West Virginia Mountaineers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAek07",
+      "occasionFacts": {
+        "run": 2
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-21-espn-robert-morris-football-401867915",
+      "date": "2026-11-21",
+      "start": "12:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 971,
+        "low": 758,
+        "high": 1335
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-duquesne-wbb-401915767",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 843,
+        "low": 815,
+        "high": 1050
+      }
+    },
+    {
+      "eventId": "2026-11-21-sa-pittsburghpanthers-com-15415",
+      "date": "2026-11-21",
+      "start": "13:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7OEAo",
+      "date": "2026-11-21",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-21-espn-pitt-wbb-401913749",
+      "date": "2026-11-21",
+      "start": "14:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 692,
+        "low": 413,
+        "high": 971
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-17AOv0G6C6h2e61",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-1ApZkfdGkdrCD8B",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Streetlight Manifesto w/ Hot Ro… 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8286
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A70goP",
+      "date": "2026-11-21",
+      "start": "19:10"
+    },
+    {
+      "eventId": "2026-11-21-tm-1AvbZ_3GkmU0kVd",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1A7xb74",
+      "date": "2026-11-21",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Moderate",
+        "why": "Pentatonix 1.3 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1AAZkfAGkd2ZwpT",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAvtbI",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "draw": {
+        "count": 2676
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A70go0",
+      "date": "2026-11-22",
+      "start": "16:10"
+    },
+    {
+      "eventId": "2026-11-22-sa-pittsburghpanthers-com-15543",
+      "date": "2026-11-22",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1AAZkfAGkeygXe1",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-1ApZkftGkexNgTR",
+      "date": "2026-11-22",
+      "start": "21:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-duquesne-wbb-401915596",
+      "date": "2026-11-23",
+      "start": "18:00",
+      "draw": {
+        "count": 814,
+        "low": 735,
+        "high": 912
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-duquesne-wbb-401915768",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "draw": {
+        "count": 814,
+        "low": 735,
+        "high": 912
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7Pao-",
+      "date": "2026-11-24",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A70efF",
+      "date": "2026-11-25",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-17AOv0G659EKr1G",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-penguins-401892786",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17387,
+        "low": 16385,
+        "high": 18646
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A70goN",
+      "date": "2026-11-25",
+      "start": "19:10"
+    },
+    {
+      "eventId": "2026-11-27-espn-steelers-401873083",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66308,
+        "low": 65796,
+        "high": 66897
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A70efa",
+      "date": "2026-11-27",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-11-27-sa-rmucolonials-com-15278",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7Pe7t",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2676
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-pittsburghpanthers-com-15279",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-1AvbZ_KGkBRpze8",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-1ApZkoJGkdtRTon",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-penguins-401892815",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17774,
+        "low": 17259,
+        "high": 18411
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-rmucolonials-com-15279",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-duquesne-mbb-401925783",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2535,
+        "low": 2291,
+        "high": 2830
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-duquesne-wbb-401915769",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "draw": {
+        "count": 895,
+        "low": 747,
+        "high": 1154
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A7Pe7U",
+      "date": "2026-11-29",
+      "start": "14:30",
+      "draw": {
+        "count": 2676
+      }
+    },
+    {
+      "eventId": "2026-11-30-espn-penguins-401892827",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17124,
+        "low": 16137,
+        "high": 18363
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-Z7r9jZ1AA774w",
+      "date": "2026-11-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1AAek0d",
+      "date": "2026-12-01",
+      "start": null
+    },
+    {
+      "eventId": "2026-12-02-tm-1AvbZ_kGkwAPfcQ",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAZ7PK",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-robert-morris-wbb-401919082",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "draw": {
+        "count": 482,
+        "low": 409,
+        "high": 531
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-1AvbZ_kGkwFJP1j",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vvG1fZ_Ch-x75F",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AA774S",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A70-Ps",
+      "date": "2026-12-04",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-17AOv0G653HwBfz",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1fZ_Ch-xV5h",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A70-PN",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AA774V",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A70Pbw",
+      "date": "2026-12-04",
+      "start": "19:10"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAeeqJ",
+      "date": "2026-12-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-04-sa-pittsburghpanthers-com-15416",
+      "date": "2026-12-04",
+      "start": null
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1fZ_Ch-NV5l",
+      "date": "2026-12-05",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-12-05-espn-robert-morris-mbb-401919213",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1755,
+        "low": 1601,
+        "high": 1954
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70-PV",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1fZ_Ch-005y",
+      "date": "2026-12-05",
+      "start": "14:30"
+    },
+    {
+      "eventId": "2026-12-05-espn-penguins-401892862",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Tarleton St at Pitt (MBB) 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18405,
+        "low": 17469,
+        "high": 18493
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-pitt-mbb-401909711",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Devils at Penguins 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7808,
+        "low": 7486,
+        "high": 8089
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-robert-morris-wbb-401919089",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 254,
+        "low": 174,
+        "high": 262
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-16pZkfgZfZAuGC6v",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1fZ_Ch-PVGI",
+      "date": "2026-12-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70-P_",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70P_e",
+      "date": "2026-12-05",
+      "start": "19:10"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7J7AU",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2676
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAek07",
+      "date": "2026-12-05",
+      "start": null
+    }
+  ]
+}

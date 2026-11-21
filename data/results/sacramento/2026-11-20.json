@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-sac-state-wbb-401917711",
+      "metroId": "sacramento",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hornet-pavilion",
+      "homeTeamId": "sac-state-wbb",
+      "home": {
+        "name": "Sacramento St",
+        "score": 63
+      },
+      "away": {
+        "name": "Pacific",
+        "score": 46
+      },
+      "attendance": 550,
+      "capturedAt": "2026-11-21T16:16:16.386Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-20-espn-uc-davis-wbb-401920406",
+      "metroId": "sacramento",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "university-credit-union-center",
+      "homeTeamId": "uc-davis-wbb",
+      "home": {
+        "name": "UC Davis",
+        "score": 64
+      },
+      "away": {
+        "name": "CA Baptist",
+        "score": 75
+      },
+      "attendance": 586,
+      "capturedAt": "2026-11-21T16:16:16.386Z",
+      "duration": {
+        "minutes": 101,
+        "kind": "estimated"
+      },
+      "startedAt": "20:06"
+    }
+  ]
+}

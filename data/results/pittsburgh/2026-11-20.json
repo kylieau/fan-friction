@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-pitt-mbb-401909709",
+      "metroId": "pittsburgh",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-mbb",
+      "home": {
+        "name": "Pitt",
+        "score": 104
+      },
+      "away": {
+        "name": "C Michigan",
+        "score": 82
+      },
+      "attendance": 4270,
+      "capturedAt": "2026-11-21T16:16:14.587Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

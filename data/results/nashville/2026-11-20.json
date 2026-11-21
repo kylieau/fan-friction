@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-belmont-wbb-401919664",
+      "metroId": "nashville",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "curb-event-center",
+      "homeTeamId": "belmont-wbb",
+      "home": {
+        "name": "Belmont",
+        "score": 57
+      },
+      "away": {
+        "name": "Dayton",
+        "score": 61
+      },
+      "attendance": 609,
+      "capturedAt": "2026-11-21T16:16:15.600Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-20-espn-vanderbilt-mbb-401921757",
+      "metroId": "nashville",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "vanderbilt-memorial-gymnasium",
+      "homeTeamId": "vanderbilt-mbb",
+      "home": {
+        "name": "Vanderbilt",
+        "score": 82
+      },
+      "away": {
+        "name": "UCF",
+        "score": 74
+      },
+      "attendance": 8142,
+      "capturedAt": "2026-11-21T16:16:15.600Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

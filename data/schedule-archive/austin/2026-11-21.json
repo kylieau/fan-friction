@@ -1,0 +1,1412 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "metroName": "Austin",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-21",
+  "capturedAt": "2026-11-21T16:13:37.402Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-21",
+    "through": "2026-12-05"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 12
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 23
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 11
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-21-espn-texas-football-401856755",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Texas Longhorns vs. Arkansas",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "dkr-texas-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-football",
+        "away": "arkansas",
+        "awayOpponent": "arkansas"
+      },
+      "rank": {
+        "home": 5
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 103714,
+        "low": 103481,
+        "high": 104084,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-espn-texas-state-football-401860920",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Texas St vs. Washington St",
+      "broadcast": "USA Net",
+      "place": {
+        "type": "venue",
+        "venueId": "ufcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "texas-state-football",
+        "away": "washington-st",
+        "awayOpponent": "washington-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14377,
+        "low": 13363,
+        "high": 14877,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-ht-texas-stars-1029362",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Barracuda",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "texas-stars",
+        "away": "barracuda"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 6349,
+        "low": 6022,
+        "high": 6761,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-G5dIZ_A1yCSI2",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bahamas",
+      "officialTitle": "Bahamas - Industrial Sport & Sound",
+      "place": {
+        "type": "venue",
+        "venueId": "emos-austin"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Bahamas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_A1yCSI2",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-21-tm-Z7r9jZ1AAZU1_",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Brett Goldstein",
+      "place": {
+        "type": "venue",
+        "venueId": "long-center-dell-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Brett Goldstein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZU1_"
+    },
+    {
+      "id": "2026-11-22-espn-texas-wbb-401918844",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Texas Longhorns vs. Ohio State Buckeyes",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "dickies-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-wbb",
+        "away": "osu-wbb",
+        "awayOpponent": "ohio-state"
+      },
+      "neutralSite": true,
+      "rank": {
+        "home": 6,
+        "away": 19
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-22-espn-texas-mbb-401906868",
+      "metroId": "austin",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas Longhorns vs. S Indiana",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-mbb",
+        "away": "s-indiana",
+        "awayOpponent": "s-indiana"
+      },
+      "rank": {
+        "home": 6
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 10540,
+        "low": 10367,
+        "high": 10684,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-22-espn-texas-state-mbb-401929202",
+      "metroId": "austin",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Texas St vs. McNeese",
+      "broadcast": "CW",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-mbb",
+        "away": "mcneese",
+        "awayOpponent": "mcneese"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1428,
+        "low": 1222,
+        "high": 1808,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 39 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5dIZ_3m-8BRK",
+      "metroId": "austin",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Syd",
+      "officialTitle": "Syd: Beard Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "emos-austin"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Syd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_3m-8BRK",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-ht-texas-stars-1029375",
+      "metroId": "austin",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Roadrunners",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "texas-stars",
+        "away": "roadrunners"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5271,
+        "low": 4869,
+        "high": 5709,
+        "fromCrowds": true,
+        "games": 24,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 24 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-25-espn-texas-state-wbb-401917721",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Texas St vs. Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-wbb",
+        "away": "pacific",
+        "awayOpponent": "pacific"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 750,
+        "low": 712,
+        "high": 796,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-espn-texas-wbb-401918845",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Texas Longhorns vs. SE Louisiana",
+      "broadcast": "SEC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-wbb",
+        "away": "se-louisiana",
+        "awayOpponent": "se-louisiana"
+      },
+      "rank": {
+        "home": 6
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7421,
+        "low": 6226,
+        "high": 8618,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5dIZ_GnckGEf",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Imminence",
+      "officialTitle": "Imminence - Axis Mundi Tour: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "stubbs-amphitheater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Imminence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_GnckGEf",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-ht-texas-stars-1029384",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stars vs. Roadrunners",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "texas-stars",
+        "away": "roadrunners"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 5271,
+        "low": 4869,
+        "high": 5709,
+        "fromCrowds": true,
+        "games": 24,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 24 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-texas-state-wbb-401919669",
+      "metroId": "austin",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Texas St vs. Bradley",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-wbb",
+        "away": "bradley",
+        "awayOpponent": "bradley"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 769,
+        "low": 674,
+        "high": 1069,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 21 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AA7-Fe",
+      "metroId": "austin",
+      "date": "2026-11-27",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Dolly Parton's Smoky Mountain Christmas Carol",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Dolly Parton's Smoky Mountain Christmas Carol",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7-Fe"
+    },
+    {
+      "id": "2026-11-27-tm-G5dIZ_Ch05GfT",
+      "metroId": "austin",
+      "date": "2026-11-27",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Grief Sucks: A One Man Show By KevOnStage",
+      "place": {
+        "type": "venue",
+        "venueId": "emos-austin"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "KevOnStage",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_Ch05GfT"
+    },
+    {
+      "id": "2026-11-28-tm-G5dIZ_ow2q9y5",
+      "metroId": "austin",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Austin Spurs vs Mexico City Capitanes",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Austin Spurs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_ow2q9y5",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-espn-texas-state-wbb-401928089",
+      "metroId": "austin",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Texas St vs. UTEP",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-wbb",
+        "away": "utep",
+        "awayOpponent": "utep"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 775,
+        "low": 759,
+        "high": 997,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A7xd-y",
+      "metroId": "austin",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Outlander in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Outlander in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7xd-y"
+    },
+    {
+      "id": "2026-11-28-tm-G5dIZ_KBbI_Tg",
+      "metroId": "austin",
+      "date": "2026-11-28",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Punchis Punchis",
+      "officialTitle": "Punchis! Punchis! Banda Rave",
+      "place": {
+        "type": "venue",
+        "venueId": "emos-austin"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Punchis Punchis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_KBbI_Tg",
+      "expectedDraw": {
+        "count": 2000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5dIZ_ow2m9Ht",
+      "metroId": "austin",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Austin Spurs vs Mexico City Capitanes",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Austin Spurs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_ow2m9Ht",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-29-espn-texas-state-mbb-401925067",
+      "metroId": "austin",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Texas St vs. Nicholls",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-mbb",
+        "away": "nicholls",
+        "awayOpponent": "nicholls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1428,
+        "low": 1222,
+        "high": 1808,
+        "fromCrowds": true,
+        "games": 39,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 39 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A7J3G-",
+      "metroId": "austin",
+      "date": "2026-11-29",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Leslie Odom, Jr.",
+      "officialTitle": "Leslie Odom Jr.",
+      "place": {
+        "type": "venue",
+        "venueId": "long-center-dell-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Leslie Odom, Jr.",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7J3G-",
+      "expectedDraw": {
+        "count": 2442,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1A7-078",
+      "metroId": "austin",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-078",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-02-espn-texas-state-mbb-401928469",
+      "metroId": "austin",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Texas St vs. Louisiana Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "strahan-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-state-mbb",
+        "away": "louisiana-tech",
+        "awayOpponent": "louisiana-tech"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1114,
+        "low": 1008,
+        "high": 1203,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A7-07o",
+      "metroId": "austin",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-07o",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-02-espn-texas-wbb-401906084",
+      "metroId": "austin",
+      "date": "2026-12-02",
+      "start": "20:15",
+      "kind": "game",
+      "title": "Texas Longhorns vs. Louisville",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "texas-wbb",
+        "away": "louisville",
+        "awayOpponent": "louisville"
+      },
+      "rank": {
+        "home": 6,
+        "away": 3
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7466,
+        "low": 6442,
+        "high": 8608,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1A7-073",
+      "metroId": "austin",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-073",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5dIZ_CTpYqYn",
+      "metroId": "austin",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "for KING & COUNTRY",
+      "officialTitle": "for KING + COUNTRY - A Drummer Boy Christmas The 2026 Arena Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "heb-center-cedar-park"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "for KING & COUNTRY",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172rR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_CTpYqYn",
+      "expectedDraw": {
+        "count": 4959,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5dIZ_kYgZCuz",
+      "metroId": "austin",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "moody-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_kYgZCuz",
+      "expectedDraw": {
+        "count": 9247,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A7-07K",
+      "metroId": "austin",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-07K",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7-074",
+      "metroId": "austin",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-074",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7-07f",
+      "metroId": "austin",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "bass-concert-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-07f",
+      "occasionFacts": {
+        "run": 6
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-21-espn-texas-football-401856755",
+      "date": "2026-11-21",
+      "start": "14:30",
+      "read": {
+        "rating": 5,
+        "friction": "Low",
+        "why": "Washington St at Texas St (FB) 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 103714,
+        "low": 103481,
+        "high": 104084
+      }
+    },
+    {
+      "eventId": "2026-11-21-espn-texas-state-football-401860920",
+      "date": "2026-11-21",
+      "start": "17:00",
+      "read": {
+        "rating": 5,
+        "friction": "Extreme",
+        "why": "Arkansas at Texas Longhorns (FB) 29 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14377,
+        "low": 13363,
+        "high": 14877
+      }
+    },
+    {
+      "eventId": "2026-11-21-ht-texas-stars-1029362",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Arkansas at Texas Longhorns (FB) 19 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6349,
+        "low": 6022,
+        "high": 6761
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-G5dIZ_A1yCSI2",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-21-tm-Z7r9jZ1AAZU1_",
+      "date": "2026-11-21",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-texas-wbb-401918844",
+      "date": "2026-11-22",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-texas-mbb-401906868",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10540,
+        "low": 10367,
+        "high": 10684
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-texas-state-mbb-401929202",
+      "date": "2026-11-22",
+      "start": "14:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1428,
+        "low": 1222,
+        "high": 1808
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5dIZ_3m-8BRK",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-24-ht-texas-stars-1029375",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "draw": {
+        "count": 5271,
+        "low": 4869,
+        "high": 5709
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-texas-state-wbb-401917721",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 750,
+        "low": 712,
+        "high": 796
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-texas-wbb-401918845",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7421,
+        "low": 6226,
+        "high": 8618
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5dIZ_GnckGEf",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-25-ht-texas-stars-1029384",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 5271,
+        "low": 4869,
+        "high": 5709
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-texas-state-wbb-401919669",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "draw": {
+        "count": 769,
+        "low": 674,
+        "high": 1069
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AA7-Fe",
+      "date": "2026-11-27",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-G5dIZ_Ch05GfT",
+      "date": "2026-11-27",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-28-tm-G5dIZ_ow2q9y5",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-texas-state-wbb-401928089",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 775,
+        "low": 759,
+        "high": 997
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A7xd-y",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5dIZ_KBbI_Tg",
+      "date": "2026-11-28",
+      "start": "21:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2000
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5dIZ_ow2m9Ht",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-texas-state-mbb-401925067",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1428,
+        "low": 1222,
+        "high": 1808
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A7J3G-",
+      "date": "2026-11-29",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2442
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1A7-078",
+      "date": "2026-12-01",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-02-espn-texas-state-mbb-401928469",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1114,
+        "low": 1008,
+        "high": 1203
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A7-07o",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-texas-wbb-401906084",
+      "date": "2026-12-02",
+      "start": "20:15",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7466,
+        "low": 6442,
+        "high": 8608
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1A7-073",
+      "date": "2026-12-03",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5dIZ_CTpYqYn",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "Disney Descendants, ZOMBIES & C… 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 4959
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5dIZ_kYgZCuz",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.3,
+        "friction": "Low",
+        "why": "for KING + COUNTRY - A Drummer… 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9247
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A7-07K",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7-074",
+      "date": "2026-12-05",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7-07f",
+      "date": "2026-12-05",
+      "start": "20:00"
+    }
+  ]
+}

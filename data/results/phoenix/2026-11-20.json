@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-asu-wbb-401916085",
+      "metroId": "phoenix",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mullett-arena",
+      "homeTeamId": "asu-wbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 76
+      },
+      "away": {
+        "name": "Santa Clara",
+        "score": 63
+      },
+      "attendance": 2154,
+      "capturedAt": "2026-11-21T16:16:15.985Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "20:33"
+    }
+  ]
+}

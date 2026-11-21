@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-tulane-wbb-401916060",
+      "metroId": "new-orleans",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "devlin-fieldhouse",
+      "homeTeamId": "tulane-wbb",
+      "home": {
+        "name": "Tulane",
+        "score": 76
+      },
+      "away": {
+        "name": "Alcorn St",
+        "score": 39
+      },
+      "attendance": 769,
+      "capturedAt": "2026-11-21T16:16:18.701Z",
+      "duration": {
+        "minutes": 103,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    }
+  ]
+}

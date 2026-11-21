@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-utah-jazz-401909311",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 101
+      },
+      "away": {
+        "name": "Suns",
+        "score": 111
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-21T16:16:18.871Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "21:41"
+    },
+    {
+      "eventId": "2026-11-20-espn-utah-wbb-401918935",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jon-m-huntsman-center",
+      "homeTeamId": "utah-wbb",
+      "home": {
+        "name": "Utah Utes",
+        "score": 92
+      },
+      "away": {
+        "name": "Utah Valley",
+        "score": 66
+      },
+      "attendance": 1710,
+      "capturedAt": "2026-11-21T16:16:18.871Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "21:02"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-bulls-401909309",
+      "metroId": "chicago",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 94
+      },
+      "away": {
+        "name": "Wizards",
+        "score": 98
+      },
+      "capturedAt": "2026-11-21T16:16:12.895Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

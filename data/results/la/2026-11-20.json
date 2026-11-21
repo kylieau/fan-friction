@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-lakers-401909313",
+      "metroId": "la",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 106
+      },
+      "away": {
+        "name": "Sac Kings",
+        "score": 104
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-11-21T16:16:10.550Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    },
+    {
+      "eventId": "2026-11-20-espn-usc-wbb-401918467",
+      "metroId": "la",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "intuit-dome",
+      "homeTeamId": "usc-wbb",
+      "home": {
+        "name": "USC",
+        "score": 78
+      },
+      "away": {
+        "name": "Baylor",
+        "score": 69
+      },
+      "attendance": 3390,
+      "capturedAt": "2026-11-21T16:16:10.550Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "23:10"
+    }
+  ]
+}

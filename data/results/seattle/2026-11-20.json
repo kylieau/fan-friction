@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-20",
+  "results": [
+    {
+      "eventId": "2026-11-20-espn-uw-wbb-401915982",
+      "metroId": "seattle",
+      "date": "2026-11-20",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-wbb",
+      "home": {
+        "name": "Washington",
+        "score": 105
+      },
+      "away": {
+        "name": "Stanford",
+        "score": 50
+      },
+      "attendance": 3785,
+      "capturedAt": "2026-11-21T16:16:11.494Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "22:02"
+    },
+    {
+      "eventId": "2026-11-20-ht-everett-silvertips-1023316",
+      "metroId": "seattle",
+      "date": "2026-11-20",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 2
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 1
+      },
+      "attendance": 5883,
+      "capturedAt": "2026-11-21T16:16:11.495Z"
+    },
+    {
+      "eventId": "2026-11-20-ht-seattle-thunderbirds-1023322",
+      "metroId": "seattle",
+      "date": "2026-11-20",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 2
+      },
+      "away": {
+        "name": "Americans",
+        "score": 1
+      },
+      "attendance": 4254,
+      "capturedAt": "2026-11-21T16:16:11.495Z"
+    }
+  ]
+}
