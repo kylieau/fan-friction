@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-marquette-wbb-401913790",
+      "metroId": "milwaukee",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "al-mcguire-center",
+      "homeTeamId": "marquette-wbb",
+      "home": {
+        "name": "Marquette",
+        "score": 77
+      },
+      "away": {
+        "name": "NJIT",
+        "score": 50
+      },
+      "attendance": 1026,
+      "capturedAt": "2026-11-22T16:12:48.996Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-uwm-mbb-401920846",
+      "metroId": "milwaukee",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "uwm-panther-arena",
+      "homeTeamId": "uwm-mbb",
+      "home": {
+        "name": "Milwaukee",
+        "score": 70
+      },
+      "away": {
+        "name": "St Thomas",
+        "score": 98
+      },
+      "attendance": 1993,
+      "capturedAt": "2026-11-22T16:12:48.996Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    }
+  ]
+}

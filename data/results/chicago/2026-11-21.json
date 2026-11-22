@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-depaul-wbb-401913049",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wintrust-arena",
+      "homeTeamId": "depaul-wbb",
+      "home": {
+        "name": "DePaul",
+        "score": 85
+      },
+      "away": {
+        "name": "IU Indy",
+        "score": 67
+      },
+      "attendance": 1246,
+      "capturedAt": "2026-11-22T16:12:47.843Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "15:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-northwestern-wbb-401919969",
+      "metroId": "chicago",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "welsh-ryan-arena",
+      "homeTeamId": "northwestern-wbb",
+      "home": {
+        "name": "Northwestern",
+        "score": 68
+      },
+      "away": {
+        "name": "N Illinois",
+        "score": 45
+      },
+      "attendance": 1035,
+      "capturedAt": "2026-11-22T16:12:47.843Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-inter-miami-cf-401933739",
+      "metroId": "miami",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nu-stadium",
+      "homeTeamId": "inter-miami-cf",
+      "home": {
+        "name": "Inter Miami",
+        "score": 0
+      },
+      "away": {
+        "name": "Crew",
+        "score": 3
+      },
+      "capturedAt": "2026-11-22T16:12:50.340Z"
+    },
+    {
+      "eventId": "2026-11-21-espn-miami-hurricanes-football-401858302",
+      "metroId": "miami",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hard-rock-stadium",
+      "homeTeamId": "miami-hurricanes-football",
+      "home": {
+        "name": "Miami",
+        "score": 28
+      },
+      "away": {
+        "name": "Virginia Tech",
+        "score": 20
+      },
+      "attendance": 66790,
+      "capturedAt": "2026-11-22T16:12:50.340Z",
+      "duration": {
+        "minutes": 210,
+        "kind": "estimated"
+      },
+      "startedAt": "19:05"
+    },
+    {
+      "eventId": "2026-11-21-espn-panthers-401892756",
+      "metroId": "miami",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 4
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 3
+      },
+      "attendance": 19571,
+      "capturedAt": "2026-11-22T16:12:50.340Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "18:09"
+    }
+  ]
+}

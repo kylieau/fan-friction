@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-predators-401892757",
+      "metroId": "nashville",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bridgestone-arena",
+      "homeTeamId": "predators",
+      "home": {
+        "name": "Predators",
+        "score": 4
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "attendance": 17487,
+      "capturedAt": "2026-11-22T16:12:51.068Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "18:09"
+    }
+  ]
+}

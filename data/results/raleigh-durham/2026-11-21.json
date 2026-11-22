@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-hurricanes-401892754",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lenovo-center",
+      "homeTeamId": "hurricanes",
+      "home": {
+        "name": "Hurricanes",
+        "score": 7
+      },
+      "away": {
+        "name": "Oilers",
+        "score": 4
+      },
+      "attendance": 18855,
+      "capturedAt": "2026-11-22T16:12:55.344Z",
+      "duration": {
+        "minutes": 159,
+        "kind": "estimated"
+      },
+      "startedAt": "13:16"
+    },
+    {
+      "eventId": "2026-11-21-espn-nccu-football-401867971",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "o-kelly-riddick-stadium",
+      "homeTeamId": "nccu-football",
+      "home": {
+        "name": "NC Central",
+        "score": 41
+      },
+      "away": {
+        "name": "Morgan St",
+        "score": 31
+      },
+      "attendance": 4723,
+      "capturedAt": "2026-11-22T16:12:55.344Z",
+      "duration": {
+        "minutes": 202,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

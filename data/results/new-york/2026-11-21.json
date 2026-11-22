@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-columbia-football-401867825",
+      "metroId": "new-york",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wien-stadium",
+      "homeTeamId": "columbia-football",
+      "home": {
+        "name": "Columbia",
+        "score": 46
+      },
+      "away": {
+        "name": "Cornell",
+        "score": 45
+      },
+      "attendance": 4065,
+      "note": "OT",
+      "capturedAt": "2026-11-22T16:12:46.896Z",
+      "duration": {
+        "minutes": 223,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-knicks-401910024",
+      "metroId": "new-york",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 97
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 96
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-22T16:12:46.896Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    },
+    {
+      "eventId": "2026-11-21-espn-rutgers-wbb-401913009",
+      "metroId": "new-york",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-wbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 93
+      },
+      "away": {
+        "name": "Delaware St",
+        "score": 43
+      },
+      "attendance": 1668,
+      "capturedAt": "2026-11-22T16:12:46.896Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "14:01"
+    },
+    {
+      "eventId": "2026-11-21-espn-stony-brook-football-401866695",
+      "metroId": "new-york",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lavalle-stadium",
+      "homeTeamId": "stony-brook-football",
+      "home": {
+        "name": "Stony Brook",
+        "score": 20
+      },
+      "away": {
+        "name": "Hampton",
+        "score": 10
+      },
+      "attendance": 3549,
+      "capturedAt": "2026-11-22T16:12:46.896Z",
+      "duration": {
+        "minutes": 171,
+        "kind": "estimated"
+      },
+      "startedAt": "12:06"
+    }
+  ]
+}

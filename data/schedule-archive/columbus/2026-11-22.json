@@ -1,0 +1,2452 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "metroName": "Columbus",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-22",
+  "capturedAt": "2026-11-22T16:09:02.927Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-22",
+    "through": "2026-12-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 9
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 65
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 12
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-22-tm-1kAOvP3bGA1iS4W",
+      "metroId": "columbus",
+      "date": "2026-11-22",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs. Umass-Lowell Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOvP3bGA1iS4W"
+    },
+    {
+      "id": "2026-11-22-tm-vv1AAZkfzGkeHMGOw",
+      "metroId": "columbus",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHMGOw",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1A7x9op",
+      "metroId": "columbus",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Streetlight Manifesto",
+      "officialTitle": "Streetlight Manifesto w/ Hot Rod Circuit",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Streetlight Manifesto",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175TXf",
+        "K8vZ91710Bf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x9op",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-1ApZk49Gkex4MTC",
+      "metroId": "columbus",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northern Kentucky Norse Mens Basketball vs. Georgia Southern Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Northern Kentucky Norse Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk49Gkex4MTC",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-23-tm-1ApZk4AGkeIEgxO",
+      "metroId": "columbus",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Dayton Flyers Women's Basketball v. Xavier",
+      "place": {
+        "type": "venue",
+        "venueId": "university-of-dayton-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dayton Flyers Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4AGkeIEgxO"
+    },
+    {
+      "id": "2026-11-24-tm-vv1AAZkfzGkeHzj-l",
+      "metroId": "columbus",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHzj-l",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-24-espn-osu-mbb-401916319",
+      "metroId": "columbus",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Vanderbilt",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-mbb",
+        "away": "vanderbilt-mbb",
+        "awayOpponent": "vanderbilt"
+      },
+      "rank": {
+        "away": 15
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 8294,
+        "low": 8081,
+        "high": 9974,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-1ApZk4wGkeSZnp_",
+      "metroId": "columbus",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bellarmine University Knights Mens Basketball vs. Georgia Southern Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Bellarmine University Knights Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4wGkeSZnp_"
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1A7PdFA",
+      "metroId": "columbus",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Catch Your Breath",
+      "officialTitle": "Catch Your Breath w/ TX2",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "Catch Your Breath",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PdFA",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-17AOv0G626ZJDWl",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Volleyball vs. Texas Tech Red Raiders Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Cincinnati Bearcats Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G626ZJDWl",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1ApZk49Gkdo6qqm",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Northern Kentucky Norse Womens Basketball vs. Southern Indiana Women's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Northern Kentucky Norse Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk49Gkdo6qqm"
+    },
+    {
+      "id": "2026-11-25-tm-vv1AAZkfzGkeHyjx1",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHyjx1",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-25-espn-blue-jackets-401892788",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Devils",
+      "broadcast": "MSG2",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15569,
+        "low": 14578,
+        "high": 16469,
+        "fromCrowds": true,
+        "games": 12,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 12 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-17AOv0G654Hr02J",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cyclones v. Bison | Thanksgiving Eve $2 Beer",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Cincinnati Cyclones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G654Hr02J",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-1ApZk49GkexpMTp",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Northern Kentucky Norse Mens Basketball vs. Bellarmine University Knights Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Northern Kentucky Norse Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk49GkexpMTp",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1A7POo0",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "State Champs",
+      "officialTitle": "State Champs w/ Cartel",
+      "place": {
+        "type": "venue",
+        "venueId": "newport-music-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "State Champs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7POo0",
+      "expectedDraw": {
+        "count": 1700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-17AOv0G626ZI5Xq",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Volleyball vs. Baylor Bears Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Cincinnati Bearcats Women's Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G626ZI5Xq",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAZ8F8",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "kind": "special",
+      "title": "A Christmas Carol",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "A Christmas Carol",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ8F8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-espn-blue-jackets-401892802",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Blue Jackets vs. Red Wings",
+      "broadcast": "DSN",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "blue-jackets",
+        "away": "red-wings",
+        "awayOpponent": "red-wings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17725,
+        "low": 16837,
+        "high": 18347,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv1AAZkfzGkeHBixw",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHBixw",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-11-27-sa-ohiostatebuckeyes-com-23170",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Ohio State vs. Tennessee",
+      "place": {
+        "type": "venue",
+        "venueId": "jesse-owens-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-27-tm-17AOv0G654HL02i",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cyclones v. Wings | 513 Black Friday",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Cincinnati Cyclones",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AOv0G654HL02i",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv1kfZ_a_6G7BuHp",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amy Grant",
+      "officialTitle": "Christmas Together with Amy Grant, Michael W. Smith, and CeCe Winans",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amy Grant",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171uaV",
+        "K8vZ9171fEV",
+        "K8vZ91714R0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kfZ_a_6G7BuHp",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAZFPA",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Christmas Carol",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "A Christmas Carol",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFPA",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv17fZ_4GkUTSnrb",
+      "metroId": "columbus",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Audi MLS Cup Playoffs Round 1 Game 2 - Columbus Crew v Inter Miami CF",
+      "place": {
+        "type": "venue",
+        "venueId": "scottsmiracle-gro-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Columbus Crew",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_4GkUTSnrb"
+    },
+    {
+      "id": "2026-11-28-espn-osu-football-401858540",
+      "metroId": "columbus",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan Wolverines",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "osu-football",
+        "away": "michigan-football",
+        "awayOpponent": "michigan"
+      },
+      "rank": {
+        "home": 14
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 103034,
+        "low": 102012,
+        "high": 103521,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv1AAZkfzGkeHDiNa",
+      "metroId": "columbus",
+      "date": "2026-11-28",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHDiNa",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAZFPk",
+      "metroId": "columbus",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Christmas Carol",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "A Christmas Carol",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFPk",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-29-tm-1ApZkotGkeDTtoZ",
+      "metroId": "columbus",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Cincinnati Bengals vs. New Orleans Saints",
+      "place": {
+        "type": "venue",
+        "venueId": "paycor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Cincinnati Bengals",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZkotGkeDTtoZ"
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAZFP6",
+      "metroId": "columbus",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "kind": "special",
+      "title": "A Christmas Carol",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-theatre-columbus"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "A Christmas Carol",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFP6",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-29-espn-osu-mbb-401916320",
+      "metroId": "columbus",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Lipscomb",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-mbb",
+        "away": "lipscomb-mbb",
+        "awayOpponent": "lipscomb"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15524,
+        "low": 12357,
+        "high": 17684,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vv1AAZkfzGkeHHiN_",
+      "metroId": "columbus",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHHiN_",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-12-01-tm-vv1AAZkfzGkeHWiNV",
+      "metroId": "columbus",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHWiNV",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-02-tm-1ApZk46GkdaqyBO",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Basketball vs. Bellarmine University Knights Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdaqyBO",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vv1AAZkfzGkeHXH0w",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHXH0w",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-02-espn-osu-wbb-401927083",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Akron",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-wbb",
+        "away": "akron",
+        "awayOpponent": "akron"
+      },
+      "rank": {
+        "home": 19
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 4021,
+        "low": 3933,
+        "high": 4156,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-sa-battlingbishops-com-10344",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. Wooster",
+      "place": {
+        "type": "venue",
+        "venueId": "branch-rickey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-02-tm-1AvbZ_KGkBOsp5f",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Dayton Flyers Men's Basketball v. Loyola (Md.)",
+      "place": {
+        "type": "venue",
+        "venueId": "university-of-dayton-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dayton Flyers Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_KGkBOsp5f"
+    },
+    {
+      "id": "2026-12-02-tm-1kAOvP3bGA1cSpF",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs. Monmouth Hawks Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1kAOvP3bGA1cSpF",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAeK8U",
+      "metroId": "columbus",
+      "date": "2026-12-02",
+      "start": null,
+      "kind": "game",
+      "title": "Xavier Musketeers Mens Basketball vs. Texas Southern Tigers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "cintas-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Xavier Musketeers Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeK8U",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv1AAZkfzGkeHTHPy",
+      "metroId": "columbus",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeHTHPy",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-03-tm-1ApZk4aGkdF5tN5",
+      "metroId": "columbus",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wright State Raiders Women's Basketball vs. University of Detroit Mercy Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "wright-state-university-nutter-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wright State Raiders Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4aGkdF5tN5"
+    },
+    {
+      "id": "2026-12-03-espn-osu-mhockey-401923165",
+      "metroId": "columbus",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan State",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-state",
+        "awayOpponent": "michigan-state"
+      },
+      "rank": {
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAZoAV",
+      "metroId": "columbus",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Micky Dolenz",
+      "place": {
+        "type": "venue",
+        "venueId": "kemba-live-outdoor"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Micky Dolenz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u6W7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZoAV",
+      "expectedDraw": {
+        "count": 5200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv17fZ_4GklR6QQv",
+      "metroId": "columbus",
+      "date": "2026-12-03",
+      "start": null,
+      "kind": "game",
+      "title": "NCAA Divison III Soccer - Men's Semifinals",
+      "place": {
+        "type": "venue",
+        "venueId": "historic-crew-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "NCAA Division III Soccer Championships",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_4GklR6QQv",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vv1AAZkfzGkeWZHEk",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeWZHEk",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-04-espn-osu-mhockey-401923168",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Michigan State",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "osu-mhockey",
+        "away": "michigan-state",
+        "awayOpponent": "michigan-state"
+      },
+      "rank": {
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-12-04-sa-ohiostatebuckeyes-com-22452",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Ohio State vs. Minnesota State",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-state-ice-rink"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "osu-whockey",
+        "away": "Minnesota State",
+        "awayOpponent": "minnesota-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-04-tm-1ApZk46GkdFlygq",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Women's Basketball vs. Ball State University Cardinals Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk46GkdFlygq",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-04-tm-1AvbZ_7GkwwEh0C",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7GkwwEh0C",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vv17fZ_4GklRfBh7",
+      "metroId": "columbus",
+      "date": "2026-12-04",
+      "start": null,
+      "kind": "game",
+      "title": "NCAA Divison III Soccer - Women's Semifinals",
+      "place": {
+        "type": "venue",
+        "venueId": "historic-crew-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "NCAA Division III Soccer Championships",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_4GklRfBh7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-1AvbZ_7GkwwIh03",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "10:30",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7GkwwIh03",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-sa-battlingbishops-com-10345",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Ohio Wesleyan vs. La Roche",
+      "place": {
+        "type": "venue",
+        "venueId": "branch-rickey-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-05-tm-1AvbZ_7Gkwwn50L",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7Gkwwn50L",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-sa-ohiostatebuckeyes-com-22453",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Ohio State vs. Minnesota State",
+      "place": {
+        "type": "venue",
+        "venueId": "ohio-state-ice-rink"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "osu-whockey",
+        "away": "Minnesota State",
+        "awayOpponent": "minnesota-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-05-tm-vv17fZ_8GkUIhkxu",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GkUIhkxu",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1AAZkfzGkeWvHEH",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeWvHEH",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-05-tm-1AvbZ_7Gkwwth0_",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7Gkwwth0_",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1fZ_u6FYTwK",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Matt McCusker: The Healing Frequency Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "mershon-auditorium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matt McCusker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1fZ_u6FYTwK"
+    },
+    {
+      "id": "2026-12-05-tm-vv17fZ_8GkUIqpxL",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "nationwide-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_8GkUIqpxL",
+      "expectedDraw": {
+        "count": 11400,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-11AOvP3b0-GUv5",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Cincinnati Bearcats Mens Basketball vs. Xavier Musketeers Men's Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "fifth-third-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Cincinnati Bearcats Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "11AOvP3b0-GUv5",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAZepK",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Micky Dolenz",
+      "place": {
+        "type": "venue",
+        "venueId": "megacorp-pavilion"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Micky Dolenz",
+      "act": true,
+      "performerIds": [
+        "K8vZ917u6W7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZepK",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv17fZ_4GklRNnjo",
+      "metroId": "columbus",
+      "date": "2026-12-05",
+      "start": null,
+      "kind": "game",
+      "title": "Ncaa Divison III Soccer - Men's Final",
+      "place": {
+        "type": "venue",
+        "venueId": "historic-crew-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "NCAA Division III Soccer Championships",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_4GklRNnjo",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-06-tm-1AvbZ_7GkwwlD0m",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "10:30",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7GkwwlD0m",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-06-espn-osu-mbb-401921881",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Ohio State Buckeyes vs. Maryland",
+      "broadcast": "BTN",
+      "place": {
+        "type": "venue",
+        "venueId": "value-city-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "osu-mbb",
+        "away": "maryland-mbb",
+        "awayOpponent": "maryland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15136,
+        "low": 12048,
+        "high": 17242,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 9 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-1ApZk49GkdoFuqS",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Northern Kentucky Norse Womens Basketball vs. Detroit Titans Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "truist-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Northern Kentucky Norse Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk49GkdoFuqS"
+    },
+    {
+      "id": "2026-12-06-tm-1ApZk4AGkeIIgxw",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Dayton Flyers Women's Basketball v. Mount St. Mary's",
+      "place": {
+        "type": "venue",
+        "venueId": "university-of-dayton-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dayton Flyers Women's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1ApZk4AGkeIIgxw",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-06-tm-1AvbZ_7Gkwwl500",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Ringling Bros. and Barnum & Bailey with Special Guest Bello Nock",
+      "place": {
+        "type": "venue",
+        "venueId": "heritage-bank-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "Ringling Bros. and Barnum & Bailey presents The Greatest Show On Earth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AvbZ_7Gkwwl500",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vv1AAZkfzGkeWeHIs",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "kind": "special",
+      "title": "Columbus Clippers Holiday Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "huntington-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "Columbus Clippers Holiday Lights",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AAZkfzGkeWeHIs",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vv17fZ_4GklRjQhJ",
+      "metroId": "columbus",
+      "date": "2026-12-06",
+      "start": null,
+      "kind": "game",
+      "title": "NCAA Divison III Soccer - Women's Final",
+      "place": {
+        "type": "venue",
+        "venueId": "historic-crew-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "NCAA Division III Soccer Championships",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17fZ_4GklRjQhJ",
+      "occasionFacts": {
+        "run": 4
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-22-tm-1kAOvP3bGA1iS4W",
+      "date": "2026-11-22",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-vv1AAZkfzGkeHMGOw",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Streetlight Manifesto w/ Hot Ro… next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1A7x9op",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-1ApZk49Gkex4MTC",
+      "date": "2026-11-23",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-23-tm-1ApZk4AGkeIEgxO",
+      "date": "2026-11-23",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-24-tm-vv1AAZkfzGkeHzj-l",
+      "date": "2026-11-24",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Vanderbilt at Ohio State Buckeyes (MBB) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-osu-mbb-401916319",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8294,
+        "low": 8081,
+        "high": 9974
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-1ApZk4wGkeSZnp_",
+      "date": "2026-11-24",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1A7PdFA",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-17AOv0G626ZJDWl",
+      "date": "2026-11-25",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-1ApZk49Gkdo6qqm",
+      "date": "2026-11-25",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-vv1AAZkfzGkeHyjx1",
+      "date": "2026-11-25",
+      "start": "18:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Devils at Blue Jackets next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-blue-jackets-401892788",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15569,
+        "low": 14578,
+        "high": 16469
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-17AOv0G654Hr02J",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-1ApZk49GkexpMTp",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1A7POo0",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1700
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-17AOv0G626ZI5Xq",
+      "date": "2026-11-27",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAZ8F8",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-blue-jackets-401892802",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Christmas Together with Amy Gra… and Columbus Clippers Holiday Lights 2.8 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17725,
+        "low": 16837,
+        "high": 18347
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vv1AAZkfzGkeHBixw",
+      "date": "2026-11-27",
+      "start": "17:30",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Audi MLS Cup Playoffs Round 1 G… and Red Wings at Blue Jackets next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-sa-ohiostatebuckeyes-com-23170",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-17AOv0G654HL02i",
+      "date": "2026-11-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-vv1kfZ_a_6G7BuHp",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Audi MLS Cup Playoffs Round 1 G… and Red Wings at Blue Jackets 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAZFPA",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vv17fZ_4GkUTSnrb",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Christmas Together with Amy Gra… and Columbus Clippers Holiday Lights 2.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-osu-football-401858540",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 103034,
+        "low": 102012,
+        "high": 103521
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv1AAZkfzGkeHDiNa",
+      "date": "2026-11-28",
+      "start": "17:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Michigan Wolverines at Ohio State Buckeyes (FB) 2.3 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAZFPk",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-1ApZkotGkeDTtoZ",
+      "date": "2026-11-29",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAZFP6",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-osu-mbb-401916320",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights 2.8 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15524,
+        "low": 12357,
+        "high": 17684
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vv1AAZkfzGkeHHiN_",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Lipscomb at Ohio State Buckeyes (MBB) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-vv1AAZkfzGkeHWiNV",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 6:00 pm start.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-1ApZk46GkdaqyBO",
+      "date": "2026-12-02",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-12-02-tm-vv1AAZkfzGkeHXH0w",
+      "date": "2026-12-02",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-osu-wbb-401927083",
+      "date": "2026-12-02",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4021,
+        "low": 3933,
+        "high": 4156
+      }
+    },
+    {
+      "eventId": "2026-12-02-sa-battlingbishops-com-10344",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-1AvbZ_KGkBOsp5f",
+      "date": "2026-12-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-02-tm-1kAOvP3bGA1cSpF",
+      "date": "2026-12-02",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAeK8U",
+      "date": "2026-12-02",
+      "start": null
+    },
+    {
+      "eventId": "2026-12-03-tm-vv1AAZkfzGkeHTHPy",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Michigan State at Ohio State Buckeyes (MHKY) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-1ApZk4aGkdF5tN5",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-espn-osu-mhockey-401923165",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAZoAV",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Michigan State at Ohio State Buckeyes (MHKY) and Columbus Clippers Holiday Lights 2.7 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5200
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vv17fZ_4GklR6QQv",
+      "date": "2026-12-03",
+      "start": null,
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "Michigan State at Ohio State Buckeyes (MHKY) 1.8 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vv1AAZkfzGkeWZHEk",
+      "date": "2026-12-04",
+      "start": "17:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Michigan State at Ohio State Buckeyes (MHKY) 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-espn-osu-mhockey-401923168",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights 2.8 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-sa-ohiostatebuckeyes-com-22452",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-1ApZk46GkdFlygq",
+      "date": "2026-12-04",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-04-tm-1AvbZ_7GkwwEh0C",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-vv17fZ_4GklRfBh7",
+      "date": "2026-12-04",
+      "start": null,
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Michigan State at Ohio State Buckeyes (MHKY) 1.8 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-1AvbZ_7GkwwIh03",
+      "date": "2026-12-05",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-12-05-sa-battlingbishops-com-10345",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-1AvbZ_7Gkwwn50L",
+      "date": "2026-12-05",
+      "start": "14:30"
+    },
+    {
+      "eventId": "2026-12-05-sa-ohiostatebuckeyes-com-22453",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17fZ_8GkUIhkxu",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1AAZkfzGkeWvHEH",
+      "date": "2026-12-05",
+      "start": "17:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Moderate",
+        "why": "Trans-Siberian Orchestra and Trans-Siberian Orchestra next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-1AvbZ_7Gkwwth0_",
+      "date": "2026-12-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1fZ_u6FYTwK",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17fZ_8GkUIqpxL",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11400
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-11AOvP3b0-GUv5",
+      "date": "2026-12-05",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAZepK",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17fZ_4GklRNnjo",
+      "date": "2026-12-05",
+      "start": null,
+      "read": {
+        "rating": 2.7,
+        "friction": "Low",
+        "why": "Trans-Siberian Orchestra and Trans-Siberian Orchestra 2.9 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-1AvbZ_7GkwwlD0m",
+      "date": "2026-12-06",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-12-06-espn-osu-mbb-401921881",
+      "date": "2026-12-06",
+      "start": "12:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Columbus Clippers Holiday Lights 2.8 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15136,
+        "low": 12048,
+        "high": 17242
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-1ApZk49GkdoFuqS",
+      "date": "2026-12-06",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-12-06-tm-1ApZk4AGkeIIgxw",
+      "date": "2026-12-06",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-12-06-tm-1AvbZ_7Gkwwl500",
+      "date": "2026-12-06",
+      "start": "14:30"
+    },
+    {
+      "eventId": "2026-12-06-tm-vv1AAZkfzGkeWeHIs",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "NCAA Divison III Soccer - Women… and Maryland at Ohio State Buckeyes (MBB) 3.0 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vv17fZ_4GklRjQhJ",
+      "date": "2026-12-06",
+      "start": null,
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    }
+  ]
+}

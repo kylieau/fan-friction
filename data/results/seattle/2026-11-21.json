@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-uw-football-401858535",
+      "metroId": "seattle",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "husky-stadium",
+      "homeTeamId": "uw-football",
+      "home": {
+        "name": "Washington",
+        "score": 27
+      },
+      "away": {
+        "name": "Indiana",
+        "score": 24
+      },
+      "attendance": 64614,
+      "note": "OT",
+      "capturedAt": "2026-11-22T16:12:46.429Z",
+      "duration": {
+        "minutes": 220,
+        "kind": "estimated"
+      },
+      "startedAt": "15:33"
+    },
+    {
+      "eventId": "2026-11-21-ht-everett-silvertips-1023324",
+      "metroId": "seattle",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 3
+      },
+      "away": {
+        "name": "Thunderbirds",
+        "score": 1
+      },
+      "attendance": 8249,
+      "capturedAt": "2026-11-22T16:12:46.430Z"
+    }
+  ]
+}

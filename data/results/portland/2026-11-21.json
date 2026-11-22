@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-rip-city-remix-401914584",
+      "metroId": "portland",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chiles-center",
+      "homeTeamId": "rip-city-remix",
+      "home": {
+        "name": "Remix",
+        "score": 121
+      },
+      "away": {
+        "name": "Santa Cruz Warriors",
+        "score": 137
+      },
+      "attendance": 612,
+      "capturedAt": "2026-11-22T16:12:55.073Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "18:03"
+    }
+  ]
+}

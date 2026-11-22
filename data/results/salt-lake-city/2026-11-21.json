@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-utah-mammoth-401892765",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-mammoth",
+      "home": {
+        "name": "Mammoth",
+        "score": 3
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "attendance": 14111,
+      "capturedAt": "2026-11-22T16:12:54.009Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "21:11"
+    }
+  ]
+}

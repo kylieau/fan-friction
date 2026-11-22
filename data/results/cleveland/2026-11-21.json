@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-cleveland-state-mbb-401921169",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wolstein-center",
+      "homeTeamId": "cleveland-state-mbb",
+      "home": {
+        "name": "Cleveland St",
+        "score": 62
+      },
+      "away": {
+        "name": "Kent State",
+        "score": 69
+      },
+      "attendance": 2721,
+      "capturedAt": "2026-11-22T16:12:50.799Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    },
+    {
+      "eventId": "2026-11-21-espn-cleveland-state-wbb-401929020",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wolstein-center",
+      "homeTeamId": "cleveland-state-wbb",
+      "home": {
+        "name": "Cleveland St",
+        "score": 65
+      },
+      "away": {
+        "name": "Kent State",
+        "score": 73
+      },
+      "attendance": 2721,
+      "capturedAt": "2026-11-22T16:12:50.799Z",
+      "duration": {
+        "minutes": 130,
+        "kind": "estimated"
+      },
+      "startedAt": "15:58"
+    },
+    {
+      "eventId": "2026-11-21-ht-cleveland-monsters-1029353",
+      "metroId": "cleveland",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cleveland-monsters",
+      "home": {
+        "name": "Monsters",
+        "score": 1
+      },
+      "away": {
+        "name": "Comets",
+        "score": 2
+      },
+      "attendance": 11399,
+      "capturedAt": "2026-11-22T16:12:50.799Z"
+    }
+  ]
+}

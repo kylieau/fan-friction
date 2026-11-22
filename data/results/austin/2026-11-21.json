@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-texas-football-401856755",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dkr-texas-memorial-stadium",
+      "homeTeamId": "texas-football",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 45
+      },
+      "away": {
+        "name": "Arkansas",
+        "score": 3
+      },
+      "attendance": 103508,
+      "capturedAt": "2026-11-22T16:12:51.307Z",
+      "duration": {
+        "minutes": 198,
+        "kind": "estimated"
+      },
+      "startedAt": "15:33"
+    },
+    {
+      "eventId": "2026-11-21-espn-texas-state-football-401860920",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ufcu-stadium",
+      "homeTeamId": "texas-state-football",
+      "home": {
+        "name": "Texas St",
+        "score": 42
+      },
+      "away": {
+        "name": "Washington St",
+        "score": 14
+      },
+      "attendance": 23627,
+      "capturedAt": "2026-11-22T16:12:51.307Z",
+      "duration": {
+        "minutes": 192,
+        "kind": "estimated"
+      },
+      "startedAt": "18:08"
+    },
+    {
+      "eventId": "2026-11-21-ht-texas-stars-1029362",
+      "metroId": "austin",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 2
+      },
+      "away": {
+        "name": "Barracuda",
+        "score": 1
+      },
+      "attendance": 6175,
+      "capturedAt": "2026-11-22T16:12:51.307Z"
+    }
+  ]
+}

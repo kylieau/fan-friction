@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-texas-southern-football-401868941",
+      "metroId": "houston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "shell-energy-stadium",
+      "homeTeamId": "texas-southern-football",
+      "home": {
+        "name": "Texas Southern Tigers",
+        "score": 17
+      },
+      "away": {
+        "name": "AR-Pine Bluff",
+        "score": 42
+      },
+      "attendance": 3012,
+      "capturedAt": "2026-11-22T16:12:52.875Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "15:08"
+    },
+    {
+      "eventId": "2026-11-21-espn-uh-wbb-401923003",
+      "metroId": "houston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fertitta-center",
+      "homeTeamId": "uh-wbb",
+      "home": {
+        "name": "Houston",
+        "score": 96
+      },
+      "away": {
+        "name": "Hou Christian",
+        "score": 60
+      },
+      "attendance": 908,
+      "capturedAt": "2026-11-22T16:12:52.875Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "14:03"
+    }
+  ]
+}

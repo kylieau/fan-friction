@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-tulane-football-401862835",
+      "metroId": "new-orleans",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yulman-stadium",
+      "homeTeamId": "tulane-football",
+      "home": {
+        "name": "Tulane",
+        "score": 28
+      },
+      "away": {
+        "name": "North Texas",
+        "score": 24
+      },
+      "attendance": 16203,
+      "capturedAt": "2026-11-22T16:12:53.798Z",
+      "duration": {
+        "minutes": 193,
+        "kind": "estimated"
+      },
+      "startedAt": "12:00"
+    }
+  ]
+}

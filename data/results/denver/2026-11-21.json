@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-du-mhockey-401904680",
+      "metroId": "denver",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "magness-arena",
+      "homeTeamId": "du-mhockey",
+      "home": {
+        "name": "Denver",
+        "score": 4
+      },
+      "away": {
+        "name": "St Thomas",
+        "score": 5
+      },
+      "note": "OT",
+      "capturedAt": "2026-11-22T16:12:55.861Z"
+    }
+  ]
+}

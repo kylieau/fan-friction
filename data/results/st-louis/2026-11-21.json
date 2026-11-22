@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "st-louis",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-blues-401892763",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "enterprise-center",
+      "homeTeamId": "blues",
+      "home": {
+        "name": "Blues",
+        "score": 9
+      },
+      "away": {
+        "name": "Devils",
+        "score": 6
+      },
+      "attendance": 18096,
+      "capturedAt": "2026-11-22T16:12:55.668Z",
+      "duration": {
+        "minutes": 154,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-21-espn-lindenwood-football-401868208",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "harlen-c-hunter-stadium",
+      "homeTeamId": "lindenwood-football",
+      "home": {
+        "name": "Lindenwood",
+        "score": 7
+      },
+      "away": {
+        "name": "W Illinois",
+        "score": 41
+      },
+      "attendance": 3514,
+      "capturedAt": "2026-11-22T16:12:55.668Z",
+      "duration": {
+        "minutes": 199,
+        "kind": "estimated"
+      },
+      "startedAt": "15:00"
+    },
+    {
+      "eventId": "2026-11-21-espn-slu-wbb-401921236",
+      "metroId": "st-louis",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chaifetz-arena",
+      "homeTeamId": "slu-wbb",
+      "home": {
+        "name": "Saint Louis",
+        "score": 61
+      },
+      "away": {
+        "name": "SE Missouri",
+        "score": 73
+      },
+      "attendance": 404,
+      "capturedAt": "2026-11-22T16:12:55.668Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    }
+  ]
+}

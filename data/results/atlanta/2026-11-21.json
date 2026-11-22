@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-gt-football-401858310",
+      "metroId": "atlanta",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bobby-dodd-stadium",
+      "homeTeamId": "gt-football",
+      "home": {
+        "name": "Georgia Tech",
+        "score": 29
+      },
+      "away": {
+        "name": "Wake Forest",
+        "score": 50
+      },
+      "attendance": 45296,
+      "capturedAt": "2026-11-22T16:12:47.251Z",
+      "duration": {
+        "minutes": 205,
+        "kind": "estimated"
+      },
+      "startedAt": "12:07"
+    },
+    {
+      "eventId": "2026-11-21-espn-ksu-football-401871078",
+      "metroId": "atlanta",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fifth-third-stadium",
+      "homeTeamId": "ksu-football",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 35
+      },
+      "away": {
+        "name": "FIU",
+        "score": 24
+      },
+      "attendance": 6672,
+      "capturedAt": "2026-11-22T16:12:47.251Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "15:03"
+    }
+  ]
+}

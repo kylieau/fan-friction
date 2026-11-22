@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-bc-football-401858309",
+      "metroId": "boston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alumni-stadium",
+      "homeTeamId": "bc-football",
+      "home": {
+        "name": "Boston College",
+        "score": 27
+      },
+      "away": {
+        "name": "Syracuse",
+        "score": 15
+      },
+      "attendance": 35109,
+      "capturedAt": "2026-11-22T16:12:49.195Z",
+      "duration": {
+        "minutes": 217,
+        "kind": "estimated"
+      },
+      "startedAt": "12:03"
+    },
+    {
+      "eventId": "2026-11-21-espn-bruins-401892758",
+      "metroId": "boston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 7
+      },
+      "away": {
+        "name": "Capitals",
+        "score": 5
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-22T16:12:49.195Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    },
+    {
+      "eventId": "2026-11-21-espn-harvard-football-401867844",
+      "metroId": "boston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fenway-park",
+      "homeTeamId": "harvard-football",
+      "home": {
+        "name": "Harvard",
+        "score": 17
+      },
+      "away": {
+        "name": "Yale",
+        "score": 20
+      },
+      "attendance": 32104,
+      "capturedAt": "2026-11-22T16:12:49.195Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "15:34"
+    },
+    {
+      "eventId": "2026-11-21-espn-revolution-401933733",
+      "metroId": "boston",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gillette-stadium",
+      "homeTeamId": "revolution",
+      "home": {
+        "name": "Revolution",
+        "score": 2
+      },
+      "away": {
+        "name": "Union",
+        "score": 0
+      },
+      "capturedAt": "2026-11-22T16:12:49.195Z"
+    }
+  ]
+}

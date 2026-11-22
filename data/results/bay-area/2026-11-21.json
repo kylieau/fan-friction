@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-cal-football-401858308",
+      "metroId": "bay-area",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "california-memorial-stadium",
+      "homeTeamId": "cal-football",
+      "home": {
+        "name": "California",
+        "score": 28
+      },
+      "away": {
+        "name": "Stanford",
+        "score": 44
+      },
+      "attendance": 54283,
+      "capturedAt": "2026-11-22T16:12:47.539Z",
+      "duration": {
+        "minutes": 211,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-21-espn-sharks-401892767",
+      "metroId": "bay-area",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 4
+      },
+      "away": {
+        "name": "Kraken",
+        "score": 3
+      },
+      "attendance": 17435,
+      "capturedAt": "2026-11-22T16:12:47.539Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "22:09"
+    },
+    {
+      "eventId": "2026-11-21-espn-sjsu-football-401864544",
+      "metroId": "bay-area",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cefcu-stadium",
+      "homeTeamId": "sjsu-football",
+      "home": {
+        "name": "San José St",
+        "score": 22
+      },
+      "away": {
+        "name": "UNLV",
+        "score": 24
+      },
+      "attendance": 8187,
+      "capturedAt": "2026-11-22T16:12:47.539Z",
+      "duration": {
+        "minutes": 201,
+        "kind": "estimated"
+      },
+      "startedAt": "19:00"
+    },
+    {
+      "eventId": "2026-11-21-espn-sjsu-wbb-401927840",
+      "metroId": "bay-area",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "provident-event-center",
+      "homeTeamId": "sjsu-wbb",
+      "home": {
+        "name": "San José St",
+        "score": 61
+      },
+      "away": {
+        "name": "Long Beach St",
+        "score": 59
+      },
+      "attendance": 336,
+      "capturedAt": "2026-11-22T16:12:47.539Z",
+      "duration": {
+        "minutes": 119,
+        "kind": "estimated"
+      },
+      "startedAt": "14:04"
+    }
+  ]
+}

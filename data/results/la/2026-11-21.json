@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-usc-football-401858534",
+      "metroId": "la",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "coliseum",
+      "homeTeamId": "usc-football",
+      "home": {
+        "name": "USC",
+        "score": 35
+      },
+      "away": {
+        "name": "Maryland",
+        "score": 21
+      },
+      "attendance": 53694,
+      "capturedAt": "2026-11-22T16:12:45.466Z",
+      "duration": {
+        "minutes": 191,
+        "kind": "estimated"
+      },
+      "startedAt": "18:24"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-gmu-mbb-401918995",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "eaglebank-arena",
+      "homeTeamId": "gmu-mbb",
+      "home": {
+        "name": "George Mason",
+        "score": 73
+      },
+      "away": {
+        "name": "South Florida",
+        "score": 62
+      },
+      "attendance": 3604,
+      "capturedAt": "2026-11-22T16:12:54.607Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-maryland-wbb-401918918",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-wbb",
+      "home": {
+        "name": "Maryland",
+        "score": 109
+      },
+      "away": {
+        "name": "Morgan St",
+        "score": 39
+      },
+      "attendance": 5093,
+      "capturedAt": "2026-11-22T16:12:54.607Z",
+      "duration": {
+        "minutes": 101,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    },
+    {
+      "eventId": "2026-11-21-espn-spirit-401934232",
+      "metroId": "washington-dc",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "audi-field",
+      "homeTeamId": "spirit",
+      "home": {
+        "name": "Spirit",
+        "score": 1
+      },
+      "away": {
+        "name": "Current",
+        "score": 2
+      },
+      "attendance": 19365,
+      "capturedAt": "2026-11-22T16:12:54.607Z"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-sacramento-kings-401910028",
+      "metroId": "sacramento",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 97
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 96
+      },
+      "attendance": 15416,
+      "capturedAt": "2026-11-22T16:12:52.045Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "22:11"
+    },
+    {
+      "eventId": "2026-11-21-espn-sacramento-republic-401935130",
+      "metroId": "sacramento",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "heart-health-park",
+      "homeTeamId": "sacramento-republic",
+      "home": {
+        "name": "Republic FC",
+        "score": 1
+      },
+      "away": {
+        "name": "Louisville",
+        "score": 1
+      },
+      "attendance": 11569,
+      "capturedAt": "2026-11-22T16:12:52.045Z"
+    },
+    {
+      "eventId": "2026-11-21-espn-uc-davis-football-401868083",
+      "metroId": "sacramento",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "uc-davis-health-stadium",
+      "homeTeamId": "uc-davis-football",
+      "home": {
+        "name": "UC Davis",
+        "score": 44
+      },
+      "away": {
+        "name": "Cal Poly",
+        "score": 43
+      },
+      "attendance": 9274,
+      "capturedAt": "2026-11-22T16:12:52.045Z",
+      "duration": {
+        "minutes": 220,
+        "kind": "estimated"
+      },
+      "startedAt": "16:03"
+    }
+  ]
+}

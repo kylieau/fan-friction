@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-duquesne-wbb-401915767",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 81
+      },
+      "away": {
+        "name": "Stony Brook",
+        "score": 65
+      },
+      "attendance": 602,
+      "capturedAt": "2026-11-22T16:12:49.840Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-pitt-wbb-401913749",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "petersen-events-center",
+      "homeTeamId": "pitt-wbb",
+      "home": {
+        "name": "Pitt",
+        "score": 93
+      },
+      "away": {
+        "name": "Canisius",
+        "score": 55
+      },
+      "attendance": 669,
+      "capturedAt": "2026-11-22T16:12:49.840Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-robert-morris-football-401867915",
+      "metroId": "pittsburgh",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "joe-walton-stadium",
+      "homeTeamId": "robert-morris-football",
+      "home": {
+        "name": "Robert Morris",
+        "score": 22
+      },
+      "away": {
+        "name": "Long Island",
+        "score": 26
+      },
+      "attendance": 1150,
+      "capturedAt": "2026-11-22T16:12:49.840Z",
+      "duration": {
+        "minutes": 215,
+        "kind": "estimated"
+      },
+      "startedAt": "11:58"
+    }
+  ]
+}

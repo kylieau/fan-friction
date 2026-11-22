@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-ottawa-senators-401892761",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 4
+      },
+      "away": {
+        "name": "Kings",
+        "score": 2
+      },
+      "attendance": 16025,
+      "capturedAt": "2026-11-22T16:12:54.215Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    }
+  ]
+}

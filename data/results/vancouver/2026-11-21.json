@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-vancouver-canucks-401892766",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 4
+      },
+      "away": {
+        "name": "Wild",
+        "score": 3
+      },
+      "attendance": 17145,
+      "note": "SO",
+      "capturedAt": "2026-11-22T16:12:51.816Z",
+      "duration": {
+        "minutes": 165,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    },
+    {
+      "eventId": "2026-11-21-ht-vancouver-giants-1023332",
+      "metroId": "vancouver",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "langley-events-centre",
+      "homeTeamId": "vancouver-giants",
+      "home": {
+        "name": "Giants",
+        "score": 4
+      },
+      "away": {
+        "name": "Cougars",
+        "score": 3
+      },
+      "attendance": 3613,
+      "note": "OT",
+      "capturedAt": "2026-11-22T16:12:51.816Z"
+    }
+  ]
+}

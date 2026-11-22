@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-asu-football-401856870",
+      "metroId": "phoenix",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mountain-america-stadium",
+      "homeTeamId": "asu-football",
+      "home": {
+        "name": "Arizona St",
+        "score": 27
+      },
+      "away": {
+        "name": "Oklahoma St",
+        "score": 30
+      },
+      "attendance": 51154,
+      "note": "OT",
+      "capturedAt": "2026-11-22T16:12:51.591Z",
+      "duration": {
+        "minutes": 228,
+        "kind": "estimated"
+      },
+      "startedAt": "22:31"
+    }
+  ]
+}

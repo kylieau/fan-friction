@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-sixers-401910023",
+      "metroId": "philadelphia",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 132
+      },
+      "away": {
+        "name": "Bucks",
+        "score": 129
+      },
+      "attendance": 21043,
+      "capturedAt": "2026-11-22T16:12:49.513Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "13:10"
+    },
+    {
+      "eventId": "2026-11-21-espn-villanova-football-401868021",
+      "metroId": "philadelphia",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "villanova-stadium",
+      "homeTeamId": "villanova-football",
+      "home": {
+        "name": "Villanova",
+        "score": 34
+      },
+      "away": {
+        "name": "Georgetown",
+        "score": 13
+      },
+      "attendance": 4097,
+      "capturedAt": "2026-11-22T16:12:49.513Z",
+      "duration": {
+        "minutes": 186,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    },
+    {
+      "eventId": "2026-11-21-espn-villanova-mbb-401921776",
+      "metroId": "philadelphia",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "villanova-mbb",
+      "home": {
+        "name": "Villanova",
+        "score": 79
+      },
+      "away": {
+        "name": "Michigan Wolverines",
+        "score": 73
+      },
+      "attendance": 11625,
+      "capturedAt": "2026-11-22T16:12:49.513Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

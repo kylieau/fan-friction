@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-michigan-football-401858528",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michigan-stadium",
+      "homeTeamId": "michigan-football",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 18
+      },
+      "away": {
+        "name": "UCLA",
+        "score": 16
+      },
+      "attendance": 109618,
+      "note": "3OT",
+      "capturedAt": "2026-11-22T16:12:48.555Z",
+      "duration": {
+        "minutes": 222,
+        "kind": "estimated"
+      },
+      "startedAt": "15:40"
+    },
+    {
+      "eventId": "2026-11-21-espn-red-wings-401892762",
+      "metroId": "detroit",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 2
+      },
+      "away": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "attendance": 19515,
+      "capturedAt": "2026-11-22T16:12:48.555Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

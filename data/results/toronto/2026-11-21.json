@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-maple-leafs-401892759",
+      "metroId": "toronto",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "maple-leafs",
+      "home": {
+        "name": "Maple Leafs",
+        "score": 3
+      },
+      "away": {
+        "name": "Blue Jackets",
+        "score": 4
+      },
+      "attendance": 18841,
+      "capturedAt": "2026-11-22T16:12:53.302Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    },
+    {
+      "eventId": "2026-11-21-ht-marlies-1029363",
+      "metroId": "toronto",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "scotiabank-arena",
+      "homeTeamId": "marlies",
+      "home": {
+        "name": "Marlies",
+        "score": 1
+      },
+      "away": {
+        "name": "Wolves",
+        "score": 2
+      },
+      "attendance": 7961,
+      "note": "SO",
+      "capturedAt": "2026-11-22T16:12:53.302Z"
+    }
+  ]
+}

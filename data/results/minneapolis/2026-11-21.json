@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-gophers-football-401858530",
+      "metroId": "minneapolis",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "huntington-bank-stadium",
+      "homeTeamId": "gophers-football",
+      "home": {
+        "name": "Minnesota",
+        "score": 20
+      },
+      "away": {
+        "name": "Northwestern",
+        "score": 17
+      },
+      "attendance": 39371,
+      "capturedAt": "2026-11-22T16:12:53.545Z",
+      "duration": {
+        "minutes": 196,
+        "kind": "estimated"
+      },
+      "startedAt": "12:01"
+    },
+    {
+      "eventId": "2026-11-21-espn-timberwolves-401910026",
+      "metroId": "minneapolis",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 104
+      },
+      "away": {
+        "name": "Memphis Grizzlies",
+        "score": 95
+      },
+      "capturedAt": "2026-11-22T16:12:53.545Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

@@ -1,0 +1,4139 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "metroName": "Raleigh–Durham",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-22",
+  "capturedAt": "2026-11-22T16:12:18.578Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-22",
+    "through": "2026-12-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 26
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 91
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 25
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-22-sa-goduke-com-24938",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Duke vs. Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-tm-G5eVZ_kmgHm-g",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Carolina Panthers v Baltimore Ravens",
+      "place": {
+        "type": "venue",
+        "venueId": "bank-of-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Carolina Panthers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_kmgHm-g"
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAZabp",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "kind": "game",
+      "title": "North Carolina Tar Heels Womens Volleyball vs. Florida State Seminoles Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "North Carolina Tar Heels Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZabp",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-22-espn-nc-state-wbb-401913739",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "game",
+      "title": "NC State vs. Coastal",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "coastal",
+        "awayOpponent": "coastal"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5522,
+        "low": 5522,
+        "high": 5522,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 13 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-Z7r9jZ1AAZxog",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxog",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-22-sa-goheels-com-27690",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "kind": "game",
+      "title": "North Carolina vs. UNCW",
+      "place": {
+        "type": "venue",
+        "venueId": "dorrance-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "men"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-22-tm-G5eVZ_2MyKNsm",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyKNsm",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5eVZ_CM0Kt21",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "kind": "show",
+      "title": "for KING & COUNTRY",
+      "officialTitle": "for KING + COUNTRY'S A DRUMMER BOY CHRISTMAS",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "for KING & COUNTRY",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172rR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CM0Kt21",
+      "expectedDraw": {
+        "count": 12540,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5eVZbgQ1U0m8",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZbgQ1U0m8",
+      "expectedDraw": {
+        "count": 11083,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-22-tm-G5eVZ_epWzySK",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Gabriel Iglesias: The 1976 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Gabriel Iglesias",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_epWzySK"
+    },
+    {
+      "id": "2026-11-23-tm-Z7r9jZ1AAZ-rv",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-rv",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-23-espn-nccu-wbb-401925624",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "17:00",
+      "kind": "game",
+      "title": "NC Central vs. Elon",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-wbb",
+        "away": "elon",
+        "awayOpponent": "elon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 378,
+        "low": 145,
+        "high": 685,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-G5eVZ_2MyfNwu",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyfNwu",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-23-tm-G5eVZ_2pXcs9c",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXcs9c",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-23-espn-nccu-mbb-401927353",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "NC Central vs. Carolina U",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-mbb",
+        "away": "carolina-u",
+        "awayOpponent": "carolina-u"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 556,
+        "low": 310,
+        "high": 561,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-espn-unc-mbb-401913102",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "kind": "game",
+      "title": "North Carolina vs. Monmouth",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "monmouth",
+        "awayOpponent": "monmouth"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15216,
+        "low": 15100,
+        "high": 16969,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-Z7r9jZ1AAZxoN",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-24",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxoN",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-24-tm-G5eVZ_2My4Swf",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-24",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2My4Swf",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-24-espn-unc-wbb-401906094",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. Gardner-Webb",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "gardner-webb",
+        "awayOpponent": "gardner-webb"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2659,
+        "low": 2453,
+        "high": 3089,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-sa-gopack-com-24636",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "kind": "game",
+      "title": "NC State vs. Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-25-espn-duke-mbb-401909568",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Duke vs. UConn",
+      "place": {
+        "type": "venue",
+        "venueId": "t-mobile-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-mbb",
+        "away": "uconn",
+        "awayOpponent": "uconn"
+      },
+      "neutralSite": true,
+      "rank": {
+        "home": 5,
+        "away": 3
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAZxo-",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxo-",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5eVZ_2MypSSo",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MypSSo",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-25-espn-nc-state-mbb-401918960",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. Norfolk St",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "norfolk-st",
+        "awayOpponent": "norfolk-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13471,
+        "low": 12242,
+        "high": 14588,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5eVZ_2pXRo9X",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Chicago Bulls(Emirates NBA Cup Group Game)",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXRo9X",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5eVZ_CrtbhO8",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Macon Mayhem",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CrtbhO8",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5eVZ_o5q4wHC",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Greensboro Gargoyles vs Norfolk Admirals - Gobble Wobble",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Greensboro Gargoyles",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_o5q4wHC"
+    },
+    {
+      "id": "2026-11-25-tm-Z7r9jZ1AAZfAA",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina Tar Heels Womens Volleyball vs. Louisville Cardinals Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "North Carolina Tar Heels Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZfAA",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5eVZ_G2WwL_n",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WwL_n",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_G2WSL_H",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WSL_H",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_oC3Rbam",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Hershey Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3Rbam",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAZ-OY",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-OY",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_2My9SSJ",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2My9SSJ",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-11-27-sa-goheels-com-27691",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "kind": "game",
+      "title": "North Carolina vs. Washington",
+      "place": {
+        "type": "venue",
+        "venueId": "dorrance-field"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer",
+        "level": "college",
+        "division": "women"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-27-espn-unc-wbb-401906095",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "North Carolina vs. Army",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "army",
+        "awayOpponent": "army"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2920,
+        "low": 2417,
+        "high": 3681,
+        "fromCrowds": true,
+        "games": 28,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 28 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_f_XR7W7",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Trey Songz",
+      "officialTitle": "R&B Music Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Trey Songz",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175Mv0",
+        "K8vZ917usKf",
+        "K8vZ9175Rj0",
+        "K8vZ9171jL0",
+        "K8vZ91715F0",
+        "K8vZ917fHy7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_f_XR7W7",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_oIZXcZt",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Dick Vitale Invitational: West Virginia vs North Carolina",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Dick Vitale Invitational",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oIZXcZt"
+    },
+    {
+      "id": "2026-11-27-tm-G5eVZ_G2WVRQ0",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WVRQ0",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-28-espn-nc-state-mbb-401918961",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "kind": "game",
+      "title": "NC State vs. Elon",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "elon",
+        "awayOpponent": "elon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15411,
+        "low": 14279,
+        "high": 16886,
+        "fromCrowds": true,
+        "games": 20,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 20 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-unc-football-401858313",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "kind": "game",
+      "title": "North Carolina vs. NC State",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "kenan-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "unc-football",
+        "away": "nc-state-football",
+        "awayOpponent": "nc-state"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 44642,
+        "low": 43226,
+        "high": 44642,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 6 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_f9pmpR1",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "12:30",
+      "kind": "game",
+      "title": "2026 MLS Playoffs Round 1 Game 2: Charlotte FC v Chicago Fire FC",
+      "place": {
+        "type": "venue",
+        "venueId": "bank-of-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "soccer"
+      },
+      "performer": "Charlotte FC",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_f9pmpR1"
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_G2WMThf",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WMThf",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-28-sa-goduke-com-24940",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Duke vs. Virginia Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-sa-goduke-com-24833",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "15:30",
+      "kind": "game",
+      "title": "Wake Forest vs. Duke",
+      "place": {
+        "type": "venue",
+        "venueId": "allegacy-financial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_oC3YI16",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Hershey Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3YI16",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv1A8vPfOGACeIKU",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "special",
+      "title": "VSU Men's Basketball vs Elizabeth City State University",
+      "place": {
+        "type": "venue",
+        "venueId": "virginia-state-university-multi-purpose-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "VSU Men's Basketball vs Elizabeth City State University",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A8vPfOGACeIKU"
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAZ-q0",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-q0",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_2MybSSM",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MybSSM",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_2pX-vf_",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Brooklyn Nets",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pX-vf_",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_CrtbDO4",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Roanoke Rail Yard Dawgs",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CrtbDO4",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-espn-hurricanes-401892816",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Senators",
+      "broadcast": "CARNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18445,
+        "low": 18244,
+        "high": 18671,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_G2Wy2hn",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2Wy2hn",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5eVZ_K1nFexp",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Keyshia Cole",
+      "officialTitle": "Ladies Love R&B",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Keyshia Cole",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175z97",
+        "K8vZ9171zUV",
+        "K8vZ9171LWf",
+        "K8vZ9175fe0",
+        "K8vZ917ClIV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_K1nFexp",
+      "expectedDraw": {
+        "count": 12540,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A7-Nb3",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-28",
+      "start": null,
+      "kind": "game",
+      "title": "UNC Charlotte 49ers Football vs. Navy Midshipmen Football",
+      "place": {
+        "type": "venue",
+        "venueId": "jerry-richardson-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "Charlotte 49ers Football",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-Nb3"
+    },
+    {
+      "id": "2026-11-29-sa-goheels-com-27116",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-29",
+      "start": "04:00",
+      "kind": "game",
+      "title": "North Carolina vs. Brown",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "Brown",
+        "awayOpponent": "brown"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 3139,
+        "low": 2417,
+        "high": 4600,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5eVZ_G2WB2hW",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-29",
+      "start": "12:00",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WB2hW",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-29-espn-unc-wbb-401906096",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "kind": "game",
+      "title": "North Carolina vs. Brown",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "brown",
+        "awayOpponent": "brown"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3139,
+        "low": 2417,
+        "high": 4600,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 15 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5eVZ_2MyQdVk",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyQdVk",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5eVZ_1KGlrQZ",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amy Grant",
+      "officialTitle": "Christmas Together with Amy Grant | Official Ticket + Hotel Packages",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amy Grant",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171uaV",
+        "K8vZ9171fEV",
+        "K8vZ91714R0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_1KGlrQZ",
+      "expectedDraw": {
+        "count": 4902,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-tm-Z7r9jZ1AAZ--x",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-30",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ--x",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-11-30-tm-G5eVZ_1KGirQ3",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amy Grant",
+      "officialTitle": "Christmas Together with Amy Grant | Official Ticket + Hotel Packages",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amy Grant",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171uaV",
+        "K8vZ9171fEV",
+        "K8vZ91714R0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_1KGirQ3",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-tm-G5eVZ_2pXY-b6",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Hornets vs. Washington Wizards",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Charlotte Hornets",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2pXY-b6",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-01-espn-nccu-wbb-401925626",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "NC Central vs. Carolina U",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-wbb",
+        "away": "carolina-u",
+        "awayOpponent": "carolina-u"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 382,
+        "low": 278,
+        "high": 725,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-G5eVZ_2MyhdVm",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyhdVm",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1AAZ-qd",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-qd",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-01-espn-nc-state-mbb-401918962",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "NC State vs. South Carolina",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-mbb",
+        "away": "south-carolina",
+        "awayOpponent": "south-carolina"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 12976,
+        "low": 12248,
+        "high": 13676,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-nccu-mbb-401927354",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "game",
+      "title": "NC Central vs. Toccoa Falls",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-mbb",
+        "away": "toccoa-falls",
+        "awayOpponent": "toccoa-falls"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 195,
+        "low": 158,
+        "high": 364,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-unc-mbb-401912712",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "game",
+      "title": "North Carolina vs. Arkansas",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "arkansas",
+        "awayOpponent": "arkansas"
+      },
+      "rank": {
+        "away": 20
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18535,
+        "low": 17585,
+        "high": 18853,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAZ-OE",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-02",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-OE",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5eVZ_2MyjKg6",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-02",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyjKg6",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-12-02-espn-unc-wbb-401906097",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-02",
+      "start": "19:15",
+      "kind": "game",
+      "title": "North Carolina vs. LSU",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "lsu",
+        "awayOpponent": "lsu"
+      },
+      "rank": {
+        "home": 24,
+        "away": 9
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2249,
+        "low": 2037,
+        "high": 2533,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5eVZ_G2WHLjj",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WHLjj",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAZ-rd",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZ-rd",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5eVZ_2MyqKgj",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyqKgj",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-12-03-espn-duke-wbb-401915911",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duke vs. South Carolina",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-wbb",
+        "away": "south-carolina",
+        "awayOpponent": "south-carolina"
+      },
+      "rank": {
+        "home": 5,
+        "away": 1
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2493,
+        "low": 2131,
+        "high": 3682,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-hurricanes-401892848",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Blue Jackets",
+      "broadcast": "CBJNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "blue-jackets",
+        "awayOpponent": "blue-jackets"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18644,
+        "low": 18256,
+        "high": 18644,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5eVZ_622cQ3e",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Leanne Morgan: THE TIME OF OUR LIVES TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "spectrum-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Leanne Morgan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_622cQ3e"
+    },
+    {
+      "id": "2026-12-03-tm-G5eVZ_GS7Ah_Z",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS7Ah_Z",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5eVZ_G2WWRj-",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WWRj-",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5eVZ_KMhDJ8Y",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Rock Orchestra",
+      "officialTitle": "The Rock Orchestra By Candlelight",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Rock Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hVUV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_KMhDJ8Y",
+      "expectedDraw": {
+        "count": 6202,
+        "note": "57% of the building's listed size (no concert figure on file), the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_GS7kh_Q",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS7kh_Q",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAZxoJ",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxoJ",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_2MyrNgi",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyrNgi",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-04-espn-duke-mbb-401909569",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Duke vs. Harvard",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-mbb",
+        "away": "harvard",
+        "awayOpponent": "harvard"
+      },
+      "rank": {
+        "home": 5
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_Crt_5Or",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Roanoke Rail Yard Dawgs",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_Crt_5Or",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_GS76h_P",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS76h_P",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_oC3sz1O",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Colorado Eagles",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3sz1O",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5eVZ_G2WXRjB",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WXRjB",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_GS7Fh_w",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "10:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS7Fh_w",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_4p3na2O",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "12:00",
+      "kind": "game",
+      "title": "ACC Football Championship Game: Wake Forest vs Miami",
+      "place": {
+        "type": "venue",
+        "venueId": "bank-of-america-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "performer": "ACC Football Championship Game",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_4p3na2O"
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_G2WTTq1",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2WTTq1",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-05-espn-nccu-mbb-401922286",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "game",
+      "title": "NC Central vs. SC Upstate",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdougald-mclendon-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nccu-mbb",
+        "away": "sc-upstate",
+        "awayOpponent": "sc-upstate"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 704,
+        "low": 363,
+        "high": 1421,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1F7Z_4FoQFZd8ev",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "VSU Women's Basketball vs Elizabeth City State University",
+      "place": {
+        "type": "venue",
+        "venueId": "virginia-state-university-multi-purpose-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "VSU Women's Basketball vs Elizabeth City State University",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1F7Z_4FoQFZd8ev"
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_GS71lQ7",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "14:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS71lQ7",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAZxob",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxob",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_2MyLNUb",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyLNUb",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_CrtQ5On",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Fayetteville Marksmen vs. Knoxville Ice Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "crown-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Fayetteville Marksmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_CrtQ5On",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_oC3SF51",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Charlotte Checkers vs. Colorado Eagles",
+      "place": {
+        "type": "venue",
+        "venueId": "bojangles-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Charlotte Checkers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_oC3SF51",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_GS7ah_D",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS7ah_D",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-espn-hurricanes-401892866",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hurricanes vs. Maple Leafs",
+      "broadcast": "CARNHL",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "hurricanes",
+        "away": "maple-leafs",
+        "awayOpponent": "maple-leafs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18722,
+        "low": 18248,
+        "high": 18750,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5eVZ_G2XZTqp",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2XZTqp",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-06-sa-goduke-com-25768",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "02:00",
+      "kind": "game",
+      "title": "Duke vs. Virginia Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "duke-wbb",
+        "away": "Virginia Tech",
+        "awayOpponent": "virginia-tech"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 3078,
+        "low": 2526,
+        "high": 3954,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5eVZ_GS75lQj",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS75lQj",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5eVZ_G2X7Lr-",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "12:00",
+      "kind": "special",
+      "title": "'Twas the Night Before... by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "dpac"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Circus & Specialty Acts"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_G2X7Lr-",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-06-espn-duke-wbb-401918258",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Duke vs. Virginia Tech",
+      "broadcast": "CW",
+      "place": {
+        "type": "venue",
+        "venueId": "cameron-indoor-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "duke-wbb",
+        "away": "virginia-tech",
+        "awayOpponent": "virginia-tech"
+      },
+      "rank": {
+        "home": 5
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3078,
+        "low": 2526,
+        "high": 3954,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 11 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-espn-unc-wbb-401906098",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "North Carolina vs. Elon",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "carmichael-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-wbb",
+        "away": "elon",
+        "awayOpponent": "elon"
+      },
+      "rank": {
+        "home": 24
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2415,
+        "low": 2381,
+        "high": 2622,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-espn-unc-mbb-401902284",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "kind": "game",
+      "title": "North Carolina vs. Butler",
+      "broadcast": "ESPN2",
+      "place": {
+        "type": "venue",
+        "venueId": "dean-smith-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "unc-mbb",
+        "away": "butler-mbb",
+        "awayOpponent": "butler"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16784,
+        "low": 16774,
+        "high": 17394,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5eVZ_GS7GDQg",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Disney On Ice presents Spotlight Magic!",
+      "place": {
+        "type": "venue",
+        "venueId": "first-horizon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Ice Shows"
+      },
+      "performer": "Disney On Ice presents Spotlight Magic!",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_GS7GDQg",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAZxo0",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "16:30",
+      "kind": "special",
+      "title": "North Carolina Chinese Lantern Festival",
+      "place": {
+        "type": "venue",
+        "venueId": "koka-booth-amphitheatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "North Carolina Chinese Lantern Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZxo0",
+      "occasionFacts": {
+        "run": 14
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5eVZ_2MyOSM3",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "kind": "special",
+      "title": "FestiBull of Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "durham-bulls-athletic-park"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "FestiBull of Lights",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_2MyOSM3",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-06-espn-nc-state-wbb-401913741",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "18:00",
+      "kind": "game",
+      "title": "NC State vs. Davidson",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "reynolds-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "nc-state-wbb",
+        "away": "davidson",
+        "awayOpponent": "davidson"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5500,
+        "low": 5145,
+        "high": 5500,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5eVZ_692moJh",
+      "metroId": "raleigh-durham",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Leanne Morgan: THE TIME OF OUR LIVES TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "lenovo-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Leanne Morgan",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5eVZ_692moJh"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-22-sa-goduke-com-24938",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5eVZ_kmgHm-g",
+      "date": "2026-11-22",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAZabp",
+      "date": "2026-11-22",
+      "start": "13:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-espn-nc-state-wbb-401913739",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "FestiBull of Lights and North Carolina Chinese Lantern… 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5522,
+        "low": 5522,
+        "high": 5522
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-Z7r9jZ1AAZxog",
+      "date": "2026-11-22",
+      "start": "16:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Gabriel Iglesias · The 1976 Tour 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-sa-goheels-com-27690",
+      "date": "2026-11-22",
+      "start": "17:00",
+      "read": {
+        "rating": 2.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5eVZ_2MyKNsm",
+      "date": "2026-11-22",
+      "start": "17:30",
+      "read": {
+        "rating": 2.9,
+        "friction": "Moderate",
+        "why": "Gabriel Iglesias · The 1976 Tour 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5eVZ_CM0Kt21",
+      "date": "2026-11-22",
+      "start": "19:00",
+      "draw": {
+        "count": 12540
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5eVZbgQ1U0m8",
+      "date": "2026-11-22",
+      "start": "19:30",
+      "draw": {
+        "count": 11083
+      }
+    },
+    {
+      "eventId": "2026-11-22-tm-G5eVZ_epWzySK",
+      "date": "2026-11-22",
+      "start": "20:00",
+      "read": {
+        "rating": 2.9,
+        "friction": "Low",
+        "why": "FestiBull of Lights 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-Z7r9jZ1AAZ-rv",
+      "date": "2026-11-23",
+      "start": "16:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Monmouth at North Carolina (MBB) and FestiBull of Lights 18 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-nccu-wbb-401925624",
+      "date": "2026-11-23",
+      "start": "17:00",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 378,
+        "low": 145,
+        "high": 685
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-G5eVZ_2MyfNwu",
+      "date": "2026-11-23",
+      "start": "17:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Monmouth at North Carolina (MBB) 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-G5eVZ_2pXcs9c",
+      "date": "2026-11-23",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-23-espn-nccu-mbb-401927353",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 556,
+        "low": 310,
+        "high": 561
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-unc-mbb-401913102",
+      "date": "2026-11-23",
+      "start": "20:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "FestiBull of Lights 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15216,
+        "low": 15100,
+        "high": 16969
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-Z7r9jZ1AAZxoN",
+      "date": "2026-11-24",
+      "start": "16:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "FestiBull of Lights 19 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-G5eVZ_2My4Swf",
+      "date": "2026-11-24",
+      "start": "17:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "North Carolina Chinese Lantern… 19 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-24-espn-unc-wbb-401906094",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2659,
+        "low": 2453,
+        "high": 3089
+      }
+    },
+    {
+      "eventId": "2026-11-25-sa-gopack-com-24636",
+      "date": "2026-11-25",
+      "start": "13:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-duke-mbb-401909568",
+      "date": "2026-11-25",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAZxo-",
+      "date": "2026-11-25",
+      "start": "16:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Norfolk St at NC State (MBB) and FestiBull of Lights 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5eVZ_2MypSSo",
+      "date": "2026-11-25",
+      "start": "17:30",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 5:30 pm start.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-nc-state-mbb-401918960",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "FestiBull of Lights and North Carolina Chinese Lantern… 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13471,
+        "low": 12242,
+        "high": 14588
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5eVZ_2pXRo9X",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-G5eVZ_CrtbhO8",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-G5eVZ_o5q4wHC",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-Z7r9jZ1AAZfAA",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-G5eVZ_G2WwL_n",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_G2WSL_H",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_oC3Rbam",
+      "date": "2026-11-27",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAZ-OY",
+      "date": "2026-11-27",
+      "start": "16:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Moderate",
+        "why": "R&B Music Experience and FestiBull of Lights 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_2My9SSJ",
+      "date": "2026-11-27",
+      "start": "17:30",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "R&B Music Experience 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-sa-goheels-com-27691",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-unc-wbb-401906095",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2920,
+        "low": 2417,
+        "high": 3681
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_f_XR7W7",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "FestiBull of Lights and North Carolina Chinese Lantern… 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_oIZXcZt",
+      "date": "2026-11-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-G5eVZ_G2WVRQ0",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-nc-state-mbb-401918961",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "NC State at North Carolina (FB) 20 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15411,
+        "low": 14279,
+        "high": 16886
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-unc-football-401858313",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "Elon at NC State (MBB) 20 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 44642,
+        "low": 43226,
+        "high": 44642
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_f9pmpR1",
+      "date": "2026-11-28",
+      "start": "12:30"
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_G2WMThf",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-goduke-com-24940",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-goduke-com-24833",
+      "date": "2026-11-28",
+      "start": "15:30"
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_oC3YI16",
+      "date": "2026-11-28",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-vv1A8vPfOGACeIKU",
+      "date": "2026-11-28",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAZ-q0",
+      "date": "2026-11-28",
+      "start": "16:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Heavy",
+        "why": "NC State at North Carolina (FB) and Senators at Hurricanes 19 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_2MybSSM",
+      "date": "2026-11-28",
+      "start": "17:30",
+      "read": {
+        "rating": 4.2,
+        "friction": "Moderate",
+        "why": "Senators at Hurricanes and NC State at North Carolina (FB) 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_2pX-vf_",
+      "date": "2026-11-28",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_CrtbDO4",
+      "date": "2026-11-28",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-28-espn-hurricanes-401892816",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 4.2,
+        "friction": "Low",
+        "why": "FestiBull of Lights 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18445,
+        "low": 18244,
+        "high": 18671
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_G2Wy2hn",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 4.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5eVZ_K1nFexp",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "draw": {
+        "count": 12540
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A7-Nb3",
+      "date": "2026-11-28",
+      "start": null
+    },
+    {
+      "eventId": "2026-11-29-sa-goheels-com-27116",
+      "date": "2026-11-29",
+      "start": "04:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3139,
+        "low": 2417,
+        "high": 4600
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5eVZ_G2WB2hW",
+      "date": "2026-11-29",
+      "start": "12:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-unc-wbb-401906096",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3139,
+        "low": 2417,
+        "high": 4600
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5eVZ_2MyQdVk",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5eVZ_1KGlrQZ",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "draw": {
+        "count": 4902
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-Z7r9jZ1AAZ--x",
+      "date": "2026-11-30",
+      "start": "16:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Christmas Together with Amy Gra… 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-G5eVZ_1KGirQ3",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "North Carolina Chinese Lantern… 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-G5eVZ_2pXY-b6",
+      "date": "2026-11-30",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-01-espn-nccu-wbb-401925626",
+      "date": "2026-12-01",
+      "start": "17:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 382,
+        "low": 278,
+        "high": 725
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-G5eVZ_2MyhdVm",
+      "date": "2026-12-01",
+      "start": "17:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Arkansas at North Carolina (MBB) and South Carolina at NC State (MBB) 10 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1AAZ-qd",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Arkansas at North Carolina (MBB) and South Carolina at NC State (MBB) 18 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-nc-state-mbb-401918962",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Arkansas at North Carolina (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 12976,
+        "low": 12248,
+        "high": 13676
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-nccu-mbb-401927354",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 195,
+        "low": 158,
+        "high": 364
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-unc-mbb-401912712",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "South Carolina at NC State (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18535,
+        "low": 17585,
+        "high": 18853
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAZ-OE",
+      "date": "2026-12-02",
+      "start": "16:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "FestiBull of Lights 19 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5eVZ_2MyjKg6",
+      "date": "2026-12-02",
+      "start": "17:30",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "North Carolina Chinese Lantern… 19 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-unc-wbb-401906097",
+      "date": "2026-12-02",
+      "start": "19:15",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2249,
+        "low": 2037,
+        "high": 2533
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5eVZ_G2WHLjj",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAZ-rd",
+      "date": "2026-12-03",
+      "start": "16:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Blue Jackets at Hurricanes and FestiBull of Lights 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-G5eVZ_2MyqKgj",
+      "date": "2026-12-03",
+      "start": "17:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Blue Jackets at Hurricanes 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-duke-wbb-401915911",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2493,
+        "low": 2131,
+        "high": 3682
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-hurricanes-401892848",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "FestiBull of Lights 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18644,
+        "low": 18256,
+        "high": 18644
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-G5eVZ_622cQ3e",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-tm-G5eVZ_GS7Ah_Z",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-tm-G5eVZ_G2WWRj-",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-G5eVZ_KMhDJ8Y",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "draw": {
+        "count": 6202
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_GS7kh_Q",
+      "date": "2026-12-04",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAZxoJ",
+      "date": "2026-12-04",
+      "start": "16:30",
+      "read": {
+        "rating": 2.1,
+        "friction": "Moderate",
+        "why": "FestiBull of Lights and Harvard at Duke (MBB) 19 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_2MyrNgi",
+      "date": "2026-12-04",
+      "start": "17:30",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "Harvard at Duke (MBB) and North Carolina Chinese Lantern… 2.2 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-espn-duke-mbb-401909569",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "FestiBull of Lights and North Carolina Chinese Lantern… 2.2 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 9314,
+        "low": 9314,
+        "high": 9314
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_Crt_5Or",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_GS76h_P",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_oC3sz1O",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5eVZ_G2WXRjB",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_GS7Fh_w",
+      "date": "2026-12-05",
+      "start": "10:30"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_4p3na2O",
+      "date": "2026-12-05",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_G2WTTq1",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-nccu-mbb-401922286",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 704,
+        "low": 363,
+        "high": 1421
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1F7Z_4FoQFZd8ev",
+      "date": "2026-12-05",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_GS71lQ7",
+      "date": "2026-12-05",
+      "start": "14:30"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAZxob",
+      "date": "2026-12-05",
+      "start": "16:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Maple Leafs at Hurricanes and FestiBull of Lights 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_2MyLNUb",
+      "date": "2026-12-05",
+      "start": "17:30",
+      "read": {
+        "rating": 2.4,
+        "friction": "Moderate",
+        "why": "Maple Leafs at Hurricanes 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_CrtQ5On",
+      "date": "2026-12-05",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_oC3SF51",
+      "date": "2026-12-05",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_GS7ah_D",
+      "date": "2026-12-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-05-espn-hurricanes-401892866",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.4,
+        "friction": "Low",
+        "why": "FestiBull of Lights 17 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18722,
+        "low": 18248,
+        "high": 18750
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5eVZ_G2XZTqp",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-sa-goduke-com-25768",
+      "date": "2026-12-06",
+      "start": "02:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3078,
+        "low": 2526,
+        "high": 3954
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5eVZ_GS75lQj",
+      "date": "2026-12-06",
+      "start": "11:00"
+    },
+    {
+      "eventId": "2026-12-06-tm-G5eVZ_G2X7Lr-",
+      "date": "2026-12-06",
+      "start": "12:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-duke-wbb-401918258",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3078,
+        "low": 2526,
+        "high": 3954
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-unc-wbb-401906098",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 4.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2415,
+        "low": 2381,
+        "high": 2622
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-unc-mbb-401902284",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "Davidson at NC State (WBB) and Leanne Morgan 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16784,
+        "low": 16774,
+        "high": 17394
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5eVZ_GS7GDQg",
+      "date": "2026-12-06",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAZxo0",
+      "date": "2026-12-06",
+      "start": "16:30",
+      "read": {
+        "rating": 4.3,
+        "friction": "Heavy",
+        "why": "Leanne Morgan and Butler at North Carolina (MBB) 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5eVZ_2MyOSM3",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "Leanne Morgan and Butler at North Carolina (MBB) 17 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-nc-state-wbb-401913741",
+      "date": "2026-12-06",
+      "start": "18:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Heavy",
+        "why": "Butler at North Carolina (MBB) 22 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5500,
+        "low": 5145,
+        "high": 5500
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5eVZ_692moJh",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "read": {
+        "rating": 4.3,
+        "friction": "Moderate",
+        "why": "Butler at North Carolina (MBB) and FestiBull of Lights 19 mi away, back to back.",
+        "method": "formula"
+      }
+    }
+  ]
+}

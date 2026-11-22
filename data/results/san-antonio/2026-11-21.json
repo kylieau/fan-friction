@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-spurs-401910027",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "frost-bank-center",
+      "homeTeamId": "spurs",
+      "home": {
+        "name": "Spurs",
+        "score": 114
+      },
+      "away": {
+        "name": "Pelicans",
+        "score": 91
+      },
+      "attendance": 18708,
+      "capturedAt": "2026-11-22T16:12:54.854Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-21-espn-utsa-mbb-401911337",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-mbb",
+      "home": {
+        "name": "UTSA",
+        "score": 90
+      },
+      "away": {
+        "name": "Air Force",
+        "score": 68
+      },
+      "attendance": 1084,
+      "capturedAt": "2026-11-22T16:12:54.854Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-utsa-wbb-401918798",
+      "metroId": "san-antonio",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "utsa-convocation-center",
+      "homeTeamId": "utsa-wbb",
+      "home": {
+        "name": "UTSA",
+        "score": 52
+      },
+      "away": {
+        "name": "N Dakota St",
+        "score": 50
+      },
+      "attendance": 816,
+      "capturedAt": "2026-11-22T16:12:54.854Z",
+      "duration": {
+        "minutes": 109,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "metroId": "mexico-city",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-pumas-unam-401877049",
+      "metroId": "mexico-city",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-olimpico-universitario",
+      "homeTeamId": "pumas-unam",
+      "home": {
+        "name": "Pumas",
+        "score": 0
+      },
+      "away": {
+        "name": "Monterrey",
+        "score": 2
+      },
+      "capturedAt": "2026-11-22T16:12:52.261Z"
+    }
+  ]
+}

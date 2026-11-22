@@ -1,0 +1,474 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "metroName": "Montreal",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-11-22",
+  "capturedAt": "2026-11-22T16:07:50.735Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-22",
+    "through": "2026-12-06"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 8
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 0
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-22-ht-laval-rocket-1029368",
+      "metroId": "montreal",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Rocket vs. Wranglers",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "laval-rocket",
+        "away": "wranglers"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech"
+    },
+    {
+      "id": "2026-11-23-espn-canadiens-401892774",
+      "metroId": "montreal",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Canadiens vs. Kings",
+      "broadcast": "ABTV",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20915,
+        "low": 20774,
+        "high": 20915,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 11 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-1AsZkGyGkeMVJJT",
+      "metroId": "montreal",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Doja Cat",
+      "officialTitle": "Doja Cat - Tour Ma Vie World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Doja Cat",
+      "act": true,
+      "performerIds": [
+        "K8vZ9173TJf",
+        "K8vZ917_glV"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1AsZkGyGkeMVJJT",
+      "expectedDraw": {
+        "count": 8550,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-ht-laval-rocket-1029427",
+      "metroId": "montreal",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rocket vs. Marlies",
+      "place": {
+        "type": "venue",
+        "venueId": "place-bell"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "laval-rocket",
+        "away": "marlies"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 8979,
+        "low": 8680,
+        "high": 9028,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-12-02-espn-canadiens-401892840",
+      "metroId": "montreal",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Canadiens vs. Lightning",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "lightning",
+        "awayOpponent": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20915,
+        "low": 20774,
+        "high": 20915,
+        "fromCrowds": true,
+        "games": 13,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 13 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-04-ht-laval-rocket-1029433",
+      "metroId": "montreal",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Rocket vs. Penguins",
+      "place": {
+        "type": "venue",
+        "venueId": "place-bell"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "laval-rocket",
+        "away": "penguins"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10419,
+        "low": 10293,
+        "high": 10437,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in December: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-12-05-espn-canadiens-401892860",
+      "metroId": "montreal",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Canadiens vs. Panthers",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20894,
+        "low": 20894,
+        "high": 20894,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-ht-victoire-366",
+      "metroId": "montreal",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Victoire vs. Havoc",
+      "place": {
+        "type": "venue",
+        "venueId": "place-bell"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "victoire",
+        "away": "havoc"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 10103,
+        "low": 9686,
+        "high": 10172,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-06-espn-canadiens-401892873",
+      "metroId": "montreal",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Canadiens vs. Senators",
+      "place": {
+        "type": "venue",
+        "venueId": "bell-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "canadiens",
+        "away": "ottawa-senators",
+        "awayOpponent": "senators"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20794,
+        "low": 20746,
+        "high": 20794,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 3 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-22-ht-laval-rocket-1029368",
+      "date": "2026-11-22",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-23-espn-canadiens-401892774",
+      "date": "2026-11-23",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20915,
+        "low": 20774,
+        "high": 20915
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-1AsZkGyGkeMVJJT",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8550
+      }
+    },
+    {
+      "eventId": "2026-12-02-ht-laval-rocket-1029427",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Lightning at Canadiens 8.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8979,
+        "low": 8680,
+        "high": 9028
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-canadiens-401892840",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 2.3,
+        "friction": "Low",
+        "why": "Marlies at Rocket 8.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20915,
+        "low": 20774,
+        "high": 20915
+      }
+    },
+    {
+      "eventId": "2026-12-04-ht-laval-rocket-1029433",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10419,
+        "low": 10293,
+        "high": 10437
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-canadiens-401892860",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Havoc at Victoire 8.5 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20894,
+        "low": 20894,
+        "high": 20894
+      }
+    },
+    {
+      "eventId": "2026-12-05-ht-victoire-366",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Panthers at Canadiens 8.5 mi away, earlier in the day.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10103,
+        "low": 9686,
+        "high": 10172
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-canadiens-401892873",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20794,
+        "low": 20746,
+        "high": 20794
+      }
+    }
+  ]
+}

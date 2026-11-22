@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-canadiens-401892760",
+      "metroId": "montreal",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 3
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 4
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-11-22T16:12:48.785Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "19:15"
+    },
+    {
+      "eventId": "2026-11-21-ht-laval-rocket-1029356",
+      "metroId": "montreal",
+      "date": "2026-11-21",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "place-bell",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 2
+      },
+      "away": {
+        "name": "Wranglers",
+        "score": 4
+      },
+      "attendance": 10243,
+      "capturedAt": "2026-11-22T16:12:48.785Z"
+    }
+  ]
+}

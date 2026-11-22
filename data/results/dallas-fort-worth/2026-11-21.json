@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-21",
+  "results": [
+    {
+      "eventId": "2026-11-21-espn-dallas-trinity-401878604",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "cotton-bowl",
+      "homeTeamId": "dallas-trinity",
+      "home": {
+        "name": "Trinity FC",
+        "score": 0
+      },
+      "away": {
+        "name": "Lexington",
+        "score": 2
+      },
+      "attendance": 2952,
+      "capturedAt": "2026-11-22T16:12:48.197Z"
+    },
+    {
+      "eventId": "2026-11-21-espn-fc-dallas-401933732",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "toyota-stadium",
+      "homeTeamId": "fc-dallas",
+      "home": {
+        "name": "FC Dallas",
+        "score": 3
+      },
+      "away": {
+        "name": "Timbers",
+        "score": 0
+      },
+      "capturedAt": "2026-11-22T16:12:48.197Z"
+    },
+    {
+      "eventId": "2026-11-21-espn-mavericks-401910025",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "mavericks",
+      "home": {
+        "name": "Mavericks",
+        "score": 110
+      },
+      "away": {
+        "name": "Clippers",
+        "score": 100
+      },
+      "attendance": 19888,
+      "capturedAt": "2026-11-22T16:12:48.197Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    },
+    {
+      "eventId": "2026-11-21-espn-smu-wbb-401915965",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-coliseum",
+      "homeTeamId": "smu-wbb",
+      "home": {
+        "name": "SMU",
+        "score": 69
+      },
+      "away": {
+        "name": "Grand Canyon",
+        "score": 59
+      },
+      "attendance": 1011,
+      "capturedAt": "2026-11-22T16:12:48.197Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    },
+    {
+      "eventId": "2026-11-21-espn-tcu-football-401856872",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-21",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amon-g-carter-stadium",
+      "homeTeamId": "tcu-football",
+      "home": {
+        "name": "TCU",
+        "score": 17
+      },
+      "away": {
+        "name": "Utah Utes",
+        "score": 38
+      },
+      "attendance": 36906,
+      "capturedAt": "2026-11-22T16:12:48.197Z",
+      "duration": {
+        "minutes": 211,
+        "kind": "estimated"
+      },
+      "startedAt": "21:24"
+    }
+  ]
+}
