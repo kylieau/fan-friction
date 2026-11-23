@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-gophers-wbb-401918911",
+      "metroId": "minneapolis",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "williams-arena",
+      "homeTeamId": "gophers-wbb",
+      "home": {
+        "name": "Minnesota",
+        "score": 82
+      },
+      "away": {
+        "name": "C Michigan",
+        "score": 31
+      },
+      "attendance": 4304,
+      "capturedAt": "2026-11-23T20:06:54.716Z",
+      "duration": {
+        "minutes": 94,
+        "kind": "estimated"
+      },
+      "startedAt": "15:01"
+    }
+  ]
+}

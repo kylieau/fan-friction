@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-sdsu-wbb-401909674",
+      "metroId": "san-diego",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "sdsu-wbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 63
+      },
+      "away": {
+        "name": "Winthrop",
+        "score": 57
+      },
+      "attendance": 2229,
+      "capturedAt": "2026-11-23T20:06:46.675Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "16:02"
+    }
+  ]
+}

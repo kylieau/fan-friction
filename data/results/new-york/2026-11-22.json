@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-knicks-401910034",
+      "metroId": "new-york",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 113
+      },
+      "away": {
+        "name": "Pacers",
+        "score": 106
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-23T20:06:47.608Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "20:11"
+    },
+    {
+      "eventId": "2026-11-22-espn-ny-giants-401873069",
+      "metroId": "new-york",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "metlife-stadium",
+      "homeTeamId": "ny-giants",
+      "home": {
+        "name": "Giants",
+        "score": 23
+      },
+      "away": {
+        "name": "Jaguars",
+        "score": 18
+      },
+      "attendance": 82649,
+      "capturedAt": "2026-11-23T20:06:47.608Z",
+      "duration": {
+        "minutes": 208,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    },
+    {
+      "eventId": "2026-11-22-espn-ny-rangers-401892768",
+      "metroId": "new-york",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "ny-rangers",
+      "home": {
+        "name": "Rangers",
+        "score": 2
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 5
+      },
+      "attendance": 18006,
+      "capturedAt": "2026-11-23T20:06:47.608Z",
+      "duration": {
+        "minutes": 155,
+        "kind": "estimated"
+      },
+      "startedAt": "12:38"
+    }
+  ]
+}

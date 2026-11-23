@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-bc-mbb-401909556",
+      "metroId": "boston",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-mbb",
+      "home": {
+        "name": "Boston College",
+        "score": 79
+      },
+      "away": {
+        "name": "NJIT",
+        "score": 59
+      },
+      "attendance": 3133,
+      "capturedAt": "2026-11-23T20:06:50.221Z",
+      "duration": {
+        "minutes": 125,
+        "kind": "estimated"
+      },
+      "startedAt": "17:07"
+    }
+  ]
+}

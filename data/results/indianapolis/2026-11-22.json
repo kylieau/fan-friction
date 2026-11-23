@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-butler-mbb-401902281",
+      "metroId": "indianapolis",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "credit-union-1-arena",
+      "homeTeamId": "butler-mbb",
+      "home": {
+        "name": "Butler",
+        "score": 74
+      },
+      "away": {
+        "name": "Nebraska",
+        "score": 76
+      },
+      "attendance": 1138,
+      "capturedAt": "2026-11-23T20:06:54.248Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-butler-wbb-401920254",
+      "metroId": "indianapolis",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hinkle-fieldhouse",
+      "homeTeamId": "butler-wbb",
+      "home": {
+        "name": "Butler",
+        "score": 77
+      },
+      "away": {
+        "name": "E Michigan",
+        "score": 51
+      },
+      "attendance": 1116,
+      "capturedAt": "2026-11-23T20:06:54.248Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

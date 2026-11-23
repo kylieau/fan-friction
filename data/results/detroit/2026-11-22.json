@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-lions-401873072",
+      "metroId": "detroit",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ford-field",
+      "homeTeamId": "lions",
+      "home": {
+        "name": "Lions",
+        "score": 31
+      },
+      "away": {
+        "name": "Buccaneers",
+        "score": 21
+      },
+      "attendance": 64024,
+      "capturedAt": "2026-11-23T20:06:49.494Z",
+      "duration": {
+        "minutes": 184,
+        "kind": "estimated"
+      },
+      "startedAt": "13:03"
+    }
+  ]
+}

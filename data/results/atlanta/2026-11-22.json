@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-hawks-401910029",
+      "metroId": "atlanta",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "state-farm-arena",
+      "homeTeamId": "hawks",
+      "home": {
+        "name": "Hawks",
+        "score": 107
+      },
+      "away": {
+        "name": "Pistons",
+        "score": 97
+      },
+      "attendance": 16631,
+      "capturedAt": "2026-11-23T20:06:48.099Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "15:40"
+    }
+  ]
+}

@@ -1,0 +1,1319 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "metroName": "Sacramento",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-11-23",
+  "capturedAt": "2026-11-23T20:04:32.949Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-23",
+    "through": "2026-12-07"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 7
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 31
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 5
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-23-espn-sacramento-kings-401910045",
+      "metroId": "sacramento",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Spurs",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13698,
+        "low": 13441,
+        "high": 14955,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-G5vYZ_ophvfB6",
+      "metroId": "sacramento",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stockton Kings vs. Salt Lake City Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "adventist-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Stockton Kings",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ophvfB6"
+    },
+    {
+      "id": "2026-11-25-tm-1A9ZkffGkeTXT_W",
+      "metroId": "sacramento",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tahoe Knight Monsters vs. Idaho Steelheads",
+      "place": {
+        "type": "venue",
+        "venueId": "tahoe-blue-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tahoe Knight Monsters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkffGkeTXT_W",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-25-tm-G5vYZ_o3otW7t",
+      "metroId": "sacramento",
+      "date": "2026-11-25",
+      "start": "19:11",
+      "kind": "game",
+      "title": "Stockton Thunder vs. Minnesota Northern Lights",
+      "place": {
+        "type": "venue",
+        "venueId": "adventist-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Stockton Thunder",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o3otW7t",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-1A9ZkffGkeTTLQ8",
+      "metroId": "sacramento",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tahoe Knight Monsters vs. Idaho Steelheads",
+      "place": {
+        "type": "venue",
+        "venueId": "tahoe-blue-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tahoe Knight Monsters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkffGkeTTLQ8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5vYZ_o3onWAF",
+      "metroId": "sacramento",
+      "date": "2026-11-27",
+      "start": "19:11",
+      "kind": "game",
+      "title": "Stockton Thunder vs. Oceanside HC",
+      "place": {
+        "type": "venue",
+        "venueId": "adventist-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Stockton Thunder",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o3onWAF",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_o3oiuAU",
+      "metroId": "sacramento",
+      "date": "2026-11-28",
+      "start": "18:11",
+      "kind": "game",
+      "title": "Stockton Thunder vs. Oceanside HC",
+      "place": {
+        "type": "venue",
+        "venueId": "adventist-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Stockton Thunder",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_o3oiuAU",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-1A9ZkffGkdZZ2Q-",
+      "metroId": "sacramento",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Tahoe Knight Monsters vs. Idaho Steelheads",
+      "place": {
+        "type": "venue",
+        "venueId": "tahoe-blue-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Tahoe Knight Monsters",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "1A9ZkffGkdZZ2Q-",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_3mBYTCr",
+      "metroId": "sacramento",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Baby Smoove",
+      "officialTitle": "Franchise Presents: Baby Smoove Live!",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Baby Smoove",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_3mBYTCr",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5vYZ_aBfMjAj",
+      "metroId": "sacramento",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "kind": "show",
+      "title": "Calidanza presents - Navidades!",
+      "place": {
+        "type": "venue",
+        "venueId": "safe-credit-union-performing-arts-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Calidanza presents - Navidades!",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aBfMjAj",
+      "expectedDraw": {
+        "count": 2188,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-espn-sacramento-kings-401910060",
+      "metroId": "sacramento",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Timberwolves",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "timberwolves",
+        "awayOpponent": "timberwolves"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13605,
+        "low": 13317,
+        "high": 13969,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5vYZ_KIDAWCA",
+      "metroId": "sacramento",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Louie TheSinger",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Louie TheSinger",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KIDAWCA",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-espn-sacramento-kings-401910067",
+      "metroId": "sacramento",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sac Kings vs. Pelicans",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sacramento-kings",
+        "away": "pelicans",
+        "awayOpponent": "pelicans"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 13643,
+        "low": 13386,
+        "high": 14895,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-uc-davis-mbb-401911525",
+      "metroId": "sacramento",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UC Davis vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uc-davis-mbb",
+        "away": "up-pilots-mbb",
+        "awayOpponent": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1090,
+        "low": 946,
+        "high": 1260,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-G5vYZ_ophe0Bx",
+      "metroId": "sacramento",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Stockton Kings vs. Santa Cruz Warriors",
+      "place": {
+        "type": "venue",
+        "venueId": "adventist-health-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Stockton Kings",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ophe0Bx"
+    },
+    {
+      "id": "2026-12-02-tm-G5vYZ_8hiVHsQ",
+      "metroId": "sacramento",
+      "date": "2026-12-02",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8hiVHsQ",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5vYZ_8higHsl",
+      "metroId": "sacramento",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Trans-Siberian Orchestra",
+      "officialTitle": "Trans-Siberian Orchestra - The Ghosts Of Christmas Eve",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-1-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trans-Siberian Orchestra",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171L10"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8higHsl",
+      "expectedDraw": {
+        "count": 10830,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-sac-state-wbb-401921524",
+      "metroId": "sacramento",
+      "date": "2026-12-03",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Sacramento St vs. Fullerton",
+      "place": {
+        "type": "venue",
+        "venueId": "hornet-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sac-state-wbb",
+        "away": "fullerton",
+        "awayOpponent": "fullerton"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 701,
+        "low": 597,
+        "high": 1144,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 5 games, 2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5vYZ_5pd-9DT",
+      "metroId": "sacramento",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alter Bridge",
+      "officialTitle": "Alter Bridge - What Lies Within Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Alter Bridge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5pd-9DT",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5vYZ_8lFCsqW",
+      "metroId": "sacramento",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Mack Geiger",
+      "officialTitle": "MACK GEIGER - WHEN IT'S POURING 2026 TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Mack Geiger",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8lFCsqW",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_8pqkqzN",
+      "metroId": "sacramento",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Ralph Barbosa: The Red 40 Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ralph Barbosa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_8pqkqzN"
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_KEb8uOu",
+      "metroId": "sacramento",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Santa Rave",
+      "officialTitle": "Santa Rave 18+",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Santa Rave",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KEb8uOu",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_u5pIPZp",
+      "metroId": "sacramento",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Killers of Kill Tony",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Killers of Kill Tony",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_u5pIPZp"
+    },
+    {
+      "id": "2026-12-05-espn-sac-state-wbb-401921600",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Sacramento St vs. Utah Valley",
+      "place": {
+        "type": "venue",
+        "venueId": "hornet-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sac-state-wbb",
+        "away": "utah-valley",
+        "awayOpponent": "utah-valley"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 491,
+        "low": 429,
+        "high": 581,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 6 games, 2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_5RCPrIe",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "show",
+      "title": "Sacramento Gay Men's Chorus",
+      "place": {
+        "type": "venue",
+        "venueId": "sacramento-memorial-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Holiday"
+      },
+      "performer": "Sacramento Gay Men's Chorus",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5RCPrIe",
+      "expectedDraw": {
+        "count": 3849,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_5RCJCIa",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sacramento Gay Men's Chorus",
+      "place": {
+        "type": "venue",
+        "venueId": "sacramento-memorial-auditorium"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Holiday"
+      },
+      "performer": "Sacramento Gay Men's Chorus",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5RCJCIa",
+      "expectedDraw": {
+        "count": 3849,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZbMNkEQV5",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Randall King",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Randall King",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbMNkEQV5",
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-17AYv0G62DqZgts",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Priscilla Chan",
+      "place": {
+        "type": "venue",
+        "venueId": "reno-events-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "World"
+      },
+      "performer": "Priscilla Chan",
+      "act": true,
+      "performerIds": [
+        "K8vZ9175-k0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "17AYv0G62DqZgts",
+      "expectedDraw": {
+        "count": 7000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_u2YtCOL",
+      "metroId": "sacramento",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mannheim Steamroller Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "New Age"
+      },
+      "performer": "Mannheim Steamroller Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_u2YtCOL",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-espn-uc-davis-wbb-401920470",
+      "metroId": "sacramento",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "UC Davis vs. Chico St",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uc-davis-wbb",
+        "away": "chico-st",
+        "awayOpponent": "chico-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 692,
+        "low": 529,
+        "high": 800,
+        "fromCrowds": true,
+        "games": 27,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 27 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-sa-hornetsports-com-16918",
+      "metroId": "sacramento",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Sacramento State vs. Flip Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "sac-state-nest"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "gymnastics",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_3Ev0wh1",
+      "metroId": "sacramento",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Sublime",
+      "officialTitle": "98 Rock Presents Unwrapped: An Acoustic Holiday",
+      "place": {
+        "type": "venue",
+        "venueId": "thunder-valley-venue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Reggae"
+      },
+      "performer": "Sublime",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_3Ev0wh1",
+      "expectedDraw": {
+        "count": 4500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_85Wjzk1",
+      "metroId": "sacramento",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Waterparks",
+      "officialTitle": "WATERPARKS - THE (ALMOST) NO BARRICADE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Waterparks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_85Wjzk1",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_CkIElri",
+      "metroId": "sacramento",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Sin Bandera",
+      "place": {
+        "type": "venue",
+        "venueId": "hard-rock-live-sacramento"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Sin Bandera",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CkIElri",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-07-tm-G5vYZ_85TOb9z",
+      "metroId": "sacramento",
+      "date": "2026-12-07",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Waterparks",
+      "officialTitle": "WATERPARKS - THE (ALMOST) NO BARRICADE TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "ace-of-spades"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Waterparks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_85TOb9z",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-23-espn-sacramento-kings-401910045",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Salt Lake City Stars at Stockton Kings 45 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13698,
+        "low": 13441,
+        "high": 14955
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-G5vYZ_ophvfB6",
+      "date": "2026-11-23",
+      "start": "19:00",
+      "read": {
+        "rating": 2.3,
+        "friction": "Moderate",
+        "why": "Spurs at Sac Kings 45 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-1A9ZkffGkeTXT_W",
+      "date": "2026-11-25",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-G5vYZ_o3otW7t",
+      "date": "2026-11-25",
+      "start": "19:11",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-1A9ZkffGkeTTLQ8",
+      "date": "2026-11-27",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-G5vYZ_o3onWAF",
+      "date": "2026-11-27",
+      "start": "19:11",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_o3oiuAU",
+      "date": "2026-11-28",
+      "start": "18:11",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-1A9ZkffGkdZZ2Q-",
+      "date": "2026-11-28",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_3mBYTCr",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5vYZ_aBfMjAj",
+      "date": "2026-11-29",
+      "start": "16:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2188
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-sacramento-kings-401910060",
+      "date": "2026-11-29",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13605,
+        "low": 13317,
+        "high": 13969
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5vYZ_KIDAWCA",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-11-30-espn-sacramento-kings-401910067",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 13643,
+        "low": 13386,
+        "high": 14895
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-uc-davis-mbb-401911525",
+      "date": "2026-12-01",
+      "start": "18:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1090,
+        "low": 946,
+        "high": 1260
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-G5vYZ_ophe0Bx",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5vYZ_8hiVHsQ",
+      "date": "2026-12-02",
+      "start": "15:00",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5vYZ_8higHsl",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1.9,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10830
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-sac-state-wbb-401921524",
+      "date": "2026-12-03",
+      "start": "18:30",
+      "draw": {
+        "count": 701,
+        "low": 597,
+        "high": 1144
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-G5vYZ_5pd-9DT",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-G5vYZ_8lFCsqW",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_8pqkqzN",
+      "date": "2026-12-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_KEb8uOu",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_u5pIPZp",
+      "date": "2026-12-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-05-espn-sac-state-wbb-401921600",
+      "date": "2026-12-05",
+      "start": "12:00",
+      "draw": {
+        "count": 491,
+        "low": 429,
+        "high": 581
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_5RCPrIe",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "draw": {
+        "count": 3849
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_5RCJCIa",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "draw": {
+        "count": 3849
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZbMNkEQV5",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-17AYv0G62DqZgts",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "draw": {
+        "count": 7000
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_u2YtCOL",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-uc-davis-wbb-401920470",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "draw": {
+        "count": 692,
+        "low": 529,
+        "high": 800
+      }
+    },
+    {
+      "eventId": "2026-12-06-sa-hornetsports-com-16918",
+      "date": "2026-12-06",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_3Ev0wh1",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "draw": {
+        "count": 4500
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_85Wjzk1",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_CkIElri",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-12-07-tm-G5vYZ_85TOb9z",
+      "date": "2026-12-07",
+      "start": "19:00",
+      "draw": {
+        "count": 1000
+      }
+    }
+  ]
+}

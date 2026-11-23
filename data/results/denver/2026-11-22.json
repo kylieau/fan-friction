@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-broncos-401873075",
+      "metroId": "denver",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "empower-field",
+      "homeTeamId": "broncos",
+      "home": {
+        "name": "Broncos",
+        "score": 38
+      },
+      "away": {
+        "name": "Raiders",
+        "score": 24
+      },
+      "attendance": 76827,
+      "capturedAt": "2026-11-23T20:06:57.248Z",
+      "duration": {
+        "minutes": 200,
+        "kind": "estimated"
+      },
+      "startedAt": "16:25"
+    }
+  ]
+}

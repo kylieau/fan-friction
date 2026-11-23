@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-cowboys-401873073",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "att-stadium",
+      "homeTeamId": "cowboys",
+      "home": {
+        "name": "Cowboys",
+        "score": 51
+      },
+      "away": {
+        "name": "Titans",
+        "score": 30
+      },
+      "attendance": 92367,
+      "capturedAt": "2026-11-23T20:06:49.117Z",
+      "duration": {
+        "minutes": 181,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-dallas-stars-401892771",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "american-airlines-center",
+      "homeTeamId": "dallas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 1
+      },
+      "away": {
+        "name": "Penguins",
+        "score": 0
+      },
+      "attendance": 18532,
+      "capturedAt": "2026-11-23T20:06:49.117Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

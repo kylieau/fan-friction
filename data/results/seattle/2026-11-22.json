@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-uw-wbb-401921465",
+      "metroId": "seattle",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "alaska-airlines-arena",
+      "homeTeamId": "uw-wbb",
+      "home": {
+        "name": "Washington",
+        "score": 93
+      },
+      "away": {
+        "name": "Cal Poly",
+        "score": 42
+      },
+      "attendance": 2843,
+      "capturedAt": "2026-11-23T20:06:47.090Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "17:01"
+    }
+  ]
+}

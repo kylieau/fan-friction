@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-chargers-401873074",
+      "metroId": "la",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "chargers",
+      "home": {
+        "name": "Chargers",
+        "score": 24
+      },
+      "away": {
+        "name": "Jets",
+        "score": 27
+      },
+      "attendance": 68195,
+      "capturedAt": "2026-11-23T20:06:46.011Z",
+      "duration": {
+        "minutes": 160,
+        "kind": "estimated"
+      },
+      "startedAt": "16:05"
+    },
+    {
+      "eventId": "2026-11-22-espn-ucla-mbb-401920905",
+      "metroId": "la",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pauley-pavilion",
+      "homeTeamId": "ucla-mbb",
+      "home": {
+        "name": "UCLA",
+        "score": 85
+      },
+      "away": {
+        "name": "Delaware",
+        "score": 48
+      },
+      "attendance": 4182,
+      "capturedAt": "2026-11-23T20:06:46.011Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-usc-mbb-401926774",
+      "metroId": "la",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-mbb",
+      "home": {
+        "name": "USC",
+        "score": 82
+      },
+      "away": {
+        "name": "Louisiana",
+        "score": 56
+      },
+      "attendance": 5309,
+      "capturedAt": "2026-11-23T20:06:46.011Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "20:01"
+    }
+  ]
+}

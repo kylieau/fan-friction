@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "metroId": "toronto",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-raptors-905-401914592",
+      "metroId": "toronto",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mississauga-sports-centre",
+      "homeTeamId": "raptors-905",
+      "home": {
+        "name": "Raptors 905",
+        "score": 101
+      },
+      "away": {
+        "name": "Westchester Knicks",
+        "score": 102
+      },
+      "attendance": 2542,
+      "capturedAt": "2026-11-23T20:06:54.499Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-22-ht-marlies-1029372",
+      "metroId": "toronto",
+      "date": "2026-11-22",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "coca-cola-coliseum",
+      "homeTeamId": "marlies",
+      "home": {
+        "name": "Marlies",
+        "score": 8
+      },
+      "away": {
+        "name": "Wolves",
+        "score": 1
+      },
+      "attendance": 5615,
+      "capturedAt": "2026-11-23T20:06:54.499Z"
+    }
+  ]
+}

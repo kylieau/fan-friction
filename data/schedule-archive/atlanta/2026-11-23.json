@@ -1,0 +1,4143 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "metroName": "Atlanta",
+  "timeZone": "America/New_York",
+  "capturedOn": "2026-11-23",
+  "capturedAt": "2026-11-23T20:01:24.349Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-23",
+    "through": "2026-12-07"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 13
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 1
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 107
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 8
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-23-sa-georgiastatesports-com-10765",
+      "metroId": "atlanta",
+      "date": "2026-11-23",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Georgia State vs. Chattanooga vs. St. Bonaventure",
+      "place": {
+        "type": "venue",
+        "venueId": "gsu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gsu-wbb",
+        "away": "Chattanooga vs. St. Bonaventure",
+        "awayOpponent": "chattanooga-vs-st-bonaventure"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-23-tm-vvG1zZ_fT0jMMO",
+      "metroId": "atlanta",
+      "date": "2026-11-23",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Public Ice Skating 12:00PM - 1:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0jMMO",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-23-tm-vvG1zZ_fT0qMMz",
+      "metroId": "atlanta",
+      "date": "2026-11-23",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Public Ice Skating 4:00PM - 5:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0qMMz",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-espn-gsu-wbb-401929239",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Georgia St vs. St Bonaventure",
+      "place": {
+        "type": "venue",
+        "venueId": "gsu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gsu-wbb",
+        "away": "st-bonaventure",
+        "awayOpponent": "st-bonaventure"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1zZ_fT0L6zl",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Public Ice Skating 12:00PM - 1:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0L6zl",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1zZ_fT0LMzW",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Public Ice Skating 4:00PM - 5:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0LMzW",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-espn-gt-mbb-401920309",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Georgia Tech vs. Samford",
+      "place": {
+        "type": "venue",
+        "venueId": "mccamish-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gt-mbb",
+        "away": "samford",
+        "awayOpponent": "samford"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 5011,
+        "low": 4740,
+        "high": 5600,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1zZ_3mcgGjZ",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Syd",
+      "officialTitle": "Syd: Beard Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Syd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_3mcgGjZ",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1zZ_fT0-6y4",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Public Ice Skating 8:00PM - 9:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0-6y4",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-24-tm-vvG1zZ_K6Mf5Dl",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Trippie Redd",
+      "officialTitle": "Trippie Redd - The Non-disclosure Agreement Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-roxy"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Trippie Redd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_K6Mf5Dl",
+      "expectedDraw": {
+        "count": 3600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-espn-gsu-wbb-401928194",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Georgia St vs. Chattanooga",
+      "place": {
+        "type": "venue",
+        "venueId": "gsu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gsu-wbb",
+        "away": "chattanooga",
+        "awayOpponent": "chattanooga"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_fT0-9yQ",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Public Ice Skating 12:00PM - 1:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0-9yQ",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-espn-ksu-wbb-401927998",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Kennesaw St vs. Florida A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "ksu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "ksu-wbb",
+        "away": "florida-a-m",
+        "awayOpponent": "florida-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 576,
+        "low": 515,
+        "high": 675,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_fT0x9yN",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Public Ice Skating 4:00PM - 5:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0x9yN",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_1SjKgNh",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Angine de Poitrine",
+      "officialTitle": "Angine de Poitrine - MOVED TO THE EASTERN",
+      "place": {
+        "type": "venue",
+        "venueId": "the-eastern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Angine de Poitrine",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1SjKgNh",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_G2Q8wfV",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Atlanta Gladiators vs. Savannah Ghost Pirates",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Atlanta Gladiators",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G2Q8wfV",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_GT-FutW",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Buzzcocks",
+      "officialTitle": "The Buzzcocks: Celebrating 50 Years of Buzzcocks",
+      "place": {
+        "type": "venue",
+        "venueId": "heaven-at-the-masquerade"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Buzzcocks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_GT-FutW",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_fLorwls",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Columbus River Dragons vs. Twin City Thunderbirds",
+      "place": {
+        "type": "venue",
+        "venueId": "columbus-civic-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Columbus River Dragons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fLorwls"
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZbgd3i_aC",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZbgd3i_aC",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-25-tm-vvG1zZ_4hBX9En",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Belly Gang Kushington",
+      "officialTitle": "Belly Gang Kushington: Wtf Goin Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Belly Gang Kushington",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_4hBX9En",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_fT0N9yw",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Public Ice Skating 12:00PM - 1:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT0N9yw",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAAf_F",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_F",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_fT006B3",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Public Ice Skating 4:00PM - 5:00PM Session",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Community/Cultural"
+      },
+      "performer": "Public Ice Skating Macon Coliseum",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fT006B3",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_Cx_Eb8I",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "for KING & COUNTRY",
+      "officialTitle": "FOR KING + COUNTRY's 'A Drummer Boy Christmas'",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "for KING & COUNTRY",
+      "act": true,
+      "performerIds": [
+        "K8vZ9172rR0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_Cx_Eb8I",
+      "expectedDraw": {
+        "count": 7410,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_fThaAIo",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "6LACK",
+      "officialTitle": "6LACK FRIDAY",
+      "place": {
+        "type": "venue",
+        "venueId": "heaven-at-the-masquerade"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "6LACK",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fThaAIo",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAAf_a",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_a",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZbgQ3ik-i",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZbgQ3ik-i",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_3XiP0np",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Premo Rice",
+      "officialTitle": "Premo Rice - Another Night At The Chateau",
+      "place": {
+        "type": "venue",
+        "venueId": "center-stage-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Premo Rice",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_3XiP0np",
+      "expectedDraw": {
+        "count": 1050,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_CXOtIAZ",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Love Actually In Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "cobb-energy-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Music"
+      },
+      "performer": "Love Actually Live in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_CXOtIAZ"
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_fVZp2ar",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Elías Medina",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Elías Medina",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fVZp2ar",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_G0CRu9K",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Blackberry Smoke",
+      "officialTitle": "Blackberry Smoke: Holiday Homecoming",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blackberry Smoke",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G0CRu9K",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vvG1zZ_KheGDmm",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Hunxho",
+      "officialTitle": "Hunxho 2Night Only Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-roxy"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Hunxho",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_KheGDmm",
+      "expectedDraw": {
+        "count": 3600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A70OFN",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Steeldrivers",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Steeldrivers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70OFN",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7JKj9",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "THE STRAY CATS",
+      "officialTitle": "Stray Cats",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "THE STRAY CATS",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7JKj9",
+      "expectedDraw": {
+        "count": 4665,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAvK1p",
+      "metroId": "atlanta",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Futurebirds",
+      "place": {
+        "type": "venue",
+        "venueId": "the-eastern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Futurebirds",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvK1p",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAAf_o",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "11:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_o",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-28-espn-gt-mbb-401920310",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Georgia Tech vs. Alcorn St",
+      "place": {
+        "type": "venue",
+        "venueId": "mccamish-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gt-mbb",
+        "away": "alcorn-st",
+        "awayOpponent": "alcorn-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 6659,
+        "low": 5919,
+        "high": 8409,
+        "fromCrowds": true,
+        "games": 21,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 21 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-gsu-football-401869959",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Georgia St vs. Louisiana",
+      "place": {
+        "type": "venue",
+        "venueId": "center-parc-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "gsu-football",
+        "away": "louisiana",
+        "awayOpponent": "louisiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14707,
+        "low": 13476,
+        "high": 14930,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-ksu-wbb-401927999",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Kennesaw St vs. Middle Georgia",
+      "place": {
+        "type": "venue",
+        "venueId": "ksu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "ksu-wbb",
+        "away": "middle-georgia",
+        "awayOpponent": "middle-georgia"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 499,
+        "low": 479,
+        "high": 528,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A70SfO",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Georgia Tech Yellow Jackets Womens Volleyball vs. Stanford Cardinal Womens Volleyball",
+      "place": {
+        "type": "venue",
+        "venueId": "okeefe-gymnasium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball"
+      },
+      "performer": "Georgia Tech Yellow Jackets Womens Volleyball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70SfO"
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAAf_8",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_8",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_2ww1to1",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Macon Mayhem vs. Knoxville Ice Bears",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Macon Mayhem",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2ww1to1",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_2p346MW",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Story of the Year",
+      "officialTitle": "Story Of The Year & Silverstein: CAMP SCREAMO TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Story of the Year",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2p346MW",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_G2Qoxfz",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Atlanta Gladiators vs. Jacksonville Icemen",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Atlanta Gladiators",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G2Qoxfz",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_klOdqdG",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Elf In Concert: Live With The Atlanta Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_klOdqdG",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZbSQBT0kP",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Professor Brian Cox - Emergence",
+      "place": {
+        "type": "venue",
+        "venueId": "cobb-energy-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Lecture/Seminar"
+      },
+      "performer": "Professor Brian Cox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZbSQBT0kP"
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_1S4b03A",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fetty Wap",
+      "officialTitle": "Fetty Wap: Nostalgia Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-roxy"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Fetty Wap",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1S4b03A",
+      "expectedDraw": {
+        "count": 3600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vvG1zZ_GpRljqD",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Pouya",
+      "officialTitle": "Pouya: The Foreverglades Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Pouya",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_GpRljqD",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A70OFx",
+      "metroId": "atlanta",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Steeldrivers",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "The Steeldrivers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70OFx",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAAf_3",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_3",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1zZ_G2Q334v",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Atlanta Gladiators vs. Jacksonville Icemen",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Atlanta Gladiators",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G2Q334v",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1zZ_klO7udo",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "special",
+      "title": "Elf In Concert: Live With The Atlanta Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_klO7udo",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAAf_K",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_K",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1zZ_1BR-uM-",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "kind": "show",
+      "title": "Beartooth",
+      "officialTitle": "Beartooth: Pure Ecstasy World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-roxy"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Beartooth",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1BR-uM-",
+      "expectedDraw": {
+        "count": 3600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAepra",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Alex Jean",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Alex Jean",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAepra",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1zZ_2xSMtna",
+      "metroId": "atlanta",
+      "date": "2026-11-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Men Without Hats",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Men Without Hats",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2xSMtna",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-espn-ksu-mbb-401926789",
+      "metroId": "atlanta",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Kennesaw St vs. Florida A&M",
+      "place": {
+        "type": "venue",
+        "venueId": "ksu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "ksu-mbb",
+        "away": "florida-a-m",
+        "awayOpponent": "florida-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1222,
+        "low": 1094,
+        "high": 1330,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-30-tm-vvG1zZ_kEr4GZu",
+      "metroId": "atlanta",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Disney Worlds Collide Concert Tour",
+      "officialTitle": "Disney Descendants, ZOMBIES & Camp Rock: Worlds Collide Concert Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Disney Worlds Collide Concert Tour",
+      "act": true,
+      "performerIds": [
+        "K8vZ917qo40"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_kEr4GZu",
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-tm-vvG1zZ_KSEHf3f",
+      "metroId": "atlanta",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Delta Sky360 Worlds Collide Social",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Delta Sky360 Worlds Collide Social",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_KSEHf3f"
+    },
+    {
+      "id": "2026-11-30-tm-vvG1zZ_oRb_bSG",
+      "metroId": "atlanta",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "College Park Skyhawks vs. Maine Celtics",
+      "place": {
+        "type": "venue",
+        "venueId": "gateway-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "College Park Skyhawks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_oRb_bSG",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1A7Pax4",
+      "metroId": "atlanta",
+      "date": "2026-12-01",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Georgia Bulldogs Mens Basketball vs. Boston College Eagles Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "stegeman-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Georgia Bulldogs Men's Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Pax4"
+    },
+    {
+      "id": "2026-12-01-espn-gsu-mbb-401929390",
+      "metroId": "atlanta",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Georgia St vs. Mercer",
+      "place": {
+        "type": "venue",
+        "venueId": "gsu-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gsu-mbb",
+        "away": "mercer",
+        "awayOpponent": "mercer"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1697,
+        "low": 1570,
+        "high": 2034,
+        "fromCrowds": true,
+        "games": 17,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 17 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-vvG1zZ_8DB-_SK",
+      "metroId": "atlanta",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Montell Fish",
+      "place": {
+        "type": "venue",
+        "venueId": "heaven-at-the-masquerade"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Montell Fish",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_8DB-_SK",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vvG1zZ_G2QKe4d",
+      "metroId": "atlanta",
+      "date": "2026-12-02",
+      "start": "10:30",
+      "kind": "game",
+      "title": "Atlanta Gladiators vs. South Carolina Stingrays",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Atlanta Gladiators",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_G2QKe4d",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vvG1zZ_oRbQISq",
+      "metroId": "atlanta",
+      "date": "2026-12-02",
+      "start": "11:00",
+      "kind": "game",
+      "title": "College Park Skyhawks vs. Maine Celtics",
+      "place": {
+        "type": "venue",
+        "venueId": "gateway-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "College Park Skyhawks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_oRbQISq",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A7-vkK",
+      "metroId": "atlanta",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-vkK",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A70wv-",
+      "metroId": "atlanta",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Musical Box",
+      "officialTitle": "THE MUSICAL BOX proudly presents ???AND THEN THERE WAS???PHIL",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "The Musical Box",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70wv-",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-hawks-401910085",
+      "metroId": "atlanta",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Hawks vs. Pacers",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "hawks",
+        "away": "pacers",
+        "awayOpponent": "pacers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 15465,
+        "low": 14430,
+        "high": 16011,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vvG1zZ_urW6G8F",
+      "metroId": "atlanta",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Moth Mainstage in Atlanta",
+      "place": {
+        "type": "venue",
+        "venueId": "center-stage-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Performance Art"
+      },
+      "performer": "The Moth Mainstage",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_urW6G8F"
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1A7-vkf",
+      "metroId": "atlanta",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-vkf",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vvG1zZ_uxJqtyC",
+      "metroId": "atlanta",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Music from Carmen and Roméo and Juliet",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_uxJqtyC",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1A70w7p",
+      "metroId": "atlanta",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Shakey Graves",
+      "officialTitle": "Shakey Graves w/ Jobi Riccio",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Shakey Graves",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70w7p",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_2ww5ao3",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Macon Mayhem vs. Peoria Rivermen",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Macon Mayhem",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2ww5ao3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_aKc0v5y",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Matteo Lane: We Gotta Catch Up!",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matteo Lane",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_aKc0v5y"
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_fEb-KoP",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Babyfxce E",
+      "officialTitle": "Babyfxce E - The Xperience Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "heaven-at-the-masquerade"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Babyfxce E",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fEb-KoP",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_GmwncKK",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "State Champs",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "State Champs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_GmwncKK",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAAf_f",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_f",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_75u-MWo",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Maria Bamford",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Maria Bamford",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_75u-MWo"
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A7OwQ4",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OwQ4",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_6BlHted",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Akeem Ali",
+      "place": {
+        "type": "venue",
+        "venueId": "center-stage-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Akeem Ali",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6BlHted",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1050,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_fQg7mxj",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lil Baby",
+      "officialTitle": "Lil Baby: Fresh Prince of Atlanta Birthday Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Baby",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pNq0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fQg7mxj",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAvyoJ",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Rumours ATL",
+      "officialTitle": "Rumours ATL: A Fleetwood Mac Tribute",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Rumours ATL",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvyoJ",
+      "expectedDraw": {
+        "count": 1100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAZyQ8",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ahee",
+      "officialTitle": "Ahee w/ Eliminate",
+      "place": {
+        "type": "venue",
+        "venueId": "the-eastern"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ahee",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZyQ8",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1zZ_8jgIFj8",
+      "metroId": "atlanta",
+      "date": "2026-12-04",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Silvestre Dangond",
+      "officialTitle": "Silvestre Dangond - El Baile de Todos",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Silvestre Dangond",
+      "act": true,
+      "performerIds": [
+        "K8vZ917uAw7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_8jgIFj8",
+      "expectedDraw": {
+        "count": 5000,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7OPbw",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "12:00",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OPbw",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_6K1eCqs",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Atlanta Ballet Presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "cobb-energy-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Atlanta Ballet Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6K1eCqs",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAAf_p",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_p",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-05-sec-championship",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "SEC Championship",
+      "neutralSite": true,
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "crowd": [],
+      "expectedDraw": {
+        "count": 75000,
+        "note": "Expanded setup, official (75,000); the title game has sold out every year here. An estimate."
+      },
+      "sourceId": "listing"
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7OPbV",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OPbV",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_2ww5top",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Macon Mayhem vs. Peoria Rivermen",
+      "place": {
+        "type": "venue",
+        "venueId": "macon-coliseum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Macon Mayhem",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2ww5top",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_GmsfW1F",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Senses Fail",
+      "officialTitle": "Senses Fail Presents Still Searching",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Senses Fail",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_GmsfW1F",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAAf_4",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_4",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_fLoLwi1",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Columbus River Dragons vs. Twin City Thunderbirds",
+      "place": {
+        "type": "venue",
+        "venueId": "columbus-civic-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Columbus River Dragons",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_fLoLwi1",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_6K1dCqM",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Atlanta Ballet Presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "cobb-energy-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Atlanta Ballet Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6K1dCqM",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7OwQp",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OwQp",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_29OTdSt",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Martin Lawrence with Nate Jackson, Desi Banks and more!",
+      "place": {
+        "type": "venue",
+        "venueId": "gas-south-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Martin Lawrence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_29OTdSt"
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_38uA5aZ",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tamar Braxton",
+      "officialTitle": "An Intimate Evening with Tamar & Friends",
+      "place": {
+        "type": "venue",
+        "venueId": "tabernacle"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Tamar Braxton",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_38uA5aZ",
+      "expectedDraw": {
+        "count": 2200,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_K0lMs08",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Akeem Ali",
+      "place": {
+        "type": "venue",
+        "venueId": "center-stage-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Akeem Ali",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_K0lMs08",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1050,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_KwYl1sq",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Lil Baby",
+      "officialTitle": "Lil Baby: Fresh Prince of Atlanta Birthday Celebration",
+      "place": {
+        "type": "venue",
+        "venueId": "state-farm-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Lil Baby",
+      "act": true,
+      "performerIds": [
+        "K8vZ917pNq0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_KwYl1sq",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11970,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1zZ_uxJr_yf",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Music from Carmen and Roméo and Juliet",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_uxJr_yf",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAea3F",
+      "metroId": "atlanta",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "nimino: keep me awake tour",
+      "place": {
+        "type": "venue",
+        "venueId": "variety-playhouse"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Nimino",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAea3F"
+    },
+    {
+      "id": "2026-12-06-espn-falcons-401873098",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Falcons vs. Lions",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "mercedes-benz-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "falcons",
+        "away": "lions",
+        "awayOpponent": "lions"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 71601,
+        "low": 70746,
+        "high": 72484,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1zZ_4Qs7HVe",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "show",
+      "title": "Alchemical String Theory",
+      "officialTitle": "The Oddities Museum: Holiday Oddities Market",
+      "place": {
+        "type": "venue",
+        "venueId": "heaven-at-the-masquerade"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Alchemical String Theory",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_4Qs7HVe",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A7OPbU",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OPbU",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1zZ_2S-acBy",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "13:30",
+      "kind": "special",
+      "title": "Family Concert: Winter Wonderland",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Classical"
+      },
+      "performer": "Atlanta Symphony Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2S-acBy",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-06-espn-gt-wbb-401913721",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Georgia Tech vs. Lipscomb",
+      "place": {
+        "type": "venue",
+        "venueId": "mccamish-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gt-wbb",
+        "away": "lipscomb-wbb",
+        "awayOpponent": "lipscomb"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2973,
+        "low": 2614,
+        "high": 3138,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1zZ_6K17rrA",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Atlanta Ballet Presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "cobb-energy-performing-arts-centre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Atlanta Ballet Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_6K17rrA",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAAf_9",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Roswell Dance Theatre presents The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "byers-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAf_9",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-06-espn-gt-mbb-401920311",
+      "metroId": "nashville",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Georgia Tech vs. Murray St",
+      "broadcast": "ESPNU",
+      "place": {
+        "type": "venue",
+        "venueId": "bridgestone-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gt-mbb",
+        "away": "murray-st",
+        "awayOpponent": "murray-st"
+      },
+      "neutralSite": true,
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A7OPby",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Twas the Night Before by Cirque du Soleil",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "'Twas the Night Before... by Cirque du Soleil",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OPby",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1zZ_2xNv9ge",
+      "metroId": "atlanta",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Tyla",
+      "officialTitle": "TYLA - THE A*POP WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "coca-cola-roxy"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Tyla",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_2xNv9ge",
+      "expectedDraw": {
+        "count": 3600,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-07-tm-vvG1zZ_84BYNje",
+      "metroId": "atlanta",
+      "date": "2026-12-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Elon Gold's Hanukkah Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "buckhead-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Elon Gold",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_84BYNje"
+    },
+    {
+      "id": "2026-12-07-tm-vvG1zZ_K9TvSnT",
+      "metroId": "atlanta",
+      "date": "2026-12-07",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Matt Fraser - America's Top Medium",
+      "place": {
+        "type": "venue",
+        "venueId": "atlanta-symphony-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Psychics/Mediums/Hypnotists"
+      },
+      "performer": "Matt Fraser",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_K9TvSnT"
+    },
+    {
+      "id": "2026-12-07-tm-vvG1zZ_1Bpv1b6",
+      "metroId": "atlanta",
+      "date": "2026-12-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ax and the Hatchetmen",
+      "place": {
+        "type": "venue",
+        "venueId": "center-stage-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Ax and the Hatchetmen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1zZ_1Bpv1b6",
+      "expectedDraw": {
+        "count": 1050,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-23-sa-georgiastatesports-com-10765",
+      "date": "2026-11-23",
+      "start": "12:00",
+      "draw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148
+      }
+    },
+    {
+      "eventId": "2026-11-23-tm-vvG1zZ_fT0jMMO",
+      "date": "2026-11-23",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-23-tm-vvG1zZ_fT0qMMz",
+      "date": "2026-11-23",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-24-espn-gsu-wbb-401929239",
+      "date": "2026-11-24",
+      "start": "12:00",
+      "draw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1zZ_fT0L6zl",
+      "date": "2026-11-24",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1zZ_fT0LMzW",
+      "date": "2026-11-24",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-24-espn-gt-mbb-401920309",
+      "date": "2026-11-24",
+      "start": "19:00",
+      "draw": {
+        "count": 5011,
+        "low": 4740,
+        "high": 5600
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1zZ_3mcgGjZ",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1zZ_fT0-6y4",
+      "date": "2026-11-24",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-24-tm-vvG1zZ_K6Mf5Dl",
+      "date": "2026-11-24",
+      "start": "20:00",
+      "draw": {
+        "count": 3600
+      }
+    },
+    {
+      "eventId": "2026-11-25-espn-gsu-wbb-401928194",
+      "date": "2026-11-25",
+      "start": "12:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 725,
+        "low": 295,
+        "high": 1148
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_fT0-9yQ",
+      "date": "2026-11-25",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-25-espn-ksu-wbb-401927998",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 576,
+        "low": 515,
+        "high": 675
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_fT0x9yN",
+      "date": "2026-11-25",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_1SjKgNh",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_G2Q8wfV",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "RUSH · Fifty Something 24 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_GT-FutW",
+      "date": "2026-11-25",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_fLorwls",
+      "date": "2026-11-25",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZbgd3i_aC",
+      "date": "2026-11-25",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Savannah Ghost Pirates at Atlanta Gladiators 24 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-25-tm-vvG1zZ_4hBX9En",
+      "date": "2026-11-25",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_fT0N9yw",
+      "date": "2026-11-27",
+      "start": "12:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAAf_F",
+      "date": "2026-11-27",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_fT006B3",
+      "date": "2026-11-27",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_Cx_Eb8I",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "RUSH · Fifty Something 24 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7410
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_fThaAIo",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAAf_a",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZbgQ3ik-i",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "FOR KING + COUNTRY's 'A Drummer… 24 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_3XiP0np",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1050
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_CXOtIAZ",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_fVZp2ar",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_G0CRu9K",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-vvG1zZ_KheGDmm",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3600
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A70OFN",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7JKj9",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4665
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAvK1p",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAAf_o",
+      "date": "2026-11-28",
+      "start": "11:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-gt-mbb-401920310",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Louisiana at Georgia St (FB) 3.1 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 6659,
+        "low": 5919,
+        "high": 8409
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-gsu-football-401869959",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Jacksonville Icemen at Atlanta Gladiators and Alcorn St at Georgia Tech (MBB) 24 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14707,
+        "low": 13476,
+        "high": 14930
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-ksu-wbb-401927999",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 499,
+        "low": 479,
+        "high": 528
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A70SfO",
+      "date": "2026-11-28",
+      "start": "15:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAAf_8",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_2ww1to1",
+      "date": "2026-11-28",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_2p346MW",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_G2Qoxfz",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "Louisiana at Georgia St (FB) 24 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_klOdqdG",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZbSQBT0kP",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_1S4b03A",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3600
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1zZ_GpRljqD",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A70OFx",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAAf_3",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1zZ_G2Q334v",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1zZ_klO7udo",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAAf_K",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1zZ_1BR-uM-",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3600
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAepra",
+      "date": "2026-11-29",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1zZ_2xSMtna",
+      "date": "2026-11-29",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-11-30-espn-ksu-mbb-401926789",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1222,
+        "low": 1094,
+        "high": 1330
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-vvG1zZ_kEr4GZu",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Delta Sky360 Worlds Collide Soc… next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-vvG1zZ_KSEHf3f",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "friction": "Low",
+        "why": "Disney Descendants, ZOMBIES & C… next door, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-vvG1zZ_oRb_bSG",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1A7Pax4",
+      "date": "2026-12-01",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-12-01-espn-gsu-mbb-401929390",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "draw": {
+        "count": 1697,
+        "low": 1570,
+        "high": 2034
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-vvG1zZ_8DB-_SK",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-vvG1zZ_G2QKe4d",
+      "date": "2026-12-02",
+      "start": "10:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-vvG1zZ_oRbQISq",
+      "date": "2026-12-02",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A7-vkK",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A70wv-",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-hawks-401910085",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 15465,
+        "low": 14430,
+        "high": 16011
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vvG1zZ_urW6G8F",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1A7-vkf",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vvG1zZ_uxJqtyC",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1A70w7p",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_2ww5ao3",
+      "date": "2026-12-04",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_aKc0v5y",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_fEb-KoP",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_GmwncKK",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAAf_f",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_75u-MWo",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A7OwQ4",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_6BlHted",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1050
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_fQg7mxj",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Silvestre Dangond 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAvyoJ",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1100
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAZyQ8",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1.4,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1zZ_8jgIFj8",
+      "date": "2026-12-04",
+      "start": "21:00",
+      "read": {
+        "rating": 1.4,
+        "friction": "Low",
+        "why": "Lil Baby 21 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 5000
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7OPbw",
+      "date": "2026-12-05",
+      "start": "12:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_6K1eCqs",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAAf_p",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-sec-championship",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 75000
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7OPbV",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_2ww5top",
+      "date": "2026-12-05",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_GmsfW1F",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAAf_4",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_fLoLwi1",
+      "date": "2026-12-05",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_6K1dCqM",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7OwQp",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_29OTdSt",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "SEC Championship 24 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_38uA5aZ",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2200
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_K0lMs08",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1050
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_KwYl1sq",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "friction": "Moderate",
+        "why": "SEC Championship next door, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11970
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1zZ_uxJr_yf",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAea3F",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 3.2,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-falcons-401873098",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 71601,
+        "low": 70746,
+        "high": 72484
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1zZ_4Qs7HVe",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A7OPbU",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1zZ_2S-acBy",
+      "date": "2026-12-06",
+      "start": "13:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-gt-wbb-401913721",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2973,
+        "low": 2614,
+        "high": 3138
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1zZ_6K17rrA",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAAf_9",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-gt-mbb-401920311",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A7OPby",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1zZ_2xNv9ge",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3600
+      }
+    },
+    {
+      "eventId": "2026-12-07-tm-vvG1zZ_84BYNje",
+      "date": "2026-12-07",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-07-tm-vvG1zZ_K9TvSnT",
+      "date": "2026-12-07",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-07-tm-vvG1zZ_1Bpv1b6",
+      "date": "2026-12-07",
+      "start": "20:00",
+      "draw": {
+        "count": 1050
+      }
+    }
+  ]
+}

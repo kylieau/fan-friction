@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-rice-wbb-401913834",
+      "metroId": "houston",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "tudor-fieldhouse",
+      "homeTeamId": "rice-wbb",
+      "home": {
+        "name": "Rice Owls",
+        "score": 73
+      },
+      "away": {
+        "name": "Pepperdine",
+        "score": 63
+      },
+      "attendance": 729,
+      "capturedAt": "2026-11-23T20:06:54.009Z",
+      "duration": {
+        "minutes": 111,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

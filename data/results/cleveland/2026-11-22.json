@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-ht-cleveland-monsters-1029366",
+      "metroId": "cleveland",
+      "date": "2026-11-22",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "rocket-arena",
+      "homeTeamId": "cleveland-monsters",
+      "home": {
+        "name": "Monsters",
+        "score": 8
+      },
+      "away": {
+        "name": "Comets",
+        "score": 3
+      },
+      "attendance": 10192,
+      "capturedAt": "2026-11-23T20:06:51.964Z"
+    }
+  ]
+}

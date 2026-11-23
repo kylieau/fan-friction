@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-lightning-401892769",
+      "metroId": "tampa",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 2
+      },
+      "away": {
+        "name": "Sabres",
+        "score": 6
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-23T20:06:51.339Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "17:12"
+    }
+  ]
+}

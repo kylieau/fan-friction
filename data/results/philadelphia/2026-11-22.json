@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-delaware-wbb-401927938",
+      "metroId": "philadelphia",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bob-carpenter-center",
+      "homeTeamId": "delaware-wbb",
+      "home": {
+        "name": "Delaware",
+        "score": 55
+      },
+      "away": {
+        "name": "Hampton",
+        "score": 54
+      },
+      "attendance": 784,
+      "capturedAt": "2026-11-23T20:06:50.519Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-eagles-401873076",
+      "metroId": "philadelphia",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lincoln-financial-field",
+      "homeTeamId": "eagles",
+      "home": {
+        "name": "Eagles",
+        "score": 19
+      },
+      "away": {
+        "name": "Steelers",
+        "score": 16
+      },
+      "attendance": 69879,
+      "capturedAt": "2026-11-23T20:06:50.519Z",
+      "duration": {
+        "minutes": 187,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-temple-wbb-401919070",
+      "metroId": "philadelphia",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "liacouras-center",
+      "homeTeamId": "temple-wbb",
+      "home": {
+        "name": "Temple",
+        "score": 82
+      },
+      "away": {
+        "name": "Georgetown",
+        "score": 73
+      },
+      "attendance": 1190,
+      "capturedAt": "2026-11-23T20:06:50.519Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

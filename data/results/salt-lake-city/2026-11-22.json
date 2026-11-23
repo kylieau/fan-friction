@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "salt-lake-city",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-utah-jazz-401910033",
+      "metroId": "salt-lake-city",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "delta-center",
+      "homeTeamId": "utah-jazz",
+      "home": {
+        "name": "Jazz",
+        "score": 114
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 116
+      },
+      "attendance": 17867,
+      "capturedAt": "2026-11-23T20:06:55.195Z",
+      "duration": {
+        "minutes": 135,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

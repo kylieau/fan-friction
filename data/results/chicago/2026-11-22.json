@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-bears-401873071",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "soldier-field",
+      "homeTeamId": "bears",
+      "home": {
+        "name": "Bears",
+        "score": 21
+      },
+      "away": {
+        "name": "Saints",
+        "score": 13
+      },
+      "attendance": 59911,
+      "capturedAt": "2026-11-23T20:06:48.805Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-bulls-401910032",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "united-center",
+      "homeTeamId": "bulls",
+      "home": {
+        "name": "Bulls",
+        "score": 145
+      },
+      "away": {
+        "name": "Nuggets",
+        "score": 151
+      },
+      "attendance": 19360,
+      "note": "OT",
+      "capturedAt": "2026-11-23T20:06:48.805Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    },
+    {
+      "eventId": "2026-11-22-espn-chicago-fire-401933730",
+      "metroId": "chicago",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "seatgeek-stadium",
+      "homeTeamId": "chicago-fire",
+      "home": {
+        "name": "Fire",
+        "score": 1
+      },
+      "away": {
+        "name": "Charlotte",
+        "score": 2
+      },
+      "capturedAt": "2026-11-23T20:06:48.805Z"
+    }
+  ]
+}

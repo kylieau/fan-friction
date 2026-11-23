@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-heat-401910030",
+      "metroId": "miami",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "kaseya-center",
+      "homeTeamId": "heat",
+      "home": {
+        "name": "Heat",
+        "score": 123
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 113
+      },
+      "attendance": 19801,
+      "capturedAt": "2026-11-23T20:06:51.522Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "18:12"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "metroId": "vancouver",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-vancouver-canucks-401892772",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "rogers-arena",
+      "homeTeamId": "vancouver-canucks",
+      "home": {
+        "name": "Canucks",
+        "score": 3
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 6
+      },
+      "attendance": 17775,
+      "capturedAt": "2026-11-23T20:06:52.956Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "20:12"
+    },
+    {
+      "eventId": "2026-11-22-espn-vancouver-whitecaps-401933729",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bc-place",
+      "homeTeamId": "vancouver-whitecaps",
+      "home": {
+        "name": "Vancouver",
+        "score": 2
+      },
+      "away": {
+        "name": "Real Salt Lake",
+        "score": 0
+      },
+      "capturedAt": "2026-11-23T20:06:52.956Z"
+    },
+    {
+      "eventId": "2026-11-22-ht-vancouver-giants-1023335",
+      "metroId": "vancouver",
+      "date": "2026-11-22",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "langley-events-centre",
+      "homeTeamId": "vancouver-giants",
+      "home": {
+        "name": "Giants",
+        "score": 5
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 4
+      },
+      "attendance": 3727,
+      "note": "OT",
+      "capturedAt": "2026-11-23T20:06:52.957Z"
+    }
+  ]
+}

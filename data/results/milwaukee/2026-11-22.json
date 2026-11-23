@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-marquette-mbb-401909527",
+      "metroId": "milwaukee",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "marquette-mbb",
+      "home": {
+        "name": "Marquette",
+        "score": 106
+      },
+      "away": {
+        "name": "Chicago St",
+        "score": 62
+      },
+      "attendance": 12311,
+      "capturedAt": "2026-11-23T20:06:50.036Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

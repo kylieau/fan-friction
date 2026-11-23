@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-lipscomb-mbb-401920708",
+      "metroId": "nashville",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-mbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 92
+      },
+      "away": {
+        "name": "Milligan",
+        "score": 67
+      },
+      "attendance": 917,
+      "capturedAt": "2026-11-23T20:06:52.150Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-22-espn-nashville-sc-401933731",
+      "metroId": "nashville",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "geodis-park",
+      "homeTeamId": "nashville-sc",
+      "home": {
+        "name": "Nashville SC",
+        "score": 0
+      },
+      "away": {
+        "name": "Cincinnati",
+        "score": 1
+      },
+      "capturedAt": "2026-11-23T20:06:52.150Z"
+    },
+    {
+      "eventId": "2026-11-22-espn-tsu-wbb-401923333",
+      "metroId": "nashville",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gentry-center",
+      "homeTeamId": "tsu-wbb",
+      "home": {
+        "name": "Tennessee St",
+        "score": 55
+      },
+      "away": {
+        "name": "UT Arlington",
+        "score": 95
+      },
+      "attendance": 245,
+      "capturedAt": "2026-11-23T20:06:52.150Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "15:06"
+    }
+  ]
+}

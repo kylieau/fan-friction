@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-nc-state-wbb-401913739",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "reynolds-coliseum",
+      "homeTeamId": "nc-state-wbb",
+      "home": {
+        "name": "NC State",
+        "score": 85
+      },
+      "away": {
+        "name": "Coastal",
+        "score": 64
+      },
+      "attendance": 5014,
+      "capturedAt": "2026-11-23T20:06:56.613Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "15:05"
+    }
+  ]
+}

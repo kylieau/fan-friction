@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-ht-laval-rocket-1029368",
+      "metroId": "montreal",
+      "date": "2026-11-22",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "laval-rocket",
+      "home": {
+        "name": "Rocket",
+        "score": 1
+      },
+      "away": {
+        "name": "Wranglers",
+        "score": 3
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-11-23T20:06:49.752Z"
+    }
+  ]
+}

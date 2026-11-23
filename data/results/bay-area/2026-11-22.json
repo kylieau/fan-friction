@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-22",
+  "results": [
+    {
+      "eventId": "2026-11-22-espn-sf-49ers-401873077",
+      "metroId": "bay-area",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "estadio-banorte",
+      "homeTeamId": "sf-49ers",
+      "home": {
+        "name": "49ers",
+        "score": 35
+      },
+      "away": {
+        "name": "Vikings",
+        "score": 10
+      },
+      "attendance": 85612,
+      "capturedAt": "2026-11-23T20:06:48.404Z",
+      "duration": {
+        "minutes": 180,
+        "kind": "estimated"
+      },
+      "startedAt": "20:24"
+    },
+    {
+      "eventId": "2026-11-22-espn-warriors-401910035",
+      "metroId": "bay-area",
+      "date": "2026-11-22",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 88
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 87
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-23T20:06:48.404Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "20:41"
+    }
+  ]
+}
