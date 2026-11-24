@@ -30,7 +30,7 @@ import {
   type CrowdEvent,
   type EventPlace,
 } from '../data';
-import { shortLocalDate } from '../lib/dates';
+import { clockTime, shortLocalDate } from '../lib/dates';
 import { fullTitle } from '../lib/eventTitle';
 import type { ActivityKind } from '../lib/activity';
 import { BookmarkIcon, TicketIcon, TvIcon } from './Icons';
@@ -50,7 +50,10 @@ import { useEdgeFade } from '../lib/useEdgeFade';
  * Friends choice, nothing preselected, and a Home preset for either; Friends adds an optional "Where?"
  * with the one helper line. Un-tapping Attended asks once (C054).
  */
-export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () => void }) {
+export function StubSheet({ event: opened, onClose, games }: { event: CrowdEvent; onClose: () => void; /** A doubleheader's games, by start (build 7.3, A2): the sheet asks "Which Game?" first. */ games?: readonly CrowdEvent[] }) {
+  // The game the sheet acts on: the one she opened, until she picks the other half of a doubleheader.
+  const [event, setEvent] = useState(opened);
+  const twins = games && games.length > 1 ? games : null;
   const placesRow = useEdgeFade();
   const log = useSyncExternalStore(subscribePersonalLog, getPersonalLog, getPersonalLog);
   const account = useSyncExternalStore(subscribeAccount, getAccount, getAccount);
@@ -149,6 +152,21 @@ export function StubSheet({ event, onClose }: { event: CrowdEvent; onClose: () =
           <>
             <h2 className="stub-sheet-title">+ Stub it</h2>
             <p className="stub-sheet-sub">{[fullTitle(event), shortLocalDate(event.date), venue].filter(Boolean).join(' · ')}</p>
+            {/* A doubleheader asks which game first (build 7.3, A2; board docs/build-7-3/mockups/round1/01, approved Nov 23,
+                2026): the game she opened preselected, the start times to tell them apart; nothing is guessed. */}
+            {twins && (
+              <div className="stub-which" role="group" aria-label="Which game?">
+                <span className="stub-experience-label">Which Game?</span>
+                <div className="stub-which-choices">
+                  {twins.map((game, i) => (
+                    <button key={game.id} type="button" className="stub-choice" aria-pressed={game.id === event.id} onClick={() => setEvent(game)}>
+                      Game {i + 1}
+                      {game.start ? ` · ${clockTime(game.start)}` : ''}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
             <div className="stub-choices" role="group" aria-label={ahead ? 'Your plan' : 'Your stub'}>
               {ahead ? (
                 <>

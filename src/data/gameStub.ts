@@ -84,16 +84,42 @@ function sides(team: Team, game: TeamGame): { home: string; away: string } | und
   return game.home ? { home: team.id, away: them.id } : { home: them.id, away: team.id };
 }
 
-/** Same date, same home side (and visitor, when known): the catalog's copy of a schedule game under another id. */
+/**
+ * Same date, same home side (and visitor, when known): the catalog's copy of a schedule game under another id. The
+ * feed's own game number decides first (a catalog id ends with it: "2026-11-17-espn-lakers-401910005"); when two games
+ * that day share both teams and no number tells them apart (a doubleheader, one game missing from the catalog), it
+ * declines rather than guess, so an answer never lands on the wrong game (build 7.3, A2; Codex, group 15 review).
+ */
 export function sameGame(link: GameLink, events: readonly CrowdEvent[]): CrowdEvent | undefined {
   const team = TEAMS[link.teamId];
   if (!team) return undefined;
   const pair = sides(team, link.game);
   const homeId = pair?.home ?? (link.game.home ? team.id : undefined);
   if (!homeId) return undefined;
-  return events.find(
+  const candidates = events.filter(
     (e) => e.date === link.game.date && e.kind === 'game' && e.teams?.home === homeId && (!pair || !e.teams.away || e.teams.away === pair.away),
   );
+  const feedNumber = /(\d{4,})$/.exec(link.game.id)?.[1];
+  const exact = feedNumber ? candidates.find((e) => e.id.endsWith(`-${feedNumber}`)) : undefined;
+  if (exact) return exact;
+  // A candidate from the same feed carrying a different number is a different game (game 1, when game 2 is not in
+  // the catalog); a hand seed's id ("2026-10-03-dodgers") or another feed's copy (a school calendar's own number)
+  // still matches.
+  const feed = /^([a-z]+)-/.exec(link.game.id)?.[1];
+  const open = feedNumber && feed ? candidates.filter((e) => !(e.sourceId === feed && /-\d{4,}$/.test(e.id))) : candidates;
+  return open.length === 1 ? open[0] : undefined;
+}
+
+/**
+ * The games of a doubleheader the event belongs to: that day's games with the same two teams, by start; the event alone
+ * when it has no twin (build 7.3, A2, the "Which Game?" row on the Stub it sheet).
+ */
+export function doubleheaderOf(event: CrowdEvent, day: readonly CrowdEvent[]): CrowdEvent[] {
+  if (event.kind !== 'game' || !event.teams) return [event];
+  const { home, away } = event.teams;
+  const games = day.filter((e) => e.kind === 'game' && e.date === event.date && e.teams?.home === home && e.teams?.away === away);
+  if (!games.some((e) => e.id === event.id)) games.push(event);
+  return games.length > 1 ? [...games].sort((a, b) => (a.start ?? '99').localeCompare(b.start ?? '99') || a.id.localeCompare(b.id)) : [event];
 }
 
 /** A game event built from a team's schedule row, for the event page and the Stub it sheet. */

@@ -73,7 +73,7 @@ import { longLocalDate } from '../lib/dates';
 import { milesBetween } from '../lib/windows';
 import { devFeed } from '../lib/devFeed';
 import { TitleText } from '../components/TitleText';
-import { eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
+import { doubleheaderOf, eventFromGame, eventFromStub, gameRefFromId, getTeamSchedule, sameGame, stubShapeOf, TEAMS, type GameLink, type StubShape } from '../data';
 import { BackLink } from '../components/BackLink';
 import { FurtherOutInfo } from '../components/FurtherOut';
 
@@ -345,7 +345,7 @@ export function EventScreen() {
         />
         <FriendsCard friends={friends} />
       </div>
-      {sheet && <StubSheet event={e} onClose={() => setSheet(false)} />}
+      {sheet && <StubSheet event={e} games={doubleheaderOf(e, day.events)} onClose={() => setSheet(false)} />}
       <RecordOpened event={e} />
 
       {/* The crowd block (build notes 3, D04; mock call11b-crowd-hybrid): the highlighted figure big, in a pale-gold row

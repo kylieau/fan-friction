@@ -15131,3 +15131,19 @@ button.types-top-words {
   display: inline-flex;
   gap: 8px;
 }
+
+/* "Which Game?" (build 7.3, A2): a doubleheader's two games above the answers, the app's own answer buttons. */
+.stub-which {
+  margin: 0 0 12px;
+}
+.stub-which .stub-experience-label {
+  display: block;
+  margin-bottom: 8px;
+}
+.stub-which-choices {
+  display: flex;
+  gap: 8px;
+}
+.stub-which-choices .stub-choice {
+  flex: 1;
+}
