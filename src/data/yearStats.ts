@@ -138,5 +138,84 @@ export function yearStatPool(entries: readonly Entry[], year: string | 'all', al
   if (streak >= 2) pool.push({ key: 'streak', value: String(streak), label: 'Days in a row', weight: 1 + streak });
   const biggest = attended.map((e) => ({ e, n: entryCrowd(e)?.count ?? 0 })).sort((a, b) => b.n - a.n)[0];
   if (biggest && biggest.n > 0) pool.push({ key: 'biggestCrowd', value: biggest.n >= 1000 ? `${Math.round(biggest.n / 1000)}k` : String(biggest.n), label: 'Biggest crowd', weight: 2 });
+  withMilestones(pool, entries, year, allEntries, options.resultsReady !== false);
   return pool.sort((a, b) => b.weight - a.weight);
+}
+
+/** "Nov 16" from a day. */
+function monthDay(date: string): string {
+  const [y, m, d] = date.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+
+/** The stub counts worth naming (build 7.3, D5). */
+const STUB_MARKS = [1, 10, 25, 50, 100, 250, 500, 1000];
+
+/**
+ * Milestones as the tiles' quiet second line (build 7.3, D5; board `docs/build-7-3/mockups/round1/03`, approved Nov 23,
+ * 2026): first event or the 10th, 25th… stub, a first win, a new venue, a new team, a new city, and the busiest month,
+ * each only when it happened in the span shown, and only on a tile with no second line of its own. No badges, no
+ * confetti, no points (the guardrails). Day-precision stubs only; the order is the log's own (date, then title).
+ */
+function withMilestones(pool: YearStat[], entries: readonly Entry[], year: string | 'all', allEntries: readonly Entry[], resultsReady: boolean) {
+  const inSpan = (date: string) => year === 'all' || date.startsWith(year);
+  const dated = [...allEntries].filter((e) => e.when.precision === 'day').sort((a, b) => a.when.sort.localeCompare(b.when.sort) || a.title.localeCompare(b.title));
+  const put = (key: YearStat['key'], line: string | null) => {
+    const tile = pool.find((s) => s.key === key);
+    if (tile && !tile.sub && line) tile.sub = line;
+  };
+  // The newest first-time thing in the span: the last stub that brought a word never seen before it.
+  const newest = (wordsOf: (e: Entry) => string[]): { word: string; date: string } | null => {
+    const seen = new Set<string>();
+    let last: { word: string; date: string } | null = null;
+    for (const e of dated) {
+      for (const w of wordsOf(e)) {
+        if (seen.has(w)) continue;
+        seen.add(w);
+        if (inSpan(e.when.sort)) last = { word: w, date: e.when.sort };
+      }
+    }
+    return last;
+  };
+  if (resultsReady) {
+    const firstWin = dated.find((e) => attendedOutcome(e) === 'W');
+    if (firstWin && inSpan(firstWin.when.sort)) put('record', `first win: ${monthDay(firstWin.when.sort)}`);
+  }
+  // A new venue, team, or city means new against everything before it; for all time there is no "before", so these
+  // three speak only in a single year.
+  if (year !== 'all') {
+    const venue = newest((e) => (!e.watched && e.venue ? [e.venue] : []));
+    put('venues', venue ? `${venue.word} was new` : null);
+    const team = newest((e) => entryTeams(e));
+    put('teams', team ? `a new team: ${team.word}` : null);
+    const city = newest((e) => (e.metroId ? [METROS[e.metroId]?.name ?? e.metroId] : []));
+    put('cities', city ? `a new city: ${city.word}` : null);
+  }
+  // The highest stub count reached in the span, on the first tile still without a line (the hours, else the streak).
+  let mark: { n: number; date: string } | null = null;
+  dated.forEach((e, i) => {
+    const n = i + 1;
+    if (STUB_MARKS.includes(n) && inSpan(e.when.sort)) mark = { n, date: e.when.sort };
+  });
+  if (mark) {
+    const { n, date } = mark as { n: number; date: string };
+    const line = n === 1 ? `your first stub, ${monthDay(date)}` : `your ${ordinal(n)} stub, ${monthDay(date)}`;
+    const holder = pool.find((s) => (s.key === 'hours' || s.key === 'streak' || s.key === 'biggestCrowd') && !s.sub);
+    if (holder) holder.sub = line;
+  }
+  // The busiest month in the span, when it held three or more stubs, on the streak tile.
+  const months = new Map<string, number>();
+  for (const e of entries) if (e.when.precision === 'day') months.set(e.when.sort.slice(0, 7), (months.get(e.when.sort.slice(0, 7)) ?? 0) + 1);
+  const busiest = [...months.entries()].sort((a, b) => b[1] - a[1] || b[0].localeCompare(a[0]))[0];
+  if (busiest && busiest[1] >= 3) {
+    const [y, m] = busiest[0].split('-').map(Number);
+    const name = new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+    put('streak', `busiest month: ${name}, ${busiest[1]}`);
+  }
+}
+
+function ordinal(n: number): string {
+  const tens = n % 100;
+  if (tens >= 11 && tens <= 13) return `${n}th`;
+  return `${n}${n % 10 === 1 ? 'st' : n % 10 === 2 ? 'nd' : n % 10 === 3 ? 'rd' : 'th'}`;
 }
