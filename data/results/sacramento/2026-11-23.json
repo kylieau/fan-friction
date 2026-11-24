@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-sacramento-kings-401910045",
+      "metroId": "sacramento",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "golden-1-center",
+      "homeTeamId": "sacramento-kings",
+      "home": {
+        "name": "Sac Kings",
+        "score": 107
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 123
+      },
+      "attendance": 15301,
+      "capturedAt": "2026-11-24T19:36:02.241Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-duquesne-wbb-401915596",
+      "metroId": "pittsburgh",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 59
+      },
+      "away": {
+        "name": "Canisius",
+        "score": 43
+      },
+      "attendance": 681,
+      "capturedAt": "2026-11-24T19:35:59.196Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "18:03"
+    }
+  ]
+}

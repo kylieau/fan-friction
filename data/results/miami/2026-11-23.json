@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-fiu-mbb-401924266",
+      "metroId": "miami",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ocean-bank-convocation-center",
+      "homeTeamId": "fiu-mbb",
+      "home": {
+        "name": "FIU",
+        "score": 79
+      },
+      "away": {
+        "name": "Long Beach St",
+        "score": 75
+      },
+      "capturedAt": "2026-11-24T19:36:00.044Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

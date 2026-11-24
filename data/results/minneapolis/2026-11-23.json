@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-timberwolves-401910040",
+      "metroId": "minneapolis",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "target-center",
+      "homeTeamId": "timberwolves",
+      "home": {
+        "name": "Timberwolves",
+        "score": 142
+      },
+      "away": {
+        "name": "Nets",
+        "score": 116
+      },
+      "attendance": 18329,
+      "capturedAt": "2026-11-24T19:36:03.984Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

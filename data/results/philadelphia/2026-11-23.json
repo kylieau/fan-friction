@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-sixers-401910037",
+      "metroId": "philadelphia",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "xfinity-mobile-arena",
+      "homeTeamId": "sixers",
+      "home": {
+        "name": "76ers",
+        "score": 111
+      },
+      "away": {
+        "name": "Blazers",
+        "score": 128
+      },
+      "attendance": 21512,
+      "capturedAt": "2026-11-24T19:35:58.871Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:10"
+    }
+  ]
+}

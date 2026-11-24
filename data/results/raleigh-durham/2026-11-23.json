@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-nccu-mbb-401927353",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mcdougald-mclendon-arena",
+      "homeTeamId": "nccu-mbb",
+      "home": {
+        "name": "NC Central",
+        "score": 105
+      },
+      "away": {
+        "name": "Carolina U",
+        "score": 46
+      },
+      "attendance": 949,
+      "capturedAt": "2026-11-24T19:36:06.060Z",
+      "duration": {
+        "minutes": 104,
+        "kind": "estimated"
+      },
+      "startedAt": "19:30"
+    },
+    {
+      "eventId": "2026-11-23-espn-nccu-wbb-401925624",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "mcdougald-mclendon-arena",
+      "homeTeamId": "nccu-wbb",
+      "home": {
+        "name": "NC Central",
+        "score": 54
+      },
+      "away": {
+        "name": "Elon",
+        "score": 74
+      },
+      "attendance": 949,
+      "capturedAt": "2026-11-24T19:36:06.060Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "17:02"
+    },
+    {
+      "eventId": "2026-11-23-espn-unc-mbb-401913102",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "dean-smith-center",
+      "homeTeamId": "unc-mbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 85
+      },
+      "away": {
+        "name": "Monmouth",
+        "score": 45
+      },
+      "attendance": 16263,
+      "capturedAt": "2026-11-24T19:36:06.060Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "20:04"
+    }
+  ]
+}

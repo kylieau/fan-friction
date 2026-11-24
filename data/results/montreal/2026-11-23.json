@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-canadiens-401892774",
+      "metroId": "montreal",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "bell-centre",
+      "homeTeamId": "canadiens",
+      "home": {
+        "name": "Canadiens",
+        "score": 1
+      },
+      "away": {
+        "name": "Kings",
+        "score": 2
+      },
+      "attendance": 20962,
+      "capturedAt": "2026-11-24T19:35:58.213Z",
+      "duration": {
+        "minutes": 163,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    }
+  ]
+}

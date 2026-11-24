@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-gcu-wbb-401921391",
+      "metroId": "phoenix",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "gcu-wbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 60
+      },
+      "away": {
+        "name": "High Point",
+        "score": 54
+      },
+      "attendance": 104,
+      "capturedAt": "2026-11-24T19:36:01.881Z",
+      "duration": {
+        "minutes": 107,
+        "kind": "estimated"
+      },
+      "startedAt": "16:01"
+    }
+  ]
+}

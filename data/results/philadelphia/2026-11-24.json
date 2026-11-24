@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-villanova-wbb-401921151",
+      "metroId": "philadelphia",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-wbb",
+      "home": {
+        "name": "Villanova",
+        "score": 65
+      },
+      "away": {
+        "name": "La Salle",
+        "score": 67
+      },
+      "attendance": 1303,
+      "capturedAt": "2026-11-24T19:35:58.871Z",
+      "duration": {
+        "minutes": 115,
+        "kind": "estimated"
+      },
+      "startedAt": "11:33"
+    }
+  ]
+}

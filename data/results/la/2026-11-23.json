@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-lakers-401910044",
+      "metroId": "la",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "crypto-com-arena",
+      "homeTeamId": "lakers",
+      "home": {
+        "name": "Lakers",
+        "score": 109
+      },
+      "away": {
+        "name": "Jazz",
+        "score": 94
+      },
+      "attendance": 19057,
+      "capturedAt": "2026-11-24T19:35:54.663Z",
+      "duration": {
+        "minutes": 145,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    },
+    {
+      "eventId": "2026-11-23-espn-usc-wbb-401927108",
+      "metroId": "la",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "galen-center",
+      "homeTeamId": "usc-wbb",
+      "home": {
+        "name": "USC",
+        "score": 100
+      },
+      "away": {
+        "name": "N Arizona",
+        "score": 52
+      },
+      "attendance": 5261,
+      "capturedAt": "2026-11-24T19:35:54.663Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    }
+  ]
+}

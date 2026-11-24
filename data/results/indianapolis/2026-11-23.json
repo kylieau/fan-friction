@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-pacers-401910038",
+      "metroId": "indianapolis",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gainbridge-fieldhouse",
+      "homeTeamId": "pacers",
+      "home": {
+        "name": "Pacers",
+        "score": 125
+      },
+      "away": {
+        "name": "Thunder",
+        "score": 120
+      },
+      "attendance": 17274,
+      "capturedAt": "2026-11-24T19:36:03.198Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "19:40"
+    }
+  ]
+}

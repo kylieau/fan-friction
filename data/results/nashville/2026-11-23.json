@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "nashville",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-lipscomb-wbb-401916072",
+      "metroId": "nashville",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "allen-arena",
+      "homeTeamId": "lipscomb-wbb",
+      "home": {
+        "name": "Lipscomb",
+        "score": 67
+      },
+      "away": {
+        "name": "Tennessee Tech",
+        "score": 68
+      },
+      "attendance": 784,
+      "capturedAt": "2026-11-24T19:36:01.187Z",
+      "duration": {
+        "minutes": 121,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

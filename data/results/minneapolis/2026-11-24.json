@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-st-thomas-wbb-401918727",
+      "metroId": "minneapolis",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "anderson-arena",
+      "homeTeamId": "st-thomas-wbb",
+      "home": {
+        "name": "St Thomas",
+        "score": 68
+      },
+      "away": {
+        "name": "C Michigan",
+        "score": 38
+      },
+      "attendance": 1402,
+      "capturedAt": "2026-11-24T19:36:03.984Z",
+      "duration": {
+        "minutes": 98,
+        "kind": "estimated"
+      },
+      "startedAt": "12:05"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-cal-mbb-401918057",
+      "metroId": "bay-area",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "haas-pavilion",
+      "homeTeamId": "cal-mbb",
+      "home": {
+        "name": "California",
+        "score": 96
+      },
+      "away": {
+        "name": "Alabama St",
+        "score": 54
+      },
+      "attendance": 3860,
+      "capturedAt": "2026-11-24T19:35:56.703Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "22:01"
+    },
+    {
+      "eventId": "2026-11-23-espn-sharks-401892779",
+      "metroId": "bay-area",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sap-center",
+      "homeTeamId": "sharks",
+      "home": {
+        "name": "Sharks",
+        "score": 2
+      },
+      "away": {
+        "name": "Wild",
+        "score": 5
+      },
+      "attendance": 15710,
+      "capturedAt": "2026-11-24T19:35:56.703Z",
+      "duration": {
+        "minutes": 149,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    }
+  ]
+}

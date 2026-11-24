@@ -171,6 +171,18 @@
       "code": 81,
       "precipProbability": 96,
       "precipMm": 48.1
+    },
+    {
+      "metroId": "philadelphia",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "forecast",
+      "capturedAt": "2026-11-24T19:23:36.749Z",
+      "feelsLikeHighF": 59.3,
+      "feelsLikeLowF": 36.3,
+      "code": 63,
+      "precipProbability": 98,
+      "precipMm": 33.87
     }
   ]
 }

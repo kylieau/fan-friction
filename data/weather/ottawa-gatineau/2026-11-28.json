@@ -147,6 +147,18 @@
       "code": 45,
       "precipProbability": 44,
       "precipMm": 0
+    },
+    {
+      "metroId": "ottawa-gatineau",
+      "venueId": "city",
+      "date": "2026-11-28",
+      "basis": "forecast",
+      "capturedAt": "2026-11-24T19:27:23.627Z",
+      "feelsLikeHighF": 35.2,
+      "feelsLikeLowF": 28.4,
+      "code": 3,
+      "precipProbability": 72,
+      "precipMm": 0
     }
   ]
 }

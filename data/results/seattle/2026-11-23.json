@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-kraken-401892778",
+      "metroId": "seattle",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 3
+      },
+      "away": {
+        "name": "Ducks",
+        "score": 2
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-11-24T19:35:55.532Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "21:48"
+    }
+  ]
+}

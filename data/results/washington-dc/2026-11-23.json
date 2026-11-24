@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-washington-401873078",
+      "metroId": "washington-dc",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "northwest-stadium",
+      "homeTeamId": "washington",
+      "home": {
+        "name": "Commanders",
+        "score": 22
+      },
+      "away": {
+        "name": "Bengals",
+        "score": 20
+      },
+      "attendance": 64101,
+      "capturedAt": "2026-11-24T19:36:05.426Z",
+      "duration": {
+        "minutes": 182,
+        "kind": "estimated"
+      },
+      "startedAt": "20:16"
+    }
+  ]
+}

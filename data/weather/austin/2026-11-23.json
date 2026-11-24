@@ -195,6 +195,17 @@
       "code": 3,
       "precipProbability": 0,
       "precipMm": 0
+    },
+    {
+      "metroId": "austin",
+      "venueId": "city",
+      "date": "2026-11-23",
+      "basis": "observed",
+      "capturedAt": "2026-11-24T19:25:09.257Z",
+      "feelsLikeHighF": 55.3,
+      "feelsLikeLowF": 37,
+      "code": 2,
+      "precipMm": 0
     }
   ]
 }

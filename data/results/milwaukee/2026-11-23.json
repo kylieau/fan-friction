@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-uwm-wbb-401919077",
+      "metroId": "milwaukee",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "klotsche-center",
+      "homeTeamId": "uwm-wbb",
+      "home": {
+        "name": "Milwaukee",
+        "score": 57
+      },
+      "away": {
+        "name": "Marquette",
+        "score": 61
+      },
+      "attendance": 695,
+      "capturedAt": "2026-11-24T19:35:58.381Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

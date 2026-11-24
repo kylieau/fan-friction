@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-gsu-wbb-401929239",
+      "metroId": "atlanta",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-wbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 59
+      },
+      "away": {
+        "name": "St Bonaventure",
+        "score": 61
+      },
+      "attendance": 552,
+      "capturedAt": "2026-11-24T19:35:56.444Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    }
+  ]
+}

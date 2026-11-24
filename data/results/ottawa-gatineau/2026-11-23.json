@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "date": "2026-11-23",
+  "results": [
+    {
+      "eventId": "2026-11-23-espn-ottawa-senators-401892775",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-23",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "canadian-tire-centre",
+      "homeTeamId": "ottawa-senators",
+      "home": {
+        "name": "Senators",
+        "score": 2
+      },
+      "away": {
+        "name": "Flames",
+        "score": 1
+      },
+      "attendance": 16413,
+      "capturedAt": "2026-11-24T19:36:04.624Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "19:42"
+    }
+  ]
+}
