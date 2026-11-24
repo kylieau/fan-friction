@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { setPlanNote, updateEntry, type Entry, type Plan } from '../data';
+import { setEntryAgain, setPlanNote, updateEntry, type Entry, type Plan } from '../data';
 
 /**
  * Your Notes (build 7.2, R2a follow-up; Kylie, Nov 5: "combine the Review and With into a single ... umbrella", the name
@@ -11,7 +11,33 @@ import { setPlanNote, updateEntry, type Entry, type Plan } from '../data';
  * the private pair and the review follows the stub's level as before.
  */
 export function ExperienceRows({ entry }: { entry: Entry }) {
-  return <NotesRows fields={['with', 'review']} values={{ with: entry.with, review: entry.review }} onSave={(field, text) => updateEntry(entry.id, { [field]: text })} />;
+  return (
+    <>
+      <NotesRows fields={['with', 'review']} values={{ with: entry.with, review: entry.review }} onSave={(field, text) => updateEntry(entry.id, { [field]: text })} />
+      <AgainRow entry={entry} />
+    </>
+  );
+}
+
+/**
+ * "Again?" (build 7.3, D10; board `docs/build-7-3/mockups/round1/02`, approved Nov 23, 2026): one row under Your Notes on
+ * a stub, Yes and No, nothing picked until she taps; tapping the picked one again clears it.
+ */
+function AgainRow({ entry }: { entry: Entry }) {
+  const pick = (value: 'yes' | 'no') => setEntryAgain(entry.id, entry.again === value ? undefined : value);
+  return (
+    <div className="stub-seats-row stub-again-row" role="group" aria-label="Would go again">
+      <span className="stub-tags-label">Again?</span>
+      <span className="stub-again-choices">
+        <button type="button" className="filter-chip" aria-pressed={entry.again === 'yes'} onClick={() => pick('yes')}>
+          Yes
+        </button>
+        <button type="button" className="filter-chip" aria-pressed={entry.again === 'no'} onClick={() => pick('no')}>
+          No
+        </button>
+      </span>
+    </div>
+  );
 }
 
 /** The plan's rows under Your Notes (mock `notes-and-record/01`, approved Nov 19, 2026). */

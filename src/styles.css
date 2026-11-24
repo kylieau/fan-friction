@@ -15125,3 +15125,9 @@ button.types-top-words {
 .setup-faves .fav-row {
   cursor: default;
 }
+
+/* "Again?" (build 7.3, D10): two chips beside the label, under Your Notes on a stub. */
+.stub-again-choices {
+  display: inline-flex;
+  gap: 8px;
+}

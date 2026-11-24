@@ -641,6 +641,11 @@ export interface Entry {
   with?: string;
   /** A few lines in your words (Kylie, Oct 6: Letterboxd-style, no stars). Follows your visibility switch. */
   review?: string;
+  /**
+   * Would she go again (build 7.3, D10; approved Nov 23, 2026, board `docs/build-7-3/mockups/round1/02`): one tap, yes
+   * or no, absent until she taps; tapping the picked one again clears it. On a stub only; it follows the stub's level.
+   */
+  again?: 'yes' | 'no';
   /** Link to the setlist, for shows. */
   setlistUrl?: string;
   /** The TV station, typed in when the schedule didn't name one. */

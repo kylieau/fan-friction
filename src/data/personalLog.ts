@@ -529,6 +529,20 @@ export function updateEntry(entryId: string, edit: EntryEdit) {
   commit({ ...snapshot, added });
 }
 
+/** "Again?" on a stub (build 7.3, D10): yes, no, or cleared (undefined). */
+export function setEntryAgain(entryId: string, again: 'yes' | 'no' | undefined) {
+  commit({
+    ...snapshot,
+    added: snapshot.added.map((entry) => {
+      if (entry.id !== entryId) return entry;
+      const next: Entry = { ...entry };
+      if (again) next.again = again;
+      else delete next.again;
+      return next;
+    }),
+  });
+}
+
 // ---------- Stub levels (build 5, stub privacy; Kylie, Oct 14, answer E) ----------
 
 /** The level a new stub takes: the profile's switch, once the account has said it; Private when signed out or unknown. */
