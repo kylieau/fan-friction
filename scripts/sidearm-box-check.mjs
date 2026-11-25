@@ -38,6 +38,8 @@ try {
   check(games?.[0].home === true && games?.[0].date === '2025-11-03' && games?.[0].boxId === '34873', 'the home game: its date, number, and home flag from our side, not the opponents\' table');
   check(games?.[1].home === false, 'an away game reads as away');
   check(box.indexGames('<html>no payload</html>') === null, 'a page with no payload reads as nothing, not as an empty season');
+  check(box.indexGames(page([{ error: 1 }, { statusCode: 404, message: 'Page not found' }])) === null, "a payload with no game-by-game table (an error page) reads as nothing, not as an empty season (Codex, B2 review)");
+  check(box.indexGames(page([{ ourGameByGameStats: 1 }, []]))?.length === 0, 'a real table with no games yet is an empty season');
 
   const boxPage = (o) => page([{ game: 1 }, { date: 2, location: 3, stadium: 4, isNeutral: o.neutral ?? false, isAPostseasonGame: o.post ?? false, attendance: 5 }, o.date ?? '11/03/25', o.location, o.stadium ?? '0', o.attendance]);
   const hoops = box.boxFacts(boxPage({ location: 'Galen Center, Los Angeles, CA', attendance: '3902' }));
@@ -66,6 +68,8 @@ try {
   check(robots.delaySeconds === 30, "the site's crawl delay for any crawler, not another bot's group");
   check(robots.allows('/sports/womens-volleyball/stats/2023') && !robots.allows('/documents/x.pdf') && !robots.allows('/a/b.js'), 'paths the robots file closes are never read; the stats pages are open');
   check(box.robotsFor('User-agent: *\nDisallow: /sports/\n').allows('/sports/football/stats/2025') === false, 'a site that closes its sports pages is not read');
+  const named = box.robotsFor('User-agent: *\nAllow: /\nCrawl-delay: 5\n\nUser-agent: fan-friction\nDisallow: /sports/\nCrawl-delay: 60\n');
+  check(!named.allows('/sports/football/stats/2025') && named.delaySeconds === 60, "a group naming this reader wins over the one for any crawler, its delay too (Codex, B2 review)");
 } finally {
   await server.close();
 }

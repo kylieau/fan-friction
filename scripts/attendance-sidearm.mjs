@@ -29,6 +29,8 @@ const ONLY_METRO = arg('metro');
 const ONLY_TEAM = arg('team');
 const PLAN_ONLY = process.argv.includes('--plan');
 const DEFAULT_DELAY_S = 10;
+/** Nights a blank crowd or an unreadable box score is read again before it stands (a crowd posted a day late). */
+const MAX_TRIES = 3;
 const UA = 'Mozilla/5.0 (compatible; fan-friction attendance reader; personal use; +https://github.com/kylieau/fan-friction)';
 const LEDGER = path.join(root, 'data', 'attendance-reads', 'sidearm.json');
 
@@ -70,7 +72,11 @@ try {
         if (ONLY_TEAM && e.teams.home !== ONLY_TEAM) continue;
         const team = TEAMS[e.teams.home];
         const division = e.audience?.division ?? (/\bwomen'?s\b/i.test(team.name) ? 'women' : /\bmen'?s\b/i.test(team.name) ? 'men' : undefined);
-        programs.set(team.id, { metroId, teamId: team.id, site: school.site, sport: e.audience?.sport ?? 'other', division });
+        // The rooms the schedules show the program at home: a box score's room must be one of them, so a same-named
+        // room in this city never takes a game played elsewhere ("Memorial Stadium, Waco, TX"; Codex, B2 review).
+        const known = programs.get(team.id)?.rooms ?? new Set();
+        if (e.place?.type === 'venue') known.add(e.place.venueId);
+        programs.set(team.id, { metroId, teamId: team.id, site: school.site, sport: e.audience?.sport ?? 'other', division, rooms: known });
       }
     }
   }
@@ -119,19 +125,29 @@ try {
     let last = 0;
     let delayMs = DEFAULT_DELAY_S * 1000;
     let allows = () => true;
+    // Each hop of a redirect is paced and checked like a page of its own; one leaving the site, or into a path the
+    // robots file closes, is not followed (Codex, B2 review).
     const get = async (p) => {
-      if (Date.now() + delayMs > deadline) return { stop: 'budget' };
-      const wait = last + delayMs - Date.now();
-      if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-      last = Date.now();
-      tally.pages++;
-      try {
-        const r = await fetch(`${site}${p}`, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'follow', signal: AbortSignal.timeout(60_000) });
+      let url = new URL(p, site);
+      for (let hop = 0; hop < 4; hop++) {
+        if (Date.now() + delayMs > deadline) return { stop: 'budget' };
+        const wait = last + delayMs - Date.now();
+        if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+        last = Date.now();
+        tally.pages++;
+        let r;
+        try {
+          r = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'text/html' }, redirect: 'manual', signal: AbortSignal.timeout(60_000) });
+        } catch (err) {
+          return { stop: err?.name === 'TimeoutError' ? 'timeout' : 'network' };
+        }
         if (r.status === 429 || r.status >= 500) return { stop: `${r.status}` };
-        return { status: r.status, text: r.ok ? await r.text() : '' };
-      } catch (err) {
-        return { stop: err?.name === 'TimeoutError' ? 'timeout' : 'network' };
+        const to = r.status >= 300 && r.status < 400 ? r.headers.get('location') : null;
+        if (!to) return { status: r.status, text: r.ok ? await r.text() : '' };
+        url = new URL(to, url);
+        if (url.origin !== new URL(site).origin || (p !== '/robots.txt' && !allows(url.pathname + url.search))) return { status: 'not-followed' };
       }
+      return { status: 'not-followed' };
     };
 
     const robots = await get('/robots.txt');
@@ -150,7 +166,7 @@ try {
       for (const s of seasons) {
         for (const [id, held] of Object.entries(entry.seasons[s.label]?.boxes ?? {})) {
           if (typeof held !== 'object' || held.status !== 'no-room') continue;
-          const venueId = box.boxRoom(t.metroId, held.places, held.date);
+          const venueId = roomOf(t, held.places, held.date);
           if (!venueId) continue;
           entry.seasons[s.label].boxes[id] = 'kept';
           touched.add('ledger');
@@ -191,15 +207,17 @@ try {
         rec.readOn = today;
         touched.add('ledger');
         if (!games) {
-          // No page for a past season (the program was not on this site yet): nothing to read, ever.
-          if (!current) rec.done = true;
+          // Only a 404 settles a past season (the program was not on this site yet); a refusal or a page that did
+          // not read is tried again another night (Codex, B2 review).
+          if (!current && r.status === 404) rec.done = true;
           continue;
         }
         let open = 0;
         for (const g of games) {
           if (!g.home) continue;
-          if (rec.boxes[g.boxId] || g.date >= today) {
-            if (!rec.boxes[g.boxId]) open++;
+          const had = rec.boxes[g.boxId];
+          if (settled(had) || g.date >= today || (had && had.last === today)) {
+            if (!settled(had)) open++;
             continue;
           }
           if (!allows(g.boxUrl)) {
@@ -209,10 +227,16 @@ try {
           const b = await get(g.boxUrl);
           if (b.stop) return note(site, `stopped (${b.stop})`);
           const facts = b.status === 200 ? box.boxFacts(b.text) : null;
-          const venueId = facts && !facts.neutral ? box.boxRoom(t.metroId, facts.places, g.date) : undefined;
+          const venueId = facts && !facts.neutral ? roomOf(t, facts.places, g.date) : undefined;
           const status = !facts ? 'unreadable' : facts.neutral ? 'neutral' : !facts.attendance ? 'no-crowd' : !venueId ? 'no-room' : 'kept';
-          // A room not on file keeps the game's facts, so a later night places it once the room is added.
-          rec.boxes[g.boxId] = status === 'no-room' ? { status, places: facts.places, date: g.date, opponent: g.opponent, attendance: facts.attendance, ...(facts.postseason ? { postseason: true } : {}) } : status;
+          // A room not on file keeps the game's facts, so a later night places it once the room is added; a blank
+          // crowd or an unreadable page is read again on the next nights, MAX_TRIES in all.
+          rec.boxes[g.boxId] =
+            status === 'no-room'
+              ? { status, places: facts.places, date: g.date, opponent: g.opponent, attendance: facts.attendance, ...(facts.postseason ? { postseason: true } : {}) }
+              : status === 'no-crowd' || status === 'unreadable'
+                ? { status, tries: (had?.tries ?? 0) + 1, last: today }
+                : status;
           if (status !== 'kept') {
             tally.skipped++;
             continue;
@@ -220,10 +244,21 @@ try {
           await keep(t, s.season, { date: g.date, opponent: g.opponent, venueId, attendance: facts.attendance, postseason: facts.postseason });
         }
         // A past season is done once every home game has an answer; the current one keeps coming back.
-        if (!current && open === 0 && games.filter((g) => g.home).every((g) => rec.boxes[g.boxId])) rec.done = true;
+        if (!current && open === 0 && games.filter((g) => g.home).every((g) => settled(rec.boxes[g.boxId]))) rec.done = true;
       }
     }
     return undefined;
+  }
+  /** A box score's answer that stands: anything but a blank crowd or an unread page still inside its tries. */
+  function settled(v) {
+    if (!v) return false;
+    if (typeof v === 'string') return true;
+    return v.status === 'no-room' || (v.tries ?? 0) >= MAX_TRIES;
+  }
+  /** The room on file a box names, when the schedules show the program at home there. */
+  function roomOf(t, places, date) {
+    const venueId = box.boxRoom(t.metroId, places, date);
+    return venueId && t.rooms.has(venueId) ? venueId : undefined;
   }
   function note(site, why) {
     tally.stoppedSites++;

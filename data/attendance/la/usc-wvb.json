@@ -47,6 +47,50 @@
       "attendance": 1142,
       "kind": "announced",
       "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-09-29",
+      "start": null,
+      "opponent": "Utah",
+      "venueId": "galen-center",
+      "attendance": 857,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-10-01",
+      "start": null,
+      "opponent": "Colorado",
+      "venueId": "galen-center",
+      "attendance": 1302,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-10-20",
+      "start": null,
+      "opponent": "Washington St.",
+      "venueId": "galen-center",
+      "attendance": 1441,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-10-22",
+      "start": null,
+      "opponent": "Washington",
+      "venueId": "galen-center",
+      "attendance": 1253,
+      "kind": "announced",
+      "sourceId": "sidearm"
     }
   ]
 }

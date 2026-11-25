@@ -68,10 +68,13 @@ export function indexGames(html: string): IndexGame[] | null {
   const data = nuxtPayload(html);
   if (!data) return null;
   const games = new Map<string, IndexGame>();
+  // A payload with no game-by-game table (an error page, another layout) is not a season with no games.
+  let table = false;
   for (const entry of data) {
     if (!isObject(entry) || !('ourGameByGameStats' in entry)) continue;
     const list = at(data, entry.ourGameByGameStats);
     if (!Array.isArray(list)) continue;
+    table = true;
     for (const ref of list) {
       const row = at(data, ref);
       if (!isObject(row)) continue;
@@ -83,6 +86,7 @@ export function indexGames(html: string): IndexGame[] | null {
       if (!games.has(boxId)) games.set(boxId, { date, opponent: typeof f.opponent === 'string' ? f.opponent.trim() : '', boxUrl, boxId, home: f.isAtHome });
     }
   }
+  if (!table) return null;
   return [...games.values()].sort((a, b) => a.date.localeCompare(b.date) || a.boxId.localeCompare(b.boxId));
 }
 
@@ -175,8 +179,11 @@ export function seasonsToRead(sport: string, today: string): SeasonLabel[] {
   return [year - 3, year - 2, year - 1, year].map((y) => ({ label: String(y), season: y }));
 }
 
-/** A robots.txt's rules for any crawler: the crawl delay and whether a path is open. */
-export function robotsFor(text: string): { delaySeconds?: number; allows: (path: string) => boolean } {
+/**
+ * A robots.txt's rules for this reader: the group naming it ("fan-friction") when there is one, else the group for
+ * any crawler; its crawl delay and whether a path is open.
+ */
+export function robotsFor(text: string, agent = 'fan-friction'): { delaySeconds?: number; allows: (path: string) => boolean } {
   const groups: { agents: string[]; lines: [string, string][] }[] = [];
   let cur: { agents: string[]; lines: [string, string][] } | undefined;
   for (const raw of text.split(/\r?\n/)) {
@@ -189,7 +196,8 @@ export function robotsFor(text: string): { delaySeconds?: number; allows: (path:
       cur.agents.push(m[2].trim().toLowerCase());
     } else if (cur) cur.lines.push([key, m[2].trim()]);
   }
-  const mine = groups.filter((g) => g.agents.includes('*')).flatMap((g) => g.lines);
+  const named = groups.filter((g) => g.agents.some((a) => a !== '*' && agent.toLowerCase().includes(a)));
+  const mine = (named.length ? named : groups.filter((g) => g.agents.includes('*'))).flatMap((g) => g.lines);
   const delay = mine.find(([k]) => k === 'crawl-delay')?.[1];
   const rules = mine.filter(([k, v]) => (k === 'allow' || k === 'disallow') && v).map(([k, v]) => ({ allow: k === 'allow', re: new RegExp(`^${v.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*').replace(/\\\$$/, '$')}`), len: v.length }));
   return {
