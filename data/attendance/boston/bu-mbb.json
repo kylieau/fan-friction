@@ -2,6 +2,40 @@
   "schema": 1,
   "metroId": "boston",
   "teamId": "bu-mbb",
-  "collectedOn": "2026-10-12",
-  "games": []
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "bu-mbb",
+      "season": 2024,
+      "date": "2023-11-16",
+      "start": null,
+      "opponent": "Bryant",
+      "venueId": "case-gym",
+      "attendance": 1268,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2024,
+      "date": "2023-11-26",
+      "start": null,
+      "opponent": "VTSU-Johnson",
+      "venueId": "case-gym",
+      "attendance": 430,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2024,
+      "date": "2023-12-06",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "case-gym",
+      "attendance": 653,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
 }

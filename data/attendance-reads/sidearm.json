@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "teams": {
+    "bc-mhockey": {
+      "site": "https://bceagles.com",
+      "seasons": {
+        "2023-24": {
+          "boxes": {
+            "24770": {
+              "status": "no-room",
+              "places": [
+                "Boston, Massachusetts"
+              ],
+              "date": "2023-10-13",
+              "opponent": "LIU",
+              "attendance": 7308
+            },
+            "24771": {
+              "status": "no-room",
+              "places": [
+                "Boston, Massachusetts"
+              ],
+              "date": "2023-10-20",
+              "opponent": "Rensselaer",
+              "attendance": 5802
+            },
+            "24772": {
+              "status": "no-room",
+              "places": [
+                "Boston, Massachusetts"
+              ],
+              "date": "2023-10-21",
+              "opponent": "Denver",
+              "attendance": 7884
+            }
+          },
+          "readOn": "2026-11-25"
+        }
+      },
+      "path": "mens-ice-hockey"
+    },
+    "bu-mbb": {
+      "site": "https://goterriers.com",
+      "seasons": {
+        "2023-24": {
+          "boxes": {
+            "31238": "kept",
+            "31240": "kept",
+            "31243": "kept"
+          },
+          "readOn": "2026-11-25"
+        }
+      },
+      "path": "mens-basketball"
+    },
+    "northeastern-mbb": {
+      "site": "https://nuhuskies.com",
+      "seasons": {},
+      "unreadable": "2026-11-25"
+    },
+    "northeastern-wbb": {
+      "site": "https://nuhuskies.com",
+      "seasons": {},
+      "unreadable": "2026-11-25"
+    },
+    "uml-mhockey": {
+      "site": "https://goriverhawks.com",
+      "seasons": {
+        "2023-24": {
+          "boxes": {
+            "8357": {
+              "status": "no-room",
+              "places": [
+                "Lowell"
+              ],
+              "date": "2023-10-27",
+              "opponent": "UConn",
+              "attendance": 6560
+            },
+            "8360": {
+              "status": "no-room",
+              "places": [
+                "Lowell, Massachusetts"
+              ],
+              "date": "2023-11-04",
+              "opponent": "Boston College",
+              "attendance": 6163
+            },
+            "8361": {
+              "status": "no-room",
+              "places": [
+                "Lowell, Massachusetts"
+              ],
+              "date": "2023-11-10",
+              "opponent": "Boston U.",
+              "attendance": 5748
+            }
+          },
+          "readOn": "2026-11-25"
+        }
+      },
+      "path": "mens-ice-hockey"
+    },
+    "usc-wvb": {
+      "site": "https://usctrojans.com",
+      "seasons": {
+        "2023": {
+          "boxes": {
+            "33118": "kept",
+            "33125": "kept",
+            "33155": "kept",
+            "33158": "neutral",
+            "33161": "kept"
+          },
+          "readOn": "2026-11-25"
+        }
+      },
+      "path": "womens-volleyball"
+    }
+  }
+}

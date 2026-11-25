@@ -95,6 +95,18 @@ jobs:
           if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
           node scripts/results-fetch.mjs "${metro_args[@]}"
 
+      # College crowds from the schools' own box scores (build 7.3, B2): the programs no other source sizes, at each
+      # site's crawl pace, within a 20-minute budget a night; the ledger carries the rest to the next night. Before
+      # the draws, so they read what it kept. Proof: node scripts/sidearm-box-check.mjs.
+      - name: Read school box scores
+        id: boxscores
+        continue-on-error: true
+        timeout-minutes: 30
+        run: |
+          metro_args=()
+          if [[ -n "$CITY_METRO" ]]; then metro_args+=("--metro=$CITY_METRO"); fi
+          node scripts/attendance-sidearm.mjs --minutes=20 "${metro_args[@]}"
+
       # Expected draws from the night's results: this season's level and the opponent
       # ratios move as games are played (docs/product/expected-draw-decisions-oct7.md).
       - name: Recompute expected draws
@@ -125,7 +137,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/schedule-archive data/weather data/results src/data/scheduleArchiveIndex.ts src/data/startForecastIndex.ts src/data/resultsIndex.ts src/data/expectedDrawIndex.ts
+          git add data/schedule-archive data/weather data/results data/attendance data/attendance-reads src/data/scheduleArchiveIndex.ts src/data/startForecastIndex.ts src/data/resultsIndex.ts src/data/expectedDrawIndex.ts
           if git diff --cached --quiet; then
             echo "No schedule change to commit."
             exit 0
@@ -147,8 +159,8 @@ jobs:
           exit 1
 
       - name: Report a failed step
-        if: steps.weather.outcome == 'failure' || steps.schedule.outcome == 'failure' || steps.results.outcome == 'failure' || steps.draws.outcome == 'failure' || steps.catalog.outcome == 'failure'
+        if: steps.weather.outcome == 'failure' || steps.schedule.outcome == 'failure' || steps.results.outcome == 'failure' || steps.boxscores.outcome == 'failure' || steps.draws.outcome == 'failure' || steps.catalog.outcome == 'failure'
         run: |
-          echo "weather=${{ steps.weather.outcome }} schedule=${{ steps.schedule.outcome }} results=${{ steps.results.outcome }} draws=${{ steps.draws.outcome }} catalog=${{ steps.catalog.outcome }}"
+          echo "weather=${{ steps.weather.outcome }} schedule=${{ steps.schedule.outcome }} results=${{ steps.results.outcome }} boxscores=${{ steps.boxscores.outcome }} draws=${{ steps.draws.outcome }} catalog=${{ steps.catalog.outcome }}"
           echo "A step failed. What the others saved is committed; read that step's log."
           exit 1

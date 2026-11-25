@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "usc-wvb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-09-08",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "galen-center",
+      "attendance": 3314,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-09-09",
+      "start": null,
+      "opponent": "Marist",
+      "venueId": "galen-center",
+      "attendance": 575,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-09-10",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "galen-center",
+      "attendance": 683,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usc-wvb",
+      "season": 2023,
+      "date": "2023-09-24",
+      "start": null,
+      "opponent": "Oregon St.",
+      "venueId": "galen-center",
+      "attendance": 1142,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

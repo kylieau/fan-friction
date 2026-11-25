@@ -136,7 +136,7 @@ function readSummary(summary: string, school: SidearmSchool) {
  * Athletic Centre)", "Molson Stadium (Montreal, Que)", "United Airlines Field at L.A. Memorial Coliseum". Each name
  * must still equal one on file in this city, so a state or a city never places a game.
  */
-function roomCandidates(location: string): string[] {
+export function roomCandidates(location: string): string[] {
   const out: string[] = [];
   const add = (name: string | undefined) => {
     const n = name?.replace(/\s+/g, ' ').trim();
