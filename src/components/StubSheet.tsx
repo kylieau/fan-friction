@@ -87,6 +87,18 @@ export function StubSheet({ event: opened, onClose, games }: { event: CrowdEvent
   const [others, setOthers] = useState<EventPlace[]>([]);
   // Your tags (build notes 4, T02): only on an answer you logged, never on Interested.
   const [tagging, setTagging] = useState(false);
+  // Picking the other game of a doubleheader starts the sheet's own drafts over, as the editors below do by their
+  // key, so nothing typed for one game is saved onto the other (Codex, 7.3 groups 2–4 review).
+  const shown = useRef(event.id);
+  useEffect(() => {
+    if (shown.current === event.id) return;
+    shown.current = event.id;
+    setTyped(place && !/^home$/i.test(place) ? place : '');
+    setTyping(false);
+    setFailed(null);
+    setRemoving(false);
+    setTagging(false);
+  }, [event.id, place]);
   const canTag = kind !== null && kind !== 'interested';
   const myTags = row?.userTags ?? [];
   const known = tagSummaries(log.added, log.plans);
@@ -147,7 +159,7 @@ export function StubSheet({ event: opened, onClose, games }: { event: CrowdEvent
       <div ref={sheet} className="action-sheet stub-sheet" onClick={(ev) => ev.stopPropagation()}>
         <span className="sheet-handle" aria-hidden />
         {tagging && canTag ? (
-          <TagsPanel tags={myTags} onChange={(next) => row && setRowTags(ahead ? 'plan' : 'entry', row.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />
+          <TagsPanel key={event.id} tags={myTags} onChange={(next) => row && setRowTags(ahead ? 'plan' : 'entry', row.id, next)} onDone={() => setTagging(false)} context={tagContext} known={known} />
         ) : (
           <>
             <h2 className="stub-sheet-title">+ Stub it</h2>
@@ -291,14 +303,14 @@ export function StubSheet({ event: opened, onClose, games }: { event: CrowdEvent
             {/* Seat and cost (build 7, §3.5; same-day logging, Locked option A): an Attended stub, and an Attending plan while
                 the game is on; both carry into the stub when the date passes. Cost on Watched and Watching too; never on
                 Interested. Tags, Seat and Cost read as one optional group: same blue, no divider. */}
-            {kind === 'attended' && entry && event.kind !== 'live-broadcast' && <SeatsRow seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
-            {kind === 'attending' && plan && event.kind !== 'live-broadcast' && <SeatsRow seats={plan.seats} onChange={(next) => setPlanSeats(plan.id, next)} />}
-            {(kind === 'attended' || kind === 'watched') && entry && <CostRow cost={entry.cost} watched={kind === 'watched'} onChange={(next) => setEntryCost(entry.id, next)} />}
-            {(kind === 'attending' || kind === 'watching') && plan && <CostRow cost={plan.cost} watched={kind === 'watching'} onChange={(next) => setPlanCost(plan.id, next)} />}
+            {kind === 'attended' && entry && event.kind !== 'live-broadcast' && <SeatsRow key={event.id} seats={entry.seats} onChange={(next) => setEntrySeats(entry.id, next)} />}
+            {kind === 'attending' && plan && event.kind !== 'live-broadcast' && <SeatsRow key={event.id} seats={plan.seats} onChange={(next) => setPlanSeats(plan.id, next)} />}
+            {(kind === 'attended' || kind === 'watched') && entry && <CostRow key={event.id} cost={entry.cost} watched={kind === 'watched'} onChange={(next) => setEntryCost(entry.id, next)} />}
+            {(kind === 'attending' || kind === 'watching') && plan && <CostRow key={event.id} cost={plan.cost} watched={kind === 'watching'} onChange={(next) => setPlanCost(plan.id, next)} />}
             {/* Your Notes (Kylie, Nov 5): With and Review under one label on a stub; the Review alone on an Attending or
                 Watching plan (Kylie, Nov 19, 2026), carried into the stub when the date passes. */}
-            {(kind === 'attended' || kind === 'watched') && entry && <ExperienceRows entry={entry} />}
-            {(kind === 'attending' || kind === 'watching') && plan && <PlanNotesRows plan={plan} />}
+            {(kind === 'attended' || kind === 'watched') && entry && <ExperienceRows key={event.id} entry={entry} />}
+            {(kind === 'attending' || kind === 'watching') && plan && <PlanNotesRows key={event.id} plan={plan} />}
         <button type="button" className="gold-button stub-done" onClick={onClose}>
               Done
             </button>

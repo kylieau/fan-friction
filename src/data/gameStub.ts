@@ -77,6 +77,12 @@ export function gameVenueName(game: TeamGame, metroId?: string): string | undefi
   return anywhere.length === 1 ? venueNameOn(anywhere[0], game.date) : name;
 }
 
+/** "18:40" → 1120; none for a missing or unreadable clock. */
+function minutesOf(start: string | null | undefined): number | undefined {
+  const m = start?.match(/^(\d{1,2}):(\d{2})/);
+  return m ? Number(m[1]) * 60 + Number(m[2]) : undefined;
+}
+
 /** The home and away team ids, when both are known. */
 function sides(team: Team, game: TeamGame): { home: string; away: string } | undefined {
   const them = opponentOf(team, game.opponent);
@@ -108,7 +114,15 @@ export function sameGame(link: GameLink, events: readonly CrowdEvent[]): CrowdEv
   // `sourceId`, which spells it out ("hockeytech") and so never matched (Codex, group 4 review).
   const feed = /^([a-z]+)-/.exec(link.game.id)?.[1];
   const sameFeed = (e: CrowdEvent) => e.id.startsWith(`${e.date}-${feed}-`);
-  const open = feedNumber && feed ? candidates.filter((e) => !(sameFeed(e) && /-\d{4,}$/.test(e.id))) : candidates;
+  const otherGame = (e: CrowdEvent) => Boolean(feedNumber && feed && sameFeed(e) && /-\d{4,}$/.test(e.id));
+  // Another feed's copy carries no number of ours, so its start must agree, within two hours (feeds differ on first
+  // pitch by minutes, a doubleheader's games by three hours or more): game 2's 6 pm row never lands on a school
+  // feed's 1 pm game 1 (Codex, 7.3 groups 2–4 review). A side with no start says nothing either way.
+  const startsApart = (e: CrowdEvent) => {
+    const a = minutesOf(link.game.start), b = minutesOf(e.start);
+    return a !== undefined && b !== undefined && Math.abs(a - b) > 120;
+  };
+  const open = candidates.filter((e) => !otherGame(e) && !startsApart(e));
   return open.length === 1 ? open[0] : undefined;
 }
 

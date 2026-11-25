@@ -37,6 +37,12 @@ try {
   check(sameGame(link('ht-dodgers-24102'), [ht1]) === undefined, 'a HockeyTech game 2 missing from the catalog never lands on game 1');
   const sa1 = { ...g1, id: '2027-05-01-sa-usctrojans-com-55501', sourceId: 'sidearm' };
   check(sameGame(link('sa-usctrojans-com-55502'), [sa1]) === undefined, 'a school-calendar game 2 missing never lands on game 1');
+  // Another feed's copy of game 1 only, and game 2's row opened: the starts tell them apart (Codex, groups 2–4 review).
+  const timed = (id, start) => ({ teamId: 'dodgers', game: { id, date: '2027-05-01', start, home: true, opponent: 'Giants' } });
+  const school1 = { ...g1, id: '2027-05-01-sa-usctrojans-com-55501', sourceId: 'sidearm', start: '13:10' };
+  check(sameGame(timed('espn-dodgers-401900002', '18:40'), [school1]) === undefined, "game 2's 6:40 row never lands on another feed's 1:10 game 1");
+  check(sameGame(timed('espn-dodgers-401900001', '13:05'), [school1])?.id === school1.id, "game 1's row still finds another feed's copy a few minutes off");
+  check(sameGame(timed('espn-dodgers-401900002', null), [school1])?.id === school1.id, 'a row with no start says nothing either way, as before');
   check(sameGame(link('hand-seed'), [g1, g2]) === undefined, 'two candidates and no number to tell them apart: declined, never guessed');
   check(sameGame(link('hand-seed'), [g1, other])?.id === g1.id, 'one candidate and no number: that one, as before');
 

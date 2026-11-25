@@ -43,10 +43,13 @@ export function YourYearScreen() {
   const [ratings, setRatings] = useState<Map<string, number>>(new Map());
   // True once the year's dates have loaded (their results with them): the record tile waits for it (Codex, group 20 review).
   const [resultsReady, setResultsReady] = useState(false);
+  // The games attended before the year load too: "first win" is first against her whole log, so a cold open of 2026
+  // must know a 2025 win before naming one (Codex, 7.3 groups 2–4 review).
+  const earlierGames = useMemo(() => (year === 'All time' ? [] : entries.filter((e) => e.kind === 'game' && !e.watched && e.when.sort < `${year}-01-01`)), [entries, year]);
   useEffect(() => {
     let current = true;
     setResultsReady(false);
-    scoresForNights(nightsOf(inYear)).then((map) => {
+    scoresForNights(nightsOf([...inYear, ...earlierGames])).then((map) => {
       if (!current) return;
       setRatings(map);
       setResultsReady(true);
@@ -54,7 +57,7 @@ export function YourYearScreen() {
     return () => {
       current = false;
     };
-  }, [inYear]);
+  }, [inYear, earlierGames]);
 
   const attended = inYear.filter((e) => !e.watched).length;
   const watched = inYear.length - attended;
