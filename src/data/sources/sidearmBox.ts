@@ -66,7 +66,7 @@ export interface IndexGame {
  */
 export function indexGames(html: string): IndexGame[] | null {
   const data = nuxtPayload(html);
-  if (!data) return null;
+  if (!data) return legacyIndexGames(html);
   const games = new Map<string, IndexGame>();
   // A payload with no game-by-game table (an error page, another layout) is not a season with no games.
   let table = false;
@@ -104,7 +104,7 @@ export interface BoxFacts {
 /** The box score's game facts: the entry carrying the attendance line beside the room and the neutral flag. */
 export function boxFacts(html: string): BoxFacts | null {
   const data = nuxtPayload(html);
-  if (!data) return null;
+  if (!data) return legacyBoxFacts(html);
   for (const entry of data) {
     if (!isObject(entry) || !('attendance' in entry) || !('location' in entry) || !('isNeutral' in entry)) continue;
     const f = fields(data, entry);
@@ -120,6 +120,57 @@ export function boxFacts(html: string): BoxFacts | null {
     };
   }
   return null;
+}
+
+// ---------- SIDEARM's older layout (plain markup, no payload; Northeastern, found Nov 25, 2026) ----------
+
+const unescape = (s: string) => s.replace(/&amp;/g, '&').replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').trim();
+
+/**
+ * The older season page's games: the team table is the one whose opponent cell starts with "vs" or "at" (the
+ * opponents' and comparison tables list the same games with the bare name). Null when no such table is there.
+ */
+export function legacyIndexGames(html: string): IndexGame[] | null {
+  const row = /<td[^>]*>\s*(vs\.?|at)\s*<a[^>]*href=['"]([^'"]*boxscore\.aspx\?id=(\d+)[^'"]*)['"][^>]*>([^<]*)<\/a>[\s\S]*?<\/td>\s*<td[^>]*>\s*([^<]*?)\s*<\/td>/gi;
+  const games = new Map<string, IndexGame>();
+  for (const m of html.matchAll(row)) {
+    const date = boxDate(m[5]);
+    if (!date || games.has(m[3])) continue;
+    games.set(m[3], { date, opponent: unescape(m[4]), boxUrl: unescape(m[2]).replace(/^(?!\/)/, '/'), boxId: m[3], home: /^vs/i.test(m[1]) });
+  }
+  if (!games.size) return /Game By Game/i.test(html) && /boxscore\.aspx/i.test(html) ? [] : null;
+  return [...games.values()].sort((a, b) => a.date.localeCompare(b.date) || a.boxId.localeCompare(b.boxId));
+}
+
+/**
+ * The older box score's Game Details list (Date, Time, Attendance, Site). It carries no neutral or postseason
+ * flag: both read false, and the room rule (a room the schedules show the program at home) keeps a neutral site
+ * out.
+ */
+export function legacyBoxFacts(html: string): BoxFacts | null {
+  const block = html.match(/class="game-details"[\s\S]*?<\/dl>/i)?.[0];
+  if (!block) return null;
+  const facts: Record<string, string> = {};
+  for (const m of block.matchAll(/<dt[^>]*>([\s\S]*?)<\/dt>\s*<dd[^>]*>([\s\S]*?)<\/dd>/gi)) facts[unescape(m[1].replace(/<[^>]+>/g, '')).toLowerCase()] = unescape(m[2].replace(/<[^>]+>/g, ''));
+  const raw = facts.attendance ?? '';
+  const n = /^\s*[\d,]+\s*$/.test(raw) ? Number(raw.replace(/[,\s]/g, '')) : NaN;
+  return {
+    date: boxDate(facts.date),
+    places: facts.site ? [facts.site] : [],
+    neutral: false,
+    postseason: false,
+    ...(Number.isFinite(n) && n > 0 ? { attendance: n } : {}),
+  };
+}
+
+/**
+ * The city a box names when it names no room: the first part of a city line, lowercased ("Lowell, Massachusetts",
+ * "Lowell, Mass." and "Lowell" are one city). A line of three parts or more names a room ("Matthews Arena, Boston,
+ * MA") and is no city.
+ */
+export function placeKey(places: readonly string[]): string | undefined {
+  const parts = (places[places.length - 1] ?? '').split(',').map((p) => p.trim()).filter(Boolean);
+  return parts.length >= 1 && parts.length <= 2 ? parts[0].toLowerCase() : undefined;
 }
 
 /**

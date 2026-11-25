@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "uml-mhockey",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "uml-mhockey",
+      "season": 2024,
+      "date": "2023-10-27",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "tsongas-center",
+      "attendance": 6560,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2024,
+      "date": "2023-11-04",
+      "start": null,
+      "opponent": "Boston College",
+      "venueId": "tsongas-center",
+      "attendance": 6163,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2024,
+      "date": "2023-11-10",
+      "start": null,
+      "opponent": "Boston U.",
+      "venueId": "tsongas-center",
+      "attendance": 5748,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2026,
+      "date": "2025-10-03",
+      "start": null,
+      "opponent": "Merrimack",
+      "venueId": "tsongas-center",
+      "attendance": 6804,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2026,
+      "date": "2025-10-17",
+      "start": null,
+      "opponent": "Western Mich.",
+      "venueId": "tsongas-center",
+      "attendance": 5095,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2026,
+      "date": "2025-10-18",
+      "start": null,
+      "opponent": "Western Mich.",
+      "venueId": "tsongas-center",
+      "attendance": 5294,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-10-09",
+      "start": null,
+      "opponent": "Clarkson",
+      "venueId": "tsongas-center",
+      "attendance": 4995,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-10-10",
+      "start": null,
+      "opponent": "St. Lawrence",
+      "venueId": "tsongas-center",
+      "attendance": 2778,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-10-16",
+      "start": null,
+      "opponent": "Arizona St.",
+      "venueId": "tsongas-center",
+      "attendance": 3116,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "New Hampshire",
+      "venueId": "tsongas-center",
+      "attendance": 4530,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Union (NY)",
+      "venueId": "tsongas-center",
+      "attendance": 3205,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "Rensselaer",
+      "venueId": "tsongas-center",
+      "attendance": 4504,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-11-20",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "tsongas-center",
+      "attendance": 4176,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uml-mhockey",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "tsongas-center",
+      "attendance": 3921,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

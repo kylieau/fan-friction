@@ -52,6 +52,25 @@ try {
   check(box.boxFacts(boxPage({ location: 'Galen Center', attendance: '3902', neutral: true }))?.neutral === true, 'the neutral-site flag is read');
   check(box.boxFacts(boxPage({ location: 'Galen Center', attendance: '3902', post: true }))?.postseason === true, 'the postseason flag is read');
 
+  // SIDEARM's older layout (Northeastern, read Nov 25, 2026): plain tables and a Game Details list.
+  const legacyIndex = `<h3>Game By Game - Team Statistics</h3><table><tbody>
+    <tr><td class="text-no-wrap">vs <a aria-label='boxscore for Boston U. on 11/03/25' href='/boxscore.aspx?id=13755&amp;path=mbball'>Boston U.</a></td><td>11/03/25</td><td>75-76</td></tr>
+    <tr><td class="text-no-wrap">at <a aria-label='boxscore for Harvard on 11/11/25' href='/boxscore.aspx?id=13758&amp;path=mbball'>Harvard</a></td><td>11/11/25</td><td>70-61</td></tr>
+    </tbody></table><h3>Game By Game - Opponents Statistics</h3><table><tbody>
+    <tr><td class="text-no-wrap"><a aria-label='boxscore for Boston U. on 11/03/25' href='/boxscore.aspx?id=13755&amp;path=mbball'>Boston U.</a></td><td>11/03/25</td></tr>
+    </tbody></table>`;
+  const legacy = box.indexGames(legacyIndex);
+  check(legacy?.length === 2 && legacy[0].home && !legacy[1].home && legacy[0].boxUrl === '/boxscore.aspx?id=13755&path=mbball', 'the older season page: the team table by its "vs"/"at", home and away, the link unescaped');
+  const legacyBox = (att, site) => `<aside class="game-details"><dl><dt>Date</dt><dd>11/03/25</dd><dt>Time</dt><dd>7:30 PM</dd><dt>Attendance</dt><dd>${att}</dd><dt>Site</dt><dd>${site}</dd></dl></aside>`;
+  const lb = box.boxFacts(legacyBox('2189', 'Matthews Arena, Boston, MA'));
+  check(lb?.attendance === 2189 && lb?.places[0] === 'Matthews Arena, Boston, MA' && lb?.date === '2025-11-03', 'the older box score: the crowd, the site, and the date from its Game Details');
+  check(box.boxFacts(legacyBox('', 'Matthews Arena, Boston, MA'))?.attendance === undefined, 'the older box score: a blank crowd is no crowd');
+  check(box.indexGames('<html><body>Page not found</body></html>') === null, 'a page in neither layout reads as nothing');
+
+  check(box.placeKey(['Lowell']) === 'lowell' && box.placeKey(['Lowell, Massachusetts']) === 'lowell', 'a city written two ways is one city (the city-only rule, Kylie, Nov 25)');
+  check(box.placeKey(['Galen Center', 'Los Angeles, CA']) === 'los angeles', 'the city is read from the last place line');
+  check(box.placeKey(['Matthews Arena, Boston, MA']) === undefined, 'a room, city, and state line names a room, not a city: it is never placed by the city rule');
+
   check(box.boxRoom('la', ['Galen Center, Los Angeles, CA'], '2025-11-03') === 'galen-center', 'the location line places the room on file');
   check(box.boxRoom('la', ['Galen Center', 'Los Angeles, CA'], '2023-09-10') === 'galen-center', 'the stadium line places the room on file');
   check(box.boxRoom('la', ['Los Angeles, CA'], '2023-09-10') === undefined, 'a city alone names no room (no usual-room default)');

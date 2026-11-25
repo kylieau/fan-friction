@@ -6,38 +6,41 @@
       "seasons": {
         "2023-24": {
           "boxes": {
-            "24770": {
-              "status": "no-room",
-              "places": [
-                "Boston, Massachusetts"
-              ],
-              "date": "2023-10-13",
-              "opponent": "LIU",
-              "attendance": 7308
-            },
-            "24771": {
-              "status": "no-room",
-              "places": [
-                "Boston, Massachusetts"
-              ],
-              "date": "2023-10-20",
-              "opponent": "Rensselaer",
-              "attendance": 5802
-            },
-            "24772": {
-              "status": "no-room",
-              "places": [
-                "Boston, Massachusetts"
-              ],
-              "date": "2023-10-21",
-              "opponent": "Denver",
-              "attendance": 7884
-            }
+            "24770": "kept",
+            "24771": "kept",
+            "24772": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2026-27": {
+          "boxes": {
+            "26878": "kept",
+            "26879": "kept",
+            "26880": "kept",
+            "27015": "kept",
+            "27016": "kept",
+            "27017": "kept",
+            "27018": "kept",
+            "27020": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2025-26": {
+          "boxes": {
+            "26317": "kept",
+            "26321": "kept",
+            "26322": "kept",
+            "26326": "kept",
+            "26328": "kept"
           },
           "readOn": "2026-11-25"
         }
       },
-      "path": "mens-ice-hockey"
+      "path": "mens-ice-hockey",
+      "cities": {
+        "boston": "conte-forum",
+        "chestnut hill": "conte-forum"
+      }
     },
     "bu-mbb": {
       "site": "https://goterriers.com",
@@ -49,14 +52,71 @@
             "31243": "kept"
           },
           "readOn": "2026-11-25"
+        },
+        "2026-27": {
+          "boxes": {
+            "33294": "kept",
+            "33298": "kept",
+            "33299": "kept",
+            "33300": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2025-26": {
+          "boxes": {
+            "32667": "kept",
+            "32668": "kept",
+            "32670": "neutral",
+            "32673": "kept",
+            "32675": "kept",
+            "32677": "kept",
+            "32723": "kept",
+            "32725": "kept",
+            "32726": "kept"
+          },
+          "readOn": "2026-11-25"
         }
       },
       "path": "mens-basketball"
     },
     "northeastern-mbb": {
       "site": "https://nuhuskies.com",
-      "seasons": {},
-      "unreadable": "2026-11-25"
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "14304": "kept",
+            "14305": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2025-26": {
+          "boxes": {
+            "13755": {
+              "status": "no-room",
+              "places": [
+                "Matthews Arena, Boston, MA"
+              ],
+              "date": "2025-11-03",
+              "opponent": "Boston U.",
+              "attendance": 2189
+            },
+            "13756": {
+              "status": "no-room",
+              "places": [
+                "Matthews Arena, Boston, MA"
+              ],
+              "date": "2025-11-15",
+              "opponent": "Vermont",
+              "attendance": 3335
+            },
+            "13757": "kept",
+            "13786": "kept"
+          },
+          "readOn": "2026-11-25"
+        }
+      },
+      "unreadable": "2026-11-25",
+      "path": "mens-basketball"
     },
     "northeastern-wbb": {
       "site": "https://nuhuskies.com",
@@ -68,38 +128,48 @@
       "seasons": {
         "2023-24": {
           "boxes": {
-            "8357": {
-              "status": "no-room",
-              "places": [
-                "Lowell"
-              ],
-              "date": "2023-10-27",
-              "opponent": "UConn",
-              "attendance": 6560
+            "8357": "kept",
+            "8360": "kept",
+            "8361": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2026-27": {
+          "boxes": {
+            "9740": "kept",
+            "9741": "kept",
+            "9742": "kept",
+            "9743": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-25"
             },
-            "8360": {
-              "status": "no-room",
-              "places": [
-                "Lowell, Massachusetts"
-              ],
-              "date": "2023-11-04",
-              "opponent": "Boston College",
-              "attendance": 6163
+            "9744": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-25"
             },
-            "8361": {
-              "status": "no-room",
-              "places": [
-                "Lowell, Massachusetts"
-              ],
-              "date": "2023-11-10",
-              "opponent": "Boston U.",
-              "attendance": 5748
-            }
+            "9748": "kept",
+            "9750": "kept",
+            "9751": "kept",
+            "9752": "kept",
+            "9753": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2025-26": {
+          "boxes": {
+            "9275": "kept",
+            "9277": "kept",
+            "9278": "kept"
           },
           "readOn": "2026-11-25"
         }
       },
-      "path": "mens-ice-hockey"
+      "path": "mens-ice-hockey",
+      "cities": {
+        "lowell": "tsongas-center"
+      }
     },
     "usc-wvb": {
       "site": "https://usctrojans.com",

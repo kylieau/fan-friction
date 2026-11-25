@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "bc-mhockey",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2023-10-13",
+      "start": null,
+      "opponent": "LIU",
+      "venueId": "conte-forum",
+      "attendance": 7308,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2023-10-20",
+      "start": null,
+      "opponent": "Rensselaer",
+      "venueId": "conte-forum",
+      "attendance": 5802,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2023-10-21",
+      "start": null,
+      "opponent": "Denver",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-10-03",
+      "start": null,
+      "opponent": "Quinnipiac",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-10-24",
+      "start": null,
+      "opponent": "Denver",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-10-30",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "conte-forum",
+      "attendance": 5539,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-11-14",
+      "start": null,
+      "opponent": "Massachusetts",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-10-09",
+      "start": null,
+      "opponent": "Alas. Fairbanks",
+      "venueId": "conte-forum",
+      "attendance": 5270,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-10-15",
+      "start": null,
+      "opponent": "St. Cloud St.",
+      "venueId": "conte-forum",
+      "attendance": 4317,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-10-17",
+      "start": null,
+      "opponent": "St. Cloud St.",
+      "venueId": "conte-forum",
+      "attendance": 6125,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-10-30",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "conte-forum",
+      "attendance": 4349,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-10-31",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "conte-forum",
+      "attendance": 1508,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 3839,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 4979,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "Massachusetts",
+      "venueId": "conte-forum",
+      "attendance": 5804,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

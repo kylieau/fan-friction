@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "northeastern-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2025-12-07",
+      "start": null,
+      "opponent": "Central Conn. St.",
+      "venueId": "cabot-center",
+      "attendance": 653,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "UNCW",
+      "venueId": "cabot-center",
+      "attendance": 653,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Harvard",
+      "venueId": "cabot-center",
+      "attendance": 776,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Yale",
+      "venueId": "cabot-center",
+      "attendance": 812,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -75,8 +75,12 @@ try {
         // The rooms the schedules show the program at home: a box score's room must be one of them, so a same-named
         // room in this city never takes a game played elsewhere ("Memorial Stadium, Waco, TX"; Codex, B2 review).
         const known = programs.get(team.id)?.rooms ?? new Set();
-        if (e.place?.type === 'venue') known.add(e.place.venueId);
-        programs.set(team.id, { metroId, teamId: team.id, site: school.site, sport: e.audience?.sport ?? 'other', division, rooms: known });
+        const byDate = programs.get(team.id)?.byDate ?? new Map();
+        if (e.place?.type === 'venue') {
+          known.add(e.place.venueId);
+          byDate.set(e.date, e.place.venueId);
+        }
+        programs.set(team.id, { metroId, teamId: team.id, site: school.site, sport: e.audience?.sport ?? 'other', division, rooms: known, byDate });
       }
     }
   }
@@ -162,24 +166,26 @@ try {
       const entry = (ledger.teams[t.teamId] ??= { site, seasons: {} });
       entry.site = site;
       const seasons = box.seasonsToRead(t.sport, today);
-      // Games held back for a room not on file, placed again against tonight's rooms; nothing is fetched.
-      for (const s of seasons) {
-        for (const [id, held] of Object.entries(entry.seasons[s.label]?.boxes ?? {})) {
-          if (typeof held !== 'object' || held.status !== 'no-room') continue;
-          const venueId = roomOf(t, held.places, held.date);
-          if (!venueId) continue;
-          entry.seasons[s.label].boxes[id] = 'kept';
-          touched.add('ledger');
-          await keep(t, s.season, { ...held, venueId });
-        }
+      await placeHeld(t, entry, seasons);
+      const stop = await readProgram(t, entry, seasons);
+      // Again after tonight's reads, whatever stopped them: a city this season's games tied to the rink places the
+      // held games of every season.
+      await placeHeld(t, entry, seasons);
+      if (stop) {
+        for (const rest of list.slice(list.indexOf(t) + 1)) if (ledger.teams[rest.teamId]) await placeHeld(rest, ledger.teams[rest.teamId], box.seasonsToRead(rest.sport, today));
+        return note(site, `stopped (${stop})`);
       }
+    }
+    return undefined;
+
+    async function readProgram(t, entry, seasons) {
       // The site's path for the program, found once on the last finished season's page.
       if (!entry.path) {
         for (const p of box.sportPaths(t.sport, t.division)) {
           const probe = `/sports/${p}/stats/${seasons[seasons.length - 2].label}`;
           if (!allows(probe)) continue;
           const r = await get(probe);
-          if (r.stop) return note(site, `stopped (${r.stop})`);
+          if (r.stop) return r.stop;
           if (r.status === 200 && box.indexGames(r.text)) {
             entry.path = p;
             break;
@@ -189,10 +195,11 @@ try {
           entry.unreadable = today;
           touched.add('ledger');
           console.log(`  ${t.teamId}: no stats page on ${site}`);
-          continue;
+          return undefined;
         }
       }
-      for (const s of seasons) {
+      // The current season first (its games tie a city-only box to its room), then the past ones, newest first.
+      for (const s of [seasons[seasons.length - 1], ...seasons.slice(0, -1).reverse()]) {
         const rec = (entry.seasons[s.label] ??= { boxes: {} });
         const current = s === seasons[seasons.length - 1];
         if (rec.done || (current && rec.readOn === today)) continue;
@@ -202,7 +209,7 @@ try {
           continue;
         }
         const r = await get(indexPath);
-        if (r.stop) return note(site, `stopped (${r.stop})`);
+        if (r.stop) return r.stop;
         const games = r.status === 200 ? box.indexGames(r.text) : null;
         rec.readOn = today;
         touched.add('ledger');
@@ -225,9 +232,9 @@ try {
             continue;
           }
           const b = await get(g.boxUrl);
-          if (b.stop) return note(site, `stopped (${b.stop})`);
+          if (b.stop) return b.stop;
           const facts = b.status === 200 ? box.boxFacts(b.text) : null;
-          const venueId = facts && !facts.neutral ? roomOf(t, facts.places, g.date) : undefined;
+          const venueId = facts && !facts.neutral ? roomOf(t, entry, facts.places, g.date) : undefined;
           const status = !facts ? 'unreadable' : facts.neutral ? 'neutral' : !facts.attendance ? 'no-crowd' : !venueId ? 'no-room' : 'kept';
           // A room not on file keeps the game's facts, so a later night places it once the room is added; a blank
           // crowd or an unreadable page is read again on the next nights, MAX_TRIES in all.
@@ -246,8 +253,8 @@ try {
         // A past season is done once every home game has an answer; the current one keeps coming back.
         if (!current && open === 0 && games.filter((g) => g.home).every((g) => settled(rec.boxes[g.boxId]))) rec.done = true;
       }
+      return undefined;
     }
-    return undefined;
   }
   /** A box score's answer that stands: anything but a blank crowd or an unread page still inside its tries. */
   function settled(v) {
@@ -255,10 +262,43 @@ try {
     if (typeof v === 'string') return true;
     return v.status === 'no-room' || (v.tries ?? 0) >= MAX_TRIES;
   }
-  /** The room on file a box names, when the schedules show the program at home there. */
-  function roomOf(t, places, date) {
-    const venueId = box.boxRoom(t.metroId, places, date);
-    return venueId && t.rooms.has(venueId) ? venueId : undefined;
+  /**
+   * The room for a home box score. A room the box names counts when the schedules show the program at home there.
+   * A box naming only a city (hockey's "Boston, Massachusetts"; Kylie, Nov 25, 2026: yes) takes the room the saved
+   * listing shows for that same game, and the city is noted against that room; a past season's game, older than
+   * the saved listings, takes the program's rink only when the schedules show it at exactly one home room and the
+   * box names the city this season's games did there. A second room, or another city, places nothing.
+   */
+  function roomOf(t, entry, places, date) {
+    const named = box.boxRoom(t.metroId, places, date);
+    if (named) return t.rooms.has(named) ? named : undefined;
+    const city = box.placeKey(places);
+    if (!city) return undefined;
+    const listed = t.byDate.get(date);
+    if (listed) {
+      entry.cities ??= {};
+      if (entry.cities[city] !== listed) {
+        entry.cities[city] = listed;
+        touched.add('ledger');
+      }
+      return listed;
+    }
+    const only = t.rooms.size === 1 ? [...t.rooms][0] : undefined;
+    return only && entry.cities?.[city] === only ? only : undefined;
+  }
+
+  /** Games held back for a room, placed against tonight's rooms and cities; nothing is fetched. */
+  async function placeHeld(t, entry, seasons) {
+    for (const s of seasons) {
+      for (const [id, held] of Object.entries(entry.seasons[s.label]?.boxes ?? {})) {
+        if (typeof held !== 'object' || held.status !== 'no-room') continue;
+        const venueId = roomOf(t, entry, held.places, held.date);
+        if (!venueId) continue;
+        entry.seasons[s.label].boxes[id] = 'kept';
+        touched.add('ledger');
+        await keep(t, s.season, { ...held, venueId });
+      }
+    }
   }
   function note(site, why) {
     tally.stoppedSites++;

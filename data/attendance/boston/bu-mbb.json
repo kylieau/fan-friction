@@ -36,6 +36,138 @@
       "attendance": 653,
       "kind": "announced",
       "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2025-11-12",
+      "start": null,
+      "opponent": "Brown",
+      "venueId": "case-gym",
+      "attendance": 1455,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Merrimack",
+      "venueId": "case-gym",
+      "attendance": 1024,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "VTSU-Johnson",
+      "venueId": "case-gym",
+      "attendance": 510,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2025-12-10",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "case-gym",
+      "attendance": 654,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2025-12-21",
+      "start": null,
+      "opponent": "UMass Lowell",
+      "venueId": "case-gym",
+      "attendance": 810,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "American",
+      "venueId": "case-gym",
+      "attendance": 1015,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Army West Point",
+      "venueId": "case-gym",
+      "attendance": 725,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-01-14",
+      "start": null,
+      "opponent": "Lehigh",
+      "venueId": "case-gym",
+      "attendance": 445,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "case-gym",
+      "attendance": 1330,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2027,
+      "date": "2026-11-12",
+      "start": null,
+      "opponent": "JWU (Providence)",
+      "venueId": "case-gym",
+      "attendance": 460,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2027,
+      "date": "2026-11-15",
+      "start": null,
+      "opponent": "Dartmouth",
+      "venueId": "case-gym",
+      "attendance": 816,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Columbia",
+      "venueId": "case-gym",
+      "attendance": 682,
+      "kind": "announced",
+      "sourceId": "sidearm"
     }
   ]
 }
