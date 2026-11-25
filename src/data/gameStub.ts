@@ -104,9 +104,11 @@ export function sameGame(link: GameLink, events: readonly CrowdEvent[]): CrowdEv
   if (exact) return exact;
   // A candidate from the same feed carrying a different number is a different game (game 1, when game 2 is not in
   // the catalog); a hand seed's id ("2026-10-03-dodgers") or another feed's copy (a school calendar's own number)
-  // still matches.
+  // still matches. The feed is told by the short tag both ids carry ("ht-…" and "2026-11-21-ht-…"), not by
+  // `sourceId`, which spells it out ("hockeytech") and so never matched (Codex, group 4 review).
   const feed = /^([a-z]+)-/.exec(link.game.id)?.[1];
-  const open = feedNumber && feed ? candidates.filter((e) => !(e.sourceId === feed && /-\d{4,}$/.test(e.id))) : candidates;
+  const sameFeed = (e: CrowdEvent) => e.id.startsWith(`${e.date}-${feed}-`);
+  const open = feedNumber && feed ? candidates.filter((e) => !(sameFeed(e) && /-\d{4,}$/.test(e.id))) : candidates;
   return open.length === 1 ? open[0] : undefined;
 }
 

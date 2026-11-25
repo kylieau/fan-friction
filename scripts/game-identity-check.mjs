@@ -30,6 +30,13 @@ try {
   check(sameGame(link('mlb-dodgers-778002'), [seed])?.id === seed.id, "a hand seed's copy (no feed number) still matches");
   const school = { ...g1, id: '2027-05-01-sa-usctrojans-com-55501', sourceId: 'sidearm' };
   check(sameGame(link('mlb-dodgers-778002'), [school])?.id === school.id, "another feed's copy with its own number still matches");
+  // A feed whose short tag differs from its sourceId ("ht" and "hockeytech"): game 2 missing still never lands on game 1.
+  const ht1 = { ...g1, id: '2027-05-01-ht-dodgers-24101', sourceId: 'hockeytech' };
+  const ht2 = { ...g2, id: '2027-05-01-ht-dodgers-24102', sourceId: 'hockeytech' };
+  check(sameGame(link('ht-dodgers-24102'), [ht1, ht2])?.id === ht2.id, "a HockeyTech game 2 finds game 2 by the feed's number");
+  check(sameGame(link('ht-dodgers-24102'), [ht1]) === undefined, 'a HockeyTech game 2 missing from the catalog never lands on game 1');
+  const sa1 = { ...g1, id: '2027-05-01-sa-usctrojans-com-55501', sourceId: 'sidearm' };
+  check(sameGame(link('sa-usctrojans-com-55502'), [sa1]) === undefined, 'a school-calendar game 2 missing never lands on game 1');
   check(sameGame(link('hand-seed'), [g1, g2]) === undefined, 'two candidates and no number to tell them apart: declined, never guessed');
   check(sameGame(link('hand-seed'), [g1, other])?.id === g1.id, 'one candidate and no number: that one, as before');
 
