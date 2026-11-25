@@ -127,6 +127,50 @@
     },
     {
       "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-01-21",
+      "start": null,
+      "opponent": "Lafayette",
+      "venueId": "case-gym",
+      "attendance": 1057,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-01-28",
+      "start": null,
+      "opponent": "Navy",
+      "venueId": "case-gym",
+      "attendance": 663,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "Loyola Maryland",
+      "venueId": "case-gym",
+      "attendance": 864,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Bucknell",
+      "venueId": "case-gym",
+      "attendance": 733,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mbb",
       "season": 2027,
       "date": "2026-11-02",
       "start": null,

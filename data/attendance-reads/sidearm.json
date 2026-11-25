@@ -12,6 +12,21 @@
           },
           "readOn": "2026-11-25"
         },
+        "2025-26": {
+          "boxes": {
+            "26317": "kept",
+            "26321": "kept",
+            "26322": "kept",
+            "26326": "kept",
+            "26328": "kept",
+            "26329": "kept",
+            "26330": "kept",
+            "26332": "kept",
+            "26334": "neutral",
+            "26336": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
         "2026-27": {
           "boxes": {
             "26878": "kept",
@@ -24,22 +39,13 @@
             "27020": "kept"
           },
           "readOn": "2026-11-25"
-        },
-        "2025-26": {
-          "boxes": {
-            "26317": "kept",
-            "26321": "kept",
-            "26322": "kept",
-            "26326": "kept",
-            "26328": "kept"
-          },
-          "readOn": "2026-11-25"
         }
       },
       "path": "mens-ice-hockey",
       "cities": {
-        "boston": "conte-forum",
-        "chestnut hill": "conte-forum"
+        "boston|": "conte-forum",
+        "chestnut hill|ma": "conte-forum",
+        "boston|ma": "conte-forum"
       }
     },
     "bu-mbb": {
@@ -72,7 +78,11 @@
             "32677": "kept",
             "32723": "kept",
             "32725": "kept",
-            "32726": "kept"
+            "32726": "kept",
+            "32728": "kept",
+            "32730": "kept",
+            "32733": "kept",
+            "32735": "kept"
           },
           "readOn": "2026-11-25"
         }
@@ -110,7 +120,9 @@
               "attendance": 3335
             },
             "13757": "kept",
-            "13786": "kept"
+            "13786": "kept",
+            "13787": "kept",
+            "13788": "kept"
           },
           "readOn": "2026-11-25"
         }
@@ -131,6 +143,18 @@
             "8357": "kept",
             "8360": "kept",
             "8361": "kept"
+          },
+          "readOn": "2026-11-25"
+        },
+        "2025-26": {
+          "boxes": {
+            "9275": "kept",
+            "9277": "kept",
+            "9278": "kept",
+            "9282": "kept",
+            "9283": "kept",
+            "9288": "neutral",
+            "9289": "kept"
           },
           "readOn": "2026-11-25"
         },
@@ -156,19 +180,11 @@
             "9753": "kept"
           },
           "readOn": "2026-11-25"
-        },
-        "2025-26": {
-          "boxes": {
-            "9275": "kept",
-            "9277": "kept",
-            "9278": "kept"
-          },
-          "readOn": "2026-11-25"
         }
       },
       "path": "mens-ice-hockey",
       "cities": {
-        "lowell": "tsongas-center"
+        "lowell|ma": "tsongas-center"
       }
     },
     "usc-wvb": {

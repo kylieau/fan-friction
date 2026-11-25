@@ -78,7 +78,8 @@ try {
         const byDate = programs.get(team.id)?.byDate ?? new Map();
         if (e.place?.type === 'venue') {
           known.add(e.place.venueId);
-          byDate.set(e.date, e.place.venueId);
+          // Every room listed that date: two games at two rooms on one date name no room by date (Codex, B2 gaps review).
+          byDate.set(e.date, new Set([...(byDate.get(e.date) ?? []), e.place.venueId]));
         }
         programs.set(team.id, { metroId, teamId: team.id, site: school.site, sport: e.audience?.sport ?? 'other', division, rooms: known, byDate });
       }
@@ -234,13 +235,13 @@ try {
           const b = await get(g.boxUrl);
           if (b.stop) return b.stop;
           const facts = b.status === 200 ? box.boxFacts(b.text) : null;
-          const venueId = facts && !facts.neutral ? roomOf(t, entry, facts.places, g.date) : undefined;
+          const venueId = facts && !facts.neutral ? roomOf(t, entry, facts.places, g.date, facts.flagsKnown !== false) : undefined;
           const status = !facts ? 'unreadable' : facts.neutral ? 'neutral' : !facts.attendance ? 'no-crowd' : !venueId ? 'no-room' : 'kept';
           // A room not on file keeps the game's facts, so a later night places it once the room is added; a blank
           // crowd or an unreadable page is read again on the next nights, MAX_TRIES in all.
           rec.boxes[g.boxId] =
             status === 'no-room'
-              ? { status, places: facts.places, date: g.date, opponent: g.opponent, attendance: facts.attendance, ...(facts.postseason ? { postseason: true } : {}) }
+              ? { status, places: facts.places, date: g.date, opponent: g.opponent, attendance: facts.attendance, ...(facts.postseason ? { postseason: true } : {}), ...(facts.flagsKnown === false ? { flagsKnown: false } : {}) }
               : status === 'no-crowd' || status === 'unreadable'
                 ? { status, tries: (had?.tries ?? 0) + 1, last: today }
                 : status;
@@ -269,22 +270,28 @@ try {
    * the saved listings, takes the program's rink only when the schedules show it at exactly one home room and the
    * box names the city this season's games did there. A second room, or another city, places nothing.
    */
-  function roomOf(t, entry, places, date) {
+  // Only a box naming a city and nothing else reaches the city rules ("Unlisted Rink" beside "Boston, MA" names a
+  // room, and stays held). A box whose page has no neutral flag to read (the older layout) is never placed by city
+  // alone, since one home rink in the schedules does not rule out a neutral rink in that city (Codex, B2 gaps review).
+  function roomOf(t, entry, places, date, flagsKnown = true) {
     const named = box.boxRoom(t.metroId, places, date);
     if (named) return t.rooms.has(named) ? named : undefined;
     const city = box.placeKey(places);
     if (!city) return undefined;
     const listed = t.byDate.get(date);
-    if (listed) {
+    if (listed?.size === 1) {
+      const room = [...listed][0];
       entry.cities ??= {};
-      if (entry.cities[city] !== listed) {
-        entry.cities[city] = listed;
+      if (entry.cities[city] !== room) {
+        entry.cities[city] = room;
         touched.add('ledger');
       }
-      return listed;
+      return room;
     }
+    if (listed || !flagsKnown) return undefined;
     const only = t.rooms.size === 1 ? [...t.rooms][0] : undefined;
-    return only && entry.cities?.[city] === only ? only : undefined;
+    const learned = Object.entries(entry.cities ?? {}).filter(([k]) => box.sameCity(k, city)).map(([, room]) => room);
+    return only && learned.length > 0 && learned.every((room) => room === only) ? only : undefined;
   }
 
   /** Games held back for a room, placed against tonight's rooms and cities; nothing is fetched. */
@@ -292,7 +299,7 @@ try {
     for (const s of seasons) {
       for (const [id, held] of Object.entries(entry.seasons[s.label]?.boxes ?? {})) {
         if (typeof held !== 'object' || held.status !== 'no-room') continue;
-        const venueId = roomOf(t, entry, held.places, held.date);
+        const venueId = roomOf(t, entry, held.places, held.date, held.flagsKnown !== false);
         if (!venueId) continue;
         entry.seasons[s.label].boxes[id] = 'kept';
         touched.add('ledger');

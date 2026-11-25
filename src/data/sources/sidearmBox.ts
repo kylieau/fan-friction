@@ -97,6 +97,8 @@ export interface BoxFacts {
   places: string[];
   neutral: boolean;
   postseason: boolean;
+  /** False when the page has no neutral-site flag to read (the older layout): neutral then means "not known". */
+  flagsKnown?: boolean;
   /** The announced crowd; undefined when the line is blank or zero (a zero is never proof of an empty room). */
   attendance?: number;
 }
@@ -127,18 +129,26 @@ export function boxFacts(html: string): BoxFacts | null {
 const unescape = (s: string) => s.replace(/&amp;/g, '&').replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').trim();
 
 /**
- * The older season page's games: the team table is the one whose opponent cell starts with "vs" or "at" (the
- * opponents' and comparison tables list the same games with the bare name). Null when no such table is there.
+ * The older season page's games, from the team table ("Game By Game - Team Statistics"), where the opponent cell
+ * starts with "vs" or "at" (the opponents' and comparison tables list the same games with the bare name). Null when
+ * that table is not there, or when any box score it links could not be read as a game, so a layout change never
+ * reads as a finished season (Codex, B2 gaps review).
  */
 export function legacyIndexGames(html: string): IndexGame[] | null {
-  const row = /<td[^>]*>\s*(vs\.?|at)\s*<a[^>]*href=['"]([^'"]*boxscore\.aspx\?id=(\d+)[^'"]*)['"][^>]*>([^<]*)<\/a>[\s\S]*?<\/td>\s*<td[^>]*>\s*([^<]*?)\s*<\/td>/gi;
+  const start = html.search(/Game By Game\s*-\s*Team Statistics/i);
+  if (start < 0) return null;
+  const rest = html.slice(start + 10);
+  const next = rest.search(/Game By Game\s*-/i);
+  const table = next >= 0 ? rest.slice(0, next) : rest;
+  const linked = new Set([...table.matchAll(/boxscore\.aspx\?id=(\d+)/gi)].map((m) => m[1]));
+  const row = /<td[^>]*>\s*(vs\.?|at)\s*<a[^>]*href=['"]([^'"]*boxscore\.aspx\?id=(\d+)[^'"]*)['"][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/td>\s*<td[^>]*>\s*([^<]*?)\s*<\/td>/gi;
   const games = new Map<string, IndexGame>();
-  for (const m of html.matchAll(row)) {
+  for (const m of table.matchAll(row)) {
     const date = boxDate(m[5]);
     if (!date || games.has(m[3])) continue;
-    games.set(m[3], { date, opponent: unescape(m[4]), boxUrl: unescape(m[2]).replace(/^(?!\/)/, '/'), boxId: m[3], home: /^vs/i.test(m[1]) });
+    games.set(m[3], { date, opponent: unescape(m[4].replace(/<[^>]+>/g, '')), boxUrl: unescape(m[2]).replace(/^(?!\/)/, '/'), boxId: m[3], home: /^vs/i.test(m[1]) });
   }
-  if (!games.size) return /Game By Game/i.test(html) && /boxscore\.aspx/i.test(html) ? [] : null;
+  if ([...linked].some((id) => !games.has(id))) return null;
   return [...games.values()].sort((a, b) => a.date.localeCompare(b.date) || a.boxId.localeCompare(b.boxId));
 }
 
@@ -157,20 +167,54 @@ export function legacyBoxFacts(html: string): BoxFacts | null {
   return {
     date: boxDate(facts.date),
     places: facts.site ? [facts.site] : [],
+    // Unknown in this layout, not false: the city-only rule never places such a box by city alone.
     neutral: false,
+    flagsKnown: false,
     postseason: false,
     ...(Number.isFinite(n) && n > 0 ? { attendance: n } : {}),
   };
 }
 
+// States and provinces as box scores write them ("Massachusetts", "Mass.", "MA"), to one code, so "Springfield,
+// Massachusetts" and "Springfield, Missouri" stay two cities (Codex, B2 gaps review).
+const REGIONS: string[][] = [
+  ['al', 'alabama', 'ala'], ['ak', 'alaska'], ['az', 'arizona', 'ariz'], ['ar', 'arkansas', 'ark'], ['ca', 'california', 'calif', 'cal'],
+  ['co', 'colorado', 'colo'], ['ct', 'connecticut', 'conn'], ['de', 'delaware', 'del'], ['dc', 'district of columbia', 'd c'],
+  ['fl', 'florida', 'fla'], ['ga', 'georgia'], ['hi', 'hawaii'], ['id', 'idaho'], ['il', 'illinois', 'ill'], ['in', 'indiana', 'ind'],
+  ['ia', 'iowa'], ['ks', 'kansas', 'kan', 'kans'], ['ky', 'kentucky'], ['la', 'louisiana'], ['me', 'maine'], ['md', 'maryland'],
+  ['ma', 'massachusetts', 'mass'], ['mi', 'michigan', 'mich'], ['mn', 'minnesota', 'minn'], ['ms', 'mississippi', 'miss'],
+  ['mo', 'missouri'], ['mt', 'montana', 'mont'], ['ne', 'nebraska', 'neb', 'nebr'], ['nv', 'nevada', 'nev'], ['nh', 'new hampshire', 'n h'],
+  ['nj', 'new jersey', 'n j'], ['nm', 'new mexico', 'n m', 'n mex'], ['ny', 'new york', 'n y'], ['nc', 'north carolina', 'n c'],
+  ['nd', 'north dakota', 'n d', 'n dak'], ['oh', 'ohio'], ['ok', 'oklahoma', 'okla'], ['or', 'oregon', 'ore'], ['pa', 'pennsylvania', 'penn', 'pa'],
+  ['ri', 'rhode island', 'r i'], ['sc', 'south carolina', 's c'], ['sd', 'south dakota', 's d', 's dak'], ['tn', 'tennessee', 'tenn'],
+  ['tx', 'texas', 'tex'], ['ut', 'utah'], ['vt', 'vermont'], ['va', 'virginia'], ['wa', 'washington', 'wash'], ['wv', 'west virginia', 'w va'],
+  ['wi', 'wisconsin', 'wis', 'wisc'], ['wy', 'wyoming', 'wyo'],
+  ['ab', 'alberta', 'alta'], ['bc', 'british columbia', 'b c'], ['mb', 'manitoba', 'man'], ['nb', 'new brunswick', 'n b'], ['nl', 'newfoundland and labrador', 'newfoundland'],
+  ['ns', 'nova scotia', 'n s'], ['on', 'ontario', 'ont'], ['pe', 'prince edward island', 'pei'], ['qc', 'quebec', 'que', 'pq'], ['sk', 'saskatchewan', 'sask'],
+];
+const REGION = new Map(REGIONS.flatMap((names) => names.map((n) => [n, names[0]] as const)));
+const plain = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
 /**
- * The city a box names when it names no room: the first part of a city line, lowercased ("Lowell, Massachusetts",
- * "Lowell, Mass." and "Lowell" are one city). A line of three parts or more names a room ("Matthews Arena, Boston,
- * MA") and is no city.
+ * The city a box names when it names nothing else: one place line of a city and, optionally, its state ("Lowell",
+ * "Lowell, Mass.", "Lowell, Massachusetts"), as "lowell|ma" (or "lowell|" with no state). Undefined when the box
+ * names anything more: a stadium line beside it, or a room, city, and state line ("Matthews Arena, Boston, MA"), or
+ * a second part that is no state (Codex, B2 gaps review).
  */
 export function placeKey(places: readonly string[]): string | undefined {
-  const parts = (places[places.length - 1] ?? '').split(',').map((p) => p.trim()).filter(Boolean);
-  return parts.length >= 1 && parts.length <= 2 ? parts[0].toLowerCase() : undefined;
+  if (places.length !== 1) return undefined;
+  const parts = places[0].split(',').map((p) => p.trim()).filter(Boolean);
+  if (parts.length < 1 || parts.length > 2) return undefined;
+  const region = parts[1] ? REGION.get(plain(parts[1])) : '';
+  if (region === undefined) return undefined;
+  return `${plain(parts[0])}|${region}`;
+}
+
+/** Whether two city keys name one city: the same city and state, or the same city where one side wrote no state. */
+export function sameCity(a: string, b: string): boolean {
+  const [ca, ra] = a.split('|');
+  const [cb, rb] = b.split('|');
+  return ca === cb && (ra === rb || !ra || !rb);
 }
 
 /**

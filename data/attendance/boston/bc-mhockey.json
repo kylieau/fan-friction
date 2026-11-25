@@ -94,6 +94,50 @@
     },
     {
       "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "conte-forum",
+      "attendance": 7046,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "Notre Dame",
+      "venueId": "conte-forum",
+      "attendance": 7230,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "UMass Lowell",
+      "venueId": "conte-forum",
+      "attendance": 5332,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2026,
+      "date": "2026-01-16",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
       "season": 2027,
       "date": "2026-10-09",
       "start": null,

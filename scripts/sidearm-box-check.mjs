@@ -66,10 +66,19 @@ try {
   check(lb?.attendance === 2189 && lb?.places[0] === 'Matthews Arena, Boston, MA' && lb?.date === '2025-11-03', 'the older box score: the crowd, the site, and the date from its Game Details');
   check(box.boxFacts(legacyBox('', 'Matthews Arena, Boston, MA'))?.attendance === undefined, 'the older box score: a blank crowd is no crowd');
   check(box.indexGames('<html><body>Page not found</body></html>') === null, 'a page in neither layout reads as nothing');
+  const nested = legacyIndex.replace(">Boston U.</a></td><td>11/03/25", "><span>Boston U.</span></a></td><td>11/03/25");
+  check(box.indexGames(nested)?.[0]?.opponent === 'Boston U.', 'an opponent name wrapped in markup still reads');
+  const odd = legacyIndex.replace(`<tr><td class="text-no-wrap">at <a`, `<tr><td class="text-no-wrap"><em>at</em> <a`);
+  check(box.indexGames(odd) === null, 'a team table with a game the reader cannot read is no season at all, so it is never marked done (Codex, B2 gaps review)');
+  check(box.boxFacts(legacyBox('2189', 'Boston, MA'))?.flagsKnown === false, 'the older box score has no neutral flag: marked unknown, so the city rule never places it alone');
 
-  check(box.placeKey(['Lowell']) === 'lowell' && box.placeKey(['Lowell, Massachusetts']) === 'lowell', 'a city written two ways is one city (the city-only rule, Kylie, Nov 25)');
-  check(box.placeKey(['Galen Center', 'Los Angeles, CA']) === 'los angeles', 'the city is read from the last place line');
-  check(box.placeKey(['Matthews Arena, Boston, MA']) === undefined, 'a room, city, and state line names a room, not a city: it is never placed by the city rule');
+  const k = (...p) => box.placeKey(p);
+  check(k('Lowell, Massachusetts') === 'lowell|ma' && k('Lowell, Mass.') === 'lowell|ma' && k('Lowell, MA') === 'lowell|ma', 'a city and its state written three ways is one city (the city-only rule, Kylie, Nov 25)');
+  check(box.sameCity(k('Lowell'), k('Lowell, Massachusetts')), 'a city with no state written matches the same city with one');
+  check(!box.sameCity(k('Springfield, Massachusetts'), k('Springfield, Missouri')), 'two states keep two cities apart (Codex, B2 gaps review)');
+  check(k('Matthews Arena, Boston, MA') === undefined, 'a room, city, and state line names a room, not a city: never placed by the city rule');
+  check(k('Unlisted Rink', 'Boston, MA') === undefined && k('Galen Center', 'Los Angeles, CA') === undefined, 'a stadium line beside the city names a room: never placed by the city rule (Codex, B2 gaps review)');
+  check(k('Conte Forum, Chestnut Hill') === undefined, 'a second part that is no state means the first is no city');
 
   check(box.boxRoom('la', ['Galen Center, Los Angeles, CA'], '2025-11-03') === 'galen-center', 'the location line places the room on file');
   check(box.boxRoom('la', ['Galen Center', 'Los Angeles, CA'], '2023-09-10') === 'galen-center', 'the stadium line places the room on file');

@@ -28,6 +28,28 @@
     },
     {
       "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Towson",
+      "venueId": "cabot-center",
+      "attendance": 797,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-01-15",
+      "start": null,
+      "opponent": "Elon",
+      "venueId": "cabot-center",
+      "attendance": 811,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
       "season": 2027,
       "date": "2026-11-10",
       "start": null,
