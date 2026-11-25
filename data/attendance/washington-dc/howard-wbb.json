@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "teamId": "howard-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "Florida A&M",
+      "venueId": "burr-gymnasium",
+      "attendance": 1582,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2025-11-23",
+      "start": null,
+      "opponent": "William & Mary",
+      "venueId": "burr-gymnasium",
+      "attendance": 739,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2025-12-05",
+      "start": null,
+      "opponent": "Fairfield",
+      "venueId": "burr-gymnasium",
+      "attendance": 1076,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "St. Bonaventure",
+      "venueId": "burr-gymnasium",
+      "attendance": 538,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Delaware St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 582,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Morgan St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 1244,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Norfolk St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 1167,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "South Carolina St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 1042,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "UMES",
+      "venueId": "burr-gymnasium",
+      "attendance": 738,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "N.C. Central",
+      "venueId": "burr-gymnasium",
+      "attendance": 1121,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Coppin St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 948,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "Elon",
+      "venueId": "burr-gymnasium",
+      "attendance": 1197,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Ohio",
+      "venueId": "burr-gymnasium",
+      "attendance": 718,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2027,
+      "date": "2026-11-20",
+      "start": null,
+      "opponent": "George Washington",
+      "venueId": "burr-gymnasium",
+      "attendance": 628,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

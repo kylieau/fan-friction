@@ -4,6 +4,103 @@
   "date": "2026-11-24",
   "results": [
     {
+      "eventId": "2026-11-24-espn-penn-mbb-401921184",
+      "metroId": "philadelphia",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-mbb",
+      "home": {
+        "name": "Penn",
+        "score": 89
+      },
+      "away": {
+        "name": "Drexel",
+        "score": 74
+      },
+      "attendance": 2157,
+      "capturedAt": "2026-11-25T18:39:24.387Z",
+      "duration": {
+        "minutes": 122,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-24-espn-penn-wbb-401929628",
+      "metroId": "philadelphia",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "the-palestra",
+      "homeTeamId": "penn-wbb",
+      "home": {
+        "name": "Penn",
+        "score": 65
+      },
+      "away": {
+        "name": "Hofstra",
+        "score": 47
+      },
+      "attendance": 261,
+      "capturedAt": "2026-11-25T18:39:24.387Z",
+      "duration": {
+        "minutes": 101,
+        "kind": "estimated"
+      },
+      "startedAt": "17:03"
+    },
+    {
+      "eventId": "2026-11-24-espn-temple-wbb-401926055",
+      "metroId": "philadelphia",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "liacouras-center",
+      "homeTeamId": "temple-wbb",
+      "home": {
+        "name": "Temple",
+        "score": 77
+      },
+      "away": {
+        "name": "Ball State",
+        "score": 69
+      },
+      "attendance": 961,
+      "note": "OT",
+      "capturedAt": "2026-11-25T18:39:24.387Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "18:32"
+    },
+    {
+      "eventId": "2026-11-24-espn-villanova-mbb-401921777",
+      "metroId": "philadelphia",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "finneran-pavilion",
+      "homeTeamId": "villanova-mbb",
+      "home": {
+        "name": "Villanova",
+        "score": 70
+      },
+      "away": {
+        "name": "Coppin St",
+        "score": 52
+      },
+      "attendance": 5274,
+      "capturedAt": "2026-11-25T18:39:24.387Z",
+      "duration": {
+        "minutes": 106,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
       "eventId": "2026-11-24-espn-villanova-wbb-401921151",
       "metroId": "philadelphia",
       "date": "2026-11-24",
@@ -20,7 +117,7 @@
         "score": 67
       },
       "attendance": 1303,
-      "capturedAt": "2026-11-24T19:35:58.871Z",
+      "capturedAt": "2026-11-25T18:39:24.387Z",
       "duration": {
         "minutes": 115,
         "kind": "estimated"

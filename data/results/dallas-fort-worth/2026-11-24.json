@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-tcu-mbb-401915941",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "tcu-mbb",
+      "home": {
+        "name": "TCU",
+        "score": 84
+      },
+      "away": {
+        "name": "Miami",
+        "score": 71
+      },
+      "capturedAt": "2026-11-25T18:39:22.951Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "15:03"
+    },
+    {
+      "eventId": "2026-11-24-espn-uta-mbb-401929359",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "college-park-center",
+      "homeTeamId": "uta-mbb",
+      "home": {
+        "name": "UT Arlington",
+        "score": 80
+      },
+      "away": {
+        "name": "Oral Roberts",
+        "score": 84
+      },
+      "attendance": 858,
+      "capturedAt": "2026-11-25T18:39:22.951Z",
+      "duration": {
+        "minutes": 123,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    }
+  ]
+}

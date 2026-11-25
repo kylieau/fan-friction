@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-lutheran-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "Whitman",
+      "venueId": "gilbert-arena",
+      "attendance": 300,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "NYU",
+      "venueId": "gilbert-arena",
+      "attendance": 209,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "George Fox",
+      "venueId": "gilbert-arena",
+      "attendance": 284,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Caltech",
+      "venueId": "gilbert-arena",
+      "attendance": 206,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-12-19",
+      "start": null,
+      "opponent": "Emerson",
+      "venueId": "gilbert-arena",
+      "attendance": 136,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-12-30",
+      "start": null,
+      "opponent": "Hardin-Simmons",
+      "venueId": "gilbert-arena",
+      "attendance": 89,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2025-12-31",
+      "start": null,
+      "opponent": "Amherst",
+      "venueId": "gilbert-arena",
+      "attendance": 174,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-01-05",
+      "start": null,
+      "opponent": "Chapman",
+      "venueId": "gilbert-arena",
+      "attendance": 98,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-01-14",
+      "start": null,
+      "opponent": "Claremont-M-S",
+      "venueId": "gilbert-arena",
+      "attendance": 108,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-01-21",
+      "start": null,
+      "opponent": "Pomona-Pitzer",
+      "venueId": "gilbert-arena",
+      "attendance": 210,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-01-28",
+      "start": null,
+      "opponent": "Whittier",
+      "venueId": "gilbert-arena",
+      "attendance": 275,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Redlands",
+      "venueId": "gilbert-arena",
+      "attendance": 217,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-02-11",
+      "start": null,
+      "opponent": "La Verne",
+      "venueId": "gilbert-arena",
+      "attendance": 157,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Occidental",
+      "venueId": "gilbert-arena",
+      "attendance": 189,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-lutheran-mbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Stevens",
+      "venueId": "gilbert-arena",
+      "attendance": 155,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

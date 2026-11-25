@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-laketown-squadron-401914598",
+      "metroId": "new-orleans",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pontchartrain-center",
+      "homeTeamId": "laketown-squadron",
+      "home": {
+        "name": "Squadron",
+        "score": 108
+      },
+      "away": {
+        "name": "Magic",
+        "score": 119
+      },
+      "attendance": 1769,
+      "capturedAt": "2026-11-25T18:39:28.629Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "19:32"
+    },
+    {
+      "eventId": "2026-11-24-espn-lsuno-wbb-401920212",
+      "metroId": "new-orleans",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lakefront-arena",
+      "homeTeamId": "lsuno-wbb",
+      "home": {
+        "name": "LSU N Orleans",
+        "score": 80
+      },
+      "away": {
+        "name": "West Alabama",
+        "score": 73
+      },
+      "attendance": 437,
+      "capturedAt": "2026-11-25T18:39:28.629Z",
+      "duration": {
+        "minutes": 127,
+        "kind": "estimated"
+      },
+      "startedAt": "19:34"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-state-fullerton-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "Caltech",
+      "venueId": "titan-gym",
+      "attendance": 831,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "titan-gym",
+      "attendance": 459,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "Pepperdine",
+      "venueId": "titan-gym",
+      "attendance": 536,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "titan-gym",
+      "attendance": 919,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2025-12-10",
+      "start": null,
+      "opponent": "Bethesda (CA)",
+      "venueId": "titan-gym",
+      "attendance": 454,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-01-01",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "titan-gym",
+      "attendance": 493,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "titan-gym",
+      "attendance": 615,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "titan-gym",
+      "attendance": 486,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "titan-gym",
+      "attendance": 2428,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "titan-gym",
+      "attendance": 483,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "titan-gym",
+      "attendance": 403,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-02-19",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "titan-gym",
+      "attendance": 535,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "titan-gym",
+      "attendance": 668,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2026,
+      "date": "2026-03-05",
+      "start": null,
+      "opponent": "UC San Diego",
+      "venueId": "titan-gym",
+      "attendance": 848,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2027,
+      "date": "2026-11-12",
+      "start": null,
+      "opponent": "Lincoln (CA)",
+      "venueId": "titan-gym",
+      "attendance": 675,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

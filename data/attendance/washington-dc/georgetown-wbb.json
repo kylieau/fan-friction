@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "teamId": "georgetown-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-11-06",
+      "start": null,
+      "opponent": "Stonehill",
+      "venueId": "mcdonough-arena",
+      "attendance": 457,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "George Washington",
+      "venueId": "mcdonough-arena",
+      "attendance": 521,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-11-24",
+      "start": null,
+      "opponent": "Elon",
+      "venueId": "mcdonough-arena",
+      "attendance": 329,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "Towson",
+      "venueId": "mcdonough-arena",
+      "attendance": 325,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Villanova",
+      "venueId": "mcdonough-arena",
+      "attendance": 383,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Delaware St.",
+      "venueId": "mcdonough-arena",
+      "attendance": 1103,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2025-12-28",
+      "start": null,
+      "opponent": "Creighton",
+      "venueId": "mcdonough-arena",
+      "attendance": 627,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Xavier",
+      "venueId": "mcdonough-arena",
+      "attendance": 647,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-01-13",
+      "start": null,
+      "opponent": "St. John's (NY)",
+      "venueId": "mcdonough-arena",
+      "attendance": 321,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Seton Hall",
+      "venueId": "mcdonough-arena",
+      "attendance": 237,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-02-01",
+      "start": null,
+      "opponent": "Marquette",
+      "venueId": "mcdonough-arena",
+      "attendance": 523,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "mcdonough-arena",
+      "attendance": 741,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Delaware St.",
+      "venueId": "mcdonough-arena",
+      "attendance": 413,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "American",
+      "venueId": "mcdonough-arena",
+      "attendance": 502,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2027,
+      "date": "2026-11-08",
+      "start": null,
+      "opponent": "Saint Peter's",
+      "venueId": "mcdonough-arena",
+      "attendance": 347,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-osu-mbb-401916319",
+      "metroId": "columbus",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "value-city-arena",
+      "homeTeamId": "osu-mbb",
+      "home": {
+        "name": "Ohio State Buckeyes",
+        "score": 66
+      },
+      "away": {
+        "name": "Vanderbilt",
+        "score": 72
+      },
+      "attendance": 10757,
+      "capturedAt": "2026-11-25T18:39:25.520Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

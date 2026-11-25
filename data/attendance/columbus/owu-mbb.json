@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "teamId": "owu-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "Alma",
+      "venueId": "branch-rickey-arena",
+      "attendance": 423,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "Calvin",
+      "venueId": "branch-rickey-arena",
+      "attendance": 471,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-11-25",
+      "start": null,
+      "opponent": "Capital",
+      "venueId": "branch-rickey-arena",
+      "attendance": 371,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "Wittenberg",
+      "venueId": "branch-rickey-arena",
+      "attendance": 291,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Hope",
+      "venueId": "branch-rickey-arena",
+      "attendance": 421,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2025-12-31",
+      "start": null,
+      "opponent": "Denison",
+      "venueId": "branch-rickey-arena",
+      "attendance": 328,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Oberlin",
+      "venueId": "branch-rickey-arena",
+      "attendance": 273,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Baldwin Wallace",
+      "venueId": "branch-rickey-arena",
+      "attendance": 279,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-01-21",
+      "start": null,
+      "opponent": "DePauw",
+      "venueId": "branch-rickey-arena",
+      "attendance": 279,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-01-28",
+      "start": null,
+      "opponent": "Kenyon",
+      "venueId": "branch-rickey-arena",
+      "attendance": 261,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-02-04",
+      "start": null,
+      "opponent": "John Carroll",
+      "venueId": "branch-rickey-arena",
+      "attendance": 172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-02-11",
+      "start": null,
+      "opponent": "Wabash",
+      "venueId": "branch-rickey-arena",
+      "attendance": 231,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Wooster",
+      "venueId": "branch-rickey-arena",
+      "attendance": 294,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2027,
+      "date": "2026-11-11",
+      "start": null,
+      "opponent": "Ohio Northern",
+      "venueId": "branch-rickey-arena",
+      "attendance": 531,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2027,
+      "date": "2026-11-20",
+      "start": null,
+      "opponent": "Berry",
+      "venueId": "branch-rickey-arena",
+      "attendance": 472,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "owu-mbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Johns Hopkins",
+      "venueId": "branch-rickey-arena",
+      "attendance": 493,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

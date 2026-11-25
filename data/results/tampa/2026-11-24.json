@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-usf-mbb-401918996",
+      "metroId": "tampa",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "yuengling-center",
+      "homeTeamId": "usf-mbb",
+      "home": {
+        "name": "South Florida",
+        "score": 100
+      },
+      "away": {
+        "name": "Stetson",
+        "score": 67
+      },
+      "attendance": 2627,
+      "capturedAt": "2026-11-25T18:39:25.123Z",
+      "duration": {
+        "minutes": 124,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

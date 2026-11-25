@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "teamId": "loyola-chicago-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "Cleveland St.",
+      "venueId": "gentile-arena",
+      "attendance": 2581,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-11-06",
+      "start": null,
+      "opponent": "Mercyhurst",
+      "venueId": "gentile-arena",
+      "attendance": 2016,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-11-16",
+      "start": null,
+      "opponent": "Colorado St.",
+      "venueId": "gentile-arena",
+      "attendance": 2999,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "NIU",
+      "venueId": "gentile-arena",
+      "attendance": 2862,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-12-02",
+      "start": null,
+      "opponent": "Central Mich.",
+      "venueId": "gentile-arena",
+      "attendance": 1726,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "gentile-arena",
+      "attendance": 2699,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2025-12-14",
+      "start": null,
+      "opponent": "Chicago St.",
+      "venueId": "gentile-arena",
+      "attendance": 1972,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Dayton",
+      "venueId": "gentile-arena",
+      "attendance": 3777,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2026-01-07",
+      "start": null,
+      "opponent": "Davidson",
+      "venueId": "gentile-arena",
+      "attendance": 1619,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2026-01-13",
+      "start": null,
+      "opponent": "George Mason",
+      "venueId": "gentile-arena",
+      "attendance": 2405,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Duquesne",
+      "venueId": "gentile-arena",
+      "attendance": 2737,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2026,
+      "date": "2026-01-27",
+      "start": null,
+      "opponent": "Saint Joseph's",
+      "venueId": "gentile-arena",
+      "attendance": 2129,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "The Citadel",
+      "venueId": "gentile-arena",
+      "attendance": 1959,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "West Ga.",
+      "venueId": "gentile-arena",
+      "attendance": 1824,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Wichita St.",
+      "venueId": "gentile-arena",
+      "attendance": 2493,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

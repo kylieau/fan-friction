@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-rutgers-mbb-401924877",
+      "metroId": "new-york",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "jersey-mikes-arena",
+      "homeTeamId": "rutgers-mbb",
+      "home": {
+        "name": "Rutgers",
+        "score": 106
+      },
+      "away": {
+        "name": "Sacred Heart",
+        "score": 73
+      },
+      "attendance": 7074,
+      "capturedAt": "2026-11-25T18:39:21.350Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "18:01"
+    },
+    {
+      "eventId": "2026-11-24-espn-seton-hall-mbb-401920889",
+      "metroId": "new-york",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "prudential-center",
+      "homeTeamId": "seton-hall-mbb",
+      "home": {
+        "name": "Seton Hall",
+        "score": 73
+      },
+      "away": {
+        "name": "New Hampshire",
+        "score": 27
+      },
+      "attendance": 6715,
+      "capturedAt": "2026-11-25T18:39:21.350Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-24-espn-stjohns-mbb-401915943",
+      "metroId": "new-york",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "stjohns-mbb",
+      "home": {
+        "name": "St John's",
+        "score": 90
+      },
+      "away": {
+        "name": "Oregon",
+        "score": 79
+      },
+      "attendance": 4432,
+      "capturedAt": "2026-11-25T18:39:21.350Z",
+      "duration": {
+        "minutes": 137,
+        "kind": "estimated"
+      },
+      "startedAt": "23:18"
+    }
+  ]
+}

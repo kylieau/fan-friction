@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-duquesne-wbb-401915768",
+      "metroId": "pittsburgh",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "upmc-cooper-fieldhouse",
+      "homeTeamId": "duquesne-wbb",
+      "home": {
+        "name": "Duquesne",
+        "score": 83
+      },
+      "away": {
+        "name": "Niagara",
+        "score": 61
+      },
+      "attendance": 541,
+      "capturedAt": "2026-11-25T18:39:24.774Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

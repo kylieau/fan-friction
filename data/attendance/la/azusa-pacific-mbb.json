@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "azusa-pacific-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Cal Poly Pomona",
+      "venueId": "felix-event-center",
+      "attendance": 174,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "Cal St. San Marcos",
+      "venueId": "felix-event-center",
+      "attendance": 135,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "CSUSB",
+      "venueId": "felix-event-center",
+      "attendance": 104,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-12-02",
+      "start": null,
+      "opponent": "Menlo",
+      "venueId": "felix-event-center",
+      "attendance": 89,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-12-17",
+      "start": null,
+      "opponent": "Chaminade",
+      "venueId": "felix-event-center",
+      "attendance": 89,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Point Loma",
+      "venueId": "felix-event-center",
+      "attendance": 107,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2025-12-30",
+      "start": null,
+      "opponent": "Nobel",
+      "venueId": "felix-event-center",
+      "attendance": 117,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Biola",
+      "venueId": "felix-event-center",
+      "attendance": 389,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Jessup",
+      "venueId": "felix-event-center",
+      "attendance": 84,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Hawaii Hilo",
+      "venueId": "felix-event-center",
+      "attendance": 137,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Dominican (CA)",
+      "venueId": "felix-event-center",
+      "attendance": 120,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-02-02",
+      "start": null,
+      "opponent": "Hawaii Pacific",
+      "venueId": "felix-event-center",
+      "attendance": 116,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "CUI",
+      "venueId": "felix-event-center",
+      "attendance": 130,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "Vanguard",
+      "venueId": "felix-event-center",
+      "attendance": 121,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "azusa-pacific-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Westmont",
+      "venueId": "felix-event-center",
+      "attendance": 113,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-ht-san-diego-gulls-1029374",
+      "metroId": "san-diego",
+      "date": "2026-11-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "pechanga-arena",
+      "homeTeamId": "san-diego-gulls",
+      "home": {
+        "name": "Gulls",
+        "score": 3
+      },
+      "away": {
+        "name": "Reign",
+        "score": 4
+      },
+      "attendance": 5261,
+      "capturedAt": "2026-11-25T18:39:20.589Z"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "usf-dons-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2025,
+      "date": "2024-11-05",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2073,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2025,
+      "date": "2024-11-09",
+      "start": null,
+      "opponent": "Boise St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2963,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2025,
+      "date": "2024-11-13",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1928,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2025,
+      "date": "2024-11-16",
+      "start": null,
+      "opponent": "Chicago St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1864,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "UC Santa Cruz",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 848,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-11-12",
+      "start": null,
+      "opponent": "Portland St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1123,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Bradley",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2182,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-11-18",
+      "start": null,
+      "opponent": "Northwestern St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1280,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "North Ala.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1864,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2025-12-21",
+      "start": null,
+      "opponent": "Morgan St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1684,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-01-02",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1048,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Portland",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1088,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-01-13",
+      "start": null,
+      "opponent": "Saint Mary's (CA)",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2784,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-01-18",
+      "start": null,
+      "opponent": "Washington St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2182,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2102,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-02-04",
+      "start": null,
+      "opponent": "LMU (CA)",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1878,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "Oregon St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2249,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-02-18",
+      "start": null,
+      "opponent": "Gonzaga",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 3848,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Santa Clara",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 2898,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Radford",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 948,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "North Dakota St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 995,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Montana",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1139,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "Portland St.",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 1137,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usf-dons-mbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Louisiana",
+      "venueId": "war-memorial-sobrato-center",
+      "attendance": 748,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

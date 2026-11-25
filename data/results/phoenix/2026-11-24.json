@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-asu-wbb-401916086",
+      "metroId": "phoenix",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "desert-financial-arena",
+      "homeTeamId": "asu-wbb",
+      "home": {
+        "name": "Arizona St",
+        "score": 75
+      },
+      "away": {
+        "name": "San José St",
+        "score": 50
+      },
+      "attendance": 2180,
+      "capturedAt": "2026-11-25T18:39:26.440Z",
+      "duration": {
+        "minutes": 99,
+        "kind": "estimated"
+      },
+      "startedAt": "20:32"
+    }
+  ]
+}

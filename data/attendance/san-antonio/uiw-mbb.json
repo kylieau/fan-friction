@@ -2,6 +2,161 @@
   "schema": 1,
   "metroId": "san-antonio",
   "teamId": "uiw-mbb",
-  "collectedOn": "2026-10-13",
-  "games": []
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2025-11-11",
+      "start": null,
+      "opponent": "Southwestern Christ.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 256,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "Texas Lutheran",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 196,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2025-12-01",
+      "start": null,
+      "opponent": "McNeese",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 1003,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2025-12-21",
+      "start": null,
+      "opponent": "Northern Ariz.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 231,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2025-12-30",
+      "start": null,
+      "opponent": "Southeastern La.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 104,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Houston Christian",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 201,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-01-19",
+      "start": null,
+      "opponent": "East Texas A&M",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 163,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "UTRGV",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 234,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Nicholls",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 146,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-02-16",
+      "start": null,
+      "opponent": "New Orleans",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 168,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "Lamar University",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 300,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2026,
+      "date": "2026-03-02",
+      "start": null,
+      "opponent": "SFA",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 244,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Chicago St.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 235,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2027,
+      "date": "2026-11-20",
+      "start": null,
+      "opponent": "Central Baptist",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 136,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
 }

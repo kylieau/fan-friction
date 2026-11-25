@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-fiu-mbb-401928358",
+      "metroId": "miami",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ocean-bank-convocation-center",
+      "homeTeamId": "fiu-mbb",
+      "home": {
+        "name": "FIU",
+        "score": 81
+      },
+      "away": {
+        "name": "Southern Utah",
+        "score": 66
+      },
+      "attendance": 586,
+      "capturedAt": "2026-11-25T18:39:25.300Z",
+      "duration": {
+        "minutes": 139,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    }
+  ]
+}

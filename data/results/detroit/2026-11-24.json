@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-michigan-mbb-401909495",
+      "metroId": "detroit",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "michigan-mbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 73
+      },
+      "away": {
+        "name": "Creighton",
+        "score": 99
+      },
+      "attendance": 2591,
+      "capturedAt": "2026-11-25T18:39:23.314Z",
+      "duration": {
+        "minutes": 129,
+        "kind": "estimated"
+      },
+      "startedAt": "17:57"
+    }
+  ]
+}

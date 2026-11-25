@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "teamId": "fordham-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "NJIT",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1008,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "Mt. St. Mary (NY)",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 726,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-11-11",
+      "start": null,
+      "opponent": "Wagner",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 688,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-11-16",
+      "start": null,
+      "opponent": "Manhattanville",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 649,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-11-20",
+      "start": null,
+      "opponent": "LIU",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1020,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Holy Cross",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1262,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-12-10",
+      "start": null,
+      "opponent": "FDU",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 604,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Manhattan",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1029,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2025-12-22",
+      "start": null,
+      "opponent": "New Haven",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 2800,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Richmond",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1643,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-01-07",
+      "start": null,
+      "opponent": "George Mason",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 577,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Duquesne",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1138,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Stonehill",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1263,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Iona",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1209,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "LIU",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1098,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

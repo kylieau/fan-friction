@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "raleigh-durham",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-unc-wbb-401906094",
+      "metroId": "raleigh-durham",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carmichael-arena",
+      "homeTeamId": "unc-wbb",
+      "home": {
+        "name": "North Carolina",
+        "score": 93
+      },
+      "away": {
+        "name": "Gardner-Webb",
+        "score": 33
+      },
+      "attendance": 1930,
+      "capturedAt": "2026-11-25T18:39:30.251Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

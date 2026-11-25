@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "metroId": "chicago",
+  "teamId": "uic-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-11-13",
+      "start": null,
+      "opponent": "NIU",
+      "venueId": "credit-union-1-arena",
+      "attendance": 513,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-11-19",
+      "start": null,
+      "opponent": "Wisconsin",
+      "venueId": "credit-union-1-arena",
+      "attendance": 581,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Loyola Chicago",
+      "venueId": "credit-union-1-arena",
+      "attendance": 495,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-12-17",
+      "start": null,
+      "opponent": "DePaul",
+      "venueId": "credit-union-1-arena",
+      "attendance": 1274,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Austin Peay",
+      "venueId": "credit-union-1-arena",
+      "attendance": 405,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-12-29",
+      "start": null,
+      "opponent": "Drake",
+      "venueId": "credit-union-1-arena",
+      "attendance": 374,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2025-12-31",
+      "start": null,
+      "opponent": "UNI",
+      "venueId": "credit-union-1-arena",
+      "attendance": 339,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Indiana St.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 503,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Illinois St.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 942,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Valparaiso",
+      "venueId": "credit-union-1-arena",
+      "attendance": 577,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "Southern Ill.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 785,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "Evansville",
+      "venueId": "credit-union-1-arena",
+      "attendance": 754,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Bradley",
+      "venueId": "credit-union-1-arena",
+      "attendance": 4845,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2026,
+      "date": "2026-03-05",
+      "start": null,
+      "opponent": "Murray St.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 496,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2027,
+      "date": "2026-11-08",
+      "start": null,
+      "opponent": "Northwestern",
+      "venueId": "credit-union-1-arena",
+      "attendance": 680,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2027,
+      "date": "2026-11-11",
+      "start": null,
+      "opponent": "Chicago St.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 541,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "Lindenwood",
+      "venueId": "credit-union-1-arena",
+      "attendance": 483,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uic-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Ball St.",
+      "venueId": "credit-union-1-arena",
+      "attendance": 522,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

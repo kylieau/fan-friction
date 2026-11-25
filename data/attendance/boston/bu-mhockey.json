@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "bu-mhockey",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "bu-mhockey",
+      "season": 2027,
+      "date": "2026-10-24",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "agganis-arena",
+      "attendance": 5073,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bu-mhockey",
+      "season": 2027,
+      "date": "2026-10-30",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "agganis-arena",
+      "attendance": 3525,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

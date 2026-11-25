@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "teamId": "detroit-mercy-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "Valparaiso",
+      "venueId": "calihan-hall",
+      "attendance": 300,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-11-19",
+      "start": null,
+      "opponent": "Central Mich.",
+      "venueId": "calihan-hall",
+      "attendance": 461,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "Michigan",
+      "venueId": "calihan-hall",
+      "attendance": 867,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-11-30",
+      "start": null,
+      "opponent": "Eastern Mich.",
+      "venueId": "calihan-hall",
+      "attendance": 256,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Cleveland St.",
+      "venueId": "calihan-hall",
+      "attendance": 211,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-12-07",
+      "start": null,
+      "opponent": "IU Indy",
+      "venueId": "calihan-hall",
+      "attendance": 203,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2025-12-29",
+      "start": null,
+      "opponent": "Rochester Christian",
+      "venueId": "calihan-hall",
+      "attendance": 211,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Milwaukee",
+      "venueId": "calihan-hall",
+      "attendance": 297,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Green Bay",
+      "venueId": "calihan-hall",
+      "attendance": 305,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-01-18",
+      "start": null,
+      "opponent": "Oakland",
+      "venueId": "calihan-hall",
+      "attendance": 444,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Youngstown St.",
+      "venueId": "calihan-hall",
+      "attendance": 315,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "Wright St.",
+      "venueId": "calihan-hall",
+      "attendance": 300,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Purdue Fort Wayne",
+      "venueId": "calihan-hall",
+      "attendance": 455,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Mich.-Dearborn",
+      "venueId": "calihan-hall",
+      "attendance": 2002,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "North Dakota",
+      "venueId": "calihan-hall",
+      "attendance": 640,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "Toledo",
+      "venueId": "calihan-hall",
+      "attendance": 346,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "detroit-mercy-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Sacred Heart",
+      "venueId": "calihan-hall",
+      "attendance": 299,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -2,6 +2,183 @@
   "schema": 1,
   "metroId": "st-louis",
   "teamId": "lindenwood-mbb",
-  "collectedOn": "2026-10-13",
-  "games": []
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2025-11-06",
+      "start": null,
+      "opponent": "St. Louis Pharmacy",
+      "venueId": "hyland-performance-arena",
+      "attendance": 867,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2025-11-24",
+      "start": null,
+      "opponent": "Kansas City",
+      "venueId": "hyland-performance-arena",
+      "attendance": 725,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2025-12-09",
+      "start": null,
+      "opponent": "Culver-Stockton",
+      "venueId": "hyland-performance-arena",
+      "attendance": 466,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2025-12-18",
+      "start": null,
+      "opponent": "Western Ill.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1034,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Harris-Stowe",
+      "venueId": "hyland-performance-arena",
+      "attendance": 335,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-01-01",
+      "start": null,
+      "opponent": "Morehead St.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1301,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Southern Ind.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 913,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Little Rock",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1016,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Tennessee Tech",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1057,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Tennessee St.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 815,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-02-03",
+      "start": null,
+      "opponent": "SIUE",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1110,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "UT Martin",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1005,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Southeast Mo. St.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 2001,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Eastern Ill.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1289,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Central Chris. Bible",
+      "venueId": "hyland-performance-arena",
+      "attendance": 419,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2027,
+      "date": "2026-11-07",
+      "start": null,
+      "opponent": "East-West U.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 714,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
 }

@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "teamId": "ucsd-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "La Verne",
+      "venueId": "liontree-arena",
+      "attendance": 2041,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "Houston Christian",
+      "venueId": "liontree-arena",
+      "attendance": 3614,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Idaho",
+      "venueId": "liontree-arena",
+      "attendance": 2486,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2025-12-19",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "liontree-arena",
+      "attendance": 2711,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2025-12-28",
+      "start": null,
+      "opponent": "Stanton",
+      "venueId": "liontree-arena",
+      "attendance": 1472,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "liontree-arena",
+      "attendance": 1808,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Cal St. Fullerton",
+      "venueId": "liontree-arena",
+      "attendance": 2137,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-01-15",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "liontree-arena",
+      "attendance": 3117,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "liontree-arena",
+      "attendance": 4000,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "liontree-arena",
+      "attendance": 3704,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "liontree-arena",
+      "attendance": 1867,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Whittier",
+      "venueId": "liontree-arena",
+      "attendance": 2183,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2027,
+      "date": "2026-11-07",
+      "start": null,
+      "opponent": "Fresno St.",
+      "venueId": "liontree-arena",
+      "attendance": 3669,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2027,
+      "date": "2026-11-16",
+      "start": null,
+      "opponent": "Texas Southern",
+      "venueId": "liontree-arena",
+      "attendance": 1632,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

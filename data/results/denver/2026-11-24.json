@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-du-wbb-401923329",
+      "metroId": "denver",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "hamilton-gymnasium",
+      "homeTeamId": "du-wbb",
+      "home": {
+        "name": "Denver",
+        "score": 49
+      },
+      "away": {
+        "name": "N Colorado",
+        "score": 73
+      },
+      "attendance": 538,
+      "capturedAt": "2026-11-25T18:39:30.727Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "20:02"
+    },
+    {
+      "eventId": "2026-11-24-espn-nuggets-401909316",
+      "metroId": "denver",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "nuggets",
+      "home": {
+        "name": "Nuggets",
+        "score": 101
+      },
+      "away": {
+        "name": "Mavericks",
+        "score": 120
+      },
+      "attendance": 20023,
+      "capturedAt": "2026-11-25T18:39:30.727Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
+    }
+  ]
+}

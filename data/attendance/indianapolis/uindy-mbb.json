@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "teamId": "uindy-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-11-16",
+      "start": null,
+      "opponent": "Grand Valley St.",
+      "venueId": "nicoson-hall",
+      "attendance": 387,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-11-19",
+      "start": null,
+      "opponent": "Earlham",
+      "venueId": "nicoson-hall",
+      "attendance": 232,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Thomas More",
+      "venueId": "nicoson-hall",
+      "attendance": 212,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "Hillsdale",
+      "venueId": "nicoson-hall",
+      "attendance": 188,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Maryville (MO)",
+      "venueId": "nicoson-hall",
+      "attendance": 265,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Mo.-St. Louis",
+      "venueId": "nicoson-hall",
+      "attendance": 324,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-01-15",
+      "start": null,
+      "opponent": "William Jewell",
+      "venueId": "nicoson-hall",
+      "attendance": 591,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Rockhurst",
+      "venueId": "nicoson-hall",
+      "attendance": 411,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Missouri S&T",
+      "venueId": "nicoson-hall",
+      "attendance": 212,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Lincoln (MO)",
+      "venueId": "nicoson-hall",
+      "attendance": 753,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "McKendree",
+      "venueId": "nicoson-hall",
+      "attendance": 313,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Ill. Springfield",
+      "venueId": "nicoson-hall",
+      "attendance": 211,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Lewis",
+      "venueId": "nicoson-hall",
+      "attendance": 398,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "Quincy",
+      "venueId": "nicoson-hall",
+      "attendance": 611,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Goshen",
+      "venueId": "nicoson-hall",
+      "attendance": 341,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Saginaw Valley",
+      "venueId": "nicoson-hall",
+      "attendance": 258,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

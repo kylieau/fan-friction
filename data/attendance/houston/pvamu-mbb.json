@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "teamId": "pvamu-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "Biblical Stud. (TX)",
+      "venueId": "william-j-nicks-building",
+      "attendance": 437,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2025-11-05",
+      "start": null,
+      "opponent": "Dallas",
+      "venueId": "william-j-nicks-building",
+      "attendance": 626,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Champion Chris.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 200,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Paul Quinn",
+      "venueId": "william-j-nicks-building",
+      "attendance": 214,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Mississippi Val.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 264,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-01-12",
+      "start": null,
+      "opponent": "Ark.-Pine Bluff",
+      "venueId": "william-j-nicks-building",
+      "attendance": 225,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Alabama St.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 422,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-01-27",
+      "start": null,
+      "opponent": "Alabama A&M",
+      "venueId": "william-j-nicks-building",
+      "attendance": 224,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Texas Southern",
+      "venueId": "william-j-nicks-building",
+      "attendance": 3040,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Southern U.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1001,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-02-16",
+      "start": null,
+      "opponent": "Grambling",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1135,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Jackson St.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1526,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "Alcorn",
+      "venueId": "william-j-nicks-building",
+      "attendance": 965,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Paul Quinn",
+      "venueId": "william-j-nicks-building",
+      "attendance": 623,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-ht-texas-stars-1029375",
+      "metroId": "austin",
+      "date": "2026-11-24",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 4
+      },
+      "away": {
+        "name": "Roadrunners",
+        "score": 3
+      },
+      "attendance": 5379,
+      "note": "OT",
+      "capturedAt": "2026-11-25T18:39:26.240Z"
+    }
+  ]
+}

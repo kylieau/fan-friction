@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-capital-city-go-go-401914597",
+      "metroId": "washington-dc",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "carefirst-arena",
+      "homeTeamId": "capital-city-go-go",
+      "home": {
+        "name": "Go-Go",
+        "score": 108
+      },
+      "away": {
+        "name": "Long Island Nets",
+        "score": 100
+      },
+      "attendance": 153,
+      "capturedAt": "2026-11-25T18:39:29.469Z",
+      "duration": {
+        "minutes": 138,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    },
+    {
+      "eventId": "2026-11-24-espn-maryland-mbb-401906853",
+      "metroId": "washington-dc",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "maryland-mbb",
+      "home": {
+        "name": "Maryland",
+        "score": 64
+      },
+      "away": {
+        "name": "Tennessee",
+        "score": 72
+      },
+      "capturedAt": "2026-11-25T18:39:29.469Z",
+      "duration": {
+        "minutes": 143,
+        "kind": "estimated"
+      },
+      "startedAt": "15:03"
+    },
+    {
+      "eventId": "2026-11-24-espn-maryland-wbb-401918919",
+      "metroId": "washington-dc",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "umd-xfinity-center",
+      "homeTeamId": "maryland-wbb",
+      "home": {
+        "name": "Maryland",
+        "score": 86
+      },
+      "away": {
+        "name": "Monmouth",
+        "score": 53
+      },
+      "attendance": 4642,
+      "capturedAt": "2026-11-25T18:39:29.469Z",
+      "duration": {
+        "minutes": 118,
+        "kind": "estimated"
+      },
+      "startedAt": "19:01"
+    },
+    {
+      "eventId": "2026-11-24-espn-wizards-401909315",
+      "metroId": "washington-dc",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "wizards",
+      "home": {
+        "name": "Wizards",
+        "score": 116
+      },
+      "away": {
+        "name": "Celtics",
+        "score": 131
+      },
+      "attendance": 20028,
+      "capturedAt": "2026-11-25T18:39:29.469Z",
+      "duration": {
+        "minutes": 142,
+        "kind": "estimated"
+      },
+      "startedAt": "20:13"
+    }
+  ]
+}

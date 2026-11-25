@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "teamId": "usd-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "Occidental",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 417,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "Idaho St.",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 781,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-11-12",
+      "start": null,
+      "opponent": "Idaho",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 456,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-11-18",
+      "start": null,
+      "opponent": "Grambling",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 371,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 1589,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-12-09",
+      "start": null,
+      "opponent": "Southern California",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 2317,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Northern Ariz.",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 1119,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-12-28",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 1279,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2025-12-30",
+      "start": null,
+      "opponent": "Gonzaga",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 3521,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Pepperdine",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 809,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Bethesda (CA)",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 796,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2026-01-21",
+      "start": null,
+      "opponent": "Washington St.",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 855,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Santa Clara",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 1619,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Biola",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 1284,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "Tarleton St.",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 927,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Chicago St.",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 822,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "usd-mbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "jenny-craig-pavilion",
+      "attendance": 826,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

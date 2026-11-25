@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-12-10",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "indianapolis",
+      "venueId": "city",
+      "date": "2026-12-10",
+      "basis": "forecast",
+      "capturedAt": "2026-11-25T18:32:29.273Z",
+      "feelsLikeHighF": 37.8,
+      "feelsLikeLowF": 31.2,
+      "code": 53,
+      "precipProbability": 23,
+      "precipMm": 2.6
+    }
+  ]
+}

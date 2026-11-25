@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "teamId": "gmu-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-11-10",
+      "start": null,
+      "opponent": "Florida A&M",
+      "venueId": "eaglebank-arena",
+      "attendance": 947,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-11-14",
+      "start": null,
+      "opponent": "Georgetown",
+      "venueId": "eaglebank-arena",
+      "attendance": 1483,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-11-19",
+      "start": null,
+      "opponent": "FGCU",
+      "venueId": "eaglebank-arena",
+      "attendance": 709,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-11-25",
+      "start": null,
+      "opponent": "Rider",
+      "venueId": "eaglebank-arena",
+      "attendance": 841,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "Fordham",
+      "venueId": "eaglebank-arena",
+      "attendance": 658,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-12-07",
+      "start": null,
+      "opponent": "Liberty",
+      "venueId": "eaglebank-arena",
+      "attendance": 776,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "eaglebank-arena",
+      "attendance": 1186,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2025-12-31",
+      "start": null,
+      "opponent": "Dayton",
+      "venueId": "eaglebank-arena",
+      "attendance": 4123,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2026-01-07",
+      "start": null,
+      "opponent": "La Salle",
+      "venueId": "eaglebank-arena",
+      "attendance": 784,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2026-01-14",
+      "start": null,
+      "opponent": "Loyola Chicago",
+      "venueId": "eaglebank-arena",
+      "attendance": 727,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Saint Louis",
+      "venueId": "eaglebank-arena",
+      "attendance": 1950,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Rhode Island",
+      "venueId": "eaglebank-arena",
+      "attendance": 1412,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2026,
+      "date": "2026-02-16",
+      "start": null,
+      "opponent": "Richmond",
+      "venueId": "eaglebank-arena",
+      "attendance": 1386,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Temple",
+      "venueId": "eaglebank-arena",
+      "attendance": 2757,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Akron",
+      "venueId": "eaglebank-arena",
+      "attendance": 835,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "N.C. Central",
+      "venueId": "eaglebank-arena",
+      "attendance": 1110,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gmu-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "James Madison",
+      "venueId": "eaglebank-arena",
+      "attendance": 1182,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

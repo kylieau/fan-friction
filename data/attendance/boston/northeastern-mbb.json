@@ -50,6 +50,61 @@
     },
     {
       "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "Col. of Charleston",
+      "venueId": "cabot-center",
+      "attendance": 912,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "William & Mary",
+      "venueId": "cabot-center",
+      "attendance": 713,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-02-19",
+      "start": null,
+      "opponent": "Drexel",
+      "venueId": "cabot-center",
+      "attendance": 812,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Hofstra",
+      "venueId": "cabot-center",
+      "attendance": 912,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
+      "season": 2026,
+      "date": "2026-03-03",
+      "start": null,
+      "opponent": "Monmouth",
+      "venueId": "cabot-center",
+      "attendance": 513,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-mbb",
       "season": 2027,
       "date": "2026-11-10",
       "start": null,

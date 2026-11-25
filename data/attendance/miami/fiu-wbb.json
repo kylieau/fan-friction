@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "teamId": "fiu-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Bethune-Cookman",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 281,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "UMBC",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 52,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-11-30",
+      "start": null,
+      "opponent": "Seattle U",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 58,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-12-05",
+      "start": null,
+      "opponent": "Georgia St.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 146,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-12-19",
+      "start": null,
+      "opponent": "Youngstown St.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 126,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Fla. Atlantic",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 128,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2025-12-30",
+      "start": null,
+      "opponent": "Fla. National",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 49,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Missouri St.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 85,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Jacksonville St.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 127,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Kennesaw St.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 111,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Sam Houston",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 127,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Louisiana Tech",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 188,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "Western Ky.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 155,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "Middle Tenn.",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 157,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-02-19",
+      "start": null,
+      "opponent": "Delaware",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 1062,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Liberty",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 214,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2027,
+      "date": "2026-11-03",
+      "start": null,
+      "opponent": "Jacksonville",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 156,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fiu-wbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Stetson",
+      "venueId": "ocean-bank-convocation-center",
+      "attendance": 203,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

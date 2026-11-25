@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-bc-wbb-401906037",
+      "metroId": "boston",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "conte-forum",
+      "homeTeamId": "bc-wbb",
+      "home": {
+        "name": "Boston College",
+        "score": 82
+      },
+      "away": {
+        "name": "Northeastern",
+        "score": 54
+      },
+      "attendance": 846,
+      "capturedAt": "2026-11-25T18:39:24.140Z",
+      "duration": {
+        "minutes": 108,
+        "kind": "estimated"
+      },
+      "startedAt": "18:02"
+    }
+  ]
+}

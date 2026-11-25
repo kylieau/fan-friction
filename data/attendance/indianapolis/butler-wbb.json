@@ -2,6 +2,216 @@
   "schema": 1,
   "metroId": "indianapolis",
   "teamId": "butler-wbb",
-  "collectedOn": "2026-10-13",
-  "games": []
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "Wright St.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 1867,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "Columbia",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 893,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-11-12",
+      "start": null,
+      "opponent": "Central Mich.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 783,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-11-16",
+      "start": null,
+      "opponent": "Northern Ky.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 1111,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-11-23",
+      "start": null,
+      "opponent": "Milwaukee",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 811,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-12-11",
+      "start": null,
+      "opponent": "Indiana St.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 754,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-12-14",
+      "start": null,
+      "opponent": "Eastern Ill.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 668,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-12-19",
+      "start": null,
+      "opponent": "Xavier",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 888,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2025-12-28",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 5626,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2026-01-07",
+      "start": null,
+      "opponent": "Georgetown",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 597,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2026-01-14",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 777,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2026-01-21",
+      "start": null,
+      "opponent": "DePaul",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 845,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2026-01-25",
+      "start": null,
+      "opponent": "Marquette",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 439,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2026,
+      "date": "2026-02-04",
+      "start": null,
+      "opponent": "Villanova",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 1176,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Tennessee Tech",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 4313,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "Lipscomb",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 678,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2027,
+      "date": "2026-11-12",
+      "start": null,
+      "opponent": "North Dakota St.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 795,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Kent St.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 692,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "butler-wbb",
+      "season": 2027,
+      "date": "2026-11-22",
+      "start": null,
+      "opponent": "Eastern Mich.",
+      "venueId": "hinkle-fieldhouse",
+      "attendance": 1116,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
 }

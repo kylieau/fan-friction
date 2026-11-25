@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-poly-pomona-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2025,
+      "date": "2024-11-16",
+      "start": null,
+      "opponent": "Biola",
+      "venueId": "kellogg-arena",
+      "attendance": 350,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2025,
+      "date": "2024-12-17",
+      "start": null,
+      "opponent": "Stanton",
+      "venueId": "kellogg-arena",
+      "attendance": 30,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "La Sierra",
+      "venueId": "kellogg-arena",
+      "attendance": 75,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Cal State LA",
+      "venueId": "kellogg-arena",
+      "attendance": 230,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Cal St. Dom. Hills",
+      "venueId": "kellogg-arena",
+      "attendance": 159,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Cal St. Monterey Bay",
+      "venueId": "kellogg-arena",
+      "attendance": 87,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Cal St. San Marcos",
+      "venueId": "kellogg-arena",
+      "attendance": 90,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-01-15",
+      "start": null,
+      "opponent": "CSUSB",
+      "venueId": "kellogg-arena",
+      "attendance": 82,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Cal St. East Bay",
+      "venueId": "kellogg-arena",
+      "attendance": 200,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "San Fran. St.",
+      "venueId": "kellogg-arena",
+      "attendance": 200,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "Stanislaus St.",
+      "venueId": "kellogg-arena",
+      "attendance": 75,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "UC Merced",
+      "venueId": "kellogg-arena",
+      "attendance": 70,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-02-19",
+      "start": null,
+      "opponent": "Chico St.",
+      "venueId": "kellogg-arena",
+      "attendance": 165,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Cal Poly Humboldt",
+      "venueId": "kellogg-arena",
+      "attendance": 160,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2027,
+      "date": "2026-11-20",
+      "start": null,
+      "opponent": "Hawaii Pacific",
+      "venueId": "kellogg-arena",
+      "attendance": 123,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2027,
+      "date": "2026-11-24",
+      "start": null,
+      "opponent": "Vanguard",
+      "venueId": "kellogg-arena",
+      "attendance": 125,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "teamId": "up-pilots-wbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "Willamette",
+      "venueId": "chiles-center",
+      "attendance": 617,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "Montana St.",
+      "venueId": "chiles-center",
+      "attendance": 851,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-11-11",
+      "start": null,
+      "opponent": "Warner Pacific",
+      "venueId": "chiles-center",
+      "attendance": 576,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "Nevada",
+      "venueId": "chiles-center",
+      "attendance": 547,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-11-30",
+      "start": null,
+      "opponent": "Eastern Wash.",
+      "venueId": "chiles-center",
+      "attendance": 421,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "BYU",
+      "venueId": "chiles-center",
+      "attendance": 1403,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-01-02",
+      "start": null,
+      "opponent": "Washington St.",
+      "venueId": "chiles-center",
+      "attendance": 840,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "chiles-center",
+      "attendance": 967,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Seattle U",
+      "venueId": "chiles-center",
+      "attendance": 790,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "Saint Mary's (CA)",
+      "venueId": "chiles-center",
+      "attendance": 618,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-01-31",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "chiles-center",
+      "attendance": 762,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "Oregon St.",
+      "venueId": "chiles-center",
+      "attendance": 2002,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Santa Clara",
+      "venueId": "chiles-center",
+      "attendance": 881,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Willamette",
+      "venueId": "chiles-center",
+      "attendance": 1066,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2027,
+      "date": "2026-11-11",
+      "start": null,
+      "opponent": "Warner Pacific",
+      "venueId": "chiles-center",
+      "attendance": 584,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Portland St.",
+      "venueId": "chiles-center",
+      "attendance": 708,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "up-pilots-wbb",
+      "season": 2027,
+      "date": "2026-11-22",
+      "start": null,
+      "opponent": "Stanford",
+      "venueId": "chiles-center",
+      "attendance": 928,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "sacramento",
+  "date": "2026-12-10",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "sacramento",
+      "venueId": "city",
+      "date": "2026-12-10",
+      "basis": "forecast",
+      "capturedAt": "2026-11-25T18:31:38.121Z",
+      "feelsLikeHighF": 57.7,
+      "feelsLikeLowF": 45.3,
+      "code": 2,
+      "precipProbability": 16,
+      "precipMm": 0
+    }
+  ]
+}

@@ -2,6 +2,194 @@
   "schema": 1,
   "metroId": "st-louis",
   "teamId": "siue-mbb",
-  "collectedOn": "2026-10-13",
-  "games": []
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "East-West U.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1143,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2025-11-10",
+      "start": null,
+      "opponent": "Indiana St.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 2482,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "Mo. Baptist",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1487,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Western Mich.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1497,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2025-12-14",
+      "start": null,
+      "opponent": "Eureka",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1004,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-01",
+      "start": null,
+      "opponent": "Southern Ind.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1849,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Morehead St.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1869,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-06",
+      "start": null,
+      "opponent": "Lindenwood",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1477,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Little Rock",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1102,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Tennessee St.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 2375,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Tennessee Tech",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1623,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "Southeast Mo. St.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 2323,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "UT Martin",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1927,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Western Ill.",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1777,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Eureka",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1551,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2027,
+      "date": "2026-11-04",
+      "start": null,
+      "opponent": "Concordia Chicago",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1019,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "siue-mbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "North Park",
+      "venueId": "siue-vadalabene-arena",
+      "attendance": 1060,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
 }

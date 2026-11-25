@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-24",
+  "results": [
+    {
+      "eventId": "2026-11-24-espn-psu-wbb-401921523",
+      "metroId": "portland",
+      "date": "2026-11-24",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viking-pavilion",
+      "homeTeamId": "psu-wbb",
+      "home": {
+        "name": "Portland St",
+        "score": 79
+      },
+      "away": {
+        "name": "Fullerton",
+        "score": 82
+      },
+      "attendance": 301,
+      "capturedAt": "2026-11-25T18:39:29.993Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "22:03"
+    }
+  ]
+}

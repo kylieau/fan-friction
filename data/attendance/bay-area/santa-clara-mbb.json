@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "santa-clara-mbb",
+  "collectedOn": "2026-11-25",
+  "games": [
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "Cal Poly Humboldt",
+      "venueId": "leavey-center",
+      "attendance": 1116,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "McNeese",
+      "venueId": "leavey-center",
+      "attendance": 1205,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Nevada",
+      "venueId": "leavey-center",
+      "attendance": 1741,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-11-18",
+      "start": null,
+      "opponent": "Idaho St.",
+      "venueId": "leavey-center",
+      "attendance": 1071,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-11-21",
+      "start": null,
+      "opponent": "Louisiana",
+      "venueId": "leavey-center",
+      "attendance": 1331,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "Utah Tech",
+      "venueId": "leavey-center",
+      "attendance": 1969,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2026-01-02",
+      "start": null,
+      "opponent": "Pepperdine",
+      "venueId": "leavey-center",
+      "attendance": 1158,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2026-01-04",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "leavey-center",
+      "attendance": 1378,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "LMU (CA)",
+      "venueId": "leavey-center",
+      "attendance": 2000,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2026-01-14",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "leavey-center",
+      "attendance": 1558,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Saint Mary's (CA)",
+      "venueId": "leavey-center",
+      "attendance": 2600,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Towson",
+      "venueId": "leavey-center",
+      "attendance": 1093,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2027,
+      "date": "2026-11-04",
+      "start": null,
+      "opponent": "Milwaukee",
+      "venueId": "leavey-center",
+      "attendance": 1040,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2027,
+      "date": "2026-11-07",
+      "start": null,
+      "opponent": "Sacramento St.",
+      "venueId": "leavey-center",
+      "attendance": 1691,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "New Mexico",
+      "venueId": "leavey-center",
+      "attendance": 2211,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "santa-clara-mbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "VCU",
+      "venueId": "leavey-center",
+      "attendance": 1977,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}
