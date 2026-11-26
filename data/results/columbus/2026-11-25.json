@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "metroId": "columbus",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-blue-jackets-401892788",
+      "metroId": "columbus",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "nationwide-arena",
+      "homeTeamId": "blue-jackets",
+      "home": {
+        "name": "Blue Jackets",
+        "score": 2
+      },
+      "away": {
+        "name": "Devils",
+        "score": 3
+      },
+      "attendance": 16105,
+      "note": "SO",
+      "capturedAt": "2026-11-26T18:23:48.547Z",
+      "duration": {
+        "minutes": 161,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

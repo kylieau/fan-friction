@@ -171,6 +171,18 @@
       "code": 63,
       "precipProbability": 100,
       "precipMm": 26
+    },
+    {
+      "metroId": "columbus",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "forecast",
+      "capturedAt": "2026-11-26T18:12:17.435Z",
+      "feelsLikeHighF": 40.6,
+      "feelsLikeLowF": 32.5,
+      "code": 63,
+      "precipProbability": 100,
+      "precipMm": 28.8
     }
   ]
 }

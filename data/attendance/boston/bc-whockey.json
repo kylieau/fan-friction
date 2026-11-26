@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "bc-whockey",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-10-10",
+      "start": null,
+      "opponent": "Holy Cross",
+      "venueId": "conte-forum",
+      "attendance": 345,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-11-07",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "conte-forum",
+      "attendance": 326,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-11-13",
+      "start": null,
+      "opponent": "Boston U.",
+      "venueId": "conte-forum",
+      "attendance": 482,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Merrimack",
+      "venueId": "conte-forum",
+      "attendance": 324,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "St. Lawrence",
+      "venueId": "conte-forum",
+      "attendance": 295,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "St. Lawrence",
+      "venueId": "conte-forum",
+      "attendance": 220,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2025-12-05",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "conte-forum",
+      "attendance": 251,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Colgate",
+      "venueId": "conte-forum",
+      "attendance": 234,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-10",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "conte-forum",
+      "attendance": 437,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-23",
+      "start": null,
+      "opponent": "Cornell",
+      "venueId": "conte-forum",
+      "attendance": 498,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-24",
+      "start": null,
+      "opponent": "Cornell",
+      "venueId": "conte-forum",
+      "attendance": 522,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-26",
+      "start": null,
+      "opponent": "Minnesota St.",
+      "venueId": "conte-forum",
+      "attendance": 3315,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-30",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 377,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-10-31",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 387,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "conte-forum",
+      "attendance": 281,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-whockey",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Boston U.",
+      "venueId": "conte-forum",
+      "attendance": 321,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

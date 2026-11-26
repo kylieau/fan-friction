@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-baptist-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "fowler-events-center",
+      "attendance": 1085,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-11-14",
+      "start": null,
+      "opponent": "San Jose St.",
+      "venueId": "fowler-events-center",
+      "attendance": 1029,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-11-19",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "fowler-events-center",
+      "attendance": 421,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "fowler-events-center",
+      "attendance": 515,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "Sacramento St.",
+      "venueId": "fowler-events-center",
+      "attendance": 354,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-12-15",
+      "start": null,
+      "opponent": "UC San Diego",
+      "venueId": "fowler-events-center",
+      "attendance": 368,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2025-12-29",
+      "start": null,
+      "opponent": "Utah Valley",
+      "venueId": "fowler-events-center",
+      "attendance": 358,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2026-01-01",
+      "start": null,
+      "opponent": "UT Arlington",
+      "venueId": "fowler-events-center",
+      "attendance": 309,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Tarleton St.",
+      "venueId": "fowler-events-center",
+      "attendance": 483,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-baptist-wbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "fowler-events-center",
+      "attendance": 1433,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

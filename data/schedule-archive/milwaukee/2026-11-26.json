@@ -1,0 +1,1816 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "metroName": "Milwaukee",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-26",
+  "capturedAt": "2026-11-26T18:19:35.045Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-26",
+    "through": "2026-12-10"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 10
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 3
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 49
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 7
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-27-tm-vv11vYvPA3aYF_vC",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11vYvPA3aYF_vC",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAvFat",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Green Bay Gamblers vs. USA Hockey National Team Development Program",
+      "place": {
+        "type": "venue",
+        "venueId": "resch-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Green Bay Gamblers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvFat",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv166Zkf4FJZAude1a",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv166Zkf4FJZAude1a",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-vv17jZ_3GkXDKVkh",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Broadway Bites - Pre Show Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Broadway Bites - Pre Show Dining",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_3GkXDKVkh",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAekpk",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Durango Fest",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Durango Fest",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAekpk"
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAAA7s",
+      "metroId": "milwaukee",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "kind": "special",
+      "title": "Love in the Club (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Love in the Club",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAAA7s"
+    },
+    {
+      "id": "2026-11-28-tm-vv166Zkf4FEZA5deGv",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv166Zkf4FEZA5deGv",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17jZ_3GkXDfVkL",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Broadway Bites - Pre Show Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Broadway Bites - Pre Show Dining",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_3GkXDfVkL",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-ht-milwaukee-admirals-1029406",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Admirals vs. IceHogs",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "icehogs"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3964,
+        "low": 3433,
+        "high": 4318,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 8 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAevvP",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Wisconsin Badgers Hockey vs. Canisius Golden Griffins Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Wisconsin Badgers Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAevvP",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAvFaY",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "18:05",
+      "kind": "game",
+      "title": "Green Bay Gamblers vs. USA Hockey National Team Development Program",
+      "place": {
+        "type": "venue",
+        "venueId": "resch-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Green Bay Gamblers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvFaY",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-espn-bucks-401910049",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Thunder",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "thunder",
+        "awayOpponent": "thunder"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17133,
+        "low": 17133,
+        "high": 17133,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv17jZ_3GkXD40kx",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Broadway Bites - Pre Show Dining",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Broadway Bites - Pre Show Dining",
+      "act": false,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_3GkXD40kx",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-vv1a6Zkf4FEf-Ze5F",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1a6Zkf4FEf-Ze5F",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAZz40",
+      "metroId": "milwaukee",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "special",
+      "title": "bleood",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "bleood",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZz40"
+    },
+    {
+      "id": "2026-11-29-tm-vv1a6Zkf4FIb-ZeG2",
+      "metroId": "milwaukee",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1a6Zkf4FIb-ZeG2",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-29-espn-uwm-wbb-401929028",
+      "metroId": "milwaukee",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Toledo",
+      "place": {
+        "type": "venue",
+        "venueId": "klotsche-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uwm-wbb",
+        "away": "toledo",
+        "awayOpponent": "toledo"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 463,
+        "low": 452,
+        "high": 518,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAevvJ",
+      "metroId": "milwaukee",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "kind": "game",
+      "title": "Wisconsin Badgers Hockey vs. Canisius Golden Griffins Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Wisconsin Badgers Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAevvJ",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vv1a6Zkf4FIZ-ZeG6",
+      "metroId": "milwaukee",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "kind": "special",
+      "title": "The Sound of Music (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Sound of Music (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1a6Zkf4FIZ-ZeG6",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-30-espn-bucks-401910066",
+      "metroId": "milwaukee",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Spurs",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "spurs",
+        "awayOpponent": "spurs"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17289,
+        "low": 16907,
+        "high": 17289,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in November: 7 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-espn-marquette-mbb-401909528",
+      "metroId": "milwaukee",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Marquette vs. Wagner",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "wagner",
+        "awayOpponent": "wagner"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14989,
+        "low": 14266,
+        "high": 15585,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-ht-milwaukee-admirals-1029421",
+      "metroId": "milwaukee",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Admirals vs. Stars",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "stars"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 2706,
+        "low": 2527,
+        "high": 4673,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 7 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-vv1A6ZkfYGkdRXIi5",
+      "metroId": "milwaukee",
+      "date": "2026-12-02",
+      "start": "11:30",
+      "kind": "game",
+      "title": "Wisconsin Herd vs. Cleveland Charge",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "Wisconsin Herd",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1A6ZkfYGkdRXIi5"
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AA7eoS",
+      "metroId": "milwaukee",
+      "date": "2026-12-02",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Wisconsin Badgers Womens Basketball vs. Western Michigan Broncos Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Wisconsin Badgers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7eoS",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-espn-bucks-401910080",
+      "metroId": "milwaukee",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Bucks vs. Knicks",
+      "broadcast": "MyMi",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "bucks",
+        "away": "knicks",
+        "awayOpponent": "knicks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17150,
+        "low": 16345,
+        "high": 17150,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-uwm-mbb-401919207",
+      "metroId": "milwaukee",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Milwaukee vs. Wright St",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "uwm-mbb",
+        "away": "wright-st",
+        "awayOpponent": "wright-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2186,
+        "low": 2021,
+        "high": 2330,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1A70A4Y",
+      "metroId": "milwaukee",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "show",
+      "title": "GWAR",
+      "officialTitle": "Gwar w/ Midnight - Band",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "GWAR",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70A4Y",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAebZd",
+      "metroId": "milwaukee",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "MATISYAHU",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Alternative"
+      },
+      "performer": "MATISYAHU",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebZd",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vv17jZ_fGkUdpwv2",
+      "metroId": "milwaukee",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "AMA Partzilla Arenacross: Track Walk Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum-madison"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "AMA Partzilla Arenacross Series",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_fGkUdpwv2",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAebZ7",
+      "metroId": "milwaukee",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Bryce Alakai",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Bryce Alakai",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebZ7"
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAekp6",
+      "metroId": "milwaukee",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Excision",
+      "officialTitle": "Excision w/ NGHTMRE",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Excision",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAekp6",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-espn-marquette-mbb-401909529",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Marquette vs. Wisconsin",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "wisconsin",
+        "awayOpponent": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18086,
+        "low": 17803,
+        "high": 18097,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AA7eoV",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Wisconsin Badgers Womens Basketball vs. Illinois Fighting Illini Womens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Wisconsin Badgers Womens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7eoV",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-ht-milwaukee-admirals-1029446",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Admirals vs. Moose",
+      "place": {
+        "type": "venue",
+        "venueId": "uwm-panther-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "milwaukee-admirals",
+        "away": "moose"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech",
+      "expectedDraw": {
+        "count": 3402,
+        "low": 2967,
+        "high": 4164,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 5 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv17jZ_fGkUdQev-",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "special",
+      "title": "AMA Partzilla Arenacross: Track Walk Experience",
+      "place": {
+        "type": "venue",
+        "venueId": "veterans-memorial-coliseum-madison"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "AMA Partzilla Arenacross Series",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17jZ_fGkUdQev-",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vvG1jZ_uLh69AO",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Milwaukee Ballet Presents: The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Milwaukee Ballet Presents: The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uLh69AO",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A7OaxK",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Harry Potter and the Chamber of Secrets™ in Concert",
+      "officialTitle": "Harry Potter and the Chamber Of Secrets in Concert w/ Milwaukee Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Harry Potter and the Chamber of Secrets™ in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7OaxK",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAekpF",
+      "metroId": "milwaukee",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Excision",
+      "officialTitle": "Excision w/ Space Laces",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Excision",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAekpF",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1jZ_uLhFEAt",
+      "metroId": "milwaukee",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Milwaukee Ballet Presents: The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "uihlein-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "Milwaukee Ballet Presents: The Nutcracker",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1jZ_uLhFEAt",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-06-espn-marquette-wbb-401923015",
+      "metroId": "milwaukee",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Marquette vs. Butler",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-wbb",
+        "away": "butler-wbb",
+        "awayOpponent": "butler"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1494,
+        "low": 1202,
+        "high": 1890,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A7Oaxb",
+      "metroId": "milwaukee",
+      "date": "2026-12-06",
+      "start": "14:30",
+      "kind": "show",
+      "title": "Harry Potter and the Chamber of Secrets™ in Concert",
+      "officialTitle": "Harry Potter and the Chamber Of Secrets in Concert w/ Milwaukee Symphony Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Harry Potter and the Chamber of Secrets™ in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Oaxb",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAZe_7",
+      "metroId": "milwaukee",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "kind": "show",
+      "title": "Mannheim Steamroller",
+      "place": {
+        "type": "venue",
+        "venueId": "miller-high-life-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "Mannheim Steamroller",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZe_7",
+      "expectedDraw": {
+        "count": 4079,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAeA79",
+      "metroId": "milwaukee",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "aurorawave",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "aurorawave",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeA79"
+    },
+    {
+      "id": "2026-12-08-tm-Z7r9jZ1AAZK7s",
+      "metroId": "milwaukee",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Silverstein",
+      "officialTitle": "Silverstein w/ Story of the Year",
+      "place": {
+        "type": "venue",
+        "venueId": "rave-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Silverstein",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZK7s",
+      "expectedDraw": {
+        "count": 1800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-08-tm-Z7r9jZ1AAvg8z",
+      "metroId": "milwaukee",
+      "date": "2026-12-08",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Wisconsin Badgers Mens Basketball vs. Purdue Boilermakers Mens Basketball",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "performer": "University of Wisconsin Badgers Mens Basketball",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvg8z"
+    },
+    {
+      "id": "2026-12-08-tm-Z7r9jZ1AAZFaO",
+      "metroId": "milwaukee",
+      "date": "2026-12-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Brett Eldredge",
+      "place": {
+        "type": "venue",
+        "venueId": "miller-high-life-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Brett Eldredge",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFaO",
+      "expectedDraw": {
+        "count": 4079,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-09-espn-marquette-mbb-401909530",
+      "metroId": "milwaukee",
+      "date": "2026-12-09",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Marquette vs. New Hampshire",
+      "place": {
+        "type": "venue",
+        "venueId": "fiserv-forum"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-mbb",
+        "away": "new-hampshire",
+        "awayOpponent": "new-hampshire"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 14989,
+        "low": 14266,
+        "high": 15585,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-09-tm-Z7r9jZ1AAZFao",
+      "metroId": "milwaukee",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Love Actually Live in Concert",
+      "officialTitle": "Love Actually in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "riverside-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Love Actually Live in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAZFao",
+      "expectedDraw": {
+        "count": 2414,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-10-tm-Z7r9jZ1AAeZvY",
+      "metroId": "milwaukee",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wisconsin Badgers Hockey vs. Nebraska Omaha Mavericks Hockey",
+      "place": {
+        "type": "venue",
+        "venueId": "kohl-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Wisconsin Badgers Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeZvY",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-10-espn-marquette-wbb-401923118",
+      "metroId": "milwaukee",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "kind": "game",
+      "title": "Marquette vs. Villanova",
+      "broadcast": "truTV",
+      "place": {
+        "type": "venue",
+        "venueId": "al-mcguire-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "marquette-wbb",
+        "away": "villanova-wbb",
+        "awayOpponent": "villanova"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1623,
+        "low": 1363,
+        "high": 1838,
+        "fromCrowds": true,
+        "games": 11,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 11 games, 2025–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-27-tm-vv11vYvPA3aYF_vC",
+      "date": "2026-11-27",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAvFat",
+      "date": "2026-11-27",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-27-tm-vv166Zkf4FJZAude1a",
+      "date": "2026-11-27",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-27-tm-vv17jZ_3GkXDKVkh",
+      "date": "2026-11-27",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAekpk",
+      "date": "2026-11-27",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAAA7s",
+      "date": "2026-11-27",
+      "start": "20:30"
+    },
+    {
+      "eventId": "2026-11-28-tm-vv166Zkf4FEZA5deGv",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17jZ_3GkXDfVkL",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-ht-milwaukee-admirals-1029406",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3964,
+        "low": 3433,
+        "high": 4318
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAevvP",
+      "date": "2026-11-28",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAvFaY",
+      "date": "2026-11-28",
+      "start": "18:05"
+    },
+    {
+      "eventId": "2026-11-28-espn-bucks-401910049",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17133,
+        "low": 17133,
+        "high": 17133
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv17jZ_3GkXD40kx",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vv1a6Zkf4FEf-Ze5F",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAZz40",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vv1a6Zkf4FIb-ZeG2",
+      "date": "2026-11-29",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-11-29-espn-uwm-wbb-401929028",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "draw": {
+        "count": 463,
+        "low": 452,
+        "high": 518
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAevvJ",
+      "date": "2026-11-29",
+      "start": "17:00"
+    },
+    {
+      "eventId": "2026-11-29-tm-vv1a6Zkf4FIZ-ZeG6",
+      "date": "2026-11-29",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-11-30-espn-bucks-401910066",
+      "date": "2026-11-30",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17289,
+        "low": 16907,
+        "high": 17289
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-marquette-mbb-401909528",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14989,
+        "low": 14266,
+        "high": 15585
+      }
+    },
+    {
+      "eventId": "2026-12-01-ht-milwaukee-admirals-1029421",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2706,
+        "low": 2527,
+        "high": 4673
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-vv1A6ZkfYGkdRXIi5",
+      "date": "2026-12-02",
+      "start": "11:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AA7eoS",
+      "date": "2026-12-02",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-02-espn-bucks-401910080",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17150,
+        "low": 16345,
+        "high": 17150
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-uwm-mbb-401919207",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 2186,
+        "low": 2021,
+        "high": 2330
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1A70A4Y",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAebZd",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vv17jZ_fGkUdpwv2",
+      "date": "2026-12-04",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAebZ7",
+      "date": "2026-12-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAekp6",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-marquette-mbb-401909529",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18086,
+        "low": 17803,
+        "high": 18097
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AA7eoV",
+      "date": "2026-12-05",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-05-ht-milwaukee-admirals-1029446",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3402,
+        "low": 2967,
+        "high": 4164
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17jZ_fGkUdQev-",
+      "date": "2026-12-05",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1jZ_uLh69AO",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A7OaxK",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAekpF",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1jZ_uLhFEAt",
+      "date": "2026-12-06",
+      "start": "13:00"
+    },
+    {
+      "eventId": "2026-12-06-espn-marquette-wbb-401923015",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "draw": {
+        "count": 1494,
+        "low": 1202,
+        "high": 1890
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A7Oaxb",
+      "date": "2026-12-06",
+      "start": "14:30",
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAZe_7",
+      "date": "2026-12-06",
+      "start": "15:00",
+      "draw": {
+        "count": 4079
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAeA79",
+      "date": "2026-12-06",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-08-tm-Z7r9jZ1AAZK7s",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "draw": {
+        "count": 1800
+      }
+    },
+    {
+      "eventId": "2026-12-08-tm-Z7r9jZ1AAvg8z",
+      "date": "2026-12-08",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-08-tm-Z7r9jZ1AAZFaO",
+      "date": "2026-12-08",
+      "start": "20:00",
+      "draw": {
+        "count": 4079
+      }
+    },
+    {
+      "eventId": "2026-12-09-espn-marquette-mbb-401909530",
+      "date": "2026-12-09",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 14989,
+        "low": 14266,
+        "high": 15585
+      }
+    },
+    {
+      "eventId": "2026-12-09-tm-Z7r9jZ1AAZFao",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2414
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-Z7r9jZ1AAeZvY",
+      "date": "2026-12-10",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-10-espn-marquette-wbb-401923118",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "draw": {
+        "count": 1623,
+        "low": 1363,
+        "high": 1838
+      }
+    }
+  ]
+}

@@ -1,0 +1,2294 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "metroName": "Minneapolis–St. Paul",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-26",
+  "capturedAt": "2026-11-26T18:22:23.563Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-26",
+    "through": "2026-12-10"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 16
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 53
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 16
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-27-espn-wild-401892803",
+      "metroId": "minneapolis",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Wild vs. Avalanche",
+      "broadcast": "Altitude Sports",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "avalanche",
+        "awayOpponent": "avalanche"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18995,
+        "low": 18628,
+        "high": 19257,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-gophers-hockey-401904663",
+      "metroId": "minneapolis",
+      "date": "2026-11-27",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Minnesota vs. Minnesota State",
+      "place": {
+        "type": "venue",
+        "venueId": "mariucci-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "gophers-hockey",
+        "away": "minnesota-state",
+        "awayOpponent": "minnesota-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-27-tm-LvZ18QI9S3M2fLNbcM1x2",
+      "metroId": "minneapolis",
+      "date": "2026-11-27",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1x2",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-11-27-sa-tommiesports-com-10022",
+      "metroId": "minneapolis",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "kind": "game",
+      "title": "St. Thomas vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "st-thomas-whockey",
+        "away": "Holy Cross",
+        "awayOpponent": "holy-cross"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-27-espn-timberwolves-401909331",
+      "metroId": "minneapolis",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "game",
+      "title": "Timberwolves vs. Memphis Grizzlies",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "timberwolves",
+        "away": "grizzlies",
+        "awayOpponent": "grizzlies"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17964,
+        "low": 17428,
+        "high": 18427,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-gophersports-com-22952",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Minnesota vs. High Point",
+      "place": {
+        "type": "venue",
+        "venueId": "maturi-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "volleyball",
+        "level": "college"
+      },
+      "teams": {
+        "home": "gophers-volleyball",
+        "away": "High Point",
+        "awayOpponent": "high-point"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 4634,
+        "low": 4317,
+        "high": 4747,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 5 games, 2025."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-tommiesports-com-10023",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "kind": "game",
+      "title": "St. Thomas vs. Holy Cross",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "st-thomas-whockey",
+        "away": "Holy Cross",
+        "awayOpponent": "holy-cross"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-tm-LvZ18QI9S3M2fLNbcM1xK",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xK",
+      "occasionFacts": {
+        "run": 6
+      }
+    },
+    {
+      "id": "2026-11-28-espn-st-thomas-hockey-401904563",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "kind": "game",
+      "title": "St Thomas vs. Bemidji State",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "st-thomas-hockey",
+        "away": "bemidji-state",
+        "awayOpponent": "bemidji-state"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-11-28-tm-vvG1bZ_u1b-FYW",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "18:07",
+      "kind": "game",
+      "title": "Minnesota State Maverick Men's Hockey vs. Minnesota Golden Gophers",
+      "place": {
+        "type": "venue",
+        "venueId": "mayo-clinic-health-system-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Minnesota State University, Mankato Mavericks Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_u1b-FYW",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAefCA",
+      "metroId": "minneapolis",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Night Moves",
+      "officialTitle": "Night Moves (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Night Moves",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAefCA",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-espn-vikings-401873084",
+      "metroId": "minneapolis",
+      "date": "2026-11-29",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Vikings vs. Falcons",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vikings",
+        "away": "falcons",
+        "awayOpponent": "falcons"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66949,
+        "low": 66943,
+        "high": 66953,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 4 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-LvZ18QI9S3M2fLNbcM1x9",
+      "metroId": "minneapolis",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1x9",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-29-tm-vvG1bZ_G3NH_aG",
+      "metroId": "minneapolis",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "kind": "show",
+      "title": "Whitechapel",
+      "officialTitle": "Whitechapel - 20th Anniversary Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Whitechapel",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_G3NH_aG",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-vv11bZ_4JbofAS",
+      "metroId": "minneapolis",
+      "date": "2026-12-01",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Winter Warm-Up",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Health/Wellness"
+      },
+      "performer": "Winter Warm-Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11bZ_4JbofAS",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-01-sa-gophersports-com-23316",
+      "metroId": "minneapolis",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. SIUE",
+      "place": {
+        "type": "venue",
+        "venueId": "maturi-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "wrestling",
+        "level": "college"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-01-tm-vv1AkZkoNGkdI71Xg",
+      "metroId": "minneapolis",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Glenn Miller Orchestra",
+      "officialTitle": "The Glenn Miller Orchestra",
+      "place": {
+        "type": "venue",
+        "venueId": "pantages-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Glenn Miller Orchestra",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkoNGkdI71Xg",
+      "expectedDraw": {
+        "count": 1014,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-espn-gophers-wbb-401918730",
+      "metroId": "minneapolis",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. St Thomas",
+      "place": {
+        "type": "venue",
+        "venueId": "williams-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gophers-wbb",
+        "away": "st-thomas-wbb",
+        "awayOpponent": "st-thomas"
+      },
+      "rank": {
+        "home": 17
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2812,
+        "low": 2808,
+        "high": 2872,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A70IJf",
+      "metroId": "minneapolis",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Angine de Poitrine",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Angine de Poitrine",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70IJf",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-LvZ18QI9S3M2fLNbcM1xh",
+      "metroId": "minneapolis",
+      "date": "2026-12-03",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xh",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-03-tm-vv11bZ_4Jb3fAU",
+      "metroId": "minneapolis",
+      "date": "2026-12-03",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Winter Warm-Up",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Health/Wellness"
+      },
+      "performer": "Winter Warm-Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11bZ_4Jb3fAU",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-03-espn-st-thomas-mbb-401920850",
+      "metroId": "minneapolis",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "St Thomas vs. N Central (MN)",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "st-thomas-mbb",
+        "away": "n-central-mn",
+        "awayOpponent": "n-central-mn"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2658,
+        "low": 2322,
+        "high": 4708,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 5 games, 2026."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAeaZN",
+      "metroId": "minneapolis",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Unwrapped - An Acoustic Holiday",
+      "place": {
+        "type": "venue",
+        "venueId": "target-center"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Unwrapped - An Acoustic Holiday",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAeaZN"
+    },
+    {
+      "id": "2026-12-04-tm-LvZ18QI9S3M2fLNbcM1xL",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xL",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-04-sa-gophersports-com-22986",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Minnesota vs. Wisconsin",
+      "place": {
+        "type": "venue",
+        "venueId": "ridder-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gophers-whockey",
+        "away": "Wisconsin",
+        "awayOpponent": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-04-tm-vv1kbZ_3JpG7w96t",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "UMD Women's Hockey v. St. Cloud State",
+      "place": {
+        "type": "venue",
+        "venueId": "amsoil-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Minnesota Duluth Bulldogs Womens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kbZ_3JpG7w96t",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-04-espn-st-thomas-hockey-401904681",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "game",
+      "title": "St Thomas vs. Omaha",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "st-thomas-hockey",
+        "away": "omaha",
+        "awayOpponent": "omaha"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-12-04-tm-vv1AkZkoSGkdwk9Zl",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "NUTCRACKER! Magical Christmas Ballet",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "NUTCRACKER! Magical Christmas Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkoSGkdwk9Zl",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vv1AkZkowGkdjZvR0",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Blue October",
+      "officialTitle": "Blue October: Foiled 20th Anniversary World Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Blue October",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkowGkdjZvR0",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A7x47_",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Amy Grant",
+      "officialTitle": "Amy Grant w/ Michael W. Smith",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Amy Grant",
+      "act": true,
+      "performerIds": [
+        "K8vZ9171uaV",
+        "K8vZ9171fEV",
+        "K8vZ91714R0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7x47_",
+      "expectedDraw": {
+        "count": 11716,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vvG1bZ_u6lS9My",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "19:07",
+      "kind": "game",
+      "title": "Minnesota State Maverick Men's Hockey vs. Bowling Green",
+      "place": {
+        "type": "venue",
+        "venueId": "mayo-clinic-health-system-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Minnesota State University, Mankato Mavericks Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_u6lS9My",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-vv17bZ_KGkDlX7Um",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The New Standards",
+      "officialTitle": "The New Standards Holiday Show",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The New Standards",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17bZ_KGkDlX7Um",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AA7kJF",
+      "metroId": "minneapolis",
+      "date": "2026-12-04",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Hot In Herre: 2000s Dance Party",
+      "officialTitle": "Hot In Herre: 2000's Dance Party (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Hot In Herre: 2000s Dance Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7kJF",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1AkZkoSGkdw6MZU",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "special",
+      "title": "NUTCRACKER! Magical Christmas Ballet",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "NUTCRACKER! Magical Christmas Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkoSGkdw6MZU",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1kbZ_3JpG7V66U",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "game",
+      "title": "UMD Women's Hockey v. St. Cloud State",
+      "place": {
+        "type": "venue",
+        "venueId": "amsoil-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Minnesota Duluth Bulldogs Womens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kbZ_3JpG7V66U",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv17bZ_KGkDlTVUM",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "show",
+      "title": "The New Standards",
+      "officialTitle": "The New Standards Holiday Show",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The New Standards",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17bZ_KGkDlTVUM",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-LvZ18QI9S3M2fLNbcM1xN",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xN",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1AkZkoSGkdwaEvC",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "17:00",
+      "kind": "special",
+      "title": "NUTCRACKER! Magical Christmas Ballet",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "NUTCRACKER! Magical Christmas Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkoSGkdwaEvC",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-05-espn-st-thomas-hockey-401904682",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "St Thomas vs. Omaha",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "st-thomas-hockey",
+        "away": "omaha",
+        "awayOpponent": "omaha"
+      },
+      "crowd": [],
+      "sourceId": "espn"
+    },
+    {
+      "id": "2026-12-05-tm-vv11vOv0-zf8pFv5",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "special",
+      "title": "Martin Amini",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Martin Amini",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11vOv0-zf8pFv5"
+    },
+    {
+      "id": "2026-12-05-tm-vvG1bZ_u6lSMzk",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "18:07",
+      "kind": "game",
+      "title": "Minnesota State Maverick Men's Hockey vs. Bowling Green",
+      "place": {
+        "type": "venue",
+        "venueId": "mayo-clinic-health-system-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Minnesota State University, Mankato Mavericks Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_u6lSMzk",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-espn-wild-401892868",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wild vs. Flyers",
+      "broadcast": "NBC Sports Phil",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "flyers",
+        "awayOpponent": "flyers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18930,
+        "low": 18207,
+        "high": 19041,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-sa-gophersports-com-22987",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. Wisconsin",
+      "place": {
+        "type": "venue",
+        "venueId": "ridder-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "gophers-whockey",
+        "away": "Wisconsin",
+        "awayOpponent": "wisconsin"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-05-tm-vv1kvOvPk_GA234Zj",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "UMD Men's Hockey v. USA U-18 (Exh.)",
+      "place": {
+        "type": "venue",
+        "venueId": "amsoil-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "University of Minnesota Duluth Bulldogs Mens Hockey",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1kvOvPk_GA234Zj"
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAefC7",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Pert Near Sandstone",
+      "officialTitle": "Pert Near Sandstone (18 and Over with Valid Government ID)",
+      "place": {
+        "type": "venue",
+        "venueId": "first-avenue"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Pert Near Sandstone",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAefC7",
+      "expectedDraw": {
+        "count": 1550,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv17bZ_KGkDiv7M8",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The New Standards",
+      "officialTitle": "The New Standards Holiday Show",
+      "place": {
+        "type": "venue",
+        "venueId": "state-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The New Standards",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv17bZ_KGkDiv7M8",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2181,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-vv1AkZkuVGkeTtmtB",
+      "metroId": "minneapolis",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Christopher Titus, \"Doomed to Repeat\"",
+      "place": {
+        "type": "venue",
+        "venueId": "pantages-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Christopher Titus",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv1AkZkuVGkeTtmtB"
+    },
+    {
+      "id": "2026-12-06-espn-vikings-401873106",
+      "metroId": "minneapolis",
+      "date": "2026-12-06",
+      "start": "15:25",
+      "kind": "game",
+      "title": "Vikings vs. Carolina Panthers",
+      "broadcast": "CBS",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "vikings",
+        "away": "panthers",
+        "awayOpponent": "panthers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 66941,
+        "low": 66857,
+        "high": 67014,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-LvZ18QI9S3M2fLNbcM1xE",
+      "metroId": "minneapolis",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xE",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-06-tm-vvG1bZ_52FpL_T",
+      "metroId": "minneapolis",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "kind": "show",
+      "title": "DragonForce",
+      "officialTitle": "DragonForce: Inhuman Rampage 20th Anniversary",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "DragonForce",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_52FpL_T",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-07-tm-vvG1bZ_GRKnxNW",
+      "metroId": "minneapolis",
+      "date": "2026-12-07",
+      "start": "17:30",
+      "kind": "show",
+      "title": "Imminence",
+      "officialTitle": "Imminence - Axis Mundi Tour: North America 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "fillmore-minneapolis"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Metal"
+      },
+      "performer": "Imminence",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_GRKnxNW",
+      "expectedDraw": {
+        "count": 1850,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-08-tm-vv16kZk4_J7ZACAeF2",
+      "metroId": "minneapolis",
+      "date": "2026-12-08",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Winter Warm-Up",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Health/Wellness"
+      },
+      "performer": "Winter Warm-Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv16kZk4_J7ZACAeF2",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-08-espn-gophers-mbb-401921883",
+      "metroId": "minneapolis",
+      "date": "2026-12-08",
+      "start": "18:00",
+      "kind": "game",
+      "title": "Minnesota vs. Illinois",
+      "place": {
+        "type": "venue",
+        "venueId": "williams-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gophers-mbb",
+        "away": "illinois",
+        "awayOpponent": "illinois"
+      },
+      "rank": {
+        "away": 4
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 7450,
+        "low": 6990,
+        "high": 8228,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-08-espn-wild-401892889",
+      "metroId": "minneapolis",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Wild vs. Oilers",
+      "broadcast": "TNT",
+      "place": {
+        "type": "venue",
+        "venueId": "grand-casino-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "wild",
+        "away": "oilers",
+        "awayOpponent": "oilers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18277,
+        "low": 18052,
+        "high": 18873,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-08-tm-vvG1bZ_uDe0Rkg",
+      "metroId": "minneapolis",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Jinkx & DeLa Holiday Show",
+      "place": {
+        "type": "venue",
+        "venueId": "pantages-theatre-minneapolis"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Jinkx & DeLa",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vvG1bZ_uDe0Rkg"
+    },
+    {
+      "id": "2026-12-09-espn-gophers-wbb-401918912",
+      "metroId": "minneapolis",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Minnesota vs. Northern Iowa",
+      "place": {
+        "type": "venue",
+        "venueId": "williams-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "gophers-wbb",
+        "away": "northern-iowa",
+        "awayOpponent": "northern-iowa"
+      },
+      "rank": {
+        "home": 17
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2812,
+        "low": 2808,
+        "high": 2872,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-10-espn-st-thomas-wbb-401918731",
+      "metroId": "minneapolis",
+      "date": "2026-12-10",
+      "start": "16:00",
+      "kind": "game",
+      "title": "St Thomas vs. Grand Canyon",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "st-thomas-wbb",
+        "away": "gcu-wbb",
+        "awayOpponent": "grand-canyon"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 318,
+        "low": 300,
+        "high": 438,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 3 games, 2026."
+      }
+    },
+    {
+      "id": "2026-12-10-tm-LvZ18QI9S3M2fLNbcM1xl",
+      "metroId": "minneapolis",
+      "date": "2026-12-10",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Glow Holiday Festival 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "chs-field"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Holiday"
+      },
+      "performer": "Glow Holiday Festival",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "LvZ18QI9S3M2fLNbcM1xl",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-10-tm-vv11vOvPp_-o8bvC",
+      "metroId": "minneapolis",
+      "date": "2026-12-10",
+      "start": "17:00",
+      "kind": "special",
+      "title": "Winter Warm-Up",
+      "place": {
+        "type": "venue",
+        "venueId": "us-bank-stadium"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Health/Wellness"
+      },
+      "performer": "Winter Warm-Up",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "vv11vOvPp_-o8bvC",
+      "occasionFacts": {
+        "run": 5
+      }
+    },
+    {
+      "id": "2026-12-10-espn-st-thomas-mbb-401920852",
+      "metroId": "minneapolis",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "St Thomas vs. UNC Asheville",
+      "place": {
+        "type": "venue",
+        "venueId": "anderson-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "st-thomas-mbb",
+        "away": "unc-asheville",
+        "awayOpponent": "unc-asheville"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2658,
+        "low": 2322,
+        "high": 4708,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 5 games, 2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-27-espn-wild-401892803",
+      "date": "2026-11-27",
+      "start": "15:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Minnesota State at Minnesota (MHKY) 6.6 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18995,
+        "low": 18628,
+        "high": 19257
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-gophers-hockey-401904663",
+      "date": "2026-11-27",
+      "start": "16:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Heavy",
+        "why": "Avalanche at Wild 6.6 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-LvZ18QI9S3M2fLNbcM1x2",
+      "date": "2026-11-27",
+      "start": "17:00",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Memphis Grizzlies at Timberwolves and Avalanche at Wild 9.5 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-27-sa-tommiesports-com-10022",
+      "date": "2026-11-27",
+      "start": "18:00",
+      "read": {
+        "rating": 3.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-timberwolves-401909331",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 3.8,
+        "friction": "Moderate",
+        "why": "Avalanche at Wild and Minnesota State at Minnesota (MHKY) 8.9 mi away, back to back.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17964,
+        "low": 17428,
+        "high": 18427
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-gophersports-com-22952",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 4634,
+        "low": 4317,
+        "high": 4747
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-tommiesports-com-10023",
+      "date": "2026-11-28",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-LvZ18QI9S3M2fLNbcM1xK",
+      "date": "2026-11-28",
+      "start": "17:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-st-thomas-hockey-401904563",
+      "date": "2026-11-28",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-vvG1bZ_u1b-FYW",
+      "date": "2026-11-28",
+      "start": "18:07"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAefCA",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-vikings-401873084",
+      "date": "2026-11-29",
+      "start": "12:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66949,
+        "low": 66943,
+        "high": 66953
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-LvZ18QI9S3M2fLNbcM1x9",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Falcons at Vikings 8.7 mi away, back to back.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-vvG1bZ_G3NH_aG",
+      "date": "2026-11-29",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-vv11bZ_4JbofAS",
+      "date": "2026-12-01",
+      "start": "17:00",
+      "read": {
+        "rating": 2.1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-01-sa-gophersports-com-23316",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-vv1AkZkoNGkdI71Xg",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 2.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1014
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-gophers-wbb-401918730",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "draw": {
+        "count": 2812,
+        "low": 2808,
+        "high": 2872
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A70IJf",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-LvZ18QI9S3M2fLNbcM1xh",
+      "date": "2026-12-03",
+      "start": "17:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Winter Warm-Up and Unwrapped - An Acoustic Holiday 8.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-vv11bZ_4Jb3fAU",
+      "date": "2026-12-03",
+      "start": "17:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Low",
+        "why": "Unwrapped - An Acoustic Holiday 0.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-st-thomas-mbb-401920850",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2658,
+        "low": 2322,
+        "high": 4708
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAeaZN",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 3.1,
+        "friction": "Moderate",
+        "why": "Winter Warm-Up 0.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-LvZ18QI9S3M2fLNbcM1xL",
+      "date": "2026-12-04",
+      "start": "17:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Moderate",
+        "why": "Rain in the forecast at a 5:00 pm start.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-04-sa-gophersports-com-22986",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vv1kbZ_3JpG7w96t",
+      "date": "2026-12-04",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-04-espn-st-thomas-hockey-401904681",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vv1AkZkoSGkdwk9Zl",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vv1AkZkowGkdjZvR0",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A7x47_",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 3.3,
+        "friction": "Low",
+        "why": "Glow Holiday Festival 2026 0.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11716
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-vvG1bZ_u6lS9My",
+      "date": "2026-12-04",
+      "start": "19:07"
+    },
+    {
+      "eventId": "2026-12-04-tm-vv17bZ_KGkDlX7Um",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AA7kJF",
+      "date": "2026-12-04",
+      "start": "21:00",
+      "read": {
+        "rating": 3.3,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1AkZkoSGkdw6MZU",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1kbZ_3JpG7V66U",
+      "date": "2026-12-05",
+      "start": "15:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17bZ_KGkDlTVUM",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-LvZ18QI9S3M2fLNbcM1xN",
+      "date": "2026-12-05",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Flyers at Wild 0.9 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1AkZkoSGkdwaEvC",
+      "date": "2026-12-05",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-st-thomas-hockey-401904682",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv11vOv0-zf8pFv5",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vvG1bZ_u6lSMzk",
+      "date": "2026-12-05",
+      "start": "18:07"
+    },
+    {
+      "eventId": "2026-12-05-espn-wild-401892868",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Glow Holiday Festival 2026 0.9 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18930,
+        "low": 18207,
+        "high": 19041
+      }
+    },
+    {
+      "eventId": "2026-12-05-sa-gophersports-com-22987",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1kvOvPk_GA234Zj",
+      "date": "2026-12-05",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAefC7",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1550
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv17bZ_KGkDiv7M8",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2181
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-vv1AkZkuVGkeTtmtB",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-vikings-401873106",
+      "date": "2026-12-06",
+      "start": "15:25",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 66941,
+        "low": 66857,
+        "high": 67014
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-LvZ18QI9S3M2fLNbcM1xE",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Carolina Panthers at Vikings 8.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-vvG1bZ_52FpL_T",
+      "date": "2026-12-06",
+      "start": "17:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-12-07-tm-vvG1bZ_GRKnxNW",
+      "date": "2026-12-07",
+      "start": "17:30",
+      "draw": {
+        "count": 1850
+      }
+    },
+    {
+      "eventId": "2026-12-08-tm-vv16kZk4_J7ZACAeF2",
+      "date": "2026-12-08",
+      "start": "17:00",
+      "read": {
+        "rating": 3,
+        "friction": "Low",
+        "why": "Oilers at Wild 8.0 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-08-espn-gophers-mbb-401921883",
+      "date": "2026-12-08",
+      "start": "18:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Winter Warm-Up 1.5 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 7450,
+        "low": 6990,
+        "high": 8228
+      }
+    },
+    {
+      "eventId": "2026-12-08-espn-wild-401892889",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "friction": "Moderate",
+        "why": "Winter Warm-Up 8.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18277,
+        "low": 18052,
+        "high": 18873
+      }
+    },
+    {
+      "eventId": "2026-12-08-tm-vvG1bZ_uDe0Rkg",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 3,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-09-espn-gophers-wbb-401918912",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "draw": {
+        "count": 2812,
+        "low": 2808,
+        "high": 2872
+      }
+    },
+    {
+      "eventId": "2026-12-10-espn-st-thomas-wbb-401918731",
+      "date": "2026-12-10",
+      "start": "16:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 318,
+        "low": 300,
+        "high": 438
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-LvZ18QI9S3M2fLNbcM1xl",
+      "date": "2026-12-10",
+      "start": "17:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "Winter Warm-Up 8.7 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-vv11vOvPp_-o8bvC",
+      "date": "2026-12-10",
+      "start": "17:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-10-espn-st-thomas-mbb-401920852",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2658,
+        "low": 2322,
+        "high": 4708
+      }
+    }
+  ]
+}

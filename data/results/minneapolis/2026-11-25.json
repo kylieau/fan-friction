@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-wild-401892791",
+      "metroId": "minneapolis",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "grand-casino-arena",
+      "homeTeamId": "wild",
+      "home": {
+        "name": "Wild",
+        "score": 3
+      },
+      "away": {
+        "name": "Mammoth",
+        "score": 4
+      },
+      "attendance": 18840,
+      "capturedAt": "2026-11-26T18:23:52.651Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "20:12"
+    }
+  ]
+}

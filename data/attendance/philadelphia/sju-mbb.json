@@ -1,0 +1,129 @@
+{
+  "schema": 1,
+  "metroId": "philadelphia",
+  "teamId": "sju-mbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-11-04",
+      "start": null,
+      "opponent": "Navy",
+      "venueId": "hagan-arena",
+      "attendance": 2305,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-11-08",
+      "start": null,
+      "opponent": "Central Conn. St.",
+      "venueId": "hagan-arena",
+      "attendance": 2124,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-11-12",
+      "start": null,
+      "opponent": "Villanova",
+      "venueId": "hagan-arena",
+      "attendance": 3326,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-11-26",
+      "start": null,
+      "opponent": "Coppin St.",
+      "venueId": "hagan-arena",
+      "attendance": 1758,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-12-03",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "hagan-arena",
+      "attendance": 2176,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-12-10",
+      "start": null,
+      "opponent": "Col. of Charleston",
+      "venueId": "hagan-arena",
+      "attendance": 2062,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-12-18",
+      "start": null,
+      "opponent": "American",
+      "venueId": "hagan-arena",
+      "attendance": 1258,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-12-28",
+      "start": null,
+      "opponent": "Delaware St.",
+      "venueId": "hagan-arena",
+      "attendance": 3179,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2024-12-31",
+      "start": null,
+      "opponent": "Massachusetts",
+      "venueId": "hagan-arena",
+      "attendance": 2227,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-01-11",
+      "start": null,
+      "opponent": "Loyola Chicago",
+      "venueId": "hagan-arena",
+      "attendance": 3013,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-01-17",
+      "start": null,
+      "opponent": "VCU",
+      "venueId": "hagan-arena",
+      "attendance": 3069,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

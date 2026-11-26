@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-ducks-401892793",
+      "metroId": "la",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "honda-center",
+      "homeTeamId": "ducks",
+      "home": {
+        "name": "Ducks",
+        "score": 7
+      },
+      "away": {
+        "name": "Sharks",
+        "score": 0
+      },
+      "attendance": 17147,
+      "capturedAt": "2026-11-26T18:23:42.427Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "22:08"
+    },
+    {
+      "eventId": "2026-11-25-espn-rams-401873079",
+      "metroId": "la",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "sofi-stadium",
+      "homeTeamId": "rams",
+      "home": {
+        "name": "Rams",
+        "score": 26
+      },
+      "away": {
+        "name": "Packers",
+        "score": 13
+      },
+      "attendance": 75211,
+      "capturedAt": "2026-11-26T18:23:42.427Z",
+      "duration": {
+        "minutes": 194,
+        "kind": "estimated"
+      },
+      "startedAt": "20:15"
+    }
+  ]
+}

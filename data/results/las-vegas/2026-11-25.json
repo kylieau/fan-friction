@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "metroId": "las-vegas",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-unlv-wbb-401917723",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "thomas-mack-center",
+      "homeTeamId": "unlv-wbb",
+      "home": {
+        "name": "UNLV WBB",
+        "score": 75
+      },
+      "away": {
+        "name": "LMU",
+        "score": 67
+      },
+      "capturedAt": "2026-11-26T18:23:51.160Z",
+      "duration": {
+        "minutes": 112,
+        "kind": "estimated"
+      },
+      "startedAt": "15:05"
+    },
+    {
+      "eventId": "2026-11-25-ht-henderson-silver-knights-1029378",
+      "metroId": "las-vegas",
+      "date": "2026-11-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "lees-family-forum",
+      "homeTeamId": "henderson-silver-knights",
+      "home": {
+        "name": "Silver Knights",
+        "score": 4
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 1
+      },
+      "attendance": 2863,
+      "capturedAt": "2026-11-26T18:23:51.161Z"
+    }
+  ]
+}

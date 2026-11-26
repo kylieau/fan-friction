@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "denver",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-avalanche-401892792",
+      "metroId": "denver",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ball-arena",
+      "homeTeamId": "avalanche",
+      "home": {
+        "name": "Avalanche",
+        "score": 6
+      },
+      "away": {
+        "name": "Canadiens",
+        "score": 0
+      },
+      "attendance": 18114,
+      "capturedAt": "2026-11-26T18:23:56.564Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "21:38"
+    }
+  ]
+}

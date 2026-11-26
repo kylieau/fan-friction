@@ -1,0 +1,195 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "csun-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-11-04",
+      "start": null,
+      "opponent": "Bethesda (CA)",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 335,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 310,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-11-26",
+      "start": null,
+      "opponent": "LIFE Pacific",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 227,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 359,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "San Jose St.",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 220,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2025-12-18",
+      "start": null,
+      "opponent": "Northern Ariz.",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 276,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-01-01",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 415,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-01-10",
+      "start": null,
+      "opponent": "Cal St. Fullerton",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 335,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-01-15",
+      "start": null,
+      "opponent": "UC San Diego",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 385,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 201,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 145,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-02-19",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 185,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 197,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 303,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2026,
+      "date": "2026-03-05",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 376,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2027,
+      "date": "2026-11-03",
+      "start": null,
+      "opponent": "La Sierra",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 205,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "csun-wbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "San Diego St.",
+      "venueId": "premier-america-credit-union-arena",
+      "attendance": 180,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

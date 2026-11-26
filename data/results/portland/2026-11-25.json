@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "portland",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-blazers-401909325",
+      "metroId": "portland",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moda-center",
+      "homeTeamId": "blazers",
+      "home": {
+        "name": "Blazers",
+        "score": 116
+      },
+      "away": {
+        "name": "Spurs",
+        "score": 111
+      },
+      "attendance": 19672,
+      "capturedAt": "2026-11-26T18:23:55.872Z",
+      "duration": {
+        "minutes": 148,
+        "kind": "estimated"
+      },
+      "startedAt": "22:13"
+    }
+  ]
+}

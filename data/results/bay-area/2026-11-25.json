@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-warriors-401909324",
+      "metroId": "bay-area",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "chase-center",
+      "homeTeamId": "warriors",
+      "home": {
+        "name": "Warriors",
+        "score": 129
+      },
+      "away": {
+        "name": "Sac Kings",
+        "score": 110
+      },
+      "attendance": 18064,
+      "capturedAt": "2026-11-26T18:23:44.940Z",
+      "duration": {
+        "minutes": 132,
+        "kind": "estimated"
+      },
+      "startedAt": "22:10"
+    }
+  ]
+}

@@ -207,6 +207,17 @@
       "code": 3,
       "precipProbability": 2,
       "precipMm": 0
+    },
+    {
+      "metroId": "kansas-city",
+      "venueId": "city",
+      "date": "2026-11-25",
+      "basis": "observed",
+      "capturedAt": "2026-11-26T18:13:45.272Z",
+      "feelsLikeHighF": 33,
+      "feelsLikeLowF": 22,
+      "code": 3,
+      "precipMm": 0
     }
   ]
 }

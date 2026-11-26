@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-red-wings-401892789",
+      "metroId": "detroit",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "little-caesars-arena",
+      "homeTeamId": "red-wings",
+      "home": {
+        "name": "Red Wings",
+        "score": 5
+      },
+      "away": {
+        "name": "Canucks",
+        "score": 1
+      },
+      "attendance": 18007,
+      "capturedAt": "2026-11-26T18:23:45.964Z",
+      "duration": {
+        "minutes": 144,
+        "kind": "estimated"
+      },
+      "startedAt": "19:46"
+    }
+  ]
+}

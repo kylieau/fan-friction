@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "cleveland",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-cleveland-state-mbb-401921170",
+      "metroId": "cleveland",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "wolstein-center",
+      "homeTeamId": "cleveland-state-mbb",
+      "home": {
+        "name": "Cleveland St",
+        "score": 76
+      },
+      "away": {
+        "name": "Case Western",
+        "score": 46
+      },
+      "attendance": 1578,
+      "capturedAt": "2026-11-26T18:23:48.758Z",
+      "duration": {
+        "minutes": 102,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    }
+  ]
+}

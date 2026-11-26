@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "long-beach-state-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-11-12",
+      "start": null,
+      "opponent": "California Baptist",
+      "venueId": "walter-pyramid",
+      "attendance": 628,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Sacramento St.",
+      "venueId": "walter-pyramid",
+      "attendance": 612,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-11-20",
+      "start": null,
+      "opponent": "San Francisco",
+      "venueId": "walter-pyramid",
+      "attendance": 511,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "walter-pyramid",
+      "attendance": 607,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-12-11",
+      "start": null,
+      "opponent": "Portland",
+      "venueId": "walter-pyramid",
+      "attendance": 620,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2025-12-29",
+      "start": null,
+      "opponent": "Hope Int'l",
+      "venueId": "walter-pyramid",
+      "attendance": 185,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "walter-pyramid",
+      "attendance": 639,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "walter-pyramid",
+      "attendance": 612,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-01-22",
+      "start": null,
+      "opponent": "Cal St. Fullerton",
+      "venueId": "walter-pyramid",
+      "attendance": 618,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-01-29",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "walter-pyramid",
+      "attendance": 654,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "UC San Diego",
+      "venueId": "walter-pyramid",
+      "attendance": 571,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "walter-pyramid",
+      "attendance": 655,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "walter-pyramid",
+      "attendance": 532,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "walter-pyramid",
+      "attendance": 1043,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "walter-pyramid",
+      "attendance": 991,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "long-beach-state-wbb",
+      "season": 2027,
+      "date": "2026-11-09",
+      "start": null,
+      "opponent": "Santa Clara",
+      "venueId": "walter-pyramid",
+      "attendance": 726,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

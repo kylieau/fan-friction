@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "tampa",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-lightning-401892783",
+      "metroId": "tampa",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "benchmark-international-arena",
+      "homeTeamId": "lightning",
+      "home": {
+        "name": "Lightning",
+        "score": 1
+      },
+      "away": {
+        "name": "Hurricanes",
+        "score": 3
+      },
+      "attendance": 19092,
+      "capturedAt": "2026-11-26T18:23:47.963Z",
+      "duration": {
+        "minutes": 146,
+        "kind": "estimated"
+      },
+      "startedAt": "19:09"
+    }
+  ]
+}

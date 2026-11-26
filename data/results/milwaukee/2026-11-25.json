@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "milwaukee",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-bucks-401909322",
+      "metroId": "milwaukee",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "fiserv-forum",
+      "homeTeamId": "bucks",
+      "home": {
+        "name": "Bucks",
+        "score": 97
+      },
+      "away": {
+        "name": "Nets",
+        "score": 104
+      },
+      "attendance": 12614,
+      "capturedAt": "2026-11-26T18:23:46.563Z",
+      "duration": {
+        "minutes": 134,
+        "kind": "estimated"
+      },
+      "startedAt": "20:10"
+    }
+  ]
+}

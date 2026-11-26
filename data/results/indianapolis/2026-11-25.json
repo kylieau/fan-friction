@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-butler-wbb-401918775",
+      "metroId": "indianapolis",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "thomas-mack-center",
+      "homeTeamId": "butler-wbb",
+      "home": {
+        "name": "Butler",
+        "score": 87
+      },
+      "away": {
+        "name": "Oral Roberts",
+        "score": 54
+      },
+      "attendance": 1016,
+      "capturedAt": "2026-11-26T18:23:51.763Z",
+      "duration": {
+        "minutes": 101,
+        "kind": "estimated"
+      },
+      "startedAt": "17:35"
+    }
+  ]
+}

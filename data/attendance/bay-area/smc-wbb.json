@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "teamId": "smc-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "smc-wbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Chico St.",
+      "venueId": "university-credit-union-pavilion",
+      "attendance": 308,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

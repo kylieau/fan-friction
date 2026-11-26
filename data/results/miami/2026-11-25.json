@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "miami",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-fiu-mbb-401928359",
+      "metroId": "miami",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ocean-bank-convocation-center",
+      "homeTeamId": "fiu-mbb",
+      "home": {
+        "name": "FIU",
+        "score": 88
+      },
+      "away": {
+        "name": "Arkansas St",
+        "score": 92
+      },
+      "attendance": 571,
+      "capturedAt": "2026-11-26T18:23:48.198Z",
+      "duration": {
+        "minutes": 150,
+        "kind": "estimated"
+      },
+      "startedAt": "15:35"
+    },
+    {
+      "eventId": "2026-11-25-espn-panthers-401892784",
+      "metroId": "miami",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "amerant-bank-arena",
+      "homeTeamId": "panthers",
+      "home": {
+        "name": "Panthers",
+        "score": 5
+      },
+      "away": {
+        "name": "Senators",
+        "score": 3
+      },
+      "attendance": 18738,
+      "capturedAt": "2026-11-26T18:23:48.198Z",
+      "duration": {
+        "minutes": 162,
+        "kind": "estimated"
+      },
+      "startedAt": "19:11"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "boston",
   "teamId": "bc-mhockey",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
     {
       "teamId": "bc-mhockey",
@@ -100,6 +100,105 @@
       "opponent": "Providence",
       "venueId": "conte-forum",
       "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-01-12",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "conte-forum",
+      "attendance": 7489,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-01-21",
+      "start": null,
+      "opponent": "Merrimack",
+      "venueId": "conte-forum",
+      "attendance": 6640,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-01-26",
+      "start": null,
+      "opponent": "Boston U.",
+      "venueId": "conte-forum",
+      "attendance": 7884,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-02-09",
+      "start": null,
+      "opponent": "New Hampshire",
+      "venueId": "conte-forum",
+      "attendance": 6608,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-02-18",
+      "start": null,
+      "opponent": "Massachusetts",
+      "venueId": "conte-forum",
+      "attendance": 7008,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-02-23",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 7246,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Vermont",
+      "venueId": "conte-forum",
+      "attendance": 6559,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-03-03",
+      "start": null,
+      "opponent": "New Hampshire",
+      "venueId": "conte-forum",
+      "attendance": 5402,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "bc-mhockey",
+      "season": 2024,
+      "date": "2024-03-16",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "conte-forum",
+      "attendance": 6705,
       "kind": "announced",
       "sourceId": "sidearm"
     },

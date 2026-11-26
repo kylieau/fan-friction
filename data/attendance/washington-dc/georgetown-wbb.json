@@ -2,8 +2,96 @@
   "schema": 1,
   "metroId": "washington-dc",
   "teamId": "georgetown-wbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2024-11-06",
+      "start": null,
+      "opponent": "Virginia-Lynchburg",
+      "venueId": "mcdonough-arena",
+      "attendance": 733,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2024-11-19",
+      "start": null,
+      "opponent": "Temple",
+      "venueId": "mcdonough-arena",
+      "attendance": 743,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2024-12-09",
+      "start": null,
+      "opponent": "George Mason",
+      "venueId": "mcdonough-arena",
+      "attendance": 385,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2024-12-30",
+      "start": null,
+      "opponent": "Xavier",
+      "venueId": "mcdonough-arena",
+      "attendance": 629,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-01-08",
+      "start": null,
+      "opponent": "Villanova",
+      "venueId": "mcdonough-arena",
+      "attendance": 219,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-01-22",
+      "start": null,
+      "opponent": "St. John's (NY)",
+      "venueId": "mcdonough-arena",
+      "attendance": 693,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-01-29",
+      "start": null,
+      "opponent": "Creighton",
+      "venueId": "mcdonough-arena",
+      "attendance": 313,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-02-12",
+      "start": null,
+      "opponent": "Butler",
+      "venueId": "mcdonough-arena",
+      "attendance": 119,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "georgetown-wbb",
       "season": 2026,
@@ -133,6 +221,28 @@
       "opponent": "Providence",
       "venueId": "mcdonough-arena",
       "attendance": 741,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Butler",
+      "venueId": "mcdonough-arena",
+      "attendance": 943,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2026,
+      "date": "2026-03-01",
+      "start": null,
+      "opponent": "DePaul",
+      "venueId": "mcdonough-arena",
+      "attendance": 411,
       "kind": "announced",
       "sourceId": "sidearm"
     },

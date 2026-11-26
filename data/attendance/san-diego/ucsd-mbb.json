@@ -2,8 +2,74 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "ucsd-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-11-09",
+      "start": null,
+      "opponent": "Pepperdine",
+      "venueId": "liontree-arena",
+      "attendance": 3688,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-11-12",
+      "start": null,
+      "opponent": "Sacramento St.",
+      "venueId": "liontree-arena",
+      "attendance": 1031,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-11-16",
+      "start": null,
+      "opponent": "Seattle U",
+      "venueId": "liontree-arena",
+      "attendance": 1206,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-11-30",
+      "start": null,
+      "opponent": "La Verne",
+      "venueId": "liontree-arena",
+      "attendance": 792,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-12-07",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "liontree-arena",
+      "attendance": 1862,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2024-12-28",
+      "start": null,
+      "opponent": "Occidental",
+      "venueId": "liontree-arena",
+      "attendance": 1172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "ucsd-mbb",
       "season": 2026,
@@ -122,6 +188,50 @@
       "opponent": "Long Beach St.",
       "venueId": "liontree-arena",
       "attendance": 1867,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-02-12",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "liontree-arena",
+      "attendance": 1874,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "liontree-arena",
+      "attendance": 1660,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-02-26",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "liontree-arena",
+      "attendance": 1694,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2026,
+      "date": "2026-02-28",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "liontree-arena",
+      "attendance": 3331,
       "kind": "announced",
       "sourceId": "sidearm"
     },

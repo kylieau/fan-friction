@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "metroId": "kansas-city",
+  "teamId": "kc-roos-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "William Jewell",
+      "venueId": "swinney-recreation-center",
+      "attendance": 271,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-11-20",
+      "start": null,
+      "opponent": "Hesston",
+      "venueId": "swinney-recreation-center",
+      "attendance": 925,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-11-25",
+      "start": null,
+      "opponent": "UTEP",
+      "venueId": "swinney-recreation-center",
+      "attendance": 283,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "Austin Peay",
+      "venueId": "swinney-recreation-center",
+      "attendance": 259,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Portland St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 225,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Utah Valley",
+      "venueId": "swinney-recreation-center",
+      "attendance": 301,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "Haskell",
+      "venueId": "swinney-recreation-center",
+      "attendance": 225,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2025-12-31",
+      "start": null,
+      "opponent": "Omaha",
+      "venueId": "swinney-recreation-center",
+      "attendance": 269,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "South Dakota",
+      "venueId": "swinney-recreation-center",
+      "attendance": 351,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "St. Thomas (MN)",
+      "venueId": "swinney-recreation-center",
+      "attendance": 304,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "South Dakota St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 224,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-02-05",
+      "start": null,
+      "opponent": "North Dakota St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 351,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "North Dakota",
+      "venueId": "swinney-recreation-center",
+      "attendance": 437,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-02-18",
+      "start": null,
+      "opponent": "Denver",
+      "venueId": "swinney-recreation-center",
+      "attendance": 323,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Oral Roberts",
+      "venueId": "swinney-recreation-center",
+      "attendance": 478,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Baker",
+      "venueId": "swinney-recreation-center",
+      "attendance": 702,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2027,
+      "date": "2026-11-06",
+      "start": null,
+      "opponent": "Wichita St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 628,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-wbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Southeast Mo. St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 388,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

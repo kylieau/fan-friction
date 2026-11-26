@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "pittsburgh",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-penguins-401892786",
+      "metroId": "pittsburgh",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ppg-paints-arena",
+      "homeTeamId": "penguins",
+      "home": {
+        "name": "Penguins",
+        "score": 3
+      },
+      "away": {
+        "name": "Flames",
+        "score": 6
+      },
+      "attendance": 17137,
+      "capturedAt": "2026-11-26T18:23:47.664Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

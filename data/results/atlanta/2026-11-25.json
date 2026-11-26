@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "atlanta",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-gsu-wbb-401928194",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "gsu-convocation-center",
+      "homeTeamId": "gsu-wbb",
+      "home": {
+        "name": "Georgia St",
+        "score": 47
+      },
+      "away": {
+        "name": "Chattanooga",
+        "score": 76
+      },
+      "attendance": 617,
+      "capturedAt": "2026-11-26T18:23:44.608Z",
+      "duration": {
+        "minutes": 105,
+        "kind": "estimated"
+      },
+      "startedAt": "12:02"
+    },
+    {
+      "eventId": "2026-11-25-espn-ksu-wbb-401927998",
+      "metroId": "atlanta",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ksu-convocation-center",
+      "homeTeamId": "ksu-wbb",
+      "home": {
+        "name": "Kennesaw St",
+        "score": 81
+      },
+      "away": {
+        "name": "Florida A&M",
+        "score": 67
+      },
+      "attendance": 381,
+      "capturedAt": "2026-11-26T18:23:44.608Z",
+      "duration": {
+        "minutes": 113,
+        "kind": "estimated"
+      },
+      "startedAt": "14:02"
+    }
+  ]
+}

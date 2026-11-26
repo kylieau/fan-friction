@@ -2,8 +2,41 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "cal-state-la-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2023-12-07",
+      "start": null,
+      "opponent": "Cal St. Monterey Bay",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 110,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2023-12-09",
+      "start": null,
+      "opponent": "Stanislaus St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 134,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-01-04",
+      "start": null,
+      "opponent": "Cal Poly Pomona",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 119,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "cal-state-la-mbb",
       "season": 2025,
@@ -23,6 +56,149 @@
       "opponent": "Fresno Pacific",
       "venueId": "cal-state-la-university-gym",
       "attendance": 127,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2024-11-23",
+      "start": null,
+      "opponent": "Vanguard",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 106,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2024-11-30",
+      "start": null,
+      "opponent": "Cal St. Dom. Hills",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 178,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2024-12-05",
+      "start": null,
+      "opponent": "Stanislaus St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 139,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2024-12-07",
+      "start": null,
+      "opponent": "Cal St. Monterey Bay",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 132,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2024-12-17",
+      "start": null,
+      "opponent": "Northwest Nazarene",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 97,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-01-16",
+      "start": null,
+      "opponent": "San Fran. St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-01-18",
+      "start": null,
+      "opponent": "Cal St. East Bay",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 131,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-01-30",
+      "start": null,
+      "opponent": "Cal St. San Marcos",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 428,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-02-01",
+      "start": null,
+      "opponent": "Sonoma St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 144,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-02-06",
+      "start": null,
+      "opponent": "Cal Poly Pomona",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 213,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-02-08",
+      "start": null,
+      "opponent": "CSUSB",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 153,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-02-20",
+      "start": null,
+      "opponent": "Chico St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 322,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2025,
+      "date": "2025-02-22",
+      "start": null,
+      "opponent": "Cal Poly Humboldt",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 287,
       "kind": "announced",
       "sourceId": "sidearm"
     },
@@ -188,6 +364,17 @@
       "opponent": "Hawaii Pacific",
       "venueId": "cal-state-la-university-gym",
       "attendance": 87,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2027,
+      "date": "2026-11-25",
+      "start": null,
+      "opponent": "Saint Martin's",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 77,
       "kind": "announced",
       "sourceId": "sidearm"
     }

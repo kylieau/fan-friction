@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "metroId": "washington-dc",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-capitals-401892787",
+      "metroId": "washington-dc",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "capital-one-arena",
+      "homeTeamId": "capitals",
+      "home": {
+        "name": "Capitals",
+        "score": 7
+      },
+      "away": {
+        "name": "Flyers",
+        "score": 3
+      },
+      "attendance": 18347,
+      "capturedAt": "2026-11-26T18:23:54.861Z",
+      "duration": {
+        "minutes": 152,
+        "kind": "estimated"
+      },
+      "startedAt": "19:17"
+    },
+    {
+      "eventId": "2026-11-25-espn-gmu-mbb-401920076",
+      "metroId": "washington-dc",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "eaglebank-arena",
+      "homeTeamId": "gmu-mbb",
+      "home": {
+        "name": "George Mason",
+        "score": 93
+      },
+      "away": {
+        "name": "Longwood",
+        "score": 58
+      },
+      "attendance": 3068,
+      "capturedAt": "2026-11-26T18:23:54.861Z",
+      "duration": {
+        "minutes": 114,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    }
+  ]
+}

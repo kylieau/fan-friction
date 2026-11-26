@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "houston",
+  "teamId": "texas-southern-mbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "texas-southern-mbb",
+      "season": 2024,
+      "date": "2023-12-28",
+      "start": null,
+      "opponent": "Biblical Studies (Houston)",
+      "venueId": "hpe-arena",
+      "attendance": 770,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

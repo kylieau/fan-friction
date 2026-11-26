@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "kansas-city",
   "teamId": "kc-roos-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
     {
       "teamId": "kc-roos-mbb",
@@ -12,6 +12,138 @@
       "opponent": "Avila",
       "venueId": "swinney-recreation-center",
       "attendance": 1322,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2023-11-11",
+      "start": null,
+      "opponent": "St. Mary (KS)",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1106,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2023-11-30",
+      "start": null,
+      "opponent": "Southeast Mo. St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1297,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2023-12-12",
+      "start": null,
+      "opponent": "Tabor",
+      "venueId": "swinney-recreation-center",
+      "attendance": 703,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2023-12-29",
+      "start": null,
+      "opponent": "Oral Roberts",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1337,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "Portland St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1030,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-01-11",
+      "start": null,
+      "opponent": "North Dakota St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 818,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-01-13",
+      "start": null,
+      "opponent": "North Dakota",
+      "venueId": "swinney-recreation-center",
+      "attendance": 575,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-01-27",
+      "start": null,
+      "opponent": "South Dakota",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1291,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-02-01",
+      "start": null,
+      "opponent": "Denver",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1042,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-02-03",
+      "start": null,
+      "opponent": "St. Thomas (MN)",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1226,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-02-15",
+      "start": null,
+      "opponent": "South Dakota St.",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1507,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "kc-roos-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Omaha",
+      "venueId": "swinney-recreation-center",
+      "attendance": 1436,
       "kind": "announced",
       "sourceId": "sidearm"
     },

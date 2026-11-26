@@ -2,8 +2,85 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "fordham-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-11-12",
+      "start": null,
+      "opponent": "Binghamton",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1349,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-11-19",
+      "start": null,
+      "opponent": "Georgian Court",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 661,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-11-22",
+      "start": null,
+      "opponent": "Drexel",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1237,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-12-01",
+      "start": null,
+      "opponent": "New Hampshire",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1069,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-12-04",
+      "start": null,
+      "opponent": "FDU",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1146,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-12-08",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1679,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2025,
+      "date": "2024-12-21",
+      "start": null,
+      "opponent": "UAlbany",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1412,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "fordham-mbb",
       "season": 2026,
@@ -138,6 +215,72 @@
     },
     {
       "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-01-28",
+      "start": null,
+      "opponent": "La Salle",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 738,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-02-03",
+      "start": null,
+      "opponent": "VCU",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1065,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-02-07",
+      "start": null,
+      "opponent": "St. Bonaventure",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 2175,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-02-18",
+      "start": null,
+      "opponent": "Loyola Chicago",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1212,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-02-21",
+      "start": null,
+      "opponent": "Davidson",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 2102,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": null,
+      "opponent": "Rhode Island",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 2186,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
       "season": 2027,
       "date": "2026-11-05",
       "start": null,
@@ -166,6 +309,17 @@
       "opponent": "LIU",
       "venueId": "rose-hill-gymnasium",
       "attendance": 1098,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "fordham-mbb",
+      "season": 2027,
+      "date": "2026-11-25",
+      "start": null,
+      "opponent": "Mercy",
+      "venueId": "rose-hill-gymnasium",
+      "attendance": 1800,
       "kind": "announced",
       "sourceId": "sidearm"
     }

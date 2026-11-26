@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "dallas-fort-worth",
   "teamId": "uta-wbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
     {
       "teamId": "uta-wbb",
@@ -23,6 +23,127 @@
       "opponent": "UTSA",
       "venueId": "college-park-center",
       "attendance": 832,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2023-12-02",
+      "start": null,
+      "opponent": "Grand Canyon",
+      "venueId": "college-park-center",
+      "attendance": 828,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2023-12-30",
+      "start": null,
+      "opponent": "New Mexico St.",
+      "venueId": "college-park-center",
+      "attendance": 976,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-01-04",
+      "start": null,
+      "opponent": "Tarleton St.",
+      "venueId": "college-park-center",
+      "attendance": 952,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "SFA",
+      "venueId": "college-park-center",
+      "attendance": 899,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Abilene Christian",
+      "venueId": "college-park-center",
+      "attendance": 859,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-02-01",
+      "start": null,
+      "opponent": "Southern Utah",
+      "venueId": "college-park-center",
+      "attendance": 1290,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-02-03",
+      "start": null,
+      "opponent": "Utah Tech",
+      "venueId": "college-park-center",
+      "attendance": 1246,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-02-08",
+      "start": null,
+      "opponent": "California Baptist",
+      "venueId": "college-park-center",
+      "attendance": 1473,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-02-17",
+      "start": null,
+      "opponent": "UTRGV",
+      "venueId": "college-park-center",
+      "attendance": 1157,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-02-29",
+      "start": null,
+      "opponent": "Seattle U",
+      "venueId": "college-park-center",
+      "attendance": 1025,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uta-wbb",
+      "season": 2024,
+      "date": "2024-03-02",
+      "start": null,
+      "opponent": "Utah Valley",
+      "venueId": "college-park-center",
+      "attendance": 1012,
       "kind": "announced",
       "sourceId": "sidearm"
     },

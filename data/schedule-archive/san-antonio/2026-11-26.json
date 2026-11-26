@@ -1,0 +1,1143 @@
+{
+  "schema": 1,
+  "metroId": "san-antonio",
+  "metroName": "San Antonio",
+  "timeZone": "America/Chicago",
+  "capturedOn": "2026-11-26",
+  "capturedAt": "2026-11-26T18:23:01.168Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-26",
+    "through": "2026-12-10"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 5
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 0
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 30
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 1
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-26-espn-utsa-mbb-401912231",
+      "metroId": "san-antonio",
+      "date": "2026-11-26",
+      "start": "11:00",
+      "kind": "game",
+      "title": "UTSA vs. Army",
+      "place": {
+        "type": "venue",
+        "venueId": "utsa-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "utsa-mbb",
+        "away": "army",
+        "awayOpponent": "army"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 858,
+        "low": 843,
+        "high": 887,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a holiday in November: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-26-tm-Z7r9jZ1AAA48o",
+      "metroId": "san-antonio",
+      "date": "2026-11-26",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA48o",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-espn-utsa-football-401862840",
+      "metroId": "san-antonio",
+      "date": "2026-11-27",
+      "start": "11:00",
+      "kind": "game",
+      "title": "UTSA vs. Tulsa",
+      "broadcast": "ESPN",
+      "place": {
+        "type": "venue",
+        "venueId": "alamodome"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "utsa-football",
+        "away": "tulsa",
+        "awayOpponent": "tulsa"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22268,
+        "low": 21628,
+        "high": 22657,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2024",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2023–2024."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5dIZ_2pp49FJ",
+      "metroId": "san-antonio",
+      "date": "2026-11-27",
+      "start": "18:35",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "Trivium: Crown In The Grave",
+      "place": {
+        "type": "venue",
+        "venueId": "boeing-center-tech-port"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_2pp49FJ",
+      "expectedDraw": {
+        "count": 3100,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5dIZ_26SoVoN",
+      "metroId": "san-antonio",
+      "date": "2026-11-27",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Nex Mexico IceWolves",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26SoVoN",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAA483",
+      "metroId": "san-antonio",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA483",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-27-espn-spurs-401909333",
+      "metroId": "san-antonio",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "kind": "game",
+      "title": "Spurs vs. Lakers",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "lakers",
+        "awayOpponent": "lakers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 19492,
+        "low": 19431,
+        "high": 19504,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAA48f",
+      "metroId": "san-antonio",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA48f",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5dIZ_26SK7os",
+      "metroId": "san-antonio",
+      "date": "2026-11-28",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Nex Mexico IceWolves",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26SK7os",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAA48K",
+      "metroId": "san-antonio",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA48K",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5dIZ_8wLSkjR",
+      "metroId": "san-antonio",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yuri",
+      "officialTitle": "Yuri & Lucero - ENTRE AMIGAS TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "freeman-coliseum"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Yuri",
+      "act": true,
+      "performerIds": [
+        "K8vZ917GFv0",
+        "K8vZ917rHif"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_8wLSkjR",
+      "expectedDraw": {
+        "count": 11700,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAA484",
+      "metroId": "san-antonio",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA484",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-29-espn-spurs-401910052",
+      "metroId": "san-antonio",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Spurs vs. Celtics",
+      "broadcast": "NBA TV",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "celtics",
+        "awayOpponent": "celtics"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18469,
+        "low": 18004,
+        "high": 18756,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-sa-uiwcardinals-com-7958",
+      "metroId": "san-antonio",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "kind": "game",
+      "title": "Incarnate Word vs. Our Lady of the Lake University",
+      "place": {
+        "type": "venue",
+        "venueId": "mcdermott-convocation-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "uiw-wbb",
+        "away": "Our Lady of the Lake University",
+        "awayOpponent": "our-lady-of-the-lake-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAA48p",
+      "metroId": "san-antonio",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Buena Vista Social Club (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "Buena Vista Social Club (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAA48p",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-11-30-tm-G5dIZ_1Mkeui5",
+      "metroId": "san-antonio",
+      "date": "2026-11-30",
+      "start": "20:00",
+      "kind": "show",
+      "title": "AJ McLean",
+      "officialTitle": "AJ McLean presents Alexander James: The Better Man Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "AJ McLean",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_1Mkeui5",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-G5dIZ_u6_0eZ0",
+      "metroId": "san-antonio",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Senses Fail",
+      "officialTitle": "Senses Fail Presents Still Searching",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Senses Fail",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_u6_0eZ0",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1A70oJa",
+      "metroId": "san-antonio",
+      "date": "2026-12-01",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Outlander in Concert",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Outlander in Concert",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oJa"
+    },
+    {
+      "id": "2026-12-03-espn-spurs-401910088",
+      "metroId": "san-antonio",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Spurs vs. Raptors",
+      "place": {
+        "type": "venue",
+        "venueId": "frost-bank-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "spurs",
+        "away": "raptors",
+        "awayOpponent": "raptors"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18591,
+        "low": 18014,
+        "high": 18984,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A70oJ8",
+      "metroId": "san-antonio",
+      "date": "2026-12-04",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oJ8",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5dIZ_26Sf036",
+      "metroId": "san-antonio",
+      "date": "2026-12-04",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Oklahoma Warriors",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26Sf036",
+      "occasionFacts": {
+        "run": 4
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAvSPI",
+      "metroId": "san-antonio",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Rene Vaca w/ That Mexican OT",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "Rene Vaca",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvSPI"
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70oJo",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "10:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oJo",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70oJ3",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oJ3",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70oJK",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "18:30",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70oJK",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5dIZ_3x-fMK9",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Bingo Loco",
+      "officialTitle": "Bingo Loco Presents - Name That Song",
+      "place": {
+        "type": "venue",
+        "venueId": "sames-auto-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Bingo Loco",
+      "act": true,
+      "performerIds": [
+        "K8vZ91798_7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_3x-fMK9",
+      "expectedDraw": {
+        "count": 9622,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5dIZ_26Sp73o",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Corpus Christi IceRays vs. Oklahoma Warriors",
+      "place": {
+        "type": "venue",
+        "venueId": "hilliard-center-arena"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Corpus Christi IceRays",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_26Sp73o",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5dIZ_uM_wTAU",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Mariachi Vargas de Tecalitlán",
+      "place": {
+        "type": "venue",
+        "venueId": "lila-cockrell-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Mariachi Vargas de Tecalitlán",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_uM_wTAU",
+      "expectedDraw": {
+        "count": 2319,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5dIZ_opr2DY0",
+      "metroId": "san-antonio",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Yung Gravy",
+      "officialTitle": "Yung Gravy: The Joyrider Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "aztec-theatre-sa"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Yung Gravy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5dIZ_opr2DY0",
+      "expectedDraw": {
+        "count": 1477,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A7-J3F",
+      "metroId": "san-antonio",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Bluey's Big Play - The Stage Show",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Bluey's Big Play",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7-J3F",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-09-tm-Z7r9jZ1AA7pZ3",
+      "metroId": "san-antonio",
+      "date": "2026-12-09",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Magical Cirque Christmas (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "A Magical Cirque Christmas (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7pZ3"
+    },
+    {
+      "id": "2026-12-10-tm-Z7r9jZ1AAvVA4",
+      "metroId": "san-antonio",
+      "date": "2026-12-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "Chevy Chase",
+      "place": {
+        "type": "venue",
+        "venueId": "majestic-theatre-sa"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Chevy Chase",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvVA4"
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-26-espn-utsa-mbb-401912231",
+      "date": "2026-11-26",
+      "start": "11:00",
+      "draw": {
+        "count": 858,
+        "low": 843,
+        "high": 887
+      }
+    },
+    {
+      "eventId": "2026-11-26-tm-Z7r9jZ1AAA48o",
+      "date": "2026-11-26",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-11-27-espn-utsa-football-401862840",
+      "date": "2026-11-27",
+      "start": "11:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22268,
+        "low": 21628,
+        "high": 22657
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5dIZ_2pp49FJ",
+      "date": "2026-11-27",
+      "start": "18:35",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3100
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5dIZ_26SoVoN",
+      "date": "2026-11-27",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAA483",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-spurs-401909333",
+      "date": "2026-11-27",
+      "start": "20:30",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 19492,
+        "low": 19431,
+        "high": 19504
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAA48f",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5dIZ_26SK7os",
+      "date": "2026-11-28",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAA48K",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5dIZ_8wLSkjR",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11700
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAA484",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-spurs-401910052",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18469,
+        "low": 18004,
+        "high": 18756
+      }
+    },
+    {
+      "eventId": "2026-11-29-sa-uiwcardinals-com-7958",
+      "date": "2026-11-29",
+      "start": "15:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAA48p",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-30-tm-G5dIZ_1Mkeui5",
+      "date": "2026-11-30",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-G5dIZ_u6_0eZ0",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1A70oJa",
+      "date": "2026-12-01",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-03-espn-spurs-401910088",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18591,
+        "low": 18014,
+        "high": 18984
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A70oJ8",
+      "date": "2026-12-04",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-04-tm-G5dIZ_26Sf036",
+      "date": "2026-12-04",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAvSPI",
+      "date": "2026-12-04",
+      "start": "20:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70oJo",
+      "date": "2026-12-05",
+      "start": "10:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70oJ3",
+      "date": "2026-12-05",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70oJK",
+      "date": "2026-12-05",
+      "start": "18:30"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5dIZ_3x-fMK9",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "draw": {
+        "count": 9622
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5dIZ_26Sp73o",
+      "date": "2026-12-05",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-12-05-tm-G5dIZ_uM_wTAU",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "draw": {
+        "count": 2319
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5dIZ_opr2DY0",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "draw": {
+        "count": 1477
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A7-J3F",
+      "date": "2026-12-06",
+      "start": "14:00"
+    },
+    {
+      "eventId": "2026-12-09-tm-Z7r9jZ1AA7pZ3",
+      "date": "2026-12-09",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-10-tm-Z7r9jZ1AAvVA4",
+      "date": "2026-12-10",
+      "start": "19:30"
+    }
+  ]
+}

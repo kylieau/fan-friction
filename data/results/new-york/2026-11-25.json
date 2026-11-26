@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-islanders-401892785",
+      "metroId": "new-york",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ubs-arena",
+      "homeTeamId": "islanders",
+      "home": {
+        "name": "Islanders",
+        "score": 3
+      },
+      "away": {
+        "name": "Blues",
+        "score": 2
+      },
+      "attendance": 17345,
+      "note": "SO",
+      "capturedAt": "2026-11-26T18:23:44.024Z",
+      "duration": {
+        "minutes": 158,
+        "kind": "estimated"
+      },
+      "startedAt": "19:19"
+    },
+    {
+      "eventId": "2026-11-25-espn-knicks-401909319",
+      "metroId": "new-york",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "madison-square-garden",
+      "homeTeamId": "knicks",
+      "home": {
+        "name": "Knicks",
+        "score": 121
+      },
+      "away": {
+        "name": "Cavaliers",
+        "score": 102
+      },
+      "attendance": 19812,
+      "capturedAt": "2026-11-26T18:23:44.024Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:41"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "columbia-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
     {
       "teamId": "columbia-mbb",
@@ -23,6 +23,149 @@
       "opponent": "Bard",
       "venueId": "levien-gymnasium",
       "attendance": 551,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2023-11-15",
+      "start": null,
+      "opponent": "SUNY Delhi",
+      "venueId": "levien-gymnasium",
+      "attendance": 617,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2023-11-21",
+      "start": null,
+      "opponent": "LIU",
+      "venueId": "levien-gymnasium",
+      "attendance": 622,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2023-11-25",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "levien-gymnasium",
+      "attendance": 898,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2023-11-29",
+      "start": null,
+      "opponent": "Loyola Maryland",
+      "venueId": "levien-gymnasium",
+      "attendance": 599,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2023-12-05",
+      "start": null,
+      "opponent": "Lafayette",
+      "venueId": "levien-gymnasium",
+      "attendance": 567,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-01-04",
+      "start": null,
+      "opponent": "CMSV",
+      "venueId": "levien-gymnasium",
+      "attendance": 673,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "levien-gymnasium",
+      "attendance": 2307,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-01-27",
+      "start": null,
+      "opponent": "Penn",
+      "venueId": "levien-gymnasium",
+      "attendance": 2076,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-02-16",
+      "start": null,
+      "opponent": "Dartmouth",
+      "venueId": "levien-gymnasium",
+      "attendance": 1152,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-02-17",
+      "start": null,
+      "opponent": "Harvard",
+      "venueId": "levien-gymnasium",
+      "attendance": 2257,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-02-23",
+      "start": null,
+      "opponent": "Brown",
+      "venueId": "levien-gymnasium",
+      "attendance": 1203,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Yale",
+      "venueId": "levien-gymnasium",
+      "attendance": 1397,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2024,
+      "date": "2024-03-09",
+      "start": null,
+      "opponent": "Cornell",
+      "venueId": "levien-gymnasium",
+      "attendance": 2022,
       "kind": "announced",
       "sourceId": "sidearm"
     },
@@ -375,6 +518,17 @@
       "opponent": "Stonehill",
       "venueId": "levien-gymnasium",
       "attendance": 543,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-mbb",
+      "season": 2027,
+      "date": "2026-11-25",
+      "start": null,
+      "opponent": "Saint Peter's",
+      "venueId": "levien-gymnasium",
+      "attendance": 619,
       "kind": "announced",
       "sourceId": "sidearm"
     }

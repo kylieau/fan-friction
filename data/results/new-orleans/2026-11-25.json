@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "metroId": "new-orleans",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-laketown-squadron-401914601",
+      "metroId": "new-orleans",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "pontchartrain-center",
+      "homeTeamId": "laketown-squadron",
+      "home": {
+        "name": "Squadron",
+        "score": 100
+      },
+      "away": {
+        "name": "Magic",
+        "score": 104
+      },
+      "attendance": 1576,
+      "capturedAt": "2026-11-26T18:23:52.951Z",
+      "duration": {
+        "minutes": 136,
+        "kind": "estimated"
+      },
+      "startedAt": "19:33"
+    },
+    {
+      "eventId": "2026-11-25-espn-lsuno-mbb-401925050",
+      "metroId": "new-orleans",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "lakefront-arena",
+      "homeTeamId": "lsuno-mbb",
+      "home": {
+        "name": "LSU N Orleans",
+        "score": 80
+      },
+      "away": {
+        "name": "Grambling",
+        "score": 81
+      },
+      "attendance": 784,
+      "note": "OT",
+      "capturedAt": "2026-11-26T18:23:52.951Z",
+      "duration": {
+        "minutes": 133,
+        "kind": "estimated"
+      },
+      "startedAt": "16:07"
+    }
+  ]
+}

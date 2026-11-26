@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "metroId": "new-york",
+  "teamId": "columbia-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Richmond",
+      "venueId": "levien-gymnasium",
+      "attendance": 1542,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2025-11-20",
+      "start": null,
+      "opponent": "Saint Joseph's",
+      "venueId": "levien-gymnasium",
+      "attendance": 2511,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2025-11-24",
+      "start": null,
+      "opponent": "Binghamton",
+      "venueId": "levien-gymnasium",
+      "attendance": 735,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Wagner",
+      "venueId": "levien-gymnasium",
+      "attendance": 704,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2025-12-20",
+      "start": null,
+      "opponent": "UTSA",
+      "venueId": "levien-gymnasium",
+      "attendance": 722,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-01-03",
+      "start": null,
+      "opponent": "Cornell",
+      "venueId": "levien-gymnasium",
+      "attendance": 1026,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-01-17",
+      "start": null,
+      "opponent": "Yale",
+      "venueId": "levien-gymnasium",
+      "attendance": 1176,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-01-19",
+      "start": null,
+      "opponent": "Brown",
+      "venueId": "levien-gymnasium",
+      "attendance": 1605,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-01-24",
+      "start": null,
+      "opponent": "Dartmouth",
+      "venueId": "levien-gymnasium",
+      "attendance": 1617,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-02-13",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "levien-gymnasium",
+      "attendance": 2014,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-02-14",
+      "start": null,
+      "opponent": "Penn",
+      "venueId": "levien-gymnasium",
+      "attendance": 1612,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": null,
+      "opponent": "Harvard",
+      "venueId": "levien-gymnasium",
+      "attendance": 2647,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2026,
+      "date": "2026-03-19",
+      "start": null,
+      "opponent": "St. John's (NY)",
+      "venueId": "levien-gymnasium",
+      "attendance": 714,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "Davidson",
+      "venueId": "levien-gymnasium",
+      "attendance": 2732,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2027,
+      "date": "2026-11-12",
+      "start": null,
+      "opponent": "Michigan",
+      "venueId": "levien-gymnasium",
+      "attendance": 2506,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "columbia-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Duke",
+      "venueId": "levien-gymnasium",
+      "attendance": 2557,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

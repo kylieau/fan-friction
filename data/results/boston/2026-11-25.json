@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-bruins-401892781",
+      "metroId": "boston",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "td-garden",
+      "homeTeamId": "bruins",
+      "home": {
+        "name": "Bruins",
+        "score": 2
+      },
+      "away": {
+        "name": "Winnipeg Jets",
+        "score": 4
+      },
+      "attendance": 17850,
+      "capturedAt": "2026-11-26T18:23:46.762Z",
+      "duration": {
+        "minutes": 147,
+        "kind": "estimated"
+      },
+      "startedAt": "19:08"
+    }
+  ]
+}

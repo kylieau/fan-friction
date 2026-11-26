@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "pepperdine-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2026,
+      "date": "2025-11-08",
+      "start": null,
+      "opponent": "Westmont",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 301,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2026,
+      "date": "2025-11-23",
+      "start": null,
+      "opponent": "San Jose St.",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 321,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "California Baptist",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 251,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Cal State LA",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 280,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2026,
+      "date": "2025-12-16",
+      "start": null,
+      "opponent": "North Dakota St.",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 269,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2027,
+      "date": "2026-11-05",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 552,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2027,
+      "date": "2026-11-10",
+      "start": null,
+      "opponent": "Cal St. Dom. Hills",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 223,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pepperdine-wbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "firestone-fieldhouse",
+      "attendance": 526,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "phoenix",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-gcu-wbb-401921390",
+      "metroId": "phoenix",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "viejas-arena",
+      "homeTeamId": "gcu-wbb",
+      "home": {
+        "name": "Grand Canyon",
+        "score": 61
+      },
+      "away": {
+        "name": "Winthrop",
+        "score": 55
+      },
+      "attendance": 129,
+      "capturedAt": "2026-11-26T18:23:49.634Z",
+      "duration": {
+        "minutes": 110,
+        "kind": "estimated"
+      },
+      "startedAt": "16:01"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "uc-irvine-wbb",
+  "collectedOn": "2026-11-26",
+  "games": [
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2026,
+      "date": "2025-11-05",
+      "start": null,
+      "opponent": "San Diego",
+      "venueId": "bren-events-center",
+      "attendance": 1204,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2026,
+      "date": "2025-11-15",
+      "start": null,
+      "opponent": "Northern Ariz.",
+      "venueId": "bren-events-center",
+      "attendance": 560,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2026,
+      "date": "2025-11-28",
+      "start": null,
+      "opponent": "Wichita St.",
+      "venueId": "bren-events-center",
+      "attendance": 340,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2026,
+      "date": "2025-11-29",
+      "start": null,
+      "opponent": "Colgate",
+      "venueId": "bren-events-center",
+      "attendance": 541,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "California Baptist",
+      "venueId": "bren-events-center",
+      "attendance": 441,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uc-irvine-wbb",
+      "season": 2027,
+      "date": "2026-11-18",
+      "start": null,
+      "opponent": "Idaho St.",
+      "venueId": "bren-events-center",
+      "attendance": 900,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

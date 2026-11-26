@@ -2,8 +2,173 @@
   "schema": 1,
   "metroId": "new-york",
   "teamId": "stony-brook-mbb",
-  "collectedOn": "2026-11-25",
+  "collectedOn": "2026-11-26",
   "games": [
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2024,
+      "date": "2023-11-10",
+      "start": null,
+      "opponent": "St. Joseph's (L.I.)",
+      "venueId": "island-federal-arena",
+      "attendance": 2741,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2024-11-16",
+      "start": null,
+      "opponent": "St. Joseph's (L.I.)",
+      "venueId": "island-federal-arena",
+      "attendance": 2526,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2024-11-20",
+      "start": null,
+      "opponent": "Yale",
+      "venueId": "island-federal-arena",
+      "attendance": 1851,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2024-12-01",
+      "start": null,
+      "opponent": "Norfolk St.",
+      "venueId": "island-federal-arena",
+      "attendance": 2172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2024-12-17",
+      "start": null,
+      "opponent": "Marist",
+      "venueId": "island-federal-arena",
+      "attendance": 1699,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2024-12-21",
+      "start": null,
+      "opponent": "Maine",
+      "venueId": "island-federal-arena",
+      "attendance": 2081,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-01-04",
+      "start": null,
+      "opponent": "William & Mary",
+      "venueId": "island-federal-arena",
+      "attendance": 2031,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-01-09",
+      "start": null,
+      "opponent": "Drexel",
+      "venueId": "island-federal-arena",
+      "attendance": 1636,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-01-11",
+      "start": null,
+      "opponent": "Northeastern",
+      "venueId": "island-federal-arena",
+      "attendance": 2367,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-01-23",
+      "start": null,
+      "opponent": "Campbell",
+      "venueId": "island-federal-arena",
+      "attendance": 1702,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-01-25",
+      "start": null,
+      "opponent": "N.C. A&T",
+      "venueId": "island-federal-arena",
+      "attendance": 2804,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-02-06",
+      "start": null,
+      "opponent": "Towson",
+      "venueId": "island-federal-arena",
+      "attendance": 1526,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-02-13",
+      "start": null,
+      "opponent": "Monmouth",
+      "venueId": "island-federal-arena",
+      "attendance": 1428,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-02-27",
+      "start": null,
+      "opponent": "Hofstra",
+      "venueId": "island-federal-arena",
+      "attendance": 2286,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2025,
+      "date": "2025-03-01",
+      "start": null,
+      "opponent": "Elon",
+      "venueId": "island-federal-arena",
+      "attendance": 2926,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "stony-brook-mbb",
       "season": 2026,
@@ -199,6 +364,17 @@
       "opponent": "SUNY Potsdam",
       "venueId": "island-federal-arena",
       "attendance": 893,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "stony-brook-mbb",
+      "season": 2027,
+      "date": "2026-11-25",
+      "start": null,
+      "opponent": "Lindenwood",
+      "venueId": "island-federal-arena",
+      "attendance": 1309,
       "kind": "announced",
       "sourceId": "sidearm"
     }

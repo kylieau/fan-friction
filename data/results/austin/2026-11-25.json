@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "austin",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-texas-state-wbb-401917721",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "strahan-arena",
+      "homeTeamId": "texas-state-wbb",
+      "home": {
+        "name": "Texas St",
+        "score": 75
+      },
+      "away": {
+        "name": "Pacific",
+        "score": 63
+      },
+      "attendance": 742,
+      "capturedAt": "2026-11-26T18:23:49.420Z",
+      "duration": {
+        "minutes": 116,
+        "kind": "estimated"
+      },
+      "startedAt": "19:03"
+    },
+    {
+      "eventId": "2026-11-25-espn-texas-wbb-401918845",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "moody-center",
+      "homeTeamId": "texas-wbb",
+      "home": {
+        "name": "Texas Longhorns",
+        "score": 96
+      },
+      "away": {
+        "name": "SE Louisiana",
+        "score": 45
+      },
+      "attendance": 9496,
+      "capturedAt": "2026-11-26T18:23:49.420Z",
+      "duration": {
+        "minutes": 120,
+        "kind": "estimated"
+      },
+      "startedAt": "19:02"
+    },
+    {
+      "eventId": "2026-11-25-ht-texas-stars-1029384",
+      "metroId": "austin",
+      "date": "2026-11-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "heb-center-cedar-park",
+      "homeTeamId": "texas-stars",
+      "home": {
+        "name": "Stars",
+        "score": 1
+      },
+      "away": {
+        "name": "Roadrunners",
+        "score": 3
+      },
+      "attendance": 6076,
+      "capturedAt": "2026-11-26T18:23:49.420Z"
+    }
+  ]
+}

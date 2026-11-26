@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "metroId": "seattle",
+  "date": "2026-11-25",
+  "results": [
+    {
+      "eventId": "2026-11-25-espn-kraken-401892794",
+      "metroId": "seattle",
+      "date": "2026-11-25",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "climate-pledge-arena",
+      "homeTeamId": "kraken",
+      "home": {
+        "name": "Kraken",
+        "score": 1
+      },
+      "away": {
+        "name": "Blackhawks",
+        "score": 3
+      },
+      "attendance": 17151,
+      "capturedAt": "2026-11-26T18:23:43.688Z",
+      "duration": {
+        "minutes": 153,
+        "kind": "estimated"
+      },
+      "startedAt": "21:48"
+    },
+    {
+      "eventId": "2026-11-25-ht-everett-silvertips-1023339",
+      "metroId": "seattle",
+      "date": "2026-11-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "angel-of-the-winds-arena",
+      "homeTeamId": "everett-silvertips",
+      "home": {
+        "name": "Silvertips",
+        "score": 2
+      },
+      "away": {
+        "name": "Giants",
+        "score": 5
+      },
+      "attendance": 5993,
+      "capturedAt": "2026-11-26T18:23:43.690Z"
+    },
+    {
+      "eventId": "2026-11-25-ht-seattle-thunderbirds-1023342",
+      "metroId": "seattle",
+      "date": "2026-11-25",
+      "sourceId": "hockeytech",
+      "status": "final",
+      "venueId": "accesso-showare-center",
+      "homeTeamId": "seattle-thunderbirds",
+      "home": {
+        "name": "Thunderbirds",
+        "score": 5
+      },
+      "away": {
+        "name": "Americans",
+        "score": 3
+      },
+      "attendance": 6059,
+      "capturedAt": "2026-11-26T18:23:43.690Z"
+    }
+  ]
+}
