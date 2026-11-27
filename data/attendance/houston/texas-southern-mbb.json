@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "houston",
   "teamId": "texas-southern-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "texas-southern-mbb",
@@ -12,6 +12,17 @@
       "opponent": "Biblical Studies (Houston)",
       "venueId": "hpe-arena",
       "attendance": 770,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "texas-southern-mbb",
+      "season": 2024,
+      "date": "2024-01-15",
+      "start": null,
+      "opponent": "Mississippi Valley State",
+      "venueId": "hpe-arena",
+      "attendance": 790,
       "kind": "announced",
       "sourceId": "sidearm"
     }

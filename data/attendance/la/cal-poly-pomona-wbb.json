@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-poly-pomona-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Southern Ore.",
+      "venueId": "kellogg-arena",
+      "attendance": 80,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2026,
+      "date": "2025-11-25",
+      "start": null,
+      "opponent": "Biola",
+      "venueId": "kellogg-arena",
+      "attendance": 90,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2026,
+      "date": "2025-12-04",
+      "start": null,
+      "opponent": "Cal State LA",
+      "venueId": "kellogg-arena",
+      "attendance": 120,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2026,
+      "date": "2025-12-06",
+      "start": null,
+      "opponent": "Cal St. Dom. Hills",
+      "venueId": "kellogg-arena",
+      "attendance": 130,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2026,
+      "date": "2025-12-13",
+      "start": null,
+      "opponent": "Central Wash.",
+      "venueId": "kellogg-arena",
+      "attendance": 150,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-wbb",
+      "season": 2027,
+      "date": "2026-11-25",
+      "start": null,
+      "opponent": "CUI",
+      "venueId": "kellogg-arena",
+      "attendance": 100,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

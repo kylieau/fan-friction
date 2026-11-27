@@ -63,6 +63,18 @@
       "code": 3,
       "precipProbability": 8,
       "precipMm": 0
+    },
+    {
+      "metroId": "edmonton",
+      "venueId": "city",
+      "date": "2026-12-07",
+      "basis": "forecast",
+      "capturedAt": "2026-11-27T17:58:41.616Z",
+      "feelsLikeHighF": 21.1,
+      "feelsLikeLowF": 15.9,
+      "code": 3,
+      "precipProbability": 6,
+      "precipMm": 0
     }
   ]
 }

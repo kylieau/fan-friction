@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "cal-state-la-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "cal-state-la-mbb",
@@ -34,6 +34,105 @@
       "opponent": "Cal Poly Pomona",
       "venueId": "cal-state-la-university-gym",
       "attendance": 119,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "Cal St. San B'dino",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 165,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-01-18",
+      "start": null,
+      "opponent": "Chico St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Cal Poly Humboldt",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 213,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-02-08",
+      "start": null,
+      "opponent": "San Fran. St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 423,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-02-10",
+      "start": null,
+      "opponent": "Cal St. East Bay",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 312,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-02-15",
+      "start": null,
+      "opponent": "Sonoma St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 377,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-02-17",
+      "start": null,
+      "opponent": "Cal St. San Marcos",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 214,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-02-29",
+      "start": null,
+      "opponent": "Cal St. Dom. Hills",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 1207,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-mbb",
+      "season": 2024,
+      "date": "2024-03-15",
+      "start": null,
+      "opponent": "Azusa Pacific",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 598,
       "kind": "announced",
       "sourceId": "sidearm"
     },

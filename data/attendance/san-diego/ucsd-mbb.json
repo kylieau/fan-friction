@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "san-diego",
   "teamId": "ucsd-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "ucsd-mbb",
@@ -67,6 +67,105 @@
       "opponent": "Occidental",
       "venueId": "liontree-arena",
       "attendance": 1172,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-01-09",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "liontree-arena",
+      "attendance": 1522,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-01-11",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "liontree-arena",
+      "attendance": 4000,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-01-23",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "liontree-arena",
+      "attendance": 3442,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-01-25",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "liontree-arena",
+      "attendance": 1584,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-02-06",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "liontree-arena",
+      "attendance": 1754,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-02-15",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "liontree-arena",
+      "attendance": 2003,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-02-22",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "liontree-arena",
+      "attendance": 3084,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-03-01",
+      "start": null,
+      "opponent": "Cal St. Fullerton",
+      "venueId": "liontree-arena",
+      "attendance": 2019,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "ucsd-mbb",
+      "season": 2025,
+      "date": "2025-03-06",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "liontree-arena",
+      "attendance": 2987,
       "kind": "announced",
       "sourceId": "sidearm"
     },

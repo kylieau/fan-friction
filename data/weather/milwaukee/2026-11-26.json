@@ -207,6 +207,17 @@
       "code": 3,
       "precipProbability": 30,
       "precipMm": 0
+    },
+    {
+      "metroId": "milwaukee",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "observed",
+      "capturedAt": "2026-11-27T17:54:07.752Z",
+      "feelsLikeHighF": 36.2,
+      "feelsLikeLowF": 29,
+      "code": 51,
+      "precipMm": 0.4
     }
   ]
 }

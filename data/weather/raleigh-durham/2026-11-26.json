@@ -207,6 +207,17 @@
       "code": 63,
       "precipProbability": 100,
       "precipMm": 21.3
+    },
+    {
+      "metroId": "raleigh-durham",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "observed",
+      "capturedAt": "2026-11-27T17:59:19.928Z",
+      "feelsLikeHighF": 58.2,
+      "feelsLikeLowF": 41.9,
+      "code": 63,
+      "precipMm": 21.3
     }
   ]
 }

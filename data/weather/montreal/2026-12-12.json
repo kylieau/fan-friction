@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "metroId": "montreal",
+  "date": "2026-12-12",
+  "rows": [],
+  "days": [
+    {
+      "metroId": "montreal",
+      "venueId": "city",
+      "date": "2026-12-12",
+      "basis": "forecast",
+      "capturedAt": "2026-11-27T17:54:03.782Z",
+      "feelsLikeHighF": 27.1,
+      "feelsLikeLowF": 18.9,
+      "code": 75,
+      "precipProbability": 25,
+      "precipMm": 30.5
+    }
+  ]
+}

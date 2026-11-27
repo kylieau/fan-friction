@@ -200,6 +200,24 @@
       "shortwave": 0,
       "cloudCover": 99,
       "code": 3
+    },
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-12-01",
+      "hour": 19,
+      "basis": "forecast",
+      "capturedAt": "2026-11-27T17:54:59.384Z",
+      "feelsLikeF": 35.2,
+      "tempF": 41.1,
+      "humidity": 51,
+      "windMph": 2.5,
+      "uvIndex": 0,
+      "precipProbability": 0,
+      "precipMm": 0,
+      "shortwave": 0,
+      "cloudCover": 100,
+      "code": 3
     }
   ],
   "days": [
@@ -345,6 +363,18 @@
       "feelsLikeLowF": 25.6,
       "code": 3,
       "precipProbability": 2,
+      "precipMm": 0
+    },
+    {
+      "metroId": "pittsburgh",
+      "venueId": "city",
+      "date": "2026-12-01",
+      "basis": "forecast",
+      "capturedAt": "2026-11-27T17:54:59.384Z",
+      "feelsLikeHighF": 37.6,
+      "feelsLikeLowF": 27.9,
+      "code": 3,
+      "precipProbability": 0,
       "precipMm": 0
     }
   ]

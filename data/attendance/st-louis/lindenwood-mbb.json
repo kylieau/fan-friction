@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "st-louis",
   "teamId": "lindenwood-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "lindenwood-mbb",
@@ -12,6 +12,149 @@
       "opponent": "Hannibal-La Grange",
       "venueId": "hyland-performance-arena",
       "attendance": 957,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2023-11-27",
+      "start": null,
+      "opponent": "Utah Tech",
+      "venueId": "hyland-performance-arena",
+      "attendance": 747,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2023-12-09",
+      "start": null,
+      "opponent": "Kansas City",
+      "venueId": "hyland-performance-arena",
+      "attendance": 678,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2023-12-12",
+      "start": null,
+      "opponent": "Avila",
+      "venueId": "hyland-performance-arena",
+      "attendance": 328,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2023-12-22",
+      "start": null,
+      "opponent": "Rockford",
+      "venueId": "hyland-performance-arena",
+      "attendance": 524,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2023-12-31",
+      "start": null,
+      "opponent": "Southern Ind.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 2158,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-01-18",
+      "start": null,
+      "opponent": "SIUE",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1856,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Eastern Ill.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1261,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-01-30",
+      "start": null,
+      "opponent": "Southeast Mo. St.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1986,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-02-01",
+      "start": null,
+      "opponent": "Western Ill.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1069,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-02-08",
+      "start": null,
+      "opponent": "Tennessee St.",
+      "venueId": "hyland-performance-arena",
+      "attendance": 2002,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-02-10",
+      "start": null,
+      "opponent": "Tennessee Tech",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1165,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-02-22",
+      "start": null,
+      "opponent": "UT Martin",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1019,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "lindenwood-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Little Rock",
+      "venueId": "hyland-performance-arena",
+      "attendance": 1113,
       "kind": "announced",
       "sourceId": "sidearm"
     },

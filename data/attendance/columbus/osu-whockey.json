@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "columbus",
   "teamId": "osu-whockey",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "osu-whockey",
@@ -199,6 +199,17 @@
       "opponent": "Bemidji St.",
       "venueId": "ohio-state-ice-rink",
       "attendance": 714,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "osu-whockey",
+      "season": 2024,
+      "date": "2024-03-16",
+      "start": null,
+      "opponent": "Minn. Duluth",
+      "venueId": "ohio-state-ice-rink",
+      "attendance": 795,
       "kind": "announced",
       "sourceId": "sidearm"
     },

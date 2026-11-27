@@ -1,0 +1,373 @@
+{
+  "schema": 1,
+  "metroId": "ottawa-gatineau",
+  "metroName": "Ottawa–Gatineau",
+  "timeZone": "America/Toronto",
+  "capturedOn": "2026-11-27",
+  "capturedAt": "2026-11-27T18:06:13.438Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-27",
+    "through": "2026-12-11"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 4
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 1
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 8
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 0
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-27-tm-177Zv0G625X6i4r",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-11-27",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Kingston Frontenacs vs. Peterborough Petes",
+      "place": {
+        "type": "venue",
+        "venueId": "slush-puppie-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kingston Frontenacs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G625X6i4r",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-03-espn-ottawa-senators-401892844",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Devils",
+      "broadcast": "MSGSN",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "devils",
+        "awayOpponent": "devils"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16197,
+        "low": 15910,
+        "high": 16745,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-177Zv0G625XFH4n",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-04",
+      "start": "19:05",
+      "kind": "game",
+      "title": "Kingston Frontenacs vs. Flint Firebirds",
+      "place": {
+        "type": "venue",
+        "venueId": "slush-puppie-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kingston Frontenacs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G625XFH4n",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-espn-ottawa-senators-401892864",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Lightning",
+      "broadcast": "The Spot - MTN",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "lightning",
+        "awayOpponent": "lightning"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 17279,
+        "low": 16517,
+        "high": 18069,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-ht-ottawa-charge-368",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Charge vs. Sceptres",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-charge",
+        "away": "sceptres"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech"
+    },
+    {
+      "id": "2026-12-06-tm-177Zv0G625XaH4s",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-06",
+      "start": "14:05",
+      "kind": "game",
+      "title": "Kingston Frontenacs vs. Barrie Colts",
+      "place": {
+        "type": "venue",
+        "venueId": "slush-puppie-place"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "performer": "Kingston Frontenacs",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "177Zv0G625XaH4s",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-08-espn-ottawa-senators-401892882",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Ducks",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "ducks",
+        "awayOpponent": "ducks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16410,
+        "low": 16119,
+        "high": 16966,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-10-espn-ottawa-senators-401892896",
+      "metroId": "ottawa-gatineau",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Senators vs. Golden Knights",
+      "place": {
+        "type": "venue",
+        "venueId": "canadian-tire-centre"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "ottawa-senators",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16443,
+        "low": 16151,
+        "high": 17000,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-27-tm-177Zv0G625X6i4r",
+      "date": "2026-11-27",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-12-03-espn-ottawa-senators-401892844",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "read": {
+        "rating": 2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16197,
+        "low": 15910,
+        "high": 16745
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-177Zv0G625XFH4n",
+      "date": "2026-12-04",
+      "start": "19:05"
+    },
+    {
+      "eventId": "2026-12-05-espn-ottawa-senators-401892864",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 17279,
+        "low": 16517,
+        "high": 18069
+      }
+    },
+    {
+      "eventId": "2026-12-06-ht-ottawa-charge-368",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-177Zv0G625XaH4s",
+      "date": "2026-12-06",
+      "start": "14:05"
+    },
+    {
+      "eventId": "2026-12-08-espn-ottawa-senators-401892882",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16410,
+        "low": 16119,
+        "high": 16966
+      }
+    },
+    {
+      "eventId": "2026-12-10-espn-ottawa-senators-401892896",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "read": {
+        "rating": 2.2,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16443,
+        "low": 16151,
+        "high": 17000
+      }
+    }
+  ]
+}

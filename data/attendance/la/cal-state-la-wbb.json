@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-state-la-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2026,
+      "date": "2025-12-15",
+      "start": null,
+      "opponent": "Central Wash.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 108,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2026,
+      "date": "2025-12-19",
+      "start": null,
+      "opponent": "San Fran. St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 67,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2026,
+      "date": "2025-12-21",
+      "start": null,
+      "opponent": "Cal St. East Bay",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 125,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2026,
+      "date": "2026-01-08",
+      "start": null,
+      "opponent": "Stanislaus St.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 86,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Seattle Pacific",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 220,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2027,
+      "date": "2026-11-14",
+      "start": null,
+      "opponent": "Western Wash.",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 133,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-la-wbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "Point Loma",
+      "venueId": "cal-state-la-university-gym",
+      "attendance": 113,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

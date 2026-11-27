@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "cal-poly-pomona-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "cal-poly-pomona-mbb",
@@ -67,6 +67,50 @@
       "opponent": "Cal St. Dom. Hills",
       "venueId": "kellogg-arena",
       "attendance": 300,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2024,
+      "date": "2024-01-27",
+      "start": null,
+      "opponent": "Cal State LA",
+      "venueId": "kellogg-arena",
+      "attendance": 490,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2024,
+      "date": "2024-02-08",
+      "start": null,
+      "opponent": "Chico St.",
+      "venueId": "kellogg-arena",
+      "attendance": 209,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2024,
+      "date": "2024-02-10",
+      "start": null,
+      "opponent": "Cal Poly Humboldt",
+      "venueId": "kellogg-arena",
+      "attendance": 240,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-poly-pomona-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Stanislaus St.",
+      "venueId": "kellogg-arena",
+      "attendance": 250,
       "kind": "announced",
       "sourceId": "sidearm"
     },

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "indianapolis",
   "teamId": "uindy-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "uindy-mbb",
@@ -23,6 +23,149 @@
       "opponent": "Lake Superior St.",
       "venueId": "nicoson-hall",
       "attendance": 143,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2023-11-22",
+      "start": null,
+      "opponent": "Thomas More",
+      "venueId": "nicoson-hall",
+      "attendance": 157,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2023-11-30",
+      "start": null,
+      "opponent": "Southwest Baptist",
+      "venueId": "nicoson-hall",
+      "attendance": 380,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2023-12-02",
+      "start": null,
+      "opponent": "Drury",
+      "venueId": "nicoson-hall",
+      "attendance": 305,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2023-12-09",
+      "start": null,
+      "opponent": "Lewis",
+      "venueId": "nicoson-hall",
+      "attendance": 537,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "Maryville (MO)",
+      "venueId": "nicoson-hall",
+      "attendance": 285,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-01-18",
+      "start": null,
+      "opponent": "Mo.-St. Louis",
+      "venueId": "nicoson-hall",
+      "attendance": 257,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "McKendree",
+      "venueId": "nicoson-hall",
+      "attendance": 1025,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-02-08",
+      "start": null,
+      "opponent": "Upper Iowa",
+      "venueId": "nicoson-hall",
+      "attendance": 575,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-02-10",
+      "start": null,
+      "opponent": "Truman St.",
+      "venueId": "nicoson-hall",
+      "attendance": 437,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-02-22",
+      "start": null,
+      "opponent": "William Jewell",
+      "venueId": "nicoson-hall",
+      "attendance": 522,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "Rockhurst",
+      "venueId": "nicoson-hall",
+      "attendance": 455,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-03-16",
+      "start": null,
+      "opponent": "William Jewell",
+      "venueId": "nicoson-hall",
+      "attendance": 823,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uindy-mbb",
+      "season": 2024,
+      "date": "2024-03-17",
+      "start": null,
+      "opponent": "Ferris St.",
+      "venueId": "nicoson-hall",
+      "attendance": 578,
       "kind": "announced",
       "sourceId": "sidearm"
     },

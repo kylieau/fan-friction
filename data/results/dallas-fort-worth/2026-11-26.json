@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "metroId": "dallas-fort-worth",
+  "date": "2026-11-26",
+  "results": [
+    {
+      "eventId": "2026-11-26-espn-cowboys-401873080",
+      "metroId": "dallas-fort-worth",
+      "date": "2026-11-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "att-stadium",
+      "homeTeamId": "cowboys",
+      "home": {
+        "name": "Cowboys",
+        "score": 38
+      },
+      "away": {
+        "name": "Eagles",
+        "score": 39
+      },
+      "attendance": 93417,
+      "capturedAt": "2026-11-27T18:07:16.541Z",
+      "duration": {
+        "minutes": 226,
+        "kind": "estimated"
+      },
+      "startedAt": "16:46"
+    }
+  ]
+}

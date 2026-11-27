@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "indianapolis",
+  "teamId": "uindy-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "uindy-wbb",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "Lake Superior St.",
+      "venueId": "nicoson-hall",
+      "attendance": 162,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-state-fullerton-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "cal-state-fullerton-wbb",
+      "season": 2027,
+      "date": "2026-11-04",
+      "start": null,
+      "opponent": "Hope Int'l",
+      "venueId": "titan-gym",
+      "attendance": 206,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-wbb",
+      "season": 2027,
+      "date": "2026-11-07",
+      "start": null,
+      "opponent": "Westcliff",
+      "venueId": "titan-gym",
+      "attendance": 179,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-wbb",
+      "season": 2027,
+      "date": "2026-11-15",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "titan-gym",
+      "attendance": 230,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-wbb",
+      "season": 2027,
+      "date": "2026-11-19",
+      "start": null,
+      "opponent": "Weber St.",
+      "venueId": "titan-gym",
+      "attendance": 177,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

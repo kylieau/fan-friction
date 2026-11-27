@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "metroId": "detroit",
+  "date": "2026-11-26",
+  "results": [
+    {
+      "eventId": "2026-11-26-espn-lions-401873081",
+      "metroId": "detroit",
+      "date": "2026-11-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "ford-field",
+      "homeTeamId": "lions",
+      "home": {
+        "name": "Lions",
+        "score": 35
+      },
+      "away": {
+        "name": "Bears",
+        "score": 39
+      },
+      "attendance": 64316,
+      "capturedAt": "2026-11-27T18:07:16.878Z",
+      "duration": {
+        "minutes": 209,
+        "kind": "estimated"
+      },
+      "startedAt": "13:02"
+    },
+    {
+      "eventId": "2026-11-26-espn-michigan-mbb-401920537",
+      "metroId": "detroit",
+      "date": "2026-11-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "t-mobile-arena",
+      "homeTeamId": "michigan-mbb",
+      "home": {
+        "name": "Michigan Wolverines",
+        "score": 70
+      },
+      "away": {
+        "name": "Miami",
+        "score": 97
+      },
+      "capturedAt": "2026-11-27T18:07:16.878Z",
+      "duration": {
+        "minutes": 128,
+        "kind": "estimated"
+      },
+      "startedAt": "15:35"
+    }
+  ]
+}

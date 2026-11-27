@@ -2,8 +2,96 @@
   "schema": 1,
   "metroId": "san-antonio",
   "teamId": "uiw-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2023-11-14",
+      "start": null,
+      "opponent": "Schreiner",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 201,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2023-11-22",
+      "start": null,
+      "opponent": "Jacksonville St.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 86,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2023-12-09",
+      "start": null,
+      "opponent": "Northern Ariz.",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 58,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "A&M-Corpus Christi",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 218,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "McNeese",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 376,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2024-01-22",
+      "start": null,
+      "opponent": "Nicholls",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 135,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2024-01-27",
+      "start": null,
+      "opponent": "Houston Christian",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 199,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2024,
+      "date": "2024-02-12",
+      "start": null,
+      "opponent": "Lamar University",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 204,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "uiw-mbb",
       "season": 2025,
@@ -155,6 +243,17 @@
       "opponent": "SFA",
       "venueId": "mcdermott-convocation-center",
       "attendance": 271,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "uiw-mbb",
+      "season": 2025,
+      "date": "2025-02-24",
+      "start": null,
+      "opponent": "Lamar University",
+      "venueId": "mcdermott-convocation-center",
+      "attendance": 347,
       "kind": "announced",
       "sourceId": "sidearm"
     },

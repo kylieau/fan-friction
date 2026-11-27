@@ -5,8 +5,33 @@
       "site": "https://athletics.apu.edu",
       "seasons": {
         "2026-27": {
-          "boxes": {},
-          "readOn": "2026-11-26"
+          "boxes": {
+            "21514": "kept",
+            "21515": "kept",
+            "21516": "kept",
+            "21517": {
+              "status": "no-room",
+              "places": [
+                "Murchison Gymnasium, Montecito, CA"
+              ],
+              "date": "2026-11-20",
+              "opponent": "Western Ore.",
+              "attendance": 45,
+              "flagsKnown": false
+            },
+            "21518": "kept",
+            "21536": {
+              "status": "no-room",
+              "places": [
+                "Murchison Gymnasium, Montecito, CA"
+              ],
+              "date": "2026-11-21",
+              "opponent": "Simon Fraser",
+              "attendance": 103,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -69,6 +94,17 @@
         },
         "2023-24": {
           "boxes": {
+            "19512": "kept",
+            "19515": "kept",
+            "19517": "kept",
+            "19518": "kept",
+            "19519": "kept",
+            "19520": "kept",
+            "19521": "kept",
+            "19525": "kept",
+            "19526": "kept",
+            "19530": "kept",
+            "19531": "kept",
             "19759": {
               "status": "no-room",
               "places": [],
@@ -86,10 +122,25 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
+    },
+    "azusa-pacific-wbb": {
+      "site": "https://athletics.apu.edu",
+      "seasons": {
+        "2026-27": {
+          "boxes": {},
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {},
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "bc-mhockey": {
       "site": "https://bceagles.com",
@@ -161,7 +212,7 @@
             "27018": "kept",
             "27020": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -209,15 +260,15 @@
             "27133": "kept",
             "27134": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "27135": "kept",
             "27136": "kept",
             "27137": "kept",
             "27139": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -229,9 +280,57 @@
             "26494": "kept",
             "26495": "kept",
             "26497": "kept",
-            "26499": "neutral"
+            "26499": "neutral",
+            "26501": "kept",
+            "26506": "kept",
+            "26507": "kept",
+            "26508": "kept",
+            "26511": "kept",
+            "26513": "kept",
+            "26514": "kept",
+            "26801": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "25704": "kept",
+            "25705": "kept",
+            "25707": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "25709": "kept",
+            "25710": "kept",
+            "25711": "kept",
+            "25716": "kept",
+            "25717": "kept",
+            "25720": "kept",
+            "25722": "kept",
+            "25723": "kept",
+            "25724": "kept",
+            "25726": "kept",
+            "25727": "kept",
+            "25730": "kept",
+            "25734": "kept",
+            "25736": "kept",
+            "26113": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "24953": "kept",
+            "24956": "kept",
+            "24957": "kept",
+            "24959": "kept",
+            "24960": "kept",
+            "24963": "kept",
+            "24964": "neutral"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-ice-hockey",
@@ -261,13 +360,14 @@
             "31329": "kept",
             "31331": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "31333": "kept",
             "31334": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2026-27": {
           "boxes": {
@@ -276,7 +376,7 @@
             "33299": "kept",
             "33300": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -304,8 +404,8 @@
           "boxes": {
             "32076": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "32079": "kept",
             "32080": "kept",
@@ -313,8 +413,8 @@
             "32084": "kept",
             "32085": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "32090": "kept",
             "32092": "kept",
@@ -327,7 +427,8 @@
             "32107": "kept",
             "32218": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
@@ -344,7 +445,7 @@
             "33114": "kept",
             "33116": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -379,9 +480,45 @@
             "31874": "kept",
             "31876": "kept",
             "31877": "kept",
-            "31882": "kept"
+            "31882": "kept",
+            "31883": "kept",
+            "31888": "kept",
+            "31889": "kept",
+            "31891": "kept",
+            "31892": "kept",
+            "31893": "kept",
+            "31898": "kept",
+            "31899": "kept",
+            "31902": "kept",
+            "31906": "neutral",
+            "32463": "kept",
+            "32473": "neutral",
+            "32476": "neutral",
+            "32478": "neutral",
+            "32479": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "31091": "kept",
+            "31093": "kept",
+            "31094": "kept",
+            "31096": "kept",
+            "31097": "kept",
+            "31098": "kept",
+            "31099": "kept",
+            "31100": "neutral",
+            "31102": "kept",
+            "31104": "kept",
+            "31106": "kept",
+            "31110": "kept",
+            "31113": "neutral",
+            "31114": "kept",
+            "31116": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-ice-hockey",
@@ -400,7 +537,7 @@
             "15636": "kept",
             "15720": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -459,9 +596,37 @@
             "14899": "kept",
             "14901": "kept",
             "14902": "kept",
-            "14905": "kept"
+            "14905": "kept",
+            "14906": "kept",
+            "14909": "kept",
+            "14910": "kept",
+            "15073": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "14266": "kept",
+            "14267": "kept",
+            "14268": "kept",
+            "14270": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "14271": "kept",
+            "14273": "kept",
+            "14274": "kept",
+            "14275": "kept",
+            "14304": "kept",
+            "14305": "kept",
+            "14307": "kept",
+            "14309": "kept",
+            "14312": "kept",
+            "14313": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -478,7 +643,7 @@
             "17355": "neutral",
             "17356": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -532,8 +697,8 @@
             "15497": "kept",
             "15498": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "15499": "kept",
             "15502": "kept",
@@ -551,7 +716,7 @@
             "15679": "kept",
             "15680": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -563,7 +728,7 @@
           "boxes": {
             "17245": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -575,9 +740,52 @@
             "16654": "kept",
             "16748": "kept",
             "16749": "kept",
-            "16750": "kept"
+            "16750": "kept",
+            "16753": "kept",
+            "16756": "kept",
+            "16759": "kept",
+            "16760": "kept",
+            "16761": "kept",
+            "16765": "kept",
+            "16810": "neutral",
+            "17091": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "16135": "kept",
+            "16136": "kept",
+            "16137": "kept",
+            "16139": "kept",
+            "16143": "kept",
+            "16145": "kept",
+            "16146": "kept",
+            "16147": "kept",
+            "16186": "kept",
+            "16189": "kept",
+            "16191": "kept",
+            "16194": "neutral",
+            "16198": "kept",
+            "16199": "kept",
+            "16200": "kept"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "15515": "kept",
+            "15516": "kept",
+            "15519": "kept",
+            "15520": "kept",
+            "15686": "kept",
+            "15687": "kept",
+            "15688": "kept",
+            "15690": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -589,7 +797,7 @@
           "boxes": {
             "12390": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -665,12 +873,55 @@
         "2023-24": {
           "boxes": {
             "10444": "kept",
-            "10448": "kept"
+            "10448": "kept",
+            "10456": "kept",
+            "10457": "kept",
+            "10458": "kept",
+            "10459": "kept",
+            "10460": "kept",
+            "10461": "kept",
+            "10465": "kept",
+            "10466": "kept",
+            "10468": "kept",
+            "10469": "kept",
+            "10472": "kept",
+            "10473": "kept",
+            "11015": "kept",
+            "11017": "kept",
+            "11018": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
+    },
+    "cal-lutheran-wbb": {
+      "site": "https://clusports.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "12439": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "11823": {
+              "status": "no-room",
+              "places": [
+                "Ainsworth Gymnasium, Northampton, MA"
+              ],
+              "date": "2025-11-08",
+              "opponent": "Hartford",
+              "attendance": 100,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "cal-poly-pomona-mbb": {
       "site": "https://broncoathletics.com",
@@ -690,7 +941,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -735,31 +986,95 @@
             "5395": "kept",
             "5396": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "5459": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
             "4889": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "4892": "kept",
             "4895": "kept",
             "4896": "kept",
             "4900": "kept",
             "4901": "kept",
-            "4904": "kept"
+            "4904": "kept",
+            "4905": "kept",
+            "4908": "kept",
+            "4909": "kept",
+            "4912": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "4913": "kept",
+            "4914": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
+    },
+    "cal-poly-pomona-wbb": {
+      "site": "https://broncoathletics.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "10569": "kept",
+            "10577": {
+              "status": "no-room",
+              "places": [],
+              "date": "2026-11-13",
+              "opponent": "Saint Martin's",
+              "attendance": 136,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "9586": {
+              "status": "no-room",
+              "places": [
+                "The Sports Center, San Marcos, CA"
+              ],
+              "date": "2025-11-14",
+              "opponent": "Point Loma",
+              "attendance": 127,
+              "flagsKnown": false
+            },
+            "9587": {
+              "status": "no-room",
+              "places": [
+                "The Sports Center, San Marcos, CA"
+              ],
+              "date": "2025-11-15",
+              "opponent": "Azusa Pacific",
+              "attendance": 81,
+              "flagsKnown": false
+            },
+            "9588": "kept",
+            "9589": "kept",
+            "9591": "kept",
+            "9592": "kept",
+            "9593": "kept"
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "cal-state-fullerton-mbb": {
       "site": "https://fullertontitans.com",
@@ -768,7 +1083,7 @@
           "boxes": {
             "7922": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -823,8 +1138,8 @@
             "7076": "kept",
             "7079": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "7080": "kept",
             "7083": "kept",
@@ -832,7 +1147,7 @@
             "7087": "kept",
             "7090": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -847,12 +1162,44 @@
               "attendance": 311,
               "flagsKnown": false
             },
-            "6108": "kept"
+            "6108": "kept",
+            "6109": "kept",
+            "6113": "kept",
+            "6114": "kept",
+            "6117": "kept",
+            "6119": "kept",
+            "6122": "kept",
+            "6123": "kept",
+            "6126": "kept",
+            "6128": "kept",
+            "6129": "kept",
+            "6131": "kept",
+            "6133": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
+    },
+    "cal-state-fullerton-wbb": {
+      "site": "https://fullertontitans.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "7999": "kept",
+            "8000": "kept",
+            "8002": "kept",
+            "8003": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {},
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "cal-state-la-mbb": {
       "site": "https://lagoldeneagles.com",
@@ -863,7 +1210,7 @@
             "6483": "kept",
             "6484": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -919,17 +1266,54 @@
             },
             "5407": "kept",
             "5408": "kept",
-            "5411": "kept"
+            "5411": "kept",
+            "5412": "kept",
+            "5415": "kept",
+            "5416": "kept",
+            "5421": "kept",
+            "5422": "kept",
+            "5423": "kept",
+            "5424": "kept",
+            "5427": "kept",
+            "5428": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "5431": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
     },
+    "cal-state-la-wbb": {
+      "site": "https://lagoldeneagles.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "6546": "kept",
+            "6548": "kept",
+            "6549": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "6170": "kept",
+            "6171": "kept",
+            "6174": "kept",
+            "6206": "kept"
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
+    },
     "chicago-state-wbb": {
       "site": "https://gocsucougars.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "columbia-mbb": {
       "site": "https://gocolumbialions.com",
@@ -941,7 +1325,7 @@
             "15489": "kept",
             "15493": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1018,7 +1402,7 @@
             "15596": "kept",
             "15598": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1043,7 +1427,48 @@
           "done": true
         },
         "2024-25": {
-          "boxes": {}
+          "boxes": {
+            "14045": "kept",
+            "14047": "kept",
+            "14049": "kept",
+            "14053": "neutral",
+            "14055": "kept",
+            "14063": "kept",
+            "14064": "kept",
+            "14068": "kept",
+            "14069": "kept",
+            "14071": "kept",
+            "14072": "kept",
+            "14073": "kept",
+            "14074": "neutral",
+            "14075": "neutral",
+            "14406": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "13163": "neutral",
+            "13367": "kept",
+            "13368": "kept",
+            "13369": "kept",
+            "13370": "kept",
+            "13371": "kept",
+            "13372": "kept",
+            "13373": "kept",
+            "13374": "kept",
+            "13377": "kept",
+            "13378": "kept",
+            "13379": "kept",
+            "13382": "kept",
+            "13383": "kept",
+            "13384": "kept",
+            "13387": "kept",
+            "13391": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-basketball"
@@ -1056,7 +1481,7 @@
             "17629": "kept",
             "17661": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1144,7 +1569,7 @@
             "17604": "kept",
             "17607": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1168,8 +1593,46 @@
           "done": true
         },
         "2024-25": {
-          "boxes": {},
-          "readOn": "2026-11-26"
+          "boxes": {
+            "16654": "kept",
+            "16657": "kept",
+            "16658": "kept",
+            "16660": "kept",
+            "16663": "kept",
+            "16664": "kept",
+            "16666": "kept",
+            "16667": "kept",
+            "16670": "kept",
+            "16671": "kept",
+            "16673": "kept",
+            "16674": "kept",
+            "16676": "kept",
+            "16681": "kept"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "16054": "kept",
+            "16055": "kept",
+            "16057": "kept",
+            "16061": "kept",
+            "16062": "kept",
+            "16063": "kept",
+            "16064": "kept",
+            "16065": "kept",
+            "16067": "kept",
+            "16070": "kept",
+            "16072": "kept",
+            "16073": "kept",
+            "16076": "kept",
+            "16077": "kept",
+            "16080": "kept",
+            "16083": "kept"
+          },
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-basketball"
@@ -1177,12 +1640,12 @@
     "delaware-football": {
       "site": "https://bluehens.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "delaware-whockey": {
       "site": "https://bluehens.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "detroit-mercy-wbb": {
       "site": "https://detroittitans.com",
@@ -1194,7 +1657,7 @@
             "6776": "kept",
             "6777": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1250,7 +1713,23 @@
           "done": true
         },
         "2023-24": {
-          "boxes": {}
+          "boxes": {
+            "5875": "kept",
+            "5884": "kept",
+            "5910": "kept",
+            "5912": "kept",
+            "5914": "kept",
+            "5917": "kept",
+            "5918": "kept",
+            "5920": "kept",
+            "5923": "kept",
+            "5924": "kept",
+            "5928": "kept",
+            "5929": "kept",
+            "5930": "kept"
+          },
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-basketball"
@@ -1264,7 +1743,7 @@
             "12646": "kept",
             "12647": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1368,7 +1847,7 @@
               "attendance": 579
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1497,9 +1976,287 @@
               "date": "2026-03-01",
               "opponent": "N.C. A&T",
               "attendance": 843
+            },
+            "11097": "neutral",
+            "11305": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "10649": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-11-07",
+              "opponent": "Marist",
+              "attendance": 728
+            },
+            "10650": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-11-13",
+              "opponent": "La Salle",
+              "attendance": 652
+            },
+            "10651": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-11-20",
+              "opponent": "UC Irvine",
+              "attendance": 430
+            },
+            "10654": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-12-04",
+              "opponent": "Lehigh",
+              "attendance": 359
+            },
+            "10658": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-12-29",
+              "opponent": "Lebanon Valley",
+              "attendance": 414
+            },
+            "10659": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-01-03",
+              "opponent": "Delaware",
+              "attendance": 438
+            },
+            "10660": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-01-05",
+              "opponent": "Northeastern",
+              "attendance": 442
+            },
+            "10664": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-01-24",
+              "opponent": "Col. of Charleston",
+              "attendance": 574
+            },
+            "10665": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-01-26",
+              "opponent": "Elon",
+              "attendance": 396
+            },
+            "10667": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-02-02",
+              "opponent": "Towson",
+              "attendance": 581
+            },
+            "10670": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-02-09",
+              "opponent": "UNCW",
+              "attendance": 437
+            },
+            "10671": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-02-14",
+              "opponent": "William & Mary",
+              "attendance": 311
+            },
+            "10674": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-02-28",
+              "opponent": "Monmouth",
+              "attendance": 517
+            },
+            "10675": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2025-03-02",
+              "opponent": "Campbell",
+              "attendance": 688
+            },
+            "10678": "neutral",
+            "10882": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "10163": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-11-08",
+              "opponent": "Norfolk St.",
+              "attendance": 628
+            },
+            "10165": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-11-15",
+              "opponent": "La Salle",
+              "attendance": 529
+            },
+            "10166": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-11-19",
+              "opponent": "Saint Joseph's",
+              "attendance": 889
+            },
+            "10169": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-12-09",
+              "opponent": "Buffalo",
+              "attendance": 491
+            },
+            "10170": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-12-17",
+              "opponent": "Florida St.",
+              "attendance": 476
+            },
+            "10172": "neutral",
+            "10173": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2023-12-29",
+              "opponent": "Arcadia",
+              "attendance": 427
+            },
+            "10174": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-01-05",
+              "opponent": "Hampton",
+              "attendance": 404
+            },
+            "10175": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-01-07",
+              "opponent": "Northeastern",
+              "attendance": 517
+            },
+            "10178": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-01-19",
+              "opponent": "Hofstra",
+              "attendance": 354
+            },
+            "10179": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-01-21",
+              "opponent": "Monmouth",
+              "attendance": 637
+            },
+            "10181": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-02-02",
+              "opponent": "Delaware",
+              "attendance": 602
+            },
+            "10183": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-02-11",
+              "opponent": "N.C. A&T",
+              "attendance": 327
+            },
+            "10187": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-02-25",
+              "opponent": "UNCW",
+              "attendance": 511
+            },
+            "10188": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-03-01",
+              "opponent": "Stony Brook",
+              "attendance": 618
+            },
+            "10189": {
+              "status": "no-room",
+              "places": [
+                "John A. Daskalakis Athletic Center, Philadelphia, PA"
+              ],
+              "date": "2024-03-03",
+              "opponent": "Campbell",
+              "attendance": 684
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -1512,7 +2269,7 @@
             "15612": "kept",
             "15613": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1565,8 +2322,8 @@
             "12619": "kept",
             "12620": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "12623": "kept",
             "12624": "kept",
@@ -1577,9 +2334,31 @@
             "12637": "kept",
             "12638": "kept",
             "12641": "kept",
-            "12642": "kept"
+            "12642": "kept",
+            "12643": "kept",
+            "12646": "kept",
+            "12647": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "12102": "kept",
+            "12105": "kept",
+            "12106": "kept",
+            "12144": "kept",
+            "12147": "kept",
+            "12148": "kept",
+            "12149": "kept",
+            "12150": "kept",
+            "12151": "kept",
+            "12153": "kept",
+            "12154": "kept",
+            "12155": "kept",
+            "12156": "kept",
+            "12175": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -1594,12 +2373,12 @@
             "21196": "kept",
             "21198": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "21200": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1633,8 +2412,8 @@
             "20604": "kept",
             "20605": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "20686": {
               "status": "no-room",
@@ -1647,19 +2426,19 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
             "18010": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "18011": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "18035": "kept",
             "18037": "kept",
@@ -1667,9 +2446,36 @@
             "18039": "kept",
             "18040": "kept",
             "18041": "kept",
-            "18042": "kept"
+            "18042": "kept",
+            "18142": "kept",
+            "18143": "kept",
+            "18146": "kept",
+            "18148": "kept",
+            "18151": "kept",
+            "18152": "kept",
+            "18155": "kept",
+            "18157": "kept",
+            "18158": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "15198": {
+              "status": "no-room",
+              "places": [
+                "UVI Sports and Fitness Center, Charlotte Amalie West, Vir Isl"
+              ],
+              "date": "2023-11-17",
+              "opponent": "Norfolk St.",
+              "attendance": 524,
+              "flagsKnown": false
+            },
+            "15202": "kept",
+            "15203": "kept",
+            "15204": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -1677,6 +2483,29 @@
     "gcu-baseball": {
       "site": "https://gculopes.com",
       "seasons": {
+        "2023": {
+          "boxes": {
+            "18828": "kept",
+            "18829": "kept",
+            "18830": "kept",
+            "18831": "kept",
+            "18832": "kept",
+            "18834": "kept",
+            "18835": "kept",
+            "18836": "kept",
+            "18837": "kept",
+            "18838": "kept",
+            "18839": "kept",
+            "18840": "kept",
+            "18841": "kept",
+            "18846": "kept",
+            "18847": "kept",
+            "18848": "kept",
+            "18853": "kept",
+            "18993": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
         "2024": {
           "boxes": {
             "19520": "kept",
@@ -1700,10 +2529,28 @@
             "19535": "kept",
             "19540": "kept",
             "19541": "kept",
+            "19542": "kept",
+            "19548": "kept",
+            "19552": "kept",
+            "19553": "kept",
+            "19554": "kept",
+            "19555": "kept",
+            "19556": "kept",
+            "19561": "kept",
+            "19562": "kept",
+            "19563": "kept",
+            "19564": "kept",
+            "19565": "kept",
+            "19566": "kept",
+            "19567": "kept",
             "19645": "kept",
-            "19647": "neutral"
+            "19647": "neutral",
+            "19651": "neutral",
+            "19770": "neutral",
+            "19771": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2025": {
           "boxes": {
@@ -1772,7 +2619,7 @@
             "21048": "neutral",
             "21049": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "baseball"
@@ -1787,11 +2634,11 @@
             "22211": "kept",
             "22213": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1799,8 +2646,8 @@
             "21410": "kept",
             "21413": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "21414": "kept",
             "21415": "kept",
@@ -1826,11 +2673,11 @@
             "21577": "kept",
             "21631": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -1848,14 +2695,14 @@
             },
             "20894": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "20895": "kept",
             "20897": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "20898": "kept",
             "20900": "kept",
@@ -1873,12 +2720,28 @@
             "20906": "kept",
             "20908": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
-            "20909": "kept"
+            "20909": "kept",
+            "20912": "kept",
+            "20914": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "20161": "kept",
+            "20163": "kept",
+            "20164": "kept",
+            "20167": "kept",
+            "20170": "kept",
+            "20207": "kept",
+            "20210": "kept",
+            "20213": "kept",
+            "20214": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -1893,7 +2756,7 @@
             "14265": "kept",
             "14266": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -1924,8 +2787,8 @@
             "14124": "kept",
             "14169": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "14171": {
               "status": "no-room",
@@ -1939,7 +2802,7 @@
             },
             "14178": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -1955,9 +2818,52 @@
             "13259": "kept",
             "13260": "kept",
             "13263": "kept",
-            "13265": "kept"
+            "13265": "kept",
+            "13266": "kept",
+            "13269": "kept",
+            "13341": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "13556": {
+              "status": "no-room",
+              "places": [
+                "Henrico Sports & Events Center, Glen Allen, VA"
+              ],
+              "date": "2025-03-08",
+              "opponent": "Davidson",
+              "attendance": 2611,
+              "flagsKnown": false
+            },
+            "13557": {
+              "status": "no-room",
+              "places": [
+                "Henrico Sports & Events Center, Glen Allen, VA"
+              ],
+              "date": "2025-03-09",
+              "opponent": "Saint Joseph's",
+              "attendance": 2718,
+              "flagsKnown": false
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "12660": "kept",
+            "12661": "kept",
+            "12663": "kept",
+            "12664": "kept",
+            "12728": "kept",
+            "12731": "kept",
+            "12732": "kept",
+            "12735": "kept",
+            "12736": "kept",
+            "12738": "kept",
+            "12741": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -2051,7 +2957,7 @@
             "22944": "kept",
             "22949": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-volleyball"
@@ -2096,12 +3002,309 @@
               "date": "2026-10-11",
               "opponent": "Bemidji St.",
               "attendance": 1237
+            },
+            "23009": "kept",
+            "23010": "kept",
+            "23461": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "22288": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-09-25",
+              "opponent": "Boston College",
+              "attendance": 1133
+            },
+            "22289": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-09-26",
+              "opponent": "Boston College",
+              "attendance": 1721
+            },
+            "22292": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-10-10",
+              "opponent": "St. Cloud St.",
+              "attendance": 1506
+            },
+            "22294": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-10-18",
+              "opponent": "Ohio St.",
+              "attendance": 2880
+            },
+            "22295": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-10-19",
+              "opponent": "Ohio St.",
+              "attendance": 1642
+            },
+            "22300": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-11-14",
+              "opponent": "Bemidji St.",
+              "attendance": 5218
+            },
+            "22301": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-11-15",
+              "opponent": "Bemidji St.",
+              "attendance": 1683
+            },
+            "22302": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-11-21",
+              "opponent": "Minnesota St.",
+              "attendance": 2201
+            },
+            "22305": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-12-06",
+              "opponent": "St. Thomas (MN)",
+              "attendance": 2238
+            },
+            "22309": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-01-10",
+              "opponent": "Minnesota St.",
+              "attendance": 1940
+            },
+            "22313": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-01-24",
+              "opponent": "St. Cloud St.",
+              "attendance": 1357
+            },
+            "22314": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-01-30",
+              "opponent": "Wisconsin",
+              "attendance": 2994
+            },
+            "22315": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-01-31",
+              "opponent": "Wisconsin",
+              "attendance": 3159
+            },
+            "22317": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-02-07",
+              "opponent": "St. Thomas (MN)",
+              "attendance": 1802
+            },
+            "22320": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis"
+              ],
+              "date": "2026-02-20",
+              "opponent": "Minn. Duluth",
+              "attendance": 1862
+            },
+            "22321": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-02-21",
+              "opponent": "Bulldogs",
+              "attendance": 2315
+            },
+            "22322": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-02-27",
+              "opponent": "St. Cloud St.",
+              "attendance": 1353
+            },
+            "22323": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-02-28",
+              "opponent": "St. Cloud St.",
+              "attendance": 1408
+            },
+            "22324": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2026-03-01",
+              "opponent": "St. Cloud St.",
+              "attendance": 1313
+            },
+            "22867": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "21261": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-10-04",
+              "opponent": "Boston U.",
+              "attendance": 1458
+            },
+            "21262": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-10-06",
+              "opponent": "Boston U.",
+              "attendance": 1286
+            },
+            "21265": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-10-18",
+              "opponent": "Wisconsin",
+              "attendance": 3139
+            },
+            "21266": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-10-19",
+              "opponent": "Wisconsin",
+              "attendance": 3224
+            },
+            "21267": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-10-25",
+              "opponent": "Minnesota St.",
+              "attendance": 1163
+            },
+            "21273": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2024-11-22",
+              "opponent": "St. Cloud St.",
+              "attendance": 3165
+            },
+            "21277": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-03",
+              "opponent": "Brown",
+              "attendance": 1536
+            },
+            "21278": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-04",
+              "opponent": "Penn St.",
+              "attendance": 2485
+            },
+            "21279": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-10",
+              "opponent": "St. Thomas (MN)",
+              "attendance": 1847
+            },
+            "21280": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-11",
+              "opponent": "St. Thomas (MN)",
+              "attendance": 2192
+            },
+            "21281": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-17",
+              "opponent": "Minnesota St.",
+              "attendance": 1642
+            },
+            "21283": {
+              "status": "no-room",
+              "places": [
+                "Minneapolis, Minnesota"
+              ],
+              "date": "2025-01-24",
+              "opponent": "Bemidji St.",
+              "attendance": 3700
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
-      "path": "womens-ice-hockey"
+      "path": "womens-ice-hockey",
+      "cities": {
+        "minneapolis|mn": "ridder-arena"
+      }
     },
     "gw-wbb": {
       "site": "https://gwsports.com",
@@ -2114,7 +3317,7 @@
             "15772": "kept",
             "15773": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -2198,9 +3401,19 @@
           "boxes": {
             "12659": "kept",
             "12663": "kept",
-            "12664": "kept"
+            "12664": "kept",
+            "12665": {
+              "status": "no-room",
+              "places": [
+                "Coliseo Rubén Rodríguez, Bayamón, PR"
+              ],
+              "date": "2026-11-26",
+              "opponent": "Texas Southern",
+              "attendance": 100,
+              "flagsKnown": false
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -2227,21 +3440,22 @@
             "11738": "kept",
             "11946": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "12033": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "12034": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -2253,8 +3467,8 @@
             "11097": "kept",
             "11099": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "11101": "kept",
             "11104": "kept",
@@ -2265,11 +3479,49 @@
             "11113": "kept",
             "11115": {
               "status": "no-crowd",
+              "tries": 2,
+              "last": "2026-11-27"
+            },
+            "11117": {
+              "status": "no-crowd",
               "tries": 1,
-              "last": "2026-11-26"
+              "last": "2026-11-27"
+            },
+            "11627": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "10304": "kept",
+            "10306": "kept",
+            "10307": "kept",
+            "10308": "kept",
+            "10313": "kept",
+            "10318": "kept",
+            "10321": "kept",
+            "10373": {
+              "status": "no-room",
+              "places": [
+                "Atlantis Resort, Paradise Island, Bahamas"
+              ],
+              "date": "2023-11-19",
+              "opponent": "Memphis",
+              "attendance": 248,
+              "flagsKnown": false
+            },
+            "10374": {
+              "status": "no-room",
+              "places": [
+                "Atlantis Resort, Paradise Island, Bahamas"
+              ],
+              "date": "2023-11-20",
+              "opponent": "DePaul",
+              "attendance": 257,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -2320,7 +3572,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -2376,8 +3628,8 @@
             },
             "16929": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "16940": {
               "status": "no-room",
@@ -2480,7 +3732,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -2543,6 +3795,16 @@
               "opponent": "Harvard",
               "attendance": 1610,
               "flagsKnown": false
+            },
+            "16092": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "16094": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
             },
             "16131": {
               "status": "no-room",
@@ -2645,7 +3907,152 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "15369": {
+              "status": "no-room",
+              "places": [
+                "Hertz Arena, Estero, FL"
+              ],
+              "date": "2023-11-20",
+              "opponent": "High Point",
+              "attendance": 234,
+              "flagsKnown": false
+            },
+            "15370": {
+              "status": "no-room",
+              "places": [
+                "Hertz Arena, Estero, FL"
+              ],
+              "date": "2023-11-21",
+              "opponent": "Long Beach St.",
+              "attendance": 201,
+              "flagsKnown": false
+            },
+            "15371": {
+              "status": "no-room",
+              "places": [
+                "Hertz Arena, Estero, FL"
+              ],
+              "date": "2023-11-22",
+              "opponent": "Buffalo",
+              "attendance": 213,
+              "flagsKnown": false
+            },
+            "15372": {
+              "status": "no-room",
+              "places": [
+                "UBS Arena, Elmont, NY"
+              ],
+              "date": "2023-12-16",
+              "opponent": "Saint Joseph's",
+              "attendance": 3877,
+              "flagsKnown": false
+            },
+            "15457": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2023-11-10",
+              "opponent": "Sacred Heart",
+              "attendance": 2401,
+              "flagsKnown": false
+            },
+            "15458": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2023-12-06",
+              "opponent": "Hofstra",
+              "attendance": 1744,
+              "flagsKnown": false
+            },
+            "15459": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2023-12-10",
+              "opponent": "Saint Francis (PA)",
+              "attendance": 1288,
+              "flagsKnown": false
+            },
+            "15460": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2023-12-21",
+              "opponent": "Colgate",
+              "attendance": 1818,
+              "flagsKnown": false
+            },
+            "15553": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2023-11-29",
+              "opponent": "Marist",
+              "attendance": 1845,
+              "flagsKnown": false
+            },
+            "15556": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2024-01-07",
+              "opponent": "Niagara",
+              "attendance": 2001,
+              "flagsKnown": false
+            },
+            "15557": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2024-01-14",
+              "opponent": "Mount St. Mary's",
+              "attendance": 1434,
+              "flagsKnown": false
+            },
+            "15558": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2024-01-19",
+              "opponent": "Canisius",
+              "attendance": 1482,
+              "flagsKnown": false
+            },
+            "15561": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2024-02-02",
+              "opponent": "Fairfield",
+              "attendance": 1888,
+              "flagsKnown": false
+            },
+            "15562": {
+              "status": "no-room",
+              "places": [
+                "Hynes Center, New Rochelle, NY"
+              ],
+              "date": "2024-02-04",
+              "opponent": "Rider",
+              "attendance": 1669,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -2686,7 +4093,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -2878,8 +4285,8 @@
             },
             "16562": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "16564": {
               "status": "no-room",
@@ -2982,10 +4389,110 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
+            "16178": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2023-12-03",
+              "opponent": "Milwaukee",
+              "attendance": 392,
+              "flagsKnown": false
+            },
+            "16181": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-01-04",
+              "opponent": "Detroit Mercy",
+              "attendance": 416,
+              "flagsKnown": false
+            },
+            "16182": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-01-11",
+              "opponent": "Wright St.",
+              "attendance": 456,
+              "flagsKnown": false
+            },
+            "16183": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-01-14",
+              "opponent": "Northern Ky.",
+              "attendance": 381,
+              "flagsKnown": false
+            },
+            "16185": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-01-24",
+              "opponent": "Green Bay",
+              "attendance": 471,
+              "flagsKnown": false
+            },
+            "16186": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-01-28",
+              "opponent": "Oakland",
+              "attendance": 374,
+              "flagsKnown": false
+            },
+            "16187": {
+              "status": "no-room",
+              "places": [
+                "The Jungle, Indianapolis, IN"
+              ],
+              "date": "2024-01-31",
+              "opponent": "Youngstown St.",
+              "attendance": 349,
+              "flagsKnown": false
+            },
+            "16192": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-02-18",
+              "opponent": "Robert Morris",
+              "attendance": 391,
+              "flagsKnown": false
+            },
+            "16193": {
+              "status": "no-room",
+              "places": [
+                "Indiana Farmers Coliseum, Indianapolis, IN"
+              ],
+              "date": "2024-02-21",
+              "opponent": "Cleveland St.",
+              "attendance": 493,
+              "flagsKnown": false
+            },
+            "16194": {
+              "status": "no-room",
+              "places": [
+                "The Jungle, Indianapolis, IN"
+              ],
+              "date": "2024-02-24",
+              "opponent": "Purdue Fort Wayne",
+              "attendance": 548,
+              "flagsKnown": false
+            },
             "16201": {
               "status": "no-room",
               "places": [
@@ -3015,9 +4522,20 @@
               "opponent": "Ball St.",
               "attendance": 490,
               "flagsKnown": false
+            },
+            "16208": {
+              "status": "no-room",
+              "places": [
+                "The Jungle, Indianapolis, IN"
+              ],
+              "date": "2023-12-15",
+              "opponent": "Eastern Mich.",
+              "attendance": 414,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-basketball"
@@ -3031,7 +4549,7 @@
             "8924": "kept",
             "8926": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3109,7 +4627,7 @@
             "8941": "kept",
             "8943": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3133,8 +4651,47 @@
           "done": true
         },
         "2024-25": {
-          "boxes": {},
-          "readOn": "2026-11-26"
+          "boxes": {
+            "8363": "kept",
+            "8366": "kept",
+            "8368": "kept",
+            "8370": "kept",
+            "8375": "kept",
+            "8377": "kept",
+            "8379": "kept",
+            "8380": "kept",
+            "8381": "kept",
+            "8383": "kept",
+            "8385": "kept",
+            "8388": "kept",
+            "8389": "kept"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "8049": "kept",
+            "8051": "kept",
+            "8052": "neutral",
+            "8055": "kept",
+            "8057": "kept",
+            "8058": "kept",
+            "8059": "kept",
+            "8060": "kept",
+            "8063": "kept",
+            "8064": "kept",
+            "8068": "kept",
+            "8069": "kept",
+            "8073": "kept",
+            "8074": "kept",
+            "8076": "kept",
+            "8078": "kept",
+            "8079": "kept",
+            "8080": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-basketball"
@@ -3142,7 +4699,7 @@
     "kennesaw-state-baseball": {
       "site": "https://ksuowls.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "lindenwood-mbb": {
       "site": "https://lindenwoodlions.com",
@@ -3153,11 +4710,11 @@
             "28021": "kept",
             "28034": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3214,43 +4771,71 @@
             "26963": "kept",
             "26966": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "26969": "kept",
             "26971": "kept",
             "26972": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
-            "25980": "kept"
+            "25980": "kept",
+            "25981": {
+              "status": "no-room",
+              "places": [
+                "Clune Arena, U.S. Air Force Academy, CO"
+              ],
+              "date": "2023-11-17",
+              "opponent": "Omaha",
+              "attendance": 321,
+              "flagsKnown": false
+            },
+            "25982": "kept",
+            "25984": "kept",
+            "25985": "kept",
+            "25987": "kept",
+            "25988": "kept",
+            "25992": "kept",
+            "25993": "kept",
+            "25996": "kept",
+            "25997": "kept",
+            "25998": "kept",
+            "26001": "kept",
+            "26002": "kept",
+            "26032": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
     },
+    "lindenwood-mhockey": {
+      "site": "https://lindenwoodlions.com",
+      "seasons": {}
+    },
     "liu-mbb": {
       "site": "https://liuathletics.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "liu-mhockey": {
       "site": "https://liuathletics.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "liu-wbb": {
       "site": "https://liuathletics.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "liu-whockey": {
       "site": "https://liuathletics.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "lmu-mbb": {
       "site": "https://lmulions.com",
@@ -3269,8 +4854,8 @@
             },
             "17967": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "17970": {
               "status": "no-room",
@@ -3293,7 +4878,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3349,8 +4934,8 @@
             },
             "17463": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "17464": {
               "status": "no-room",
@@ -3384,8 +4969,8 @@
             },
             "17467": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "17476": {
               "status": "no-room",
@@ -3498,10 +5083,111 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
+            "16886": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-01-02",
+              "opponent": "Oregon St.",
+              "attendance": 1019,
+              "flagsKnown": false
+            },
+            "16900": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-01-04",
+              "opponent": "Gonzaga",
+              "attendance": 2369,
+              "flagsKnown": false
+            },
+            "16903": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-01-16",
+              "opponent": "Santa Clara",
+              "attendance": 1499,
+              "flagsKnown": false
+            },
+            "16904": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-01-18",
+              "opponent": "San Diego",
+              "attendance": 1152,
+              "flagsKnown": false
+            },
+            "16906": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-01-30",
+              "opponent": "Portland",
+              "attendance": 1049,
+              "flagsKnown": false
+            },
+            "16909": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-02-08",
+              "opponent": "San Francisco",
+              "attendance": 1687,
+              "flagsKnown": false
+            },
+            "16910": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-02-13",
+              "opponent": "Pacific",
+              "attendance": 861,
+              "flagsKnown": false
+            },
+            "16913": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-02-22",
+              "opponent": "Pepperdine",
+              "attendance": 1173,
+              "flagsKnown": false
+            },
+            "16914": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2025-02-27",
+              "opponent": "Saint Mary's (CA)",
+              "attendance": 1609,
+              "flagsKnown": false
+            },
+            "16915": {
+              "status": "no-room",
+              "places": [
+                "Orleans Arena, Las Vegas, NV"
+              ],
+              "date": "2025-03-07",
+              "opponent": "San Diego",
+              "attendance": 1826,
+              "flagsKnown": false
+            },
             "16916": {
               "status": "no-room",
               "places": [
@@ -3572,6 +5258,16 @@
               "attendance": 962,
               "flagsKnown": false
             },
+            "16960": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2024-12-22",
+              "opponent": "North Ala.",
+              "attendance": 818,
+              "flagsKnown": false
+            },
             "16961": {
               "status": "no-room",
               "places": [
@@ -3583,7 +5279,43 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "16372": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2023-11-07",
+              "opponent": "Westcliff",
+              "attendance": 1430,
+              "flagsKnown": false
+            },
+            "16373": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2023-11-12",
+              "opponent": "Yale",
+              "attendance": 1571,
+              "flagsKnown": false
+            },
+            "16375": {
+              "status": "no-room",
+              "places": [
+                "Albert Gersten Pavilion, Los Angeles, CA"
+              ],
+              "date": "2023-11-14",
+              "opponent": "Jackson St.",
+              "attendance": 1015,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -3596,7 +5328,7 @@
             "10554": "kept",
             "10557": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3674,7 +5406,7 @@
           "boxes": {
             "10534": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3685,8 +5417,8 @@
             "9819": "kept",
             "9821": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "9822": "kept",
             "9824": "kept",
@@ -3699,10 +5431,54 @@
             "9838": "kept",
             "9840": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
-          "boxes": {}
+          "boxes": {
+            "9236": "kept",
+            "9241": "kept",
+            "9242": "kept",
+            "9244": "kept",
+            "9245": "kept",
+            "9246": "kept",
+            "9248": "kept",
+            "9249": "kept",
+            "9252": "kept",
+            "9253": "kept",
+            "9255": "kept",
+            "9258": "kept",
+            "9259": "kept",
+            "9262": "kept",
+            "9263": "kept",
+            "9648": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "8406": "kept",
+            "8407": "kept",
+            "8412": "kept",
+            "8413": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "8415": "kept",
+            "8416": "kept",
+            "8417": "kept",
+            "8419": "kept",
+            "8421": "kept",
+            "8422": "kept",
+            "8425": "kept",
+            "8426": "kept",
+            "8429": "kept",
+            "8430": "kept",
+            "8432": "kept",
+            "8434": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -3716,7 +5492,7 @@
             "7292": "kept",
             "7307": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -3726,13 +5502,13 @@
             "6965": "kept",
             "6966": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "6967": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "6968": "kept",
             "6969": "kept",
@@ -3757,7 +5533,8 @@
             "7008": "kept",
             "7010": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -3781,13 +5558,54 @@
             "6638": "kept",
             "6652": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "6661": "kept",
-            "6664": "kept"
+            "6664": "kept",
+            "6666": "kept",
+            "6668": "kept",
+            "6669": "kept",
+            "6672": "kept",
+            "6674": "kept",
+            "6676": "kept",
+            "6677": "kept",
+            "6680": {
+              "status": "no-room",
+              "places": [
+                "Capital One Arena, Washington, DC"
+              ],
+              "date": "2025-03-14",
+              "opponent": "Saint Louis",
+              "attendance": 8153,
+              "flagsKnown": false
+            },
+            "6845": "kept",
+            "6847": {
+              "status": "no-room",
+              "places": [
+                "Hinkle Fieldhouse, Indianapolis, IN"
+              ],
+              "date": "2025-04-01",
+              "opponent": "Chattanooga",
+              "attendance": 3288,
+              "flagsKnown": false
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "6314": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "6315": "kept",
+            "6316": "kept",
+            "6317": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -3814,12 +5632,12 @@
             "10203": "neutral",
             "10206": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "10475": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024": {
           "boxes": {
@@ -3891,7 +5709,7 @@
             "11247": "kept",
             "14355": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-volleyball"
@@ -3900,8 +5718,286 @@
       "site": "https://umterps.com",
       "seasons": {
         "2023": {
-          "boxes": {},
-          "readOn": "2026-11-26"
+          "boxes": {
+            "13306": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-02-21",
+              "opponent": "West Virginia",
+              "attendance": 1278
+            },
+            "13310": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-02-28",
+              "opponent": "Delaware",
+              "attendance": 1312
+            },
+            "13313": "neutral",
+            "13314": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-07",
+              "opponent": "UMBC",
+              "attendance": 626
+            },
+            "13315": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-10",
+              "opponent": "University of Maine",
+              "attendance": 766
+            },
+            "13316": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-11",
+              "opponent": "University of Maine",
+              "attendance": 931
+            },
+            "13317": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-12",
+              "opponent": "University of Maine",
+              "attendance": 884
+            },
+            "13319": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-17",
+              "opponent": "University of Albany",
+              "attendance": 684
+            },
+            "13320": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-18",
+              "opponent": "University of Albany",
+              "attendance": 981
+            },
+            "13321": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-19",
+              "opponent": "University of Albany",
+              "attendance": 638
+            },
+            "13322": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-21",
+              "opponent": "George Washington",
+              "attendance": 515
+            },
+            "13326": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-03-28",
+              "opponent": "Georgetown",
+              "attendance": 879
+            },
+            "13330": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-04",
+              "opponent": "William & Mary",
+              "attendance": 1148
+            },
+            "13331": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-07",
+              "opponent": "Rutgers",
+              "attendance": 1165
+            },
+            "13332": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-08",
+              "opponent": "Rutgers",
+              "attendance": 1660
+            },
+            "13333": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-09",
+              "opponent": "Rutgers",
+              "attendance": 849
+            },
+            "13338": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-19",
+              "opponent": "James Madison",
+              "attendance": 1189
+            },
+            "13339": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-21",
+              "opponent": "Purdue University",
+              "attendance": 1092
+            },
+            "13340": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-22",
+              "opponent": "Purdue University",
+              "attendance": 1040
+            },
+            "13341": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-23",
+              "opponent": "Purdue University",
+              "attendance": 1482
+            },
+            "13348": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "Colege Park, MD"
+              ],
+              "date": "2023-05-05",
+              "opponent": "Nebraska",
+              "attendance": 1021
+            },
+            "13349": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-05-06",
+              "opponent": "Nebraska",
+              "attendance": 1823
+            },
+            "13351": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-05-07",
+              "opponent": "Nebraska",
+              "attendance": 1508
+            },
+            "13352": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-05-09",
+              "opponent": "Northeastern",
+              "attendance": 479
+            },
+            "13353": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MF"
+              ],
+              "date": "2023-05-12",
+              "opponent": "Minnesota",
+              "attendance": 1061
+            },
+            "13354": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-05-13",
+              "opponent": "Minnesota",
+              "attendance": 623
+            },
+            "13355": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-05-14",
+              "opponent": "Minnesota",
+              "attendance": 762
+            },
+            "13359": "neutral",
+            "13360": "neutral",
+            "13567": {
+              "status": "no-room",
+              "places": [
+                "Bob Smith Stadium",
+                "College Park, MD"
+              ],
+              "date": "2023-04-11",
+              "opponent": "Georgetown",
+              "attendance": 489
+            },
+            "15792": "neutral",
+            "16143": "neutral",
+            "16144": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024": {
           "boxes": {
@@ -4088,8 +6184,8 @@
             },
             "16705": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "16706": {
               "status": "no-room",
@@ -4112,7 +6208,7 @@
               "attendance": 690
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025": {
           "boxes": {
@@ -4586,7 +6682,7 @@
               "attendance": 217
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "baseball"
@@ -4599,7 +6695,7 @@
             "14304": "kept",
             "14305": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -4798,11 +6894,11 @@
             },
             "13561": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -4948,8 +7044,44 @@
       "site": "https://nuhuskies.com",
       "seasons": {
         "2026-27": {
+          "boxes": {
+            "14310": "kept",
+            "14312": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "13745": "kept",
+            "13747": "kept",
+            "13750": "kept",
+            "13753": "kept",
+            "13805": "kept",
+            "13806": "kept",
+            "13807": "kept",
+            "13809": "kept",
+            "13811": "kept",
+            "13814": "kept",
+            "13815": "kept",
+            "13820": "kept",
+            "13821": "kept",
+            "13822": {
+              "status": "no-room",
+              "places": [
+                "CareFirst Arena, Washington, DC"
+              ],
+              "date": "2026-03-11",
+              "opponent": "UNCW",
+              "attendance": 1100,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
           "boxes": {},
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "unreadable": "2026-11-25",
@@ -4969,7 +7101,7 @@
             "22530": "kept",
             "22531": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5012,8 +7144,8 @@
             "20359": "kept",
             "20360": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "20363": "kept",
             "20364": "kept",
@@ -5028,7 +7160,7 @@
             "21215": "kept",
             "21217": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -5050,9 +7182,14 @@
             "19431": "kept",
             "19434": "kept",
             "19436": "kept",
-            "20211": "neutral"
+            "20211": "neutral",
+            "20214": "neutral",
+            "20218": "kept",
+            "20222": "neutral",
+            "20231": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "womens-ice-hockey",
@@ -5063,7 +7200,7 @@
     "owu-football": {
       "site": "https://battlingbishops.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "owu-mbb": {
       "site": "https://battlingbishops.com",
@@ -5074,7 +7211,7 @@
             "10277": "kept",
             "10278": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5292,9 +7429,80 @@
               "opponent": "Wittenberg",
               "attendance": 257,
               "flagsKnown": false
+            },
+            "8561": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2023-12-06",
+              "opponent": "Hiram",
+              "attendance": 125,
+              "flagsKnown": false
+            },
+            "8568": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-01-03",
+              "opponent": "DePauw",
+              "attendance": 155,
+              "flagsKnown": false
+            },
+            "8570": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-01-10",
+              "opponent": "Wabash",
+              "attendance": 275,
+              "flagsKnown": false
+            },
+            "8573": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-01-24",
+              "opponent": "Wooster",
+              "attendance": 375,
+              "flagsKnown": false
+            },
+            "8574": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-01-27",
+              "opponent": "Denison",
+              "attendance": 422,
+              "flagsKnown": false
+            },
+            "8577": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-02-07",
+              "opponent": "Kenyon",
+              "attendance": 250,
+              "flagsKnown": false
+            },
+            "8579": {
+              "status": "no-room",
+              "places": [
+                "Branch Rickey Arena; Delaware, Ohio, USA"
+              ],
+              "date": "2024-02-17",
+              "opponent": "Oberlin",
+              "attendance": 450,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
@@ -5311,7 +7519,7 @@
             "16854": "kept",
             "17827": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5364,20 +7572,20 @@
             "13948": "kept",
             "13950": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "13951": "kept",
             "13952": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "13954": "kept",
             "13956": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "13957": "kept",
             "13959": "kept",
@@ -5394,7 +7602,7 @@
             "14063": "kept",
             "14065": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -5408,7 +7616,7 @@
             "16752": "kept",
             "16753": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5416,9 +7624,62 @@
             "15351": "kept",
             "15353": "kept",
             "15355": "kept",
-            "15357": "kept"
+            "15357": "kept",
+            "15358": "kept",
+            "15359": "kept",
+            "15421": "kept",
+            "15422": "kept",
+            "15423": "neutral",
+            "15426": "kept",
+            "15428": "kept",
+            "15429": "kept",
+            "15431": "kept",
+            "15432": "kept",
+            "15433": "kept",
+            "15437": "kept",
+            "15596": "kept",
+            "15600": {
+              "status": "no-room",
+              "places": [
+                "America First Event Center, Cedar City, UT"
+              ],
+              "date": "2026-03-22",
+              "opponent": "Southern Utah",
+              "attendance": 352
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "14604": "kept",
+            "14607": "kept",
+            "14609": "kept",
+            "14610": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "14613": "kept",
+            "14614": "kept",
+            "14617": "kept",
+            "14620": "kept",
+            "14624": "kept",
+            "14625": "kept",
+            "14768": "kept",
+            "14774": "kept",
+            "14777": "kept",
+            "15024": "neutral"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "13965": "kept",
+            "13966": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -5431,11 +7692,11 @@
             "10900": "kept",
             "10901": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5443,8 +7704,8 @@
             "9776": "kept",
             "9780": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "9782": "kept",
             "9784": "kept",
@@ -5468,7 +7729,8 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -5488,8 +7750,19 @@
         },
         "2023-24": {
           "boxes": {
+            "7623": "kept",
+            "7624": "kept",
+            "7625": "kept",
             "7628": "kept",
+            "7629": "kept",
+            "7630": "kept",
             "7631": "kept",
+            "7633": "kept",
+            "7634": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
             "7643": "kept",
             "7644": "kept",
             "7658": {
@@ -5503,23 +7776,177 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
     },
+    "pvamu-wbb": {
+      "site": "https://pvpanthers.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "11220": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2026-11-04",
+              "opponent": "Wiley",
+              "attendance": 476,
+              "flagsKnown": false
+            },
+            "11222": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2026-11-17",
+              "opponent": "Texas Col.",
+              "attendance": 276,
+              "flagsKnown": false
+            },
+            "11223": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2026-11-20",
+              "opponent": "Biblical Stud. (TX)",
+              "attendance": 170,
+              "flagsKnown": false
+            },
+            "11224": {
+              "status": "no-room",
+              "places": [
+                "Fertitta Center, Houston, TX"
+              ],
+              "date": "2026-11-23",
+              "opponent": "Prairie View",
+              "attendance": 1040,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "9838": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2025-11-14",
+              "opponent": "Texas Col.",
+              "attendance": 456,
+              "flagsKnown": false
+            },
+            "9840": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2025-11-25",
+              "opponent": "Huston-Tillotson",
+              "attendance": 225,
+              "flagsKnown": false
+            },
+            "9848": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2026-01-08",
+              "opponent": "Ark.-Pine Bluff",
+              "attendance": 136,
+              "flagsKnown": false
+            },
+            "9913": {
+              "status": "no-room",
+              "places": [
+                "William Nicks Building, Prairie View, TX"
+              ],
+              "date": "2026-01-10",
+              "opponent": "Mississippi Val.",
+              "attendance": 156,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
+    },
     "rice-baseball": {
       "site": "https://riceowls.com",
       "seasons": {
+        "2023": {
+          "boxes": {
+            "26738": "kept",
+            "26739": "kept",
+            "26740": {
+              "status": "no-room",
+              "places": [
+                "Reckling",
+                "Houston, TX"
+              ],
+              "date": "2023-02-19",
+              "opponent": "Louisiana",
+              "attendance": 2187
+            },
+            "26741": "kept",
+            "26747": "neutral"
+          },
+          "readOn": "2026-11-27"
+        },
         "2024": {
           "boxes": {
             "27841": "kept",
             "27842": "kept",
             "27843": "kept",
             "27844": "kept",
-            "27848": "kept"
+            "27848": "kept",
+            "27849": {
+              "status": "no-room",
+              "places": [
+                "Houston, Texas"
+              ],
+              "date": "2024-03-01",
+              "opponent": "STANFORD",
+              "attendance": 2341
+            },
+            "27850": "kept",
+            "27851": "kept",
+            "27852": "kept",
+            "27857": "kept",
+            "27858": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "27859": "kept",
+            "27861": "kept",
+            "27862": "kept",
+            "27863": "kept",
+            "27864": "kept",
+            "27870": "kept",
+            "27871": "kept",
+            "27872": "kept",
+            "27873": "kept",
+            "27874": "kept",
+            "27875": "kept",
+            "27876": "kept",
+            "27877": "kept",
+            "27881": "kept",
+            "27882": "kept",
+            "27883": "kept",
+            "27889": "kept",
+            "27890": "kept",
+            "27891": "kept",
+            "27892": "kept",
+            "27893": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025": {
           "boxes": {
@@ -5562,8 +7989,8 @@
             "28290": "kept",
             "28291": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "28292": "kept",
             "28294": "kept",
@@ -5610,14 +8037,14 @@
             "28325": "kept",
             "28326": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2026": {
           "boxes": {
             "28731": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "28732": "kept",
             "28733": "kept",
@@ -5644,8 +8071,8 @@
             "28775": "kept",
             "28776": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "28777": "kept",
             "28778": "kept",
@@ -5656,7 +8083,7 @@
             "28787": "kept",
             "28871": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "baseball"
@@ -5678,7 +8105,7 @@
             "16572": "kept",
             "16573": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5774,7 +8201,7 @@
             "11093": "kept",
             "11094": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5786,8 +8213,8 @@
             "9949": "kept",
             "9951": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "9953": {
               "status": "no-room",
@@ -5819,7 +8246,8 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -5827,6 +8255,11 @@
             "9173": "kept",
             "9174": "kept",
             "9177": "kept",
+            "9179": "kept",
+            "9180": "kept",
+            "9182": "kept",
+            "9184": "kept",
+            "9186": "kept",
             "9188": {
               "status": "no-room",
               "places": [
@@ -5843,13 +8276,46 @@
             "9197": "kept",
             "9198": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "9199": "kept",
-            "9200": "kept"
+            "9200": "kept",
+            "9441": {
+              "status": "no-room",
+              "places": [
+                "Orleans Arena, Las Vegas, NV"
+              ],
+              "date": "2025-03-09",
+              "opponent": "Pepperdine",
+              "attendance": 2523,
+              "flagsKnown": false
+            },
+            "9642": "kept",
+            "9704": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "8450": "kept",
+            "8451": "kept",
+            "8453": "kept",
+            "8454": "kept",
+            "8456": {
+              "status": "no-room",
+              "places": [
+                "Raider Arena, Niceville, FL"
+              ],
+              "date": "2023-11-25",
+              "opponent": "Ohio St.",
+              "attendance": 2196,
+              "flagsKnown": false
+            },
+            "8457": "kept",
+            "8460": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -5881,7 +8347,7 @@
               "attendance": 405
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5929,12 +8395,12 @@
             "10657": "neutral",
             "10838": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "10839": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -5973,7 +8439,7 @@
             "17462": "kept",
             "17463": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -5989,21 +8455,21 @@
             "16199": "kept",
             "16200": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "16449": "kept",
             "16451": "kept",
             "16455": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "16456": "kept",
             "16458": "kept",
             "16459": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -6016,13 +8482,52 @@
             "15329": "kept",
             "15330": "kept",
             "15333": "kept",
+            "15334": "kept",
+            "15335": {
+              "status": "no-room",
+              "places": [
+                "Ford Center, Evansville, IN"
+              ],
+              "date": "2025-03-07",
+              "opponent": "Tennessee St.",
+              "attendance": 1353,
+              "flagsKnown": false
+            },
             "15446": "kept",
             "15462": "kept",
             "15468": "kept",
             "15469": "kept",
             "15470": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "14977": "kept",
+            "14978": "kept",
+            "14980": "kept",
+            "14981": "kept",
+            "14984": "kept",
+            "14987": "kept",
+            "14999": "kept",
+            "15046": "kept",
+            "15047": "kept",
+            "15051": "kept",
+            "15052": "kept",
+            "15060": {
+              "status": "no-room",
+              "places": [
+                "Mitchell Center, Mobile, AL"
+              ],
+              "date": "2023-11-17",
+              "opponent": "Nicholls",
+              "attendance": 1001,
+              "flagsKnown": false
+            },
+            "15155": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -6054,8 +8559,8 @@
             },
             "20315": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "20316": {
               "status": "no-room",
@@ -6088,7 +8593,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -6318,9 +8823,50 @@
             "12736": "kept",
             "12943": "kept",
             "12946": "kept",
-            "12947": "kept"
+            "12947": "kept",
+            "12950": "kept",
+            "12952": "kept",
+            "12953": "kept",
+            "12956": "kept",
+            "12957": "kept",
+            "12959": "kept",
+            "13315": {
+              "status": "no-room",
+              "places": [
+                "Capital One Arena, Washington, DC"
+              ],
+              "date": "2025-03-13",
+              "opponent": "La Salle",
+              "attendance": 7134,
+              "flagsKnown": false
+            },
+            "13320": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "12173": "kept",
+            "12175": {
+              "status": "no-room",
+              "places": [
+                "Wells Fargo Center, Philadelphia, PA"
+              ],
+              "date": "2023-12-02",
+              "opponent": "Temple",
+              "attendance": 15215,
+              "flagsKnown": false
+            },
+            "12178": "kept",
+            "12180": "kept",
+            "12182": "kept",
+            "12184": "kept",
+            "12186": "kept",
+            "12189": "kept",
+            "12193": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -6333,11 +8879,12 @@
             "12741": "kept",
             "12742": "kept",
             "12744": "kept",
+            "12745": "neutral",
             "12798": "kept",
             "12834": "kept",
             "12932": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -6427,9 +8974,58 @@
       "seasons": {
         "2026-27": {
           "boxes": {
-            "12838": "kept"
+            "12838": "kept",
+            "12840": "neutral",
+            "12842": "neutral",
+            "12843": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "12340": "kept",
+            "12341": "kept",
+            "12343": "kept",
+            "12346": "neutral",
+            "12350": "kept",
+            "12351": "kept",
+            "12364": "kept",
+            "12365": "kept",
+            "12369": "kept",
+            "12370": "kept",
+            "12371": "kept",
+            "12374": "kept",
+            "12376": "kept",
+            "12377": "kept",
+            "12379": "kept",
+            "12657": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "11812": "kept",
+            "11816": "neutral",
+            "11819": "kept",
+            "11860": "kept",
+            "11863": "kept",
+            "11865": "kept",
+            "11867": "kept",
+            "11868": "kept",
+            "11869": "kept",
+            "11871": "kept",
+            "11874": "kept",
+            "11875": "kept",
+            "11876": "kept",
+            "11880": "kept",
+            "11882": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {}
         }
       },
       "path": "womens-basketball"
@@ -6437,7 +9033,7 @@
     "st-thomas-whockey": {
       "site": "https://tommiesports.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "stony-brook-mbb": {
       "site": "https://stonybrookathletics.com",
@@ -6448,7 +9044,7 @@
             "12731": "kept",
             "12742": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -6470,11 +9066,11 @@
             "12282": "kept",
             "12283": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -6498,12 +9094,48 @@
         },
         "2023-24": {
           "boxes": {
-            "11147": "kept"
+            "11147": "kept",
+            "11150": "kept",
+            "11152": "kept",
+            "11153": "kept",
+            "11154": "kept",
+            "11155": "kept",
+            "11158": "kept",
+            "11165": "kept",
+            "11169": "kept",
+            "11170": "kept",
+            "11171": "kept",
+            "11173": "kept",
+            "11176": "kept",
+            "11178": "kept",
+            "11179": "kept",
+            "11181": "kept",
+            "11200": {
+              "status": "no-room",
+              "places": [
+                "D.C. Entertainment and Sports Arena, Washington, DC"
+              ],
+              "date": "2024-03-09",
+              "opponent": "Northeastern",
+              "attendance": 1752,
+              "flagsKnown": false
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
+    },
+    "stony-brook-wbb": {
+      "site": "https://stonybrookathletics.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {},
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "texas-soccer": {
       "site": "https://texaslonghorns.com",
@@ -6596,7 +9228,7 @@
             "22747": "kept",
             "23864": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-soccer"
@@ -6604,6 +9236,126 @@
     "texas-softball": {
       "site": "https://texaslonghorns.com",
       "seasons": {
+        "2025": {
+          "boxes": {
+            "16863": "neutral",
+            "16864": "neutral",
+            "16865": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-03-05",
+              "opponent": "Baylor",
+              "attendance": 1014
+            },
+            "16866": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-03-02",
+              "opponent": "Alabama A&M",
+              "attendance": 1198
+            },
+            "16867": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-03-02",
+              "opponent": "South Florida",
+              "attendance": 1155
+            },
+            "16868": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-03-01",
+              "opponent": "New Mexico State",
+              "attendance": 1353
+            },
+            "16869": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-02-28",
+              "opponent": "Abilene Christian",
+              "attendance": 1347
+            },
+            "16870": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2025-02-28",
+              "opponent": "South Florida",
+              "attendance": 1175
+            },
+            "16873": "neutral",
+            "16875": "neutral",
+            "16877": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, TX"
+              ],
+              "date": "2025-02-16",
+              "opponent": "Texas Tech",
+              "attendance": 1238
+            },
+            "16878": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, TX"
+              ],
+              "date": "2025-02-15",
+              "opponent": "Maryland",
+              "attendance": 1213
+            },
+            "16879": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, TX"
+              ],
+              "date": "2025-02-15",
+              "opponent": "UMass",
+              "attendance": 1094
+            },
+            "16880": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, TX"
+              ],
+              "date": "2025-02-14",
+              "opponent": "Texas Tech",
+              "attendance": 892
+            },
+            "16881": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, TX"
+              ],
+              "date": "2025-02-14",
+              "opponent": "Maryland",
+              "attendance": 536
+            },
+            "16887": "neutral"
+          },
+          "readOn": "2026-11-27"
+        },
         "2026": {
           "boxes": {
             "19075": {
@@ -6656,6 +9408,78 @@
               "opponent": "Texas A&M",
               "attendance": 2148
             },
+            "19080": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-03-29",
+              "opponent": "Texas A&M",
+              "attendance": 2135
+            },
+            "19084": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-04-10",
+              "opponent": "Oklahoma",
+              "attendance": 2199
+            },
+            "19085": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-04-11",
+              "opponent": "Oklahoma",
+              "attendance": 2209
+            },
+            "19086": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-04-12",
+              "opponent": "Oklahoma",
+              "attendance": 2380
+            },
+            "19094": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-04-30",
+              "opponent": "Arkansas",
+              "attendance": 2375
+            },
+            "19095": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-05-01",
+              "opponent": "Arkansas",
+              "attendance": 2037
+            },
+            "19096": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-05-02",
+              "opponent": "Arkansas",
+              "attendance": 2300
+            },
+            "19099": "neutral",
+            "19101": "neutral",
             "22544": "neutral",
             "22545": "neutral",
             "22548": {
@@ -6740,13 +9564,13 @@
             },
             "22561": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "22562": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "22563": {
               "status": "no-room",
@@ -6776,9 +9600,54 @@
               "date": "2026-03-20",
               "opponent": "Baylor",
               "attendance": 2054
-            }
+            },
+            "22568": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-04-22",
+              "opponent": "Oklahoma State",
+              "attendance": 1955
+            },
+            "22663": "neutral",
+            "22664": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-05-16",
+              "opponent": "Wisconsin",
+              "attendance": 1546
+            },
+            "22673": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-05-22",
+              "opponent": "Arizona State",
+              "attendance": 2085
+            },
+            "22675": {
+              "status": "no-room",
+              "places": [
+                "McCombs Field",
+                "Austin, Texas"
+              ],
+              "date": "2026-05-24",
+              "opponent": "Arizona State",
+              "attendance": 2472
+            },
+            "22677": "neutral",
+            "22682": "neutral",
+            "22688": "neutral",
+            "22712": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "softball"
@@ -6809,7 +9678,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -7117,8 +9986,8 @@
           "boxes": {
             "4840": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "4841": {
               "status": "no-room",
@@ -7140,17 +10009,179 @@
               "opponent": "Ark.-Pine Bluff",
               "attendance": 1208,
               "flagsKnown": false
+            },
+            "4933": "kept",
+            "4936": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-01-27",
+              "opponent": "Alabama A&M",
+              "attendance": 3109,
+              "flagsKnown": false
+            },
+            "4937": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-01-29",
+              "opponent": "Alabama St.",
+              "attendance": 4087,
+              "flagsKnown": false
+            },
+            "4941": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-02-17",
+              "opponent": "Grambling",
+              "attendance": 5116,
+              "flagsKnown": false
+            },
+            "4942": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-02-19",
+              "opponent": "Southern U.",
+              "attendance": 3009,
+              "flagsKnown": false
+            },
+            "4945": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-03-02",
+              "opponent": "Jackson St.",
+              "attendance": 4036,
+              "flagsKnown": false
+            },
+            "4946": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-03-04",
+              "opponent": "Alcorn",
+              "attendance": 2836,
+              "flagsKnown": false
+            },
+            "4947": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2024-03-09",
+              "opponent": "Prairie View",
+              "attendance": 6927,
+              "flagsKnown": false
+            },
+            "4948": {
+              "status": "no-room",
+              "places": [
+                "Bartow Arena, Birmingham, AL"
+              ],
+              "date": "2024-03-14",
+              "opponent": "Jackson St.",
+              "attendance": 975,
+              "flagsKnown": false
+            },
+            "5135": {
+              "status": "no-room",
+              "places": [
+                "Bartow Arena, Birmingham, AL"
+              ],
+              "date": "2024-03-15",
+              "opponent": "Alabama A&M",
+              "attendance": 2045,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
     },
+    "texas-southern-wbb": {
+      "site": "https://tsusports.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "6299": {
+              "status": "no-room",
+              "places": [
+                "Coliseo Rubén Rodríguez, Bayamón, PR"
+              ],
+              "date": "2026-11-25",
+              "opponent": "Vermont",
+              "attendance": 100,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "5854": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2025-11-06",
+              "opponent": "Wiley",
+              "attendance": 378,
+              "flagsKnown": false
+            },
+            "5856": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2025-11-12",
+              "opponent": "Tex. A&M Int'l",
+              "attendance": 150,
+              "flagsKnown": false
+            },
+            "5859": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "5865": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2025-12-29",
+              "opponent": "Biblical Stud. (TX)",
+              "attendance": 134,
+              "flagsKnown": false
+            },
+            "5889": {
+              "status": "no-room",
+              "places": [
+                "Health & Physical Education Arena, Houston, TX"
+              ],
+              "date": "2025-11-20",
+              "opponent": "Arlington Baptist",
+              "attendance": 347,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
+    },
     "texas-state-softball": {
       "site": "https://txstatebobcats.com",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "tmu-mhockey": {
       "site": "https://tmubold.ca",
@@ -7163,7 +10194,7 @@
     "ubc-football": {
       "site": "https://gothunderbirds.ca",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "ubc-hockey": {
       "site": "https://gothunderbirds.ca",
@@ -7180,7 +10211,7 @@
             "14789": "kept",
             "14790": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -7266,10 +10297,21 @@
           "boxes": {
             "14656": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
+            "13787": "kept",
+            "13788": "kept",
+            "13790": "kept",
+            "13791": "kept",
+            "13792": "kept",
+            "13793": "kept",
+            "13796": "kept",
+            "13797": "kept",
+            "13799": "kept",
+            "13801": "kept",
+            "13805": "neutral",
             "13918": "kept",
             "13921": "kept",
             "13922": "neutral",
@@ -7277,7 +10319,42 @@
             "13927": "kept",
             "13928": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2024-25": {
+          "boxes": {
+            "13025": "kept",
+            "13027": "kept",
+            "13028": "kept",
+            "13031": "kept",
+            "13033": "kept",
+            "13037": "kept",
+            "13039": "kept",
+            "13040": "kept",
+            "13042": "kept",
+            "13043": "kept",
+            "13069": "kept",
+            "13070": "kept",
+            "13071": "kept",
+            "13072": "kept",
+            "13272": "neutral"
+          },
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "12319": "kept",
+            "12322": "kept",
+            "12324": "kept",
+            "12325": "kept",
+            "12329": "kept",
+            "12499": "kept",
+            "12501": "kept",
+            "12504": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -7289,26 +10366,26 @@
           "boxes": {
             "12315": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "12384": "kept",
             "12414": "kept",
             "12415": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
             "11107": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "11621": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "11631": "kept",
             "11632": "kept",
@@ -7322,13 +10399,13 @@
             "11646": "kept",
             "11649": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "11694": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "11700": "kept",
             "11704": "kept",
@@ -7336,33 +10413,47 @@
             "11708": "kept",
             "11812": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
             "10124": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "10125": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "10126": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "10141": "kept",
+            "10143": "kept",
+            "10144": "kept",
+            "10147": "kept",
+            "10148": "kept",
+            "10150": "kept",
+            "10153": "kept",
+            "10155": "kept",
+            "10157": "kept",
+            "10158": "kept",
+            "10162": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
             "10405": "kept",
             "10406": "kept",
             "10407": "kept",
             "10408": "kept",
             "10412": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -7370,6 +10461,31 @@
     "uh-baseball": {
       "site": "https://uhcougars.com",
       "seasons": {
+        "2023": {
+          "boxes": {
+            "12022": "kept",
+            "12023": "kept",
+            "12024": "kept",
+            "12028": "neutral",
+            "12029": "kept",
+            "12033": "kept",
+            "12034": "kept",
+            "12035": "kept",
+            "12036": "kept",
+            "12037": {
+              "status": "no-room",
+              "places": [
+                "Schroeder Field",
+                "Houston, Texas"
+              ],
+              "date": "2023-03-14",
+              "opponent": "TAMU",
+              "attendance": 3119
+            },
+            "12042": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
         "2024": {
           "boxes": {
             "13409": "kept",
@@ -7381,9 +10497,41 @@
             "13415": "kept",
             "13416": "kept",
             "13418": "neutral",
-            "13420": "kept"
+            "13420": "kept",
+            "13421": "kept",
+            "13422": "kept",
+            "13423": "kept",
+            "13428": "kept",
+            "13430": "kept",
+            "13431": "kept",
+            "13432": "kept",
+            "13433": "kept",
+            "13437": "kept",
+            "13438": "kept",
+            "13443": "kept",
+            "13444": "kept",
+            "13445": "kept",
+            "13446": "kept",
+            "13451": "kept",
+            "13452": "kept",
+            "13453": "kept",
+            "13454": {
+              "status": "no-room",
+              "places": [
+                "Houston, TX"
+              ],
+              "date": "2024-05-01",
+              "opponent": "McNeese",
+              "attendance": 1042
+            },
+            "13455": "kept",
+            "13456": "kept",
+            "13458": "kept",
+            "13464": "kept",
+            "15290": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2025": {
           "boxes": {
@@ -7468,19 +10616,19 @@
             "16102": "kept",
             "16103": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "16108": "kept",
             "16109": "kept",
             "16110": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "16111": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "baseball"
@@ -7495,14 +10643,14 @@
             "21623": "kept",
             "21624": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
             "21094": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "21096": "kept",
             "21097": "kept",
@@ -7521,11 +10669,11 @@
             "21173": "kept",
             "21174": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -7543,9 +10691,33 @@
             "20653": "kept",
             "20654": "kept",
             "20657": "kept",
-            "20658": "kept"
+            "20658": "kept",
+            "20659": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "20940": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "20038": "kept",
+            "20039": "kept",
+            "20043": "kept",
+            "20072": "kept",
+            "20073": "kept",
+            "20078": "kept",
+            "20082": "kept",
+            "20083": "kept",
+            "20085": "kept",
+            "20088": "kept",
+            "20089": "kept",
+            "20090": "kept",
+            "20091": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -7553,7 +10725,7 @@
     "uindy-football": {
       "site": "https://athletics.uindy.edu",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "uindy-mbb": {
       "site": "https://athletics.uindy.edu",
@@ -7563,7 +10735,7 @@
             "15054": "kept",
             "15055": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -7583,8 +10755,8 @@
             "14097": "kept",
             "14105": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "14777": {
               "status": "no-room",
@@ -7597,7 +10769,8 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -7621,13 +10794,48 @@
         },
         "2023-24": {
           "boxes": {
+            "12435": "kept",
+            "12436": "kept",
+            "12437": "kept",
+            "12439": "kept",
+            "12442": "kept",
+            "12443": "kept",
+            "12447": "kept",
+            "12448": "kept",
+            "12451": "kept",
+            "12452": "kept",
             "12461": "kept",
-            "12462": "kept"
+            "12462": "kept",
+            "12463": "kept",
+            "12504": "kept",
+            "12938": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "12939": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "12941": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
+    },
+    "uindy-wbb": {
+      "site": "https://athletics.uindy.edu",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "15048": "kept"
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "uiw-mbb": {
       "site": "https://uiwcardinals.com",
@@ -7637,14 +10845,14 @@
             "8039": "kept",
             "8051": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
             "7487": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7488": "kept",
             "7492": "kept",
@@ -7654,14 +10862,14 @@
             "7499": "kept",
             "7503": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7504": "kept",
             "7505": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7507": "kept",
             "7511": "kept",
@@ -7669,7 +10877,8 @@
             "7515": "kept",
             "7516": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -7680,20 +10889,59 @@
             "6987": "kept",
             "6988": "kept",
             "6991": "kept",
+            "6992": "kept",
             "6999": "kept",
             "7000": "kept",
             "7001": "kept",
             "7005": "kept",
             "7006": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "7008": "kept",
             "7009": "kept",
-            "7010": "kept"
+            "7010": "kept",
+            "7280": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "7286": {
+              "status": "no-room",
+              "places": [
+                "Ocean Center, Daytona Beach, FL"
+              ],
+              "date": "2025-03-25",
+              "opponent": "Illinois St.",
+              "attendance": 832,
+              "flagsKnown": false
+            }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "6593": "kept",
+            "6595": "kept",
+            "6597": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "6605": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "6606": "kept",
+            "6610": "kept",
+            "6611": "kept",
+            "6612": "kept",
+            "6620": "kept",
+            "6621": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -7755,13 +11003,13 @@
             "9742": "kept",
             "9743": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "9744": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "9748": "kept",
             "9750": "kept",
@@ -7769,7 +11017,7 @@
             "9752": "kept",
             "9753": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2024-25": {
           "boxes": {
@@ -7786,8 +11034,8 @@
             "8836": "kept",
             "8837": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8840": "kept",
             "8841": "kept",
@@ -7799,7 +11047,8 @@
             "8889": "neutral",
             "8897": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-ice-hockey",
@@ -7858,7 +11107,7 @@
               "attendance": 1355
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -7909,8 +11158,8 @@
             },
             "6891": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "6893": {
               "status": "no-room",
@@ -8013,7 +11262,8 @@
             },
             "7064": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {
@@ -8324,7 +11574,7 @@
             "13454": "kept",
             "13455": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -8382,13 +11632,53 @@
             "12481": "kept",
             "12482": "kept",
             "12483": "kept",
+            "12485": "kept",
+            "12489": "kept",
+            "12490": "kept",
+            "12493": "kept",
+            "12494": "kept",
+            "12495": "kept",
             "12498": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
+            },
+            "12811": {
+              "status": "no-room",
+              "places": [
+                "Orleans Arena, Las Vegas, NV"
+              ],
+              "date": "2025-03-10",
+              "opponent": "Washington St.",
+              "attendance": 2936,
+              "flagsKnown": false
+            },
+            "12812": {
+              "status": "no-room",
+              "places": [
+                "Orleans Arena, Las Vegas, NV"
+              ],
+              "date": "2025-03-11",
+              "opponent": "Oregon St.",
+              "attendance": 1737,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
+        },
+        "2023-24": {
+          "boxes": {
+            "12041": "kept",
+            "12042": "kept",
+            "12044": "kept",
+            "12048": "kept",
+            "12049": "kept",
+            "12053": "kept",
+            "12090": "kept",
+            "12092": "kept",
+            "12093": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-basketball"
@@ -8483,7 +11773,7 @@
             "35384": "kept",
             "35385": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "womens-volleyball"
@@ -8498,12 +11788,12 @@
             "15579": "kept",
             "15581": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "15605": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -8533,6 +11823,12 @@
             "14653": "kept",
             "14654": "kept",
             "14657": "kept",
+            "14658": "kept",
+            "14662": "kept",
+            "14663": "kept",
+            "14667": "kept",
+            "14668": "kept",
+            "14670": "kept",
             "14691": {
               "status": "no-room",
               "places": [
@@ -8553,7 +11849,24 @@
             "14702": "kept",
             "14743": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
+        },
+        "2023-24": {
+          "boxes": {
+            "14257": "kept",
+            "14258": "kept",
+            "14260": "kept",
+            "14261": "kept",
+            "14264": "kept",
+            "14267": "kept",
+            "14268": "kept",
+            "14269": "kept",
+            "14270": "kept",
+            "14271": "kept",
+            "14272": "kept"
+          },
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
@@ -8569,7 +11882,7 @@
             "9086": "kept",
             "9087": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -8616,8 +11929,8 @@
             },
             "8415": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8417": "neutral",
             "8418": "kept",
@@ -8626,8 +11939,8 @@
             "8422": "kept",
             "8423": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "8424": "kept",
             "8425": "kept",
@@ -8636,7 +11949,7 @@
             "8569": "kept",
             "8570": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -8662,19 +11975,85 @@
             "7863": "kept",
             "7866": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "7867": "kept",
             "7869": "kept",
             "7870": "kept",
             "7871": "kept",
-            "7872": "neutral"
+            "7872": "neutral",
+            "8146": "neutral"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"
+    },
+    "usf-dons-wbb": {
+      "site": "https://usfdons.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "9029": "kept",
+            "9033": "kept",
+            "9034": "kept",
+            "9035": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "8731": "kept",
+            "8733": "kept",
+            "8734": "kept",
+            "8736": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            },
+            "8737": "kept",
+            "8740": "kept",
+            "8741": {
+              "status": "no-room",
+              "places": [
+                "Chase Center, San Francisco, CA"
+              ],
+              "date": "2025-12-17",
+              "opponent": "Sacramento St.",
+              "attendance": 219
+            },
+            "8760": "kept",
+            "8761": "kept",
+            "8764": "kept",
+            "8767": "kept",
+            "8768": "kept",
+            "8769": "kept",
+            "8772": "kept",
+            "8773": "kept",
+            "8776": "kept",
+            "8778": "neutral",
+            "8885": "kept"
+          },
+          "readOn": "2026-11-27"
+        },
+        "2024-25": {
+          "boxes": {
+            "8393": "kept",
+            "8396": "kept",
+            "8416": "neutral",
+            "8429": "kept",
+            "8430": "kept",
+            "8435": {
+              "status": "no-crowd",
+              "tries": 1,
+              "last": "2026-11-27"
+            }
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
     },
     "uta-wbb": {
       "site": "https://utamavs.com",
@@ -8685,7 +12064,7 @@
             "21359": "kept",
             "21361": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -8713,8 +12092,8 @@
             "20443": "kept",
             "20444": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "20445": "kept",
             "20448": "kept",
@@ -8729,7 +12108,8 @@
             "20485": "kept",
             "20789": "kept"
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2023-24": {
           "boxes": {
@@ -8758,8 +12138,241 @@
       "site": "https://utahutes.com",
       "seasons": {
         "2023": {
-          "boxes": {},
-          "readOn": "2026-11-26"
+          "boxes": {
+            "21584": {
+              "status": "no-room",
+              "places": [
+                "Miller Park",
+                "Provo, Utah"
+              ],
+              "date": "2023-03-17",
+              "opponent": "Arizona State",
+              "attendance": 286
+            },
+            "21585": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-03-18",
+              "opponent": "Arizona State",
+              "attendance": 1457
+            },
+            "21586": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-03-19",
+              "opponent": "Arizona State",
+              "attendance": 1433
+            },
+            "21589": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-18",
+              "opponent": "Oregon",
+              "attendance": 2163
+            },
+            "21590": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-19",
+              "opponent": "Oregon",
+              "attendance": 1678
+            },
+            "21591": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-20",
+              "opponent": "Oregon",
+              "attendance": 1894
+            },
+            "21602": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-28",
+              "opponent": "Washington State",
+              "attendance": 1705
+            },
+            "21603": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-29",
+              "opponent": "Washington State",
+              "attendance": 1749
+            },
+            "21604": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-30",
+              "opponent": "Washington State",
+              "attendance": 1876
+            },
+            "21739": {
+              "status": "no-room",
+              "places": [
+                "Miller Park",
+                "Provo, Utah"
+              ],
+              "date": "2023-03-31",
+              "opponent": "USC",
+              "attendance": 238
+            },
+            "21740": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-01",
+              "opponent": "USC",
+              "attendance": 1665
+            },
+            "21741": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-02",
+              "opponent": "USC",
+              "attendance": 1571
+            },
+            "21742": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-14",
+              "opponent": "California",
+              "attendance": 1531
+            },
+            "21743": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-15",
+              "opponent": "California",
+              "attendance": 1713
+            },
+            "21744": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-16",
+              "opponent": "California",
+              "attendance": 1705
+            },
+            "21773": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-03-21",
+              "opponent": "Northern Colorado",
+              "attendance": 1549
+            },
+            "21774": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-03-21",
+              "opponent": "Northern Colorado",
+              "attendance": 1549
+            },
+            "21816": "neutral",
+            "21826": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-04-10",
+              "opponent": "Utah Valley",
+              "attendance": 1590
+            },
+            "21828": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-09",
+              "opponent": "BYU",
+              "attendance": 2529
+            },
+            "21829": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-10",
+              "opponent": "New Mexico State",
+              "attendance": 1396
+            },
+            "21830": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-12",
+              "opponent": "Cal Poly",
+              "attendance": 1924
+            },
+            "21831": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-13",
+              "opponent": "Cal Poly",
+              "attendance": 1924
+            },
+            "21832": {
+              "status": "no-room",
+              "places": [
+                "Smith's Ballpark",
+                "Salt Lake City, Utah"
+              ],
+              "date": "2023-05-14",
+              "opponent": "Cal Poly",
+              "attendance": 1668
+            }
+          },
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024": {
           "boxes": {
@@ -9207,7 +12820,7 @@
               "attendance": 1298
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "baseball"
@@ -9227,8 +12840,8 @@
           "boxes": {
             "14795": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "14798": {
               "status": "no-room",
@@ -9241,7 +12854,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
@@ -9393,8 +13006,8 @@
             },
             "13238": {
               "status": "no-crowd",
-              "tries": 1,
-              "last": "2026-11-26"
+              "tries": 2,
+              "last": "2026-11-27"
             },
             "13240": {
               "status": "no-room",
@@ -9517,7 +13130,7 @@
               "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2023-24": {
           "boxes": {
@@ -9570,17 +13183,174 @@
               "opponent": "Saint Francis (PA)",
               "attendance": 989,
               "flagsKnown": false
+            },
+            "12571": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-01-15",
+              "opponent": "Stonehill",
+              "attendance": 972,
+              "flagsKnown": false
+            },
+            "12574": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-01-25",
+              "opponent": "Merrimack",
+              "attendance": 889,
+              "flagsKnown": false
+            },
+            "12576": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-02-01",
+              "opponent": "Le Moyne",
+              "attendance": 1093,
+              "flagsKnown": false
+            },
+            "12580": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-02-17",
+              "opponent": "Sacred Heart",
+              "attendance": 1173,
+              "flagsKnown": false
+            },
+            "12581": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-02-22",
+              "opponent": "Central Conn. St.",
+              "attendance": 1051,
+              "flagsKnown": false
+            },
+            "12582": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-02-25",
+              "opponent": "LIU",
+              "attendance": 1276,
+              "flagsKnown": false
+            },
+            "12584": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2024-03-02",
+              "opponent": "FDU",
+              "attendance": 1486,
+              "flagsKnown": false
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         }
       },
       "path": "mens-basketball"
     },
+    "wagner-wbb": {
+      "site": "https://wagnerathletics.com",
+      "seasons": {
+        "2026-27": {
+          "boxes": {
+            "14690": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2026-11-02",
+              "opponent": "Cortland",
+              "attendance": 189,
+              "flagsKnown": false
+            },
+            "14693": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2026-11-12",
+              "opponent": "Rhode Island",
+              "attendance": 87,
+              "flagsKnown": false
+            },
+            "14694": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2026-11-20",
+              "opponent": "Rider",
+              "attendance": 153,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        },
+        "2025-26": {
+          "boxes": {
+            "13854": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2025-11-05",
+              "opponent": "SUNY New Paltz",
+              "attendance": 653,
+              "flagsKnown": false
+            },
+            "13857": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2025-11-20",
+              "opponent": "Lafayette",
+              "attendance": 150,
+              "flagsKnown": false
+            },
+            "13858": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2025-11-24",
+              "opponent": "Iona",
+              "attendance": 478,
+              "flagsKnown": false
+            },
+            "13859": {
+              "status": "no-room",
+              "places": [
+                "Spiro Sports Center Athletic Complex, Staten Island, NY"
+              ],
+              "date": "2025-11-30",
+              "opponent": "Cornell",
+              "attendance": 300,
+              "flagsKnown": false
+            }
+          },
+          "readOn": "2026-11-27"
+        }
+      },
+      "path": "womens-basketball"
+    },
     "york-lions-football": {
       "site": "https://yorkulions.ca",
       "seasons": {},
-      "unreadable": "2026-11-26"
+      "unreadable": "2026-11-27"
     },
     "york-lions-mbb": {
       "site": "https://yorkulions.ca",
@@ -9589,100 +13359,101 @@
           "boxes": {
             "8072": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8073": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8078": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8093": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8263": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "8265": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         },
         "2025-26": {
           "boxes": {
             "7826": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7827": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7830": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7834": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7835": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7836": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7840": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7841": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7844": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7845": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             },
             "7846": {
               "status": "no-crowd",
-              "tries": 2,
-              "last": "2026-11-26"
+              "tries": 3,
+              "last": "2026-11-27"
             }
           },
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27",
+          "done": true
         },
         "2024-25": {
           "boxes": {},
-          "readOn": "2026-11-26"
+          "readOn": "2026-11-27"
         }
       },
       "path": "mens-basketball"

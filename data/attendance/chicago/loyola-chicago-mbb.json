@@ -2,8 +2,41 @@
   "schema": 1,
   "metroId": "chicago",
   "teamId": "loyola-chicago-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2024,
+      "date": "2023-11-11",
+      "start": null,
+      "opponent": "Eastern Ill.",
+      "venueId": "gentile-arena",
+      "attendance": 3311,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2024,
+      "date": "2023-11-14",
+      "start": null,
+      "opponent": "UIC",
+      "venueId": "gentile-arena",
+      "attendance": 2659,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2024,
+      "date": "2023-11-18",
+      "start": null,
+      "opponent": "New Orleans",
+      "venueId": "gentile-arena",
+      "attendance": 2833,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "loyola-chicago-mbb",
       "season": 2025,
@@ -111,6 +144,94 @@
       "opponent": "Rhode Island",
       "venueId": "gentile-arena",
       "attendance": 2523,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-01-22",
+      "start": null,
+      "opponent": "Fordham",
+      "venueId": "gentile-arena",
+      "attendance": 2780,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-02-01",
+      "start": null,
+      "opponent": "Saint Joseph's",
+      "venueId": "gentile-arena",
+      "attendance": 4427,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-02-04",
+      "start": null,
+      "opponent": "St. Bonaventure",
+      "venueId": "gentile-arena",
+      "attendance": 2553,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-02-14",
+      "start": null,
+      "opponent": "Saint Louis",
+      "venueId": "gentile-arena",
+      "attendance": 4137,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-02-21",
+      "start": null,
+      "opponent": "Dayton",
+      "venueId": "gentile-arena",
+      "attendance": 4557,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-02-26",
+      "start": null,
+      "opponent": "George Washington",
+      "venueId": "gentile-arena",
+      "attendance": 2751,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-03-05",
+      "start": null,
+      "opponent": "Davidson",
+      "venueId": "gentile-arena",
+      "attendance": 3010,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "loyola-chicago-mbb",
+      "season": 2025,
+      "date": "2025-03-26",
+      "start": null,
+      "opponent": "Kent St.",
+      "venueId": "gentile-arena",
+      "attendance": 3554,
       "kind": "announced",
       "sourceId": "sidearm"
     },

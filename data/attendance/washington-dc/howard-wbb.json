@@ -2,8 +2,85 @@
   "schema": 1,
   "metroId": "washington-dc",
   "teamId": "howard-wbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2023-11-09",
+      "start": null,
+      "opponent": "Mount St. Mary's",
+      "venueId": "burr-gymnasium",
+      "attendance": 654,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2023-11-14",
+      "start": null,
+      "opponent": "Duquesne",
+      "venueId": "burr-gymnasium",
+      "attendance": 2431,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2023-11-26",
+      "start": null,
+      "opponent": "Manhattan",
+      "venueId": "burr-gymnasium",
+      "attendance": 245,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2023-12-21",
+      "start": null,
+      "opponent": "Hofstra",
+      "venueId": "burr-gymnasium",
+      "attendance": 654,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2023-12-30",
+      "start": null,
+      "opponent": "American",
+      "venueId": "burr-gymnasium",
+      "attendance": 498,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Norfolk St.",
+      "venueId": "burr-gymnasium",
+      "attendance": 1233,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2024,
+      "date": "2024-02-03",
+      "start": null,
+      "opponent": "UMES",
+      "venueId": "burr-gymnasium",
+      "attendance": 786,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "howard-wbb",
       "season": 2025,
@@ -144,6 +221,17 @@
       "opponent": "Norfolk St.",
       "venueId": "burr-gymnasium",
       "attendance": 889,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "howard-wbb",
+      "season": 2025,
+      "date": "2025-03-21",
+      "start": null,
+      "opponent": "Siena",
+      "venueId": "burr-gymnasium",
+      "attendance": 1030,
       "kind": "announced",
       "sourceId": "sidearm"
     },

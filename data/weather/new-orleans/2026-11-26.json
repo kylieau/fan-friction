@@ -207,6 +207,17 @@
       "code": 3,
       "precipProbability": 0,
       "precipMm": 0
+    },
+    {
+      "metroId": "new-orleans",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "observed",
+      "capturedAt": "2026-11-27T17:58:16.353Z",
+      "feelsLikeHighF": 49.2,
+      "feelsLikeLowF": 35,
+      "code": 0,
+      "precipMm": 0
     }
   ]
 }

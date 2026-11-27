@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "la",
   "teamId": "cal-state-fullerton-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "cal-state-fullerton-mbb",
@@ -23,6 +23,138 @@
       "opponent": "North Dakota",
       "venueId": "titan-gym",
       "attendance": 908,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2023-12-03",
+      "start": null,
+      "opponent": "Stanton",
+      "venueId": "titan-gym",
+      "attendance": 692,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2023-12-20",
+      "start": null,
+      "opponent": "Pacific",
+      "venueId": "titan-gym",
+      "attendance": 518,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2023-12-28",
+      "start": null,
+      "opponent": "Long Beach St.",
+      "venueId": "titan-gym",
+      "attendance": 1436,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-01-06",
+      "start": null,
+      "opponent": "UC San Diego",
+      "venueId": "titan-gym",
+      "attendance": 642,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-01-18",
+      "start": null,
+      "opponent": "UC Davis",
+      "venueId": "titan-gym",
+      "attendance": 583,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-01-27",
+      "start": null,
+      "opponent": "CSU Bakersfield",
+      "venueId": "titan-gym",
+      "attendance": 784,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-02-01",
+      "start": null,
+      "opponent": "Hawaii",
+      "venueId": "titan-gym",
+      "attendance": 1339,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-02-15",
+      "start": null,
+      "opponent": "UC Riverside",
+      "venueId": "titan-gym",
+      "attendance": 633,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-02-22",
+      "start": null,
+      "opponent": "Cal Poly",
+      "venueId": "titan-gym",
+      "attendance": 525,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-02-24",
+      "start": null,
+      "opponent": "CSUN",
+      "venueId": "titan-gym",
+      "attendance": 680,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-03-02",
+      "start": null,
+      "opponent": "UC Santa Barbara",
+      "venueId": "titan-gym",
+      "attendance": 760,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "cal-state-fullerton-mbb",
+      "season": 2024,
+      "date": "2024-03-09",
+      "start": null,
+      "opponent": "UC Irvine",
+      "venueId": "titan-gym",
+      "attendance": 1202,
       "kind": "announced",
       "sourceId": "sidearm"
     },

@@ -2,7 +2,7 @@
   "schema": 1,
   "metroId": "houston",
   "teamId": "pvamu-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
     {
       "teamId": "pvamu-mbb",
@@ -45,6 +45,72 @@
       "opponent": "Alabama St.",
       "venueId": "william-j-nicks-building",
       "attendance": 1175,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-01-29",
+      "start": null,
+      "opponent": "Alabama A&M",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1926,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-02-03",
+      "start": null,
+      "opponent": "Texas Southern",
+      "venueId": "william-j-nicks-building",
+      "attendance": 3514,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-02-05",
+      "start": null,
+      "opponent": "Ark.-Pine Bluff",
+      "venueId": "william-j-nicks-building",
+      "attendance": 654,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-02-17",
+      "start": null,
+      "opponent": "Southern U.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1266,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-03-02",
+      "start": null,
+      "opponent": "Alcorn",
+      "venueId": "william-j-nicks-building",
+      "attendance": 1032,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "pvamu-mbb",
+      "season": 2024,
+      "date": "2024-03-04",
+      "start": null,
+      "opponent": "Jackson St.",
+      "venueId": "william-j-nicks-building",
+      "attendance": 929,
       "kind": "announced",
       "sourceId": "sidearm"
     },

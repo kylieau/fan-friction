@@ -10405,6 +10405,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "20:08"
   },
   {
+    "eventId": "2026-11-26-espn-cowboys-401873080",
+    "metroId": "dallas-fort-worth",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "att-stadium",
+    "homeTeamId": "cowboys",
+    "home": {
+      "name": "Cowboys",
+      "score": 38
+    },
+    "away": {
+      "name": "Eagles",
+      "score": 39
+    },
+    "attendance": 93417,
+    "capturedAt": "2026-11-27T18:07:16.541Z",
+    "duration": {
+      "minutes": 226,
+      "kind": "estimated"
+    },
+    "startedAt": "16:46"
+  },
+  {
     "eventId": "2026-10-10-espn-avalanche-401892478",
     "metroId": "denver",
     "date": "2026-10-10",
@@ -12365,6 +12389,53 @@ export const GAME_RESULTS: GameResult[] = [
       "kind": "estimated"
     },
     "startedAt": "19:46"
+  },
+  {
+    "eventId": "2026-11-26-espn-lions-401873081",
+    "metroId": "detroit",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "ford-field",
+    "homeTeamId": "lions",
+    "home": {
+      "name": "Lions",
+      "score": 35
+    },
+    "away": {
+      "name": "Bears",
+      "score": 39
+    },
+    "attendance": 64316,
+    "capturedAt": "2026-11-27T18:07:16.878Z",
+    "duration": {
+      "minutes": 209,
+      "kind": "estimated"
+    },
+    "startedAt": "13:02"
+  },
+  {
+    "eventId": "2026-11-26-espn-michigan-mbb-401920537",
+    "metroId": "detroit",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "t-mobile-arena",
+    "homeTeamId": "michigan-mbb",
+    "home": {
+      "name": "Michigan Wolverines",
+      "score": 70
+    },
+    "away": {
+      "name": "Miami",
+      "score": 97
+    },
+    "capturedAt": "2026-11-27T18:07:16.878Z",
+    "duration": {
+      "minutes": 128,
+      "kind": "estimated"
+    },
+    "startedAt": "15:35"
   },
   {
     "eventId": "2026-10-15-espn-oilers-401892515",
@@ -26882,6 +26953,29 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "19:41"
   },
   {
+    "eventId": "2026-11-26-espn-stjohns-mbb-401920530",
+    "metroId": "new-york",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "michelob-ultra-arena",
+    "homeTeamId": "stjohns-mbb",
+    "home": {
+      "name": "St John's",
+      "score": 90
+    },
+    "away": {
+      "name": "Louisville",
+      "score": 93
+    },
+    "capturedAt": "2026-11-27T18:07:15.181Z",
+    "duration": {
+      "minutes": 146,
+      "kind": "estimated"
+    },
+    "startedAt": "21:02"
+  },
+  {
     "eventId": "2026-10-10-espn-ottawa-senators-401892474",
     "metroId": "ottawa-gatineau",
     "date": "2026-10-10",
@@ -35329,6 +35423,30 @@ export const GAME_RESULTS: GameResult[] = [
     "startedAt": "13:02"
   },
   {
+    "eventId": "2026-11-26-espn-utsa-mbb-401912231",
+    "metroId": "san-antonio",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "utsa-convocation-center",
+    "homeTeamId": "utsa-mbb",
+    "home": {
+      "name": "UTSA",
+      "score": 61
+    },
+    "away": {
+      "name": "Army",
+      "score": 79
+    },
+    "attendance": 676,
+    "capturedAt": "2026-11-27T18:07:24.901Z",
+    "duration": {
+      "minutes": 114,
+      "kind": "estimated"
+    },
+    "startedAt": "12:02"
+  },
+  {
     "eventId": "2026-10-03-espn-sdsu-football-401860900",
     "metroId": "san-diego",
     "date": "2026-10-03",
@@ -35966,6 +36084,29 @@ export const GAME_RESULTS: GameResult[] = [
     },
     "attendance": 5261,
     "capturedAt": "2026-11-25T18:39:20.589Z"
+  },
+  {
+    "eventId": "2026-11-26-espn-sdsu-mbb-401920528",
+    "metroId": "san-diego",
+    "date": "2026-11-26",
+    "sourceId": "espn",
+    "status": "final",
+    "venueId": "michelob-ultra-arena",
+    "homeTeamId": "sdsu-mbb",
+    "home": {
+      "name": "San Diego St",
+      "score": 75
+    },
+    "away": {
+      "name": "Maryland",
+      "score": 71
+    },
+    "capturedAt": "2026-11-27T18:07:14.525Z",
+    "duration": {
+      "minutes": 141,
+      "kind": "estimated"
+    },
+    "startedAt": "13:08"
   },
   {
     "eventId": "2026-10-04-espn-kraken-401891824",

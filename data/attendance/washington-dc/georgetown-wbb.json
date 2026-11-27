@@ -2,8 +2,107 @@
   "schema": 1,
   "metroId": "washington-dc",
   "teamId": "georgetown-wbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-11-06",
+      "start": null,
+      "opponent": "UMES",
+      "venueId": "mcdonough-arena",
+      "attendance": 1503,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-11-12",
+      "start": null,
+      "opponent": "Brown",
+      "venueId": "mcdonough-arena",
+      "attendance": 417,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-11-17",
+      "start": null,
+      "opponent": "FDU",
+      "venueId": "mcdonough-arena",
+      "attendance": 283,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-11-30",
+      "start": null,
+      "opponent": "Howard",
+      "venueId": "mcdonough-arena",
+      "attendance": 451,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-12-17",
+      "start": null,
+      "opponent": "Wake Forest",
+      "venueId": "mcdonough-arena",
+      "attendance": 783,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2023-12-20",
+      "start": null,
+      "opponent": "Seton Hall",
+      "venueId": "mcdonough-arena",
+      "attendance": 697,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2024-01-07",
+      "start": null,
+      "opponent": "UConn",
+      "venueId": "mcdonough-arena",
+      "attendance": 2937,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2024-01-20",
+      "start": null,
+      "opponent": "Xavier",
+      "venueId": "mcdonough-arena",
+      "attendance": 989,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2024,
+      "date": "2024-01-24",
+      "start": null,
+      "opponent": "Creighton",
+      "venueId": "mcdonough-arena",
+      "attendance": 522,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "georgetown-wbb",
       "season": 2025,
@@ -89,6 +188,28 @@
       "opponent": "Butler",
       "venueId": "mcdonough-arena",
       "attendance": 119,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-02-22",
+      "start": null,
+      "opponent": "Marquette",
+      "venueId": "mcdonough-arena",
+      "attendance": 1363,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "georgetown-wbb",
+      "season": 2025,
+      "date": "2025-03-01",
+      "start": null,
+      "opponent": "Providence",
+      "venueId": "mcdonough-arena",
+      "attendance": 617,
       "kind": "announced",
       "sourceId": "sidearm"
     },

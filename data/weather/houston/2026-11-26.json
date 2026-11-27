@@ -207,6 +207,17 @@
       "code": 3,
       "precipProbability": 0,
       "precipMm": 0
+    },
+    {
+      "metroId": "houston",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "observed",
+      "capturedAt": "2026-11-27T17:57:24.214Z",
+      "feelsLikeHighF": 52,
+      "feelsLikeLowF": 32.6,
+      "code": 3,
+      "precipMm": 0
     }
   ]
 }

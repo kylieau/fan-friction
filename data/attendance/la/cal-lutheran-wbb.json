@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "metroId": "la",
+  "teamId": "cal-lutheran-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "cal-lutheran-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Lewis & Clark",
+      "venueId": "gilbert-arena",
+      "attendance": 74,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

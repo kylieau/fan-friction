@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "metroId": "boston",
+  "teamId": "northeastern-wbb",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2025-11-03",
+      "start": null,
+      "opponent": "LIU",
+      "venueId": "cabot-center",
+      "attendance": 254,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2025-11-11",
+      "start": null,
+      "opponent": "Boston U.",
+      "venueId": "cabot-center",
+      "attendance": 376,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2025-11-22",
+      "start": null,
+      "opponent": "Sacred Heart",
+      "venueId": "cabot-center",
+      "attendance": 321,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2025-12-03",
+      "start": null,
+      "opponent": "Massachusetts",
+      "venueId": "cabot-center",
+      "attendance": 388,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-01-09",
+      "start": null,
+      "opponent": "N.C. A&T",
+      "venueId": "cabot-center",
+      "attendance": 210,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-01-11",
+      "start": null,
+      "opponent": "Monmouth",
+      "venueId": "cabot-center",
+      "attendance": 287,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-01-16",
+      "start": null,
+      "opponent": "Campbell",
+      "venueId": "cabot-center",
+      "attendance": 167,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-01-23",
+      "start": null,
+      "opponent": "William & Mary",
+      "venueId": "cabot-center",
+      "attendance": 157,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-02-01",
+      "start": null,
+      "opponent": "Drexel",
+      "venueId": "cabot-center",
+      "attendance": 281,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-02-13",
+      "start": null,
+      "opponent": "Col. of Charleston",
+      "venueId": "cabot-center",
+      "attendance": 165,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-02-15",
+      "start": null,
+      "opponent": "Stony Brook",
+      "venueId": "cabot-center",
+      "attendance": 243,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-03-01",
+      "start": null,
+      "opponent": "Hampton",
+      "venueId": "cabot-center",
+      "attendance": 289,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2026,
+      "date": "2026-03-07",
+      "start": null,
+      "opponent": "Hofstra",
+      "venueId": "cabot-center",
+      "attendance": 204,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2027,
+      "date": "2026-11-02",
+      "start": null,
+      "opponent": "UAlbany",
+      "venueId": "cabot-center",
+      "attendance": 312,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "northeastern-wbb",
+      "season": 2027,
+      "date": "2026-11-21",
+      "start": null,
+      "opponent": "Bryant",
+      "venueId": "cabot-center",
+      "attendance": 174,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "metroId": "san-diego",
+  "date": "2026-11-26",
+  "results": [
+    {
+      "eventId": "2026-11-26-espn-sdsu-mbb-401920528",
+      "metroId": "san-diego",
+      "date": "2026-11-26",
+      "sourceId": "espn",
+      "status": "final",
+      "venueId": "michelob-ultra-arena",
+      "homeTeamId": "sdsu-mbb",
+      "home": {
+        "name": "San Diego St",
+        "score": 75
+      },
+      "away": {
+        "name": "Maryland",
+        "score": 71
+      },
+      "capturedAt": "2026-11-27T18:07:14.525Z",
+      "duration": {
+        "minutes": 141,
+        "kind": "estimated"
+      },
+      "startedAt": "13:08"
+    }
+  ]
+}

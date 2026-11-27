@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "metroId": "minneapolis",
+  "teamId": "gophers-whockey",
+  "collectedOn": "2026-11-27",
+  "games": [
+    {
+      "teamId": "gophers-whockey",
+      "season": 2027,
+      "date": "2026-10-22",
+      "start": null,
+      "opponent": "Lindenwood",
+      "venueId": "ridder-arena",
+      "attendance": 1074,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gophers-whockey",
+      "season": 2027,
+      "date": "2026-10-23",
+      "start": null,
+      "opponent": "Lindenwood",
+      "venueId": "ridder-arena",
+      "attendance": 1857,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "gophers-whockey",
+      "season": 2027,
+      "date": "2026-11-13",
+      "start": null,
+      "opponent": "St. Cloud St.",
+      "venueId": "ridder-arena",
+      "attendance": 2015,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    }
+  ]
+}

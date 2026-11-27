@@ -207,6 +207,17 @@
       "code": 63,
       "precipProbability": 84,
       "precipMm": 16.5
+    },
+    {
+      "metroId": "chicago",
+      "venueId": "city",
+      "date": "2026-11-26",
+      "basis": "observed",
+      "capturedAt": "2026-11-27T17:53:11.252Z",
+      "feelsLikeHighF": 36.3,
+      "feelsLikeLowF": 29.9,
+      "code": 63,
+      "precipMm": 12.6
     }
   ]
 }

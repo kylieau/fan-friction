@@ -2,8 +2,96 @@
   "schema": 1,
   "metroId": "philadelphia",
   "teamId": "sju-mbb",
-  "collectedOn": "2026-11-26",
+  "collectedOn": "2026-11-27",
   "games": [
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-11-06",
+      "start": null,
+      "opponent": "Lafayette",
+      "venueId": "hagan-arena",
+      "attendance": 1793,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-11-10",
+      "start": null,
+      "opponent": "Penn",
+      "venueId": "hagan-arena",
+      "attendance": 2738,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-11-14",
+      "start": null,
+      "opponent": "Stonehill",
+      "venueId": "hagan-arena",
+      "attendance": 1734,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-11-17",
+      "start": null,
+      "opponent": "Tex. A&M-Commerce",
+      "venueId": "hagan-arena",
+      "attendance": 1901,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-11-26",
+      "start": null,
+      "opponent": "Sacred Heart",
+      "venueId": "hagan-arena",
+      "attendance": 1501,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-12-06",
+      "start": null,
+      "opponent": "American",
+      "venueId": "hagan-arena",
+      "attendance": 1517,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-12-10",
+      "start": null,
+      "opponent": "Princeton",
+      "venueId": "hagan-arena",
+      "attendance": 3004,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2024,
+      "date": "2023-12-29",
+      "start": null,
+      "opponent": "Loyola Maryland",
+      "venueId": "hagan-arena",
+      "attendance": 2872,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
     {
       "teamId": "sju-mbb",
       "season": 2025,
@@ -122,6 +210,83 @@
       "opponent": "VCU",
       "venueId": "hagan-arena",
       "attendance": 3069,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-01-29",
+      "start": null,
+      "opponent": "Duquesne",
+      "venueId": "hagan-arena",
+      "attendance": 2284,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-02-07",
+      "start": null,
+      "opponent": "Saint Louis",
+      "venueId": "hagan-arena",
+      "attendance": 2201,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-02-12",
+      "start": null,
+      "opponent": "La Salle",
+      "venueId": "hagan-arena",
+      "attendance": 2103,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-02-22",
+      "start": null,
+      "opponent": "Richmond",
+      "venueId": "hagan-arena",
+      "attendance": 3402,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-02-26",
+      "start": null,
+      "opponent": "St. Bonaventure",
+      "venueId": "hagan-arena",
+      "attendance": 2543,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-03-05",
+      "start": null,
+      "opponent": "Rhode Island",
+      "venueId": "hagan-arena",
+      "attendance": 2716,
+      "kind": "announced",
+      "sourceId": "sidearm"
+    },
+    {
+      "teamId": "sju-mbb",
+      "season": 2025,
+      "date": "2025-03-19",
+      "start": null,
+      "opponent": "UAB",
+      "venueId": "hagan-arena",
+      "attendance": 1004,
       "kind": "announced",
       "sourceId": "sidearm"
     }

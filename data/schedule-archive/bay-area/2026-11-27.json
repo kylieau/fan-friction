@@ -1,0 +1,4656 @@
+{
+  "schema": 1,
+  "metroId": "bay-area",
+  "metroName": "Bay Area",
+  "timeZone": "America/Los_Angeles",
+  "capturedOn": "2026-11-27",
+  "capturedAt": "2026-11-27T18:02:12.433Z",
+  "horizonDays": 14,
+  "window": {
+    "from": "2026-11-27",
+    "through": "2026-12-11"
+  },
+  "note": "Saved schedule for later stamps. Not shown in the app. A night before the first file in this folder is reconstructed. The stamp uses the latest daily file saved before an event starts. A missing read is not a guess. Draft words copied from a seeded row are not a locked stamp.",
+  "sources": [
+    {
+      "id": "mlb",
+      "name": "MLB schedule",
+      "inWindow": 0
+    },
+    {
+      "id": "espn",
+      "name": "ESPN schedules",
+      "inWindow": 18
+    },
+    {
+      "id": "hockeytech",
+      "name": "HockeyTech schedules",
+      "inWindow": 2
+    },
+    {
+      "id": "seed",
+      "name": "Hand-seeded test nights",
+      "inWindow": 0
+    },
+    {
+      "id": "ticketmaster",
+      "name": "Ticketmaster listings",
+      "inWindow": 99
+    },
+    {
+      "id": "sidearm",
+      "name": "School calendars",
+      "inWindow": 22
+    },
+    {
+      "id": "fan",
+      "name": "Fan-added events",
+      "inWindow": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-11-27-espn-cal-wbb-401927985",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "12:00",
+      "kind": "game",
+      "title": "California vs. Delaware",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "delaware-wbb",
+        "awayOpponent": "delaware"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 29 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-sjsu-football-401864549",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "12:30",
+      "kind": "game",
+      "title": "San José St vs. N Dakota St",
+      "broadcast": "CBSSN",
+      "place": {
+        "type": "venue",
+        "venueId": "cefcu-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sjsu-football",
+        "away": "n-dakota-st",
+        "awayOpponent": "n-dakota-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 8394,
+        "low": 7914,
+        "high": 10066,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-27-espn-sharks-401892805",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Sharks vs. Golden Knights",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "golden-knights",
+        "awayOpponent": "golden-knights"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 20675,
+        "low": 18736,
+        "high": 22223,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday in November: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-sa-calbears-com-39268",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Cal vs. East Carolina vs Gardner-Webb",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "East Carolina vs Gardner-Webb",
+        "awayOpponent": "east-carolina-vs-gardner-webb"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 29 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-G5vYZ_2dvkLoy",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Ryan Hamilton: Making Good Time",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-of-fine-arts-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Ryan Hamilton",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2dvkLoy"
+    },
+    {
+      "id": "2026-11-27-tm-G5vYZ_C6rSSPp",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Carpenters Songbook - A Live Celebration",
+      "officialTitle": "The Carpenters Songbook - A Live Celebration - ASL Performance",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Carpenters Songbook - A Live Celebration",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_C6rSSPp",
+      "expectedDraw": {
+        "count": 2608,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1A7PeAg",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Marriage of Figaro w/ San Francisco Opera",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Opera"
+      },
+      "performer": "The Marriage of Figaro",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PeAg"
+    },
+    {
+      "id": "2026-11-27-tm-G5vYZ_A0KFfCq",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mariachi Vargas de Tecalitlán",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Mariachi Vargas de Tecalitlán",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_A0KFfCq",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AAebQe",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQe",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-11-27-tm-Z7r9jZ1AA7orK",
+      "metroId": "bay-area",
+      "date": "2026-11-27",
+      "start": "22:00",
+      "kind": "special",
+      "title": "DANG! - A Soulful Electronic Dance Night - ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "DANG! Dance Party",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7orK"
+    },
+    {
+      "id": "2026-11-28-sa-calbears-com-38790",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "kind": "game",
+      "title": "Cal vs. Raising the B.A.R. Invitational",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "Raising the B.A.R. Invitational",
+        "awayOpponent": "raising-the-b-a-r-invitational"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 29 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-stanford-football-401858316",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "12:30",
+      "kind": "game",
+      "title": "Stanford vs. SMU",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "stanford-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "stanford-football",
+        "away": "smu-football",
+        "awayOpponent": "smu"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 23071,
+        "low": 18149,
+        "high": 33102,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A7P7G0",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Opera San Jos?? - Fiddler on the Roof",
+      "place": {
+        "type": "venue",
+        "venueId": "california-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Opera San Jose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P7G0",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAebQd",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQd",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-28-sa-calbears-com-39146",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "kind": "game",
+      "title": "Cal vs. Raising the B.A.R. Invitational",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "Raising the B.A.R. Invitational",
+        "awayOpponent": "raising-the-b-a-r-invitational"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866,
+        "fromCrowds": true,
+        "games": 29,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 29 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-santaclarabroncos-com-11097",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Utah Tech",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "santa-clara-mbb",
+        "away": "Utah Tech",
+        "awayOpponent": "utah-tech"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 1691,
+        "low": 1295,
+        "high": 2039,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday: 10 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-sa-smcgaels-com-12844",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. San Jose State",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "smc-wbb",
+        "away": "sjsu-wbb",
+        "awayOpponent": "san-jose-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-11-28-sa-usfdons-com-9088",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "kind": "game",
+      "title": "San Francisco vs. Bethune-Cookman",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "Bethune-Cookman",
+        "awayOpponent": "bethune-cookman"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 1137,
+        "low": 1054,
+        "high": 1341,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 3 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-11-28-espn-cal-football-401858315",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "16:30",
+      "kind": "game",
+      "title": "California vs. Pitt",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "california-memorial-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "cal-football",
+        "away": "pitt-football",
+        "awayOpponent": "pitt"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 32193,
+        "low": 30409,
+        "high": 38227,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in November: 4 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_7oT-4g7",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "kind": "special",
+      "title": "Brad Williams: The Tall Tales Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "palace-of-fine-arts-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Brad Williams",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_7oT-4g7"
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_aEOcK9c",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "kind": "show",
+      "title": "Journey",
+      "officialTitle": "JOURNEY - Final Frontier Tour (An Evening With)",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Journey",
+      "act": true,
+      "performerIds": [
+        "K8vZ91712F0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aEOcK9c",
+      "expectedDraw": {
+        "count": 11115,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_oJn_sZF",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jackie Greene",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Folk"
+      },
+      "performer": "Jackie Greene",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_oJn_sZF",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1AAebQ7",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQ7",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-11-28-tm-Z7r9jZ1A7PgGw",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Devault",
+      "officialTitle": "Devault (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Devault",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PgGw",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-28-tm-G5vYZ_KLQ1qwG",
+      "metroId": "bay-area",
+      "date": "2026-11-28",
+      "start": "22:00",
+      "kind": "show",
+      "title": "Vessbroz",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Vessbroz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KLQ1qwG",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-29-espn-stanford-mbb-401917552",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Stanford vs. Portland",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-mbb",
+        "away": "up-pilots-mbb",
+        "awayOpponent": "portland"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 2794,
+        "low": 2568,
+        "high": 3663,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAebQA",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQA",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-29-espn-sf-49ers-401873091",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "13:25",
+      "kind": "game",
+      "title": "49ers vs. Seahawks",
+      "broadcast": "Fox",
+      "place": {
+        "type": "venue",
+        "venueId": "levis-stadium"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "football"
+      },
+      "teams": {
+        "home": "sf-49ers",
+        "away": "seahawks",
+        "awayOpponent": "seahawks"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 71033,
+        "low": 70851,
+        "high": 71105,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2023–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in November: 3 games, 2023–2025."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1A7P7GN",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "kind": "special",
+      "title": "Opera San Jos?? - Fiddler on the Roof",
+      "place": {
+        "type": "venue",
+        "venueId": "california-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "Opera San Jose",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7P7GN",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-11-29-espn-warriors-401910059",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "kind": "game",
+      "title": "Warriors vs. Clippers",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "clippers",
+        "awayOpponent": "clippers"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 15,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday: 15 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-11-29-tm-Z7r9jZ1AAebQk",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQk",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-11-29-tm-G5vYZ_1KqfyQ_",
+      "metroId": "bay-area",
+      "date": "2026-11-29",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Scott Bradlee's Postmodern Jukebox",
+      "place": {
+        "type": "venue",
+        "venueId": "henry-j-kaiser-center-for-the-arts"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "Scott Bradlee's Postmodern Jukebox",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1KqfyQ_",
+      "expectedDraw": {
+        "count": 2500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-11-30-sa-usfdons-com-9036",
+      "metroId": "bay-area",
+      "date": "2026-11-30",
+      "start": "16:00",
+      "kind": "game",
+      "title": "San Francisco vs. Grand Canyon",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usf-dons-wbb",
+        "away": "Grand Canyon",
+        "awayOpponent": "grand-canyon"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-01-sa-smcgaels-com-12808",
+      "metroId": "bay-area",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "kind": "game",
+      "title": "Saint Mary's vs. Hofstra",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "smc-mbb",
+        "away": "Hofstra",
+        "awayOpponent": "hofstra"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2580,
+        "low": 2536,
+        "high": 2757,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-Z7r9jZ1AAebQ6",
+      "metroId": "bay-area",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQ6",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-01-espn-warriors-401910075",
+      "metroId": "bay-area",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Warriors vs. Jazz",
+      "broadcast": "KJZZ-TV",
+      "place": {
+        "type": "venue",
+        "venueId": "chase-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "warriors",
+        "away": "utah-jazz",
+        "awayOpponent": "jazz"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064,
+        "fromCrowds": true,
+        "games": 8,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 8 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-01-tm-G5vYZ_G1_Rsak",
+      "metroId": "bay-area",
+      "date": "2026-12-01",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jalen Ngonda",
+      "officialTitle": "Jalen Ngonda: Doctrine of Love Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "R&B"
+      },
+      "performer": "Jalen Ngonda",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_G1_Rsak",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAebQF",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "14:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQF",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-02-espn-sjsu-wbb-401923191",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San José St vs. Pepperdine",
+      "place": {
+        "type": "venue",
+        "venueId": "provident-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sjsu-wbb",
+        "away": "pepperdine",
+        "awayOpponent": "pepperdine"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 290,
+        "low": 213,
+        "high": 384,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-sa-santaclarabroncos-com-11098",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. Fresno State",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "santa-clara-mbb",
+        "away": "Fresno State",
+        "awayOpponent": "fresno-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 1382,
+        "low": 1015,
+        "high": 1547,
+        "fromCrowds": true,
+        "games": 9,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 9 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-sa-usfdons-com-9089",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. UNLV",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "UNLV",
+        "awayOpponent": "unlv"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 971,
+        "low": 824,
+        "high": 1100,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5vYZ_23i15i1",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_23i15i1",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5vYZ_A2KV6-_",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The Neighbourhood",
+      "officialTitle": "The Neighbourhood: THE WOURLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Neighbourhood",
+      "act": true,
+      "performerIds": [
+        "K8vZ917Kzef",
+        "K8vZ917_-2f",
+        "K8vZ917L-Mf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_A2KV6-_",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1A7Jo0A",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "show",
+      "title": "The Carpenters Songbook - A Live Celebration",
+      "officialTitle": "The Carpenters Songbook: At Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "The Carpenters Songbook - A Live Celebration",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Jo0A",
+      "expectedDraw": {
+        "count": 2297,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-02-tm-Z7r9jZ1AAebQa",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQa",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-02-tm-G5vYZ_CtT897C",
+      "metroId": "bay-area",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Eloise",
+      "officialTitle": "Eloise - The Drama Queen Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Eloise",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CtT897C",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-espn-cal-wbb-401906069",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "kind": "game",
+      "title": "California vs. Texas A&M",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-wbb",
+        "away": "texas-a-m",
+        "awayOpponent": "texas-a-m"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1904,
+        "low": 1192,
+        "high": 2698,
+        "fromCrowds": true,
+        "games": 14,
+        "seasons": "2025–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight: 14 games, 2025–2026."
+      }
+    },
+    {
+      "id": "2026-12-03-sa-santaclarabroncos-com-11045",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Santa Clara vs. San Diego State",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "santa-clara-wbb",
+        "away": "San Diego State",
+        "awayOpponent": "san-diego-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-03-tm-G5vYZ_23i5li9",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "19:00",
+      "kind": "special",
+      "title": "The Hip Hop Nutcracker (Touring)",
+      "place": {
+        "type": "venue",
+        "venueId": "center-for-the-performing-arts"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Dance"
+      },
+      "performer": "The Hip Hop Nutcracker (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_23i5li9",
+      "occasionFacts": {
+        "run": 2
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAebQ8",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "19:30",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQ8",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-03-tm-G5vYZ_1N8zXfr",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Fetty Wap",
+      "officialTitle": "Fetty Wap: Nostalgia Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Hip-Hop/Rap"
+      },
+      "performer": "Fetty Wap",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1N8zXfr",
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-03-tm-Z7r9jZ1AAe88I",
+      "metroId": "bay-area",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Night Lovell",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Night Lovell",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe88I",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAvV00",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Wiz (Touring) - Recommended for ages 8+. No children under 5 allowed",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-civic-center-mid-market"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Wiz (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvV00",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-sa-usfdons-com-9037",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "kind": "game",
+      "title": "San Francisco vs. Boise State",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "usf-dons-wbb",
+        "away": "Boise State",
+        "awayOpponent": "boise-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_2NoqbG8",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The String Cheese Incident",
+      "officialTitle": "The String Cheese Incident: Just Keep Spinning Tour - 12/4",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The String Cheese Incident",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2NoqbG8",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_5CHDJie",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7",
+        "K8vZ917KHI7",
+        "K8vZ917q6af"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5CHDJie",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1A70t4o",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4o",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAe8JK",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "show",
+      "title": "San Francisco Gay Men's Chorus",
+      "officialTitle": "San Francisco Gay Men's Chorus (No children under 4 allowed)",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "San Francisco Gay Men's Chorus",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe8JK",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2297,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAvV0z",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Wiz (Touring) - Recommended for ages 8+. No children under 5 allowed",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-civic-center-mid-market"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Wiz (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvV0z",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-04-tm-G5vYZ_CjHxbFf",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Mannheim Steamroller Christmas",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "New Age"
+      },
+      "performer": "Mannheim Steamroller Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_CjHxbFf",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAebQo",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQo",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-04-tm-Z7r9jZ1AAvJGo",
+      "metroId": "bay-area",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Amorphis",
+      "officialTitle": "Amorphis w/ Insomnium",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Amorphis",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvJGo",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAvV0y",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Wiz (Touring) - Recommended for ages 8+. No children under 5 allowed",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-civic-center-mid-market"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Wiz (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvV0y",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70t4K",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4K",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAe8Jf",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "show",
+      "title": "San Francisco Gay Men's Chorus",
+      "officialTitle": "San Francisco Gay Men's Chorus (No children under 4 allowed)",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "San Francisco Gay Men's Chorus",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe8Jf",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2297,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAe9u7",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe9u7",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_4BEui0j",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "kind": "special",
+      "title": "The Wizard of Oz",
+      "place": {
+        "type": "venue",
+        "venueId": "paramount-theatre-downtown-oakland"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Family"
+      },
+      "performer": "The Wizard of Oz",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_4BEui0j"
+    },
+    {
+      "id": "2026-12-05-ht-pwhl-san-jose-367",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "Sea Lions vs. Frost",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "pwhl-san-jose",
+        "away": "frost"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech"
+    },
+    {
+      "id": "2026-12-05-sa-usfdons-com-9090",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "kind": "game",
+      "title": "San Francisco vs. South Dakota",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "South Dakota",
+        "awayOpponent": "south-dakota"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 1166,
+        "low": 1045,
+        "high": 1218,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2025",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 3 games, 2024–2025."
+      }
+    },
+    {
+      "id": "2026-12-05-espn-sjsu-mbb-401911474",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "game",
+      "title": "San José St vs. Seattle U",
+      "place": {
+        "type": "venue",
+        "venueId": "provident-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sjsu-mbb",
+        "away": "seattle-u",
+        "awayOpponent": "seattle-u"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1767,
+        "low": 1752,
+        "high": 2042,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Saturday in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_KgWoMQ2",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "kind": "show",
+      "title": "Earlybirds Club",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "Earlybirds Club",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_KgWoMQ2",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_2ejmndl",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "18:35",
+      "kind": "show",
+      "title": "Trivium",
+      "officialTitle": "TRIVIUM: CROWN IN THE GRAVE WORLD TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Trivium",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2ejmndl",
+      "expectedDraw": {
+        "count": 3481,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_2NKhFEa",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "The String Cheese Incident",
+      "officialTitle": "The String Cheese Incident: Just Keep Spinning Tour - 12/5",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The String Cheese Incident",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2NKhFEa",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_5925f5N",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "show",
+      "title": "John Summit",
+      "officialTitle": "JOHN SUMMIT - CTRL ESCAPE ARENA TOUR",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "John Summit",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_pO7",
+        "K8vZ917KHI7",
+        "K8vZ917q6af"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5925f5N",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1A70t43",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t43",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAe3Oe",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "special",
+      "title": "The Wiz (Touring) - Recommended for ages 8+. No children under 5 allowed",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-civic-center-mid-market"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Wiz (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe3Oe",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAe8J4",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "kind": "show",
+      "title": "San Francisco Gay Men's Chorus",
+      "officialTitle": "San Francisco Gay Men's Chorus (No children under 4 allowed)",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Classical"
+      },
+      "performer": "San Francisco Gay Men's Chorus",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAe8J4",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 2297,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_2QsbGLX",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Adrian Uribe: 50 y Pico Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Adrián Uribe",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_2QsbGLX"
+    },
+    {
+      "id": "2026-12-05-tm-G5vYZ_88s7zuR",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "it's murph",
+      "officialTitle": "it's murph (18+)",
+      "place": {
+        "type": "venue",
+        "venueId": "bill-graham-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Dance/Electronic"
+      },
+      "performer": "it's murph",
+      "act": true,
+      "performerIds": [
+        "K8vZ917hRP0",
+        "K8vZ917jHa7",
+        "K8vZ917r-Sf"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_88s7zuR",
+      "expectedDraw": {
+        "count": 8500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAebQ3",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQ3",
+      "occasionFacts": {
+        "run": 8
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAvJqA",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Kamasi Washington",
+      "officialTitle": "Kamasi Washington w/ Bartees Strange",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Blues"
+      },
+      "performer": "Kamasi Washington",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvJqA",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AA7E46",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Zingara",
+      "officialTitle": "Zingara (21+ Event)",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Zingara",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AA7E46",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-05-tm-Z7r9jZ1AAvtvd",
+      "metroId": "bay-area",
+      "date": "2026-12-05",
+      "start": "21:00",
+      "kind": "show",
+      "title": "Midnight Tyrannosaurus",
+      "officialTitle": "Midnight Tyrannosaurus - Ages 21+",
+      "place": {
+        "type": "venue",
+        "venueId": "the-midway"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Midnight Tyrannosaurus",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvtvd",
+      "expectedDraw": {
+        "count": 1500,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-espn-stanford-mbb-401917561",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Stanford vs. Pacific",
+      "place": {
+        "type": "venue",
+        "venueId": "maples-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "stanford-mbb",
+        "away": "pacific",
+        "awayOpponent": "pacific"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3663,
+        "low": 2961,
+        "high": 3830,
+        "fromCrowds": true,
+        "games": 3,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Sunday in December: 3 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-sa-santaclarabroncos-com-11046",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "game",
+      "title": "Santa Clara vs. UC Santa Cruz",
+      "place": {
+        "type": "venue",
+        "venueId": "leavey-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "santa-clara-wbb",
+        "away": "UC Santa Cruz",
+        "awayOpponent": "uc-santa-cruz"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAebQK",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "special",
+      "title": "John Proctor is the Villain",
+      "place": {
+        "type": "venue",
+        "venueId": "toni-rembe-theater"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Undefined"
+      },
+      "performer": "John Proctor is the Villain",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAebQK",
+      "occasionFacts": {
+        "run": 7
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAvV0P",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "kind": "special",
+      "title": "The Wiz (Touring) - Recommended for ages 8+. No children under 5 allowed",
+      "place": {
+        "type": "venue",
+        "venueId": "orpheum-theatre-civic-center-mid-market"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Theatre"
+      },
+      "performer": "The Wiz (Touring)",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAvV0P",
+      "occasionFacts": {
+        "run": 3
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A70t4f",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4f",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-06-espn-cal-mbb-401918059",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "kind": "game",
+      "title": "California vs. Vanderbilt",
+      "broadcast": "ACC Network",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-mbb",
+        "away": "vanderbilt-mbb",
+        "awayOpponent": "vanderbilt"
+      },
+      "rank": {
+        "away": 14
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3843,
+        "low": 3024,
+        "high": 5683,
+        "fromCrowds": true,
+        "games": 50,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a home game: 50 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1A70t44",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t44",
+      "occasionFacts": {
+        "run": 9
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZbg9ir1-u",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "19:30",
+      "kind": "show",
+      "title": "RUSH",
+      "officialTitle": "RUSH: Fifty Something",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "RUSH",
+      "act": true,
+      "performerIds": [
+        "K8vZ917184V"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZbg9ir1-u",
+      "expectedDraw": {
+        "count": 10545,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_1UDxFhX",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gracie Abrams",
+      "officialTitle": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Gracie Abrams",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_vc7",
+        "K8vZ9179iX7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1UDxFhX",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_GEbY5kj",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Alicia Villarreal",
+      "officialTitle": "Alicia Villarreal - Bendita Locura Tour 2026",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Latin"
+      },
+      "performer": "Alicia Villarreal",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GEbY5kj",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-06-tm-G5vYZ_omi5MSo",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Matt Rogers: THIS TIME IT'S *REALLY* CHRISTMAS Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matt Rogers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_omi5MSo"
+    },
+    {
+      "id": "2026-12-06-tm-Z7r9jZ1AAv4Ft",
+      "metroId": "bay-area",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Ripe",
+      "place": {
+        "type": "venue",
+        "venueId": "the-regency-ballroom"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Other"
+      },
+      "performer": "Ripe",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1AAv4Ft",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-07-tm-G5vYZ_5mq0w7N",
+      "metroId": "bay-area",
+      "date": "2026-12-07",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Gracie Abrams",
+      "officialTitle": "Gracie Abrams: The Look at My Life Tour presented by Capital One",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Gracie Abrams",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_vc7",
+        "K8vZ9179iX7"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_5mq0w7N",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-08-tm-Z7r9jZ1A70t4p",
+      "metroId": "bay-area",
+      "date": "2026-12-08",
+      "start": "18:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4p",
+      "occasionFacts": {
+        "run": 10
+      }
+    },
+    {
+      "id": "2026-12-08-espn-sharks-401892890",
+      "metroId": "bay-area",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sharks vs. Kraken",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "kraken",
+        "awayOpponent": "kraken"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 16224,
+        "low": 14000,
+        "high": 18617,
+        "fromCrowds": true,
+        "games": 10,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 10 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-08-espn-sjsu-mbb-401911475",
+      "metroId": "bay-area",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San José St vs. Long Beach St",
+      "place": {
+        "type": "venue",
+        "venueId": "provident-event-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "sjsu-mbb",
+        "away": "long-beach-st",
+        "awayOpponent": "long-beach-st"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 1897,
+        "low": 1612,
+        "high": 2498,
+        "fromCrowds": true,
+        "games": 4,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 4 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-08-sa-usfdons-com-9091",
+      "metroId": "bay-area",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "kind": "game",
+      "title": "San Francisco vs. Grace University",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-sobrato-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "usf-dons-mbb",
+        "away": "Grace University",
+        "awayOpponent": "grace-university"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 971,
+        "low": 824,
+        "high": 1100,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-08-tm-G5vYZ_1U8_jNx",
+      "metroId": "bay-area",
+      "date": "2026-12-08",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Angine de Poitrine",
+      "place": {
+        "type": "venue",
+        "venueId": "fox-theater"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Angine de Poitrine",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_1U8_jNx",
+      "expectedDraw": {
+        "count": 2800,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-09-sa-smcgaels-com-12882",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "14:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. San Diego State",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "women"
+      },
+      "teams": {
+        "home": "smc-wbb",
+        "away": "San Diego State",
+        "awayOpponent": "san-diego-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm"
+    },
+    {
+      "id": "2026-12-09-tm-Z7r9jZ1A70t49",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "18:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t49",
+      "occasionFacts": {
+        "run": 11
+      }
+    },
+    {
+      "id": "2026-12-09-ht-pwhl-san-jose-377",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sea Lions vs. Torrent",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "pwhl-san-jose",
+        "away": "torrent"
+      },
+      "crowd": [],
+      "sourceId": "hockeytech"
+    },
+    {
+      "id": "2026-12-09-sa-smcgaels-com-12795",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Saint Mary's vs. New Mexico State",
+      "place": {
+        "type": "venue",
+        "venueId": "university-credit-union-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball",
+        "level": "college",
+        "division": "men"
+      },
+      "teams": {
+        "home": "smc-mbb",
+        "away": "New Mexico State",
+        "awayOpponent": "new-mexico-state"
+      },
+      "crowd": [],
+      "sourceId": "sidearm",
+      "expectedDraw": {
+        "count": 2580,
+        "low": 2536,
+        "high": 2757,
+        "fromCrowds": true,
+        "games": 6,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 6 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-09-tm-G5vYZ_FljpPHE",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Pineapple Thief",
+      "place": {
+        "type": "venue",
+        "venueId": "august-hall"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Pineapple Thief",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_FljpPHE",
+      "expectedDraw": {
+        "count": 951,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-09-tm-G5vYZ_GkymCSV",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jamey Johnson",
+      "officialTitle": "Jamey Johnson - Traveling Truebadour Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "san-jose-civic"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Country"
+      },
+      "performer": "Jamey Johnson",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_GkymCSV",
+      "expectedDraw": {
+        "count": 3326,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-09-tm-G5vYZ_ud64RQU",
+      "metroId": "bay-area",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Jayhawks",
+      "officialTitle": "Sanctuary Park Tour: Celebrating 40 Years of The Jayhawks",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "The Jayhawks",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ud64RQU",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-10-tm-Z7r9jZ1A70t4b",
+      "metroId": "bay-area",
+      "date": "2026-12-10",
+      "start": "18:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4b",
+      "occasionFacts": {
+        "run": 12
+      }
+    },
+    {
+      "id": "2026-12-10-espn-cal-mbb-401918060",
+      "metroId": "bay-area",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "kind": "game",
+      "title": "California vs. SE Louisiana",
+      "place": {
+        "type": "venue",
+        "venueId": "haas-pavilion"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "basketball"
+      },
+      "teams": {
+        "home": "cal-mbb",
+        "away": "se-louisiana",
+        "awayOpponent": "se-louisiana"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 3061,
+        "low": 2768,
+        "high": 3339,
+        "fromCrowds": true,
+        "games": 5,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a weeknight in December: 5 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-10-tm-Z7r9jZ1A7Povk",
+      "metroId": "bay-area",
+      "date": "2026-12-10",
+      "start": "19:30",
+      "kind": "special",
+      "title": "A Drag Queen Christmas (18 and Over)",
+      "place": {
+        "type": "venue",
+        "venueId": "golden-gate-theatre"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Miscellaneous"
+      },
+      "performer": "A Drag Queen Christmas",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7Povk"
+    },
+    {
+      "id": "2026-12-10-tm-G5vYZ_53UKNHh",
+      "metroId": "bay-area",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Strawberry Guy",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Strawberry Guy",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_53UKNHh",
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-10-tm-Z7r9jZ1A7PSrk",
+      "metroId": "bay-area",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "kind": "show",
+      "title": "The Wooten Brothers",
+      "place": {
+        "type": "venue",
+        "venueId": "the-uc-theatre"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Jazz"
+      },
+      "performer": "The Wooten Brothers",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A7PSrk",
+      "expectedDraw": {
+        "count": 1400,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-11-tm-Z7r9jZ1A70t4O",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "14:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4O",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-11-espn-sharks-401892908",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "kind": "game",
+      "title": "Sharks vs. Kings",
+      "broadcast": "NBC Sports BA",
+      "place": {
+        "type": "venue",
+        "venueId": "sap-center"
+      },
+      "audience": {
+        "domain": "sports",
+        "sport": "hockey"
+      },
+      "teams": {
+        "home": "sharks",
+        "away": "kings",
+        "awayOpponent": "kings"
+      },
+      "crowd": [],
+      "sourceId": "espn",
+      "expectedDraw": {
+        "count": 22012,
+        "low": 20006,
+        "high": 22012,
+        "fromCrowds": true,
+        "games": 7,
+        "seasons": "2024–2026",
+        "basis": "team",
+        "note": "Typical announced crowd here for a Friday: 7 games, 2024–2026."
+      }
+    },
+    {
+      "id": "2026-12-11-tm-G5vYZ_aMbKo0B",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "kind": "show",
+      "title": "Olivia Rodrigo",
+      "officialTitle": "Olivia Rodrigo: The Unraveled Tour",
+      "place": {
+        "type": "venue",
+        "venueId": "oakland-arena"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Pop"
+      },
+      "performer": "Olivia Rodrigo",
+      "act": true,
+      "performerIds": [
+        "K8vZ917_Su0",
+        "K8vZ917hrK0"
+      ],
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_aMbKo0B",
+      "occasionFacts": {
+        "run": 2
+      },
+      "expectedDraw": {
+        "count": 11170,
+        "note": "57% of the concert setup, the typical fill of arenas that publish their numbers. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-11-tm-Z7r9jZ1A70t4_",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "kind": "special",
+      "title": "San Francisco Ballet w/ The Nutcracker",
+      "place": {
+        "type": "venue",
+        "venueId": "war-memorial-opera-house"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Arts & Theatre"
+      },
+      "performer": "San Francisco Ballet",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "Z7r9jZ1A70t4_",
+      "occasionFacts": {
+        "run": 13
+      }
+    },
+    {
+      "id": "2026-12-11-tm-G5vYZ_3kAZh9E",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "20:00",
+      "kind": "show",
+      "title": "Jorma Kaukonen",
+      "place": {
+        "type": "venue",
+        "venueId": "the-fillmore"
+      },
+      "audience": {
+        "domain": "music",
+        "genre": "Rock"
+      },
+      "performer": "Jorma Kaukonen",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_3kAZh9E",
+      "occasionFacts": {
+        "run": 3
+      },
+      "expectedDraw": {
+        "count": 1315,
+        "note": "The room, full: a venue built for shows, with no published average on file. An estimate."
+      }
+    },
+    {
+      "id": "2026-12-11-tm-G5vYZ_ab1YJWs",
+      "metroId": "bay-area",
+      "date": "2026-12-11",
+      "start": "20:00",
+      "kind": "special",
+      "title": "Matteo Lane: We Gotta Catch Up!",
+      "place": {
+        "type": "venue",
+        "venueId": "the-masonic"
+      },
+      "audience": {
+        "domain": "other",
+        "tag": "Comedy"
+      },
+      "performer": "Matteo Lane",
+      "act": true,
+      "crowd": [],
+      "sourceId": "ticketmaster",
+      "ticketmasterId": "G5vYZ_ab1YJWs",
+      "occasionFacts": {
+        "run": 2
+      }
+    }
+  ],
+  "forecasts": [
+    {
+      "eventId": "2026-11-27-espn-cal-wbb-401927985",
+      "date": "2026-11-27",
+      "start": "12:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-sjsu-football-401864549",
+      "date": "2026-11-27",
+      "start": "12:30",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "Golden Knights at Sharks 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8394,
+        "low": 7914,
+        "high": 10066
+      }
+    },
+    {
+      "eventId": "2026-11-27-espn-sharks-401892805",
+      "date": "2026-11-27",
+      "start": "13:00",
+      "read": {
+        "rating": 1.6,
+        "friction": "Low",
+        "why": "N Dakota St at San José St (FB) 2.0 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 20675,
+        "low": 18736,
+        "high": 22223
+      }
+    },
+    {
+      "eventId": "2026-11-27-sa-calbears-com-39268",
+      "date": "2026-11-27",
+      "start": "14:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5vYZ_2dvkLoy",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5vYZ_C6rSSPp",
+      "date": "2026-11-27",
+      "start": "19:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2608
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1A7PeAg",
+      "date": "2026-11-27",
+      "start": "19:30",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-G5vYZ_A0KFfCq",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AAebQe",
+      "date": "2026-11-27",
+      "start": "20:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-27-tm-Z7r9jZ1AA7orK",
+      "date": "2026-11-27",
+      "start": "22:00",
+      "read": {
+        "rating": 1.6,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-calbears-com-38790",
+      "date": "2026-11-28",
+      "start": "12:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-stanford-football-401858316",
+      "date": "2026-11-28",
+      "start": "12:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "Pitt at California (FB) 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 23071,
+        "low": 18149,
+        "high": 33102
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A7P7G0",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAebQd",
+      "date": "2026-11-28",
+      "start": "14:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-calbears-com-39146",
+      "date": "2026-11-28",
+      "start": "14:30",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2007,
+        "low": 1428,
+        "high": 2866
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-santaclarabroncos-com-11097",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1691,
+        "low": 1295,
+        "high": 2039
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-smcgaels-com-12844",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-sa-usfdons-com-9088",
+      "date": "2026-11-28",
+      "start": "16:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1137,
+        "low": 1054,
+        "high": 1341
+      }
+    },
+    {
+      "eventId": "2026-11-28-espn-cal-football-401858315",
+      "date": "2026-11-28",
+      "start": "16:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Moderate",
+        "why": "SMU at Stanford (FB) 31 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 32193,
+        "low": 30409,
+        "high": 38227
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_7oT-4g7",
+      "date": "2026-11-28",
+      "start": "19:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_aEOcK9c",
+      "date": "2026-11-28",
+      "start": "19:30",
+      "read": {
+        "rating": 3.9,
+        "friction": "Low",
+        "why": "Pitt at California (FB) 10 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11115
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_oJn_sZF",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1AAebQ7",
+      "date": "2026-11-28",
+      "start": "20:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-Z7r9jZ1A7PgGw",
+      "date": "2026-11-28",
+      "start": "21:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-11-28-tm-G5vYZ_KLQ1qwG",
+      "date": "2026-11-28",
+      "start": "22:00",
+      "read": {
+        "rating": 3.9,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-stanford-mbb-401917552",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2794,
+        "low": 2568,
+        "high": 3663
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAebQA",
+      "date": "2026-11-29",
+      "start": "13:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-sf-49ers-401873091",
+      "date": "2026-11-29",
+      "start": "13:25",
+      "read": {
+        "rating": 5,
+        "friction": "Moderate",
+        "why": "Clippers at Warriors 34 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 71033,
+        "low": 70851,
+        "high": 71105
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1A7P7GN",
+      "date": "2026-11-29",
+      "start": "14:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-espn-warriors-401910059",
+      "date": "2026-11-29",
+      "start": "17:30",
+      "read": {
+        "rating": 5,
+        "friction": "Extreme",
+        "why": "Seahawks at 49ers 34 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-Z7r9jZ1AAebQk",
+      "date": "2026-11-29",
+      "start": "18:30",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-11-29-tm-G5vYZ_1KqfyQ_",
+      "date": "2026-11-29",
+      "start": "20:00",
+      "read": {
+        "rating": 5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2500
+      }
+    },
+    {
+      "eventId": "2026-11-30-sa-usfdons-com-9036",
+      "date": "2026-11-30",
+      "start": "16:00"
+    },
+    {
+      "eventId": "2026-12-01-sa-smcgaels-com-12808",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2580,
+        "low": 2536,
+        "high": 2757
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-Z7r9jZ1AAebQ6",
+      "date": "2026-12-01",
+      "start": "18:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-01-espn-warriors-401910075",
+      "date": "2026-12-01",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 18064,
+        "low": 18064,
+        "high": 18064
+      }
+    },
+    {
+      "eventId": "2026-12-01-tm-G5vYZ_G1_Rsak",
+      "date": "2026-12-01",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAebQF",
+      "date": "2026-12-02",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-espn-sjsu-wbb-401923191",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 290,
+        "low": 213,
+        "high": 384
+      }
+    },
+    {
+      "eventId": "2026-12-02-sa-santaclarabroncos-com-11098",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1382,
+        "low": 1015,
+        "high": 1547
+      }
+    },
+    {
+      "eventId": "2026-12-02-sa-usfdons-com-9089",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 971,
+        "low": 824,
+        "high": 1100
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5vYZ_23i15i1",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5vYZ_A2KV6-_",
+      "date": "2026-12-02",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1A7Jo0A",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2297
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-Z7r9jZ1AAebQa",
+      "date": "2026-12-02",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-02-tm-G5vYZ_CtT897C",
+      "date": "2026-12-02",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-12-03-espn-cal-wbb-401906069",
+      "date": "2026-12-03",
+      "start": "18:00",
+      "draw": {
+        "count": 1904,
+        "low": 1192,
+        "high": 2698
+      }
+    },
+    {
+      "eventId": "2026-12-03-sa-santaclarabroncos-com-11045",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-tm-G5vYZ_23i5li9",
+      "date": "2026-12-03",
+      "start": "19:00"
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAebQ8",
+      "date": "2026-12-03",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-03-tm-G5vYZ_1N8zXfr",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-12-03-tm-Z7r9jZ1AAe88I",
+      "date": "2026-12-03",
+      "start": "20:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAvV00",
+      "date": "2026-12-04",
+      "start": "13:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-sa-usfdons-com-9037",
+      "date": "2026-12-04",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_2NoqbG8",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_5CHDJie",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1A70t4o",
+      "date": "2026-12-04",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAe8JK",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2297
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAvV0z",
+      "date": "2026-12-04",
+      "start": "19:30",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-G5vYZ_CjHxbFf",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAebQo",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-04-tm-Z7r9jZ1AAvJGo",
+      "date": "2026-12-04",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAvV0y",
+      "date": "2026-12-05",
+      "start": "13:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70t4K",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAe8Jf",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2297
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAe9u7",
+      "date": "2026-12-05",
+      "start": "14:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_4BEui0j",
+      "date": "2026-12-05",
+      "start": "15:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-ht-pwhl-san-jose-367",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Low",
+        "why": "John Summit 33 mi away, same hours.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-05-sa-usfdons-com-9090",
+      "date": "2026-12-05",
+      "start": "16:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1166,
+        "low": 1045,
+        "high": 1218
+      }
+    },
+    {
+      "eventId": "2026-12-05-espn-sjsu-mbb-401911474",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1767,
+        "low": 1752,
+        "high": 2042
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_KgWoMQ2",
+      "date": "2026-12-05",
+      "start": "18:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_2ejmndl",
+      "date": "2026-12-05",
+      "start": "18:35",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3481
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_2NKhFEa",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_5925f5N",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "it's murph · 18+ 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1A70t43",
+      "date": "2026-12-05",
+      "start": "19:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAe3Oe",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAe8J4",
+      "date": "2026-12-05",
+      "start": "19:30",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2297
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_2QsbGLX",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-G5vYZ_88s7zuR",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "friction": "Moderate",
+        "why": "John Summit 12 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 8500
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAebQ3",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAvJqA",
+      "date": "2026-12-05",
+      "start": "20:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AA7E46",
+      "date": "2026-12-05",
+      "start": "21:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-12-05-tm-Z7r9jZ1AAvtvd",
+      "date": "2026-12-05",
+      "start": "21:00",
+      "read": {
+        "rating": 2.8,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1500
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-stanford-mbb-401917561",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3663,
+        "low": 2961,
+        "high": 3830
+      }
+    },
+    {
+      "eventId": "2026-12-06-sa-santaclarabroncos-com-11046",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAebQK",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAvV0P",
+      "date": "2026-12-06",
+      "start": "13:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A70t4f",
+      "date": "2026-12-06",
+      "start": "14:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-espn-cal-mbb-401918059",
+      "date": "2026-12-06",
+      "start": "17:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3843,
+        "low": 3024,
+        "high": 5683
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1A70t44",
+      "date": "2026-12-06",
+      "start": "19:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZbg9ir1-u",
+      "date": "2026-12-06",
+      "start": "19:30",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "Gracie Abrams 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 10545
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_1UDxFhX",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "friction": "Low",
+        "why": "RUSH · Fifty Something 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_GEbY5kj",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-G5vYZ_omi5MSo",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-06-tm-Z7r9jZ1AAv4Ft",
+      "date": "2026-12-06",
+      "start": "20:00",
+      "read": {
+        "rating": 1.5,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-07-tm-G5vYZ_5mq0w7N",
+      "date": "2026-12-07",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-12-08-tm-Z7r9jZ1A70t4p",
+      "date": "2026-12-08",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-08-espn-sharks-401892890",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 16224,
+        "low": 14000,
+        "high": 18617
+      }
+    },
+    {
+      "eventId": "2026-12-08-espn-sjsu-mbb-401911475",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1897,
+        "low": 1612,
+        "high": 2498
+      }
+    },
+    {
+      "eventId": "2026-12-08-sa-usfdons-com-9091",
+      "date": "2026-12-08",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 971,
+        "low": 824,
+        "high": 1100
+      }
+    },
+    {
+      "eventId": "2026-12-08-tm-G5vYZ_1U8_jNx",
+      "date": "2026-12-08",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2800
+      }
+    },
+    {
+      "eventId": "2026-12-09-sa-smcgaels-com-12882",
+      "date": "2026-12-09",
+      "start": "14:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-09-tm-Z7r9jZ1A70t49",
+      "date": "2026-12-09",
+      "start": "18:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-09-ht-pwhl-san-jose-377",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "friction": "Low",
+        "why": "The biggest event around.",
+        "method": "formula"
+      }
+    },
+    {
+      "eventId": "2026-12-09-sa-smcgaels-com-12795",
+      "date": "2026-12-09",
+      "start": "19:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 2580,
+        "low": 2536,
+        "high": 2757
+      }
+    },
+    {
+      "eventId": "2026-12-09-tm-G5vYZ_FljpPHE",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 951
+      }
+    },
+    {
+      "eventId": "2026-12-09-tm-G5vYZ_GkymCSV",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 3326
+      }
+    },
+    {
+      "eventId": "2026-12-09-tm-G5vYZ_ud64RQU",
+      "date": "2026-12-09",
+      "start": "20:00",
+      "read": {
+        "rating": 1,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-Z7r9jZ1A70t4b",
+      "date": "2026-12-10",
+      "start": "18:00"
+    },
+    {
+      "eventId": "2026-12-10-espn-cal-mbb-401918060",
+      "date": "2026-12-10",
+      "start": "19:00",
+      "draw": {
+        "count": 3061,
+        "low": 2768,
+        "high": 3339
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-Z7r9jZ1A7Povk",
+      "date": "2026-12-10",
+      "start": "19:30"
+    },
+    {
+      "eventId": "2026-12-10-tm-G5vYZ_53UKNHh",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-12-10-tm-Z7r9jZ1A7PSrk",
+      "date": "2026-12-10",
+      "start": "20:00",
+      "draw": {
+        "count": 1400
+      }
+    },
+    {
+      "eventId": "2026-12-11-tm-Z7r9jZ1A70t4O",
+      "date": "2026-12-11",
+      "start": "14:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-11-espn-sharks-401892908",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Olivia Rodrigo 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 22012,
+        "low": 20006,
+        "high": 22012
+      }
+    },
+    {
+      "eventId": "2026-12-11-tm-G5vYZ_aMbKo0B",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "friction": "Low",
+        "why": "Kings at Sharks 33 mi away, same hours.",
+        "method": "formula"
+      },
+      "draw": {
+        "count": 11170
+      }
+    },
+    {
+      "eventId": "2026-12-11-tm-Z7r9jZ1A70t4_",
+      "date": "2026-12-11",
+      "start": "19:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    },
+    {
+      "eventId": "2026-12-11-tm-G5vYZ_3kAZh9E",
+      "date": "2026-12-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      },
+      "draw": {
+        "count": 1315
+      }
+    },
+    {
+      "eventId": "2026-12-11-tm-G5vYZ_ab1YJWs",
+      "date": "2026-12-11",
+      "start": "20:00",
+      "read": {
+        "rating": 1.7,
+        "method": "nearby"
+      }
+    }
+  ]
+}
